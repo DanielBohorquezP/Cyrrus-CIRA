@@ -81,7 +81,18 @@ await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const { port } = server.address();
 const baseUrl = `http://127.0.0.1:${port}`;
 
-const browser = await chromium.launch();
+// Vercel's build container has no apt-get / root access, so Playwright's
+// bundled Chromium can't load its shared libs there. @sparticuz/chromium is a
+// self-contained build made for exactly this (serverless/CI, no system deps).
+let launchOptions = {};
+if (process.env.VERCEL) {
+  const { default: sparticuzChromium } = await import("@sparticuz/chromium");
+  launchOptions = {
+    executablePath: await sparticuzChromium.executablePath(),
+    args: sparticuzChromium.args,
+  };
+}
+const browser = await chromium.launch(launchOptions);
 const page = await browser.newPage();
 
 const rendered = new Map();
