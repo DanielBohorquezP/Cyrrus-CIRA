@@ -7,19 +7,19 @@ const reasons = [
     icon: Layers,
     title: "Un solo método, de punta a punta",
     description:
-      "El negocio no se fragmenta entre proveedores distintos para cada fase. Estrategia, selección, ejecución y adopción bajo un mismo ciclo.",
+      "El negocio no se fragmenta entre proveedores distintos para cada fase. Estrategia, selección, ejecución y adopción bajo un mismo ciclo — su ventaja competitiva no depende de coordinar 4 proveedores distintos.",
   },
   {
     icon: Zap,
     title: "Velocidad radical vía IA en cada fase",
     description:
-      "Gobierno, arquitectura y agentes integrados en Strategy, Select, Project Management y Change Management — no como servicio aparte.",
+      "Gobierno, arquitectura y agentes integrados en Strategy, Select, Project Management y Change Management — automatización aplicada a diagnóstico, selección, ejecución y adopción, no como servicio aparte.",
   },
   {
     icon: Users,
     title: "Capacidad que se queda en el cliente",
     description:
-      "Leadership Academy garantiza que la velocidad no dependa solo de Cyrrus: su equipo aprende a operar bajo el mismo modelo.",
+      "Leadership Academy garantiza que la velocidad no dependa solo de Cyrrus: mejora continua sostenida por su propio equipo, que aprende a operar bajo el mismo modelo.",
   },
 ];
 

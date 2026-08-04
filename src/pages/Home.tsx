@@ -1,71 +1,49 @@
-import { useNavigate } from "react-router-dom";
-import { AnimatedHero } from "@/components/ui/animated-hero-section-1";
-import { Button } from "@/components/ui/button";
-import { ThreeLevels } from "@/components/sections/three-levels";
+import { ShaderHero } from "@/components/ui/shader-hero";
+import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
+import { TransparentHeader } from "@/components/layout/transparent-header";
+import { HeroServicesTabs } from "@/components/sections/hero-services-tabs";
+import { TrustBar } from "@/components/sections/trust-bar";
+import { CyrrusAbout } from "@/components/sections/cyrrus-about";
 import { CiraJourney } from "@/components/sections/cira-journey";
 import { WhyCyrrus } from "@/components/sections/why-cyrrus";
 import { Testimonials } from "@/components/sections/testimonials";
 import { CeoSection } from "@/components/sections/ceo-section";
 import { Experience } from "@/components/sections/experience";
+import { PerspectivasPreview } from "@/components/sections/perspectivas-preview";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 
-const navLinks = [
-  { label: "Método CIRA", href: "/metodo-cira" },
-  { label: "Cyrrus Intelligence Lab", href: "/intelligence-lab" },
-  { label: "Leadership Academy", href: "/leadership-academy" },
-  { label: "Experiencia", href: "/experiencia" },
-  { label: "Perspectivas", href: "/perspectivas" },
-];
-
 export default function Home() {
-  const navigate = useNavigate();
-
-  const handleCtaClick = () => {
-    navigate("/contacto");
-  };
-
-  const handleSecondaryCtaClick = () => {
-    navigate("/metodo-cira");
-  };
-
   return (
     <>
-      <AnimatedHero
-        backgroundImageUrl="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=80"
-        logo={
-          <img
-            src="/assets/logos-cyrrus/cyrrus-logo-blanco.svg"
-            alt="Cyrrus Consulting Services"
-            className="h-7 w-auto"
-          />
-        }
-        navLinks={navLinks}
-        topRightAction={
-          <Button
-            className="bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20"
-            onClick={handleCtaClick}
-          >
-            Agendar conversación
-          </Button>
-        }
-        title="De la decisión a la adopción, sin perder nada en el camino."
-        description="Construimos la estrategia, elegimos la solución correcta, ejecutamos el proyecto y logramos que su equipo lo adopte — con inteligencia artificial corriendo en cada fase, para que su organización avance a la velocidad que el mercado ya exige."
-        ctaButton={{
-          text: "Agendar conversación estratégica",
-          onClick: handleCtaClick,
-        }}
-        secondaryCta={{
-          text: "Conocer el método CIRA",
-          onClick: handleSecondaryCtaClick,
-        }}
-      />
-      <ThreeLevels />
+      <div className="relative">
+        <TransparentHeader />
+        <ShaderHero
+          eyebrow="Metodología CIRA"
+          titleAccent="Consultoría"
+          titleBold="Estratégica"
+          titleLight="con IA integrada"
+          subtitle="Construimos la estrategia, elegimos la solución correcta y logramos su adopción."
+          primaryButtonText="Agendar conversación estratégica"
+          primaryButtonHref="/contacto"
+          secondaryButtonText="Conocer el método CIRA"
+          secondaryButtonHref="/metodo-cira"
+          badgeText="Cyrrus Consulting Services"
+        />
+      </div>
+      <TrustBar />
+      <AnimatedNavyBackground className="px-6 py-14 md:px-12">
+        <div className="mx-auto max-w-6xl">
+          <HeroServicesTabs />
+        </div>
+      </AnimatedNavyBackground>
       <CiraJourney />
+      <CyrrusAbout />
       <WhyCyrrus />
-      <Testimonials />
       <CeoSection />
+      <Testimonials />
       <Experience />
+      <PerspectivasPreview />
       <FinalCta />
       <Footer />
     </>

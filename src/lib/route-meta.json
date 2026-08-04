@@ -1,0 +1,102 @@
+{
+  "/": {
+    "title": "Cyrrus Consulting Services | Metodología CIRA",
+    "description": "Cyrrus Consulting Services — Metodología CIRA: construimos la estrategia, elegimos la solución correcta, ejecutamos el proyecto y logramos que su equipo lo adopte, con inteligencia artificial acelerando cada fase."
+  },
+  "/metodo-cira": {
+    "title": "Metodología CIRA: Construir, Identificar, Realizar, Adoptar | Cyrrus",
+    "description": "Conoce la metodología CIRA de Cyrrus: el marco de 4 fases que lleva a su empresa de la estrategia a la adopción real, con IA en cada paso."
+  },
+  "/metodo-cira/planeacion-estrategica": {
+    "title": "Consultoría de Planeación Estratégica | Cyrrus",
+    "description": "Diseñamos la estrategia de negocio que su empresa necesita para crecer: diagnóstico, hoja de ruta y prioridades claras, con IA acelerando el análisis."
+  },
+  "/metodo-cira/seleccion-de-soluciones": {
+    "title": "Selección de Soluciones: ERP, CRM, HCM | Cyrrus",
+    "description": "Elegimos con usted la solución correcta — ERP, CRM, HCM, ciberseguridad, nube — sin sesgo de proveedor, basados en sus procesos reales."
+  },
+  "/metodo-cira/seleccion-de-soluciones/tecnologias-maduras": {
+    "title": "Selección de Tecnologías Maduras: ERP, CRM, HCM | Cyrrus",
+    "description": "Le ayudamos a elegir el ERP, CRM, HCM o aplicaciones de negocio correctas para su empresa: evaluación agnóstica de proveedores, criterios objetivos y sin sesgo comercial."
+  },
+  "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas": {
+    "title": "Selección de Tecnologías Avanzadas: Automatización e IA | Cyrrus",
+    "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
+  },
+  "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica": {
+    "title": "Infraestructura Tecnológica: Ciberseguridad y Nube | Cyrrus",
+    "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor."
+  },
+  "/metodo-cira/gestion-de-proyectos": {
+    "title": "Gerencia de Proyectos e Implementación | Cyrrus",
+    "description": "PMO externo para ejecutar su proyecto de transformación a tiempo y sin sobrecostos, desde el kickoff hasta el go-live."
+  },
+  "/metodo-cira/gestion-del-cambio": {
+    "title": "Gestión del Cambio y Capacitación | Cyrrus",
+    "description": "Logramos que su equipo adopte la nueva solución: gestión del cambio, capacitación y adopción de IA generativa para alta gerencia."
+  },
+  "/intelligence-lab": {
+    "title": "Gobierno de IA Corporativo | Cyrrus Intelligence Lab",
+    "description": "Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que sostiene las 4 fases del método CIRA."
+  },
+  "/intelligence-lab/automatizaciones-desarrollo": {
+    "title": "Automatización y Agentes IA | Cyrrus",
+    "description": "Construimos automatizaciones de procesos y desarrollos a la medida con inteligencia artificial, integrados a su arquitectura empresarial existente."
+  },
+  "/intelligence-lab/arquitectura-de-ia": {
+    "title": "Arquitectura de IA | Cyrrus",
+    "description": "Diseñamos la arquitectura técnica que conecta modelos, datos y sistemas existentes de forma segura y escalable, evitando la proliferación descontrolada de herramientas de IA."
+  },
+  "/intelligence-lab/gobierno-de-ia": {
+    "title": "Gobierno de IA | Cyrrus",
+    "description": "Políticas, roles y controles claros sobre cómo se usa la inteligencia artificial dentro de su organización — quién decide, quién audita y qué datos pueden tocarse."
+  },
+  "/leadership-academy": {
+    "title": "Leadership Academy | Cyrrus",
+    "description": "Cyrrus Leadership Academy: gestión del cambio, capacitación organizacional y adopción de IA generativa para equipos directivos."
+  },
+  "/leadership-academy/ia-para-directivos": {
+    "title": "Taller de IA para Directivos | Leadership Academy | Cyrrus",
+    "description": "Taller práctico para que directivos tomen decisiones informadas sobre inteligencia artificial, sin depender de que el área técnica traduzca cada concepto."
+  },
+  "/leadership-academy/innovacion-empresarial": {
+    "title": "Taller de Innovación Empresarial | Leadership Academy | Cyrrus",
+    "description": "Metodologías para priorizar iniciativas de innovación con criterio de negocio, no de novedad tecnológica."
+  },
+  "/leadership-academy/iso-27001": {
+    "title": "Capacitación ISO 27001 para Empresas | Leadership Academy | Cyrrus",
+    "description": "Fundamentos de seguridad de la información aplicados al gobierno de datos e IA de la organización."
+  },
+  "/leadership-academy/continuidad-de-negocio-drp": {
+    "title": "Taller de Continuidad de Negocio (DRP) | Leadership Academy | Cyrrus",
+    "description": "Cómo diseñar y probar planes de recuperación ante desastres que realmente se ejecutan cuando se necesitan."
+  },
+  "/leadership-academy/gestion-del-cambio-para-lideres": {
+    "title": "Gestión del Cambio para Líderes | Leadership Academy | Cyrrus",
+    "description": "Las herramientas que sostienen la fase de Adopción del método CIRA en manos de los líderes del cliente, no solo de Cyrrus."
+  },
+  "/leadership-academy/gobierno-de-datos-para-ejecutivos": {
+    "title": "Gobierno de Datos para Ejecutivos | Leadership Academy | Cyrrus",
+    "description": "Qué decisiones sobre datos le corresponden al liderazgo y cuáles pueden delegarse con controles claros."
+  },
+  "/leadership-academy/liderazgo-digital-y-toma-de-decisiones": {
+    "title": "Liderazgo Digital y Toma de Decisiones | Leadership Academy | Cyrrus",
+    "description": "Cómo liderar equipos durante una transformación sin perder el control del ritmo ni de la calidad de la ejecución."
+  },
+  "/quienes-somos": {
+    "title": "Quiénes Somos | Jackson Bohorquez, CEO | Cyrrus",
+    "description": "Conozca a Jackson Bohorquez, CEO y fundador de Cyrrus Consulting Services, creador del método CIRA para la transformación digital de empresas en LATAM."
+  },
+  "/experiencia": {
+    "title": "Experiencia | Cyrrus Consulting Services",
+    "description": "Conozca la experiencia de Cyrrus Consulting Services en consultoría estratégica y transformación digital en LATAM."
+  },
+  "/perspectivas": {
+    "title": "Perspectivas | Blog de Cyrrus Consulting Services",
+    "description": "Artículos sobre planeación estratégica, selección de software, gerencia de proyectos, gestión del cambio e IA corporativa."
+  },
+  "/contacto": {
+    "title": "Contacto | Cyrrus Consulting Services",
+    "description": "Agende una conversación estratégica con Cyrrus Consulting Services y descubra cómo la metodología CIRA puede acelerar su transformación."
+  }
+}

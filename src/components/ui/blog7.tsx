@@ -103,6 +103,9 @@ const Blog7 = ({
                   <img
                     src={post.image}
                     alt={post.title}
+                    width={400}
+                    height={240}
+                    loading="lazy"
                     className="h-full w-full object-cover object-center"
                   />
                 </a>

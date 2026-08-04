@@ -1,0 +1,34 @@
+# Cyrrus Consulting Services
+
+> Consultoría estratégica y transformación digital con inteligencia artificial en LATAM, a través de la metodología CIRA: Construir, Identificar, Realizar, Adoptar.
+
+Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación digital: define la estrategia, selecciona la solución tecnológica correcta sin sesgo de proveedor, gestiona la ejecución del proyecto como PMO externo, y asegura la adopción real por parte del equipo, con inteligencia artificial acelerando cada fase.
+
+## Método CIRA
+- [Metodología CIRA](https://www.cyrruscs.com/metodo-cira): las 4 fases del método.
+- [Planeación Estratégica](https://www.cyrruscs.com/metodo-cira/planeacion-estrategica): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
+- [Selección de Soluciones](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones): selección agnóstica de ERP, CRM, HCM, ciberseguridad y migración a la nube.
+- [Gerencia de Proyectos](https://www.cyrruscs.com/metodo-cira/gestion-de-proyectos): PMO externo para la ejecución de proyectos de implementación.
+- [Gestión del Cambio](https://www.cyrruscs.com/metodo-cira/gestion-del-cambio): adopción organizacional y capacitación.
+
+## Cyrrus Intelligence Lab
+- [Cyrrus Intelligence Lab](https://www.cyrruscs.com/intelligence-lab): gobierno de IA corporativo y arquitectura de IA empresarial.
+- [Automatización y Agentes IA](https://www.cyrruscs.com/intelligence-lab/automatizaciones-desarrollo): agentes de IA y desarrollos a la medida.
+- [Arquitectura de IA](https://www.cyrruscs.com/intelligence-lab/arquitectura-de-ia): diseño técnico que conecta modelos, datos y sistemas empresariales.
+- [Gobierno de IA](https://www.cyrruscs.com/intelligence-lab/gobierno-de-ia): políticas, roles y controles sobre el uso de IA en la organización.
+
+## Leadership Academy
+- [Leadership Academy](https://www.cyrruscs.com/leadership-academy): programas de capacitación y cambio organizacional.
+- [Taller de IA para Directivos](https://www.cyrruscs.com/leadership-academy/ia-para-directivos)
+- [Innovación Empresarial](https://www.cyrruscs.com/leadership-academy/innovacion-empresarial)
+- [ISO 27001 para Empresas](https://www.cyrruscs.com/leadership-academy/iso-27001)
+- [Continuidad de Negocio (DRP)](https://www.cyrruscs.com/leadership-academy/continuidad-de-negocio-drp)
+- [Gestión del Cambio para Líderes](https://www.cyrruscs.com/leadership-academy/gestion-del-cambio-para-lideres)
+- [Gobierno de Datos para Ejecutivos](https://www.cyrruscs.com/leadership-academy/gobierno-de-datos-para-ejecutivos)
+- [Liderazgo Digital y Toma de Decisiones](https://www.cyrruscs.com/leadership-academy/liderazgo-digital-y-toma-de-decisiones)
+
+## Otras páginas
+- [Quiénes Somos](https://www.cyrruscs.com/quienes-somos): Jackson Bohorquez, CEO y fundador de Cyrrus, creador del método CIRA.
+- [Experiencia](https://www.cyrruscs.com/experiencia): casos y trayectoria de Cyrrus.
+- [Perspectivas](https://www.cyrruscs.com/perspectivas): blog con artículos sobre estrategia, selección de software, gerencia de proyectos y gestión del cambio.
+- [Contacto](https://www.cyrruscs.com/contacto)

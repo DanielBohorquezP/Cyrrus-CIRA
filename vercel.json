@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npx playwright install --with-deps chromium && npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { SiteHeader } from "@/components/layout/site-header";
-import { PageHero } from "@/components/layout/page-hero";
-import { PhaseSection } from "@/components/sections/phase-section";
+import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import { BorderButton } from "@/components/ui/border-button";
+import { CiraSocialProof } from "@/components/sections/cira-social-proof";
+import { CiraFaq } from "@/components/sections/cira-faq";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { Button } from "@/components/ui/button";
+import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+import { CircularCarousel } from "@/components/ui/circular-carousel";
 
 const phases = [
   {
@@ -13,6 +18,8 @@ const phases = [
     title: "Construir la estrategia",
     question: "¿Hacia dónde vamos?",
     service: "Strategy",
+    href: "/metodo-cira/planeacion-estrategica",
+    ctaText: "Ver Planeación Estratégica en detalle",
     problem:
       "Se define una estrategia... pero nadie sabe cómo bajarla a la operación. Nuestra consultoría de planeación estratégica conecta la visión del negocio con un plan ejecutable, no con un documento que queda en un cajón.",
     how: "Diagnóstico profundo del negocio, definición de prioridades y hoja de ruta accionable — como CTO as a Service o CIO as a Service cuando la organización no tiene esa capacidad interna.",
@@ -25,6 +32,8 @@ const phases = [
       "CTO as a Service",
       "CIO as a Service",
     ],
+    image:
+      "/assets/decoracion/evento-planeacion-estrategica.jpeg",
   },
   {
     id: "identificar",
@@ -32,6 +41,8 @@ const phases = [
     title: "Identificar la mejor solución",
     question: "¿Con qué lo logramos?",
     service: "Select",
+    href: "/metodo-cira/seleccion-de-soluciones",
+    ctaText: "Ver Selección de Soluciones en detalle",
     problem:
       "Se compra tecnología por moda, no por ajuste real al negocio. Nuestra consultoría de selección de ERP y de software empresarial parte siempre de los requerimientos del negocio, no del catálogo del proveedor.",
     how: "Evaluación de proveedores tecnológicos 100% agnóstica, con criterios objetivos y comparables, sin sesgos comerciales hacia ninguna marca.",
@@ -45,6 +56,8 @@ const phases = [
       "evaluación de proveedores tecnológicos",
     ],
     reverse: true,
+    image:
+      "/assets/decoracion/evento-ia-tecnologia.jpeg",
   },
   {
     id: "realizar",
@@ -52,6 +65,8 @@ const phases = [
     title: "Realizar el proyecto",
     question: "¿Cómo lo ejecutamos sin fallar?",
     service: "Project Management",
+    href: "/metodo-cira/gestion-de-proyectos",
+    ctaText: "Ver Gerencia de Proyectos en detalle",
     problem:
       "El proyecto se atrasa, se sale de presupuesto, nadie asume el riesgo. Nuestra gerencia de proyectos actúa como PMO externo, con responsabilidad real sobre el resultado.",
     how: "Gobierno de proyecto, aseguramiento de calidad y gestión de riesgo activa durante toda la ejecución — no solo reportes de estado.",
@@ -64,6 +79,8 @@ const phases = [
       "PMO externo",
       "aseguramiento de calidad de proyectos",
     ],
+    image:
+      "/assets/decoracion/evento-rol-del-cio.jpeg",
   },
   {
     id: "adoptar",
@@ -71,6 +88,8 @@ const phases = [
     title: "Adoptar el cambio",
     question: "¿Cómo hacemos que se quede?",
     service: "Change Management",
+    href: "/metodo-cira/gestion-del-cambio",
+    ctaText: "Ver Gestión del Cambio en detalle",
     problem:
       "El sistema queda instalado, pero el equipo no lo adopta. Nuestra gestión del cambio organizacional trabaja la adopción desde el día uno del proyecto, no como una actividad de cierre.",
     how: "Gestión del cambio integrada a la ejecución, con foco en minimizar riesgos en transformación digital derivados de la resistencia al cambio.",
@@ -84,54 +103,141 @@ const phases = [
       "minimizar riesgos en transformación digital",
     ],
     reverse: true,
+    image:
+      "/assets/decoracion/evento-gestion-del-cambio.jpeg",
   },
 ];
 
+const stickyContent = phases.map((p) => ({
+  title: p.title,
+  description: `${p.problem} ${p.how}`,
+  content: (
+    <div
+      className="relative flex h-full w-full flex-col justify-between overflow-hidden p-6"
+      style={{
+        backgroundImage: `linear-gradient(to top, rgba(6,17,41,0.92), rgba(6,17,41,0.4)), url(${p.image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="flex items-center gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan text-lg font-bold text-navy">
+          {p.letter}
+        </span>
+        <span className="text-xs font-semibold uppercase tracking-wider text-white/80">
+          {p.service}
+        </span>
+      </div>
+      <div>
+        <p className="text-sm leading-relaxed text-white/90">{p.outcome}</p>
+        <BorderButton asChild variant="light" size="sm" className="mt-4" dot>
+          <Link to={p.href}>
+            {p.ctaText}
+          </Link>
+        </BorderButton>
+      </div>
+    </div>
+  ),
+}));
+
 export default function MetodoCira() {
   usePageMeta({
-    title: "Método CIRA | Cyrrus Consulting Services",
+    title: "Consultoría de Planeación Estratégica | Método CIRA | Cyrrus",
     description:
       "CIRA: Construir, Identificar, Realizar, Adoptar. El ciclo completo de transformación empresarial, con inteligencia artificial acelerando cada fase — consultoría de planeación estratégica, selección de software, PMO externo y gestión del cambio.",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        serviceType: "Consultoría de planeación estratégica",
+        name: "Método CIRA",
+        provider: { "@id": "https://www.cyrruscs.com/#organization" },
+        description:
+          "Ciclo completo de consultoría estratégica: Construir, Identificar, Realizar, Adoptar, con inteligencia artificial acelerando cada fase.",
+        areaServed: "LATAM",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://www.cyrruscs.com/metodo-cira#faq",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Duración por fase",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Depende del alcance y tamaño de la organización, pero como referencia: Construir (estrategia) suele tomar de 4 a 8 semanas, Identificar (selección de solución) de 6 a 12 semanas, Realizar (proyecto) varía según el proyecto ejecutado, y Adoptar (cambio) se trabaja de forma transversal desde el día uno.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Contratación por fase, no todo o nada",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Cada fase — Strategy, Select, Project Management y Change Management — se contrata de forma independiente. La mayoría de nuestros clientes empieza por una sola fase y expande el alcance cuando ve el resultado.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Ya eligieron proveedor y no están seguros",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Evaluamos la decisión con los mismos criterios objetivos, incluso si el proceso ya empezó. Somos 100% agnósticos: no tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM u otras soluciones empresariales.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Adopción, no otro piloto abandonado",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "La IA se mide con la misma disciplina de gobierno que el resto del método — no es una capa aparte. Acelera tareas dentro de cada fase: diagnóstico en Construir, evaluación paralela de proveedores en Identificar, monitoreo de riesgo en tiempo real en Realizar, y medición continua de adopción en Adoptar.",
+            },
+          },
+        ],
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.cyrruscs.com/" },
+          { "@type": "ListItem", position: 2, name: "Método CIRA", item: "https://www.cyrruscs.com/metodo-cira" },
+        ],
+      },
+    ],
   });
 
   return (
     <>
       <SiteHeader />
-      <PageHero
-        eyebrow="El qué"
-        title="CIRA no es un acrónimo decorativo. Es el ciclo completo de su transformación."
-        description="Le da a Cyrrus una razón de ser que no depende de una tecnología de turno: vendemos el ciclo completo — Construir, Identificar, Realizar, Adoptar — con inteligencia artificial acelerando cada tramo."
+      <IntelligenceLabHero
+        eyebrow="Método CIRA"
+        title="Consultoría de planeación estratégica: el ciclo completo de su transformación"
+        description="Cuatro fases de transformación, cuatro proveedores distintos, ningún responsable del resultado completo. Método CIRA es un solo equipo a cargo del ciclo entero — de la estrategia a la adopción — con inteligencia artificial acelerando cada tramo."
+        showVisual={false}
+        visual={
+          <CircularCarousel
+            items={phases.map((p) => ({
+              id: p.id,
+              tag: p.letter,
+              title: p.title.split(" ")[0],
+              description: p.outcome,
+            }))}
+          />
+        }
       >
-        <div className="flex flex-wrap gap-3">
-          {phases.map((p) => (
-            <a
-              key={p.id}
-              href={`#${p.id}`}
-              className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
-            >
-              {p.letter} — {p.title}
-            </a>
-          ))}
+        <span className="inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-cyan backdrop-blur-sm">
+          CIRA
+        </span>
+        <div className="mt-6">
+          <ContactCtaButton variant="light" />
         </div>
-      </PageHero>
+      </IntelligenceLabHero>
 
-      {phases.map((phase) => (
-        <PhaseSection key={phase.id} {...phase} />
-      ))}
+      <StickyScroll content={stickyContent} />
 
-      <section className="w-full bg-background py-16 text-center">
-        <Button
-          size="lg"
-          className="bg-navy text-white hover:bg-navy/90"
-          onClick={() =>
-            document
-              .getElementById("construir")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          Volver al inicio del método
-        </Button>
-      </section>
+      <CiraSocialProof />
+
+      <CiraFaq />
 
       <FinalCta />
       <Footer />
