@@ -18,6 +18,7 @@ export default function Perspectivas() {
 
       <Blog7
         tagline="Perspectivas"
+        headingAs="h1"
         heading="Blog de transformación digital, gobierno de IA y gestión del cambio"
         description="El espacio editorial de Cyrrus: análisis sobre por qué fracasan los proyectos de transformación digital, cómo elegir una consultora confiable, y el pensamiento detrás del método CIRA. Estos son los primeros temas en desarrollo."
         buttonText="¿Quiere sugerir un tema?"
