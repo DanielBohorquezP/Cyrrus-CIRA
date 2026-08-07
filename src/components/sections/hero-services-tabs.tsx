@@ -23,7 +23,7 @@ const panels: TabPanel[] = [
     href: "/intelligence-lab",
     buttonText: "Conocer Cyrrus Intelligence Lab",
     image:
-      "/assets/decoracion/Cyrrus.png",
+      "/assets/decoracion/Cyrrus.jpg",
   },
   {
     id: "gestion-del-cambio",

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
 import Home from "@/pages/Home";
@@ -22,6 +23,28 @@ import Cookies from "@/pages/Cookies";
 import { CookieConsent } from "@/components/layout/cookie-consent";
 
 export default function App() {
+  useEffect(() => {
+    // Warm the Intelligence Lab 3D runtime during idle time so it's already
+    // cached by the time the user navigates there, instead of only starting
+    // the (large) download once that page mounts.
+    const connection = (navigator as { connection?: { saveData?: boolean; effectiveType?: string } })
+      .connection;
+    if (connection?.saveData || connection?.effectiveType === "2g") return;
+
+    const idle =
+      typeof window.requestIdleCallback === "function"
+        ? window.requestIdleCallback(() => import("@splinetool/react-spline"), { timeout: 4000 })
+        : window.setTimeout(() => import("@splinetool/react-spline"), 2000);
+
+    return () => {
+      if (typeof window.requestIdleCallback === "function") {
+        window.cancelIdleCallback(idle as number);
+      } else {
+        window.clearTimeout(idle as number);
+      }
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />

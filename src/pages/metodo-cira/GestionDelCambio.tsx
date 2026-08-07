@@ -260,7 +260,7 @@ export default function GestionDelCambio() {
       />
 
       <PageFeatureImage
-        src="/assets/decoracion/Trabajo.png"
+        src="/assets/decoracion/Trabajo.jpg"
         alt="Consultor de Cyrrus trabajando en un plan de adopción del cambio"
         caption="Acompañamiento práctico en cada sesión de trabajo, no solo diapositivas."
       />

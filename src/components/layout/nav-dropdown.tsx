@@ -5,6 +5,15 @@ import type { NavChild, NavItem } from "@/lib/nav-config";
 import { cn } from "@/lib/utils";
 import { ComingSoon } from "@/components/ui/coming-soon";
 
+let splinePrefetched = false;
+function prefetchIntelligenceLabVisual() {
+  if (splinePrefetched) return;
+  splinePrefetched = true;
+  // Kick off the (large) 3D runtime bundle as soon as the user shows intent
+  // to visit Intelligence Lab, so it's already cached by the time they land.
+  import("@splinetool/react-spline");
+}
+
 interface NavDropdownProps {
   item: NavItem;
   variant: "dark" | "light";
@@ -197,7 +206,10 @@ export function NavDropdown({ item, variant }: NavDropdownProps) {
   return (
     <div
       className="relative"
-      onMouseEnter={() => setOpen(true)}
+      onMouseEnter={() => {
+        setOpen(true);
+        if (item.href === "/intelligence-lab") prefetchIntelligenceLabVisual();
+      }}
       onMouseLeave={() => setOpen(false)}
     >
       <Link
@@ -208,7 +220,10 @@ export function NavDropdown({ item, variant }: NavDropdownProps) {
         )}
         aria-haspopup="true"
         aria-expanded={open}
-        onFocus={() => setOpen(true)}
+        onFocus={() => {
+          setOpen(true);
+          if (item.href === "/intelligence-lab") prefetchIntelligenceLabVisual();
+        }}
         onBlur={(e) => {
           if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(false);
         }}
