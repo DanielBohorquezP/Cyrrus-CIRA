@@ -4,6 +4,8 @@ export interface WorkshopEntry {
   eyebrow: string;
   intro: string;
   body: string[];
+  /** Not yet launched — keep out of search indexes until content/dates are finalized. */
+  comingSoon?: boolean;
 }
 
 export const workshops: WorkshopEntry[] = [
@@ -17,6 +19,7 @@ export const workshops: WorkshopEntry[] = [
       "Un taller práctico para que directivos entiendan qué preguntar, qué validar y qué riesgos evaluar antes de aprobar cualquier iniciativa de IA — sin necesidad de formación técnica previa.",
       "Se conecta directamente con el gobierno de IA corporativo que diseñamos en Cyrrus Intelligence Lab, para que la capacitación del liderazgo y la arquitectura técnica hablen el mismo idioma.",
     ],
+    comingSoon: true,
   },
   {
     slug: "innovacion-empresarial",
@@ -28,6 +31,7 @@ export const workshops: WorkshopEntry[] = [
       "Trabajamos con el equipo directivo un marco de priorización que evita perseguir tendencias y en cambio conecta cada iniciativa de innovación con impacto medible en el negocio.",
       "El taller se apoya en el mismo enfoque de diagnóstico que usamos en la fase de Planeación Estratégica del método CIRA.",
     ],
+    comingSoon: true,
   },
   {
     slug: "iso-27001",
@@ -39,6 +43,7 @@ export const workshops: WorkshopEntry[] = [
       "Preparamos a los equipos de liderazgo y de TI en los fundamentos de ISO 27001, con foco en cómo aplican directamente al gobierno de datos y de inteligencia artificial de la empresa.",
       "Complementa la evaluación de soluciones de ciberseguridad que hacemos en la fase de Selección de Soluciones del método CIRA.",
     ],
+    comingSoon: true,
   },
   {
     slug: "continuidad-de-negocio-drp",
@@ -50,6 +55,7 @@ export const workshops: WorkshopEntry[] = [
       "Un plan de continuidad de negocio que nunca se ha probado no es un plan. Este taller lleva a los equipos a diseñar y ensayar su plan de recuperación ante desastres (DRP) con escenarios reales.",
       "Ideal para organizaciones que ya migraron o están migrando infraestructura crítica a la nube.",
     ],
+    comingSoon: true,
   },
   {
     slug: "gestion-del-cambio-para-lideres",
@@ -61,6 +67,7 @@ export const workshops: WorkshopEntry[] = [
       "Formamos a los líderes internos del cliente en las mismas herramientas de gestión del cambio que aplicamos durante un proyecto, para que la adopción se sostenga después de que Cyrrus se retire.",
       "Este taller es la extensión natural de la fase de Adopción del método CIRA hacia el equipo de liderazgo interno.",
     ],
+    comingSoon: true,
   },
   {
     slug: "gobierno-de-datos-para-ejecutivos",
@@ -72,6 +79,7 @@ export const workshops: WorkshopEntry[] = [
       "Un taller para que el liderazgo entienda su rol real en el gobierno de datos: qué debe decidir personalmente, qué puede delegar, y con qué controles hacerlo con confianza.",
       "Se conecta con la arquitectura de IA empresarial que definimos en Cyrrus Intelligence Lab.",
     ],
+    comingSoon: true,
   },
   {
     slug: "liderazgo-digital-y-toma-de-decisiones",
@@ -83,6 +91,7 @@ export const workshops: WorkshopEntry[] = [
       "Trabajamos con el equipo directivo las decisiones críticas de ritmo, priorización y calidad que determinan si un proyecto de transformación digital llega a buen puerto.",
       "Un cierre natural para líderes que ya pasaron por los talleres de IA, innovación y gestión del cambio de Leadership Academy.",
     ],
+    comingSoon: true,
   },
 ];
 

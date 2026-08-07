@@ -20,6 +20,7 @@ export default function CursoDetalle() {
   usePageMeta({
     title: meta?.title ?? entry?.title ?? "Leadership Academy | Cyrrus",
     description: meta?.description ?? entry?.intro ?? "",
+    noindex: entry?.comingSoon,
     jsonLd: entry
       ? [
           {

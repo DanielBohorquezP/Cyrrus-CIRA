@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import routeMeta from "@/lib/route-meta.json";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
@@ -137,21 +138,34 @@ const stickyContent = phases.map((p) => ({
   ),
 }));
 
+const meta = routeMeta["/metodo-cira"];
+
 export default function MetodoCira() {
   usePageMeta({
-    title: "Consultoría de Planeación Estratégica | Método CIRA | Cyrrus",
-    description:
-      "CIRA: Construir, Identificar, Realizar, Adoptar. El ciclo completo de transformación empresarial, con inteligencia artificial acelerando cada fase — consultoría de planeación estratégica, selección de software, PMO externo y gestión del cambio.",
+    title: meta.title,
+    description: meta.description,
     jsonLd: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        serviceType: "Consultoría de planeación estratégica",
+        serviceType: "Consultoría de transformación digital",
         name: "Método CIRA",
         provider: { "@id": "https://www.cyrruscs.com/#organization" },
-        description:
-          "Ciclo completo de consultoría estratégica: Construir, Identificar, Realizar, Adoptar, con inteligencia artificial acelerando cada fase.",
+        description: meta.description,
         areaServed: "LATAM",
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Fases del Método CIRA",
+          itemListElement: phases.map((p, i) => ({
+            "@type": "Offer",
+            position: i + 1,
+            itemOffered: {
+              "@type": "Service",
+              name: p.title,
+              url: `https://www.cyrruscs.com${p.href}`,
+            },
+          })),
+        },
       },
       {
         "@context": "https://schema.org",
@@ -208,8 +222,8 @@ export default function MetodoCira() {
       <SiteHeader />
       <IntelligenceLabHero
         eyebrow="Método CIRA"
-        title="Consultoría de planeación estratégica: el ciclo completo de su transformación"
-        description="Cuatro fases de transformación, cuatro proveedores distintos, ningún responsable del resultado completo. Método CIRA es un solo equipo a cargo del ciclo entero — de la estrategia a la adopción — con inteligencia artificial acelerando cada tramo."
+        title="¿Qué es el Método CIRA? El ciclo completo de su transformación"
+        description="Método CIRA es la metodología propia de Cyrrus que unifica las cuatro fases de transformación digital — Construir, Identificar, Realizar, Adoptar — bajo un solo equipo responsable de principio a fin, con inteligencia artificial acelerando cada fase."
         showVisual={false}
         visual={
           <CircularCarousel

@@ -12,9 +12,11 @@ interface PageMeta {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   /** Optional page-specific social share image (absolute URL). Falls back to the site default. */
   image?: string;
+  /** Set true to keep an unfinished/placeholder page out of search indexes. */
+  noindex?: boolean;
 }
 
-export function usePageMeta({ title, description, jsonLd, image }: PageMeta) {
+export function usePageMeta({ title, description, jsonLd, image, noindex }: PageMeta) {
   const { pathname } = useLocation();
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : undefined;
   const jsonLdKey = jsonLdArray ? JSON.stringify(jsonLdArray) : undefined;
@@ -42,6 +44,18 @@ export function usePageMeta({ title, description, jsonLd, image }: PageMeta) {
     }
     canonicalLink.setAttribute("href", canonicalUrl);
 
+    let robotsMeta = document.querySelector('meta[name="robots"]');
+    const previousRobots = robotsMeta?.getAttribute("content") ?? null;
+    const hadRobotsMeta = !!robotsMeta;
+    if (noindex) {
+      if (!robotsMeta) {
+        robotsMeta = document.createElement("meta");
+        robotsMeta.setAttribute("name", "robots");
+        document.head.appendChild(robotsMeta);
+      }
+      robotsMeta.setAttribute("content", "noindex, follow");
+    }
+
     const ogTagConfig: Array<[string, string]> = [
       ["og:title", title],
       ["og:description", description],
@@ -57,6 +71,23 @@ export function usePageMeta({ title, description, jsonLd, image }: PageMeta) {
         document.head.appendChild(el);
       }
       previousOg.push({ el, value: el.getAttribute("content") ?? "" });
+      el.setAttribute("content", content);
+    }
+
+    const twitterTagConfig: Array<[string, string]> = [
+      ["twitter:title", title],
+      ["twitter:description", description],
+      ["twitter:image", image ?? DEFAULT_OG_IMAGE],
+    ];
+    const previousTwitter: Array<{ el: Element; value: string }> = [];
+    for (const [name, content] of twitterTagConfig) {
+      let el = document.querySelector(`meta[name="${name}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("name", name);
+        document.head.appendChild(el);
+      }
+      previousTwitter.push({ el, value: el.getAttribute("content") ?? "" });
       el.setAttribute("content", content);
     }
 
@@ -76,7 +107,17 @@ export function usePageMeta({ title, description, jsonLd, image }: PageMeta) {
       document.title = previousTitle;
       descriptionMeta?.setAttribute("content", previousDescription);
       canonicalLink?.setAttribute("href", previousCanonical);
+      if (noindex) {
+        if (hadRobotsMeta && previousRobots !== null) {
+          robotsMeta?.setAttribute("content", previousRobots);
+        } else {
+          robotsMeta?.remove();
+        }
+      }
       for (const { el, value } of previousOg) {
+        el.setAttribute("content", value);
+      }
+      for (const { el, value } of previousTwitter) {
         el.setAttribute("content", value);
       }
       for (const script of scripts) {
@@ -84,5 +125,5 @@ export function usePageMeta({ title, description, jsonLd, image }: PageMeta) {
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [title, description, jsonLdKey, canonicalUrl]);
+  }, [title, description, jsonLdKey, canonicalUrl, noindex]);
 }
