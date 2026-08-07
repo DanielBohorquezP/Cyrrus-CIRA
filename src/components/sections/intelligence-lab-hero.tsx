@@ -63,10 +63,7 @@ export function IntelligenceLabHero({
           )}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+        <div
           className={
             showVisual || visual
               ? "relative h-[320px] md:h-[420px]"
@@ -90,7 +87,7 @@ export function IntelligenceLabHero({
           ) : (
             visual ?? <div className="h-full w-full" />
           )}
-        </motion.div>
+        </div>
       </div>
     </AnimatedNavyBackground>
   );
