@@ -10,9 +10,11 @@ interface RevealProps {
 }
 
 const variants: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  // No opacity here on purpose: content must stay visible even if this
+  // JS never runs (slow load, prerendered HTML before hydration, etc.) —
+  // only the position animates, so nothing ever depends on JS to appear.
+  hidden: { y: 24 },
   visible: {
-    opacity: 1,
     y: 0,
     transition: { duration: 0.6, ease: "easeOut" },
   },
@@ -63,9 +65,10 @@ export function RevealGroup({
 }
 
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 20 },
+  // Same reasoning as the Reveal variants above: never hide content behind
+  // opacity, only offset its position.
+  hidden: { y: 20 },
   visible: {
-    opacity: 1,
     y: 0,
     transition: { duration: 0.5, ease: "easeOut" },
   },
