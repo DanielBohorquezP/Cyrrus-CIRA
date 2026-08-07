@@ -82,7 +82,7 @@ export const solutions: SolutionEntry[] = [
     eyebrow: "Selección de Soluciones — Tecnologías Avanzadas",
     intro:
       "Las nuevas tecnologías solo generan valor cuando responden a una necesidad real del negocio. Nuestro papel consiste en identificar dónde pueden generar el mayor impacto y cuáles son las alternativas más adecuadas para cada organización.",
-    image: "/assets/decoracion/1785872413166.jpg",
+    image: "/assets/decoracion/Cascosss.jpg",
     items: [
       {
         icon: Sparkles,
