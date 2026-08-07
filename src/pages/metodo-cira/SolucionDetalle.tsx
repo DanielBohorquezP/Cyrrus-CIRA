@@ -92,6 +92,7 @@ export default function SolucionDetalle() {
                 height={600}
                 loading="lazy"
                 className="h-64 w-full rounded-2xl object-cover md:h-full"
+                style={{ objectPosition: entry.imagePosition ?? "center" }}
               />
             </Reveal>
             <div className="md:col-span-8">

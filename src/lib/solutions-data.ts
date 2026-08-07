@@ -32,6 +32,8 @@ export interface SolutionEntry {
   eyebrow: string;
   intro: string;
   image: string;
+  /** CSS object-position for the detail image; defaults to "center" when omitted. */
+  imagePosition?: string;
   stat?: SolutionStat;
   items: SolutionItem[];
 }
@@ -83,6 +85,7 @@ export const solutions: SolutionEntry[] = [
     intro:
       "Las nuevas tecnologías solo generan valor cuando responden a una necesidad real del negocio. Nuestro papel consiste en identificar dónde pueden generar el mayor impacto y cuáles son las alternativas más adecuadas para cada organización.",
     image: "/assets/decoracion/Cascosss.jpg",
+    imagePosition: "center 42%",
     items: [
       {
         icon: Sparkles,
