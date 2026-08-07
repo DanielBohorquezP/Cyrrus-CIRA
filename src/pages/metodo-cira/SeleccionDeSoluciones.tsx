@@ -115,6 +115,21 @@ const servicios = [
   "Apoyo en selección y contratación de proveedores",
 ];
 
+const proceso = [
+  { title: "Kickoff Estratégico", description: "Definir alcance y objetivos" },
+  { title: "Descubrimiento del Negocio", description: "Comprender la estrategia y necesidades" },
+  { title: "Preparación del RFP", description: "Crear un RFP estructurado" },
+  { title: "Selección de Participantes", description: "Identificar proveedores calificados" },
+  { title: "Invitación y Kickoff con Proveedores", description: "Presentar el proyecto a los proveedores" },
+  { title: "Entendimiento del Negocio", description: "Asegurar que las propuestas respondan a las necesidades" },
+  { title: "Recepción y Evaluación de Propuestas", description: "Analizar propuestas desde múltiples perspectivas" },
+  { title: "Presentaciones Ejecutivas y Demostraciones", description: "Evaluar propuestas a través de presentaciones" },
+  { title: "Referenciación y Validación", description: "Validar la experiencia del proveedor" },
+  { title: "Evaluación Integral", description: "Consolidar evaluaciones en una matriz" },
+  { title: "Informe Ejecutivo", description: "Presentar hallazgos y recomendaciones" },
+  { title: "Acompañamiento a la Contratación", description: "Apoyar la negociación y contratación" },
+];
+
 export default function SeleccionDeSoluciones() {
   usePageMeta({
     title: meta.title,
@@ -314,6 +329,35 @@ export default function SeleccionDeSoluciones() {
               </div>
             ))}
           </Reveal>
+        </div>
+      </section>
+
+      <section className="w-full bg-light-blue/40 py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="mx-auto max-w-2xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+              Proceso
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              Las 12 etapas de una selección de soluciones sin fricciones
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {proceso.map((step, index) => (
+              <motion.div
+                key={step.title}
+                variants={staggerItem}
+                className="rounded-2xl border border-border bg-card p-6"
+              >
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy text-sm font-semibold text-cyan">
+                  {index + 1}
+                </span>
+                <h3 className="mt-4 text-base font-semibold text-navy">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray">{step.description}</p>
+              </motion.div>
+            ))}
+          </RevealGroup>
         </div>
       </section>
 
