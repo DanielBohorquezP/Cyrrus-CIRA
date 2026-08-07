@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -101,41 +101,31 @@ const Blog7 = ({
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {posts.map((post) => (
             <Card key={post.id} className="grid grid-rows-[auto_auto_1fr_auto]">
-              <div className="aspect-[16/9] w-full">
-                <a
-                  href={post.url}
-                  target="_blank"
-                  className="transition-opacity duration-200 fade-in hover:opacity-70"
-                >
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    width={400}
-                    height={240}
-                    loading="lazy"
-                    className="h-full w-full object-cover object-center"
-                  />
-                </a>
+              <div className="relative aspect-[16/9] w-full">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  width={400}
+                  height={240}
+                  loading="lazy"
+                  className="h-full w-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-navy/55" aria-hidden="true" />
+                <span className="absolute inset-0 flex items-center justify-center px-4 text-center text-sm font-semibold uppercase tracking-wider text-white">
+                  Próximamente
+                </span>
               </div>
               <CardHeader>
-                <h3 className="text-lg font-semibold hover:underline md:text-xl">
-                  <a href={post.url} target="_blank">
-                    {post.title}
-                  </a>
-                </h3>
+                <h3 className="text-lg font-semibold md:text-xl">{post.title}</h3>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{post.summary}</p>
               </CardContent>
               <CardFooter>
-                <a
-                  href={post.url}
-                  target="_blank"
-                  className="flex items-center text-foreground hover:underline"
-                >
-                  Read more
-                  <ArrowRight className="ml-2 size-4" />
-                </a>
+                <span className="flex items-center text-muted-foreground">
+                  <Clock className="mr-2 size-4" />
+                  Se publica en {post.published}
+                </span>
               </CardFooter>
             </Card>
           ))}
