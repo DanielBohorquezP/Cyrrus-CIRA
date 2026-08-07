@@ -7,6 +7,24 @@ import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
 import { motion } from "framer-motion";
 import { LinkedInIcon } from "@/components/ui/social-media";
 
+const milestones = [
+  {
+    src: "/assets/decoracion/Pa%20y%20yo.jpg",
+    alt: "Constitución de Cyrrus Consulting Services S.A.S.",
+    caption: "El día de la constitución legal de Cyrrus Consulting Services.",
+  },
+  {
+    src: "/assets/decoracion/Equipo%20experienica.jpg",
+    alt: "Equipo de Cyrrus Consulting Services",
+    caption: "El equipo que ejecuta el método CIRA todos los días.",
+  },
+  {
+    src: "/assets/decoracion/evento-foro-caribe-2030.jpeg",
+    alt: "Jackson Bohorquez en el Foro Caribe 2030",
+    caption: "Compartiendo la visión de Cyrrus en foros regionales.",
+  },
+];
+
 const credentials = [
   "Fundador y CEO de Cyrrus Consulting Services",
   "Creador del método CIRA: Construir, Identificar, Realizar, Adoptar",
@@ -118,6 +136,37 @@ export default function QuienesSomos() {
               </RevealGroup>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-light-blue/40 py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+              Momentos clave
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              La historia detrás de Cyrrus
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {milestones.map((item) => (
+              <motion.figure key={item.src} variants={staggerItem}>
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  width={480}
+                  height={320}
+                  loading="lazy"
+                  className="h-56 w-full rounded-2xl object-cover object-top"
+                />
+                <figcaption className="mt-3 text-sm text-gray">
+                  {item.caption}
+                </figcaption>
+              </motion.figure>
+            ))}
+          </RevealGroup>
         </div>
       </section>
 

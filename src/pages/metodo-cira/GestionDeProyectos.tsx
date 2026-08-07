@@ -140,7 +140,15 @@ export default function GestionDeProyectos() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-5">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <img
+              src="/assets/decoracion/IMG_20200313_092713184.jpg"
+              alt="Consultor de Cyrrus presentando metodología de gerencia de proyectos"
+              width={640}
+              height={427}
+              loading="lazy"
+              className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-72"
+            />
+            <span className="mt-6 block text-sm font-semibold uppercase tracking-wider text-blue">
               Gobierno de proyecto
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
@@ -206,6 +214,16 @@ export default function GestionDeProyectos() {
                 </motion.div>
               );
             })}
+            <motion.div variants={staggerItem} className="overflow-hidden rounded-2xl sm:col-span-2">
+              <img
+                src="/assets/decoracion/IMG_20230228_091017.jpg"
+                alt="Presentación de gerencia de proyectos de Cyrrus"
+                width={640}
+                height={220}
+                loading="lazy"
+                className="h-full min-h-[180px] w-full object-cover"
+              />
+            </motion.div>
           </RevealGroup>
 
           <Reveal delay={0.15} className="mt-14 text-center">

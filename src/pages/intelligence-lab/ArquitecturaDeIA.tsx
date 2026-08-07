@@ -6,6 +6,7 @@ import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
+import { Reveal } from "@/components/ui/reveal";
 import { Database, Link2, TrendingUp } from "lucide-react";
 
 const meta = routeMeta["/intelligence-lab/arquitectura-de-ia"];
@@ -97,6 +98,10 @@ export default function ArquitecturaDeIA() {
         eyebrow="Cyrrus Intelligence Lab"
         title="Arquitectura de IA"
         description="Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura técnica que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que la proliferación de herramientas sueltas se vuelva imposible de deshacer."
+        image={{
+          src: "/assets/decoracion/1785866224006.jpg",
+          alt: "Pantalla de trabajo con modelos de IA y datos conectados en Cyrrus",
+        }}
       />
 
       <IncludedGrid
@@ -106,17 +111,29 @@ export default function ArquitecturaDeIA() {
       />
 
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 md:px-12 space-y-6 text-lg leading-relaxed text-gray">
-          <p>
-            Cada área compra su propia herramienta de IA sin visibilidad de lo que ya existe en el resto de la
-            organización. El resultado no es innovación: es una colección de sistemas aislados, sin gobierno de
-            datos común y con riesgo real de seguridad.
-          </p>
-          <p>
-            Diseñamos la capa de arquitectura que conecta esos modelos, datos y sistemas de forma segura y
-            escalable — la misma que sostiene, por debajo, la automatización de procesos y el gobierno de IA
-            que trabajamos en Cyrrus Intelligence Lab.
-          </p>
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
+          <Reveal className="md:col-span-5">
+            <img
+              src="/assets/decoracion/1785866223775.jpg"
+              alt="Escritorio con monitores mostrando la plataforma de Cyrrus"
+              width={480}
+              height={560}
+              loading="lazy"
+              className="h-64 w-full rounded-2xl object-cover md:h-full"
+            />
+          </Reveal>
+          <Reveal delay={0.1} className="space-y-6 text-lg leading-relaxed text-gray md:col-span-7">
+            <p>
+              Cada área compra su propia herramienta de IA sin visibilidad de lo que ya existe en el resto de la
+              organización. El resultado no es innovación: es una colección de sistemas aislados, sin gobierno de
+              datos común y con riesgo real de seguridad.
+            </p>
+            <p>
+              Diseñamos la capa de arquitectura que conecta esos modelos, datos y sistemas de forma segura y
+              escalable — la misma que sostiene, por debajo, la automatización de procesos y el gobierno de IA
+              que trabajamos en Cyrrus Intelligence Lab.
+            </p>
+          </Reveal>
         </div>
       </section>
 

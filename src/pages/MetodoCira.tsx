@@ -33,7 +33,7 @@ const phases = [
       "CIO as a Service",
     ],
     image:
-      "/assets/decoracion/evento-planeacion-estrategica.jpeg",
+      "/assets/decoracion/Portada.jpg",
   },
   {
     id: "identificar",
@@ -57,7 +57,7 @@ const phases = [
     ],
     reverse: true,
     image:
-      "/assets/decoracion/evento-ia-tecnologia.jpeg",
+      "/assets/decoracion/evento-panel-universidad-bolivar.jpeg",
   },
   {
     id: "realizar",
@@ -80,7 +80,7 @@ const phases = [
       "aseguramiento de calidad de proyectos",
     ],
     image:
-      "/assets/decoracion/evento-rol-del-cio.jpeg",
+      "/assets/decoracion/IMG_20200313_092701647.jpg",
   },
   {
     id: "adoptar",
@@ -104,7 +104,7 @@ const phases = [
     ],
     reverse: true,
     image:
-      "/assets/decoracion/evento-gestion-del-cambio.jpeg",
+      "/assets/decoracion/1785866331023.jpg",
   },
 ];
 
@@ -121,9 +121,6 @@ const stickyContent = phases.map((p) => ({
       }}
     >
       <div className="flex items-center gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan text-lg font-bold text-navy">
-          {p.letter}
-        </span>
         <span className="text-xs font-semibold uppercase tracking-wider text-white/80">
           {p.service}
         </span>

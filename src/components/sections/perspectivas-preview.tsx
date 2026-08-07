@@ -9,7 +9,7 @@ export function PerspectivasPreview() {
       description="Análisis y contenido de autoridad sobre consultoría estratégica, gobierno de IA y gestión del cambio organizacional — las preguntas que el mercado ya está haciendo."
       buttonText="Ver todos los temas"
       buttonUrl="/perspectivas"
-      posts={upcomingTopics}
+      posts={upcomingTopics.slice(0, 4)}
     />
   );
 }

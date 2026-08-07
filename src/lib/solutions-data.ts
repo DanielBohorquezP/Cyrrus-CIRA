@@ -1,9 +1,39 @@
+import type { LucideIcon } from "lucide-react";
+import {
+  Boxes,
+  Cloud,
+  HeartHandshake,
+  Layers3,
+  LifeBuoy,
+  Link2,
+  ShieldCheck,
+  Sparkles,
+  UserCog,
+  Users,
+  Wifi,
+  Workflow,
+} from "lucide-react";
+
+export interface SolutionItem {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+export interface SolutionStat {
+  value: string;
+  description: string;
+  source: string;
+}
+
 export interface SolutionEntry {
   slug: string;
   label: string;
   eyebrow: string;
   intro: string;
-  body: string[];
+  image: string;
+  stat?: SolutionStat;
+  items: SolutionItem[];
 }
 
 export const solutions: SolutionEntry[] = [
@@ -12,10 +42,38 @@ export const solutions: SolutionEntry[] = [
     label: "Tecnologías Maduras",
     eyebrow: "Selección de Soluciones — Tecnologías Maduras",
     intro:
-      "Elegir por moda o por lo que vende el proveedor de turno es el error más costoso en transformación digital. Nuestra consultoría de selección de tecnologías maduras (ERP, CRM, HCM, aplicaciones de negocio, BI) parte de sus procesos reales, no de una demo bonita.",
-    body: [
-      "Evaluamos proveedores de forma 100% agnóstica: definimos primero los requerimientos del negocio, después comparamos opciones con criterios objetivos y medibles — funcionalidad, costo total de propiedad, escalabilidad y ajuste cultural.",
-      "El resultado: la solución correcta seleccionada en semanas, no en meses, con el riesgo de una mala decisión tecnológica minimizado desde el inicio.",
+      "Son el corazón operativo de la organización. Permiten estandarizar procesos, fortalecer la operación y crear una base sólida para crecer.",
+    image: "/assets/decoracion/1785866223529.jpg",
+    stat: {
+      value: "+70%",
+      description: "de las iniciativas ERP no alcanzan completamente los objetivos del negocio.",
+      source: "Gartner",
+    },
+    items: [
+      {
+        icon: Boxes,
+        title: "ERP",
+        description:
+          "Integramos los procesos financieros, comerciales, logísticos, productivos y administrativos sobre una plataforma preparada para acompañar el crecimiento del negocio.",
+      },
+      {
+        icon: Users,
+        title: "CRM",
+        description:
+          "Seleccionamos soluciones que fortalecen la relación con los clientes, optimizan el proceso comercial y mejoran la experiencia en cada interacción.",
+      },
+      {
+        icon: UserCog,
+        title: "HCM",
+        description:
+          "Ayudamos a identificar plataformas que potencian la gestión del talento, fortalecen el desarrollo de las personas y acompañan la evolución de la organización.",
+      },
+      {
+        icon: Layers3,
+        title: "EAM",
+        description:
+          "Seleccionamos soluciones para administrar activos físicos, optimizar el mantenimiento y mejorar la confiabilidad operacional.",
+      },
     ],
   },
   {
@@ -23,10 +81,27 @@ export const solutions: SolutionEntry[] = [
     label: "Tecnologías Avanzadas",
     eyebrow: "Selección de Soluciones — Tecnologías Avanzadas",
     intro:
-      "Automatizaciones, inteligencia artificial, blockchain, RPA y analítica avanzada solo generan valor cuando responden a un caso de uso de negocio real, no a la novedad tecnológica del momento.",
-    body: [
-      "Evaluamos su nivel de madurez de datos y procesos antes de recomendar cualquier plataforma, y comparamos opciones con criterios objetivos de escalabilidad, integración y retorno esperado — sin sesgo hacia ninguna marca.",
-      "Acompañamos la decisión hasta la implementación, conectada con Cyrrus Intelligence Lab y nuestra gestión del cambio para asegurar adopción real por parte de los equipos.",
+      "Las nuevas tecnologías solo generan valor cuando responden a una necesidad real del negocio. Nuestro papel consiste en identificar dónde pueden generar el mayor impacto y cuáles son las alternativas más adecuadas para cada organización.",
+    image: "/assets/decoracion/1785872413166.jpg",
+    items: [
+      {
+        icon: Sparkles,
+        title: "Inteligencia Artificial",
+        description:
+          "Desde asistentes inteligentes hasta modelos avanzados de analítica, identificamos oportunidades donde la tecnología puede aumentar la productividad, mejorar la toma de decisiones y acelerar la creación de valor.",
+      },
+      {
+        icon: Workflow,
+        title: "Automatización",
+        description:
+          "Seleccionamos plataformas que simplifican procesos, eliminan tareas repetitivas y permiten que las personas dediquen más tiempo a actividades estratégicas.",
+      },
+      {
+        icon: Link2,
+        title: "Blockchain",
+        description:
+          "Evaluamos soluciones para organizaciones que requieren mayores niveles de trazabilidad, confianza e intercambio seguro de información.",
+      },
     ],
   },
   {
@@ -34,13 +109,41 @@ export const solutions: SolutionEntry[] = [
     label: "Infraestructura Tecnológica",
     eyebrow: "Selección de Soluciones — Infraestructura Tecnológica",
     intro:
-      "La infraestructura empresarial — ciberseguridad, redes, nube, conectividad, continuidad y respaldo — no se resuelve comprando la herramienta más cara del mercado, sino la que responde a su nivel real de riesgo y arquitectura.",
-    body: [
-      "Evaluamos su exposición actual y arquitectura vigente, y seleccionamos las soluciones de infraestructura que corresponden a su madurez y presupuesto reales, integradas al resto de su ecosistema de TI.",
-      "Trabajamos de la mano con Cyrrus Intelligence Lab cuando la solución requiere gobierno de datos o de IA como parte del control de riesgo.",
+      "La infraestructura adecuada crea las condiciones para que el negocio opere con seguridad, disponibilidad y capacidad de crecimiento.",
+    image: "/assets/decoracion/IMG_20230227_164308.jpg",
+    items: [
+      {
+        icon: ShieldCheck,
+        title: "Ciberseguridad",
+        description:
+          "Seleccionamos soluciones para proteger la operación mediante arquitecturas modernas de seguridad, protección de identidades, gestión de dispositivos, monitoreo y respuesta ante incidentes.",
+      },
+      {
+        icon: Cloud,
+        title: "Cloud",
+        description:
+          "Acompañamos la selección de arquitecturas Cloud, Híbridas y Multicloud que aporten flexibilidad, escalabilidad y eficiencia a largo plazo.",
+      },
+      {
+        icon: Wifi,
+        title: "Conectividad",
+        description:
+          "Diseñamos y seleccionamos soluciones LAN, WLAN, WAN, SD-WAN e Internet que soporten la operación del negocio con altos niveles de disponibilidad y desempeño.",
+      },
+      {
+        icon: LifeBuoy,
+        title: "Continuidad del Negocio",
+        description:
+          "Ayudamos a definir las capacidades necesarias para proteger la operación mediante estrategias de continuidad, recuperación ante desastres y alta disponibilidad.",
+      },
     ],
   },
 ];
+
+export const solutionsClosingQuote =
+  "No ayudamos a nuestros clientes a elegir soluciones tecnológicas, los ayudamos a tomar decisiones que fortalecen y transforman su organización.";
+
+export const solutionsClosingIcon = HeartHandshake;
 
 export function getSolutionBySlug(slug: string | undefined) {
   return solutions.find((s) => s.slug === slug);

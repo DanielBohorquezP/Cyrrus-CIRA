@@ -14,6 +14,7 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
+import { PageFeatureImage } from "@/components/sections/page-feature-image";
 import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 
@@ -125,7 +126,15 @@ export default function GestionDelCambio() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-5">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <img
+              src="/assets/decoracion/evento-jackson-moderador.jpeg"
+              alt="Jackson Bohórquez moderando panel sobre liderazgo y gestión del cambio"
+              width={640}
+              height={427}
+              loading="lazy"
+              className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-72"
+            />
+            <span className="mt-6 block text-sm font-semibold uppercase tracking-wider text-blue">
               Adopción, no instalación
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
@@ -248,6 +257,12 @@ export default function GestionDelCambio() {
         eyebrow="Beneficios"
         title="Agilidad, transformación y eficiencia"
         items={benefits}
+      />
+
+      <PageFeatureImage
+        src="/assets/decoracion/Trabajo.png"
+        alt="Consultor de Cyrrus trabajando en un plan de adopción del cambio"
+        caption="Acompañamiento práctico en cada sesión de trabajo, no solo diapositivas."
       />
 
       <FinalCta />

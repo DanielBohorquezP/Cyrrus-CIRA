@@ -11,7 +11,7 @@ const panels: TabPanel[] = [
     href: "/metodo-cira",
     buttonText: "Conocer el método CIRA",
     image:
-      "/assets/decoracion/evento-planeacion-estrategica.jpeg",
+      "/assets/decoracion/IMG_20200313_092643427.jpg",
   },
   {
     id: "ia-empresarial",
@@ -23,7 +23,7 @@ const panels: TabPanel[] = [
     href: "/intelligence-lab",
     buttonText: "Conocer Cyrrus Intelligence Lab",
     image:
-      "/assets/decoracion/evento-ia-tecnologia.jpeg",
+      "/assets/decoracion/Cyrrus.png",
   },
   {
     id: "gestion-del-cambio",
@@ -35,7 +35,7 @@ const panels: TabPanel[] = [
     href: "/leadership-academy",
     buttonText: "Conocer Leadership Academy",
     image:
-      "/assets/decoracion/evento-gestion-del-cambio.jpeg",
+      "/assets/decoracion/IMG_20230228_091011.jpg",
   },
 ];
 

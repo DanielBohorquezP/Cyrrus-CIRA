@@ -50,6 +50,24 @@ const industries = [
   { name: "Salud", icon: HeartPulse, bg: "bg-cyan" },
 ];
 
+const gallery = [
+  {
+    src: "/assets/decoracion/Cesar.jpg",
+    alt: "Consultores de Cyrrus trabajando en un diagnóstico de procesos",
+    caption: "Diagnóstico de procesos en sitio con el equipo consultor.",
+  },
+  {
+    src: "/assets/decoracion/IMG_20230302_112825.jpg",
+    alt: "Equipo de Cyrrus Consulting Services",
+    caption: "El equipo de Cyrrus en Barranquilla.",
+  },
+  {
+    src: "/assets/decoracion/Evento%20mesas.jpg",
+    alt: "Cyrrus en un evento corporativo",
+    caption: "Cyrrus presente en foros y eventos del sector en toda LATAM.",
+  },
+];
+
 const team = [
   { role: "CEO & Fundador", name: "Jackson Bohorquez", photo: "/assets/decoracion/JacksonCEO1.jpeg" },
   { role: "Director de Cyrrus Intelligence Lab", name: "Daniel Bohorquez" },
@@ -137,6 +155,37 @@ export default function Experiencia() {
               ))}
             </RevealGroup>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="w-full bg-background py-24 md:py-32">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+              En acción
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              Cyrrus en el terreno
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {gallery.map((item) => (
+              <motion.figure key={item.src} variants={staggerItem}>
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  width={480}
+                  height={320}
+                  loading="lazy"
+                  className="h-56 w-full rounded-2xl object-cover object-top"
+                />
+                <figcaption className="mt-3 text-sm text-gray">
+                  {item.caption}
+                </figcaption>
+              </motion.figure>
+            ))}
+          </RevealGroup>
         </div>
       </section>
 

@@ -29,16 +29,19 @@ const solutions = [
     label: "Tecnologías Maduras",
     href: "/metodo-cira/seleccion-de-soluciones/tecnologias-maduras",
     note: "(ERP, CRM, HCM, aplicaciones de negocio, BI)",
+    image: "/assets/decoracion/1785866224286.jpg",
   },
   {
     label: "Tecnologías Avanzadas",
     href: "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas",
     note: "(Automatizaciones, Inteligencia Artificial, RPA, Analítica Avanzada)",
+    image: "/assets/decoracion/1785872413278.jpg",
   },
   {
     label: "Infraestructura Tecnológica",
     href: "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica",
     note: "(Ciberseguridad, Redes, Nube, Continuidad y Respaldo)",
+    image: "/assets/decoracion/IMG_20230705_122802.jpg",
   },
 ];
 
@@ -170,7 +173,15 @@ export default function SeleccionDeSoluciones() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-5">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <img
+              src="/assets/decoracion/Presentacion%20BEC.jpg"
+              alt="Equipo de Cyrrus evaluando propuestas de proveedores tecnológicos"
+              width={640}
+              height={427}
+              loading="lazy"
+              className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-72"
+            />
+            <span className="mt-6 block text-sm font-semibold uppercase tracking-wider text-blue">
               ¿Cómo lo hacemos?
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
@@ -297,10 +308,20 @@ export default function SeleccionDeSoluciones() {
               <motion.div key={s.href} variants={staggerItem}>
                 <Link
                   to={s.href}
-                  className="block h-full rounded-2xl border border-border bg-card p-6 transition-[border-color,background-color] duration-150 ease-out hover:border-navy hover:bg-white"
+                  className="block h-full overflow-hidden rounded-2xl border border-border bg-card transition-[border-color,background-color] duration-150 ease-out hover:border-navy hover:bg-white"
                 >
-                  <h3 className="text-lg font-semibold text-navy">{s.label}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray">{s.note}</p>
+                  <img
+                    src={s.image}
+                    alt=""
+                    width={400}
+                    height={160}
+                    loading="lazy"
+                    className="h-32 w-full object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-lg font-semibold text-navy">{s.label}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-gray">{s.note}</p>
+                  </div>
                 </Link>
               </motion.div>
             ))}

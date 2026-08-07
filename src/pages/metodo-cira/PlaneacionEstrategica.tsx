@@ -190,7 +190,15 @@ export default function PlaneacionEstrategica() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-5">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <img
+              src="/assets/decoracion/IMG_20200313_092604173.jpg"
+              alt="Consultores de Cyrrus presentando planeación estratégica en conferencia"
+              width={640}
+              height={427}
+              loading="lazy"
+              className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-72"
+            />
+            <span className="mt-6 block text-sm font-semibold uppercase tracking-wider text-blue">
               Consultoría Estratégica para CEOs
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
@@ -331,7 +339,7 @@ export default function PlaneacionEstrategica() {
             </p>
           </Reveal>
 
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4">
             {cxaas.map((role) => (
               <motion.div
                 key={role.title}
@@ -345,6 +353,16 @@ export default function PlaneacionEstrategica() {
                 <p className="mt-2 text-sm leading-relaxed text-gray">{role.description}</p>
               </motion.div>
             ))}
+            <motion.div variants={staggerItem} className="overflow-hidden rounded-2xl">
+              <img
+                src="/assets/decoracion/IMG_20230227_164810.jpg"
+                alt="Consultor senior de Cyrrus definiendo la hoja de ruta con el equipo"
+                width={320}
+                height={400}
+                loading="lazy"
+                className="h-full min-h-[220px] w-full object-cover"
+              />
+            </motion.div>
           </RevealGroup>
 
           <Reveal delay={0.15} className="mt-14 text-center">

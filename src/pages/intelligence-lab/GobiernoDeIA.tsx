@@ -6,6 +6,7 @@ import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
+import { Reveal } from "@/components/ui/reveal";
 import { FileCheck, Users, Lock } from "lucide-react";
 
 const meta = routeMeta["/intelligence-lab/gobierno-de-ia"];
@@ -97,6 +98,10 @@ export default function GobiernoDeIA() {
         eyebrow="Cyrrus Intelligence Lab"
         title="Gobierno de IA"
         description="Nadie en la organización puede explicar qué modelo tomó qué decisión, ni con qué datos. Definimos las políticas, roles y controles claros sobre cómo se usa la inteligencia artificial dentro de su empresa — quién decide, quién audita, qué datos pueden tocarse y cuáles no."
+        image={{
+          src: "/assets/decoracion/1785866224151.jpg",
+          alt: "Consultor de Cyrrus con notebook frente a pantallas de trabajo",
+        }}
       />
 
       <IncludedGrid
@@ -106,16 +111,28 @@ export default function GobiernoDeIA() {
       />
 
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 md:px-12 space-y-6 text-lg leading-relaxed text-gray">
-          <p>
-            Sin un marco de gobierno, cada iniciativa de IA queda a criterio de quien la implementó. Cuando algo
-            sale mal — un dato sensible expuesto, una decisión automatizada sin trazabilidad — no hay a quién
-            recurrir ni cómo auditar lo que pasó.
-          </p>
-          <p>
-            Este marco corre de forma transversal por debajo de las cuatro fases del método CIRA, para que cada
-            decisión de IA — desde el diagnóstico hasta la adopción — quede documentada y sea auditable.
-          </p>
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
+          <Reveal className="md:col-span-5">
+            <img
+              src="/assets/decoracion/IMG_20230228_083642.jpg"
+              alt="Consultor de Cyrrus trabajando en políticas y controles de datos"
+              width={480}
+              height={560}
+              loading="lazy"
+              className="h-64 w-full rounded-2xl object-cover md:h-full"
+            />
+          </Reveal>
+          <Reveal delay={0.1} className="space-y-6 text-lg leading-relaxed text-gray md:col-span-7">
+            <p>
+              Sin un marco de gobierno, cada iniciativa de IA queda a criterio de quien la implementó. Cuando algo
+              sale mal — un dato sensible expuesto, una decisión automatizada sin trazabilidad — no hay a quién
+              recurrir ni cómo auditar lo que pasó.
+            </p>
+            <p>
+              Este marco corre de forma transversal por debajo de las cuatro fases del método CIRA, para que cada
+              decisión de IA — desde el diagnóstico hasta la adopción — quede documentada y sea auditable.
+            </p>
+          </Reveal>
         </div>
       </section>
 

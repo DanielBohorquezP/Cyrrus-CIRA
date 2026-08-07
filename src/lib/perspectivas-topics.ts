@@ -10,7 +10,7 @@ export const upcomingTopics = [
     published: "Próximamente",
     url: "/perspectivas",
     image:
-      "/assets/decoracion/evento-rol-del-cio.jpeg",
+      "/assets/decoracion/IMG_20240822_085440_710.jpg",
   },
   {
     id: "post-2",
@@ -22,7 +22,7 @@ export const upcomingTopics = [
     published: "Próximamente",
     url: "/perspectivas",
     image:
-      "/assets/decoracion/evento-planeacion-estrategica.jpeg",
+      "/assets/decoracion/IMG-20240215-WA0022.jpg",
   },
   {
     id: "post-3",
@@ -45,7 +45,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Próximamente",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-rol-del-cio.jpeg",
+    image: "/assets/decoracion/IMG_20230228_082632.jpg",
   },
   {
     id: "post-5",
@@ -67,7 +67,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Próximamente",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-ia-tecnologia.jpeg",
+    image: "/assets/decoracion/Evento.jpg",
   },
   {
     id: "post-7",
@@ -89,7 +89,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Próximamente",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-gestion-del-cambio.jpeg",
+    image: "/assets/decoracion/IMG_20230302_112828.jpg",
   },
   {
     id: "post-9",
@@ -100,7 +100,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Próximamente",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-foro-caribe-2030.jpeg",
+    image: "/assets/decoracion/IMG_20230228_082627.jpg",
   },
   {
     id: "post-10",
@@ -111,7 +111,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Próximamente",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-jackson-moderador.jpeg",
+    image: "/assets/decoracion/Cyrrus%20panel.jpg",
   },
   {
     id: "post-11",
@@ -122,7 +122,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Próximamente",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-panel-universidad-bolivar.jpeg",
+    image: "/assets/decoracion/IMG-20240215-WA0029.jpg",
   },
   {
     id: "post-12",
@@ -155,6 +155,6 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Próximamente",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-ia-tecnologia.jpeg",
+    image: "/assets/decoracion/IMG_20240828_145233_128.jpg",
   },
 ];
