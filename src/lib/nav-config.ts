@@ -18,7 +18,7 @@ export const navItems: NavItem[] = [
     href: "/metodo-cira",
     children: [
       {
-        label: "Planeación Estratégica",
+        label: "Estrategia",
         href: "/metodo-cira/planeacion-estrategica",
         description: "Diagnóstico y hoja de ruta de negocio",
       },

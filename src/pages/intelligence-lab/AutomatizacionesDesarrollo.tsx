@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "Tenemos desarrolladores internos, ¿para qué los necesitamos?",
     answer:
-      "Trabajamos con su equipo técnico, no en su lugar. La automatización queda integrada a la arquitectura y al gobierno de IA que ya definimos, para que su equipo la pueda mantener.",
+      "Trabajamos junto a su equipo técnico, no lo reemplazamos. La automatización queda integrada a la arquitectura y al gobierno de IA que ya definimos, para que su equipo la pueda mantener.",
   },
   {
     question: "¿Cómo sabemos si el agente realmente funciona?",

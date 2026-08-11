@@ -52,7 +52,7 @@ export const upcomingTopics = [
     title: "Planeación estratégica empresarial: qué es y cómo se hace",
     summary:
       "Qué diferencia a un plan estratégico que sí se ejecuta de un documento que termina archivado, y los pasos concretos para construir uno.",
-    label: "Planeación estratégica",
+    label: "Estrategia",
     author: "Equipo Cyrrus",
     published: "Noviembre 2026",
     url: "/perspectivas",
@@ -107,7 +107,7 @@ export const upcomingTopics = [
     title: "Señales de que su empresa necesita un CTO as a Service",
     summary:
       "Cuándo tiene más sentido contratar liderazgo tecnológico bajo demanda que asumir una contratación de tiempo completo.",
-    label: "Planeación estratégica",
+    label: "Estrategia",
     author: "Equipo Cyrrus",
     published: "Enero 2027",
     url: "/perspectivas",

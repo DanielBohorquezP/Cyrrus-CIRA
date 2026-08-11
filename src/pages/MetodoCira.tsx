@@ -20,7 +20,7 @@ const phases = [
     question: "¿Hacia dónde vamos?",
     service: "Strategy",
     href: "/metodo-cira/planeacion-estrategica",
-    ctaText: "Ver Planeación Estratégica en detalle",
+    ctaText: "Ver Estrategia en detalle",
     problem:
       "Se define una estrategia... pero nadie sabe cómo bajarla a la operación. Nuestra consultoría de planeación estratégica conecta la visión del negocio con un plan ejecutable, no con un documento que queda en un cajón.",
     how: "Diagnóstico profundo del negocio, definición de prioridades y hoja de ruta accionable — como CTO as a Service o CIO as a Service cuando la organización no tiene esa capacidad interna.",

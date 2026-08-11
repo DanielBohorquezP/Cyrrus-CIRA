@@ -241,7 +241,7 @@ export default function GestionDelCambio() {
               {[
                 "Gestión proactiva del impacto en la organización, minimizando cualquier riesgo operativo.",
                 "Metodología holística aplicada a Select, Strategy y Project Management.",
-                "Reducción radical de la fricción natural en la adaptación a nuevas métricas y software.",
+                "Reducción radical de la fricción natural en la adaptación a nuevas métricas y soluciones tecnológicas.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />

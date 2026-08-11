@@ -7,7 +7,6 @@ export const clientLogoNames = [
   "Compas",
   "El Heraldo",
   "Enlace",
-  "Ficohsa",
   "Fortia",
   "Iteria",
   "Marympunt",

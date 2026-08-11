@@ -274,7 +274,7 @@ export default function SeleccionDeSoluciones() {
               {[
                 "Reestructuramos las variables a considerar y las ligamos a las necesidades reales de la empresa.",
                 "Elaboración del RFP clasificado por atributos técnicos y funcionales.",
-                "Acompañamiento en negociación y cierre de contrato, buscando siempre valores extra para su organización.",
+                "Acompañamiento en negociación y cierre de contrato, buscando siempre valores agregados para su organización.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />

@@ -4,7 +4,7 @@ const panels: TabPanel[] = [
   {
     id: "consultoria-estrategica",
     tabLabel: "Consultoría Estratégica",
-    eyebrow: "Consultoría de planeación estratégica",
+    eyebrow: "Consultoría de Estrategia",
     title: "Consultoría Estratégica",
     description:
       "Construimos la estrategia, seleccionamos la solución correcta y ejecutamos el proyecto sin fallar — el ciclo completo de consultoría, disponible también como CTO as a Service o CIO as a Service.",

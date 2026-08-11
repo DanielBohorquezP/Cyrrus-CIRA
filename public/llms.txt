@@ -6,7 +6,7 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 
 ## Método CIRA
 - [Metodología CIRA](https://www.cyrruscs.com/metodo-cira): las 4 fases del método.
-- [Planeación Estratégica](https://www.cyrruscs.com/metodo-cira/planeacion-estrategica): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
+- [Estrategia](https://www.cyrruscs.com/metodo-cira/planeacion-estrategica): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
 - [Selección de Soluciones](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones): selección agnóstica de ERP, CRM, HCM, ciberseguridad y migración a la nube.
 - [Gerencia de Proyectos](https://www.cyrruscs.com/metodo-cira/gestion-de-proyectos): PMO externo para la ejecución de proyectos de implementación.
 - [Gestión del Cambio](https://www.cyrruscs.com/metodo-cira/gestion-del-cambio): adopción organizacional y capacitación.

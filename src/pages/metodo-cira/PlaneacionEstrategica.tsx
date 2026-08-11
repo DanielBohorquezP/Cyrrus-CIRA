@@ -120,18 +120,18 @@ const cxaas = [
 ];
 
 const services = [
-  "Planeación Estratégica Corporativa",
+  "Estrategia Corporativa",
   "Centros de Servicios Compartidos",
-  "Planeación Estratégica de Negocio",
+  "Estrategia de Negocio",
   "Plan de Continuidad de Negocio",
   "IT Strategy & Transformación",
 ];
 
 const faqs = [
   {
-    question: "¿Qué es la Planeación Estratégica?",
+    question: "¿Qué es la Estrategia?",
     answer:
-      "La Planeación Estratégica es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, traduce ese rumbo en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales de la operación. Para un CEO o CIO, el valor está en que la estrategia deje de vivir en una presentación y empiece a reflejarse en el flujo de caja, la rentabilidad y el gobierno corporativo del negocio.",
+      "La Estrategia es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, traduce ese rumbo en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales de la operación. Para un CEO o CIO, el valor está en que la estrategia deje de vivir en una presentación y empiece a reflejarse en el flujo de caja, la rentabilidad y el gobierno corporativo del negocio.",
   },
   {
     question: "¿Cuándo necesita una empresa consultoría estratégica?",
@@ -149,7 +149,7 @@ export default function PlaneacionEstrategica() {
         "@context": "https://schema.org",
         "@type": "Service",
         serviceType: "Consultoría de planeación estratégica",
-        name: "Planeación Estratégica",
+        name: "Estrategia",
         provider: { "@id": "https://www.cyrruscs.com/#organization" },
         description: meta.description,
         areaServed: "LATAM",
@@ -170,7 +170,7 @@ export default function PlaneacionEstrategica() {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.cyrruscs.com/" },
           { "@type": "ListItem", position: 2, name: "Método CIRA", item: "https://www.cyrruscs.com/metodo-cira" },
-          { "@type": "ListItem", position: 3, name: "Planeación Estratégica", item: "https://www.cyrruscs.com/metodo-cira/planeacion-estrategica" },
+          { "@type": "ListItem", position: 3, name: "Estrategia", item: "https://www.cyrruscs.com/metodo-cira/planeacion-estrategica" },
         ],
       },
     ],
@@ -181,7 +181,7 @@ export default function PlaneacionEstrategica() {
       <SiteHeader />
       <PageHero
         eyebrow="Método CIRA — Construir"
-        title="Consultoría de planeación estratégica"
+        title="Consultoría de Estrategia"
         description="Se define una estrategia... pero nadie sabe cómo bajarla a la operación. Nuestra consultoría de planeación estratégica conecta la visión del negocio con un plan ejecutable, no con un documento que queda en un cajón."
       >
         <ContactCtaButton variant="light" label="Agendar diagnóstico ejecutivo" />
