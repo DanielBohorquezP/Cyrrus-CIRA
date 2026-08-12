@@ -98,20 +98,33 @@ if (process.env.VERCEL) {
     args: sparticuzChromium.args,
   };
 }
-const browser = await chromium.launch(launchOptions);
+let browser = await chromium.launch(launchOptions);
 
 const rendered = new Map();
 let failures = 0;
 
+// Heavy routes (3D/physics chunks) can crash the whole Chromium process on
+// memory-constrained build machines (e.g. Vercel's 2-core runners), not just
+// time out — so browser.newPage() itself can throw. Relaunch if that happens
+// instead of letting it crash the whole prerender script.
+async function ensureBrowser() {
+  if (!browser.isConnected()) {
+    console.warn("prerender: browser disconnected — relaunching");
+    browser = await chromium.launch(launchOptions);
+  }
+}
+
 // One fresh page per route: reusing a single page across all 54 routes means
-// a goto() that times out on a slow/shared build machine (e.g. Vercel's
-// 2-core runners) leaves that navigation stuck in-flight, and the *next*
-// iteration's goto() on the same page then reports itself as "interrupted by
-// another navigation" — cascading failures for every route after the first
-// slow one, even though nothing is actually wrong with those pages.
+// a goto() that times out on a slow/shared build machine leaves that
+// navigation stuck in-flight, and the *next* iteration's goto() on the same
+// page then reports itself as "interrupted by another navigation" —
+// cascading failures for every route after the first slow one, even though
+// nothing is actually wrong with those pages.
 async function tryRenderRoute(route) {
-  const page = await browser.newPage();
+  let page;
   try {
+    await ensureBrowser();
+    page = await browser.newPage();
     await page.goto(`${baseUrl}${route}`, { waitUntil: "domcontentloaded", timeout: 45000 });
     await page.waitForFunction(
       () => {
@@ -135,7 +148,9 @@ async function tryRenderRoute(route) {
     console.warn(`prerender: attempt failed for ${route} — ${err.message.split("\n")[0]}`);
     return false;
   } finally {
-    await page.close();
+    if (page) {
+      await page.close().catch(() => {});
+    }
   }
 }
 
