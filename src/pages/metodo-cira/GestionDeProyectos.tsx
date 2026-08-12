@@ -259,7 +259,7 @@ export default function GestionDeProyectos() {
               {[
                 "Desarrollo integral de la planeación: definición de recursos, roles, tiempos, costos y alcance.",
                 "Aprobación de comité de dirección, asegurando la alineación corporativa de presupuestos y compromiso humano.",
-                "Involucramiento de los actores directivos, operativos y técnicos para el seguimiento de la ejecución.",
+                "Participación de los actores directivos, operativos y técnicos para el seguimiento de la ejecución.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />

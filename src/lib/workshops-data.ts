@@ -74,7 +74,7 @@ export const workshops: WorkshopEntry[] = [
     title: "Gobierno de datos para ejecutivos",
     eyebrow: "Leadership Academy",
     intro:
-      "Cada área defiende su propia versión de la cifra correcta, y las juntas directivas se van en discutir cuál dato es el verdadero.",
+      "Cada área defiende su propia versión de la cifra correcta, y las juntas directivas terminan discutiendo cuál dato es el verdadero.",
     body: [
       "Un taller para que el liderazgo entienda su rol real en el gobierno de datos: qué debe decidir personalmente, qué puede delegar, y con qué controles hacerlo con confianza.",
       "Se conecta con la arquitectura de IA empresarial que definimos en Cyrrus Intelligence Lab.",

@@ -62,7 +62,7 @@ const benefits = [
   },
   {
     icon: MessageSquare,
-    title: "Enfoque integral (holístico)",
+    title: "Enfoque integral",
     description:
       "Detallamos cada aspecto crítico, desde la gestión de stakeholders hasta el impacto organizacional, asegurando la adopción real de las mejoras.",
   },
