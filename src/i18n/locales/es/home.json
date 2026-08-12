@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "eyebrow": "Metodología CIRA",
+    "titleAccent": "Consultoría",
+    "titleBold": "Estratégica",
+    "titleLight": "con IA integrada",
+    "subtitle": "Construimos la estrategia, elegimos la solución correcta y logramos su adopción.",
+    "primaryButtonText": "Agendar conversación estratégica",
+    "secondaryButtonText": "Conocer el método CIRA",
+    "badgeText": "Cyrrus Consulting Services"
+  },
+  "trustBar": {
+    "metrics": [
+      { "value": "+17", "label": "países" },
+      { "value": "1", "label": "metodología propia" },
+      { "value": "100%", "label": "agnóstica en tecnología" }
+    ]
+  },
+  "servicesTabs": {
+    "panels": [
+      {
+        "id": "consultoria-estrategica",
+        "tabLabel": "Consultoría Estratégica",
+        "eyebrow": "Consultoría de Estrategia",
+        "title": "Consultoría Estratégica",
+        "description": "Construimos la estrategia, seleccionamos la solución correcta y ejecutamos el proyecto sin fallar — el ciclo completo de consultoría, disponible también como CTO as a Service o CIO as a Service.",
+        "href": "/metodo-cira",
+        "buttonText": "Conocer el método CIRA"
+      },
+      {
+        "id": "ia-empresarial",
+        "tabLabel": "IA Empresarial",
+        "eyebrow": "Gobierno de IA corporativo",
+        "title": "Inteligencia Artificial Empresarial",
+        "description": "Gobierno y arquitectura de IA aplicados a procesos de negocio reales — la capa que acelera cada fase de su transformación, no un catálogo de chatbots sueltos.",
+        "href": "/intelligence-lab",
+        "buttonText": "Conocer Cyrrus Intelligence Lab"
+      },
+      {
+        "id": "gestion-del-cambio",
+        "tabLabel": "Gestión del Cambio",
+        "eyebrow": "Gestión del cambio organizacional",
+        "title": "Gestión del Cambio y Liderazgo",
+        "description": "Talleres ejecutivos y capacitación gerencial para que la adopción de su transformación se sostenga en el tiempo, sin depender permanentemente de Cyrrus.",
+        "href": "/leadership-academy",
+        "buttonText": "Conocer Leadership Academy"
+      }
+    ]
+  },
+  "ciraJourney": {
+    "eyebrow": "Método CIRA",
+    "title": "Cómo lo hacemos, paso a paso",
+    "buttonText": "Conoce la metodología a fondo",
+    "stepOf": "Paso {{n}} de 4",
+    "steps": [
+      { "letter": "C", "word": "Construir", "title": "La estrategia", "description": "Diagnóstico del negocio y una hoja de ruta accionable." },
+      { "letter": "I", "word": "Identificar", "title": "La mejor solución", "description": "Evaluación 100% agnóstica de proveedores tecnológicos." },
+      { "letter": "R", "word": "Realizar", "title": "El proyecto", "description": "Gobierno de proyecto y aseguramiento de calidad." },
+      { "letter": "A", "word": "Adoptar", "title": "El cambio", "description": "Gestión del cambio integrada desde el día uno." }
+    ]
+  },
+  "about": {
+    "title": "Consultoría organizacional con gobierno de IA integrado",
+    "description": "Un modelo, no una lista de servicios sueltos. Estrategia, arquitectura de IA y gestión del cambio bajo un mismo método — así optimizamos procesos y aceleramos resultados sin fragmentar su transformación entre proveedores distintos.",
+    "conocerMas": "Conocer más",
+    "clientesTitulo": "Empresas que han confiado en Cyrrus",
+    "levels": [
+      { "level": "Nivel 1", "title": "Método CIRA", "description": "El negocio: qué se logra. Construir · Identificar · Realizar · Adoptar.", "href": "/metodo-cira" },
+      { "level": "Nivel 2", "title": "Cyrrus Intelligence Lab", "description": "El cómo: gobierno y arquitectura de IA, transversal a las 4 fases de CIRA.", "href": "/intelligence-lab" },
+      { "level": "Nivel 3", "title": "Leadership Academy", "description": "Quién lo sostiene: el equipo del cliente aprende a operar el mismo modelo.", "href": "/leadership-academy" }
+    ]
+  },
+  "whyCyrrus": {
+    "eyebrow": "¿Por qué Cyrrus?",
+    "title": "No implementamos inteligencia artificial. Gobernamos cada fase de su transformación con ella.",
+    "reasons": [
+      { "title": "Un solo método, de punta a punta", "description": "El negocio no se fragmenta entre proveedores distintos para cada fase. Estrategia, selección, ejecución y adopción bajo un mismo ciclo — su ventaja competitiva no depende de coordinar 4 proveedores distintos." },
+      { "title": "Velocidad radical vía IA en cada fase", "description": "Gobierno, arquitectura y agentes integrados en Strategy, Select, Project Management y Change Management — automatización aplicada a diagnóstico, selección, ejecución y adopción, no como servicio aparte." },
+      { "title": "Capacidad que se queda en el cliente", "description": "Leadership Academy garantiza que la velocidad no dependa solo de Cyrrus: mejora continua sostenida por su propio equipo, que aprende a operar bajo el mismo modelo." }
+    ]
+  },
+  "ceo": {
+    "quote": "\"Las organizaciones no fallan por falta de estrategia ni de tecnología. Fallan cuando nadie conecta la decisión con la ejecución. CIRA existe para cerrar exactamente esa brecha.\"",
+    "name": "Jackson Bohorquez",
+    "role": "CEO & Fundador, Cyrrus Consulting Services"
+  },
+  "testimonials": {
+    "eyebrow": "Resultados que hablan",
+    "title": "La promesa, convertida en prueba.",
+    "items": [
+      { "quote": "Cyrrus no llegó con un catálogo de herramientas. Llegó con un método claro que conectó nuestra estrategia con la ejecución, algo que ningún proveedor anterior había logrado.", "author": "VP de Operaciones", "company": "Grupo industrial, sector manufactura" },
+      { "quote": "La diferencia estuvo en la velocidad: lo que normalmente nos tomaba meses de selección de proveedores, con Cyrrus lo resolvimos en semanas gracias a su forma de evaluar en paralelo.", "author": "Director de Tecnología", "company": "Compañía de servicios financieros" },
+      { "quote": "El proyecto no solo se implementó — el equipo lo adoptó. Eso fue lo que realmente cambió el resultado frente a intentos anteriores.", "author": "Gerente de Transformación", "company": "Empresa de energía, LATAM" }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Presencia multinacional",
+    "title": "Consultoría multinacional en LATAM, por industria",
+    "subtitle": "Presencia multinacional, criterio local.",
+    "paisesLabel": "Países de alcance",
+    "sectoresLabel": "Sectores atendidos",
+    "footerNote": "Ver el equipo completo, industrias y clientes en la página de Experiencia.",
+    "countries": ["México", "Centroamérica", "Panamá", "Colombia", "Ecuador", "Perú", "Brasil", "Chile", "Argentina", "Estados Unidos"],
+    "industries": ["Educación", "Finanzas & Seguros", "Servicios Públicos", "Alimentos & Bebidas", "Consumo Masivo", "Oil & Gas", "Manufactura", "Logística", "Distribución"]
+  },
+  "perspectivasPreview": {
+    "tagline": "Perspectivas",
+    "heading": "Pensamiento sobre transformación y gestión del cambio",
+    "description": "Análisis y contenido de autoridad sobre consultoría estratégica, gobierno de IA y gestión del cambio organizacional — las preguntas que el mercado ya está haciendo.",
+    "buttonText": "Ver todos los temas"
+  },
+  "finalCta": {
+    "title": "¿Listo para conectar la decisión con la ejecución?",
+    "description": "Complete el formulario y coordinamos una llamada con el equipo adecuado del lado de Cyrrus para hablar del reto de su organización.",
+    "buttonText": "Agendar conversación estratégica"
+  },
+  "meta": {
+    "title": "Cyrrus Consulting Services | Metodología CIRA",
+    "description": "Cyrrus Consulting Services — Metodología CIRA: construimos la estrategia, elegimos la solución correcta y logramos la adopción, con IA acelerando cada fase."
+  }
+}

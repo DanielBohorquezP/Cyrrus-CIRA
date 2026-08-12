@@ -1,3 +1,6 @@
+import { useTranslation } from "react-i18next";
+import { useLang } from "@/lib/language";
+import { usePageMeta } from "@/lib/use-page-meta";
 import { ShaderHero } from "@/components/ui/shader-hero";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { TransparentHeader } from "@/components/layout/transparent-header";
@@ -14,21 +17,30 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
+  const { t } = useTranslation("home");
+  const lang = useLang();
+
+  usePageMeta({
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternatePath: lang === "en" ? "/" : "/en",
+  });
+
   return (
     <>
       <div className="relative">
         <TransparentHeader />
         <ShaderHero
-          eyebrow="Metodología CIRA"
-          titleAccent="Consultoría"
-          titleBold="Estratégica"
-          titleLight="con IA integrada"
-          subtitle="Construimos la estrategia, elegimos la solución correcta y logramos su adopción."
-          primaryButtonText="Agendar conversación estratégica"
+          eyebrow={t("hero.eyebrow")}
+          titleAccent={t("hero.titleAccent")}
+          titleBold={t("hero.titleBold")}
+          titleLight={t("hero.titleLight")}
+          subtitle={t("hero.subtitle")}
+          primaryButtonText={t("hero.primaryButtonText")}
           primaryButtonHref="/contacto"
-          secondaryButtonText="Conocer el método CIRA"
-          secondaryButtonHref="/metodo-cira"
-          badgeText="Cyrrus Consulting Services"
+          secondaryButtonText={t("hero.secondaryButtonText")}
+          secondaryButtonHref={lang === "en" ? "/en/metodo-cira" : "/metodo-cira"}
+          badgeText={t("hero.badgeText")}
         />
       </div>
       <TrustBar />

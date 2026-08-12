@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "eyebrow": "CIRA Method",
+    "title": "What is the CIRA Method? The full cycle of your transformation",
+    "description": "CIRA Method is Cyrrus's proprietary methodology that unifies the four phases of digital transformation — Construct, Identify, Realize, Adopt — under a single team accountable from start to finish, with artificial intelligence accelerating every phase.",
+    "badge": "CIRA"
+  },
+  "phases": [
+    {
+      "id": "construir",
+      "letter": "C",
+      "title": "Construct the strategy",
+      "service": "Strategy",
+      "ctaText": "See Strategy in detail",
+      "problem": "A strategy gets defined... but no one knows how to bring it down to the operation. Our strategy consulting connects the business vision to an executable plan, not a document that ends up in a drawer.",
+      "how": "In-depth business diagnosis, prioritization, and an actionable roadmap — delivered as CTO as a Service or CIO as a Service when the organization lacks that capability in-house.",
+      "outcome": "A clear, prioritized IT and digital transformation strategy, with success metrics defined from day one."
+    },
+    {
+      "id": "identificar",
+      "letter": "I",
+      "title": "Identify the best solution",
+      "service": "Select",
+      "ctaText": "See Solution Selection in detail",
+      "problem": "Technology gets bought because it's trending, not because it truly fits the business. Our ERP and enterprise software selection consulting always starts from the business's actual requirements, not the vendor's catalog.",
+      "how": "100% vendor-agnostic technology evaluation, with objective, comparable criteria and no commercial bias toward any brand.",
+      "outcome": "The right solution for your organization, selected in weeks instead of months, with the risk of a bad technology decision minimized."
+    },
+    {
+      "id": "realizar",
+      "letter": "R",
+      "title": "Realize the project",
+      "service": "Project Management",
+      "ctaText": "See Project Management in detail",
+      "problem": "The project falls behind, goes over budget, and no one owns the risk. Our project management acts as an external PMO, with real accountability for the outcome.",
+      "how": "Project governance, quality assurance, and active risk management throughout execution — not just status reports.",
+      "outcome": "A project delivered on the agreed time and budget, with full visibility into progress at every moment."
+    },
+    {
+      "id": "adoptar",
+      "letter": "A",
+      "title": "Adopt the change",
+      "service": "Change Management",
+      "ctaText": "See Change Management in detail",
+      "problem": "The system gets installed, but the team doesn't adopt it. Our organizational change management works on adoption from day one of the project, not as a closing activity.",
+      "how": "Change management built into execution, focused on minimizing digital transformation risks caused by resistance to change.",
+      "outcome": "Measurable, sustained technology adoption, with a team capable of operating the new model without staying permanently dependent on Cyrrus."
+    }
+  ],
+  "socialProof": {
+    "eyebrow": "CIRA Method",
+    "title": "How we work",
+    "description": "Most of these projects don't fail because of the technology. They fail because of the bias of whoever sold it. That's why we define the business requirements first and only then compare vendors, with objective, measurable criteria — the same team accompanies all four phases of the cycle, with AI accelerating every stretch.",
+    "ctaLabel": "Schedule a call",
+    "stats": [
+      { "value": "+17", "label": "countries with projects delivered" },
+      { "value": "100%", "label": "agnostic: no commercial bias toward any brand" },
+      { "value": "60%", "label": "faster diagnosis, with AI built into the method" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "CIRA Method",
+    "title": "Frequently asked questions",
+    "otherQuestion": "Have another question?",
+    "ctaLabel": "Write to us",
+    "items": [
+      { "question": "Duration per phase", "answer": "It depends on the organization's scope and size, but as a reference: Construct (strategy) usually takes 4 to 8 weeks, Identify (solution selection) 6 to 12 weeks, Realize (project) varies by the project executed, and Adopt (change) is worked transversally from day one." },
+      { "question": "Hired by phase, not all-or-nothing", "answer": "Each phase — Strategy, Select, Project Management, and Change Management — is hired independently. Most of our clients start with a single phase and expand scope once they see results." },
+      { "question": "Already chose a vendor and aren't sure", "answer": "We evaluate the decision with the same objective criteria, even if the process has already started. We're 100% agnostic: we have no commercial partnerships or commissions with ERP, CRM, HCM, or other enterprise solution manufacturers." },
+      { "question": "Adoption, not another abandoned pilot", "answer": "AI is measured with the same governance discipline as the rest of the method — it's not a separate layer. It accelerates tasks within each phase: diagnosis in Construct, parallel vendor evaluation in Identify, real-time risk monitoring in Realize, and continuous adoption measurement in Adopt." }
+    ]
+  },
+  "meta": {
+    "title": "CIRA Methodology: Construct, Identify, Realize, Adopt | Cyrrus",
+    "description": "Learn about Cyrrus's CIRA methodology: the 4-phase framework that takes your company from strategy to real adoption, with AI at every step."
+  }
+}

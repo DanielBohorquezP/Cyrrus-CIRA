@@ -6,6 +6,7 @@ import { Reveal } from "@/components/ui/reveal";
 export const StickyScroll = ({
   content,
   contentClassName,
+  eyebrow = "Método CIRA",
 }: {
   content: {
     title: string;
@@ -13,6 +14,7 @@ export const StickyScroll = ({
     content?: React.ReactNode;
   }[];
   contentClassName?: string;
+  eyebrow?: string;
 }) => {
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
@@ -52,7 +54,7 @@ export const StickyScroll = ({
               {item.content ?? null}
             </div>
             <span className="mt-5 block text-xs font-semibold uppercase tracking-wider text-cyan">
-              Método CIRA
+              {eyebrow}
             </span>
             <h2 className="mt-2 text-2xl font-bold text-navy">{item.title}</h2>
             <p className="mt-3 text-base leading-relaxed text-navy/70">{item.description}</p>
@@ -77,7 +79,7 @@ export const StickyScroll = ({
                   transition={{ duration: 0.4, ease: "easeOut" }}
                 >
                   <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
-                    Método CIRA
+                    {eyebrow}
                   </span>
                   <h2 className="mt-2 text-3xl font-bold text-navy md:text-4xl">
                     {item.title}

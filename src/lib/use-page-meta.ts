@@ -14,13 +14,19 @@ interface PageMeta {
   image?: string;
   /** Set true to keep an unfinished/placeholder page out of search indexes. */
   noindex?: boolean;
+  /**
+   * Path of this page's translated counterpart in the other language (e.g. "/en/metodo-cira"
+   * from "/metodo-cira", or vice-versa). Emits hreflang alternates + x-default when set.
+   */
+  alternatePath?: string;
 }
 
-export function usePageMeta({ title, description, jsonLd, image, noindex }: PageMeta) {
+export function usePageMeta({ title, description, jsonLd, image, noindex, alternatePath }: PageMeta) {
   const { pathname } = useLocation();
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : undefined;
   const jsonLdKey = jsonLdArray ? JSON.stringify(jsonLdArray) : undefined;
   const canonicalUrl = `${SITE_URL}${pathname === "/" ? "" : pathname.replace(/\/$/, "")}` || SITE_URL;
+  const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
 
   useEffect(() => {
     const previousTitle = document.title;
@@ -91,6 +97,25 @@ export function usePageMeta({ title, description, jsonLd, image, noindex }: Page
       el.setAttribute("content", content);
     }
 
+    const hreflangLinks: HTMLLinkElement[] = [];
+    if (alternatePath) {
+      const esUrl = isEnglish ? `${SITE_URL}${alternatePath}` : canonicalUrl;
+      const enUrl = isEnglish ? canonicalUrl : `${SITE_URL}${alternatePath}`;
+      const alternates: Array<[string, string]> = [
+        ["es", esUrl],
+        ["en", enUrl],
+        ["x-default", esUrl],
+      ];
+      for (const [hreflang, href] of alternates) {
+        const link = document.createElement("link");
+        link.setAttribute("rel", "alternate");
+        link.setAttribute("hreflang", hreflang);
+        link.setAttribute("href", href);
+        document.head.appendChild(link);
+        hreflangLinks.push(link);
+      }
+    }
+
     const scripts: HTMLScriptElement[] = [];
     if (jsonLdArray) {
       for (const entry of jsonLdArray) {
@@ -123,7 +148,10 @@ export function usePageMeta({ title, description, jsonLd, image, noindex }: Page
       for (const script of scripts) {
         script.remove();
       }
+      for (const link of hreflangLinks) {
+        link.remove();
+      }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [title, description, jsonLdKey, canonicalUrl, noindex]);
+  }, [title, description, jsonLdKey, canonicalUrl, noindex, alternatePath, isEnglish]);
 }

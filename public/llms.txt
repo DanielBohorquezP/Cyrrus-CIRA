@@ -32,3 +32,7 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 - [Experiencia](https://www.cyrruscs.com/experiencia): casos y trayectoria de Cyrrus.
 - [Perspectivas](https://www.cyrruscs.com/perspectivas): blog con artículos sobre estrategia, selección de software, gerencia de proyectos y gestión del cambio.
 - [Contacto](https://www.cyrruscs.com/contacto)
+
+## English
+- [Home (EN)](https://www.cyrruscs.com/en): strategic consulting and digital transformation with AI, via the CIRA methodology.
+- [CIRA Method (EN)](https://www.cyrruscs.com/en/metodo-cira): the 4 phases of the method — Construct, Identify, Realize, Adopt.

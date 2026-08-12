@@ -1,33 +1,16 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { cn } from "@/lib/utils";
 
-const faqs = [
-  {
-    question: "Duración por fase",
-    answer:
-      "Depende del alcance y tamaño de la organización, pero como referencia: Construir (estrategia) suele tomar de 4 a 8 semanas, Identificar (selección de solución) de 6 a 12 semanas, Realizar (proyecto) varía según el proyecto ejecutado, y Adoptar (cambio) se trabaja de forma transversal desde el día uno.",
-  },
-  {
-    question: "Contratación por fase, no todo o nada",
-    answer:
-      "Cada fase — Strategy, Select, Project Management y Change Management — se contrata de forma independiente. La mayoría de nuestros clientes empieza por una sola fase y expande el alcance cuando ve el resultado.",
-  },
-  {
-    question: "Ya eligieron proveedor y no están seguros",
-    answer:
-      "Evaluamos la decisión con los mismos criterios objetivos, incluso si el proceso ya empezó. Somos 100% agnósticos: no tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM u otras soluciones empresariales.",
-  },
-  {
-    question: "Adopción, no otro piloto abandonado",
-    answer:
-      "La IA se mide con la misma disciplina de gobierno que el resto del método — no es una capa aparte. Acelera tareas dentro de cada fase: diagnóstico en Construir, evaluación paralela de proveedores en Identificar, monitoreo de riesgo en tiempo real en Realizar, y medición continua de adopción en Adoptar.",
-  },
-];
+interface Faq {
+  question: string;
+  answer: string;
+}
 
-function FaqItem({ question, answer }: { question: string; answer: string }) {
+function FaqItem({ question, answer }: Faq) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -63,15 +46,18 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export function CiraFaq() {
+  const { t } = useTranslation("metodo-cira");
+  const faqs = t("faq.items", { returnObjects: true }) as Faq[];
+
   return (
     <section className="w-full bg-white py-24 md:py-32">
       <div className="mx-auto max-w-3xl px-6 md:px-12">
         <Reveal>
           <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
-            Método CIRA
+            {t("faq.eyebrow")}
           </span>
           <h2 className="mt-2 text-3xl font-bold text-navy md:text-4xl">
-            Preguntas frecuentes
+            {t("faq.title")}
           </h2>
         </Reveal>
 
@@ -82,9 +68,9 @@ export function CiraFaq() {
         </Reveal>
 
         <Reveal delay={0.15} className="mt-10">
-          <p className="text-base text-navy/70">¿Tiene otra pregunta?</p>
+          <p className="text-base text-navy/70">{t("faq.otherQuestion")}</p>
           <div className="mt-4">
-            <ContactCtaButton label="Escríbanos" />
+            <ContactCtaButton label={t("faq.ctaLabel")} />
           </div>
         </Reveal>
       </div>

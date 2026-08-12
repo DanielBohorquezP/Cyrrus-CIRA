@@ -1,46 +1,26 @@
+import { useTranslation } from "react-i18next";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { CyrrusGlobe } from "@/components/sections/cyrrus-globe";
 import { Reveal } from "@/components/ui/reveal";
 
-const countries = [
-  "México",
-  "Centroamérica",
-  "Panamá",
-  "Colombia",
-  "Ecuador",
-  "Perú",
-  "Brasil",
-  "Chile",
-  "Argentina",
-  "Estados Unidos",
-];
-
-const industries = [
-  "Educación",
-  "Finanzas & Seguros",
-  "Servicios Públicos",
-  "Alimentos & Bebidas",
-  "Consumo Masivo",
-  "Oil & Gas",
-  "Manufactura",
-  "Logística",
-  "Distribución",
-];
-
 export function Experience() {
+  const { t } = useTranslation("home");
+  const countries = t("experience.countries", { returnObjects: true }) as string[];
+  const industries = t("experience.industries", { returnObjects: true }) as string[];
+
   return (
     <section id="experiencia" className="w-full">
       <AnimatedNavyBackground className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">
             <span className="text-sm font-semibold uppercase tracking-wider text-cyan">
-              Presencia multinacional
+              {t("experience.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Consultoría multinacional en LATAM, por industria
+              {t("experience.title")}
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-white/70">
-              Presencia multinacional, criterio local.
+              {t("experience.subtitle")}
             </p>
           </Reveal>
 
@@ -55,7 +35,7 @@ export function Experience() {
                   +17
                 </span>
                 <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
-                  Países de alcance
+                  {t("experience.paisesLabel")}
                 </span>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -75,7 +55,7 @@ export function Experience() {
                   {industries.length}
                 </span>
                 <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
-                  Sectores atendidos
+                  {t("experience.sectoresLabel")}
                 </span>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -92,7 +72,7 @@ export function Experience() {
           </div>
 
           <p className="mt-10 text-center text-sm text-white/50">
-            Ver el equipo completo, industrias y clientes en la página de Experiencia.
+            {t("experience.footerNote")}
           </p>
         </div>
       </AnimatedNavyBackground>

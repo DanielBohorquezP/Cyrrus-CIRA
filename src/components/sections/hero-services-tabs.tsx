@@ -1,44 +1,19 @@
+import { useTranslation } from "react-i18next";
 import { TabbedPanels, type TabPanel } from "@/components/ui/tabbed-panels";
 
-const panels: TabPanel[] = [
-  {
-    id: "consultoria-estrategica",
-    tabLabel: "Consultoría Estratégica",
-    eyebrow: "Consultoría de Estrategia",
-    title: "Consultoría Estratégica",
-    description:
-      "Construimos la estrategia, seleccionamos la solución correcta y ejecutamos el proyecto sin fallar — el ciclo completo de consultoría, disponible también como CTO as a Service o CIO as a Service.",
-    href: "/metodo-cira",
-    buttonText: "Conocer el método CIRA",
-    image:
-      "/assets/decoracion/IMG_20200313_092643427.jpg",
-  },
-  {
-    id: "ia-empresarial",
-    tabLabel: "IA Empresarial",
-    eyebrow: "Gobierno de IA corporativo",
-    title: "Inteligencia Artificial Empresarial",
-    description:
-      "Gobierno y arquitectura de IA aplicados a procesos de negocio reales — la capa que acelera cada fase de su transformación, no un catálogo de chatbots sueltos.",
-    href: "/intelligence-lab",
-    buttonText: "Conocer Cyrrus Intelligence Lab",
-    image:
-      "/assets/decoracion/Cyrrus.jpg",
-  },
-  {
-    id: "gestion-del-cambio",
-    tabLabel: "Gestión del Cambio",
-    eyebrow: "Gestión del cambio organizacional",
-    title: "Gestión del Cambio y Liderazgo",
-    description:
-      "Talleres ejecutivos y capacitación gerencial para que la adopción de su transformación se sostenga en el tiempo, sin depender permanentemente de Cyrrus.",
-    href: "/leadership-academy",
-    buttonText: "Conocer Leadership Academy",
-    image:
-      "/assets/decoracion/IMG_20230228_091011.jpg",
-  },
+const images = [
+  "/assets/decoracion/IMG_20200313_092643427.jpg",
+  "/assets/decoracion/Cyrrus.jpg",
+  "/assets/decoracion/IMG_20230228_091011.jpg",
 ];
 
 export function HeroServicesTabs() {
-  return <TabbedPanels panels={panels} />;
+  const { t } = useTranslation("home");
+  const panels = t("servicesTabs.panels", { returnObjects: true }) as TabPanel[];
+  const panelsWithImages = panels.map((panel, index) => ({
+    ...panel,
+    image: images[index],
+  }));
+
+  return <TabbedPanels panels={panelsWithImages} />;
 }

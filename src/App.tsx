@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
+import { LanguageProvider } from "@/lib/language";
 import Home from "@/pages/Home";
 import MetodoCira from "@/pages/MetodoCira";
 import IntelligenceLab from "@/pages/IntelligenceLab";
@@ -49,25 +50,31 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/metodo-cira" element={<MetodoCira />} />
-        <Route path="/metodo-cira/planeacion-estrategica" element={<PlaneacionEstrategica />} />
-        <Route path="/metodo-cira/seleccion-de-soluciones" element={<SeleccionDeSoluciones />} />
-        <Route path="/metodo-cira/seleccion-de-soluciones/:solucion" element={<SolucionDetalle />} />
-        <Route path="/metodo-cira/gestion-de-proyectos" element={<GestionDeProyectos />} />
-        <Route path="/metodo-cira/gestion-del-cambio" element={<GestionDelCambio />} />
-        <Route path="/intelligence-lab" element={<IntelligenceLab />} />
-        <Route path="/intelligence-lab/automatizaciones-desarrollo" element={<AutomatizacionesDesarrollo />} />
-        <Route path="/intelligence-lab/arquitectura-de-ia" element={<ArquitecturaDeIA />} />
-        <Route path="/intelligence-lab/gobierno-de-ia" element={<GobiernoDeIA />} />
-        <Route path="/leadership-academy" element={<LeadershipAcademy />} />
-        <Route path="/leadership-academy/:curso" element={<CursoDetalle />} />
-        <Route path="/experiencia" element={<Experiencia />} />
-        <Route path="/quienes-somos" element={<QuienesSomos />} />
-        <Route path="/perspectivas" element={<Perspectivas />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/privacidad" element={<Privacidad />} />
-        <Route path="/cookies" element={<Cookies />} />
+        <Route element={<LanguageProvider lang="es"><Outlet /></LanguageProvider>}>
+          <Route path="/" element={<Home />} />
+          <Route path="/metodo-cira" element={<MetodoCira />} />
+          <Route path="/metodo-cira/planeacion-estrategica" element={<PlaneacionEstrategica />} />
+          <Route path="/metodo-cira/seleccion-de-soluciones" element={<SeleccionDeSoluciones />} />
+          <Route path="/metodo-cira/seleccion-de-soluciones/:solucion" element={<SolucionDetalle />} />
+          <Route path="/metodo-cira/gestion-de-proyectos" element={<GestionDeProyectos />} />
+          <Route path="/metodo-cira/gestion-del-cambio" element={<GestionDelCambio />} />
+          <Route path="/intelligence-lab" element={<IntelligenceLab />} />
+          <Route path="/intelligence-lab/automatizaciones-desarrollo" element={<AutomatizacionesDesarrollo />} />
+          <Route path="/intelligence-lab/arquitectura-de-ia" element={<ArquitecturaDeIA />} />
+          <Route path="/intelligence-lab/gobierno-de-ia" element={<GobiernoDeIA />} />
+          <Route path="/leadership-academy" element={<LeadershipAcademy />} />
+          <Route path="/leadership-academy/:curso" element={<CursoDetalle />} />
+          <Route path="/experiencia" element={<Experiencia />} />
+          <Route path="/quienes-somos" element={<QuienesSomos />} />
+          <Route path="/perspectivas" element={<Perspectivas />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/privacidad" element={<Privacidad />} />
+          <Route path="/cookies" element={<Cookies />} />
+        </Route>
+        <Route path="/en" element={<LanguageProvider lang="en"><Outlet /></LanguageProvider>}>
+          <Route index element={<Home />} />
+          <Route path="metodo-cira" element={<MetodoCira />} />
+        </Route>
       </Routes>
       <CookieConsent />
     </BrowserRouter>

@@ -1,44 +1,30 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Reveal } from "@/components/ui/reveal";
 import { BorderButton } from "@/components/ui/border-button";
+import { useLang } from "@/lib/language";
 
-const steps = [
-  {
-    letter: "C",
-    word: "Construir",
-    title: "La estrategia",
-    description: "Diagnóstico del negocio y una hoja de ruta accionable.",
-  },
-  {
-    letter: "I",
-    word: "Identificar",
-    title: "La mejor solución",
-    description: "Evaluación 100% agnóstica de proveedores tecnológicos.",
-  },
-  {
-    letter: "R",
-    word: "Realizar",
-    title: "El proyecto",
-    description: "Gobierno de proyecto y aseguramiento de calidad.",
-  },
-  {
-    letter: "A",
-    word: "Adoptar",
-    title: "El cambio",
-    description: "Gestión del cambio integrada desde el día uno.",
-  },
-];
+interface Step {
+  letter: string;
+  word: string;
+  title: string;
+  description: string;
+}
 
 export function CiraJourney() {
+  const { t } = useTranslation("home");
+  const lang = useLang();
+  const steps = t("ciraJourney.steps", { returnObjects: true }) as Step[];
+
   return (
     <section className="w-full bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <Reveal className="text-center">
           <span className="text-xs font-semibold uppercase tracking-wider text-blue">
-            Método CIRA
+            {t("ciraJourney.eyebrow")}
           </span>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            Cómo lo hacemos, paso a paso
+            {t("ciraJourney.title")}
           </h2>
         </Reveal>
 
@@ -66,15 +52,15 @@ export function CiraJourney() {
               <p className="mt-2.5 text-sm leading-relaxed text-gray">
                 {step.description}
               </p>
-              <span className="sr-only">Paso {index + 1} de 4</span>
+              <span className="sr-only">{t("ciraJourney.stepOf", { n: index + 1 })}</span>
             </div>
           ))}
         </Reveal>
 
         <Reveal delay={0.2} className="mt-16 text-center">
           <BorderButton asChild variant="dark" size="lg" dot>
-            <Link to="/metodo-cira">
-              Conoce la metodología a fondo
+            <Link to={lang === "en" ? "/en/metodo-cira" : "/metodo-cira"}>
+              {t("ciraJourney.buttonText")}
             </Link>
           </BorderButton>
         </Reveal>

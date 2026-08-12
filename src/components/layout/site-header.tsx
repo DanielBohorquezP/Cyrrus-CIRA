@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { BorderButton } from "@/components/ui/border-button";
 import { NavDropdown } from "@/components/layout/nav-dropdown";
-import { navItems, type NavChild, type NavItem } from "@/lib/nav-config";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
+import { useLang } from "@/lib/language";
 import { useScrolled } from "@/lib/use-scrolled";
 import { cn } from "@/lib/utils";
 
@@ -16,6 +19,7 @@ function MobileNavAccordionItem({
   depth?: number;
   onNavigate: () => void;
 }) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const hasChildren = !!item.children?.length;
 
@@ -36,7 +40,7 @@ function MobileNavAccordionItem({
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
-            aria-label={open ? "Contraer" : "Expandir"}
+            aria-label={open ? t("cta.contraer") : t("cta.expandir")}
             aria-expanded={open}
             className="p-2 text-navy/60"
           >
@@ -68,6 +72,9 @@ function MobileNavAccordionItem({
 export function SiteHeader() {
   const scrolled = useScrolled(8);
   const location = useLocation();
+  const { t } = useTranslation();
+  const lang = useLang();
+  const navItems = getNavItems(t, lang);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -88,7 +95,7 @@ export function SiteHeader() {
         scrolled ? "border-border shadow-sm" : "border-transparent",
       )}
     >
-      <Link to="/" className="flex items-center gap-2">
+      <Link to={lang === "en" ? "/en" : "/"} className="flex items-center gap-2">
         <img
           src="/assets/logos-cyrrus/cyrrus-logo-color.png"
           alt="Cyrrus Consulting Services"
@@ -104,13 +111,14 @@ export function SiteHeader() {
         ))}
       </nav>
       <div className="flex items-center gap-2">
+        <LanguageSwitcher className="hidden lg:inline-flex" />
         <BorderButton asChild variant="dark" size="sm" dot className="hidden lg:inline-flex">
-          <Link to="/contacto">Agendar conversación</Link>
+          <Link to="/contacto">{t("cta.agendarConversacion")}</Link>
         </BorderButton>
         <button
           type="button"
           onClick={() => setMobileOpen((o) => !o)}
-          aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-label={mobileOpen ? t("cta.cerrarMenu") : t("cta.abrirMenu")}
           aria-expanded={mobileOpen}
           className="inline-flex h-10 w-10 items-center justify-center rounded-full text-navy lg:hidden"
         >
@@ -135,10 +143,11 @@ export function SiteHeader() {
             />
           ))}
         </nav>
-        <div className="border-t border-border px-6 py-5">
-          <BorderButton asChild variant="dark" size="sm" dot className="w-full justify-center">
+        <div className="flex items-center justify-between gap-4 border-t border-border px-6 py-5">
+          <LanguageSwitcher />
+          <BorderButton asChild variant="dark" size="sm" dot className="flex-1 justify-center">
             <Link to="/contacto" onClick={() => setMobileOpen(false)}>
-              Agendar conversación
+              {t("cta.agendarConversacion")}
             </Link>
           </BorderButton>
         </div>

@@ -1,45 +1,34 @@
+import { useTranslation } from "react-i18next";
 import { Layers, Users, Zap } from "lucide-react";
 import { RevealGroup, staggerItem, Reveal } from "@/components/ui/reveal";
 import { motion } from "framer-motion";
 
-const reasons = [
-  {
-    icon: Layers,
-    title: "Un solo método, de punta a punta",
-    description:
-      "El negocio no se fragmenta entre proveedores distintos para cada fase. Estrategia, selección, ejecución y adopción bajo un mismo ciclo — su ventaja competitiva no depende de coordinar 4 proveedores distintos.",
-  },
-  {
-    icon: Zap,
-    title: "Velocidad radical vía IA en cada fase",
-    description:
-      "Gobierno, arquitectura y agentes integrados en Strategy, Select, Project Management y Change Management — automatización aplicada a diagnóstico, selección, ejecución y adopción, no como servicio aparte.",
-  },
-  {
-    icon: Users,
-    title: "Capacidad que se queda en el cliente",
-    description:
-      "Leadership Academy garantiza que la velocidad no dependa solo de Cyrrus: mejora continua sostenida por su propio equipo, que aprende a operar bajo el mismo modelo.",
-  },
-];
+interface Reason {
+  title: string;
+  description: string;
+}
+
+const icons = [Layers, Zap, Users];
 
 export function WhyCyrrus() {
+  const { t } = useTranslation("home");
+  const reasons = t("whyCyrrus.reasons", { returnObjects: true }) as Reason[];
+
   return (
     <section className="w-full bg-light-blue/40 py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wider text-blue">
-            ¿Por qué Cyrrus?
+            {t("whyCyrrus.eyebrow")}
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            No implementamos inteligencia artificial. Gobernamos cada fase de
-            su transformación con ella.
+            {t("whyCyrrus.title")}
           </h2>
         </Reveal>
 
         <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {reasons.map((reason) => {
-            const Icon = reason.icon;
+          {reasons.map((reason, index) => {
+            const Icon = icons[index];
             return (
               <motion.div
                 key={reason.title}

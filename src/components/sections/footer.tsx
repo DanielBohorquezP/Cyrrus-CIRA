@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import {
   SocialTooltip,
   LinkedInIcon,
@@ -6,6 +7,7 @@ import {
   YouTubeIcon,
   type SocialItem,
 } from "@/components/ui/social-media";
+import { useLang } from "@/lib/language";
 
 const socialLinks: SocialItem[] = [
   {
@@ -31,25 +33,28 @@ const socialLinks: SocialItem[] = [
   },
 ];
 
-const links = [
-  { label: "Método CIRA", href: "/metodo-cira" },
-  { label: "Cyrrus Intelligence Lab", href: "/intelligence-lab" },
-  { label: "Leadership Academy", href: "/leadership-academy" },
-  { label: "Experiencia", href: "/experiencia" },
-  { label: "Perspectivas", href: "/perspectivas" },
-  { label: "Contacto", href: "/contacto" },
-];
-
-const legalLinks = [
-  { label: "Privacidad", href: "/privacidad" },
-  { label: "Cookies", href: "/cookies" },
-];
-
 export function Footer() {
+  const { t } = useTranslation();
+  const lang = useLang();
+
+  const links = [
+    { label: t("nav.metodoCira", { ns: "common" }), href: lang === "en" ? "/en/metodo-cira" : "/metodo-cira" },
+    { label: t("nav.intelligenceLab", { ns: "common" }), href: "/intelligence-lab" },
+    { label: t("nav.leadershipAcademy", { ns: "common" }), href: "/leadership-academy" },
+    { label: t("nav.experiencia", { ns: "common" }), href: "/experiencia" },
+    { label: t("nav.perspectivas", { ns: "common" }), href: "/perspectivas" },
+    { label: lang === "en" ? "Contact" : "Contacto", href: "/contacto" },
+  ];
+
+  const legalLinks = [
+    { label: t("footer.privacidad", { ns: "common" }), href: "/privacidad" },
+    { label: t("footer.cookies", { ns: "common" }), href: "/cookies" },
+  ];
+
   return (
     <footer className="w-full border-t border-border bg-background py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-center md:flex-row md:justify-between md:text-left">
-        <Link to="/">
+        <Link to={lang === "en" ? "/en" : "/"}>
           <img
             src="/assets/logos-cyrrus/cyrrus-logo-negro.png"
             alt="Cyrrus Consulting Services"

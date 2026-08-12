@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "metodoCira": "Método CIRA",
+    "estrategia": "Estrategia",
+    "estrategiaDesc": "Diagnóstico y hoja de ruta de negocio",
+    "seleccionSoluciones": "Selección de Soluciones",
+    "seleccionSolucionesDesc": "Elegimos la tecnología correcta, sin sesgo",
+    "gerenciaProyectos": "Gerencia de Proyectos",
+    "gerenciaProyectosDesc": "PMO externo desde el kickoff hasta el go-live",
+    "gestionCambio": "Gestión del Cambio",
+    "gestionCambioDesc": "Adopción real por parte de su equipo",
+    "intelligenceLab": "Cyrrus Intelligence Lab",
+    "leadershipAcademy": "Leadership Academy",
+    "experiencia": "Experiencia",
+    "quienesSomos": "Quiénes Somos",
+    "perspectivas": "Perspectivas"
+  },
+  "cta": {
+    "agendarConversacion": "Agendar conversación",
+    "expandir": "Expandir",
+    "contraer": "Contraer",
+    "abrirMenu": "Abrir menú",
+    "cerrarMenu": "Cerrar menú"
+  },
+  "footer": {
+    "privacidad": "Privacidad",
+    "cookies": "Cookies"
+  },
+  "languageSwitcher": {
+    "switchTo": "English",
+    "current": "ES"
+  }
+}

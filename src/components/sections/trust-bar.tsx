@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
 import { clientLogoNames } from "@/lib/client-logos";
 
@@ -17,13 +18,15 @@ const clientLogos = clientLogoNames.map((name) => (
   </div>
 ));
 
-const trustMetrics = [
-  { value: "+17", label: "países" },
-  { value: "1", label: "metodología propia" },
-  { value: "100%", label: "agnóstica en tecnología" },
-];
+interface Metric {
+  value: string;
+  label: string;
+}
 
 export function TrustBar() {
+  const { t } = useTranslation("home");
+  const trustMetrics = t("trustBar.metrics", { returnObjects: true }) as Metric[];
+
   return (
     <section className="w-full border-b border-border bg-background py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 lg:flex-row lg:justify-between lg:px-12">
