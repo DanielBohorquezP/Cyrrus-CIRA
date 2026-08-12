@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Gestión del Cambio y Capacitación | Cyrrus",
+    "description": "Gestión del cambio organizacional integrada a la ejecución del proyecto, con medición continua de la adopción vía IA."
+  },
+  "hero": {
+    "eyebrow": "Método CIRA — Adoptar",
+    "title": "Gestión del cambio y capacitación",
+    "description": "El sistema queda instalado, pero el equipo no lo adopta. Nuestra gestión del cambio organizacional trabaja la adopción desde el día uno del proyecto, no como una actividad de cierre.",
+    "ctaLabel": "Gestionar el cambio"
+  },
+  "intro": {
+    "kicker": "Adopción, no instalación",
+    "pullQuote": "La adopción se trabaja desde el día uno, no al cierre del proyecto.",
+    "description": "Integramos la gestión del cambio a la ejecución del proyecto, con foco en minimizar los riesgos de transformación digital que vienen de la resistencia al cambio — y medimos el clima organizacional y la curva de adopción de forma continua con IA, no solo al cierre del proyecto.",
+    "bullets": [
+      "Medición continua del clima organizacional y la curva de adopción, con IA.",
+      "Programas de capacitación, incluida la adopción de IA generativa para alta gerencia."
+    ],
+    "academyLinkText": "Nuestros programas de capacitación viven en",
+    "academyLinkLabel": "Cyrrus Leadership Academy"
+  },
+  "pillars": {
+    "eyebrow": "¿Cómo lo hacemos?",
+    "title": "Cuatro pilares, un solo proceso de adopción",
+    "description": "Nuestra metodología de Change Management no es un complemento: está embebida en nuestros servicios de Strategy, Select y Project Management. Esto asegura una gestión de cambios que se alinea perfectamente con la visión y los objetivos de su organización.",
+    "ctaLabel": "Agendar diagnóstico ejecutivo",
+    "items": [
+      { "title": "Gestión de stakeholders", "description": "Identificamos y gestionamos a todas las partes interesadas para asegurar su participación activa y apoyo durante el cambio." },
+      { "title": "Plan de comunicación", "description": "Desarrollamos estrategias efectivas para mantener a todos los involucrados informados y comprometidos en cada etapa." },
+      { "title": "Plan de entrenamiento", "description": "Diseñamos planes personalizados para garantizar que el equipo esté preparado y confiado en el uso de la nueva solución." },
+      { "title": "Gestión del clima", "description": "Monitoreamos y gestionamos el ambiente emocional y cultural del proyecto para fomentar un entorno colaborativo." }
+    ]
+  },
+  "distinctive": {
+    "eyebrow": "Lo que nos distingue",
+    "pullQuote": "Resultados que añaden valor.",
+    "description": "En Cyrrus CS no vemos el cambio como un obstáculo, sino como una oportunidad para el crecimiento y la mejora. Nuestro enfoque integral de Change Management impacta la cultura organizacional, flexibilizándola y orientándola hacia el éxito continuo.",
+    "solutionTitle": "Embebido en nuestros servicios",
+    "bullets": [
+      "Gestión proactiva del impacto en la organización, minimizando cualquier riesgo operativo.",
+      "Metodología holística aplicada a Select, Strategy y Project Management.",
+      "Reducción radical de la fricción natural en la adaptación a nuevas métricas y soluciones tecnológicas."
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Beneficios",
+    "title": "Agilidad, transformación y eficiencia",
+    "items": [
+      { "title": "Gestión integral de cambios", "description": "Nuestro servicio de Change Management va más allá de lo convencional: se convierte en una oportunidad de transformación positiva y sostenible." },
+      { "title": "Embebido en nuestros servicios", "description": "Nuestra metodología garantiza una gestión de cambios perfectamente alineada con la visión corporativa y sus objetivos específicos." },
+      { "title": "Enfoque integral", "description": "Detallamos cada aspecto crítico, desde la gestión de stakeholders hasta el impacto organizacional, asegurando la adopción real de las mejoras." },
+      { "title": "Gestión proactiva del clima", "description": "Monitoreamos y gestionamos el ambiente emocional y cultural del proyecto, contribuyendo al bienestar general y a un cierre efectivo." },
+      { "title": "Personalización y competencia", "description": "Diseñamos entrenamientos personalizados que garantizan un equipo altamente informado, impulsando una implementación exitosa." },
+      { "title": "Gestión proactiva del impacto", "description": "Analizamos el impacto organizacional de forma anticipada, minimizando la resistencia en las primeras etapas de adopción de la estrategia corporativa." }
+    ]
+  },
+  "featureImage": {
+    "caption": "Acompañamiento práctico en cada sesión de trabajo, no solo diapositivas."
+  }
+}

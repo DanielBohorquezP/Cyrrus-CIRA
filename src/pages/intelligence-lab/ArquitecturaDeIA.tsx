@@ -1,5 +1,6 @@
-import routeMeta from "@/lib/route-meta.json";
+import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
+import { useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { IncludedGrid } from "@/components/sections/included-grid";
@@ -9,70 +10,51 @@ import { Footer } from "@/components/sections/footer";
 import { Reveal } from "@/components/ui/reveal";
 import { Database, Link2, TrendingUp } from "lucide-react";
 
-const meta = routeMeta["/intelligence-lab/arquitectura-de-ia"];
+interface Item {
+  title: string;
+  description: string;
+}
+interface Faq {
+  question: string;
+  answer: string;
+}
 
-const included = [
-  {
-    icon: Database,
-    title: "Mapa de sistemas y modelos",
-    description:
-      "Qué herramientas de IA existen hoy en la organización, quién las compró y con qué datos y sistemas se conectan — antes de sumar una más.",
-  },
-  {
-    icon: Link2,
-    title: "Integración segura",
-    description:
-      "Conectamos modelos, datos y sistemas existentes sin duplicar información ni abrir brechas de seguridad nuevas.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Diseño para escalar",
-    description:
-      "Una arquitectura pensada para crecer, para que no haya que rehacerla cada vez que se suma un caso de uso nuevo.",
-  },
-];
-
-const faqs = [
-  {
-    question: "Cada área ya compró su propia herramienta de IA",
-    answer:
-      "Empezamos con un inventario real de lo que existe hoy, antes de diseñar cómo debería conectarse todo.",
-  },
-  {
-    question: "Tenemos datos en sistemas que no se hablan entre sí",
-    answer:
-      "La arquitectura resuelve exactamente eso: un modelo común de datos que los sistemas existentes puedan alimentar, sin migrarlo todo de golpe.",
-  },
-  {
-    question: "No sabemos si nuestra infraestructura actual soporta más IA",
-    answer:
-      "Evaluamos la capacidad real de su infraestructura antes de recomendar cualquier cambio o inversión adicional.",
-  },
-  {
-    question: "Nos preocupa la seguridad de conectar todo esto",
-    answer:
-      "La arquitectura se diseña junto con el marco de gobierno de IA, no después — seguridad y conectividad se definen a la vez.",
-  },
-];
+const icons = [Database, Link2, TrendingUp];
 
 export default function ArquitecturaDeIA() {
+  const { t } = useTranslation("intelligence-lab");
+  const lang = useLang();
+
+  const included = (t("arquitectura.included.items", { returnObjects: true }) as Item[]).map((it, i) => ({
+    ...it,
+    icon: icons[i],
+  }));
+  const faqs = t("arquitectura.faq.items", { returnObjects: true }) as Faq[];
+  const body = t("arquitectura.body", { returnObjects: true }) as string[];
+
+  const siteUrl = "https://www.cyrruscs.com";
+  const homePath = lang === "en" ? "/en" : "/";
+  const hubPath = lang === "en" ? "/en/intelligence-lab" : "/intelligence-lab";
+  const pagePath = lang === "en" ? "/en/intelligence-lab/arquitectura-de-ia" : "/intelligence-lab/arquitectura-de-ia";
+
   usePageMeta({
-    title: meta.title,
-    description: meta.description,
+    title: t("arquitectura.meta.title"),
+    description: t("arquitectura.meta.description"),
+    alternatePath: lang === "en" ? "/intelligence-lab/arquitectura-de-ia" : "/en/intelligence-lab/arquitectura-de-ia",
     jsonLd: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        serviceType: "Arquitectura de inteligencia artificial empresarial",
-        name: "Arquitectura de IA",
-        provider: { "@id": "https://www.cyrruscs.com/#organization" },
-        description: meta.description,
+        serviceType: t("arquitectura.serviceDescription"),
+        name: t("arquitectura.hero.title"),
+        provider: { "@id": `${siteUrl}/#organization` },
+        description: t("arquitectura.meta.description"),
         areaServed: "LATAM",
       },
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "@id": "https://www.cyrruscs.com/intelligence-lab/arquitectura-de-ia#faq",
+        "@id": `${siteUrl}${pagePath}#faq`,
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
@@ -83,9 +65,9 @@ export default function ArquitecturaDeIA() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.cyrruscs.com/" },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: "https://www.cyrruscs.com/intelligence-lab" },
-          { "@type": "ListItem", position: 3, name: "Arquitectura de IA", item: "https://www.cyrruscs.com/intelligence-lab/arquitectura-de-ia" },
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
+          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: `${siteUrl}${hubPath}` },
+          { "@type": "ListItem", position: 3, name: t("arquitectura.hero.title"), item: `${siteUrl}${pagePath}` },
         ],
       },
     ],
@@ -96,8 +78,8 @@ export default function ArquitecturaDeIA() {
       <SiteHeader />
       <PageHero
         eyebrow="Cyrrus Intelligence Lab"
-        title="Arquitectura de IA"
-        description="Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura técnica que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que la proliferación de herramientas sueltas se vuelva imposible de deshacer."
+        title={t("arquitectura.hero.title")}
+        description={t("arquitectura.hero.description")}
         image={{
           src: "/assets/decoracion/1785866224006.jpg",
           alt: "Pantalla de trabajo con modelos de IA y datos conectados en Cyrrus",
@@ -105,8 +87,8 @@ export default function ArquitecturaDeIA() {
       />
 
       <IncludedGrid
-        eyebrow="Qué incluye"
-        title="Una arquitectura, no una colección de herramientas sueltas."
+        eyebrow={t("arquitectura.included.eyebrow")}
+        title={t("arquitectura.included.title")}
         items={included}
       />
 
@@ -123,21 +105,14 @@ export default function ArquitecturaDeIA() {
             />
           </Reveal>
           <Reveal delay={0.1} className="space-y-6 text-lg leading-relaxed text-gray md:col-span-7">
-            <p>
-              Cada área compra su propia herramienta de IA sin visibilidad de lo que ya existe en el resto de la
-              organización. El resultado no es innovación: es una colección de sistemas aislados, sin gobierno de
-              datos común y con riesgo real de seguridad.
-            </p>
-            <p>
-              Diseñamos la capa de arquitectura que conecta esos modelos, datos y sistemas de forma segura y
-              escalable — la misma que sostiene, por debajo, la automatización de procesos y el gobierno de IA
-              que trabajamos en Cyrrus Intelligence Lab.
-            </p>
+            {body.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
           </Reveal>
         </div>
       </section>
 
-      <FaqSection eyebrow="Arquitectura de IA" faqs={faqs} />
+      <FaqSection eyebrow={t("arquitectura.faq.eyebrow")} faqs={faqs} />
 
       <FinalCta />
       <Footer />

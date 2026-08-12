@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
+import { useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { FinalCta } from "@/components/sections/final-cta";
@@ -9,59 +11,58 @@ import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { motion } from "framer-motion";
 import { ShieldCheck, Network, Bot, ArrowRight } from "lucide-react";
 
-const pillars = [
-  {
-    icon: ShieldCheck,
-    title: "Gobierno de IA corporativo",
-    description:
-      "Nadie en la organización puede explicar qué modelo tomó qué decisión, ni con qué datos. Definimos quién decide, quién audita y qué datos pueden tocarse y cuáles no.",
-    href: "/intelligence-lab/gobierno-de-ia",
-  },
-  {
-    icon: Network,
-    title: "Arquitectura de IA empresarial",
-    description:
-      "Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable.",
-    href: "/intelligence-lab/arquitectura-de-ia",
-  },
-  {
-    icon: Bot,
-    title: "Automatización de procesos con agentes de IA",
-    description:
-      "Agentes que hacen una demo impecable y no tocan un proceso real del negocio. Los nuestros ejecutan tareas dentro de cada fase de CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — bajo el mismo marco de gobierno.",
-    href: "/intelligence-lab/automatizaciones-desarrollo",
-  },
-];
+interface Pillar {
+  title: string;
+  description: string;
+  hrefSlug: string;
+}
+interface PhaseLink {
+  phase: string;
+  hash: string;
+  note: string;
+}
 
-const phaseLinks = [
-  { phase: "Construir", href: "/metodo-cira#construir", note: "Meses de diagnóstico manual, decisiones basadas en la última reunión." },
-  { phase: "Identificar", href: "/metodo-cira#identificar", note: "Evaluar proveedores uno por uno mientras la decisión se enfría." },
-  { phase: "Realizar", href: "/metodo-cira#realizar", note: "El riesgo del proyecto se descubre en el reporte de la semana, no en el momento en que ocurre." },
-  { phase: "Adoptar", href: "/metodo-cira#adoptar", note: "Nadie mide la adopción hasta que el proyecto ya cerró." },
-];
+const pillarIcons = [ShieldCheck, Network, Bot];
 
 export default function IntelligenceLab() {
+  const { t } = useTranslation("intelligence-lab");
+  const lang = useLang();
+  const prefix = lang === "en" ? "/en" : "";
+
+  const pillars = (t("hub.pillars.items", { returnObjects: true }) as Pillar[]).map((p, i) => ({
+    ...p,
+    icon: pillarIcons[i],
+    href: `${prefix}/intelligence-lab/${p.hrefSlug}`,
+  }));
+  const phaseLinks = (t("hub.transversal.phases", { returnObjects: true }) as PhaseLink[]).map((p) => ({
+    ...p,
+    href: `${prefix}/metodo-cira#${p.hash}`,
+  }));
+
+  const siteUrl = "https://www.cyrruscs.com";
+  const homePath = lang === "en" ? "/en" : "/";
+  const pagePath = `${prefix}/intelligence-lab`;
+
   usePageMeta({
-    title: "Gobierno de IA Corporativo | Cyrrus Intelligence Lab",
-    description:
-      "Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que sostiene las 4 fases del método CIRA — no un catálogo de chatbots, sino la infraestructura que hace posible la implementación de IA en procesos de negocio.",
+    title: t("hub.meta.title"),
+    description: t("hub.meta.description"),
+    alternatePath: lang === "en" ? "/intelligence-lab" : "/en/intelligence-lab",
     jsonLd: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        serviceType: "Gobierno de inteligencia artificial corporativo",
+        serviceType: lang === "en" ? "Corporate artificial intelligence governance" : "Gobierno de inteligencia artificial corporativo",
         name: "Cyrrus Intelligence Lab",
-        provider: { "@id": "https://www.cyrruscs.com/#organization" },
-        description:
-          "Gobierno de IA corporativo y arquitectura de IA empresarial, transversal a las 4 fases del método CIRA.",
+        provider: { "@id": `${siteUrl}/#organization` },
+        description: t("hub.serviceDescription"),
         areaServed: "LATAM",
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.cyrruscs.com/" },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: "https://www.cyrruscs.com/intelligence-lab" },
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
+          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: `${siteUrl}${pagePath}` },
         ],
       },
     ],
@@ -71,9 +72,9 @@ export default function IntelligenceLab() {
     <>
       <SiteHeader />
       <IntelligenceLabHero
-        eyebrow="Cyrrus Intelligence Lab"
-        title="Gobierno de IA corporativo y arquitectura de IA empresarial"
-        description="Su equipo ya usa IA sin que nadie audite qué datos toca ni quién responde si falla. Antes de la siguiente herramienta, necesita gobierno — no otro piloto suelto. Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que corre de forma transversal por debajo de las 4 fases del método."
+        eyebrow={t("hub.hero.eyebrow")}
+        title={t("hub.hero.title")}
+        description={t("hub.hero.description")}
       >
         <ContactCtaButton variant="light" />
       </IntelligenceLabHero>
@@ -82,15 +83,13 @@ export default function IntelligenceLab() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
             <span className="text-sm font-semibold uppercase tracking-wider text-blue">
-              Los tres pilares
+              {t("hub.pillars.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              Gobierno primero. Herramientas después.
+              {t("hub.pillars.title")}
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-gray">
-              La mayoría de las iniciativas de IA fallan porque empiezan por la
-              herramienta. Nosotros empezamos por el marco de gobierno que
-              hace que esa herramienta sea segura, auditable y escalable.
+              {t("hub.pillars.description")}
             </p>
           </Reveal>
 
@@ -113,7 +112,7 @@ export default function IntelligenceLab() {
                       {pillar.description}
                     </p>
                     <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-blue">
-                      Ver más
+                      {t("hub.pillars.verMas")}
                       <ArrowRight className="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" />
                     </span>
                   </Link>
@@ -132,10 +131,10 @@ export default function IntelligenceLab() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
             <span className="text-sm font-semibold uppercase tracking-wider text-blue">
-              Transversal a CIRA
+              {t("hub.transversal.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              Un mismo motor, corriendo en las cuatro fases.
+              {t("hub.transversal.title")}
             </h2>
           </Reveal>
 

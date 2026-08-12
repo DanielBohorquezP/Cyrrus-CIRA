@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Project Management & Implementation | Cyrrus",
+    "description": "External PMO to execute your transformation project on time and without cost overruns, from kickoff to go-live."
+  },
+  "hero": {
+    "eyebrow": "CIRA Method — Realize",
+    "title": "Project management & implementation",
+    "description": "The project falls behind, goes over budget, and no one owns the risk. Our project management acts as an external PMO, with real accountability for the outcome — not just status reports.",
+    "ctaLabel": "Let's talk about your projects"
+  },
+  "intro": {
+    "kicker": "Project governance",
+    "pullQuote": "Real accountability for the outcome, not just status reports.",
+    "description": "Project governance, quality assurance, and active risk management throughout execution, with AI agents that monitor project risk in real time and flag deviations before they become crises.",
+    "bullets": [
+      "Delivery on the agreed time and budget, with full visibility into progress at every moment.",
+      "Continuous risk monitoring, not just a status report at the end of each phase.",
+      "The foundation the change management that follows is built on."
+    ]
+  },
+  "differentiators": {
+    "eyebrow": "What makes us different?",
+    "title": "One management dynamic, no friction between teams",
+    "description": "We guarantee the transformation's success by bringing operational variables, technical expertise, and human resources together in one coherent management dynamic.",
+    "ctaLabel": "Schedule an executive diagnosis",
+    "items": [
+      { "title": "Full resource integration", "description": "We use our proven experience to integrate every critical element of your projects, ensuring smooth execution." },
+      { "title": "Quality assurance", "description": "We assign a senior resource within the executive committee to guarantee quality and fast, expert attention to every request." },
+      { "title": "Professional change management", "description": "We implement change management through a multidisciplinary team of professionals who ensure successful transitions." },
+      { "title": "Business experts", "description": "Dedicated to business processes and application integration, to minimize risk in goal alignment." }
+    ]
+  },
+  "reto": {
+    "eyebrow": "Our challenge",
+    "pullQuote": "Ensuring the correct execution and delivery of your projects.",
+    "description": "Backed by our experience, we account for every time and resource variable to determine real feasibility and achieve success — from complex implementations of mature to advanced technologies. We don't just lead enterprise technology implementations (ERP, CRM, HCM), but also network infrastructure projects, cloud migration, and any kind of technology architecture, including artificial intelligence.",
+    "solutionTitle": "How we solve it",
+    "bullets": [
+      "Comprehensive planning: defining resources, roles, timelines, costs, and scope.",
+      "Steering committee approval, ensuring corporate alignment on budgets and human commitment.",
+      "Involvement of leadership, operational, and technical stakeholders to track execution."
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Benefits",
+    "title": "Agility, transformation, and efficiency",
+    "items": [
+      { "title": "Full resource integration", "description": "We effectively integrate every critical element of your projects from start to finish." },
+      { "title": "Built-in quality assurance", "description": "We build in quality assurance with strict oversight from senior profiles for your executive committee." },
+      { "title": "Professional change management", "description": "We minimize resistance and ensure effective adoption of the change at every stage, through qualified multidisciplinary professionals." },
+      { "title": "Business process experts", "description": "We reduce risks tied to critical aspects and guarantee perfect alignment with functional best practices." },
+      { "title": "Results that transform", "description": "We don't just deliver projects — we create business successes, with a lasting, positive impact on the organization." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Scope",
+    "title": "Core services",
+    "items": [
+      "Project definition and identification",
+      "Project formulation and planning",
+      "Project implementation and execution",
+      "Project evaluation and monitoring",
+      "Project closeout",
+      "PMO structuring and setup",
+      "Project quality assurance plan",
+      "Diagnosis and intervention of in-flight projects",
+      "Change management and risk management"
+    ]
+  },
+  "achievements": {
+    "eyebrow": "Our track record",
+    "title": "Verifiable results, not sales promises",
+    "items": [
+      "Project executed start to finish under PMBOK guidelines.",
+      "Implementation with a positive impact on business continuity.",
+      "Project completed on time, with only a 3% variance from estimated costs.",
+      "Zero scope deviations.",
+      "Operational adjustments requiring only 2 customizations to the ERP code.",
+      "Documentation and creation of the implementation model for future projects."
+    ]
+  }
+}

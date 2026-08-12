@@ -29,9 +29,10 @@ const solutionSlugs = [...solutionsSrc.matchAll(/slug:\s*"([a-z-]+)"/g)].map((m)
 const workshopsSrc = await readFile(path.join(rootDir, "src/lib/workshops-data.ts"), "utf-8");
 const workshopSlugs = [...workshopsSrc.matchAll(/slug:\s*"([a-z-]+)"/g)].map((m) => m[1]);
 
-const extraRoutes = ["/privacidad", "/cookies", "/en", "/en/metodo-cira"];
+const extraRoutes = ["/privacidad", "/cookies"];
 
-const routes = [
+// Spanish routes (default, unprefixed).
+const esRoutes = [
   ...new Set([
     ...Object.keys(routeMeta),
     ...solutionSlugs.map((slug) => `/metodo-cira/seleccion-de-soluciones/${slug}`),
@@ -39,6 +40,11 @@ const routes = [
     ...extraRoutes,
   ]),
 ];
+
+// Every ES route now has an /en counterpart at the same slug.
+const enRoutes = esRoutes.map((r) => (r === "/" ? "/en" : `/en${r}`));
+
+const routes = [...esRoutes, ...enRoutes];
 
 // --- static file server over dist/, with SPA fallback to the pristine shell ---
 const MIME = {

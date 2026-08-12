@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
+import { useLang } from "@/lib/language";
 import { clientLogoNames } from "@/lib/client-logos";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
@@ -20,76 +22,70 @@ import {
   HeartPulse,
 } from "lucide-react";
 
-const stats = [
-  {
-    value: "+17",
-    label: "países con presencia",
-    icon: Globe2,
-    bg: "bg-navy",
-  },
-  {
-    value: "4",
-    label: "fases, un solo método",
-    icon: Layers,
-    bg: "bg-blue",
-  },
-  {
-    value: "60%",
-    label: "diagnóstico más rápido con IA",
-    icon: Sparkles,
-    bg: "bg-cyan",
-  },
+interface Stat {
+  value: string;
+  label: string;
+}
+interface Industry {
+  name: string;
+}
+interface GalleryItem {
+  caption: string;
+}
+interface TeamRole {
+  role: string;
+  name?: string;
+}
+
+const statIcons = [Globe2, Layers, Sparkles];
+const statBgs = ["bg-navy", "bg-blue", "bg-cyan"];
+const industryIcons = [Factory, Landmark, Zap, Fuel, ShoppingBag, HeartPulse];
+const industryBgs = ["bg-navy", "bg-blue", "bg-cyan", "bg-navy", "bg-blue", "bg-cyan"];
+
+const gallerySrcs = [
+  { src: "/assets/decoracion/Cesar.jpg", alt: "Consultores de Cyrrus trabajando en un diagnóstico de procesos" },
+  { src: "/assets/decoracion/IMG_20230302_112825.jpg", alt: "Equipo de Cyrrus Consulting Services" },
+  { src: "/assets/decoracion/Evento%20mesas.jpg", alt: "Cyrrus en un evento corporativo" },
 ];
 
-const industries = [
-  { name: "Manufactura", icon: Factory, bg: "bg-navy" },
-  { name: "Servicios financieros", icon: Landmark, bg: "bg-blue" },
-  { name: "Energía", icon: Zap, bg: "bg-cyan" },
-  { name: "Oil & Gas", icon: Fuel, bg: "bg-navy" },
-  { name: "Retail", icon: ShoppingBag, bg: "bg-blue" },
-  { name: "Salud", icon: HeartPulse, bg: "bg-cyan" },
-];
-
-const gallery = [
-  {
-    src: "/assets/decoracion/Cesar.jpg",
-    alt: "Consultores de Cyrrus trabajando en un diagnóstico de procesos",
-    caption: "Diagnóstico de procesos en sitio con el equipo consultor.",
-  },
-  {
-    src: "/assets/decoracion/IMG_20230302_112825.jpg",
-    alt: "Equipo de Cyrrus Consulting Services",
-    caption: "El equipo de Cyrrus en Barranquilla.",
-  },
-  {
-    src: "/assets/decoracion/Evento%20mesas.jpg",
-    alt: "Cyrrus en un evento corporativo",
-    caption: "Cyrrus presente en foros y eventos del sector en toda LATAM.",
-  },
-];
-
-const team = [
-  { role: "CEO & Fundador", name: "Jackson Bohorquez", photo: "/assets/decoracion/JacksonCEO1.jpeg" },
-  { role: "Director de Cyrrus Intelligence Lab", name: "Daniel Bohorquez" },
-  { role: "Director de Leadership Academy" },
-  { role: "Directora de Operaciones" },
-];
-
+const teamPhotos = ["/assets/decoracion/JacksonCEO1.jpeg", undefined, undefined, undefined];
 
 export default function Experiencia() {
+  const { t } = useTranslation("paginas");
+  const lang = useLang();
+
+  const stats = (t("experiencia.stats", { returnObjects: true }) as Stat[]).map((s, i) => ({
+    ...s,
+    icon: statIcons[i],
+    bg: statBgs[i],
+  }));
+  const industries = (t("experiencia.industries", { returnObjects: true }) as Industry[]).map((it, i) => ({
+    ...it,
+    icon: industryIcons[i],
+    bg: industryBgs[i],
+  }));
+  const gallery = (t("experiencia.gallery.items", { returnObjects: true }) as GalleryItem[]).map((g, i) => ({
+    ...g,
+    ...gallerySrcs[i],
+  }));
+  const team = (t("experiencia.team.roles", { returnObjects: true }) as TeamRole[]).map((m, i) => ({
+    ...m,
+    photo: teamPhotos[i],
+  }));
+
   usePageMeta({
-    title: "Experiencia | Consultoría multinacional LATAM | Cyrrus",
-    description:
-      "Cyrrus: consultoría multinacional con presencia en +17 países. Casos de éxito en transformación digital para manufactura, servicios financieros, energía y oil & gas. Conozca al equipo detrás del método CIRA.",
+    title: t("experiencia.meta.title"),
+    description: t("experiencia.meta.description"),
+    alternatePath: lang === "en" ? "/experiencia" : "/en/experiencia",
   });
 
   return (
     <>
       <SiteHeader />
       <IntelligenceLabHero
-        eyebrow="Experiencia"
-        title="Consultoría multinacional en LATAM, con presencia en +17 países"
-        description="Casos de éxito en transformación digital a través de industrias, un equipo de liderazgo con trayectoria real ejecutando el método CIRA, y las empresas que ya confiaron en nosotros."
+        eyebrow={t("experiencia.hero.eyebrow")}
+        title={t("experiencia.hero.title")}
+        description={t("experiencia.hero.description")}
         showVisual={false}
         visual={<InteractiveGlobe className="mx-auto" />}
       />
@@ -132,7 +128,7 @@ export default function Experiencia() {
 
           <Reveal delay={0.1} className="mt-16">
             <div className="text-sm font-semibold uppercase tracking-wider text-gray">
-              Industrias donde operamos
+              {t("experiencia.industriesLabel")}
             </div>
             <RevealGroup className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {industries.map((industry) => (
@@ -149,7 +145,7 @@ export default function Experiencia() {
                     <industry.icon className="h-5 w-5" strokeWidth={1.75} />
                   </span>
                   <span className="text-sm font-medium text-navy">
-                    Consultoría para {industry.name.toLowerCase()}
+                    {t("experiencia.industriesPrefix")} {industry.name.toLowerCase()}
                   </span>
                 </motion.div>
               ))}
@@ -162,10 +158,10 @@ export default function Experiencia() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
             <span className="text-sm font-semibold uppercase tracking-wider text-blue">
-              En acción
+              {t("experiencia.gallery.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              Cyrrus en el terreno
+              {t("experiencia.gallery.title")}
             </h2>
           </Reveal>
 
@@ -193,10 +189,10 @@ export default function Experiencia() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
             <span className="text-sm font-semibold uppercase tracking-wider text-blue">
-              Liderazgo
+              {t("experiencia.team.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              El equipo detrás del método.
+              {t("experiencia.team.title")}
             </h2>
           </Reveal>
 
@@ -233,7 +229,7 @@ export default function Experiencia() {
                 </div>
                 {!member.name && (
                   <div className="mt-1 text-xs text-muted-foreground">
-                    Foto y nombre pendientes
+                    {t("experiencia.team.photoNamePending")}
                   </div>
                 )}
               </motion.div>
@@ -246,10 +242,10 @@ export default function Experiencia() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
             <span className="text-sm font-semibold uppercase tracking-wider text-blue">
-              Confianza
+              {t("experiencia.trust.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              Empresas que han confiado en Cyrrus.
+              {t("experiencia.trust.title")}
             </h2>
           </Reveal>
           <RevealGroup className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">

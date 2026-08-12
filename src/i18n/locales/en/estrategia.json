@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Strategy Consulting | Cyrrus",
+    "description": "We design the business strategy your company needs to grow: diagnosis, roadmap, and clear priorities, with AI accelerating the analysis."
+  },
+  "hero": {
+    "eyebrow": "CIRA Method — Construct",
+    "title": "Strategy Consulting",
+    "description": "A strategy gets defined... but no one knows how to bring it down to the operation. Our strategy consulting connects the business vision to an executable plan, not a document that ends up in a drawer.",
+    "ctaLabel": "Schedule an executive diagnosis"
+  },
+  "intro": {
+    "kicker": "Strategic Consulting for CEOs",
+    "pullQuote": "Direct execution and measurable profitability — not a document that ends up in a drawer.",
+    "description": "We diagnose your business in depth, define priorities together with your leadership team, and lay out an actionable roadmap, with artificial intelligence applied to data analysis for faster, better-founded decisions.",
+    "bullets": [
+      "In-depth business diagnosis, not an organizational-climate survey.",
+      "Priorities and success metrics defined from day one.",
+      "Guided implementation — the same team that diagnoses also executes."
+    ]
+  },
+  "diagnostico": {
+    "eyebrow": "Diagnosis",
+    "title": "The problems CEOs who call us have in common",
+    "description": "You've spent months with the same problems: meetings that don't produce decisions, managers who don't take accountability, and cash flow that doesn't reflect how hard you're working. That's not bad luck — it's a strategic execution problem, and it has a solution.",
+    "problems": [
+      { "title": "Lack of alignment", "description": "You have a well-built strategic plan. The problem is that 90 days later, every manager interprets it differently and no one is accountable for results." },
+      { "title": "Data blindness", "description": "You need 2 weeks to know how the month closed. By the time you have the numbers, the opportunity is gone." },
+      { "title": "Investments without return", "description": "You invested in consulting, training, new processes — but can't show your board how much better the business is doing." },
+      { "title": "Founder dependency", "description": "The operation works because you're present. When you're away for a week, everything falls apart. That's not scaling — that's dependency." },
+      { "title": "Underused technology", "description": "Expensive tools the team doesn't adopt or take advantage of. You invest in technology and don't see the return on that investment." }
+    ]
+  },
+  "whyCeos": {
+    "eyebrow": "Why CEOs choose us",
+    "title": "Direct execution, not 200-page reports",
+    "description": "Most consulting firms hand you a 200-page report and disappear. We stay until the changes are working in the real operation — not in the slides.",
+    "stats": [
+      { "value": "60%", "label": "Reduction in diagnosis time compared to traditional consulting firms." },
+      { "value": "W1", "label": "We start executing from week 1, not at the end of the diagnosis." }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Benefits",
+    "title": "Agility, transformation, and efficiency",
+    "items": [
+      { "title": "Decide today, not in 3 months", "description": "We eliminate executive guesswork. We consolidate the operation into control dashboards with agile KPIs, revealing the real capital leaks and profit areas." },
+      { "title": "Diagnoses that actually get implemented", "description": "We condense months of inoperative diagnosis into a focus on early implementation, executing tangible improvements weeks ahead of the corporate calendar." },
+      { "title": "More profit, same resources", "description": "We reorganize your corporate flow. We eliminate dependencies, departmental silos, and overlapping expenses to boost profit margins with the same resources." },
+      { "title": "The company runs without you hovering", "description": "We prepare companies to adapt to changes in their environment. We design operating plans that help sustain the business's profitability and stability." },
+      { "title": "Less firefighting", "description": "We standardize processes so day-to-day operations run autonomously. We deliver greater operational control to unclog management's tactical tasks." },
+      { "title": "Board-ready reports", "description": "We consolidate financial and operational KPIs into a single corporate governance dashboard, so every board session has reliable, actionable information." }
+    ]
+  },
+  "cxaas": {
+    "eyebrow": "CXaaS",
+    "title": "Executive leadership as a Service",
+    "description": "Does your organization need senior executive leadership but isn't ready for a full-time hire? We put senior executives at your disposal — under an \"as a Service\" model — to cover critical technology, cybersecurity, and customer experience roles with the same rigor as an in-house C-Level.",
+    "roles": [
+      { "letter": "CIO", "title": "CIOaaS", "description": "Executive technology leadership: IT governance, enterprise architecture, and aligning technology with business strategy." },
+      { "letter": "CTO", "title": "CTOaaS", "description": "Senior technical leadership to define the technology roadmap, evaluate vendors, and ensure execution of critical projects." },
+      { "letter": "CCSO", "title": "CCSOaaS", "description": "Executive cybersecurity leadership: risk management, regulatory compliance, and incident response at the highest level." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Scope",
+    "title": "Core Strategy services",
+    "items": ["Corporate Strategy", "Shared Services Centers", "Business Strategy", "Business Continuity Plan", "IT Strategy & Transformation"]
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "About strategic planning",
+    "items": [
+      { "question": "What is Strategy?", "answer": "Strategy is the process by which a company defines its medium- and long-term direction, translates that direction into measurable objectives (KPIs), and aligns every area of the organization — from senior leadership down to daily operations — to execute it consistently. It's not a document that gets filed away: it's a system of decisions and priorities that gets reviewed and adjusted with real operating data. For a CEO or CIO, the value is that strategy stops living in a presentation and starts showing up in cash flow, profitability, and the business's corporate governance." },
+      { "question": "When does a company need strategic consulting?", "answer": "A company needs strategic consulting when plans exist but aren't executed consistently across areas, when financial indicators take weeks to become available for decision-making, or when business growth depends too heavily on the constant presence of the founder or leadership team. It's also the right moment when a mid-size or large corporation needs business transformation, IT strategy, or business continuity in the face of a change in market, technology, or organizational structure, and requires an external partner to help execute — not just diagnose." }
+    ]
+  }
+}

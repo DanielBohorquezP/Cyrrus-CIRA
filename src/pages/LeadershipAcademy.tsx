@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
+import { useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { WorkshopOrbit } from "@/components/ui/workshop-orbit";
@@ -29,52 +31,56 @@ const icons: Record<string, typeof Brain> = {
   "liderazgo-digital-y-toma-de-decisiones": Compass,
 };
 
-const shortDescriptions: Record<string, string> = {
-  "ia-para-directivos": "Decisiones de IA por instinto, no criterio",
-  "innovacion-empresarial": "Presupuesto sin criterio de inversión",
-  "iso-27001": "Certificación exigida, sin plan",
-  "continuidad-de-negocio-drp": "Un DRP que nunca se ha probado",
-  "gestion-del-cambio-para-lideres": "Adopción que no sobrevive la salida del consultor",
-  "gobierno-de-datos-para-ejecutivos": "Cada área con su propia cifra",
-  "liderazgo-digital-y-toma-de-decisiones": "Decisiones con la intuición de hace diez años",
-};
-
-const workshops = workshopEntries.map((w) => ({
-  icon: icons[w.slug],
-  title: w.title,
-  description: w.intro,
-  href: `/leadership-academy/${w.slug}`,
-}));
-
-const orbitWorkshops = workshopEntries.map((w) => ({
-  icon: icons[w.slug],
-  title: w.title,
-  description: shortDescriptions[w.slug],
-  href: `/leadership-academy/${w.slug}`,
-}));
+interface WorkshopTranslation {
+  title: string;
+  shortDescription: string;
+}
 
 export default function LeadershipAcademy() {
+  const { t } = useTranslation("leadership-academy");
+  const lang = useLang();
+  const prefix = lang === "en" ? "/en" : "";
+
+  const workshopTranslations = t("workshops", { returnObjects: true }) as Record<string, WorkshopTranslation>;
+
+  const workshops = workshopEntries.map((w) => ({
+    icon: icons[w.slug],
+    title: workshopTranslations[w.slug].title,
+    description: w.intro,
+    href: `${prefix}/leadership-academy/${w.slug}`,
+  }));
+
+  const orbitWorkshops = workshopEntries.map((w) => ({
+    icon: icons[w.slug],
+    title: workshopTranslations[w.slug].title,
+    description: workshopTranslations[w.slug].shortDescription,
+    href: `${prefix}/leadership-academy/${w.slug}`,
+  }));
+
+  const siteUrl = "https://www.cyrruscs.com";
+  const homePath = lang === "en" ? "/en" : "/";
+  const pagePath = `${prefix}/leadership-academy`;
+
   usePageMeta({
-    title: "Talleres para Altos Ejecutivos | Leadership Academy | Cyrrus",
-    description:
-      "Leadership Academy: talleres para altos ejecutivos y capacitación gerencial empresarial que sostienen la fase de Adopción de CIRA. Taller de IA para directivos, innovación empresarial, ISO 27001 y continuidad de negocio (DRP).",
+    title: t("hub.meta.title"),
+    description: t("hub.meta.description"),
+    alternatePath: lang === "en" ? "/leadership-academy" : "/en/leadership-academy",
     jsonLd: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        serviceType: "Talleres para altos ejecutivos y gestión del cambio organizacional",
+        serviceType: t("hub.serviceDescription"),
         name: "Leadership Academy",
-        provider: { "@id": "https://www.cyrruscs.com/#organization" },
-        description:
-          "Capacitación gerencial empresarial y gestión del cambio organizacional que sostiene la fase de Adopción del método CIRA.",
+        provider: { "@id": `${siteUrl}/#organization` },
+        description: t("hub.serviceDetail"),
         areaServed: "LATAM",
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.cyrruscs.com/" },
-          { "@type": "ListItem", position: 2, name: "Leadership Academy", item: "https://www.cyrruscs.com/leadership-academy" },
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
+          { "@type": "ListItem", position: 2, name: "Leadership Academy", item: `${siteUrl}${pagePath}` },
         ],
       },
     ],
@@ -85,8 +91,8 @@ export default function LeadershipAcademy() {
       <SiteHeader />
       <IntelligenceLabHero
         eyebrow="Leadership Academy"
-        title="Talleres para altos ejecutivos y gestión del cambio organizacional"
-        description="El proyecto termina, el consultor se va, y en tres meses el equipo volvió a como trabajaba antes. Formamos al equipo del cliente para operar bajo el mismo modelo de gobierno de IA que Cyrrus implementa, para que la velocidad no dependa de que sigamos ahí."
+        title={t("hub.hero.title")}
+        description={t("hub.hero.description")}
         showVisual={false}
         visual={<WorkshopOrbit items={orbitWorkshops} className="mx-auto" />}
       >
@@ -97,10 +103,10 @@ export default function LeadershipAcademy() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
             <span className="text-sm font-semibold uppercase tracking-wider text-blue">
-              Capacitación gerencial empresarial
+              {t("hub.workshopsSection.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              Siete talleres ejecutivos.
+              {t("hub.workshopsSection.title")}
             </h2>
           </Reveal>
 
@@ -128,7 +134,7 @@ export default function LeadershipAcademy() {
           </RevealGroup>
 
           <Reveal delay={0.15} className="mt-12">
-            <ContactCtaButton label="Agendar un taller" />
+            <ContactCtaButton label={t("hub.workshopsSection.ctaLabel")} />
           </Reveal>
         </div>
       </section>

@@ -1,0 +1,22 @@
+{
+  "privacidad": {
+    "meta": {
+      "title": "Privacy Policy | Cyrrus Consulting Services",
+      "description": "How Cyrrus Consulting Services collects, uses, and protects the personal data of visitors to this site or people who contact the company."
+    },
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "description": "How we handle the personal data of visitors to this site or people who contact us.",
+    "lastUpdated": "August 3, 2026"
+  },
+  "cookies": {
+    "meta": {
+      "title": "Cookie Policy | Cyrrus Consulting Services",
+      "description": "What cookies the Cyrrus Consulting Services website uses, including Google Analytics, and how you can manage your preferences."
+    },
+    "eyebrow": "Legal",
+    "title": "Cookie Policy",
+    "description": "What cookies we use on this site and how you can control them.",
+    "lastUpdated": "August 3, 2026"
+  }
+}

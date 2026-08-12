@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
+import { useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
@@ -6,10 +8,13 @@ import { Blog7 } from "@/components/ui/blog7";
 import { upcomingTopics } from "@/lib/perspectivas-topics";
 
 export default function Perspectivas() {
+  const { t } = useTranslation("paginas");
+  const lang = useLang();
+
   usePageMeta({
-    title: "Blog de Transformación Digital y Gobierno de IA | Perspectivas | Cyrrus",
-    description:
-      "Perspectivas de Cyrrus: análisis y contenido de autoridad sobre transformación digital, gobierno de IA y gestión del cambio. Calendario editorial en desarrollo.",
+    title: t("perspectivas.meta.title"),
+    description: t("perspectivas.meta.description"),
+    alternatePath: lang === "en" ? "/perspectivas" : "/en/perspectivas",
   });
 
   return (
@@ -17,11 +22,11 @@ export default function Perspectivas() {
       <SiteHeader />
 
       <Blog7
-        tagline="Perspectivas"
+        tagline={t("perspectivas.tagline")}
         headingAs="h1"
-        heading="Blog de transformación digital, gobierno de IA y gestión del cambio"
-        description="El espacio editorial de Cyrrus: análisis sobre por qué fracasan los proyectos de transformación digital, cómo elegir una consultora confiable, y el pensamiento detrás del método CIRA. Estos son los primeros temas en desarrollo."
-        buttonText="¿Quiere sugerir un tema?"
+        heading={t("perspectivas.heading")}
+        description={t("perspectivas.description")}
+        buttonText={t("perspectivas.buttonText")}
         buttonUrl="/contacto"
         posts={upcomingTopics}
       />

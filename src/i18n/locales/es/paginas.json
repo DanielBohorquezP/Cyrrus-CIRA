@@ -1,0 +1,95 @@
+{
+  "experiencia": {
+    "meta": {
+      "title": "Experiencia | Consultoría multinacional LATAM | Cyrrus",
+      "description": "Cyrrus: consultoría multinacional con presencia en +17 países. Casos de éxito en transformación digital para manufactura, servicios financieros, energía y oil & gas. Conozca al equipo detrás del método CIRA."
+    },
+    "hero": {
+      "eyebrow": "Experiencia",
+      "title": "Consultoría multinacional en LATAM, con presencia en +17 países",
+      "description": "Casos de éxito en transformación digital a través de industrias, un equipo de liderazgo con trayectoria real ejecutando el método CIRA, y las empresas que ya confiaron en nosotros."
+    },
+    "stats": [
+      { "value": "+17", "label": "países con presencia" },
+      { "value": "4", "label": "fases, un solo método" },
+      { "value": "60%", "label": "diagnóstico más rápido con IA" }
+    ],
+    "industriesLabel": "Industrias donde operamos",
+    "industriesPrefix": "Consultoría para",
+    "industries": [
+      { "name": "Manufactura" },
+      { "name": "Servicios financieros" },
+      { "name": "Energía" },
+      { "name": "Oil & Gas" },
+      { "name": "Retail" },
+      { "name": "Salud" }
+    ],
+    "gallery": {
+      "eyebrow": "En acción",
+      "title": "Cyrrus en el terreno",
+      "items": [
+        { "caption": "Diagnóstico de procesos en sitio con el equipo consultor." },
+        { "caption": "El equipo de Cyrrus en Barranquilla." },
+        { "caption": "Cyrrus presente en foros y eventos del sector en toda LATAM." }
+      ]
+    },
+    "team": {
+      "eyebrow": "Liderazgo",
+      "title": "El equipo detrás del método.",
+      "photoNamePending": "Foto y nombre pendientes",
+      "roles": [
+        { "role": "CEO & Fundador", "name": "Jackson Bohorquez" },
+        { "role": "Director de Cyrrus Intelligence Lab", "name": "Daniel Bohorquez" },
+        { "role": "Director de Leadership Academy" },
+        { "role": "Directora de Operaciones" }
+      ]
+    },
+    "trust": {
+      "eyebrow": "Confianza",
+      "title": "Empresas que han confiado en Cyrrus."
+    }
+  },
+  "quienesSomos": {
+    "meta": {
+      "title": "Quiénes Somos | Jackson Bohorquez, CEO | Cyrrus",
+      "description": "Conozca a Jackson Bohorquez, CEO y fundador de Cyrrus Consulting Services, creador del método CIRA para la transformación digital de empresas en LATAM."
+    },
+    "hero": {
+      "eyebrow": "Quiénes somos",
+      "title": "Jackson Bohorquez, CEO y fundador de Cyrrus",
+      "description": "La persona detrás del método CIRA: dos décadas conectando estrategia, tecnología y ejecución para empresas en toda LATAM."
+    },
+    "linkedInLabel": "LinkedIn",
+    "role": "CEO & Fundador, Cyrrus Consulting Services",
+    "bio": "Jackson Bohorquez fundó Cyrrus Consulting Services para cerrar la brecha que ve fallar a la mayoría de las organizaciones: no por falta de estrategia ni de tecnología, sino porque nadie conecta la decisión con la ejecución. De ahí nace el método CIRA — Construir, Identificar, Realizar, Adoptar — el marco que hoy guía los proyectos de transformación digital de Cyrrus en más de 17 países.",
+    "quote": "\"Las organizaciones no fallan por falta de estrategia ni de tecnología. Fallan cuando nadie conecta la decisión con la ejecución. CIRA existe para cerrar exactamente esa brecha.\"",
+    "trajectory": {
+      "label": "Trayectoria",
+      "items": [
+        "Fundador y CEO de Cyrrus Consulting Services",
+        "Creador del método CIRA: Construir, Identificar, Realizar, Adoptar",
+        "Consultor en transformación digital y gobierno de IA corporativo para empresas en LATAM",
+        "Conferencista y moderador en foros universitarios y empresariales sobre estrategia, tecnología e IA"
+      ]
+    },
+    "milestones": {
+      "eyebrow": "Momentos clave",
+      "title": "La historia detrás de Cyrrus",
+      "items": [
+        { "caption": "El día de la constitución legal de Cyrrus Consulting Services." },
+        { "caption": "El equipo que ejecuta el método CIRA todos los días." },
+        { "caption": "Compartiendo la visión de Cyrrus en foros regionales." }
+      ]
+    }
+  },
+  "perspectivas": {
+    "meta": {
+      "title": "Blog de Transformación Digital y Gobierno de IA | Perspectivas | Cyrrus",
+      "description": "Perspectivas de Cyrrus: análisis y contenido de autoridad sobre transformación digital, gobierno de IA y gestión del cambio. Calendario editorial en desarrollo."
+    },
+    "tagline": "Perspectivas",
+    "heading": "Blog de transformación digital, gobierno de IA y gestión del cambio",
+    "description": "El espacio editorial de Cyrrus: análisis sobre por qué fracasan los proyectos de transformación digital, cómo elegir una consultora confiable, y el pensamiento detrás del método CIRA. Estos son los primeros temas en desarrollo.",
+    "buttonText": "¿Quiere sugerir un tema?"
+  }
+}

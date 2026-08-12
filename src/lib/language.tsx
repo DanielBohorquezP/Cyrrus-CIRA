@@ -25,21 +25,14 @@ export function LanguageProvider({ lang, children }: { lang: Lang; children: Rea
 }
 
 /**
- * Maps a Spanish (default) path to its English equivalent and back, for the
- * pages that currently exist in both languages. Paths without a translated
- * counterpart fall back to the other language's homepage.
+ * Every translated page keeps the same slug under an /en prefix (e.g.
+ * "/metodo-cira/planeacion-estrategica" <-> "/en/metodo-cira/planeacion-estrategica"),
+ * so the mapping is a plain prefix add/strip. Pages that don't have an EN
+ * translation yet will 404 if switched to — see EN_ROUTES below for guarding.
  */
-const ES_TO_EN: Record<string, string> = {
-  "/": "/en",
-  "/metodo-cira": "/en/metodo-cira",
-};
-const EN_TO_ES: Record<string, string> = Object.fromEntries(
-  Object.entries(ES_TO_EN).map(([es, en]) => [en, es]),
-);
-
 export function getAlternatePath(pathname: string, lang: Lang): string {
   if (lang === "es") {
-    return ES_TO_EN[pathname] ?? "/en";
+    return pathname === "/" ? "/en" : `/en${pathname}`;
   }
-  return EN_TO_ES[pathname] ?? "/";
+  return pathname === "/en" ? "/" : pathname.replace(/^\/en/, "");
 }

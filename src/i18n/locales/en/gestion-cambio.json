@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Change Management & Training | Cyrrus",
+    "description": "Organizational change management built into project execution, with continuous AI-driven adoption measurement."
+  },
+  "hero": {
+    "eyebrow": "CIRA Method — Adopt",
+    "title": "Change management & training",
+    "description": "The system gets installed, but the team doesn't adopt it. Our organizational change management works on adoption from day one of the project, not as a closing activity.",
+    "ctaLabel": "Manage the change"
+  },
+  "intro": {
+    "kicker": "Adoption, not installation",
+    "pullQuote": "Adoption is worked from day one, not at project close.",
+    "description": "We integrate change management into project execution, focused on minimizing digital transformation risks caused by resistance to change — and we measure organizational climate and the adoption curve continuously with AI, not just at project close.",
+    "bullets": [
+      "Continuous measurement of organizational climate and the adoption curve, with AI.",
+      "Training programs, including generative AI adoption for senior management."
+    ],
+    "academyLinkText": "Our training programs live at",
+    "academyLinkLabel": "Cyrrus Leadership Academy"
+  },
+  "pillars": {
+    "eyebrow": "How we do it",
+    "title": "Four pillars, one adoption process",
+    "description": "Our Change Management methodology isn't an add-on: it's embedded in our Strategy, Select, and Project Management services. This ensures change management that aligns perfectly with your organization's vision and objectives.",
+    "ctaLabel": "Schedule an executive diagnosis",
+    "items": [
+      { "title": "Stakeholder management", "description": "We identify and manage all interested parties to ensure their active participation and support during the change." },
+      { "title": "Communication plan", "description": "We develop effective strategies to keep everyone involved informed and engaged at every stage." },
+      { "title": "Training plan", "description": "We design personalized plans to ensure the team is prepared and confident using the new solution." },
+      { "title": "Climate management", "description": "We monitor and manage the project's emotional and cultural environment to foster a collaborative setting." }
+    ]
+  },
+  "distinctive": {
+    "eyebrow": "What sets us apart",
+    "pullQuote": "Results that add value.",
+    "description": "At Cyrrus CS we don't see change as an obstacle, but as an opportunity for growth and improvement. Our comprehensive Change Management approach shapes organizational culture, making it more flexible and oriented toward continuous success.",
+    "solutionTitle": "Embedded in our services",
+    "bullets": [
+      "Proactive management of the organization's impact, minimizing any operational risk.",
+      "Holistic methodology applied to Select, Strategy, and Project Management.",
+      "Radical reduction of the natural friction in adapting to new metrics and technology solutions."
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Benefits",
+    "title": "Agility, transformation, and efficiency",
+    "items": [
+      { "title": "Comprehensive change management", "description": "Our Change Management service goes beyond convention: it becomes an opportunity for positive, sustainable transformation." },
+      { "title": "Embedded in our services", "description": "Our methodology guarantees change management perfectly aligned with corporate vision and specific objectives." },
+      { "title": "Comprehensive approach", "description": "We address every critical aspect, from stakeholder management to organizational impact, ensuring real adoption of the improvements." },
+      { "title": "Proactive climate management", "description": "We monitor and manage the project's emotional and cultural environment, contributing to overall well-being and an effective close." },
+      { "title": "Personalization and competency", "description": "We design personalized training that ensures a highly informed team, driving a successful implementation." },
+      { "title": "Proactive impact management", "description": "We analyze organizational impact ahead of time, minimizing resistance in the early stages of adopting the corporate strategy." }
+    ]
+  },
+  "featureImage": {
+    "caption": "Hands-on support in every working session — not just slide decks."
+  }
+}

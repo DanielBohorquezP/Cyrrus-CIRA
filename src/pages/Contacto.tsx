@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
+import { useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { Footer } from "@/components/sections/footer";
@@ -12,10 +14,13 @@ type FormState = "idle" | "submitting" | "success" | "error";
 const WEB3FORMS_ACCESS_KEY = "12bc1ce9-5114-4a56-8e62-15d72909c577";
 
 export default function Contacto() {
+  const { t } = useTranslation("contacto");
+  const lang = useLang();
+
   usePageMeta({
-    title: "Contacto | Agendar conversación estratégica | Cyrrus",
-    description:
-      "Agende una conversación estratégica con Cyrrus Consulting Services. Cuéntenos el reto de transformación de su organización y coordinamos una llamada con el equipo adecuado.",
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternatePath: lang === "en" ? "/contacto" : "/en/contacto",
   });
 
   const [status, setStatus] = useState<FormState>("idle");
@@ -29,7 +34,7 @@ export default function Contacto() {
     const mensaje = (form.elements.namedItem("mensaje") as HTMLTextAreaElement).value.trim();
 
     if (!nombre || !email || !mensaje) {
-      setError("Complete nombre, correo y mensaje.");
+      setError(t("form.requiredError"));
       return;
     }
 
@@ -64,9 +69,9 @@ export default function Contacto() {
     <>
       <SiteHeader />
       <PageHero
-        eyebrow="Contacto"
-        title="Agende una consultoría estratégica con Cyrrus"
-        description="Cuéntenos el reto de transformación que enfrenta su organización. Respondemos personalmente y coordinamos una llamada con el equipo adecuado del lado de Cyrrus."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        description={t("hero.description")}
       />
 
       <section id="formulario" className="w-full scroll-mt-24 bg-background py-24 md:py-32">
@@ -76,11 +81,10 @@ export default function Contacto() {
               <div className="flex flex-col items-center py-10 text-center">
                 <CheckCircle2 className="h-12 w-12 text-blue" />
                 <h2 className="mt-4 text-xl font-semibold text-navy">
-                  Mensaje recibido
+                  {t("form.successTitle")}
                 </h2>
                 <p className="mt-2 max-w-sm text-sm leading-relaxed text-gray">
-                  Gracias por escribirnos. Un miembro del equipo de Cyrrus se
-                  pondrá en contacto en las próximas 24 horas hábiles.
+                  {t("form.successDescription")}
                 </p>
                 <BorderButton
                   variant="dark"
@@ -88,7 +92,7 @@ export default function Contacto() {
                   onClick={() => setStatus("idle")}
                   dot
                 >
-                  Enviar otro mensaje
+                  {t("form.sendAnother")}
                 </BorderButton>
               </div>
             ) : (
@@ -102,17 +106,16 @@ export default function Contacto() {
                   autoComplete="off"
                 />
                 <h2 className="text-lg font-semibold text-navy">
-                  Agendar conversación
+                  {t("form.title")}
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-gray">
-                  30 minutos con nuestro equipo para entender su contexto y
-                  decirle honestamente si CIRA es lo que necesita.
+                  {t("form.description")}
                 </p>
 
                 <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="nombre" className="text-sm font-medium text-navy">
-                      Nombre
+                      {t("form.labels.nombre")}
                     </label>
                     <input
                       id="nombre"
@@ -124,7 +127,7 @@ export default function Contacto() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="email" className="text-sm font-medium text-navy">
-                      Correo corporativo
+                      {t("form.labels.email")}
                     </label>
                     <input
                       id="email"
@@ -136,7 +139,7 @@ export default function Contacto() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="empresa" className="text-sm font-medium text-navy">
-                      Empresa
+                      {t("form.labels.empresa")}
                     </label>
                     <input
                       id="empresa"
@@ -148,7 +151,7 @@ export default function Contacto() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="telefono" className="text-sm font-medium text-navy">
-                      Teléfono (opcional)
+                      {t("form.labels.telefono")}
                     </label>
                     <input
                       id="telefono"
@@ -160,7 +163,7 @@ export default function Contacto() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="tamano-empresa" className="text-sm font-medium text-navy">
-                      Tamaño de la empresa
+                      {t("form.labels.tamanoEmpresa")}
                     </label>
                     <select
                       id="tamano-empresa"
@@ -169,18 +172,18 @@ export default function Contacto() {
                       className="rounded-md border border-border bg-white px-3 py-2 text-sm text-navy outline-none transition-[border-color,box-shadow] focus:border-blue focus:ring-2 focus:ring-blue/20"
                     >
                       <option value="" disabled>
-                        Seleccione un rango
+                        {t("form.sizeOptions.placeholder")}
                       </option>
-                      <option value="50-100">+50 – 100 empleados</option>
-                      <option value="101-250">101 – 250 empleados</option>
-                      <option value="251-500">251 – 500 empleados</option>
-                      <option value="501-1000">501 – 1000 empleados</option>
-                      <option value="1000+">Más de 1000 empleados</option>
+                      <option value="50-100">{t("form.sizeOptions.r1")}</option>
+                      <option value="101-250">{t("form.sizeOptions.r2")}</option>
+                      <option value="251-500">{t("form.sizeOptions.r3")}</option>
+                      <option value="501-1000">{t("form.sizeOptions.r4")}</option>
+                      <option value="1000+">{t("form.sizeOptions.r5")}</option>
                     </select>
                   </div>
                   <div className="flex flex-col gap-1.5 sm:col-span-2">
                     <label htmlFor="mensaje" className="text-sm font-medium text-navy">
-                      Cuéntenos el reto que está enfrentando
+                      {t("form.labels.mensaje")}
                     </label>
                     <textarea
                       id="mensaje"
@@ -196,8 +199,7 @@ export default function Contacto() {
                 )}
                 {status === "error" && (
                   <p className="mt-4 text-sm text-destructive">
-                    No pudimos enviar su mensaje. Intente de nuevo o escríbanos
-                    a contacto@cyrruscs.com.
+                    {t("form.submitError")}
                   </p>
                 )}
 
@@ -208,14 +210,14 @@ export default function Contacto() {
                   className="mt-8 w-full sm:w-auto"
                   dot
                 >
-                  {status === "submitting" ? "Enviando..." : "Enviar mensaje"}
+                  {status === "submitting" ? t("form.sending") : t("form.send")}
                 </BorderButton>
               </form>
             )}
           </Reveal>
 
           <p className="mt-6 text-center text-xs text-muted-foreground">
-            También puede escribirnos directamente a{" "}
+            {t("form.emailNote")}{" "}
             <a href="mailto:contacto@cyrruscs.com" className="underline">
               contacto@cyrruscs.com
             </a>
@@ -225,16 +227,16 @@ export default function Contacto() {
           <div className="mt-10 flex flex-col items-center gap-3 border-t border-border pt-8 text-center text-sm text-gray">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 shrink-0 text-blue" />
-              <span>Cra. 51B #80-58 Oficina 1505, Nte. Centro Historico, Barranquilla, Atlántico</span>
+              <span>{t("location.address")}</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 shrink-0 text-blue" />
               <a href="https://wa.me/573175730635" className="hover:text-navy">
-                +57 317 5730635 (WhatsApp)
+                {t("location.whatsappLabel")}
               </a>
             </div>
             <p className="text-xs text-muted-foreground">
-              También atendemos Bogotá (oficina virtual).
+              {t("location.bogotaNote")}
             </p>
           </div>
         </div>

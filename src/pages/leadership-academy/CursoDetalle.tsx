@@ -1,6 +1,7 @@
 import { useParams, Navigate } from "react-router-dom";
-import routeMeta from "@/lib/route-meta.json";
+import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
+import { useLang } from "@/lib/language";
 import { getWorkshopBySlug } from "@/lib/workshops-data";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
@@ -8,65 +9,67 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal } from "@/components/ui/reveal";
 
+interface WorkshopTranslation {
+  title: string;
+  shortDescription: string;
+  intro: string;
+  body: string[];
+}
+
 export default function CursoDetalle() {
   const { curso } = useParams();
+  const { t } = useTranslation("leadership-academy");
+  const lang = useLang();
+  const prefix = lang === "en" ? "/en" : "";
   const entry = getWorkshopBySlug(curso);
-  const meta = entry
-    ? (routeMeta as Record<string, { title: string; description: string }>)[
-        `/leadership-academy/${entry.slug}`
-      ]
-    : undefined;
+  const tr = entry ? (t(`workshops.${entry.slug}`, { returnObjects: true }) as WorkshopTranslation) : undefined;
+
+  const siteUrl = "https://www.cyrruscs.com";
+  const homePath = lang === "en" ? "/en" : "/";
+  const hubPath = lang === "en" ? "/en/leadership-academy" : "/leadership-academy";
+  const pagePath = entry ? `${prefix}/leadership-academy/${entry.slug}` : hubPath;
 
   usePageMeta({
-    title: meta?.title ?? entry?.title ?? "Leadership Academy | Cyrrus",
-    description: meta?.description ?? entry?.intro ?? "",
+    title: tr?.title ?? (lang === "en" ? "Leadership Academy | Cyrrus" : "Leadership Academy | Cyrrus"),
+    description: tr?.intro ?? "",
     noindex: entry?.comingSoon,
-    jsonLd: entry
-      ? [
-          {
-            "@context": "https://schema.org",
-            "@type": "Course",
-            "@id": `https://www.cyrruscs.com/leadership-academy/${entry.slug}#course`,
-            url: `https://www.cyrruscs.com/leadership-academy/${entry.slug}`,
-            name: entry.title,
-            provider: { "@id": "https://www.cyrruscs.com/#organization" },
-            description: meta?.description ?? entry.intro,
-            areaServed: "LATAM",
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Inicio",
-                item: "https://www.cyrruscs.com/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Leadership Academy",
-                item: "https://www.cyrruscs.com/leadership-academy",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: entry.title,
-                item: `https://www.cyrruscs.com/leadership-academy/${entry.slug}`,
-              },
-            ],
-          },
-        ]
+    alternatePath: entry
+      ? lang === "en"
+        ? `/leadership-academy/${entry.slug}`
+        : `/en/leadership-academy/${entry.slug}`
       : undefined,
+    jsonLd:
+      entry && tr
+        ? [
+            {
+              "@context": "https://schema.org",
+              "@type": "Course",
+              "@id": `${siteUrl}${pagePath}#course`,
+              url: `${siteUrl}${pagePath}`,
+              name: tr.title,
+              provider: { "@id": `${siteUrl}/#organization` },
+              description: tr.intro,
+              areaServed: "LATAM",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
+                { "@type": "ListItem", position: 2, name: "Leadership Academy", item: `${siteUrl}${hubPath}` },
+                { "@type": "ListItem", position: 3, name: tr.title, item: `${siteUrl}${pagePath}` },
+              ],
+            },
+          ]
+        : undefined,
   });
 
-  if (!entry) return <Navigate to="/leadership-academy" replace />;
+  if (!entry || !tr) return <Navigate to={hubPath} replace />;
 
   return (
     <>
       <SiteHeader />
-      <PageHero eyebrow={entry.eyebrow} title={entry.title} description={entry.intro} />
+      <PageHero eyebrow={entry.eyebrow} title={tr.title} description={tr.intro} />
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-4">
@@ -80,7 +83,7 @@ export default function CursoDetalle() {
             />
           </Reveal>
           <Reveal delay={0.1} className="space-y-6 text-lg leading-relaxed text-gray md:col-span-8">
-            {entry.body.map((p) => (
+            {tr.body.map((p) => (
               <p key={p}>{p}</p>
             ))}
           </Reveal>

@@ -1,0 +1,135 @@
+{
+  "hub": {
+    "meta": {
+      "title": "Gobierno de IA Corporativo | Cyrrus Intelligence Lab",
+      "description": "Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que sostiene las 4 fases del método CIRA — no un catálogo de chatbots, sino la infraestructura que hace posible la implementación de IA en procesos de negocio."
+    },
+    "serviceDescription": "Gobierno de IA corporativo y arquitectura de IA empresarial, transversal a las 4 fases del método CIRA.",
+    "hero": {
+      "eyebrow": "Cyrrus Intelligence Lab",
+      "title": "Gobierno de IA corporativo y arquitectura de IA empresarial",
+      "description": "Su equipo ya usa IA sin que nadie audite qué datos toca ni quién responde si falla. Antes de la siguiente herramienta, necesita gobierno — no otro piloto suelto. Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que corre de forma transversal por debajo de las 4 fases del método."
+    },
+    "pillars": {
+      "eyebrow": "Los tres pilares",
+      "title": "Gobierno primero. Herramientas después.",
+      "description": "La mayoría de las iniciativas de IA fallan porque empiezan por la herramienta. Nosotros empezamos por el marco de gobierno que hace que esa herramienta sea segura, auditable y escalable.",
+      "verMas": "Ver más",
+      "items": [
+        { "title": "Gobierno de IA corporativo", "description": "Nadie en la organización puede explicar qué modelo tomó qué decisión, ni con qué datos. Definimos quién decide, quién audita y qué datos pueden tocarse y cuáles no.", "hrefSlug": "gobierno-de-ia" },
+        { "title": "Arquitectura de IA empresarial", "description": "Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable.", "hrefSlug": "arquitectura-de-ia" },
+        { "title": "Automatización de procesos con agentes de IA", "description": "Agentes que hacen una demo impecable y no tocan un proceso real del negocio. Los nuestros ejecutan tareas dentro de cada fase de CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — bajo el mismo marco de gobierno.", "hrefSlug": "automatizaciones-desarrollo" }
+      ]
+    },
+    "transversal": {
+      "eyebrow": "Transversal a CIRA",
+      "title": "Un mismo motor, corriendo en las cuatro fases.",
+      "phases": [
+        { "phase": "Construir", "hash": "construir", "note": "Meses de diagnóstico manual, decisiones basadas en la última reunión." },
+        { "phase": "Identificar", "hash": "identificar", "note": "Evaluar proveedores uno por uno mientras la decisión se enfría." },
+        { "phase": "Realizar", "hash": "realizar", "note": "El riesgo del proyecto se descubre en el reporte de la semana, no en el momento en que ocurre." },
+        { "phase": "Adoptar", "hash": "adoptar", "note": "Nadie mide la adopción hasta que el proyecto ya cerró." }
+      ]
+    }
+  },
+  "automatizaciones": {
+    "meta": {
+      "title": "Automatización y Agentes IA | Cyrrus Intelligence Lab",
+      "description": "Automatización de procesos y agentes de IA integrados a la arquitectura empresarial, medidos contra el proceso real que reemplazan, no contra una demo."
+    },
+    "serviceDescription": "Automatización de procesos con inteligencia artificial",
+    "hero": {
+      "title": "Automatización y Agentes IA",
+      "description": "Agentes que hacen una demo impecable y no tocan un proceso real del negocio. No partimos de construir software: partimos del mismo diagnóstico y arquitectura que gobernamos en Intelligence Lab, y solo cuando la solución correcta no existe en el mercado, la desarrollamos a la medida — integrada a esa misma arquitectura, no como un desarrollo suelto."
+    },
+    "included": {
+      "eyebrow": "Qué incluye",
+      "title": "Automatización que se mide contra el proceso real, no contra la demo.",
+      "items": [
+        { "title": "Automatización de procesos", "description": "Flujos completos de trabajo, no tareas sueltas — desde el disparador hasta el resultado que el negocio realmente necesita." },
+        { "title": "Agentes por fase de CIRA", "description": "Agentes especializados en diagnóstico, evaluación de proveedores, monitoreo de riesgo y medición de adopción — cada uno con un dueño y un propósito claro." },
+        { "title": "Medición de impacto", "description": "Cada agente se mide contra el proceso real que reemplaza o acelera, no contra una demo — tiempo, error y adopción por el equipo." }
+      ]
+    },
+    "body": [
+      "No somos una fábrica de software ni le vamos a proponer construir algo que ya existe en el mercado. El mismo diagnóstico agnóstico que usamos para seleccionar un ERP o un CRM es el que aplicamos aquí: primero evaluamos si la solución correcta ya existe.",
+      "Cuando genuinamente no existe, sí sabemos construirla: automatizaciones de procesos y agentes de IA especializados para tareas dentro de cada fase del método CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — integrados a la arquitectura de IA empresarial que ya gobernamos, para que no se convierta en una herramienta más sin dueño."
+    ],
+    "faq": {
+      "eyebrow": "Automatización y Agentes IA",
+      "items": [
+        { "question": "¿Son una fábrica de desarrollo de software?", "answer": "No. Somos consultores de transformación digital, no una casa de desarrollo. Primero evaluamos si la solución correcta ya existe en el mercado — como hacemos en la fase de Selección de Soluciones de CIRA. Solo construimos cuando esa opción genuinamente no existe." },
+        { "question": "Ya probamos agentes de IA y no tocaron ningún proceso real", "answer": "Diseñamos cada agente sobre un proceso específico del negocio, no como una capa genérica encima de todo lo demás." },
+        { "question": "No sabemos qué automatizar primero", "answer": "Priorizamos con el mismo diagnóstico que usamos en la fase Construir del método CIRA — impacto real, no la tarea más vistosa de automatizar." },
+        { "question": "Tenemos desarrolladores internos, ¿para qué los necesitamos?", "answer": "Trabajamos junto a su equipo técnico, no lo reemplazamos. La automatización queda integrada a la arquitectura y al gobierno de IA que ya definimos, para que su equipo la pueda mantener." },
+        { "question": "¿Cómo sabemos si el agente realmente funciona?", "answer": "Cada automatización se mide contra el proceso que reemplaza: tiempo ahorrado, tasa de error y adopción real por el equipo, no la calidad de una demo." }
+      ]
+    }
+  },
+  "arquitectura": {
+    "meta": {
+      "title": "Arquitectura de IA Empresarial | Cyrrus Intelligence Lab",
+      "description": "Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que la proliferación de herramientas sueltas se vuelva imposible de deshacer."
+    },
+    "serviceDescription": "Arquitectura de inteligencia artificial empresarial",
+    "hero": {
+      "title": "Arquitectura de IA",
+      "description": "Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura técnica que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que la proliferación de herramientas sueltas se vuelva imposible de deshacer."
+    },
+    "included": {
+      "eyebrow": "Qué incluye",
+      "title": "Una arquitectura, no una colección de herramientas sueltas.",
+      "items": [
+        { "title": "Mapa de sistemas y modelos", "description": "Qué herramientas de IA existen hoy en la organización, quién las compró y con qué datos y sistemas se conectan — antes de sumar una más." },
+        { "title": "Integración segura", "description": "Conectamos modelos, datos y sistemas existentes sin duplicar información ni abrir brechas de seguridad nuevas." },
+        { "title": "Diseño para escalar", "description": "Una arquitectura pensada para crecer, para que no haya que rehacerla cada vez que se suma un caso de uso nuevo." }
+      ]
+    },
+    "body": [
+      "Cada área compra su propia herramienta de IA sin visibilidad de lo que ya existe en el resto de la organización. El resultado no es innovación: es una colección de sistemas aislados, sin gobierno de datos común y con riesgo real de seguridad.",
+      "Diseñamos la capa de arquitectura que conecta esos modelos, datos y sistemas de forma segura y escalable — la misma que sostiene, por debajo, la automatización de procesos y el gobierno de IA que trabajamos en Cyrrus Intelligence Lab."
+    ],
+    "faq": {
+      "eyebrow": "Arquitectura de IA",
+      "items": [
+        { "question": "Cada área ya compró su propia herramienta de IA", "answer": "Empezamos con un inventario real de lo que existe hoy, antes de diseñar cómo debería conectarse todo." },
+        { "question": "Tenemos datos en sistemas que no se hablan entre sí", "answer": "La arquitectura resuelve exactamente eso: un modelo común de datos que los sistemas existentes puedan alimentar, sin migrarlo todo de golpe." },
+        { "question": "No sabemos si nuestra infraestructura actual soporta más IA", "answer": "Evaluamos la capacidad real de su infraestructura antes de recomendar cualquier cambio o inversión adicional." },
+        { "question": "Nos preocupa la seguridad de conectar todo esto", "answer": "La arquitectura se diseña junto con el marco de gobierno de IA, no después — seguridad y conectividad se definen a la vez." }
+      ]
+    }
+  },
+  "gobierno": {
+    "meta": {
+      "title": "Gobierno de IA | Cyrrus Intelligence Lab",
+      "description": "Definimos las políticas, roles y controles claros sobre cómo se usa la inteligencia artificial dentro de su empresa — quién decide, quién audita, qué datos pueden tocarse."
+    },
+    "serviceDescription": "Gobierno de inteligencia artificial corporativo",
+    "hero": {
+      "title": "Gobierno de IA",
+      "description": "Nadie en la organización puede explicar qué modelo tomó qué decisión, ni con qué datos. Definimos las políticas, roles y controles claros sobre cómo se usa la inteligencia artificial dentro de su empresa — quién decide, quién audita, qué datos pueden tocarse y cuáles no."
+    },
+    "included": {
+      "eyebrow": "Qué incluye",
+      "title": "Gobierno que se puede auditar, no solo declarar.",
+      "items": [
+        { "title": "Políticas de uso de IA", "description": "Quién puede usar qué modelo, para qué caso de negocio y con qué datos — por escrito, no por acuerdo tácito entre áreas." },
+        { "title": "Roles y responsables", "description": "Quién aprueba una iniciativa de IA antes de que arranque, y quién audita el resultado una vez que está en producción." },
+        { "title": "Controles de datos", "description": "Qué información puede tocar un modelo y cuál queda fuera de alcance, con trazabilidad de cada decisión automatizada." }
+      ]
+    },
+    "body": [
+      "Sin un marco de gobierno, cada iniciativa de IA queda a criterio de quien la implementó. Cuando algo sale mal — un dato sensible expuesto, una decisión automatizada sin trazabilidad — no hay a quién recurrir ni cómo auditar lo que pasó.",
+      "Este marco corre de forma transversal por debajo de las cuatro fases del método CIRA, para que cada decisión de IA — desde el diagnóstico hasta la adopción — quede documentada y sea auditable."
+    ],
+    "faq": {
+      "eyebrow": "Gobierno de IA",
+      "items": [
+        { "question": "No tenemos ningún marco de IA hoy", "answer": "Partimos de cero: definimos políticas, roles y controles desde la primera semana, sin frenar las iniciativas que ya están en marcha." },
+        { "question": "Ya usamos IA en varias áreas, sin coordinación", "answer": "Auditamos lo que ya existe y lo integramos al mismo marco de gobierno, en vez de pedirle a cada área que empiece de cero." },
+        { "question": "Un cliente o regulador nos pide evidencia de gobierno de IA", "answer": "Documentamos el marco de forma que resista una auditoría externa — roles, políticas y registros de decisión, no solo una presentación interna." },
+        { "question": "Nos preocupa que el gobierno frene la innovación", "answer": "El objetivo no es aprobar más lento, es aprobar con criterio. La mayoría de las iniciativas se mueven más rápido una vez que hay reglas claras de qué sí y qué no." }
+      ]
+    }
+  }
+}

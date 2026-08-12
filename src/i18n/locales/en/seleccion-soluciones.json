@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Solution Selection: ERP, CRM, HCM | Cyrrus",
+    "description": "We choose the right solution with you — ERP, CRM, HCM, cybersecurity, cloud — vendor-bias-free, based on your real processes."
+  },
+  "hero": {
+    "eyebrow": "CIRA Method — Identify",
+    "title": "Enterprise solution selection",
+    "description": "Technology gets bought because it's trending, not because it truly fits the business. Our software selection consulting always starts from the business's requirements, not the vendor's catalog — 100% agnostic evaluation, with objective, comparable criteria.",
+    "ctaLabel": "Let's talk about your solution"
+  },
+  "intro": {
+    "kicker": "How we do it",
+    "pullQuote": "A solution built for your business context, not the vendor's catalog.",
+    "description": "We take a comprehensive approach that covers key factors like your industry, company size, technological maturity, and business processes. Our goal is to offer you a tailored solution that fits your needs and business context perfectly.",
+    "bullets": [
+      "360° assessment of your business's sector, size, and technical maturity.",
+      "100% agnostic comparison, with no commercial bias toward any brand.",
+      "Objective, comparable criteria, defined before looking at vendors."
+    ],
+    "ctaLabel": "Schedule an executive diagnosis"
+  },
+  "criteria": {
+    "eyebrow": "Evaluation criteria",
+    "title": "Four dimensions, one verdict",
+    "items": [
+      { "title": "Functional", "description": "We guarantee short-term fit by solving your company's key operational needs." },
+      { "title": "Technical", "description": "We ensure technological maturity, evaluating compatibility to reduce hidden integration costs." },
+      { "title": "Economic", "description": "Precise budget-feasibility measurements, ensuring sustainable investment and operating spend." },
+      { "title": "Sustainable", "description": "A commitment to business sustainability: we guarantee your company's sustained growth over time." }
+    ]
+  },
+  "reto": {
+    "eyebrow": "Our challenge",
+    "pullQuote": "Selecting solutions built to fit your organization.",
+    "description": "The challenge for corporations isn't finding vendors — it's making sure the vendor delivers on its promises and fits the operation without friction. We analyze every variable in record time.",
+    "solutionTitle": "How we solve it",
+    "bullets": [
+      "We restructure the variables to consider and tie them to the business's real needs.",
+      "We draft the RFP classified by technical and functional attributes.",
+      "We support negotiation and contract close, always aiming to generate added value for your organization."
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Benefits",
+    "title": "Agility, transformation, and efficiency",
+    "items": [
+      { "title": "360° view for transformative decisions", "description": "We offer a comprehensive view that covers every crucial detail for decisions that transform your business, with fast, complete analysis." },
+      { "title": "Multidimensional selection", "description": "Our service goes beyond conventional vendor search: we score solutions from a functional, technical, and economic perspective." },
+      { "title": "Personalized, comprehensive approach", "description": "We tailor the analysis to your industry, technological maturity, and business processes, for a truly unique solution." },
+      { "title": "Rigorous proposal evaluation", "description": "We ensure not just short-term fit but also operational sustainability, thoroughly evaluating every bidder." },
+      { "title": "Decision-making efficiency", "description": "We guarantee fast analysis, letting you make informed decisions quickly and efficiently, without missing a detail." },
+      { "title": "Business sustainability", "description": "Beyond finding a solution, we focus on finding a tool that contributes to your organization's continuous growth." }
+    ]
+  },
+  "categories": {
+    "eyebrow": "Categories",
+    "title": "Solutions we evaluate and select with you",
+    "items": [
+      { "slug": "tecnologias-maduras", "label": "Mature Technologies", "note": "(ERP, CRM, HCM, business applications, BI)" },
+      { "slug": "tecnologias-avanzadas", "label": "Advanced Technologies", "note": "(Automation, Artificial Intelligence, RPA, Advanced Analytics)" },
+      { "slug": "infraestructura-tecnologica", "label": "Technology Infrastructure", "note": "(Cybersecurity, Networks, Cloud, Continuity and Backup)" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Scope",
+    "title": "Core services",
+    "items": [
+      "Request for Proposal (RFP) document creation",
+      "Vendor shortlisting methodology",
+      "Proposal intake and evaluation",
+      "Support with vendor selection and contracting"
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "The 12 stages of a friction-free solution selection",
+    "steps": [
+      { "title": "Strategic Kickoff", "description": "Define scope and objectives" },
+      { "title": "Business Discovery", "description": "Understand strategy and needs" },
+      { "title": "RFP Preparation", "description": "Create a structured RFP" },
+      { "title": "Participant Selection", "description": "Identify qualified vendors" },
+      { "title": "Vendor Invitation and Kickoff", "description": "Present the project to vendors" },
+      { "title": "Business Understanding", "description": "Ensure proposals address the actual needs" },
+      { "title": "Proposal Intake and Evaluation", "description": "Analyze proposals from multiple angles" },
+      { "title": "Executive Presentations and Demos", "description": "Evaluate proposals through live presentations" },
+      { "title": "Referencing and Validation", "description": "Validate the vendor's track record" },
+      { "title": "Comprehensive Evaluation", "description": "Consolidate evaluations into a matrix" },
+      { "title": "Executive Report", "description": "Present findings and recommendations" },
+      { "title": "Contracting Support", "description": "Support negotiation and contracting" }
+    ]
+  },
+  "closingQuote": "We don't just help our clients choose technology solutions — we help them make decisions that strengthen and transform their organization.",
+  "detail": {
+    "ctaLabel": "Let's talk about your selection",
+    "whatWeHelp": "What do we help you select?",
+    "entries": {
+      "tecnologias-maduras": {
+        "label": "Mature Technologies",
+        "eyebrow": "Solution Selection — Mature Technologies",
+        "intro": "They are the operational heart of the organization. They standardize processes, strengthen operations, and create a solid foundation for growth.",
+        "stat": { "value": "+70%", "description": "of ERP initiatives don't fully meet the business's objectives.", "source": "Gartner" },
+        "items": [
+          { "title": "ERP", "description": "We integrate financial, commercial, logistics, production, and administrative processes onto a platform built to support the business's growth." },
+          { "title": "CRM", "description": "We select solutions that strengthen customer relationships, streamline the sales process, and improve the experience at every interaction." },
+          { "title": "HCM", "description": "We help identify platforms that boost talent management, strengthen people's development, and support the organization's evolution." },
+          { "title": "EAM", "description": "We select solutions to manage physical assets, optimize maintenance, and improve operational reliability." }
+        ]
+      },
+      "tecnologias-avanzadas": {
+        "label": "Advanced Technologies",
+        "eyebrow": "Solution Selection — Advanced Technologies",
+        "intro": "New technologies only create value when they respond to a real business need. Our role is to identify where they can have the greatest impact and which alternatives best fit each organization.",
+        "items": [
+          { "title": "Artificial Intelligence", "description": "From intelligent assistants to advanced analytics models, we identify opportunities where technology can boost productivity, improve decision-making, and accelerate value creation." },
+          { "title": "Automation", "description": "We select platforms that simplify processes, eliminate repetitive tasks, and free people up to spend more time on strategic work." },
+          { "title": "Blockchain", "description": "We evaluate solutions for organizations that need higher levels of traceability, trust, and secure information exchange." }
+        ]
+      },
+      "infraestructura-tecnologica": {
+        "label": "Technology Infrastructure",
+        "eyebrow": "Solution Selection — Technology Infrastructure",
+        "intro": "The right infrastructure creates the conditions for the business to operate securely, reliably, and with room to grow.",
+        "items": [
+          { "title": "Cybersecurity", "description": "We select solutions to protect operations through modern security architectures, identity protection, device management, monitoring, and incident response." },
+          { "title": "Cloud", "description": "We support the selection of Cloud, Hybrid, and Multicloud architectures that deliver long-term flexibility, scalability, and efficiency." },
+          { "title": "Connectivity", "description": "We design and select LAN, WLAN, WAN, SD-WAN, and Internet solutions that support the business's operation with high availability and performance." },
+          { "title": "Business Continuity", "description": "We help define the capabilities needed to protect operations through continuity strategies, disaster recovery, and high availability." }
+        ]
+      }
+    }
+  },
+  "detailMeta": {
+    "tecnologias-maduras": { "title": "Mature Technology Selection: ERP, CRM, HCM | Cyrrus", "description": "We help you choose the right ERP, CRM, HCM, or business applications for your company: agnostic vendor evaluation, objective criteria, no commercial bias." },
+    "tecnologias-avanzadas": { "title": "Advanced Technology Selection: Automation & AI | Cyrrus", "description": "We select the automation, artificial intelligence, and advanced analytics solutions that fit your data and process maturity." },
+    "infraestructura-tecnologica": { "title": "Technology Infrastructure: Cybersecurity & Cloud | Cyrrus", "description": "We evaluate and select the cybersecurity, network, cloud, and business continuity solutions your company needs, with no vendor bias." }
+  }
+}

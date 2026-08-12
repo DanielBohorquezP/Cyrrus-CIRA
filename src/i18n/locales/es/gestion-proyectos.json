@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Gerencia de Proyectos e Implementación | Cyrrus",
+    "description": "PMO externo para ejecutar su proyecto de transformación a tiempo y sin sobrecostos, desde el kickoff hasta el go-live."
+  },
+  "hero": {
+    "eyebrow": "Método CIRA — Realizar",
+    "title": "Gerencia de proyectos e implementación",
+    "description": "El proyecto se atrasa, se sale de presupuesto, nadie asume el riesgo. Nuestra gerencia de proyectos actúa como PMO externo, con responsabilidad real sobre el resultado — no solo reportes de estado.",
+    "ctaLabel": "Hablemos de sus proyectos"
+  },
+  "intro": {
+    "kicker": "Gobierno de proyecto",
+    "pullQuote": "Responsabilidad real sobre el resultado, no solo reportes de estado.",
+    "description": "Gobierno de proyecto, aseguramiento de calidad y gestión de riesgo activa durante toda la ejecución, con agentes de IA que monitorean el riesgo del proyecto en tiempo real y anticipan desviaciones antes de que se conviertan en crisis.",
+    "bullets": [
+      "Entrega en el tiempo y presupuesto acordado, con visibilidad total del avance en cada momento.",
+      "Monitoreo continuo del riesgo, no solo un reporte de estado al final de cada fase.",
+      "Base sobre la que construimos la gestión del cambio que sigue."
+    ]
+  },
+  "differentiators": {
+    "eyebrow": "¿Qué nos hace únicos?",
+    "title": "Una sola dinámica gerencial, sin fricciones entre equipos",
+    "description": "Garantizamos el éxito de la transformación uniendo variables operacionales, pericia técnica y recursos humanos en una sola dinámica gerencial coherente.",
+    "ctaLabel": "Agendar diagnóstico ejecutivo",
+    "items": [
+      { "title": "Integración completa de recursos", "description": "Utilizamos nuestra experiencia comprobada para integrar todos los elementos críticos de sus proyectos, asegurando una ejecución fluida." },
+      { "title": "Aseguramiento de calidad", "description": "Designamos un recurso de alto perfil en el comité ejecutivo para garantizar la calidad y una atención experta y rápida a cada solicitud." },
+      { "title": "Change Management profesional", "description": "Implementamos la gestión del cambio mediante un equipo de profesionales multidisciplinarios que aseguran transiciones exitosas." },
+      { "title": "Expertos de negocio", "description": "Dedicados a procesos de negocio e integración de aplicaciones, para minimizar riesgos en la alineación de metas." }
+    ]
+  },
+  "reto": {
+    "eyebrow": "Nuestro reto",
+    "pullQuote": "Asegurar la correcta ejecución y cumplimiento de sus proyectos.",
+    "description": "Apalancados en nuestra experiencia, tomamos en cuenta todas las variables de tiempo y recursos para determinar la viabilidad real y alcanzar el éxito — desde implementaciones complejas en tecnologías maduras y avanzadas. No solo lideramos la implementación de tecnologías empresariales (ERP, CRM, HCM), sino también proyectos de infraestructura de redes, migración a la nube y cualquier tipo de arquitectura tecnológica, incluida la inteligencia artificial.",
+    "solutionTitle": "Cómo lo resolvemos",
+    "bullets": [
+      "Desarrollo integral de la planeación: definición de recursos, roles, tiempos, costos y alcance.",
+      "Aprobación de comité de dirección, asegurando la alineación corporativa de presupuestos y compromiso humano.",
+      "Participación de los actores directivos, operativos y técnicos para el seguimiento de la ejecución."
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Beneficios",
+    "title": "Agilidad, transformación y eficiencia",
+    "items": [
+      { "title": "Integración completa de recursos", "description": "Integramos de manera efectiva todos los elementos críticos de sus proyectos desde el inicio hasta la conclusión." },
+      { "title": "Aseguramiento de calidad integrado", "description": "Incorporamos componentes de aseguramiento de calidad con supervisión estricta de perfiles de alto nivel para su comité ejecutivo." },
+      { "title": "Change Management profesional", "description": "Minimizamos resistencias y aseguramos la adopción efectiva del cambio en cada etapa, mediante profesionales calificados multidisciplinarios." },
+      { "title": "Expertos en procesos de negocio", "description": "Reducimos riesgos asociados a aspectos críticos y garantizamos una alineación perfecta con las mejores prácticas funcionales." },
+      { "title": "Resultados que transforman", "description": "No nos limitamos a entregar proyectos: creamos éxitos empresariales, con un impacto positivo y duradero en la organización." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Alcance",
+    "title": "Servicios principales",
+    "items": [
+      "Definición e identificación de proyectos",
+      "Formulación y planeación de proyectos",
+      "Implementación y ejecución de proyectos",
+      "Evaluación y monitoreo de proyectos",
+      "Cierre de proyectos",
+      "Estructuración y creación de PMOs",
+      "Plan de aseguramiento de calidad de proyectos",
+      "Diagnóstico e intervención de proyectos en curso",
+      "Gestión de cambio y gestión de riesgo"
+    ]
+  },
+  "achievements": {
+    "eyebrow": "Nuestros logros",
+    "title": "Resultados verificables, no promesas de venta",
+    "items": [
+      "Proyecto ejecutado de principio a fin bajo los lineamientos del PMBOK.",
+      "Implementación con impacto positivo en la continuidad del negocio.",
+      "Proyecto finalizado a tiempo, con una diferencia de solo 3% en los costos estimados.",
+      "Cero desviaciones al alcance del proyecto.",
+      "Ajustes operacionales con solo 2 customizaciones requeridas al código del ERP.",
+      "Documentación y creación del modelo de implementación para futuros proyectos."
+    ]
+  }
+}
