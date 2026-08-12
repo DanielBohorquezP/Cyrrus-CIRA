@@ -99,20 +99,26 @@ if (process.env.VERCEL) {
   };
 }
 const browser = await chromium.launch(launchOptions);
-const page = await browser.newPage();
 
 const rendered = new Map();
 let failures = 0;
 
-for (const route of routes) {
+// One fresh page per route: reusing a single page across all 54 routes means
+// a goto() that times out on a slow/shared build machine (e.g. Vercel's
+// 2-core runners) leaves that navigation stuck in-flight, and the *next*
+// iteration's goto() on the same page then reports itself as "interrupted by
+// another navigation" — cascading failures for every route after the first
+// slow one, even though nothing is actually wrong with those pages.
+async function tryRenderRoute(route) {
+  const page = await browser.newPage();
   try {
-    await page.goto(`${baseUrl}${route}`, { waitUntil: "domcontentloaded", timeout: 15000 });
+    await page.goto(`${baseUrl}${route}`, { waitUntil: "domcontentloaded", timeout: 45000 });
     await page.waitForFunction(
       () => {
         const h1 = document.querySelector("h1");
         return !!h1 && h1.textContent.trim().length > 0;
       },
-      { timeout: 10000 },
+      { timeout: 20000 },
     );
     // Let framer-motion / layout-effect driven content (JSON-LD injection,
     // late-mounted sections) settle before capturing.
@@ -124,9 +130,20 @@ for (const route of routes) {
     const html = (await page.content()).split(baseUrl).join("");
     rendered.set(route, html);
     console.log(`prerender: rendered ${route}`);
+    return true;
   } catch (err) {
+    console.warn(`prerender: attempt failed for ${route} — ${err.message.split("\n")[0]}`);
+    return false;
+  } finally {
+    await page.close();
+  }
+}
+
+for (const route of routes) {
+  const ok = (await tryRenderRoute(route)) || (await tryRenderRoute(route));
+  if (!ok) {
     failures += 1;
-    console.error(`prerender: FAILED ${route} — ${err.message.split("\n")[0]}`);
+    console.error(`prerender: FAILED ${route} after retry`);
   }
 }
 
