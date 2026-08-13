@@ -30,6 +30,16 @@
         { "phase": "Realizar", "hash": "realizar", "note": "El riesgo del proyecto se descubre en el reporte de la semana, no en el momento en que ocurre." },
         { "phase": "Adoptar", "hash": "adoptar", "note": "Nadie mide la adopción hasta que el proyecto ya cerró." }
       ]
+    },
+    "faq": {
+      "eyebrow": "Cyrrus Intelligence Lab",
+      "title": "Preguntas frecuentes",
+      "items": [
+        { "question": "¿Cyrrus Intelligence Lab vende herramientas de IA?", "answer": "No. No es un catálogo de chatbots ni herramientas — es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que hace posible implementar IA en procesos de negocio de forma segura y auditable." },
+        { "question": "¿Por dónde empiezan, gobierno o herramientas?", "answer": "Por gobierno. La mayoría de las iniciativas de IA fallan porque empiezan por la herramienta; nosotros empezamos por el marco que hace que esa herramienta sea segura, auditable y escalable." },
+        { "question": "¿Cómo se conecta Intelligence Lab con el método CIRA?", "answer": "Corre de forma transversal por debajo de las cuatro fases: acelera el diagnóstico en Construir, la evaluación de proveedores en Identificar, el monitoreo de riesgo en Realizar y la medición de adopción en Adoptar." },
+        { "question": "Ya usamos IA en varias áreas sin ningún marco común, ¿por dónde empezamos?", "answer": "Auditamos lo que ya existe hoy en la organización y lo integramos a un mismo marco de gobierno, en vez de pedirle a cada área que empiece desde cero." }
+      ]
     }
   },
   "automatizaciones": {

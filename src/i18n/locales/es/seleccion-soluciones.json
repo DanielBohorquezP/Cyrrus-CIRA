@@ -91,6 +91,16 @@
     ]
   },
   "closingQuote": "No ayudamos a nuestros clientes a elegir soluciones tecnológicas, los ayudamos a tomar decisiones que fortalecen y transforman su organización.",
+  "faq": {
+    "eyebrow": "Selección de Soluciones",
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "question": "¿La evaluación es realmente agnóstica de proveedor?", "answer": "Sí. No tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM u otras soluciones empresariales — evaluamos con los mismos cuatro criterios objetivos (funcional, técnico, económico, sostenible) sin importar la marca." },
+      { "question": "¿Cuánto dura un proceso de selección de soluciones?", "answer": "Como referencia, la fase de Identificar (selección de solución) del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación — las 12 etapas del proceso descrito arriba." },
+      { "question": "Ya elegimos proveedor y no estamos seguros de la decisión", "answer": "Evaluamos la decisión con los mismos criterios objetivos, incluso si el proceso ya empezó. Al ser 100% agnósticos, podemos validar una elección en curso sin sesgo hacia ningún proveedor." },
+      { "question": "¿Qué incluye el RFP que preparan?", "answer": "El documento de Solicitud de Propuestas se clasifica por atributos técnicos y funcionales, y se acompaña de la recepción y evaluación de propuestas, presentaciones ejecutivas, referenciación de proveedores y acompañamiento en la negociación del contrato." }
+    ]
+  },
   "detail": {
     "ctaLabel": "Hablemos de su selección",
     "whatWeHelp": "¿Qué ayudamos a seleccionar?",

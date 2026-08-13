@@ -16,12 +16,17 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { PageFeatureImage } from "@/components/sections/page-feature-image";
+import { FaqSection } from "@/components/sections/faq-section";
 import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 
 interface Item {
   title: string;
   description: string;
+}
+interface Faq {
+  question: string;
+  answer: string;
 }
 
 const pillarIcons = [Users, MessageSquare, GraduationCap, HeartHandshake];
@@ -39,6 +44,7 @@ export default function GestionDelCambio() {
     ...it,
     icon: benefitIcons[i],
   }));
+  const faqs = t("faq.items", { returnObjects: true }) as Faq[];
 
   const siteUrl = "https://www.cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -59,6 +65,16 @@ export default function GestionDelCambio() {
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
         areaServed: "LATAM",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": `${siteUrl}${pagePath}#faq`,
+        mainEntity: faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
       },
       {
         "@context": "https://schema.org",
@@ -208,6 +224,8 @@ export default function GestionDelCambio() {
         alt="Consultor de Cyrrus trabajando en un plan de adopción del cambio"
         caption={t("featureImage.caption")}
       />
+
+      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
 
       <FinalCta />
       <Footer />

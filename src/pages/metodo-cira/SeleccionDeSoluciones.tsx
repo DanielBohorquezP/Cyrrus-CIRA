@@ -21,6 +21,7 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
+import { FaqSection } from "@/components/sections/faq-section";
 import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 
@@ -40,6 +41,10 @@ interface CategoryItem {
 interface ProcessStep {
   title: string;
   description: string;
+}
+interface Faq {
+  question: string;
+  answer: string;
 }
 
 const criteriaIcons = [Target, Cpu, Scale, Leaf];
@@ -65,6 +70,7 @@ export default function SeleccionDeSoluciones() {
   }));
   const services = t("services.items", { returnObjects: true }) as string[];
   const process = t("process.steps", { returnObjects: true }) as ProcessStep[];
+  const faqs = t("faq.items", { returnObjects: true }) as Faq[];
 
   const siteUrl = "https://www.cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -84,6 +90,16 @@ export default function SeleccionDeSoluciones() {
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
         areaServed: "LATAM",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": `${siteUrl}${pagePath}#faq`,
+        mainEntity: faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
       },
       {
         "@context": "https://schema.org",
@@ -306,6 +322,8 @@ export default function SeleccionDeSoluciones() {
           </RevealGroup>
         </div>
       </section>
+
+      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
 
       <FinalCta />
       <Footer />

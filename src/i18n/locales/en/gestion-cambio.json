@@ -57,5 +57,15 @@
   },
   "featureImage": {
     "caption": "Hands-on support in every working session — not just slide decks."
+  },
+  "faq": {
+    "eyebrow": "Change Management",
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "When does change management work actually start?", "answer": "From day one of the project, not as a closing activity — it's embedded in the execution of Strategy, Select, and Project Management, not run as a separate service." },
+      { "question": "How do you measure whether the change is actually being adopted?", "answer": "We measure organizational climate and the adoption curve continuously with AI, not just with a survey at project close." },
+      { "question": "Is team training included?", "answer": "Yes, the training plan is one of the four pillars of the process. Our broader training programs, including generative AI adoption for senior management, live at Cyrrus Leadership Academy." },
+      { "question": "The system is already installed, but the team isn't using it — can you help now?", "answer": "Yes. While the ideal approach is integrating change management from the start of the project, we also step in when adoption has already stalled, through stakeholder management, a communication plan, and organizational climate management." }
+    ]
   }
 }

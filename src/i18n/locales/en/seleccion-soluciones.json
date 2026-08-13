@@ -91,6 +91,16 @@
     ]
   },
   "closingQuote": "We don't just help our clients choose technology solutions — we help them make decisions that strengthen and transform their organization.",
+  "faq": {
+    "eyebrow": "Solution Selection",
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "Is the evaluation really vendor-agnostic?", "answer": "Yes. We have no commercial partnerships or commissions with ERP, CRM, HCM, or other enterprise software vendors — we evaluate every option against the same four objective criteria (functional, technical, economic, sustainable), regardless of brand." },
+      { "question": "How long does a solution selection process take?", "answer": "As a reference, the Identify phase (solution selection) of the CIRA method typically takes 6 to 12 weeks, from the strategic kickoff through contracting support — the 12 process stages described above." },
+      { "question": "We already picked a vendor and aren't sure about the decision", "answer": "We evaluate the decision against the same objective criteria, even if the process is already underway. Being 100% agnostic lets us validate a choice in progress without bias toward any vendor." },
+      { "question": "What does the RFP you prepare include?", "answer": "The Request for Proposal document is classified by technical and functional attributes, and paired with proposal intake and evaluation, executive presentations, vendor referencing, and support through contract negotiation." }
+    ]
+  },
   "detail": {
     "ctaLabel": "Let's talk about your selection",
     "whatWeHelp": "What do we help you select?",

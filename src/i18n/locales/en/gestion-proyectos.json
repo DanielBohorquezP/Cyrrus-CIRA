@@ -68,6 +68,16 @@
       "Change management and risk management"
     ]
   },
+  "faq": {
+    "eyebrow": "Project Management",
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "How does the external PMO model work?", "answer": "We act as an external PMO with real accountability for the outcome, not just status reports: project governance, quality assurance, and active risk management throughout execution." },
+      { "question": "What kind of projects do you manage?", "answer": "From complex implementations of mature and advanced technologies — ERP, CRM, HCM — to network infrastructure projects, cloud migration, and any kind of technology architecture, including artificial intelligence." },
+      { "question": "How do you measure project success?", "answer": "With verifiable results, not sales promises: projects executed under PMBOK guidelines, zero scope deviations, and cost variances as low as 3% versus estimates." },
+      { "question": "Is risk monitoring just a report at the end of each phase?", "answer": "No. We monitor project risk continuously with AI agents that flag deviations before they become crises, with full visibility into progress at every moment." }
+    ]
+  },
   "achievements": {
     "eyebrow": "Our track record",
     "title": "Verifiable results, not sales promises",

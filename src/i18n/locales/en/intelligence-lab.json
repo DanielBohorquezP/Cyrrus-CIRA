@@ -30,6 +30,16 @@
         { "phase": "Realize", "hash": "realizar", "note": "Project risk is discovered in the week's report, not the moment it happens." },
         { "phase": "Adopt", "hash": "adoptar", "note": "No one measures adoption until the project has already closed." }
       ]
+    },
+    "faq": {
+      "eyebrow": "Cyrrus Intelligence Lab",
+      "title": "Frequently asked questions",
+      "items": [
+        { "question": "Does Cyrrus Intelligence Lab sell AI tools?", "answer": "No. It's not a catalog of chatbots or tools — it's the corporate AI governance and enterprise AI architecture layer that makes it possible to implement AI in business processes securely and in an auditable way." },
+        { "question": "Where do you start — governance or tools?", "answer": "Governance. Most AI initiatives fail because they start with the tool; we start with the framework that makes that tool safe, auditable, and scalable." },
+        { "question": "How does Intelligence Lab connect to the CIRA method?", "answer": "It runs transversally beneath the four phases: it accelerates diagnosis in Construct, vendor evaluation in Identify, risk monitoring in Realize, and adoption measurement in Adopt." },
+        { "question": "We already use AI in several areas with no common framework — where do we start?", "answer": "We audit what already exists in the organization today and integrate it into a single governance framework, instead of asking each area to start from scratch." }
+      ]
     }
   },
   "automatizaciones": {
