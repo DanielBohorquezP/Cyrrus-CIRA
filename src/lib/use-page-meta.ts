@@ -25,7 +25,7 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, altern
   const { pathname } = useLocation();
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : undefined;
   const jsonLdKey = jsonLdArray ? JSON.stringify(jsonLdArray) : undefined;
-  const canonicalUrl = `${SITE_URL}${pathname === "/" ? "" : pathname.replace(/\/$/, "")}` || SITE_URL;
+  const canonicalUrl = pathname === "/" ? `${SITE_URL}/` : `${SITE_URL}${pathname.replace(/\/$/, "")}` || SITE_URL;
   const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
 
   useEffect(() => {

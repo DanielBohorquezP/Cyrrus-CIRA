@@ -11,12 +11,13 @@ import { LinkedInIcon } from "@/components/ui/social-media";
 
 interface Milestone {
   caption: string;
+  alt: string;
 }
 
 const milestoneSrcs = [
-  { src: "/assets/decoracion/Pa%20y%20yo.jpg", alt: "Constitución de Cyrrus Consulting Services S.A.S." },
-  { src: "/assets/decoracion/Equipo%20experienica.jpg", alt: "Equipo de Cyrrus Consulting Services" },
-  { src: "/assets/decoracion/evento-foro-caribe-2030.jpeg", alt: "Jackson Bohorquez en el Foro Caribe 2030" },
+  { src: "/assets/decoracion/Pa%20y%20yo.jpg" },
+  { src: "/assets/decoracion/Equipo%20experienica.jpg" },
+  { src: "/assets/decoracion/evento-foro-caribe-2030.jpeg" },
 ];
 
 export default function QuienesSomos() {
@@ -47,7 +48,7 @@ export default function QuienesSomos() {
         worksFor: { "@id": `${siteUrl}/#organization` },
         url: `${siteUrl}${pagePath}`,
         image: "https://www.cyrruscs.com/assets/decoracion/JacksonCEO1.jpeg",
-        sameAs: ["https://www.linkedin.com/in/jacksonbohorquez"],
+        sameAs: ["https://www.linkedin.com/in/jacksonbohorquezb/"],
       },
       {
         "@context": "https://schema.org",
@@ -75,7 +76,7 @@ export default function QuienesSomos() {
           <Reveal>
             <img
               src="/assets/decoracion/JacksonCEO1.jpeg"
-              alt="Jackson Bohorquez, CEO de Cyrrus Consulting Services"
+              alt={t("quienesSomos.photoAlt")}
               width={160}
               height={160}
               loading="eager"

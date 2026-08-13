@@ -30,7 +30,6 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 ## Otras páginas
 - [Quiénes Somos](https://www.cyrruscs.com/quienes-somos): Jackson Bohorquez, CEO y fundador de Cyrrus, creador del método CIRA.
 - [Experiencia](https://www.cyrruscs.com/experiencia): casos y trayectoria de Cyrrus.
-- [Perspectivas](https://www.cyrruscs.com/perspectivas): blog con artículos sobre estrategia, selección de software, gerencia de proyectos y gestión del cambio.
 - [Contacto](https://www.cyrruscs.com/contacto)
 
 ## English
@@ -47,5 +46,4 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 - [Leadership Academy](https://www.cyrruscs.com/en/leadership-academy): training programs and organizational change management.
 - [About Us](https://www.cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://www.cyrruscs.com/en/experiencia): Cyrrus's cases and track record.
-- [Insights](https://www.cyrruscs.com/en/perspectivas): blog on strategy, software selection, project management, and change management.
 - [Contact](https://www.cyrruscs.com/en/contacto)

@@ -119,6 +119,21 @@ export default function MetodoCira() {
           { "@type": "ListItem", position: 2, name: t("hero.eyebrow"), item: `${siteUrl}${pagePath}` },
         ],
       },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "@id": `${siteUrl}${pagePath}#cira-methodology`,
+        name: t("hero.eyebrow"),
+        description: t("meta.description"),
+        inLanguage: lang === "en" ? "en" : "es",
+        step: phases.map((p, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: p.title,
+          text: p.how,
+          url: `${siteUrl}${lang === "en" ? "/en" : ""}${p.href}`,
+        })),
+      },
     ],
   });
 

@@ -82,7 +82,8 @@
   "ceo": {
     "quote": "\"Las organizaciones no fallan por falta de estrategia ni de tecnología. Fallan cuando nadie conecta la decisión con la ejecución. CIRA existe para cerrar exactamente esa brecha.\"",
     "name": "Jackson Bohorquez",
-    "role": "CEO & Fundador, Cyrrus Consulting Services"
+    "role": "CEO & Fundador, Cyrrus Consulting Services",
+    "photoAlt": "Jackson Bohorquez, CEO de Cyrrus Consulting Services"
   },
   "testimonials": {
     "eyebrow": "Resultados que hablan",

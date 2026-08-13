@@ -4,7 +4,8 @@
   solutions-data.ts + workshops-data.ts (excluding "próximamente" workshops).
   Do not hand-edit URLs/structure here — edit route-meta.json or the data
   files instead and re-run `node scripts/generate-sitemap.mjs`.
-  Priority/changefreq for existing URLs are preserved across regenerations.
+  Priority/changefreq/lastmod for existing URLs are preserved across
+  regenerations; lastmod only falls back to the build date for new URLs.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
@@ -294,24 +295,6 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/experiencia" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/experiencia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/experiencia" />
-  </url>
-  <url>
-    <loc>https://www.cyrruscs.com/perspectivas</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/perspectivas" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/perspectivas" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/perspectivas" />
-  </url>
-  <url>
-    <loc>https://www.cyrruscs.com/en/perspectivas</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/perspectivas" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/perspectivas" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/perspectivas" />
   </url>
   <url>
     <loc>https://www.cyrruscs.com/contacto</loc>

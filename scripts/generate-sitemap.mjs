@@ -36,6 +36,11 @@ const comingSoonWorkshopSlugs = new Set(allWorkshopSlugs.filter((s) => !liveWork
 
 const extraRoutes = ["/privacidad", "/cookies"];
 
+// /perspectivas is noindexed until real articles ship (it's currently an
+// empty blog index), so it must not be submitted for crawl. Its /en
+// counterpart is derived below and excluded the same way.
+const noindexRoutes = new Set(["/perspectivas"]);
+
 const esRoutes = [
   ...new Set([
     ...Object.keys(routeMeta),
@@ -45,16 +50,16 @@ const esRoutes = [
 ].filter((p) => {
   const workshopSlug = p.match(/^\/leadership-academy\/([a-z0-9-]+)$/)?.[1];
   return !workshopSlug || !comingSoonWorkshopSlugs.has(workshopSlug);
-});
+}).filter((p) => !noindexRoutes.has(p));
 
 // Preserve hand-tuned priority/changefreq from the existing sitemap so
 // regenerating doesn't flatten deliberate curation; default for anything new.
 const existingXml = await readFile(path.join(rootDir, "public/sitemap.xml"), "utf-8").catch(() => "");
 const existing = new Map();
 for (const match of existingXml.matchAll(
-  /<loc>([^<]+)<\/loc>\s*<lastmod>[^<]*<\/lastmod>\s*<changefreq>([^<]+)<\/changefreq>\s*<priority>([^<]+)<\/priority>/g,
+  /<loc>([^<]+)<\/loc>\s*<lastmod>([^<]*)<\/lastmod>\s*<changefreq>([^<]+)<\/changefreq>\s*<priority>([^<]+)<\/priority>/g,
 )) {
-  existing.set(match[1], { changefreq: match[2], priority: match[3] });
+  existing.set(match[1], { lastmod: match[2], changefreq: match[3], priority: match[4] });
 }
 
 const today = new Date().toISOString().slice(0, 10);
@@ -63,15 +68,16 @@ function entryFor(loc, fallbackPriority, fallbackChangefreq) {
   const prior = existing.get(loc);
   return {
     loc,
+    lastmod: prior?.lastmod || today,
     changefreq: prior?.changefreq ?? fallbackChangefreq,
     priority: prior?.priority ?? fallbackPriority,
   };
 }
 
-function urlBlock({ loc, esLoc, enLoc, changefreq, priority }) {
+function urlBlock({ loc, esLoc, enLoc, lastmod, changefreq, priority }) {
   return `  <url>
     <loc>${loc}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
     <xhtml:link rel="alternate" hreflang="es" href="${esLoc}" />
@@ -103,7 +109,8 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
   solutions-data.ts + workshops-data.ts (excluding "próximamente" workshops).
   Do not hand-edit URLs/structure here — edit route-meta.json or the data
   files instead and re-run \`node scripts/generate-sitemap.mjs\`.
-  Priority/changefreq for existing URLs are preserved across regenerations.
+  Priority/changefreq/lastmod for existing URLs are preserved across
+  regenerations; lastmod only falls back to the build date for new URLs.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${blocks.join("\n")}
