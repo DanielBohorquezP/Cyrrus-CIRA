@@ -38,13 +38,12 @@ interface TeamRole {
 }
 
 const statIcons = [Globe2, Layers, Sparkles];
-const statBgs = ["bg-navy", "bg-blue", "bg-cyan"];
 const industryIcons = [Factory, Landmark, Zap, Fuel, ShoppingBag, HeartPulse];
 const industryBgs = ["bg-navy", "bg-blue", "bg-cyan", "bg-navy", "bg-blue", "bg-cyan"];
 
 const gallerySrcs = [
   { src: "/assets/decoracion/Cesar.jpg", alt: "Consultores de Cyrrus trabajando en un diagnóstico de procesos" },
-  { src: "/assets/decoracion/IMG_20230302_112825.jpg", alt: "Equipo de Cyrrus Consulting Services" },
+  { src: "/assets/decoracion/IMG_20230302_112825.jpg", alt: "Equipo de un cliente de Cyrrus al cierre de un proyecto de transformación" },
   { src: "/assets/decoracion/Evento%20mesas.jpg", alt: "Cyrrus en un evento corporativo" },
 ];
 
@@ -57,7 +56,6 @@ export default function Experiencia() {
   const stats = (t("experiencia.stats", { returnObjects: true }) as Stat[]).map((s, i) => ({
     ...s,
     icon: statIcons[i],
-    bg: statBgs[i],
   }));
   const industries = (t("experiencia.industries", { returnObjects: true }) as Industry[]).map((it, i) => ({
     ...it,
@@ -122,29 +120,18 @@ export default function Experiencia() {
                 variants={staggerItem}
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.15, ease: "easeOut" }}
-                className={`group relative overflow-hidden rounded-2xl ${stat.bg} p-8 text-center shadow-sm transition-shadow duration-150 hover:shadow-xl`}
+                className="rounded-2xl border border-border bg-card p-8 text-center shadow-sm transition-shadow duration-150 hover:shadow-xl"
               >
-                <div
-                  className="pointer-events-none absolute inset-0 opacity-[0.15]"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(rgba(255,255,255,0.9) 1px, transparent 1px)",
-                    backgroundSize: "14px 14px",
-                  }}
-                />
-                <stat.icon
-                  className="pointer-events-none absolute -bottom-4 -right-4 h-24 w-24 text-white/10"
-                  strokeWidth={1.5}
-                />
-                <div className="relative mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-white">
-                  <stat.icon className="h-6 w-6" strokeWidth={1.75} />
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-light-blue">
+                  <stat.icon className="h-6 w-6 text-blue" strokeWidth={1.75} />
                 </div>
-                <div className="relative mt-4 text-4xl font-bold text-white">
+                <dd className="mt-5 bg-gradient-to-br from-navy to-blue bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl">
                   {stat.value}
-                </div>
-                <div className="relative mt-2 text-sm text-white/75">
+                </dd>
+                <div className="mt-2 text-sm text-gray">
                   {stat.label}
                 </div>
+                <span className="mx-auto mt-3 block h-[3px] w-9 rounded-full bg-cyan" />
               </motion.div>
             ))}
           </RevealGroup>
@@ -190,16 +177,22 @@ export default function Experiencia() {
 
           <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {gallery.map((item) => (
-              <motion.figure key={item.src} variants={staggerItem}>
+              <motion.figure
+                key={item.src}
+                variants={staggerItem}
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+                className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow duration-150 hover:shadow-xl"
+              >
                 <img
                   src={item.src}
                   alt={item.alt}
                   width={480}
                   height={320}
                   loading="lazy"
-                  className="h-56 w-full rounded-2xl object-cover object-top"
+                  className="h-56 w-full object-cover object-top"
                 />
-                <figcaption className="mt-3 text-sm text-gray">
+                <figcaption className="p-4 text-sm text-gray">
                   {item.caption}
                 </figcaption>
               </motion.figure>
@@ -224,7 +217,9 @@ export default function Experiencia() {
               <motion.div
                 key={member.role}
                 variants={staggerItem}
-                className={`flex flex-col items-center rounded-2xl border p-6 text-center ${
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+                className={`flex flex-col items-center rounded-2xl border p-6 text-center shadow-sm transition-shadow duration-150 hover:shadow-xl ${
                   member.name ? "border-border bg-card" : "border-dashed border-border bg-card"
                 }`}
               >
