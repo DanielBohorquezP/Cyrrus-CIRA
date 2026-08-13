@@ -54,6 +54,7 @@ export default function GestionDeProyectos() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: lang === "en" ? "Project management and implementation" : "Gerencia de proyectos e implementación",
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },

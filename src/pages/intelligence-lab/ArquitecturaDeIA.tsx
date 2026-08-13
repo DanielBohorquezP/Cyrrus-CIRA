@@ -45,6 +45,7 @@ export default function ArquitecturaDeIA() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: t("arquitectura.serviceDescription"),
         name: t("arquitectura.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },

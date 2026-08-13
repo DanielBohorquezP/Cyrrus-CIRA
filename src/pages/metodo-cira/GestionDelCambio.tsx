@@ -54,6 +54,7 @@ export default function GestionDelCambio() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: lang === "en" ? "Organizational change management" : "Gestión del cambio organizacional",
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },

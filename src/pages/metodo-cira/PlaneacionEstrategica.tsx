@@ -80,6 +80,7 @@ export default function PlaneacionEstrategica() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: lang === "en" ? "Strategic planning consulting" : "Consultoría de planeación estratégica",
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },

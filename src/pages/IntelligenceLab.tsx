@@ -51,6 +51,7 @@ export default function IntelligenceLab() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: lang === "en" ? "Corporate artificial intelligence governance" : "Gobierno de inteligencia artificial corporativo",
         name: "Cyrrus Intelligence Lab",
         provider: { "@id": `${siteUrl}/#organization` },

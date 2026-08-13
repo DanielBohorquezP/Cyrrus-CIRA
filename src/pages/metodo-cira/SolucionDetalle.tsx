@@ -57,6 +57,7 @@ export default function SolucionDetalle() {
             {
               "@context": "https://schema.org",
               "@type": "Service",
+              "@id": `${siteUrl}${pagePath}#service`,
               serviceType: `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`,
               name: entry.label,
               provider: { "@id": `${siteUrl}/#organization` },
