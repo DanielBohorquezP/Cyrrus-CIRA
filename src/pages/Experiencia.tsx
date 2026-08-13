@@ -73,10 +73,33 @@ export default function Experiencia() {
     photo: teamPhotos[i],
   }));
 
+  const siteUrl = "https://www.cyrruscs.com";
+  const pagePath = lang === "en" ? "/en/experiencia" : "/experiencia";
+
   usePageMeta({
     title: t("experiencia.meta.title"),
     description: t("experiencia.meta.description"),
     alternatePath: lang === "en" ? "/experiencia" : "/en/experiencia",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": `${siteUrl}${pagePath}#webpage`,
+        url: `${siteUrl}${pagePath}`,
+        name: t("experiencia.meta.title"),
+        description: t("experiencia.meta.description"),
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        about: { "@id": `${siteUrl}/#organization` },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${lang === "en" ? "/en" : "/"}` },
+          { "@type": "ListItem", position: 2, name: lang === "en" ? "Experience" : "Experiencia", item: `${siteUrl}${pagePath}` },
+        ],
+      },
+    ],
   });
 
   return (

@@ -17,10 +17,43 @@ export default function Contacto() {
   const { t } = useTranslation("contacto");
   const lang = useLang();
 
+  const siteUrl = "https://www.cyrruscs.com";
+  const pagePath = lang === "en" ? "/en/contacto" : "/contacto";
+
   usePageMeta({
     title: t("meta.title"),
     description: t("meta.description"),
     alternatePath: lang === "en" ? "/contacto" : "/en/contacto",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": `${siteUrl}${pagePath}#webpage`,
+        url: `${siteUrl}${pagePath}`,
+        name: t("meta.title"),
+        about: { "@id": `${siteUrl}/#organization` },
+        mainEntity: {
+          "@id": `${siteUrl}/#organization`,
+          "@type": "Organization",
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "sales",
+            telephone: "+57 317 5730635",
+            email: "contacto@cyrruscs.com",
+            areaServed: "LATAM",
+            availableLanguage: ["es", "en"],
+          },
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${lang === "en" ? "/en" : "/"}` },
+          { "@type": "ListItem", position: 2, name: lang === "en" ? "Contact" : "Contacto", item: `${siteUrl}${pagePath}` },
+        ],
+      },
+    ],
   });
 
   const [status, setStatus] = useState<FormState>("idle");

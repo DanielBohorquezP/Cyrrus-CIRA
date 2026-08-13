@@ -21,6 +21,7 @@ import GobiernoDeIA from "@/pages/intelligence-lab/GobiernoDeIA";
 import CursoDetalle from "@/pages/leadership-academy/CursoDetalle";
 import Privacidad from "@/pages/Privacidad";
 import Cookies from "@/pages/Cookies";
+import NotFound from "@/pages/NotFound";
 import { CookieConsent } from "@/components/layout/cookie-consent";
 
 export default function App() {
@@ -70,6 +71,7 @@ export default function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/privacidad" element={<Privacidad />} />
           <Route path="/cookies" element={<Cookies />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="/en" element={<LanguageProvider lang="en"><Outlet /></LanguageProvider>}>
           <Route index element={<Home />} />
@@ -91,7 +93,9 @@ export default function App() {
           <Route path="contacto" element={<Contacto />} />
           <Route path="privacidad" element={<Privacidad />} />
           <Route path="cookies" element={<Cookies />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <CookieConsent />
     </BrowserRouter>

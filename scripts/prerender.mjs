@@ -24,12 +24,17 @@ const routeMeta = JSON.parse(
 );
 
 const solutionsSrc = await readFile(path.join(rootDir, "src/lib/solutions-data.ts"), "utf-8");
-const solutionSlugs = [...solutionsSrc.matchAll(/slug:\s*"([a-z-]+)"/g)].map((m) => m[1]);
+const solutionSlugs = [...solutionsSrc.matchAll(/slug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]);
 
 const workshopsSrc = await readFile(path.join(rootDir, "src/lib/workshops-data.ts"), "utf-8");
-const workshopSlugs = [...workshopsSrc.matchAll(/slug:\s*"([a-z-]+)"/g)].map((m) => m[1]);
+const workshopSlugs = [...workshopsSrc.matchAll(/slug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]);
 
 const extraRoutes = ["/privacidad", "/cookies"];
+
+// Rendered separately below and written to dist/404.html (Vercel's static
+// not-found convention), not into the routes list — it must never appear in
+// the sitemap or get an ES/EN pair like a real page.
+const notFoundRoute = "/not-found-preview-only";
 
 // Spanish routes (default, unprefixed).
 const esRoutes = [
@@ -162,6 +167,29 @@ for (const route of routes) {
   }
 }
 
+let notFoundHtml = null;
+{
+  let page;
+  try {
+    await ensureBrowser();
+    page = await browser.newPage();
+    await page.goto(`${baseUrl}${notFoundRoute}`, { waitUntil: "domcontentloaded", timeout: 45000 });
+    await page.waitForFunction(
+      () => {
+        const h1 = document.querySelector("h1");
+        return !!h1 && h1.textContent.trim().length > 0;
+      },
+      { timeout: 20000 },
+    );
+    await page.waitForTimeout(600);
+    notFoundHtml = (await page.content()).split(baseUrl).join("");
+  } catch (err) {
+    console.warn(`prerender: 404 page render failed — ${err.message.split("\n")[0]}`);
+  } finally {
+    if (page) await page.close().catch(() => {});
+  }
+}
+
 await browser.close();
 await new Promise((resolve) => server.close(resolve));
 
@@ -171,6 +199,15 @@ for (const [route, html] of rendered) {
   await mkdir(outDir, { recursive: true });
   await writeFile(path.join(outDir, "index.html"), html, "utf-8");
   written += 1;
+}
+
+if (notFoundHtml) {
+  // Vercel serves this for any unmatched clean URL with a real 404 status,
+  // as long as no catch-all rewrite intercepts the request first.
+  await writeFile(path.join(distDir, "404.html"), notFoundHtml, "utf-8");
+  console.log("prerender: wrote dist/404.html");
+} else {
+  console.warn("prerender: dist/404.html NOT written — unmatched routes will fall back to the SPA shell.");
 }
 
 console.log(`prerender: wrote fully-rendered HTML for ${written}/${routes.length} routes.`);
