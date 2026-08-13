@@ -116,7 +116,11 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
             transition={{ duration: 0.8, delay: 0.35 }}
           >
             <span
-              className="block text-3xl font-light tracking-wide sm:text-4xl md:text-5xl"
+              // Own line-height, not the h1's tight leading-[0.95]: this span
+              // is gradient-filled via background-clip, so a line box shorter
+              // than the font's descender extent clips descenders (e.g. the
+              // "g" in "Strategic") instead of just tightening whitespace.
+              className="block text-3xl font-light leading-[1.2] tracking-wide sm:text-4xl md:text-5xl"
               style={{
                 background:
                   "linear-gradient(135deg, #ffffff 0%, #3fb6e8 40%, #ffffff 100%)",
