@@ -44,7 +44,7 @@ const industryBgs = ["bg-navy", "bg-blue", "bg-cyan", "bg-navy", "bg-blue", "bg-
 
 const gallerySrcs = [
   { src: "/assets/decoracion/Cesar.jpg", alt: "Consultores de Cyrrus trabajando en un diagnóstico de procesos" },
-  { src: "/assets/decoracion/IMG_20230302_112825.jpg", alt: "Equipo de Cyrrus Consulting Services" },
+  { src: "/assets/decoracion/IMG_20230302_112825.jpg", alt: "Equipo de un cliente de Cyrrus al cierre de un proyecto de transformación" },
   { src: "/assets/decoracion/Evento%20mesas.jpg", alt: "Cyrrus en un evento corporativo" },
 ];
 
@@ -190,16 +190,22 @@ export default function Experiencia() {
 
           <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {gallery.map((item) => (
-              <motion.figure key={item.src} variants={staggerItem}>
+              <motion.figure
+                key={item.src}
+                variants={staggerItem}
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+                className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow duration-150 hover:shadow-xl"
+              >
                 <img
                   src={item.src}
                   alt={item.alt}
                   width={480}
                   height={320}
                   loading="lazy"
-                  className="h-56 w-full rounded-2xl object-cover object-top"
+                  className="h-56 w-full object-cover object-top"
                 />
-                <figcaption className="mt-3 text-sm text-gray">
+                <figcaption className="p-4 text-sm text-gray">
                   {item.caption}
                 </figcaption>
               </motion.figure>
@@ -224,7 +230,9 @@ export default function Experiencia() {
               <motion.div
                 key={member.role}
                 variants={staggerItem}
-                className={`flex flex-col items-center rounded-2xl border p-6 text-center ${
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+                className={`flex flex-col items-center rounded-2xl border p-6 text-center shadow-sm transition-shadow duration-150 hover:shadow-xl ${
                   member.name ? "border-border bg-card" : "border-dashed border-border bg-card"
                 }`}
               >
