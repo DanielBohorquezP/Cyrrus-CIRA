@@ -92,6 +92,22 @@ await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const { port } = server.address();
 const baseUrl = `http://127.0.0.1:${port}`;
 
+// @sparticuz/chromium's default args target AWS Lambda, where a browser
+// renders one page and dies with the invocation. Two of them break a
+// long-lived Playwright session that drives 54 pages in sequence:
+//
+//   --single-process  runs the renderer *inside* the browser process, so
+//                     closing the last page tears down the whole browser.
+//                     Every route then failed its first newPage() with
+//                     "Target page, context or browser has been closed",
+//                     survived only via relaunch-and-retry, and periodically
+//                     wedged the build entirely.
+//   --no-zygote       its companion flag for that same single-process model.
+//
+// Everything else it ships (swiftshader GPU, no-sandbox, cache sizing) is
+// what makes the binary work in a container, so keep those.
+const LAMBDA_PROCESS_MODEL_ARGS = new Set(["--single-process", "--no-zygote"]);
+
 // Vercel's build container has no apt-get / root access, so Playwright's
 // bundled Chromium can't load its shared libs there. @sparticuz/chromium is a
 // self-contained build made for exactly this (serverless/CI, no system deps).
@@ -100,17 +116,16 @@ if (process.env.VERCEL) {
   const { default: sparticuzChromium } = await import("@sparticuz/chromium");
   launchOptions = {
     executablePath: await sparticuzChromium.executablePath(),
-    args: sparticuzChromium.args,
+    args: sparticuzChromium.args.filter((arg) => !LAMBDA_PROCESS_MODEL_ARGS.has(arg)),
   };
 }
-// Every Playwright/Chromium call below (launch, newPage, goto, close — even
-// the ones that carry their own `timeout` option) has been observed to hang
-// indefinitely instead of erroring once the build machine is memory-starved:
-// the browser process is still technically alive (isConnected() === true)
-// but its IPC channel is dead, so Playwright's own timeouts never fire
-// because the request that would trigger them never lands. withTimeout is a
-// wall-clock backstop around the whole operation so a wedged browser can
-// never stall the build past `ms`, regardless of what's hung inside.
+
+// Belt-and-braces around the fix above: a Chromium that dies or wedges can
+// leave Playwright calls hanging indefinitely rather than erroring — the
+// browser object still reports isConnected() === true while its IPC channel
+// is dead, so Playwright's own `timeout` options never fire because the
+// request that would trigger them never lands. withTimeout is a wall-clock
+// backstop so no single operation can stall the whole build.
 function withTimeout(promise, ms, label) {
   let timer;
   const timeout = new Promise((_, reject) => {
