@@ -25,9 +25,9 @@ export default function Privacidad() {
           <section>
             <h2>1. Data controller</h2>
             <p>
-              Cyrrus Consulting Services ("Cyrrus", "we") is the controller of the personal data collected
-              through this website. For any questions about this policy, you can write to us at{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
+              Cyrrus Consulting Services S.A.S. (NIT 9011219531) ("Cyrrus", "we") is the controller of the
+              personal data collected through this website. For any questions about this policy, you can
+              write to us at <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
             </p>
           </section>
 
@@ -119,9 +119,9 @@ export default function Privacidad() {
           <section>
             <h2>1. Responsable del tratamiento</h2>
             <p>
-              Cyrrus Consulting Services ("Cyrrus", "nosotros") es responsable del tratamiento de los datos
-              personales que se recolectan a través de este sitio web. Para cualquier consulta sobre esta
-              política, puede escribirnos a{" "}
+              Cyrrus Consulting Services S.A.S. (NIT 9011219531) ("Cyrrus", "nosotros") es responsable del
+              tratamiento de los datos personales que se recolectan a través de este sitio web. Para
+              cualquier consulta sobre esta política, puede escribirnos a{" "}
               <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
             </p>
           </section>

@@ -48,7 +48,7 @@ export default function QuienesSomos() {
         worksFor: { "@id": `${siteUrl}/#organization` },
         url: `${siteUrl}${pagePath}`,
         image: "https://www.cyrruscs.com/assets/decoracion/JacksonCEO1.jpeg",
-        sameAs: ["https://www.linkedin.com/in/jacksonbohorquez"],
+        sameAs: ["https://www.linkedin.com/in/jacksonbohorquezb/"],
       },
       {
         "@context": "https://schema.org",
