@@ -45,6 +45,7 @@ export default function GobiernoDeIA() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: t("gobierno.serviceDescription"),
         name: t("gobierno.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },

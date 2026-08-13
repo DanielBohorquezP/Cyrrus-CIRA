@@ -79,6 +79,7 @@ export default function SeleccionDeSoluciones() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: lang === "en" ? "Enterprise solution selection" : "Selección de soluciones empresariales",
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },

@@ -80,6 +80,7 @@ export default function MetodoCira() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: lang === "en" ? "Digital transformation consulting" : "Consultoría de transformación digital",
         name: t("hero.eyebrow"),
         provider: { "@id": `${siteUrl}/#organization` },

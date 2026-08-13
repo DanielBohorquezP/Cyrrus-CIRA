@@ -45,6 +45,7 @@ export default function AutomatizacionesDesarrollo() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: t("automatizaciones.serviceDescription"),
         name: t("automatizaciones.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },

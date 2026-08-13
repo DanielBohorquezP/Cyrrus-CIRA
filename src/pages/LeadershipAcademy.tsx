@@ -69,6 +69,7 @@ export default function LeadershipAcademy() {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${siteUrl}${pagePath}#service`,
         serviceType: t("hub.serviceDescription"),
         name: "Leadership Academy",
         provider: { "@id": `${siteUrl}/#organization` },
