@@ -60,6 +60,7 @@
       "description": "The person behind the CIRA method: two decades connecting strategy, technology, and execution for companies across LATAM."
     },
     "linkedInLabel": "LinkedIn",
+    "photoAlt": "Jackson Bohorquez, CEO of Cyrrus Consulting Services",
     "role": "CEO & Founder, Cyrrus Consulting Services",
     "bio": "Jackson Bohorquez founded Cyrrus Consulting Services to close the gap he sees causing most organizations to fail: not a lack of strategy or technology, but the fact that no one connects the decision to the execution. That's where the CIRA method was born — Construct, Identify, Realize, Adopt — the framework that now guides Cyrrus's digital transformation projects in more than 17 countries.",
     "quote": "\"Organizations don't fail for lack of strategy or technology. They fail when no one connects the decision to the execution. CIRA exists to close exactly that gap.\"",
@@ -76,9 +77,9 @@
       "eyebrow": "Key milestones",
       "title": "The story behind Cyrrus",
       "items": [
-        { "caption": "The day Cyrrus Consulting Services was legally founded." },
-        { "caption": "The team that executes the CIRA method every day." },
-        { "caption": "Sharing Cyrrus's vision at regional forums." }
+        { "caption": "The day Cyrrus Consulting Services was legally founded.", "alt": "Constitution of Cyrrus Consulting Services S.A.S." },
+        { "caption": "The team that executes the CIRA method every day.", "alt": "Cyrrus Consulting Services team" },
+        { "caption": "Sharing Cyrrus's vision at regional forums.", "alt": "Jackson Bohorquez at Foro Caribe 2030" }
       ]
     }
   },

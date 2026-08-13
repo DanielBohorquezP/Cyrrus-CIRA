@@ -10,7 +10,7 @@ export function CeoSection() {
         <Reveal>
           <img
             src="/assets/decoracion/JacksonCEO1.jpeg"
-            alt="Jackson Bohorquez, CEO de Cyrrus Consulting Services"
+            alt={t("ceo.photoAlt")}
             width={96}
             height={96}
             loading="eager"

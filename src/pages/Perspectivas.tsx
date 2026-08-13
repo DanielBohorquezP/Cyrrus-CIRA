@@ -11,10 +11,36 @@ export default function Perspectivas() {
   const { t } = useTranslation("paginas");
   const lang = useLang();
 
+  const siteUrl = "https://www.cyrruscs.com";
+  const pagePath = lang === "en" ? "/en/perspectivas" : "/perspectivas";
+
   usePageMeta({
     title: t("perspectivas.meta.title"),
     description: t("perspectivas.meta.description"),
     alternatePath: lang === "en" ? "/perspectivas" : "/en/perspectivas",
+    // TODO: remove noindex once real articles are published on this page.
+    noindex: true,
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "@id": `${siteUrl}${pagePath}#blog`,
+        url: `${siteUrl}${pagePath}`,
+        name: t("perspectivas.meta.title"),
+        description: t("perspectivas.meta.description"),
+        publisher: { "@id": `${siteUrl}/#organization` },
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        inLanguage: lang === "en" ? "en" : "es",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${lang === "en" ? "/en" : "/"}` },
+          { "@type": "ListItem", position: 2, name: t("perspectivas.meta.title"), item: `${siteUrl}${pagePath}` },
+        ],
+      },
+    ],
   });
 
   return (

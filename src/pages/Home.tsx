@@ -20,10 +20,26 @@ export default function Home() {
   const { t } = useTranslation("home");
   const lang = useLang();
 
+  const siteUrl = "https://www.cyrruscs.com";
+  const pagePath = lang === "en" ? "/en" : "/";
+
   usePageMeta({
     title: t("meta.title"),
     description: t("meta.description"),
     alternatePath: lang === "en" ? "/" : "/en",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": `${siteUrl}${pagePath}#webpage`,
+        url: `${siteUrl}${pagePath}`,
+        name: t("meta.title"),
+        description: t("meta.description"),
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        about: { "@id": `${siteUrl}/#organization` },
+        inLanguage: lang === "en" ? "en" : "es",
+      },
+    ],
   });
 
   return (
