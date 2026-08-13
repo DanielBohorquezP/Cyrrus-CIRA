@@ -8,6 +8,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { RevealGroup, staggerItem, Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+import { FaqSection } from "@/components/sections/faq-section";
 import { motion } from "framer-motion";
 import { ShieldCheck, Network, Bot, ArrowRight } from "lucide-react";
 
@@ -20,6 +21,10 @@ interface PhaseLink {
   phase: string;
   hash: string;
   note: string;
+}
+interface Faq {
+  question: string;
+  answer: string;
 }
 
 const pillarIcons = [ShieldCheck, Network, Bot];
@@ -38,6 +43,7 @@ export default function IntelligenceLab() {
     ...p,
     href: `${prefix}/metodo-cira#${p.hash}`,
   }));
+  const faqs = t("hub.faq.items", { returnObjects: true }) as Faq[];
 
   const siteUrl = "https://www.cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -57,6 +63,16 @@ export default function IntelligenceLab() {
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDescription"),
         areaServed: "LATAM",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": `${siteUrl}${pagePath}#faq`,
+        mainEntity: faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
       },
       {
         "@context": "https://schema.org",
@@ -163,6 +179,8 @@ export default function IntelligenceLab() {
           </Reveal>
         </div>
       </section>
+
+      <FaqSection eyebrow={t("hub.faq.eyebrow")} title={t("hub.faq.title")} faqs={faqs} />
 
       <FinalCta />
       <Footer />

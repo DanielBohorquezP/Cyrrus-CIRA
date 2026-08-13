@@ -68,6 +68,16 @@
       "Gestión de cambio y gestión de riesgo"
     ]
   },
+  "faq": {
+    "eyebrow": "Gerencia de Proyectos",
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "question": "¿Cómo funciona el modelo de PMO externo?", "answer": "Actuamos como PMO externo con responsabilidad real sobre el resultado, no solo reportes de estado: gobierno de proyecto, aseguramiento de calidad y gestión de riesgo activa durante toda la ejecución." },
+      { "question": "¿Qué tipo de proyectos gerencian?", "answer": "Desde implementaciones complejas de tecnologías maduras y avanzadas — ERP, CRM, HCM — hasta proyectos de infraestructura de redes, migración a la nube y cualquier tipo de arquitectura tecnológica, incluida la inteligencia artificial." },
+      { "question": "¿Cómo miden el éxito del proyecto?", "answer": "Con resultados verificables, no promesas de venta: proyectos ejecutados bajo lineamientos PMBOK, cero desviaciones de alcance y variaciones de costo tan bajas como 3% frente a lo estimado." },
+      { "question": "¿El monitoreo de riesgo es solo un reporte al cierre de cada fase?", "answer": "No. Monitoreamos el riesgo del proyecto de forma continua con agentes de IA que anticipan desviaciones antes de que se conviertan en crisis, con visibilidad total del avance en cada momento." }
+    ]
+  },
   "achievements": {
     "eyebrow": "Nuestros logros",
     "title": "Resultados verificables, no promesas de venta",

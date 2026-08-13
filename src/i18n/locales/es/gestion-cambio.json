@@ -57,5 +57,15 @@
   },
   "featureImage": {
     "caption": "Acompañamiento práctico en cada sesión de trabajo, no solo diapositivas."
+  },
+  "faq": {
+    "eyebrow": "Gestión del Cambio",
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "question": "¿Cuándo empieza el trabajo de gestión del cambio?", "answer": "Desde el día uno del proyecto, no como actividad de cierre — está embebido en la ejecución de Strategy, Select y Project Management, no como un servicio aparte." },
+      { "question": "¿Cómo miden si el cambio realmente se está adoptando?", "answer": "Medimos el clima organizacional y la curva de adopción de forma continua con IA, no solo con una encuesta al cierre del proyecto." },
+      { "question": "¿La capacitación del equipo está incluida?", "answer": "Sí, el plan de entrenamiento es uno de los cuatro pilares del proceso. Los programas de capacitación más amplios, incluida la adopción de IA generativa para alta gerencia, viven en Cyrrus Leadership Academy." },
+      { "question": "El sistema ya está instalado, pero el equipo no lo usa — ¿pueden ayudar ahora?", "answer": "Sí. Aunque el enfoque ideal es integrar la gestión del cambio desde el inicio del proyecto, también intervenimos cuando la adopción ya se estancó, con gestión de stakeholders, plan de comunicación y gestión del clima organizacional." }
+    ]
   }
 }
