@@ -190,32 +190,37 @@ export default function GestionDelCambio() {
       </section>
 
       <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-8 md:px-12">
-          <Reveal className="md:col-span-5">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-3xl">
+            <span className="block text-sm font-semibold uppercase tracking-wider text-blue">
               {t("distinctive.eyebrow")}
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
               {t("distinctive.pullQuote")}
             </p>
-            <p className="mt-6 text-base leading-relaxed text-gray">
-              {t("distinctive.description")}
-            </p>
           </Reveal>
 
-          <Reveal delay={0.1} className="md:col-span-7">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-blue">
-              {t("distinctive.solutionTitle")}
-            </h3>
-            <ul className="mt-6 space-y-4">
-              {(t("distinctive.bullets", { returnObjects: true }) as string[]).map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                  <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
+          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-2 md:gap-8">
+            <Reveal delay={0.1}>
+              <p className="text-base leading-relaxed text-gray">
+                {t("distinctive.description")}
+              </p>
+            </Reveal>
+
+            <Reveal delay={0.15}>
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-blue">
+                {t("distinctive.solutionTitle")}
+              </h3>
+              <ul className="mt-6 space-y-4">
+                {(t("distinctive.bullets", { returnObjects: true }) as string[]).map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
+                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
         </div>
       </section>
 
