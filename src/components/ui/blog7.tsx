@@ -111,8 +111,10 @@ const Blog7 = ({
                   className="h-full w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-navy/70" aria-hidden="true" />
-                <span className="absolute inset-0 flex items-center justify-center px-4 text-center text-sm font-semibold uppercase tracking-wider text-white">
-                  Próximamente
+                <span className="absolute inset-0 flex items-center justify-center px-4 text-center">
+                  <span className="rounded-full bg-navy px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-white">
+                    Próximamente
+                  </span>
                 </span>
               </div>
               <CardHeader>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { SplineScene } from "@/components/ui/splite";
 import { Spotlight } from "@/components/ui/spotlight";
+import { cn } from "@/lib/utils";
 
 interface IntelligenceLabHeroProps {
   eyebrow: string;
@@ -64,11 +65,16 @@ export function IntelligenceLabHero({
         </div>
 
         <div
-          className={
-            showVisual || visual
-              ? "relative h-[320px] md:h-[420px]"
-              : "relative hidden h-[320px] md:block md:h-[420px]"
-          }
+          className={cn(
+            "relative",
+            // Spline needs an explicit height to fill; a custom `visual` (e.g.
+            // WorkshopOrbit) sizes itself, so only set a floor — a hard height
+            // clipped its lower orbit icons against the section's overflow.
+            showVisual
+              ? "h-[320px] md:h-[420px]"
+              : "flex min-h-[320px] items-center justify-center md:min-h-[420px]",
+            !showVisual && !visual && "hidden md:flex",
+          )}
         >
           {showVisual ? (
             <div
