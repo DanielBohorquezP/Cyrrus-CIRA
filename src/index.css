@@ -6,12 +6,17 @@
 :root {
   --radius: 0.625rem;
 
-  /* Cyrrus brand palette */
+  /* Cyrrus brand palette.
+     Contrast rule: --cyan is bright enough to read ONLY on navy/dark
+     (5.84:1 on navy, but 2.32:1 on white — fails WCAG AA badly). Any accent
+     text sitting on a white/light surface must use --cyan-ink instead
+     (6.99:1 on white ≈ AAA). Never use text-cyan on a light background. */
   --navy: #0a2c63;
   --blue: #1b6fc2;
   --cyan: #3fb6e8;
+  --cyan-ink: #0e5f87;
   --light-blue: #e8f2fb;
-  --gray: #5a6472;
+  --gray: #414a58;
   --dark: #1a1a1a;
 
   /* shadcn tokens — white-dominant, Gartner-tier consulting look */
@@ -123,12 +128,26 @@
   --color-navy: var(--navy);
   --color-blue: var(--blue);
   --color-cyan: var(--cyan);
+  --color-cyan-ink: var(--cyan-ink);
   --color-light-blue: var(--light-blue);
   --color-gray: var(--gray);
 
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Carlito", ui-sans-serif, system-ui, sans-serif;
+
+  /* Typography scale tuned for our 40+ core audience: the small end (labels,
+     body copy, captions) is bumped ~1px over Tailwind's defaults and given
+     looser leading, since that's where legibility degrades first with age.
+     Headline sizes (xl and up) keep the default scale so layouts don't shift. */
+  --text-xs: 0.8125rem;          /* 13px (was 12) */
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.9375rem;          /* 15px (was 14) */
+  --text-sm--line-height: 1.6;
+  --text-base: 1.0625rem;        /* 17px (was 16) */
+  --text-base--line-height: 1.7;
+  --text-lg: 1.1875rem;          /* 19px (was 18) */
+  --text-lg--line-height: 1.65;
 }
 
 @layer base {

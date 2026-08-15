@@ -20,11 +20,11 @@ export function CiraJourney() {
     <section className="w-full bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <Reveal className="text-center">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue">
-            {t("ciraJourney.eyebrow")}
+          <span className="text-sm font-bold uppercase tracking-wider text-blue">
+            {t("ciraJourney.title")}
           </span>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            {t("ciraJourney.title")}
+            {t("ciraJourney.eyebrow")}
           </h2>
         </Reveal>
 
@@ -39,17 +39,17 @@ export function CiraJourney() {
             >
               <span
                 className="block text-5xl font-bold leading-none text-light-blue"
-                style={{ WebkitTextStroke: "1.5px var(--blue)" }}
+                style={{ WebkitTextStroke: "2px var(--navy)" }}
               >
                 {step.letter}
               </span>
-              <span className="mt-5 block text-xs font-semibold uppercase tracking-wider text-gray">
+              <span className="mt-5 block text-sm font-bold uppercase tracking-wider text-gray">
                 {step.word}
               </span>
               <h3 className="mt-1.5 text-lg font-semibold text-navy">
                 {step.title}
               </h3>
-              <p className="mt-2.5 text-sm leading-relaxed text-gray">
+              <p className="mt-2.5 text-base leading-relaxed text-gray">
                 {step.description}
               </p>
               <span className="sr-only">{t("ciraJourney.stepOf", { n: index + 1 })}</span>

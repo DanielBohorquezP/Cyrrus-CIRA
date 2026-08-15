@@ -20,7 +20,7 @@ export function IncludedGrid({ eyebrow, title, items }: IncludedGridProps) {
     <section className="w-full bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <Reveal className="max-w-2xl">
-          <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+          <span className="text-base font-bold uppercase tracking-wider text-blue">
             {eyebrow}
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -43,7 +43,7 @@ export function IncludedGrid({ eyebrow, title, items }: IncludedGridProps) {
                 <h3 className="mt-5 text-base font-semibold text-navy">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray">
+                <p className="mt-2 text-base leading-relaxed text-gray">
                   {item.description}
                 </p>
               </motion.div>

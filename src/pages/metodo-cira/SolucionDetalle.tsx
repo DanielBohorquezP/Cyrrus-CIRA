@@ -107,7 +107,7 @@ export default function SolucionDetalle() {
             </Reveal>
             <div className="md:col-span-8">
               <Reveal className="max-w-2xl">
-                <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+                <span className="text-base font-bold uppercase tracking-wider text-blue">
                   {t("detail.whatWeHelp")}
                 </span>
                 <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -128,7 +128,7 @@ export default function SolucionDetalle() {
                         {Icon && <Icon className="h-5 w-5 text-cyan" />}
                       </div>
                       <h3 className="mt-5 text-lg font-semibold text-navy">{item.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-gray">{item.description}</p>
+                      <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
                     </motion.div>
                   );
                 })}

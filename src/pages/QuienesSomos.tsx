@@ -111,7 +111,7 @@ export default function QuienesSomos() {
             </Reveal>
 
             <Reveal delay={0.15} className="mt-10">
-              <div className="text-sm font-semibold uppercase tracking-wider text-gray">
+              <div className="text-base font-bold uppercase tracking-wider text-gray">
                 {t("quienesSomos.trajectory.label")}
               </div>
               <RevealGroup className="mt-4 flex flex-col gap-3">
@@ -133,7 +133,7 @@ export default function QuienesSomos() {
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("quienesSomos.milestones.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">

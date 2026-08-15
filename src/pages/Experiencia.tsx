@@ -137,7 +137,7 @@ export default function Experiencia() {
           </RevealGroup>
 
           <Reveal delay={0.1} className="mt-16">
-            <div className="text-sm font-semibold uppercase tracking-wider text-gray">
+            <div className="text-base font-bold uppercase tracking-wider text-gray">
               {t("experiencia.industriesLabel")}
             </div>
             <RevealGroup className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -167,7 +167,7 @@ export default function Experiencia() {
       <section className="w-full bg-background py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("experiencia.gallery.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -204,7 +204,7 @@ export default function Experiencia() {
       <section className="w-full bg-light-blue/40 py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("experiencia.team.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -259,7 +259,7 @@ export default function Experiencia() {
       <section className="w-full bg-background py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("experiencia.trust.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">

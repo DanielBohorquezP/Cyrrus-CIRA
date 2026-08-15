@@ -85,7 +85,7 @@ function TimelineRow({
       </div>
 
       {comingSoon ? (
-        <ComingSoon className="flex flex-1 items-start justify-between gap-2 py-3 pr-4 text-sm font-medium text-navy/60">
+        <ComingSoon className="flex flex-1 items-start justify-between gap-2 py-3 pr-4 text-sm font-medium text-navy/80">
           {content}
         </ComingSoon>
       ) : (
@@ -180,7 +180,7 @@ export function NavDropdown({ item, variant }: NavDropdownProps) {
   const linkClass =
     variant === "dark"
       ? "text-white/85 hover:text-white"
-      : "text-navy/70 hover:text-navy";
+      : "text-navy/80 hover:text-navy";
 
   if (!item.children?.length) {
     return (

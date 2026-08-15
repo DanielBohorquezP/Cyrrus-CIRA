@@ -24,7 +24,7 @@ function FaqItem({ question, answer }: Faq) {
         <span className="text-lg font-semibold text-navy">{question}</span>
         <ChevronDown
           className={cn(
-            "h-5 w-5 shrink-0 text-cyan transition-transform duration-150 ease-out",
+            "h-5 w-5 shrink-0 text-cyan-ink transition-transform duration-150 ease-out",
             open && "rotate-180",
           )}
         />
@@ -36,7 +36,7 @@ function FaqItem({ question, answer }: Faq) {
         )}
       >
         <div className="overflow-hidden">
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-navy/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-navy/80">
             {answer}
           </p>
         </div>
@@ -53,7 +53,7 @@ export function CiraFaq() {
     <section className="w-full bg-white py-24 md:py-32">
       <div className="mx-auto max-w-3xl px-6 md:px-12">
         <Reveal>
-          <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+          <span className="text-sm font-bold uppercase tracking-wider text-cyan-ink">
             {t("faq.eyebrow")}
           </span>
           <h2 className="mt-2 text-3xl font-bold text-navy md:text-4xl">
@@ -68,7 +68,7 @@ export function CiraFaq() {
         </Reveal>
 
         <Reveal delay={0.15} className="mt-10">
-          <p className="text-base text-navy/70">{t("faq.otherQuestion")}</p>
+          <p className="text-base text-navy/80">{t("faq.otherQuestion")}</p>
           <div className="mt-4">
             <ContactCtaButton label={t("faq.ctaLabel")} />
           </div>

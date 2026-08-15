@@ -39,12 +39,16 @@ export function WorkshopOrbit({ items, className }: WorkshopOrbitProps) {
   const [isHovering, setIsHovering] = React.useState(false);
   const screenSize = useResponsive();
 
-  const { containerRadius, nodeSize } =
+  // cardWidth is driven by the same xs/sm/lg breakpoints as the orbit itself
+  // (480/768px) rather than Tailwind's sm: (640px) — the mismatch between the
+  // two used to leave the card stuck at 128px between 480-639px, too narrow
+  // to fit the "Ver taller" pill next to both nav arrows without wrapping.
+  const { containerRadius, nodeSize, cardWidth } =
     screenSize === "xs"
-      ? { containerRadius: 130, nodeSize: 32 }
+      ? { containerRadius: 130, nodeSize: 32, cardWidth: 152 }
       : screenSize === "sm"
-        ? { containerRadius: 155, nodeSize: 36 }
-        : { containerRadius: 190, nodeSize: 40 };
+        ? { containerRadius: 155, nodeSize: 36, cardWidth: 164 }
+        : { containerRadius: 190, nodeSize: 40, cardWidth: 176 };
 
   const containerSize = containerRadius * 2 + nodeSize + 16;
 
@@ -95,7 +99,8 @@ export function WorkshopOrbit({ items, className }: WorkshopOrbitProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.92, y: -12 }}
             transition={{ type: "spring", stiffness: 300, damping: 26 }}
-            className="z-10 w-32 rounded-xl border border-white/15 bg-white/[0.07] p-3 text-center shadow-lg backdrop-blur-sm sm:w-40"
+            style={{ width: cardWidth }}
+            className="z-10 rounded-xl border border-white/15 bg-white/[0.07] p-3 text-center shadow-lg backdrop-blur-sm"
           >
             <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-cyan/15 text-cyan">
               <ActiveIcon className="h-4 w-4" />
@@ -113,13 +118,13 @@ export function WorkshopOrbit({ items, className }: WorkshopOrbitProps) {
                   e.preventDefault();
                   prev();
                 }}
-                className="rounded-full bg-white/10 p-1.5 text-white/80 transition-colors duration-150 hover:bg-white/20"
+                className="shrink-0 rounded-full bg-white/10 p-1.5 text-white/80 transition-colors duration-150 hover:bg-white/20"
                 aria-label="Taller anterior"
               >
                 <ChevronLeft className="h-3.5 w-3.5" />
               </button>
               <ComingSoon>
-                <span className="rounded-full bg-cyan px-3 py-1 text-[11px] font-semibold text-navy">
+                <span className="whitespace-nowrap rounded-full bg-cyan px-3 py-1 text-[11px] font-semibold text-navy">
                   Ver taller
                 </span>
               </ComingSoon>
@@ -129,7 +134,7 @@ export function WorkshopOrbit({ items, className }: WorkshopOrbitProps) {
                   e.preventDefault();
                   next();
                 }}
-                className="rounded-full bg-white/10 p-1.5 text-white/80 transition-colors duration-150 hover:bg-white/20"
+                className="shrink-0 rounded-full bg-white/10 p-1.5 text-white/80 transition-colors duration-150 hover:bg-white/20"
                 aria-label="Siguiente taller"
               >
                 <ChevronRight className="h-3.5 w-3.5" />

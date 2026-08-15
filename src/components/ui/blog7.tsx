@@ -110,7 +110,7 @@ const Blog7 = ({
                   loading="lazy"
                   className="h-full w-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-navy/55" aria-hidden="true" />
+                <div className="absolute inset-0 bg-navy/70" aria-hidden="true" />
                 <span className="absolute inset-0 flex items-center justify-center px-4 text-center text-sm font-semibold uppercase tracking-wider text-white">
                   Próximamente
                 </span>

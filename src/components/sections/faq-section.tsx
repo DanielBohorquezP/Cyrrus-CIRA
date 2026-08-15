@@ -29,7 +29,7 @@ function FaqRow({ question, answer }: FaqItem) {
         <span className="text-lg font-semibold text-navy">{question}</span>
         <ChevronDown
           className={cn(
-            "h-5 w-5 shrink-0 text-cyan transition-transform duration-150 ease-out",
+            "h-5 w-5 shrink-0 text-cyan-ink transition-transform duration-150 ease-out",
             open && "rotate-180",
           )}
         />
@@ -41,7 +41,7 @@ function FaqRow({ question, answer }: FaqItem) {
         )}
       >
         <div className="overflow-hidden">
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-navy/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-navy/80">
             {answer}
           </p>
         </div>
@@ -56,7 +56,7 @@ export function FaqSection({ eyebrow, title = "Preguntas frecuentes", faqs }: Fa
     <section className="w-full bg-white py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-6 md:px-12">
         <Reveal>
-          <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+          <span className="text-sm font-bold uppercase tracking-wider text-cyan-ink">
             {eyebrow}
           </span>
           <h2 className="mt-2 text-3xl font-bold text-navy md:text-4xl">
@@ -71,7 +71,7 @@ export function FaqSection({ eyebrow, title = "Preguntas frecuentes", faqs }: Fa
         </Reveal>
 
         <Reveal delay={0.15} className="mt-10">
-          <p className="text-base text-navy/70">¿Tiene otra pregunta?</p>
+          <p className="text-base text-navy/80">¿Tiene otra pregunta?</p>
           <div className="mt-4">
             <ContactCtaButton label="Escríbanos" />
           </div>

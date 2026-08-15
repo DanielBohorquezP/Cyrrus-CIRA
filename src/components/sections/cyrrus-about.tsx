@@ -78,7 +78,7 @@ function LevelsStack() {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-start justify-between gap-4">
                     <div className="min-w-0">
-                      <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+                      <span className="text-sm font-bold uppercase tracking-wider text-cyan">
                         {item.level}
                       </span>
                       <h3 className="mt-1 text-lg font-semibold text-white md:text-xl">
@@ -88,7 +88,7 @@ function LevelsStack() {
                     <Icon aria-hidden="true" className="h-5 w-5 flex-none text-cyan/60" />
                   </div>
 
-                  <p className="mt-2 max-w-prose text-sm leading-relaxed text-white/70">
+                  <p className="mt-2 max-w-prose text-base leading-relaxed text-white/70">
                     {item.description}
                   </p>
 

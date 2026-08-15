@@ -116,7 +116,7 @@ export default function Contacto() {
                 <h2 className="mt-4 text-xl font-semibold text-navy">
                   {t("form.successTitle")}
                 </h2>
-                <p className="mt-2 max-w-sm text-sm leading-relaxed text-gray">
+                <p className="mt-2 max-w-sm text-base leading-relaxed text-gray">
                   {t("form.successDescription")}
                 </p>
                 <BorderButton
@@ -141,7 +141,7 @@ export default function Contacto() {
                 <h2 className="text-lg font-semibold text-navy">
                   {t("form.title")}
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-gray">
+                <p className="mt-2 text-base leading-relaxed text-gray">
                   {t("form.description")}
                 </p>
 

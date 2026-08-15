@@ -103,7 +103,7 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
           >
             {eyebrow && (
               <motion.span
-                className="text-sm font-semibold uppercase tracking-wider text-cyan"
+                className="text-base font-bold uppercase tracking-wider text-cyan"
                 variants={itemVariants}
               >
                 {eyebrow}

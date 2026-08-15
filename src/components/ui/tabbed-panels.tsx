@@ -105,7 +105,7 @@ export function TabbedPanels({
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.05 }}
-              className="text-xs font-semibold uppercase tracking-wider text-cyan"
+              className="text-sm font-bold uppercase tracking-wider text-cyan"
             >
               {panel.eyebrow}
             </motion.span>
