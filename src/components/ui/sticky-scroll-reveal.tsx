@@ -53,11 +53,11 @@ export const StickyScroll = ({
             >
               {item.content ?? null}
             </div>
-            <span className="mt-5 block text-xs font-semibold uppercase tracking-wider text-cyan">
+            <span className="mt-5 block text-sm font-bold uppercase tracking-wider text-cyan-ink">
               {eyebrow}
             </span>
             <h2 className="mt-2 text-2xl font-bold text-navy">{item.title}</h2>
-            <p className="mt-3 text-base leading-relaxed text-navy/70">{item.description}</p>
+            <p className="mt-3 text-base leading-relaxed text-navy/80">{item.description}</p>
           </Reveal>
         ))}
       </div>
@@ -78,13 +78,13 @@ export const StickyScroll = ({
                   }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                 >
-                  <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+                  <span className="text-sm font-bold uppercase tracking-wider text-cyan-ink">
                     {eyebrow}
                   </span>
                   <h2 className="mt-2 text-3xl font-bold text-navy md:text-4xl">
                     {item.title}
                   </h2>
-                  <p className="mt-6 max-w-md text-base leading-relaxed text-navy/70">
+                  <p className="mt-6 max-w-md text-base leading-relaxed text-navy/80">
                     {item.description}
                   </p>
                 </motion.div>

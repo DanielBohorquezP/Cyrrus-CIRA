@@ -40,10 +40,10 @@ export function CookieConsent() {
           className="fixed inset-x-0 bottom-0 z-50 px-4 pb-4 sm:px-6 sm:pb-6"
         >
           <div className="mx-auto flex max-w-3xl flex-col items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)] sm:flex-row sm:items-center sm:p-6">
-            <p className="flex-1 text-sm leading-relaxed text-gray">
-              Usamos cookies estrictamente necesarias para que este sitio funcione, y — solo si usted lo
-              acepta — cookies de Google Analytics y otras herramientas para entender cómo se usa el sitio.
-              Puede leer más en nuestra{" "}
+            <p className="flex-1 text-base leading-relaxed text-gray">
+              Usamos cookies estrictamente necesarias para que este sitio funcione. Solo si usted lo
+              acepta, usamos también cookies de Google Analytics y otras herramientas para entender
+              cómo se usa el sitio. Puede leer más en nuestra{" "}
               <Link to="/cookies" className="text-blue underline underline-offset-2">
                 Política de Cookies
               </Link>

@@ -17,7 +17,7 @@ export function CiraSocialProof() {
     <AnimatedNavyBackground className="py-24 md:py-32">
       <div className="mx-auto max-w-5xl px-6 text-center md:px-12">
         <Reveal>
-          <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+          <span className="text-sm font-bold uppercase tracking-wider text-cyan">
             {t("socialProof.eyebrow")}
           </span>
           <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
@@ -34,7 +34,7 @@ export function CiraSocialProof() {
               <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
                 {stat.value}
               </dd>
-              <span className="mt-3 block text-sm leading-relaxed text-white/70">
+              <span className="mt-3 block text-base leading-relaxed text-white/70">
                 {stat.label}
               </span>
               <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />

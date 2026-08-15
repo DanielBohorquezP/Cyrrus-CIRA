@@ -103,7 +103,7 @@ export default function GestionDeProyectos() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-3xl">
-            <span className="block text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="block text-base font-bold uppercase tracking-wider text-blue">
               {t("intro.kicker")}
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
@@ -143,7 +143,7 @@ export default function GestionDeProyectos() {
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("differentiators.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -170,7 +170,7 @@ export default function GestionDeProyectos() {
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <h3 className="mt-1 text-lg font-semibold text-navy">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray">{item.description}</p>
+                  <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
                 </motion.div>
               );
             })}
@@ -195,7 +195,7 @@ export default function GestionDeProyectos() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-3xl">
-            <span className="block text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="block text-base font-bold uppercase tracking-wider text-blue">
               {t("reto.eyebrow")}
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
@@ -211,7 +211,7 @@ export default function GestionDeProyectos() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-blue">
+              <h3 className="text-base font-bold uppercase tracking-wider text-blue">
                 {t("reto.solutionTitle")}
               </h3>
               <ul className="mt-6 space-y-4">
@@ -236,7 +236,7 @@ export default function GestionDeProyectos() {
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("services.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -260,7 +260,7 @@ export default function GestionDeProyectos() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("achievements.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">

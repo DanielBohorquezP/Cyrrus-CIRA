@@ -1,0 +1,21 @@
+{
+  "name": "Cyrrus Consulting Services",
+  "short_name": "Cyrrus",
+  "description": "Metodología CIRA: construimos la estrategia, elegimos la solución correcta y logramos la adopción, con IA acelerando cada fase.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1e3f",
+  "theme_color": "#0a1e3f",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

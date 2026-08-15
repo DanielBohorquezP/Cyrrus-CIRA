@@ -13,7 +13,7 @@ export function Experience() {
       <AnimatedNavyBackground className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-cyan">
+            <span className="text-base font-bold uppercase tracking-wider text-cyan">
               {t("experience.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -34,7 +34,7 @@ export function Experience() {
                 <span className="text-4xl font-bold tracking-tight text-white">
                   +17
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+                <span className="text-sm font-bold uppercase tracking-wider text-cyan">
                   {t("experience.paisesLabel")}
                 </span>
               </div>
@@ -54,7 +54,7 @@ export function Experience() {
                 <span className="text-4xl font-bold tracking-tight text-white">
                   {industries.length}
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+                <span className="text-sm font-bold uppercase tracking-wider text-cyan">
                   {t("experience.sectoresLabel")}
                 </span>
               </div>

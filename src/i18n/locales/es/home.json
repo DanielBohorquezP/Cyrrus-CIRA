@@ -23,7 +23,7 @@
         "tabLabel": "Consultoría Estratégica",
         "eyebrow": "Consultoría de Estrategia",
         "title": "Consultoría Estratégica",
-        "description": "Construimos la estrategia, seleccionamos la solución correcta y ejecutamos el proyecto sin fallar — el ciclo completo de consultoría, disponible también como CTO as a Service o CIO as a Service.",
+        "description": "Construimos la estrategia, elegimos la solución correcta y ejecutamos el proyecto. Es el ciclo completo de consultoría. También puede tomarlo como CTO as a Service o CIO as a Service.",
         "href": "/metodo-cira",
         "buttonText": "Conocer el método CIRA"
       },
@@ -32,7 +32,7 @@
         "tabLabel": "IA Empresarial",
         "eyebrow": "Gobierno de IA corporativo",
         "title": "Inteligencia Artificial Empresarial",
-        "description": "Gobierno y arquitectura de IA aplicados a procesos de negocio reales — la capa que acelera cada fase de su transformación, no un catálogo de chatbots sueltos.",
+        "description": "Gobierno y arquitectura de IA aplicados a procesos reales del negocio. Es la capa que acelera cada fase. No es un catálogo de chatbots sueltos.",
         "href": "/intelligence-lab",
         "buttonText": "Conocer Cyrrus Intelligence Lab"
       },
@@ -41,7 +41,7 @@
         "tabLabel": "Gestión del Cambio",
         "eyebrow": "Gestión del cambio organizacional",
         "title": "Gestión del Cambio y Liderazgo",
-        "description": "Talleres ejecutivos y capacitación gerencial para que la adopción de su transformación se sostenga en el tiempo, sin depender permanentemente de Cyrrus.",
+        "description": "Talleres ejecutivos y formación para gerentes. El objetivo es que el cambio dure en el tiempo, sin depender siempre de Cyrrus.",
         "href": "/leadership-academy",
         "buttonText": "Conocer Leadership Academy"
       }
@@ -61,7 +61,7 @@
   },
   "about": {
     "title": "Consultoría organizacional con gobierno de IA integrado",
-    "description": "Un modelo, no una lista de servicios sueltos. Estrategia, arquitectura de IA y gestión del cambio bajo un mismo método — así optimizamos procesos y aceleramos resultados sin fragmentar su transformación entre proveedores distintos.",
+    "description": "Un modelo, no una lista de servicios sueltos. Reunimos estrategia, arquitectura de IA y gestión del cambio en un mismo método. Así mejoramos procesos y aceleramos resultados. Su proyecto no se reparte entre varios proveedores.",
     "conocerMas": "Conocer más",
     "clientesTitulo": "Empresas que han confiado en Cyrrus",
     "levels": [
@@ -74,9 +74,9 @@
     "eyebrow": "¿Por qué Cyrrus?",
     "title": "No implementamos inteligencia artificial. Gobernamos cada fase de su transformación con ella.",
     "reasons": [
-      { "title": "Un solo método, de punta a punta", "description": "El negocio no se fragmenta entre proveedores distintos para cada fase. Estrategia, selección, ejecución y adopción bajo un mismo ciclo — su ventaja competitiva no depende de coordinar 4 proveedores distintos." },
-      { "title": "Velocidad radical vía IA en cada fase", "description": "Gobierno, arquitectura y agentes integrados en Strategy, Select, Project Management y Change Management — automatización aplicada a diagnóstico, selección, ejecución y adopción, no como servicio aparte." },
-      { "title": "Capacidad que se queda en el cliente", "description": "Leadership Academy garantiza que la velocidad no dependa solo de Cyrrus: mejora continua sostenida por su propio equipo, que aprende a operar bajo el mismo modelo." }
+      { "title": "Un solo método, de punta a punta", "description": "Su negocio no se reparte entre un proveedor distinto por fase. Estrategia, selección, ejecución y adopción van en un mismo ciclo. Usted no tiene que coordinar a cuatro empresas." },
+      { "title": "Velocidad radical vía IA en cada fase", "description": "Gobierno, arquitectura y agentes van dentro de Strategy, Select, Project Management y Change Management. La automatización apoya el diagnóstico, la selección, la ejecución y la adopción. No es un servicio aparte." },
+      { "title": "Capacidad que se queda en el cliente", "description": "Con Leadership Academy, la velocidad no depende solo de Cyrrus. Su equipo aprende a trabajar con el mismo modelo. Así la mejora se sostiene desde adentro." }
     ]
   },
   "ceo": {
@@ -107,12 +107,12 @@
   "perspectivasPreview": {
     "tagline": "Perspectivas",
     "heading": "Pensamiento sobre transformación y gestión del cambio",
-    "description": "Análisis y contenido de autoridad sobre consultoría estratégica, gobierno de IA y gestión del cambio organizacional — las preguntas que el mercado ya está haciendo.",
+    "description": "Análisis sobre consultoría estratégica, gobierno de IA y gestión del cambio. Son las preguntas que el mercado ya está haciendo.",
     "buttonText": "Ver todos los temas"
   },
   "finalCta": {
     "title": "¿Listo para conectar la decisión con la ejecución?",
-    "description": "Complete el formulario y coordinamos una llamada con el equipo adecuado del lado de Cyrrus para hablar del reto de su organización.",
+    "description": "Complete el formulario y coordinamos una llamada. Hablaremos del reto de su organización con el equipo indicado.",
     "buttonText": "Agendar conversación estratégica"
   },
   "meta": {

@@ -18,7 +18,7 @@ export function WhyCyrrus() {
     <section className="w-full bg-light-blue/40 py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+          <span className="text-base font-bold uppercase tracking-wider text-blue">
             {t("whyCyrrus.eyebrow")}
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -41,7 +41,7 @@ export function WhyCyrrus() {
                 <h3 className="mt-6 text-lg font-semibold text-navy">
                   {reason.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray">
+                <p className="mt-3 text-base leading-relaxed text-gray">
                   {reason.description}
                 </p>
               </motion.div>

@@ -99,7 +99,7 @@ export default function IntelligenceLab() {
       <section className="w-full bg-background py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("hub.pillars.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -125,7 +125,7 @@ export default function IntelligenceLab() {
                     <h3 className="mt-6 text-lg font-semibold text-navy">
                       {pillar.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-gray">
+                    <p className="mt-3 text-base leading-relaxed text-gray">
                       {pillar.description}
                     </p>
                     <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-blue">
@@ -147,7 +147,7 @@ export default function IntelligenceLab() {
       <section className="w-full bg-light-blue/40 py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("hub.transversal.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -164,10 +164,10 @@ export default function IntelligenceLab() {
                 whileHover={{ y: -4 }}
                 className="flex flex-col rounded-2xl border border-border bg-card p-6 transition-colors hover:border-blue/30"
               >
-                <span className="text-xs font-semibold uppercase tracking-wider text-blue">
+                <span className="text-sm font-bold uppercase tracking-wider text-blue">
                   {item.phase}
                 </span>
-                <span className="mt-3 text-sm leading-relaxed text-gray">
+                <span className="mt-3 text-base leading-relaxed text-gray">
                   {item.note}
                 </span>
               </motion.a>

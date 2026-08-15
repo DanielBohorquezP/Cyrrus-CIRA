@@ -16,7 +16,7 @@ export const upcomingTopics = [
     id: "post-2",
     title: "Cómo elegir una consultora estratégica confiable",
     summary:
-      "Criterios objetivos para comparar firmas de consultoría más allá del logo o el tamaño: metodología propia, acompañamiento de punta a punta y evidencia real de resultados.",
+      "Cómo comparar firmas de consultoría más allá del logo o el tamaño. Tres criterios claros: método propio, acompañamiento de punta a punta y pruebas reales de resultados.",
     label: "Consultoría estratégica",
     author: "Equipo Cyrrus",
     published: "Septiembre 2026",
@@ -28,7 +28,7 @@ export const upcomingTopics = [
     id: "post-3",
     title: "Qué es el gobierno de IA corporativo y por qué su empresa lo necesita",
     summary:
-      "Antes de adoptar herramientas de inteligencia artificial, las organizaciones necesitan un marco de gobierno: quién decide, quién audita y qué datos pueden tocarse.",
+      "Antes de adoptar herramientas de IA hace falta un marco de gobierno. Debe responder tres preguntas: quién decide, quién audita y qué datos se pueden usar.",
     label: "Gobierno de IA",
     author: "Equipo Cyrrus",
     published: "Octubre 2026",
@@ -40,7 +40,7 @@ export const upcomingTopics = [
     id: "post-4",
     title: "ERP: qué es y por qué su empresa lo necesita",
     summary:
-      "Una explicación clara de qué es un ERP, qué problemas resuelve y en qué punto del crecimiento de una empresa se vuelve indispensable.",
+      "Qué es un ERP y qué problemas resuelve. También en qué momento del crecimiento de una empresa se vuelve necesario.",
     label: "Selección de soluciones",
     author: "Equipo Cyrrus",
     published: "Octubre 2026",

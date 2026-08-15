@@ -170,7 +170,7 @@ export function CircularCarousel({
         initial={{ opacity: 0, y: 6 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35, ease: "easeOut" }}
-        className="max-w-xs text-center text-sm leading-relaxed text-white/70"
+        className="max-w-xs text-center text-base leading-relaxed text-white/70"
       >
         {items[activeIndex].description}
       </motion.p>

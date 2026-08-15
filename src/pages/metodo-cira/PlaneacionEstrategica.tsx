@@ -123,7 +123,7 @@ export default function PlaneacionEstrategica() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-3xl">
-            <span className="block text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="block text-base font-bold uppercase tracking-wider text-blue">
               {t("intro.kicker")}
             </span>
             <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
@@ -163,7 +163,7 @@ export default function PlaneacionEstrategica() {
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("diagnostico.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -193,7 +193,7 @@ export default function PlaneacionEstrategica() {
                     <h3 className="mt-1 text-lg font-semibold text-navy">
                       {problem.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray">
+                    <p className="mt-2 text-base leading-relaxed text-gray">
                       {problem.description}
                     </p>
                   </div>
@@ -211,7 +211,7 @@ export default function PlaneacionEstrategica() {
       <AnimatedNavyBackground className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6 text-center md:px-12">
           <Reveal>
-            <span className="text-xs font-semibold uppercase tracking-wider text-cyan">
+            <span className="text-sm font-bold uppercase tracking-wider text-cyan">
               {t("whyCeos.eyebrow")}
             </span>
             <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
@@ -228,7 +228,7 @@ export default function PlaneacionEstrategica() {
                 <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
                   {stat.value}
                 </dd>
-                <span className="mt-3 block text-sm leading-relaxed text-white/70">
+                <span className="mt-3 block text-base leading-relaxed text-white/70">
                   {stat.label}
                 </span>
                 <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />
@@ -247,7 +247,7 @@ export default function PlaneacionEstrategica() {
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("cxaas.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
@@ -269,7 +269,7 @@ export default function PlaneacionEstrategica() {
                   <ShieldCheck className="h-5 w-5 text-cyan" />
                 </div>
                 <h3 className="mt-5 text-base font-semibold text-navy">{role.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray">{role.description}</p>
+                <p className="mt-2 text-base leading-relaxed text-gray">{role.description}</p>
               </motion.div>
             ))}
             <motion.div variants={staggerItem} className="overflow-hidden rounded-2xl">
@@ -293,7 +293,7 @@ export default function PlaneacionEstrategica() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-2xl">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
               {t("services.eyebrow")}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">

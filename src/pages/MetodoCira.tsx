@@ -57,7 +57,7 @@ export default function MetodoCira() {
           </span>
         </div>
         <div>
-          <p className="text-sm leading-relaxed text-white/90">{p.outcome}</p>
+          <p className="text-base leading-relaxed text-white/90">{p.outcome}</p>
           <BorderButton asChild variant="light" size="sm" className="mt-4" dot>
             <Link to={p.href}>
               {p.ctaText}

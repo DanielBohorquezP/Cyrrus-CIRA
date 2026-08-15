@@ -18,7 +18,7 @@ export function PageHero({ eyebrow, title, description, children, image }: PageH
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="text-sm font-semibold uppercase tracking-wider text-cyan"
+        className="text-base font-bold uppercase tracking-wider text-cyan"
       >
         {eyebrow}
       </motion.span>

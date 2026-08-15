@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { BorderButton } from "@/components/ui/border-button";
 import { NavDropdown } from "@/components/layout/nav-dropdown";
-import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
 import { useLang } from "@/lib/language";
 import { useScrolled } from "@/lib/use-scrolled";
@@ -42,7 +41,7 @@ function MobileNavAccordionItem({
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? t("cta.contraer") : t("cta.expandir")}
             aria-expanded={open}
-            className="p-2 text-navy/60"
+            className="p-2 text-navy/80"
           >
             <ChevronDown
               className={cn(
@@ -102,7 +101,7 @@ export function SiteHeader() {
           width={140}
           height={44}
           loading="eager"
-          className="h-11 w-auto"
+          className="h-16 w-auto"
         />
       </Link>
       <nav className="hidden lg:flex items-center gap-8">
@@ -111,7 +110,6 @@ export function SiteHeader() {
         ))}
       </nav>
       <div className="flex items-center gap-2">
-        <LanguageSwitcher className="hidden lg:inline-flex" />
         <BorderButton asChild variant="dark" size="sm" dot className="hidden lg:inline-flex">
           <Link to="/contacto">{t("cta.agendarConversacion")}</Link>
         </BorderButton>
@@ -144,7 +142,6 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="flex items-center justify-between gap-4 border-t border-border px-6 py-5">
-          <LanguageSwitcher />
           <BorderButton asChild variant="dark" size="sm" dot className="flex-1 justify-center">
             <Link to="/contacto" onClick={() => setMobileOpen(false)}>
               {t("cta.agendarConversacion")}
