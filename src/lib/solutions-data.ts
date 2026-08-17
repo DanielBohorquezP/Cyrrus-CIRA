@@ -49,7 +49,7 @@ export const solutions: SolutionEntry[] = [
     stat: {
       value: "+70%",
       description: "de las iniciativas ERP no alcanzan completamente los objetivos del negocio.",
-      source: "Gartner",
+      source: "Cyrrus",
     },
     items: [
       {

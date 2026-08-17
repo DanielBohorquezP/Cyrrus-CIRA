@@ -21,7 +21,7 @@ export const solutionCategoryImages: Record<string, string> = {
 };
 
 export const solutionDetailImages: Record<string, { image: string; imagePosition?: string }> = {
-  "tecnologias-maduras": { image: "/assets/decoracion/1785866223529.jpg" },
+  "tecnologias-maduras": { image: "/assets/decoracion/1785872413166.jpg" },
   "tecnologias-avanzadas": { image: "/assets/decoracion/Cascosss.jpg", imagePosition: "center 42%" },
   "infraestructura-tecnologica": { image: "/assets/decoracion/IMG_20230227_164308.jpg" },
 };

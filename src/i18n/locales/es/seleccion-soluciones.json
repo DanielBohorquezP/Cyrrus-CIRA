@@ -109,7 +109,7 @@
         "label": "Tecnologías Maduras",
         "eyebrow": "Selección de Soluciones — Tecnologías Maduras",
         "intro": "Son el corazón operativo de la organización. Permiten estandarizar procesos, fortalecer la operación y crear una base sólida para crecer.",
-        "stat": { "value": "+70%", "description": "de las iniciativas ERP no alcanzan completamente los objetivos del negocio.", "source": "Gartner" },
+        "stat": { "value": "+70%", "description": "de las iniciativas ERP no alcanzan completamente los objetivos del negocio.", "source": "Cyrrus" },
         "items": [
           { "title": "ERP", "description": "Integramos los procesos financieros, comerciales, logísticos, productivos y administrativos sobre una plataforma preparada para acompañar el crecimiento del negocio." },
           { "title": "CRM", "description": "Seleccionamos soluciones que fortalecen la relación con los clientes, optimizan el proceso comercial y mejoran la experiencia en cada interacción." },

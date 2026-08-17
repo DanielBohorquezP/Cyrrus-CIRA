@@ -109,7 +109,7 @@
         "label": "Mature Technologies",
         "eyebrow": "Solution Selection — Mature Technologies",
         "intro": "They are the operational heart of the organization. They standardize processes, strengthen operations, and create a solid foundation for growth.",
-        "stat": { "value": "+70%", "description": "of ERP initiatives don't fully meet the business's objectives.", "source": "Gartner" },
+        "stat": { "value": "+70%", "description": "of ERP initiatives don't fully meet the business's objectives.", "source": "Cyrrus" },
         "items": [
           { "title": "ERP", "description": "We integrate financial, commercial, logistics, production, and administrative processes onto a platform built to support the business's growth." },
           { "title": "CRM", "description": "We select solutions that strengthen customer relationships, streamline the sales process, and improve the experience at every interaction." },
