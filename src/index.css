@@ -55,7 +55,7 @@
   opacity: 0.6;
 }
 .sheet-2 {
-  color: #ff00ff;
+  color: #1b6fc2;
   height: 30px;
   transform: translateX(-50%) rotate(0deg);
   z-index: 2;
@@ -63,7 +63,7 @@
   width: 78px;
 }
 .sheet-3 {
-  color: #00ff00;
+  color: #ffffff;
   height: 24px;
   transform: translateX(calc(-50% + 48px)) rotate(12deg);
   z-index: 1;
@@ -89,15 +89,15 @@
   0%, 100% {
     box-shadow:
       0 0 10px rgba(0, 255, 255, 0.5),
-      0 0 15px rgba(255, 0, 255, 0.4),
-      0 0 20px rgba(0, 255, 0, 0.3),
+      0 0 15px rgba(27, 111, 194, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.25),
       inset 0 0 8px rgba(0, 0, 0, 0.4);
   }
   50% {
     box-shadow:
       0 0 15px rgba(0, 255, 255, 0.7),
-      0 0 25px rgba(255, 0, 255, 0.6),
-      0 0 35px rgba(0, 255, 0, 0.5),
+      0 0 25px rgba(27, 111, 194, 0.7),
+      0 0 35px rgba(255, 255, 255, 0.4),
       inset 0 0 12px rgba(0, 0, 0, 0.5);
   }
 }
@@ -136,7 +136,7 @@
   border-radius: 0 8px 16px 16px;
   box-shadow:
     0 0 10px rgba(0, 255, 255, 0.4),
-    0 0 15px rgba(255, 0, 255, 0.3),
+    0 0 15px rgba(27, 111, 194, 0.4),
     inset 0 0 6px rgba(0, 0, 0, 0.4);
   padding: 1.25rem 1.5rem;
   z-index: 5;
@@ -174,8 +174,8 @@
   letter-spacing: 1.5px;
   text-shadow:
     0 0 4px #00ffff,
-    0 0 8px #ff00ff,
-    0 0 12px #00ff00;
+    0 0 8px #1b6fc2,
+    0 0 12px rgba(255, 255, 255, 0.6);
 }
 
 .folder-card-neon > * {
