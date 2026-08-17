@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/motion-navigation-menu";
 import { ComingSoon } from "@/components/ui/coming-soon";
 import type { NavChild, NavItem } from "@/lib/nav-config";
+import { useLang } from "@/lib/language";
 import { cn } from "@/lib/utils";
 
 /**
@@ -75,9 +76,16 @@ function ChildRow({
   const rowClass =
     "group/row flex w-[17.5rem] flex-row items-center justify-between gap-3 rounded-lg px-3 py-2 text-left";
 
+  const lang = useLang();
+
   if (child.comingSoon) {
     return (
-      <ComingSoon className={cn(rowClass, "opacity-70")}>{body}</ComingSoon>
+      <ComingSoon
+        className={cn(rowClass, "opacity-70")}
+        message={lang === "en" ? "Coming soon" : "Próximamente"}
+      >
+        {body}
+      </ComingSoon>
     );
   }
 
