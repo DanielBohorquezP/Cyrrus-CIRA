@@ -46,7 +46,7 @@ const gallerySrcs = [
   { src: "/assets/decoracion/Evento%20mesas.jpg", alt: "Cyrrus en un evento corporativo" },
 ];
 
-const teamPhotos = ["/assets/decoracion/JacksonCEO1.webp", undefined, undefined, undefined];
+const teamPhotos = ["/assets/decoracion/JacksonCEO1.webp", "/assets/decoracion/DanielBohorquez.JPG.jpeg"];
 
 export default function Experiencia() {
   const { t } = useTranslation("paginas");
@@ -203,7 +203,7 @@ export default function Experiencia() {
             </h2>
           </Reveal>
 
-          <RevealGroup className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <RevealGroup className="mx-auto mt-12 grid max-w-xl grid-cols-1 gap-6 sm:grid-cols-2">
             {team.map((member) => (
               <RevealItem
                 key={member.role}

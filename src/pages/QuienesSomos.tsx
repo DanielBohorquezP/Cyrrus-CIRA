@@ -68,6 +68,14 @@ export default function QuienesSomos() {
         title={t("quienesSomos.hero.title")}
         description={t("quienesSomos.hero.description")}
         showVisual={false}
+        visual={
+          <img
+            src="/assets/logos-cyrrus/cyrrus-logo-blanco.png"
+            alt="Cyrrus Consulting Services"
+            loading="lazy"
+            className="w-full max-w-sm opacity-90"
+          />
+        }
       />
 
       <section className="w-full bg-background py-24 md:py-32">

@@ -89,9 +89,9 @@
     "eyebrow": "On the other side of the gap",
     "title": "This is what it looks like when the decision does reach execution.",
     "items": [
-      { "quote": "Cyrrus didn't show up with a catalog of tools. They showed up with a clear method that connected our strategy to execution — something no previous vendor had achieved.", "author": "VP of Operations", "company": "Industrial group, manufacturing sector" },
-      { "quote": "The difference was speed: what normally took us months of vendor selection, we solved with Cyrrus in weeks thanks to their parallel evaluation approach.", "author": "Chief Technology Officer", "company": "Financial services company" },
-      { "quote": "The project wasn't just implemented — the team adopted it. That's what actually changed the outcome compared to previous attempts.", "author": "Transformation Manager", "company": "Energy company, LATAM" }
+      { "videoId": "7czOH9eH6lw", "name": "Sebastián Hoyos", "role": "CFO", "company": "3 Castillos", "quote": "\"We decided to work with Cyrrus because it offered us a path to world-class best practices.\" Today they have a platform that lets them see information live and better understand what's happening with their customers." },
+      { "videoId": "C8aDacFpwBY", "name": "Vanessa Ramírez", "role": "HR", "company": "3 Castillos", "quote": "\"It's not just an ERP change — it's an organization-wide change management process.\"" },
+      { "videoId": "2oWuE5RFskI", "name": "Fernando Gutiérrez", "role": "Home Worker", "company": "Morelco", "quote": "Cyrrus helped Morelco implement remote work during the pandemic, adapting working conditions for its employees while maintaining their quality of life and productivity. The solution reinvented how infrastructure projects get done." }
     ]
   },
   "experience": {

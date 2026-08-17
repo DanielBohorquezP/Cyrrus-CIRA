@@ -39,9 +39,7 @@
       "photoNamePending": "Photo and name pending",
       "roles": [
         { "role": "CEO & Founder", "name": "Jackson Bohorquez" },
-        { "role": "Director, Cyrrus Intelligence Lab", "name": "Daniel Bohorquez" },
-        { "role": "Director, Leadership Academy" },
-        { "role": "Director of Operations" }
+        { "role": "Director, Cyrrus Intelligence Lab", "name": "Daniel Bohorquez" }
       ]
     },
     "trust": {
@@ -77,8 +75,8 @@
       "eyebrow": "Key milestones",
       "title": "The story behind Cyrrus",
       "items": [
-        { "caption": "The day Cyrrus Consulting Services was legally founded.", "alt": "Constitution of Cyrrus Consulting Services S.A.S." },
-        { "caption": "The team that executes the CIRA method every day.", "alt": "Cyrrus Consulting Services team" },
+        { "caption": "The early days of Cyrrus Consulting Services.", "alt": "The early days of Cyrrus Consulting Services" },
+        { "caption": "Working alongside a client through their transformation.", "alt": "A client's team working with Cyrrus Consulting Services" },
         { "caption": "Sharing Cyrrus's vision at regional forums.", "alt": "Jackson Bohorquez at Foro Caribe 2030" }
       ]
     }

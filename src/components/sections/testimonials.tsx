@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { Quote } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { YoutubeFacade } from "@/components/ui/youtube-facade";
 
 interface Testimonial {
-  quote: string;
-  author: string;
+  videoId: string;
+  name: string;
+  role: string;
   company: string;
+  quote: string;
 }
 
 export function Testimonials() {
@@ -25,23 +27,30 @@ export function Testimonials() {
         </Reveal>
 
         <RevealGroup className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {testimonials.map((t, i) => (
+          {testimonials.map((item, i) => (
             <RevealItem
               as="figure"
-              key={t.author}
+              key={item.videoId}
               index={i}
-              className="flex flex-col rounded-2xl border border-border bg-card p-8"
+              className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card"
             >
-              <Quote className="h-6 w-6 text-cyan-ink" strokeWidth={2.5} />
-              <blockquote className="mt-5 flex-1 text-[15px] leading-relaxed text-foreground">
-                "{t.quote}"
-              </blockquote>
-              <figcaption className="mt-6 border-t border-border pt-4">
-                <div className="text-sm font-semibold text-navy">
-                  {t.author}
-                </div>
-                <div className="text-sm text-gray">{t.company}</div>
-              </figcaption>
+              <YoutubeFacade
+                videoId={item.videoId}
+                title={`${item.name}, ${item.role} de ${item.company} — testimonio en video`}
+              />
+              <div className="flex flex-1 flex-col p-6">
+                <blockquote className="flex-1 text-[15px] leading-relaxed text-foreground">
+                  {item.quote}
+                </blockquote>
+                <figcaption className="mt-6 border-t border-border pt-4">
+                  <div className="text-sm font-semibold text-navy">
+                    {item.name}
+                  </div>
+                  <div className="text-sm text-gray">
+                    {item.role} · {item.company}
+                  </div>
+                </figcaption>
+              </div>
             </RevealItem>
           ))}
         </RevealGroup>

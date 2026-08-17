@@ -89,9 +89,9 @@
     "eyebrow": "Del otro lado de la brecha",
     "title": "Así se ve cuando la decisión sí llega a la ejecución.",
     "items": [
-      { "quote": "Cyrrus no llegó con un catálogo de herramientas. Llegó con un método claro que conectó nuestra estrategia con la ejecución, algo que ningún proveedor anterior había logrado.", "author": "VP de Operaciones", "company": "Grupo industrial, sector manufactura" },
-      { "quote": "La diferencia estuvo en la velocidad: lo que normalmente nos tomaba meses de selección de proveedores, con Cyrrus lo resolvimos en semanas gracias a su forma de evaluar en paralelo.", "author": "Director de Tecnología", "company": "Compañía de servicios financieros" },
-      { "quote": "El proyecto no solo se implementó — el equipo lo adoptó. Eso fue lo que realmente cambió el resultado frente a intentos anteriores.", "author": "Gerente de Transformación", "company": "Empresa de energía, LATAM" }
+      { "videoId": "7czOH9eH6lw", "name": "Sebastián Hoyos", "role": "CFO", "company": "3 Castillos", "quote": "\"Decidimos tomar a Cyrrus porque nos ofrecía ir a las mejores prácticas mundiales.\" Hoy cuentan con una plataforma que les permite ver la información en vivo y conocer mejor lo que está pasando con sus clientes." },
+      { "videoId": "C8aDacFpwBY", "name": "Vanessa Ramírez", "role": "RRHH", "company": "3 Castillos", "quote": "\"No solamente es un cambio de un ERP, sino un proceso de gestión de cambio a nivel organizacional.\"" },
+      { "videoId": "2oWuE5RFskI", "name": "Fernando Gutiérrez", "role": "Home Worker", "company": "Morelco", "quote": "Cyrrus ayudó a Morelco a implementar el trabajo remoto durante la pandemia, adaptando las condiciones laborales de sus colaboradores y manteniendo su calidad de vida y productividad. La solución permitió reinventar la forma de trabajar en proyectos de infraestructura." }
     ]
   },
   "experience": {
