@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowUpRight, Compass, Cpu, GraduationCap } from "lucide-react";
 import { About3 } from "@/components/ui/about-3";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
@@ -21,21 +21,11 @@ interface CiraPhase {
 
 const icons = [Compass, Cpu, GraduationCap];
 
-// Grows top-down instead of appearing instantly, so it never visually races
-// ahead of the numbered nodes it's supposed to connect — the two previously
-// animated on different clocks (line: none, cards: staggered slide-in),
-// which could show a brief misaligned frame right after mount (e.g. on
-// every ES/EN route switch, since that remounts this section).
-const spineVariants: Variants = {
-  hidden: { scaleY: 0 },
-  visible: { scaleY: 1, transition: { duration: 0.7, ease: "easeOut" } },
-};
-
 /**
  * The three levels are a stack, not three parallel services — level 1 is what
  * the business gets, level 2 is how it's built, level 3 is who sustains it.
- * A connecting spine through numbered nodes says that structurally, so the
- * layout reinforces the section heading instead of contradicting it.
+ * Level 1 gets the solid-cyan treatment (foundation), while 2 and 3 stay
+ * outlined, so the hierarchy reads at a glance without a connecting line.
  */
 function LevelsStack() {
   const { t } = useTranslation("home");
@@ -46,31 +36,35 @@ function LevelsStack() {
   const phases = tCira("phases", { returnObjects: true }) as CiraPhase[];
 
   return (
-    <RevealGroup className="relative">
-      {/* Spine: visible in the gaps between rows, aligned to the node centers.
-          Grows from the top (transformOrigin) in sync with the stagger below,
-          rather than being fully drawn on the first frame. */}
-      <motion.div
-        aria-hidden="true"
-        variants={spineVariants}
-        style={{ transformOrigin: "top" }}
-        className="absolute bottom-8 left-11 top-8 w-px bg-gradient-to-b from-cyan/50 via-cyan/25 to-transparent md:left-[3.25rem]"
-      />
-
-      <ol className="relative flex flex-col gap-4">
+    <RevealGroup>
+      <ol className="mx-auto flex max-w-2xl flex-col gap-4">
         {levels.map((item, index) => {
           const Icon = icons[index];
           const isFoundation = index === 0;
 
           return (
-            <motion.li key={item.title} variants={staggerItem} className="relative">
+            <motion.li
+              key={item.title}
+              variants={staggerItem}
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+            >
               <Link
                 to={item.href}
-                className="group flex gap-5 rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-[background-color,border-color] duration-200 ease-out hover:border-cyan/40 hover:bg-white/[0.08] md:gap-6 md:p-7"
+                className={
+                  isFoundation
+                    ? "group flex gap-5 rounded-2xl border border-cyan/50 bg-cyan/10 p-5 transition-[background-color,border-color] duration-200 ease-out hover:border-cyan hover:bg-cyan/15 md:gap-6 md:p-7"
+                    : "group flex gap-5 rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-[background-color,border-color] duration-200 ease-out hover:border-cyan/40 hover:bg-white/[0.08] md:gap-6 md:p-7"
+                }
               >
                 <span
                   aria-hidden="true"
-                  className="flex h-12 w-12 flex-none items-center justify-center rounded-full border border-cyan/40 bg-navy text-sm font-semibold text-cyan transition-[border-color] duration-200 ease-out group-hover:border-cyan"
+                  className={
+                    isFoundation
+                      ? "flex h-12 w-12 flex-none items-center justify-center rounded-full bg-cyan text-sm font-semibold text-navy"
+                      : "flex h-12 w-12 flex-none items-center justify-center rounded-full border border-cyan/40 bg-navy text-sm font-semibold text-cyan transition-[border-color] duration-200 ease-out group-hover:border-cyan"
+                  }
                 >
                   {index + 1}
                 </span>

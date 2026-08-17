@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { BorderButton } from "@/components/ui/border-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
+import { Reveal } from "@/components/ui/reveal";
 
 interface About3Props {
   title?: string;
@@ -67,12 +68,12 @@ export const About3 = ({
   return (
     <AnimatedNavyBackground className="py-24 md:py-32">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
+        <Reveal className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-4 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             {title}
           </h2>
           <p className="text-white/70">{description}</p>
-        </div>
+        </Reveal>
         {singleImage && (
           <img
             src={singleImage.src}
