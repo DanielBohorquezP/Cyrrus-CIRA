@@ -618,3 +618,27 @@
      through the page. */
   contain-intrinsic-size: auto 650px;
 }
+
+/* --- Navigation menu panel ----------------------------------------------
+   The directional slide for src/components/ui/motion-navigation-menu.tsx.
+   `--nav-dir` is +1 or -1 depending on which way the pointer moved along the
+   nav, so the panel content enters from the side you came from. transform and
+   opacity only — the panel chrome handles its own size morph. */
+@keyframes nav-panel-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(calc(var(--nav-dir, 1) * 22px), 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.nav-panel-enter {
+  animation: nav-panel-enter 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-panel-enter {
+    animation: none;
+  }
+}

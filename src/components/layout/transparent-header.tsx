@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { BorderButton } from "@/components/ui/border-button";
-import { NavDropdown } from "@/components/layout/nav-dropdown";
+import { NavMenu } from "@/components/layout/nav-menu";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
 import { langPath, useLang } from "@/lib/language";
@@ -123,11 +123,7 @@ export function TransparentHeader() {
           )}
         />
       </Link>
-      <nav className="hidden lg:flex items-center gap-8">
-        {navItems.map((item) => (
-          <NavDropdown key={item.label} item={item} variant={scrolled ? "light" : "dark"} />
-        ))}
-      </nav>
+      <NavMenu items={navItems} variant={scrolled ? "light" : "dark"} />
       <div className="flex items-center gap-2">
         <LanguageSwitcher
           variant={scrolled ? "light" : "dark"}
