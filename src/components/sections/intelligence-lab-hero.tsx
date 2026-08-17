@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
-import { OrbitVisual } from "@/components/ui/orbit-visual";
+import { CyberpunkNeonFolder } from "@/components/ui/cyberpunk-neon-folder";
 import { Spotlight } from "@/components/ui/spotlight";
 import { cn } from "@/lib/utils";
 
@@ -66,21 +66,11 @@ export function IntelligenceLabHero({
 
         <div
           className={cn(
-            "relative",
-            // Spline needs an explicit height to fill; a custom `visual` (e.g.
-            // WorkshopOrbit) sizes itself, so only set a floor — a hard height
-            // clipped its lower orbit icons against the section's overflow.
-            showVisual
-              ? "h-[320px] md:h-[420px]"
-              : "flex min-h-[320px] items-center justify-center md:min-h-[420px]",
+            "relative flex min-h-[320px] items-center justify-center md:min-h-[420px]",
             !showVisual && !visual && "hidden md:flex",
           )}
         >
-          {showVisual ? (
-            <OrbitVisual className="h-full w-full" />
-          ) : (
-            visual ?? <div className="h-full w-full" />
-          )}
+          {showVisual ? <CyberpunkNeonFolder /> : (visual ?? <div className="h-full w-full" />)}
         </div>
       </div>
     </AnimatedNavyBackground>
