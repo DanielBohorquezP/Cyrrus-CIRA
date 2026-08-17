@@ -43,10 +43,10 @@ export function TrustBar() {
               <dd className="bg-gradient-to-br from-navy to-blue bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl">
                 {metric.value}
               </dd>
-              <span className="mt-2 block text-sm font-bold uppercase tracking-wide text-gray">
+              <dd className="mt-2 text-sm font-bold uppercase tracking-wide text-gray">
                 {metric.label}
-              </span>
-              <span className="mx-auto mt-2.5 block h-[3px] w-9 rounded-full bg-cyan lg:mx-0" />
+                <span className="mx-auto mt-2.5 block h-[3px] w-9 rounded-full bg-cyan lg:mx-0" />
+              </dd>
             </div>
           ))}
         </dl>
@@ -54,7 +54,6 @@ export function TrustBar() {
           <LogoCarousel
             items={clientLogos}
             className="lg:w-[420px]"
-            fadeColor="background"
           />
         </div>
       </div>

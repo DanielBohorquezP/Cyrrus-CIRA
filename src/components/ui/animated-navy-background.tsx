@@ -82,8 +82,8 @@ export const AnimatedNavyBackground = forwardRef<HTMLElement, AnimatedNavyBackgr
       </div>
       <style>{`
         @keyframes navy-dot-pulse {
-          0%, 100% { r: ${DOT * 0.5}px; opacity: 0.25; }
-          50% { r: ${DOT * 1.35}px; opacity: 0.9; }
+          0%, 100% { transform: scale(0.5); opacity: 0.25; }
+          50% { transform: scale(1.35); opacity: 0.9; }
         }
         .navy-dot-pulse {
           transform-box: fill-box;

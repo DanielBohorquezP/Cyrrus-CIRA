@@ -67,7 +67,7 @@ export function TabbedPanels({
             role="tab"
             type="button"
             aria-selected={active === index}
-            aria-controls={`panel-${p.id}`}
+            aria-controls={active === index ? `panel-${p.id}` : undefined}
             id={`tab-${p.id}`}
             onClick={() => handleSelect(index)}
             className={cn(

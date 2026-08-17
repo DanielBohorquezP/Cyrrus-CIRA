@@ -111,7 +111,7 @@ export function TransparentHeader() {
           )}
         />
         <img
-          src="/assets/logos-cyrrus/cyrrus-logo-color.png"
+          src="/assets/logos-cyrrus/cyrrus-logo-color.webp"
           alt="Cyrrus Consulting Services"
           width={140}
           height={44}
