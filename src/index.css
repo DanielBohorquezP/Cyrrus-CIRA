@@ -7,13 +7,20 @@
    media="print" swap trick, since Vercel's static-asset layer rewrote the
    attribute away on deploy. Bundling the font files removes two third-party
    round trips from the critical path entirely. */
-@import "@fontsource/poppins/400.css";
-@import "@fontsource/poppins/500.css";
-@import "@fontsource/poppins/600.css";
-@import "@fontsource/poppins/700.css";
-@import "@fontsource/poppins/800.css";
-@import "@fontsource/carlito/400.css";
-@import "@fontsource/carlito/700.css";
+/* Latin subset only. The bare `400.css` entrypoints pull in every subset
+   Google ships (cyrillic, cyrillic-ext, devanagari, greek, latin-ext), which
+   emitted 29 woff2 + 29 woff files into dist for a site that is only ever
+   Spanish and English. Browsers already skip the unused subsets at runtime via
+   unicode-range, so this changes nothing visually — it just stops shipping and
+   deploying the dead weight. Latin covers the full Spanish set (accents, ñ,
+   ¿, ¡ all live in U+00A0-00FF). */
+@import "@fontsource/poppins/latin-400.css";
+@import "@fontsource/poppins/latin-500.css";
+@import "@fontsource/poppins/latin-600.css";
+@import "@fontsource/poppins/latin-700.css";
+@import "@fontsource/poppins/latin-800.css";
+@import "@fontsource/carlito/latin-400.css";
+@import "@fontsource/carlito/latin-700.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -182,6 +189,50 @@
   position: relative;
   z-index: 6;
   transform-style: preserve-3d;
+}
+
+/* Hero badge decorations for ShaderHero (src/components/ui/shader-hero.tsx).
+   These were framer-motion `repeat: Infinity` loops, which drive a
+   requestAnimationFrame callback on the main thread forever. Expressed as CSS
+   keyframes over transform/opacity only they are composited, so they cost the
+   main thread nothing and can keep running. The parent carries
+   data-motion="off" when the hero is scrolled away, the tab is backgrounded,
+   or the visitor prefers reduced motion. */
+@keyframes hero-badge-ring {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.2;
+  }
+}
+
+@keyframes hero-badge-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-badge-ring {
+  will-change: transform, opacity;
+  animation: hero-badge-ring 2.5s ease-in-out infinite;
+}
+
+.hero-badge-spin {
+  transform-origin: center;
+  will-change: transform;
+  animation: hero-badge-spin 22s linear infinite;
+}
+
+[data-motion="off"] .hero-badge-ring,
+[data-motion="off"] .hero-badge-spin {
+  animation-play-state: paused;
 }
 
 :root {

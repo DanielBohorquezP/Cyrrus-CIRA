@@ -112,14 +112,21 @@ export default function GestionDelCambio() {
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            <Reveal delay={0.1} className="md:col-span-5">
+            {/* Image taken out of flow (absolute) so its own aspect ratio
+                can't dictate the grid row's height — the row is sized by the
+                text column, and the photo just fills whatever height that
+                turns out to be. */}
+            <Reveal
+              delay={0.1}
+              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
+            >
               <img
                 src="/assets/decoracion/evento-jackson-moderador.jpeg"
                 alt="Jackson Bohórquez moderando panel sobre liderazgo y gestión del cambio"
                 width={640}
                 height={427}
                 loading="lazy"
-                className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-full"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </Reveal>
 

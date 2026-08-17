@@ -132,14 +132,21 @@ export default function PlaneacionEstrategica() {
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            <Reveal delay={0.1} className="md:col-span-5">
+            {/* Image taken out of flow (absolute) so its own aspect ratio can't
+                dictate the grid row's height — the row is sized by the text
+                column instead, and the photo just fills that height. See the
+                cxaas section below for the full explanation. */}
+            <Reveal
+              delay={0.1}
+              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
+            >
               <img
                 src="/assets/decoracion/IMG_20200313_092604173.jpg"
                 alt="Consultores de Cyrrus presentando planeación estratégica en conferencia"
                 width={640}
                 height={427}
                 loading="lazy"
-                className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-full"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </Reveal>
 
@@ -246,19 +253,41 @@ export default function PlaneacionEstrategica() {
 
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("cxaas.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("cxaas.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("cxaas.description")}
-            </p>
-          </Reveal>
+          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-8">
+            <Reveal className="md:col-span-7">
+              <span className="text-base font-bold uppercase tracking-wider text-blue">
+                {t("cxaas.eyebrow")}
+              </span>
+              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+                {t("cxaas.title")}
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-gray">
+                {t("cxaas.description")}
+              </p>
+            </Reveal>
 
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4">
+            {/* Image taken out of flow (absolute) so its own aspect ratio
+                can't dictate the grid row's height: with a plain md:h-full
+                image, a portrait photo like this one made the row (and the
+                empty space under the shorter text block) as tall as the
+                photo's own proportions demanded, instead of the row being
+                sized by the text and the photo just filling it. */}
+            <Reveal
+              delay={0.1}
+              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto md:min-h-[220px]"
+            >
+              <img
+                src="/assets/decoracion/IMG_20230227_164810.jpg"
+                alt="Consultor senior de Cyrrus definiendo la hoja de ruta con el equipo"
+                width={320}
+                height={400}
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </Reveal>
+          </div>
+
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
             {cxaas.map((role) => (
               <motion.div
                 key={role.title}
@@ -272,16 +301,6 @@ export default function PlaneacionEstrategica() {
                 <p className="mt-2 text-base leading-relaxed text-gray">{role.description}</p>
               </motion.div>
             ))}
-            <motion.div variants={staggerItem} className="overflow-hidden rounded-2xl">
-              <img
-                src="/assets/decoracion/IMG_20230227_164810.jpg"
-                alt="Consultor senior de Cyrrus definiendo la hoja de ruta con el equipo"
-                width={320}
-                height={400}
-                loading="lazy"
-                className="h-full min-h-[220px] w-full object-cover"
-              />
-            </motion.div>
           </RevealGroup>
 
           <Reveal delay={0.15} className="mt-14 text-center">

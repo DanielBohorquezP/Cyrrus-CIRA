@@ -15,7 +15,7 @@ interface Milestone {
 }
 
 const milestoneSrcs = [
-  { src: "/assets/decoracion/Pa%20y%20yo.jpg" },
+  { src: "/assets/decoracion/constitucion-cyrrus-jackson.webp" },
   { src: "/assets/decoracion/Equipo%20experienica.jpg" },
   { src: "/assets/decoracion/evento-foro-caribe-2030.jpeg" },
 ];

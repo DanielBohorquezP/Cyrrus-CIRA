@@ -20,6 +20,9 @@ interface ShaderHeroProps extends React.HTMLAttributes<HTMLDivElement> {
   badgeText?: string;
 }
 
+/** How long the hero animates on load before freezing into a still frame. */
+const SETTLE_MS = 3000;
+
 function HeroLink({
   href,
   children,
@@ -62,8 +65,17 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
     ref
   ) => {
     const containerRef = useRef<HTMLDivElement>(null);
-    const [, setIsActive] = useState(false);
+    const [isHovering, setIsHovering] = useState(false);
     const [reducedMotion, setReducedMotion] = useState(false);
+    // The shader used to animate forever, which meant the page never reached a
+    // visually stable frame: Lighthouse's Speed Index is derived from
+    // frame-to-frame visual completeness, so a permanently-moving full-viewport
+    // element pins SI to the length of the trace (10.2s, scoring 0/10) and kept
+    // ~29s of main-thread work alive. It now plays its entrance, settles, and
+    // only wakes back up when someone actually engages with the hero.
+    const [hasSettled, setHasSettled] = useState(false);
+    const [inView, setInView] = useState(true);
+    const [pageVisible, setPageVisible] = useState(true);
 
     useEffect(() => {
       const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -74,17 +86,43 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
     }, []);
 
     useEffect(() => {
+      const timer = window.setTimeout(() => setHasSettled(true), SETTLE_MS);
+      return () => window.clearTimeout(timer);
+    }, []);
+
+    useEffect(() => {
       const container = containerRef.current;
       if (!container) return;
-      const onEnter = () => setIsActive(true);
-      const onLeave = () => setIsActive(false);
+      const onEnter = () => setIsHovering(true);
+      const onLeave = () => setIsHovering(false);
       container.addEventListener("mouseenter", onEnter);
       container.addEventListener("mouseleave", onLeave);
+
+      // Scrolling past the hero used to leave the WebGL surface rendering at
+      // full rate behind the rest of the page. Keep the observer connected so
+      // it can pause and resume, rather than latching on first sight.
+      const observer = new IntersectionObserver(
+        ([entry]) => setInView(entry.isIntersecting),
+        { rootMargin: "100px" },
+      );
+      observer.observe(container);
+
+      const onVisibility = () => setPageVisible(!document.hidden);
+      document.addEventListener("visibilitychange", onVisibility);
+
       return () => {
         container.removeEventListener("mouseenter", onEnter);
         container.removeEventListener("mouseleave", onLeave);
+        observer.disconnect();
+        document.removeEventListener("visibilitychange", onVisibility);
       };
     }, []);
+
+    // The shader is the expensive one, so it also has to earn its frames by
+    // being hovered once it has settled. The small CSS decorations are free,
+    // so they only need the visibility gates.
+    const isDecorAnimating = !reducedMotion && inView && pageVisible;
+    const isAnimating = isDecorAnimating && (isHovering || !hasSettled);
 
     return (
       <div
@@ -102,9 +140,11 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
         <MeshGradient
           className="absolute inset-0 h-full w-full"
           colors={["#020818", "#0a2c63", "#1b6fc2", "#123a7d", "#3fb6e8"]}
-          // Stop animating for users who ask for reduced motion — the gradient
-          // still renders, it just holds still.
-          speed={reducedMotion ? 0 : 0.25}
+          // speed 0 holds the last rendered frame rather than clearing, so
+          // freezing is invisible — the gradient is simply still. This covers
+          // reduced-motion users, the post-settle resting state, scrolling the
+          // hero out of view, and backgrounded tabs.
+          speed={isAnimating ? 0.25 : 0}
           // The library defaults to minPixelRatio 2, so a 1350x940 desktop hero
           // was shading ~5M pixels every frame and never let the main thread go
           // quiet (41s of work; PageSpeed gave up with DEADLINE_EXCEEDED). This
@@ -116,10 +156,17 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
 
         <main className="absolute bottom-10 left-6 z-20 max-w-2xl md:bottom-16 md:left-12">
+          {/* No opacity in any of these entrance animations, for the same
+              reason Reveal avoids it (see src/components/ui/reveal.tsx): the
+              prerender bakes the finished state into the static HTML, so
+              fading in from 0 made framer-motion blank out already-painted
+              text on mount. That deferred the LCP element ("Consulting")
+              behind hydration plus a 0.35s delay and a 0.8s fade — a
+              2,330ms LCP render delay and a visible flash. Only y animates. */}
           <motion.div
             className="relative mb-6 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <span className="text-xs font-semibold uppercase tracking-widest text-cyan">
@@ -129,8 +176,8 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
 
           <motion.h1
             className="mb-6 leading-[0.95] tracking-tight text-white"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 30 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
           >
             <span
@@ -161,8 +208,8 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
 
           <motion.p
             className="mb-8 max-w-lg text-base font-light leading-relaxed text-white/70 md:text-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.55 }}
           >
             {subtitle}
@@ -170,8 +217,8 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
 
           <motion.div
             className="flex flex-wrap items-center gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
             <BorderButton asChild variant="light" size="lg" className="px-8" dot>
@@ -189,20 +236,23 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
           </motion.div>
         </main>
 
-        <div className="absolute bottom-8 right-8 z-30 hidden md:block">
+        {/* The ring and the circling wordmark were framer-motion `repeat:
+            Infinity` loops, which tick a requestAnimationFrame callback on the
+            main thread for as long as the page is open. As pure CSS keyframes
+            over transform/opacity only, the compositor owns them and the main
+            thread stays free — so they can keep running without costing TBT.
+            They still stop when the hero scrolls away, the tab is hidden, or
+            the visitor asked for reduced motion. */}
+        <div
+          className="absolute bottom-8 right-8 z-30 hidden md:block"
+          data-motion={isDecorAnimating ? "on" : "off"}
+        >
           <div className="relative flex h-20 w-20 items-center justify-center">
-            <motion.div
-              className="absolute h-[60px] w-[60px] rounded-full border-2 border-cyan/70"
-              animate={{ scale: [1, 1.15, 1], opacity: [0.7, 0.2, 0.7] }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-            />
+            <div className="hero-badge-ring absolute h-[60px] w-[60px] rounded-full border-2 border-cyan/70" />
             <div className="absolute h-[60px] w-[60px] rounded-full bg-gradient-to-br from-cyan/40 via-blue/30 to-navy/40 backdrop-blur-sm" />
-            <motion.svg
-              className="absolute inset-0 h-full w-full"
+            <svg
+              className="hero-badge-spin absolute inset-0 h-full w-full"
               viewBox="0 0 100 100"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-              style={{ transform: "scale(1.6)" }}
             >
               <defs>
                 <path
@@ -215,7 +265,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
                   {badgeText} • {badgeText} •
                 </textPath>
               </text>
-            </motion.svg>
+            </svg>
           </div>
         </div>
       </div>

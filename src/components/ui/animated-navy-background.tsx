@@ -27,11 +27,16 @@ const dots = Array.from({ length: N }, (_, i) => {
   };
 });
 
-/** Navy radial gradient with a pulsing dot spiral overlay — the animated background used across full-bleed navy sections. Dots are CSS-animated (not SMIL) and only start once the section is visible, to keep it cheap when several instances are on one page. */
+/** Navy radial gradient with a pulsing dot spiral overlay — the animated background used across full-bleed navy sections. Dots are CSS-animated (not SMIL), mount lazily on first approach, and pause whenever the section is off-screen or the tab is hidden — the Home page alone stacks four instances, so 4 x 90 permanently-pulsing circles was real work for something nobody could see. */
 export const AnimatedNavyBackground = forwardRef<HTMLElement, AnimatedNavyBackgroundProps>(
   function AnimatedNavyBackground({ children, className, ...props }, ref) {
   const wrapperRef = useRef<HTMLDivElement>(null);
+  // `hasMounted` latches on first approach so scrolling back never re-pays the
+  // cost of building 90 nodes; `isVisible` keeps toggling so the animation can
+  // actually stop once the section leaves the viewport.
+  const [hasMounted, setHasMounted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [pageVisible, setPageVisible] = useState(true);
 
   useEffect(() => {
     const node = wrapperRef.current;
@@ -39,16 +44,23 @@ export const AnimatedNavyBackground = forwardRef<HTMLElement, AnimatedNavyBackgr
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
+        setIsVisible(entry.isIntersecting);
+        if (entry.isIntersecting) setHasMounted(true);
       },
       { rootMargin: "200px" }
     );
     observer.observe(node);
-    return () => observer.disconnect();
+
+    const onVisibility = () => setPageVisible(!document.hidden);
+    document.addEventListener("visibilitychange", onVisibility);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
   }, []);
+
+  const isAnimating = isVisible && pageVisible;
 
   return (
     <section ref={ref} className={cn("relative w-full", className)} {...props}>
@@ -64,8 +76,13 @@ export const AnimatedNavyBackground = forwardRef<HTMLElement, AnimatedNavyBackgr
         className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center opacity-30 [mask-image:radial-gradient(circle_at_center,rgba(255,255,255,1),rgba(255,255,255,0.1)_60%,transparent_75%)]"
         style={{ mixBlendMode: "screen" }}
       >
-        {isVisible && (
-          <svg width={SIZE} height={SIZE} viewBox={`0 0 ${SIZE} ${SIZE}`}>
+        {hasMounted && (
+          <svg
+            width={SIZE}
+            height={SIZE}
+            viewBox={`0 0 ${SIZE} ${SIZE}`}
+            data-motion={isAnimating ? "on" : "off"}
+          >
             {dots.map((dot, i) => (
               <circle
                 key={i}
@@ -89,6 +106,14 @@ export const AnimatedNavyBackground = forwardRef<HTMLElement, AnimatedNavyBackgr
           transform-box: fill-box;
           transform-origin: center;
           animation: navy-dot-pulse ${DURATION}s ease-in-out infinite;
+        }
+        [data-motion="off"] .navy-dot-pulse {
+          animation-play-state: paused;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .navy-dot-pulse {
+            animation: none;
+          }
         }
       `}</style>
       <div className="relative z-10">{children}</div>

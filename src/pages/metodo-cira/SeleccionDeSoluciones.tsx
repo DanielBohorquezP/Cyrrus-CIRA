@@ -137,14 +137,31 @@ export default function SeleccionDeSoluciones() {
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            <Reveal delay={0.1} className="md:col-span-5">
+            {/* h-64 md:h-auto + relative/absolute image: with a plain md:h-full
+                image, the grid row's auto height was set by the image's own
+                tall intrinsic aspect ratio (not by the text column), so the
+                photo dictated a row far taller than the text and cropped to
+                mostly floor. Taking the image out of flow (absolute) removes
+                its intrinsic-size contribution to the row, so the row is
+                sized by the text column and the photo just fills whatever
+                height that turns out to be. */}
+            <Reveal
+              delay={0.1}
+              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
+            >
               <img
-                src="/assets/decoracion/Presentacion%20BEC.jpg"
-                alt="Equipo de Cyrrus evaluando propuestas de proveedores tecnológicos"
-                width={640}
-                height={427}
+                src="/assets/decoracion/Presentacion-BEC-jackson.webp"
+                alt="Jackson Bohórquez, fundador de Cyrrus, presentando la metodología de evaluación de proveedores"
+                width={470}
+                height={730}
                 loading="lazy"
-                className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-full"
+                // object-top: this photo is a tall portrait crop with
+                // Jackson's face right at the top. Once the row's height
+                // followed the (shorter) text column, object-cover's default
+                // center position cropped in below his face, showing only
+                // his body. Anchoring to the top keeps the face in frame at
+                // any row height.
+                className="absolute inset-0 h-full w-full object-cover object-top"
               />
             </Reveal>
 

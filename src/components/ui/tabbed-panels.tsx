@@ -29,9 +29,34 @@ export function TabbedPanels({
 }: TabbedPanelsProps) {
   const [active, setActive] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  // Autoplay used to run for the lifetime of the page, cross-fading full-size
+  // photos behind whatever the visitor was actually reading further down.
+  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
-    if (!autoPlayInterval) return;
+    const node = rootRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsActive(entry.isIntersecting && !document.hidden),
+      { threshold: 0.2 },
+    );
+    observer.observe(node);
+
+    const onVisibility = () => {
+      if (document.hidden) setIsActive(false);
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!autoPlayInterval || !isActive) return;
 
     timerRef.current = setInterval(() => {
       setActive((current) => (current + 1) % panels.length);
@@ -40,12 +65,12 @@ export function TabbedPanels({
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [autoPlayInterval, panels.length]);
+  }, [autoPlayInterval, panels.length, isActive]);
 
   const handleSelect = (index: number) => {
     setActive(index);
     if (timerRef.current) clearInterval(timerRef.current);
-    if (autoPlayInterval) {
+    if (autoPlayInterval && isActive) {
       timerRef.current = setInterval(() => {
         setActive((current) => (current + 1) % panels.length);
       }, autoPlayInterval);
@@ -55,7 +80,7 @@ export function TabbedPanels({
   const panel = panels[active];
 
   return (
-    <div className={cn("w-full", className)}>
+    <div ref={rootRef} className={cn("w-full", className)}>
       <div
         role="tablist"
         aria-label="Servicios de Cyrrus"

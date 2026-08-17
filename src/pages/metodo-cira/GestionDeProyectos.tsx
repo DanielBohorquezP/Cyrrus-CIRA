@@ -112,14 +112,21 @@ export default function GestionDeProyectos() {
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            <Reveal delay={0.1} className="md:col-span-5">
+            {/* Image taken out of flow (absolute) so its own aspect ratio
+                can't dictate the grid row's height — the row is sized by the
+                text column, and the photo just fills whatever height that
+                turns out to be. */}
+            <Reveal
+              delay={0.1}
+              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
+            >
               <img
                 src="/assets/decoracion/IMG_20200313_092713184.jpg"
                 alt="Consultor de Cyrrus presentando metodología de gerencia de proyectos"
                 width={640}
                 height={427}
                 loading="lazy"
-                className="h-64 w-full rounded-2xl object-cover shadow-sm md:h-full"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </Reveal>
 
@@ -142,17 +149,36 @@ export default function GestionDeProyectos() {
 
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("differentiators.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("differentiators.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("differentiators.description")}
-            </p>
-          </Reveal>
+          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-8">
+            <Reveal className="md:col-span-7">
+              <span className="text-base font-bold uppercase tracking-wider text-blue">
+                {t("differentiators.eyebrow")}
+              </span>
+              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+                {t("differentiators.title")}
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-gray">
+                {t("differentiators.description")}
+              </p>
+            </Reveal>
+
+            {/* Image taken out of flow (absolute) so its own aspect ratio
+                can't dictate the grid row's height — see the first section's
+                image on this page for the full explanation. */}
+            <Reveal
+              delay={0.1}
+              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto md:min-h-[220px]"
+            >
+              <img
+                src="/assets/decoracion/IMG_20230228_091017.jpg"
+                alt="Presentación de gerencia de proyectos de Cyrrus"
+                width={640}
+                height={427}
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </Reveal>
+          </div>
 
           <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {differentiators.map((item, index) => {
@@ -174,16 +200,6 @@ export default function GestionDeProyectos() {
                 </motion.div>
               );
             })}
-            <motion.div variants={staggerItem} className="overflow-hidden rounded-2xl sm:col-span-2">
-              <img
-                src="/assets/decoracion/IMG_20230228_091017.jpg"
-                alt="Presentación de gerencia de proyectos de Cyrrus"
-                width={640}
-                height={220}
-                loading="lazy"
-                className="h-full min-h-[180px] w-full object-cover"
-              />
-            </motion.div>
           </RevealGroup>
 
           <Reveal delay={0.15} className="mt-14 text-center">
