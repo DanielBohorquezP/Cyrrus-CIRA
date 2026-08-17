@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
-import { SplineScene } from "@/components/ui/splite";
+import { OrbitVisual } from "@/components/ui/orbit-visual";
 import { Spotlight } from "@/components/ui/spotlight";
 import { cn } from "@/lib/utils";
 
@@ -77,19 +77,7 @@ export function IntelligenceLabHero({
           )}
         >
           {showVisual ? (
-            <div
-              className="h-full w-full"
-              style={{
-                maskImage: "radial-gradient(ellipse 62% 70% at 50% 42%, black 55%, transparent 100%)",
-                WebkitMaskImage:
-                  "radial-gradient(ellipse 62% 70% at 50% 42%, black 55%, transparent 100%)",
-              }}
-            >
-              <SplineScene
-                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                className="h-full w-full"
-              />
-            </div>
+            <OrbitVisual className="h-full w-full" />
           ) : (
             visual ?? <div className="h-full w-full" />
           )}
