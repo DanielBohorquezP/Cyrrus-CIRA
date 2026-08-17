@@ -8,7 +8,7 @@ const clientLogos = clientLogoNames.map((name) => (
     className="flex h-11 w-32 items-center justify-center rounded-md bg-navy p-1.5"
   >
     <img
-      src={`/assets/logos-clientes/${encodeURIComponent(name)}.png`}
+      src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
       alt={name}
       width={160}
       height={80}

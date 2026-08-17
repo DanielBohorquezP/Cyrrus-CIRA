@@ -75,7 +75,7 @@ export default function QuienesSomos() {
         <div className="mx-auto grid max-w-5xl grid-cols-1 items-start gap-12 px-6 md:grid-cols-[220px_1fr] md:px-12">
           <Reveal>
             <img
-              src="/assets/decoracion/JacksonCEO1.jpeg"
+              src="/assets/decoracion/JacksonCEO1.webp"
               alt={t("quienesSomos.photoAlt")}
               width={160}
               height={160}

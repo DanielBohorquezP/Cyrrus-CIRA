@@ -1,6 +1,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Self-hosted fonts (replaces the fonts.googleapis.com / fonts.gstatic.com
+   <link> in index.html): PageSpeed flagged that stylesheet as render-blocking
+   (~750-900ms) and it stayed on the critical path regardless of the
+   media="print" swap trick, since Vercel's static-asset layer rewrote the
+   attribute away on deploy. Bundling the font files removes two third-party
+   round trips from the critical path entirely. */
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/800.css";
+@import "@fontsource/carlito/400.css";
+@import "@fontsource/carlito/700.css";
+
 @custom-variant dark (&:is(.dark *));
 
 :root {

@@ -19,8 +19,21 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
     link.crossOrigin = "anonymous";
     link.href = scene;
     document.head.appendChild(link);
+
+    // prod.spline.design only gets hit from this one component (Intelligence
+    // Lab's hero), so the connection is opened here instead of as a global
+    // index.html preconnect — a sitewide tag was flagged by PageSpeed as
+    // "unused" on every other page.
+    const origin = new URL(scene).origin;
+    const preconnect = document.createElement("link");
+    preconnect.rel = "preconnect";
+    preconnect.crossOrigin = "anonymous";
+    preconnect.href = origin;
+    document.head.appendChild(preconnect);
+
     return () => {
       link.remove();
+      preconnect.remove();
     };
   }, [scene]);
 

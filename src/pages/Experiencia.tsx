@@ -47,7 +47,7 @@ const gallerySrcs = [
   { src: "/assets/decoracion/Evento%20mesas.jpg", alt: "Cyrrus en un evento corporativo" },
 ];
 
-const teamPhotos = ["/assets/decoracion/JacksonCEO1.jpeg", undefined, undefined, undefined];
+const teamPhotos = ["/assets/decoracion/JacksonCEO1.webp", undefined, undefined, undefined];
 
 export default function Experiencia() {
   const { t } = useTranslation("paginas");
@@ -276,7 +276,7 @@ export default function Experiencia() {
                 className="flex h-20 items-center justify-center rounded-xl bg-navy p-3 shadow-sm"
               >
                 <img
-                  src={`/assets/logos-clientes/${encodeURIComponent(name)}.png`}
+                  src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
                   alt={name}
                   width={160}
                   height={80}

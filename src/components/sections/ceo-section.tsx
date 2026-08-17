@@ -9,7 +9,7 @@ export function CeoSection() {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 text-center md:px-12">
         <Reveal>
           <img
-            src="/assets/decoracion/JacksonCEO1.jpeg"
+            src="/assets/decoracion/JacksonCEO1.webp"
             alt={t("ceo.photoAlt")}
             width={96}
             height={96}

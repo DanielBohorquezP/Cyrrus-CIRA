@@ -12,6 +12,11 @@ function prefetchIntelligenceLabVisual() {
   // Kick off the (large) 3D runtime bundle as soon as the user shows intent
   // to visit Intelligence Lab, so it's already cached by the time they land.
   import("@splinetool/react-spline");
+  const preconnect = document.createElement("link");
+  preconnect.rel = "preconnect";
+  preconnect.crossOrigin = "anonymous";
+  preconnect.href = "https://prod.spline.design";
+  document.head.appendChild(preconnect);
 }
 
 interface NavDropdownProps {

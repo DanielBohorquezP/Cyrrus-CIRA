@@ -9,27 +9,12 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#0a1e3f" />
     <link rel="canonical" href="https://www.cyrruscs.com/" />
-    <link rel="preconnect" href="https://prod.spline.design" crossorigin />
-    <link rel="dns-prefetch" href="https://prod.spline.design" />
-    <link rel="preconnect" href="https://unpkg.com" crossorigin />
-    <link rel="dns-prefetch" href="https://unpkg.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Loaded as a non-blocking stylesheet: `media="print"` keeps it off the
-         critical path, then onload flips it to `all`. Saves ~900ms of blocked
-         render; `display=swap` already prevents invisible text meanwhile. -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Carlito:wght@400;700&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Carlito:wght@400;700&display=swap"
-      />
-    </noscript>
+    <!-- prod.spline.design is preconnected dynamically (SplineScene /
+         nav-dropdown hover) — it's only ever requested from the Intelligence
+         Lab hero, so a global tag here was flagged as unused on every other
+         page. unpkg.com has no actual usage anywhere in the app.
+         Fonts (Poppins/Carlito) are self-hosted via @fontsource in
+         src/index.css instead of fonts.googleapis.com — see that file for why. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -62,15 +47,10 @@
 
     <title>Cyrrus Consulting Services | Metodología CIRA</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ7NG91347"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-YJ7NG91347");
-    </script>
+    <!-- Google Analytics is NOT loaded here. It's injected from
+         src/lib/analytics.ts only after the visitor accepts the cookie
+         banner (see cookie-consent.tsx) — both to keep it off the critical
+         path and because the banner itself says it's consent-gated. -->
 
     <script type="application/ld+json">
       {
