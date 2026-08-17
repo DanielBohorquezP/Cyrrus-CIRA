@@ -17,6 +17,26 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Drifting spark particles for OrbitVisual (src/components/ui/orbit-visual.tsx).
+   Offsets are cqmin-based (not px) so sparks stay proportional to the orbit
+   regardless of the hero slot's aspect ratio. */
+@keyframes spark-drift {
+  0% {
+    transform: translate(calc(var(--spawn-x) * 1cqmin), calc(var(--spawn-y) * 1cqmin)) scale(0.5);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--travel-x) * 1cqmin), calc(var(--travel-y) * 1cqmin)) scale(1);
+    opacity: 0;
+  }
+}
+
 :root {
   --radius: 0.625rem;
 
