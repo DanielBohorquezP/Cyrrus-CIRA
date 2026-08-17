@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
@@ -53,7 +53,7 @@ export default function Perspectivas() {
         heading={t("perspectivas.heading")}
         description={t("perspectivas.description")}
         buttonText={t("perspectivas.buttonText")}
-        buttonUrl="/contacto"
+        buttonUrl={langPath("/contacto", lang)}
         posts={upcomingTopics}
       />
 

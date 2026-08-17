@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { ShaderHero } from "@/components/ui/shader-hero";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
@@ -53,9 +53,9 @@ export default function Home() {
           titleLight={t("hero.titleLight")}
           subtitle={t("hero.subtitle")}
           primaryButtonText={t("hero.primaryButtonText")}
-          primaryButtonHref="/contacto"
+          primaryButtonHref={langPath("/contacto", lang)}
           secondaryButtonText={t("hero.secondaryButtonText")}
-          secondaryButtonHref={lang === "en" ? "/en/metodo-cira" : "/metodo-cira"}
+          secondaryButtonHref={langPath("/metodo-cira", lang)}
           badgeText={t("hero.badgeText")}
         />
       </div>

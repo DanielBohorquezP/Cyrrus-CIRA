@@ -67,6 +67,12 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, altern
       ["og:description", description],
       ["og:url", canonicalUrl],
       ["og:image", image ?? DEFAULT_OG_IMAGE],
+      // index.html hardcodes es_CO, which is right for the Spanish pages and
+      // wrong for every /en one — a scraper reading an English page was told it
+      // was Colombian Spanish. Managed per-page here like the rest of the OG
+      // tags; the static tag stays as the shell's default.
+      ["og:locale", isEnglish ? "en_US" : "es_CO"],
+      ["og:locale:alternate", isEnglish ? "es_CO" : "en_US"],
     ];
     const previousOg: Array<{ el: Element; value: string }> = [];
     for (const [property, content] of ogTagConfig) {

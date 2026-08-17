@@ -10,7 +10,6 @@ import {
   Target,
   Wrench,
 } from "lucide-react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -22,7 +21,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 
 interface CriteriaItem {
@@ -200,9 +199,8 @@ export default function SeleccionDeSoluciones() {
             {criteria.map((item, index) => {
               const Icon = item.icon;
               return (
-                <motion.div
+                <RevealItem
                   key={item.title}
-                  variants={staggerItem}
                   className="rounded-2xl border border-border bg-card p-7"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
@@ -213,7 +211,7 @@ export default function SeleccionDeSoluciones() {
                   </span>
                   <h3 className="mt-1 text-lg font-semibold text-navy">{item.title}</h3>
                   <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                </motion.div>
+                </RevealItem>
               );
             })}
           </RevealGroup>
@@ -274,7 +272,7 @@ export default function SeleccionDeSoluciones() {
 
           <RevealGroup className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map((s) => (
-              <motion.div key={s.href} variants={staggerItem}>
+              <RevealItem key={s.href} >
                 <Link
                   to={s.href}
                   className="block h-full overflow-hidden rounded-2xl border border-border bg-card transition-[border-color,background-color] duration-150 ease-out hover:border-navy hover:bg-white"
@@ -292,7 +290,7 @@ export default function SeleccionDeSoluciones() {
                     <p className="mt-2 text-base leading-relaxed text-gray">{s.note}</p>
                   </div>
                 </Link>
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>
@@ -335,9 +333,8 @@ export default function SeleccionDeSoluciones() {
 
           <RevealGroup className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {process.map((step, index) => (
-              <motion.div
+              <RevealItem
                 key={step.title}
-                variants={staggerItem}
                 className="rounded-2xl border border-border bg-card p-6"
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy text-sm font-semibold text-cyan">
@@ -345,7 +342,7 @@ export default function SeleccionDeSoluciones() {
                 </span>
                 <h3 className="mt-4 text-base font-semibold text-navy">{step.title}</h3>
                 <p className="mt-2 text-base leading-relaxed text-gray">{step.description}</p>
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>

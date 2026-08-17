@@ -24,12 +24,6 @@ export function LogoCarousel({
           </div>
         ))}
       </div>
-      <style>{`
-        @keyframes logo-marquee {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
-        }
-      `}</style>
     </div>
   );
 }

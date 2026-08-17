@@ -6,10 +6,9 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { RevealGroup, staggerItem, Reveal } from "@/components/ui/reveal";
+import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { FaqSection } from "@/components/sections/faq-section";
-import { motion } from "framer-motion";
 import { ShieldCheck, Network, Bot, ArrowRight } from "lucide-react";
 
 interface Pillar {
@@ -114,7 +113,7 @@ export default function IntelligenceLab() {
             {pillars.map((pillar) => {
               const Icon = pillar.icon;
               return (
-                <motion.div key={pillar.title} variants={staggerItem}>
+                <RevealItem key={pillar.title} >
                   <Link
                     to={pillar.href}
                     className="group flex h-full flex-col rounded-2xl border border-border bg-card p-8 transition-colors hover:border-blue/30"
@@ -133,7 +132,7 @@ export default function IntelligenceLab() {
                       <ArrowRight className="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" />
                     </span>
                   </Link>
-                </motion.div>
+                </RevealItem>
               );
             })}
           </RevealGroup>
@@ -157,12 +156,11 @@ export default function IntelligenceLab() {
 
           <RevealGroup className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {phaseLinks.map((item) => (
-              <motion.a
+              <RevealItem
+                as="a"
                 key={item.phase}
                 href={item.href}
-                variants={staggerItem}
-                whileHover={{ y: -4 }}
-                className="flex flex-col rounded-2xl border border-border bg-card p-6 transition-colors hover:border-blue/30"
+                className="hover:-translate-y-1 flex flex-col rounded-2xl border border-border bg-card p-6 hover:border-blue/30"
               >
                 <span className="text-sm font-bold uppercase tracking-wider text-blue">
                   {item.phase}
@@ -170,7 +168,7 @@ export default function IntelligenceLab() {
                 <span className="mt-3 text-base leading-relaxed text-gray">
                   {item.note}
                 </span>
-              </motion.a>
+              </RevealItem>
             ))}
           </RevealGroup>
 

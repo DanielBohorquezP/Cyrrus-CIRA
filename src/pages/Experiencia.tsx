@@ -7,8 +7,7 @@ import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero
 import { InteractiveGlobe } from "@/components/ui/interactive-globe";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { RevealGroup, staggerItem, Reveal } from "@/components/ui/reveal";
-import { motion } from "framer-motion";
+import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
 import {
   User,
   Globe2,
@@ -115,12 +114,9 @@ export default function Experiencia() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-3">
             {stats.map((stat) => (
-              <motion.div
+              <RevealItem
                 key={stat.label}
-                variants={staggerItem}
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.15, ease: "easeOut" }}
-                className="rounded-2xl border border-border bg-card p-8 text-center shadow-sm transition-shadow duration-150 hover:shadow-xl"
+                className="hover:-translate-y-1 rounded-2xl border border-border bg-card p-8 text-center shadow-sm hover:shadow-xl"
               >
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-light-blue">
                   <stat.icon className="h-6 w-6 text-blue" strokeWidth={1.75} />
@@ -132,7 +128,7 @@ export default function Experiencia() {
                   {stat.label}
                 </div>
                 <span className="mx-auto mt-3 block h-[3px] w-9 rounded-full bg-cyan" />
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
 
@@ -142,12 +138,9 @@ export default function Experiencia() {
             </div>
             <RevealGroup className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {industries.map((industry) => (
-                <motion.div
+                <RevealItem
                   key={industry.name}
-                  variants={staggerItem}
-                  whileHover={{ y: -2 }}
-                  transition={{ duration: 0.15, ease: "easeOut" }}
-                  className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-sm transition-shadow duration-150 hover:shadow-md hover:border-blue/40"
+                  className="hover:-translate-y-0.5 flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-sm hover:shadow-md hover:border-blue/40"
                 >
                   <span
                     className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${industry.bg} text-white`}
@@ -157,7 +150,7 @@ export default function Experiencia() {
                   <span className="text-sm font-medium text-navy">
                     {t("experiencia.industriesPrefix")} {industry.name.toLowerCase()}
                   </span>
-                </motion.div>
+                </RevealItem>
               ))}
             </RevealGroup>
           </Reveal>
@@ -177,12 +170,10 @@ export default function Experiencia() {
 
           <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {gallery.map((item) => (
-              <motion.figure
+              <RevealItem
+                as="figure"
                 key={item.src}
-                variants={staggerItem}
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.15, ease: "easeOut" }}
-                className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow duration-150 hover:shadow-xl"
+                className="hover:-translate-y-1 overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl"
               >
                 <img
                   src={item.src}
@@ -195,7 +186,7 @@ export default function Experiencia() {
                 <figcaption className="p-4 text-sm text-gray">
                   {item.caption}
                 </figcaption>
-              </motion.figure>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>
@@ -214,12 +205,9 @@ export default function Experiencia() {
 
           <RevealGroup className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((member) => (
-              <motion.div
+              <RevealItem
                 key={member.role}
-                variants={staggerItem}
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.15, ease: "easeOut" }}
-                className={`flex flex-col items-center rounded-2xl border p-6 text-center shadow-sm transition-shadow duration-150 hover:shadow-xl ${
+                className={`flex flex-col items-center rounded-2xl border p-6 text-center shadow-sm hover:-translate-y-1 hover:shadow-xl ${
                   member.name ? "border-border bg-card" : "border-dashed border-border bg-card"
                 }`}
               >
@@ -250,7 +238,7 @@ export default function Experiencia() {
                     {t("experiencia.team.photoNamePending")}
                   </div>
                 )}
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>
@@ -268,12 +256,9 @@ export default function Experiencia() {
           </Reveal>
           <RevealGroup className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {clientLogoNames.map((name) => (
-              <motion.div
+              <RevealItem
                 key={name}
-                variants={staggerItem}
-                whileHover={{ y: -2 }}
-                transition={{ duration: 0.15, ease: "easeOut" }}
-                className="flex h-20 items-center justify-center rounded-xl bg-navy p-3 shadow-sm"
+                className="hover:-translate-y-0.5 flex h-20 items-center justify-center rounded-xl bg-navy p-3 shadow-sm"
               >
                 <img
                   src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
@@ -283,7 +268,7 @@ export default function Experiencia() {
                   loading="lazy"
                   className="h-full w-full object-contain"
                 />
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>

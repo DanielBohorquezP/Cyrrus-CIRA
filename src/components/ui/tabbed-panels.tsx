@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { BorderButton } from "@/components/ui/border-button";
 
@@ -103,93 +102,78 @@ export function TabbedPanels({
             )}
           >
             {p.tabLabel}
+            {/* framer's `layoutId` underline slid between tabs, which meant
+                shipping the whole shared-layout engine (and its per-frame
+                measuring) to the home page for a 2px rule. This one wipes in
+                from the left on the active tab instead — same affordance,
+                composited, no JS. */}
             {active === index && (
-              <motion.span
-                layoutId="tabbed-panels-underline"
-                className="absolute inset-x-0 -bottom-px h-0.5 bg-cyan"
-                transition={{ type: "spring", stiffness: 400, damping: 35 }}
-              />
+              <span className="tab-underline absolute inset-x-0 -bottom-px h-0.5 origin-left bg-cyan" />
             )}
           </button>
         ))}
       </div>
 
+      {/* `key` on both columns is what replays the CSS entrance: changing it
+          remounts the subtree, so the animation runs from the top on every tab
+          change. This is enter-only — the outgoing panel is replaced rather
+          than faded out, which is what AnimatePresence `mode="wait"` was
+          sequencing before. */}
       <div className="relative grid grid-cols-1 items-center gap-8 overflow-hidden py-8 md:grid-cols-2 md:gap-12">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={panel.id}
-            role="tabpanel"
-            id={`panel-${panel.id}`}
-            aria-labelledby={`tab-${panel.id}`}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -16 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
+        <div
+          key={panel.id}
+          role="tabpanel"
+          id={`panel-${panel.id}`}
+          aria-labelledby={`tab-${panel.id}`}
+          className="panel-enter"
+        >
+          <span
+            className="panel-enter-child text-sm font-bold uppercase tracking-wider text-cyan"
+            style={{ "--panel-delay": "50ms" } as React.CSSProperties}
           >
-            <motion.span
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.05 }}
-              className="text-sm font-bold uppercase tracking-wider text-cyan"
-            >
-              {panel.eyebrow}
-            </motion.span>
-            <motion.h2
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.1 }}
-              className="mt-3 text-2xl font-bold text-white md:text-3xl"
-            >
-              {panel.title}
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.15 }}
-              className="mt-4 text-base leading-relaxed text-white/70"
-            >
-              {panel.description}
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
-              className="mt-8"
-            >
-              <BorderButton asChild variant="light" size="lg" className="px-8" dot>
-                <Link to={panel.href}>
-                  {panel.buttonText}
-                </Link>
-              </BorderButton>
-            </motion.div>
-          </motion.div>
-        </AnimatePresence>
+            {panel.eyebrow}
+          </span>
+          <h2
+            className="panel-enter-child mt-3 text-2xl font-bold text-white md:text-3xl"
+            style={{ "--panel-delay": "100ms" } as React.CSSProperties}
+          >
+            {panel.title}
+          </h2>
+          <p
+            className="panel-enter-child mt-4 text-base leading-relaxed text-white/70"
+            style={{ "--panel-delay": "150ms" } as React.CSSProperties}
+          >
+            {panel.description}
+          </p>
+          <div
+            className="panel-enter-child mt-8"
+            style={{ "--panel-delay": "200ms" } as React.CSSProperties}
+          >
+            <BorderButton asChild variant="light" size="lg" className="px-8" dot>
+              <Link to={panel.href}>
+                {panel.buttonText}
+              </Link>
+            </BorderButton>
+          </div>
+        </div>
 
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={panel.id + "-image"}
-            initial={{ opacity: 0, scale: 1.04 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.98 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+        <div key={panel.id + "-image"} className="panel-image-enter">
+          <Link
+            to={panel.href}
+            className="block overflow-hidden rounded-xl"
+            tabIndex={-1}
+            aria-hidden="true"
           >
-            <Link
-              to={panel.href}
-              className="block overflow-hidden rounded-xl"
-              tabIndex={-1}
-              aria-hidden="true"
-            >
-              <img
-                src={panel.image}
-                alt={panel.title}
-                width={640}
-                height={288}
-                loading="lazy"
-                className="h-56 w-full rounded-xl object-cover md:h-72"
-              />
-            </Link>
-          </motion.div>
-        </AnimatePresence>
+            <img
+              src={panel.image}
+              alt={panel.title}
+              width={640}
+              height={288}
+              loading="lazy"
+              className="h-56 w-full rounded-xl object-cover md:h-72"
+            />
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
@@ -59,7 +59,7 @@ export default function MetodoCira() {
         <div>
           <p className="text-base leading-relaxed text-white/90">{p.outcome}</p>
           <BorderButton asChild variant="light" size="sm" className="mt-4" dot>
-            <Link to={p.href}>
+            <Link to={langPath(p.href, lang)}>
               {p.ctaText}
             </Link>
           </BorderButton>
@@ -95,7 +95,7 @@ export default function MetodoCira() {
             itemOffered: {
               "@type": "Service",
               name: p.title,
-              url: `${siteUrl}${p.href}`,
+              url: `${siteUrl}${langPath(p.href, lang)}`,
             },
           })),
         },
@@ -132,7 +132,7 @@ export default function MetodoCira() {
           position: i + 1,
           name: p.title,
           text: p.how,
-          url: `${siteUrl}${lang === "en" ? "/en" : ""}${p.href}`,
+          url: `${siteUrl}${langPath(p.href, lang)}`,
         })),
       },
     ],

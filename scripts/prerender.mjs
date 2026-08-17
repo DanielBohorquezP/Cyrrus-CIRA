@@ -70,6 +70,20 @@ const MIME = {
 
 const shellHtml = await readFile(path.join(distDir, "index.html"), "utf-8");
 
+// The modulepreload hints Vite's *build* emitted — i.e. the chunks that are
+// genuinely on the critical path. Anything beyond this set got injected at
+// runtime by Vite's dynamic-import preload helper while the page ran here, and
+// must not survive into the shipped HTML: baking one in turns a deliberately
+// deferred chunk (the WebGL hero shader, for one) back into a critical-path
+// download *and compile* for every visitor, which is the opposite of why it
+// was deferred. See the `useDeferredMount` comment in shader-hero.tsx.
+const shellPreloads = [
+  ...shellHtml.matchAll(/<link\b[^>]*\brel="modulepreload"[^>]*>/g),
+].flatMap((m) => {
+  const href = /\bhref="([^"]+)"/.exec(m[0]);
+  return href ? [href[1]] : [];
+});
+
 const server = http.createServer((req, res) => {
   const urlPath = decodeURIComponent((req.url || "/").split("?")[0]);
   const filePath = path.join(distDir, urlPath);
@@ -174,6 +188,11 @@ async function ensureBrowser({ force = false } = {}) {
 const rendered = new Map();
 let failures = 0;
 
+/** Trailing-slash-insensitive route key, so "/en/" and "/en" compare equal. */
+function normalizeRoute(pathname) {
+  return pathname.replace(/\/+$/, "") || "/";
+}
+
 // One fresh page per route: reusing a single page across all 54 routes means
 // a goto() that times out on a slow/shared build machine leaves that
 // navigation stuck in-flight, and the *next* iteration's goto() on the same
@@ -186,7 +205,27 @@ async function tryRenderRoute(route, { forceFreshBrowser = false } = {}) {
     await ensureBrowser({ force: forceFreshBrowser });
     await withTimeout(
       (async () => {
-        page = await browser.newPage();
+        // Render as a Spanish visitor. Headless Chromium reports
+        // navigator.language === "en-US", which tripped the one-time
+        // browser-language auto-detect in LanguageProvider: rendering "/" would
+        // redirect to "/en" and we'd write the *English* home page to
+        // dist/index.html, lang="en" and all. Every no-JS crawler and AI agent
+        // hitting the Spanish canonical URL got English markup.
+        page = await browser.newPage({ locale: "es-CO" });
+        // The locale above fixes the detection, but the detection shouldn't run
+        // at all here: the prerenderer is generating the canonical document for
+        // a known URL, not simulating a visitor who might prefer another
+        // language. Seeding the stored preference short-circuits it outright, so
+        // the output can't depend on what the build machine's Chromium reports.
+        // Only "/" ever consults this — LanguageProvider returns early for every
+        // /en route regardless of the value.
+        await page.addInitScript(() => {
+          try {
+            window.localStorage.setItem("cyrrus-lang-pref", "es");
+          } catch {
+            // Storage blocked — the locale above is still in effect.
+          }
+        });
         await page.goto(`${baseUrl}${route}`, { waitUntil: "domcontentloaded", timeout: 45000 });
         await page.waitForFunction(
           () => {
@@ -198,9 +237,32 @@ async function tryRenderRoute(route, { forceFreshBrowser = false } = {}) {
         // Let framer-motion / layout-effect driven content (JSON-LD injection,
         // late-mounted sections) settle before capturing.
         await page.waitForTimeout(600);
+
+        // Whatever we capture gets written to dist/<route>/index.html, so it
+        // has to actually *be* that route. A client-side redirect during
+        // render means we'd file one page's markup under another page's URL —
+        // which is exactly how the English home page ended up at dist/
+        // index.html and went unnoticed. Fail the attempt instead.
+        const landed = normalizeRoute(new URL(page.url()).pathname);
+        if (landed !== normalizeRoute(route)) {
+          throw new Error(`redirected to ${landed} (expected ${normalizeRoute(route)})`);
+        }
       })(),
       55000,
       `render ${route}`,
+    );
+    // Drop the modulepreloads Vite's runtime helper added for chunks that only
+    // loaded because this prerender pass sat on the page long enough for their
+    // deferred/lazy triggers to fire (see shellPreloads above).
+    await withTimeout(
+      page.evaluate((keep) => {
+        for (const link of document.querySelectorAll('link[rel="modulepreload"]')) {
+          const href = new URL(link.getAttribute("href"), location.href).pathname;
+          if (!keep.includes(href)) link.remove();
+        }
+      }, shellPreloads),
+      10000,
+      `prune preloads ${route}`,
     );
     // Some dynamically-imported libraries (e.g. react-spline) inject resource
     // hints using an absolute URL derived from location.origin, which at

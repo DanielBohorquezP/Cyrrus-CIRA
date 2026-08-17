@@ -9,7 +9,7 @@ export function Experience() {
   const industries = t("experience.industries", { returnObjects: true }) as string[];
 
   return (
-    <section id="experiencia" className="w-full">
+    <section id="experiencia" className="cv-section w-full">
       <AnimatedNavyBackground className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">

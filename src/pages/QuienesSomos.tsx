@@ -5,8 +5,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
-import { motion } from "framer-motion";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { LinkedInIcon } from "@/components/ui/social-media";
 
 interface Milestone {
@@ -116,13 +115,12 @@ export default function QuienesSomos() {
               </div>
               <RevealGroup className="mt-4 flex flex-col gap-3">
                 {credentials.map((item) => (
-                  <motion.div
+                  <RevealItem
                     key={item}
-                    variants={staggerItem}
                     className="flex items-start gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm text-navy shadow-sm"
                   >
                     {item}
-                  </motion.div>
+                  </RevealItem>
                 ))}
               </RevealGroup>
             </Reveal>
@@ -143,7 +141,7 @@ export default function QuienesSomos() {
 
           <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {milestones.map((item) => (
-              <motion.figure key={item.src} variants={staggerItem}>
+              <RevealItem as="figure" key={item.src} >
                 <img
                   src={item.src}
                   alt={item.alt}
@@ -155,7 +153,7 @@ export default function QuienesSomos() {
                 <figcaption className="mt-3 text-sm text-gray">
                   {item.caption}
                 </figcaption>
-              </motion.figure>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>

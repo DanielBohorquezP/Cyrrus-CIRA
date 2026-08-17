@@ -11,7 +11,6 @@ import {
   UserX,
   Zap,
 } from "lucide-react";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -21,7 +20,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 
@@ -185,9 +184,8 @@ export default function PlaneacionEstrategica() {
             {problems.map((problem, index) => {
               const Icon = problem.icon;
               return (
-                <motion.div
+                <RevealItem
                   key={problem.title}
-                  variants={staggerItem}
                   className="flex gap-5 rounded-2xl border border-border bg-card p-7"
                 >
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy">
@@ -204,7 +202,7 @@ export default function PlaneacionEstrategica() {
                       {problem.description}
                     </p>
                   </div>
-                </motion.div>
+                </RevealItem>
               );
             })}
           </RevealGroup>
@@ -231,7 +229,7 @@ export default function PlaneacionEstrategica() {
 
           <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2">
             {stats.map((stat) => (
-              <motion.div key={stat.value} variants={staggerItem} className="px-4">
+              <RevealItem key={stat.value} className="px-4">
                 <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
                   {stat.value}
                 </dd>
@@ -239,7 +237,7 @@ export default function PlaneacionEstrategica() {
                   {stat.label}
                 </span>
                 <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>
@@ -289,9 +287,8 @@ export default function PlaneacionEstrategica() {
 
           <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
             {cxaas.map((role) => (
-              <motion.div
+              <RevealItem
                 key={role.title}
-                variants={staggerItem}
                 className="rounded-2xl border border-border bg-card p-7"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
@@ -299,7 +296,7 @@ export default function PlaneacionEstrategica() {
                 </div>
                 <h3 className="mt-5 text-base font-semibold text-navy">{role.title}</h3>
                 <p className="mt-2 text-base leading-relaxed text-gray">{role.description}</p>
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
 

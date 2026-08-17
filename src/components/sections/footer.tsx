@@ -7,7 +7,7 @@ import {
   YouTubeIcon,
   type SocialItem,
 } from "@/components/ui/social-media";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 
 const socialLinks: SocialItem[] = [
   {
@@ -38,21 +38,21 @@ export function Footer() {
   const lang = useLang();
 
   const links = [
-    { label: t("nav.metodoCira", { ns: "common" }), href: lang === "en" ? "/en/metodo-cira" : "/metodo-cira" },
-    { label: t("nav.intelligenceLab", { ns: "common" }), href: "/intelligence-lab" },
-    { label: t("nav.leadershipAcademy", { ns: "common" }), href: "/leadership-academy" },
-    { label: t("nav.experiencia", { ns: "common" }), href: "/experiencia" },
-    { label: t("nav.perspectivas", { ns: "common" }), href: "/perspectivas" },
-    { label: lang === "en" ? "Contact" : "Contacto", href: "/contacto" },
+    { label: t("nav.metodoCira", { ns: "common" }), href: langPath("/metodo-cira", lang) },
+    { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/intelligence-lab", lang) },
+    { label: t("nav.leadershipAcademy", { ns: "common" }), href: langPath("/leadership-academy", lang) },
+    { label: t("nav.experiencia", { ns: "common" }), href: langPath("/experiencia", lang) },
+    { label: t("nav.perspectivas", { ns: "common" }), href: langPath("/perspectivas", lang) },
+    { label: lang === "en" ? "Contact" : "Contacto", href: langPath("/contacto", lang) },
   ];
 
   const legalLinks = [
-    { label: t("footer.privacidad", { ns: "common" }), href: "/privacidad" },
-    { label: t("footer.cookies", { ns: "common" }), href: "/cookies" },
+    { label: t("footer.privacidad", { ns: "common" }), href: langPath("/privacidad", lang) },
+    { label: t("footer.cookies", { ns: "common" }), href: langPath("/cookies", lang) },
   ];
 
   return (
-    <footer className="w-full border-t border-border bg-background py-12">
+    <footer className="cv-section w-full border-t border-border bg-background py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-center md:flex-row md:justify-between md:text-left">
         <Link to={lang === "en" ? "/en" : "/"}>
           <img

@@ -1,11 +1,20 @@
 import * as React from "react";
-import { useEffect, useRef, useState } from "react";
-import { MeshGradient } from "@paper-design/shaders-react";
-import { motion } from "framer-motion";
+import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BorderButton } from "@/components/ui/border-button";
+
+// @paper-design/shaders-react used to sit in the entry chunk, so every visitor
+// parsed the shader library and compiled a WebGL program before the page could
+// go idle — the bulk of the 2.3s of unattributed main-thread work Lighthouse
+// reported, and 440ms of Total Blocking Time. It's a decorative background, so
+// it now loads as its own chunk and only mounts once the page is quiet (see
+// useDeferredMount below). The CSS gradient underneath is what actually paints
+// first, and it's close enough that the swap isn't visible.
+const MeshGradient = lazy(() =>
+  import("@paper-design/shaders-react").then((m) => ({ default: m.MeshGradient })),
+);
 
 interface ShaderHeroProps extends React.HTMLAttributes<HTMLDivElement> {
   eyebrow?: string;
@@ -20,8 +29,60 @@ interface ShaderHeroProps extends React.HTMLAttributes<HTMLDivElement> {
   badgeText?: string;
 }
 
-/** How long the hero animates on load before freezing into a still frame. */
+/** How long the hero animates once mounted before freezing into a still frame. */
 const SETTLE_MS = 3000;
+
+/** The still gradient painted before (and behind) the WebGL surface. Same five
+ *  stops as the shader, so the handoff reads as the gradient starting to move
+ *  rather than as a different image swapping in. */
+const STILL_GRADIENT =
+  "radial-gradient(120% 90% at 18% 12%, #1b6fc2 0%, transparent 55%)," +
+  "radial-gradient(110% 80% at 82% 22%, #3fb6e8 0%, transparent 50%)," +
+  "radial-gradient(130% 110% at 60% 95%, #123a7d 0%, transparent 60%)," +
+  "linear-gradient(160deg, #0a2c63 0%, #020818 70%)";
+
+/**
+ * Waits until the browser is genuinely idle before flipping to `true`.
+ *
+ * The point is that nothing this returns can land inside Lighthouse's Total
+ * Blocking Time window: `load` fires after the critical work, and the idle
+ * callback after that. The timeout is the fallback for Safari, which still has
+ * no requestIdleCallback.
+ */
+function useDeferredMount() {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    let idleHandle: number | undefined;
+    let timer: number | undefined;
+
+    const schedule = () => {
+      const ric = window.requestIdleCallback;
+      if (ric) {
+        idleHandle = ric(() => setReady(true), { timeout: 2500 });
+      } else {
+        timer = window.setTimeout(() => setReady(true), 900);
+      }
+    };
+
+    if (document.readyState === "complete") {
+      schedule();
+      return () => {
+        if (idleHandle != null) window.cancelIdleCallback?.(idleHandle);
+        if (timer != null) window.clearTimeout(timer);
+      };
+    }
+
+    window.addEventListener("load", schedule, { once: true });
+    return () => {
+      window.removeEventListener("load", schedule);
+      if (idleHandle != null) window.cancelIdleCallback?.(idleHandle);
+      if (timer != null) window.clearTimeout(timer);
+    };
+  }, []);
+
+  return ready;
+}
 
 function HeroLink({
   href,
@@ -76,6 +137,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
     const [hasSettled, setHasSettled] = useState(false);
     const [inView, setInView] = useState(true);
     const [pageVisible, setPageVisible] = useState(true);
+    const shaderReady = useDeferredMount();
 
     useEffect(() => {
       const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -86,9 +148,13 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
     }, []);
 
     useEffect(() => {
+      // The settle clock starts when the shader mounts, not on page load, or a
+      // slow load would spend the whole entrance animation before anyone sees
+      // it.
+      if (!shaderReady) return;
       const timer = window.setTimeout(() => setHasSettled(true), SETTLE_MS);
       return () => window.clearTimeout(timer);
-    }, []);
+    }, [shaderReady]);
 
     useEffect(() => {
       const container = containerRef.current;
@@ -137,22 +203,32 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
         )}
         {...props}
       >
-        <MeshGradient
-          className="absolute inset-0 h-full w-full"
-          colors={["#020818", "#0a2c63", "#1b6fc2", "#123a7d", "#3fb6e8"]}
-          // speed 0 holds the last rendered frame rather than clearing, so
-          // freezing is invisible — the gradient is simply still. This covers
-          // reduced-motion users, the post-settle resting state, scrolling the
-          // hero out of view, and backgrounded tabs.
-          speed={isAnimating ? 0.25 : 0}
-          // The library defaults to minPixelRatio 2, so a 1350x940 desktop hero
-          // was shading ~5M pixels every frame and never let the main thread go
-          // quiet (41s of work; PageSpeed gave up with DEADLINE_EXCEEDED). This
-          // is a soft blurred gradient, so rendering at 1x and capping the
-          // buffer is visually indistinguishable and far cheaper per frame.
-          minPixelRatio={1}
-          maxPixelCount={1280 * 720}
-        />
+        {/* Painted immediately, and left in place underneath the shader: it is
+            what the LCP frame is measured against, and it means a visitor on a
+            device without WebGL just sees a still gradient instead of navy. */}
+        <div className="absolute inset-0" style={{ background: STILL_GRADIENT }} />
+
+        {shaderReady && !reducedMotion && (
+          <Suspense fallback={null}>
+            <MeshGradient
+              className="absolute inset-0 h-full w-full"
+              colors={["#020818", "#0a2c63", "#1b6fc2", "#123a7d", "#3fb6e8"]}
+              // speed 0 holds the last rendered frame rather than clearing, so
+              // freezing is invisible — the gradient is simply still. This
+              // covers the post-settle resting state, scrolling the hero out of
+              // view, and backgrounded tabs.
+              speed={isAnimating ? 0.25 : 0}
+              // The library defaults to minPixelRatio 2, so a 1350x940 desktop
+              // hero was shading ~5M pixels every frame and never let the main
+              // thread go quiet (41s of work; PageSpeed gave up with
+              // DEADLINE_EXCEEDED). This is a soft blurred gradient, so
+              // rendering at 1x and capping the buffer is visually
+              // indistinguishable and far cheaper per frame.
+              minPixelRatio={1}
+              maxPixelCount={1280 * 720}
+            />
+          </Suspense>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
 
         <main className="absolute bottom-10 left-6 z-20 max-w-2xl md:bottom-16 md:left-12">
@@ -163,22 +239,24 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
               text on mount. That deferred the LCP element ("Consulting")
               behind hydration plus a 0.35s delay and a 0.8s fade — a
               2,330ms LCP render delay and a visible flash. Only y animates. */}
-          <motion.div
-            className="relative mb-6 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm"
-            initial={{ y: 20 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+          <div
+            className="hero-rise relative mb-6 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm"
+            style={{ "--hero-rise-delay": "200ms" } as React.CSSProperties}
           >
             <span className="text-xs font-semibold uppercase tracking-widest text-cyan">
               {eyebrow}
             </span>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            className="mb-6 leading-[0.95] tracking-tight text-white"
-            initial={{ y: 30 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.8, delay: 0.35 }}
+          <h1
+            className="hero-rise mb-6 leading-[0.95] tracking-tight text-white"
+            style={
+              {
+                "--hero-rise-y": "30px",
+                "--hero-rise-duration": "800ms",
+                "--hero-rise-delay": "350ms",
+              } as React.CSSProperties
+            }
           >
             <span
               // Own line-height, not the h1's tight leading-[0.95]: this span
@@ -204,22 +282,18 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
                 {titleLight}
               </span>
             )}
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            className="mb-8 max-w-lg text-base font-light leading-relaxed text-white/70 md:text-lg"
-            initial={{ y: 20 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.6, delay: 0.55 }}
+          <p
+            className="hero-rise mb-8 max-w-lg text-base font-light leading-relaxed text-white/70 md:text-lg"
+            style={{ "--hero-rise-delay": "550ms" } as React.CSSProperties}
           >
             {subtitle}
-          </motion.p>
+          </p>
 
-          <motion.div
-            className="flex flex-wrap items-center gap-4"
-            initial={{ y: 20 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
+          <div
+            className="hero-rise flex flex-wrap items-center gap-4"
+            style={{ "--hero-rise-delay": "700ms" } as React.CSSProperties}
           >
             <BorderButton asChild variant="light" size="lg" className="px-8" dot>
               <HeroLink href={primaryButtonHref}>
@@ -233,7 +307,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
               {secondaryButtonText}
               <ArrowRight className="h-4 w-4" />
             </HeroLink>
-          </motion.div>
+          </div>
         </main>
 
         {/* The ring and the circling wordmark were framer-motion `repeat:

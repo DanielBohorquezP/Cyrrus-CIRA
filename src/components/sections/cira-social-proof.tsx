@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
-import { motion } from "framer-motion";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 
@@ -30,7 +29,7 @@ export function CiraSocialProof() {
 
         <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {stats.map((stat) => (
-            <motion.div key={stat.label} variants={staggerItem} className="px-4">
+            <RevealItem key={stat.label} className="px-4">
               <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
                 {stat.value}
               </dd>
@@ -38,7 +37,7 @@ export function CiraSocialProof() {
                 {stat.label}
               </span>
               <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />
-            </motion.div>
+            </RevealItem>
           ))}
         </RevealGroup>
 

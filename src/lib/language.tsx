@@ -22,6 +22,45 @@ export function setLangPreference(lang: Lang) {
 }
 
 /**
+ * Puts a Spanish-canonical path into the active language's URL space.
+ *
+ * Every Spanish route has an English counterpart at the identical slug under
+ * `/en` — that's how the route table in App.tsx is built and how
+ * scripts/prerender.mjs derives the English half of its route list — so this is
+ * a pure prefix rather than a mapping table that could drift out of sync.
+ *
+ * Use this for every internal link built from a literal path. Writing
+ * `to="/contacto"` looks harmless but hardcodes Spanish, which is how English
+ * visitors ended up being sent to Spanish pages from the headers, the footer
+ * and the hero CTA. nav-config.ts had its own local copy of this; anything
+ * outside it should use this one.
+ */
+export function langPath(path: string, lang: Lang): string {
+  if (lang !== "en") return path;
+  return path === "/" ? "/en" : `/en${path}`;
+}
+
+/**
+ * The active language read straight off the URL.
+ *
+ * `useLang()` is the normal way to get this, but it needs a LanguageProvider
+ * above it in the tree — and the cookie banner renders outside <Routes> in
+ * App.tsx, so for it the context would always report the "es" default no matter
+ * which page the visitor is on.
+ */
+export function langFromPathname(pathname: string): Lang {
+  return pathname === "/en" || pathname.startsWith("/en/") ? "en" : "es";
+}
+
+/** The same page in the other language, for the language switcher. */
+export function otherLangPath(pathname: string, current: Lang): string {
+  if (current === "en") {
+    return pathname.replace(/^\/en(?=\/|$)/, "") || "/";
+  }
+  return langPath(pathname, "en");
+}
+
+/**
  * Wraps a group of routes to pin i18next's active language and <html lang>
  * to a fixed value, driven by the URL prefix (/en/... vs unprefixed).
  *

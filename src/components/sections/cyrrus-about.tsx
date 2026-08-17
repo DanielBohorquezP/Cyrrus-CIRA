@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import { ArrowUpRight, Compass, Cpu, GraduationCap } from "lucide-react";
 import { About3 } from "@/components/ui/about-3";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
-import { RevealGroup, staggerItem } from "@/components/ui/reveal";
+import { RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { clientLogoNames } from "@/lib/client-logos";
+import { langPath, useLang } from "@/lib/language";
 
 interface Level {
   level: string;
@@ -30,6 +30,7 @@ const icons = [Compass, Cpu, GraduationCap];
 function LevelsStack() {
   const { t } = useTranslation("home");
   const { t: tCira } = useTranslation("metodo-cira");
+  const lang = useLang();
   const levels = t("about.levels", { returnObjects: true }) as Level[];
   // Reuse the canonical CIRA phases rather than restating them, so the chips
   // can never drift from the Método CIRA page.
@@ -43,19 +44,16 @@ function LevelsStack() {
           const isFoundation = index === 0;
 
           return (
-            <motion.li
-              key={item.title}
-              variants={staggerItem}
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
-            >
+            <RevealItem as="li" key={item.title} index={index}>
+              {/* The press/hover scale lives on the Link, not the list item:
+                  the item's `transform` is owned by the reveal transition, and
+                  `scale` is its own property so the two never fight. */}
               <Link
-                to={item.href}
+                to={langPath(item.href, lang)}
                 className={
                   isFoundation
-                    ? "group flex gap-5 rounded-2xl border border-cyan/50 bg-cyan/10 p-5 transition-[background-color,border-color] duration-200 ease-out hover:border-cyan hover:bg-cyan/15 md:gap-6 md:p-7"
-                    : "group flex gap-5 rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-[background-color,border-color] duration-200 ease-out hover:border-cyan/40 hover:bg-white/[0.08] md:gap-6 md:p-7"
+                    ? "group flex gap-5 rounded-2xl border border-cyan/50 bg-cyan/10 p-5 transition-[background-color,border-color,scale] duration-200 ease-out hover:scale-[1.01] hover:border-cyan hover:bg-cyan/15 active:scale-[0.99] md:gap-6 md:p-7"
+                    : "group flex gap-5 rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-[background-color,border-color,scale] duration-200 ease-out hover:scale-[1.01] hover:border-cyan/40 hover:bg-white/[0.08] active:scale-[0.99] md:gap-6 md:p-7"
                 }
               >
                 <span
@@ -106,7 +104,7 @@ function LevelsStack() {
                   </span>
                 </div>
               </Link>
-            </motion.li>
+            </RevealItem>
           );
         })}
       </ol>

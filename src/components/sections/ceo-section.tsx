@@ -5,7 +5,7 @@ import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background
 export function CeoSection() {
   const { t } = useTranslation("home");
   return (
-    <AnimatedNavyBackground className="py-24 md:py-32">
+    <AnimatedNavyBackground className="cv-section py-24 md:py-32">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 text-center md:px-12">
         <Reveal>
           <img

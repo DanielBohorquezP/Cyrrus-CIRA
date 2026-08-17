@@ -416,3 +416,205 @@
 .prose-legal strong {
   @apply font-semibold text-navy;
 }
+
+/* --- Scroll reveals ------------------------------------------------------
+   The CSS half of src/components/ui/reveal.tsx. These replaced framer-motion
+   `whileInView`, so the transition must stay on `transform` only: it is
+   compositor-owned, and (as in the framer version) opacity is deliberately
+   never animated so prerendered content can't be blanked out before the client
+   re-render lands.
+
+   Everything is scoped to `.reveal-ready`, a class the observer module sets on
+   <html> at import time. Without JS there is no pre-reveal offset at all, so
+   content sits exactly where it belongs. */
+/* The transition is declared on the base class, never inside the `.is-revealed`
+   rule: a `transition` there would out-specify any hover transition a card
+   wants, and several of these cards do lift on hover. Hover lifts use the
+   `translate` property (Tailwind's `-translate-y-*`), which is independent of
+   the `transform` the reveal owns, so the two never overwrite each other. */
+.reveal {
+  transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s);
+}
+.reveal-ready .reveal {
+  transform: translate3d(0, var(--reveal-y, 24px), 0);
+}
+.reveal-ready .reveal.is-revealed {
+  transform: none;
+}
+
+.reveal-item {
+  transition:
+    /* The stagger framer did with `staggerChildren: 0.12`. */
+    transform 500ms cubic-bezier(0.16, 1, 0.3, 1) calc(var(--reveal-i, 0) * 120ms),
+    translate 150ms ease-out,
+    box-shadow 150ms ease-out,
+    border-color 150ms ease-out;
+}
+.reveal-ready .reveal-item {
+  transform: translate3d(0, var(--reveal-y, 20px), 0);
+}
+.reveal-ready .reveal-group.is-revealed .reveal-item {
+  transform: none;
+}
+
+/* Position in the group, derived from the DOM instead of threaded through
+   every call site as a prop. RevealItem's `index` prop still wins when a call
+   site needs to override it, because inline styles beat these rules. The ramp
+   flattens after the 8th item so a long grid doesn't end up with a
+   second-long delay on its last card. */
+.reveal-item:nth-child(2) { --reveal-i: 1; }
+.reveal-item:nth-child(3) { --reveal-i: 2; }
+.reveal-item:nth-child(4) { --reveal-i: 3; }
+.reveal-item:nth-child(5) { --reveal-i: 4; }
+.reveal-item:nth-child(6) { --reveal-i: 5; }
+.reveal-item:nth-child(7) { --reveal-i: 6; }
+.reveal-item:nth-child(n + 8) { --reveal-i: 7; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-ready .reveal,
+  .reveal-ready .reveal-item {
+    transform: none;
+  }
+  .reveal,
+  .reveal-item {
+    transition: none;
+  }
+}
+
+/* --- Pulsing dot spiral --------------------------------------------------
+   Used by AnimatedNavyBackground. This lived in a `<style>` element inside the
+   component, which meant every instance inserted an identical stylesheet — the
+   home page alone mounts four, and each insertion invalidates style for the
+   whole document. Declared once here it is parsed once with the rest of the
+   CSS and costs nothing per instance. */
+@keyframes navy-dot-pulse {
+  0%, 100% { transform: scale(0.5); opacity: 0.25; }
+  50% { transform: scale(1.35); opacity: 0.9; }
+}
+.navy-dot-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: navy-dot-pulse 3s ease-in-out infinite;
+}
+[data-motion="off"] .navy-dot-pulse {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .navy-dot-pulse {
+    animation: none;
+  }
+}
+
+/* --- Logo marquee --------------------------------------------------------
+   Same story as the dot spiral: hoisted out of a per-instance `<style>` in
+   src/components/ui/logo-carousel.tsx. */
+@keyframes logo-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* --- Cookie banner ------------------------------------------------------- */
+@keyframes cookie-banner-enter {
+  from { opacity: 0; transform: translate3d(0, 24px, 0); }
+  to { opacity: 1; transform: none; }
+}
+.cookie-banner-enter {
+  animation: cookie-banner-enter 300ms ease-out both;
+}
+
+/* --- Hero entrance ------------------------------------------------------- */
+/* The staggered rise on the hero's eyebrow / headline / subtitle / buttons.
+   These were framer-motion `initial`/`animate` pairs; as CSS keyframes they
+   cost nothing on the main thread and, more importantly, they let ShaderHero
+   drop framer-motion entirely.
+
+   No opacity, for the reason spelled out in shader-hero.tsx: the prerender
+   bakes the finished markup into the static HTML, so fading in from 0 blanks
+   out already-painted text — including the LCP element — until the client
+   re-render lands. */
+@keyframes hero-rise {
+  from { transform: translate3d(0, var(--hero-rise-y, 20px), 0); }
+  to { transform: none; }
+}
+.hero-rise {
+  animation: hero-rise var(--hero-rise-duration, 600ms) ease-out both;
+  animation-delay: var(--hero-rise-delay, 0ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .cookie-banner-enter,
+  .hero-rise {
+    animation: none;
+  }
+}
+
+/* --- Tabbed panels ------------------------------------------------------- */
+/* CSS replacements for what TabbedPanels used framer-motion for: a shared
+   `layoutId` underline and two AnimatePresence cross-fades. All three animate
+   opacity/transform only, so they run on the compositor. */
+@keyframes tab-underline {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.tab-underline {
+  animation: tab-underline 200ms ease-out both;
+}
+
+@keyframes panel-enter {
+  from { opacity: 0; transform: translate3d(0, 16px, 0); }
+  to { opacity: 1; transform: none; }
+}
+.panel-enter {
+  animation: panel-enter 400ms ease-out both;
+}
+
+@keyframes panel-enter-child {
+  from { opacity: 0; transform: translate3d(0, 8px, 0); }
+  to { opacity: 1; transform: none; }
+}
+.panel-enter-child {
+  display: block;
+  animation: panel-enter-child 400ms ease-out both;
+  animation-delay: var(--panel-delay, 0ms);
+}
+
+@keyframes panel-image-enter {
+  from { opacity: 0; scale: 1.04; }
+  to { opacity: 1; scale: 1; }
+}
+.panel-image-enter {
+  animation: panel-image-enter 500ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab-underline,
+  .panel-enter,
+  .panel-enter-child,
+  .panel-image-enter {
+    animation: none;
+  }
+}
+
+/* --- Off-screen section skipping ----------------------------------------
+   The home page is ~9,400px tall and just over a thousand elements, and the
+   browser was laying out and painting every one of them in the same pass that
+   blocks first interaction — style & layout alone was 1.5s of the main thread
+   under a 4x CPU throttle, more than script evaluation.
+
+   `content-visibility: auto` lets the browser skip layout and paint for any
+   section that isn't near the viewport, and do that work when the visitor
+   scrolls to it instead. The content stays in the DOM the whole time, so the
+   prerendered markup, find-in-page, and anchor links are all unaffected.
+
+   `contain-intrinsic-size: auto <estimate>` is what keeps this from causing
+   layout shift: the browser uses the estimate before a section has ever been
+   rendered, then remembers the real size once it has. Never put this on
+   anything above the fold — a skipped section can't be the LCP element. */
+.cv-section {
+  content-visibility: auto;
+  /* 650px is the measured average height of the sections this is applied to.
+     It only matters before a section has been rendered once — after that the
+     `auto` keyword makes the browser use the real size it remembers — but a
+     bad estimate makes the scrollbar visibly resize on the first scroll
+     through the page. */
+  contain-intrinsic-size: auto 650px;
+}

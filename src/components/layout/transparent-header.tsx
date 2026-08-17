@@ -4,8 +4,9 @@ import { useTranslation } from "react-i18next";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { BorderButton } from "@/components/ui/border-button";
 import { NavDropdown } from "@/components/layout/nav-dropdown";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 import { useScrolled } from "@/lib/use-scrolled";
 import { cn } from "@/lib/utils";
 
@@ -128,13 +129,17 @@ export function TransparentHeader() {
         ))}
       </nav>
       <div className="flex items-center gap-2">
+        <LanguageSwitcher
+          variant={scrolled ? "light" : "dark"}
+          className="hidden lg:inline-flex"
+        />
         <BorderButton
           asChild
           variant={scrolled ? "dark" : "light"}
           dot
           className="hidden lg:inline-flex"
         >
-          <Link to="/contacto">{t("cta.agendarConversacion")}</Link>
+          <Link to={langPath("/contacto", lang)}>{t("cta.agendarConversacion")}</Link>
         </BorderButton>
         <button
           type="button"
@@ -169,10 +174,11 @@ export function TransparentHeader() {
         </nav>
         <div className="flex items-center justify-between gap-4 border-t border-border px-6 py-5">
           <BorderButton asChild variant="dark" size="sm" dot className="flex-1 justify-center">
-            <Link to="/contacto" onClick={() => setMobileOpen(false)}>
+            <Link to={langPath("/contacto", lang)} onClick={() => setMobileOpen(false)}>
               {t("cta.agendarConversacion")}
             </Link>
           </BorderButton>
+          <LanguageSwitcher onNavigate={() => setMobileOpen(false)} />
         </div>
       </div>
     </header>

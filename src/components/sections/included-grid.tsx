@@ -1,6 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { motion } from "framer-motion";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 
 export interface IncludedItem {
   icon: LucideIcon;
@@ -32,9 +31,8 @@ export function IncludedGrid({ eyebrow, title, items }: IncludedGridProps) {
           {items.map((item) => {
             const Icon = item.icon;
             return (
-              <motion.div
+              <RevealItem
                 key={item.title}
-                variants={staggerItem}
                 className="rounded-2xl border border-border bg-card p-7"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-light-blue">
@@ -46,7 +44,7 @@ export function IncludedGrid({ eyebrow, title, items }: IncludedGridProps) {
                 <p className="mt-2 text-base leading-relaxed text-gray">
                   {item.description}
                 </p>
-              </motion.div>
+              </RevealItem>
             );
           })}
         </RevealGroup>

@@ -97,25 +97,6 @@ export const AnimatedNavyBackground = forwardRef<HTMLElement, AnimatedNavyBackgr
           </svg>
         )}
       </div>
-      <style>{`
-        @keyframes navy-dot-pulse {
-          0%, 100% { transform: scale(0.5); opacity: 0.25; }
-          50% { transform: scale(1.35); opacity: 0.9; }
-        }
-        .navy-dot-pulse {
-          transform-box: fill-box;
-          transform-origin: center;
-          animation: navy-dot-pulse ${DURATION}s ease-in-out infinite;
-        }
-        [data-motion="off"] .navy-dot-pulse {
-          animation-play-state: paused;
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .navy-dot-pulse {
-            animation: none;
-          }
-        }
-      `}</style>
       <div className="relative z-10">{children}</div>
     </section>
   );

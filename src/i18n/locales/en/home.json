@@ -24,7 +24,7 @@
         "eyebrow": "Strategy Consulting",
         "title": "Strategic Consulting",
         "description": "We build the strategy, select the right solution, and execute the project without fail — the full consulting cycle, also available as CTO as a Service or CIO as a Service.",
-        "href": "/en/metodo-cira",
+        "href": "/metodo-cira",
         "buttonText": "Explore the CIRA method"
       },
       {
@@ -65,7 +65,7 @@
     "conocerMas": "Learn more",
     "clientesTitulo": "Companies that have trusted Cyrrus",
     "levels": [
-      { "level": "Level 1", "title": "CIRA Method", "description": "The business: what gets achieved. Construct · Identify · Realize · Adopt.", "href": "/en/metodo-cira" },
+      { "level": "Level 1", "title": "CIRA Method", "description": "The business: what gets achieved. Construct · Identify · Realize · Adopt.", "href": "/metodo-cira" },
       { "level": "Level 2", "title": "Cyrrus Intelligence Lab", "description": "The how: AI governance and architecture, cutting across all 4 CIRA phases.", "href": "/intelligence-lab" },
       { "level": "Level 3", "title": "Leadership Academy", "description": "Who sustains it: the client's own team learns to operate the same model.", "href": "/leadership-academy" }
     ]

@@ -6,7 +6,6 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -16,7 +15,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 
 interface Item {
@@ -184,9 +183,8 @@ export default function GestionDeProyectos() {
             {differentiators.map((item, index) => {
               const Icon = item.icon;
               return (
-                <motion.div
+                <RevealItem
                   key={item.title}
-                  variants={staggerItem}
                   className="rounded-2xl border border-border bg-card p-7"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
@@ -197,7 +195,7 @@ export default function GestionDeProyectos() {
                   </span>
                   <h3 className="mt-1 text-lg font-semibold text-navy">{item.title}</h3>
                   <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                </motion.div>
+                </RevealItem>
               );
             })}
           </RevealGroup>
@@ -286,14 +284,13 @@ export default function GestionDeProyectos() {
 
           <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {achievements.map((item) => (
-              <motion.div
+              <RevealItem
                 key={item}
-                variants={staggerItem}
                 className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6"
               >
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
                 <span className="text-base leading-relaxed text-navy/80">{item}</span>
-              </motion.div>
+              </RevealItem>
             ))}
           </RevealGroup>
         </div>

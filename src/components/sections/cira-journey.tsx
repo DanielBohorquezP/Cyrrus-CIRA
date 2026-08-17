@@ -17,7 +17,7 @@ export function CiraJourney() {
   const steps = t("ciraJourney.steps", { returnObjects: true }) as Step[];
 
   return (
-    <section className="w-full bg-background py-20 md:py-28">
+    <section className="cv-section w-full bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <Reveal className="text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-blue">

@@ -1,5 +1,4 @@
 import { useParams, Navigate } from "react-router-dom";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -14,7 +13,7 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 
 interface DetailEntry {
@@ -119,9 +118,8 @@ export default function SolucionDetalle() {
                 {entry.items.map((item, index) => {
                   const Icon = icons?.[index];
                   return (
-                    <motion.div
+                    <RevealItem
                       key={item.title}
-                      variants={staggerItem}
                       className="rounded-2xl border border-border bg-card p-7"
                     >
                       <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
@@ -129,7 +127,7 @@ export default function SolucionDetalle() {
                       </div>
                       <h3 className="mt-5 text-lg font-semibold text-navy">{item.title}</h3>
                       <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                    </motion.div>
+                    </RevealItem>
                   );
                 })}
               </RevealGroup>

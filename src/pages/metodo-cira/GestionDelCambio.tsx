@@ -5,7 +5,6 @@ import {
   Users,
   GraduationCap,
 } from "lucide-react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -17,7 +16,7 @@ import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { PageFeatureImage } from "@/components/sections/page-feature-image";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Reveal, RevealGroup, staggerItem } from "@/components/ui/reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 
 interface Item {
@@ -172,9 +171,8 @@ export default function GestionDelCambio() {
             {pillars.map((item, index) => {
               const Icon = item.icon;
               return (
-                <motion.div
+                <RevealItem
                   key={item.title}
-                  variants={staggerItem}
                   className="rounded-2xl border border-border bg-card p-7"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
@@ -185,7 +183,7 @@ export default function GestionDelCambio() {
                   </span>
                   <h3 className="mt-1 text-lg font-semibold text-navy">{item.title}</h3>
                   <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                </motion.div>
+                </RevealItem>
               );
             })}
           </RevealGroup>

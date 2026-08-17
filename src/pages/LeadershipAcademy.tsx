@@ -6,10 +6,9 @@ import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero
 import { WorkshopOrbit } from "@/components/ui/workshop-orbit";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { RevealGroup, staggerItem, Reveal } from "@/components/ui/reveal";
+import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { ComingSoon } from "@/components/ui/coming-soon";
-import { motion } from "framer-motion";
 import { workshops as workshopEntries } from "@/lib/workshops-data";
 import {
   Brain,
@@ -115,7 +114,7 @@ export default function LeadershipAcademy() {
             {workshops.map((w) => {
               const Icon = w.icon;
               return (
-                <motion.div key={w.title} variants={staggerItem}>
+                <RevealItem key={w.title} >
                   <ComingSoon className="block h-full">
                     <div className="h-full rounded-2xl border border-border bg-card p-7">
                       <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-light-blue">
@@ -129,7 +128,7 @@ export default function LeadershipAcademy() {
                       </p>
                     </div>
                   </ComingSoon>
-                </motion.div>
+                </RevealItem>
               );
             })}
           </RevealGroup>
