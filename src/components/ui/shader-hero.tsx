@@ -63,6 +63,15 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
   ) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [, setIsActive] = useState(false);
+    const [reducedMotion, setReducedMotion] = useState(false);
+
+    useEffect(() => {
+      const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const sync = () => setReducedMotion(mq.matches);
+      sync();
+      mq.addEventListener("change", sync);
+      return () => mq.removeEventListener("change", sync);
+    }, []);
 
     useEffect(() => {
       const container = containerRef.current;
@@ -93,7 +102,16 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
         <MeshGradient
           className="absolute inset-0 h-full w-full"
           colors={["#020818", "#0a2c63", "#1b6fc2", "#123a7d", "#3fb6e8"]}
-          speed={0.25}
+          // Stop animating for users who ask for reduced motion — the gradient
+          // still renders, it just holds still.
+          speed={reducedMotion ? 0 : 0.25}
+          // The library defaults to minPixelRatio 2, so a 1350x940 desktop hero
+          // was shading ~5M pixels every frame and never let the main thread go
+          // quiet (41s of work; PageSpeed gave up with DEADLINE_EXCEEDED). This
+          // is a soft blurred gradient, so rendering at 1x and capping the
+          // buffer is visually indistinguishable and far cheaper per frame.
+          minPixelRatio={1}
+          maxPixelCount={1280 * 720}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
 
