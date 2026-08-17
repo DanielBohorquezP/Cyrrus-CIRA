@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { BorderButton } from "@/components/ui/border-button";
+import { loadAnalytics } from "@/lib/analytics";
 
 const STORAGE_KEY = "cyrrus-cookie-consent";
 
@@ -17,14 +18,20 @@ export function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!getCookieConsent()) {
+    const existing = getCookieConsent();
+    if (!existing) {
       setVisible(true);
+    } else if (existing === "accepted") {
+      loadAnalytics();
     }
   }, []);
 
   function choose(value: CookieConsentValue) {
     window.localStorage.setItem(STORAGE_KEY, value);
     setVisible(false);
+    if (value === "accepted") {
+      loadAnalytics();
+    }
   }
 
   return (
