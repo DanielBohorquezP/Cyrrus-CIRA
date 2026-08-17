@@ -60,15 +60,15 @@ export default function Home() {
         />
       </div>
       <TrustBar />
+      <CeoSection />
+      <CiraJourney />
       <AnimatedNavyBackground className="px-6 py-14 md:px-12">
         <div className="mx-auto max-w-6xl">
           <HeroServicesTabs />
         </div>
       </AnimatedNavyBackground>
-      <CiraJourney />
-      <CyrrusAbout />
       <WhyCyrrus />
-      <CeoSection />
+      <CyrrusAbout />
       <Testimonials />
       <Experience />
       <PerspectivasPreview />

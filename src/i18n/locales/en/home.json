@@ -3,8 +3,8 @@
     "eyebrow": "CIRA Methodology",
     "titleAccent": "Strategic",
     "titleBold": "Consulting",
-    "titleLight": "with AI built in",
-    "subtitle": "We build the strategy, choose the right solution, and drive real adoption.",
+    "titleLight": "that reaches execution",
+    "subtitle": "Across LATAM, most transformations stall between the decision and the operation. CIRA connects them: strategy, the right solution, and real adoption, with AI in every phase.",
     "primaryButtonText": "Schedule a strategy call",
     "secondaryButtonText": "Explore the CIRA method",
     "badgeText": "Cyrrus Consulting Services"
@@ -12,8 +12,26 @@
   "trustBar": {
     "metrics": [
       { "value": "+17", "label": "countries" },
-      { "value": "1", "label": "proprietary methodology" },
+      { "value": "1", "label": "end-to-end method" },
       { "value": "100%", "label": "vendor-agnostic" }
+    ]
+  },
+  "ceo": {
+    "quote": "\"In most organizations the problem isn't strategy or technology. It's that no one takes responsibility for connecting the decision to the execution. CIRA exists to close exactly that gap.\"",
+    "name": "Jackson Bohorquez",
+    "role": "CEO & Founder, Cyrrus Consulting Services",
+    "photoAlt": "Jackson Bohorquez, CEO of Cyrrus Consulting Services"
+  },
+  "ciraJourney": {
+    "eyebrow": "The CIRA Method, step by step",
+    "title": "From decision to adoption",
+    "buttonText": "See the full methodology",
+    "stepOf": "Step {{n}} of 4",
+    "steps": [
+      { "letter": "C", "word": "Construct", "title": "The strategy", "description": "We diagnose the business and turn the plan into a roadmap with owners and dates." },
+      { "letter": "I", "word": "Identify", "title": "The right solution", "description": "We evaluate vendors with no commercial bias: chosen on criteria, not on catalog." },
+      { "letter": "R", "word": "Realize", "title": "The project", "description": "We govern execution and assure quality all the way to go-live." },
+      { "letter": "A", "word": "Adopt", "title": "The change", "description": "We work on adoption from day one, so the result holds over time." }
     ]
   },
   "servicesTabs": {
@@ -21,73 +39,55 @@
       {
         "id": "consultoria-estrategica",
         "tabLabel": "Strategic Consulting",
-        "eyebrow": "Strategy Consulting",
+        "eyebrow": "When the plan never reaches operations",
         "title": "Strategic Consulting",
-        "description": "We build the strategy, select the right solution, and execute the project without fail — the full consulting cycle, also available as CTO as a Service or CIO as a Service.",
+        "description": "If the plan stayed in the deck, the problem wasn't the strategy — it was having no one to execute it. We build it, select the right solution, and execute, with one party accountable end to end.",
         "href": "/metodo-cira",
         "buttonText": "Explore the CIRA method"
       },
       {
         "id": "ia-empresarial",
         "tabLabel": "Enterprise AI",
-        "eyebrow": "Corporate AI governance",
+        "eyebrow": "When AI stays stuck in isolated pilots",
         "title": "Enterprise Artificial Intelligence",
-        "description": "AI governance and architecture applied to real business processes — the layer that accelerates every phase of your transformation, not a loose catalog of chatbots.",
+        "description": "Before adding another AI tool, know who decides, who audits, and what data it can touch. We govern that layer over your real processes — not sell you another catalog of chatbots.",
         "href": "/intelligence-lab",
         "buttonText": "Explore Cyrrus Intelligence Lab"
       },
       {
         "id": "gestion-del-cambio",
         "tabLabel": "Change Management",
-        "eyebrow": "Organizational change management",
+        "eyebrow": "When the team doesn't adopt what was implemented",
         "title": "Change Management & Leadership",
-        "description": "Executive workshops and management training so your transformation's adoption holds over time, without staying permanently dependent on Cyrrus.",
+        "description": "A well-implemented system nobody uses isn't a successful project. We train your managers so the change holds after we leave — without depending on us.",
         "href": "/leadership-academy",
         "buttonText": "Explore Leadership Academy"
       }
     ]
   },
-  "ciraJourney": {
-    "eyebrow": "CIRA Method",
-    "title": "How we do it, step by step",
-    "buttonText": "See the full methodology",
-    "stepOf": "Step {{n}} of 4",
-    "steps": [
-      { "letter": "C", "word": "Construct", "title": "The strategy", "description": "Business diagnosis and an actionable roadmap." },
-      { "letter": "I", "word": "Identify", "title": "The best solution", "description": "100% vendor-agnostic technology evaluation." },
-      { "letter": "R", "word": "Realize", "title": "The project", "description": "Project governance and quality assurance." },
-      { "letter": "A", "word": "Adopt", "title": "The change", "description": "Change management built in from day one." }
-    ]
-  },
   "about": {
-    "title": "Organizational consulting with built-in AI governance",
-    "description": "One model, not a list of loose services. Strategy, AI architecture, and change management under a single method — so we streamline processes and accelerate results without fragmenting your transformation across different vendors.",
+    "title": "One model, three levels that hold each other up",
+    "description": "Not a list of loose services, and not four vendors coordinating with each other. Strategy, AI architecture, and change management run under a single method, with one party accountable end to end.",
     "conocerMas": "Learn more",
-    "clientesTitulo": "Companies that have trusted Cyrrus",
+    "clientesTitulo": "Companies that have already trusted Cyrrus",
     "levels": [
-      { "level": "Level 1", "title": "CIRA Method", "description": "The business: what gets achieved. Construct · Identify · Realize · Adopt.", "href": "/metodo-cira" },
-      { "level": "Level 2", "title": "Cyrrus Intelligence Lab", "description": "The how: AI governance and architecture, cutting across all 4 CIRA phases.", "href": "/intelligence-lab" },
-      { "level": "Level 3", "title": "Leadership Academy", "description": "Who sustains it: the client's own team learns to operate the same model.", "href": "/leadership-academy" }
+      { "level": "Level 1", "title": "CIRA Method", "description": "What gets achieved: the business. Construct · Identify · Realize · Adopt.", "href": "/metodo-cira" },
+      { "level": "Level 2", "title": "Cyrrus Intelligence Lab", "description": "How it accelerates: AI governance and architecture, cutting across all 4 phases.", "href": "/intelligence-lab" },
+      { "level": "Level 3", "title": "Leadership Academy", "description": "Who sustains it: your own team learns to operate the same model.", "href": "/leadership-academy" }
     ]
   },
   "whyCyrrus": {
     "eyebrow": "Why Cyrrus?",
-    "title": "We don't just implement artificial intelligence. We govern every phase of your transformation with it.",
+    "title": "The difference isn't the tool. It's who answers for the result.",
     "reasons": [
-      { "title": "One method, end to end", "description": "Your business isn't split across different vendors for each phase. Strategy, selection, execution, and adoption under a single cycle — your competitive edge doesn't depend on coordinating 4 different vendors." },
-      { "title": "Radical speed through AI at every phase", "description": "Governance, architecture, and agents built into Strategy, Select, Project Management, and Change Management — automation applied to diagnosis, selection, execution, and adoption, not sold as a separate service." },
-      { "title": "Capability that stays with the client", "description": "Leadership Academy ensures speed doesn't depend on Cyrrus alone: continuous improvement sustained by your own team, trained to operate under the same model." }
+      { "title": "One accountable partner, end to end", "description": "Your transformation isn't split across a different vendor per phase. Strategy, selection, execution, and adoption run in a single cycle, and Cyrrus answers for the complete result." },
+      { "title": "AI inside the method, not as a separate service", "description": "Governance, architecture, and agents operate inside the four phases: they accelerate diagnosis, selection, execution, and adoption. That's how the time between deciding and seeing results gets shorter." },
+      { "title": "Capability that stays with your team", "description": "With Leadership Academy, sustaining the change stops depending on Cyrrus. Your people learn to operate the same model and improvement continues from the inside." }
     ]
   },
-  "ceo": {
-    "quote": "\"Organizations don't fail for lack of strategy or technology. They fail when no one connects the decision to the execution. CIRA exists to close exactly that gap.\"",
-    "name": "Jackson Bohorquez",
-    "role": "CEO & Founder, Cyrrus Consulting Services",
-    "photoAlt": "Jackson Bohorquez, CEO of Cyrrus Consulting Services"
-  },
   "testimonials": {
-    "eyebrow": "Results that speak",
-    "title": "The promise, turned into proof.",
+    "eyebrow": "On the other side of the gap",
+    "title": "This is what it looks like when the decision does reach execution.",
     "items": [
       { "quote": "Cyrrus didn't show up with a catalog of tools. They showed up with a clear method that connected our strategy to execution — something no previous vendor had achieved.", "author": "VP of Operations", "company": "Industrial group, manufacturing sector" },
       { "quote": "The difference was speed: what normally took us months of vendor selection, we solved with Cyrrus in weeks thanks to their parallel evaluation approach.", "author": "Chief Technology Officer", "company": "Financial services company" },
@@ -96,8 +96,8 @@
   },
   "experience": {
     "eyebrow": "Multinational presence",
-    "title": "Multinational consulting across LATAM, by industry",
-    "subtitle": "Multinational presence, local judgment.",
+    "title": "The same method, with local judgment in every country",
+    "subtitle": "The method doesn't change; the context does. That's why we operate with teams that know each market and each industry.",
     "paisesLabel": "Countries of reach",
     "sectoresLabel": "Industries served",
     "footerNote": "See the full team, industries, and clients on the Experience page.",
@@ -106,17 +106,17 @@
   },
   "perspectivasPreview": {
     "tagline": "Insights",
-    "heading": "Thinking on transformation and change management",
-    "description": "Authoritative analysis and content on strategic consulting, AI governance, and organizational change management — the questions the market is already asking.",
+    "heading": "The questions the market is already asking",
+    "description": "Why transformations stall, how to evaluate a consultancy, and what corporate AI governance demands. Analysis applied to real decisions.",
     "buttonText": "See all topics"
   },
   "finalCta": {
     "title": "Ready to connect the decision to the execution?",
-    "description": "Fill out the form and we'll coordinate a call with the right team on Cyrrus's side to talk through your organization's challenge.",
+    "description": "Tell us your organization's challenge. We'll set up a conversation with the right team and tell you straight whether we can help.",
     "buttonText": "Schedule a strategy call"
   },
   "meta": {
-    "title": "Cyrrus Consulting Services | CIRA Methodology",
-    "description": "Cyrrus Consulting Services — CIRA Methodology: we build the strategy, choose the right solution, and drive real adoption, with AI accelerating every phase."
+    "title": "Strategic Consulting with AI | Cyrrus Consulting Services",
+    "description": "Strategic consulting that reaches execution. CIRA methodology: strategy, the right solution, and real adoption, with AI in every phase."
   }
 }
