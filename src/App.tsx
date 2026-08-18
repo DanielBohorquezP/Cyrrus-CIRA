@@ -75,6 +75,7 @@ function lazyPage(loader: () => Promise<PageModule>): RoutePage {
 // route is split out so a visitor doesn't parse the whole site to see one page.
 const MetodoCira = lazyPage(() => import("@/pages/MetodoCira"));
 const IntelligenceLab = lazyPage(() => import("@/pages/IntelligenceLab"));
+const PresenciaDigital = lazyPage(() => import("@/pages/PresenciaDigital"));
 const LeadershipAcademy = lazyPage(() => import("@/pages/LeadershipAcademy"));
 const Experiencia = lazyPage(() => import("@/pages/Experiencia"));
 const QuienesSomos = lazyPage(() => import("@/pages/QuienesSomos"));
@@ -90,6 +91,8 @@ const AutomatizacionesDesarrollo = lazyPage(
 );
 const ArquitecturaDeIA = lazyPage(() => import("@/pages/intelligence-lab/ArquitecturaDeIA"));
 const GobiernoDeIA = lazyPage(() => import("@/pages/intelligence-lab/GobiernoDeIA"));
+const DesarrolloWeb = lazyPage(() => import("@/pages/presencia-digital/DesarrolloWeb"));
+const Seo = lazyPage(() => import("@/pages/presencia-digital/Seo"));
 const CursoDetalle = lazyPage(() => import("@/pages/leadership-academy/CursoDetalle"));
 const Privacidad = lazyPage(() => import("@/pages/Privacidad"));
 const Cookies = lazyPage(() => import("@/pages/Cookies"));
@@ -115,6 +118,9 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/intelligence-lab/automatizaciones-desarrollo", Component: AutomatizacionesDesarrollo },
   { path: "/intelligence-lab/arquitectura-de-ia", Component: ArquitecturaDeIA },
   { path: "/intelligence-lab/gobierno-de-ia", Component: GobiernoDeIA },
+  { path: "/presencia-digital", Component: PresenciaDigital },
+  { path: "/presencia-digital/desarrollo-web", Component: DesarrolloWeb },
+  { path: "/presencia-digital/seo", Component: Seo },
   { path: "/leadership-academy", Component: LeadershipAcademy },
   { path: "/leadership-academy/:curso", Component: CursoDetalle },
   { path: "/experiencia", Component: Experiencia },

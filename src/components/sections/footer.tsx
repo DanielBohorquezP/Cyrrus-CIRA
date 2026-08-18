@@ -41,6 +41,7 @@ export function Footer() {
   const links = [
     { label: t("nav.metodoCira", { ns: "common" }), href: langPath("/metodo-cira", lang) },
     { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/intelligence-lab", lang) },
+    { label: t("nav.presenciaDigital", { ns: "common" }), href: langPath("/presencia-digital", lang) },
     { label: t("nav.leadershipAcademy", { ns: "common" }), href: langPath("/leadership-academy", lang) },
     { label: t("nav.experiencia", { ns: "common" }), href: langPath("/experiencia", lang) },
     { label: t("nav.perspectivas", { ns: "common" }), href: langPath("/perspectivas", lang) },

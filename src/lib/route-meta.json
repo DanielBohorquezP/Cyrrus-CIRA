@@ -51,6 +51,18 @@
     "title": "Gobierno de IA | Cyrrus",
     "description": "Políticas, roles y controles claros sobre cómo se usa la inteligencia artificial dentro de su organización — quién decide, quién audita y qué datos pueden tocarse."
   },
+  "/presencia-digital": {
+    "title": "Presencia Digital: Desarrollo Web y SEO para Empresas | Cyrrus",
+    "description": "Cyrrus Presencia Digital: el sitio corporativo y la visibilidad en buscadores e IA tratados como activos del negocio, con el método CIRA — no como un proyecto de agencia."
+  },
+  "/presencia-digital/desarrollo-web": {
+    "title": "Desarrollo Web Corporativo para Empresas | Cyrrus",
+    "description": "Desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo — no un folleto digital que hay que pedirle a una agencia cada vez que cambia algo."
+  },
+  "/presencia-digital/seo": {
+    "title": "Posicionamiento SEO y Visibilidad en Buscadores con IA | Cyrrus",
+    "description": "Posicionamiento SEO técnico y de contenido para empresas, más visibilidad en motores de respuesta con IA como ChatGPT y Perplexity. Su empresa aparece cuando su cliente busca — y cuando pregunta."
+  },
   "/leadership-academy": {
     "title": "Leadership Academy | Cyrrus",
     "description": "Cyrrus Leadership Academy: gestión del cambio, capacitación organizacional y adopción de IA generativa para equipos directivos."

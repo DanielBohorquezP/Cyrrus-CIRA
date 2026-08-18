@@ -9,6 +9,7 @@ const images = [
   "/assets/decoracion/IMG_20200313_092643427.webp",
   "/assets/decoracion/Cyrrus.webp",
   "/assets/decoracion/IMG_20230228_091011.webp",
+  "/assets/decoracion/1785866224151.jpg",
 ];
 
 export function HeroServicesTabs() {

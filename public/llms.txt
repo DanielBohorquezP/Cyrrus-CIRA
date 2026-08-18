@@ -20,6 +20,11 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 - [Arquitectura de IA](https://www.cyrruscs.com/intelligence-lab/arquitectura-de-ia): diseño técnico que conecta modelos, datos y sistemas empresariales.
 - [Gobierno de IA](https://www.cyrruscs.com/intelligence-lab/gobierno-de-ia): políticas, roles y controles sobre el uso de IA en la organización.
 
+## Presencia Digital
+- [Presencia Digital](https://www.cyrruscs.com/presencia-digital): desarrollo web corporativo y SEO tratados como activos del negocio.
+- [Desarrollo Web](https://www.cyrruscs.com/presencia-digital/desarrollo-web): sitios corporativos rápidos, medibles y editables por el propio equipo del cliente.
+- [SEO](https://www.cyrruscs.com/presencia-digital/seo): posicionamiento SEO y visibilidad en motores de respuesta con IA (GEO).
+
 ## Leadership Academy
 - [Leadership Academy](https://www.cyrruscs.com/leadership-academy): programas de capacitación y cambio organizacional.
 
@@ -42,6 +47,9 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 - [Automation & AI Agents](https://www.cyrruscs.com/en/intelligence-lab/automatizaciones-desarrollo): AI agents and custom development.
 - [AI Architecture](https://www.cyrruscs.com/en/intelligence-lab/arquitectura-de-ia): technical design connecting models, data, and enterprise systems.
 - [AI Governance](https://www.cyrruscs.com/en/intelligence-lab/gobierno-de-ia): policies, roles, and controls over AI use in the organization.
+- [Digital Presence](https://www.cyrruscs.com/en/presencia-digital): corporate web development and SEO treated as business assets.
+- [Web Development](https://www.cyrruscs.com/en/presencia-digital/desarrollo-web): fast, measurable corporate sites editable by the client's own team.
+- [SEO](https://www.cyrruscs.com/en/presencia-digital/seo): SEO positioning and visibility in AI answer engines (GEO).
 - [Leadership Academy](https://www.cyrruscs.com/en/leadership-academy): training programs and organizational change management.
 - [About Us](https://www.cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://www.cyrruscs.com/en/experiencia): Cyrrus's cases and track record.

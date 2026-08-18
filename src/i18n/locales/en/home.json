@@ -62,18 +62,28 @@
         "description": "A well-implemented system nobody uses isn't a successful project. We train your managers so the change holds after we leave — without depending on us.",
         "href": "/leadership-academy",
         "buttonText": "Explore Leadership Academy"
+      },
+      {
+        "id": "presencia-digital",
+        "tabLabel": "Digital Presence",
+        "eyebrow": "When your site doesn't reflect what the company is worth",
+        "title": "Web Development & SEO",
+        "description": "A site no one finds, and positioning that leads to a door that doesn't convert, generate no business. We build the site as a business asset and make it visible where your client searches — and where they ask an AI.",
+        "href": "/presencia-digital",
+        "buttonText": "Explore Digital Presence"
       }
     ]
   },
   "about": {
-    "title": "One model, three levels that hold each other up",
-    "description": "Not a list of loose services, and not four vendors coordinating with each other. Strategy, AI architecture, and change management run under a single method, with one party accountable end to end.",
+    "title": "One model, four levels that hold each other up",
+    "description": "Not a list of loose services, and not vendors coordinating with each other. Strategy, AI architecture, change management, and digital presence run under a single method, with one party accountable end to end.",
     "conocerMas": "Learn more",
     "clientesTitulo": "Companies that have already trusted Cyrrus",
     "levels": [
       { "level": "Level 1", "title": "CIRA Method", "description": "What gets achieved: the business. Construct · Identify · Realize · Adopt.", "href": "/metodo-cira" },
       { "level": "Level 2", "title": "Cyrrus Intelligence Lab", "description": "How it accelerates: AI governance and architecture, cutting across all 4 phases.", "href": "/intelligence-lab" },
-      { "level": "Level 3", "title": "Leadership Academy", "description": "Who sustains it: your own team learns to operate the same model.", "href": "/leadership-academy" }
+      { "level": "Level 3", "title": "Leadership Academy", "description": "Who sustains it: your own team learns to operate the same model.", "href": "/leadership-academy" },
+      { "level": "Level 4", "title": "Digital Presence", "description": "Where you're found: the site and visibility that bring the conversation.", "href": "/presencia-digital" }
     ]
   },
   "whyCyrrus": {

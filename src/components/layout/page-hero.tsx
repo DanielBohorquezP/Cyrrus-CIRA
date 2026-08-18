@@ -1,6 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
+import { Img } from "@/components/ui/img";
 
 interface PageHeroProps {
   eyebrow: string;
@@ -59,17 +60,27 @@ export function PageHero({ eyebrow, title, description, children, image }: PageH
     <AnimatedNavyBackground className="py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-2 md:gap-12 md:px-12">
         {copy}
-        <motion.img
+        {/* The hero photo is the page's LCP element, so it skips the generic
+            100vw default: `sizes` matches this column's real rendered width
+            (half of max-w-6xl above the md breakpoint, full width below it),
+            and fetchPriority tells the browser to fetch it ahead of
+            below-the-fold images instead of at default priority. */}
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          src={image.src}
-          alt={image.alt}
-          width={560}
-          height={420}
-          loading="eager"
-          className="h-56 w-full rounded-2xl object-cover shadow-xl ring-1 ring-white/10 sm:h-72 md:h-96"
-        />
+        >
+          <Img
+            src={image.src}
+            alt={image.alt}
+            width={560}
+            height={420}
+            loading="eager"
+            fetchPriority="high"
+            sizes="(min-width: 768px) 504px, 100vw"
+            className="h-56 w-full rounded-2xl object-cover shadow-xl ring-1 ring-white/10 sm:h-72 md:h-96"
+          />
+        </motion.div>
       </div>
     </AnimatedNavyBackground>
   );

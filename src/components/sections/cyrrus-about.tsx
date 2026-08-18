@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ArrowUpRight, Compass, Cpu, GraduationCap } from "lucide-react";
+import { ArrowUpRight, Compass, Cpu, GraduationCap, Globe } from "lucide-react";
 import { About3 } from "@/components/ui/about-3";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
 import { RevealGroup, RevealItem } from "@/components/ui/reveal";
@@ -20,7 +20,7 @@ interface CiraPhase {
   title: string;
 }
 
-const icons = [Compass, Cpu, GraduationCap];
+const icons = [Compass, Cpu, GraduationCap, Globe];
 
 /**
  * The three levels are a stack, not three parallel services — level 1 is what

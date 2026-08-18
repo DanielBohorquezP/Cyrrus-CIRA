@@ -62,18 +62,28 @@
         "description": "Un sistema bien implementado que nadie usa no es un proyecto exitoso. Formamos a sus gerentes para que el cambio se sostenga después de que nos vamos — sin que dependa de nosotros.",
         "href": "/leadership-academy",
         "buttonText": "Conocer Leadership Academy"
+      },
+      {
+        "id": "presencia-digital",
+        "tabLabel": "Presencia Digital",
+        "eyebrow": "Cuando su sitio no refleja lo que la empresa vale",
+        "title": "Desarrollo Web y SEO",
+        "description": "Un sitio que nadie encuentra y un posicionamiento que lleva a una puerta que no convierte no generan negocio. Construimos el sitio como activo del negocio y lo hacemos visible donde su cliente busca — y donde le pregunta a una IA.",
+        "href": "/presencia-digital",
+        "buttonText": "Conocer Presencia Digital"
       }
     ]
   },
   "about": {
-    "title": "Un solo modelo, tres niveles que se sostienen entre sí",
-    "description": "No es una lista de servicios sueltos ni cuatro proveedores coordinándose entre sí. Estrategia, arquitectura de IA y gestión del cambio operan bajo un mismo método, con un solo responsable de punta a punta.",
+    "title": "Un solo modelo, cuatro niveles que se sostienen entre sí",
+    "description": "No es una lista de servicios sueltos ni proveedores coordinándose entre sí. Estrategia, arquitectura de IA, gestión del cambio y presencia digital operan bajo un mismo método, con un solo responsable de punta a punta.",
     "conocerMas": "Conocer más",
     "clientesTitulo": "Empresas que ya confiaron en Cyrrus",
     "levels": [
       { "level": "Nivel 1", "title": "Método CIRA", "description": "Qué se logra: el negocio. Construir · Identificar · Realizar · Adoptar.", "href": "/metodo-cira" },
       { "level": "Nivel 2", "title": "Cyrrus Intelligence Lab", "description": "Cómo se acelera: gobierno y arquitectura de IA, transversal a las 4 fases.", "href": "/intelligence-lab" },
-      { "level": "Nivel 3", "title": "Leadership Academy", "description": "Quién lo sostiene: su equipo aprende a operar el mismo modelo.", "href": "/leadership-academy" }
+      { "level": "Nivel 3", "title": "Leadership Academy", "description": "Quién lo sostiene: su equipo aprende a operar el mismo modelo.", "href": "/leadership-academy" },
+      { "level": "Nivel 4", "title": "Presencia Digital", "description": "Dónde lo encuentran: el sitio y la visibilidad que traen la conversación.", "href": "/presencia-digital" }
     ]
   },
   "whyCyrrus": {

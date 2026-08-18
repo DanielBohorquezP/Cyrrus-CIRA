@@ -243,6 +243,60 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/intelligence-lab/gobierno-de-ia" />
   </url>
   <url>
+    <loc>https://www.cyrruscs.com/presencia-digital</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/presencia-digital" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/presencia-digital" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/presencia-digital" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/en/presencia-digital</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/presencia-digital" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/presencia-digital" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/presencia-digital" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/presencia-digital/desarrollo-web</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/presencia-digital/desarrollo-web" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/presencia-digital/desarrollo-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/presencia-digital/desarrollo-web" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/en/presencia-digital/desarrollo-web</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/presencia-digital/desarrollo-web" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/presencia-digital/desarrollo-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/presencia-digital/desarrollo-web" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/presencia-digital/seo</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/presencia-digital/seo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/presencia-digital/seo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/presencia-digital/seo" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/en/presencia-digital/seo</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/presencia-digital/seo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/presencia-digital/seo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/presencia-digital/seo" />
+  </url>
+  <url>
     <loc>https://www.cyrruscs.com/leadership-academy</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
