@@ -481,19 +481,89 @@
   }
 }
 
+/* --- Constant decorative gradients ---------------------------------------
+   These were `style={{ background: "..." }}` on the elements that use them.
+   They have to be classes, for the same reason the nav panel's transition does
+   (see motion-navigation-menu.tsx): the prerendered HTML is serialised out of a
+   live DOM, and the browser rewrites an inline `background` shorthand into
+   eight longhands *and* rewrites every hex colour to `rgb()`. React writes the
+   original string, compares the two when it hydrates, and fails — which costs
+   the whole page its hydration for the sake of a gradient that never changes.
+
+   Nothing here is dynamic, so a stylesheet was always the right home for it. */
+.navy-radial-bg {
+  background: radial-gradient(
+    125% 125% at 50% 10%,
+    color-mix(in srgb, var(--cyan) 35%, var(--navy)) 0%,
+    var(--navy) 35%,
+    #020818 75%,
+    #000000 100%
+  );
+}
+
+/* The still frame under ShaderHero's WebGL surface — the same five stops as the
+   shader, so the handoff reads as the gradient starting to move rather than as
+   a different image swapping in. It is also what the LCP frame is measured
+   against, and what a visitor without WebGL keeps. */
+.hero-still-gradient {
+  background:
+    radial-gradient(120% 90% at 18% 12%, #1b6fc2 0%, transparent 55%),
+    radial-gradient(110% 80% at 82% 22%, #3fb6e8 0%, transparent 50%),
+    radial-gradient(130% 110% at 60% 95%, #123a7d 0%, transparent 60%),
+    linear-gradient(160deg, #0a2c63 0%, #020818 70%);
+}
+
+/* Gradient-filled headline word (background-clip: text). */
+.hero-accent-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #3fb6e8 40%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hover wash on the CIRA acronym tiles. */
+.cira-tile-glow {
+  background: radial-gradient(
+    circle at 50% 30%,
+    color-mix(in srgb, var(--cyan) 18%, transparent),
+    transparent 70%
+  );
+}
+
+/* Outlined CIRA initials on the journey strip. A class, not
+   `style={{ WebkitTextStroke: "2px var(--navy)" }}`: it's a shorthand, so the
+   browser splits it into -webkit-text-stroke-width/-color when the prerendered
+   HTML is serialised — and because the colour is a var(), both longhands come
+   back out empty. Nothing React writes could ever match that. */
+.cira-initial-outline {
+  -webkit-text-stroke: 2px var(--navy);
+}
+
 /* --- Pulsing dot spiral --------------------------------------------------
    Used by AnimatedNavyBackground. This lived in a `<style>` element inside the
    component, which meant every instance inserted an identical stylesheet — the
    home page alone mounts four, and each insertion invalidates style for the
    whole document. Declared once here it is parsed once with the rest of the
-   CSS and costs nothing per instance. */
+   CSS and costs nothing per instance.
+
+   Opacity only, and applied to eight band wrappers rather than to all 90
+   `<circle>` elements. The previous version animated `transform` + `opacity`
+   on every circle: SVG element animations aren't composited in Blink, so 90 of
+   them meant a main-thread style recalc for 90 elements every frame — ~190ms
+   of blocking time measured from this component alone, plus Lighthouse's
+   "avoid non-composited animations" flag. On a plain <div> an opacity
+   animation is compositor-owned and costs the main thread nothing.
+
+   Dropping the scale is deliberate: the dots are 1.6px inside a container at
+   30% opacity behind a radial mask, so brightness was doing essentially all
+   the perceptual work anyway. The opacity range is widened slightly to make up
+   for it. */
 @keyframes navy-dot-pulse {
-  0%, 100% { transform: scale(0.5); opacity: 0.25; }
-  50% { transform: scale(1.35); opacity: 0.9; }
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
 }
 .navy-dot-pulse {
-  transform-box: fill-box;
-  transform-origin: center;
+  will-change: opacity;
   animation: navy-dot-pulse 3s ease-in-out infinite;
 }
 [data-motion="off"] .navy-dot-pulse {
@@ -502,7 +572,18 @@
 @media (prefers-reduced-motion: reduce) {
   .navy-dot-pulse {
     animation: none;
+    opacity: 0.6;
   }
+}
+
+/* --- Globe marker pulse --------------------------------------------------
+   Was a `<style>` element rendered inside GlobePulse
+   (src/components/ui/cobe-globe-pulse.tsx). Same reasoning as the dot spiral
+   and the logo marquee below: an inline stylesheet is re-inserted per instance
+   and each insertion invalidates style for the whole document. */
+@keyframes pulse-expand {
+  0% { transform: scaleX(0.3) scaleY(0.3); opacity: 0.8; }
+  100% { transform: scaleX(1.5) scaleY(1.5); opacity: 0; }
 }
 
 /* --- Logo marquee --------------------------------------------------------
@@ -615,8 +696,11 @@
      It only matters before a section has been rendered once — after that the
      `auto` keyword makes the browser use the real size it remembers — but a
      bad estimate makes the scrollbar visibly resize on the first scroll
-     through the page. */
-  contain-intrinsic-size: auto 650px;
+     through the page. Sections whose real height is nowhere near the average
+     override it with `[--cv-h:...]` at the call site rather than skipping the
+     class and paying full layout, which is what the short TrustBar and the
+     very tall CyrrusAbout used to do. */
+  contain-intrinsic-size: auto var(--cv-h, 650px);
 }
 
 /* --- Navigation menu panel ----------------------------------------------

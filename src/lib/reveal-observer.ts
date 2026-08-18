@@ -1,3 +1,5 @@
+import { isPrerender } from "@/lib/prerender";
+
 /**
  * One IntersectionObserver for every scroll reveal on the page.
  *
@@ -11,8 +13,14 @@
 
 /** Marks that JS is running, so the pre-reveal offset only applies when
  *  something is actually able to animate it away. Without this the offset
- *  would be baked into the prerendered HTML for no-JS visitors forever. */
-if (typeof document !== "undefined") {
+ *  would be baked into the prerendered HTML for no-JS visitors forever.
+ *
+ *  Skipped during prerender capture for a second reason: with the offset never
+ *  applied, the observer below never adds `is-revealed` either, so the static
+ *  HTML carries exactly the classes React renders. That's what lets the page be
+ *  hydrated instead of rebuilt (see src/lib/prerender.ts) — and it means the
+ *  markup crawlers read has no animation state baked into it at all. */
+if (typeof document !== "undefined" && !isPrerender()) {
   document.documentElement.classList.add("reveal-ready");
 }
 
@@ -43,7 +51,12 @@ function getObserver(): IntersectionObserver | null {
 
 /** Reveals `node` the first time it scrolls into view. Returns a cleanup fn. */
 export function observeReveal(node: Element): () => void {
-  // Already revealed by the prerender or a previous mount — nothing to watch.
+  // Nothing to reveal during prerender capture: without `reveal-ready` on
+  // <html> there is no offset to animate away, and adding `is-revealed` here
+  // would put a class into the static HTML that React doesn't render.
+  if (isPrerender()) return () => {};
+
+  // Already revealed by a previous mount — nothing to watch.
   if (node.classList.contains("is-revealed")) return () => {};
 
   const obs = getObserver();

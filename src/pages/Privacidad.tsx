@@ -2,6 +2,10 @@ import { useTranslation } from "react-i18next";
 import { LegalPage } from "@/components/layout/legal-page";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/legal";
 
 export default function Privacidad() {
   const { t } = useTranslation("legal");
@@ -40,8 +44,7 @@ export default function Privacidad() {
             </ul>
             <p>
               We also passively collect browsing data through Google Analytics and other analytics and
-              marketing tools, only if you consent via the site's cookie notice — see our{" "}
-              <a href="/en/cookies">Cookie Policy</a> for details on which cookies are used and how to
+              marketing tools, only if you consent via the site's cookie notice — see our <a href="/en/cookies">Cookie Policy</a> for details on which cookies are used and how to
               disable them.
             </p>
           </section>
@@ -85,8 +88,7 @@ export default function Privacidad() {
               <li>Revoke authorization or object to the processing of your data.</li>
             </ul>
             <p>
-              To exercise these rights, write to us at{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
+              To exercise these rights, write to us at <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
             </p>
           </section>
 
@@ -109,8 +111,7 @@ export default function Privacidad() {
           <section>
             <h2>9. Contact</h2>
             <p>
-              If you have questions about this policy or how your data is handled, write to us at{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
+              If you have questions about this policy or how your data is handled, write to us at <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
             </p>
           </section>
         </>
@@ -121,8 +122,7 @@ export default function Privacidad() {
             <p>
               Cyrrus Consulting Services S.A.S. (NIT 9011219531) ("Cyrrus", "nosotros") es responsable del
               tratamiento de los datos personales que se recolectan a través de este sitio web. Para
-              cualquier consulta sobre esta política, puede escribirnos a{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
+              cualquier consulta sobre esta política, puede escribirnos a <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
             </p>
           </section>
 
@@ -183,8 +183,7 @@ export default function Privacidad() {
               <li>Revocar la autorización u oponerse al tratamiento de sus datos.</li>
             </ul>
             <p>
-              Para ejercer estos derechos, escríbanos a{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
+              Para ejercer estos derechos, escríbanos a <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
             </p>
           </section>
 
@@ -207,8 +206,7 @@ export default function Privacidad() {
           <section>
             <h2>9. Contacto</h2>
             <p>
-              Si tiene preguntas sobre esta política o el tratamiento de sus datos, escríbanos a{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
+              Si tiene preguntas sobre esta política o el tratamiento de sus datos, escríbanos a <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>.
             </p>
           </section>
         </>

@@ -5,6 +5,7 @@ import { clientLogoNames } from "@/lib/client-logos";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { InteractiveGlobe } from "@/components/ui/interactive-globe";
+import { ClientOnly } from "@/components/ui/client-only";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
@@ -20,6 +21,11 @@ import {
   ShoppingBag,
   HeartPulse,
 } from "lucide-react";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/paginas";
+import { Img } from "@/components/ui/img";
 
 interface Stat {
   value: string;
@@ -107,7 +113,13 @@ export default function Experiencia() {
         title={t("experiencia.hero.title")}
         description={t("experiencia.hero.description")}
         showVisual={false}
-        visual={<InteractiveGlobe className="mx-auto" />}
+        visual={
+          // Deferred for the same reason as CyrrusGlobe — a WebGL canvas can't be
+          // prerendered into markup React will agree with.
+          <ClientOnly fallback={<div className="mx-auto aspect-square w-full max-w-[520px]" />}>
+            <InteractiveGlobe className="mx-auto" />
+          </ClientOnly>
+        }
       />
 
       <section className="w-full bg-background py-24 md:py-32">
@@ -148,7 +160,7 @@ export default function Experiencia() {
                     <industry.icon className="h-5 w-5" strokeWidth={1.75} />
                   </span>
                   <span className="text-sm font-medium text-navy">
-                    {t("experiencia.industriesPrefix")} {industry.name.toLowerCase()}
+                    {`${t("experiencia.industriesPrefix")} ${industry.name.toLowerCase()}`}
                   </span>
                 </RevealItem>
               ))}
@@ -175,12 +187,12 @@ export default function Experiencia() {
                 key={item.src}
                 className="hover:-translate-y-1 overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl"
               >
-                <img
+                <Img
                   src={item.src}
                   alt={item.alt}
                   width={480}
                   height={320}
-                  loading="lazy"
+                  sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
                   className="h-56 w-full object-cover object-top"
                 />
                 <figcaption className="p-4 text-sm text-gray">
@@ -212,12 +224,12 @@ export default function Experiencia() {
                 }`}
               >
                 {member.photo ? (
-                  <img
+                  <Img
                     src={member.photo}
-                    alt={member.name}
+                    alt={member.name ?? ""}
                     width={64}
                     height={64}
-                    loading="lazy"
+                    sizes="64px"
                     className="h-16 w-16 rounded-full object-cover"
                   />
                 ) : (
@@ -260,12 +272,10 @@ export default function Experiencia() {
                 key={name}
                 className="hover:-translate-y-0.5 flex h-20 items-center justify-center rounded-xl bg-navy p-3 shadow-sm"
               >
-                <img
+                <Img
                   src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
                   alt={name}
-                  width={160}
-                  height={80}
-                  loading="lazy"
+                  sizes="140px"
                   className="h-full w-full object-contain"
                 />
               </RevealItem>

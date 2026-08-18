@@ -6,6 +6,10 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Blog7 } from "@/components/ui/blog7";
 import { upcomingTopics } from "@/lib/perspectivas-topics";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/paginas";
 
 export default function Perspectivas() {
   const { t } = useTranslation("paginas");

@@ -9,6 +9,11 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal } from "@/components/ui/reveal";
 import { Database, Link2, TrendingUp } from "lucide-react";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/intelligence-lab";
+import { Img } from "@/components/ui/img";
 
 interface Item {
   title: string;
@@ -96,13 +101,13 @@ export default function ArquitecturaDeIA() {
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-5">
-            <img
+            <Img
               src="/assets/decoracion/1785866223775.jpg"
               alt="Escritorio con monitores mostrando la plataforma de Cyrrus"
               width={480}
               height={560}
-              loading="lazy"
-              className="h-64 w-full rounded-2xl object-cover md:h-full"
+                  className="h-64 w-full rounded-2xl object-cover md:h-full"
+              sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
             />
           </Reveal>
           <Reveal delay={0.1} className="space-y-6 text-lg leading-relaxed text-gray md:col-span-7">

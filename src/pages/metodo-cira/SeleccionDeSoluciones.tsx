@@ -23,6 +23,11 @@ import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/seleccion-soluciones";
+import { Img } from "@/components/ui/img";
 
 interface CriteriaItem {
   title: string;
@@ -148,12 +153,11 @@ export default function SeleccionDeSoluciones() {
               delay={0.1}
               className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
             >
-              <img
+              <Img
                 src="/assets/decoracion/Presentacion-BEC-jackson.webp"
                 alt="Jackson Bohórquez, fundador de Cyrrus, presentando la metodología de evaluación de proveedores"
                 width={470}
                 height={730}
-                loading="lazy"
                 // object-top: this photo is a tall portrait crop with
                 // Jackson's face right at the top. Once the row's height
                 // followed the (shorter) text column, object-cover's default
@@ -161,6 +165,7 @@ export default function SeleccionDeSoluciones() {
                 // his body. Anchoring to the top keeps the face in frame at
                 // any row height.
                 className="absolute inset-0 h-full w-full object-cover object-top"
+                sizes="(min-width: 1152px) 440px, (min-width: 768px) 40vw, calc(100vw - 3rem)"
               />
             </Reveal>
 
@@ -277,13 +282,13 @@ export default function SeleccionDeSoluciones() {
                   to={s.href}
                   className="block h-full overflow-hidden rounded-2xl border border-border bg-card transition-[border-color,background-color] duration-150 ease-out hover:border-navy hover:bg-white"
                 >
-                  <img
+                  <Img
                     src={s.image}
                     alt=""
                     width={400}
                     height={160}
-                    loading="lazy"
                     className="h-32 w-full object-cover"
+                    sizes="(min-width: 1152px) 352px, (min-width: 640px) 45vw, calc(100vw - 3rem)"
                   />
                   <div className="p-6">
                     <h3 className="text-lg font-semibold text-navy">{s.label}</h3>

@@ -8,6 +8,10 @@ import { Footer } from "@/components/sections/footer";
 import { Reveal } from "@/components/ui/reveal";
 import { BorderButton } from "@/components/ui/border-button";
 import { CheckCircle2, MapPin, Phone } from "lucide-react";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/contacto";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -250,7 +254,10 @@ export default function Contacto() {
           </Reveal>
 
           <p className="mt-6 text-center text-xs text-muted-foreground">
-            {t("form.emailNote")}{" "}
+            {/* The trailing space is part of the string rather than a separate
+                {" "} child — two adjacent text nodes serialise as one, and React
+                then can't hydrate them. */}
+            {`${t("form.emailNote")} `}
             <a href="mailto:contacto@cyrruscs.com" className="underline">
               contacto@cyrruscs.com
             </a>

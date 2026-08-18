@@ -62,7 +62,7 @@ export default function Home() {
       <TrustBar />
       <CeoSection />
       <CiraJourney />
-      <AnimatedNavyBackground className="px-6 py-14 md:px-12">
+      <AnimatedNavyBackground className="cv-section px-6 py-14 md:px-12 [--cv-h:800px]">
         <div className="mx-auto max-w-6xl">
           <HeroServicesTabs />
         </div>

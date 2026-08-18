@@ -135,12 +135,6 @@ export function GlobePulse({
 
   return (
     <div className={`relative aspect-square select-none ${className}`}>
-      <style>{`
-        @keyframes pulse-expand {
-          0% { transform: scaleX(0.3) scaleY(0.3); opacity: 0.8; }
-          100% { transform: scaleX(1.5) scaleY(1.5); opacity: 0; }
-        }
-      `}</style>
       <canvas
         ref={canvasRef}
         onPointerDown={handlePointerDown}

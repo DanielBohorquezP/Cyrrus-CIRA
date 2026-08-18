@@ -10,6 +10,10 @@ import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { FaqSection } from "@/components/sections/faq-section";
 import { ShieldCheck, Network, Bot, ArrowRight } from "lucide-react";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/intelligence-lab";
 
 interface Pillar {
   title: string;

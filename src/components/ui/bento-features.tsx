@@ -156,13 +156,7 @@ export function FeaturesSection({
 
   return (
     <div className="relative w-full">
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          background:
-            "radial-gradient(125% 125% at 50% 10%, color-mix(in srgb, var(--cyan) 35%, var(--navy)) 0%, var(--navy) 35%, #020818 75%, #000000 100%)",
-        }}
-      />
+      <div className="navy-radial-bg absolute inset-0 z-0" />
 
       <section className="relative mx-auto max-w-6xl px-6 py-20 md:px-12 md:py-32 text-white">
         <div

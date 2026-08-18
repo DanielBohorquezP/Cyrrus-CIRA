@@ -15,6 +15,11 @@ import { Footer } from "@/components/sections/footer";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/seleccion-soluciones";
+import { Img } from "@/components/ui/img";
 
 interface DetailEntry {
   label: string;
@@ -94,14 +99,14 @@ export default function SolucionDetalle() {
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
             <Reveal className="md:col-span-4">
-              <img
+              <Img
                 src={assets.image}
                 alt={entry.label}
                 width={480}
                 height={600}
-                loading="lazy"
                 className="h-64 w-full rounded-2xl object-cover md:h-full"
                 style={{ objectPosition: assets.imagePosition ?? "center" }}
+                sizes="(min-width: 1152px) 352px, (min-width: 768px) 33vw, calc(100vw - 3rem)"
               />
             </Reveal>
             <div className="md:col-span-8">
@@ -159,7 +164,7 @@ export default function SolucionDetalle() {
           <Reveal>
             <ClosingIcon className="mx-auto h-8 w-8 text-blue" />
             <p className="mt-6 border-l-2 border-cyan pl-6 text-left text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              &ldquo;{t("closingQuote")}&rdquo;
+              {`“${t("closingQuote")}”`}
             </p>
           </Reveal>
         </div>

@@ -7,6 +7,11 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { LinkedInIcon } from "@/components/ui/social-media";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/paginas";
+import { Img } from "@/components/ui/img";
 
 interface Milestone {
   caption: string;
@@ -69,11 +74,11 @@ export default function QuienesSomos() {
         description={t("quienesSomos.hero.description")}
         showVisual={false}
         visual={
-          <img
+          <Img
             src="/assets/logos-cyrrus/cyrrus-logo-blanco.png"
             alt="Cyrrus Consulting Services"
-            loading="lazy"
-            className="w-full max-w-sm opacity-90"
+              className="w-full max-w-sm opacity-90"
+            sizes="(min-width: 640px) 384px, 100vw"
           />
         }
       />
@@ -81,13 +86,14 @@ export default function QuienesSomos() {
       <section className="w-full bg-background py-24 md:py-32">
         <div className="mx-auto grid max-w-5xl grid-cols-1 items-start gap-12 px-6 md:grid-cols-[220px_1fr] md:px-12">
           <Reveal>
-            <img
+            <Img
               src="/assets/decoracion/JacksonCEO1.webp"
               alt={t("quienesSomos.photoAlt")}
               width={160}
               height={160}
               loading="eager"
               className="mx-auto h-40 w-40 rounded-full object-cover ring-4 ring-light-blue md:mx-0"
+              sizes="(min-width: 768px) 420px, 100vw"
             />
             <a
               href="https://www.linkedin.com/in/jacksonbohorquez"
@@ -150,13 +156,13 @@ export default function QuienesSomos() {
           <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {milestones.map((item) => (
               <RevealItem as="figure" key={item.src} >
-                <img
+                <Img
                   src={item.src}
                   alt={item.alt}
                   width={480}
                   height={320}
-                  loading="lazy"
                   className="h-56 w-full rounded-2xl object-cover object-top"
+                  sizes="(min-width: 640px) 352px, calc(100vw - 3rem)"
                 />
                 <figcaption className="mt-3 text-sm text-gray">
                   {item.caption}

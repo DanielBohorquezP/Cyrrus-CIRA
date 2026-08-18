@@ -49,7 +49,12 @@ const esRoutes = [
 // Every ES route now has an /en counterpart at the same slug.
 const enRoutes = esRoutes.map((r) => (r === "/" ? "/en" : `/en${r}`));
 
-const routes = [...esRoutes, ...enRoutes];
+// PRERENDER_ONLY=/,/en limits the run to a few routes. Only for iterating
+// locally — a real build must render every route or dist/ ships stale HTML.
+const routeFilter = process.env.PRERENDER_ONLY?.split(",").map((r) => r.trim()).filter(Boolean);
+const routes = routeFilter?.length
+  ? [...esRoutes, ...enRoutes].filter((r) => routeFilter.includes(r))
+  : [...esRoutes, ...enRoutes];
 
 // --- static file server over dist/, with SPA fallback to the pristine shell ---
 const MIME = {
@@ -220,6 +225,13 @@ async function tryRenderRoute(route, { forceFreshBrowser = false } = {}) {
         // Only "/" ever consults this — LanguageProvider returns early for every
         // /en route regardless of the value.
         await page.addInitScript(() => {
+          // Marks this load as a capture, not a visit. Deferred/client-only UI
+          // (the WebGL hero gradient, the dot spirals, the cookie banner) reads
+          // this and stays in its initial state, so what we write to disk is
+          // exactly what React renders on its first pass — which is what makes
+          // it hydratable rather than something the client has to rebuild.
+          // See src/lib/prerender.ts.
+          window.__CYRRUS_PRERENDER__ = true;
           try {
             window.localStorage.setItem("cyrrus-lang-pref", "es");
           } catch {

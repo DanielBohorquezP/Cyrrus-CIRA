@@ -2,6 +2,10 @@ import { useTranslation } from "react-i18next";
 import { LegalPage } from "@/components/layout/legal-page";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/legal";
 
 export default function Cookies() {
   const { t } = useTranslation("legal");
@@ -54,8 +58,7 @@ export default function Cookies() {
             </ul>
             <p>
               These cookies only activate if you give consent via the site's cookie notice. Google may
-              process this information according to its own{" "}
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
+              process this information according to its own <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
                 privacy policy
               </a>
               .
@@ -78,11 +81,9 @@ export default function Cookies() {
               keep in mind that blocking strictly necessary cookies may affect the site's functionality.
             </p>
             <p>
-              You can also install the{" "}
-              <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer">
+              You can also install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer">
                 Google Analytics opt-out add-on
-              </a>{" "}
-              to prevent your data from being sent to Google Analytics on any website.
+              </a> to prevent your data from being sent to Google Analytics on any website.
             </p>
           </section>
 
@@ -97,9 +98,7 @@ export default function Cookies() {
           <section>
             <h2>5. Contact</h2>
             <p>
-              For questions about this policy, write to us at{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>. See also our{" "}
-              <a href="/en/privacidad">Privacy Policy</a>.
+              For questions about this policy, write to us at <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>. See also our <a href="/en/privacidad">Privacy Policy</a>.
             </p>
           </section>
         </>
@@ -139,8 +138,7 @@ export default function Cookies() {
             </ul>
             <p>
               Estas cookies solo se activan si usted da su consentimiento en el aviso de cookies del sitio.
-              Google puede procesar esta información según su propia{" "}
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
+              Google puede procesar esta información según su propia <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
                 política de privacidad
               </a>
               .
@@ -164,15 +162,13 @@ export default function Cookies() {
               puede afectar el funcionamiento del sitio.
             </p>
             <p>
-              Adicionalmente, puede instalar el{" "}
-              <a
+              Adicionalmente, puede instalar el <a
                 href="https://tools.google.com/dlpage/gaoptout"
                 target="_blank"
                 rel="noreferrer"
               >
                 complemento de inhabilitación de Google Analytics
-              </a>{" "}
-              para evitar que sus datos se envíen a Google Analytics en cualquier sitio web.
+              </a> para evitar que sus datos se envíen a Google Analytics en cualquier sitio web.
             </p>
           </section>
 
@@ -187,9 +183,7 @@ export default function Cookies() {
           <section>
             <h2>5. Contacto</h2>
             <p>
-              Para preguntas sobre esta política, escríbanos a{" "}
-              <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>. Vea también nuestra{" "}
-              <a href="/privacidad">Política de Privacidad</a>.
+              Para preguntas sobre esta política, escríbanos a <a href="mailto:contacto@cyrruscs.com">contacto@cyrruscs.com</a>. Vea también nuestra <a href="/privacidad">Política de Privacidad</a>.
             </p>
           </section>
         </>

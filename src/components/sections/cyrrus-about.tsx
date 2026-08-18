@@ -6,6 +6,7 @@ import { LogoCarousel } from "@/components/ui/logo-carousel";
 import { RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { clientLogoNames } from "@/lib/client-logos";
 import { langPath, useLang } from "@/lib/language";
+import { Img } from "@/components/ui/img";
 
 interface Level {
   level: string;
@@ -117,12 +118,10 @@ const clientLogos = clientLogoNames.map((name) => (
     key={name}
     className="flex h-16 w-40 items-center justify-center rounded-lg bg-white/10 p-2.5"
   >
-    <img
+    <Img
       src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
       alt={name}
-      width={160}
-      height={80}
-      loading="lazy"
+      sizes="140px"
       className="h-full w-full object-contain"
     />
   </div>

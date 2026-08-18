@@ -8,6 +8,7 @@ import {
   type SocialItem,
 } from "@/components/ui/social-media";
 import { langPath, useLang } from "@/lib/language";
+import { Img } from "@/components/ui/img";
 
 const socialLinks: SocialItem[] = [
   {
@@ -55,13 +56,13 @@ export function Footer() {
     <footer className="cv-section w-full border-t border-border bg-background py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-center md:flex-row md:justify-between md:text-left">
         <Link to={lang === "en" ? "/en" : "/"}>
-          <img
+          <Img
             src="/assets/logos-cyrrus/cyrrus-logo-negro.png"
             alt="Cyrrus Consulting Services"
             width={140}
             height={44}
-            loading="lazy"
-            className="h-11 w-auto"
+              className="h-11 w-auto"
+            sizes="140px"
           />
         </Link>
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
@@ -89,7 +90,10 @@ export function Footer() {
             ))}
           </nav>
           <div className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Cyrrus Consulting Services
+            {/* One string, not `© {year} Cyrrus...`. Adjacent literal-and-expression
+                children are separate text nodes to React but a single one once the
+                page has been serialised to HTML, which fails hydration. */}
+            {`© ${new Date().getFullYear()} Cyrrus Consulting Services`}
           </div>
         </div>
       </div>

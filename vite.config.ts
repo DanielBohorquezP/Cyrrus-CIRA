@@ -2,10 +2,11 @@ import path from "node:path"
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import { preloadFonts } from './scripts/vite-preload-fonts.js'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), preloadFonts()],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "./src"),
@@ -27,7 +28,15 @@ export default defineConfig({
         // splits also mean a copy change to a locale file doesn't invalidate
         // the React vendor chunk in visitors' caches.
         manualChunks(id) {
-          if (id.includes("/src/i18n/locales/")) return "locales";
+          // Only the three namespaces src/i18n/index.ts bundles eagerly are
+          // grouped here. The rest are side-effect-imported by the route that
+          // needs them (src/i18n/ns/*.ts), and naming them here would drag all
+          // ~150KB of JSON back onto the critical path — the exact thing that
+          // split was for. Left unnamed, rollup files each one with the lazy
+          // route chunk that imports it.
+          if (/\/src\/i18n\/locales\/(es|en)\/(common|home|metodo-cira)\.json/.test(id)) {
+            return "locales";
+          }
           if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) {
             return "react-vendor";
           }

@@ -17,6 +17,11 @@ import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/gestion-proyectos";
+import { Img } from "@/components/ui/img";
 
 interface Item {
   title: string;
@@ -119,13 +124,13 @@ export default function GestionDeProyectos() {
               delay={0.1}
               className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
             >
-              <img
+              <Img
                 src="/assets/decoracion/IMG_20200313_092713184.jpg"
                 alt="Consultor de Cyrrus presentando metodología de gerencia de proyectos"
                 width={640}
                 height={427}
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover"
+                      className="absolute inset-0 h-full w-full object-cover"
+                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
               />
             </Reveal>
 
@@ -168,13 +173,13 @@ export default function GestionDeProyectos() {
               delay={0.1}
               className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto md:min-h-[220px]"
             >
-              <img
+              <Img
                 src="/assets/decoracion/IMG_20230228_091017.jpg"
                 alt="Presentación de gerencia de proyectos de Cyrrus"
                 width={640}
                 height={427}
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover"
+                      className="absolute inset-0 h-full w-full object-cover"
+                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
               />
             </Reveal>
           </div>

@@ -47,7 +47,10 @@ export function Testimonials() {
                     {item.name}
                   </div>
                   <div className="text-sm text-gray">
-                    {item.role} · {item.company}
+                    {/* One interpolation: `{a} · {b}` is three adjacent children,
+                        i.e. three text nodes React expects to hydrate, but the
+                        DOM merges them into one when the page is serialised. */}
+                    {`${item.role} · ${item.company}`}
                   </div>
                 </figcaption>
               </div>

@@ -9,6 +9,11 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal } from "@/components/ui/reveal";
 import { Workflow, Bot, Gauge } from "lucide-react";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/intelligence-lab";
+import { Img } from "@/components/ui/img";
 
 interface Item {
   title: string;
@@ -101,13 +106,13 @@ export default function AutomatizacionesDesarrollo() {
             ))}
           </Reveal>
           <Reveal className="order-1 md:order-2 md:col-span-5">
-            <img
+            <Img
               src="/assets/decoracion/1785866223667.jpg"
               alt="Escritorio con monitores mostrando la plataforma de Cyrrus"
               width={480}
               height={560}
-              loading="lazy"
-              className="h-64 w-full rounded-2xl object-cover md:h-full"
+                  className="h-64 w-full rounded-2xl object-cover md:h-full"
+              sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
             />
           </Reveal>
         </div>

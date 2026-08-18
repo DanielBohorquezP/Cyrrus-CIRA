@@ -8,6 +8,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
+import { Img } from "@/components/ui/img";
 
 interface Post {
   id: string;
@@ -102,13 +103,13 @@ const Blog7 = ({
           {posts.map((post) => (
             <Card key={post.id} className="grid grid-rows-[auto_auto_1fr_auto]">
               <div className="relative aspect-[16/9] w-full">
-                <img
+                <Img
                   src={post.image}
                   alt={post.title}
                   width={400}
                   height={240}
-                  loading="lazy"
                   className="h-full w-full object-cover object-center"
+                  sizes="(min-width: 1024px) 368px, (min-width: 640px) 50vw, 100vw"
                 />
                 <div className="absolute inset-0 bg-navy/70" aria-hidden="true" />
                 <span className="absolute inset-0 flex items-center justify-center px-4 text-center">
@@ -126,7 +127,10 @@ const Blog7 = ({
               <CardFooter>
                 <span className="flex items-center text-muted-foreground">
                   <Clock className="mr-2 size-4" />
-                  Se publica en {post.published}
+                  {/* Single interpolation: literal text next to an expression is
+                      two adjacent text nodes to React, but one after the DOM
+                      serialises it, which breaks hydration of the whole page. */}
+                  {`Se publica en ${post.published}`}
                 </span>
               </CardFooter>
             </Card>

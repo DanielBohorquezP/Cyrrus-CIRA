@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { BorderButton } from "@/components/ui/border-button";
+import { Img } from "@/components/ui/img";
 
 export interface TabPanel {
   id: string;
@@ -164,12 +165,12 @@ export function TabbedPanels({
             tabIndex={-1}
             aria-hidden="true"
           >
-            <img
+            <Img
               src={panel.image}
               alt={panel.title}
               width={640}
               height={288}
-              loading="lazy"
+              sizes="(min-width: 768px) 640px, 100vw"
               className="h-56 w-full rounded-xl object-cover md:h-72"
             />
           </Link>

@@ -1,4 +1,5 @@
 import { GlobePulse } from "@/components/ui/cobe-globe-pulse";
+import { ClientOnly } from "@/components/ui/client-only";
 
 const countryMarkers = [
   { id: "mexico", location: [19.43, -99.13] as [number, number], delay: 0 },
@@ -16,8 +17,14 @@ const countryMarkers = [
 export function CyrrusGlobe() {
   return (
     <div className="flex h-full w-full items-center justify-center p-6">
+      {/* The canvas mounts after hydration: cobe writes its own attributes and
+          positions every marker from live measurements, so this subtree can
+          never match prerendered markup. See ClientOnly. The placeholder holds
+          the same square box, so nothing moves when it arrives. */}
       <div className="w-full max-w-[420px]">
-        <GlobePulse markers={countryMarkers} speed={0.0035} />
+        <ClientOnly fallback={<div className="aspect-square w-full" />}>
+          <GlobePulse markers={countryMarkers} speed={0.0035} />
+        </ClientOnly>
       </div>
     </div>
   );

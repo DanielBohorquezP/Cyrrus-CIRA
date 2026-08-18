@@ -122,7 +122,12 @@ function Highlight({
           )}
           style={{
             width: rect?.width ?? 0,
-            transform: `translate3d(${rect?.x ?? 0}px, 0, 0)`,
+            // Explicit `px` on the zero axes, not a bare `0`: the prerendered
+            // HTML is serialised out of a live DOM, so the browser normalises
+            // `translate3d(0px, 0, 0)` to `translate3d(0px, 0px, 0px)`. React
+            // compares style strings when it hydrates, and that one character of
+            // difference was enough to fail hydration for the whole page.
+            transform: `translate3d(${rect?.x ?? 0}px, 0px, 0px)`,
             opacity: visible && rect ? 1 : 0,
           }}
         />
@@ -292,10 +297,17 @@ function MotionNavigationMenu({
             // while a panel is open keeps the whole gap inside nav's hoverable
             // subtree, so moving from trigger to panel never "leaves" nav.
             activeValue ? "pointer-events-auto" : "pointer-events-none",
+            // The slide has to be a class, not an inline `transition:` shorthand.
+            // The prerendered HTML is serialised from a live DOM, which expands
+            // shorthands into longhands (transition-duration, -timing-function,
+            // -behavior). React writes the shorthand, compares the two strings
+            // when it hydrates, and fails on the difference. Longhands declared
+            // in a stylesheet never reach the style attribute at all.
+            "transition-transform duration-[260ms] ease-[cubic-bezier(0.22,1,0.36,1)]",
           )}
           style={{
-            transform: `translate3d(${geom.x}px, 0, 0)`,
-            transition: "transform 260ms cubic-bezier(0.22, 1, 0.36, 1)",
+            // px on every axis — see the note on the highlight's transform above.
+            transform: `translate3d(${geom.x}px, 0px, 0px)`,
           }}
         >
           <div

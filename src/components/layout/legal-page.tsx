@@ -23,7 +23,10 @@ export function LegalPage({ eyebrow, title, description, lastUpdated, children }
         <div className="mx-auto max-w-3xl px-6 md:px-12">
           <Reveal>
             <p className="text-sm text-muted-foreground">
-              Última actualización: {lastUpdated}
+              {/* One string: literal text beside an expression is two adjacent
+                  text nodes to React but a single one once the page has been
+                  serialised to HTML, which fails hydration for the whole tree. */}
+              {`Última actualización: ${lastUpdated}`}
             </p>
             <div className="prose-legal mt-8 space-y-8">{children}</div>
           </Reveal>

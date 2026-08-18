@@ -9,6 +9,7 @@ import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
 import { langPath, useLang } from "@/lib/language";
 import { useScrolled } from "@/lib/use-scrolled";
 import { cn } from "@/lib/utils";
+import { Img } from "@/components/ui/img";
 
 function MobileNavAccordionItem({
   item,
@@ -96,13 +97,14 @@ export function SiteHeader() {
       )}
     >
       <Link to={lang === "en" ? "/en" : "/"} className="flex items-center gap-2">
-        <img
+        <Img
           src="/assets/logos-cyrrus/cyrrus-logo-color.webp"
           alt="Cyrrus Consulting Services"
           width={140}
           height={44}
           loading="eager"
           className="h-16 w-auto"
+          sizes="104px"
         />
       </Link>
       <NavMenu items={navItems} variant={"light"} />

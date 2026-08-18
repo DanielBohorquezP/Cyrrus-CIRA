@@ -51,11 +51,7 @@ export function CiraAcronymVisual({ letters, className }: CiraAcronymVisualProps
               {item.word}
             </span>
             <span
-              className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
-              style={{
-                background:
-                  "radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--cyan) 18%, transparent), transparent 70%)",
-              }}
+              className="cira-tile-glow pointer-events-none absolute inset-0 rounded-3xl opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
               aria-hidden="true"
             />
           </motion.div>

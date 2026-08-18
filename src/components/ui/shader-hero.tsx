@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BorderButton } from "@/components/ui/border-button";
+import { isPrerender } from "@/lib/prerender";
 
 // @paper-design/shaders-react used to sit in the entry chunk, so every visitor
 // parsed the shader library and compiled a WebGL program before the page could
@@ -32,15 +33,6 @@ interface ShaderHeroProps extends React.HTMLAttributes<HTMLDivElement> {
 /** How long the hero animates once mounted before freezing into a still frame. */
 const SETTLE_MS = 3000;
 
-/** The still gradient painted before (and behind) the WebGL surface. Same five
- *  stops as the shader, so the handoff reads as the gradient starting to move
- *  rather than as a different image swapping in. */
-const STILL_GRADIENT =
-  "radial-gradient(120% 90% at 18% 12%, #1b6fc2 0%, transparent 55%)," +
-  "radial-gradient(110% 80% at 82% 22%, #3fb6e8 0%, transparent 50%)," +
-  "radial-gradient(130% 110% at 60% 95%, #123a7d 0%, transparent 60%)," +
-  "linear-gradient(160deg, #0a2c63 0%, #020818 70%)";
-
 /**
  * Waits until the browser is genuinely idle before flipping to `true`.
  *
@@ -53,6 +45,11 @@ function useDeferredMount() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
+    // Never during a prerender capture: the still CSS gradient is what belongs
+    // in the static HTML, and mounting the shader there would put it in the
+    // snapshot that hydration has to match. See src/lib/prerender.ts.
+    if (isPrerender()) return;
+
     let idleHandle: number | undefined;
     let timer: number | undefined;
 
@@ -206,7 +203,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
         {/* Painted immediately, and left in place underneath the shader: it is
             what the LCP frame is measured against, and it means a visitor on a
             device without WebGL just sees a still gradient instead of navy. */}
-        <div className="absolute inset-0" style={{ background: STILL_GRADIENT }} />
+        <div className="hero-still-gradient absolute inset-0" />
 
         {shaderReady && !reducedMotion && (
           <Suspense fallback={null}>
@@ -263,14 +260,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
               // is gradient-filled via background-clip, so a line box shorter
               // than the font's descender extent clips descenders (e.g. the
               // "g" in "Strategic") instead of just tightening whitespace.
-              className="block text-3xl font-light leading-[1.2] tracking-wide sm:text-4xl md:text-5xl"
-              style={{
-                background:
-                  "linear-gradient(135deg, #ffffff 0%, #3fb6e8 40%, #ffffff 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
+              className="hero-accent-gradient block text-3xl font-light leading-[1.2] tracking-wide sm:text-4xl md:text-5xl"
             >
               {titleAccent}
             </span>
@@ -335,8 +325,14 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
                 />
               </defs>
               <text className="fill-white/70 text-[9px] font-medium uppercase tracking-widest">
+                {/* One interpolation, not `{badgeText} • {badgeText} •`. Those
+                    are three adjacent children, which React tracks as three
+                    separate text nodes — but the DOM merges them into one when
+                    the prerenderer serialises the page, and React then can't
+                    hydrate the node it expected to find. A single string is a
+                    single text node on both sides. */}
                 <textPath href="#shader-hero-circle" startOffset="0%">
-                  {badgeText} • {badgeText} •
+                  {`${badgeText} • ${badgeText} •`}
                 </textPath>
               </text>
             </svg>

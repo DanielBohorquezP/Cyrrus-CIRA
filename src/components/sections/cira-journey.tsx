@@ -37,10 +37,7 @@ export function CiraJourney() {
               key={step.letter}
               className="border-border px-0 md:px-8 md:first:pl-0 md:[&:not(:first-child)]:border-l"
             >
-              <span
-                className="block text-5xl font-bold leading-none text-light-blue"
-                style={{ WebkitTextStroke: "2px var(--navy)" }}
-              >
+              <span className="cira-initial-outline block text-5xl font-bold leading-none text-light-blue">
                 {step.letter}
               </span>
               <span className="mt-5 block text-sm font-bold uppercase tracking-wider text-gray">

@@ -8,6 +8,11 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal } from "@/components/ui/reveal";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/leadership-academy";
+import { Img } from "@/components/ui/img";
 
 interface WorkshopTranslation {
   title: string;
@@ -73,13 +78,13 @@ export default function CursoDetalle() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-4">
-            <img
+            <Img
               src="/assets/decoracion/IMG-20240215-WA0030.jpg"
               alt="Taller de formación ejecutiva de Cyrrus Leadership Academy"
               width={400}
               height={500}
-              loading="lazy"
-              className="h-56 w-full rounded-2xl object-cover md:h-full"
+                  className="h-56 w-full rounded-2xl object-cover md:h-full"
+              sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
             />
           </Reveal>
           <Reveal delay={0.1} className="space-y-6 text-lg leading-relaxed text-gray md:col-span-8">

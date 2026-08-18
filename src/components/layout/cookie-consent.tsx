@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { BorderButton } from "@/components/ui/border-button";
 import { loadAnalytics } from "@/lib/analytics";
 import { langFromPathname, langPath } from "@/lib/language";
+import { isPrerender } from "@/lib/prerender";
 
 const STORAGE_KEY = "cyrrus-cookie-consent";
 
@@ -21,6 +22,10 @@ export function CookieConsent() {
   const lang = langFromPathname(useLocation().pathname);
 
   useEffect(() => {
+    // The banner is a client-only decision (it depends on localStorage), so it
+    // must not appear in the prerendered snapshot that gets hydrated.
+    if (isPrerender()) return;
+
     const existing = getCookieConsent();
     if (!existing) {
       setVisible(true);
@@ -55,8 +60,7 @@ export function CookieConsent() {
         <p className="flex-1 text-base leading-relaxed text-gray">
           Usamos cookies estrictamente necesarias para que este sitio funcione. Solo si usted lo
           acepta, usamos también cookies de Google Analytics y otras herramientas para entender
-          cómo se usa el sitio. Puede leer más en nuestra{" "}
-          <Link to={langPath("/cookies", lang)} className="text-blue underline underline-offset-2">
+          cómo se usa el sitio. Puede leer más en nuestra <Link to={langPath("/cookies", lang)} className="text-blue underline underline-offset-2">
             Política de Cookies
           </Link>
           .

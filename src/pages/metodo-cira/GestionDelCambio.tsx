@@ -18,6 +18,11 @@ import { PageFeatureImage } from "@/components/sections/page-feature-image";
 import { FaqSection } from "@/components/sections/faq-section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/gestion-cambio";
+import { Img } from "@/components/ui/img";
 
 interface Item {
   title: string;
@@ -119,13 +124,13 @@ export default function GestionDelCambio() {
               delay={0.1}
               className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
             >
-              <img
+              <Img
                 src="/assets/decoracion/evento-jackson-moderador.jpeg"
                 alt="Jackson Bohórquez moderando panel sobre liderazgo y gestión del cambio"
                 width={640}
                 height={427}
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover"
+                      className="absolute inset-0 h-full w-full object-cover"
+                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
               />
             </Reveal>
 
@@ -142,8 +147,7 @@ export default function GestionDelCambio() {
                 ))}
               </ul>
               <p className="mt-6 text-base leading-relaxed text-gray">
-                {t("intro.academyLinkText")}{" "}
-                <Link to={academyPath} className="text-navy underline underline-offset-2">
+                {`${t("intro.academyLinkText")} `}<Link to={academyPath} className="text-navy underline underline-offset-2">
                   {t("intro.academyLinkLabel")}
                 </Link>
                 .

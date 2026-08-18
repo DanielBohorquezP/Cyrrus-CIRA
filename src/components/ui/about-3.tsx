@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { BorderButton } from "@/components/ui/border-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { Reveal } from "@/components/ui/reveal";
+import { Img } from "@/components/ui/img";
 
 interface About3Props {
   title?: string;
@@ -66,7 +67,7 @@ export const About3 = ({
   const isInternalUrl = (url: string) => url.startsWith("/");
 
   return (
-    <AnimatedNavyBackground className="py-24 md:py-32">
+    <AnimatedNavyBackground className="cv-section py-24 md:py-32 [--cv-h:1400px]">
       <div className="container mx-auto px-6 md:px-12">
         <Reveal className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-4 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -75,33 +76,33 @@ export const About3 = ({
           <p className="text-white/70">{description}</p>
         </Reveal>
         {singleImage && (
-          <img
+          <Img
             src={singleImage.src}
             alt={singleImage.alt}
             width={960}
             height={480}
-            loading="lazy"
+            sizes="(min-width: 1152px) 1104px, 100vw"
             className="max-h-[480px] w-full rounded-xl object-cover"
           />
         )}
         {!singleImage && mainImage && breakout && secondaryImage && (
           <div className="grid gap-7 lg:grid-cols-3">
-            <img
+            <Img
               src={mainImage.src}
               alt={mainImage.alt}
               width={800}
               height={620}
-              loading="lazy"
+              sizes="(min-width: 1024px) 736px, 100vw"
               className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
             />
             <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
               <div className="flex flex-col justify-between gap-6 rounded-xl border border-white/10 bg-white/5 p-7 md:w-1/2 lg:w-auto">
-                <img
+                <Img
                   src={breakout.src}
                   alt={breakout.alt}
                   width={100}
                   height={40}
-                  loading="lazy"
+                  sizes="100px"
                   className="mr-auto h-10"
                 />
                 <div>
@@ -126,12 +127,12 @@ export const About3 = ({
                   </BorderButton>
                 )}
               </div>
-              <img
+              <Img
                 src={secondaryImage.src}
                 alt={secondaryImage.alt}
                 width={400}
                 height={620}
-                loading="lazy"
+                sizes="(min-width: 1024px) 368px, (min-width: 768px) 50vw, 100vw"
                 className="grow basis-0 rounded-xl object-cover md:w-1/2 lg:min-h-0 lg:w-auto"
               />
             </div>
@@ -149,13 +150,13 @@ export const About3 = ({
                   className="flex items-center gap-3"
                   key={company.src + idx}
                 >
-                  <img
+                  <Img
                     src={company.src}
                     alt={company.alt}
                     width={120}
                     height={32}
-                    loading="lazy"
-                    className="h-6 w-auto md:h-8 brightness-0 invert"
+                              className="h-6 w-auto md:h-8 brightness-0 invert"
+                    sizes="120px"
                   />
                 </div>
               ))}

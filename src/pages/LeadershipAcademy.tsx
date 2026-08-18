@@ -19,6 +19,10 @@ import {
   Database,
   Compass,
 } from "lucide-react";
+// Registers this route's translation namespace. Side-effect import: it must
+// run at module scope so the copy is in i18next's store before the component
+// below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
+import "@/i18n/ns/leadership-academy";
 
 const icons: Record<string, typeof Brain> = {
   "ia-para-directivos": Brain,

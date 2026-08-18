@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/ui/reveal";
 import { cn } from "@/lib/utils";
+import { Img } from "@/components/ui/img";
 
 interface PageFeatureImageProps {
   src: string;
@@ -15,12 +16,12 @@ export function PageFeatureImage({ src, alt, caption, fit = "cover" }: PageFeatu
     <section className="w-full bg-background py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <Reveal>
-          <img
+          <Img
             src={src}
             alt={alt}
             width={1200}
             height={600}
-            loading="lazy"
+            sizes="(min-width: 1152px) 1104px, 100vw"
             className={cn(
               "h-64 w-full rounded-2xl sm:h-80 md:h-[26rem]",
               fit === "cover"

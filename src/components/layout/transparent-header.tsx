@@ -9,6 +9,7 @@ import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
 import { langPath, useLang } from "@/lib/language";
 import { useScrolled } from "@/lib/use-scrolled";
 import { cn } from "@/lib/utils";
+import { Img } from "@/components/ui/img";
 
 function MobileNavAccordionItem({
   item,
@@ -100,7 +101,7 @@ export function TransparentHeader() {
       )}
     >
       <Link to={lang === "en" ? "/en" : "/"} className="relative flex h-16 aspect-[5401/3300] items-center">
-        <img
+        <Img
           src="/assets/logos-cyrrus/cyrrus-logo-blanco.png"
           alt="Cyrrus Consulting Services"
           width={140}
@@ -110,8 +111,9 @@ export function TransparentHeader() {
             "absolute inset-0 h-full w-full object-contain transition-opacity duration-200 ease-out",
             iconDark ? "opacity-100" : "opacity-0",
           )}
+          sizes="104px"
         />
-        <img
+        <Img
           src="/assets/logos-cyrrus/cyrrus-logo-color.webp"
           alt="Cyrrus Consulting Services"
           width={140}
@@ -121,6 +123,7 @@ export function TransparentHeader() {
             "absolute inset-0 h-full w-full object-contain transition-opacity duration-200 ease-out",
             iconDark ? "opacity-0" : "opacity-100",
           )}
+          sizes="104px"
         />
       </Link>
       <NavMenu items={navItems} variant={scrolled ? "light" : "dark"} />

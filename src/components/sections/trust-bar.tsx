@@ -1,18 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
 import { clientLogoNames } from "@/lib/client-logos";
+import { Img } from "@/components/ui/img";
 
 const clientLogos = clientLogoNames.map((name) => (
   <div
     key={name}
     className="flex h-11 w-32 items-center justify-center rounded-md bg-navy p-1.5"
   >
-    <img
+    <Img
       src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
       alt={name}
-      width={160}
-      height={80}
-      loading="lazy"
+      sizes="140px"
       className="h-full w-full object-contain"
     />
   </div>
@@ -28,7 +27,7 @@ export function TrustBar() {
   const trustMetrics = t("trustBar.metrics", { returnObjects: true }) as Metric[];
 
   return (
-    <section className="w-full border-b border-border bg-background py-10">
+    <section className="cv-section w-full border-b border-border bg-background py-10 [--cv-h:300px]">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 lg:flex-row lg:justify-between lg:px-12">
         <dl className="flex w-full flex-wrap items-stretch justify-center gap-x-4 gap-y-6 sm:flex-nowrap lg:w-auto lg:justify-start">
           {trustMetrics.map((metric, i) => (
