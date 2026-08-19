@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Selección de Soluciones: ERP, CRM, HCM | Cyrrus",
-    "description": "Elegimos con usted la solución correcta — ERP, CRM, HCM, ciberseguridad, nube — sin sesgo de proveedor, basados en sus procesos reales."
+    "title": "Selección de Tecnología sin Sesgo de Proveedor | Cyrrus",
+    "description": "Cómo elegimos tecnología con criterios definidos antes de mirar proveedores: software de gestión, automatización e infraestructura, sin sesgo comercial."
   },
   "hero": {
     "eyebrow": "Método CIRA — Identificar",
-    "title": "Selección de soluciones empresariales",
-    "description": "Se compra tecnología por moda, no por ajuste real al negocio. Nuestra consultoría de selección de software parte siempre de los requerimientos del negocio, no del catálogo del proveedor — evaluación 100% agnóstica, con criterios objetivos y comparables.",
+    "title": "Selección de tecnología sin sesgo de proveedor",
+    "description": "Se compra tecnología por moda, no por ajuste real al negocio. Nuestra selección de tecnología parte siempre de los requerimientos del negocio, no del catálogo del proveedor — evaluación 100% agnóstica, con criterios objetivos y comparables.",
     "ctaLabel": "Hablemos de su solución"
   },
   "intro": {
@@ -129,7 +129,7 @@
     }
   },
   "detailMeta": {
-    "tecnologias-avanzadas": { "title": "Selección de Tecnologías Avanzadas: Automatización e IA | Cyrrus", "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales." },
+    "tecnologias-avanzadas": { "title": "Selección de Automatización e IA para Empresas | Cyrrus", "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales." },
     "infraestructura-tecnologica": { "title": "Infraestructura Tecnológica: Ciberseguridad y Nube | Cyrrus", "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor." }
   }
 }

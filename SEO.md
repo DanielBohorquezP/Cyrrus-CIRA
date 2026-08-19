@@ -1,8 +1,9 @@
 # SEO / AI Visibility — Estado del sitio
 
-> Este archivo se actualiza cada vez que se corre una auditoría (`/claude-seo-ai:audit`) o un
-> recálculo de score (`/claude-seo-ai:score`). No se edita manualmente el historial — cada
-> corrida agrega una entrada nueva arriba de la anterior en la sección "Historial de auditorías".
+> Este archivo se actualiza cada vez que se corre una auditoría (`/claude-seo-ai:audit`), un
+> recálculo de score (`/claude-seo-ai:score`) o una ronda de fixes de SEO sobre el código. Cada
+> corrida agrega una entrada nueva arriba de la anterior en "Historial de auditorías"; las
+> entradas viejas no se reescriben.
 
 ## Estado actual
 
@@ -15,11 +16,24 @@ Los dos scores son independientes y nunca se promedian entre sí (uno mide ranki
 buscadores, el otro qué tan citable es el sitio por motores de IA como ChatGPT, Perplexity o
 Google AI Overviews).
 
+La ronda del 2026-08-19 fue de fixes dirigidos, no una auditoría: los scores de la tabla siguen
+siendo los del 2026-08-03 y están pendientes de recalcular.
+
 ## Qué falta por hacer (bloqueadores activos)
 
 Estos son los pendientes que más mueven el score y que **requieren contenido/decisión humana**
 — no se pueden resolver con otra corrida automática de `/fix`:
 
+0. **Publicar este sitio en `www.cyrruscs.com`.** Bloqueador por encima de todos los demás:
+   el dominio canónico sigue sirviendo el sitio anterior (título "Home - Cyrrus CS", H1
+   "Elevando a las empresas hacia alturas innovadoras"). El sitio nuevo solo existe en
+   `cyrrus-cira.vercel.app`, y `vercel.json` le aplica `X-Robots-Tag: noindex` a todo host
+   `*.vercel.app` — correctamente, pero significa que **ninguna** de estas páginas está
+   indexada en ninguna parte. Los canonicals, el sitemap, `llms.txt` y todo el JSON-LD ya
+   apuntan a `cyrruscs.com`, así que el resto del trabajo de SEO no rinde nada hasta que
+   el dominio sirva este build.
+   - Cómo saber si falló: `site:cyrruscs.com` no devuelve las rutas nuevas 3 semanas
+     después del deploy.
 1. **Publicar artículos reales en `/perspectivas`.** Hay 14 títulos SEO-optimizados en
    `src/lib/perspectivas-topics.ts`, cero publicados. Esto es lo que más pesa en AI Visibility
    (Answer Extractability, peso 20/100) y en Freshness en ambos scores. Cada artículo necesita:
@@ -35,17 +49,28 @@ Estos son los pendientes que más mueven el score y que **requieren contenido/de
 3. **Reforzar la bio de Jackson en `/quienes-somos`**: nombrar una institución/evento específico
    donde haya dado charlas, y sustentar con un dato concreto la mención de "dos décadas de
    experiencia" (año de fundación de Cyrrus u otro hito verificable).
+4. **Entrar en los listicles de terceros.** Buena parte de las SERP cabeza en Colombia
+   ("consultoría empresarial", "firmas de consultoría", "software ERP") no las gana ninguna
+   consultora: las ganan artículos tipo "Top 50 firmas de consultoría en Colombia"
+   (sterlingyco.com, lastopdelatam.com, comparasoftware.co, guiatic.com). Para esas queries
+   la vía de captura es aparecer **dentro** de esos listados — relaciones y PR, no on-page.
+   Ninguna palabra del sitio lo resuelve.
+5. **Decidir si la home lleva modificador geográfico.** Hoy el `<title>` es "Consultoría
+   Estratégica con IA | Cyrrus Consulting Services", sin país ni región; "LATAM"/"Colombia"
+   solo aparecen en descriptions y en `/experiencia`. Frente a EY/KPMG/Accenture la geografía
+   es la mayor palanca de diferenciación disponible. Es un cambio de una línea, pero es una
+   decisión de posicionamiento, no una tarea técnica.
 
 ## Tareas técnicas menores pendientes (bajo impacto, se pueden automatizar)
 
 - `BreadcrumbList` en `Experiencia.tsx`, `Contacto.tsx` y `Perspectivas.tsx` (los otros ~21
   templates ya lo tienen).
-- Títulos de página aún sobre ~60 caracteres en varios talleres de Leadership Academy y en
-  `/metodo-cira`, `/perspectivas` (SERP los trunca).
-- Meta descriptions sobre ~160 caracteres en home, `/intelligence-lab`, `/metodo-cira`,
-  `/leadership-academy`, `/experiencia`.
 - `twitter:image` no se sobreescribe por página (solo `og:image` vía `usePageMeta`) — LinkedIn/
   Facebook sí muestran la imagen custom, X/Twitter sigue mostrando la genérica.
+- Descripción de 169 caracteres en `/leadership-academy/ia-para-directivos` (y 180 en su
+  versión EN). No se recortó porque ese texto es también el copy visible del hero y la página
+  está `comingSoon: true` → `noindex`, así que hoy no llega a ninguna SERP. Recortarlo cuando
+  el taller se lance.
 - Cobertura de `FAQPage` despareja: presente en 5 de ~12 páginas de servicio (las que ya tenían
   contenido de preguntas y respuestas real y visible). El resto no tiene FAQ real todavía —
   agregar el schema ahí requeriría escribir las preguntas primero.
@@ -60,6 +85,52 @@ Estos son los pendientes que más mueven el score y que **requieren contenido/de
    historial en vez de dejarlo en la lista de pendientes.
 
 ## Historial de auditorías
+
+### 2026-08-19 — Vocabulario: demanda antes que marca, y fin de la canibalización
+
+**Scores sin recalcular** (ronda de fixes dirigidos, no auditoría completa).
+
+Punto de partida: análisis competitivo de las SERP en español para los términos que el sitio
+persigue. Conclusión — el on-page está por encima del promedio de la competencia local, pero
+el vocabulario estaba organizado por cómo Cyrrus nombra sus cosas ("Método CIRA", "Intelligence
+Lab", "Leadership Academy", "Presencia Digital"), no por cómo el comprador busca. "Método CIRA"
+no existe en el SERP: cero demanda, y ocupaba el inicio del `<title>` de `/metodo-cira`.
+
+Cambios aplicados (22 archivos, 56 cadenas: ES + EN en paridad):
+
+**Títulos — término de demanda primero, marca después.** `/metodo-cira` (68 → 60 chars,
+"Consultoría en Transformación Digital | Método CIRA"), `/intelligence-lab` ("Consultoría en
+Inteligencia Artificial Empresarial" — el término paraguas por el que rankean Ztrategia,
+Intezia y EY), `/intelligence-lab/gobierno-de-ia`, `/intelligence-lab/automatizaciones-desarrollo`,
+`/presencia-digital`, `/leadership-academy`, `/experiencia`, `/perspectivas` (71 → 56),
+`/…/tecnologias-avanzadas`, `/presencia-digital/seo`. CIRA, Intelligence Lab y Leadership
+Academy siguen en el contenido y en los H1 — solo dejaron de ocupar la posición inicial del
+`<title>`.
+
+**Canibalización resuelta en dos pares de páginas.**
+- `/metodo-cira/seleccion-de-soluciones` (hub) disputaba "ERP, CRM, HCM" con su propia hija
+  `/…/seleccion-de-software`. El hub pasó al término de método ("Selección de tecnología sin
+  sesgo de proveedor") en title, H1, description y copy del hero; la hija quedó como única
+  dueña de ERP/CRM/HCM/EAM. El H1 del hub alimenta también el `name` del `Service` y del
+  `BreadcrumbList`, así que ambos quedaron alineados.
+- `/intelligence-lab` (hub) y `/intelligence-lab/gobierno-de-ia` competían por "gobierno de
+  IA". El hub subió al término paraguas; la hija se quedó con "gobierno de IA" en exclusiva.
+
+**Higiene.** 21 meta descriptions recortadas a ≤155 caracteres (la peor era `/intelligence-lab`
+con 257 → 150; también estrategia 207→142, leadership-academy 226→140, experiencia 207→149,
+desarrollo-web 198→147, ERP 197→148, HCM 185→143, EAM 188→141). Todos los `<title>` quedaron
+en ≤60. `llms.txt` regenerado: se eliminó la entrada muerta a `/tecnologias-maduras` (ruta
+renombrada a `/seleccion-de-software` en la ronda anterior; el 301 existía pero la señal a los
+motores de IA seguía vieja), se agregaron las cuatro páginas de producto (ERP, CRM, HCM, EAM)
+que faltaban, y se alinearon las descripciones del hub y de Intelligence Lab con el nuevo
+posicionamiento. Verificado que las 47 URLs del archivo existen en el sitemap.
+
+Verificación: `npm run build` → 68/68 rutas prerenderizadas; consola limpia (sin error #418)
+en `/metodo-cira/seleccion-de-soluciones`, `/…/seleccion-de-software`, `/intelligence-lab` y
+`/en/metodo-cira/seleccion-de-soluciones`.
+
+Bloqueador nuevo identificado en esta ronda: `www.cyrruscs.com` sigue sirviendo el sitio
+anterior — ver el punto 0 de "Qué falta por hacer".
 
 ### 2026-08-03 — Fixes técnicos + contenido inicial de equipo/blog
 

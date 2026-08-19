@@ -1,8 +1,8 @@
 {
   "hub": {
     "meta": {
-      "title": "Digital Presence: Web Development and SEO for Companies | Cyrrus",
-      "description": "Cyrrus Digital Presence: your corporate site and search-and-AI visibility treated as business assets, with the CIRA method — not as an agency project."
+      "title": "Web Development and SEO for Companies | Cyrrus",
+      "description": "Corporate web development and SEO: your site and your visibility in search and AI treated as business assets, not as an agency project."
     },
     "serviceDescription": "Corporate web development and SEO positioning treated as business assets.",
     "hero": {
@@ -45,7 +45,7 @@
   "desarrolloWeb": {
     "meta": {
       "title": "Corporate Web Development for Companies | Cyrrus",
-      "description": "We build the corporate site your company uses to sell: fast, measurable, and editable by your own team — not a digital brochure you have to ask an agency to change every time."
+      "description": "We build the corporate site your company uses to sell: fast, measurable, and editable by your own team — not a static digital brochure."
     },
     "serviceDescription": "Corporate website and enterprise portal development",
     "hero": {
@@ -135,7 +135,7 @@
   "seo": {
     "meta": {
       "title": "SEO Positioning & AI Search Visibility | Cyrrus",
-      "description": "Technical and content SEO for companies, plus visibility in AI answer engines like ChatGPT and Perplexity. Your company shows up when your client searches — and when they ask."
+      "description": "Technical and content SEO for companies, plus visibility in AI answer engines like ChatGPT and Perplexity."
     },
     "serviceDescription": "SEO positioning and optimization for AI answer engines",
     "hero": {

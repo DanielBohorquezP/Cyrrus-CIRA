@@ -1,8 +1,8 @@
 {
   "hub": {
     "meta": {
-      "title": "Presencia Digital: Desarrollo Web y SEO para Empresas | Cyrrus",
-      "description": "Cyrrus Presencia Digital: el sitio corporativo y la visibilidad en buscadores e IA tratados como activos del negocio, con el método CIRA — no como un proyecto de agencia."
+      "title": "Desarrollo Web y SEO para Empresas | Cyrrus",
+      "description": "Desarrollo web corporativo y SEO para empresas: su sitio y su visibilidad en buscadores e IA como activos del negocio, no como un proyecto de agencia."
     },
     "serviceDescription": "Desarrollo web corporativo y posicionamiento SEO tratados como activos del negocio.",
     "hero": {
@@ -45,7 +45,7 @@
   "desarrolloWeb": {
     "meta": {
       "title": "Desarrollo Web Corporativo para Empresas | Cyrrus",
-      "description": "Desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo — no un folleto digital que hay que pedirle a una agencia cada vez que cambia algo."
+      "description": "Desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo, no un folleto digital estático."
     },
     "serviceDescription": "Desarrollo de sitios web corporativos y portales empresariales",
     "hero": {
@@ -134,8 +134,8 @@
   },
   "seo": {
     "meta": {
-      "title": "Posicionamiento SEO y Visibilidad en Buscadores con IA | Cyrrus",
-      "description": "Posicionamiento SEO técnico y de contenido para empresas, más visibilidad en motores de respuesta con IA como ChatGPT y Perplexity. Su empresa aparece cuando su cliente busca — y cuando pregunta."
+      "title": "Posicionamiento SEO para Empresas y Visibilidad IA | Cyrrus",
+      "description": "Posicionamiento SEO técnico y de contenido para empresas, más visibilidad en motores de respuesta con IA como ChatGPT y Perplexity."
     },
     "serviceDescription": "Posicionamiento SEO y optimización para motores de respuesta con IA",
     "hero": {

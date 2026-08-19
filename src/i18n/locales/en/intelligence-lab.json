@@ -1,8 +1,8 @@
 {
   "hub": {
     "meta": {
-      "title": "Corporate AI Governance | Cyrrus Intelligence Lab",
-      "description": "Cyrrus Intelligence Lab is the corporate AI governance and enterprise AI architecture layer that underpins the 4 phases of the CIRA method — not a catalog of chatbots, but the infrastructure that makes AI implementation in business processes possible."
+      "title": "Artificial Intelligence Consulting for Companies | Cyrrus",
+      "description": "Artificial intelligence consulting for companies: AI governance, architecture, and automation — real infrastructure, not a catalog of chatbots."
     },
     "serviceDescription": "Corporate artificial intelligence governance and enterprise AI architecture, cutting across all 4 phases of the CIRA method.",
     "hero": {
@@ -44,7 +44,7 @@
   },
   "automatizaciones": {
     "meta": {
-      "title": "Automation & AI Agents | Cyrrus Intelligence Lab",
+      "title": "Process Automation and AI Agents | Cyrrus",
       "description": "Process automation and AI agents integrated into the enterprise architecture, measured against the real process they replace, not against a demo."
     },
     "serviceDescription": "Process automation with artificial intelligence",
@@ -79,7 +79,7 @@
   "arquitectura": {
     "meta": {
       "title": "Enterprise AI Architecture | Cyrrus Intelligence Lab",
-      "description": "We design the architecture that connects existing models, data, and systems securely and scalably, before the sprawl of loose tools becomes impossible to undo."
+      "description": "We design the architecture that connects existing models, data, and systems securely and scalably, before loose tools sprawl beyond repair."
     },
     "serviceDescription": "Enterprise artificial intelligence architecture",
     "hero": {
@@ -111,8 +111,8 @@
   },
   "gobierno": {
     "meta": {
-      "title": "AI Governance | Cyrrus Intelligence Lab",
-      "description": "We define the policies, roles, and clear controls over how artificial intelligence is used within your company — who decides, who audits, what data can be touched."
+      "title": "AI Governance for Companies: Policies and Controls | Cyrrus",
+      "description": "We define the policies, roles, and controls over how AI is used in your company: who decides, who audits, and what data can be touched."
     },
     "serviceDescription": "Corporate artificial intelligence governance",
     "hero": {
