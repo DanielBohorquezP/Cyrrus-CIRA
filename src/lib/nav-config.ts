@@ -38,9 +38,9 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
           description: t("nav.seleccionSolucionesDesc", { ns: "common" }),
           children: [
             {
-              label: t("nav.tecnologiasMaduras", { ns: "common" }),
-              href: p("/metodo-cira/seleccion-de-soluciones/tecnologias-maduras"),
-              description: t("nav.tecnologiasMadurasDesc", { ns: "common" }),
+              label: t("nav.seleccionSoftware", { ns: "common" }),
+              href: p("/metodo-cira/seleccion-de-soluciones/seleccion-de-software"),
+              description: t("nav.seleccionSoftwareDesc", { ns: "common" }),
             },
             {
               label: t("nav.tecnologiasAvanzadas", { ns: "common" }),

@@ -13,13 +13,15 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
+import { TrustBar } from "@/components/sections/trust-bar";
+import { Testimonials } from "@/components/sections/testimonials";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
@@ -124,6 +126,8 @@ export default function PlaneacionEstrategica() {
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
       </PageHero>
 
+      <TrustBar />
+
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="max-w-3xl">
@@ -168,6 +172,28 @@ export default function PlaneacionEstrategica() {
               </ul>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
+          <Reveal>
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("definicion.eyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("definicion.title")}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-gray">
+              {t("definicion.description")}
+            </p>
+            <a
+              href={langPath(t("definicion.linkHref"), lang)}
+              className="mt-6 inline-block text-sm font-semibold text-blue underline-offset-4 hover:underline"
+            >
+              {t("definicion.linkLabel")}
+            </a>
+          </Reveal>
         </div>
       </section>
 
@@ -337,6 +363,8 @@ export default function PlaneacionEstrategica() {
           </Reveal>
         </div>
       </section>
+
+      <Testimonials />
 
       <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
 

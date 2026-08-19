@@ -84,6 +84,8 @@ const Contacto = lazyPage(() => import("@/pages/Contacto"));
 const PlaneacionEstrategica = lazyPage(() => import("@/pages/metodo-cira/PlaneacionEstrategica"));
 const SeleccionDeSoluciones = lazyPage(() => import("@/pages/metodo-cira/SeleccionDeSoluciones"));
 const SolucionDetalle = lazyPage(() => import("@/pages/metodo-cira/SolucionDetalle"));
+const SeleccionDeSoftware = lazyPage(() => import("@/pages/metodo-cira/SeleccionDeSoftware"));
+const SeleccionProducto = lazyPage(() => import("@/pages/metodo-cira/SeleccionProducto"));
 const GestionDeProyectos = lazyPage(() => import("@/pages/metodo-cira/GestionDeProyectos"));
 const GestionDelCambio = lazyPage(() => import("@/pages/metodo-cira/GestionDelCambio"));
 const AutomatizacionesDesarrollo = lazyPage(
@@ -111,6 +113,8 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/metodo-cira", Component: MetodoCira },
   { path: "/metodo-cira/planeacion-estrategica", Component: PlaneacionEstrategica },
   { path: "/metodo-cira/seleccion-de-soluciones", Component: SeleccionDeSoluciones },
+  { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software", Component: SeleccionDeSoftware },
+  { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/:producto", Component: SeleccionProducto },
   { path: "/metodo-cira/seleccion-de-soluciones/:solucion", Component: SolucionDetalle },
   { path: "/metodo-cira/gestion-de-proyectos", Component: GestionDeProyectos },
   { path: "/metodo-cira/gestion-del-cambio", Component: GestionDelCambio },

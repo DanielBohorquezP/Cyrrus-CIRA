@@ -81,22 +81,94 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones" />
   </url>
   <url>
-    <loc>https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-maduras</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-maduras" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-maduras" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-maduras" />
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software" />
   </url>
   <url>
-    <loc>https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-maduras</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-maduras" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-maduras" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-maduras" />
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam" />
+  </url>
+  <url>
+    <loc>https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam" />
   </url>
   <url>
     <loc>https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas</loc>

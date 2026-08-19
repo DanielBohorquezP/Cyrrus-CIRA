@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Consultoría de Estrategia | Cyrrus",
-    "description": "Diseñamos la estrategia de negocio que su empresa necesita para crecer: diagnóstico, hoja de ruta y prioridades claras, con IA acelerando el análisis."
+    "title": "Consultoría en Planeación Estratégica para Empresas | Cyrrus",
+    "description": "Consultoría en planeación estratégica para empresas en LATAM: diagnóstico, hoja de ruta y plan de acción con objetivos medibles — ejecutado, no archivado. IA aplicada al análisis para decisiones más rápidas."
   },
   "hero": {
     "eyebrow": "Método CIRA — Construir",
-    "title": "Consultoría de Estrategia",
+    "title": "Consultoría en Planeación Estratégica",
     "description": "Se define una estrategia... pero nadie sabe cómo bajarla a la operación. Nuestra consultoría de planeación estratégica conecta la visión del negocio con un plan ejecutable, no con un documento que queda en un cajón.",
     "ctaLabel": "Agendar diagnóstico ejecutivo"
   },
@@ -18,6 +18,13 @@
       "Prioridades y métricas de éxito definidas desde el día uno.",
       "Implementación acompañada — el mismo equipo ejecuta lo que diagnostica."
     ]
+  },
+  "definicion": {
+    "eyebrow": "La base",
+    "title": "¿Qué es la planeación estratégica?",
+    "description": "La planeación estratégica es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, lo traduce en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales del negocio.",
+    "linkLabel": "Profundizamos en el tema en Perspectivas",
+    "linkHref": "/perspectivas"
   },
   "diagnostico": {
     "eyebrow": "Diagnóstico",

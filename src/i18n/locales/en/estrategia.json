@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Strategy Consulting | Cyrrus",
-    "description": "We design the business strategy your company needs to grow: diagnosis, roadmap, and clear priorities, with AI accelerating the analysis."
+    "title": "Strategic Planning Consulting for Companies | Cyrrus",
+    "description": "Strategic planning consulting for companies in LATAM: diagnosis, roadmap, and an action plan with measurable objectives — executed, not filed away. AI applied to the analysis for faster decisions."
   },
   "hero": {
     "eyebrow": "CIRA Method — Construct",
-    "title": "Strategy Consulting",
+    "title": "Strategic Planning Consulting",
     "description": "A strategy gets defined... but no one knows how to bring it down to the operation. Our strategy consulting connects the business vision to an executable plan, not a document that ends up in a drawer.",
     "ctaLabel": "Schedule an executive diagnosis"
   },
@@ -18,6 +18,13 @@
       "Priorities and success metrics defined from day one.",
       "Guided implementation — the same team that diagnoses also executes."
     ]
+  },
+  "definicion": {
+    "eyebrow": "The foundation",
+    "title": "What is strategic planning?",
+    "description": "Strategic planning is the process by which a company defines its medium- and long-term direction, translates it into measurable objectives (KPIs), and aligns every area of the organization — from senior leadership down to daily operations — to execute it consistently. It's not a document that gets filed away: it's a system of decisions and priorities that gets reviewed and adjusted with real business data.",
+    "linkLabel": "We go deeper on this in Perspectivas",
+    "linkHref": "/perspectivas"
   },
   "diagnostico": {
     "eyebrow": "Diagnosis",

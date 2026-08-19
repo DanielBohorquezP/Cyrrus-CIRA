@@ -1,0 +1,236 @@
+{
+  "erp": {
+    "meta": {
+      "title": "Selección de ERP para Empresas | Cyrrus",
+      "description": "Consultoría de selección de ERP: definimos, evaluamos y elegimos con usted el ERP que mejor se adapta a sus procesos, arquitectura y capacidad de inversión — evaluación 100% agnóstica de proveedor."
+    },
+    "hero": {
+      "eyebrow": "Selección de Soluciones — Selección de Software",
+      "title": "Selección y evaluación de ERP",
+      "description": "Elegir un ERP no es elegir software. Es elegir cómo funcionará su empresa durante los próximos años. Ayudamos a las organizaciones a definir, evaluar y seleccionar el ERP que mejor se adapta a sus procesos, objetivos, arquitectura y capacidad de inversión.",
+      "ctaLabel": "Evaluar mi necesidad de ERP"
+    },
+    "dolor": {
+      "eyebrow": "01 — Dolor",
+      "title": "Cuando el ERP deja de acompañar al negocio",
+      "items": [
+        { "title": "Crecimiento empresarial", "description": "La empresa creció más rápido que la plataforma que la sostiene." },
+        { "title": "Sistemas desconectados", "description": "Múltiples sistemas que no se hablan entre sí, con información duplicada." },
+        { "title": "Procesos manuales", "description": "Hojas de cálculo paralelas para cubrir lo que el ERP no resuelve." },
+        { "title": "Poca visibilidad financiera", "description": "Consolidar operaciones toma semanas en vez de estar disponible en tiempo real." },
+        { "title": "ERP actual obsoleto", "description": "La plataforma dejó de recibir soporte real o de escalar con la operación." },
+        { "title": "Expansión a nuevas unidades o países", "description": "El ERP actual no soporta la complejidad de crecer a nuevas geografías." }
+      ],
+      "narrativa": "El ERP que funcionaba cuando la empresa era más pequeña puede convertirse en una restricción cuando la organización crece."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — El problema real",
+      "title": "Cambiar de ERP es fácil de plantear. Elegir el correcto es lo difícil.",
+      "body": "SAP, Oracle, Microsoft Dynamics, Infor, NetSuite y muchas otras plataformas pueden resolver problemas similares desde aproximaciones diferentes.",
+      "punch": "Más funcionalidades no significa mejor ajuste."
+    },
+    "solucion": {
+      "eyebrow": "03 — Lo que hacemos",
+      "title": "Determinamos qué ERP necesita realmente su organización",
+      "linkLabel": "Así aplicamos el Método CIRA completo a la selección de software",
+      "steps": ["Situación actual", "Procesos", "Requerimientos", "Alternativas", "Shortlist", "Evaluación", "Business Case", "ERP recomendado"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluación",
+      "title": "Evaluamos el ERP desde seis perspectivas",
+      "items": [
+        { "title": "Funcional", "description": "¿Puede soportar los procesos financieros, comerciales, logísticos y productivos del negocio?" },
+        { "title": "Técnica", "description": "¿Puede integrarse con la arquitectura tecnológica actual sin fricciones?" },
+        { "title": "Económica", "description": "¿Cuál es el costo total de propiedad, no solo la licencia inicial?" },
+        { "title": "Estratégica", "description": "¿Puede acompañar el crecimiento y la expansión a nuevas unidades o países?" },
+        { "title": "Proveedor", "description": "¿Quién estará detrás de la plataforma en los próximos cinco años?" },
+        { "title": "Adopción", "description": "¿La organización podrá utilizarlo realmente, o quedará subejercido?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Entregables",
+      "title": "De la incertidumbre a una decisión respaldada",
+      "items": ["Mapa de requerimientos", "Matriz de evaluación", "Longlist / shortlist de proveedores", "RFI / RFP", "Evaluación de demos", "Scoring de proveedores", "TCO (costo total de propiedad)", "Análisis de riesgos", "Recomendación", "Roadmap de implementación"]
+    },
+    "faq": [
+      { "question": "¿Cuánto dura un proceso de selección de ERP?", "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación." },
+      { "question": "Ya tenemos un ERP y no estamos seguros de si es el correcto", "answer": "Evaluamos su plataforma actual con los mismos seis criterios objetivos, incluso si no está en discusión un cambio de proveedor — a veces la respuesta es optimizar, no reemplazar." }
+    ]
+  },
+  "crm": {
+    "meta": {
+      "title": "Selección de CRM para Empresas | Cyrrus",
+      "description": "Consultoría de selección de CRM: diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que su equipo de ventas realmente va a adoptar."
+    },
+    "hero": {
+      "eyebrow": "Selección de Soluciones — Selección de Software",
+      "title": "Selección y evaluación de CRM",
+      "description": "Un CRM no debería obligar a su equipo comercial a cambiar su forma de vender. Debería ayudarlo a vender mejor. Ayudamos a las organizaciones a definir, evaluar y seleccionar el CRM que mejor se adapta a su proceso comercial.",
+      "ctaLabel": "Evaluar mi necesidad de CRM"
+    },
+    "dolor": {
+      "eyebrow": "01 — Dolor",
+      "title": "Cuando la relación con el cliente está fragmentada",
+      "items": [
+        { "title": "Información dispersa", "description": "Los datos del cliente viven en correos, hojas de cálculo y la memoria de cada vendedor." },
+        { "title": "Leads que se pierden", "description": "Oportunidades comerciales que caen porque nadie les hizo seguimiento a tiempo." },
+        { "title": "Seguimiento manual", "description": "Cada vendedor gestiona su pipeline a su manera, sin proceso estandarizado." },
+        { "title": "Poca visibilidad del pipeline", "description": "La gerencia comercial no sabe en tiempo real cómo va cerrando el mes." },
+        { "title": "Herramientas distintas por equipo", "description": "Ventas, marketing y servicio trabajan en sistemas que no se hablan entre sí." },
+        { "title": "Información que depende de personas", "description": "Si un vendedor se va, se va también el historial de la relación con sus clientes." }
+      ],
+      "narrativa": "La baja trazabilidad comercial no solo cuesta ventas — hace imposible medir qué está funcionando realmente."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — El problema",
+      "title": "El reto no es encontrar un CRM. Es encontrar uno que su organización realmente adopte.",
+      "body": "Un CRM puede tener 200 funcionalidades — pero si los vendedores no lo utilizan, la inversión fracasa.",
+      "punch": "El ajuste con el proceso comercial real importa más que la lista de funcionalidades."
+    },
+    "solucion": {
+      "eyebrow": "03 — Nuestra solución",
+      "title": "Diseñamos la selección alrededor de su proceso comercial",
+      "linkLabel": "Así aplicamos el Método CIRA completo a la selección de software",
+      "steps": ["Estrategia comercial", "Proceso de ventas", "Datos de clientes", "Automatización", "Tecnología", "CRM recomendado"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluación",
+      "title": "Evaluamos el CRM desde seis perspectivas",
+      "items": [
+        { "title": "Funcional", "description": "¿Cubre gestión de leads, oportunidades, pipeline y servicio al cliente?" },
+        { "title": "Técnica", "description": "¿Se integra con marketing, telefonía y los sistemas comerciales existentes?" },
+        { "title": "Económica", "description": "¿Cuál es el costo por usuario y el costo total al escalar el equipo comercial?" },
+        { "title": "Estratégica", "description": "¿Soporta omnicanalidad, analítica e IA para acompañar el crecimiento comercial?" },
+        { "title": "Proveedor", "description": "¿Qué tan sólido es el ecosistema de soporte y partners del proveedor?" },
+        { "title": "Adopción", "description": "¿Se ajusta a la forma real en que su equipo vende, o le impone una nueva?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Resultado",
+      "title": "El CRM adecuado para su modelo comercial",
+      "items": ["Mapa del proceso comercial", "Matriz de evaluación", "Shortlist de proveedores", "Demo funcional guiada", "TCO por usuario", "Análisis de adopción", "Recomendación", "Roadmap de implementación"],
+      "closingQuote": "El resultado no es \"este CRM es el mejor\". Es \"este CRM es el que mejor responde a nuestros requerimientos y objetivos, y estas son las razones\"."
+    },
+    "faq": [
+      { "question": "¿Cuánto dura un proceso de selección de CRM?", "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación." },
+      { "question": "Nuestro equipo comercial ya rechazó un CRM antes, ¿cómo evitamos que pase de nuevo?", "answer": "Empezamos por el proceso de ventas real, no por el catálogo de funcionalidades — el criterio de Adopción se evalúa desde el día uno, junto con su equipo comercial, no al final del proceso." }
+    ]
+  },
+  "hcm": {
+    "meta": {
+      "title": "Selección de HCM (Gestión Humana) | Cyrrus",
+      "description": "Consultoría de selección de HCM: alineamos la tecnología de gestión humana con su modelo de gestión, nómina, talento y experiencia del empleado — evaluación 100% agnóstica de proveedor."
+    },
+    "hero": {
+      "eyebrow": "Selección de Soluciones — Selección de Software",
+      "title": "Selección de software de gestión humana (HCM)",
+      "description": "La tecnología de gestión humana debe adaptarse a la organización, no al contrario. Ayudamos a las organizaciones a definir, evaluar y seleccionar el HCM que mejor se adapta a su modelo de gestión de personas.",
+      "ctaLabel": "Evaluar mi necesidad de HCM"
+    },
+    "dolor": {
+      "eyebrow": "01 — Dolor",
+      "title": "Cuando la gestión de personas se convierte en una operación fragmentada",
+      "items": [
+        { "title": "Múltiples sistemas", "description": "Nómina, talento y reclutamiento viven en plataformas separadas que no se conectan." },
+        { "title": "Procesos manuales", "description": "Vacaciones, evaluaciones de desempeño y compensación gestionadas en hojas de cálculo." },
+        { "title": "Información dispersa", "description": "No hay una fuente única de verdad sobre cada colaborador." },
+        { "title": "Nómina desconectada", "description": "La nómina no se comunica con el resto de los procesos de gestión humana." },
+        { "title": "Baja experiencia del empleado", "description": "Trámites lentos y procesos poco intuitivos que frustran al equipo." },
+        { "title": "Sistemas que no escalan", "description": "La plataforma actual no soporta el crecimiento del headcount ni nuevas geografías." }
+      ],
+      "narrativa": "Los procesos de talento poco integrados no solo generan trabajo redundante — hacen imposible tomar decisiones de gestión humana con datos confiables."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — El problema",
+      "title": "Un HCM no es solamente un sistema de recursos humanos",
+      "body": "Debe soportar Personas, Procesos, Políticas, Datos, Experiencia, Cumplimiento y la Estrategia de talento de la organización, no solo automatizar la nómina.",
+      "punch": "Por eso la selección no debe hacerse únicamente comparando funcionalidades."
+    },
+    "solucion": {
+      "eyebrow": "03 — Nuestra solución",
+      "title": "Alineamos la tecnología con el modelo de gestión humana",
+      "linkLabel": "Así aplicamos el Método CIRA completo a la selección de software",
+      "steps": ["Modelo de gestión", "Procesos de RR. HH.", "Requerimientos", "Soluciones HCM", "Evaluación", "HCM recomendado"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluación",
+      "title": "Evaluamos el HCM desde la perspectiva de la organización y sus personas",
+      "items": [
+        { "title": "Funcional", "description": "¿Cubre Core HR, nómina, talento, reclutamiento, desempeño y compensación?" },
+        { "title": "Técnica", "description": "¿Se integra con el ERP y los demás sistemas administrativos de la empresa?" },
+        { "title": "Económica", "description": "¿Cuál es el costo por colaborador y el costo total al escalar el headcount?" },
+        { "title": "Estratégica", "description": "¿Soporta aprendizaje, analítica de talento e IA para acompañar la estrategia de personas?" },
+        { "title": "Proveedor", "description": "¿Cumple con la normativa laboral y de nómina de cada país donde opera la empresa?" },
+        { "title": "Experiencia del empleado", "description": "¿Es intuitivo para el colaborador, o va a terminar subutilizado como los sistemas anteriores?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Resultado",
+      "title": "Una plataforma que pueda acompañar la evolución de la organización",
+      "items": ["Requerimientos de gestión humana", "Evaluación de soluciones", "Comparación de proveedores", "Matriz de decisión", "Evaluación económica", "Análisis de riesgos", "Recomendación", "Roadmap de implementación"]
+    },
+    "faq": [
+      { "question": "¿Cuánto dura un proceso de selección de HCM?", "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación." },
+      { "question": "Operamos en varios países, ¿cómo afecta eso la selección?", "answer": "El cumplimiento normativo y de nómina por país es uno de los seis criterios que evaluamos desde el inicio — no es un ajuste posterior a la selección." }
+    ]
+  },
+  "eam": {
+    "meta": {
+      "title": "Selección de EAM (Gestión de Activos) | Cyrrus",
+      "description": "Consultoría de selección de EAM: elegimos la plataforma de gestión de activos en función del ciclo de vida de su operación — mantenimiento, costos y confiabilidad — sin sesgo de proveedor."
+    },
+    "hero": {
+      "eyebrow": "Selección de Soluciones — Selección de Software",
+      "title": "Selección de software de gestión de activos (EAM)",
+      "description": "La gestión de activos comienza mucho antes del mantenimiento. Comienza con elegir la tecnología adecuada. Ayudamos a las organizaciones a definir, evaluar y seleccionar el EAM que mejor se adapta a su realidad operativa.",
+      "ctaLabel": "Evaluar mi necesidad de EAM"
+    },
+    "dolor": {
+      "eyebrow": "01 — Dolor",
+      "title": "Cuando los activos se convierten en una fuente de incertidumbre",
+      "items": [
+        { "title": "Mantenimiento reactivo", "description": "Se interviene el activo cuando ya falló, no antes." },
+        { "title": "Información dispersa", "description": "El historial de mantenimiento vive en bitácoras físicas o archivos sueltos." },
+        { "title": "Activos sin trazabilidad", "description": "No hay visibilidad clara de dónde está cada activo ni de su estado." },
+        { "title": "Costos difíciles de controlar", "description": "El gasto en mantenimiento y repuestos no se puede atribuir con precisión." },
+        { "title": "Paradas no planificadas", "description": "Fallas que detienen la operación sin ninguna alerta previa." },
+        { "title": "Inventario de repuestos desconectado", "description": "Compras no sabe qué repuestos hay disponibles antes de generar una orden." }
+      ],
+      "narrativa": "La poca visibilidad del ciclo de vida de los activos no solo cuesta en mantenimiento — cuesta en operación detenida."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — El problema",
+      "title": "Un EAM debe adaptarse a la realidad operativa de los activos",
+      "body": "La necesidad de un EAM se ve distinto en manufactura, energía, utilities, infraestructura, minería, transporte u oil & gas.",
+      "punch": "El mejor EAM en funcionalidades no necesariamente es el mejor EAM para una organización determinada."
+    },
+    "solucion": {
+      "eyebrow": "03 — Nuestra solución",
+      "title": "Seleccionamos la plataforma en función del ciclo de vida de sus activos",
+      "linkLabel": "Así aplicamos el Método CIRA completo a la selección de software",
+      "steps": ["Inventario", "Planificación", "Mantenimiento", "Operación", "Costos", "Analítica", "EAM recomendado"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluación",
+      "title": "Evaluamos el EAM más allá del mantenimiento",
+      "items": [
+        { "title": "Funcional", "description": "¿Cubre gestión de activos, órdenes de trabajo, planificación e inventario de repuestos?" },
+        { "title": "Técnica", "description": "¿Se integra con el ERP y soporta IoT para monitoreo en tiempo real?" },
+        { "title": "Económica", "description": "¿Cuál es el costo total de propiedad frente a la reducción de paradas no planificadas?" },
+        { "title": "Estratégica", "description": "¿Soporta mantenimiento predictivo y analítica para anticipar fallas?" },
+        { "title": "Proveedor", "description": "¿Tiene experiencia real en la industria específica de la organización?" },
+        { "title": "Adopción", "description": "¿El equipo de mantenimiento en campo va a usarlo, o va a preferir el papel?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Resultado",
+      "title": "Una solución que conecte activos, operación y negocio",
+      "items": ["Mapa de requerimientos operativos", "Matriz de evaluación técnica", "Comparación de proveedores", "TCO de ciclo de vida", "Análisis de riesgos operativos", "Recomendación", "Roadmap de implementación"],
+      "closingQuote": "Una recomendación tecnológica sustentada en requerimientos operativos, técnicos, económicos y estratégicos — no solo en funcionalidades de mantenimiento."
+    },
+    "faq": [
+      { "question": "¿Cuánto dura un proceso de selección de EAM?", "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación." },
+      { "question": "¿La evaluación considera la industria específica de mi operación?", "answer": "Sí — el criterio de Proveedor incluye evaluar experiencia real en industrias como manufactura, energía, minería o transporte, no solo capacidad genérica de la plataforma." }
+    ]
+  }
+}

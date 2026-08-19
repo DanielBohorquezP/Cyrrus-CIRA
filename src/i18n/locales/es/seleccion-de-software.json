@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Selección de Software: ERP, CRM, HCM, EAM | Cyrrus",
+    "description": "Evaluamos, comparamos y seleccionamos software empresarial de forma independiente, alineando las necesidades de su organización con la solución que realmente necesita — 100% agnósticos de proveedor."
+  },
+  "hero": {
+    "eyebrow": "Selección de Soluciones",
+    "title": "Selección y evaluación de software empresarial",
+    "description": "La tecnología correcta empieza con la decisión correcta. Evaluamos, comparamos y seleccionamos software empresarial de forma independiente, alineando las necesidades de su organización con la solución que realmente necesita.",
+    "ctaLabel": "Evaluar una necesidad tecnológica",
+    "ctaSecondaryLabel": "Conocer nuestra metodología"
+  },
+  "problema": {
+    "eyebrow": "El problema",
+    "title": "Elegir software no debería convertirse en una apuesta",
+    "intro": "Una empresa puede saber que necesita modernizarse, pero aparecen preguntas: ¿Necesitamos un ERP nuevo o debemos optimizar el actual? ¿Qué CRM se adapta realmente a nuestro proceso comercial? ¿Nuestro sistema de gestión humana soportará el crecimiento? ¿Qué solución de gestión de activos puede integrarse con nuestra arquitectura?",
+    "bullets": ["Demos de proveedores", "Presentaciones comerciales", "Comparaciones de funcionalidades", "Propuestas económicas", "Opiniones internas", "Recomendaciones de colegas"],
+    "punch": "Cada proveedor presenta su solución como la respuesta. La organización termina teniendo mucha información, pero no necesariamente una decisión objetiva."
+  },
+  "costo": {
+    "eyebrow": "El costo de equivocarse",
+    "title": "Una mala selección puede comprometer años de inversión",
+    "bullets": ["Sobrecostos de implementación", "Funcionalidades que nunca se utilizan", "Procesos que deben adaptarse al software", "Integraciones complejas", "Dependencia excesiva del proveedor", "Resistencia de los usuarios", "Costos recurrentes inesperados", "Dificultad para escalar"],
+    "punch": "El costo de seleccionar mal no está solamente en comprar el software equivocado. Está en todo lo que ocurre después."
+  },
+  "preguntaCorrecta": {
+    "eyebrow": "La pregunta correcta",
+    "title": "No se trata de encontrar el software más completo. Se trata de encontrar el más adecuado.",
+    "notQuestion": "“¿Qué software quiere comprar?”",
+    "realQuestion": "“¿Qué necesita resolver la organización?”",
+    "steps": ["Negocio", "Procesos", "Requerimientos", "Tecnología", "Proveedor"]
+  },
+  "metodo": {
+    "eyebrow": "Nuestra solución",
+    "title": "Convertimos una decisión tecnológica compleja en una decisión estructurada",
+    "intro": "Aplicamos el Método CIRA completo a cada proceso de selección de software:",
+    "fases": [
+      { "letra": "C", "titulo": "Construir", "descripcion": "Entendemos el contexto, objetivos y necesidades." },
+      { "letra": "I", "titulo": "Identificar", "descripcion": "Definimos requerimientos y alternativas." },
+      { "letra": "R", "titulo": "Realizar", "descripcion": "Evaluamos, comparamos y validamos las soluciones." },
+      { "letra": "A", "titulo": "Adoptar", "descripcion": "Acompañamos la decisión y preparamos el camino hacia la implementación." }
+    ]
+  },
+  "categorias": {
+    "eyebrow": "Qué seleccionamos",
+    "title": "Seleccionamos soluciones para las áreas críticas de su organización",
+    "items": [
+      { "slug": "erp", "title": "ERP", "description": "Planificación y gestión integral del negocio.", "linkLabel": "Ver selección de ERP" },
+      { "slug": "crm", "title": "CRM", "description": "Gestión comercial, clientes y relaciones.", "linkLabel": "Ver selección de CRM" },
+      { "slug": "hcm", "title": "HCM", "description": "Gestión humana, talento y procesos de personas.", "linkLabel": "Ver selección de HCM" },
+      { "slug": "eam", "title": "EAM", "description": "Gestión y mantenimiento de activos empresariales.", "linkLabel": "Ver selección de EAM" }
+    ]
+  },
+  "evaluamos": {
+    "eyebrow": "Cómo evaluamos",
+    "title": "Evaluamos más allá de las funcionalidades",
+    "items": [
+      { "title": "Funcional", "description": "Ajuste a procesos y requerimientos." },
+      { "title": "Técnica", "description": "Arquitectura, integraciones, seguridad." },
+      { "title": "Económica", "description": "Licenciamiento, implementación, TCO." },
+      { "title": "Estratégica", "description": "Escalabilidad y alineación futura." },
+      { "title": "Proveedor", "description": "Capacidad, experiencia y soporte." },
+      { "title": "Usuario", "description": "Usabilidad y adopción." }
+    ]
+  },
+  "closingQuote": "No recomendamos tecnologías por catálogo. Nuestro trabajo no consiste en vender una plataforma determinada. Evaluamos las alternativas disponibles y construimos una recomendación basada en las necesidades, prioridades y contexto de cada organización. 100% agnósticos en tecnología.",
+  "faq": {
+    "eyebrow": "Selección de Software",
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "question": "¿Está evaluando una nueva solución de software?", "answer": "Antes de elegir una plataforma, asegúrese de estar resolviendo el problema correcto — por eso empezamos siempre por el negocio, no por el catálogo del proveedor." },
+      { "question": "¿La evaluación es realmente agnóstica de proveedor?", "answer": "Sí. No tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM, EAM u otras soluciones empresariales — evaluamos con los mismos criterios objetivos sin importar la marca." }
+    ]
+  }
+}

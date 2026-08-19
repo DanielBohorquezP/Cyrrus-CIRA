@@ -1,15 +1,11 @@
 import type { LucideIcon } from "lucide-react";
 import {
-  Boxes,
   Cloud,
   HeartHandshake,
-  Layers3,
   LifeBuoy,
   Link2,
   ShieldCheck,
   Sparkles,
-  UserCog,
-  Users,
   Wifi,
   Workflow,
 } from "lucide-react";
@@ -38,46 +34,14 @@ export interface SolutionEntry {
   items: SolutionItem[];
 }
 
+// NOTE: this file is not imported by any page component — its only consumers
+// are scripts/prerender.mjs and scripts/generate-sitemap.mjs, which regex-scrape
+// the `slug:` fields here to build the route list for the categories still
+// rendered by SolucionDetalle.tsx. "tecnologias-maduras" (formerly here) moved
+// to its own bespoke route (SeleccionDeSoftware.tsx, slug "seleccion-de-software")
+// registered directly in src/lib/route-meta.json — it must NOT have an entry in
+// this file, or the old /tecnologias-maduras URL gets prerendered again.
 export const solutions: SolutionEntry[] = [
-  {
-    slug: "tecnologias-maduras",
-    label: "Tecnologías Maduras",
-    eyebrow: "Selección de Soluciones — Tecnologías Maduras",
-    intro:
-      "Son el corazón operativo de la organización. Permiten estandarizar procesos, fortalecer la operación y crear una base sólida para crecer.",
-    image: "/assets/decoracion/1785866223529.jpg",
-    stat: {
-      value: "+70%",
-      description: "de las iniciativas ERP no alcanzan completamente los objetivos del negocio.",
-      source: "Cyrrus",
-    },
-    items: [
-      {
-        icon: Boxes,
-        title: "ERP",
-        description:
-          "Integramos los procesos financieros, comerciales, logísticos, productivos y administrativos sobre una plataforma preparada para acompañar el crecimiento del negocio.",
-      },
-      {
-        icon: Users,
-        title: "CRM",
-        description:
-          "Seleccionamos soluciones que fortalecen la relación con los clientes, optimizan el proceso comercial y mejoran la experiencia en cada interacción.",
-      },
-      {
-        icon: UserCog,
-        title: "HCM",
-        description:
-          "Ayudamos a identificar plataformas que potencian la gestión del talento, fortalecen el desarrollo de las personas y acompañan la evolución de la organización.",
-      },
-      {
-        icon: Layers3,
-        title: "EAM",
-        description:
-          "Seleccionamos soluciones para administrar activos físicos, optimizar el mantenimiento y mejorar la confiabilidad operacional.",
-      },
-    ],
-  },
   {
     slug: "tecnologias-avanzadas",
     label: "Tecnologías Avanzadas",

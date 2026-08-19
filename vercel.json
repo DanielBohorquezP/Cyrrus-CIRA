@@ -2,6 +2,18 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/metodo-cira/seleccion-de-soluciones/tecnologias-maduras",
+      "destination": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
+      "permanent": true
+    },
+    {
+      "source": "/en/metodo-cira/seleccion-de-soluciones/tecnologias-maduras",
+      "destination": "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

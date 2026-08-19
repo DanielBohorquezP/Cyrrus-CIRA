@@ -8,16 +8,32 @@
     "description": "Conoce la metodología CIRA de Cyrrus: el marco de 4 fases que lleva a su empresa de la estrategia a la adopción real, con IA en cada paso."
   },
   "/metodo-cira/planeacion-estrategica": {
-    "title": "Consultoría de Estrategia | Cyrrus",
-    "description": "Diseñamos la estrategia de negocio que su empresa necesita para crecer: diagnóstico, hoja de ruta y prioridades claras, con IA acelerando el análisis."
+    "title": "Consultoría en Planeación Estratégica para Empresas | Cyrrus",
+    "description": "Consultoría en planeación estratégica para empresas en LATAM: diagnóstico, hoja de ruta y plan de acción con objetivos medibles — ejecutado, no archivado. IA aplicada al análisis para decisiones más rápidas."
   },
   "/metodo-cira/seleccion-de-soluciones": {
     "title": "Selección de Soluciones: ERP, CRM, HCM | Cyrrus",
     "description": "Elegimos con usted la solución correcta — ERP, CRM, HCM, ciberseguridad, nube — sin sesgo de proveedor, basados en sus procesos reales."
   },
-  "/metodo-cira/seleccion-de-soluciones/tecnologias-maduras": {
-    "title": "Selección de Tecnologías Maduras: ERP, CRM, HCM | Cyrrus",
-    "description": "Le ayudamos a elegir el ERP, CRM, HCM o aplicaciones de negocio correctas para su empresa: evaluación agnóstica de proveedores, criterios objetivos y sin sesgo comercial."
+  "/metodo-cira/seleccion-de-soluciones/seleccion-de-software": {
+    "title": "Selección de Software: ERP, CRM, HCM, EAM | Cyrrus",
+    "description": "Evaluamos, comparamos y seleccionamos software empresarial de forma independiente, alineando las necesidades de su organización con la solución que realmente necesita — 100% agnósticos de proveedor."
+  },
+  "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp": {
+    "title": "Selección de ERP para Empresas | Cyrrus",
+    "description": "Consultoría de selección de ERP: definimos, evaluamos y elegimos con usted el ERP que mejor se adapta a sus procesos, arquitectura y capacidad de inversión — evaluación 100% agnóstica de proveedor."
+  },
+  "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm": {
+    "title": "Selección de CRM para Empresas | Cyrrus",
+    "description": "Consultoría de selección de CRM: diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que su equipo de ventas realmente va a adoptar."
+  },
+  "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm": {
+    "title": "Selección de HCM (Gestión Humana) | Cyrrus",
+    "description": "Consultoría de selección de HCM: alineamos la tecnología de gestión humana con su modelo de gestión, nómina, talento y experiencia del empleado — evaluación 100% agnóstica de proveedor."
+  },
+  "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam": {
+    "title": "Selección de EAM (Gestión de Activos) | Cyrrus",
+    "description": "Consultoría de selección de EAM: elegimos la plataforma de gestión de activos en función del ciclo de vida de su operación — mantenimiento, costos y confiabilidad — sin sesgo de proveedor."
   },
   "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas": {
     "title": "Selección de Tecnologías Avanzadas: Automatización e IA | Cyrrus",

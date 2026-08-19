@@ -1,0 +1,236 @@
+{
+  "erp": {
+    "meta": {
+      "title": "ERP Selection for Companies | Cyrrus",
+      "description": "ERP selection consulting: we define, evaluate, and choose with you the ERP that best fits your processes, architecture, and investment capacity — 100% vendor-agnostic evaluation."
+    },
+    "hero": {
+      "eyebrow": "Solution Selection — Software Selection",
+      "title": "ERP selection and evaluation",
+      "description": "Choosing an ERP isn't choosing software. It's choosing how your company will run for the next several years. We help organizations define, evaluate, and select the ERP that best fits their processes, objectives, architecture, and investment capacity.",
+      "ctaLabel": "Evaluate my ERP need"
+    },
+    "dolor": {
+      "eyebrow": "01 — Pain",
+      "title": "When the ERP stops keeping up with the business",
+      "items": [
+        { "title": "Business growth", "description": "The company grew faster than the platform holding it up." },
+        { "title": "Disconnected systems", "description": "Multiple systems that don't talk to each other, with duplicated information." },
+        { "title": "Manual processes", "description": "Parallel spreadsheets to cover what the ERP doesn't solve." },
+        { "title": "Poor financial visibility", "description": "Consolidating operations takes weeks instead of being available in real time." },
+        { "title": "Obsolete current ERP", "description": "The platform stopped getting real support or scaling with the operation." },
+        { "title": "Expansion to new units or countries", "description": "The current ERP can't support the complexity of growing into new geographies." }
+      ],
+      "narrativa": "The ERP that worked when the company was smaller can become a constraint once the organization grows."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — The real problem",
+      "title": "Deciding to change ERPs is easy. Picking the right one is hard.",
+      "body": "SAP, Oracle, Microsoft Dynamics, Infor, NetSuite, and many other platforms can solve similar problems from different angles.",
+      "punch": "More features doesn't mean a better fit."
+    },
+    "solucion": {
+      "eyebrow": "03 — What we do",
+      "title": "We determine which ERP your organization actually needs",
+      "linkLabel": "This is how we apply the full CIRA Method to software selection",
+      "steps": ["Current situation", "Processes", "Requirements", "Alternatives", "Shortlist", "Evaluation", "Business case", "Recommended ERP"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluation",
+      "title": "We evaluate the ERP from six perspectives",
+      "items": [
+        { "title": "Functional", "description": "Can it support the business's financial, commercial, logistics, and production processes?" },
+        { "title": "Technical", "description": "Can it integrate with the current technology architecture without friction?" },
+        { "title": "Economic", "description": "What's the total cost of ownership, not just the initial license?" },
+        { "title": "Strategic", "description": "Can it support growth and expansion into new units or countries?" },
+        { "title": "Vendor", "description": "Who will be behind the platform over the next five years?" },
+        { "title": "Adoption", "description": "Will the organization actually use it, or will it end up underused?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Deliverables",
+      "title": "From uncertainty to a decision you can back up",
+      "items": ["Requirements map", "Evaluation matrix", "Vendor longlist / shortlist", "RFI / RFP", "Demo evaluation", "Vendor scoring", "TCO (total cost of ownership)", "Risk analysis", "Recommendation", "Implementation roadmap"]
+    },
+    "faq": [
+      { "question": "How long does an ERP selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
+      { "question": "We already have an ERP and aren't sure it's the right one", "answer": "We evaluate your current platform against the same six objective criteria, even if changing vendors isn't on the table — sometimes the answer is to optimize, not replace." }
+    ]
+  },
+  "crm": {
+    "meta": {
+      "title": "CRM Selection for Companies | Cyrrus",
+      "description": "CRM selection consulting: we design the evaluation around your real sales process, to choose the CRM your sales team will actually adopt."
+    },
+    "hero": {
+      "eyebrow": "Solution Selection — Software Selection",
+      "title": "CRM selection and evaluation",
+      "description": "A CRM shouldn't force your sales team to change how they sell. It should help them sell better. We help organizations define, evaluate, and select the CRM that best fits their sales process.",
+      "ctaLabel": "Evaluate my CRM need"
+    },
+    "dolor": {
+      "eyebrow": "01 — Pain",
+      "title": "When the customer relationship is fragmented",
+      "items": [
+        { "title": "Scattered information", "description": "Customer data lives in emails, spreadsheets, and each salesperson's memory." },
+        { "title": "Leads that fall through", "description": "Sales opportunities lost because no one followed up in time." },
+        { "title": "Manual follow-up", "description": "Every salesperson manages their pipeline their own way, with no standard process." },
+        { "title": "Poor pipeline visibility", "description": "Sales leadership doesn't know in real time how the month is closing." },
+        { "title": "Different tools per team", "description": "Sales, marketing, and service work in systems that don't talk to each other." },
+        { "title": "Information tied to people", "description": "When a salesperson leaves, the history of their customer relationships leaves with them." }
+      ],
+      "narrativa": "Low sales traceability doesn't just cost deals — it makes it impossible to measure what's actually working."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — The problem",
+      "title": "The challenge isn't finding a CRM. It's finding one your organization will actually adopt.",
+      "body": "A CRM can have 200 features — but if the sales team doesn't use it, the investment fails.",
+      "punch": "Fit with the real sales process matters more than the feature list."
+    },
+    "solucion": {
+      "eyebrow": "03 — Our approach",
+      "title": "We design the selection around your sales process",
+      "linkLabel": "This is how we apply the full CIRA Method to software selection",
+      "steps": ["Sales strategy", "Sales process", "Customer data", "Automation", "Technology", "Recommended CRM"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluation",
+      "title": "We evaluate the CRM from six perspectives",
+      "items": [
+        { "title": "Functional", "description": "Does it cover lead management, opportunities, pipeline, and customer service?" },
+        { "title": "Technical", "description": "Does it integrate with marketing, telephony, and existing sales systems?" },
+        { "title": "Economic", "description": "What's the cost per user and the total cost as the sales team scales?" },
+        { "title": "Strategic", "description": "Does it support omnichannel, analytics, and AI to keep up with sales growth?" },
+        { "title": "Vendor", "description": "How solid is the vendor's support and partner ecosystem?" },
+        { "title": "Adoption", "description": "Does it fit the way your team actually sells, or does it impose a new one?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Result",
+      "title": "The right CRM for your sales model",
+      "items": ["Sales process map", "Evaluation matrix", "Vendor shortlist", "Guided functional demo", "TCO per user", "Adoption analysis", "Recommendation", "Implementation roadmap"],
+      "closingQuote": "The result isn't \"this CRM is the best.\" It's \"this CRM best answers our requirements and objectives, and here's why.\""
+    },
+    "faq": [
+      { "question": "How long does a CRM selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
+      { "question": "Our sales team already rejected a CRM before — how do we avoid that happening again?", "answer": "We start from the real sales process, not the feature catalog — the Adoption criterion is evaluated from day one, together with your sales team, not at the end of the process." }
+    ]
+  },
+  "hcm": {
+    "meta": {
+      "title": "HCM (Human Capital Management) Selection | Cyrrus",
+      "description": "HCM selection consulting: we align human capital technology with your management model, payroll, talent, and employee experience — 100% vendor-agnostic evaluation."
+    },
+    "hero": {
+      "eyebrow": "Solution Selection — Software Selection",
+      "title": "Human capital management (HCM) software selection",
+      "description": "Human capital technology should adapt to the organization, not the other way around. We help organizations define, evaluate, and select the HCM that best fits their people-management model.",
+      "ctaLabel": "Evaluate my HCM need"
+    },
+    "dolor": {
+      "eyebrow": "01 — Pain",
+      "title": "When people management becomes a fragmented operation",
+      "items": [
+        { "title": "Multiple systems", "description": "Payroll, talent, and recruiting live on separate platforms that don't connect." },
+        { "title": "Manual processes", "description": "Vacation, performance reviews, and compensation managed in spreadsheets." },
+        { "title": "Scattered information", "description": "There's no single source of truth for each employee." },
+        { "title": "Disconnected payroll", "description": "Payroll doesn't communicate with the rest of the HR processes." },
+        { "title": "Poor employee experience", "description": "Slow, unintuitive processes that frustrate the team." },
+        { "title": "Systems that don't scale", "description": "The current platform can't support headcount growth or new geographies." }
+      ],
+      "narrativa": "Poorly integrated talent processes don't just create redundant work — they make it impossible to make people decisions with reliable data."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — The problem",
+      "title": "An HCM isn't just an HR system",
+      "body": "It has to support People, Processes, Policies, Data, Experience, Compliance, and the organization's talent strategy — not just automate payroll.",
+      "punch": "That's why selection shouldn't be done by comparing features alone."
+    },
+    "solucion": {
+      "eyebrow": "03 — Our approach",
+      "title": "We align technology with your human capital management model",
+      "linkLabel": "This is how we apply the full CIRA Method to software selection",
+      "steps": ["Management model", "HR processes", "Requirements", "HCM solutions", "Evaluation", "Recommended HCM"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluation",
+      "title": "We evaluate the HCM from the organization's and its people's perspective",
+      "items": [
+        { "title": "Functional", "description": "Does it cover Core HR, payroll, talent, recruiting, performance, and compensation?" },
+        { "title": "Technical", "description": "Does it integrate with the ERP and the company's other administrative systems?" },
+        { "title": "Economic", "description": "What's the cost per employee and the total cost as headcount scales?" },
+        { "title": "Strategic", "description": "Does it support learning, talent analytics, and AI aligned with the people strategy?" },
+        { "title": "Vendor", "description": "Does it comply with labor and payroll regulations in every country the company operates in?" },
+        { "title": "Employee experience", "description": "Is it intuitive for employees, or will it end up underused like the previous systems?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Result",
+      "title": "A platform that can keep up with the organization's evolution",
+      "items": ["Human capital requirements", "Solution evaluation", "Vendor comparison", "Decision matrix", "Economic evaluation", "Risk analysis", "Recommendation", "Implementation roadmap"]
+    },
+    "faq": [
+      { "question": "How long does an HCM selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
+      { "question": "We operate in several countries — how does that affect the selection?", "answer": "Regulatory and payroll compliance per country is one of the six criteria we evaluate from the start — not an adjustment made after the selection." }
+    ]
+  },
+  "eam": {
+    "meta": {
+      "title": "EAM (Enterprise Asset Management) Selection | Cyrrus",
+      "description": "EAM selection consulting: we choose your asset management platform based on your operation's lifecycle — maintenance, cost, and reliability — with no vendor bias."
+    },
+    "hero": {
+      "eyebrow": "Solution Selection — Software Selection",
+      "title": "Enterprise asset management (EAM) software selection",
+      "description": "Asset management starts long before maintenance. It starts with choosing the right technology. We help organizations define, evaluate, and select the EAM that best fits their operational reality.",
+      "ctaLabel": "Evaluate my EAM need"
+    },
+    "dolor": {
+      "eyebrow": "01 — Pain",
+      "title": "When assets become a source of uncertainty",
+      "items": [
+        { "title": "Reactive maintenance", "description": "Assets get serviced after they've already failed, not before." },
+        { "title": "Scattered information", "description": "Maintenance history lives in physical logs or loose files." },
+        { "title": "Assets without traceability", "description": "No clear visibility of where each asset is or what condition it's in." },
+        { "title": "Costs hard to control", "description": "Maintenance and spare-parts spending can't be accurately attributed." },
+        { "title": "Unplanned downtime", "description": "Failures that stop the operation with no prior warning." },
+        { "title": "Disconnected spare-parts inventory", "description": "Procurement doesn't know what parts are available before issuing an order." }
+      ],
+      "narrativa": "Poor visibility into asset lifecycle doesn't just cost in maintenance — it costs in stopped operations."
+    },
+    "problemaReal": {
+      "eyebrow": "02 — The problem",
+      "title": "An EAM has to fit the operational reality of the assets",
+      "body": "The need for an EAM looks different in manufacturing, energy, utilities, infrastructure, mining, transportation, or oil & gas.",
+      "punch": "The EAM with the most features isn't necessarily the best EAM for a given organization."
+    },
+    "solucion": {
+      "eyebrow": "03 — Our approach",
+      "title": "We select the platform based on your assets' lifecycle",
+      "linkLabel": "This is how we apply the full CIRA Method to software selection",
+      "steps": ["Inventory", "Planning", "Maintenance", "Operation", "Costs", "Analytics", "Recommended EAM"]
+    },
+    "evaluamos": {
+      "eyebrow": "04 — Evaluation",
+      "title": "We evaluate the EAM beyond maintenance",
+      "items": [
+        { "title": "Functional", "description": "Does it cover asset management, work orders, planning, and spare-parts inventory?" },
+        { "title": "Technical", "description": "Does it integrate with the ERP and support IoT for real-time monitoring?" },
+        { "title": "Economic", "description": "What's the total cost of ownership versus the reduction in unplanned downtime?" },
+        { "title": "Strategic", "description": "Does it support predictive maintenance and analytics to anticipate failures?" },
+        { "title": "Vendor", "description": "Does it have real experience in the organization's specific industry?" },
+        { "title": "Adoption", "description": "Will the field maintenance team actually use it, or default back to paper?" }
+      ]
+    },
+    "entregables": {
+      "eyebrow": "05 — Result",
+      "title": "A solution that connects assets, operations, and the business",
+      "items": ["Operational requirements map", "Technical evaluation matrix", "Vendor comparison", "Lifecycle TCO", "Operational risk analysis", "Recommendation", "Implementation roadmap"],
+      "closingQuote": "A technology recommendation backed by operational, technical, economic, and strategic requirements — not just maintenance features."
+    },
+    "faq": [
+      { "question": "How long does an EAM selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
+      { "question": "Does the evaluation account for my operation's specific industry?", "answer": "Yes — the Vendor criterion includes evaluating real experience in industries like manufacturing, energy, mining, or transportation, not just generic platform capability." }
+    ]
+  }
+}

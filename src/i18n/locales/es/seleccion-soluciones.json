@@ -57,7 +57,7 @@
     "eyebrow": "Categorías",
     "title": "Soluciones que evaluamos y seleccionamos con usted",
     "items": [
-      { "slug": "tecnologias-maduras", "label": "Tecnologías Maduras", "note": "(ERP, CRM, HCM, aplicaciones de negocio, BI)" },
+      { "slug": "seleccion-de-software", "label": "Selección de Software", "note": "(ERP, CRM, HCM, EAM, aplicaciones de negocio, BI)" },
       { "slug": "tecnologias-avanzadas", "label": "Tecnologías Avanzadas", "note": "(Automatizaciones, Inteligencia Artificial, RPA, Analítica Avanzada)" },
       { "slug": "infraestructura-tecnologica", "label": "Infraestructura Tecnológica", "note": "(Ciberseguridad, Redes, Nube, Continuidad y Respaldo)" }
     ]
@@ -105,18 +105,6 @@
     "ctaLabel": "Hablemos de su selección",
     "whatWeHelp": "¿Qué ayudamos a seleccionar?",
     "entries": {
-      "tecnologias-maduras": {
-        "label": "Tecnologías Maduras",
-        "eyebrow": "Selección de Soluciones — Tecnologías Maduras",
-        "intro": "Son el corazón operativo de la organización. Permiten estandarizar procesos, fortalecer la operación y crear una base sólida para crecer.",
-        "stat": { "value": "+70%", "description": "de las iniciativas ERP no alcanzan completamente los objetivos del negocio.", "source": "Cyrrus" },
-        "items": [
-          { "title": "ERP", "description": "Integramos los procesos financieros, comerciales, logísticos, productivos y administrativos sobre una plataforma preparada para acompañar el crecimiento del negocio." },
-          { "title": "CRM", "description": "Seleccionamos soluciones que fortalecen la relación con los clientes, optimizan el proceso comercial y mejoran la experiencia en cada interacción." },
-          { "title": "HCM", "description": "Ayudamos a identificar plataformas que potencian la gestión del talento, fortalecen el desarrollo de las personas y acompañan la evolución de la organización." },
-          { "title": "EAM", "description": "Seleccionamos soluciones para administrar activos físicos, optimizar el mantenimiento y mejorar la confiabilidad operacional." }
-        ]
-      },
       "tecnologias-avanzadas": {
         "label": "Tecnologías Avanzadas",
         "eyebrow": "Selección de Soluciones — Tecnologías Avanzadas",
@@ -141,7 +129,6 @@
     }
   },
   "detailMeta": {
-    "tecnologias-maduras": { "title": "Selección de Tecnologías Maduras: ERP, CRM, HCM | Cyrrus", "description": "Le ayudamos a elegir el ERP, CRM, HCM o aplicaciones de negocio correctas para su empresa: evaluación agnóstica de proveedores, criterios objetivos y sin sesgo comercial." },
     "tecnologias-avanzadas": { "title": "Selección de Tecnologías Avanzadas: Automatización e IA | Cyrrus", "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales." },
     "infraestructura-tecnologica": { "title": "Infraestructura Tecnológica: Ciberseguridad y Nube | Cyrrus", "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor." }
   }
