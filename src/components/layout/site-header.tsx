@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { BorderButton } from "@/components/ui/border-button";
 import { NavMenu } from "@/components/layout/nav-menu";
-import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
 import { useLang } from "@/lib/language";
 import { useScrolled } from "@/lib/use-scrolled";
@@ -111,7 +110,6 @@ export function SiteHeader() {
       </Link>
       <NavMenu items={navItems} variant={"light"} />
       <div className="flex items-center gap-2">
-        <LanguageSwitcher className="hidden lg:inline-flex" />
         <BorderButton
           variant="dark"
           size="sm"
@@ -149,12 +147,12 @@ export function SiteHeader() {
             />
           ))}
         </nav>
-        <div className="flex items-center justify-between gap-4 border-t border-border px-6 py-5">
+        <div className="border-t border-border px-6 py-5">
           <BorderButton
             variant="dark"
             size="sm"
             dot
-            className="flex-1 justify-center"
+            className="w-full justify-center"
             onClick={() => {
               setMobileOpen(false);
               openWizard();
@@ -162,7 +160,6 @@ export function SiteHeader() {
           >
             {t("cta.agendarConversacion")}
           </BorderButton>
-          <LanguageSwitcher onNavigate={() => setMobileOpen(false)} />
         </div>
       </div>
     </header>

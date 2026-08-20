@@ -11,15 +11,6 @@ export function useLang() {
   return useContext(LanguageContext);
 }
 
-/** Persists an explicit (manual) language choice so auto-detection never overrides it again. */
-export function setLangPreference(lang: Lang) {
-  try {
-    window.localStorage.setItem(LANG_STORAGE_KEY, lang);
-  } catch {
-    // localStorage unavailable (private mode, etc.) — auto-detect will just re-run next visit.
-  }
-}
-
 /**
  * Puts a Spanish-canonical path into the active language's URL space.
  *
@@ -49,14 +40,6 @@ export function langPath(path: string, lang: Lang): string {
  */
 export function langFromPathname(pathname: string): Lang {
   return pathname === "/en" || pathname.startsWith("/en/") ? "en" : "es";
-}
-
-/** The same page in the other language, for the language switcher. */
-export function otherLangPath(pathname: string, current: Lang): string {
-  if (current === "en") {
-    return pathname.replace(/^\/en(?=\/|$)/, "") || "/";
-  }
-  return langPath(pathname, "en");
 }
 
 /**
