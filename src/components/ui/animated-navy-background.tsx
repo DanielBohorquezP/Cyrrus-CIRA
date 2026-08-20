@@ -89,7 +89,7 @@ export const AnimatedNavyBackground = forwardRef<HTMLElement, AnimatedNavyBackgr
   const isAnimating = isVisible && pageVisible;
 
   return (
-    <section ref={ref} className={cn("relative w-full", className)} {...props}>
+    <section ref={ref} className={cn("relative w-full overflow-hidden", className)} {...props}>
       <div className="navy-radial-bg absolute inset-0 z-0" />
       <div
         ref={wrapperRef}
