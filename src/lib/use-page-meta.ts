@@ -3,7 +3,14 @@ import { useLocation } from "react-router-dom";
 
 const SITE_URL = "https://www.cyrruscs.com";
 
-const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/og-image.png`;
+// www.cyrruscs.com isn't connected to this Vercel project yet (it still
+// serves an unrelated legacy site), so og:image/twitter:image URLs built
+// from SITE_URL 404 for crawlers and social platforms show no preview.
+// Point images at the working Vercel domain until the real domain is
+// connected — then drop OG_IMAGE_BASE and go back to SITE_URL here.
+const OG_IMAGE_BASE = "https://cyrrus-cira.vercel.app";
+
+const DEFAULT_OG_IMAGE = `${OG_IMAGE_BASE}/assets/og-image.png`;
 
 interface PageMeta {
   title: string;

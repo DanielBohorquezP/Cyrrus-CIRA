@@ -40,7 +40,10 @@ export default function QuienesSomos() {
   usePageMeta({
     title: t("quienesSomos.meta.title"),
     description: t("quienesSomos.meta.description"),
-    image: "https://www.cyrruscs.com/assets/og-quienes-somos.png",
+    // See the OG_IMAGE_BASE comment in use-page-meta.ts — www.cyrruscs.com
+    // isn't connected to this deployment yet, so this points at the working
+    // Vercel domain until the real domain is connected.
+    image: "https://cyrrus-cira.vercel.app/assets/og-quienes-somos.png",
     alternatePath: lang === "en" ? "/quienes-somos" : "/en/quienes-somos",
     jsonLd: [
       {

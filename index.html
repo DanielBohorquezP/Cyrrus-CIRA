@@ -30,8 +30,12 @@
     />
     <meta property="og:url" content="https://www.cyrruscs.com/" />
     <meta property="og:locale" content="es_CO" />
-    <meta property="og:image" content="https://www.cyrruscs.com/assets/og-image.png" />
-    <meta property="og:image:secure_url" content="https://www.cyrruscs.com/assets/og-image.png" />
+    <!-- og:image/twitter:image point at the Vercel domain, not SITE_URL
+         above — www.cyrruscs.com isn't connected to this deployment yet and
+         404s for crawlers. Switch these back once the domain is connected;
+         see the OG_IMAGE_BASE comment in src/lib/use-page-meta.ts. -->
+    <meta property="og:image" content="https://cyrrus-cira.vercel.app/assets/og-image.png" />
+    <meta property="og:image:secure_url" content="https://cyrrus-cira.vercel.app/assets/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -43,7 +47,7 @@
       name="twitter:description"
       content="En LATAM, la mayoría de las transformaciones se detiene entre la decisión y la operación. La metodología CIRA las conecta: estrategia, la solución correcta y adopción real, con IA en cada fase."
     />
-    <meta name="twitter:image" content="https://www.cyrruscs.com/assets/og-image.png" />
+    <meta name="twitter:image" content="https://cyrrus-cira.vercel.app/assets/og-image.png" />
 
     <title>Consultoría Estratégica con IA | Cyrrus Consulting Services</title>
 
