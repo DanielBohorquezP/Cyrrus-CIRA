@@ -2,7 +2,7 @@
   "erp": {
     "meta": {
       "title": "ERP Selection for Companies | Cyrrus",
-      "description": "ERP selection consulting: we define, evaluate, and choose with you the ERP that best fits your processes, architecture, and investment capacity — 100% vendor-agnostic evaluation."
+      "description": "ERP selection consulting: we define, evaluate, and choose with you the ERP that best fits your processes — a 100% vendor-agnostic evaluation."
     },
     "hero": {
       "eyebrow": "Solution Selection — Software Selection",
@@ -119,7 +119,7 @@
   "hcm": {
     "meta": {
       "title": "HCM (Human Capital Management) Selection | Cyrrus",
-      "description": "HCM selection consulting: we align human capital technology with your management model, payroll, talent, and employee experience — 100% vendor-agnostic evaluation."
+      "description": "HCM selection consulting: we align human capital technology with your payroll, talent, and employee experience — 100% vendor-agnostic."
     },
     "hero": {
       "eyebrow": "Solution Selection — Software Selection",
@@ -177,7 +177,7 @@
   "eam": {
     "meta": {
       "title": "EAM (Enterprise Asset Management) Selection | Cyrrus",
-      "description": "EAM selection consulting: we choose your asset management platform based on your operation's lifecycle — maintenance, cost, and reliability — with no vendor bias."
+      "description": "EAM selection consulting: we choose your asset management platform based on your operation's lifecycle, with no vendor bias."
     },
     "hero": {
       "eyebrow": "Solution Selection — Software Selection",

@@ -4,8 +4,10 @@
   solutions-data.ts + workshops-data.ts (excluding "próximamente" workshops).
   Do not hand-edit URLs/structure here — edit route-meta.json or the data
   files instead and re-run `node scripts/generate-sitemap.mjs`.
-  Priority/changefreq/lastmod for existing URLs are preserved across
-  regenerations; lastmod only falls back to the build date for new URLs.
+  Priority/changefreq are preserved for existing URLs across regenerations.
+  lastmod advances only when the i18n content that feeds that route actually
+  changed (tracked in src/lib/sitemap-content-hashes.json) — see
+  CONTENT_SOURCE in this script for the route -> content mapping.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
@@ -421,24 +423,6 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/experiencia" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/experiencia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/experiencia" />
-  </url>
-  <url>
-    <loc>https://www.cyrruscs.com/contacto</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/contacto" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/contacto" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/contacto" />
-  </url>
-  <url>
-    <loc>https://www.cyrruscs.com/en/contacto</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.cyrruscs.com/contacto" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cyrruscs.com/en/contacto" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cyrruscs.com/contacto" />
   </url>
   <url>
     <loc>https://www.cyrruscs.com/privacidad</loc>

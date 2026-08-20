@@ -7,16 +7,20 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 ## Método CIRA
 - [Metodología CIRA](https://www.cyrruscs.com/metodo-cira): las 4 fases del método.
 - [Estrategia](https://www.cyrruscs.com/metodo-cira/planeacion-estrategica): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
-- [Selección de Soluciones](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones): selección agnóstica de ERP, CRM, HCM, ciberseguridad y migración a la nube.
-- [Tecnologías Maduras](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-maduras): selección de ERP, CRM y HCM.
-- [Tecnologías Avanzadas](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas)
-- [Infraestructura Tecnológica](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica)
+- [Selección de Soluciones](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones): cómo se selecciona tecnología con criterios definidos antes de mirar proveedores, sin sesgo comercial.
+- [Selección de Software](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software): evaluación y selección independiente de software empresarial — ERP, CRM, HCM y EAM.
+- [Selección de ERP](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): consultoría de selección de ERP 100% agnóstica de proveedor.
+- [Selección de CRM](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm): evaluación de CRM alrededor del proceso comercial real de la empresa.
+- [Selección de HCM](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm): selección de tecnología de gestión humana, nómina y talento.
+- [Selección de EAM](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam): selección de plataformas de gestión de activos y mantenimiento.
+- [Tecnologías Avanzadas](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas): selección de automatización, IA y analítica avanzada.
+- [Infraestructura Tecnológica](https://www.cyrruscs.com/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica): selección de ciberseguridad, redes, nube y continuidad de negocio.
 - [Gerencia de Proyectos](https://www.cyrruscs.com/metodo-cira/gestion-de-proyectos): PMO externo para la ejecución de proyectos de implementación.
 - [Gestión del Cambio](https://www.cyrruscs.com/metodo-cira/gestion-del-cambio): adopción organizacional y capacitación.
 
 ## Cyrrus Intelligence Lab
-- [Cyrrus Intelligence Lab](https://www.cyrruscs.com/intelligence-lab): gobierno de IA corporativo y arquitectura de IA empresarial.
-- [Automatización y Agentes IA](https://www.cyrruscs.com/intelligence-lab/automatizaciones-desarrollo): agentes de IA y desarrollos a la medida.
+- [Cyrrus Intelligence Lab](https://www.cyrruscs.com/intelligence-lab): consultoría en inteligencia artificial empresarial — gobierno, arquitectura y automatización.
+- [Automatización y Agentes IA](https://www.cyrruscs.com/intelligence-lab/automatizaciones-desarrollo): automatización de procesos, agentes de IA y desarrollos a la medida.
 - [Arquitectura de IA](https://www.cyrruscs.com/intelligence-lab/arquitectura-de-ia): diseño técnico que conecta modelos, datos y sistemas empresariales.
 - [Gobierno de IA](https://www.cyrruscs.com/intelligence-lab/gobierno-de-ia): políticas, roles y controles sobre el uso de IA en la organización.
 
@@ -26,31 +30,33 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 - [SEO](https://www.cyrruscs.com/presencia-digital/seo): posicionamiento SEO y visibilidad en motores de respuesta con IA (GEO).
 
 ## Leadership Academy
-- [Leadership Academy](https://www.cyrruscs.com/leadership-academy): programas de capacitación y cambio organizacional.
+- [Leadership Academy](https://www.cyrruscs.com/leadership-academy): talleres para altos ejecutivos y capacitación gerencial.
 
 ## Otras páginas
 - [Quiénes Somos](https://www.cyrruscs.com/quienes-somos): Jackson Bohorquez, CEO y fundador de Cyrrus, creador del método CIRA.
 - [Experiencia](https://www.cyrruscs.com/experiencia): casos y trayectoria de Cyrrus.
-- [Contacto](https://www.cyrruscs.com/contacto)
 
 ## English
 - [Home](https://www.cyrruscs.com/en): strategic consulting and digital transformation with AI, via the CIRA methodology.
 - [CIRA Method](https://www.cyrruscs.com/en/metodo-cira): the 4 phases of the method — Construct, Identify, Realize, Adopt.
 - [Strategy](https://www.cyrruscs.com/en/metodo-cira/planeacion-estrategica): business and IT strategy consulting, CTO/CIO as a Service.
-- [Solution Selection](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones): agnostic selection of ERP, CRM, HCM, cybersecurity, and cloud migration.
-- [Mature Technologies](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-maduras)
-- [Advanced Technologies](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas)
-- [Technology Infrastructure](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica)
+- [Solution Selection](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones): how technology is selected against criteria defined before looking at vendors, with no commercial bias.
+- [Software Selection](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software): independent evaluation and selection of enterprise software — ERP, CRM, HCM, and EAM.
+- [ERP Selection](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): 100% vendor-agnostic ERP selection consulting.
+- [CRM Selection](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm): CRM evaluation built around the company's real sales process.
+- [HCM Selection](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm): selection of human capital, payroll, and talent technology.
+- [EAM Selection](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam): selection of asset management and maintenance platforms.
+- [Advanced Technologies](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas): selection of automation, AI, and advanced analytics.
+- [Technology Infrastructure](https://www.cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica): selection of cybersecurity, networking, cloud, and business continuity.
 - [Project Management](https://www.cyrruscs.com/en/metodo-cira/gestion-de-proyectos): external PMO for implementation project execution.
 - [Change Management](https://www.cyrruscs.com/en/metodo-cira/gestion-del-cambio): organizational adoption and training.
-- [Cyrrus Intelligence Lab](https://www.cyrruscs.com/en/intelligence-lab): corporate AI governance and enterprise AI architecture.
-- [Automation & AI Agents](https://www.cyrruscs.com/en/intelligence-lab/automatizaciones-desarrollo): AI agents and custom development.
+- [Cyrrus Intelligence Lab](https://www.cyrruscs.com/en/intelligence-lab): enterprise artificial intelligence consulting — governance, architecture, and automation.
+- [Automation & AI Agents](https://www.cyrruscs.com/en/intelligence-lab/automatizaciones-desarrollo): process automation, AI agents, and custom development.
 - [AI Architecture](https://www.cyrruscs.com/en/intelligence-lab/arquitectura-de-ia): technical design connecting models, data, and enterprise systems.
 - [AI Governance](https://www.cyrruscs.com/en/intelligence-lab/gobierno-de-ia): policies, roles, and controls over AI use in the organization.
 - [Digital Presence](https://www.cyrruscs.com/en/presencia-digital): corporate web development and SEO treated as business assets.
 - [Web Development](https://www.cyrruscs.com/en/presencia-digital/desarrollo-web): fast, measurable corporate sites editable by the client's own team.
 - [SEO](https://www.cyrruscs.com/en/presencia-digital/seo): SEO positioning and visibility in AI answer engines (GEO).
-- [Leadership Academy](https://www.cyrruscs.com/en/leadership-academy): training programs and organizational change management.
+- [Leadership Academy](https://www.cyrruscs.com/en/leadership-academy): executive workshops and management training.
 - [About Us](https://www.cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://www.cyrruscs.com/en/experiencia): Cyrrus's cases and track record.
-- [Contact](https://www.cyrruscs.com/en/contacto)

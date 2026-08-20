@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Solution Selection: ERP, CRM, HCM | Cyrrus",
-    "description": "We choose the right solution with you — ERP, CRM, HCM, cybersecurity, cloud — vendor-bias-free, based on your real processes."
+    "title": "Technology Selection Without Vendor Bias | Cyrrus",
+    "description": "How we choose technology with criteria defined before looking at vendors: business software, automation, and infrastructure, with no commercial bias."
   },
   "hero": {
     "eyebrow": "CIRA Method — Identify",
-    "title": "Enterprise solution selection",
-    "description": "Technology gets bought because it's trending, not because it truly fits the business. Our software selection consulting always starts from the business's requirements, not the vendor's catalog — 100% agnostic evaluation, with objective, comparable criteria.",
+    "title": "Technology selection without vendor bias",
+    "description": "Technology gets bought because it's trending, not because it truly fits the business. Our technology selection always starts from the business's requirements, not the vendor's catalog — 100% agnostic evaluation, with objective, comparable criteria.",
     "ctaLabel": "Let's talk about your solution"
   },
   "intro": {
@@ -129,7 +129,7 @@
     }
   },
   "detailMeta": {
-    "tecnologias-avanzadas": { "title": "Advanced Technology Selection: Automation & AI | Cyrrus", "description": "We select the automation, artificial intelligence, and advanced analytics solutions that fit your data and process maturity." },
+    "tecnologias-avanzadas": { "title": "Automation and AI Selection for Companies | Cyrrus", "description": "We select the automation, artificial intelligence, and advanced analytics solutions that fit your data and process maturity." },
     "infraestructura-tecnologica": { "title": "Technology Infrastructure: Cybersecurity & Cloud | Cyrrus", "description": "We evaluate and select the cybersecurity, network, cloud, and business continuity solutions your company needs, with no vendor bias." }
   }
 }

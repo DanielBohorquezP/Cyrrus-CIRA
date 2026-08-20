@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/social-media";
 import { langPath, useLang } from "@/lib/language";
 import { Img } from "@/components/ui/img";
+import { useContactWizard } from "@/lib/contact-wizard-context";
 
 const socialLinks: SocialItem[] = [
   {
@@ -37,6 +38,7 @@ const socialLinks: SocialItem[] = [
 export function Footer() {
   const { t } = useTranslation();
   const lang = useLang();
+  const { openWizard } = useContactWizard();
 
   const links = [
     { label: t("nav.metodoCira", { ns: "common" }), href: langPath("/metodo-cira", lang) },
@@ -45,7 +47,6 @@ export function Footer() {
     { label: t("nav.leadershipAcademy", { ns: "common" }), href: langPath("/leadership-academy", lang) },
     { label: t("nav.experiencia", { ns: "common" }), href: langPath("/experiencia", lang) },
     { label: t("nav.perspectivas", { ns: "common" }), href: langPath("/perspectivas", lang) },
-    { label: lang === "en" ? "Contact" : "Contacto", href: langPath("/contacto", lang) },
   ];
 
   const legalLinks = [
@@ -76,6 +77,13 @@ export function Footer() {
               {link.label}
             </Link>
           ))}
+          <button
+            type="button"
+            onClick={openWizard}
+            className="text-sm text-gray transition-colors hover:text-navy"
+          >
+            {lang === "en" ? "Contact" : "Contacto"}
+          </button>
         </nav>
         <div className="flex flex-col items-center gap-4 md:items-end">
           <SocialTooltip items={socialLinks} />

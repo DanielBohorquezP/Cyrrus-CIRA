@@ -6,10 +6,11 @@ import { BorderButton } from "@/components/ui/border-button";
 import { NavMenu } from "@/components/layout/nav-menu";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
-import { langPath, useLang } from "@/lib/language";
+import { useLang } from "@/lib/language";
 import { useScrolled } from "@/lib/use-scrolled";
 import { cn } from "@/lib/utils";
 import { Img } from "@/components/ui/img";
+import { useContactWizard } from "@/lib/contact-wizard-context";
 
 function MobileNavAccordionItem({
   item,
@@ -77,6 +78,7 @@ export function TransparentHeader() {
   const lang = useLang();
   const navItems = getNavItems(t, lang);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { openWizard } = useContactWizard();
 
   useEffect(() => {
     setMobileOpen(false);
@@ -133,12 +135,12 @@ export function TransparentHeader() {
           className="hidden lg:inline-flex"
         />
         <BorderButton
-          asChild
           variant={scrolled ? "dark" : "light"}
           dot
           className="hidden lg:inline-flex"
+          onClick={openWizard}
         >
-          <Link to={langPath("/contacto", lang)}>{t("cta.agendarConversacion")}</Link>
+          {t("cta.agendarConversacion")}
         </BorderButton>
         <button
           type="button"
@@ -172,10 +174,17 @@ export function TransparentHeader() {
           ))}
         </nav>
         <div className="flex items-center justify-between gap-4 border-t border-border px-6 py-5">
-          <BorderButton asChild variant="dark" size="sm" dot className="flex-1 justify-center">
-            <Link to={langPath("/contacto", lang)} onClick={() => setMobileOpen(false)}>
-              {t("cta.agendarConversacion")}
-            </Link>
+          <BorderButton
+            variant="dark"
+            size="sm"
+            dot
+            className="flex-1 justify-center"
+            onClick={() => {
+              setMobileOpen(false);
+              openWizard();
+            }}
+          >
+            {t("cta.agendarConversacion")}
           </BorderButton>
           <LanguageSwitcher onNavigate={() => setMobileOpen(false)} />
         </div>

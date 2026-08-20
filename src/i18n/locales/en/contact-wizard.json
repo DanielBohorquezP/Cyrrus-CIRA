@@ -1,0 +1,82 @@
+{
+  "dialogTitle": "Schedule a conversation with Cyrrus",
+  "steps": {
+    "servicio": {
+      "title": "What service do you need?",
+      "options": {
+        "metodoCira": {
+          "label": "CIRA Method",
+          "description": "Strategic Planning, Solution Selection, Project Management"
+        },
+        "presenciaDigital": {
+          "label": "Digital Presence",
+          "description": "Web Development, SEO"
+        },
+        "capacitacion": {
+          "label": "Corporate Training",
+          "description": "Change Management"
+        },
+        "ia": {
+          "label": "AI Implementation",
+          "description": "Process automation, AI agents"
+        }
+      }
+    },
+    "empresa": {
+      "title": "Tell us about your company",
+      "fields": {
+        "empresa": "Company name",
+        "tamanoEmpresa": "Company size"
+      },
+      "placeholders": {
+        "empresa": "E.g.: Acme Corp"
+      }
+    },
+    "persona": {
+      "title": "Name and role at the company",
+      "fields": {
+        "nombre": "Name",
+        "rol": "Role at the company"
+      },
+      "placeholders": {
+        "nombre": "E.g.: Jane Doe",
+        "rol": "E.g.: Head of Technology"
+      }
+    },
+    "contacto": {
+      "title": "How can we reach you?",
+      "fields": {
+        "telefono": "Mobile phone",
+        "email": "Corporate email"
+      },
+      "placeholders": {
+        "telefono": "E.g.: +1 305 123 4567",
+        "email": "E.g.: name@company.com"
+      },
+      "atLeastOneNote": "Give us a phone number or an email so we can reach you.",
+      "atLeastOneError": "Give us a phone number or an email so we can reach you."
+    }
+  },
+  "sizeOptions": {
+    "r1": "50–100 employees",
+    "r2": "101–250 employees",
+    "r3": "251–500 employees",
+    "r4": "501–1000 employees",
+    "r5": "More than 1000 employees",
+    "placeholder": "Select a range"
+  },
+  "nav": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "sending": "Sending…",
+    "step": "Step {{current}} of {{total}}"
+  },
+  "requiredError": "This field is required.",
+  "submitError": "We couldn't send your information. Try again or write to us at contacto@cyrruscs.com.",
+  "success": {
+    "title": "All set! We received your information",
+    "description": "A member of the Cyrrus team will reach out within the next 24 business hours.",
+    "close": "Close"
+  }
+}

@@ -15,10 +15,12 @@ import { Experience } from "@/components/sections/experience";
 import { PerspectivasPreview } from "@/components/sections/perspectivas-preview";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
+import { useContactWizard } from "@/lib/contact-wizard-context";
 
 export default function Home() {
   const { t } = useTranslation("home");
   const lang = useLang();
+  const { openWizard } = useContactWizard();
 
   const siteUrl = "https://www.cyrruscs.com";
   const pagePath = lang === "en" ? "/en" : "/";
@@ -53,7 +55,7 @@ export default function Home() {
           titleLight={t("hero.titleLight")}
           subtitle={t("hero.subtitle")}
           primaryButtonText={t("hero.primaryButtonText")}
-          primaryButtonHref={langPath("/contacto", lang)}
+          onPrimaryButtonClick={openWizard}
           secondaryButtonText={t("hero.secondaryButtonText")}
           secondaryButtonHref={langPath("/metodo-cira", lang)}
           badgeText={t("hero.badgeText")}

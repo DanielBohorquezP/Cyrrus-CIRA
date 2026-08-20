@@ -1,8 +1,8 @@
 {
   "hub": {
     "meta": {
-      "title": "Gobierno de IA Corporativo | Cyrrus Intelligence Lab",
-      "description": "Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que sostiene las 4 fases del método CIRA — no un catálogo de chatbots, sino la infraestructura que hace posible la implementación de IA en procesos de negocio."
+      "title": "Consultoría en Inteligencia Artificial Empresarial | Cyrrus",
+      "description": "Consultoría en inteligencia artificial para empresas: gobierno de IA, arquitectura y automatización — infraestructura real, no un catálogo de chatbots."
     },
     "serviceDescription": "Gobierno de IA corporativo y arquitectura de IA empresarial, transversal a las 4 fases del método CIRA.",
     "hero": {
@@ -44,7 +44,7 @@
   },
   "automatizaciones": {
     "meta": {
-      "title": "Automatización y Agentes IA | Cyrrus Intelligence Lab",
+      "title": "Automatización de Procesos y Agentes de IA | Cyrrus",
       "description": "Automatización de procesos y agentes de IA integrados a la arquitectura empresarial, medidos contra el proceso real que reemplazan, no contra una demo."
     },
     "serviceDescription": "Automatización de procesos con inteligencia artificial",
@@ -79,7 +79,7 @@
   "arquitectura": {
     "meta": {
       "title": "Arquitectura de IA Empresarial | Cyrrus Intelligence Lab",
-      "description": "Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que la proliferación de herramientas sueltas se vuelva imposible de deshacer."
+      "description": "Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que proliferen las herramientas sueltas."
     },
     "serviceDescription": "Arquitectura de inteligencia artificial empresarial",
     "hero": {
@@ -111,8 +111,8 @@
   },
   "gobierno": {
     "meta": {
-      "title": "Gobierno de IA | Cyrrus Intelligence Lab",
-      "description": "Definimos las políticas, roles y controles claros sobre cómo se usa la inteligencia artificial dentro de su empresa — quién decide, quién audita, qué datos pueden tocarse."
+      "title": "Gobierno de IA en Empresas: Políticas y Controles | Cyrrus",
+      "description": "Definimos las políticas, roles y controles sobre el uso de inteligencia artificial en su empresa: quién decide, quién audita y qué datos se tocan."
     },
     "serviceDescription": "Gobierno de inteligencia artificial corporativo",
     "hero": {

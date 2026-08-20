@@ -1,0 +1,82 @@
+{
+  "dialogTitle": "Agendar una conversación con Cyrrus",
+  "steps": {
+    "servicio": {
+      "title": "¿Qué servicio necesitas?",
+      "options": {
+        "metodoCira": {
+          "label": "Método CIRA",
+          "description": "Planeación Estratégica, Selección de Soluciones, Gerencia de Proyectos"
+        },
+        "presenciaDigital": {
+          "label": "Presencia Digital",
+          "description": "Desarrollo Web, SEO"
+        },
+        "capacitacion": {
+          "label": "Capacitación Corporativa",
+          "description": "Gestión del Cambio"
+        },
+        "ia": {
+          "label": "Implementación de Inteligencia Artificial",
+          "description": "Automatización de procesos, agentes de IA"
+        }
+      }
+    },
+    "empresa": {
+      "title": "Cuéntanos sobre tu empresa",
+      "fields": {
+        "empresa": "Nombre de la empresa",
+        "tamanoEmpresa": "Tamaño de la empresa"
+      },
+      "placeholders": {
+        "empresa": "Ej: Acme Colombia S.A.S."
+      }
+    },
+    "persona": {
+      "title": "Nombre y rol en la empresa",
+      "fields": {
+        "nombre": "Nombre",
+        "rol": "Rol en la empresa"
+      },
+      "placeholders": {
+        "nombre": "Ej: Juan Pérez",
+        "rol": "Ej: Gerente de Tecnología"
+      }
+    },
+    "contacto": {
+      "title": "¿Cómo te contactamos?",
+      "fields": {
+        "telefono": "Teléfono celular",
+        "email": "Correo corporativo"
+      },
+      "placeholders": {
+        "telefono": "Ej: +57 300 123 4567",
+        "email": "Ej: nombre@empresa.com"
+      },
+      "atLeastOneNote": "Indícanos un teléfono o un correo para contactarte.",
+      "atLeastOneError": "Indícanos un teléfono o un correo para contactarte."
+    }
+  },
+  "sizeOptions": {
+    "r1": "50 – 100 empleados",
+    "r2": "101 – 250 empleados",
+    "r3": "251 – 500 empleados",
+    "r4": "501 – 1000 empleados",
+    "r5": "Más de 1000 empleados",
+    "placeholder": "Selecciona un rango"
+  },
+  "nav": {
+    "next": "Siguiente",
+    "back": "Atrás",
+    "submit": "Enviar",
+    "sending": "Enviando…",
+    "step": "Paso {{current}} de {{total}}"
+  },
+  "requiredError": "Este campo es obligatorio.",
+  "submitError": "No pudimos enviar tu información. Intenta de nuevo o escríbenos a contacto@cyrruscs.com.",
+  "success": {
+    "title": "¡Listo! Ya recibimos tu información",
+    "description": "Un miembro del equipo de Cyrrus se pondrá en contacto en las próximas 24 horas hábiles.",
+    "close": "Cerrar"
+  }
+}

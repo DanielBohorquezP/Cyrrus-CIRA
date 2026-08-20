@@ -24,7 +24,7 @@ interface ShaderHeroProps extends React.HTMLAttributes<HTMLDivElement> {
   titleLight?: string;
   subtitle: string;
   primaryButtonText: string;
-  primaryButtonHref: string;
+  onPrimaryButtonClick: () => void;
   secondaryButtonText: string;
   secondaryButtonHref: string;
   badgeText?: string;
@@ -114,7 +114,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
       titleLight,
       subtitle,
       primaryButtonText,
-      primaryButtonHref,
+      onPrimaryButtonClick,
       secondaryButtonText,
       secondaryButtonHref,
       badgeText = "Cyrrus Consulting Services",
@@ -285,10 +285,14 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
             className="hero-rise flex flex-wrap items-center gap-4"
             style={{ "--hero-rise-delay": "700ms" } as React.CSSProperties}
           >
-            <BorderButton asChild variant="light" size="lg" className="px-8" dot>
-              <HeroLink href={primaryButtonHref}>
-                {primaryButtonText}
-              </HeroLink>
+            <BorderButton
+              variant="light"
+              size="lg"
+              className="px-8"
+              dot
+              onClick={onPrimaryButtonClick}
+            >
+              {primaryButtonText}
             </BorderButton>
             <HeroLink
               href={secondaryButtonHref}
