@@ -122,6 +122,17 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, altern
       }
     }
 
+    // The prerendered HTML already bakes in a `[data-page-json-ld]` script per
+    // entry (see scripts/prerender.mjs) so a crawler that never runs JS still
+    // sees the schema. On the first hydration of whichever page a visitor
+    // actually lands on, those prerendered scripts are still in the document
+    // when this effect runs — appending a fresh set on top of them without
+    // clearing the old ones first left every page with two byte-identical
+    // copies of each JSON-LD block. This effect is the sole owner of
+    // `[data-page-json-ld]` scripts from here on, so it clears whatever's
+    // already there (prerendered or a previous page's leftovers) before
+    // adding its own.
+    document.querySelectorAll("script[data-page-json-ld]").forEach((el) => el.remove());
     const scripts: HTMLScriptElement[] = [];
     if (jsonLdArray) {
       for (const entry of jsonLdArray) {
