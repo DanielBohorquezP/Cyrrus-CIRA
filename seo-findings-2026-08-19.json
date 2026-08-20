@@ -1,0 +1,629 @@
+[
+ {
+  "id": "M17.sitemap.missing_indexable_pages",
+  "module": "M17",
+  "status": "pass",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M9.images.unoptimized_originals_shipped_to_prod",
+  "module": "M9",
+  "status": "pass",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M10.internal_link.perspectivas_cta_blank_tab_no_router",
+  "module": "M10",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M7.title.leadership_workshops_missing_brand_suffix",
+  "module": "M7",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M2.canonical.404_points_to_synthetic_nonexistent_url",
+  "module": "M2",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M7.head.charset_not_first_child",
+  "module": "M7",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M7c.landmarks.unlabeled_multiple_nav",
+  "module": "M7c",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M8.og_image.generic_across_all_pages",
+  "module": "M8",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M15.css.single_render_blocking_bundle_sitewide",
+  "module": "M15",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M15.psi_crux.field_and_lab_data",
+  "module": "M15",
+  "status": "needs_api",
+  "severity": 0,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M1.robots_headers.vercel_noindex_scope",
+  "module": "M1",
+  "status": "needs_api",
+  "severity": 0,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "high"
+  }
+ },
+ {
+  "id": "M3.redirects.tecnologias_maduras_301",
+  "module": "M3",
+  "status": "needs_api",
+  "severity": 0,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M2.noindex.scope_consistent_with_sitemap",
+  "module": "M2",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M10.link_graph.no_orphans_no_broken_links",
+  "module": "M10",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M20.hreflang.full_reciprocity_pass",
+  "module": "M20",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M4.rendering.prerender_matches_react_first_pass",
+  "module": "M4",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "established",
+   "magnitude": "high"
+  }
+ },
+ {
+  "id": "M7.meta_description.length_compliance",
+  "module": "M7",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M9.images.alt_and_dimensions_sampled_pages",
+  "module": "M9",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M14.crawlers.robots_allows_major_ai_bots",
+  "module": "M14",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "established",
+   "magnitude": "high"
+  }
+ },
+ {
+  "id": "M14.llms_txt.valid_and_accurate",
+  "module": "M14",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M14.llms_txt.es_home_link_missing",
+  "module": "M14",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M14.crawlers.header_level_access_unverifiable",
+  "module": "M14",
+  "status": "needs_api",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "speculative",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M6.entity.founder_reference_unresolved_offpage",
+  "module": "M6",
+  "status": "pass",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M6.entity.person_sameas_url_mismatch",
+  "module": "M6",
+  "status": "pass",
+  "severity": 3,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M6.entity.website_node_language_mismatch_en",
+  "module": "M6",
+  "status": "pass",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M21.entity.google_share_link_unverifiable",
+  "module": "M21",
+  "status": "needs_api",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M11.answerblocks.faq_statements_not_interrogative",
+  "module": "M11",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M11.answerblocks.home_teaser_cards_incomplete",
+  "module": "M11",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M12.factdensity.product_pages_thin_faq",
+  "module": "M12",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M12.factdensity.perspectivas_zero_content_topical_gap",
+  "module": "M12",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M12.factdensity.experiencia_logos_no_case_narrative",
+  "module": "M12",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M6.entity.consistent_org_id_and_person_linkage",
+  "module": "M6",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "ai",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M16.eeat.founder_identity_strong",
+  "module": "M16",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M16.eeat.team_roster_asymmetric_depth",
+  "module": "M16",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M16.eeat.linkedin_sameas_mismatch",
+  "module": "M16",
+  "status": "pass",
+  "severity": 3,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M16.eeat.unsourced_60pct_claim",
+  "module": "M16",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M16.eeat.contact_nap_visible_pass",
+  "module": "M16",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M16.eeat.no_editorial_correction_policy",
+  "module": "M16",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M16.eeat.taxid_schema_only",
+  "module": "M16",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M16.eeat.external_signals_needs_api",
+  "module": "M16",
+  "status": "needs_api",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M16.eeat.service_pages_byline_not_applicable",
+  "module": "M16",
+  "status": "not_applicable",
+  "severity": 0,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "established",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M13.freshness.sitemap_lastmod_decoupled_from_edits",
+  "module": "M13",
+  "status": "pass",
+  "severity": 3,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M13.freshness.no_datemodified_schema_sitewide",
+  "module": "M13",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M13.freshness.no_visible_date_on_service_templates",
+  "module": "M13",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M13.freshness.legal_pages_visible_lastupdated_pass",
+  "module": "M13",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M13.freshness.perspectivas_zero_published_correctly_noindexed",
+  "module": "M13",
+  "status": "warn",
+  "severity": 3,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "high"
+  }
+ },
+ {
+  "id": "M13.freshness.footer_year_current_pass",
+  "module": "M13",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M5.entity.conflicting_id_declaration",
+  "module": "M5",
+  "status": "pass",
+  "severity": 3,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M5.methodology.deprecated_howto_and_offer_misuse",
+  "module": "M5",
+  "status": "pass",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M5.faq.deprecated_rich_result_but_content_verified",
+  "module": "M5",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M5.entity.website_organization_not_localized_on_en_pages",
+  "module": "M5",
+  "status": "pass",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M5.entity.areaserved_granularity_inconsistency",
+  "module": "M5",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M5.breadcrumb.coverage_gap_closed",
+  "module": "M5",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M5.graph.id_integrity_confirmed",
+  "module": "M5",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "both",
+   "confidence": "established",
+   "magnitude": "medium"
+  }
+ },
+ {
+  "id": "M19.localbusiness.missing_recommended_fields",
+  "module": "M19",
+  "status": "warn",
+  "severity": 2,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "directional",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M19.localbusiness.nap_consistency_confirmed",
+  "module": "M19",
+  "status": "pass",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "established",
+   "magnitude": "low"
+  }
+ },
+ {
+  "id": "M5.course.jsonld_on_noindex_comingsoon_pages",
+  "module": "M5",
+  "status": "warn",
+  "severity": 1,
+  "expected_impact": {
+   "axis": "search",
+   "confidence": "speculative",
+   "magnitude": "low"
+  }
+ }
+]

@@ -86,19 +86,18 @@ export default function MetodoCira() {
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
         areaServed: "LATAM",
-        hasOfferCatalog: {
-          "@type": "OfferCatalog",
-          name: lang === "en" ? "CIRA Method Phases" : "Fases del Método CIRA",
-          itemListElement: phases.map((p, i) => ({
-            "@type": "Offer",
-            position: i + 1,
-            itemOffered: {
-              "@type": "Service",
-              name: p.title,
-              url: `${siteUrl}${langPath(p.href, lang)}`,
-            },
-          })),
-        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": `${siteUrl}${pagePath}#cira-methodology`,
+        name: t("hero.eyebrow"),
+        itemListOrder: "https://schema.org/ItemListOrderAscending",
+        itemListElement: phases.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: { "@id": `${siteUrl}${langPath(p.href, lang)}#service` },
+        })),
       },
       {
         "@context": "https://schema.org",
@@ -119,21 +118,6 @@ export default function MetodoCira() {
           { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
           { "@type": "ListItem", position: 2, name: t("hero.eyebrow"), item: `${siteUrl}${pagePath}` },
         ],
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "@id": `${siteUrl}${pagePath}#cira-methodology`,
-        name: t("hero.eyebrow"),
-        description: t("meta.description"),
-        inLanguage: lang === "en" ? "en" : "es",
-        step: phases.map((p, i) => ({
-          "@type": "HowToStep",
-          position: i + 1,
-          name: p.title,
-          text: p.how,
-          url: `${siteUrl}${langPath(p.href, lang)}`,
-        })),
       },
     ],
   });

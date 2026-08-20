@@ -27,7 +27,10 @@ interface Blog7Props {
   headingAs?: "h1" | "h2";
   description: string;
   buttonText: string;
-  buttonUrl: string;
+  buttonUrl?: string;
+  /** Takes precedence over buttonUrl when provided — renders a <button> that
+   *  calls this instead of an <a href>. */
+  onButtonClick?: () => void;
   posts: Post[];
 }
 
@@ -38,6 +41,7 @@ const Blog7 = ({
   description = "Discover the latest trends, tips, and best practices in modern web development. From UI components to design systems, stay updated with our expert insights.",
   buttonText = "View all articles",
   buttonUrl = "https://shadcnblocks.com",
+  onButtonClick,
   posts = [
     {
       id: "post-1",
@@ -92,12 +96,19 @@ const Blog7 = ({
           <p className="mb-8 text-muted-foreground md:text-base lg:max-w-2xl lg:text-lg">
             {description}
           </p>
-          <Button variant="link" className="w-full sm:w-auto" asChild>
-            <a href={buttonUrl} target="_blank">
+          {onButtonClick ? (
+            <Button variant="link" className="w-full sm:w-auto" onClick={onButtonClick}>
               {buttonText}
               <ArrowRight className="ml-2 size-4" />
-            </a>
-          </Button>
+            </Button>
+          ) : (
+            <Button variant="link" className="w-full sm:w-auto" asChild>
+              <a href={buttonUrl} target="_blank" rel="noopener noreferrer">
+                {buttonText}
+                <ArrowRight className="ml-2 size-4" />
+              </a>
+            </Button>
+          )}
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {posts.map((post) => (

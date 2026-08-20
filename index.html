@@ -63,7 +63,13 @@
             "url": "https://www.cyrruscs.com/",
             "description": "Consultoría estratégica y transformación digital con inteligencia artificial, a través de la metodología CIRA: Construir, Identificar, Realizar, Adoptar.",
             "logo": "https://www.cyrruscs.com/assets/logos-cyrrus/cyrrus-logo-color.png",
-            "founder": { "@id": "https://www.cyrruscs.com/quienes-somos#jackson-bohorquez" },
+            "founder": {
+              "@id": "https://www.cyrruscs.com/quienes-somos#jackson-bohorquez",
+              "@type": "Person",
+              "name": "Jackson Bohorquez",
+              "jobTitle": "CEO & Fundador",
+              "url": "https://www.cyrruscs.com/quienes-somos"
+            },
             "areaServed": [
               { "@type": "Country", "name": "Colombia" },
               { "@type": "Country", "name": "Ecuador" },
@@ -103,6 +109,38 @@
               "addressLocality": "Barranquilla",
               "addressRegion": "Atlántico",
               "addressCountry": "CO"
+            },
+            "location": [
+              {
+                "@type": "Place",
+                "name": "Cyrrus Consulting Services — Barranquilla",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Cra. 51B #80-58 Oficina 1505, Nte. Centro Historico",
+                  "addressLocality": "Barranquilla",
+                  "addressRegion": "Atlántico",
+                  "addressCountry": "CO"
+                }
+              },
+              {
+                "@type": "Place",
+                "name": "Cyrrus Consulting Services — Bogotá",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Carrera 62 #103-44 Oficina 401S",
+                  "addressLocality": "Bogotá",
+                  "addressRegion": "Bogotá D.C.",
+                  "addressCountry": "CO"
+                }
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "telephone": "+57 317 5730635",
+              "email": "contacto@cyrruscs.com",
+              "areaServed": "LATAM",
+              "availableLanguage": ["es", "en"]
             }
           },
           {
@@ -111,7 +149,7 @@
             "url": "https://www.cyrruscs.com/",
             "name": "Cyrrus Consulting Services",
             "publisher": { "@id": "https://www.cyrruscs.com/#organization" },
-            "inLanguage": "es"
+            "inLanguage": ["es", "en"]
           }
         ]
       }

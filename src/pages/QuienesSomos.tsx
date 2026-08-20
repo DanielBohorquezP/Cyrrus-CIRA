@@ -96,7 +96,7 @@ export default function QuienesSomos() {
               sizes="(min-width: 768px) 420px, 100vw"
             />
             <a
-              href="https://www.linkedin.com/in/jacksonbohorquez"
+              href="https://www.linkedin.com/in/jacksonbohorquezb/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-5 flex items-center justify-center gap-2 text-sm font-medium text-blue transition-colors duration-150 hover:text-navy md:justify-start"

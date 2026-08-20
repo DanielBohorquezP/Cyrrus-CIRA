@@ -29,10 +29,10 @@ export function setLangPreference(lang: Lang) {
  * a pure prefix rather than a mapping table that could drift out of sync.
  *
  * Use this for every internal link built from a literal path. Writing
- * `to="/contacto"` looks harmless but hardcodes Spanish, which is how English
- * visitors ended up being sent to Spanish pages from the headers, the footer
- * and the hero CTA. nav-config.ts had its own local copy of this; anything
- * outside it should use this one.
+ * `to="/experiencia"` looks harmless but hardcodes Spanish, which is how
+ * English visitors ended up being sent to Spanish pages from the headers, the
+ * footer and the hero CTA. nav-config.ts had its own local copy of this;
+ * anything outside it should use this one.
  */
 export function langPath(path: string, lang: Lang): string {
   if (lang !== "en") return path;

@@ -4,6 +4,8 @@ import { ScrollToTop } from "@/components/layout/scroll-to-top";
 import { LanguageProvider } from "@/lib/language";
 import Home from "@/pages/Home";
 import { CookieConsent } from "@/components/layout/cookie-consent";
+import { ContactWizardProvider } from "@/lib/contact-wizard-context";
+import { ContactWizardModal } from "@/components/contact-wizard/contact-wizard-modal";
 
 type PageModule = { default: ComponentType };
 
@@ -80,7 +82,6 @@ const LeadershipAcademy = lazyPage(() => import("@/pages/LeadershipAcademy"));
 const Experiencia = lazyPage(() => import("@/pages/Experiencia"));
 const QuienesSomos = lazyPage(() => import("@/pages/QuienesSomos"));
 const Perspectivas = lazyPage(() => import("@/pages/Perspectivas"));
-const Contacto = lazyPage(() => import("@/pages/Contacto"));
 const PlaneacionEstrategica = lazyPage(() => import("@/pages/metodo-cira/PlaneacionEstrategica"));
 const SeleccionDeSoluciones = lazyPage(() => import("@/pages/metodo-cira/SeleccionDeSoluciones"));
 const SolucionDetalle = lazyPage(() => import("@/pages/metodo-cira/SolucionDetalle"));
@@ -99,6 +100,11 @@ const CursoDetalle = lazyPage(() => import("@/pages/leadership-academy/CursoDeta
 const Privacidad = lazyPage(() => import("@/pages/Privacidad"));
 const Cookies = lazyPage(() => import("@/pages/Cookies"));
 const NotFound = lazyPage(() => import("@/pages/NotFound"));
+
+// Contacto no longer exists as a page — it was replaced by ContactWizardModal,
+// a modal opened from any CTA (see useContactWizard()). The route is removed
+// below from PAGES; its entry in src/lib/route-meta.json (the separate route
+// list prerender.mjs/generate-sitemap.mjs read from) is removed too.
 
 /**
  * The route table, written once.
@@ -130,7 +136,6 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/experiencia", Component: Experiencia },
   { path: "/quienes-somos", Component: QuienesSomos },
   { path: "/perspectivas", Component: Perspectivas },
-  { path: "/contacto", Component: Contacto },
   { path: "/privacidad", Component: Privacidad },
   { path: "/cookies", Component: Cookies },
 ];
@@ -168,20 +173,25 @@ function pageRoutes(prefixed: boolean) {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route element={<LanguageProvider lang="es"><Outlet /></LanguageProvider>}>
-          {pageRoutes(false)}
+    <ContactWizardProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route element={<LanguageProvider lang="es"><Outlet /></LanguageProvider>}>
+            {pageRoutes(false)}
+            <Route path="*" element={<NotFound />} />
+          </Route>
+          <Route path="/en" element={<LanguageProvider lang="en"><Outlet /></LanguageProvider>}>
+            {pageRoutes(true)}
+            <Route path="*" element={<NotFound />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
-        </Route>
-        <Route path="/en" element={<LanguageProvider lang="en"><Outlet /></LanguageProvider>}>
-          {pageRoutes(true)}
-          <Route path="*" element={<NotFound />} />
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <CookieConsent />
-    </BrowserRouter>
+        </Routes>
+        <CookieConsent />
+        {/* Mounted once, outside <Routes>, so any CTA on any page can open
+            it via useContactWizard() without a per-page instance. */}
+        <ContactWizardModal />
+      </BrowserRouter>
+    </ContactWizardProvider>
   );
 }

@@ -9,15 +9,28 @@
 
 | Métrica | Score | Banda | Última medición |
 |---|---|---|---|
-| **Search SEO** | ≈ 81 / 100 | **B** | 2026-08-03 |
-| **AI Visibility (GEO/AEO)** | ≈ 61 / 100 | **D** | 2026-08-03 |
+| **Search SEO** | 75.5 / 100 | **C** | 2026-08-19 |
+| **AI Visibility (GEO/AEO)** | 75.7 / 100 | **C** | 2026-08-19 |
 
 Los dos scores son independientes y nunca se promedian entre sí (uno mide ranking clásico en
 buscadores, el otro qué tan citable es el sitio por motores de IA como ChatGPT, Perplexity o
 Google AI Overviews).
 
-La ronda del 2026-08-19 fue de fixes dirigidos, no una auditoría: los scores de la tabla siguen
-siendo los del 2026-08-03 y están pendientes de recalcular.
+**Estos números no son comparables con los del 2026-08-03** (81/B y 61/D): esa corrida no dejó
+un JSON de findings, así que no hay diff posible, y la del 08-19 usó 4 agentes especialistas
+haciendo barridos programáticos sobre las 68 rutas en vez de una muestra — encontró defectos
+reales que la anterior no vio (`sameAs` de LinkedIn roto, conflicto de `@id` en `/contacto`,
+`lastmod` congelado) y encontrar más problemas baja el número aunque el sitio esté igual o
+mejor. Los findings quedan guardados en [seo-findings-2026-08-19.json](seo-findings-2026-08-19.json)
+para que `/claude-seo-ai:score` funcione sin volver a rastrear — se actualizó el `status` de 10
+findings a `pass` conforme se corrigieron en esta misma ronda (ver historial abajo). Todavía
+falta correr la verificación tier 1 (cabeceras HTTP, los dos redirects 301, Core Web Vitals de
+campo) contra el dominio ya publicado — ver el punto 0 de "Qué falta por hacer".
+
+**La tabla no incluye todavía el reemplazo de `/contacto` por el wizard modal (2026-08-20,
+ver historial)** — ese cambio salió después de la última corrida de `score.mjs` y no se ha
+vuelto a recalcular. No hay `findings` nuevos que marcar porque no fue una auditoría, así que
+el número de arriba sigue siendo el más reciente medido de verdad.
 
 ## Qué falta por hacer (bloqueadores activos)
 
@@ -41,11 +54,13 @@ Estos son los pendientes que más mueven el score y que **requieren contenido/de
    `datePublished` + `author` apuntando al `@id` de la persona autora.
    - Prioridad alta: ERP (qué es), Planeación Estratégica (qué es), Cómo implementar IA,
      Cómo elegir un ERP.
-2. **Completar el equipo de liderazgo en `/experiencia`** (`src/pages/Experiencia.tsx`, array
-   `team`). Estado: Jackson Bohorquez (completo), Daniel Bohorquez — Director de Cyrrus
-   Intelligence Lab (falta foto + bio), Director de Leadership Academy (falta nombre + foto +
-   bio), Directora de Operaciones (falta nombre + foto + bio). Mientras 2 de 4 sigan sin nombre,
-   el módulo E-E-A-T (M16) se mantiene en fail.
+2. **Profundizar el perfil de Daniel Bohorquez en `/experiencia`.** Corrección sobre lo que decía
+   esta entrada: el roster ya no tiene 4 puestos con 2 sin nombre — bajó a 2 personas (Jackson
+   Bohorquez, Daniel Bohorquez — Director de Cyrrus Intelligence Lab), ambas con nombre y foto
+   (`src/i18n/locales/es/paginas.json`, `experiencia.team.roles`). Lo que falta ahora es
+   profundidad: Daniel no tiene bio, ni LinkedIn, ni página propia, a diferencia de Jackson
+   (que sí tiene `/quienes-somos` completo con schema `Person`). Verificado con auditoría
+   2026-08-19 (`M16.eeat.team_roster_asymmetric_depth`).
 3. **Reforzar la bio de Jackson en `/quienes-somos`**: nombrar una institución/evento específico
    donde haya dado charlas, y sustentar con un dato concreto la mención de "dos décadas de
    experiencia" (año de fundación de Cyrrus u otro hito verificable).
@@ -60,20 +75,50 @@ Estos son los pendientes que más mueven el score y que **requieren contenido/de
    solo aparecen en descriptions y en `/experiencia`. Frente a EY/KPMG/Accenture la geografía
    es la mayor palanca de diferenciación disponible. Es un cambio de una línea, pero es una
    decisión de posicionamiento, no una tarea técnica.
+6. **Reformular las 4 preguntas de FAQ de `/intelligence-lab/gobierno-de-ia` que no son
+   preguntas.** Son afirmaciones ("No tenemos ningún marco de IA hoy") sin signo de
+   interrogación — reduce el matching léxico con lo que un usuario realmente teclea en un
+   motor de IA. `/…/erp` repite el patrón en una de sus dos preguntas. Barato de corregir y
+   pega directo en Answer Extractability, el módulo de mayor peso en AI Visibility (20/100).
+7. **Ampliar el FAQ de ERP/CRM/HCM/EAM** (2 preguntas cada una, hoy) con preguntas de alto
+   valor comercial: costo aproximado, criterios de evaluación, diferencia frente a implementar
+   directo con el proveedor. `/presencia-digital/seo` ya tiene 5 — usarla de referencia. Son
+   justo las páginas del clúster con más ventana de ranking real (ver diagnóstico de
+   competencia en el historial del 2026-08-19).
+8. **Añadir casos con cifras a `/experiencia`.** 21 logos de clientes reales (Pepsico,
+   Millicom, SGS, Parex, Brenntag, entre otros) sin una sola frase de caso ni resultado
+   cuantificado asociado. Es el activo más desaprovechado del sitio para densidad de hechos
+   (M12) — un motor de IA no tiene nada que citar de un logo aislado.
+9. **Sustentar o reformular la cifra "60% de reducción en tiempo de diagnóstico".** Se repite
+   en `estrategia.json`, `metodo-cira.json` y `paginas.json` (renderizada en `/experiencia`)
+   sin fuente ni metodología. Añadir una nota de fuente/período, o marcarla explícitamente
+   como estimación interna.
+10. **Completar `geo`/`openingHoursSpecification`/`priceRange` del `Organization`** si el
+    negocio decide revelarlos — no se inventaron coordenadas ni horario porque no hay una
+    fuente de verdad en el repo. Cyrrus es consultoría B2B remota multi-país con agenda por
+    cita, así que el techo de beneficio real (elegibilidad de Local Pack) es bajo.
+11. **`/contacto` dejó de ser una URL indexable (2026-08-20).** Se reemplazó por un wizard en
+    modal (ver historial) que se abre desde cualquier página — decisión de producto, no un
+    error, pero tiene un costo de SEO real: ya no hay una página propia que pueda rankear para
+    queries de navegación tipo "contacto cyrrus" o "agendar cita cyrrus consulting", ni un
+    `ContactPage` en el JSON-LD. La información de contacto (teléfono, correo, las dos
+    direcciones) sigue visible y en el `Organization` schema de `index.html`, así que la
+    entidad de negocio no pierde señal — lo que se pierde es la superficie de una URL propia.
+    Si en el futuro esto pesa, la opción más barata es una landing `/contacto` liviana con
+    `ContactPage` schema que abra el mismo wizard al cargar, en vez de un formulario propio.
 
 ## Tareas técnicas menores pendientes (bajo impacto, se pueden automatizar)
 
-- `BreadcrumbList` en `Experiencia.tsx`, `Contacto.tsx` y `Perspectivas.tsx` (los otros ~21
-  templates ya lo tienen).
 - `twitter:image` no se sobreescribe por página (solo `og:image` vía `usePageMeta`) — LinkedIn/
   Facebook sí muestran la imagen custom, X/Twitter sigue mostrando la genérica.
 - Descripción de 169 caracteres en `/leadership-academy/ia-para-directivos` (y 180 en su
   versión EN). No se recortó porque ese texto es también el copy visible del hero y la página
   está `comingSoon: true` → `noindex`, así que hoy no llega a ninguna SERP. Recortarlo cuando
   el taller se lance.
-- Cobertura de `FAQPage` despareja: presente en 5 de ~12 páginas de servicio (las que ya tenían
-  contenido de preguntas y respuestas real y visible). El resto no tiene FAQ real todavía —
-  agregar el schema ahí requeriría escribir las preguntas primero.
+
+*(Los ítems de `BreadcrumbList` faltante y cobertura despareja de `FAQPage` que estaban aquí
+se resolvieron/verificaron en la auditoría del 2026-08-19 — ver historial. `Contacto.tsx`
+además ya no existe: se reemplazó por el wizard modal, ver la entrada del 2026-08-20.)*
 
 ## Cómo actualizar este archivo
 
@@ -85,6 +130,79 @@ Estos son los pendientes que más mueven el score y que **requieren contenido/de
    historial en vez de dejarlo en la lista de pendientes.
 
 ## Historial de auditorías
+
+### 2026-08-20 — `/contacto` reemplazada por un wizard en modal
+
+**Sin recalcular** (cambio de producto, no una ronda de SEO — se documenta aquí por el impacto
+en rutas/schema/sitemap).
+
+A pedido del usuario, la página `/contacto` se eliminó por completo y se reemplazó por una
+secuencia de 4 preguntas en un modal (servicio → empresa/tamaño → nombre/rol → teléfono o
+correo) que se abre desde cualquiera de los 16+ CTAs de "Agendar conversación" del sitio, sin
+navegar a ninguna URL. Mismo envío por Web3Forms que usaba el formulario anterior.
+
+Lo que esto cambia para SEO/AI Visibility, específicamente:
+- **Ruta eliminada** de `App.tsx`, `route-meta.json`, `generate-sitemap.mjs` y `llms.txt` — ya
+  no se genera `dist/contacto/` ni `dist/en/contacto/`. Confirmado con `npm run build` (66/66
+  rutas, antes 68) y un grep completo del repo sin referencias muertas.
+- **`ContactPage` + su `BreadcrumbList` desaparecieron** — solo existían en `Contacto.tsx`. Ver
+  el punto 11 de "Qué falta por hacer" sobre la implicación de perder esa URL indexable.
+- La información de contacto (NAP, WhatsApp, las dos direcciones de Barranquilla y Bogotá) se
+  mantiene visible y en el `Organization` schema compartido de `index.html` — no se perdió como
+  entidad, solo como página propia.
+- El namespace i18n `contacto` se borró (`contacto.json` ES/EN, `ns/contacto.ts`); nace uno
+  nuevo, `contact-wizard`, con el copy de las 4 preguntas en paridad ES/EN — el idioma del
+  wizard sigue automáticamente el de la página desde la que se abre.
+
+Verificación: `tsc -b` y `npm run build` limpios; flujo completo de los 4 pasos (selección,
+validación por campo, validación cruzada de "al menos un teléfono o correo", navegación
+"Atrás" con persistencia de valores, cierre/reseteo) verificado por inspección directa de
+React/DOM en el navegador del preview.
+
+### 2026-08-19 (tarde) — Defectos reales corregidos, no solo higiene
+
+**Search SEO: 65.6 → 75.5 (D → C)** · **AI Visibility: 54.6 → 75.7 (F → C)**
+
+Auditoría completa (4 agentes especialistas — técnico, GEO/IA, contenido/E-E-A-T, schema —
+barriendo programáticamente las 68 rutas del build local `dist/`, no una muestra) seguida de
+una ronda de fixes sobre los defectos reales que encontró. Los findings quedan en
+[seo-findings-2026-08-19.json](seo-findings-2026-08-19.json).
+
+**Los 4 defectos reales, corregidos:**
+- `sameAs` de LinkedIn de Jackson Bohorquez apuntaba a un slug distinto (`jacksonbohorquezb`
+  en el schema) del enlace visible en la página (`jacksonbohorquez`, sin la "b") — confirmado
+  con el usuario cuál era el correcto y unificados ambos.
+- El `@id` `#organization` se redeclaraba con un `@type` distinto y un `contactPoint` duplicado
+  en `/contacto` — se movió el `contactPoint` real al bloque canónico de `index.html` y
+  `Contacto.tsx` quedó como referencia pura por `@id` (antes de eliminarse la página del todo
+  al día siguiente, ver arriba).
+- El `lastmod` del sitemap nunca avanzaba salvo para URLs nuevas — `generate-sitemap.mjs` ahora
+  hashea el contenido i18n real de cada ruta (`CONTENT_SOURCE`) y solo mueve la fecha cuando ese
+  contenido cambia de verdad, no en cada corrida del script.
+- `WebSite.inLanguage` estaba fijo en `"es"` incluso en las 34 páginas servidas bajo `/en/` —
+  ahora es `["es", "en"]`.
+
+**Higiene adicional de la misma ronda:**
+- Stub del `Person` del fundador embebido en el `founder` compartido de `index.html` (antes un
+  `@id` que solo resolvía dentro de `/quienes-somos`).
+- `HowTo` (deprecado desde sept-2023) y el uso indebido de `Offer`/`OfferCatalog` en
+  `/metodo-cira` reemplazados por un `ItemList` que referencia los 4 `Service` reales por `@id`.
+- 42 fotos originales huérfanas (6.8 MB, nunca referenciadas en `src/` — la cifra de 21.2 MB que
+  había reportado el auditor estaba inflada por comparar contra el HTML ya construido en vez del
+  código fuente) eliminadas de `public/assets`; `npm run images` confirma cero regresión en los
+  derivados servidos.
+- Dirección de Bogotá (Carrera 62 #103-44 Oficina 401S) agregada como texto visible en
+  `/contacto` y como segundo nodo `Place` en `location` del `Organization` — sin crear una
+  segunda entidad de negocio, que es el anti-patrón que la propia auditoría de local-business
+  advertía evitar para oficinas no verificables (esta sí es una dirección real).
+
+Confirmado en la misma auditoría que dos hallazgos de la ronda del 2026-08-03 ya no aplicaban:
+el roster de `/experiencia` bajó de 4 puestos con 2 sin nombre a 2 personas con nombre y foto
+(ver punto 2 de "Qué falta por hacer" — lo que falta ahora es profundidad, no nombres), y
+`BreadcrumbList` ya cubre `Experiencia.tsx`/`Contacto.tsx`/`Perspectivas.tsx`.
+
+Verificación: `npm run build` (68/68 rutas ese día), consola limpia en las páginas tocadas,
+validador de JSON-LD del propio pack sin bloques inválidos.
 
 ### 2026-08-19 — Vocabulario: demanda antes que marca, y fin de la canibalización
 

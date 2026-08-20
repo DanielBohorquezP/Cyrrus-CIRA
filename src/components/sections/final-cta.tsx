@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Reveal } from "@/components/ui/reveal";
 import { BorderButton } from "@/components/ui/border-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
-import { langPath, useLang } from "@/lib/language";
+import { useContactWizard } from "@/lib/contact-wizard-context";
 
 export function FinalCta() {
   const { t } = useTranslation("home");
-  const lang = useLang();
+  const { openWizard } = useContactWizard();
   return (
     <AnimatedNavyBackground id="contacto" className="cv-section py-24 md:py-32">
       <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
@@ -20,10 +19,8 @@ export function FinalCta() {
           </p>
         </Reveal>
         <Reveal delay={0.15}>
-          <BorderButton asChild variant="light" size="lg" className="mt-8" dot>
-            <Link to={`${langPath("/contacto", lang)}#formulario`}>
-              {t("finalCta.buttonText")}
-            </Link>
+          <BorderButton variant="light" size="lg" className="mt-8" dot onClick={openWizard}>
+            {t("finalCta.buttonText")}
           </BorderButton>
         </Reveal>
       </div>
