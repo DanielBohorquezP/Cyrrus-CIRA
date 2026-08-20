@@ -11,10 +11,33 @@ export default function Cookies() {
   const { t } = useTranslation("legal");
   const lang = useLang();
 
+  const siteUrl = "https://www.cyrruscs.com";
+  const pagePath = lang === "en" ? "/en/cookies" : "/cookies";
+
   usePageMeta({
     title: t("cookies.meta.title"),
     description: t("cookies.meta.description"),
     alternatePath: lang === "en" ? "/cookies" : "/en/cookies",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": `${siteUrl}${pagePath}#webpage`,
+        url: `${siteUrl}${pagePath}`,
+        name: t("cookies.meta.title"),
+        description: t("cookies.meta.description"),
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        about: { "@id": `${siteUrl}/#organization` },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${lang === "en" ? "/en" : "/"}` },
+          { "@type": "ListItem", position: 2, name: t("cookies.title"), item: `${siteUrl}${pagePath}` },
+        ],
+      },
+    ],
   });
 
   return (

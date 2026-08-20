@@ -24,10 +24,22 @@
     "eyebrow": "Criterios de evaluación",
     "title": "Cuatro dimensiones, un solo veredicto",
     "items": [
-      { "title": "Funcional", "description": "Garantizamos la idoneidad a corto plazo resolviendo las necesidades clave operativas de su compañía." },
-      { "title": "Técnica", "description": "Aseguramos la madurez tecnológica, evaluando compatibilidades para reducir costos ocultos de integración." },
-      { "title": "Económica", "description": "Mediciones precisas de viabilidad de presupuesto, asegurando sostenibilidad en inversiones y gasto operativo." },
-      { "title": "Sostenible", "description": "Compromiso con la sostenibilidad empresarial: garantizamos el crecimiento sostenido de su empresa en el tiempo." }
+      {
+        "title": "Funcional",
+        "description": "Garantizamos la idoneidad a corto plazo resolviendo las necesidades clave operativas de su compañía."
+      },
+      {
+        "title": "Técnica",
+        "description": "Aseguramos la madurez tecnológica, evaluando compatibilidades para reducir costos ocultos de integración."
+      },
+      {
+        "title": "Económica",
+        "description": "Mediciones precisas de viabilidad de presupuesto, asegurando sostenibilidad en inversiones y gasto operativo."
+      },
+      {
+        "title": "Sostenible",
+        "description": "Compromiso con la sostenibilidad empresarial: garantizamos el crecimiento sostenido de su empresa en el tiempo."
+      }
     ]
   },
   "reto": {
@@ -45,21 +57,51 @@
     "eyebrow": "Beneficios",
     "title": "Agilidad, transformación y eficiencia",
     "items": [
-      { "title": "Visión 360° para decisiones transformadoras", "description": "Ofrecemos una visión integral que aborda todos los detalles cruciales para decisiones que transforman su negocio, con un análisis rápido y completo." },
-      { "title": "Selección multidimensional", "description": "Nuestro servicio va más allá de la búsqueda convencional: calificamos soluciones desde una perspectiva funcional, técnica y económica." },
-      { "title": "Enfoque integral personalizado", "description": "Adaptamos el análisis según el sector económico, la madurez tecnológica y los procesos empresariales, para una solución única." },
-      { "title": "Medición rigurosa de propuestas", "description": "Aseguramos no solo la idoneidad a corto plazo, sino también la sostenibilidad operativa, evaluando a fondo cada proponente." },
-      { "title": "Eficiencia en la toma de decisiones", "description": "Garantizamos un análisis rápido, permitiéndole tomar decisiones informadas de manera ágil y eficiente, sin perder detalle." },
-      { "title": "Sostenibilidad empresarial", "description": "Más que encontrar una solución, nos enfocamos en encontrar una herramienta que contribuya al crecimiento continuo de su organización." }
+      {
+        "title": "Visión 360° para decisiones transformadoras",
+        "description": "Ofrecemos una visión integral que aborda todos los detalles cruciales para decisiones que transforman su negocio, con un análisis rápido y completo."
+      },
+      {
+        "title": "Selección multidimensional",
+        "description": "Nuestro servicio va más allá de la búsqueda convencional: calificamos soluciones desde una perspectiva funcional, técnica y económica."
+      },
+      {
+        "title": "Enfoque integral personalizado",
+        "description": "Adaptamos el análisis según el sector económico, la madurez tecnológica y los procesos empresariales, para una solución única."
+      },
+      {
+        "title": "Medición rigurosa de propuestas",
+        "description": "Aseguramos no solo la idoneidad a corto plazo, sino también la sostenibilidad operativa, evaluando a fondo cada proponente."
+      },
+      {
+        "title": "Eficiencia en la toma de decisiones",
+        "description": "Garantizamos un análisis rápido, permitiéndole tomar decisiones informadas de manera ágil y eficiente, sin perder detalle."
+      },
+      {
+        "title": "Sostenibilidad empresarial",
+        "description": "Más que encontrar una solución, nos enfocamos en encontrar una herramienta que contribuya al crecimiento continuo de su organización."
+      }
     ]
   },
   "categories": {
     "eyebrow": "Categorías",
     "title": "Soluciones que evaluamos y seleccionamos con usted",
     "items": [
-      { "slug": "seleccion-de-software", "label": "Selección de Software", "note": "(ERP, CRM, HCM, EAM, aplicaciones de negocio, BI)" },
-      { "slug": "tecnologias-avanzadas", "label": "Tecnologías Avanzadas", "note": "(Automatizaciones, Inteligencia Artificial, RPA, Analítica Avanzada)" },
-      { "slug": "infraestructura-tecnologica", "label": "Infraestructura Tecnológica", "note": "(Ciberseguridad, Redes, Nube, Continuidad y Respaldo)" }
+      {
+        "slug": "seleccion-de-software",
+        "label": "Selección de Software",
+        "note": "(ERP, CRM, HCM, EAM, aplicaciones de negocio, BI)"
+      },
+      {
+        "slug": "tecnologias-avanzadas",
+        "label": "Tecnologías Avanzadas",
+        "note": "(Automatizaciones, Inteligencia Artificial, RPA, Analítica Avanzada)"
+      },
+      {
+        "slug": "infraestructura-tecnologica",
+        "label": "Infraestructura Tecnológica",
+        "note": "(Ciberseguridad, Redes, Nube, Continuidad y Respaldo)"
+      }
     ]
   },
   "services": {
@@ -76,18 +118,54 @@
     "eyebrow": "Proceso",
     "title": "Las 12 etapas de una selección de soluciones sin fricciones",
     "steps": [
-      { "title": "Kickoff Estratégico", "description": "Definir alcance y objetivos" },
-      { "title": "Descubrimiento del Negocio", "description": "Comprender la estrategia y necesidades" },
-      { "title": "Preparación del RFP", "description": "Crear un RFP estructurado" },
-      { "title": "Selección de Participantes", "description": "Identificar proveedores calificados" },
-      { "title": "Invitación y Kickoff con Proveedores", "description": "Presentar el proyecto a los proveedores" },
-      { "title": "Entendimiento del Negocio", "description": "Asegurar que las propuestas respondan a las necesidades" },
-      { "title": "Recepción y Evaluación de Propuestas", "description": "Analizar propuestas desde múltiples perspectivas" },
-      { "title": "Presentaciones Ejecutivas y Demostraciones", "description": "Evaluar propuestas a través de presentaciones" },
-      { "title": "Referenciación y Validación", "description": "Validar la experiencia del proveedor" },
-      { "title": "Evaluación Integral", "description": "Consolidar evaluaciones en una matriz" },
-      { "title": "Informe Ejecutivo", "description": "Presentar hallazgos y recomendaciones" },
-      { "title": "Acompañamiento a la Contratación", "description": "Apoyar la negociación y contratación" }
+      {
+        "title": "Kickoff Estratégico",
+        "description": "Definir alcance y objetivos"
+      },
+      {
+        "title": "Descubrimiento del Negocio",
+        "description": "Comprender la estrategia y necesidades"
+      },
+      {
+        "title": "Preparación del RFP",
+        "description": "Crear un RFP estructurado"
+      },
+      {
+        "title": "Selección de Participantes",
+        "description": "Identificar proveedores calificados"
+      },
+      {
+        "title": "Invitación y Kickoff con Proveedores",
+        "description": "Presentar el proyecto a los proveedores"
+      },
+      {
+        "title": "Entendimiento del Negocio",
+        "description": "Asegurar que las propuestas respondan a las necesidades"
+      },
+      {
+        "title": "Recepción y Evaluación de Propuestas",
+        "description": "Analizar propuestas desde múltiples perspectivas"
+      },
+      {
+        "title": "Presentaciones Ejecutivas y Demostraciones",
+        "description": "Evaluar propuestas a través de presentaciones"
+      },
+      {
+        "title": "Referenciación y Validación",
+        "description": "Validar la experiencia del proveedor"
+      },
+      {
+        "title": "Evaluación Integral",
+        "description": "Consolidar evaluaciones en una matriz"
+      },
+      {
+        "title": "Informe Ejecutivo",
+        "description": "Presentar hallazgos y recomendaciones"
+      },
+      {
+        "title": "Acompañamiento a la Contratación",
+        "description": "Apoyar la negociación y contratación"
+      }
     ]
   },
   "closingQuote": "No ayudamos a nuestros clientes a elegir soluciones tecnológicas, los ayudamos a tomar decisiones que fortalecen y transforman su organización.",
@@ -95,10 +173,22 @@
     "eyebrow": "Selección de Soluciones",
     "title": "Preguntas frecuentes",
     "items": [
-      { "question": "¿La evaluación es realmente agnóstica de proveedor?", "answer": "Sí. No tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM u otras soluciones empresariales — evaluamos con los mismos cuatro criterios objetivos (funcional, técnico, económico, sostenible) sin importar la marca." },
-      { "question": "¿Cuánto dura un proceso de selección de soluciones?", "answer": "Como referencia, la fase de Identificar (selección de solución) del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación — las 12 etapas del proceso descrito arriba." },
-      { "question": "Ya elegimos proveedor y no estamos seguros de la decisión", "answer": "Evaluamos la decisión con los mismos criterios objetivos, incluso si el proceso ya empezó. Al ser 100% agnósticos, podemos validar una elección en curso sin sesgo hacia ningún proveedor." },
-      { "question": "¿Qué incluye el RFP que preparan?", "answer": "El documento de Solicitud de Propuestas se clasifica por atributos técnicos y funcionales, y se acompaña de la recepción y evaluación de propuestas, presentaciones ejecutivas, referenciación de proveedores y acompañamiento en la negociación del contrato." }
+      {
+        "question": "¿La evaluación es realmente agnóstica de proveedor?",
+        "answer": "Sí. No tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM u otras soluciones empresariales — evaluamos con los mismos cuatro criterios objetivos (funcional, técnico, económico, sostenible) sin importar la marca."
+      },
+      {
+        "question": "¿Cuánto dura un proceso de selección de soluciones?",
+        "answer": "Como referencia, la fase de Identificar (selección de solución) del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación — las 12 etapas del proceso descrito arriba."
+      },
+      {
+        "question": "¿Pueden validar una selección de proveedor que ya está en curso?",
+        "answer": "Evaluamos la decisión con los mismos criterios objetivos, incluso si el proceso ya empezó. Al ser 100% agnósticos, podemos validar una elección en curso sin sesgo hacia ningún proveedor."
+      },
+      {
+        "question": "¿Qué incluye el RFP que preparan?",
+        "answer": "El documento de Solicitud de Propuestas se clasifica por atributos técnicos y funcionales, y se acompaña de la recepción y evaluación de propuestas, presentaciones ejecutivas, referenciación de proveedores y acompañamiento en la negociación del contrato."
+      }
     ]
   },
   "detail": {
@@ -110,9 +200,18 @@
         "eyebrow": "Selección de Soluciones — Tecnologías Avanzadas",
         "intro": "Las nuevas tecnologías solo generan valor cuando responden a una necesidad real del negocio. Nuestro papel consiste en identificar dónde pueden generar el mayor impacto y cuáles son las alternativas más adecuadas para cada organización.",
         "items": [
-          { "title": "Inteligencia Artificial", "description": "Desde asistentes inteligentes hasta modelos avanzados de analítica, identificamos oportunidades donde la tecnología puede aumentar la productividad, mejorar la toma de decisiones y acelerar la creación de valor." },
-          { "title": "Automatización", "description": "Seleccionamos plataformas que simplifican procesos, eliminan tareas repetitivas y permiten que las personas dediquen más tiempo a actividades estratégicas." },
-          { "title": "Blockchain", "description": "Evaluamos soluciones para organizaciones que requieren mayores niveles de trazabilidad, confianza e intercambio seguro de información." }
+          {
+            "title": "Inteligencia Artificial",
+            "description": "Desde asistentes inteligentes hasta modelos avanzados de analítica, identificamos oportunidades donde la tecnología puede aumentar la productividad, mejorar la toma de decisiones y acelerar la creación de valor."
+          },
+          {
+            "title": "Automatización",
+            "description": "Seleccionamos plataformas que simplifican procesos, eliminan tareas repetitivas y permiten que las personas dediquen más tiempo a actividades estratégicas."
+          },
+          {
+            "title": "Blockchain",
+            "description": "Evaluamos soluciones para organizaciones que requieren mayores niveles de trazabilidad, confianza e intercambio seguro de información."
+          }
         ]
       },
       "infraestructura-tecnologica": {
@@ -120,16 +219,34 @@
         "eyebrow": "Selección de Soluciones — Infraestructura Tecnológica",
         "intro": "La infraestructura adecuada crea las condiciones para que el negocio opere con seguridad, disponibilidad y capacidad de crecimiento.",
         "items": [
-          { "title": "Ciberseguridad", "description": "Seleccionamos soluciones para proteger la operación mediante arquitecturas modernas de seguridad, protección de identidades, gestión de dispositivos, monitoreo y respuesta ante incidentes." },
-          { "title": "Cloud", "description": "Acompañamos la selección de arquitecturas Cloud, Híbridas y Multicloud que aporten flexibilidad, escalabilidad y eficiencia a largo plazo." },
-          { "title": "Conectividad", "description": "Diseñamos y seleccionamos soluciones LAN, WLAN, WAN, SD-WAN e Internet que soporten la operación del negocio con altos niveles de disponibilidad y desempeño." },
-          { "title": "Continuidad del Negocio", "description": "Ayudamos a definir las capacidades necesarias para proteger la operación mediante estrategias de continuidad, recuperación ante desastres y alta disponibilidad." }
+          {
+            "title": "Ciberseguridad",
+            "description": "Seleccionamos soluciones para proteger la operación mediante arquitecturas modernas de seguridad, protección de identidades, gestión de dispositivos, monitoreo y respuesta ante incidentes."
+          },
+          {
+            "title": "Cloud",
+            "description": "Acompañamos la selección de arquitecturas Cloud, Híbridas y Multicloud que aporten flexibilidad, escalabilidad y eficiencia a largo plazo."
+          },
+          {
+            "title": "Conectividad",
+            "description": "Diseñamos y seleccionamos soluciones LAN, WLAN, WAN, SD-WAN e Internet que soporten la operación del negocio con altos niveles de disponibilidad y desempeño."
+          },
+          {
+            "title": "Continuidad del Negocio",
+            "description": "Ayudamos a definir las capacidades necesarias para proteger la operación mediante estrategias de continuidad, recuperación ante desastres y alta disponibilidad."
+          }
         ]
       }
     }
   },
   "detailMeta": {
-    "tecnologias-avanzadas": { "title": "Selección de Automatización e IA para Empresas | Cyrrus", "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales." },
-    "infraestructura-tecnologica": { "title": "Infraestructura Tecnológica: Ciberseguridad y Nube | Cyrrus", "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor." }
+    "tecnologias-avanzadas": {
+      "title": "Selección de Automatización e IA para Empresas | Cyrrus",
+      "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
+    },
+    "infraestructura-tecnologica": {
+      "title": "Infraestructura Tecnológica: Ciberseguridad y Nube | Cyrrus",
+      "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor."
+    }
   }
 }

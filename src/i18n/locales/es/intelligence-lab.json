@@ -16,29 +16,69 @@
       "description": "La mayoría de las iniciativas de IA fallan porque empiezan por la herramienta. Nosotros empezamos por el marco de gobierno que hace que esa herramienta sea segura, auditable y escalable.",
       "verMas": "Ver más",
       "items": [
-        { "title": "Gobierno de IA corporativo", "description": "Nadie en la organización puede explicar qué modelo tomó qué decisión, ni con qué datos. Definimos quién decide, quién audita y qué datos pueden tocarse y cuáles no.", "hrefSlug": "gobierno-de-ia" },
-        { "title": "Arquitectura de IA empresarial", "description": "Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable.", "hrefSlug": "arquitectura-de-ia" },
-        { "title": "Automatización de procesos con agentes de IA", "description": "Agentes que hacen una demo impecable y no tocan un proceso real del negocio. Los nuestros ejecutan tareas dentro de cada fase de CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — bajo el mismo marco de gobierno.", "hrefSlug": "automatizaciones-desarrollo" }
+        {
+          "title": "Gobierno de IA corporativo",
+          "description": "Nadie en la organización puede explicar qué modelo tomó qué decisión, ni con qué datos. Definimos quién decide, quién audita y qué datos pueden tocarse y cuáles no.",
+          "hrefSlug": "gobierno-de-ia"
+        },
+        {
+          "title": "Arquitectura de IA empresarial",
+          "description": "Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable.",
+          "hrefSlug": "arquitectura-de-ia"
+        },
+        {
+          "title": "Automatización de procesos con agentes de IA",
+          "description": "Agentes que hacen una demo impecable y no tocan un proceso real del negocio. Los nuestros ejecutan tareas dentro de cada fase de CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — bajo el mismo marco de gobierno.",
+          "hrefSlug": "automatizaciones-desarrollo"
+        }
       ]
     },
     "transversal": {
       "eyebrow": "Transversal a CIRA",
       "title": "Un mismo motor, corriendo en las cuatro fases.",
       "phases": [
-        { "phase": "Construir", "hash": "construir", "note": "Meses de diagnóstico manual, decisiones basadas en la última reunión." },
-        { "phase": "Identificar", "hash": "identificar", "note": "Evaluar proveedores uno por uno mientras la decisión se enfría." },
-        { "phase": "Realizar", "hash": "realizar", "note": "El riesgo del proyecto se descubre en el reporte de la semana, no en el momento en que ocurre." },
-        { "phase": "Adoptar", "hash": "adoptar", "note": "Nadie mide la adopción hasta que el proyecto ya cerró." }
+        {
+          "phase": "Construir",
+          "hash": "construir",
+          "note": "Meses de diagnóstico manual, decisiones basadas en la última reunión."
+        },
+        {
+          "phase": "Identificar",
+          "hash": "identificar",
+          "note": "Evaluar proveedores uno por uno mientras la decisión se enfría."
+        },
+        {
+          "phase": "Realizar",
+          "hash": "realizar",
+          "note": "El riesgo del proyecto se descubre en el reporte de la semana, no en el momento en que ocurre."
+        },
+        {
+          "phase": "Adoptar",
+          "hash": "adoptar",
+          "note": "Nadie mide la adopción hasta que el proyecto ya cerró."
+        }
       ]
     },
     "faq": {
       "eyebrow": "Cyrrus Intelligence Lab",
       "title": "Preguntas frecuentes",
       "items": [
-        { "question": "¿Cyrrus Intelligence Lab vende herramientas de IA?", "answer": "No. No es un catálogo de chatbots ni herramientas — es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que hace posible implementar IA en procesos de negocio de forma segura y auditable." },
-        { "question": "¿Por dónde empiezan, gobierno o herramientas?", "answer": "Por gobierno. La mayoría de las iniciativas de IA fallan porque empiezan por la herramienta; nosotros empezamos por el marco que hace que esa herramienta sea segura, auditable y escalable." },
-        { "question": "¿Cómo se conecta Intelligence Lab con el método CIRA?", "answer": "Corre de forma transversal por debajo de las cuatro fases: acelera el diagnóstico en Construir, la evaluación de proveedores en Identificar, el monitoreo de riesgo en Realizar y la medición de adopción en Adoptar." },
-        { "question": "Ya usamos IA en varias áreas sin ningún marco común, ¿por dónde empezamos?", "answer": "Auditamos lo que ya existe hoy en la organización y lo integramos a un mismo marco de gobierno, en vez de pedirle a cada área que empiece desde cero." }
+        {
+          "question": "¿Cyrrus Intelligence Lab vende herramientas de IA?",
+          "answer": "No. No es un catálogo de chatbots ni herramientas — es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que hace posible implementar IA en procesos de negocio de forma segura y auditable."
+        },
+        {
+          "question": "¿Por dónde empiezan, gobierno o herramientas?",
+          "answer": "Por gobierno. La mayoría de las iniciativas de IA fallan porque empiezan por la herramienta; nosotros empezamos por el marco que hace que esa herramienta sea segura, auditable y escalable."
+        },
+        {
+          "question": "¿Cómo se conecta Intelligence Lab con el método CIRA?",
+          "answer": "Corre de forma transversal por debajo de las cuatro fases: acelera el diagnóstico en Construir, la evaluación de proveedores en Identificar, el monitoreo de riesgo en Realizar y la medición de adopción en Adoptar."
+        },
+        {
+          "question": "Ya usamos IA en varias áreas sin ningún marco común, ¿por dónde empezamos?",
+          "answer": "Auditamos lo que ya existe hoy en la organización y lo integramos a un mismo marco de gobierno, en vez de pedirle a cada área que empiece desde cero."
+        }
       ]
     }
   },
@@ -56,9 +96,18 @@
       "eyebrow": "Qué incluye",
       "title": "Automatización que se mide contra el proceso real, no contra la demo.",
       "items": [
-        { "title": "Automatización de procesos", "description": "Flujos completos de trabajo, no tareas sueltas — desde el disparador hasta el resultado que el negocio realmente necesita." },
-        { "title": "Agentes por fase de CIRA", "description": "Agentes especializados en diagnóstico, evaluación de proveedores, monitoreo de riesgo y medición de adopción — cada uno con un dueño y un propósito claro." },
-        { "title": "Medición de impacto", "description": "Cada agente se mide contra el proceso real que reemplaza o acelera, no contra una demo — tiempo, error y adopción por el equipo." }
+        {
+          "title": "Automatización de procesos",
+          "description": "Flujos completos de trabajo, no tareas sueltas — desde el disparador hasta el resultado que el negocio realmente necesita."
+        },
+        {
+          "title": "Agentes por fase de CIRA",
+          "description": "Agentes especializados en diagnóstico, evaluación de proveedores, monitoreo de riesgo y medición de adopción — cada uno con un dueño y un propósito claro."
+        },
+        {
+          "title": "Medición de impacto",
+          "description": "Cada agente se mide contra el proceso real que reemplaza o acelera, no contra una demo — tiempo, error y adopción por el equipo."
+        }
       ]
     },
     "body": [
@@ -68,11 +117,26 @@
     "faq": {
       "eyebrow": "Automatización y Agentes IA",
       "items": [
-        { "question": "¿Son una fábrica de desarrollo de software?", "answer": "No. Somos consultores de transformación digital, no una casa de desarrollo. Primero evaluamos si la solución correcta ya existe en el mercado — como hacemos en la fase de Selección de Soluciones de CIRA. Solo construimos cuando esa opción genuinamente no existe." },
-        { "question": "Ya probamos agentes de IA y no tocaron ningún proceso real", "answer": "Diseñamos cada agente sobre un proceso específico del negocio, no como una capa genérica encima de todo lo demás." },
-        { "question": "No sabemos qué automatizar primero", "answer": "Priorizamos con el mismo diagnóstico que usamos en la fase Construir del método CIRA — impacto real, no la tarea más vistosa de automatizar." },
-        { "question": "Tenemos desarrolladores internos, ¿para qué los necesitamos?", "answer": "Trabajamos junto a su equipo técnico, no lo reemplazamos. La automatización queda integrada a la arquitectura y al gobierno de IA que ya definimos, para que su equipo la pueda mantener." },
-        { "question": "¿Cómo sabemos si el agente realmente funciona?", "answer": "Cada automatización se mide contra el proceso que reemplaza: tiempo ahorrado, tasa de error y adopción real por el equipo, no la calidad de una demo." }
+        {
+          "question": "¿Son una fábrica de desarrollo de software?",
+          "answer": "No. Somos consultores de transformación digital, no una casa de desarrollo. Primero evaluamos si la solución correcta ya existe en el mercado — como hacemos en la fase de Selección de Soluciones de CIRA. Solo construimos cuando esa opción genuinamente no existe."
+        },
+        {
+          "question": "¿Por qué nuestros agentes de IA no cambiaron ningún proceso real?",
+          "answer": "Diseñamos cada agente sobre un proceso específico del negocio, no como una capa genérica encima de todo lo demás."
+        },
+        {
+          "question": "¿Qué procesos conviene automatizar primero con IA?",
+          "answer": "Priorizamos con el mismo diagnóstico que usamos en la fase Construir del método CIRA — impacto real, no la tarea más vistosa de automatizar."
+        },
+        {
+          "question": "Tenemos desarrolladores internos, ¿para qué los necesitamos?",
+          "answer": "Trabajamos junto a su equipo técnico, no lo reemplazamos. La automatización queda integrada a la arquitectura y al gobierno de IA que ya definimos, para que su equipo la pueda mantener."
+        },
+        {
+          "question": "¿Cómo sabemos si el agente realmente funciona?",
+          "answer": "Cada automatización se mide contra el proceso que reemplaza: tiempo ahorrado, tasa de error y adopción real por el equipo, no la calidad de una demo."
+        }
       ]
     }
   },
@@ -90,9 +154,18 @@
       "eyebrow": "Qué incluye",
       "title": "Una arquitectura, no una colección de herramientas sueltas.",
       "items": [
-        { "title": "Mapa de sistemas y modelos", "description": "Qué herramientas de IA existen hoy en la organización, quién las compró y con qué datos y sistemas se conectan — antes de sumar una más." },
-        { "title": "Integración segura", "description": "Conectamos modelos, datos y sistemas existentes sin duplicar información ni abrir brechas de seguridad nuevas." },
-        { "title": "Diseño para escalar", "description": "Una arquitectura pensada para crecer, para que no haya que rehacerla cada vez que se suma un caso de uso nuevo." }
+        {
+          "title": "Mapa de sistemas y modelos",
+          "description": "Qué herramientas de IA existen hoy en la organización, quién las compró y con qué datos y sistemas se conectan — antes de sumar una más."
+        },
+        {
+          "title": "Integración segura",
+          "description": "Conectamos modelos, datos y sistemas existentes sin duplicar información ni abrir brechas de seguridad nuevas."
+        },
+        {
+          "title": "Diseño para escalar",
+          "description": "Una arquitectura pensada para crecer, para que no haya que rehacerla cada vez que se suma un caso de uso nuevo."
+        }
       ]
     },
     "body": [
@@ -102,10 +175,22 @@
     "faq": {
       "eyebrow": "Arquitectura de IA",
       "items": [
-        { "question": "Cada área ya compró su propia herramienta de IA", "answer": "Empezamos con un inventario real de lo que existe hoy, antes de diseñar cómo debería conectarse todo." },
-        { "question": "Tenemos datos en sistemas que no se hablan entre sí", "answer": "La arquitectura resuelve exactamente eso: un modelo común de datos que los sistemas existentes puedan alimentar, sin migrarlo todo de golpe." },
-        { "question": "No sabemos si nuestra infraestructura actual soporta más IA", "answer": "Evaluamos la capacidad real de su infraestructura antes de recomendar cualquier cambio o inversión adicional." },
-        { "question": "Nos preocupa la seguridad de conectar todo esto", "answer": "La arquitectura se diseña junto con el marco de gobierno de IA, no después — seguridad y conectividad se definen a la vez." }
+        {
+          "question": "¿Cómo se ordena una empresa donde cada área compró su propia herramienta de IA?",
+          "answer": "Empezamos con un inventario real de lo que existe hoy, antes de diseñar cómo debería conectarse todo."
+        },
+        {
+          "question": "¿Cómo se conecta la IA con datos repartidos en sistemas que no se hablan entre sí?",
+          "answer": "La arquitectura resuelve exactamente eso: un modelo común de datos que los sistemas existentes puedan alimentar, sin migrarlo todo de golpe."
+        },
+        {
+          "question": "¿Cómo saber si nuestra infraestructura actual soporta más proyectos de IA?",
+          "answer": "Evaluamos la capacidad real de su infraestructura antes de recomendar cualquier cambio o inversión adicional."
+        },
+        {
+          "question": "¿Qué tan segura es una arquitectura de IA que conecta todos los sistemas de la empresa?",
+          "answer": "La arquitectura se diseña junto con el marco de gobierno de IA, no después — seguridad y conectividad se definen a la vez."
+        }
       ]
     }
   },
@@ -123,9 +208,18 @@
       "eyebrow": "Qué incluye",
       "title": "Gobierno que se puede auditar, no solo declarar.",
       "items": [
-        { "title": "Políticas de uso de IA", "description": "Quién puede usar qué modelo, para qué caso de negocio y con qué datos — por escrito, no por acuerdo tácito entre áreas." },
-        { "title": "Roles y responsables", "description": "Quién aprueba una iniciativa de IA antes de que arranque, y quién audita el resultado una vez que está en producción." },
-        { "title": "Controles de datos", "description": "Qué información puede tocar un modelo y cuál queda fuera de alcance, con trazabilidad de cada decisión automatizada." }
+        {
+          "title": "Políticas de uso de IA",
+          "description": "Quién puede usar qué modelo, para qué caso de negocio y con qué datos — por escrito, no por acuerdo tácito entre áreas."
+        },
+        {
+          "title": "Roles y responsables",
+          "description": "Quién aprueba una iniciativa de IA antes de que arranque, y quién audita el resultado una vez que está en producción."
+        },
+        {
+          "title": "Controles de datos",
+          "description": "Qué información puede tocar un modelo y cuál queda fuera de alcance, con trazabilidad de cada decisión automatizada."
+        }
       ]
     },
     "body": [
@@ -135,10 +229,22 @@
     "faq": {
       "eyebrow": "Gobierno de IA",
       "items": [
-        { "question": "No tenemos ningún marco de IA hoy", "answer": "Partimos de cero: definimos políticas, roles y controles desde la primera semana, sin frenar las iniciativas que ya están en marcha." },
-        { "question": "Ya usamos IA en varias áreas, sin coordinación", "answer": "Auditamos lo que ya existe y lo integramos al mismo marco de gobierno, en vez de pedirle a cada área que empiece de cero." },
-        { "question": "Un cliente o regulador nos pide evidencia de gobierno de IA", "answer": "Documentamos el marco de forma que resista una auditoría externa — roles, políticas y registros de decisión, no solo una presentación interna." },
-        { "question": "Nos preocupa que el gobierno frene la innovación", "answer": "El objetivo no es aprobar más lento, es aprobar con criterio. La mayoría de las iniciativas se mueven más rápido una vez que hay reglas claras de qué sí y qué no." }
+        {
+          "question": "¿Cómo se implementa un gobierno de IA desde cero, sin ningún marco previo?",
+          "answer": "Partimos de cero: definimos políticas, roles y controles desde la primera semana, sin frenar las iniciativas que ya están en marcha."
+        },
+        {
+          "question": "¿Cómo se unifica el uso de IA cuando cada área ya trabaja por su cuenta?",
+          "answer": "Auditamos lo que ya existe y lo integramos al mismo marco de gobierno, en vez de pedirle a cada área que empiece de cero."
+        },
+        {
+          "question": "¿Qué evidencia de gobierno de IA hay que presentar ante un cliente o un regulador?",
+          "answer": "Documentamos el marco de forma que resista una auditoría externa — roles, políticas y registros de decisión, no solo una presentación interna."
+        },
+        {
+          "question": "¿El gobierno de IA frena la innovación dentro de la empresa?",
+          "answer": "El objetivo no es aprobar más lento, es aprobar con criterio. La mayoría de las iniciativas se mueven más rápido una vez que hay reglas claras de qué sí y qué no."
+        }
       ]
     }
   }

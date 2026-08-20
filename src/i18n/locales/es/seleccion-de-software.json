@@ -14,13 +14,29 @@
     "eyebrow": "El problema",
     "title": "Elegir software no debería convertirse en una apuesta",
     "intro": "Una empresa puede saber que necesita modernizarse, pero aparecen preguntas: ¿Necesitamos un ERP nuevo o debemos optimizar el actual? ¿Qué CRM se adapta realmente a nuestro proceso comercial? ¿Nuestro sistema de gestión humana soportará el crecimiento? ¿Qué solución de gestión de activos puede integrarse con nuestra arquitectura?",
-    "bullets": ["Demos de proveedores", "Presentaciones comerciales", "Comparaciones de funcionalidades", "Propuestas económicas", "Opiniones internas", "Recomendaciones de colegas"],
+    "bullets": [
+      "Demos de proveedores",
+      "Presentaciones comerciales",
+      "Comparaciones de funcionalidades",
+      "Propuestas económicas",
+      "Opiniones internas",
+      "Recomendaciones de colegas"
+    ],
     "punch": "Cada proveedor presenta su solución como la respuesta. La organización termina teniendo mucha información, pero no necesariamente una decisión objetiva."
   },
   "costo": {
     "eyebrow": "El costo de equivocarse",
     "title": "Una mala selección puede comprometer años de inversión",
-    "bullets": ["Sobrecostos de implementación", "Funcionalidades que nunca se utilizan", "Procesos que deben adaptarse al software", "Integraciones complejas", "Dependencia excesiva del proveedor", "Resistencia de los usuarios", "Costos recurrentes inesperados", "Dificultad para escalar"],
+    "bullets": [
+      "Sobrecostos de implementación",
+      "Funcionalidades que nunca se utilizan",
+      "Procesos que deben adaptarse al software",
+      "Integraciones complejas",
+      "Dependencia excesiva del proveedor",
+      "Resistencia de los usuarios",
+      "Costos recurrentes inesperados",
+      "Dificultad para escalar"
+    ],
     "punch": "El costo de seleccionar mal no está solamente en comprar el software equivocado. Está en todo lo que ocurre después."
   },
   "preguntaCorrecta": {
@@ -28,39 +44,99 @@
     "title": "No se trata de encontrar el software más completo. Se trata de encontrar el más adecuado.",
     "notQuestion": "“¿Qué software quiere comprar?”",
     "realQuestion": "“¿Qué necesita resolver la organización?”",
-    "steps": ["Negocio", "Procesos", "Requerimientos", "Tecnología", "Proveedor"]
+    "steps": [
+      "Negocio",
+      "Procesos",
+      "Requerimientos",
+      "Tecnología",
+      "Proveedor"
+    ]
   },
   "metodo": {
     "eyebrow": "Nuestra solución",
     "title": "Convertimos una decisión tecnológica compleja en una decisión estructurada",
     "intro": "Aplicamos el Método CIRA completo a cada proceso de selección de software:",
     "fases": [
-      { "letra": "C", "titulo": "Construir", "descripcion": "Entendemos el contexto, objetivos y necesidades." },
-      { "letra": "I", "titulo": "Identificar", "descripcion": "Definimos requerimientos y alternativas." },
-      { "letra": "R", "titulo": "Realizar", "descripcion": "Evaluamos, comparamos y validamos las soluciones." },
-      { "letra": "A", "titulo": "Adoptar", "descripcion": "Acompañamos la decisión y preparamos el camino hacia la implementación." }
+      {
+        "letra": "C",
+        "titulo": "Construir",
+        "descripcion": "Entendemos el contexto, objetivos y necesidades."
+      },
+      {
+        "letra": "I",
+        "titulo": "Identificar",
+        "descripcion": "Definimos requerimientos y alternativas."
+      },
+      {
+        "letra": "R",
+        "titulo": "Realizar",
+        "descripcion": "Evaluamos, comparamos y validamos las soluciones."
+      },
+      {
+        "letra": "A",
+        "titulo": "Adoptar",
+        "descripcion": "Acompañamos la decisión y preparamos el camino hacia la implementación."
+      }
     ]
   },
   "categorias": {
     "eyebrow": "Qué seleccionamos",
     "title": "Seleccionamos soluciones para las áreas críticas de su organización",
     "items": [
-      { "slug": "erp", "title": "ERP", "description": "Planificación y gestión integral del negocio.", "linkLabel": "Ver selección de ERP" },
-      { "slug": "crm", "title": "CRM", "description": "Gestión comercial, clientes y relaciones.", "linkLabel": "Ver selección de CRM" },
-      { "slug": "hcm", "title": "HCM", "description": "Gestión humana, talento y procesos de personas.", "linkLabel": "Ver selección de HCM" },
-      { "slug": "eam", "title": "EAM", "description": "Gestión y mantenimiento de activos empresariales.", "linkLabel": "Ver selección de EAM" }
+      {
+        "slug": "erp",
+        "title": "ERP",
+        "description": "Planificación y gestión integral del negocio.",
+        "linkLabel": "Ver selección de ERP"
+      },
+      {
+        "slug": "crm",
+        "title": "CRM",
+        "description": "Gestión comercial, clientes y relaciones.",
+        "linkLabel": "Ver selección de CRM"
+      },
+      {
+        "slug": "hcm",
+        "title": "HCM",
+        "description": "Gestión humana, talento y procesos de personas.",
+        "linkLabel": "Ver selección de HCM"
+      },
+      {
+        "slug": "eam",
+        "title": "EAM",
+        "description": "Gestión y mantenimiento de activos empresariales.",
+        "linkLabel": "Ver selección de EAM"
+      }
     ]
   },
   "evaluamos": {
     "eyebrow": "Cómo evaluamos",
     "title": "Evaluamos más allá de las funcionalidades",
     "items": [
-      { "title": "Funcional", "description": "Ajuste a procesos y requerimientos." },
-      { "title": "Técnica", "description": "Arquitectura, integraciones, seguridad." },
-      { "title": "Económica", "description": "Licenciamiento, implementación, TCO." },
-      { "title": "Estratégica", "description": "Escalabilidad y alineación futura." },
-      { "title": "Proveedor", "description": "Capacidad, experiencia y soporte." },
-      { "title": "Usuario", "description": "Usabilidad y adopción." }
+      {
+        "title": "Funcional",
+        "description": "Ajuste a procesos y requerimientos."
+      },
+      {
+        "title": "Técnica",
+        "description": "Arquitectura, integraciones, seguridad."
+      },
+      {
+        "title": "Económica",
+        "description": "Licenciamiento, implementación, TCO."
+      },
+      {
+        "title": "Estratégica",
+        "description": "Escalabilidad y alineación futura."
+      },
+      {
+        "title": "Proveedor",
+        "description": "Capacidad, experiencia y soporte."
+      },
+      {
+        "title": "Usuario",
+        "description": "Usabilidad y adopción."
+      }
     ]
   },
   "closingQuote": "No recomendamos tecnologías por catálogo. Nuestro trabajo no consiste en vender una plataforma determinada. Evaluamos las alternativas disponibles y construimos una recomendación basada en las necesidades, prioridades y contexto de cada organización. 100% agnósticos en tecnología.",
@@ -68,8 +144,26 @@
     "eyebrow": "Selección de Software",
     "title": "Preguntas frecuentes",
     "items": [
-      { "question": "¿Está evaluando una nueva solución de software?", "answer": "Antes de elegir una plataforma, asegúrese de estar resolviendo el problema correcto — por eso empezamos siempre por el negocio, no por el catálogo del proveedor." },
-      { "question": "¿La evaluación es realmente agnóstica de proveedor?", "answer": "Sí. No tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM, EAM u otras soluciones empresariales — evaluamos con los mismos criterios objetivos sin importar la marca." }
+      {
+        "question": "¿Qué es la selección de software empresarial y cómo se hace?",
+        "answer": "Antes de elegir una plataforma, asegúrese de estar resolviendo el problema correcto — por eso empezamos siempre por el negocio, no por el catálogo del proveedor."
+      },
+      {
+        "question": "¿La evaluación es realmente agnóstica de proveedor?",
+        "answer": "Sí. No tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM, EAM u otras soluciones empresariales — evaluamos con los mismos criterios objetivos sin importar la marca."
+      },
+      {
+        "question": "¿Cuánto dura un proceso de selección de software empresarial?",
+        "answer": "Como referencia, la fase de Identificar del método CIRA toma de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación, e incluye la definición de criterios, el RFP, la evaluación de propuestas y la referenciación de proveedores."
+      },
+      {
+        "question": "¿Qué pasa si el software correcto es el que ya tenemos?",
+        "answer": "Es un resultado válido y ocurre. Si la evaluación concluye que su plataforma actual cubre los criterios definidos, la recomendación es optimizarla en vez de reemplazarla: no tenemos ningún incentivo comercial para que compre algo nuevo."
+      },
+      {
+        "question": "¿Quién de nuestro equipo debe participar en la selección?",
+        "answer": "Los dueños de los procesos que la herramienta va a soportar, un referente de TI y un patrocinador con capacidad de decisión presupuestal. La participación de los usuarios finales desde la definición de criterios es lo que separa una selección que se adopta de una que se resiste."
+      }
     ]
   }
 }

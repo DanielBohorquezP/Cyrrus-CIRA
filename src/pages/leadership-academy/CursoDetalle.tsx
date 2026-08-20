@@ -35,7 +35,7 @@ export default function CursoDetalle() {
   const pagePath = entry ? `${prefix}/leadership-academy/${entry.slug}` : hubPath;
 
   usePageMeta({
-    title: tr?.title ?? (lang === "en" ? "Leadership Academy | Cyrrus" : "Leadership Academy | Cyrrus"),
+    title: tr?.title ? `${tr.title} | Cyrrus` : "Leadership Academy | Cyrrus",
     description: tr?.intro ?? "",
     noindex: entry?.comingSoon,
     alternatePath: entry
@@ -46,16 +46,20 @@ export default function CursoDetalle() {
     jsonLd:
       entry && tr
         ? [
-            {
-              "@context": "https://schema.org",
-              "@type": "Course",
-              "@id": `${siteUrl}${pagePath}#course`,
-              url: `${siteUrl}${pagePath}`,
-              name: tr.title,
-              provider: { "@id": `${siteUrl}/#organization` },
-              description: tr.intro,
-              areaServed: "LATAM",
-            },
+            ...(entry.comingSoon
+              ? []
+              : [
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "Course",
+                    "@id": `${siteUrl}${pagePath}#course`,
+                    url: `${siteUrl}${pagePath}`,
+                    name: tr.title,
+                    provider: { "@id": `${siteUrl}/#organization` },
+                    description: tr.intro,
+                    areaServed: "LATAM",
+                  },
+                ]),
             {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",

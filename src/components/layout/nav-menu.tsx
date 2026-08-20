@@ -171,6 +171,7 @@ function SectionPanel({ item }: { item: NavItem }) {
 
 export function NavMenu({ items, variant }: NavMenuProps) {
   const location = useLocation();
+  const lang = useLang();
   const dark = variant === "dark";
 
   const triggerClass = dark
@@ -180,7 +181,7 @@ export function NavMenu({ items, variant }: NavMenuProps) {
   return (
     <MotionNavigationMenu
       className="hidden lg:flex"
-      aria-label={items[0]?.label ? undefined : "Navegación principal"}
+      aria-label={lang === "en" ? "Main navigation" : "Navegación principal"}
     >
       <MotionNavigationMenuList className="gap-0.5">
         {items.map((item) => {

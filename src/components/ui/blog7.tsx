@@ -130,7 +130,7 @@ const Blog7 = ({
                 </span>
               </div>
               <CardHeader>
-                <h3 className="text-lg font-semibold md:text-xl">{post.title}</h3>
+                <h2 className="text-lg font-semibold md:text-xl">{post.title}</h2>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{post.summary}</p>

@@ -15,13 +15,20 @@ interface PageMeta {
   /** Set true to keep an unfinished/placeholder page out of search indexes. */
   noindex?: boolean;
   /**
+   * Set true on a page that has no canonical URL of its own. Only the 404 needs
+   * this: it is served for every unknown path, so any canonical it emits points
+   * somewhere it is not — the prerendered dist/404.html was declaring itself
+   * canonical at the synthetic /not-found-preview-only route, which 404s.
+   */
+  noCanonical?: boolean;
+  /**
    * Path of this page's translated counterpart in the other language (e.g. "/en/metodo-cira"
    * from "/metodo-cira", or vice-versa). Emits hreflang alternates + x-default when set.
    */
   alternatePath?: string;
 }
 
-export function usePageMeta({ title, description, jsonLd, image, noindex, alternatePath }: PageMeta) {
+export function usePageMeta({ title, description, jsonLd, image, noindex, noCanonical, alternatePath }: PageMeta) {
   const { pathname } = useLocation();
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : undefined;
   const jsonLdKey = jsonLdArray ? JSON.stringify(jsonLdArray) : undefined;
@@ -41,18 +48,25 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, altern
     }
     descriptionMeta.setAttribute("content", description);
 
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
     const previousCanonical = canonicalLink?.getAttribute("href") ?? "";
-    if (!canonicalLink) {
-      canonicalLink = document.createElement("link");
-      canonicalLink.setAttribute("rel", "canonical");
-      document.head.appendChild(canonicalLink);
+    if (noCanonical) {
+      canonicalLink?.remove();
+    } else {
+      const link = canonicalLink ?? document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", canonicalUrl);
+      if (!canonicalLink) document.head.appendChild(link);
     }
-    canonicalLink.setAttribute("href", canonicalUrl);
 
+    // This hook is the only writer of meta[name="robots"] — index.html ships
+    // none. So the tag present on load is always one a *previous* render of this
+    // hook produced (the prerenderer bakes it into the noindex routes' HTML),
+    // never something to preserve. Restoring it on cleanup, as this used to do,
+    // left "noindex, follow" pinned to the document after a client-side
+    // navigation off a coming-soon workshop or the 404 — every subsequent route
+    // in that session rendered as noindex to a crawler that follows links.
     let robotsMeta = document.querySelector('meta[name="robots"]');
-    const previousRobots = robotsMeta?.getAttribute("content") ?? null;
-    const hadRobotsMeta = !!robotsMeta;
     if (noindex) {
       if (!robotsMeta) {
         robotsMeta = document.createElement("meta");
@@ -60,6 +74,9 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, altern
         document.head.appendChild(robotsMeta);
       }
       robotsMeta.setAttribute("content", "noindex, follow");
+    } else {
+      robotsMeta?.remove();
+      robotsMeta = null;
     }
 
     const ogTagConfig: Array<[string, string]> = [
@@ -148,14 +165,13 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, altern
     return () => {
       document.title = previousTitle;
       descriptionMeta?.setAttribute("content", previousDescription);
-      canonicalLink?.setAttribute("href", previousCanonical);
-      if (noindex) {
-        if (hadRobotsMeta && previousRobots !== null) {
-          robotsMeta?.setAttribute("content", previousRobots);
-        } else {
-          robotsMeta?.remove();
-        }
+      if (canonicalLink) {
+        canonicalLink.setAttribute("href", previousCanonical);
+        // noCanonical detached it; put it back so the next route inherits a
+        // canonical instead of relying on a fresh one being created.
+        if (!canonicalLink.isConnected) document.head.appendChild(canonicalLink);
       }
+      robotsMeta?.remove();
       for (const { el, value } of previousOg) {
         el.setAttribute("content", value);
       }
@@ -170,5 +186,5 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, altern
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [title, description, jsonLdKey, canonicalUrl, noindex, alternatePath, isEnglish]);
+  }, [title, description, jsonLdKey, canonicalUrl, noindex, noCanonical, alternatePath, isEnglish]);
 }

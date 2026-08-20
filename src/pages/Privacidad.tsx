@@ -11,10 +11,33 @@ export default function Privacidad() {
   const { t } = useTranslation("legal");
   const lang = useLang();
 
+  const siteUrl = "https://www.cyrruscs.com";
+  const pagePath = lang === "en" ? "/en/privacidad" : "/privacidad";
+
   usePageMeta({
     title: t("privacidad.meta.title"),
     description: t("privacidad.meta.description"),
     alternatePath: lang === "en" ? "/privacidad" : "/en/privacidad",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": `${siteUrl}${pagePath}#webpage`,
+        url: `${siteUrl}${pagePath}`,
+        name: t("privacidad.meta.title"),
+        description: t("privacidad.meta.description"),
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        about: { "@id": `${siteUrl}/#organization` },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${lang === "en" ? "/en" : "/"}` },
+          { "@type": "ListItem", position: 2, name: t("privacidad.title"), item: `${siteUrl}${pagePath}` },
+        ],
+      },
+    ],
   });
 
   return (

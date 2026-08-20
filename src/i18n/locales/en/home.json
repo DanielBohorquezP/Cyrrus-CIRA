@@ -11,9 +11,18 @@
   },
   "trustBar": {
     "metrics": [
-      { "value": "+17", "label": "countries" },
-      { "value": "1", "label": "end-to-end method" },
-      { "value": "100%", "label": "vendor-agnostic" }
+      {
+        "value": "+17",
+        "label": "countries"
+      },
+      {
+        "value": "1",
+        "label": "end-to-end method"
+      },
+      {
+        "value": "100%",
+        "label": "vendor-agnostic"
+      }
     ]
   },
   "ceo": {
@@ -28,10 +37,30 @@
     "buttonText": "See the full methodology",
     "stepOf": "Step {{n}} of 4",
     "steps": [
-      { "letter": "C", "word": "Construct", "title": "The strategy", "description": "We diagnose the business and turn the plan into a roadmap with owners and dates." },
-      { "letter": "I", "word": "Identify", "title": "The right solution", "description": "We evaluate vendors with no commercial bias: chosen on criteria, not on catalog." },
-      { "letter": "R", "word": "Realize", "title": "The project", "description": "We govern execution and assure quality all the way to go-live." },
-      { "letter": "A", "word": "Adopt", "title": "The change", "description": "We work on adoption from day one, so the result holds over time." }
+      {
+        "letter": "C",
+        "word": "Construct",
+        "title": "The strategy",
+        "description": "We diagnose the business and turn the plan into a roadmap with owners and dates."
+      },
+      {
+        "letter": "I",
+        "word": "Identify",
+        "title": "The right solution",
+        "description": "We evaluate vendors with no commercial bias: chosen on criteria, not on catalog."
+      },
+      {
+        "letter": "R",
+        "word": "Realize",
+        "title": "The project",
+        "description": "We govern execution and assure quality all the way to go-live."
+      },
+      {
+        "letter": "A",
+        "word": "Adopt",
+        "title": "The change",
+        "description": "We work on adoption from day one, so the result holds over time."
+      }
     ]
   },
   "servicesTabs": {
@@ -80,28 +109,75 @@
     "conocerMas": "Learn more",
     "clientesTitulo": "Companies that have already trusted Cyrrus",
     "levels": [
-      { "level": "Level 1", "title": "CIRA Method", "description": "What gets achieved: the business. Construct · Identify · Realize · Adopt.", "href": "/metodo-cira" },
-      { "level": "Level 2", "title": "Cyrrus Intelligence Lab", "description": "How it accelerates: AI governance and architecture, cutting across all 4 phases.", "href": "/intelligence-lab" },
-      { "level": "Level 3", "title": "Leadership Academy", "description": "Who sustains it: your own team learns to operate the same model.", "href": "/leadership-academy" },
-      { "level": "Level 4", "title": "Digital Presence", "description": "Where you're found: the site and visibility that bring the conversation.", "href": "/presencia-digital" }
+      {
+        "level": "Level 1",
+        "title": "CIRA Method",
+        "description": "What gets achieved: the business. Construct · Identify · Realize · Adopt.",
+        "href": "/metodo-cira"
+      },
+      {
+        "level": "Level 2",
+        "title": "Cyrrus Intelligence Lab",
+        "description": "How it accelerates: AI governance and architecture, cutting across all 4 phases.",
+        "href": "/intelligence-lab"
+      },
+      {
+        "level": "Level 3",
+        "title": "Leadership Academy",
+        "description": "Who sustains it: your own team learns to operate the same model.",
+        "href": "/leadership-academy"
+      },
+      {
+        "level": "Level 4",
+        "title": "Digital Presence",
+        "description": "Where you're found: the site and visibility that bring the conversation.",
+        "href": "/presencia-digital"
+      }
     ]
   },
   "whyCyrrus": {
     "eyebrow": "Why Cyrrus?",
     "title": "The difference isn't the tool. It's who answers for the result.",
     "reasons": [
-      { "title": "One accountable partner, end to end", "description": "Your transformation isn't split across a different vendor per phase. Strategy, selection, execution, and adoption run in a single cycle, and Cyrrus answers for the complete result." },
-      { "title": "AI inside the method, not as a separate service", "description": "Governance, architecture, and agents operate inside the four phases: they accelerate diagnosis, selection, execution, and adoption. That's how the time between deciding and seeing results gets shorter." },
-      { "title": "Capability that stays with your team", "description": "With Leadership Academy, sustaining the change stops depending on Cyrrus. Your people learn to operate the same model and improvement continues from the inside." }
+      {
+        "title": "One accountable partner, end to end",
+        "description": "Your transformation isn't split across a different vendor per phase. Strategy, selection, execution, and adoption run in a single cycle, and Cyrrus answers for the complete result."
+      },
+      {
+        "title": "AI inside the method, not as a separate service",
+        "description": "Governance, architecture, and agents operate inside the four phases: they accelerate diagnosis, selection, execution, and adoption. That's how the time between deciding and seeing results gets shorter."
+      },
+      {
+        "title": "Capability that stays with your team",
+        "description": "With Leadership Academy, sustaining the change stops depending on Cyrrus. Your people learn to operate the same model and improvement continues from the inside."
+      }
     ]
   },
   "testimonials": {
     "eyebrow": "On the other side of the gap",
     "title": "This is what it looks like when the decision does reach execution.",
     "items": [
-      { "videoId": "7czOH9eH6lw", "name": "Sebastián Hoyos", "role": "CFO", "company": "3 Castillos", "quote": "\"We decided to work with Cyrrus because it offered us a path to world-class best practices.\" Today they have a platform that lets them see information live and better understand what's happening with their customers." },
-      { "videoId": "C8aDacFpwBY", "name": "Vanessa Ramírez", "role": "HR", "company": "3 Castillos", "quote": "\"It's not just an ERP change — it's an organization-wide change management process.\"" },
-      { "videoId": "2oWuE5RFskI", "name": "Fernando Gutiérrez", "role": "Home Worker", "company": "Morelco", "quote": "Cyrrus helped Morelco implement remote work during the pandemic, adapting working conditions for its employees while maintaining their quality of life and productivity. The solution reinvented how infrastructure projects get done." }
+      {
+        "videoId": "7czOH9eH6lw",
+        "name": "Sebastián Hoyos",
+        "role": "CFO",
+        "company": "3 Castillos",
+        "quote": "\"We decided to work with Cyrrus because it offered us a path to world-class best practices.\" Today they have a platform that lets them see information live and better understand what's happening with their customers."
+      },
+      {
+        "videoId": "C8aDacFpwBY",
+        "name": "Vanessa Ramírez",
+        "role": "HR",
+        "company": "3 Castillos",
+        "quote": "\"It's not just an ERP change — it's an organization-wide change management process.\""
+      },
+      {
+        "videoId": "2oWuE5RFskI",
+        "name": "Fernando Gutiérrez",
+        "role": "Home Worker",
+        "company": "Morelco",
+        "quote": "Cyrrus helped Morelco implement remote work during the pandemic, adapting working conditions for its employees while maintaining their quality of life and productivity. The solution reinvented how infrastructure projects get done."
+      }
     ]
   },
   "experience": {
@@ -111,8 +187,29 @@
     "paisesLabel": "Countries of reach",
     "sectoresLabel": "Industries served",
     "footerNote": "See the full team, industries, and clients on the Experience page.",
-    "countries": ["Mexico", "Central America", "Panama", "Colombia", "Ecuador", "Peru", "Brazil", "Chile", "Argentina", "United States"],
-    "industries": ["Education", "Finance & Insurance", "Public Utilities", "Food & Beverage", "Consumer Goods", "Oil & Gas", "Manufacturing", "Logistics", "Distribution"]
+    "countries": [
+      "Mexico",
+      "Central America",
+      "Panama",
+      "Colombia",
+      "Ecuador",
+      "Peru",
+      "Brazil",
+      "Chile",
+      "Argentina",
+      "United States"
+    ],
+    "industries": [
+      "Education",
+      "Finance & Insurance",
+      "Public Utilities",
+      "Food & Beverage",
+      "Consumer Goods",
+      "Oil & Gas",
+      "Manufacturing",
+      "Logistics",
+      "Distribution"
+    ]
   },
   "perspectivasPreview": {
     "tagline": "Insights",
@@ -126,7 +223,7 @@
     "buttonText": "Schedule a strategy call"
   },
   "meta": {
-    "title": "Strategic Consulting with AI | Cyrrus Consulting Services",
-    "description": "Strategic consulting that reaches execution. CIRA methodology: strategy, the right solution, and real adoption, with AI in every phase."
+    "title": "Strategic Consulting with AI in Colombia | Cyrrus",
+    "description": "Strategic consulting in Colombia that reaches execution. CIRA methodology: strategy, the right solution, and real adoption, with AI in every phase."
   }
 }

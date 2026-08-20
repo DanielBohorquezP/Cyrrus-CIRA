@@ -40,7 +40,7 @@ export default function QuienesSomos() {
   usePageMeta({
     title: t("quienesSomos.meta.title"),
     description: t("quienesSomos.meta.description"),
-    image: "https://www.cyrruscs.com/assets/decoracion/JacksonCEO1.jpeg",
+    image: "https://www.cyrruscs.com/assets/og-quienes-somos.png",
     alternatePath: lang === "en" ? "/quienes-somos" : "/en/quienes-somos",
     jsonLd: [
       {

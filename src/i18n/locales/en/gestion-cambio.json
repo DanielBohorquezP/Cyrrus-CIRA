@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Change Management & Training | Cyrrus",
-    "description": "Organizational change management built into project execution, with continuous AI-driven adoption measurement."
+    "description": "Organizational change management and training built into project execution, with continuous AI-driven adoption measurement in LATAM."
   },
   "hero": {
     "eyebrow": "CIRA Method — Adopt",
@@ -26,10 +26,22 @@
     "description": "Our Change Management methodology isn't an add-on: it's embedded in our Strategy, Select, and Project Management services. This ensures change management that aligns perfectly with your organization's vision and objectives.",
     "ctaLabel": "Schedule an executive diagnosis",
     "items": [
-      { "title": "Stakeholder management", "description": "We identify and manage all interested parties to ensure their active participation and support during the change." },
-      { "title": "Communication plan", "description": "We develop effective strategies to keep everyone involved informed and engaged at every stage." },
-      { "title": "Training plan", "description": "We design personalized plans to ensure the team is prepared and confident using the new solution." },
-      { "title": "Climate management", "description": "We monitor and manage the project's emotional and cultural environment to foster a collaborative setting." }
+      {
+        "title": "Stakeholder management",
+        "description": "We identify and manage all interested parties to ensure their active participation and support during the change."
+      },
+      {
+        "title": "Communication plan",
+        "description": "We develop effective strategies to keep everyone involved informed and engaged at every stage."
+      },
+      {
+        "title": "Training plan",
+        "description": "We design personalized plans to ensure the team is prepared and confident using the new solution."
+      },
+      {
+        "title": "Climate management",
+        "description": "We monitor and manage the project's emotional and cultural environment to foster a collaborative setting."
+      }
     ]
   },
   "distinctive": {
@@ -47,12 +59,30 @@
     "eyebrow": "Benefits",
     "title": "Agility, transformation, and efficiency",
     "items": [
-      { "title": "Comprehensive change management", "description": "Our Change Management service goes beyond convention: it becomes an opportunity for positive, sustainable transformation." },
-      { "title": "Embedded in our services", "description": "Our methodology guarantees change management perfectly aligned with corporate vision and specific objectives." },
-      { "title": "Comprehensive approach", "description": "We address every critical aspect, from stakeholder management to organizational impact, ensuring real adoption of the improvements." },
-      { "title": "Proactive climate management", "description": "We monitor and manage the project's emotional and cultural environment, contributing to overall well-being and an effective close." },
-      { "title": "Personalization and competency", "description": "We design personalized training that ensures a highly informed team, driving a successful implementation." },
-      { "title": "Proactive impact management", "description": "We analyze organizational impact ahead of time, minimizing resistance in the early stages of adopting the corporate strategy." }
+      {
+        "title": "Comprehensive change management",
+        "description": "Our Change Management service goes beyond convention: it becomes an opportunity for positive, sustainable transformation."
+      },
+      {
+        "title": "Embedded in our services",
+        "description": "Our methodology guarantees change management perfectly aligned with corporate vision and specific objectives."
+      },
+      {
+        "title": "Comprehensive approach",
+        "description": "We address every critical aspect, from stakeholder management to organizational impact, ensuring real adoption of the improvements."
+      },
+      {
+        "title": "Proactive climate management",
+        "description": "We monitor and manage the project's emotional and cultural environment, contributing to overall well-being and an effective close."
+      },
+      {
+        "title": "Personalization and competency",
+        "description": "We design personalized training that ensures a highly informed team, driving a successful implementation."
+      },
+      {
+        "title": "Proactive impact management",
+        "description": "We analyze organizational impact ahead of time, minimizing resistance in the early stages of adopting the corporate strategy."
+      }
     ]
   },
   "featureImage": {
@@ -62,10 +92,22 @@
     "eyebrow": "Change Management",
     "title": "Frequently asked questions",
     "items": [
-      { "question": "When does change management work actually start?", "answer": "From day one of the project, not as a closing activity — it's embedded in the execution of Strategy, Select, and Project Management, not run as a separate service." },
-      { "question": "How do you measure whether the change is actually being adopted?", "answer": "We measure organizational climate and the adoption curve continuously with AI, not just with a survey at project close." },
-      { "question": "Is team training included?", "answer": "Yes, the training plan is one of the four pillars of the process. Our broader training programs, including generative AI adoption for senior management, live at Cyrrus Leadership Academy." },
-      { "question": "The system is already installed, but the team isn't using it — can you help now?", "answer": "Yes. While the ideal approach is integrating change management from the start of the project, we also step in when adoption has already stalled, through stakeholder management, a communication plan, and organizational climate management." }
+      {
+        "question": "When does change management work actually start?",
+        "answer": "From day one of the project, not as a closing activity — it's embedded in the execution of Strategy, Select, and Project Management, not run as a separate service."
+      },
+      {
+        "question": "How do you measure whether the change is actually being adopted?",
+        "answer": "We measure organizational climate and the adoption curve continuously with AI, not just with a survey at project close."
+      },
+      {
+        "question": "Is team training included?",
+        "answer": "Yes, the training plan is one of the four pillars of the process. Our broader training programs, including generative AI adoption for senior management, live at Cyrrus Leadership Academy."
+      },
+      {
+        "question": "Can you help if the system is already installed but the team isn't using it?",
+        "answer": "Yes. While the ideal approach is integrating change management from the start of the project, we also step in when adoption has already stalled, through stakeholder management, a communication plan, and organizational climate management."
+      }
     ]
   }
 }

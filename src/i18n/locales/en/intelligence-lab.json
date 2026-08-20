@@ -16,29 +16,69 @@
       "description": "Most AI initiatives fail because they start with the tool. We start with the governance framework that makes that tool safe, auditable, and scalable.",
       "verMas": "Learn more",
       "items": [
-        { "title": "Corporate AI governance", "description": "No one in the organization can explain which model made which decision, or with what data. We define who decides, who audits, and which data can be touched and which can't.", "hrefSlug": "gobierno-de-ia" },
-        { "title": "Enterprise AI architecture", "description": "Five AI tools, bought by five different areas, that don't talk to each other. We design the architecture that connects existing models, data, and systems securely and scalably.", "hrefSlug": "arquitectura-de-ia" },
-        { "title": "Process automation with AI agents", "description": "Agents that nail a demo and never touch a real business process. Ours execute tasks within each CIRA phase — diagnosis, vendor evaluation, risk monitoring, adoption measurement — under the same governance framework.", "hrefSlug": "automatizaciones-desarrollo" }
+        {
+          "title": "Corporate AI governance",
+          "description": "No one in the organization can explain which model made which decision, or with what data. We define who decides, who audits, and which data can be touched and which can't.",
+          "hrefSlug": "gobierno-de-ia"
+        },
+        {
+          "title": "Enterprise AI architecture",
+          "description": "Five AI tools, bought by five different areas, that don't talk to each other. We design the architecture that connects existing models, data, and systems securely and scalably.",
+          "hrefSlug": "arquitectura-de-ia"
+        },
+        {
+          "title": "Process automation with AI agents",
+          "description": "Agents that nail a demo and never touch a real business process. Ours execute tasks within each CIRA phase — diagnosis, vendor evaluation, risk monitoring, adoption measurement — under the same governance framework.",
+          "hrefSlug": "automatizaciones-desarrollo"
+        }
       ]
     },
     "transversal": {
       "eyebrow": "Cutting across CIRA",
       "title": "One engine, running through all four phases.",
       "phases": [
-        { "phase": "Construct", "hash": "construir", "note": "Months of manual diagnosis, decisions based on the last meeting." },
-        { "phase": "Identify", "hash": "identificar", "note": "Evaluating vendors one by one while the decision goes cold." },
-        { "phase": "Realize", "hash": "realizar", "note": "Project risk is discovered in the week's report, not the moment it happens." },
-        { "phase": "Adopt", "hash": "adoptar", "note": "No one measures adoption until the project has already closed." }
+        {
+          "phase": "Construct",
+          "hash": "construir",
+          "note": "Months of manual diagnosis, decisions based on the last meeting."
+        },
+        {
+          "phase": "Identify",
+          "hash": "identificar",
+          "note": "Evaluating vendors one by one while the decision goes cold."
+        },
+        {
+          "phase": "Realize",
+          "hash": "realizar",
+          "note": "Project risk is discovered in the week's report, not the moment it happens."
+        },
+        {
+          "phase": "Adopt",
+          "hash": "adoptar",
+          "note": "No one measures adoption until the project has already closed."
+        }
       ]
     },
     "faq": {
       "eyebrow": "Cyrrus Intelligence Lab",
       "title": "Frequently asked questions",
       "items": [
-        { "question": "Does Cyrrus Intelligence Lab sell AI tools?", "answer": "No. It's not a catalog of chatbots or tools — it's the corporate AI governance and enterprise AI architecture layer that makes it possible to implement AI in business processes securely and in an auditable way." },
-        { "question": "Where do you start — governance or tools?", "answer": "Governance. Most AI initiatives fail because they start with the tool; we start with the framework that makes that tool safe, auditable, and scalable." },
-        { "question": "How does Intelligence Lab connect to the CIRA method?", "answer": "It runs transversally beneath the four phases: it accelerates diagnosis in Construct, vendor evaluation in Identify, risk monitoring in Realize, and adoption measurement in Adopt." },
-        { "question": "We already use AI in several areas with no common framework — where do we start?", "answer": "We audit what already exists in the organization today and integrate it into a single governance framework, instead of asking each area to start from scratch." }
+        {
+          "question": "Does Cyrrus Intelligence Lab sell AI tools?",
+          "answer": "No. It's not a catalog of chatbots or tools — it's the corporate AI governance and enterprise AI architecture layer that makes it possible to implement AI in business processes securely and in an auditable way."
+        },
+        {
+          "question": "Where do you start — governance or tools?",
+          "answer": "Governance. Most AI initiatives fail because they start with the tool; we start with the framework that makes that tool safe, auditable, and scalable."
+        },
+        {
+          "question": "How does Intelligence Lab connect to the CIRA method?",
+          "answer": "It runs transversally beneath the four phases: it accelerates diagnosis in Construct, vendor evaluation in Identify, risk monitoring in Realize, and adoption measurement in Adopt."
+        },
+        {
+          "question": "We already use AI in several areas with no common framework — where do we start?",
+          "answer": "We audit what already exists in the organization today and integrate it into a single governance framework, instead of asking each area to start from scratch."
+        }
       ]
     }
   },
@@ -56,9 +96,18 @@
       "eyebrow": "What's included",
       "title": "Automation measured against the real process, not the demo.",
       "items": [
-        { "title": "Process automation", "description": "Complete workflows, not loose tasks — from the trigger to the outcome the business actually needs." },
-        { "title": "Agents by CIRA phase", "description": "Agents specialized in diagnosis, vendor evaluation, risk monitoring, and adoption measurement — each with a clear owner and purpose." },
-        { "title": "Impact measurement", "description": "Every agent is measured against the real process it replaces or accelerates, not against a demo — time, error rate, and team adoption." }
+        {
+          "title": "Process automation",
+          "description": "Complete workflows, not loose tasks — from the trigger to the outcome the business actually needs."
+        },
+        {
+          "title": "Agents by CIRA phase",
+          "description": "Agents specialized in diagnosis, vendor evaluation, risk monitoring, and adoption measurement — each with a clear owner and purpose."
+        },
+        {
+          "title": "Impact measurement",
+          "description": "Every agent is measured against the real process it replaces or accelerates, not against a demo — time, error rate, and team adoption."
+        }
       ]
     },
     "body": [
@@ -68,11 +117,26 @@
     "faq": {
       "eyebrow": "Automation & AI Agents",
       "items": [
-        { "question": "Are you a software development shop?", "answer": "No. We're digital transformation consultants, not a development house. We first evaluate whether the right solution already exists in the market — as we do in CIRA's Solution Selection phase. We only build when that option genuinely doesn't exist." },
-        { "question": "We already tried AI agents and they never touched a real process", "answer": "We design every agent around a specific business process, not as a generic layer on top of everything else." },
-        { "question": "We don't know what to automate first", "answer": "We prioritize with the same diagnosis we use in CIRA's Construct phase — real impact, not the flashiest task to automate." },
-        { "question": "We have in-house developers — why do we need you?", "answer": "We work alongside your technical team, not in place of them. The automation gets integrated into the architecture and AI governance we've already defined, so your team can maintain it." },
-        { "question": "How do we know the agent is actually working?", "answer": "Every automation is measured against the process it replaces: time saved, error rate, and real adoption by the team — not the polish of a demo." }
+        {
+          "question": "Are you a software development shop?",
+          "answer": "No. We're digital transformation consultants, not a development house. We first evaluate whether the right solution already exists in the market — as we do in CIRA's Solution Selection phase. We only build when that option genuinely doesn't exist."
+        },
+        {
+          "question": "Why didn't our AI agents change any real process?",
+          "answer": "We design every agent around a specific business process, not as a generic layer on top of everything else."
+        },
+        {
+          "question": "Which processes should we automate first with AI?",
+          "answer": "We prioritize with the same diagnosis we use in CIRA's Construct phase — real impact, not the flashiest task to automate."
+        },
+        {
+          "question": "We have in-house developers — why do we need you?",
+          "answer": "We work alongside your technical team, not in place of them. The automation gets integrated into the architecture and AI governance we've already defined, so your team can maintain it."
+        },
+        {
+          "question": "How do we know the agent is actually working?",
+          "answer": "Every automation is measured against the process it replaces: time saved, error rate, and real adoption by the team — not the polish of a demo."
+        }
       ]
     }
   },
@@ -90,9 +154,18 @@
       "eyebrow": "What's included",
       "title": "An architecture, not a collection of loose tools.",
       "items": [
-        { "title": "Systems and models map", "description": "What AI tools exist today in the organization, who bought them, and what data and systems they connect to — before adding one more." },
-        { "title": "Secure integration", "description": "We connect existing models, data, and systems without duplicating information or opening new security gaps." },
-        { "title": "Built to scale", "description": "An architecture designed to grow, so it doesn't need to be rebuilt every time a new use case is added." }
+        {
+          "title": "Systems and models map",
+          "description": "What AI tools exist today in the organization, who bought them, and what data and systems they connect to — before adding one more."
+        },
+        {
+          "title": "Secure integration",
+          "description": "We connect existing models, data, and systems without duplicating information or opening new security gaps."
+        },
+        {
+          "title": "Built to scale",
+          "description": "An architecture designed to grow, so it doesn't need to be rebuilt every time a new use case is added."
+        }
       ]
     },
     "body": [
@@ -102,10 +175,22 @@
     "faq": {
       "eyebrow": "AI Architecture",
       "items": [
-        { "question": "Every area already bought its own AI tool", "answer": "We start with a real inventory of what exists today, before designing how everything should connect." },
-        { "question": "We have data in systems that don't talk to each other", "answer": "The architecture solves exactly that: a common data model that existing systems can feed, without migrating everything at once." },
-        { "question": "We don't know if our current infrastructure can support more AI", "answer": "We assess your infrastructure's real capacity before recommending any change or additional investment." },
-        { "question": "We're worried about the security of connecting all of this", "answer": "The architecture is designed together with the AI governance framework, not after — security and connectivity are defined at the same time." }
+        {
+          "question": "How do you bring order to a company where every area bought its own AI tool?",
+          "answer": "We start with a real inventory of what exists today, before designing how everything should connect."
+        },
+        {
+          "question": "How does AI connect to data spread across systems that don't talk to each other?",
+          "answer": "The architecture solves exactly that: a common data model that existing systems can feed, without migrating everything at once."
+        },
+        {
+          "question": "How do we know if our current infrastructure can support more AI projects?",
+          "answer": "We assess your infrastructure's real capacity before recommending any change or additional investment."
+        },
+        {
+          "question": "How secure is an AI architecture that connects every system in the company?",
+          "answer": "The architecture is designed together with the AI governance framework, not after — security and connectivity are defined at the same time."
+        }
       ]
     }
   },
@@ -123,9 +208,18 @@
       "eyebrow": "What's included",
       "title": "Governance that can be audited, not just declared.",
       "items": [
-        { "title": "AI usage policies", "description": "Who can use which model, for what business case, and with what data — in writing, not as a tacit agreement between areas." },
-        { "title": "Roles and owners", "description": "Who approves an AI initiative before it starts, and who audits the outcome once it's in production." },
-        { "title": "Data controls", "description": "What information a model can touch and what stays out of scope, with traceability for every automated decision." }
+        {
+          "title": "AI usage policies",
+          "description": "Who can use which model, for what business case, and with what data — in writing, not as a tacit agreement between areas."
+        },
+        {
+          "title": "Roles and owners",
+          "description": "Who approves an AI initiative before it starts, and who audits the outcome once it's in production."
+        },
+        {
+          "title": "Data controls",
+          "description": "What information a model can touch and what stays out of scope, with traceability for every automated decision."
+        }
       ]
     },
     "body": [
@@ -135,10 +229,22 @@
     "faq": {
       "eyebrow": "AI Governance",
       "items": [
-        { "question": "We don't have any AI framework today", "answer": "We start from zero: we define policies, roles, and controls from week one, without stopping initiatives already underway." },
-        { "question": "We already use AI in several areas, with no coordination", "answer": "We audit what already exists and integrate it into the same governance framework, instead of asking each area to start from scratch." },
-        { "question": "A client or regulator is asking us for evidence of AI governance", "answer": "We document the framework so it withstands an external audit — roles, policies, and decision records, not just an internal presentation." },
-        { "question": "We're worried governance will slow down innovation", "answer": "The goal isn't slower approval — it's approval with judgment. Most initiatives move faster once there are clear rules for what's in and what's out." }
+        {
+          "question": "How do you implement AI governance from scratch, with no framework in place?",
+          "answer": "We start from zero: we define policies, roles, and controls from week one, without stopping initiatives already underway."
+        },
+        {
+          "question": "How do you unify AI use when each area already works on its own?",
+          "answer": "We audit what already exists and integrate it into the same governance framework, instead of asking each area to start from scratch."
+        },
+        {
+          "question": "What AI governance evidence do you have to present to a client or a regulator?",
+          "answer": "We document the framework so it withstands an external audit — roles, policies, and decision records, not just an internal presentation."
+        },
+        {
+          "question": "Does AI governance slow down innovation inside the company?",
+          "answer": "The goal isn't slower approval — it's approval with judgment. Most initiatives move faster once there are clear rules for what's in and what's out."
+        }
       ]
     }
   }
