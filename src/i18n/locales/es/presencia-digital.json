@@ -17,28 +17,64 @@
       "description": "Un sitio excelente que nadie encuentra no genera negocio. Y un buen posicionamiento que lleva a un sitio que no convierte, tampoco. Los dos frentes se trabajan juntos o ninguno de los dos funciona.",
       "verMas": "Ver más",
       "items": [
-        { "title": "Desarrollo Web", "description": "El sitio corporativo como activo del negocio: rápido, medible y editable por su propio equipo, sin depender de una agencia para cambiar un párrafo.", "hrefSlug": "desarrollo-web" },
-        { "title": "SEO y Visibilidad con IA", "description": "Aparecer cuando su cliente busca en Google y cuando le pregunta a ChatGPT quién puede resolverle el problema. Las dos capas, en un mismo plan.", "hrefSlug": "seo" }
+        {
+          "title": "Desarrollo Web",
+          "description": "El sitio corporativo como activo del negocio: rápido, medible y editable por su propio equipo, sin depender de una agencia para cambiar un párrafo.",
+          "hrefSlug": "desarrollo-web"
+        },
+        {
+          "title": "SEO y Visibilidad con IA",
+          "description": "Aparecer cuando su cliente busca en Google y cuando le pregunta a ChatGPT quién puede resolverle el problema. Las dos capas, en un mismo plan.",
+          "hrefSlug": "seo"
+        }
       ]
     },
     "transversal": {
       "eyebrow": "Dentro del método",
       "title": "Lo construye una consultora de transformación, no una agencia.",
       "phases": [
-        { "phase": "Construir", "hash": "construir", "note": "Qué debe lograr su presencia digital para el negocio, antes de decidir cómo se ve." },
-        { "phase": "Identificar", "hash": "identificar", "note": "Qué plataforma y qué herramientas, evaluadas sin sesgo comercial — igual que un ERP o un CRM." },
-        { "phase": "Realizar", "hash": "realizar", "note": "Ejecución con gobierno de proyecto: alcance, fechas y calidad, no una entrega sorpresa al final." },
-        { "phase": "Adoptar", "hash": "adoptar", "note": "Su equipo queda operando el sitio y leyendo sus métricas sin depender de un proveedor externo." }
+        {
+          "phase": "Construir",
+          "hash": "construir",
+          "note": "Qué debe lograr su presencia digital para el negocio, antes de decidir cómo se ve."
+        },
+        {
+          "phase": "Identificar",
+          "hash": "identificar",
+          "note": "Qué plataforma y qué herramientas, evaluadas sin sesgo comercial — igual que un ERP o un CRM."
+        },
+        {
+          "phase": "Realizar",
+          "hash": "realizar",
+          "note": "Ejecución con gobierno de proyecto: alcance, fechas y calidad, no una entrega sorpresa al final."
+        },
+        {
+          "phase": "Adoptar",
+          "hash": "adoptar",
+          "note": "Su equipo queda operando el sitio y leyendo sus métricas sin depender de un proveedor externo."
+        }
       ]
     },
     "faq": {
       "eyebrow": "Cyrrus Presencia Digital",
       "title": "Preguntas frecuentes",
       "items": [
-        { "question": "¿Cyrrus es una agencia de marketing digital?", "answer": "No. Somos una consultora de transformación digital que trata el sitio web y la visibilidad en buscadores como lo que son para el negocio: activos que deben tener un dueño, una métrica y un retorno. La diferencia práctica es dónde empieza el trabajo — una agencia empieza en el diseño o en el calendario de contenidos; nosotros empezamos en el diagnóstico de qué decisión de negocio debe habilitar ese sitio, y no cerramos el proyecto hasta que su equipo lo esté operando sin nosotros." },
-        { "question": "¿Puedo contratar solo el sitio, o solo el SEO?", "answer": "Sí, y con frecuencia es lo correcto. Si el sitio ya es sólido y rápido, no hay razón para rehacerlo: se trabaja solo la visibilidad. Si el sitio es lento o no convierte, invertir en posicionamiento antes de arreglarlo es llevar más visitantes a una puerta que no abre. El diagnóstico inicial define cuál de los dos frentes le da retorno primero." },
-        { "question": "¿Cómo se conecta Presencia Digital con el método CIRA?", "answer": "Se ejecuta con las mismas cuatro fases: diagnosticamos qué necesita el negocio (Construir), evaluamos plataformas y herramientas sin sesgo comercial (Identificar), ejecutamos con gobierno de proyecto (Realizar) y capacitamos a su equipo para sostenerlo (Adoptar). No es un servicio aparte con otra lógica." },
-        { "question": "Ya trabajamos con una agencia, ¿tiene sentido hablar con ustedes?", "answer": "Sí. En varios casos la conclusión del diagnóstico es que la agencia está haciendo bien su parte y el problema está antes: no hay claridad sobre qué debe lograr el sitio, o no hay nadie del lado del cliente midiendo el resultado. Podemos trabajar sobre lo que ya existe en vez de proponerle empezar de cero." }
+        {
+          "question": "¿Cyrrus es una agencia de marketing digital?",
+          "answer": "No. Somos una consultora de transformación digital que trata el sitio web y la visibilidad en buscadores como lo que son para el negocio: activos que deben tener un dueño, una métrica y un retorno. La diferencia práctica es dónde empieza el trabajo — una agencia empieza en el diseño o en el calendario de contenidos; nosotros empezamos en el diagnóstico de qué decisión de negocio debe habilitar ese sitio, y no cerramos el proyecto hasta que su equipo lo esté operando sin nosotros."
+        },
+        {
+          "question": "¿Puedo contratar solo el sitio, o solo el SEO?",
+          "answer": "Sí, y con frecuencia es lo correcto. Si el sitio ya es sólido y rápido, no hay razón para rehacerlo: se trabaja solo la visibilidad. Si el sitio es lento o no convierte, invertir en posicionamiento antes de arreglarlo es llevar más visitantes a una puerta que no abre. El diagnóstico inicial define cuál de los dos frentes le da retorno primero."
+        },
+        {
+          "question": "¿Cómo se conecta Presencia Digital con el método CIRA?",
+          "answer": "Se ejecuta con las mismas cuatro fases: diagnosticamos qué necesita el negocio (Construir), evaluamos plataformas y herramientas sin sesgo comercial (Identificar), ejecutamos con gobierno de proyecto (Realizar) y capacitamos a su equipo para sostenerlo (Adoptar). No es un servicio aparte con otra lógica."
+        },
+        {
+          "question": "¿Tiene sentido hablar con Cyrrus si ya trabajamos con una agencia?",
+          "answer": "Sí. En varios casos la conclusión del diagnóstico es que la agencia está haciendo bien su parte y el problema está antes: no hay claridad sobre qué debe lograr el sitio, o no hay nadie del lado del cliente midiendo el resultado. Podemos trabajar sobre lo que ya existe en vez de proponerle empezar de cero."
+        }
       ]
     }
   },
@@ -69,11 +105,26 @@
       "title": "Lo que encontramos en el sitio de casi toda empresa que nos llama",
       "description": "El sitio se hizo hace cuatro años, con una agencia que ya no responde, sobre una plataforma que nadie dentro de la empresa sabe tocar. Funciona — pero no vende, no mide y no se puede cambiar. Eso no es un problema de diseño: es un activo del negocio sin dueño.",
       "problems": [
-        { "title": "Un folleto, no un canal", "description": "El sitio describe la empresa, pero no responde ninguna de las preguntas que un comprador se hace antes de contactarlos. Recibe visitas y no recibe conversaciones." },
-        { "title": "Dependencia de la agencia", "description": "Cambiar un párrafo o subir un caso de éxito toma dos semanas y una cotización. El equipo dejó de actualizarlo hace un año — no por falta de contenido, sino por fricción." },
-        { "title": "Lento donde importa", "description": "Abre bien desde la oficina y tarda desde un celular con datos móviles, que es como lo abre la mayoría de sus clientes. Cada segundo de espera es una conversación que no ocurre." },
-        { "title": "Ciego a los datos", "description": "Nadie sabe cuántos prospectos llegaron del sitio el mes pasado ni de dónde venían. Sin esa medición, cualquier inversión en marketing es una apuesta." },
-        { "title": "Un activo sin dueño", "description": "El sitio no es de marketing ni de sistemas, así que ninguna de las dos áreas responde por sus resultados. El formulario de contacto llega a un correo genérico que alguien revisa cuando puede, y el prospecto se enfría antes de que alguien lo llame." }
+        {
+          "title": "Un folleto, no un canal",
+          "description": "El sitio describe la empresa, pero no responde ninguna de las preguntas que un comprador se hace antes de contactarlos. Recibe visitas y no recibe conversaciones."
+        },
+        {
+          "title": "Dependencia de la agencia",
+          "description": "Cambiar un párrafo o subir un caso de éxito toma dos semanas y una cotización. El equipo dejó de actualizarlo hace un año — no por falta de contenido, sino por fricción."
+        },
+        {
+          "title": "Lento donde importa",
+          "description": "Abre bien desde la oficina y tarda desde un celular con datos móviles, que es como lo abre la mayoría de sus clientes. Cada segundo de espera es una conversación que no ocurre."
+        },
+        {
+          "title": "Ciego a los datos",
+          "description": "Nadie sabe cuántos prospectos llegaron del sitio el mes pasado ni de dónde venían. Sin esa medición, cualquier inversión en marketing es una apuesta."
+        },
+        {
+          "title": "Un activo sin dueño",
+          "description": "El sitio no es de marketing ni de sistemas, así que ninguna de las dos áreas responde por sus resultados. El formulario de contacto llega a un correo genérico que alguien revisa cuando puede, y el prospecto se enfría antes de que alguien lo llame."
+        }
       ]
     },
     "whyCyrrus": {
@@ -81,20 +132,44 @@
       "title": "Consultores de tecnología construyendo su sitio, no diseñadores vendiendo un rediseño",
       "description": "Una agencia le entrega un sitio bonito y factura el rediseño. Nosotros llegamos desde la consultoría: primero entendemos qué decisión de negocio debe habilitar ese sitio, después lo construimos, y lo entregamos con su equipo capacitado para operarlo.",
       "stats": [
-        { "value": "0", "label": "Dependencia de agencia: su equipo publica y actualiza contenido sin cotizar cada cambio." },
-        { "value": "S1", "label": "El sitio queda midiendo desde su primera semana en línea, no cuando alguien pida un reporte." }
+        {
+          "value": "0",
+          "label": "Dependencia de agencia: su equipo publica y actualiza contenido sin cotizar cada cambio."
+        },
+        {
+          "value": "S1",
+          "label": "El sitio queda midiendo desde su primera semana en línea, no cuando alguien pida un reporte."
+        }
       ]
     },
     "included": {
       "eyebrow": "Qué incluye",
       "title": "Un sitio que se puede medir, mantener y hacer crecer",
       "items": [
-        { "title": "Arquitectura de contenido", "description": "Definimos qué páginas deben existir y qué pregunta responde cada una, antes de diseñar una sola pantalla." },
-        { "title": "Diseño y desarrollo a la medida", "description": "Sin plantillas genéricas: el sitio refleja el nivel real de su empresa y se construye sobre la identidad de marca que ya tiene." },
-        { "title": "Rendimiento como requisito", "description": "Optimizamos carga, imágenes y estructura para que abra rápido en un celular con conexión real, no solo en la oficina." },
-        { "title": "Editable por su equipo", "description": "Entregamos un gestor de contenido con capacitación, para que publicar un caso de éxito no requiera una cotización." },
-        { "title": "Base técnica para posicionar", "description": "Estructura semántica, URLs limpias y datos estructurados definidos durante la construcción, para que el trabajo de posicionamiento arranque sobre una base sana en vez de corregir decisiones ya tomadas." },
-        { "title": "Medición desde el día uno", "description": "Analítica configurada y un tablero simple: cuántos llegan, de dónde y qué hacen. Información para decidir, no para archivar." }
+        {
+          "title": "Arquitectura de contenido",
+          "description": "Definimos qué páginas deben existir y qué pregunta responde cada una, antes de diseñar una sola pantalla."
+        },
+        {
+          "title": "Diseño y desarrollo a la medida",
+          "description": "Sin plantillas genéricas: el sitio refleja el nivel real de su empresa y se construye sobre la identidad de marca que ya tiene."
+        },
+        {
+          "title": "Rendimiento como requisito",
+          "description": "Optimizamos carga, imágenes y estructura para que abra rápido en un celular con conexión real, no solo en la oficina."
+        },
+        {
+          "title": "Editable por su equipo",
+          "description": "Entregamos un gestor de contenido con capacitación, para que publicar un caso de éxito no requiera una cotización."
+        },
+        {
+          "title": "Base técnica para posicionar",
+          "description": "Estructura semántica, URLs limpias y datos estructurados definidos durante la construcción, para que el trabajo de posicionamiento arranque sobre una base sana en vez de corregir decisiones ya tomadas."
+        },
+        {
+          "title": "Medición desde el día uno",
+          "description": "Analítica configurada y un tablero simple: cuántos llegan, de dónde y qué hacen. Información para decidir, no para archivar."
+        }
       ]
     },
     "proceso": {
@@ -102,9 +177,18 @@
       "title": "El mismo método CIRA, aplicado a su sitio",
       "description": "No empezamos por el diseño. Empezamos por entender qué debe lograr el sitio, elegimos la plataforma correcta para su caso, construimos con gobierno de calidad y no cerramos hasta que su equipo lo esté operando solo.",
       "steps": [
-        { "title": "Diagnóstico", "description": "Revisamos el sitio actual, su rendimiento real, su estructura y qué está midiendo hoy. A veces la conclusión es que no hace falta rehacerlo." },
-        { "title": "Construcción", "description": "Arquitectura de contenido, diseño y desarrollo, con avances revisables — no con una entrega sorpresa al final." },
-        { "title": "Adopción", "description": "Capacitamos a su equipo para publicar, medir y sostener el sitio sin depender de un proveedor externo." }
+        {
+          "title": "Diagnóstico",
+          "description": "Revisamos el sitio actual, su rendimiento real, su estructura y qué está midiendo hoy. A veces la conclusión es que no hace falta rehacerlo."
+        },
+        {
+          "title": "Construcción",
+          "description": "Arquitectura de contenido, diseño y desarrollo, con avances revisables — no con una entrega sorpresa al final."
+        },
+        {
+          "title": "Adopción",
+          "description": "Capacitamos a su equipo para publicar, medir y sostener el sitio sin depender de un proveedor externo."
+        }
       ]
     },
     "services": {
@@ -124,11 +208,26 @@
       "eyebrow": "Preguntas frecuentes",
       "title": "Sobre desarrollo web corporativo",
       "items": [
-        { "question": "¿Qué es el desarrollo web corporativo?", "answer": "Es la construcción del sitio web de una empresa entendido como un activo del negocio y no como una pieza de comunicación. Se diferencia de un sitio hecho con plantilla en tres cosas: parte de una arquitectura de contenido que responde a las preguntas reales del comprador, se construye con requisitos medibles de rendimiento y accesibilidad, y se entrega con analítica configurada y el equipo del cliente capacitado para operarlo. Para una dirección general, el valor está en que el sitio deje de ser un gasto de imagen y empiece a aparecer como una fuente de prospectos con costo y retorno conocidos." },
-        { "question": "¿Cuánto tarda el desarrollo de un sitio web corporativo?", "answer": "Depende del alcance, pero el rango habitual para un sitio corporativo con arquitectura de contenido propia va de seis a doce semanas desde el cierre del diagnóstico. Lo que más alarga un proyecto no es el desarrollo: es la definición del contenido del lado del cliente. Por eso arrancamos la arquitectura de contenido en la primera semana, en paralelo al diseño, en vez de esperar a tener todo el texto listo para empezar." },
-        { "question": "Ya tenemos un sitio, ¿hay que rehacerlo desde cero?", "answer": "No necesariamente, y el diagnóstico existe justamente para responder eso antes de cotizar nada. En bastantes casos el sitio actual tiene una base razonable y el problema real es de rendimiento, de estructura de contenido o de falta de medición — tres cosas que se corrigen sobre lo existente, a una fracción del costo de rehacerlo. Rehacer se justifica cuando la plataforma impide medir, crecer o publicar sin un proveedor externo." },
-        { "question": "¿Quién puede actualizar el sitio después de la entrega?", "answer": "Su equipo. La entrega incluye un gestor de contenido y la capacitación para usarlo, porque la razón más común por la que un sitio corporativo queda desactualizado no es la falta de contenido, sino la fricción de tener que pedirle cada cambio a un proveedor. Si además prefiere dejarnos el mantenimiento evolutivo, se acuerda aparte — pero nunca como una dependencia obligada." },
-        { "question": "¿El desarrollo incluye el posicionamiento en buscadores?", "answer": "El sitio se entrega con las bases técnicas que el posicionamiento necesita: estructura semántica, velocidad, datos estructurados y contenido organizado por intención de búsqueda. El trabajo continuo de posicionamiento — investigación de palabras clave, contenido, autoridad y visibilidad en motores de respuesta con IA — es el servicio de SEO, que se puede contratar junto con el sitio o después." }
+        {
+          "question": "¿Qué es el desarrollo web corporativo?",
+          "answer": "Es la construcción del sitio web de una empresa entendido como un activo del negocio y no como una pieza de comunicación. Se diferencia de un sitio hecho con plantilla en tres cosas: parte de una arquitectura de contenido que responde a las preguntas reales del comprador, se construye con requisitos medibles de rendimiento y accesibilidad, y se entrega con analítica configurada y el equipo del cliente capacitado para operarlo. Para una dirección general, el valor está en que el sitio deje de ser un gasto de imagen y empiece a aparecer como una fuente de prospectos con costo y retorno conocidos."
+        },
+        {
+          "question": "¿Cuánto tarda el desarrollo de un sitio web corporativo?",
+          "answer": "Depende del alcance, pero el rango habitual para un sitio corporativo con arquitectura de contenido propia va de seis a doce semanas desde el cierre del diagnóstico. Lo que más alarga un proyecto no es el desarrollo: es la definición del contenido del lado del cliente. Por eso arrancamos la arquitectura de contenido en la primera semana, en paralelo al diseño, en vez de esperar a tener todo el texto listo para empezar."
+        },
+        {
+          "question": "¿Hay que rehacer desde cero un sitio corporativo que ya existe?",
+          "answer": "No necesariamente, y el diagnóstico existe justamente para responder eso antes de cotizar nada. En bastantes casos el sitio actual tiene una base razonable y el problema real es de rendimiento, de estructura de contenido o de falta de medición — tres cosas que se corrigen sobre lo existente, a una fracción del costo de rehacerlo. Rehacer se justifica cuando la plataforma impide medir, crecer o publicar sin un proveedor externo."
+        },
+        {
+          "question": "¿Quién puede actualizar el sitio después de la entrega?",
+          "answer": "Su equipo. La entrega incluye un gestor de contenido y la capacitación para usarlo, porque la razón más común por la que un sitio corporativo queda desactualizado no es la falta de contenido, sino la fricción de tener que pedirle cada cambio a un proveedor. Si además prefiere dejarnos el mantenimiento evolutivo, se acuerda aparte — pero nunca como una dependencia obligada."
+        },
+        {
+          "question": "¿El desarrollo incluye el posicionamiento en buscadores?",
+          "answer": "El sitio se entrega con las bases técnicas que el posicionamiento necesita: estructura semántica, velocidad, datos estructurados y contenido organizado por intención de búsqueda. El trabajo continuo de posicionamiento — investigación de palabras clave, contenido, autoridad y visibilidad en motores de respuesta con IA — es el servicio de SEO, que se puede contratar junto con el sitio o después."
+        }
       ]
     }
   },
@@ -159,11 +258,26 @@
       "title": "Hoy su sitio web es un gasto, no un canal de ventas",
       "description": "Cada año paga dominio, hosting y desarrollo. A cambio, el sitio recibe visitas de gente que ya conocía la empresa y no trae un solo cliente nuevo. Eso no es una inversión: es un costo fijo sin retorno. El posicionamiento es lo que convierte esa línea del presupuesto en el canal que genera prospectos — y la razón por la que hoy un competidor más pequeño aparece antes que usted.",
       "problems": [
-        { "title": "Invisible en la búsqueda", "description": "Su empresa aparece cuando alguien escribe su nombre. Cuando alguien escribe el problema que usted resuelve, aparece otro." },
-        { "title": "Ausente cuando responde la IA", "description": "Cada vez más compradores le preguntan a ChatGPT o a Perplexity quién puede ayudarlos. Esos motores citan a un puñado de fuentes, y hoy su empresa no es una de ellas." },
-        { "title": "Dependencia de la pauta", "description": "El día que se apaga la inversión en anuncios, se apagan los prospectos. No existe un activo propio que siga trayendo demanda." },
-        { "title": "Contenido que no responde nada", "description": "El blog publica noticias de la empresa. El comprador busca cómo resolver un problema. Las dos cosas nunca se cruzan." },
-        { "title": "Problemas técnicos invisibles", "description": "Páginas que el buscador no alcanza a leer, contenido duplicado, sitio lento en celular. Nada de eso se ve desde adentro, pero define en qué posición aparece." }
+        {
+          "title": "Invisible en la búsqueda",
+          "description": "Su empresa aparece cuando alguien escribe su nombre. Cuando alguien escribe el problema que usted resuelve, aparece otro."
+        },
+        {
+          "title": "Ausente cuando responde la IA",
+          "description": "Cada vez más compradores le preguntan a ChatGPT o a Perplexity quién puede ayudarlos. Esos motores citan a un puñado de fuentes, y hoy su empresa no es una de ellas."
+        },
+        {
+          "title": "Dependencia de la pauta",
+          "description": "El día que se apaga la inversión en anuncios, se apagan los prospectos. No existe un activo propio que siga trayendo demanda."
+        },
+        {
+          "title": "Contenido que no responde nada",
+          "description": "El blog publica noticias de la empresa. El comprador busca cómo resolver un problema. Las dos cosas nunca se cruzan."
+        },
+        {
+          "title": "Problemas técnicos invisibles",
+          "description": "Páginas que el buscador no alcanza a leer, contenido duplicado, sitio lento en celular. Nada de eso se ve desde adentro, pero define en qué posición aparece."
+        }
       ]
     },
     "whyCyrrus": {
@@ -171,20 +285,44 @@
       "title": "SEO desde la consultoría, no desde el volumen de contenido",
       "description": "La mayoría de las agencias venden una cantidad de artículos al mes. Nosotros partimos del negocio: qué decisiones de compra queremos interceptar, qué preguntas hace ese comprador y qué evidencia necesita ver para levantar el teléfono. El contenido es la consecuencia, no el producto.",
       "stats": [
-        { "value": "2", "label": "Dos capas de visibilidad en un mismo plan: buscadores tradicionales y motores de respuesta con IA." },
-        { "value": "S1", "label": "La auditoría técnica y de citabilidad arranca en la semana 1, no al cierre del primer mes." }
+        {
+          "value": "2",
+          "label": "Dos capas de visibilidad en un mismo plan: buscadores tradicionales y motores de respuesta con IA."
+        },
+        {
+          "value": "S1",
+          "label": "La auditoría técnica y de citabilidad arranca en la semana 1, no al cierre del primer mes."
+        }
       ]
     },
     "included": {
       "eyebrow": "Qué incluye",
       "title": "Visibilidad que se construye, se mide y se sostiene",
       "items": [
-        { "title": "Auditoría técnica SEO", "description": "Rastreo, indexación, velocidad y estructura: qué le está impidiendo hoy al buscador leer y posicionar su sitio." },
-        { "title": "Palabras clave por intención", "description": "Priorizamos las búsquedas que hace alguien listo para comprar, no las que suman tráfico sin negocio." },
-        { "title": "Contenido que responde", "description": "Páginas construidas alrededor de la pregunta real del comprador, con la profundidad que un buscador premia y que una IA puede citar." },
-        { "title": "Optimización para motores de IA (GEO)", "description": "Estructuramos la información — datos estructurados, respuestas extraíbles, fuentes verificables — para que ChatGPT, Perplexity y las respuestas de Google puedan citar a su empresa." },
-        { "title": "Autoridad y enlaces", "description": "Presencia en las fuentes que su industria ya consulta, sin comprar enlaces que ponen el dominio en riesgo." },
-        { "title": "Reporte que un directivo entiende", "description": "Posiciones, menciones en motores de IA y prospectos generados. No un tablero de métricas que nadie sabe leer." }
+        {
+          "title": "Auditoría técnica SEO",
+          "description": "Rastreo, indexación, velocidad y estructura: qué le está impidiendo hoy al buscador leer y posicionar su sitio."
+        },
+        {
+          "title": "Palabras clave por intención",
+          "description": "Priorizamos las búsquedas que hace alguien listo para comprar, no las que suman tráfico sin negocio."
+        },
+        {
+          "title": "Contenido que responde",
+          "description": "Páginas construidas alrededor de la pregunta real del comprador, con la profundidad que un buscador premia y que una IA puede citar."
+        },
+        {
+          "title": "Optimización para motores de IA (GEO)",
+          "description": "Estructuramos la información — datos estructurados, respuestas extraíbles, fuentes verificables — para que ChatGPT, Perplexity y las respuestas de Google puedan citar a su empresa."
+        },
+        {
+          "title": "Autoridad y enlaces",
+          "description": "Presencia en las fuentes que su industria ya consulta, sin comprar enlaces que ponen el dominio en riesgo."
+        },
+        {
+          "title": "Reporte que un directivo entiende",
+          "description": "Posiciones, menciones en motores de IA y prospectos generados. No un tablero de métricas que nadie sabe leer."
+        }
       ]
     },
     "proceso": {
@@ -192,9 +330,18 @@
       "title": "Primero el diagnóstico, después el contenido",
       "description": "Publicar más no mejora la posición si el sitio tiene problemas técnicos o si el contenido responde preguntas que nadie hace. Por eso el orden importa: primero se corrige lo que impide competir, después se construye lo que gana la búsqueda.",
       "steps": [
-        { "title": "Auditoría", "description": "Estado técnico, contenido existente y visibilidad actual, tanto en Google como en los motores de respuesta con IA." },
-        { "title": "Estrategia", "description": "Qué búsquedas y qué preguntas queremos ganar, en qué orden y con qué contenido, según lo que realmente trae negocio." },
-        { "title": "Ejecución y medición", "description": "Implementamos, medimos posiciones y citas, y ajustamos — con su equipo aprendiendo el criterio, no solo recibiendo el reporte." }
+        {
+          "title": "Auditoría",
+          "description": "Estado técnico, contenido existente y visibilidad actual, tanto en Google como en los motores de respuesta con IA."
+        },
+        {
+          "title": "Estrategia",
+          "description": "Qué búsquedas y qué preguntas queremos ganar, en qué orden y con qué contenido, según lo que realmente trae negocio."
+        },
+        {
+          "title": "Ejecución y medición",
+          "description": "Implementamos, medimos posiciones y citas, y ajustamos — con su equipo aprendiendo el criterio, no solo recibiendo el reporte."
+        }
       ]
     },
     "services": {
@@ -215,11 +362,26 @@
       "eyebrow": "Preguntas frecuentes",
       "title": "Sobre SEO y visibilidad con IA",
       "items": [
-        { "question": "¿Qué es el SEO y por qué lo necesita una empresa B2B?", "answer": "El SEO es el trabajo de hacer que una empresa aparezca en los resultados de búsqueda cuando alguien busca el problema que esa empresa resuelve, sin pagar por cada clic. En B2B importa más que en otros sectores por una razón concreta: el comprador de una solución empresarial investiga durante semanas antes de contactar a nadie, y toma esa decisión leyendo, no viendo anuncios. Si su empresa no está presente en esa etapa de investigación, entra a la conversación cuando el proveedor ya está prácticamente elegido." },
-        { "question": "¿Qué es GEO y en qué se diferencia del SEO?", "answer": "GEO (Generative Engine Optimization) es la optimización para motores de respuesta con inteligencia artificial — ChatGPT, Perplexity, Gemini y las respuestas generadas de Google. La diferencia práctica con el SEO tradicional es el resultado que se busca: el SEO pelea por una posición en una lista de enlaces; el GEO pelea por ser la fuente que el modelo cita dentro de su respuesta. Cambian las técnicas — importa mucho más la estructura de la información, la densidad de datos verificables y el acceso de los rastreadores de IA — pero se trabajan juntos, porque comparten la misma base técnica y de contenido." },
-        { "question": "¿Cuánto tarda el SEO en dar resultados?", "answer": "Los arreglos técnicos pueden mover posiciones en semanas, porque corrigen algo que estaba bloqueando activamente al buscador. El posicionamiento por contenido y autoridad se mide en meses: entre tres y seis para ver movimiento sostenido en búsquedas competitivas. Cualquiera que le prometa primeras posiciones en treinta días está comprando enlaces o apuntando a búsquedas que nadie hace. Lo que sí se reporta desde el primer mes es el avance de la implementación y el cambio en las métricas técnicas." },
-        { "question": "¿El SEO reemplaza la inversión en anuncios?", "answer": "No la reemplaza, la vuelve opcional. La pauta y el SEO resuelven momentos distintos: la pauta compra visibilidad inmediata y deja de existir cuando se apaga el presupuesto; el SEO construye un activo que sigue trayendo demanda. La mayoría de las empresas que trabajan bien el posicionamiento no dejan de pautar — dejan de depender de la pauta, que es una situación financiera muy distinta." },
-        { "question": "Nuestro sitio es nuevo, ¿podemos empezar con SEO desde ya?", "answer": "Sí, y es el mejor momento. Cuando la estructura, la velocidad y los datos estructurados se definen durante la construcción del sitio, el trabajo de posicionamiento arranca sobre una base sana en vez de gastar los primeros meses corrigiendo decisiones ya tomadas." }
+        {
+          "question": "¿Qué es el SEO y por qué lo necesita una empresa B2B?",
+          "answer": "El SEO es el trabajo de hacer que una empresa aparezca en los resultados de búsqueda cuando alguien busca el problema que esa empresa resuelve, sin pagar por cada clic. En B2B importa más que en otros sectores por una razón concreta: el comprador de una solución empresarial investiga durante semanas antes de contactar a nadie, y toma esa decisión leyendo, no viendo anuncios. Si su empresa no está presente en esa etapa de investigación, entra a la conversación cuando el proveedor ya está prácticamente elegido."
+        },
+        {
+          "question": "¿Qué es GEO y en qué se diferencia del SEO?",
+          "answer": "GEO (Generative Engine Optimization) es la optimización para motores de respuesta con inteligencia artificial — ChatGPT, Perplexity, Gemini y las respuestas generadas de Google. La diferencia práctica con el SEO tradicional es el resultado que se busca: el SEO pelea por una posición en una lista de enlaces; el GEO pelea por ser la fuente que el modelo cita dentro de su respuesta. Cambian las técnicas — importa mucho más la estructura de la información, la densidad de datos verificables y el acceso de los rastreadores de IA — pero se trabajan juntos, porque comparten la misma base técnica y de contenido."
+        },
+        {
+          "question": "¿Cuánto tarda el SEO en dar resultados?",
+          "answer": "Los arreglos técnicos pueden mover posiciones en semanas, porque corrigen algo que estaba bloqueando activamente al buscador. El posicionamiento por contenido y autoridad se mide en meses: entre tres y seis para ver movimiento sostenido en búsquedas competitivas. Cualquiera que le prometa primeras posiciones en treinta días está comprando enlaces o apuntando a búsquedas que nadie hace. Lo que sí se reporta desde el primer mes es el avance de la implementación y el cambio en las métricas técnicas."
+        },
+        {
+          "question": "¿El SEO reemplaza la inversión en anuncios?",
+          "answer": "No la reemplaza, la vuelve opcional. La pauta y el SEO resuelven momentos distintos: la pauta compra visibilidad inmediata y deja de existir cuando se apaga el presupuesto; el SEO construye un activo que sigue trayendo demanda. La mayoría de las empresas que trabajan bien el posicionamiento no dejan de pautar — dejan de depender de la pauta, que es una situación financiera muy distinta."
+        },
+        {
+          "question": "¿Se puede empezar con SEO desde el lanzamiento de un sitio nuevo?",
+          "answer": "Sí, y es el mejor momento. Cuando la estructura, la velocidad y los datos estructurados se definen durante la construcción del sitio, el trabajo de posicionamiento arranca sobre una base sana en vez de gastar los primeros meses corrigiendo decisiones ya tomadas."
+        }
       ]
     }
   }

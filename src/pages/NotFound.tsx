@@ -15,6 +15,7 @@ export default function NotFound() {
       ? "The page you're looking for doesn't exist or has moved."
       : "La página que buscas no existe o fue movida.",
     noindex: true,
+    noCanonical: true,
   });
 
   return (

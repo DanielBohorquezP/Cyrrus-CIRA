@@ -67,7 +67,7 @@ export function Footer() {
             sizes="140px"
           />
         </Link>
-        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+        <nav aria-label={lang === "en" ? "Footer" : "Pie de página"} className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
           {links.map((link) => (
             <Link
               key={link.label}
@@ -87,7 +87,7 @@ export function Footer() {
         </nav>
         <div className="flex flex-col items-center gap-4 md:items-end">
           <SocialTooltip items={socialLinks} />
-          <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <nav aria-label={lang === "en" ? "Legal" : "Legal"} className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
             {legalLinks.map((link) => (
               <Link
                 key={link.label}

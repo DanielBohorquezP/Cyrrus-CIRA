@@ -35,7 +35,7 @@
  {
   "id": "M7.title.leadership_workshops_missing_brand_suffix",
   "module": "M7",
-  "status": "warn",
+  "status": "pass",
   "severity": 1,
   "expected_impact": {
    "axis": "both",
@@ -46,7 +46,7 @@
  {
   "id": "M2.canonical.404_points_to_synthetic_nonexistent_url",
   "module": "M2",
-  "status": "warn",
+  "status": "pass",
   "severity": 1,
   "expected_impact": {
    "axis": "search",
@@ -68,7 +68,7 @@
  {
   "id": "M7c.landmarks.unlabeled_multiple_nav",
   "module": "M7c",
-  "status": "warn",
+  "status": "pass",
   "severity": 1,
   "expected_impact": {
    "axis": "both",
@@ -222,7 +222,7 @@
  {
   "id": "M14.llms_txt.es_home_link_missing",
   "module": "M14",
-  "status": "warn",
+  "status": "pass",
   "severity": 1,
   "expected_impact": {
    "axis": "ai",
@@ -288,7 +288,7 @@
  {
   "id": "M11.answerblocks.faq_statements_not_interrogative",
   "module": "M11",
-  "status": "warn",
+  "status": "pass",
   "severity": 2,
   "expected_impact": {
    "axis": "ai",
@@ -310,7 +310,7 @@
  {
   "id": "M12.factdensity.product_pages_thin_faq",
   "module": "M12",
-  "status": "warn",
+  "status": "pass",
   "severity": 2,
   "expected_impact": {
    "axis": "ai",
@@ -618,7 +618,7 @@
  {
   "id": "M5.course.jsonld_on_noindex_comingsoon_pages",
   "module": "M5",
-  "status": "warn",
+  "status": "pass",
   "severity": 1,
   "expected_impact": {
    "axis": "search",

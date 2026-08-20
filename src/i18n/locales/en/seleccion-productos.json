@@ -14,12 +14,30 @@
       "eyebrow": "01 — Pain",
       "title": "When the ERP stops keeping up with the business",
       "items": [
-        { "title": "Business growth", "description": "The company grew faster than the platform holding it up." },
-        { "title": "Disconnected systems", "description": "Multiple systems that don't talk to each other, with duplicated information." },
-        { "title": "Manual processes", "description": "Parallel spreadsheets to cover what the ERP doesn't solve." },
-        { "title": "Poor financial visibility", "description": "Consolidating operations takes weeks instead of being available in real time." },
-        { "title": "Obsolete current ERP", "description": "The platform stopped getting real support or scaling with the operation." },
-        { "title": "Expansion to new units or countries", "description": "The current ERP can't support the complexity of growing into new geographies." }
+        {
+          "title": "Business growth",
+          "description": "The company grew faster than the platform holding it up."
+        },
+        {
+          "title": "Disconnected systems",
+          "description": "Multiple systems that don't talk to each other, with duplicated information."
+        },
+        {
+          "title": "Manual processes",
+          "description": "Parallel spreadsheets to cover what the ERP doesn't solve."
+        },
+        {
+          "title": "Poor financial visibility",
+          "description": "Consolidating operations takes weeks instead of being available in real time."
+        },
+        {
+          "title": "Obsolete current ERP",
+          "description": "The platform stopped getting real support or scaling with the operation."
+        },
+        {
+          "title": "Expansion to new units or countries",
+          "description": "The current ERP can't support the complexity of growing into new geographies."
+        }
       ],
       "narrativa": "The ERP that worked when the company was smaller can become a constraint once the organization grows."
     },
@@ -33,28 +51,84 @@
       "eyebrow": "03 — What we do",
       "title": "We determine which ERP your organization actually needs",
       "linkLabel": "This is how we apply the full CIRA Method to software selection",
-      "steps": ["Current situation", "Processes", "Requirements", "Alternatives", "Shortlist", "Evaluation", "Business case", "Recommended ERP"]
+      "steps": [
+        "Current situation",
+        "Processes",
+        "Requirements",
+        "Alternatives",
+        "Shortlist",
+        "Evaluation",
+        "Business case",
+        "Recommended ERP"
+      ]
     },
     "evaluamos": {
       "eyebrow": "04 — Evaluation",
       "title": "We evaluate the ERP from six perspectives",
       "items": [
-        { "title": "Functional", "description": "Can it support the business's financial, commercial, logistics, and production processes?" },
-        { "title": "Technical", "description": "Can it integrate with the current technology architecture without friction?" },
-        { "title": "Economic", "description": "What's the total cost of ownership, not just the initial license?" },
-        { "title": "Strategic", "description": "Can it support growth and expansion into new units or countries?" },
-        { "title": "Vendor", "description": "Who will be behind the platform over the next five years?" },
-        { "title": "Adoption", "description": "Will the organization actually use it, or will it end up underused?" }
+        {
+          "title": "Functional",
+          "description": "Can it support the business's financial, commercial, logistics, and production processes?"
+        },
+        {
+          "title": "Technical",
+          "description": "Can it integrate with the current technology architecture without friction?"
+        },
+        {
+          "title": "Economic",
+          "description": "What's the total cost of ownership, not just the initial license?"
+        },
+        {
+          "title": "Strategic",
+          "description": "Can it support growth and expansion into new units or countries?"
+        },
+        {
+          "title": "Vendor",
+          "description": "Who will be behind the platform over the next five years?"
+        },
+        {
+          "title": "Adoption",
+          "description": "Will the organization actually use it, or will it end up underused?"
+        }
       ]
     },
     "entregables": {
       "eyebrow": "05 — Deliverables",
       "title": "From uncertainty to a decision you can back up",
-      "items": ["Requirements map", "Evaluation matrix", "Vendor longlist / shortlist", "RFI / RFP", "Demo evaluation", "Vendor scoring", "TCO (total cost of ownership)", "Risk analysis", "Recommendation", "Implementation roadmap"]
+      "items": [
+        "Requirements map",
+        "Evaluation matrix",
+        "Vendor longlist / shortlist",
+        "RFI / RFP",
+        "Demo evaluation",
+        "Vendor scoring",
+        "TCO (total cost of ownership)",
+        "Risk analysis",
+        "Recommendation",
+        "Implementation roadmap"
+      ]
     },
     "faq": [
-      { "question": "How long does an ERP selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
-      { "question": "We already have an ERP and aren't sure it's the right one", "answer": "We evaluate your current platform against the same six objective criteria, even if changing vendors isn't on the table — sometimes the answer is to optimize, not replace." }
+      {
+        "question": "How long does an ERP selection process take?",
+        "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+      },
+      {
+        "question": "How do we know if the ERP we already have is the right one for the company?",
+        "answer": "We evaluate your current platform against the same six objective criteria, even if changing vendors isn't on the table — sometimes the answer is to optimize, not replace."
+      },
+      {
+        "question": "How much does an ERP selection process cost?",
+        "answer": "Cost depends on scope and organization size, not on a list price. What stays constant is the ratio: selection advisory costs a fraction of the ERP license plus implementation, and its job is to keep that far larger investment from landing on the wrong platform. It is defined with you before starting, with fixed scope and deliverables."
+      },
+      {
+        "question": "What criteria are used to evaluate an ERP?",
+        "answer": "We evaluate against six objective criteria, defined before looking at any brand: functional fit to your real processes, technical viability on your current infrastructure, five-year total cost of ownership (not just the license), vendor strength and experience in your industry, your team's capacity to adopt it, and the long-term sustainability of the product and its roadmap."
+      },
+      {
+        "question": "Why hire an independent consultant instead of going straight to the ERP vendor?",
+        "answer": "Because a vendor has one product to sell and their evaluation will always end at that product. Cyrrus holds no commercial alliances or commissions with any ERP manufacturer: the criteria come from your operation, not from a catalog, and the outcome may well be that the best decision is not to change platforms at all."
+      }
     ]
   },
   "crm": {
@@ -72,12 +146,30 @@
       "eyebrow": "01 — Pain",
       "title": "When the customer relationship is fragmented",
       "items": [
-        { "title": "Scattered information", "description": "Customer data lives in emails, spreadsheets, and each salesperson's memory." },
-        { "title": "Leads that fall through", "description": "Sales opportunities lost because no one followed up in time." },
-        { "title": "Manual follow-up", "description": "Every salesperson manages their pipeline their own way, with no standard process." },
-        { "title": "Poor pipeline visibility", "description": "Sales leadership doesn't know in real time how the month is closing." },
-        { "title": "Different tools per team", "description": "Sales, marketing, and service work in systems that don't talk to each other." },
-        { "title": "Information tied to people", "description": "When a salesperson leaves, the history of their customer relationships leaves with them." }
+        {
+          "title": "Scattered information",
+          "description": "Customer data lives in emails, spreadsheets, and each salesperson's memory."
+        },
+        {
+          "title": "Leads that fall through",
+          "description": "Sales opportunities lost because no one followed up in time."
+        },
+        {
+          "title": "Manual follow-up",
+          "description": "Every salesperson manages their pipeline their own way, with no standard process."
+        },
+        {
+          "title": "Poor pipeline visibility",
+          "description": "Sales leadership doesn't know in real time how the month is closing."
+        },
+        {
+          "title": "Different tools per team",
+          "description": "Sales, marketing, and service work in systems that don't talk to each other."
+        },
+        {
+          "title": "Information tied to people",
+          "description": "When a salesperson leaves, the history of their customer relationships leaves with them."
+        }
       ],
       "narrativa": "Low sales traceability doesn't just cost deals — it makes it impossible to measure what's actually working."
     },
@@ -91,29 +183,81 @@
       "eyebrow": "03 — Our approach",
       "title": "We design the selection around your sales process",
       "linkLabel": "This is how we apply the full CIRA Method to software selection",
-      "steps": ["Sales strategy", "Sales process", "Customer data", "Automation", "Technology", "Recommended CRM"]
+      "steps": [
+        "Sales strategy",
+        "Sales process",
+        "Customer data",
+        "Automation",
+        "Technology",
+        "Recommended CRM"
+      ]
     },
     "evaluamos": {
       "eyebrow": "04 — Evaluation",
       "title": "We evaluate the CRM from six perspectives",
       "items": [
-        { "title": "Functional", "description": "Does it cover lead management, opportunities, pipeline, and customer service?" },
-        { "title": "Technical", "description": "Does it integrate with marketing, telephony, and existing sales systems?" },
-        { "title": "Economic", "description": "What's the cost per user and the total cost as the sales team scales?" },
-        { "title": "Strategic", "description": "Does it support omnichannel, analytics, and AI to keep up with sales growth?" },
-        { "title": "Vendor", "description": "How solid is the vendor's support and partner ecosystem?" },
-        { "title": "Adoption", "description": "Does it fit the way your team actually sells, or does it impose a new one?" }
+        {
+          "title": "Functional",
+          "description": "Does it cover lead management, opportunities, pipeline, and customer service?"
+        },
+        {
+          "title": "Technical",
+          "description": "Does it integrate with marketing, telephony, and existing sales systems?"
+        },
+        {
+          "title": "Economic",
+          "description": "What's the cost per user and the total cost as the sales team scales?"
+        },
+        {
+          "title": "Strategic",
+          "description": "Does it support omnichannel, analytics, and AI to keep up with sales growth?"
+        },
+        {
+          "title": "Vendor",
+          "description": "How solid is the vendor's support and partner ecosystem?"
+        },
+        {
+          "title": "Adoption",
+          "description": "Does it fit the way your team actually sells, or does it impose a new one?"
+        }
       ]
     },
     "entregables": {
       "eyebrow": "05 — Result",
       "title": "The right CRM for your sales model",
-      "items": ["Sales process map", "Evaluation matrix", "Vendor shortlist", "Guided functional demo", "TCO per user", "Adoption analysis", "Recommendation", "Implementation roadmap"],
+      "items": [
+        "Sales process map",
+        "Evaluation matrix",
+        "Vendor shortlist",
+        "Guided functional demo",
+        "TCO per user",
+        "Adoption analysis",
+        "Recommendation",
+        "Implementation roadmap"
+      ],
       "closingQuote": "The result isn't \"this CRM is the best.\" It's \"this CRM best answers our requirements and objectives, and here's why.\""
     },
     "faq": [
-      { "question": "How long does a CRM selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
-      { "question": "Our sales team already rejected a CRM before — how do we avoid that happening again?", "answer": "We start from the real sales process, not the feature catalog — the Adoption criterion is evaluated from day one, together with your sales team, not at the end of the process." }
+      {
+        "question": "How long does a CRM selection process take?",
+        "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+      },
+      {
+        "question": "Our sales team already rejected a CRM before — how do we avoid that happening again?",
+        "answer": "We start from the real sales process, not the feature catalog — the Adoption criterion is evaluated from day one, together with your sales team, not at the end of the process."
+      },
+      {
+        "question": "How much does a CRM selection process cost?",
+        "answer": "It is defined by scope and sales team size, not by a list price. The relevant ratio is the same as in any selection: advisory costs a fraction of the annual subscription plus implementation, and exists so that investment does not land on the wrong tool."
+      },
+      {
+        "question": "What criteria are used to evaluate a CRM?",
+        "answer": "Fit to the sales process the company actually runs, ease of use for the rep who has to feed it every day, integration with the ERP and with marketing tools, multi-year total cost per user, reporting quality for sales leadership, and vendor sustainability."
+      },
+      {
+        "question": "What is the difference between choosing a CRM with Cyrrus and buying it straight from the vendor?",
+        "answer": "A vendor starts from their product; we start from your sales process. Since we take no commission from any manufacturer, the evaluation may well conclude that the cheapest platform on the market is right for you, or that the one you already own just needs reconfiguring."
+      }
     ]
   },
   "hcm": {
@@ -131,12 +275,30 @@
       "eyebrow": "01 — Pain",
       "title": "When people management becomes a fragmented operation",
       "items": [
-        { "title": "Multiple systems", "description": "Payroll, talent, and recruiting live on separate platforms that don't connect." },
-        { "title": "Manual processes", "description": "Vacation, performance reviews, and compensation managed in spreadsheets." },
-        { "title": "Scattered information", "description": "There's no single source of truth for each employee." },
-        { "title": "Disconnected payroll", "description": "Payroll doesn't communicate with the rest of the HR processes." },
-        { "title": "Poor employee experience", "description": "Slow, unintuitive processes that frustrate the team." },
-        { "title": "Systems that don't scale", "description": "The current platform can't support headcount growth or new geographies." }
+        {
+          "title": "Multiple systems",
+          "description": "Payroll, talent, and recruiting live on separate platforms that don't connect."
+        },
+        {
+          "title": "Manual processes",
+          "description": "Vacation, performance reviews, and compensation managed in spreadsheets."
+        },
+        {
+          "title": "Scattered information",
+          "description": "There's no single source of truth for each employee."
+        },
+        {
+          "title": "Disconnected payroll",
+          "description": "Payroll doesn't communicate with the rest of the HR processes."
+        },
+        {
+          "title": "Poor employee experience",
+          "description": "Slow, unintuitive processes that frustrate the team."
+        },
+        {
+          "title": "Systems that don't scale",
+          "description": "The current platform can't support headcount growth or new geographies."
+        }
       ],
       "narrativa": "Poorly integrated talent processes don't just create redundant work — they make it impossible to make people decisions with reliable data."
     },
@@ -150,28 +312,80 @@
       "eyebrow": "03 — Our approach",
       "title": "We align technology with your human capital management model",
       "linkLabel": "This is how we apply the full CIRA Method to software selection",
-      "steps": ["Management model", "HR processes", "Requirements", "HCM solutions", "Evaluation", "Recommended HCM"]
+      "steps": [
+        "Management model",
+        "HR processes",
+        "Requirements",
+        "HCM solutions",
+        "Evaluation",
+        "Recommended HCM"
+      ]
     },
     "evaluamos": {
       "eyebrow": "04 — Evaluation",
       "title": "We evaluate the HCM from the organization's and its people's perspective",
       "items": [
-        { "title": "Functional", "description": "Does it cover Core HR, payroll, talent, recruiting, performance, and compensation?" },
-        { "title": "Technical", "description": "Does it integrate with the ERP and the company's other administrative systems?" },
-        { "title": "Economic", "description": "What's the cost per employee and the total cost as headcount scales?" },
-        { "title": "Strategic", "description": "Does it support learning, talent analytics, and AI aligned with the people strategy?" },
-        { "title": "Vendor", "description": "Does it comply with labor and payroll regulations in every country the company operates in?" },
-        { "title": "Employee experience", "description": "Is it intuitive for employees, or will it end up underused like the previous systems?" }
+        {
+          "title": "Functional",
+          "description": "Does it cover Core HR, payroll, talent, recruiting, performance, and compensation?"
+        },
+        {
+          "title": "Technical",
+          "description": "Does it integrate with the ERP and the company's other administrative systems?"
+        },
+        {
+          "title": "Economic",
+          "description": "What's the cost per employee and the total cost as headcount scales?"
+        },
+        {
+          "title": "Strategic",
+          "description": "Does it support learning, talent analytics, and AI aligned with the people strategy?"
+        },
+        {
+          "title": "Vendor",
+          "description": "Does it comply with labor and payroll regulations in every country the company operates in?"
+        },
+        {
+          "title": "Employee experience",
+          "description": "Is it intuitive for employees, or will it end up underused like the previous systems?"
+        }
       ]
     },
     "entregables": {
       "eyebrow": "05 — Result",
       "title": "A platform that can keep up with the organization's evolution",
-      "items": ["Human capital requirements", "Solution evaluation", "Vendor comparison", "Decision matrix", "Economic evaluation", "Risk analysis", "Recommendation", "Implementation roadmap"]
+      "items": [
+        "Human capital requirements",
+        "Solution evaluation",
+        "Vendor comparison",
+        "Decision matrix",
+        "Economic evaluation",
+        "Risk analysis",
+        "Recommendation",
+        "Implementation roadmap"
+      ]
     },
     "faq": [
-      { "question": "How long does an HCM selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
-      { "question": "We operate in several countries — how does that affect the selection?", "answer": "Regulatory and payroll compliance per country is one of the six criteria we evaluate from the start — not an adjustment made after the selection." }
+      {
+        "question": "How long does an HCM selection process take?",
+        "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+      },
+      {
+        "question": "We operate in several countries — how does that affect the selection?",
+        "answer": "Regulatory and payroll compliance per country is one of the six criteria we evaluate from the start — not an adjustment made after the selection."
+      },
+      {
+        "question": "How much does an HCM selection process cost?",
+        "answer": "It depends on headcount, on how many countries you operate in, and on whether payroll is in scope. As in any selection, advisory costs a fraction of the license plus implementation, and exists to protect that larger investment."
+      },
+      {
+        "question": "What criteria are used to evaluate an HCM?",
+        "answer": "Regulatory and payroll compliance in every country you operate in, fit to your talent and development processes, employee self-service experience, integration with the financial ERP, total cost per employee, and the vendor's ability to keep up with labor law changes."
+      },
+      {
+        "question": "Why use an independent consultant to choose an HCM?",
+        "answer": "Because payroll is the module where getting it wrong is most expensive, and where a vendor has the least incentive to point out their own country-level gaps. An evaluator with no commission can tell you which platform does not properly cover your local legislation."
+      }
     ]
   },
   "eam": {
@@ -189,12 +403,30 @@
       "eyebrow": "01 — Pain",
       "title": "When assets become a source of uncertainty",
       "items": [
-        { "title": "Reactive maintenance", "description": "Assets get serviced after they've already failed, not before." },
-        { "title": "Scattered information", "description": "Maintenance history lives in physical logs or loose files." },
-        { "title": "Assets without traceability", "description": "No clear visibility of where each asset is or what condition it's in." },
-        { "title": "Costs hard to control", "description": "Maintenance and spare-parts spending can't be accurately attributed." },
-        { "title": "Unplanned downtime", "description": "Failures that stop the operation with no prior warning." },
-        { "title": "Disconnected spare-parts inventory", "description": "Procurement doesn't know what parts are available before issuing an order." }
+        {
+          "title": "Reactive maintenance",
+          "description": "Assets get serviced after they've already failed, not before."
+        },
+        {
+          "title": "Scattered information",
+          "description": "Maintenance history lives in physical logs or loose files."
+        },
+        {
+          "title": "Assets without traceability",
+          "description": "No clear visibility of where each asset is or what condition it's in."
+        },
+        {
+          "title": "Costs hard to control",
+          "description": "Maintenance and spare-parts spending can't be accurately attributed."
+        },
+        {
+          "title": "Unplanned downtime",
+          "description": "Failures that stop the operation with no prior warning."
+        },
+        {
+          "title": "Disconnected spare-parts inventory",
+          "description": "Procurement doesn't know what parts are available before issuing an order."
+        }
       ],
       "narrativa": "Poor visibility into asset lifecycle doesn't just cost in maintenance — it costs in stopped operations."
     },
@@ -208,29 +440,81 @@
       "eyebrow": "03 — Our approach",
       "title": "We select the platform based on your assets' lifecycle",
       "linkLabel": "This is how we apply the full CIRA Method to software selection",
-      "steps": ["Inventory", "Planning", "Maintenance", "Operation", "Costs", "Analytics", "Recommended EAM"]
+      "steps": [
+        "Inventory",
+        "Planning",
+        "Maintenance",
+        "Operation",
+        "Costs",
+        "Analytics",
+        "Recommended EAM"
+      ]
     },
     "evaluamos": {
       "eyebrow": "04 — Evaluation",
       "title": "We evaluate the EAM beyond maintenance",
       "items": [
-        { "title": "Functional", "description": "Does it cover asset management, work orders, planning, and spare-parts inventory?" },
-        { "title": "Technical", "description": "Does it integrate with the ERP and support IoT for real-time monitoring?" },
-        { "title": "Economic", "description": "What's the total cost of ownership versus the reduction in unplanned downtime?" },
-        { "title": "Strategic", "description": "Does it support predictive maintenance and analytics to anticipate failures?" },
-        { "title": "Vendor", "description": "Does it have real experience in the organization's specific industry?" },
-        { "title": "Adoption", "description": "Will the field maintenance team actually use it, or default back to paper?" }
+        {
+          "title": "Functional",
+          "description": "Does it cover asset management, work orders, planning, and spare-parts inventory?"
+        },
+        {
+          "title": "Technical",
+          "description": "Does it integrate with the ERP and support IoT for real-time monitoring?"
+        },
+        {
+          "title": "Economic",
+          "description": "What's the total cost of ownership versus the reduction in unplanned downtime?"
+        },
+        {
+          "title": "Strategic",
+          "description": "Does it support predictive maintenance and analytics to anticipate failures?"
+        },
+        {
+          "title": "Vendor",
+          "description": "Does it have real experience in the organization's specific industry?"
+        },
+        {
+          "title": "Adoption",
+          "description": "Will the field maintenance team actually use it, or default back to paper?"
+        }
       ]
     },
     "entregables": {
       "eyebrow": "05 — Result",
       "title": "A solution that connects assets, operations, and the business",
-      "items": ["Operational requirements map", "Technical evaluation matrix", "Vendor comparison", "Lifecycle TCO", "Operational risk analysis", "Recommendation", "Implementation roadmap"],
+      "items": [
+        "Operational requirements map",
+        "Technical evaluation matrix",
+        "Vendor comparison",
+        "Lifecycle TCO",
+        "Operational risk analysis",
+        "Recommendation",
+        "Implementation roadmap"
+      ],
       "closingQuote": "A technology recommendation backed by operational, technical, economic, and strategic requirements — not just maintenance features."
     },
     "faq": [
-      { "question": "How long does an EAM selection process take?", "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support." },
-      { "question": "Does the evaluation account for my operation's specific industry?", "answer": "Yes — the Vendor criterion includes evaluating real experience in industries like manufacturing, energy, mining, or transportation, not just generic platform capability." }
+      {
+        "question": "How long does an EAM selection process take?",
+        "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+      },
+      {
+        "question": "Does the evaluation account for my operation's specific industry?",
+        "answer": "Yes — the Vendor criterion includes evaluating real experience in industries like manufacturing, energy, mining, or transportation, not just generic platform capability."
+      },
+      {
+        "question": "How much does an EAM selection process cost?",
+        "answer": "It is defined by the size of the asset base, the number of plants or sites, and maintenance complexity. Advisory costs a fraction of the license plus implementation, and keeps that investment from landing on a platform your operation cannot sustain."
+      },
+      {
+        "question": "What criteria are used to evaluate an EAM?",
+        "answer": "Coverage of the maintenance cycle you actually run (preventive, predictive, corrective), field and offline capability, integration with the ERP and with sensors or SCADA, vendor experience in your specific industry, total cost of ownership, and ease of adoption by plant personnel."
+      },
+      {
+        "question": "Why hire an independent consultant to choose an EAM?",
+        "answer": "Because in asset management the gap between what a demo promises and what the operation supports in the field is the widest in enterprise software. With no commission from any manufacturer, we evaluate that gap against criteria defined before seeing any product."
+      }
     ]
   }
 }

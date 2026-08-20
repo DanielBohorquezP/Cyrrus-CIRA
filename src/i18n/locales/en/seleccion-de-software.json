@@ -14,13 +14,29 @@
     "eyebrow": "The problem",
     "title": "Choosing software shouldn't turn into a gamble",
     "intro": "A company may know it needs to modernize, but questions pile up: Do we need a new ERP or should we optimize the current one? Which CRM actually fits our sales process? Will our HR system support our growth? Which asset management solution can integrate with our architecture?",
-    "bullets": ["Vendor demos", "Sales pitches", "Feature comparisons", "Price proposals", "Internal opinions", "Colleague recommendations"],
+    "bullets": [
+      "Vendor demos",
+      "Sales pitches",
+      "Feature comparisons",
+      "Price proposals",
+      "Internal opinions",
+      "Colleague recommendations"
+    ],
     "punch": "Every vendor presents their solution as the answer. The organization ends up with a lot of information, but not necessarily an objective decision."
   },
   "costo": {
     "eyebrow": "The cost of getting it wrong",
     "title": "A bad selection can compromise years of investment",
-    "bullets": ["Implementation overruns", "Features that never get used", "Processes that have to bend to the software", "Complex integrations", "Excessive vendor dependency", "User resistance", "Unexpected recurring costs", "Difficulty scaling"],
+    "bullets": [
+      "Implementation overruns",
+      "Features that never get used",
+      "Processes that have to bend to the software",
+      "Complex integrations",
+      "Excessive vendor dependency",
+      "User resistance",
+      "Unexpected recurring costs",
+      "Difficulty scaling"
+    ],
     "punch": "The cost of choosing wrong isn't just buying the wrong software. It's everything that happens after."
   },
   "preguntaCorrecta": {
@@ -28,39 +44,99 @@
     "title": "It's not about finding the most complete software. It's about finding the right fit.",
     "notQuestion": "“What software do you want to buy?”",
     "realQuestion": "“What does the organization actually need to solve?”",
-    "steps": ["Business", "Processes", "Requirements", "Technology", "Vendor"]
+    "steps": [
+      "Business",
+      "Processes",
+      "Requirements",
+      "Technology",
+      "Vendor"
+    ]
   },
   "metodo": {
     "eyebrow": "Our approach",
     "title": "We turn a complex technology decision into a structured one",
     "intro": "We apply the full CIRA Method to every software selection process:",
     "fases": [
-      { "letra": "C", "titulo": "Construct", "descripcion": "We understand the context, objectives, and needs." },
-      { "letra": "I", "titulo": "Identify", "descripcion": "We define requirements and alternatives." },
-      { "letra": "R", "titulo": "Realize", "descripcion": "We evaluate, compare, and validate the solutions." },
-      { "letra": "A", "titulo": "Adopt", "descripcion": "We support the decision and prepare the path toward implementation." }
+      {
+        "letra": "C",
+        "titulo": "Construct",
+        "descripcion": "We understand the context, objectives, and needs."
+      },
+      {
+        "letra": "I",
+        "titulo": "Identify",
+        "descripcion": "We define requirements and alternatives."
+      },
+      {
+        "letra": "R",
+        "titulo": "Realize",
+        "descripcion": "We evaluate, compare, and validate the solutions."
+      },
+      {
+        "letra": "A",
+        "titulo": "Adopt",
+        "descripcion": "We support the decision and prepare the path toward implementation."
+      }
     ]
   },
   "categorias": {
     "eyebrow": "What we select",
     "title": "We select solutions for the critical areas of your organization",
     "items": [
-      { "slug": "erp", "title": "ERP", "description": "Comprehensive business planning and management.", "linkLabel": "See ERP selection" },
-      { "slug": "crm", "title": "CRM", "description": "Sales management, customers, and relationships.", "linkLabel": "See CRM selection" },
-      { "slug": "hcm", "title": "HCM", "description": "Human capital, talent, and people processes.", "linkLabel": "See HCM selection" },
-      { "slug": "eam", "title": "EAM", "description": "Enterprise asset management and maintenance.", "linkLabel": "See EAM selection" }
+      {
+        "slug": "erp",
+        "title": "ERP",
+        "description": "Comprehensive business planning and management.",
+        "linkLabel": "See ERP selection"
+      },
+      {
+        "slug": "crm",
+        "title": "CRM",
+        "description": "Sales management, customers, and relationships.",
+        "linkLabel": "See CRM selection"
+      },
+      {
+        "slug": "hcm",
+        "title": "HCM",
+        "description": "Human capital, talent, and people processes.",
+        "linkLabel": "See HCM selection"
+      },
+      {
+        "slug": "eam",
+        "title": "EAM",
+        "description": "Enterprise asset management and maintenance.",
+        "linkLabel": "See EAM selection"
+      }
     ]
   },
   "evaluamos": {
     "eyebrow": "How we evaluate",
     "title": "We evaluate beyond features",
     "items": [
-      { "title": "Functional", "description": "Fit with processes and requirements." },
-      { "title": "Technical", "description": "Architecture, integrations, security." },
-      { "title": "Economic", "description": "Licensing, implementation, TCO." },
-      { "title": "Strategic", "description": "Scalability and future alignment." },
-      { "title": "Vendor", "description": "Capability, experience, and support." },
-      { "title": "User", "description": "Usability and adoption." }
+      {
+        "title": "Functional",
+        "description": "Fit with processes and requirements."
+      },
+      {
+        "title": "Technical",
+        "description": "Architecture, integrations, security."
+      },
+      {
+        "title": "Economic",
+        "description": "Licensing, implementation, TCO."
+      },
+      {
+        "title": "Strategic",
+        "description": "Scalability and future alignment."
+      },
+      {
+        "title": "Vendor",
+        "description": "Capability, experience, and support."
+      },
+      {
+        "title": "User",
+        "description": "Usability and adoption."
+      }
     ]
   },
   "closingQuote": "We don't recommend technology off a catalog. Our job isn't to sell a particular platform. We evaluate the available alternatives and build a recommendation based on each organization's needs, priorities, and context. 100% technology-agnostic.",
@@ -68,8 +144,26 @@
     "eyebrow": "Software Selection",
     "title": "Frequently asked questions",
     "items": [
-      { "question": "Are you evaluating a new software solution?", "answer": "Before choosing a platform, make sure you're solving the right problem — that's why we always start from the business, not the vendor's catalog." },
-      { "question": "Is the evaluation really vendor-agnostic?", "answer": "Yes. We have no commercial partnerships or commissions with ERP, CRM, HCM, EAM, or other enterprise software vendors — we evaluate against the same objective criteria regardless of brand." }
+      {
+        "question": "What is enterprise software selection and how does it work?",
+        "answer": "Before choosing a platform, make sure you're solving the right problem — that's why we always start from the business, not the vendor's catalog."
+      },
+      {
+        "question": "Is the evaluation really vendor-agnostic?",
+        "answer": "Yes. We have no commercial partnerships or commissions with ERP, CRM, HCM, EAM, or other enterprise software vendors — we evaluate against the same objective criteria regardless of brand."
+      },
+      {
+        "question": "How long does an enterprise software selection process take?",
+        "answer": "As a reference, the Identify phase of the CIRA method takes 6 to 12 weeks, from strategic kickoff to contracting support, and includes criteria definition, the RFP, proposal evaluation, and vendor reference checks."
+      },
+      {
+        "question": "What if the right software is the one we already have?",
+        "answer": "That is a valid outcome and it does happen. If the evaluation concludes your current platform meets the defined criteria, the recommendation is to optimize it rather than replace it: we have no commercial incentive for you to buy anything new."
+      },
+      {
+        "question": "Who from our team should take part in the selection?",
+        "answer": "The owners of the processes the tool will support, an IT counterpart, and a sponsor with budget authority. Involving end users from the criteria-definition stage is what separates a selection that gets adopted from one that gets resisted."
+      }
     ]
   }
 }

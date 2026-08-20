@@ -17,28 +17,64 @@
       "description": "An excellent site that no one finds doesn't generate business. And strong positioning that leads to a site that doesn't convert doesn't either. The two fronts work together, or neither works at all.",
       "verMas": "Learn more",
       "items": [
-        { "title": "Web Development", "description": "The corporate site as a business asset: fast, measurable, and editable by your own team, with no need to depend on an agency to change a paragraph.", "hrefSlug": "desarrollo-web" },
-        { "title": "SEO & AI Visibility", "description": "Show up when your client searches on Google, and when they ask ChatGPT who can solve their problem. Both layers, in a single plan.", "hrefSlug": "seo" }
+        {
+          "title": "Web Development",
+          "description": "The corporate site as a business asset: fast, measurable, and editable by your own team, with no need to depend on an agency to change a paragraph.",
+          "hrefSlug": "desarrollo-web"
+        },
+        {
+          "title": "SEO & AI Visibility",
+          "description": "Show up when your client searches on Google, and when they ask ChatGPT who can solve their problem. Both layers, in a single plan.",
+          "hrefSlug": "seo"
+        }
       ]
     },
     "transversal": {
       "eyebrow": "Inside the method",
       "title": "Built by a transformation consultancy, not an agency.",
       "phases": [
-        { "phase": "Construct", "hash": "construir", "note": "What your digital presence needs to achieve for the business, before deciding what it looks like." },
-        { "phase": "Identify", "hash": "identificar", "note": "Which platform and which tools, evaluated without commercial bias — just like an ERP or a CRM." },
-        { "phase": "Realize", "hash": "realizar", "note": "Execution with project governance: scope, dates, and quality — not a surprise delivery at the end." },
-        { "phase": "Adopt", "hash": "adoptar", "note": "Your team is left operating the site and reading its metrics without depending on an outside provider." }
+        {
+          "phase": "Construct",
+          "hash": "construir",
+          "note": "What your digital presence needs to achieve for the business, before deciding what it looks like."
+        },
+        {
+          "phase": "Identify",
+          "hash": "identificar",
+          "note": "Which platform and which tools, evaluated without commercial bias — just like an ERP or a CRM."
+        },
+        {
+          "phase": "Realize",
+          "hash": "realizar",
+          "note": "Execution with project governance: scope, dates, and quality — not a surprise delivery at the end."
+        },
+        {
+          "phase": "Adopt",
+          "hash": "adoptar",
+          "note": "Your team is left operating the site and reading its metrics without depending on an outside provider."
+        }
       ]
     },
     "faq": {
       "eyebrow": "Cyrrus Digital Presence",
       "title": "Frequently asked questions",
       "items": [
-        { "question": "Is Cyrrus a digital marketing agency?", "answer": "No. We're a digital transformation consultancy that treats the website and search visibility as what they are for the business: assets that need an owner, a metric, and a return. The practical difference is where the work starts — an agency starts with design or a content calendar; we start by diagnosing which business decision that site needs to enable, and we don't close the project until your team is operating it without us." },
-        { "question": "Can I hire just the site, or just the SEO?", "answer": "Yes, and often that's the right call. If the site is already solid and fast, there's no reason to rebuild it — only visibility work is needed. If the site is slow or doesn't convert, investing in positioning before fixing it just sends more visitors to a door that won't open. The initial diagnosis defines which of the two fronts pays off first." },
-        { "question": "How does Digital Presence connect to the CIRA method?", "answer": "It runs on the same four phases: we diagnose what the business needs (Construct), evaluate platforms and tools without commercial bias (Identify), execute with project governance (Realize), and train your team to sustain it (Adopt). It isn't a separate service with a different logic." },
-        { "question": "We already work with an agency — is it worth talking to you?", "answer": "Yes. In several cases the diagnosis concludes that the agency is doing its part well and the problem sits earlier: there's no clarity on what the site needs to achieve, or no one on the client side is measuring the result. We can build on what already exists instead of proposing you start from zero." }
+        {
+          "question": "Is Cyrrus a digital marketing agency?",
+          "answer": "No. We're a digital transformation consultancy that treats the website and search visibility as what they are for the business: assets that need an owner, a metric, and a return. The practical difference is where the work starts — an agency starts with design or a content calendar; we start by diagnosing which business decision that site needs to enable, and we don't close the project until your team is operating it without us."
+        },
+        {
+          "question": "Can I hire just the site, or just the SEO?",
+          "answer": "Yes, and often that's the right call. If the site is already solid and fast, there's no reason to rebuild it — only visibility work is needed. If the site is slow or doesn't convert, investing in positioning before fixing it just sends more visitors to a door that won't open. The initial diagnosis defines which of the two fronts pays off first."
+        },
+        {
+          "question": "How does Digital Presence connect to the CIRA method?",
+          "answer": "It runs on the same four phases: we diagnose what the business needs (Construct), evaluate platforms and tools without commercial bias (Identify), execute with project governance (Realize), and train your team to sustain it (Adopt). It isn't a separate service with a different logic."
+        },
+        {
+          "question": "Is it worth talking to Cyrrus if we already work with an agency?",
+          "answer": "Yes. In several cases the diagnosis concludes that the agency is doing its part well and the problem sits earlier: there's no clarity on what the site needs to achieve, or no one on the client side is measuring the result. We can build on what already exists instead of proposing you start from zero."
+        }
       ]
     }
   },
@@ -69,11 +105,26 @@
       "title": "What we find on the site of almost every company that calls us",
       "description": "The site was built four years ago, by an agency that no longer answers, on a platform no one inside the company knows how to touch. It works — but it doesn't sell, doesn't measure, and can't be changed. That isn't a design problem: it's a business asset with no owner.",
       "problems": [
-        { "title": "A brochure, not a channel", "description": "The site describes the company, but doesn't answer any of the questions a buyer has before reaching out. It gets visits, not conversations." },
-        { "title": "Dependence on the agency", "description": "Changing a paragraph or adding a case study takes two weeks and a quote. The team stopped updating it a year ago — not for lack of content, but out of friction." },
-        { "title": "Slow where it matters", "description": "It opens fine from the office and lags on a phone with mobile data, which is how most of your clients open it. Every second of waiting is a conversation that doesn't happen." },
-        { "title": "Blind to the data", "description": "No one knows how many leads the site brought in last month, or where they came from. Without that measurement, any marketing investment is a bet." },
-        { "title": "An asset with no owner", "description": "The site belongs to neither marketing nor IT, so neither area answers for its results. The contact form lands in a generic inbox someone checks when they can, and the lead goes cold before anyone calls." }
+        {
+          "title": "A brochure, not a channel",
+          "description": "The site describes the company, but doesn't answer any of the questions a buyer has before reaching out. It gets visits, not conversations."
+        },
+        {
+          "title": "Dependence on the agency",
+          "description": "Changing a paragraph or adding a case study takes two weeks and a quote. The team stopped updating it a year ago — not for lack of content, but out of friction."
+        },
+        {
+          "title": "Slow where it matters",
+          "description": "It opens fine from the office and lags on a phone with mobile data, which is how most of your clients open it. Every second of waiting is a conversation that doesn't happen."
+        },
+        {
+          "title": "Blind to the data",
+          "description": "No one knows how many leads the site brought in last month, or where they came from. Without that measurement, any marketing investment is a bet."
+        },
+        {
+          "title": "An asset with no owner",
+          "description": "The site belongs to neither marketing nor IT, so neither area answers for its results. The contact form lands in a generic inbox someone checks when they can, and the lead goes cold before anyone calls."
+        }
       ]
     },
     "whyCyrrus": {
@@ -81,20 +132,44 @@
       "title": "Technology consultants building your site, not designers selling a redesign",
       "description": "An agency hands you a good-looking site and bills the redesign. We come from consulting: we first understand which business decision that site needs to enable, then we build it, and we deliver it with your team trained to run it.",
       "stats": [
-        { "value": "0", "label": "Agency dependence: your team publishes and updates content without a quote for every change." },
-        { "value": "W1", "label": "The site starts measuring from its first week live, not when someone asks for a report." }
+        {
+          "value": "0",
+          "label": "Agency dependence: your team publishes and updates content without a quote for every change."
+        },
+        {
+          "value": "W1",
+          "label": "The site starts measuring from its first week live, not when someone asks for a report."
+        }
       ]
     },
     "included": {
       "eyebrow": "What's included",
       "title": "A site that can be measured, maintained, and grown",
       "items": [
-        { "title": "Content architecture", "description": "We define which pages need to exist and which question each one answers, before designing a single screen." },
-        { "title": "Custom design and development", "description": "No generic templates: the site reflects your company's real level and is built on the brand identity you already have." },
-        { "title": "Performance as a requirement", "description": "We optimize load time, images, and structure so it opens fast on a phone with a real connection, not just in the office." },
-        { "title": "Editable by your team", "description": "We deliver a content manager with training, so publishing a case study doesn't require a quote." },
-        { "title": "Technical foundation for SEO", "description": "Semantic structure, clean URLs, and structured data defined during the build, so positioning work starts on a healthy foundation instead of fixing decisions already made." },
-        { "title": "Measurement from day one", "description": "Analytics configured and a simple dashboard: how many visitors arrive, from where, and what they do. Information to decide with, not to archive." }
+        {
+          "title": "Content architecture",
+          "description": "We define which pages need to exist and which question each one answers, before designing a single screen."
+        },
+        {
+          "title": "Custom design and development",
+          "description": "No generic templates: the site reflects your company's real level and is built on the brand identity you already have."
+        },
+        {
+          "title": "Performance as a requirement",
+          "description": "We optimize load time, images, and structure so it opens fast on a phone with a real connection, not just in the office."
+        },
+        {
+          "title": "Editable by your team",
+          "description": "We deliver a content manager with training, so publishing a case study doesn't require a quote."
+        },
+        {
+          "title": "Technical foundation for SEO",
+          "description": "Semantic structure, clean URLs, and structured data defined during the build, so positioning work starts on a healthy foundation instead of fixing decisions already made."
+        },
+        {
+          "title": "Measurement from day one",
+          "description": "Analytics configured and a simple dashboard: how many visitors arrive, from where, and what they do. Information to decide with, not to archive."
+        }
       ]
     },
     "proceso": {
@@ -102,9 +177,18 @@
       "title": "The same CIRA method, applied to your site",
       "description": "We don't start with design. We start by understanding what the site needs to achieve, choose the right platform for your case, build with quality governance, and don't close out until your team is operating it on its own.",
       "steps": [
-        { "title": "Diagnosis", "description": "We review the current site, its real performance, its structure, and what it's measuring today. Sometimes the conclusion is that it doesn't need to be rebuilt." },
-        { "title": "Construction", "description": "Content architecture, design, and development, with reviewable progress — not a surprise delivery at the end." },
-        { "title": "Adoption", "description": "We train your team to publish, measure, and sustain the site without depending on an outside provider." }
+        {
+          "title": "Diagnosis",
+          "description": "We review the current site, its real performance, its structure, and what it's measuring today. Sometimes the conclusion is that it doesn't need to be rebuilt."
+        },
+        {
+          "title": "Construction",
+          "description": "Content architecture, design, and development, with reviewable progress — not a surprise delivery at the end."
+        },
+        {
+          "title": "Adoption",
+          "description": "We train your team to publish, measure, and sustain the site without depending on an outside provider."
+        }
       ]
     },
     "services": {
@@ -124,18 +208,33 @@
       "eyebrow": "Frequently asked questions",
       "title": "About corporate web development",
       "items": [
-        { "question": "What is corporate web development?", "answer": "It's building a company's website as a business asset, not as a communications piece. It differs from a template-built site in three ways: it starts from a content architecture that answers the buyer's real questions, it's built with measurable performance and accessibility requirements, and it's delivered with analytics configured and the client's team trained to run it. For an executive, the value is that the site stops being an image expense and starts showing up as a source of leads with a known cost and return." },
-        { "question": "How long does corporate web development take?", "answer": "It depends on scope, but the typical range for a corporate site with its own content architecture runs six to twelve weeks from the close of the diagnosis. What extends a project most isn't development — it's defining the content on the client's side. That's why we start content architecture in week one, in parallel with design, instead of waiting for all the copy to be ready before starting." },
-        { "question": "We already have a site — does it need to be rebuilt from scratch?", "answer": "Not necessarily, and the diagnosis exists precisely to answer that before quoting anything. In plenty of cases the current site has a reasonable foundation and the real problem is performance, content structure, or lack of measurement — three things fixed on top of what exists, at a fraction of the cost of rebuilding. Rebuilding is justified when the platform prevents measuring, growing, or publishing without an outside provider." },
-        { "question": "Who can update the site after delivery?", "answer": "Your team. Delivery includes a content manager and the training to use it, because the most common reason a corporate site goes stale isn't a lack of content — it's the friction of having to request every change from a provider. If you'd also rather leave ongoing maintenance to us, that's arranged separately — but never as a forced dependency." },
-        { "question": "Does development include search engine positioning?", "answer": "The site is delivered with the technical foundation positioning needs: semantic structure, speed, structured data, and content organized by search intent. The ongoing positioning work — keyword research, content, authority, and visibility in AI answer engines — is the SEO service, which can be hired alongside the site or afterward." }
+        {
+          "question": "What is corporate web development?",
+          "answer": "It's building a company's website as a business asset, not as a communications piece. It differs from a template-built site in three ways: it starts from a content architecture that answers the buyer's real questions, it's built with measurable performance and accessibility requirements, and it's delivered with analytics configured and the client's team trained to run it. For an executive, the value is that the site stops being an image expense and starts showing up as a source of leads with a known cost and return."
+        },
+        {
+          "question": "How long does corporate web development take?",
+          "answer": "It depends on scope, but the typical range for a corporate site with its own content architecture runs six to twelve weeks from the close of the diagnosis. What extends a project most isn't development — it's defining the content on the client's side. That's why we start content architecture in week one, in parallel with design, instead of waiting for all the copy to be ready before starting."
+        },
+        {
+          "question": "Does an existing corporate site need to be rebuilt from scratch?",
+          "answer": "Not necessarily, and the diagnosis exists precisely to answer that before quoting anything. In plenty of cases the current site has a reasonable foundation and the real problem is performance, content structure, or lack of measurement — three things fixed on top of what exists, at a fraction of the cost of rebuilding. Rebuilding is justified when the platform prevents measuring, growing, or publishing without an outside provider."
+        },
+        {
+          "question": "Who can update the site after delivery?",
+          "answer": "Your team. Delivery includes a content manager and the training to use it, because the most common reason a corporate site goes stale isn't a lack of content — it's the friction of having to request every change from a provider. If you'd also rather leave ongoing maintenance to us, that's arranged separately — but never as a forced dependency."
+        },
+        {
+          "question": "Does development include search engine positioning?",
+          "answer": "The site is delivered with the technical foundation positioning needs: semantic structure, speed, structured data, and content organized by search intent. The ongoing positioning work — keyword research, content, authority, and visibility in AI answer engines — is the SEO service, which can be hired alongside the site or afterward."
+        }
       ]
     }
   },
   "seo": {
     "meta": {
       "title": "SEO Positioning & AI Search Visibility | Cyrrus",
-      "description": "Technical and content SEO for companies, plus visibility in AI answer engines like ChatGPT and Perplexity."
+      "description": "Technical and content SEO for B2B companies, plus visibility in AI answer engines like ChatGPT and Perplexity, for businesses in LATAM."
     },
     "serviceDescription": "SEO positioning and optimization for AI answer engines",
     "hero": {
@@ -159,11 +258,26 @@
       "title": "Today your website is an expense, not a sales channel",
       "description": "Every year you pay for domain, hosting, and development. In return, the site gets visits from people who already knew the company and it doesn't bring in a single new client. That isn't an investment — it's a fixed cost with no return. Positioning is what turns that budget line into the channel that generates leads — and the reason a smaller competitor shows up before you do today.",
       "problems": [
-        { "title": "Invisible in search", "description": "Your company shows up when someone types its name. When someone types the problem you solve, someone else shows up." },
-        { "title": "Absent when AI answers", "description": "More and more buyers ask ChatGPT or Perplexity who can help them. Those engines cite a handful of sources, and today your company isn't one of them." },
-        { "title": "Dependence on paid ads", "description": "The day the ad spend turns off, the leads turn off. There's no owned asset that keeps bringing demand." },
-        { "title": "Content that answers nothing", "description": "The blog publishes company news. The buyer searches for how to solve a problem. The two never meet." },
-        { "title": "Invisible technical problems", "description": "Pages the search engine can't reach, duplicate content, a site that's slow on mobile. None of it is visible from the inside, but it defines where you rank." }
+        {
+          "title": "Invisible in search",
+          "description": "Your company shows up when someone types its name. When someone types the problem you solve, someone else shows up."
+        },
+        {
+          "title": "Absent when AI answers",
+          "description": "More and more buyers ask ChatGPT or Perplexity who can help them. Those engines cite a handful of sources, and today your company isn't one of them."
+        },
+        {
+          "title": "Dependence on paid ads",
+          "description": "The day the ad spend turns off, the leads turn off. There's no owned asset that keeps bringing demand."
+        },
+        {
+          "title": "Content that answers nothing",
+          "description": "The blog publishes company news. The buyer searches for how to solve a problem. The two never meet."
+        },
+        {
+          "title": "Invisible technical problems",
+          "description": "Pages the search engine can't reach, duplicate content, a site that's slow on mobile. None of it is visible from the inside, but it defines where you rank."
+        }
       ]
     },
     "whyCyrrus": {
@@ -171,20 +285,44 @@
       "title": "SEO from consulting, not from content volume",
       "description": "Most agencies sell a number of articles per month. We start from the business: which buying decisions we want to intercept, what questions that buyer asks, and what evidence they need to see before picking up the phone. Content is the consequence, not the product.",
       "stats": [
-        { "value": "2", "label": "Two visibility layers in a single plan: traditional search engines and AI answer engines." },
-        { "value": "W1", "label": "The technical and citability audit starts in week 1, not at the close of the first month." }
+        {
+          "value": "2",
+          "label": "Two visibility layers in a single plan: traditional search engines and AI answer engines."
+        },
+        {
+          "value": "W1",
+          "label": "The technical and citability audit starts in week 1, not at the close of the first month."
+        }
       ]
     },
     "included": {
       "eyebrow": "What's included",
       "title": "Visibility that's built, measured, and sustained",
       "items": [
-        { "title": "Technical SEO audit", "description": "Crawling, indexing, speed, and structure: what's stopping the search engine from reading and ranking your site today." },
-        { "title": "Intent-based keyword research", "description": "We prioritize the searches made by someone ready to buy, not the ones that add traffic with no business behind them." },
-        { "title": "Content that answers", "description": "Pages built around the buyer's real question, with the depth a search engine rewards and an AI can cite." },
-        { "title": "Optimization for AI engines (GEO)", "description": "We structure the information — structured data, extractable answers, verifiable sources — so ChatGPT, Perplexity, and Google's generated answers can cite your company." },
-        { "title": "Authority and links", "description": "Presence in the sources your industry already consults, without buying links that put the domain at risk." },
-        { "title": "A report an executive understands", "description": "Rankings, AI engine mentions, and leads generated. Not a metrics dashboard no one knows how to read." }
+        {
+          "title": "Technical SEO audit",
+          "description": "Crawling, indexing, speed, and structure: what's stopping the search engine from reading and ranking your site today."
+        },
+        {
+          "title": "Intent-based keyword research",
+          "description": "We prioritize the searches made by someone ready to buy, not the ones that add traffic with no business behind them."
+        },
+        {
+          "title": "Content that answers",
+          "description": "Pages built around the buyer's real question, with the depth a search engine rewards and an AI can cite."
+        },
+        {
+          "title": "Optimization for AI engines (GEO)",
+          "description": "We structure the information — structured data, extractable answers, verifiable sources — so ChatGPT, Perplexity, and Google's generated answers can cite your company."
+        },
+        {
+          "title": "Authority and links",
+          "description": "Presence in the sources your industry already consults, without buying links that put the domain at risk."
+        },
+        {
+          "title": "A report an executive understands",
+          "description": "Rankings, AI engine mentions, and leads generated. Not a metrics dashboard no one knows how to read."
+        }
       ]
     },
     "proceso": {
@@ -192,9 +330,18 @@
       "title": "Diagnosis first, content second",
       "description": "Publishing more doesn't improve rankings if the site has technical problems or if the content answers questions no one asks. That's why order matters: first fix what's blocking you from competing, then build what wins the search.",
       "steps": [
-        { "title": "Audit", "description": "Technical state, existing content, and current visibility, both on Google and on AI answer engines." },
-        { "title": "Strategy", "description": "Which searches and questions we want to win, in what order and with what content, based on what actually brings business." },
-        { "title": "Execution and measurement", "description": "We implement, measure rankings and citations, and adjust — with your team learning the criteria, not just receiving the report." }
+        {
+          "title": "Audit",
+          "description": "Technical state, existing content, and current visibility, both on Google and on AI answer engines."
+        },
+        {
+          "title": "Strategy",
+          "description": "Which searches and questions we want to win, in what order and with what content, based on what actually brings business."
+        },
+        {
+          "title": "Execution and measurement",
+          "description": "We implement, measure rankings and citations, and adjust — with your team learning the criteria, not just receiving the report."
+        }
       ]
     },
     "services": {
@@ -215,11 +362,26 @@
       "eyebrow": "Frequently asked questions",
       "title": "About SEO and AI visibility",
       "items": [
-        { "question": "What is SEO and why does a B2B company need it?", "answer": "SEO is the work of making a company appear in search results when someone searches for the problem that company solves, without paying for every click. It matters more in B2B than in other sectors for a concrete reason: the buyer of an enterprise solution researches for weeks before contacting anyone, and makes that decision by reading, not by watching ads. If your company isn't present during that research stage, it enters the conversation once the provider is practically already chosen." },
-        { "question": "What is GEO and how is it different from SEO?", "answer": "GEO (Generative Engine Optimization) is optimization for AI answer engines — ChatGPT, Perplexity, Gemini, and Google's generated answers. The practical difference from traditional SEO is the outcome pursued: SEO competes for a position in a list of links; GEO competes to be the source the model cites within its answer. The techniques shift — the structure of the information, the density of verifiable data, and AI crawler access matter far more — but the two are worked together, because they share the same technical and content foundation." },
-        { "question": "How long does SEO take to show results?", "answer": "Technical fixes can move rankings within weeks, because they correct something that was actively blocking the search engine. Positioning through content and authority is measured in months: three to six to see sustained movement in competitive searches. Anyone promising top rankings in thirty days is either buying links or targeting searches no one makes. What is reported from month one is implementation progress and the change in technical metrics." },
-        { "question": "Does SEO replace paid ad spend?", "answer": "It doesn't replace it, it makes it optional. Paid ads and SEO solve different moments: ads buy immediate visibility and stop existing when the budget turns off; SEO builds an asset that keeps bringing demand. Most companies that work positioning well don't stop running ads — they stop depending on them, which is a very different financial situation." },
-        { "question": "Our site is new — can we start SEO right away?", "answer": "Yes, and it's the best time. When structure, speed, and structured data are defined during the site's construction, positioning work starts on a healthy foundation instead of spending the first months fixing decisions already made." }
+        {
+          "question": "What is SEO and why does a B2B company need it?",
+          "answer": "SEO is the work of making a company appear in search results when someone searches for the problem that company solves, without paying for every click. It matters more in B2B than in other sectors for a concrete reason: the buyer of an enterprise solution researches for weeks before contacting anyone, and makes that decision by reading, not by watching ads. If your company isn't present during that research stage, it enters the conversation once the provider is practically already chosen."
+        },
+        {
+          "question": "What is GEO and how is it different from SEO?",
+          "answer": "GEO (Generative Engine Optimization) is optimization for AI answer engines — ChatGPT, Perplexity, Gemini, and Google's generated answers. The practical difference from traditional SEO is the outcome pursued: SEO competes for a position in a list of links; GEO competes to be the source the model cites within its answer. The techniques shift — the structure of the information, the density of verifiable data, and AI crawler access matter far more — but the two are worked together, because they share the same technical and content foundation."
+        },
+        {
+          "question": "How long does SEO take to show results?",
+          "answer": "Technical fixes can move rankings within weeks, because they correct something that was actively blocking the search engine. Positioning through content and authority is measured in months: three to six to see sustained movement in competitive searches. Anyone promising top rankings in thirty days is either buying links or targeting searches no one makes. What is reported from month one is implementation progress and the change in technical metrics."
+        },
+        {
+          "question": "Does SEO replace paid ad spend?",
+          "answer": "It doesn't replace it, it makes it optional. Paid ads and SEO solve different moments: ads buy immediate visibility and stop existing when the budget turns off; SEO builds an asset that keeps bringing demand. Most companies that work positioning well don't stop running ads — they stop depending on them, which is a very different financial situation."
+        },
+        {
+          "question": "Can we start SEO right away on a newly launched site?",
+          "answer": "Yes, and it's the best time. When structure, speed, and structured data are defined during the site's construction, positioning work starts on a healthy foundation instead of spending the first months fixing decisions already made."
+        }
       ]
     }
   }

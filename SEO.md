@@ -9,8 +9,8 @@
 
 | Métrica | Score | Banda | Última medición |
 |---|---|---|---|
-| **Search SEO** | 75.5 / 100 | **C** | 2026-08-19 |
-| **AI Visibility (GEO/AEO)** | 75.7 / 100 | **C** | 2026-08-19 |
+| **Search SEO** | 83.1 / 100 | **B** | 2026-08-20 |
+| **AI Visibility (GEO/AEO)** | 85.1 / 100 | **B** | 2026-08-20 |
 
 Los dos scores son independientes y nunca se promedian entre sí (uno mide ranking clásico en
 buscadores, el otro qué tan citable es el sitio por motores de IA como ChatGPT, Perplexity o
@@ -27,10 +27,14 @@ findings a `pass` conforme se corrigieron en esta misma ronda (ver historial aba
 falta correr la verificación tier 1 (cabeceras HTTP, los dos redirects 301, Core Web Vitals de
 campo) contra el dominio ya publicado — ver el punto 0 de "Qué falta por hacer".
 
-**La tabla no incluye todavía el reemplazo de `/contacto` por el wizard modal (2026-08-20,
-ver historial)** — ese cambio salió después de la última corrida de `score.mjs` y no se ha
-vuelto a recalcular. No hay `findings` nuevos que marcar porque no fue una auditoría, así que
-el número de arriba sigue siendo el más reciente medido de verdad.
+**Los números del 2026-08-20 sí son comparables con los del 08-19**, a diferencia del salto
+08-03 → 08-19. Salen de `score.mjs` sobre el mismo `seo-findings-2026-08-19.json`, con los
+mismos 57 findings y los mismos pesos; lo único que cambió entre una corrida y otra es el
+`status` de 7 findings que pasaron de `warn` a `pass` al corregirse en el código. El +7.6 /
++9.4 mide exactamente esa ronda de fixes y nada más. La contraparte es que **tampoco hubo
+re-rastreo**: los 16 `warn` restantes se dan por ciertos desde el barrido del 08-19, y los
+`needs_api` (4 en Search, 3 en AI Visibility) siguen sin medirse — sobre todo Core Web Vitals
+de campo, que entra al score en 50/100 por defecto y pesa 16 puntos.
 
 ## Qué falta por hacer (bloqueadores activos)
 
@@ -70,55 +74,57 @@ Estos son los pendientes que más mueven el score y que **requieren contenido/de
    (sterlingyco.com, lastopdelatam.com, comparasoftware.co, guiatic.com). Para esas queries
    la vía de captura es aparecer **dentro** de esos listados — relaciones y PR, no on-page.
    Ninguna palabra del sitio lo resuelve.
-5. **Decidir si la home lleva modificador geográfico.** Hoy el `<title>` es "Consultoría
-   Estratégica con IA | Cyrrus Consulting Services", sin país ni región; "LATAM"/"Colombia"
-   solo aparecen en descriptions y en `/experiencia`. Frente a EY/KPMG/Accenture la geografía
-   es la mayor palanca de diferenciación disponible. Es un cambio de una línea, pero es una
-   decisión de posicionamiento, no una tarea técnica.
-6. **Reformular las 4 preguntas de FAQ de `/intelligence-lab/gobierno-de-ia` que no son
-   preguntas.** Son afirmaciones ("No tenemos ningún marco de IA hoy") sin signo de
-   interrogación — reduce el matching léxico con lo que un usuario realmente teclea en un
-   motor de IA. `/…/erp` repite el patrón en una de sus dos preguntas. Barato de corregir y
-   pega directo en Answer Extractability, el módulo de mayor peso en AI Visibility (20/100).
-7. **Ampliar el FAQ de ERP/CRM/HCM/EAM** (2 preguntas cada una, hoy) con preguntas de alto
-   valor comercial: costo aproximado, criterios de evaluación, diferencia frente a implementar
-   directo con el proveedor. `/presencia-digital/seo` ya tiene 5 — usarla de referencia. Son
-   justo las páginas del clúster con más ventana de ranking real (ver diagnóstico de
-   competencia en el historial del 2026-08-19).
-8. **Añadir casos con cifras a `/experiencia`.** 21 logos de clientes reales (Pepsico,
+5. **Medir el efecto del modificador geográfico de la home**, ya aplicado el 2026-08-20:
+   el `<title>` pasó a "Consultoría Estratégica con IA en Colombia | Cyrrus". La decisión (Colombia
+   sobre LATAM) fue del usuario. Queda pendiente comprobar si mueve algo — no se puede saber
+   hasta que el dominio canónico sirva este build (punto 0) y haya datos en Search Console.
+   - Cómo saber si falló: 8 semanas después de indexar, la home no aparece para "consultoría
+     estratégica Colombia" ni gana impresiones para consultas con el país.
+6. **Añadir casos con cifras a `/experiencia`.** 21 logos de clientes reales (Pepsico,
    Millicom, SGS, Parex, Brenntag, entre otros) sin una sola frase de caso ni resultado
    cuantificado asociado. Es el activo más desaprovechado del sitio para densidad de hechos
    (M12) — un motor de IA no tiene nada que citar de un logo aislado.
-9. **Sustentar o reformular la cifra "60% de reducción en tiempo de diagnóstico".** Se repite
+7. **Sustentar o reformular la cifra "60% de reducción en tiempo de diagnóstico".** Se repite
    en `estrategia.json`, `metodo-cira.json` y `paginas.json` (renderizada en `/experiencia`)
    sin fuente ni metodología. Añadir una nota de fuente/período, o marcarla explícitamente
    como estimación interna.
-10. **Completar `geo`/`openingHoursSpecification`/`priceRange` del `Organization`** si el
-    negocio decide revelarlos — no se inventaron coordenadas ni horario porque no hay una
-    fuente de verdad en el repo. Cyrrus es consultoría B2B remota multi-país con agenda por
-    cita, así que el techo de beneficio real (elegibilidad de Local Pack) es bajo.
-11. **`/contacto` dejó de ser una URL indexable (2026-08-20).** Se reemplazó por un wizard en
-    modal (ver historial) que se abre desde cualquier página — decisión de producto, no un
-    error, pero tiene un costo de SEO real: ya no hay una página propia que pueda rankear para
+8. **Completar `geo`/`openingHoursSpecification`/`priceRange` del `Organization`** si el
+   negocio decide revelarlos — no se inventaron coordenadas ni horario porque no hay una
+   fuente de verdad en el repo. Cyrrus es consultoría B2B remota multi-país con agenda por
+   cita, así que el techo de beneficio real (elegibilidad de Local Pack) es bajo.
+9. **`/contacto` dejó de ser una URL indexable (2026-08-20).** Se reemplazó por un wizard en
+   modal (ver historial) que se abre desde cualquier página — decisión de producto, no un
+   error, pero tiene un costo de SEO real: ya no hay una página propia que pueda rankear para
     queries de navegación tipo "contacto cyrrus" o "agendar cita cyrrus consulting", ni un
-    `ContactPage` en el JSON-LD. La información de contacto (teléfono, correo, las dos
-    direcciones) sigue visible y en el `Organization` schema de `index.html`, así que la
-    entidad de negocio no pierde señal — lo que se pierde es la superficie de una URL propia.
-    Si en el futuro esto pesa, la opción más barata es una landing `/contacto` liviana con
-    `ContactPage` schema que abra el mismo wizard al cargar, en vez de un formulario propio.
+   `ContactPage` en el JSON-LD. La información de contacto (teléfono, correo, las dos
+   direcciones) sigue visible y en el `Organization` schema de `index.html`, así que la
+   entidad de negocio no pierde señal — lo que se pierde es la superficie de una URL propia.
+   Si en el futuro esto pesa, la opción más barata es una landing `/contacto` liviana con
+   `ContactPage` schema que abra el mismo wizard al cargar, en vez de un formulario propio.
 
 ## Tareas técnicas menores pendientes (bajo impacto, se pueden automatizar)
 
 - `twitter:image` no se sobreescribe por página (solo `og:image` vía `usePageMeta`) — LinkedIn/
   Facebook sí muestran la imagen custom, X/Twitter sigue mostrando la genérica.
-- Descripción de 169 caracteres en `/leadership-academy/ia-para-directivos` (y 180 en su
-  versión EN). No se recortó porque ese texto es también el copy visible del hero y la página
-  está `comingSoon: true` → `noindex`, así que hoy no llega a ninguna SERP. Recortarlo cuando
-  el taller se lance.
+- Descripciones fuera de rango (98–180 car.) en las 14 páginas de taller. No se recortan porque
+  ese texto es también el copy visible del hero y las páginas están `comingSoon: true` →
+  `noindex`, así que hoy no llegan a ninguna SERP. Recortarlas cuando cada taller se lance.
+- Sin `dateModified` en el JSON-LD del sitio (`M13.freshness.no_datemodified_schema_sitewide`).
+  La fuente de verdad ya existe — `generate-sitemap.mjs` calcula por ruta un `lastmod` real
+  desde el hash del contenido i18n — pero hoy solo se escribe en el sitemap. Para llevarlo al
+  schema habría que emitir un `route-lastmod.json` desde ese script e inyectarlo en los nodos
+  `WebPage`/`Service` desde `usePageMeta`. Mecánico, no bloqueado por contenido.
+- `<meta charset>` no es el primer hijo de `<head>`: el plugin de preload de fuentes inyecta
+  3 `<link rel="preload">` antes (`injectTo: "head-prepend"`). **Se deja como está a propósito.**
+  El charset sigue dentro de los primeros 1024 bytes, que es lo que exige la especificación, y
+  mover los preloads después costaría LCP real por un hallazgo cosmético — `CLAUDE.md` prioriza
+  lo primero.
 
 *(Los ítems de `BreadcrumbList` faltante y cobertura despareja de `FAQPage` que estaban aquí
 se resolvieron/verificaron en la auditoría del 2026-08-19 — ver historial. `Contacto.tsx`
-además ya no existe: se reemplazó por el wizard modal, ver la entrada del 2026-08-20.)*
+además ya no existe: se reemplazó por el wizard modal, ver la entrada del 2026-08-20. El ítem
+de `twitter:image` sin sobreescribir por página se resolvió antes del 2026-08-20: el barrido
+de las 66 rutas confirma `twitter:image` idéntico a `og:image` en todas.)*
 
 ## Cómo actualizar este archivo
 
@@ -130,6 +136,110 @@ además ya no existe: se reemplazó por el wizard modal, ver la entrada del 2026
    historial en vez de dejarlo en la lista de pendientes.
 
 ## Historial de auditorías
+
+### 2026-08-20 (tarde) — Barrido programático de las 66 rutas + ronda de fixes
+
+**Search SEO: 75.5 → 83.1 (C → B)** · **AI Visibility: 75.7 → 85.1 (C → B)**
+
+La auditoría se corrió como un barrido programático propio sobre el build local `dist/` (las 66
+rutas, no una muestra). Los dos scores salen de `score.mjs` sobre
+[seo-findings-2026-08-19.json](seo-findings-2026-08-19.json), corrido después de marcar como
+`pass` los 7 findings que esta ronda corrigió (34 `pass` / 16 `warn` / 6 `needs_api` /
+1 `not_applicable`). El "antes" se midió de verdad, corriendo el mismo script sobre una copia
+del archivo con esos 7 `status` revertidos a `warn`: mismo conjunto de 57 findings, mismos
+pesos, así que el delta aísla el efecto de la ronda y nada más — no hubo re-rastreo.
+
+Las 6 categorías que se movieron (las otras 16 quedaron idénticas):
+
+| Categoría | Eje | Peso | Antes | Ahora |
+|---|---|---|---|---|
+| Indexability & Crawl | Search | 22 | 75.0 | **100** |
+| On-Page & Meta | Search | 12 | 62.5 | **87.5** |
+| Structured Data | Search | 12 | 91.7 | **95.8** |
+| Answer Extractability | AI Visibility | 20 | 50.0 | **75.0** |
+| Fact Density / Original Data | AI Visibility | 14 | 50.0 | **66.7** |
+| AI Crawler Access | AI Visibility | 12 | 83.3 | **100** |
+
+Lo que **no** se movió y explica el techo de Search SEO: Core Web Vitals entra en 50/100 con
+peso 16 porque sigue en `needs_api` — no hay datos de campo mientras el dominio canónico no
+sirva este build. Solo esa categoría vale ~8 puntos del score, y no se desbloquea escribiendo
+contenido sino publicando (punto 0). Detrás vienen Local (66.7, peso 10), Internal Linking
+(66.7, peso 8), E-E-A-T (70.8) y Freshness (70.8), que sí dependen de los pendientes de
+contenido: casos con cifras en `/experiencia`, los artículos de `/perspectivas` y la bio de
+Daniel.
+
+**El bloqueador #0 sigue vivo y se reconfirmó en esta corrida.** `https://www.cyrruscs.com/`
+responde 200 desde nginx con `<title>Home - Cyrrus CS</title>` y H1 "Elevando a las empresas
+hacia alturas innovadoras" — el sitio anterior. `/sitemap.xml` y `/metodo-cira` devuelven 404
+en el dominio canónico. El build nuevo solo existe en `cyrrus-cira.vercel.app`, que responde
+con `X-Robots-Tag: noindex` (correcto, por la regla de `vercel.json`). **Nada de lo que sigue
+rinde un solo puesto de ranking hasta que `cyrruscs.com` sirva este build.**
+
+**Un defecto real, no de higiene: el `noindex` se quedaba pegado entre rutas.**
+`usePageMeta` guardaba el `<meta name="robots">` que encontraba al montar y lo *restauraba* en
+el cleanup. Como el prerenderer hornea ese tag en el HTML de las 16 rutas `noindex`, al montar
+sobre una de ellas el valor guardado era `"noindex, follow"` — y al navegar del lado del
+cliente a cualquier otra página, el cleanup lo volvía a poner. Efecto: entrar por un taller
+"próximamente" o por el 404 y seguir navegando dejaba **toda la sesión en `noindex`** para un
+crawler que renderiza y sigue enlaces, que es exactamente lo que hace Googlebot. `usePageMeta`
+es el único escritor de ese meta (`index.html` no trae ninguno), así que el tag presente al
+cargar siempre es obra de un render anterior del propio hook, nunca algo que preservar: ahora
+el cleanup lo elimina y la rama `else` lo quita cuando la ruta sí es indexable. Verificado en
+el navegador: desde `/leadership-academy/iso-27001` (`noindex, follow`) navegando a
+`/metodo-cira` y luego a `/experiencia`, el meta queda en `null` en ambas.
+
+**Lo demás corregido en esta ronda:**
+- **Las 16 FAQ que eran afirmaciones ahora son preguntas** (puntos 6 y 7 de la lista de
+  pendientes, ES + EN en paridad — 42 cadenas reescritas contando las que se repetían entre
+  archivos). Barrido de verificación: **0 entradas sin signo de interrogación** en las 34
+  `FAQPage` del sitio. Pega directo en Answer Extractability, el módulo de mayor peso de AI
+  Visibility.
+- **ERP, CRM, HCM, EAM, Selección de Software y Planeación Estratégica pasaron de 2 a 5
+  preguntas** (36 preguntas nuevas, ES + EN), con las de intención comercial que faltaban:
+  costo aproximado, criterios de evaluación, y por qué un consultor independiente en vez de ir
+  directo al proveedor. Total del sitio: 118 → 154 preguntas. Son las páginas del clúster con
+  más ventana de ranking real, y las respuestas nuevas también suben el conteo de palabras
+  visible de cada una.
+- **Modificador geográfico en la home** (punto 5, decisión del usuario en esta sesión):
+  "Consultoría Estratégica con IA en Colombia | Cyrrus" (51 car.) / "Strategic Consulting with
+  AI in Colombia | Cyrrus" (49 car.), con las descriptions ajustadas en ambos idiomas. Se eligió
+  Colombia sobre LATAM por volumen de búsqueda real y por coincidir con las dos oficinas.
+- **Saltos de jerarquía de encabezados eliminados** en `/perspectivas` y `/leadership-academy`
+  (ES + EN): las tarjetas de `blog7` cuelgan directamente del `h1` de la página, así que su
+  título es `h2`; y el rótulo del carrusel decorativo de `workshop-orbit` dejó de ser un `h3`
+  (los nombres reales de los talleres ya son `h3` en la reja de abajo, así que además estaba
+  duplicando). 0 saltos en las 66 rutas.
+- **`BreadcrumbList` + `WebPage` en `/privacidad` y `/cookies`** (ES + EN) — eran las 4 únicas
+  rutas no-home sin breadcrumb. Cobertura: 60 → 64 de 64.
+- **El 404 ya no declara un canonical a una URL inexistente.** `dist/404.html` se autodeclaraba
+  canónico en `/not-found-preview-only`, la ruta sintética del prerender, que devuelve 404. Se
+  añadió `noCanonical` a `usePageMeta` (el 404 se sirve para *cualquier* ruta desconocida, así
+  que ningún canonical suyo es correcto) y el cleanup re-adjunta el nodo al salir. Verificado:
+  `/ruta-que-no-existe` sin canonical, y al volver a la home reaparece exactamente uno,
+  apuntando a `/`.
+- **Los 4 landmarks `<nav>` ya tienen nombre accesible.** El `aria-label` del menú de escritorio
+  existía pero estaba escrito `items[0]?.label ? undefined : "Navegación principal"`, es decir
+  resolvía a `undefined` siempre que hubiera ítems — siempre. Los 4 (`Navegación principal`,
+  `Navegación móvil`, `Pie de página`, `Legal`) ahora se rotulan y siguen el idioma de la página.
+- **Sufijo de marca en los títulos de los 14 talleres** (`… | Cyrrus`), que además saca a los
+  cinco que estaban por debajo de 30 caracteres. Todas las rutas quedan dentro de 30–60.
+- **El nodo `Course` dejó de emitirse en las páginas `comingSoon`.** Declaraba 14 entidades en
+  rutas `noindex` que el buscador no puede alcanzar ni verificar. Vuelve solo cuando un taller
+  se publique.
+- **Descriptions por debajo de 120 caracteres corregidas** en `/metodo-cira/gestion-de-proyectos`,
+  `/metodo-cira/gestion-del-cambio` (ES + EN) y `/en/presencia-digital/seo` — quedaron en 132–137,
+  sumando el modificador geográfico. Las que siguen fuera de rango son solo las de los talleres
+  `noindex`, donde la description es también el copy visible del hero (decisión ya documentada).
+- **`llms.txt` ya enlaza la home en español**, que era el único nodo del sitio ausente del archivo.
+
+**Verificación:** `tsc -b` y `npm run build` limpios, 66/66 rutas prerenderizadas. Hidratación
+comprobada en el navegador sobre `dist/` servido (`node scripts/serve-dist.mjs`) en
+`/`, `/perspectivas`, `/privacidad`, `/leadership-academy/iso-27001`, `/metodo-cira` y la
+página de ERP: **cero errores de consola, cero React #418** — las cuatro reglas de hidratación
+de `CLAUDE.md` siguen en pie tras los cambios de markup. El `lastmod` del sitemap avanzó en
+exactamente las 34 URLs cuyo contenido i18n cambió, que es el comportamiento que
+`generate-sitemap.mjs` debe tener.
+
 
 ### 2026-08-20 — `/contacto` reemplazada por un wizard en modal
 

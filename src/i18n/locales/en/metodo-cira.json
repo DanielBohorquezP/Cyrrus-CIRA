@@ -53,9 +53,18 @@
     "description": "Most of these projects don't fail because of the technology. They fail because of the bias of whoever sold it. That's why we define the business requirements first and only then compare vendors, with objective, measurable criteria — the same team accompanies all four phases of the cycle, with AI accelerating every stretch.",
     "ctaLabel": "Schedule a call",
     "stats": [
-      { "value": "+17", "label": "countries with projects delivered" },
-      { "value": "100%", "label": "agnostic: no commercial bias toward any brand" },
-      { "value": "60%", "label": "faster diagnosis, with AI built into the method" }
+      {
+        "value": "+17",
+        "label": "countries with projects delivered"
+      },
+      {
+        "value": "100%",
+        "label": "agnostic: no commercial bias toward any brand"
+      },
+      {
+        "value": "60%",
+        "label": "faster diagnosis, with AI built into the method"
+      }
     ]
   },
   "faq": {
@@ -64,10 +73,22 @@
     "otherQuestion": "Have another question?",
     "ctaLabel": "Write to us",
     "items": [
-      { "question": "Duration per phase", "answer": "It depends on the organization's scope and size, but as a reference: Construct (strategy) usually takes 4 to 8 weeks, Identify (solution selection) 6 to 12 weeks, Realize (project) varies by the project executed, and Adopt (change) is worked transversally from day one." },
-      { "question": "Hired by phase, not all-or-nothing", "answer": "Each phase — Strategy, Select, Project Management, and Change Management — is hired independently. Most of our clients start with a single phase and expand scope once they see results." },
-      { "question": "Already chose a vendor and aren't sure", "answer": "We evaluate the decision with the same objective criteria, even if the process has already started. We're 100% agnostic: we have no commercial partnerships or commissions with ERP, CRM, HCM, or other enterprise solution manufacturers." },
-      { "question": "Adoption, not another abandoned pilot", "answer": "AI is measured with the same governance discipline as the rest of the method — it's not a separate layer. It accelerates tasks within each phase: diagnosis in Construct, parallel vendor evaluation in Identify, real-time risk monitoring in Realize, and continuous adoption measurement in Adopt." }
+      {
+        "question": "How long does each phase of the CIRA method take?",
+        "answer": "It depends on the organization's scope and size, but as a reference: Construct (strategy) usually takes 4 to 8 weeks, Identify (solution selection) 6 to 12 weeks, Realize (project) varies by the project executed, and Adopt (change) is worked transversally from day one."
+      },
+      {
+        "question": "Can we hire a single phase of the CIRA method?",
+        "answer": "Each phase — Strategy, Select, Project Management, and Change Management — is hired independently. Most of our clients start with a single phase and expand scope once they see results."
+      },
+      {
+        "question": "Can you review a vendor decision we already made?",
+        "answer": "We evaluate the decision with the same objective criteria, even if the process has already started. We're 100% agnostic: we have no commercial partnerships or commissions with ERP, CRM, HCM, or other enterprise solution manufacturers."
+      },
+      {
+        "question": "How does the CIRA method keep AI from becoming another abandoned pilot?",
+        "answer": "AI is measured with the same governance discipline as the rest of the method — it's not a separate layer. It accelerates tasks within each phase: diagnosis in Construct, parallel vendor evaluation in Identify, real-time risk monitoring in Realize, and continuous adoption measurement in Adopt."
+      }
     ]
   },
   "meta": {

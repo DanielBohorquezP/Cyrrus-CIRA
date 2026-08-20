@@ -105,9 +105,9 @@ export function WorkshopOrbit({ items, className }: WorkshopOrbitProps) {
             <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-cyan/15 text-cyan">
               <ActiveIcon className="h-4 w-4" />
             </div>
-            <h3 className="mt-2.5 text-xs font-semibold leading-snug text-white sm:text-sm">
+            <p className="mt-2.5 text-xs font-semibold leading-snug text-white sm:text-sm">
               {active.title}
-            </h3>
+            </p>
             <p className="mt-1 text-[11px] leading-relaxed text-white/60">
               {active.description}
             </p>

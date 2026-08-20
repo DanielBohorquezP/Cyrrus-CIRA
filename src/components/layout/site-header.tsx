@@ -140,7 +140,7 @@ export function SiteHeader() {
             : "pointer-events-none -translate-y-2 opacity-0",
         )}
       >
-        <nav className="flex flex-col divide-y divide-border px-6">
+        <nav aria-label={lang === "en" ? "Mobile navigation" : "Navegación móvil"} className="flex flex-col divide-y divide-border px-6">
           {navItems.map((item) => (
             <MobileNavAccordionItem
               key={item.label}

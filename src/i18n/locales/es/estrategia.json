@@ -31,11 +31,26 @@
     "title": "Los problemas que tienen en común los CEOs que nos llaman",
     "description": "Lleva meses con los mismos problemas: reuniones que no producen decisiones, gerentes que no rinden cuentas, y un flujo de caja que no refleja cuánto trabaja. Eso no es mala suerte — es un problema de ejecución estratégica que tiene solución.",
     "problems": [
-      { "title": "Falta de alineación", "description": "Tiene un plan estratégico bien armado. El problema es que 90 días después, cada gerente lo interpreta distinto y nadie rinde cuentas por los resultados." },
-      { "title": "Ceguera de datos", "description": "Necesita 2 semanas para saber cómo cerró el mes. Para cuando tiene los números, la oportunidad ya pasó." },
-      { "title": "Inversiones sin retorno", "description": "Invirtió en consultoría, en capacitaciones, en nuevos procesos — pero no puede demostrarle a su junta directiva cuánto mejor está el negocio." },
-      { "title": "Dependencia del fundador", "description": "La operación funciona porque usted está presente. Cuando se ausenta una semana, todo se desacomoda. Eso no es escalar — es depender." },
-      { "title": "Tecnología subejercida", "description": "Herramientas costosas que el equipo no adopta ni aprovecha. Invierte en tecnología y no ve el retorno de esa inversión." }
+      {
+        "title": "Falta de alineación",
+        "description": "Tiene un plan estratégico bien armado. El problema es que 90 días después, cada gerente lo interpreta distinto y nadie rinde cuentas por los resultados."
+      },
+      {
+        "title": "Ceguera de datos",
+        "description": "Necesita 2 semanas para saber cómo cerró el mes. Para cuando tiene los números, la oportunidad ya pasó."
+      },
+      {
+        "title": "Inversiones sin retorno",
+        "description": "Invirtió en consultoría, en capacitaciones, en nuevos procesos — pero no puede demostrarle a su junta directiva cuánto mejor está el negocio."
+      },
+      {
+        "title": "Dependencia del fundador",
+        "description": "La operación funciona porque usted está presente. Cuando se ausenta una semana, todo se desacomoda. Eso no es escalar — es depender."
+      },
+      {
+        "title": "Tecnología subejercida",
+        "description": "Herramientas costosas que el equipo no adopta ni aprovecha. Invierte en tecnología y no ve el retorno de esa inversión."
+      }
     ]
   },
   "whyCeos": {
@@ -43,20 +58,44 @@
     "title": "Ejecución directa, no reportes de 200 páginas",
     "description": "La mayoría de consultoras le entregan un reporte de 200 páginas y desaparecen. Nosotros nos quedamos hasta que los cambios estén funcionando en la operación real — no en las diapositivas.",
     "stats": [
-      { "value": "60%", "label": "Reducción en tiempo de diagnóstico frente a consultoras tradicionales." },
-      { "value": "S1", "label": "Comenzamos a ejecutar desde la semana 1, no al cierre del diagnóstico." }
+      {
+        "value": "60%",
+        "label": "Reducción en tiempo de diagnóstico frente a consultoras tradicionales."
+      },
+      {
+        "value": "S1",
+        "label": "Comenzamos a ejecutar desde la semana 1, no al cierre del diagnóstico."
+      }
     ]
   },
   "benefits": {
     "eyebrow": "Beneficios",
     "title": "Agilidad, transformación y eficiencia",
     "items": [
-      { "title": "Decide hoy, no en 3 meses", "description": "Eliminamos la intuición directiva. Consolidamos la operación en tableros de control con KPIs ágiles, revelando las verdaderas fugas de capital y áreas de rentabilidad." },
-      { "title": "Diagnósticos que sí se implementan", "description": "Condensamos meses de diagnóstico inoperante enfocado netamente a la implementación temprana, ejecutando mejoras tangibles con semanas de anticipación corporativa." },
-      { "title": "Más utilidad, mismos recursos", "description": "Reorganizamos su flujo corporativo. Eliminamos dependencias, silos departamentales y gastos superpuestos para potenciar márgenes de ganancia con los mismos recursos." },
-      { "title": "La empresa funciona sin usted encima", "description": "Preparamos a las compañías para adaptarse a los cambios del entorno. Diseñamos planes operativos que ayudan a sostener la rentabilidad y estabilidad del negocio." },
-      { "title": "Menos apaga-incendios", "description": "Estandarizamos procesos para que el día a día fluya de forma autónoma. Entregamos mayor control operacional para desatascar las tareas tácticas de la gerencia." },
-      { "title": "Reportes listos para junta directiva", "description": "Consolidamos KPIs financieros y operativos en un solo tablero de gobierno corporativo, para que cada sesión de junta directiva cuente con información confiable y accionable." }
+      {
+        "title": "Decide hoy, no en 3 meses",
+        "description": "Eliminamos la intuición directiva. Consolidamos la operación en tableros de control con KPIs ágiles, revelando las verdaderas fugas de capital y áreas de rentabilidad."
+      },
+      {
+        "title": "Diagnósticos que sí se implementan",
+        "description": "Condensamos meses de diagnóstico inoperante enfocado netamente a la implementación temprana, ejecutando mejoras tangibles con semanas de anticipación corporativa."
+      },
+      {
+        "title": "Más utilidad, mismos recursos",
+        "description": "Reorganizamos su flujo corporativo. Eliminamos dependencias, silos departamentales y gastos superpuestos para potenciar márgenes de ganancia con los mismos recursos."
+      },
+      {
+        "title": "La empresa funciona sin usted encima",
+        "description": "Preparamos a las compañías para adaptarse a los cambios del entorno. Diseñamos planes operativos que ayudan a sostener la rentabilidad y estabilidad del negocio."
+      },
+      {
+        "title": "Menos apaga-incendios",
+        "description": "Estandarizamos procesos para que el día a día fluya de forma autónoma. Entregamos mayor control operacional para desatascar las tareas tácticas de la gerencia."
+      },
+      {
+        "title": "Reportes listos para junta directiva",
+        "description": "Consolidamos KPIs financieros y operativos en un solo tablero de gobierno corporativo, para que cada sesión de junta directiva cuente con información confiable y accionable."
+      }
     ]
   },
   "cxaas": {
@@ -64,22 +103,58 @@
     "title": "Dirección ejecutiva as a Service",
     "description": "¿Su organización necesita liderazgo ejecutivo de alto nivel, pero no está lista para una contratación de tiempo completo? Ponemos a su disposición ejecutivos senior — bajo modelo \"as a Service\" — para cubrir roles críticos de tecnología, ciberseguridad y experiencia del cliente con la misma exigencia de un C-Level interno.",
     "roles": [
-      { "letter": "CIO", "title": "CIOaaS", "description": "Dirección tecnológica ejecutiva: gobierno de TI, arquitectura empresarial y alineación de la tecnología con la estrategia de negocio." },
-      { "letter": "CTO", "title": "CTOaaS", "description": "Liderazgo técnico senior para definir la hoja de ruta tecnológica, evaluar proveedores y asegurar la ejecución de proyectos críticos." },
-      { "letter": "CCSO", "title": "CCSOaaS", "description": "Dirección de ciberseguridad ejecutiva: gestión de riesgo, cumplimiento normativo y respuesta ante incidentes al más alto nivel." }
+      {
+        "letter": "CIO",
+        "title": "CIOaaS",
+        "description": "Dirección tecnológica ejecutiva: gobierno de TI, arquitectura empresarial y alineación de la tecnología con la estrategia de negocio."
+      },
+      {
+        "letter": "CTO",
+        "title": "CTOaaS",
+        "description": "Liderazgo técnico senior para definir la hoja de ruta tecnológica, evaluar proveedores y asegurar la ejecución de proyectos críticos."
+      },
+      {
+        "letter": "CCSO",
+        "title": "CCSOaaS",
+        "description": "Dirección de ciberseguridad ejecutiva: gestión de riesgo, cumplimiento normativo y respuesta ante incidentes al más alto nivel."
+      }
     ]
   },
   "services": {
     "eyebrow": "Alcance",
     "title": "Servicios principales de Strategy",
-    "items": ["Estrategia Corporativa", "Centros de Servicios Compartidos", "Estrategia de Negocio", "Plan de Continuidad de Negocio", "IT Strategy & Transformación"]
+    "items": [
+      "Estrategia Corporativa",
+      "Centros de Servicios Compartidos",
+      "Estrategia de Negocio",
+      "Plan de Continuidad de Negocio",
+      "IT Strategy & Transformación"
+    ]
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
     "title": "Sobre planeación estratégica",
     "items": [
-      { "question": "¿Qué es la Estrategia?", "answer": "La Estrategia es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, traduce ese rumbo en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales de la operación. Para un CEO o CIO, el valor está en que la estrategia deje de vivir en una presentación y empiece a reflejarse en el flujo de caja, la rentabilidad y el gobierno corporativo del negocio." },
-      { "question": "¿Cuándo necesita una empresa consultoría estratégica?", "answer": "Una empresa necesita consultoría estratégica cuando los planes existen pero no se ejecutan de forma consistente entre áreas, cuando los indicadores financieros tardan semanas en estar disponibles para la toma de decisiones, o cuando el crecimiento del negocio depende demasiado de la presencia constante del fundador o del equipo directivo. También es el momento indicado cuando una compañía mediana o gran corporación necesita transformación empresarial, IT Strategy o continuidad del negocio ante un cambio de mercado, tecnología o estructura organizacional, y requiere un socio externo que ayude a ejecutar — no solo a diagnosticar." }
+      {
+        "question": "¿Qué es la Estrategia?",
+        "answer": "La Estrategia es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, traduce ese rumbo en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales de la operación. Para un CEO o CIO, el valor está en que la estrategia deje de vivir en una presentación y empiece a reflejarse en el flujo de caja, la rentabilidad y el gobierno corporativo del negocio."
+      },
+      {
+        "question": "¿Cuándo necesita una empresa consultoría estratégica?",
+        "answer": "Una empresa necesita consultoría estratégica cuando los planes existen pero no se ejecutan de forma consistente entre áreas, cuando los indicadores financieros tardan semanas en estar disponibles para la toma de decisiones, o cuando el crecimiento del negocio depende demasiado de la presencia constante del fundador o del equipo directivo. También es el momento indicado cuando una compañía mediana o gran corporación necesita transformación empresarial, IT Strategy o continuidad del negocio ante un cambio de mercado, tecnología o estructura organizacional, y requiere un socio externo que ayude a ejecutar — no solo a diagnosticar."
+      },
+      {
+        "question": "¿Cuánto dura un proceso de planeación estratégica?",
+        "answer": "Como referencia, la fase de Construir del método CIRA toma de 4 a 8 semanas, según el tamaño de la organización y la cantidad de áreas involucradas, e incluye el diagnóstico, la definición de la hoja de ruta y su priorización por impacto."
+      },
+      {
+        "question": "¿Qué diferencia hay entre un CTO as a Service y contratar un CTO de planta?",
+        "answer": "Un CTO as a Service da acceso al criterio y a la experiencia sin el costo fijo de un ejecutivo de tiempo completo, y es la figura adecuada cuando la empresa necesita dirección tecnológica de alto nivel pero no tiene volumen de decisión diario para justificar el cargo. La diferencia práctica es la dedicación, no la profundidad del criterio."
+      },
+      {
+        "question": "¿Qué entregables deja una consultoría de estrategia con Cyrrus?",
+        "answer": "Un diagnóstico del estado actual de procesos y tecnología, una hoja de ruta priorizada por impacto en el negocio con horizonte definido, el caso de negocio de las iniciativas de mayor peso, y los criterios con los que se evaluará después cualquier decisión de tecnología."
+      }
     ]
   }
 }

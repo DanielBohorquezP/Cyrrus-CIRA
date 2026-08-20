@@ -24,10 +24,22 @@
     "eyebrow": "Evaluation criteria",
     "title": "Four dimensions, one verdict",
     "items": [
-      { "title": "Functional", "description": "We guarantee short-term fit by solving your company's key operational needs." },
-      { "title": "Technical", "description": "We ensure technological maturity, evaluating compatibility to reduce hidden integration costs." },
-      { "title": "Economic", "description": "Precise budget-feasibility measurements, ensuring sustainable investment and operating spend." },
-      { "title": "Sustainable", "description": "A commitment to business sustainability: we guarantee your company's sustained growth over time." }
+      {
+        "title": "Functional",
+        "description": "We guarantee short-term fit by solving your company's key operational needs."
+      },
+      {
+        "title": "Technical",
+        "description": "We ensure technological maturity, evaluating compatibility to reduce hidden integration costs."
+      },
+      {
+        "title": "Economic",
+        "description": "Precise budget-feasibility measurements, ensuring sustainable investment and operating spend."
+      },
+      {
+        "title": "Sustainable",
+        "description": "A commitment to business sustainability: we guarantee your company's sustained growth over time."
+      }
     ]
   },
   "reto": {
@@ -45,21 +57,51 @@
     "eyebrow": "Benefits",
     "title": "Agility, transformation, and efficiency",
     "items": [
-      { "title": "360° view for transformative decisions", "description": "We offer a comprehensive view that covers every crucial detail for decisions that transform your business, with fast, complete analysis." },
-      { "title": "Multidimensional selection", "description": "Our service goes beyond conventional vendor search: we score solutions from a functional, technical, and economic perspective." },
-      { "title": "Personalized, comprehensive approach", "description": "We tailor the analysis to your industry, technological maturity, and business processes, for a truly unique solution." },
-      { "title": "Rigorous proposal evaluation", "description": "We ensure not just short-term fit but also operational sustainability, thoroughly evaluating every bidder." },
-      { "title": "Decision-making efficiency", "description": "We guarantee fast analysis, letting you make informed decisions quickly and efficiently, without missing a detail." },
-      { "title": "Business sustainability", "description": "Beyond finding a solution, we focus on finding a tool that contributes to your organization's continuous growth." }
+      {
+        "title": "360° view for transformative decisions",
+        "description": "We offer a comprehensive view that covers every crucial detail for decisions that transform your business, with fast, complete analysis."
+      },
+      {
+        "title": "Multidimensional selection",
+        "description": "Our service goes beyond conventional vendor search: we score solutions from a functional, technical, and economic perspective."
+      },
+      {
+        "title": "Personalized, comprehensive approach",
+        "description": "We tailor the analysis to your industry, technological maturity, and business processes, for a truly unique solution."
+      },
+      {
+        "title": "Rigorous proposal evaluation",
+        "description": "We ensure not just short-term fit but also operational sustainability, thoroughly evaluating every bidder."
+      },
+      {
+        "title": "Decision-making efficiency",
+        "description": "We guarantee fast analysis, letting you make informed decisions quickly and efficiently, without missing a detail."
+      },
+      {
+        "title": "Business sustainability",
+        "description": "Beyond finding a solution, we focus on finding a tool that contributes to your organization's continuous growth."
+      }
     ]
   },
   "categories": {
     "eyebrow": "Categories",
     "title": "Solutions we evaluate and select with you",
     "items": [
-      { "slug": "seleccion-de-software", "label": "Software Selection", "note": "(ERP, CRM, HCM, EAM, business applications, BI)" },
-      { "slug": "tecnologias-avanzadas", "label": "Advanced Technologies", "note": "(Automation, Artificial Intelligence, RPA, Advanced Analytics)" },
-      { "slug": "infraestructura-tecnologica", "label": "Technology Infrastructure", "note": "(Cybersecurity, Networks, Cloud, Continuity and Backup)" }
+      {
+        "slug": "seleccion-de-software",
+        "label": "Software Selection",
+        "note": "(ERP, CRM, HCM, EAM, business applications, BI)"
+      },
+      {
+        "slug": "tecnologias-avanzadas",
+        "label": "Advanced Technologies",
+        "note": "(Automation, Artificial Intelligence, RPA, Advanced Analytics)"
+      },
+      {
+        "slug": "infraestructura-tecnologica",
+        "label": "Technology Infrastructure",
+        "note": "(Cybersecurity, Networks, Cloud, Continuity and Backup)"
+      }
     ]
   },
   "services": {
@@ -76,18 +118,54 @@
     "eyebrow": "Process",
     "title": "The 12 stages of a friction-free solution selection",
     "steps": [
-      { "title": "Strategic Kickoff", "description": "Define scope and objectives" },
-      { "title": "Business Discovery", "description": "Understand strategy and needs" },
-      { "title": "RFP Preparation", "description": "Create a structured RFP" },
-      { "title": "Participant Selection", "description": "Identify qualified vendors" },
-      { "title": "Vendor Invitation and Kickoff", "description": "Present the project to vendors" },
-      { "title": "Business Understanding", "description": "Ensure proposals address the actual needs" },
-      { "title": "Proposal Intake and Evaluation", "description": "Analyze proposals from multiple angles" },
-      { "title": "Executive Presentations and Demos", "description": "Evaluate proposals through live presentations" },
-      { "title": "Referencing and Validation", "description": "Validate the vendor's track record" },
-      { "title": "Comprehensive Evaluation", "description": "Consolidate evaluations into a matrix" },
-      { "title": "Executive Report", "description": "Present findings and recommendations" },
-      { "title": "Contracting Support", "description": "Support negotiation and contracting" }
+      {
+        "title": "Strategic Kickoff",
+        "description": "Define scope and objectives"
+      },
+      {
+        "title": "Business Discovery",
+        "description": "Understand strategy and needs"
+      },
+      {
+        "title": "RFP Preparation",
+        "description": "Create a structured RFP"
+      },
+      {
+        "title": "Participant Selection",
+        "description": "Identify qualified vendors"
+      },
+      {
+        "title": "Vendor Invitation and Kickoff",
+        "description": "Present the project to vendors"
+      },
+      {
+        "title": "Business Understanding",
+        "description": "Ensure proposals address the actual needs"
+      },
+      {
+        "title": "Proposal Intake and Evaluation",
+        "description": "Analyze proposals from multiple angles"
+      },
+      {
+        "title": "Executive Presentations and Demos",
+        "description": "Evaluate proposals through live presentations"
+      },
+      {
+        "title": "Referencing and Validation",
+        "description": "Validate the vendor's track record"
+      },
+      {
+        "title": "Comprehensive Evaluation",
+        "description": "Consolidate evaluations into a matrix"
+      },
+      {
+        "title": "Executive Report",
+        "description": "Present findings and recommendations"
+      },
+      {
+        "title": "Contracting Support",
+        "description": "Support negotiation and contracting"
+      }
     ]
   },
   "closingQuote": "We don't just help our clients choose technology solutions — we help them make decisions that strengthen and transform their organization.",
@@ -95,10 +173,22 @@
     "eyebrow": "Solution Selection",
     "title": "Frequently asked questions",
     "items": [
-      { "question": "Is the evaluation really vendor-agnostic?", "answer": "Yes. We have no commercial partnerships or commissions with ERP, CRM, HCM, or other enterprise software vendors — we evaluate every option against the same four objective criteria (functional, technical, economic, sustainable), regardless of brand." },
-      { "question": "How long does a solution selection process take?", "answer": "As a reference, the Identify phase (solution selection) of the CIRA method typically takes 6 to 12 weeks, from the strategic kickoff through contracting support — the 12 process stages described above." },
-      { "question": "We already picked a vendor and aren't sure about the decision", "answer": "We evaluate the decision against the same objective criteria, even if the process is already underway. Being 100% agnostic lets us validate a choice in progress without bias toward any vendor." },
-      { "question": "What does the RFP you prepare include?", "answer": "The Request for Proposal document is classified by technical and functional attributes, and paired with proposal intake and evaluation, executive presentations, vendor referencing, and support through contract negotiation." }
+      {
+        "question": "Is the evaluation really vendor-agnostic?",
+        "answer": "Yes. We have no commercial partnerships or commissions with ERP, CRM, HCM, or other enterprise software vendors — we evaluate every option against the same four objective criteria (functional, technical, economic, sustainable), regardless of brand."
+      },
+      {
+        "question": "How long does a solution selection process take?",
+        "answer": "As a reference, the Identify phase (solution selection) of the CIRA method typically takes 6 to 12 weeks, from the strategic kickoff through contracting support — the 12 process stages described above."
+      },
+      {
+        "question": "Can you validate a vendor selection that's already underway?",
+        "answer": "We evaluate the decision against the same objective criteria, even if the process is already underway. Being 100% agnostic lets us validate a choice in progress without bias toward any vendor."
+      },
+      {
+        "question": "What does the RFP you prepare include?",
+        "answer": "The Request for Proposal document is classified by technical and functional attributes, and paired with proposal intake and evaluation, executive presentations, vendor referencing, and support through contract negotiation."
+      }
     ]
   },
   "detail": {
@@ -110,9 +200,18 @@
         "eyebrow": "Solution Selection — Advanced Technologies",
         "intro": "New technologies only create value when they respond to a real business need. Our role is to identify where they can have the greatest impact and which alternatives best fit each organization.",
         "items": [
-          { "title": "Artificial Intelligence", "description": "From intelligent assistants to advanced analytics models, we identify opportunities where technology can boost productivity, improve decision-making, and accelerate value creation." },
-          { "title": "Automation", "description": "We select platforms that simplify processes, eliminate repetitive tasks, and free people up to spend more time on strategic work." },
-          { "title": "Blockchain", "description": "We evaluate solutions for organizations that need higher levels of traceability, trust, and secure information exchange." }
+          {
+            "title": "Artificial Intelligence",
+            "description": "From intelligent assistants to advanced analytics models, we identify opportunities where technology can boost productivity, improve decision-making, and accelerate value creation."
+          },
+          {
+            "title": "Automation",
+            "description": "We select platforms that simplify processes, eliminate repetitive tasks, and free people up to spend more time on strategic work."
+          },
+          {
+            "title": "Blockchain",
+            "description": "We evaluate solutions for organizations that need higher levels of traceability, trust, and secure information exchange."
+          }
         ]
       },
       "infraestructura-tecnologica": {
@@ -120,16 +219,34 @@
         "eyebrow": "Solution Selection — Technology Infrastructure",
         "intro": "The right infrastructure creates the conditions for the business to operate securely, reliably, and with room to grow.",
         "items": [
-          { "title": "Cybersecurity", "description": "We select solutions to protect operations through modern security architectures, identity protection, device management, monitoring, and incident response." },
-          { "title": "Cloud", "description": "We support the selection of Cloud, Hybrid, and Multicloud architectures that deliver long-term flexibility, scalability, and efficiency." },
-          { "title": "Connectivity", "description": "We design and select LAN, WLAN, WAN, SD-WAN, and Internet solutions that support the business's operation with high availability and performance." },
-          { "title": "Business Continuity", "description": "We help define the capabilities needed to protect operations through continuity strategies, disaster recovery, and high availability." }
+          {
+            "title": "Cybersecurity",
+            "description": "We select solutions to protect operations through modern security architectures, identity protection, device management, monitoring, and incident response."
+          },
+          {
+            "title": "Cloud",
+            "description": "We support the selection of Cloud, Hybrid, and Multicloud architectures that deliver long-term flexibility, scalability, and efficiency."
+          },
+          {
+            "title": "Connectivity",
+            "description": "We design and select LAN, WLAN, WAN, SD-WAN, and Internet solutions that support the business's operation with high availability and performance."
+          },
+          {
+            "title": "Business Continuity",
+            "description": "We help define the capabilities needed to protect operations through continuity strategies, disaster recovery, and high availability."
+          }
         ]
       }
     }
   },
   "detailMeta": {
-    "tecnologias-avanzadas": { "title": "Automation and AI Selection for Companies | Cyrrus", "description": "We select the automation, artificial intelligence, and advanced analytics solutions that fit your data and process maturity." },
-    "infraestructura-tecnologica": { "title": "Technology Infrastructure: Cybersecurity & Cloud | Cyrrus", "description": "We evaluate and select the cybersecurity, network, cloud, and business continuity solutions your company needs, with no vendor bias." }
+    "tecnologias-avanzadas": {
+      "title": "Automation and AI Selection for Companies | Cyrrus",
+      "description": "We select the automation, artificial intelligence, and advanced analytics solutions that fit your data and process maturity."
+    },
+    "infraestructura-tecnologica": {
+      "title": "Technology Infrastructure: Cybersecurity & Cloud | Cyrrus",
+      "description": "We evaluate and select the cybersecurity, network, cloud, and business continuity solutions your company needs, with no vendor bias."
+    }
   }
 }
