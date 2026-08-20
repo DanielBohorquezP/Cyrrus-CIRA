@@ -77,6 +77,11 @@
   "success": {
     "title": "¡Listo! Ya recibimos tu información",
     "description": "Un miembro del equipo de Cyrrus se pondrá en contacto en las próximas 24 horas hábiles.",
+    "bookCall": {
+      "title": "¿Prefieres agendar directamente?",
+      "description": "Elige un horario que te acomode y conversemos sin esperar a que te contactemos.",
+      "cta": "Agendar una llamada"
+    },
     "close": "Cerrar"
   }
 }

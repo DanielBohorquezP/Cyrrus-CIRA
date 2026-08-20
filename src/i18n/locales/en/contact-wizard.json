@@ -77,6 +77,11 @@
   "success": {
     "title": "All set! We received your information",
     "description": "A member of the Cyrrus team will reach out within the next 24 business hours.",
+    "bookCall": {
+      "title": "Prefer to schedule directly?",
+      "description": "Pick a time that works for you and let's talk without waiting for us to reach out.",
+      "cta": "Book a call"
+    },
     "close": "Close"
   }
 }

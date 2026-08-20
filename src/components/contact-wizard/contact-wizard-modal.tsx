@@ -24,6 +24,8 @@ import { WizardFieldControl } from "./wizard-field";
 import "@/i18n/ns/contact-wizard";
 
 const WEB3FORMS_ACCESS_KEY = "12bc1ce9-5114-4a56-8e62-15d72909c577";
+const BOOKING_URL =
+  "https://outlook.office.com/bookwithme/user/36a682fd69fa4a078116c9fb6e022758@cyrruscs.com/meetingtype/4zB0n7tCSUWh4tWE1YWKlg2?anonymous&ismsaljsauthenabled&ep=mlink";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -175,11 +177,30 @@ export function ContactWizardModal() {
             <p className="max-w-sm text-sm leading-relaxed text-gray">
               {t("success.description")}
             </p>
+
+            <div className="mt-3 w-full max-w-sm rounded-xl border border-muted bg-muted/30 p-4 text-left">
+              <p className="text-sm font-semibold text-navy">{t("success.bookCall.title")}</p>
+              <p className="mt-1 text-sm leading-relaxed text-gray">
+                {t("success.bookCall.description")}
+              </p>
+              <BorderButton
+                asChild
+                variant="dark"
+                dot
+                size="sm"
+                className="mt-3"
+              >
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  {t("success.bookCall.cta")}
+                </a>
+              </BorderButton>
+            </div>
+
             <BorderButton
               type="button"
-              variant="dark"
+              variant="light"
               size="sm"
-              className="mt-2"
+              className="mt-1"
               onClick={() => handleOpenChange(false)}
             >
               {t("success.close")}
