@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
@@ -52,6 +53,9 @@ function FaqRow({ question, answer }: FaqItem) {
 
 /** Generic FAQ section (white bg, accordion rows) reused across detail pages — pass page-specific eyebrow/title/faqs. */
 export function FaqSection({ eyebrow, title = "Preguntas frecuentes", faqs }: FaqSectionProps) {
+  // metodo-cira is always loaded (see CORE_NS in src/i18n/index.ts), so this
+  // reuses CiraFaq's own otherQuestion/ctaLabel copy without a new namespace.
+  const { t } = useTranslation("metodo-cira");
   return (
     <section className="w-full bg-white py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-6 md:px-12">
@@ -71,9 +75,9 @@ export function FaqSection({ eyebrow, title = "Preguntas frecuentes", faqs }: Fa
         </Reveal>
 
         <Reveal delay={0.15} className="mt-10">
-          <p className="text-base text-navy/80">¿Tiene otra pregunta?</p>
+          <p className="text-base text-navy/80">{t("faq.otherQuestion")}</p>
           <div className="mt-4">
-            <ContactCtaButton label="Escríbanos" />
+            <ContactCtaButton label={t("faq.ctaLabel")} />
           </div>
         </Reveal>
       </div>
