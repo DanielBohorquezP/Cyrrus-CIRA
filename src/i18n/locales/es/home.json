@@ -104,8 +104,8 @@
     ]
   },
   "about": {
-    "title": "Un solo modelo, cuatro niveles que se sostienen entre sí",
-    "description": "No es una lista de servicios sueltos ni proveedores coordinándose entre sí. Estrategia, arquitectura de IA, gestión del cambio y presencia digital operan bajo un mismo método, con un solo responsable de punta a punta.",
+    "title": "Un solo modelo, tres niveles que se sostienen entre sí",
+    "description": "No es una lista de servicios sueltos ni proveedores coordinándose entre sí. Estrategia, arquitectura de IA y gestión del cambio operan bajo un mismo método, con un solo responsable de punta a punta.",
     "conocerMas": "Conocer más",
     "clientesTitulo": "Empresas que ya confiaron en Cyrrus",
     "levels": [
@@ -126,12 +126,6 @@
         "title": "Leadership Academy",
         "description": "Quién lo sostiene: su equipo aprende a operar el mismo modelo.",
         "href": "/leadership-academy"
-      },
-      {
-        "level": "Nivel 4",
-        "title": "Presencia Digital",
-        "description": "Dónde lo encuentran: el sitio y la visibilidad que traen la conversación.",
-        "href": "/presencia-digital"
       }
     ]
   },

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ArrowUpRight, Compass, Cpu, GraduationCap, Globe } from "lucide-react";
+import { ArrowUpRight, Compass, Cpu, GraduationCap } from "lucide-react";
 import { About3 } from "@/components/ui/about-3";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
 import { RevealGroup, RevealItem } from "@/components/ui/reveal";
@@ -20,12 +20,12 @@ interface CiraPhase {
   title: string;
 }
 
-const icons = [Compass, Cpu, GraduationCap, Globe];
+const icons = [Compass, Cpu, GraduationCap];
 
 /**
- * The three levels are a stack, not three parallel services — level 1 is what
- * the business gets, level 2 is how it's built, level 3 is who sustains it.
- * Level 1 gets the solid-cyan treatment (foundation), while 2 and 3 stay
+ * The levels are a stack, not parallel services — level 1 is what the
+ * business gets, level 2 is how it's built, level 3 is who sustains it.
+ * Level 1 gets the solid-cyan treatment (foundation), while the rest stay
  * outlined, so the hierarchy reads at a glance without a connecting line.
  */
 function LevelsStack() {

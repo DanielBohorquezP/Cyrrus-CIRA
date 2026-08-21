@@ -120,6 +120,20 @@
       }
     ]
   },
+  "digitalGap": {
+    "eyebrow": "The problem strategy alone doesn't solve",
+    "title": "A solid strategy is worthless if nobody finds it",
+    "description": "You may have the clearest roadmap in the market, but if your digital presence isn't up to it, that strategy never reaches the customer who was already looking for it. Internal execution and external visibility are part of the same problem.",
+    "problems": [
+      "Your site doesn't reflect the value proposition you just defined.",
+      "Competitors show up first when the customer searches for what you already designed.",
+      "The strategic plan doesn't include how the market finds out you exist."
+    ],
+    "ctaEyebrow": "Cyrrus Digital Presence",
+    "ctaTitle": "Digital Presence: where you're found",
+    "ctaDescription": "The site and visibility that turn strategy into real conversations with the market.",
+    "ctaButtonLabel": "Explore Digital Presence"
+  },
   "services": {
     "eyebrow": "Scope",
     "title": "Core Strategy services",

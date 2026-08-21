@@ -104,8 +104,8 @@
     ]
   },
   "about": {
-    "title": "One model, four levels that hold each other up",
-    "description": "Not a list of loose services, and not vendors coordinating with each other. Strategy, AI architecture, change management, and digital presence run under a single method, with one party accountable end to end.",
+    "title": "One model, three levels that hold each other up",
+    "description": "Not a list of loose services, and not vendors coordinating with each other. Strategy, AI architecture, and change management run under a single method, with one party accountable end to end.",
     "conocerMas": "Learn more",
     "clientesTitulo": "Companies that have already trusted Cyrrus",
     "levels": [
@@ -126,12 +126,6 @@
         "title": "Leadership Academy",
         "description": "Who sustains it: your own team learns to operate the same model.",
         "href": "/leadership-academy"
-      },
-      {
-        "level": "Level 4",
-        "title": "Digital Presence",
-        "description": "Where you're found: the site and visibility that bring the conversation.",
-        "href": "/presencia-digital"
       }
     ]
   },

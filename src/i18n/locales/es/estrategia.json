@@ -120,6 +120,20 @@
       }
     ]
   },
+  "digitalGap": {
+    "eyebrow": "El problema que la estrategia no resuelve sola",
+    "title": "Una estrategia sólida no sirve de nada si nadie la encuentra",
+    "description": "Puede tener la hoja de ruta más clara del mercado, pero si su presencia digital no está a la altura, esa estrategia nunca llega al cliente que ya la estaba buscando. La ejecución interna y la visibilidad externa son parte del mismo problema.",
+    "problems": [
+      "Su sitio no refleja la propuesta de valor que acaba de definir.",
+      "La competencia aparece primero cuando el cliente busca lo que usted ya diseñó.",
+      "El plan estratégico no incluye cómo el mercado se entera de que existe."
+    ],
+    "ctaEyebrow": "Cyrrus Presencia Digital",
+    "ctaTitle": "Presencia Digital: dónde lo encuentran",
+    "ctaDescription": "El sitio y la visibilidad que convierten la estrategia en conversaciones reales con el mercado.",
+    "ctaButtonLabel": "Conocer Presencia Digital"
+  },
   "services": {
     "eyebrow": "Alcance",
     "title": "Servicios principales de Strategy",

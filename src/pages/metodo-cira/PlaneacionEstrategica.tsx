@@ -1,4 +1,5 @@
 import {
+  AlertCircle,
   BarChart3,
   CheckCircle2,
   Cpu,
@@ -11,6 +12,7 @@ import {
   UserX,
   Zap,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { langPath, useLang } from "@/lib/language";
@@ -24,6 +26,7 @@ import { TrustBar } from "@/components/sections/trust-bar";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+import { BorderButton } from "@/components/ui/border-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
@@ -72,6 +75,7 @@ export default function PlaneacionEstrategica() {
   const services = t("services.items", { returnObjects: true }) as string[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
   const stats = t("whyCeos.stats", { returnObjects: true }) as Stat[];
+  const digitalGapProblems = t("digitalGap.problems", { returnObjects: true }) as string[];
 
   const siteUrl = "https://www.cyrruscs.com";
   const pagePath = lang === "en" ? "/en/metodo-cira/planeacion-estrategica" : "/metodo-cira/planeacion-estrategica";
@@ -336,6 +340,57 @@ export default function PlaneacionEstrategica() {
           </Reveal>
         </div>
       </section>
+
+      <section className="w-full bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-4xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("digitalGap.eyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("digitalGap.title")}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-gray">
+              {t("digitalGap.description")}
+            </p>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {digitalGapProblems.map((problem) => (
+              <RevealItem
+                key={problem}
+                className="flex items-start gap-3 rounded-xl border border-border bg-card p-5"
+              >
+                <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
+                <span className="text-sm leading-relaxed text-navy/80">{problem}</span>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </section>
+
+      <AnimatedNavyBackground className="py-20 md:py-28">
+        <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
+          <Reveal>
+            <span className="text-sm font-bold uppercase tracking-wider text-cyan">
+              {t("digitalGap.ctaEyebrow")}
+            </span>
+            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
+              {t("digitalGap.ctaTitle")}
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/70">
+              {t("digitalGap.ctaDescription")}
+            </p>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <BorderButton variant="light" size="lg" className="mt-8" asChild dot>
+              <Link to={langPath("/presencia-digital", lang)}>
+                {t("digitalGap.ctaButtonLabel")}
+              </Link>
+            </BorderButton>
+          </Reveal>
+        </div>
+      </AnimatedNavyBackground>
 
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">

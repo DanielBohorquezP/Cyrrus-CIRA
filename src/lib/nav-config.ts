@@ -88,22 +88,6 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
       ],
     },
     {
-      label: t("nav.presenciaDigital", { ns: "common" }),
-      href: p("/presencia-digital"),
-      children: [
-        {
-          label: t("nav.desarrolloWeb", { ns: "common" }),
-          href: p("/presencia-digital/desarrollo-web"),
-          description: t("nav.desarrolloWebDesc", { ns: "common" }),
-        },
-        {
-          label: t("nav.seo", { ns: "common" }),
-          href: p("/presencia-digital/seo"),
-          description: t("nav.seoDesc", { ns: "common" }),
-        },
-      ],
-    },
-    {
       label: t("nav.leadershipAcademy", { ns: "common" }),
       href: p("/leadership-academy"),
       children: [
