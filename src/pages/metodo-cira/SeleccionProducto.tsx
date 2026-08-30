@@ -160,6 +160,13 @@ export default function SeleccionProducto() {
   const Icon = productIcons[slug as ProductSlug];
   const image = productImages[slug as ProductSlug];
   const evaluamosItems = evaluamos.items.map((item, i) => ({ ...item, icon: evaluamosIcons[i] }));
+  const otherProducts = productSlugs
+    .filter((s) => s !== slug)
+    .map((s) => ({
+      slug: s,
+      icon: productIcons[s],
+      title: t(`${s}.hero.title`, { ns: "seleccion-productos" }) as string,
+    }));
 
   return (
     <>
@@ -302,6 +309,40 @@ export default function SeleccionProducto() {
           <Reveal delay={0.15} className="mt-12 text-center">
             <ContactCtaButton label={hero.ctaLabel} />
           </Reveal>
+        </div>
+      </section>
+
+      {/* 06 — Otras soluciones que evaluamos */}
+      <section className="w-full bg-light-blue/40 py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {lang === "en" ? "Related solutions" : "Otras soluciones que evaluamos"}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {lang === "en" ? "We also help you select" : "También te ayudamos a seleccionar"}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {otherProducts.map((product) => {
+              const OtherIcon = product.icon;
+              return (
+                <RevealItem key={product.slug}>
+                  <Link
+                    to={`${softwarePath}/${product.slug}`}
+                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    <OtherIcon className="h-6 w-6 text-blue" />
+                    <span className="text-base font-semibold text-navy">{product.title}</span>
+                    <span className="mt-auto text-sm font-semibold text-blue">
+                      {`${lang === "en" ? "See" : "Ver"} ${product.slug.toUpperCase()} →`}
+                    </span>
+                  </Link>
+                </RevealItem>
+              );
+            })}
+          </RevealGroup>
         </div>
       </section>
 

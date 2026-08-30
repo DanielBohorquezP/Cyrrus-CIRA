@@ -1,11 +1,56 @@
-import { lazy, Suspense, useState, type ComponentType } from "react";
+import { lazy, Suspense, useEffect, useState, type ComponentType } from "react";
 import { BrowserRouter, Routes, Route, Outlet, matchPath } from "react-router-dom";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
 import { LanguageProvider } from "@/lib/language";
 import Home from "@/pages/Home";
 import { CookieConsent } from "@/components/layout/cookie-consent";
-import { ContactWizardProvider } from "@/lib/contact-wizard-context";
-import { ContactWizardModal } from "@/components/contact-wizard/contact-wizard-modal";
+import { ContactWizardProvider, useContactWizard } from "@/lib/contact-wizard-context";
+import { isPrerender } from "@/lib/prerender";
+
+// Was a static import, so every visitor's entry chunk carried the wizard's
+// framer-motion dependency (~120KB parsed, and Lighthouse showed ~90% of it
+// unused on first load) just in case they opened it — see DeferredContactWizard.
+const ContactWizardModal = lazy(() =>
+  import("@/components/contact-wizard/contact-wizard-modal").then((m) => ({
+    default: m.ContactWizardModal,
+  })),
+);
+
+/**
+ * Mounts the wizard (and its chunk download) once the browser is idle, not on
+ * initial render — so it's off the critical path but already warm by the time
+ * a visitor actually clicks a CTA. `isOpen` covers a click landing before the
+ * browser has gone idle: the Suspense fallback is a beat of nothing rather
+ * than blocking the click.
+ */
+function DeferredContactWizard() {
+  const { isOpen } = useContactWizard();
+  const [idle, setIdle] = useState(false);
+
+  useEffect(() => {
+    if (isPrerender()) return;
+    let idleHandle: number | undefined;
+    let timer: number | undefined;
+    const ric = window.requestIdleCallback;
+    if (ric) {
+      idleHandle = ric(() => setIdle(true), { timeout: 2500 });
+    } else {
+      timer = window.setTimeout(() => setIdle(true), 1500);
+    }
+    return () => {
+      if (idleHandle != null) window.cancelIdleCallback?.(idleHandle);
+      if (timer != null) window.clearTimeout(timer);
+    };
+  }, []);
+
+  if (!idle && !isOpen) return null;
+
+  return (
+    <Suspense fallback={null}>
+      <ContactWizardModal />
+    </Suspense>
+  );
+}
 
 type PageModule = { default: ComponentType };
 
@@ -117,7 +162,7 @@ const NotFound = lazyPage(() => import("@/pages/NotFound"));
 const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/", Component: Home },
   { path: "/metodo-cira", Component: MetodoCira },
-  { path: "/metodo-cira/planeacion-estrategica", Component: PlaneacionEstrategica },
+  { path: "/metodo-cira/estrategia", Component: PlaneacionEstrategica },
   { path: "/metodo-cira/seleccion-de-soluciones", Component: SeleccionDeSoluciones },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software", Component: SeleccionDeSoftware },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/:producto", Component: SeleccionProducto },
@@ -190,7 +235,7 @@ export default function App() {
         <CookieConsent />
         {/* Mounted once, outside <Routes>, so any CTA on any page can open
             it via useContactWizard() without a per-page instance. */}
-        <ContactWizardModal />
+        <DeferredContactWizard />
       </BrowserRouter>
     </ContactWizardProvider>
   );

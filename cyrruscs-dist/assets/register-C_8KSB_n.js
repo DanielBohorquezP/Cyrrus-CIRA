@@ -1,0 +1,1 @@
+import{r as e}from"./i18n-vendor-DgdaWrfz.js";function t(t,n){for(let r of[`es`,`en`])e.hasResourceBundle(r,t)||e.addResourceBundle(r,t,n[r],!0,!0)}export{t};

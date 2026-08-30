@@ -29,7 +29,7 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
       children: [
         {
           label: t("nav.estrategia", { ns: "common" }),
-          href: p("/metodo-cira/planeacion-estrategica"),
+          href: p("/metodo-cira/estrategia"),
           description: t("nav.estrategiaDesc", { ns: "common" }),
         },
         {

@@ -7,14 +7,17 @@ export interface WizardFieldOption {
   value: string;
   labelKey: string;
   descriptionKey?: string;
+  /** i18n key for this option's <optgroup> label. Options must be grouped
+   *  consecutively in the array — see groupedOptions() in wizard-field.tsx. */
+  groupKey?: string;
 }
 
 export interface WizardField {
   id: string;
-  type: "choice" | "select" | "text" | "tel" | "email";
+  type: "select" | "text" | "tel" | "email";
   labelKey: string;
-  /** i18n key for an example value shown as the input's placeholder
-   *  (text/tel/email only — "choice" and "select" don't need one). */
+  /** i18n key for a placeholder: the disabled first <option> (select) or an
+   *  example value shown in the input (text/tel/email). */
   placeholderKey?: string;
   autoComplete?: string;
   required?: boolean;
@@ -34,29 +37,55 @@ export const CONTACT_WIZARD_STEPS: WizardStep[] = [
     fields: [
       {
         id: "servicio",
-        type: "choice",
-        labelKey: "steps.servicio.title",
+        type: "select",
+        labelKey: "steps.servicio.fields.servicio",
+        placeholderKey: "steps.servicio.placeholder",
         required: true,
         options: [
           {
-            value: "metodo-cira",
-            labelKey: "steps.servicio.options.metodoCira.label",
-            descriptionKey: "steps.servicio.options.metodoCira.description",
+            value: "metodo-cira-estrategia",
+            labelKey: "steps.servicio.options.estrategia.label",
+            groupKey: "steps.servicio.groups.metodoCira",
           },
           {
-            value: "presencia-digital",
-            labelKey: "steps.servicio.options.presenciaDigital.label",
-            descriptionKey: "steps.servicio.options.presenciaDigital.description",
+            value: "metodo-cira-seleccion-soluciones",
+            labelKey: "steps.servicio.options.seleccionSoluciones.label",
+            groupKey: "steps.servicio.groups.metodoCira",
           },
           {
-            value: "capacitacion",
-            labelKey: "steps.servicio.options.capacitacion.label",
-            descriptionKey: "steps.servicio.options.capacitacion.description",
+            value: "metodo-cira-gestion-proyectos",
+            labelKey: "steps.servicio.options.gestionProyectos.label",
+            groupKey: "steps.servicio.groups.metodoCira",
           },
           {
-            value: "ia",
-            labelKey: "steps.servicio.options.ia.label",
-            descriptionKey: "steps.servicio.options.ia.description",
+            value: "intelligence-lab-automatizacion-ia",
+            labelKey: "steps.servicio.options.automatizacionIA.label",
+            groupKey: "steps.servicio.groups.intelligenceLab",
+          },
+          {
+            value: "intelligence-lab-arquitectura-ia",
+            labelKey: "steps.servicio.options.arquitecturaIA.label",
+            groupKey: "steps.servicio.groups.intelligenceLab",
+          },
+          {
+            value: "intelligence-lab-gobierno-ia",
+            labelKey: "steps.servicio.options.gobiernoIA.label",
+            groupKey: "steps.servicio.groups.intelligenceLab",
+          },
+          {
+            value: "leadership-academy-gestion-cambio",
+            labelKey: "steps.servicio.options.gestionCambio.label",
+            groupKey: "steps.servicio.groups.leadershipAcademy",
+          },
+          {
+            value: "presencia-digital-desarrollo-web",
+            labelKey: "steps.servicio.options.desarrolloWeb.label",
+            groupKey: "steps.servicio.groups.presenciaDigital",
+          },
+          {
+            value: "presencia-digital-seo",
+            labelKey: "steps.servicio.options.seo.label",
+            groupKey: "steps.servicio.groups.presenciaDigital",
           },
         ],
       },
@@ -79,6 +108,7 @@ export const CONTACT_WIZARD_STEPS: WizardStep[] = [
         type: "select",
         labelKey: "steps.empresa.fields.tamanoEmpresa",
         required: true,
+        placeholderKey: "sizeOptions.placeholder",
         options: [
           { value: "50-100", labelKey: "sizeOptions.r1" },
           { value: "101-250", labelKey: "sizeOptions.r2" },

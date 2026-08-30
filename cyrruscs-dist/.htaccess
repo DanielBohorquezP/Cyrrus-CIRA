@@ -1,0 +1,6 @@
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteRule ^metodo-cira/planeacion-estrategica/?$ /metodo-cira/estrategia/ [R=301,L]
+RewriteRule ^en/metodo-cira/planeacion-estrategica/?$ /en/metodo-cira/estrategia/ [R=301,L]

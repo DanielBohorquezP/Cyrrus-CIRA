@@ -243,31 +243,16 @@ export function ContactWizardModal() {
                   initial={reduceMotion ? undefined : "initial"}
                   animate={reduceMotion ? undefined : "animate"}
                 >
-                  {step.fields.map((field) =>
-                    // "choice" (the step-1 service cards) animates its own
-                    // options with its own stagger — wrapping it in another
-                    // fade+stagger layer here would double up the motion.
-                    field.type === "choice" ? (
+                  {step.fields.map((field) => (
+                    <motion.div key={field.id} variants={reduceMotion ? undefined : fieldItemVariants}>
                       <WizardFieldControl
-                        key={field.id}
                         field={field}
                         value={values[field.id]}
                         onChange={(v) => setValue(field.id, v)}
                         t={t}
-                        reduceMotion={!!reduceMotion}
                       />
-                    ) : (
-                      <motion.div key={field.id} variants={reduceMotion ? undefined : fieldItemVariants}>
-                        <WizardFieldControl
-                          field={field}
-                          value={values[field.id]}
-                          onChange={(v) => setValue(field.id, v)}
-                          t={t}
-                          reduceMotion={!!reduceMotion}
-                        />
-                      </motion.div>
-                    ),
-                  )}
+                    </motion.div>
+                  ))}
                 </motion.div>
 
                 {step.id === "contacto" && !stepError && (

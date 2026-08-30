@@ -3,23 +3,26 @@
   "steps": {
     "servicio": {
       "title": "What service do you need?",
+      "placeholder": "Select a service",
+      "fields": {
+        "servicio": "Service"
+      },
+      "groups": {
+        "metodoCira": "CIRA Method",
+        "intelligenceLab": "Cyrrus Intelligence Lab",
+        "leadershipAcademy": "Leadership Academy",
+        "presenciaDigital": "Digital Presence"
+      },
       "options": {
-        "metodoCira": {
-          "label": "CIRA Method",
-          "description": "Strategic Planning, Solution Selection, Project Management"
-        },
-        "presenciaDigital": {
-          "label": "Digital Presence",
-          "description": "Web Development, SEO"
-        },
-        "capacitacion": {
-          "label": "Corporate Training",
-          "description": "Change Management"
-        },
-        "ia": {
-          "label": "AI Implementation",
-          "description": "Process automation, AI agents"
-        }
+        "estrategia": { "label": "Strategy" },
+        "seleccionSoluciones": { "label": "Solution Selection" },
+        "gestionProyectos": { "label": "Project Management" },
+        "automatizacionIA": { "label": "Automation & AI Agents" },
+        "arquitecturaIA": { "label": "AI Architecture" },
+        "gobiernoIA": { "label": "AI Governance" },
+        "gestionCambio": { "label": "Change Management" },
+        "desarrolloWeb": { "label": "Web Development" },
+        "seo": { "label": "SEO" }
       }
     },
     "empresa": {

@@ -1,4 +1,4 @@
-const GA_ID = "G-YJ7NG91347";
+const GA_ID = "G-2DE75FWH5E";
 
 let loaded = false;
 

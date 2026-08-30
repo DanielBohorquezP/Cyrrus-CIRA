@@ -78,14 +78,14 @@ export default function PlaneacionEstrategica() {
   const digitalGapProblems = t("digitalGap.problems", { returnObjects: true }) as string[];
 
   const siteUrl = "https://www.cyrruscs.com";
-  const pagePath = lang === "en" ? "/en/metodo-cira/planeacion-estrategica" : "/metodo-cira/planeacion-estrategica";
+  const pagePath = lang === "en" ? "/en/metodo-cira/estrategia" : "/metodo-cira/estrategia";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
 
   usePageMeta({
     title: t("meta.title"),
     description: t("meta.description"),
-    alternatePath: lang === "en" ? "/metodo-cira/planeacion-estrategica" : "/en/metodo-cira/planeacion-estrategica",
+    alternatePath: lang === "en" ? "/metodo-cira/estrategia" : "/en/metodo-cira/estrategia",
     jsonLd: [
       {
         "@context": "https://schema.org",

@@ -25,7 +25,7 @@ interface Phase {
 }
 
 const phaseAssets: Record<string, { href: string; image: string }> = {
-  construir: { href: "/metodo-cira/planeacion-estrategica", image: "/assets/decoracion/Portada.jpg" },
+  construir: { href: "/metodo-cira/estrategia", image: "/assets/decoracion/Portada.jpg" },
   identificar: { href: "/metodo-cira/seleccion-de-soluciones", image: "/assets/decoracion/evento-panel-universidad-bolivar.jpeg" },
   realizar: { href: "/metodo-cira/gestion-de-proyectos", image: "/assets/decoracion/IMG_20200313_092701647.jpg" },
   adoptar: { href: "/metodo-cira/gestion-del-cambio", image: "/assets/decoracion/1785866331023.jpg" },

@@ -11,6 +11,7 @@ import {
   Target,
   TrendingDown,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -328,6 +329,46 @@ export default function Seo() {
               </div>
             ))}
           </Reveal>
+        </div>
+      </section>
+
+      <section className="w-full bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {lang === "en" ? "Related solutions" : "Soluciones relacionadas"}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {lang === "en" ? "Presencia Digital also includes" : "Presencia Digital también incluye"}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <RevealItem>
+              <Link
+                to={hubPath}
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+              >
+                <span className="text-base font-semibold text-navy">
+                  {lang === "en" ? "Cyrrus Digital Presence" : "Cyrrus Presencia Digital"}
+                </span>
+                <span className="mt-auto text-sm font-semibold text-blue">
+                  {`${lang === "en" ? "See overview" : "Ver panorama"} →`}
+                </span>
+              </Link>
+            </RevealItem>
+            <RevealItem>
+              <Link
+                to={lang === "en" ? "/en/presencia-digital/desarrollo-web" : "/presencia-digital/desarrollo-web"}
+                className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+              >
+                <span className="text-base font-semibold text-navy">{t("desarrolloWeb.hero.title")}</span>
+                <span className="mt-auto text-sm font-semibold text-blue">
+                  {`${lang === "en" ? "See Web Development" : "Ver Desarrollo Web"} →`}
+                </span>
+              </Link>
+            </RevealItem>
+          </RevealGroup>
         </div>
       </section>
 

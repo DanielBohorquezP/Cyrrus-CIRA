@@ -1,6 +1,4 @@
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import type { WizardField } from "@/lib/contact-wizard-config";
+import type { WizardField, WizardFieldOption } from "@/lib/contact-wizard-config";
 
 type TFn = (key: string, options?: Record<string, unknown>) => string;
 
@@ -9,66 +7,28 @@ interface WizardFieldControlProps {
   value: string;
   onChange: (value: string) => void;
   t: TFn;
-  /** Disables the staggered entrance animation for the choice cards when
-   *  the user has prefers-reduced-motion set. */
-  reduceMotion: boolean;
 }
 
-// Shared with contact-wizard-modal.tsx's field-level stagger — kept local
-// (rather than a shared module) since it's four lines and the two call
-// sites animate different things (fields vs. choice cards).
-const cardContainerVariants = {
-  initial: {},
-  animate: { transition: { staggerChildren: 0.08 } },
-};
-const cardItemVariants = {
-  initial: { opacity: 0, y: 14 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.25, ease: "easeOut" as const } },
-};
+/** Folds a flat, group-ordered options array into <optgroup> buckets —
+ *  consecutive options sharing a groupKey become one group, in the order
+ *  they first appear. Assumes the config keeps same-group options adjacent
+ *  (true for every field defined in contact-wizard-config.ts today). */
+function groupedOptions(options: WizardFieldOption[]): { groupKey: string; options: WizardFieldOption[] }[] {
+  const groups: { groupKey: string; options: WizardFieldOption[] }[] = [];
+  for (const option of options) {
+    const last = groups[groups.length - 1];
+    if (last?.groupKey === option.groupKey) {
+      last.options.push(option);
+    } else {
+      groups.push({ groupKey: option.groupKey ?? "", options: [option] });
+    }
+  }
+  return groups;
+}
 
 /** Renders one field of a wizard step — the field `type` decides the control,
  *  the step component decides layout (single field vs. a 2-up grid). */
-export function WizardFieldControl({ field, value, onChange, t, reduceMotion }: WizardFieldControlProps) {
-  if (field.type === "choice") {
-    return (
-      <motion.div
-        role="radiogroup"
-        aria-label={t(field.labelKey)}
-        className="grid grid-cols-1 gap-3 sm:grid-cols-2"
-        variants={reduceMotion ? undefined : cardContainerVariants}
-        initial={reduceMotion ? undefined : "initial"}
-        animate={reduceMotion ? undefined : "animate"}
-      >
-        {field.options?.map((option) => {
-          const selected = value === option.value;
-          return (
-            <motion.button
-              key={option.value}
-              type="button"
-              role="radio"
-              aria-checked={selected}
-              onClick={() => onChange(option.value)}
-              variants={reduceMotion ? undefined : cardItemVariants}
-              className={cn(
-                "flex min-h-[44px] flex-col items-start gap-1 rounded-xl border-2 p-4 text-left transition-[border-color,background-color,box-shadow] duration-150 ease-out",
-                selected
-                  ? "border-blue bg-light-blue shadow-sm"
-                  : "border-border bg-background hover:border-blue/40 hover:bg-light-blue/40",
-              )}
-            >
-              <span className="text-sm font-semibold text-navy">{t(option.labelKey)}</span>
-              {option.descriptionKey && (
-                <span className="text-xs leading-relaxed text-gray">
-                  {t(option.descriptionKey)}
-                </span>
-              )}
-            </motion.button>
-          );
-        })}
-      </motion.div>
-    );
-  }
-
+export function WizardFieldControl({ field, value, onChange, t }: WizardFieldControlProps) {
   const label = (
     <label htmlFor={field.id} className="text-sm font-medium text-navy">
       {t(field.labelKey)}
@@ -82,6 +42,7 @@ export function WizardFieldControl({ field, value, onChange, t, reduceMotion }: 
   );
 
   if (field.type === "select") {
+    const hasGroups = field.options?.some((option) => option.groupKey);
     return (
       <div className="flex flex-col gap-1.5">
         {label}
@@ -93,13 +54,23 @@ export function WizardFieldControl({ field, value, onChange, t, reduceMotion }: 
           className="h-11 rounded-md border border-border bg-white px-3 text-sm text-navy outline-none transition-[border-color,box-shadow] duration-150 focus:border-blue focus:ring-2 focus:ring-blue/20"
         >
           <option value="" disabled>
-            {t("sizeOptions.placeholder")}
+            {t(field.placeholderKey ?? "sizeOptions.placeholder")}
           </option>
-          {field.options?.map((option) => (
-            <option key={option.value} value={option.value}>
-              {t(option.labelKey)}
-            </option>
-          ))}
+          {hasGroups
+            ? groupedOptions(field.options ?? []).map((group) => (
+                <optgroup key={group.groupKey} label={t(group.groupKey)}>
+                  {group.options.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {t(option.labelKey)}
+                    </option>
+                  ))}
+                </optgroup>
+              ))
+            : field.options?.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {t(option.labelKey)}
+                </option>
+              ))}
         </select>
       </div>
     );
