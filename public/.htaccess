@@ -4,3 +4,8 @@ ErrorDocument 404 /404.html
 RewriteEngine On
 RewriteRule ^metodo-cira/planeacion-estrategica/?$ /metodo-cira/estrategia/ [R=301,L]
 RewriteRule ^en/metodo-cira/planeacion-estrategica/?$ /en/metodo-cira/estrategia/ [R=301,L]
+
+# Site is 100% static — no PHP backend exists. Force any leftover .php
+# request (remnants of the old CMS) to a clean 404 instead of letting the
+# server's PHP handler try and fail with a 503.
+RewriteRule \.php$ - [R=404,L]
