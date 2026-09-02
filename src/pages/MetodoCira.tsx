@@ -68,7 +68,7 @@ export default function MetodoCira() {
     ),
   }));
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const homePath = lang === "en" ? "/en" : "/";
 

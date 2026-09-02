@@ -76,7 +76,7 @@ export default function SeleccionDeSoluciones() {
   const process = t("process.steps", { returnObjects: true }) as ProcessStep[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const pagePath = `${prefix}/metodo-cira/seleccion-de-soluciones`;

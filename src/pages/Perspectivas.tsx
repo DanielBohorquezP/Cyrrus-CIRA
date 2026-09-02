@@ -17,7 +17,7 @@ export default function Perspectivas() {
   const lang = useLang();
   const { openWizard } = useContactWizard();
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/perspectivas" : "/perspectivas";
 
   usePageMeta({

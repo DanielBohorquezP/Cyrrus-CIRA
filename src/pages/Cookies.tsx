@@ -11,7 +11,7 @@ export default function Cookies() {
   const { t } = useTranslation("legal");
   const lang = useLang();
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/cookies" : "/cookies";
 
   usePageMeta({

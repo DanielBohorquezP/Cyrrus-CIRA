@@ -16,4 +16,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cyrruscs.com/sitemap.xml
+Sitemap: https://cyrruscs.com/sitemap.xml

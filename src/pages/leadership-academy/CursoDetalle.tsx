@@ -29,7 +29,7 @@ export default function CursoDetalle() {
   const entry = getWorkshopBySlug(curso);
   const tr = entry ? (t(`workshops.${entry.slug}`, { returnObjects: true }) as WorkshopTranslation) : undefined;
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/leadership-academy" : "/leadership-academy";
   const pagePath = entry ? `${prefix}/leadership-academy/${entry.slug}` : hubPath;

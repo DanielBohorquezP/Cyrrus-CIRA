@@ -100,7 +100,7 @@ export default function SeleccionProducto() {
   const entregables = slug ? (t(`${slug}.entregables`, { ns: "seleccion-productos", returnObjects: true }) as Entregables) : undefined;
   const faqs = slug ? (t(`${slug}.faq`, { ns: "seleccion-productos", returnObjects: true }) as Faq[]) : undefined;
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const selectionPath = `${prefix}/metodo-cira/seleccion-de-soluciones`;

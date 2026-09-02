@@ -18,7 +18,7 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 
 const rootDir = path.resolve(import.meta.dirname, "..");
-const SITE_URL = "https://www.cyrruscs.com";
+const SITE_URL = "https://cyrruscs.com";
 
 const routeMeta = JSON.parse(
   await readFile(path.join(rootDir, "src/lib/route-meta.json"), "utf-8"),

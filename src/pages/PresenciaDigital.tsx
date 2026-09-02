@@ -48,7 +48,7 @@ export default function PresenciaDigital() {
   }));
   const faqs = t("hub.faq.items", { returnObjects: true }) as Faq[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const pagePath = `${prefix}/presencia-digital`;
 

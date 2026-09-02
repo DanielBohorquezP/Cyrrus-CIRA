@@ -72,7 +72,7 @@ export default function DesarrolloWeb() {
   const faqs = t("desarrolloWeb.faq.items", { returnObjects: true }) as Faq[];
   const stats = t("desarrolloWeb.whyCyrrus.stats", { returnObjects: true }) as Stat[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/presencia-digital/desarrollo-web" : "/presencia-digital/desarrollo-web";
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/presencia-digital" : "/presencia-digital";

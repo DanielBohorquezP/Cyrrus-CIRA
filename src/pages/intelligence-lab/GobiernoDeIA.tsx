@@ -37,7 +37,7 @@ export default function GobiernoDeIA() {
   const faqs = t("gobierno.faq.items", { returnObjects: true }) as Faq[];
   const body = t("gobierno.body", { returnObjects: true }) as string[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/intelligence-lab" : "/intelligence-lab";
   const pagePath = lang === "en" ? "/en/intelligence-lab/gobierno-de-ia" : "/intelligence-lab/gobierno-de-ia";

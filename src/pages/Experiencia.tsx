@@ -76,7 +76,7 @@ export default function Experiencia() {
     photo: teamPhotos[i],
   }));
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/experiencia" : "/experiencia";
 
   usePageMeta({

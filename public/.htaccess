@@ -1,11 +1,38 @@
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 
+# Each route is prerendered to <route>/index.html. Apache's mod_dir would
+# answer /metodo-cira with a 301 to /metodo-cira/, but every canonical, sitemap
+# entry and internal link on this site uses the slash-less form — so that
+# redirect made every canonical URL point at a redirect, which is what kept
+# Google from settling on a canonical and indexing anything.
+DirectorySlash Off
+
 RewriteEngine On
-RewriteRule ^metodo-cira/planeacion-estrategica/?$ /metodo-cira/estrategia/ [R=301,L]
-RewriteRule ^en/metodo-cira/planeacion-estrategica/?$ /en/metodo-cira/estrategia/ [R=301,L]
+
+RewriteRule ^metodo-cira/planeacion-estrategica/?$ /metodo-cira/estrategia [R=301,L]
+RewriteRule ^en/metodo-cira/planeacion-estrategica/?$ /en/metodo-cira/estrategia [R=301,L]
 
 # Site is 100% static — no PHP backend exists. Force any leftover .php
 # request (remnants of the old CMS) to a clean 404 instead of letting the
 # server's PHP handler try and fail with a 503.
 RewriteRule \.php$ - [R=404,L]
+
+# One canonical form per page: strip the trailing slash (the root keeps its
+# own). Google has already crawled the slashed variants, so this has to be a
+# 301, not an internal rewrite.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+?)/$ /$1 [R=301,L]
+
+# Serve the slash-less URL from the prerendered file, with a 200 — no redirect.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.+)$ /$1/index.html [L]
+
+# A directory with no index.html (e.g. /assets) would otherwise be listed now
+# that DirectorySlash is off. Done with mod_rewrite rather than "Options
+# -Indexes" because Options needs an AllowOverride class this host may not
+# grant, and a rejected directive here 500s the whole site.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html !-f
+RewriteRule ^ - [R=404,L]

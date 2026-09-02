@@ -11,7 +11,7 @@ export default function Privacidad() {
   const { t } = useTranslation("legal");
   const lang = useLang();
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/privacidad" : "/privacidad";
 
   usePageMeta({

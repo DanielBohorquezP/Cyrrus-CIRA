@@ -60,7 +60,7 @@ export default function LeadershipAcademy() {
     href: `${prefix}/leadership-academy/${w.slug}`,
   }));
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const pagePath = `${prefix}/leadership-academy`;
 

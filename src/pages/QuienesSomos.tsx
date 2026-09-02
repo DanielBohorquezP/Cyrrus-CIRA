@@ -34,16 +34,13 @@ export default function QuienesSomos() {
   }));
   const credentials = t("quienesSomos.trajectory.items", { returnObjects: true }) as string[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/quienes-somos" : "/quienes-somos";
 
   usePageMeta({
     title: t("quienesSomos.meta.title"),
     description: t("quienesSomos.meta.description"),
-    // See the OG_IMAGE_BASE comment in use-page-meta.ts — www.cyrruscs.com
-    // isn't connected to this deployment yet, so this points at the working
-    // Vercel domain until the real domain is connected.
-    image: "https://cyrrus-cira.vercel.app/assets/og-quienes-somos.png",
+    image: "https://cyrruscs.com/assets/og-quienes-somos.png",
     alternatePath: lang === "en" ? "/quienes-somos" : "/en/quienes-somos",
     jsonLd: [
       {
@@ -54,7 +51,7 @@ export default function QuienesSomos() {
         jobTitle: lang === "en" ? "CEO & Founder" : "CEO & Fundador",
         worksFor: { "@id": `${siteUrl}/#organization` },
         url: `${siteUrl}${pagePath}`,
-        image: "https://www.cyrruscs.com/assets/decoracion/JacksonCEO1.jpeg",
+        image: "https://cyrruscs.com/assets/decoracion/JacksonCEO1.jpeg",
         sameAs: ["https://www.linkedin.com/in/jacksonbohorquezb/"],
       },
       {

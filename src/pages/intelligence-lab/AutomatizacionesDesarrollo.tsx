@@ -37,7 +37,7 @@ export default function AutomatizacionesDesarrollo() {
   const faqs = t("automatizaciones.faq.items", { returnObjects: true }) as Faq[];
   const body = t("automatizaciones.body", { returnObjects: true }) as string[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/intelligence-lab" : "/intelligence-lab";
   const pagePath = lang === "en" ? "/en/intelligence-lab/automatizaciones-desarrollo" : "/intelligence-lab/automatizaciones-desarrollo";

@@ -41,7 +41,7 @@ export default function SolucionDetalle() {
   const assets = slug ? solutionDetailImages[slug] : undefined;
   const icons = slug ? solutionItemIcons[slug] : undefined;
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const selectionPath = `${prefix}/metodo-cira/seleccion-de-soluciones`;

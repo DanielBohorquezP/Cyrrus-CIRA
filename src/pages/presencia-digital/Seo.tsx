@@ -71,7 +71,7 @@ export default function Seo() {
   const faqs = t("seo.faq.items", { returnObjects: true }) as Faq[];
   const stats = t("seo.whyCyrrus.stats", { returnObjects: true }) as Stat[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/presencia-digital/seo" : "/presencia-digital/seo";
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/presencia-digital" : "/presencia-digital";

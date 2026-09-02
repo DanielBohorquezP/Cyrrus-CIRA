@@ -77,7 +77,7 @@ export default function PlaneacionEstrategica() {
   const stats = t("whyCeos.stats", { returnObjects: true }) as Stat[];
   const digitalGapProblems = t("digitalGap.problems", { returnObjects: true }) as string[];
 
-  const siteUrl = "https://www.cyrruscs.com";
+  const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/metodo-cira/estrategia" : "/metodo-cira/estrategia";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";

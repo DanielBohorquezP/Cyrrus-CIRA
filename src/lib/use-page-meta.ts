@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const SITE_URL = "https://www.cyrruscs.com";
+const SITE_URL = "https://cyrruscs.com";
 
 const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/og-image.png`;
 
