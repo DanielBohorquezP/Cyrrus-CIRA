@@ -1,4 +1,5 @@
 import { ArrowRight, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,12 @@ interface Post {
   published: string;
   url: string;
   image: string;
+  /** Internal route to a real, published article. When set, the card links
+   *  there instead of showing the "Próximamente" placeholder overlay. */
+  href?: string;
+  /** Pre-localized override for the footer date line (e.g. "Published Sep 8, 2026").
+   *  Falls back to the Spanish "Se publica en {published}" placeholder copy. */
+  dateLabel?: string;
 }
 
 interface Blog7Props {
@@ -111,41 +118,56 @@ const Blog7 = ({
           )}
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {posts.map((post) => (
-            <Card key={post.id} className="grid grid-rows-[auto_auto_1fr_auto]">
-              <div className="relative aspect-[16/9] w-full">
-                <Img
-                  src={post.image}
-                  alt={post.title}
-                  width={400}
-                  height={240}
-                  className="h-full w-full object-cover object-center"
-                  sizes="(min-width: 1024px) 368px, (min-width: 640px) 50vw, 100vw"
-                />
-                <div className="absolute inset-0 bg-navy/70" aria-hidden="true" />
-                <span className="absolute inset-0 flex items-center justify-center px-4 text-center">
-                  <span className="rounded-full bg-navy px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-white">
-                    Próximamente
+          {posts.map((post) => {
+            const card = (
+              <Card className="grid grid-rows-[auto_auto_1fr_auto] transition-[box-shadow] duration-150 ease-out has-[a:hover]:shadow-lg">
+                <div className="relative aspect-[16/9] w-full">
+                  <Img
+                    src={post.image}
+                    alt={post.title}
+                    width={400}
+                    height={240}
+                    className="h-full w-full object-cover object-center"
+                    sizes="(min-width: 1024px) 368px, (min-width: 640px) 50vw, 100vw"
+                  />
+                  {!post.href && (
+                    <>
+                      <div className="absolute inset-0 bg-navy/70" aria-hidden="true" />
+                      <span className="absolute inset-0 flex items-center justify-center px-4 text-center">
+                        <span className="rounded-full bg-navy px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-white">
+                          Próximamente
+                        </span>
+                      </span>
+                    </>
+                  )}
+                </div>
+                <CardHeader>
+                  <h2 className="text-lg font-semibold md:text-xl">
+                    {post.href ? (
+                      <Link to={post.href} className="hover:text-cyan">
+                        {post.title}
+                      </Link>
+                    ) : (
+                      post.title
+                    )}
+                  </h2>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{post.summary}</p>
+                </CardContent>
+                <CardFooter>
+                  <span className="flex items-center text-muted-foreground">
+                    <Clock className="mr-2 size-4" />
+                    {/* Single interpolation: literal text next to an expression is
+                        two adjacent text nodes to React, but one after the DOM
+                        serialises it, which breaks hydration of the whole page. */}
+                    {post.dateLabel ?? `Se publica en ${post.published}`}
                   </span>
-                </span>
-              </div>
-              <CardHeader>
-                <h2 className="text-lg font-semibold md:text-xl">{post.title}</h2>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{post.summary}</p>
-              </CardContent>
-              <CardFooter>
-                <span className="flex items-center text-muted-foreground">
-                  <Clock className="mr-2 size-4" />
-                  {/* Single interpolation: literal text next to an expression is
-                      two adjacent text nodes to React, but one after the DOM
-                      serialises it, which breaks hydration of the whole page. */}
-                  {`Se publica en ${post.published}`}
-                </span>
-              </CardFooter>
-            </Card>
-          ))}
+                </CardFooter>
+              </Card>
+            );
+            return <div key={post.id}>{card}</div>;
+          })}
         </div>
       </div>
     </section>

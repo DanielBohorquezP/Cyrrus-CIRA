@@ -29,6 +29,9 @@ const solutionSlugs = [...solutionsSrc.matchAll(/slug:\s*"([a-z0-9-]+)"/g)].map(
 const workshopsSrc = await readFile(path.join(rootDir, "src/lib/workshops-data.ts"), "utf-8");
 const workshopSlugs = [...workshopsSrc.matchAll(/slug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]);
 
+const blogSrc = await readFile(path.join(rootDir, "src/lib/blog-data.ts"), "utf-8");
+const blogSlugs = [...blogSrc.matchAll(/slug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]);
+
 const extraRoutes = ["/privacidad", "/cookies"];
 
 // Rendered separately below and written to dist/404.html (Vercel's static
@@ -42,6 +45,7 @@ const esRoutes = [
     ...Object.keys(routeMeta),
     ...solutionSlugs.map((slug) => `/metodo-cira/seleccion-de-soluciones/${slug}`),
     ...workshopSlugs.map((slug) => `/leadership-academy/${slug}`),
+    ...blogSlugs.map((slug) => `/perspectivas/${slug}`),
     ...extraRoutes,
   ]),
 ];

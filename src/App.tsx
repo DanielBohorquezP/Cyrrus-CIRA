@@ -142,6 +142,7 @@ const GobiernoDeIA = lazyPage(() => import("@/pages/intelligence-lab/GobiernoDeI
 const DesarrolloWeb = lazyPage(() => import("@/pages/presencia-digital/DesarrolloWeb"));
 const Seo = lazyPage(() => import("@/pages/presencia-digital/Seo"));
 const CursoDetalle = lazyPage(() => import("@/pages/leadership-academy/CursoDetalle"));
+const ArticuloPerspectiva = lazyPage(() => import("@/pages/ArticuloPerspectiva"));
 const Privacidad = lazyPage(() => import("@/pages/Privacidad"));
 const Cookies = lazyPage(() => import("@/pages/Cookies"));
 const NotFound = lazyPage(() => import("@/pages/NotFound"));
@@ -181,6 +182,7 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/experiencia", Component: Experiencia },
   { path: "/quienes-somos", Component: QuienesSomos },
   { path: "/perspectivas", Component: Perspectivas },
+  { path: "/perspectivas/:articulo", Component: ArticuloPerspectiva },
   { path: "/privacidad", Component: Privacidad },
   { path: "/cookies", Component: Cookies },
 ];

@@ -1,42 +1,5 @@
 export const upcomingTopics = [
   {
-    id: "post-1",
-    title:
-      "Por qué fracasan los proyectos de transformación digital (y cómo evitarlo)",
-    summary:
-      "Las organizaciones no fallan por falta de estrategia ni de tecnología. Fallan cuando nadie conecta la decisión con la ejecución. Un análisis de los puntos de quiebre más comunes en las 4 fases de toda transformación.",
-    label: "Transformación digital",
-    author: "Equipo Cyrrus",
-    published: "Septiembre 2026",
-    url: "/perspectivas",
-    image:
-      "/assets/decoracion/IMG_20240822_085440_710.jpg",
-  },
-  {
-    id: "post-2",
-    title: "Cómo elegir una consultora estratégica confiable",
-    summary:
-      "Cómo comparar firmas de consultoría más allá del logo o el tamaño. Tres criterios claros: método propio, acompañamiento de punta a punta y pruebas reales de resultados.",
-    label: "Consultoría estratégica",
-    author: "Equipo Cyrrus",
-    published: "Septiembre 2026",
-    url: "/perspectivas",
-    image:
-      "/assets/decoracion/IMG-20240215-WA0022.jpg",
-  },
-  {
-    id: "post-3",
-    title: "Qué es el gobierno de IA corporativo y por qué su empresa lo necesita",
-    summary:
-      "Antes de adoptar herramientas de IA hace falta un marco de gobierno. Debe responder tres preguntas: quién decide, quién audita y qué datos se pueden usar.",
-    label: "Gobierno de IA",
-    author: "Equipo Cyrrus",
-    published: "Octubre 2026",
-    url: "/perspectivas",
-    image:
-      "/assets/decoracion/evento-ia-tecnologia.jpeg",
-  },
-  {
     id: "post-4",
     title: "ERP: qué es y por qué su empresa lo necesita",
     summary:
