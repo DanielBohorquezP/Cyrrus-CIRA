@@ -6,19 +6,21 @@
   "hero": {
     "eyebrow": "Método CIRA — Identificar",
     "title": "Selección de tecnología sin sesgo de proveedor",
-    "description": "Se compra tecnología por moda, no por ajuste real al negocio. Nuestra selección de tecnología parte siempre de los requerimientos del negocio, no del catálogo del proveedor — evaluación 100% agnóstica, con criterios objetivos y comparables.",
+    "description": "Muchas decisiones de tecnología no parten de lo que el negocio realmente necesita. Nuestra selección siempre arranca en los requerimientos del negocio, no en el catálogo del proveedor — evaluación 100% agnóstica, con criterios objetivos y comparables.",
     "ctaLabel": "Hablemos de su solución"
   },
   "intro": {
     "kicker": "¿Cómo lo hacemos?",
     "pullQuote": "Una solución a la medida de su contexto empresarial, no del catálogo del proveedor.",
-    "description": "Incorporamos un enfoque integral que abarca factores clave como el sector económico, el tamaño de la empresa, su grado de madurez tecnológica y sus procesos de negocio. Nuestro objetivo es ofrecerle una solución a medida que se ajuste perfectamente a sus necesidades y contexto empresarial.",
+    "description": "Evaluamos el sector económico, el tamaño de la empresa, su madurez tecnológica y sus procesos de negocio antes de recomendar nada. La solución sale de ese diagnóstico, no de una plantilla genérica.",
     "bullets": [
       "Evaluación 360º del sector, tamaño y madurez técnica de su negocio.",
       "Comparación 100% agnóstica, sin sesgo comercial hacia ninguna marca.",
       "Criterios objetivos y comparables, definidos antes de mirar proveedores."
     ],
-    "ctaLabel": "Agendar diagnóstico ejecutivo"
+    "ctaLabel": "Agendar diagnóstico ejecutivo",
+    "methodLinkText": "Esta es la fase Identificar dentro del",
+    "methodLinkLabel": "Método CIRA completo"
   },
   "criteria": {
     "eyebrow": "Criterios de evaluación",
@@ -26,31 +28,31 @@
     "items": [
       {
         "title": "Funcional",
-        "description": "Garantizamos la idoneidad a corto plazo resolviendo las necesidades clave operativas de su compañía."
+        "description": "Resuelve las necesidades operativas reales de la compañía, no solo lo que aparece en el brochure del proveedor."
       },
       {
         "title": "Técnica",
-        "description": "Aseguramos la madurez tecnológica, evaluando compatibilidades para reducir costos ocultos de integración."
+        "description": "Compatible con lo que la empresa ya tiene — sin costos ocultos de integración que aparecen después de firmar."
       },
       {
         "title": "Económica",
-        "description": "Mediciones precisas de viabilidad de presupuesto, asegurando sostenibilidad en inversiones y gasto operativo."
+        "description": "El presupuesto alcanza para implementarla y sostenerla, no solo para comprarla."
       },
       {
         "title": "Sostenible",
-        "description": "Compromiso con la sostenibilidad empresarial: garantizamos el crecimiento sostenido de su empresa en el tiempo."
+        "description": "Crece con la empresa en los próximos años, no solo resuelve el problema de hoy."
       }
     ]
   },
   "reto": {
     "eyebrow": "Nuestro reto",
-    "pullQuote": "Seleccionar soluciones ajustadas a la medida de su organización.",
-    "description": "El desafío de las corporaciones no es buscar proveedores, es asegurarse de que el proveedor cumple lo que promete y encaja en la operación sin fricciones. Analizamos cada variable en tiempo récord.",
+    "pullQuote": "Elegir la solución que se ajusta a su organización, no la que mejor vende el proveedor.",
+    "description": "El reto no es encontrar proveedores, es confirmar que cumplen lo que prometen y encajan en la operación sin fricciones. Analizamos cada variable con datos, no con la presentación comercial del proveedor.",
     "solutionTitle": "Cómo lo resolvemos",
     "bullets": [
-      "Reestructuramos las variables a considerar y las ligamos a las necesidades reales de la empresa.",
-      "Elaboración del RFP clasificado por atributos técnicos y funcionales.",
-      "Acompañamiento en negociación y cierre de contrato, buscando siempre generar valor agregado para su organización."
+      "Definimos las variables a evaluar según las necesidades reales de la empresa, no según lo que ofrece el mercado.",
+      "RFP clasificado por atributos técnicos y funcionales, no por el marketing del proveedor.",
+      "Acompañamos la negociación hasta que el contrato queda firmado."
     ]
   },
   "benefits": {
@@ -59,27 +61,27 @@
     "items": [
       {
         "title": "Visión 360° para decisiones transformadoras",
-        "description": "Ofrecemos una visión integral que aborda todos los detalles cruciales para decisiones que transforman su negocio, con un análisis rápido y completo."
+        "description": "Cruzamos sector, tamaño y madurez tecnológica en un solo análisis, en vez de evaluar cada variable por separado."
       },
       {
         "title": "Selección multidimensional",
-        "description": "Nuestro servicio va más allá de la búsqueda convencional: calificamos soluciones desde una perspectiva funcional, técnica y económica."
+        "description": "Calificamos cada propuesta en lo funcional, lo técnico y lo económico al mismo tiempo, no una cosa primero y las otras después."
       },
       {
         "title": "Enfoque integral personalizado",
-        "description": "Adaptamos el análisis según el sector económico, la madurez tecnológica y los procesos empresariales, para una solución única."
+        "description": "El mismo proceso da resultados distintos según el sector y la madurez tecnológica de cada empresa — no aplicamos la misma receta dos veces."
       },
       {
         "title": "Medición rigurosa de propuestas",
-        "description": "Aseguramos no solo la idoneidad a corto plazo, sino también la sostenibilidad operativa, evaluando a fondo cada proponente."
+        "description": "Evaluamos a fondo a cada proponente, no solo al que llega con la mejor presentación."
       },
       {
         "title": "Eficiencia en la toma de decisiones",
-        "description": "Garantizamos un análisis rápido, permitiéndole tomar decisiones informadas de manera ágil y eficiente, sin perder detalle."
+        "description": "Un proceso de 6 a 12 semanas, no meses de reuniones sin conclusión."
       },
       {
         "title": "Sostenibilidad empresarial",
-        "description": "Más que encontrar una solución, nos enfocamos en encontrar una herramienta que contribuya al crecimiento continuo de su organización."
+        "description": "La herramienta seleccionada sigue sirviendo cuando la empresa crece, no solo el día que se implementa."
       }
     ]
   },
@@ -188,6 +190,32 @@
       {
         "question": "¿Qué incluye el RFP que preparan?",
         "answer": "El documento de Solicitud de Propuestas se clasifica por atributos técnicos y funcionales, y se acompaña de la recepción y evaluación de propuestas, presentaciones ejecutivas, referenciación de proveedores y acompañamiento en la negociación del contrato."
+      },
+      {
+        "question": "¿Solo ayudan a elegir ERP o también otras tecnologías?",
+        "answer": "Evaluamos software de gestión (ERP, CRM, HCM, EAM), tecnologías avanzadas (inteligencia artificial, automatización, RPA) e infraestructura tecnológica (ciberseguridad, nube, continuidad de negocio) con el mismo proceso de 12 etapas y los mismos cuatro criterios objetivos."
+      },
+      {
+        "question": "¿En qué se diferencia esto de un integrador o distribuidor de software?",
+        "answer": "Un integrador o distribuidor vende o implementa una marca específica y tiene un incentivo comercial en el resultado. Nosotros no recibimos comisión de ningún proveedor: nuestro único interés es que la solución elegida se ajuste a su negocio, no a un catálogo."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "Servicios relacionados",
+    "title": "Las otras fases del Método CIRA",
+    "items": [
+      {
+        "title": "Estrategia empresarial",
+        "description": "La fase Construir: la hoja de ruta que define qué hay que resolver."
+      },
+      {
+        "title": "Gerencia de proyectos (PMO)",
+        "description": "La fase Realizar: quién gobierna la implementación de lo elegido."
+      },
+      {
+        "title": "Gestión del cambio",
+        "description": "La fase Adoptar: que la organización use lo que se seleccionó."
       }
     ]
   },

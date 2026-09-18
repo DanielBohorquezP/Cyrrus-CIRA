@@ -6,19 +6,21 @@
   "hero": {
     "eyebrow": "CIRA Method — Identify",
     "title": "Technology selection without vendor bias",
-    "description": "Technology gets bought because it's trending, not because it truly fits the business. Our technology selection always starts from the business's requirements, not the vendor's catalog — 100% agnostic evaluation, with objective, comparable criteria.",
+    "description": "Many technology decisions don't start from what the business actually needs. Our selection always starts from the business's requirements, not the vendor's catalog — 100% agnostic evaluation, with objective, comparable criteria.",
     "ctaLabel": "Let's talk about your solution"
   },
   "intro": {
     "kicker": "How we do it",
     "pullQuote": "A solution built for your business context, not the vendor's catalog.",
-    "description": "We take a comprehensive approach that covers key factors like your industry, company size, technological maturity, and business processes. Our goal is to offer you a tailored solution that fits your needs and business context perfectly.",
+    "description": "We look at your industry, company size, technological maturity, and business processes before recommending anything. The solution comes out of that diagnosis, not a generic template.",
     "bullets": [
       "360° assessment of your business's sector, size, and technical maturity.",
       "100% agnostic comparison, with no commercial bias toward any brand.",
       "Objective, comparable criteria, defined before looking at vendors."
     ],
-    "ctaLabel": "Schedule an executive diagnosis"
+    "ctaLabel": "Schedule an executive diagnosis",
+    "methodLinkText": "This is the Identify phase within the",
+    "methodLinkLabel": "full CIRA Method"
   },
   "criteria": {
     "eyebrow": "Evaluation criteria",
@@ -26,31 +28,31 @@
     "items": [
       {
         "title": "Functional",
-        "description": "We guarantee short-term fit by solving your company's key operational needs."
+        "description": "Solves the company's real operational needs, not just what's in the vendor's brochure."
       },
       {
         "title": "Technical",
-        "description": "We ensure technological maturity, evaluating compatibility to reduce hidden integration costs."
+        "description": "Compatible with what the company already runs — no hidden integration costs that show up after signing."
       },
       {
         "title": "Economic",
-        "description": "Precise budget-feasibility measurements, ensuring sustainable investment and operating spend."
+        "description": "The budget covers implementing and sustaining it, not just buying it."
       },
       {
         "title": "Sustainable",
-        "description": "A commitment to business sustainability: we guarantee your company's sustained growth over time."
+        "description": "Grows with the company over the next few years, not just today's problem."
       }
     ]
   },
   "reto": {
     "eyebrow": "Our challenge",
-    "pullQuote": "Selecting solutions built to fit your organization.",
-    "description": "The challenge for corporations isn't finding vendors — it's making sure the vendor delivers on its promises and fits the operation without friction. We analyze every variable in record time.",
+    "pullQuote": "Choosing the solution that fits your organization, not the one the vendor sells best.",
+    "description": "The challenge isn't finding vendors — it's confirming they deliver on what they promise and fit the operation without friction. We analyze every variable with data, not the vendor's sales pitch.",
     "solutionTitle": "How we solve it",
     "bullets": [
-      "We restructure the variables to consider and tie them to the business's real needs.",
-      "We draft the RFP classified by technical and functional attributes.",
-      "We support negotiation and contract close, always aiming to generate added value for your organization."
+      "We define the variables to evaluate based on the business's real needs, not what the market happens to offer.",
+      "RFP classified by technical and functional attributes, not vendor marketing.",
+      "We support the negotiation through to a signed contract."
     ]
   },
   "benefits": {
@@ -59,27 +61,27 @@
     "items": [
       {
         "title": "360° view for transformative decisions",
-        "description": "We offer a comprehensive view that covers every crucial detail for decisions that transform your business, with fast, complete analysis."
+        "description": "We cross industry, size, and technology maturity in a single analysis, instead of evaluating each variable on its own."
       },
       {
         "title": "Multidimensional selection",
-        "description": "Our service goes beyond conventional vendor search: we score solutions from a functional, technical, and economic perspective."
+        "description": "We score every proposal on functional, technical, and economic fit at the same time — not one first and the others later."
       },
       {
         "title": "Personalized, comprehensive approach",
-        "description": "We tailor the analysis to your industry, technological maturity, and business processes, for a truly unique solution."
+        "description": "The same process gives different results depending on each company's industry and technology maturity — we don't apply the same recipe twice."
       },
       {
         "title": "Rigorous proposal evaluation",
-        "description": "We ensure not just short-term fit but also operational sustainability, thoroughly evaluating every bidder."
+        "description": "We evaluate every bidder in depth, not just the one with the best pitch."
       },
       {
         "title": "Decision-making efficiency",
-        "description": "We guarantee fast analysis, letting you make informed decisions quickly and efficiently, without missing a detail."
+        "description": "A 6-to-12-week process, not months of meetings with no conclusion."
       },
       {
         "title": "Business sustainability",
-        "description": "Beyond finding a solution, we focus on finding a tool that contributes to your organization's continuous growth."
+        "description": "The tool you select still works once the company grows, not just on the day it goes live."
       }
     ]
   },
@@ -188,6 +190,32 @@
       {
         "question": "What does the RFP you prepare include?",
         "answer": "The Request for Proposal document is classified by technical and functional attributes, and paired with proposal intake and evaluation, executive presentations, vendor referencing, and support through contract negotiation."
+      },
+      {
+        "question": "Do you only help choose ERP, or other technologies too?",
+        "answer": "We evaluate business software (ERP, CRM, HCM, EAM), advanced technologies (artificial intelligence, automation, RPA), and technology infrastructure (cybersecurity, cloud, business continuity) with the same 12-stage process and the same four objective criteria."
+      },
+      {
+        "question": "How is this different from a systems integrator or software reseller?",
+        "answer": "An integrator or reseller sells or implements a specific brand and has a commercial stake in the outcome. We don't receive commissions from any vendor: our only interest is that the chosen solution fits your business, not a catalog."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "Related services",
+    "title": "The other phases of the CIRA Method",
+    "items": [
+      {
+        "title": "Business strategy",
+        "description": "The Build phase: the roadmap that defines what needs to be solved."
+      },
+      {
+        "title": "Project management (PMO)",
+        "description": "The Execute phase: who governs the implementation of what was chosen."
+      },
+      {
+        "title": "Change management",
+        "description": "The Adopt phase: making sure the organization uses what was selected."
       }
     ]
   },
