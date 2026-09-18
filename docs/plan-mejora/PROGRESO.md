@@ -40,15 +40,16 @@
 > "Servicios relacionados" por ser un componente compartido
 > (`SeleccionProducto.tsx`).
 >
-> Siguiente candidato: **4.8** (sincronizar `route-meta.json` con
-> `usePageMeta`, mecánico y sin bloqueos) para cerrar la parte técnica de
-> Fase 4 antes de seguir con contenido — con 4.4 cerrado, todas las páginas
-> de Fase 4 con longitud medida en PLAN.md ya tienen el patrón de enlazado y
-> FAQ ampliada. Quedan sin profundizar (contenido "—" en la tabla de
-> PLAN.md, sin FAQ propia ni sección de síntomas): `seleccion-de-software`
-> (hub bespoke), CRM/HCM/EAM y `arquitectura-de-ia`/
-> `automatizaciones-desarrollo` (Intelligence Lab, ya tienen "Servicios
-> relacionados" desde 4.7 pero no FAQ ampliada nueva).
+> Con 4.8 cerrado, toda la parte técnica de Fase 4 está lista. Queda solo
+> contenido: profundizar (sin FAQ propia ni sección de síntomas, "—" en la
+> tabla de PLAN.md) `seleccion-de-software` (hub bespoke), CRM/HCM/EAM y
+> `arquitectura-de-ia`/`automatizaciones-desarrollo` (Intelligence Lab, ya
+> tienen "Servicios relacionados" desde 4.7 pero no FAQ ampliada nueva).
+> Siguiente candidato natural: CRM/HCM/EAM (mismo componente
+> `SeleccionProducto.tsx` que ya tiene el patrón de enlazado desde ERP en
+> 4.3, solo falta la FAQ propia de cada producto) — o pasar a Fase 3
+> (Leadership Academy, 3.2 "coherencia del hub" no tiene bloqueos) o Fase 6
+> (backlinks/LinkedIn) si se prefiere salir de Fase 4 por ahora.
 > El caso real de cada página sigue bloqueado por 2.1 — dejar ese bloque
 > para después o usar un placeholder que no invente cifras (ver D4 en
 > PLAN.md: toda cifra necesita fuente o se quita).
@@ -110,7 +111,7 @@
 | 4.5 | Gerencia de proyectos (PMO) | 🟡 | Prioridad 2 de nicho. Enlace a `/metodo-cira` y al artículo "por qué fracasan los proyectos de transformación" en la intro, sección "Servicios relacionados" (ERP, Gestión del cambio, Automatización con IA) y 2 FAQ nuevas (duración, PMO as a Service). Falta caso real (2.1) |
 | 4.6 | Gestión del cambio | 🟡 | Enlace a `/metodo-cira` en la intro (fase Adoptar), sección "Servicios relacionados" (Selección de ERP, Gerencia de Proyectos, Gobierno de IA) y 2 FAQ nuevas (adopción de ERP, diferencia con change management tradicional). Falta caso real (2.1) |
 | 4.7 | Intelligence Lab + 3 subpáginas | 🟡 | Las más delgadas. Se corrigió un bug: el hub enlazaba a anclas `/metodo-cira#construir` etc. que no existían — ahora apuntan a las 4 páginas de servicio reales. Las 3 subpáginas (Gobierno de IA, Arquitectura de IA, Automatizaciones) suman sección "Servicios relacionados" cruzándose entre sí y hacia Gestión del cambio / Selección de ERP / Gerencia de Proyectos. Sigue pendiente ampliar la profundidad de contenido (palabras, FAQ nueva) y el caso real (2.1) |
-| 4.8 | Sincronizar `route-meta.json` con `usePageMeta` | ⬜ | |
+| 4.8 | Sincronizar `route-meta.json` con `usePageMeta` | ✅ | Las 31 rutas reescritas con el título/descripción ES exacto que emite cada página hoy (confirmado que `title`/`description` en este archivo no se leen en runtime, solo las claves de ruta — ver bitácora) |
 
 ### Fase 5 — Contenido
 | ID | Tarea | Estado | Notas |
@@ -179,6 +180,52 @@
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
+
+### 2026-09-18 — Fase 4: sincronización de `route-meta.json` (4.8)
+- **Tarea:** 4.8 — última pendiente de la parte técnica de Fase 4, sin
+  bloqueos ("mecánico" según el Próximo paso de la sesión anterior).
+- **Hallazgo antes de tocar nada:** `title`/`description` en
+  `src/lib/route-meta.json` **no se leen en ningún momento en runtime** —
+  confirmado con grep sobre `scripts/generate-sitemap.mjs`,
+  `scripts/prerender.mjs` y todo `src/`. Los dos scripts solo usan
+  `Object.keys(routeMeta)` para construir la lista de rutas a prerenderizar
+  y a incluir en el sitemap; el texto de cada entrada es puramente
+  documentación para quien lee el archivo. Por eso llevaba varias sesiones
+  desincronizado sin que nadie lo notara ni afectara SEO real (el meta real
+  siempre salió de `usePageMeta` en cada página, vía los JSON de i18n).
+- **Hecho:** reescritas las 31 entradas de `route-meta.json` con el
+  `title`/`description` ES exacto que emite hoy `usePageMeta` en cada
+  página — generado programáticamente leyendo los mismos archivos i18n que
+  leen los componentes (`home.json`, `metodo-cira.json`, `estrategia.json`,
+  `seleccion-soluciones.json` (`meta` + `detailMeta`), `seleccion-de-
+  software.json`, `seleccion-productos.json` (erp/crm/hcm/eam), `gestion-
+  proyectos.json`, `gestion-cambio.json`, `intelligence-lab.json`
+  (`hub`/`automatizaciones`/`arquitectura`/`gobierno`), `presencia-
+  digital.json` (`hub`/`desarrolloWeb`/`seo`), `leadership-academy.json`
+  (`hub` + los 7 `workshops.<slug>` — título construido igual que
+  `CursoDetalle.tsx`: `` `${tr.title} | Cyrrus` `` y descripción =
+  `tr.intro`, no `tr.shortDescription`, que es solo la leyenda corta de la
+  card del hub — confirmado en `LeadershipAcademy.tsx`) y `paginas.json`
+  (`quienesSomos`/`experiencia`/`perspectivas`) — para evitar transcribir a
+  mano y arrastrar un typo. Casi todas las 31 entradas cambiaron: solo
+  `/metodo-cira/estrategia` (título), los 4 títulos de
+  ERP/CRM/HCM/EAM, `/presencia-digital/desarrollo-web` (título),
+  `/quienes-somos` (título+descripción) y las 2 de 4.4 (recién creadas en
+  la sesión anterior) ya coincidían.
+- **No tocado:** ninguna página ni copy real — este archivo no alimenta lo
+  que ve el usuario ni Google. Tampoco se cambió la lista de claves (rutas)
+  del archivo, solo el texto de cada una.
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72
+  rutas prerenderizadas, mismo conteo que antes — confirma que la lista de
+  rutas no cambió) + `git status` tras el build: `public/sitemap.xml` y
+  `src/lib/sitemap-content-hashes.json` **no cambiaron** esta vez (a
+  diferencia de la sesión de 4.4), consistente con que el sitemap se genera
+  solo de las claves de ruta + `blog-data.ts` + slugs de soluciones/talleres,
+  no del texto de `route-meta.json`.
+- **Quedó a medias:** nada de lo iniciado.
+- **Próximo paso:** ver "Próximo paso" arriba — CRM/HCM/EAM (FAQ propia,
+  mismo componente que ya tiene el enlazado de 4.3) es el siguiente
+  candidato de contenido en Fase 4, o cambiar a Fase 3/Fase 6 si se prefiere.
 
 ### 2026-09-18 — Fase 4: enlazado interno y FAQ ampliada en Tecnologías avanzadas / Infraestructura (4.4)
 - **Tarea:** 4.4 (`/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas` e
