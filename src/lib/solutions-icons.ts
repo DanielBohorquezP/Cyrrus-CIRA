@@ -1,11 +1,15 @@
 import type { LucideIcon } from "lucide-react";
 import {
+  Bot,
   Boxes,
+  ClipboardCheck,
   Cloud,
+  FileCheck,
   HeartHandshake,
   Layers3,
   LifeBuoy,
   Link2,
+  Network,
   ShieldCheck,
   Sparkles,
   UserCog,
@@ -28,6 +32,11 @@ export const solutionDetailImages: Record<string, { image: string; imagePosition
 export const solutionItemIcons: Record<string, LucideIcon[]> = {
   "tecnologias-avanzadas": [Sparkles, Workflow, Link2],
   "infraestructura-tecnologica": [ShieldCheck, Cloud, Wifi, LifeBuoy],
+};
+
+export const solutionRelatedIcons: Record<string, LucideIcon[]> = {
+  "tecnologias-avanzadas": [FileCheck, Bot, HeartHandshake],
+  "infraestructura-tecnologica": [Network, ClipboardCheck, HeartHandshake],
 };
 
 export const solutionsClosingIcon = HeartHandshake;

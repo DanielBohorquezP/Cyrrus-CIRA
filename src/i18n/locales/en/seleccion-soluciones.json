@@ -222,6 +222,11 @@
   "detail": {
     "ctaLabel": "Let's talk about your selection",
     "whatWeHelp": "What do we help you select?",
+    "methodLinkText": "This selection is part of the Identify phase within the",
+    "methodLinkLabel": "full CIRA Method",
+    "relatedEyebrow": "Related services",
+    "relatedTitle": "What comes after you choose",
+    "faqTitle": "Frequently asked questions",
     "entries": {
       "tecnologias-avanzadas": {
         "label": "Advanced Technologies",
@@ -239,6 +244,34 @@
           {
             "title": "Blockchain",
             "description": "We evaluate solutions for organizations that need higher levels of traceability, trust, and secure information exchange."
+          }
+        ],
+        "related": [
+          {
+            "title": "AI Governance",
+            "description": "Set policies and controls for the technology you select here before it goes into production."
+          },
+          {
+            "title": "Automation with AI agents",
+            "description": "Turn the automation you select into a real implementation with AI agents."
+          },
+          {
+            "title": "Change management",
+            "description": "The Adopt phase: making sure the organization actually uses the technology it selected."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How do you decide which technology — AI, automation, or blockchain — my company needs?",
+            "answer": "We start from the same assessment of industry, size, and technology maturity we use for every solution selection. We don't recommend a trendy technology if it doesn't answer a real business need."
+          },
+          {
+            "question": "Does the selection include implementing the AI or automation you chose?",
+            "answer": "No. Our scope is selection: we evaluate, compare, and support the contracting. Implementation is coordinated with Project Management (PMO), and ongoing governance with AI Governance, when it applies."
+          },
+          {
+            "question": "What if my company already identified an AI or automation vendor?",
+            "answer": "We evaluate the decision against the same objective criteria, even if the process is already underway. Being 100% agnostic lets us validate a choice in progress without bias toward any vendor."
           }
         ]
       },
@@ -262,6 +295,34 @@
           {
             "title": "Business Continuity",
             "description": "We help define the capabilities needed to protect operations through continuity strategies, disaster recovery, and high availability."
+          }
+        ],
+        "related": [
+          {
+            "title": "AI Architecture",
+            "description": "The infrastructure you select here is the foundation AI architecture is built on."
+          },
+          {
+            "title": "Project management (PMO)",
+            "description": "The Execute phase: who governs the implementation of the infrastructure you chose."
+          },
+          {
+            "title": "Change management",
+            "description": "The Adopt phase: making sure the organization adopts the new infrastructure without friction."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Do you evaluate specific cybersecurity and cloud vendors, or just general architectures?",
+            "answer": "We evaluate specific vendors and architectures — cybersecurity, cloud/hybrid/multicloud, connectivity (LAN, WLAN, WAN, SD-WAN), and business continuity — with the same four objective criteria we use for every selection."
+          },
+          {
+            "question": "Do you start from an assessment of what we already have before recommending new infrastructure?",
+            "answer": "Yes. We first assess what the company already has in production — we don't recommend a new architecture without first understanding what exists and what risks are there today."
+          },
+          {
+            "question": "Who manages the project once the infrastructure vendor is selected?",
+            "answer": "Implementation is coordinated with Project Management (PMO), which governs the timeline, risks, and vendors throughout the rollout."
           }
         ]
       }

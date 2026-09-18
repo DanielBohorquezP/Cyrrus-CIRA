@@ -1,15 +1,17 @@
-import { useParams, Navigate } from "react-router-dom";
+import { Link, useParams, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
 import {
   solutionDetailImages,
   solutionItemIcons,
+  solutionRelatedIcons,
   solutionsClosingIcon as ClosingIcon,
   solutionSlugs,
 } from "@/lib/solutions-icons";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
+import { FaqSection } from "@/components/sections/faq-section";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
@@ -27,7 +29,22 @@ interface DetailEntry {
   intro: string;
   stat?: { value: string; description: string; source: string };
   items: { title: string; description: string }[];
+  related: { title: string; description: string }[];
+  faq: { question: string; answer: string }[];
 }
+
+const relatedPathsBySlug: Record<string, string[]> = {
+  "tecnologias-avanzadas": [
+    "/intelligence-lab/gobierno-de-ia",
+    "/intelligence-lab/automatizaciones-desarrollo",
+    "/metodo-cira/gestion-del-cambio",
+  ],
+  "infraestructura-tecnologica": [
+    "/intelligence-lab/arquitectura-de-ia",
+    "/metodo-cira/gestion-de-proyectos",
+    "/metodo-cira/gestion-del-cambio",
+  ],
+};
 
 export default function SolucionDetalle() {
   const { solucion } = useParams();
@@ -40,6 +57,8 @@ export default function SolucionDetalle() {
   const meta = slug ? (t(`detailMeta.${slug}`, { returnObjects: true }) as { title: string; description: string }) : undefined;
   const assets = slug ? solutionDetailImages[slug] : undefined;
   const icons = slug ? solutionItemIcons[slug] : undefined;
+  const relatedIcons = slug ? solutionRelatedIcons[slug] : undefined;
+  const relatedPaths = slug ? relatedPathsBySlug[slug]?.map((p) => `${prefix}${p}`) : undefined;
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -67,6 +86,16 @@ export default function SolucionDetalle() {
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
               areaServed: "LATAM",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "@id": `${siteUrl}${pagePath}#faq`,
+              mainEntity: entry.faq.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+              })),
             },
             {
               "@context": "https://schema.org",
@@ -147,6 +176,13 @@ export default function SolucionDetalle() {
                   );
                 })}
               </RevealGroup>
+
+              <p className="mt-8 text-base leading-relaxed text-gray">
+                {`${t("detail.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
+                  {t("detail.methodLinkLabel")}
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>
@@ -180,6 +216,44 @@ export default function SolucionDetalle() {
           </Reveal>
         </div>
       </section>
+
+      <section className="w-full bg-light-blue/40 py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("detail.relatedEyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("detail.relatedTitle")}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {entry.related.map((item, i) => {
+              const RelatedIcon = relatedIcons?.[i];
+              const href = relatedPaths?.[i];
+              if (!href) return null;
+              return (
+                <RevealItem key={item.title}>
+                  <Link
+                    to={href}
+                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    {RelatedIcon && <RelatedIcon className="h-6 w-6 text-blue" />}
+                    <span className="text-base font-semibold text-navy">{item.title}</span>
+                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
+                    <span className="mt-auto text-sm font-semibold text-blue">
+                      {`${lang === "en" ? "See more" : "Ver más"} →`}
+                    </span>
+                  </Link>
+                </RevealItem>
+              );
+            })}
+          </RevealGroup>
+        </div>
+      </section>
+
+      <FaqSection eyebrow={entry.label} title={t("detail.faqTitle")} faqs={entry.faq} />
 
       <FinalCta />
       <Footer />

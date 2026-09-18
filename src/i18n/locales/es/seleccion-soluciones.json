@@ -222,6 +222,11 @@
   "detail": {
     "ctaLabel": "Hablemos de su selección",
     "whatWeHelp": "¿Qué ayudamos a seleccionar?",
+    "methodLinkText": "Esta selección forma parte de la fase Identificar dentro del",
+    "methodLinkLabel": "Método CIRA completo",
+    "relatedEyebrow": "Servicios relacionados",
+    "relatedTitle": "Lo que viene después de elegir",
+    "faqTitle": "Preguntas frecuentes",
     "entries": {
       "tecnologias-avanzadas": {
         "label": "Tecnologías Avanzadas",
@@ -239,6 +244,34 @@
           {
             "title": "Blockchain",
             "description": "Evaluamos soluciones para organizaciones que requieren mayores niveles de trazabilidad, confianza e intercambio seguro de información."
+          }
+        ],
+        "related": [
+          {
+            "title": "Gobierno de IA",
+            "description": "Defina políticas y controles para la tecnología que seleccione aquí antes de ponerla en producción."
+          },
+          {
+            "title": "Automatización con agentes de IA",
+            "description": "Lleve la automatización seleccionada a una implementación real con agentes de IA."
+          },
+          {
+            "title": "Gestión del cambio",
+            "description": "La fase Adoptar: que la organización use la tecnología que seleccionó."
+          }
+        ],
+        "faq": [
+          {
+            "question": "¿Cómo deciden qué tecnología — IA, automatización o blockchain — necesita mi empresa?",
+            "answer": "Partimos del mismo diagnóstico de sector, tamaño y madurez tecnológica que usamos en toda selección de soluciones. No recomendamos una tecnología de moda si no responde a una necesidad real del negocio."
+          },
+          {
+            "question": "¿La selección incluye la implementación de la IA o la automatización elegida?",
+            "answer": "No. Nuestro alcance es la selección: evaluamos, comparamos y acompañamos la contratación. La implementación se coordina con Gerencia de Proyectos (PMO) y, para su gobierno posterior, con Gobierno de IA."
+          },
+          {
+            "question": "¿Qué pasa si mi empresa ya identificó un proveedor de IA o automatización?",
+            "answer": "Evaluamos la decisión con los mismos criterios objetivos, incluso si el proceso ya empezó. Al ser 100% agnósticos, podemos validar una elección en curso sin sesgo hacia ningún proveedor."
           }
         ]
       },
@@ -262,6 +295,34 @@
           {
             "title": "Continuidad del Negocio",
             "description": "Ayudamos a definir las capacidades necesarias para proteger la operación mediante estrategias de continuidad, recuperación ante desastres y alta disponibilidad."
+          }
+        ],
+        "related": [
+          {
+            "title": "Arquitectura de IA",
+            "description": "La infraestructura que selecciona aquí es la base sobre la que se construye la arquitectura de IA."
+          },
+          {
+            "title": "Gerencia de proyectos (PMO)",
+            "description": "La fase Realizar: quién gobierna la implementación de la infraestructura elegida."
+          },
+          {
+            "title": "Gestión del cambio",
+            "description": "La fase Adoptar: que la organización adopte la nueva infraestructura sin fricciones."
+          }
+        ],
+        "faq": [
+          {
+            "question": "¿Evalúan proveedores específicos de ciberseguridad y nube, o solo arquitecturas generales?",
+            "answer": "Evaluamos proveedores y arquitecturas concretas — ciberseguridad, cloud/híbrido/multicloud, conectividad (LAN, WLAN, WAN, SD-WAN) y continuidad de negocio — con los mismos cuatro criterios objetivos que usamos en toda selección."
+          },
+          {
+            "question": "¿Parten de un diagnóstico de lo que ya tengo antes de recomendar infraestructura nueva?",
+            "answer": "Sí. Evaluamos primero lo que la empresa ya tiene en producción — no recomendamos una arquitectura nueva sin entender antes qué existe y qué riesgos hay hoy."
+          },
+          {
+            "question": "¿Quién gestiona el proyecto una vez seleccionado el proveedor de infraestructura?",
+            "answer": "La implementación se coordina con Gerencia de Proyectos (PMO), que gobierna cronograma, riesgos y proveedores durante todo el despliegue."
           }
         ]
       }
