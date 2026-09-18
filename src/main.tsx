@@ -1,9 +1,5 @@
 import { StrictMode } from 'react'
 import { hydrateRoot, createRoot } from 'react-dom/client'
-// First import on purpose: it may rewrite the URL, and both './i18n' and the
-// router below read location as they initialise. ES module side effects run in
-// import order, so this is the one place that ordering is guaranteed.
-import './lib/initial-language'
 import './index.css'
 import './i18n'
 import App, { preloadRouteChunk } from './App.tsx'
@@ -31,11 +27,10 @@ import App, { preloadRouteChunk } from './App.tsx'
 const container = document.getElementById('root')!
 
 // Hydration is only valid when the markup already in the container is for the
-// page we're about to render. It isn't when a first-time visitor with a
-// non-Spanish browser lands on "/": the document served was the Spanish one,
-// and initial-language.ts has just rewritten the URL to /en. React would find a
-// mismatch in every text node, so render fresh instead — still only one pass,
-// where this case used to cost two.
+// page we're about to render — i.e. its prerendered <html lang> matches the
+// language the current URL implies. If it doesn't (only possible from a
+// mismatched deploy or a stale cache), render fresh instead of hydrating
+// mismatched text nodes.
 const documentLang = document.documentElement.lang
 const targetLang = window.location.pathname === '/en' || window.location.pathname.startsWith('/en/') ? 'en' : 'es'
 

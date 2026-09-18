@@ -61,18 +61,27 @@ export function Reveal({ children, className, delay = 0, y }: RevealProps) {
  * transition-delay driven off `--reveal-i`, so the group only costs one
  * observer entry no matter how many items it holds.
  */
-export function RevealGroup({
-  children,
-  className,
-}: {
+type RevealGroupProps<T extends React.ElementType> = {
+  /** Tag for the group wrapper. Defaults to "div" — pass "dl" when the items
+   *  are dt/dd pairs, so the group stays the CSS grid/flex container instead
+   *  of an extra wrapper breaking that layout. */
+  as?: T;
   children: React.ReactNode;
   className?: string;
-}) {
-  const ref = useReveal<HTMLDivElement>();
+} & Omit<React.ComponentPropsWithoutRef<T>, "as" | "className" | "children">;
+
+export function RevealGroup<T extends React.ElementType = "div">({
+  as,
+  children,
+  className,
+  ...props
+}: RevealGroupProps<T>) {
+  const ref = useReveal<HTMLElement>();
+  const Tag = (as ?? "div") as React.ElementType;
   return (
-    <div ref={ref} className={cn("reveal-group", className)}>
+    <Tag ref={ref} className={cn("reveal-group", className)} {...props}>
       {children}
-    </div>
+    </Tag>
   );
 }
 

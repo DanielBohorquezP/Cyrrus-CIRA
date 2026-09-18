@@ -1,5 +1,13 @@
 # Project guidelines
 
+## Plan de mejora en curso
+
+Hay un plan de mejora del sitio (UX, SEO, contenido, autoridad) en varias
+sesiones. Al empezar cualquier sesión de mejora, leer
+`docs/plan-mejora/PROGRESO.md` (estado, próximo paso, bloqueos, bitácora) y la
+sección correspondiente de `docs/plan-mejora/PLAN.md`. Al terminar, actualizar
+`PROGRESO.md`.
+
 ## Performance: animations & transitions
 
 The site must always feel instant and fluid — never sluggish or janky. Apply this on every change that touches motion, scroll listeners, or transitions:

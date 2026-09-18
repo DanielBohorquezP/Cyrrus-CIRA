@@ -111,7 +111,7 @@ export function CircularCarousel({
         className,
       )}
     >
-      <div className="relative h-[220px] w-full">
+      <div className="relative h-[220px] w-full" role="listbox" aria-label="Fases del método CIRA">
         <AnimatePresence mode="popLayout">
           {items.map((item, i) => {
             const pos = getItemPosition(i, activeIndex, total);
@@ -134,7 +134,12 @@ export function CircularCarousel({
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
                 onClick={() => goTo(i)}
-                aria-label={item.title}
+                // Includes the visible letter tag, not just the title: axe's
+                // label-content-name-mismatch check compares the accessible
+                // name against the element's full rendered text, regardless
+                // of the tag span's aria-hidden (that attribute only affects
+                // what screen readers announce, not what's visually there).
+                aria-label={`${item.tag} — ${item.title}`}
                 aria-selected={isActive}
                 role="option"
                 className={cn(
@@ -144,6 +149,7 @@ export function CircularCarousel({
                 style={{ transformOrigin: "center center" }}
               >
                 <span
+                  aria-hidden="true"
                   className={cn(
                     "bg-gradient-to-b from-white to-cyan bg-clip-text text-5xl font-extrabold tracking-tight text-transparent transition-opacity duration-150",
                     isActive ? "opacity-100" : "opacity-70",
@@ -186,19 +192,28 @@ export function CircularCarousel({
           <ChevronLeft className="size-4" />
         </motion.button>
 
-        <div className="flex items-center gap-1.5" role="tablist">
+        <div className="flex items-center" role="tablist">
           {items.map((item, i) => (
+            // The visible dot stays small by design; the button itself is
+            // sized to the 24px accessibility minimum and centers the dot,
+            // rather than relying on a pseudo-element the target-size audit
+            // can't measure.
             <button
               key={item.id}
               role="tab"
               aria-selected={i === activeIndex}
               onClick={() => goTo(i)}
-              className={cn(
-                "h-1.5 rounded-full transition-all duration-300",
-                i === activeIndex ? "w-6 bg-cyan" : "w-1.5 bg-white/20 hover:bg-white/40",
-              )}
+              className="group flex h-6 w-6 items-center justify-center"
               aria-label={`Ir a ${item.title}`}
-            />
+            >
+              <span
+                aria-hidden="true"
+                className={cn(
+                  "block h-1.5 rounded-full transition-all duration-300",
+                  i === activeIndex ? "w-6 bg-cyan" : "w-1.5 bg-white/20 group-hover:bg-white/40",
+                )}
+              />
+            </button>
           ))}
         </div>
 

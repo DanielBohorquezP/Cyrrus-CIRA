@@ -2,8 +2,8 @@
   "dialogTitle": "Agendar una conversación con Cyrrus",
   "steps": {
     "servicio": {
-      "title": "¿Qué servicio necesitas?",
-      "placeholder": "Selecciona un servicio",
+      "title": "¿Qué servicio necesita?",
+      "placeholder": "Seleccione un servicio",
       "fields": {
         "servicio": "Servicio"
       },
@@ -26,7 +26,7 @@
       }
     },
     "empresa": {
-      "title": "Cuéntanos sobre tu empresa",
+      "title": "Cuéntenos sobre su empresa",
       "fields": {
         "empresa": "Nombre de la empresa",
         "tamanoEmpresa": "Tamaño de la empresa"
@@ -47,7 +47,7 @@
       }
     },
     "contacto": {
-      "title": "¿Cómo te contactamos?",
+      "title": "¿Cómo lo contactamos?",
       "fields": {
         "telefono": "Teléfono celular",
         "email": "Correo corporativo"
@@ -56,8 +56,8 @@
         "telefono": "Ej: +57 300 123 4567",
         "email": "Ej: nombre@empresa.com"
       },
-      "atLeastOneNote": "Indícanos un teléfono o un correo para contactarte.",
-      "atLeastOneError": "Indícanos un teléfono o un correo para contactarte."
+      "atLeastOneNote": "Indíquenos un teléfono o un correo para contactarlo.",
+      "atLeastOneError": "Indíquenos un teléfono o un correo para contactarlo."
     }
   },
   "sizeOptions": {
@@ -66,7 +66,7 @@
     "r3": "251 – 500 empleados",
     "r4": "501 – 1000 empleados",
     "r5": "Más de 1000 empleados",
-    "placeholder": "Selecciona un rango"
+    "placeholder": "Seleccione un rango"
   },
   "nav": {
     "next": "Siguiente",
@@ -76,13 +76,13 @@
     "step": "Paso {{current}} de {{total}}"
   },
   "requiredError": "Este campo es obligatorio.",
-  "submitError": "No pudimos enviar tu información. Intenta de nuevo o escríbenos a contacto@cyrruscs.com.",
+  "submitError": "No pudimos enviar su información. Intente de nuevo o escríbanos a contacto@cyrruscs.com.",
   "success": {
-    "title": "¡Listo! Ya recibimos tu información",
+    "title": "¡Listo! Ya recibimos su información",
     "description": "Un miembro del equipo de Cyrrus se pondrá en contacto en las próximas 24 horas hábiles.",
     "bookCall": {
-      "title": "¿Prefieres agendar directamente?",
-      "description": "Elige un horario que te acomode y conversemos sin esperar a que te contactemos.",
+      "title": "¿Prefiere agendar directamente?",
+      "description": "Elija un horario que le acomode y conversemos sin esperar a que lo contactemos.",
       "cta": "Agendar una llamada"
     },
     "close": "Cerrar"

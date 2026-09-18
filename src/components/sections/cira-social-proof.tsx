@@ -27,16 +27,18 @@ export function CiraSocialProof() {
           </p>
         </Reveal>
 
-        <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <RevealGroup as="dl" className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {stats.map((stat) => (
-            <RevealItem key={stat.label} className="px-4">
-              <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
+            <RevealItem key={stat.label} className="flex flex-col items-center px-4">
+              {/* order-* keeps the number-then-label reading order visible;
+                  dt has to precede dd in the DOM for valid <dl> markup. */}
+              <dt className="order-2 mt-3 text-base leading-relaxed text-white/70">
+                {stat.label}
+              </dt>
+              <dd className="order-1 bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
                 {stat.value}
               </dd>
-              <span className="mt-3 block text-base leading-relaxed text-white/70">
-                {stat.label}
-              </span>
-              <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />
+              <span className="order-3 mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" aria-hidden="true" />
             </RevealItem>
           ))}
         </RevealGroup>

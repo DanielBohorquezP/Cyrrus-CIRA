@@ -194,19 +194,27 @@ export function WorkshopOrbit({ items, className }: WorkshopOrbitProps) {
         })}
       </div>
 
-      {/* Progress dots */}
-      <div className="mt-5 flex justify-center gap-1.5">
+      {/* Progress dots. The visible dot stays small by design; the button
+          itself is sized to the 24px accessibility minimum and centers the
+          dot, rather than relying on a pseudo-element the target-size audit
+          can't measure. */}
+      <div className="mt-5 flex justify-center">
         {items.map((item, index) => (
           <button
             key={item.title}
             type="button"
             aria-label={`Ir a ${item.title}`}
             onClick={() => setActiveIndex(index)}
-            className={cn(
-              "h-1.5 rounded-full transition-all duration-150",
-              index === activeIndex ? "w-4 bg-cyan" : "w-1.5 bg-white/25"
-            )}
-          />
+            className="flex h-6 w-6 items-center justify-center"
+          >
+            <span
+              aria-hidden="true"
+              className={cn(
+                "block h-1.5 rounded-full transition-all duration-150",
+                index === activeIndex ? "w-4 bg-cyan" : "w-1.5 bg-white/25"
+              )}
+            />
+          </button>
         ))}
       </div>
     </div>

@@ -5,8 +5,6 @@ export type Lang = "es" | "en";
 
 const LanguageContext = createContext<Lang>("es");
 
-export const LANG_STORAGE_KEY = "cyrrus-lang-pref";
-
 export function useLang() {
   return useContext(LanguageContext);
 }
@@ -46,10 +44,11 @@ export function langFromPathname(pathname: string): Lang {
  * Wraps a group of routes to pin i18next's active language and <html lang>
  * to a fixed value, driven by the URL prefix (/en/... vs unprefixed).
  *
- * The one-time browser-language check for visitors landing on "/" used to live
- * here as an effect. It now runs before React's first render, in
- * src/lib/initial-language.ts — doing it after the tree was built meant
- * rendering the whole Spanish page only to immediately rebuild it in English.
+ * There is no browser-language auto-redirect: "/" always serves the Spanish
+ * page. Google discourages redirecting by browser/Accept-Language on the
+ * canonical URL, and Googlebot's crawl language isn't a reliable signal of a
+ * visitor's actual language anyway. Visitors who want English use the "/en"
+ * URL directly or a link to it.
  */
 export function LanguageProvider({ lang, children }: { lang: Lang; children: ReactNode }) {
   const { i18n } = useTranslation();

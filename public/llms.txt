@@ -6,7 +6,7 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 
 ## Método CIRA
 - [Metodología CIRA](https://cyrruscs.com/metodo-cira): las 4 fases del método.
-- [Estrategia](https://cyrruscs.com/metodo-cira/planeacion-estrategica): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
+- [Estrategia](https://cyrruscs.com/metodo-cira/estrategia): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
 - [Selección de Soluciones](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones): cómo se selecciona tecnología con criterios definidos antes de mirar proveedores, sin sesgo comercial.
 - [Selección de Software](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software): evaluación y selección independiente de software empresarial — ERP, CRM, HCM y EAM.
 - [Selección de ERP](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): consultoría de selección de ERP 100% agnóstica de proveedor.
@@ -32,6 +32,11 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 ## Leadership Academy
 - [Leadership Academy](https://cyrruscs.com/leadership-academy): talleres para altos ejecutivos y capacitación gerencial.
 
+## Perspectivas (blog)
+- [Por qué fracasan los proyectos de transformación digital](https://cyrruscs.com/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital): las organizaciones no fracasan por falta de tecnología ni de presupuesto, sino cuando nadie conecta la decisión con las personas que deben ejecutarla. Siete errores que se repiten y cómo evitarlos.
+- [Cómo elegir una consultora estratégica confiable](https://cyrruscs.com/perspectivas/como-elegir-una-consultora-estrategica-confiable): tres señales de una firma que realmente entiende su negocio, frente a una que solo completa un documento.
+- [Qué es el Gobierno de IA corporativo y por qué su empresa lo necesita](https://cyrruscs.com/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): qué es el Gobierno de IA y por dónde debe empezar un CEO antes de adoptar inteligencia artificial.
+
 ## Otras páginas
 - [Inicio](https://cyrruscs.com/): consultoría estratégica y transformación digital con IA en Colombia y LATAM, vía la metodología CIRA.
 - [Quiénes Somos](https://cyrruscs.com/quienes-somos): Jackson Bohorquez, CEO y fundador de Cyrrus, creador del método CIRA.
@@ -40,7 +45,7 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 ## English
 - [Home](https://cyrruscs.com/en): strategic consulting and digital transformation with AI, via the CIRA methodology.
 - [CIRA Method](https://cyrruscs.com/en/metodo-cira): the 4 phases of the method — Construct, Identify, Realize, Adopt.
-- [Strategy](https://cyrruscs.com/en/metodo-cira/planeacion-estrategica): business and IT strategy consulting, CTO/CIO as a Service.
+- [Strategy](https://cyrruscs.com/en/metodo-cira/estrategia): business and IT strategy consulting, CTO/CIO as a Service.
 - [Solution Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones): how technology is selected against criteria defined before looking at vendors, with no commercial bias.
 - [Software Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software): independent evaluation and selection of enterprise software — ERP, CRM, HCM, and EAM.
 - [ERP Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): 100% vendor-agnostic ERP selection consulting.
@@ -61,3 +66,6 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 - [Leadership Academy](https://cyrruscs.com/en/leadership-academy): executive workshops and management training.
 - [About Us](https://cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://cyrruscs.com/en/experiencia): Cyrrus's cases and track record.
+- [Why Digital Transformation Projects Fail](https://cyrruscs.com/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital): organizations don't fail for lack of technology or budget — they fail when no one connects the decision to the people who have to execute it.
+- [How to Choose a Trustworthy Strategic Consulting Firm](https://cyrruscs.com/en/perspectivas/como-elegir-una-consultora-estrategica-confiable): three signs of a firm that truly understands your business, versus one that just fills out a document.
+- [What Corporate AI Governance Is](https://cyrruscs.com/en/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): what AI Governance is, and where a CEO should start before adopting artificial intelligence.
