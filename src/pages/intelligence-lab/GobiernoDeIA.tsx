@@ -8,8 +8,8 @@ import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { Reveal } from "@/components/ui/reveal";
-import { FileCheck, Users, Lock } from "lucide-react";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { FileCheck, Users, Lock, Network, Bot, HeartHandshake } from "lucide-react";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -37,6 +37,10 @@ export default function GobiernoDeIA() {
   }));
   const faqs = t("gobierno.faq.items", { returnObjects: true }) as Faq[];
   const body = t("gobierno.body", { returnObjects: true }) as string[];
+  const relatedItems = (t("gobierno.related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
+    ...it,
+    icon: [Network, Bot, HeartHandshake][i],
+  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -50,6 +54,12 @@ export default function GobiernoDeIA() {
   const relatedArticlePath = lang === "en"
     ? "/en/perspectivas/gobierno-de-ia-corporativo-en-la-empresa"
     : "/perspectivas/gobierno-de-ia-corporativo-en-la-empresa";
+  const arquitecturaPath = lang === "en" ? "/en/intelligence-lab/arquitectura-de-ia" : "/intelligence-lab/arquitectura-de-ia";
+  const automatizacionesPath = lang === "en"
+    ? "/en/intelligence-lab/automatizaciones-desarrollo"
+    : "/intelligence-lab/automatizaciones-desarrollo";
+  const changePath = lang === "en" ? "/en/metodo-cira/gestion-del-cambio" : "/metodo-cira/gestion-del-cambio";
+  const relatedPaths = [arquitecturaPath, automatizacionesPath, changePath];
 
   usePageMeta({
     title: t("gobierno.meta.title"),
@@ -132,6 +142,40 @@ export default function GobiernoDeIA() {
               .
             </p>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="w-full bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("gobierno.related.eyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("gobierno.related.title")}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {relatedItems.map((item, i) => {
+              const RelatedIcon = item.icon;
+              return (
+                <RevealItem key={item.title}>
+                  <Link
+                    to={relatedPaths[i]}
+                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    <RelatedIcon className="h-6 w-6 text-blue" />
+                    <span className="text-base font-semibold text-navy">{item.title}</span>
+                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
+                    <span className="mt-auto text-sm font-semibold text-blue">
+                      {`${lang === "en" ? "See more" : "Ver más"} →`}
+                    </span>
+                  </Link>
+                </RevealItem>
+              );
+            })}
+          </RevealGroup>
         </div>
       </section>
 

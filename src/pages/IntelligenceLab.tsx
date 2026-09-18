@@ -32,6 +32,13 @@ interface Faq {
 
 const pillarIcons = [ShieldCheck, Network, Bot];
 
+const phasePaths: Record<string, string> = {
+  construir: "/metodo-cira/estrategia",
+  identificar: "/metodo-cira/seleccion-de-soluciones",
+  realizar: "/metodo-cira/gestion-de-proyectos",
+  adoptar: "/metodo-cira/gestion-del-cambio",
+};
+
 export default function IntelligenceLab() {
   const { t } = useTranslation("intelligence-lab");
   const lang = useLang();
@@ -44,7 +51,7 @@ export default function IntelligenceLab() {
   }));
   const phaseLinks = (t("hub.transversal.phases", { returnObjects: true }) as PhaseLink[]).map((p) => ({
     ...p,
-    href: `${prefix}/metodo-cira#${p.hash}`,
+    href: `${prefix}${phasePaths[p.hash]}`,
   }));
   const faqs = t("hub.faq.items", { returnObjects: true }) as Faq[];
 

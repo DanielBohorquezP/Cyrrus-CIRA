@@ -138,6 +138,24 @@
           "answer": "Every automation is measured against the process it replaces: time saved, error rate, and real adoption by the team — not the polish of a demo."
         }
       ]
+    },
+    "related": {
+      "eyebrow": "Related services",
+      "title": "Every agent lives inside a bigger framework",
+      "items": [
+        {
+          "title": "AI governance",
+          "description": "The rules every agent operates under."
+        },
+        {
+          "title": "AI architecture",
+          "description": "The systems and data each agent connects to."
+        },
+        {
+          "title": "Project management (PMO)",
+          "description": "Where we monitor project risk with AI agents."
+        }
+      ]
     }
   },
   "arquitectura": {
@@ -190,6 +208,24 @@
         {
           "question": "How secure is an AI architecture that connects every system in the company?",
           "answer": "The architecture is designed together with the AI governance framework, not after — security and connectivity are defined at the same time."
+        }
+      ]
+    },
+    "related": {
+      "eyebrow": "Related services",
+      "title": "Architecture holds up everything else",
+      "items": [
+        {
+          "title": "AI governance",
+          "description": "The policies that govern what this architecture connects."
+        },
+        {
+          "title": "Automation and AI agents",
+          "description": "What gets built on top of this architecture."
+        },
+        {
+          "title": "ERP selection",
+          "description": "The core system that almost always needs integrating."
         }
       ]
     }
@@ -246,6 +282,24 @@
         {
           "question": "Does AI governance slow down innovation inside the company?",
           "answer": "The goal isn't slower approval — it's approval with judgment. Most initiatives move faster once there are clear rules for what's in and what's out."
+        }
+      ]
+    },
+    "related": {
+      "eyebrow": "Related services",
+      "title": "Governance doesn't run alone",
+      "items": [
+        {
+          "title": "AI architecture",
+          "description": "The systems and data these policies apply to."
+        },
+        {
+          "title": "Automation and AI agents",
+          "description": "How governance is enforced inside every agent."
+        },
+        {
+          "title": "Change management",
+          "description": "The same adoption discipline, applied to AI."
         }
       ]
     }

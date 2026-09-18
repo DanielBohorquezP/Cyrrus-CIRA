@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -7,8 +8,8 @@ import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { Reveal } from "@/components/ui/reveal";
-import { Workflow, Bot, Gauge } from "lucide-react";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { Workflow, Bot, Gauge, ShieldCheck, Network, ClipboardCheck } from "lucide-react";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -36,6 +37,10 @@ export default function AutomatizacionesDesarrollo() {
   }));
   const faqs = t("automatizaciones.faq.items", { returnObjects: true }) as Faq[];
   const body = t("automatizaciones.body", { returnObjects: true }) as string[];
+  const relatedItems = (t("automatizaciones.related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
+    ...it,
+    icon: [ShieldCheck, Network, ClipboardCheck][i],
+  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -46,6 +51,10 @@ export default function AutomatizacionesDesarrollo() {
     { label: "Cyrrus Intelligence Lab", href: hubPath },
     { label: t("automatizaciones.hero.title") },
   ];
+  const gobiernoPath = lang === "en" ? "/en/intelligence-lab/gobierno-de-ia" : "/intelligence-lab/gobierno-de-ia";
+  const arquitecturaPath = lang === "en" ? "/en/intelligence-lab/arquitectura-de-ia" : "/intelligence-lab/arquitectura-de-ia";
+  const pmoPath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
+  const relatedPaths = [gobiernoPath, arquitecturaPath, pmoPath];
 
   usePageMeta({
     title: t("automatizaciones.meta.title"),
@@ -122,6 +131,40 @@ export default function AutomatizacionesDesarrollo() {
               sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
             />
           </Reveal>
+        </div>
+      </section>
+
+      <section className="w-full bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("automatizaciones.related.eyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("automatizaciones.related.title")}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {relatedItems.map((item, i) => {
+              const RelatedIcon = item.icon;
+              return (
+                <RevealItem key={item.title}>
+                  <Link
+                    to={relatedPaths[i]}
+                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    <RelatedIcon className="h-6 w-6 text-blue" />
+                    <span className="text-base font-semibold text-navy">{item.title}</span>
+                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
+                    <span className="mt-auto text-sm font-semibold text-blue">
+                      {`${lang === "en" ? "See more" : "Ver más"} →`}
+                    </span>
+                  </Link>
+                </RevealItem>
+              );
+            })}
+          </RevealGroup>
         </div>
       </section>
 

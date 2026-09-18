@@ -138,6 +138,24 @@
           "answer": "Cada automatización se mide contra el proceso que reemplaza: tiempo ahorrado, tasa de error y adopción real por el equipo, no la calidad de una demo."
         }
       ]
+    },
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "Cada agente vive dentro de un marco más grande",
+      "items": [
+        {
+          "title": "Gobierno de IA",
+          "description": "Las reglas bajo las que opera cada agente."
+        },
+        {
+          "title": "Arquitectura de IA",
+          "description": "Los sistemas y datos que cada agente conecta."
+        },
+        {
+          "title": "Gerencia de proyectos (PMO)",
+          "description": "Dónde monitoreamos el riesgo del proyecto con agentes de IA."
+        }
+      ]
     }
   },
   "arquitectura": {
@@ -190,6 +208,24 @@
         {
           "question": "¿Qué tan segura es una arquitectura de IA que conecta todos los sistemas de la empresa?",
           "answer": "La arquitectura se diseña junto con el marco de gobierno de IA, no después — seguridad y conectividad se definen a la vez."
+        }
+      ]
+    },
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "La arquitectura sostiene todo lo demás",
+      "items": [
+        {
+          "title": "Gobierno de IA",
+          "description": "Las políticas que rigen lo que esta arquitectura conecta."
+        },
+        {
+          "title": "Automatización y agentes IA",
+          "description": "Lo que se construye encima de esta arquitectura."
+        },
+        {
+          "title": "Selección de ERP",
+          "description": "El sistema central que casi siempre hay que integrar."
         }
       ]
     }
@@ -246,6 +282,24 @@
         {
           "question": "¿El gobierno de IA frena la innovación dentro de la empresa?",
           "answer": "El objetivo no es aprobar más lento, es aprobar con criterio. La mayoría de las iniciativas se mueven más rápido una vez que hay reglas claras de qué sí y qué no."
+        }
+      ]
+    },
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "El gobierno no corre solo",
+      "items": [
+        {
+          "title": "Arquitectura de IA",
+          "description": "Sobre qué sistemas y datos se aplican estas políticas."
+        },
+        {
+          "title": "Automatización y agentes IA",
+          "description": "Cómo se ejecuta el gobierno dentro de cada agente."
+        },
+        {
+          "title": "Gestión del cambio",
+          "description": "La misma disciplina de adopción, aplicada a la IA."
         }
       ]
     }

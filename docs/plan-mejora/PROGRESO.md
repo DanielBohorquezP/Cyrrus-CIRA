@@ -34,14 +34,21 @@
 > sección "Servicios relacionados" por ser un componente compartido
 > (`SeleccionProducto.tsx`).
 >
-> Siguiente candidato: **4.7 Intelligence Lab** (hub + 3 subpáginas:
-> Gobierno de IA, Arquitectura de IA, Automatizaciones) — "las más delgadas"
-> según PLAN.md, y Gobierno de IA ya recibe enlaces desde Gestión del cambio
-> (4.6) pero no enlaza hacia las páginas de nicho tradicionales todavía.
-> Alternativa: **4.2 Selección de soluciones (hub)** o **4.4 Tecnologías
-> avanzadas / Infraestructura**, que comparten `SolucionDetalle.tsx` y aún no
-> tienen el patrón de enlazado ni FAQ ampliada. Aplicar el mismo patrón usado
-> en 4.1/4.3/4.5/4.6: sección "Servicios relacionados" (cards con `Link` a
+> **4.7 Intelligence Lab (hub + 3 subpáginas) ya está hecho** (ver bitácora
+> 2026-09-18 "Fase 4: Intelligence Lab..."): de paso se corrigió un bug — el
+> hub enlazaba a `/metodo-cira#construir` etc., anclas que nunca existieron
+> en el DOM, así que esos 4 clics no llevaban a ningún lado útil. Ahora
+> apuntan a las páginas de servicio reales. Las 3 subpáginas (Gobierno de
+> IA, Arquitectura de IA, Automatizaciones) ya se enlazan entre sí y hacia
+> Gestión del cambio / Selección de ERP / Gerencia de Proyectos.
+>
+> Siguiente candidato: **4.2 Selección de soluciones (hub)** o **4.4
+> Tecnologías avanzadas / Infraestructura**, que comparten
+> `SolucionDetalle.tsx` y aún no tienen el patrón de enlazado ni FAQ
+> ampliada — o **4.8** (sincronizar `route-meta.json` con `usePageMeta`,
+> mecánico y sin bloqueos) para cerrar la parte técnica de Fase 4 antes de
+> seguir con contenido. Aplicar el mismo patrón usado en
+> 4.1/4.3/4.5/4.6/4.7: sección "Servicios relacionados" (cards con `Link` a
 > 2-3 servicios + el artículo de Perspectivas más afín) y, si falta, un
 > enlace explícito a `/metodo-cira`. El caso real de cada página sigue
 > bloqueado por 2.1 — dejar ese bloque para después o usar un placeholder que
@@ -106,7 +113,7 @@
 | 4.4 | Tecnologías avanzadas / Infraestructura | ⬜ | |
 | 4.5 | Gerencia de proyectos (PMO) | 🟡 | Prioridad 2 de nicho. Enlace a `/metodo-cira` y al artículo "por qué fracasan los proyectos de transformación" en la intro, sección "Servicios relacionados" (ERP, Gestión del cambio, Automatización con IA) y 2 FAQ nuevas (duración, PMO as a Service). Falta caso real (2.1) |
 | 4.6 | Gestión del cambio | 🟡 | Enlace a `/metodo-cira` en la intro (fase Adoptar), sección "Servicios relacionados" (Selección de ERP, Gerencia de Proyectos, Gobierno de IA) y 2 FAQ nuevas (adopción de ERP, diferencia con change management tradicional). Falta caso real (2.1) |
-| 4.7 | Intelligence Lab + 3 subpáginas | ⬜ | Las más delgadas |
+| 4.7 | Intelligence Lab + 3 subpáginas | 🟡 | Las más delgadas. Se corrigió un bug: el hub enlazaba a anclas `/metodo-cira#construir` etc. que no existían — ahora apuntan a las 4 páginas de servicio reales. Las 3 subpáginas (Gobierno de IA, Arquitectura de IA, Automatizaciones) suman sección "Servicios relacionados" cruzándose entre sí y hacia Gestión del cambio / Selección de ERP / Gerencia de Proyectos. Sigue pendiente ampliar la profundidad de contenido (palabras, FAQ nueva) y el caso real (2.1) |
 | 4.8 | Sincronizar `route-meta.json` con `usePageMeta` | ⬜ | |
 
 ### Fase 5 — Contenido
@@ -176,6 +183,54 @@
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
+
+### 2026-09-18 — Fase 4: Intelligence Lab enlazado + fix de anclas rotas (4.7)
+- **Tarea:** 4.7 (Intelligence Lab: hub + Gobierno de IA + Arquitectura de IA
+  + Automatizaciones/Agentes), "las más delgadas" según PLAN.md.
+- **Bug encontrado y corregido:** `src/pages/IntelligenceLab.tsx` (el hub)
+  enlazaba la sección "Transversal a CIRA" a `/metodo-cira#construir`,
+  `#identificar`, `#realizar`, `#adoptar` — anclas que **nunca existieron**
+  en el DOM de `MetodoCira.tsx` (confirmado con grep sobre el código y sobre
+  el HTML generado). El clic no daba error, pero tampoco llevaba a nada útil:
+  navegaba a `/metodo-cira` sin hacer scroll a ninguna sección. Se cambió a
+  un mapa `phasePaths` que apunta a las 4 páginas de servicio reales
+  (Estrategia, Selección de Soluciones, Gerencia de Proyectos, Gestión del
+  Cambio) — el mismo mapeo que ya usa `phaseAssets` dentro de
+  `MetodoCira.tsx`.
+- **Hecho (archivos):**
+  - `src/pages/IntelligenceLab.tsx`: fix de las 4 anclas rotas (arriba).
+  - `src/pages/intelligence-lab/GobiernoDeIA.tsx`,
+    `ArquitecturaDeIA.tsx`, `AutomatizacionesDesarrollo.tsx`: nueva sección
+    "Servicios relacionados" en las 3, cruzándose entre sí y con una página
+    de nicho tradicional cada una — Gobierno de IA → Gestión del cambio
+    (recíproco con el enlace que ya venía de 4.6), Arquitectura de IA →
+    Selección de ERP (no recíproco todavía — ERP no enlaza de vuelta),
+    Automatizaciones → Gerencia de Proyectos (recíproco con 4.5).
+  - `src/i18n/locales/{es,en}/intelligence-lab.json`: bloque `related`
+    (eyebrow/title/items) añadido a `gobierno`, `arquitectura` y
+    `automatizaciones`.
+- **No tocado:** no se amplió el cuerpo de texto ni se añadieron FAQ nuevas
+  — a diferencia de 4.1/4.3/4.5/4.6, aquí el contenido existente (`body`,
+  `included`, `faq` de 4 preguntas por página) ya era sólido y específico;
+  el gap real era solo de enlazado, no de profundidad. La tabla de PLAN.md
+  no mide todavía la longitud de Arquitectura/Automatizaciones ("—"), así
+  que falta confirmar si están realmente por debajo del objetivo de
+  1.000-1.800 palabras.
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72
+  rutas) + navegador embebido: consola limpia en `/intelligence-lab` y las
+  3 subpáginas. Confirmado por el HTML generado que las 4 tarjetas del hub
+  ahora apuntan a `/metodo-cira/estrategia`,
+  `/metodo-cira/seleccion-de-soluciones`, `/metodo-cira/gestion-de-proyectos`
+  y `/metodo-cira/gestion-del-cambio` (antes iban todas a `/metodo-cira`
+  sin ancla funcional), y que los enlaces de "Servicios relacionados" en
+  las 3 subpáginas resuelven a rutas reales.
+- **Quedó a medias:** caso real (2.1, bloqueado); profundidad de contenido
+  de Arquitectura/Automatizaciones sin confirmar contra el objetivo de
+  palabras; Selección de ERP no enlaza de vuelta hacia Arquitectura de IA
+  (enlace no recíproco, bajo impacto).
+- **Próximo paso:** 4.2 (hub de Selección de soluciones) o 4.4 (Tecnologías
+  avanzadas / Infraestructura), que comparten `SolucionDetalle.tsx`, o 4.8
+  (sincronizar `route-meta.json`) como tarea mecánica.
 
 ### 2026-09-18 — Fase 4: enlazado interno y FAQ ampliada en Estrategia (4.1), cierra la red de enlaces
 - **Tarea:** 4.1 (Estrategia / Consultoría en Estrategia), última pendiente
