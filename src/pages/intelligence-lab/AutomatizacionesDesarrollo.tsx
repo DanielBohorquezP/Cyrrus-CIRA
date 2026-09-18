@@ -41,6 +41,11 @@ export default function AutomatizacionesDesarrollo() {
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/intelligence-lab" : "/intelligence-lab";
   const pagePath = lang === "en" ? "/en/intelligence-lab/automatizaciones-desarrollo" : "/intelligence-lab/automatizaciones-desarrollo";
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: "Cyrrus Intelligence Lab", href: hubPath },
+    { label: t("automatizaciones.hero.title") },
+  ];
 
   usePageMeta({
     title: t("automatizaciones.meta.title"),
@@ -70,11 +75,12 @@ export default function AutomatizacionesDesarrollo() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: `${siteUrl}${hubPath}` },
-          { "@type": "ListItem", position: 3, name: t("automatizaciones.hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -86,6 +92,7 @@ export default function AutomatizacionesDesarrollo() {
         eyebrow="Cyrrus Intelligence Lab"
         title={t("automatizaciones.hero.title")}
         description={t("automatizaciones.hero.description")}
+        breadcrumbs={breadcrumbItems}
         image={{
           src: "/assets/decoracion/1785866224326.jpg",
           alt: "Escritorio de trabajo con monitores y branding de Cyrrus",

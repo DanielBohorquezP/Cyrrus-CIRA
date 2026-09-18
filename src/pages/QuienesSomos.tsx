@@ -1,6 +1,8 @@
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { FinalCta } from "@/components/sections/final-cta";
@@ -137,6 +139,16 @@ export default function QuienesSomos() {
                   </RevealItem>
                 ))}
               </RevealGroup>
+            </Reveal>
+
+            <Reveal delay={0.2} className="mt-6">
+              <Link
+                to={langPath("/metodo-cira", lang)}
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue underline-offset-4 hover:underline"
+              >
+                {t("quienesSomos.trajectory.methodLinkLabel")}
+                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
             </Reveal>
           </div>
         </div>

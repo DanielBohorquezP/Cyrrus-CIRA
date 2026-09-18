@@ -76,6 +76,11 @@ export default function DesarrolloWeb() {
   const pagePath = lang === "en" ? "/en/presencia-digital/desarrollo-web" : "/presencia-digital/desarrollo-web";
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/presencia-digital" : "/presencia-digital";
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: "Cyrrus Presencia Digital", href: hubPath },
+    { label: t("desarrolloWeb.hero.title") },
+  ];
 
   usePageMeta({
     title: t("desarrolloWeb.meta.title"),
@@ -105,11 +110,12 @@ export default function DesarrolloWeb() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Presencia Digital", item: `${siteUrl}${hubPath}` },
-          { "@type": "ListItem", position: 3, name: t("desarrolloWeb.hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -121,6 +127,7 @@ export default function DesarrolloWeb() {
         eyebrow={t("desarrolloWeb.hero.eyebrow")}
         title={t("desarrolloWeb.hero.title")}
         description={t("desarrolloWeb.hero.description")}
+        breadcrumbs={breadcrumbItems}
         image={{
           src: "/assets/decoracion/1785866224151.jpg",
           alt: "Equipo de Cyrrus trabajando en el desarrollo de un sitio corporativo",

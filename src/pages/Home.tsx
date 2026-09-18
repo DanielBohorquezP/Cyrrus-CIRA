@@ -61,17 +61,20 @@ export default function Home() {
           badgeText={t("hero.badgeText")}
         />
       </div>
-      <TrustBar />
-      <CeoSection />
-      <CiraJourney />
-      <AnimatedNavyBackground className="cv-section px-6 py-14 md:px-12 [--cv-h:800px]">
+      <AnimatedNavyBackground
+        id="servicios"
+        className="cv-section px-6 py-14 md:px-12 [--cv-h:800px]"
+      >
         <div className="mx-auto max-w-6xl">
           <HeroServicesTabs />
         </div>
       </AnimatedNavyBackground>
+      <TrustBar />
       <WhyCyrrus />
       <CyrrusAbout />
+      <CiraJourney />
       <Testimonials />
+      <CeoSection />
       <Experience />
       <PerspectivasPreview />
       <FinalCta />

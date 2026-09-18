@@ -80,6 +80,11 @@ export default function SeleccionDeSoluciones() {
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const pagePath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+    { label: t("hero.title") },
+  ];
 
   usePageMeta({
     title: t("meta.title"),
@@ -109,11 +114,12 @@ export default function SeleccionDeSoluciones() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: lang === "en" ? "CIRA Method" : "Método CIRA", item: `${siteUrl}${methodPath}` },
-          { "@type": "ListItem", position: 3, name: t("hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -125,6 +131,7 @@ export default function SeleccionDeSoluciones() {
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         description={t("hero.description")}
+        breadcrumbs={breadcrumbItems}
       >
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
       </PageHero>

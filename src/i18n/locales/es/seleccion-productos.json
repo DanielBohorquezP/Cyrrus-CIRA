@@ -128,6 +128,14 @@
       {
         "question": "¿Por qué contratar un consultor independiente en vez de ir directo al proveedor del ERP?",
         "answer": "Porque el proveedor tiene un solo producto que vender y su evaluación siempre terminará en ese producto. Cyrrus no tiene alianzas comerciales ni comisiones con ningún fabricante de ERP: el criterio se define desde su operación, no desde el catálogo, y el resultado puede ser perfectamente que la mejor decisión sea no cambiar de plataforma."
+      },
+      {
+        "question": "¿Ayudan a elegir ERP para empresas en Colombia o LATAM?",
+        "answer": "Sí. Trabajamos con organizaciones en Colombia y en el resto de LATAM, con el mismo proceso de evaluación de seis criterios y sin alianzas comerciales que sesguen la recomendación hacia un proveedor local o regional en particular."
+      },
+      {
+        "question": "¿La selección de ERP incluye la gerencia del proyecto de implementación?",
+        "answer": "Son dos fases distintas del Método CIRA. Si lo necesita, también actuamos como PMO externo durante la implementación del ERP recomendado, con la misma responsabilidad real sobre el resultado que aplicamos en la selección."
       }
     ]
   },

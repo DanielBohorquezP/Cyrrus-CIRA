@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
 
 interface YoutubeFacadeProps {
   videoId: string;
@@ -32,7 +33,10 @@ export function YoutubeFacade({ videoId, title, className }: YoutubeFacadeProps)
   return (
     <button
       type="button"
-      onClick={() => setPlaying(true)}
+      onClick={() => {
+        setPlaying(true);
+        trackEvent("video_play", { video_id: videoId, title });
+      }}
       aria-label={title}
       className={cn(
         "group relative aspect-video w-full overflow-hidden rounded-2xl bg-navy",

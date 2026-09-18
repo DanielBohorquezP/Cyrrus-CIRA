@@ -84,6 +84,16 @@ export default function SolucionDetalle() {
 
   if (!entry || !slug || !assets) return <Navigate to={`${prefix}/metodo-cira/seleccion-de-soluciones`} replace />;
 
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+    {
+      label: t("hero.title", { defaultValue: "" }) || (lang === "en" ? "Solution Selection" : "Selección de Soluciones"),
+      href: selectionPath,
+    },
+    { label: entry.label },
+  ];
+
   return (
     <>
       <SiteHeader />
@@ -91,6 +101,7 @@ export default function SolucionDetalle() {
         eyebrow={entry.eyebrow}
         title={`${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`}
         description={entry.intro}
+        breadcrumbs={breadcrumbItems}
       >
         <ContactCtaButton variant="light" label={t("detail.ctaLabel")} />
       </PageHero>

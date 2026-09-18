@@ -226,6 +226,8 @@
       "Sin un marco de gobierno, cada iniciativa de IA queda a criterio de quien la implementó. Cuando algo sale mal — un dato sensible expuesto, una decisión automatizada sin trazabilidad — no hay a quién recurrir ni cómo auditar lo que pasó.",
       "Este marco corre de forma transversal por debajo de las cuatro fases del método CIRA, para que cada decisión de IA — desde el diagnóstico hasta la adopción — quede documentada y sea auditable."
     ],
+    "articleLinkText": "Lea también:",
+    "articleLinkLabel": "Gobierno de IA corporativo en la empresa",
     "faq": {
       "eyebrow": "Gobierno de IA",
       "items": [

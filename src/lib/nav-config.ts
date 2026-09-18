@@ -21,11 +21,15 @@ export interface NavItem {
  */
 export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
   const p = (path: string) => (lang === "en" ? `/en${path}` : path);
+  // No dedicated "/servicios" page exists yet (D2: URLs don't change in this
+  // phase) — the trigger opens the dropdown and, if clicked directly, lands on
+  // the services showcase on the home page.
+  const serviciosHref = lang === "en" ? "/en#servicios" : "/#servicios";
 
   return [
     {
-      label: t("nav.metodoCira", { ns: "common" }),
-      href: p("/metodo-cira"),
+      label: t("nav.servicios", { ns: "common" }),
+      href: serviciosHref,
       children: [
         {
           label: t("nav.estrategia", { ns: "common" }),
@@ -64,31 +68,32 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
           href: p("/metodo-cira/gestion-del-cambio"),
           description: t("nav.gestionCambioDesc", { ns: "common" }),
         },
+        {
+          label: t("nav.inteligenciaArtificial", { ns: "common" }),
+          href: p("/intelligence-lab"),
+          description: t("nav.inteligenciaArtificialDesc", { ns: "common" }),
+          children: [
+            {
+              label: t("nav.gobiernoIA", { ns: "common" }),
+              href: p("/intelligence-lab/gobierno-de-ia"),
+              description: t("nav.gobiernoIADesc", { ns: "common" }),
+            },
+            {
+              label: t("nav.arquitecturaIA", { ns: "common" }),
+              href: p("/intelligence-lab/arquitectura-de-ia"),
+              description: t("nav.arquitecturaIADesc", { ns: "common" }),
+            },
+            {
+              label: t("nav.automatizacionAgentes", { ns: "common" }),
+              href: p("/intelligence-lab/automatizaciones-desarrollo"),
+              description: t("nav.automatizacionAgentesDesc", { ns: "common" }),
+            },
+          ],
+        },
       ],
     },
     {
-      label: t("nav.intelligenceLab", { ns: "common" }),
-      href: p("/intelligence-lab"),
-      children: [
-        {
-          label: t("nav.automatizacionAgentes", { ns: "common" }),
-          href: p("/intelligence-lab/automatizaciones-desarrollo"),
-          description: t("nav.automatizacionAgentesDesc", { ns: "common" }),
-        },
-        {
-          label: t("nav.arquitecturaIA", { ns: "common" }),
-          href: p("/intelligence-lab/arquitectura-de-ia"),
-          description: t("nav.arquitecturaIADesc", { ns: "common" }),
-        },
-        {
-          label: t("nav.gobiernoIA", { ns: "common" }),
-          href: p("/intelligence-lab/gobierno-de-ia"),
-          description: t("nav.gobiernoIADesc", { ns: "common" }),
-        },
-      ],
-    },
-    {
-      label: t("nav.leadershipAcademy", { ns: "common" }),
+      label: t("nav.capacitacionEjecutiva", { ns: "common" }),
       href: p("/leadership-academy"),
       children: [
         {
@@ -136,12 +141,25 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
       ],
     },
     {
-      label: t("nav.experiencia", { ns: "common" }),
-      href: p("/experiencia"),
-    },
-    {
-      label: t("nav.quienesSomos", { ns: "common" }),
+      label: t("nav.nosotros", { ns: "common" }),
       href: p("/quienes-somos"),
+      children: [
+        {
+          label: t("nav.quienesSomos", { ns: "common" }),
+          href: p("/quienes-somos"),
+          description: t("nav.quienesSomosDesc", { ns: "common" }),
+        },
+        {
+          label: t("nav.metodologiaCira", { ns: "common" }),
+          href: p("/metodo-cira"),
+          description: t("nav.metodologiaCiraDesc", { ns: "common" }),
+        },
+        {
+          label: t("nav.experiencia", { ns: "common" }),
+          href: p("/experiencia"),
+          description: t("nav.experienciaDesc", { ns: "common" }),
+        },
+      ],
     },
     {
       label: t("nav.perspectivas", { ns: "common" }),

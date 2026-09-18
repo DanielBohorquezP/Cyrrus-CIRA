@@ -1,8 +1,10 @@
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
-import { useLang } from "@/lib/language";
+import { langPath, useLang } from "@/lib/language";
 import { getBlogPostBySlug } from "@/lib/blog-data";
+import { useScrollDepthEvent } from "@/lib/use-scroll-depth-event";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
@@ -91,7 +93,15 @@ export default function ArticuloPerspectiva() {
         : undefined,
   });
 
+  useScrollDepthEvent("article_read", entry ? { slug: entry.slug } : null);
+
   if (!entry || !tr) return <Navigate to={hubPath} replace />;
+
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: lang === "en" ? "Insights" : "Perspectivas", href: hubPath },
+    { label: tr.title },
+  ];
 
   return (
     <>
@@ -101,6 +111,7 @@ export default function ArticuloPerspectiva() {
         title={tr.title}
         description={tr.intro}
         image={{ src: entry.coverImage, alt: tr.title }}
+        breadcrumbs={breadcrumbItems}
       />
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-12 md:px-12">
@@ -143,6 +154,18 @@ export default function ArticuloPerspectiva() {
               <div className="border-t border-border pt-4 text-sm text-muted-foreground">
                 <span className="font-medium text-navy">{lang === "en" ? "Published" : "Publicado"}</span>
                 {` · ${displayDate}`}
+              </div>
+              <div className="border-t border-border pt-4">
+                <div className="text-xs font-semibold uppercase tracking-wider text-gray">
+                  {lang === "en" ? "Related service" : "Servicio relacionado"}
+                </div>
+                <Link
+                  to={langPath(entry.pillarHref, lang)}
+                  className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-blue underline-offset-4 hover:underline"
+                >
+                  {t(`nav.${entry.pillarLabelKey}`, { ns: "common" })}
+                  <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </Reveal>

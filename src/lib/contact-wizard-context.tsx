@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 interface ContactWizardContextValue {
   isOpen: boolean;
@@ -12,7 +13,10 @@ const ContactWizardContext = createContext<ContactWizardContextValue | null>(nul
  *  can open the contact wizard modal without threading props through pages. */
 export function ContactWizardProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
-  const openWizard = useCallback(() => setIsOpen(true), []);
+  const openWizard = useCallback(() => {
+    setIsOpen(true);
+    trackEvent("wizard_open");
+  }, []);
   const closeWizard = useCallback(() => setIsOpen(false), []);
 
   const value = useMemo(

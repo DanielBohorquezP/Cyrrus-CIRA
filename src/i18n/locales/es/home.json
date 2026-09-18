@@ -66,13 +66,40 @@
   "servicesTabs": {
     "panels": [
       {
-        "id": "consultoria-estrategica",
-        "tabLabel": "Consultoría Estratégica",
+        "id": "estrategia",
+        "tabLabel": "Estrategia Empresarial",
         "eyebrow": "Cuando el plan no baja a la operación",
-        "title": "Consultoría Estratégica",
-        "description": "Si el plan se quedó en la presentación, el problema no fue la estrategia — fue no tener quien la ejecutara. Nosotros construimos, elegimos la solución correcta y ejecutamos, con un solo responsable de punta a punta.",
-        "href": "/metodo-cira",
-        "buttonText": "Conocer el método CIRA"
+        "title": "Estrategia Empresarial",
+        "description": "Si el plan se quedó en la presentación, el problema no fue la estrategia — fue no tener quien la ejecutara. Diagnosticamos, priorizamos y dejamos una hoja de ruta con un responsable de principio a fin.",
+        "href": "/metodo-cira/estrategia",
+        "buttonText": "Conocer Estrategia"
+      },
+      {
+        "id": "seleccion-de-soluciones",
+        "tabLabel": "Selección de Tecnología",
+        "eyebrow": "Cuando la tecnología se compra por moda, no por ajuste",
+        "title": "Selección de Tecnología sin Sesgo de Proveedor",
+        "description": "ERP, CRM, HCM o EAM: evaluamos desde los requerimientos reales del negocio, no desde el catálogo del proveedor — criterios objetivos, comparables y 100% independientes.",
+        "href": "/metodo-cira/seleccion-de-soluciones",
+        "buttonText": "Conocer Selección de Soluciones"
+      },
+      {
+        "id": "gerencia-de-proyectos",
+        "tabLabel": "Gerencia de Proyectos",
+        "eyebrow": "Cuando el proyecto se atrasa y nadie asume el riesgo",
+        "title": "Gerencia de Proyectos (PMO Externo)",
+        "description": "Actuamos como PMO externo desde el kickoff hasta el go-live, con responsabilidad real sobre el resultado — no solo reportes de estado.",
+        "href": "/metodo-cira/gestion-de-proyectos",
+        "buttonText": "Conocer Gerencia de Proyectos"
+      },
+      {
+        "id": "gestion-del-cambio",
+        "tabLabel": "Gestión del Cambio",
+        "eyebrow": "Cuando el equipo no adopta lo implementado",
+        "title": "Gestión del Cambio y Adopción",
+        "description": "Un sistema bien implementado que nadie usa no es un proyecto exitoso. Trabajamos la adopción desde el día uno del proyecto, no como una actividad de cierre.",
+        "href": "/metodo-cira/gestion-del-cambio",
+        "buttonText": "Conocer Gestión del Cambio"
       },
       {
         "id": "ia-empresarial",
@@ -84,22 +111,13 @@
         "buttonText": "Conocer Cyrrus Intelligence Lab"
       },
       {
-        "id": "gestion-del-cambio",
-        "tabLabel": "Gestión del Cambio",
-        "eyebrow": "Cuando el equipo no adopta lo implementado",
-        "title": "Gestión del Cambio y Liderazgo",
-        "description": "Un sistema bien implementado que nadie usa no es un proyecto exitoso. Formamos a sus gerentes para que el cambio se sostenga después de que nos vamos — sin que dependa de nosotros.",
+        "id": "leadership-academy",
+        "tabLabel": "Leadership Academy",
+        "eyebrow": "Cuando el proyecto termina y el equipo vuelve a lo de antes",
+        "title": "Capacitación Ejecutiva: Leadership Academy",
+        "description": "El consultor se va y en tres meses el equipo volvió a como trabajaba antes. Formamos a sus directivos para sostener el cambio, la IA y la seguridad sin depender de que sigamos ahí.",
         "href": "/leadership-academy",
         "buttonText": "Conocer Leadership Academy"
-      },
-      {
-        "id": "presencia-digital",
-        "tabLabel": "Presencia Digital",
-        "eyebrow": "Cuando su sitio no refleja lo que la empresa vale",
-        "title": "Desarrollo Web y SEO",
-        "description": "Un sitio que nadie encuentra y un posicionamiento que lleva a una puerta que no convierte no generan negocio. Construimos el sitio como activo del negocio y lo hacemos visible donde su cliente busca — y donde le pregunta a una IA.",
-        "href": "/presencia-digital",
-        "buttonText": "Conocer Presencia Digital"
       }
     ]
   },

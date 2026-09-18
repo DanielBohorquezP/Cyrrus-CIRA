@@ -41,6 +41,11 @@ export default function ArquitecturaDeIA() {
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/intelligence-lab" : "/intelligence-lab";
   const pagePath = lang === "en" ? "/en/intelligence-lab/arquitectura-de-ia" : "/intelligence-lab/arquitectura-de-ia";
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: "Cyrrus Intelligence Lab", href: hubPath },
+    { label: t("arquitectura.hero.title") },
+  ];
 
   usePageMeta({
     title: t("arquitectura.meta.title"),
@@ -70,11 +75,12 @@ export default function ArquitecturaDeIA() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: `${siteUrl}${hubPath}` },
-          { "@type": "ListItem", position: 3, name: t("arquitectura.hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -86,6 +92,7 @@ export default function ArquitecturaDeIA() {
         eyebrow="Cyrrus Intelligence Lab"
         title={t("arquitectura.hero.title")}
         description={t("arquitectura.hero.description")}
+        breadcrumbs={breadcrumbItems}
         image={{
           src: "/assets/decoracion/1785866224006.jpg",
           alt: "Pantalla de trabajo con modelos de IA y datos conectados en Cyrrus",

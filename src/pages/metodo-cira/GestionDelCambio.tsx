@@ -54,7 +54,15 @@ export default function GestionDelCambio() {
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const pagePath = lang === "en" ? "/en/metodo-cira/gestion-del-cambio" : "/metodo-cira/gestion-del-cambio";
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+    { label: t("hero.title") },
+  ];
   const academyPath = lang === "en" ? "/en/leadership-academy" : "/leadership-academy";
+  const relatedArticlePath = lang === "en"
+    ? "/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+    : "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital";
 
   usePageMeta({
     title: t("meta.title"),
@@ -84,11 +92,12 @@ export default function GestionDelCambio() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: lang === "en" ? "CIRA Method" : "Método CIRA", item: `${siteUrl}${methodPath}` },
-          { "@type": "ListItem", position: 3, name: t("hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -100,6 +109,7 @@ export default function GestionDelCambio() {
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         description={t("hero.description")}
+        breadcrumbs={breadcrumbItems}
       >
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
       </PageHero>
@@ -149,6 +159,12 @@ export default function GestionDelCambio() {
               <p className="mt-6 text-base leading-relaxed text-gray">
                 {`${t("intro.academyLinkText")} `}<Link to={academyPath} className="text-navy underline underline-offset-2">
                   {t("intro.academyLinkLabel")}
+                </Link>
+                .
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-gray">
+                {`${t("intro.articleLinkText")} `}<Link to={relatedArticlePath} className="text-navy underline underline-offset-2">
+                  {t("intro.articleLinkLabel")}
                 </Link>
                 .
               </p>

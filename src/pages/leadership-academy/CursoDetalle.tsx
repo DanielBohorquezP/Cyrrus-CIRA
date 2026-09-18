@@ -75,10 +75,16 @@ export default function CursoDetalle() {
 
   if (!entry || !tr) return <Navigate to={hubPath} replace />;
 
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: "Leadership Academy", href: hubPath },
+    { label: tr.title },
+  ];
+
   return (
     <>
       <SiteHeader />
-      <PageHero eyebrow={entry.eyebrow} title={tr.title} description={tr.intro} />
+      <PageHero eyebrow={entry.eyebrow} title={tr.title} description={tr.intro} breadcrumbs={breadcrumbItems} />
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
           <Reveal className="md:col-span-4">

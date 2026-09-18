@@ -66,13 +66,40 @@
   "servicesTabs": {
     "panels": [
       {
-        "id": "consultoria-estrategica",
-        "tabLabel": "Strategic Consulting",
+        "id": "estrategia",
+        "tabLabel": "Corporate Strategy",
         "eyebrow": "When the plan never reaches operations",
-        "title": "Strategic Consulting",
-        "description": "If the plan stayed in the deck, the problem wasn't the strategy — it was having no one to execute it. We build it, select the right solution, and execute, with one party accountable end to end.",
-        "href": "/metodo-cira",
-        "buttonText": "Explore the CIRA method"
+        "title": "Corporate Strategy",
+        "description": "If the plan stayed in the deck, the problem wasn't the strategy — it was having no one to execute it. We diagnose, prioritize, and leave a roadmap with one party accountable end to end.",
+        "href": "/metodo-cira/estrategia",
+        "buttonText": "Explore Strategy"
+      },
+      {
+        "id": "seleccion-de-soluciones",
+        "tabLabel": "Technology Selection",
+        "eyebrow": "When technology gets bought because it's trending",
+        "title": "Technology Selection Without Vendor Bias",
+        "description": "ERP, CRM, HCM, or EAM: we evaluate from your business's real requirements, not the vendor's catalog — objective, comparable, 100% independent criteria.",
+        "href": "/metodo-cira/seleccion-de-soluciones",
+        "buttonText": "Explore Solution Selection"
+      },
+      {
+        "id": "gerencia-de-proyectos",
+        "tabLabel": "Project Management",
+        "eyebrow": "When the project falls behind and no one owns the risk",
+        "title": "Project Management (External PMO)",
+        "description": "We act as an external PMO from kickoff to go-live, with real accountability for the outcome — not just status reports.",
+        "href": "/metodo-cira/gestion-de-proyectos",
+        "buttonText": "Explore Project Management"
+      },
+      {
+        "id": "gestion-del-cambio",
+        "tabLabel": "Change Management",
+        "eyebrow": "When the team doesn't adopt what was implemented",
+        "title": "Change Management & Adoption",
+        "description": "A well-implemented system nobody uses isn't a successful project. We work adoption from day one of the project, not as a closing activity.",
+        "href": "/metodo-cira/gestion-del-cambio",
+        "buttonText": "Explore Change Management"
       },
       {
         "id": "ia-empresarial",
@@ -84,22 +111,13 @@
         "buttonText": "Explore Cyrrus Intelligence Lab"
       },
       {
-        "id": "gestion-del-cambio",
-        "tabLabel": "Change Management",
-        "eyebrow": "When the team doesn't adopt what was implemented",
-        "title": "Change Management & Leadership",
-        "description": "A well-implemented system nobody uses isn't a successful project. We train your managers so the change holds after we leave — without depending on us.",
+        "id": "leadership-academy",
+        "tabLabel": "Leadership Academy",
+        "eyebrow": "When the project ends and the team reverts to old habits",
+        "title": "Executive Training: Leadership Academy",
+        "description": "The consultant leaves and three months later the team is back to working the way it did before. We train your executives to sustain change, AI, and security without depending on us.",
         "href": "/leadership-academy",
         "buttonText": "Explore Leadership Academy"
-      },
-      {
-        "id": "presencia-digital",
-        "tabLabel": "Digital Presence",
-        "eyebrow": "When your site doesn't reflect what the company is worth",
-        "title": "Web Development & SEO",
-        "description": "A site no one finds, and positioning that leads to a door that doesn't convert, generate no business. We build the site as a business asset and make it visible where your client searches — and where they ask an AI.",
-        "href": "/presencia-digital",
-        "buttonText": "Explore Digital Presence"
       }
     ]
   },

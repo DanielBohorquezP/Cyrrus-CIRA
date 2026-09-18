@@ -17,7 +17,11 @@
       "Entrega en el tiempo y presupuesto acordado, con visibilidad total del avance en cada momento.",
       "Monitoreo continuo del riesgo, no solo un reporte de estado al final de cada fase.",
       "Base sobre la que construimos la gestión del cambio que sigue."
-    ]
+    ],
+    "methodLinkText": "Esta es la fase Realizar dentro del",
+    "methodLinkLabel": "Método CIRA completo",
+    "articleLinkText": "Antes de gerenciar la ejecución, entienda por qué fallan tantos proyectos de transformación:",
+    "articleLinkLabel": "por qué fracasan los proyectos de transformación digital"
   },
   "differentiators": {
     "eyebrow": "¿Qué nos hace únicos?",
@@ -114,6 +118,14 @@
       {
         "question": "¿El monitoreo de riesgo es solo un reporte al cierre de cada fase?",
         "answer": "No. Monitoreamos el riesgo del proyecto de forma continua con agentes de IA que anticipan desviaciones antes de que se conviertan en crisis, con visibilidad total del avance en cada momento."
+      },
+      {
+        "question": "¿Cuánto dura un proyecto con PMO externo?",
+        "answer": "Depende del alcance y la tecnología, no hay una duración estándar. Como PMO externo acompañamos desde el kickoff hasta el go-live y la estabilización posterior, con puntos de control y reporte al comité de dirección durante toda la ejecución."
+      },
+      {
+        "question": "¿Qué diferencia hay entre gerencia de proyectos tradicional y PMO as a Service?",
+        "answer": "PMO as a Service es un equipo externo que asume el gobierno del proyecto con responsabilidad real sobre el resultado, sin que la empresa tenga que contratar y sostener una oficina de proyectos interna. Se activa para un proyecto puntual — como una implementación de ERP — y se desmonta al cierre."
       }
     ]
   },
@@ -127,6 +139,24 @@
       "Cero desviaciones al alcance del proyecto.",
       "Ajustes operacionales con solo 2 customizaciones requeridas al código del ERP.",
       "Documentación y creación del modelo de implementación para futuros proyectos."
+    ]
+  },
+  "related": {
+    "eyebrow": "Servicios relacionados",
+    "title": "La gerencia de proyectos no ocurre sola",
+    "items": [
+      {
+        "title": "Selección de ERP",
+        "description": "Si el proyecto todavía empieza por elegir la plataforma correcta."
+      },
+      {
+        "title": "Gestión del cambio",
+        "description": "Para que la organización adopte lo que el proyecto entrega."
+      },
+      {
+        "title": "Automatización con agentes de IA",
+        "description": "Cómo monitoreamos el riesgo del proyecto en tiempo real."
+      }
     ]
   }
 }

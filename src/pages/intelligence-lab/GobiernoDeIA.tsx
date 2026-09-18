@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -41,6 +42,14 @@ export default function GobiernoDeIA() {
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/intelligence-lab" : "/intelligence-lab";
   const pagePath = lang === "en" ? "/en/intelligence-lab/gobierno-de-ia" : "/intelligence-lab/gobierno-de-ia";
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: "Cyrrus Intelligence Lab", href: hubPath },
+    { label: t("gobierno.hero.title") },
+  ];
+  const relatedArticlePath = lang === "en"
+    ? "/en/perspectivas/gobierno-de-ia-corporativo-en-la-empresa"
+    : "/perspectivas/gobierno-de-ia-corporativo-en-la-empresa";
 
   usePageMeta({
     title: t("gobierno.meta.title"),
@@ -70,11 +79,12 @@ export default function GobiernoDeIA() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: `${siteUrl}${hubPath}` },
-          { "@type": "ListItem", position: 3, name: t("gobierno.hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -86,6 +96,7 @@ export default function GobiernoDeIA() {
         eyebrow="Cyrrus Intelligence Lab"
         title={t("gobierno.hero.title")}
         description={t("gobierno.hero.description")}
+        breadcrumbs={breadcrumbItems}
         image={{
           src: "/assets/decoracion/1785866224151.jpg",
           alt: "Consultor de Cyrrus con notebook frente a pantallas de trabajo",
@@ -114,6 +125,12 @@ export default function GobiernoDeIA() {
             {body.map((p) => (
               <p key={p}>{p}</p>
             ))}
+            <p className="text-base leading-relaxed text-gray">
+              {`${t("gobierno.articleLinkText")} `}<Link to={relatedArticlePath} className="text-navy underline underline-offset-2">
+                {t("gobierno.articleLinkLabel")}
+              </Link>
+              .
+            </p>
           </Reveal>
         </div>
       </section>

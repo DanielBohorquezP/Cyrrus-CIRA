@@ -16,14 +16,14 @@ import { useLang } from "@/lib/language";
 import { cn } from "@/lib/utils";
 
 /**
- * The desktop nav, rendered from the same getNavItems() tree the old
- * NavDropdown used — six top-level sections, their subpages, and the third
- * level under Selección de Soluciones.
+ * The desktop nav, rendered from the getNavItems() tree — top-level
+ * sections, their subpages, and a third level under whichever subpage has
+ * its own children (e.g. Selección de Soluciones, Inteligencia Artificial).
  *
  * The panel starts sized to just its subpage list — no reserved blank space.
- * Hovering the one row that has its own children (Selección de Soluciones)
- * grows the panel to the right in place to reveal that third level; hovering
- * any other row collapses it straight back down.
+ * Hovering a row that has its own children grows the panel to the right in
+ * place to reveal that third level; hovering any other row collapses it
+ * straight back down.
  */
 
 interface NavMenuProps {
@@ -113,10 +113,13 @@ function SectionPanel({ item }: { item: NavItem }) {
   // old (narrower) width. Reading from shared context keeps both in sync.
   const { subValue, openSub } = useNavigationMenuSub();
   const children = item.children ?? [];
-  // The one child that has its own children — Selección de Soluciones today.
-  const branch = children.find((c) => c.children?.length);
+  // Whichever child currently has its own children open — a panel can have
+  // more than one expandable row (e.g. Selección de Soluciones and
+  // Inteligencia Artificial under Servicios); only the one matching the
+  // shared subValue is shown at a time.
+  const branch = children.find((c) => c.children?.length && subValue === c.href);
   const grandchildren = branch?.children ?? [];
-  const expanded = !!branch && subValue === branch.href;
+  const expanded = !!branch;
 
   return (
     <div className="flex">

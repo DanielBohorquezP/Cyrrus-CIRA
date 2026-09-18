@@ -1,11 +1,14 @@
 import {
+  Boxes,
   CheckCircle2,
   ClipboardCheck,
+  HeartHandshake,
   Layers,
   ShieldCheck,
   Sparkles,
   Users,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -50,11 +53,31 @@ export default function GestionDeProyectos() {
   const services = t("services.items", { returnObjects: true }) as string[];
   const achievements = t("achievements.items", { returnObjects: true }) as string[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
+  const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
+    ...it,
+    icon: [Boxes, HeartHandshake, Sparkles][i],
+  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const pagePath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+    { label: t("hero.title") },
+  ];
+  const erpPath = lang === "en"
+    ? "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+    : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
+  const changePath = lang === "en" ? "/en/metodo-cira/gestion-del-cambio" : "/metodo-cira/gestion-del-cambio";
+  const automationPath = lang === "en"
+    ? "/en/intelligence-lab/automatizaciones-desarrollo"
+    : "/intelligence-lab/automatizaciones-desarrollo";
+  const relatedPaths = [erpPath, changePath, automationPath];
+  const articlePath = lang === "en"
+    ? "/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+    : "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital";
 
   usePageMeta({
     title: t("meta.title"),
@@ -84,11 +107,12 @@ export default function GestionDeProyectos() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: lang === "en" ? "CIRA Method" : "Método CIRA", item: `${siteUrl}${methodPath}` },
-          { "@type": "ListItem", position: 3, name: t("hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -100,6 +124,7 @@ export default function GestionDeProyectos() {
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         description={t("hero.description")}
+        breadcrumbs={breadcrumbItems}
       >
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
       </PageHero>
@@ -146,6 +171,18 @@ export default function GestionDeProyectos() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 text-base leading-relaxed text-gray">
+                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
+                  {t("intro.methodLinkLabel")}
+                </Link>
+                .
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-gray">
+                {`${t("intro.articleLinkText")} `}<Link to={articlePath} className="text-navy underline underline-offset-2">
+                  {t("intro.articleLinkLabel")}
+                </Link>
+                .
+              </p>
             </Reveal>
           </div>
         </div>
@@ -297,6 +334,40 @@ export default function GestionDeProyectos() {
                 <span className="text-base leading-relaxed text-navy/80">{item}</span>
               </RevealItem>
             ))}
+          </RevealGroup>
+        </div>
+      </section>
+
+      <section className="w-full bg-light-blue/40 py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("related.eyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("related.title")}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {relatedItems.map((item, i) => {
+              const RelatedIcon = item.icon;
+              return (
+                <RevealItem key={item.title}>
+                  <Link
+                    to={relatedPaths[i]}
+                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    <RelatedIcon className="h-6 w-6 text-blue" />
+                    <span className="text-base font-semibold text-navy">{item.title}</span>
+                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
+                    <span className="mt-auto text-sm font-semibold text-blue">
+                      {`${lang === "en" ? "See more" : "Ver más"} →`}
+                    </span>
+                  </Link>
+                </RevealItem>
+              );
+            })}
           </RevealGroup>
         </div>
       </section>

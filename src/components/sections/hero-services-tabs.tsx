@@ -2,14 +2,15 @@ import { useTranslation } from "react-i18next";
 import { TabbedPanels, type TabPanel } from "@/components/ui/tabbed-panels";
 import { langPath, useLang } from "@/lib/language";
 
-// WebP, resized to ~2x the 552x288 slot they render in. The originals were
-// full-resolution JPEGs (1536x1024 and 1600x720, 298 KB combined) being scaled
-// down in the browser.
+// WebP, resized to ~2x the 552x288 slot they render in. One per tab, same
+// order as servicesTabs.panels in home.json.
 const images = [
   "/assets/decoracion/IMG_20200313_092643427.webp",
+  "/assets/decoracion/evento-panel-universidad-bolivar.jpeg",
+  "/assets/decoracion/IMG_20200313_092701647.jpg",
+  "/assets/decoracion/1785866331023.jpg",
   "/assets/decoracion/Cyrrus.webp",
   "/assets/decoracion/IMG_20230228_091011.webp",
-  "/assets/decoracion/1785866224151.jpg",
 ];
 
 export function HeroServicesTabs() {

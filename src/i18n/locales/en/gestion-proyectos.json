@@ -17,7 +17,11 @@
       "Delivery on the agreed time and budget, with full visibility into progress at every moment.",
       "Continuous risk monitoring, not just a status report at the end of each phase.",
       "The foundation the change management that follows is built on."
-    ]
+    ],
+    "methodLinkText": "This is the Realize phase within the",
+    "methodLinkLabel": "full CIRA Method",
+    "articleLinkText": "Before managing execution, understand why so many transformation projects fail:",
+    "articleLinkLabel": "why digital transformation projects fail"
   },
   "differentiators": {
     "eyebrow": "What makes us different?",
@@ -114,6 +118,14 @@
       {
         "question": "Is risk monitoring just a report at the end of each phase?",
         "answer": "No. We monitor project risk continuously with AI agents that flag deviations before they become crises, with full visibility into progress at every moment."
+      },
+      {
+        "question": "How long does a project with an external PMO take?",
+        "answer": "It depends on scope and technology — there's no standard duration. As an external PMO we stay from kickoff through go-live and post-launch stabilization, with checkpoints and reporting to the steering committee throughout execution."
+      },
+      {
+        "question": "What's the difference between traditional project management and PMO as a Service?",
+        "answer": "PMO as a Service is an external team that takes on project governance with real accountability for the outcome, without the company having to hire and sustain an internal project office. It's activated for a specific project — like an ERP implementation — and stood down at close."
       }
     ]
   },
@@ -127,6 +139,24 @@
       "Zero scope deviations.",
       "Operational adjustments requiring only 2 customizations to the ERP code.",
       "Documentation and creation of the implementation model for future projects."
+    ]
+  },
+  "related": {
+    "eyebrow": "Related services",
+    "title": "Project management doesn't happen in isolation",
+    "items": [
+      {
+        "title": "ERP selection",
+        "description": "If the project still starts with choosing the right platform."
+      },
+      {
+        "title": "Change management",
+        "description": "So the organization adopts what the project delivers."
+      },
+      {
+        "title": "AI agent automation",
+        "description": "How we monitor project risk in real time."
+      }
     ]
   }
 }

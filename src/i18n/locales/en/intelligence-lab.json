@@ -226,6 +226,8 @@
       "Without a governance framework, every AI initiative is left to the judgment of whoever implemented it. When something goes wrong — sensitive data exposed, an automated decision with no traceability — there's no one to turn to and no way to audit what happened.",
       "This framework runs transversally beneath the CIRA method's four phases, so every AI decision — from diagnosis to adoption — stays documented and auditable."
     ],
+    "articleLinkText": "Also read:",
+    "articleLinkLabel": "Corporate AI governance in the enterprise",
     "faq": {
       "eyebrow": "AI Governance",
       "items": [

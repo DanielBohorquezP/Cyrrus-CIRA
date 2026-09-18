@@ -27,6 +27,16 @@ export function loadAnalytics() {
   document.head.appendChild(script);
 }
 
+/**
+ * Sends a GA4 custom event. A no-op before consent is given (loadAnalytics()
+ * hasn't run yet, so window.gtag doesn't exist) — callers don't need to check
+ * consent state themselves.
+ */
+export function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", name, params);
+}
+
 declare global {
   interface Window {
     dataLayer: unknown[];

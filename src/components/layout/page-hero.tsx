@@ -2,6 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { Img } from "@/components/ui/img";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/ui/breadcrumbs";
 
 interface PageHeroProps {
   eyebrow: string;
@@ -10,11 +11,16 @@ interface PageHeroProps {
   children?: React.ReactNode;
   /** Optional photo shown beside the copy (right on desktop, below on mobile). Switches the hero to a two-column layout. */
   image?: { src: string; alt: string };
+  /** Visible breadcrumb trail, shown above the eyebrow. Omit on top-level pages. */
+  breadcrumbs?: BreadcrumbItem[];
 }
 
-export function PageHero({ eyebrow, title, description, children, image }: PageHeroProps) {
+export function PageHero({ eyebrow, title, description, children, image, breadcrumbs }: PageHeroProps) {
   const copy = (
     <div className={image ? "" : "mx-auto max-w-4xl px-6 md:px-12"}>
+      {breadcrumbs && breadcrumbs.length > 0 && (
+        <Breadcrumbs items={breadcrumbs} className="mb-5" />
+      )}
       <motion.span
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

@@ -23,8 +23,8 @@
     "eyebrow": "La base",
     "title": "¿Qué es la planeación estratégica?",
     "description": "La planeación estratégica es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, lo traduce en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales del negocio.",
-    "linkLabel": "Profundizamos en el tema en Perspectivas",
-    "linkHref": "/perspectivas"
+    "linkLabel": "Lea también: Cómo elegir una consultora estratégica confiable",
+    "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable"
   },
   "diagnostico": {
     "eyebrow": "Diagnóstico",
@@ -119,20 +119,6 @@
         "description": "Dirección de ciberseguridad ejecutiva: gestión de riesgo, cumplimiento normativo y respuesta ante incidentes al más alto nivel."
       }
     ]
-  },
-  "digitalGap": {
-    "eyebrow": "El problema que la estrategia no resuelve sola",
-    "title": "Una estrategia sólida no sirve de nada si nadie la encuentra",
-    "description": "Puede tener la hoja de ruta más clara del mercado, pero si su presencia digital no está a la altura, esa estrategia nunca llega al cliente que ya la estaba buscando. La ejecución interna y la visibilidad externa son parte del mismo problema.",
-    "problems": [
-      "Su sitio no refleja la propuesta de valor que acaba de definir.",
-      "La competencia aparece primero cuando el cliente busca lo que usted ya diseñó.",
-      "El plan estratégico no incluye cómo el mercado se entera de que existe."
-    ],
-    "ctaEyebrow": "Cyrrus Presencia Digital",
-    "ctaTitle": "Presencia Digital: dónde lo encuentran",
-    "ctaDescription": "El sitio y la visibilidad que convierten la estrategia en conversaciones reales con el mercado.",
-    "ctaButtonLabel": "Conocer Presencia Digital"
   },
   "services": {
     "eyebrow": "Alcance",

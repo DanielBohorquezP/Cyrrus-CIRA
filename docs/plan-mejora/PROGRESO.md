@@ -23,9 +23,27 @@
 
 ## Próximo paso
 
-> Fase 0 completa salvo 0.6 y 0.9 (bloqueadas por el cliente/dueño). Seguir con
-> **Fase 1** (1.1–1.6, arquitectura y navegación) o pedir al cliente los
-> insumos de la tabla de Bloqueos para desbloquear Fase 2.
+> **Continuar Fase 4.** 4.3 (ERP) y 4.5 (PMO) ya tienen enlazado interno y FAQ
+> ampliada aplicando la plantilla 1.3 (ver bitácora 2026-09-18 "Fase 4:
+> enlazado interno..."); falta todavía en ambas el bloque "caso real" (2.1) y,
+> en 4.3, aplicar el mismo nivel de profundidad de contenido (síntomas,
+> FAQ ampliada) a CRM/HCM/EAM — hoy solo ERP la tiene, CRM/HCM/EAM solo
+> heredaron la nueva sección "Servicios relacionados" por ser un componente
+> compartido (`SeleccionProducto.tsx`).
+>
+> Siguiente candidato: **4.6 Gestión del cambio** o **4.1 Estrategia** (ver
+> tabla "FASE 4" en PLAN.md para longitud objetivo y keywords). Aplicar el
+> mismo patrón usado en 4.3/4.5: sección "Servicios relacionados" (cards con
+> `Link` a 2-3 servicios + el artículo de Perspectivas más afín) y, si falta,
+> un enlace explícito a `/metodo-cira` cerca de la explicación de "cómo lo
+> hacemos". El caso real de cada página sigue bloqueado por 2.1 — dejar ese
+> bloque para después o usar un placeholder que no invente cifras (ver D4 en
+> PLAN.md: toda cifra necesita fuente o se quita).
+> También válido si se prefiere: 4.8 (sincronizar `route-meta.json` con
+> `usePageMeta`, mecánico y sin bloqueos) antes de seguir con contenido.
+>
+> Fase 1 queda cerrada salvo 1.2 ("Casos destacados", depende de 2.1) y 1.5
+> (destino final de `/presencia-digital/*`, depende del cliente).
 
 ---
 
@@ -47,12 +65,12 @@
 ### Fase 1 — Arquitectura y navegación
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| 1.1 | Menú por servicios | ⬜ | |
-| 1.2 | Reordenar el Inicio | ⬜ | La sección "Casos destacados" depende de 2.1 |
-| 1.3 | Plantilla única de página de servicio | ⬜ | |
-| 1.4 | `/metodo-cira` como página de metodología | ⬜ | |
-| 1.5 | Sacar Presencia Digital de consultoría | ⛔ | Quitar de Estrategia/footer se puede hacer ya; destino final espera decisión |
-| 1.6 | Breadcrumbs visibles | ⬜ | |
+| 1.1 | Menú por servicios | ✅ | `nav-config.ts` reestructurado: "Servicios" (Estrategia, Selección de Soluciones, Gerencia de Proyectos, Gestión del Cambio, IA), "Capacitación Ejecutiva", "Nosotros" (Quiénes Somos, Metodología CIRA, Experiencia), "Perspectivas" |
+| 1.2 | Reordenar el Inicio | 🟡 | Orden nuevo aplicado y tab de Presencia Digital quitado; tabs de Servicios ampliadas de 3 a 6 (5 servicios + Academy). Sección "Casos destacados" sigue pendiente de 2.1 |
+| 1.3 | Plantilla única de página de servicio | ⬜ | Es una guía para Fase 4, no una tarea propia — no se aplica hasta reescribir cada página de servicio |
+| 1.4 | `/metodo-cira` como página de metodología | ✅ | Ya era en gran parte una página de metodología (4 fases con enlace a cada servicio); enlazada desde "Nosotros" en el menú (1.1) y ahora también desde `QuienesSomos.tsx` ("Conozca el Método CIRA..."); cada página de servicio ya enlaza de vuelta a `/metodo-cira` desde su breadcrumb (1.6) |
+| 1.5 | Sacar Presencia Digital de consultoría | ⛔ | Hecho: sección "digitalGap" quitada de `PlaneacionEstrategica.tsx` + `estrategia.json` (ES/EN), enlace quitado del footer. Sigue bloqueado el destino final de las páginas `/presencia-digital/*` (decisión del cliente) |
+| 1.6 | Breadcrumbs visibles | ✅ | Componente `Breadcrumbs` (`src/components/ui/breadcrumbs.tsx`) integrado en `PageHero`; aplicado a las 14 páginas de nivel 2+ que ya tenían `BreadcrumbList` en JSON-LD |
 
 ### Fase 2 — Prueba y confianza
 | ID | Tarea | Estado | Notas |
@@ -76,9 +94,9 @@
 |---|---|---|---|
 | 4.1 | Estrategia | ⬜ | |
 | 4.2 | Selección de soluciones (hub) | ⬜ | |
-| 4.3 | Selección de software + ERP/CRM/HCM/EAM | ⬜ | Prioridad 1 de nicho |
+| 4.3 | Selección de software + ERP/CRM/HCM/EAM | 🟡 | Prioridad 1 de nicho. ERP: enlace a `/metodo-cira`, sección "Servicios relacionados" (Gestión del cambio, PMO, artículo de Perspectivas) y 2 FAQ nuevas (Colombia/LATAM, selección vs. implementación). CRM/HCM/EAM comparten el componente y heredan "Servicios relacionados", pero no la FAQ ampliada. Falta caso real (2.1) |
 | 4.4 | Tecnologías avanzadas / Infraestructura | ⬜ | |
-| 4.5 | Gerencia de proyectos (PMO) | ⬜ | Prioridad 2 de nicho |
+| 4.5 | Gerencia de proyectos (PMO) | 🟡 | Prioridad 2 de nicho. Enlace a `/metodo-cira` y al artículo "por qué fracasan los proyectos de transformación" en la intro, sección "Servicios relacionados" (ERP, Gestión del cambio, Automatización con IA) y 2 FAQ nuevas (duración, PMO as a Service). Falta caso real (2.1) |
 | 4.6 | Gestión del cambio | ⬜ | |
 | 4.7 | Intelligence Lab + 3 subpáginas | ⬜ | Las más delgadas |
 | 4.8 | Sincronizar `route-meta.json` con `usePageMeta` | ⬜ | |
@@ -87,7 +105,7 @@
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
 | 5.1 | Autor real + página de autor | ⬜ | |
-| 5.2 | Enlazado cluster ↔ pilar en los 3 artículos actuales | ⬜ | |
+| 5.2 | Enlazado cluster ↔ pilar en los 3 artículos actuales | ✅ | Enlace pilar→artículo (sección "servicio relacionado" en `ArticuloPerspectiva.tsx`, dato en `blog-data.ts`) y artículo→pilar (link en `PlaneacionEstrategica`/`estrategia.json`, `GestionDelCambio`/`gestion-cambio.json`, `GobiernoDeIA`/`intelligence-lab.json`) en ambas direcciones, ES y EN |
 | 5.3 | Publicación según calendario (2/mes) | 🟡 | 3 publicados (8, 10 y 12 de septiembre de 2026) |
 | 5.4 | Estudio de datos propios | ⬜ | |
 
@@ -102,7 +120,7 @@
 ### Fase 7 — Medición
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| 7.1 | Eventos GA4 del wizard y contenido | ⬜ | |
+| 7.1 | Eventos GA4 del wizard y contenido | ✅ | `trackEvent()` en `analytics.ts`; eventos `wizard_open`, `wizard_step_complete`, `wizard_submit`, `wizard_book_call_click`, `video_play`, `article_read` (scroll 75%, `use-scroll-depth-event.ts`). Falta instrumentar clic en taller (no aplica hoy: todos están "Próximamente" sin link real — ver 3.1/3.3) |
 | 7.2 | Tablero mensual de KPIs | ⛔ | GSC ya accesible; falta acceso a GA4 |
 
 ### Fase 8 — Rendimiento
@@ -142,6 +160,7 @@
 |---|---|---|---|---|---|
 | 2026-09-17 | 87 / 100 / 92 | 2,8 s | — | — | Línea base de la auditoría. Google aún muestra el sitio viejo |
 | 2026-09-18 | — | — | 44 / 178 conocidas | 46 (1.840 impr., CTR 2,5 %, pos. media 14,7) | Primera lectura real de Search Console. Casi todo el tráfico es de marca ("cyrrus"); ver `docs/plan-mejora/datos/search-console-2026-09-18.md` |
+| 2026-09-18 | 90 / — / — | 3,09 s | — | — | `node scripts/lh.mjs --runs 3` (mediana) en esta máquina/sesión, no comparable 1:1 con la línea base del 17-09 (otra máquina). El elemento LCP sigue siendo del hero (`min-h-screen`, la sección de tabs no entra en el viewport inicial) — no parece una regresión del reorden del Inicio, pero falta confirmar con PageSpeed Insights real antes de tocar 8.1 |
 
 ---
 
@@ -149,6 +168,178 @@
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
+
+### 2026-09-18 — Fase 4: enlazado interno y FAQ ampliada en ERP y PMO (4.3, 4.5)
+- **Tareas:** 4.3 (Selección de software / ERP, prioridad 1 de nicho) y 4.5
+  (Gerencia de proyectos / PMO, prioridad 2), las dos priorizadas por
+  PROGRESO.md al cerrar la sesión anterior.
+- **Punto de partida:** ambas páginas ya tenían casi todos los bloques de la
+  plantilla 1.3 (dolor, qué hacemos, entregables, FAQ con `FAQPage` JSON-LD,
+  CTA) de una sesión anterior a la creación del plan. Lo que faltaba: enlace
+  explícito a `/metodo-cira`, una sección de "servicios relacionados" que
+  cruzara ERP ↔ PMO ↔ Gestión del cambio ↔ el artículo de Perspectivas más
+  afín, y FAQ ampliada con keywords secundarias.
+- **Hecho (archivos):**
+  - `src/pages/metodo-cira/SeleccionProducto.tsx` (componente compartido de
+    ERP/CRM/HCM/EAM): nuevo enlace "Ver el Método CIRA completo →" junto al
+    link existente a la fase de software; nueva sección "Servicios
+    relacionados" (cards a Gestión del cambio, Gerencia de proyectos/PMO y el
+    artículo "Por qué fracasan los proyectos de transformación digital").
+    Por ser componente compartido, CRM/HCM/EAM heredan esta sección aunque no
+    tenían tarea propia esta sesión.
+  - `src/i18n/locales/{es,en}/seleccion-productos.json`: 2 FAQ nuevas
+    **solo en `erp`** (no se tocó crm/hcm/eam) — "¿Ayudan a elegir ERP en
+    Colombia/LATAM?" y "¿La selección incluye la gerencia de la
+    implementación?" (con enlace conceptual a PMO).
+  - `src/pages/metodo-cira/GestionDeProyectos.tsx`: 2 enlaces en línea en la
+    intro (mismo patrón que `GestionDelCambio.tsx` de la sesión de 5.2) hacia
+    `/metodo-cira` y hacia el artículo de transformación digital; nueva
+    sección "Servicios relacionados" (cards a Selección de ERP, Gestión del
+    cambio y Automatización con agentes de IA →
+    `/intelligence-lab/automatizaciones-desarrollo`).
+  - `src/i18n/locales/{es,en}/gestion-proyectos.json`: nuevas claves
+    `intro.methodLinkText/methodLinkLabel/articleLinkText/articleLinkLabel`,
+    2 FAQ nuevas (duración de un proyecto con PMO externo — sin inventar una
+    cifra fija, D4 — y diferencia con "PMO as a Service"), y bloque `related`
+    (eyebrow/title/items) para la nueva sección.
+- **No tocado:** meta title/description de ambas páginas (ya cumplían los
+  límites de 60/155 caracteres); CRM/HCM/EAM no recibieron FAQ ampliada ni
+  contenido propio, solo la sección compartida de enlaces.
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72 rutas
+  prerenderizadas) + `node scripts/serve-dist.mjs` vía navegador embebido:
+  consola limpia en `/metodo-cira/gestion-de-proyectos`,
+  `/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp` y su
+  versión `/en/...`. Confirmado por lectura del HTML generado: los enlaces
+  nuevos apuntan a `/metodo-cira` y al artículo correcto, y el `FAQPage`
+  JSON-LD del ERP en inglés incluye las 2 preguntas nuevas
+  ("Do you help select an ERP for companies..."). Capturas de pantalla de la
+  nueva sección "Servicios relacionados" en `/metodo-cira/gestion-de-proyectos`
+  confirmaron el estilo de tarjeta consistente con el resto del sitio.
+- **Quedó a medias:** el bloque "caso real" de la plantilla 1.3 en ambas
+  páginas sigue sin poder llenarse — bloqueado por 2.1 (autorización y datos
+  de clientes). CRM/HCM/EAM (parte de 4.3) no tienen todavía su propia FAQ
+  ampliada ni revisión de longitud de contenido.
+- **Próximo paso:** ver "Próximo paso" arriba — replicar el patrón de
+  enlazado en 4.1 o 4.6, o cerrar 4.8 (sincronizar `route-meta.json`) como
+  tarea mecánica intermedia.
+
+### 2026-09-18 — Cierre de 1.4, enlazado cluster↔pilar (5.2), eventos GA4 (7.1)
+- **Tareas:** 1.4 (cierre), 5.2, 7.1. Se midió LCP para evaluar 8.1 pero no se
+  tocó código de rendimiento (ver nota abajo).
+- **Hecho (archivos):**
+  - 1.4: `QuienesSomos.tsx` + `paginas.json` (ES/EN) — nuevo enlace "Conozca el
+    Método CIRA que aplicamos en cada proyecto" tras la sección de trayectoria
+    del CEO. Con esto y lo ya hecho en 1.1/1.6, `/metodo-cira` queda enlazada
+    desde Nosotros (menú), desde Quiénes Somos (contenido) y desde cada
+    página de servicio (breadcrumb) — tarea cerrada.
+  - 5.2: `blog-data.ts` ahora lleva `pillarHref`/`pillarLabelKey` por artículo
+    (mapeo cluster→pilar: transformación digital→Gestión del Cambio,
+    consultora confiable→Estrategia, gobierno de IA→Gobierno de IA).
+    `ArticuloPerspectiva.tsx` muestra una tarjeta "Servicio relacionado" en el
+    sidebar con ese enlace. En la dirección inversa: `estrategia.json`
+    (ES/EN) — el link que antes iba genérico a `/perspectivas` ahora apunta
+    directo al artículo de estrategia; `gestion-cambio.json` (ES/EN) +
+    `GestionDelCambio.tsx` y `intelligence-lab.json` (ES/EN) +
+    `GobiernoDeIA.tsx` — nuevo párrafo "Lea también: [artículo]" en la intro.
+  - 7.1: `analytics.ts` — nueva `trackEvent(name, params)`, no-op si el
+    visitante no ha dado consentimiento (gtag no cargado). Instrumentado:
+    `wizard_open` (`contact-wizard-context.tsx`, cubre todos los CTAs de
+    "Agendar conversación" del sitio porque todos pasan por `openWizard()`),
+    `wizard_step_complete` y `wizard_submit` y `wizard_book_call_click`
+    (`contact-wizard-modal.tsx`), `video_play` (`youtube-facade.tsx`, cubre
+    los 3 testimonios). Nuevo hook `use-scroll-depth-event.ts` (mismo patrón
+    rAF-throttled que `useScrolled`) para `article_read` al pasar 75% del
+    alto del documento, usado en `ArticuloPerspectiva.tsx`.
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72 rutas)
+  + navegador embebido: consola limpia en `/quienes-somos`,
+  `/metodo-cira/gestion-del-cambio`, `/intelligence-lab/gobierno-de-ia`,
+  `/perspectivas/gobierno-de-ia-corporativo-en-la-empresa`. Eventos GA4
+  verificados en vivo con un `window.gtag` de prueba inyectado por consola:
+  `wizard_open`, `wizard_step_complete` (con `step`/`step_number` correctos)
+  y `article_read` (con `slug` correcto al llegar a 75% de scroll) se
+  confirmaron disparando tal cual se esperaba. `wizard_submit` no se probó
+  en vivo para no enviar un envío de prueba real a web3forms.com — se
+  verificó por lectura de código, mismo patrón que los demás.
+  Ojo con `requestAnimationFrame`: no dispara en una pestaña del navegador
+  embebido que no está al frente (`tabs_select` para traerla al frente antes
+  de probar cualquier cosa que dependa de rAF/scroll).
+- **Nota de rendimiento (no accionada):** `node scripts/lh.mjs --runs 3` dio
+  LCP 3,09s en el Inicio, por encima de los 2,8s de la línea base del
+  2026-09-17 — pero es otra máquina/sesión, no una comparación válida, y el
+  elemento LCP sigue siendo el hero (`min-h-screen`; la sección de tabs
+  reordenada en 1.2 no entra en el viewport inicial). No se tocó código de
+  8.1 sin una medición limpia (PageSpeed Insights real) que confirme si hay
+  regresión de verdad.
+- **Quedó a medias:** nada de lo iniciado.
+- **Próximo paso:** Fase 4 (reescribir páginas de servicio, empezar por ERP y
+  PMO), 3.2 (coherencia del hub de Leadership Academy), 6.3/6.4
+  (backlinks/LinkedIn), o confirmar el LCP con PageSpeed Insights antes de
+  decidir si 8.1 necesita trabajo.
+
+### 2026-09-18 — Fase 1: navegación por servicios, reorden del Inicio, breadcrumbs
+- **Tareas:** 1.1, 1.2 (parcial), 1.5 (parcial), 1.6. 1.4 avanzó como efecto
+  colateral de 1.1 (quedó parcial). 1.3 no aplica esta sesión (es guía para Fase 4).
+- **Hecho (archivos):**
+  - 1.1: `src/lib/nav-config.ts` reestructurado en 4 secciones —
+    **Servicios** (Estrategia, Selección de Soluciones ⊃ Software/Avanzadas/Infra,
+    Gerencia de Proyectos, Gestión del Cambio, Inteligencia Artificial ⊃
+    Gobierno/Arquitectura/Automatización), **Capacitación Ejecutiva** (Leadership
+    Academy), **Nosotros** (Quiénes Somos, Metodología CIRA, Experiencia) y
+    **Perspectivas**. "Servicios" no tiene página propia todavía (D2: no se crean
+    URLs nuevas) — enlaza a `/#servicios`, el bloque de tabs del Inicio.
+    `src/components/layout/nav-menu.tsx` generalizado: el panel ahora soporta
+    **más de una** rama con tercer nivel abierta a la vez (antes solo
+    funcionaba la primera encontrada; "Servicios" tiene dos: Selección de
+    Soluciones e Inteligencia Artificial). Nuevas llaves en
+    `common.json` (ES/EN); llaves huérfanas de Presencia Digital eliminadas.
+  - 1.5 (parcial): sección "digitalGap" ("Presencia Digital: dónde lo
+    encuentran") quitada de `PlaneacionEstrategica.tsx` (~70 líneas + imports
+    sin uso) y de `estrategia.json` (ES/EN); enlace a Presencia Digital quitado
+    del footer (`footer.tsx`). Las páginas `/presencia-digital/*` siguen
+    existiendo — su destino final sigue esperando decisión del cliente.
+  - 1.2 (parcial): `Home.tsx` reordenado — Hero → **Servicios** (ancla
+    `id="servicios"`) → TrustBar → WhyCyrrus → CyrrusAbout → CiraJourney →
+    Testimonials → CeoSection (bajada, antes iba justo tras el hero) →
+    Experience → Perspectivas → FinalCta. Las tabs de servicios
+    (`home.json` → `servicesTabs`, ES/EN) se ampliaron de 3 útiles + 1
+    Presencia Digital (quitada) a **6**: Estrategia, Selección de Tecnología,
+    Gerencia de Proyectos, Gestión del Cambio, IA Empresarial, Leadership
+    Academy — antes faltaban Selección de Soluciones y Gerencia de Proyectos
+    por completo, y la tab de "Gestión del Cambio" enlazaba por error a
+    Leadership Academy. `hero-services-tabs.tsx` actualizado con 6 imágenes
+    (reutiliza fotos ya optimizadas, sin `npm run images` nuevo). Sigue
+    pendiente el bloque "Casos destacados" (depende de 2.1).
+  - 1.6: `src/components/ui/breadcrumbs.tsx` (nuevo) + prop `breadcrumbs` en
+    `PageHero` (`src/components/layout/page-hero.tsx`). Aplicado a las 14
+    páginas de nivel 2+ que ya construían `BreadcrumbList` en JSON-LD:
+    `PlaneacionEstrategica`, `SeleccionDeSoluciones`, `SeleccionDeSoftware`,
+    `SeleccionProducto`, `SolucionDetalle`, `GestionDeProyectos`,
+    `GestionDelCambio`, `GobiernoDeIA`, `AutomatizacionesDesarrollo`,
+    `ArquitecturaDeIA`, `CursoDetalle`, `ArticuloPerspectiva`,
+    `presencia-digital/DesarrolloWeb`, `presencia-digital/Seo`. En la mayoría
+    se reusa el mismo array para el JSON-LD y la UI (evita que se desincronicen).
+  - 1.4 (parcial, no planeado como tarea propia de esta sesión): `MetodoCira.tsx`
+    ya cumplía casi todo lo pedido (4 fases, cada una enlaza a su página de
+    servicio) — lo que faltaba era que apareciera bajo "Nosotros" en la
+    navegación, que quedó resuelto por 1.1. Falta: enlace explícito desde
+    Quiénes Somos hacia `/metodo-cira`, y confirmar que cada página de
+    servicio enlace de vuelta en su sección "cómo lo hacemos".
+- **Verificación:** `npm run build` (72/72 rutas) + `node scripts/serve-dist.mjs`
+  vía navegador embebido en modo escritorio y móvil: consola limpia en `/`,
+  `/en`, `/metodo-cira/estrategia`,
+  `/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp`,
+  `/intelligence-lab/gobierno-de-ia`, `/leadership-academy/ia-para-directivos`,
+  `/perspectivas/como-elegir-una-consultora-estrategica-confiable`. Menú de
+  escritorio probado a mano: las dos ramas con tercer nivel (Selección de
+  Soluciones e Inteligencia Artificial) abren correctamente bajo "Servicios";
+  "Nosotros" muestra sus 3 hijos. Breadcrumbs visibles y con el mismo texto
+  que el JSON-LD en las rutas probadas. Footer sin enlace a Presencia Digital
+  en ES y EN.
+- **Quedó a medias:** 1.2 (bloque "Casos destacados"), 1.4 (enlazado de
+  contenido), 1.5 (destino final de `/presencia-digital/*`). 1.3 sigue sin
+  aplicarse — es la plantilla que se usará al reescribir cada página en Fase 4.
+- **Próximo paso:** cerrar 1.4 (enlace desde Quiénes Somos) si se quiere Fase 1
+  100% completa, o pasar a Fase 2/pedir insumos del cliente (ver Bloqueos).
 
 ### 2026-09-18 — Fase 0 completa (salvo 0.6 y 0.9) + primera lectura de Search Console
 - **Tareas:** 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8.

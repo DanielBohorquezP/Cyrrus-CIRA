@@ -1,9 +1,12 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import {
+  BookOpen,
   Building2,
   CheckCircle2,
+  ClipboardCheck,
   Cpu,
   DollarSign,
+  HeartHandshake,
   Target,
   TrendingUp,
   Users,
@@ -106,6 +109,37 @@ export default function SeleccionProducto() {
   const selectionPath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
   const softwarePath = `${selectionPath}/seleccion-de-software`;
   const pagePath = `${softwarePath}/${slug}`;
+  const changePath = `${prefix}/metodo-cira/gestion-del-cambio`;
+  const pmoPath = `${prefix}/metodo-cira/gestion-de-proyectos`;
+  const articlePath = `${prefix}/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital`;
+  const relatedServices = [
+    {
+      href: changePath,
+      icon: HeartHandshake,
+      title: lang === "en" ? "Change management" : "Gestión del cambio",
+      description: lang === "en"
+        ? "So the organization actually adopts the new platform."
+        : "Para que la organización adopte realmente la nueva plataforma.",
+    },
+    {
+      href: pmoPath,
+      icon: ClipboardCheck,
+      title: lang === "en" ? "Project management (PMO)" : "Gerencia de proyectos (PMO)",
+      description: lang === "en"
+        ? "External PMO for the implementation once you've chosen."
+        : "PMO externo para la implementación una vez decida.",
+    },
+    {
+      href: articlePath,
+      icon: BookOpen,
+      title: lang === "en"
+        ? "Why transformation projects fail"
+        : "Por qué fracasan los proyectos de transformación",
+      description: lang === "en"
+        ? "What derails these projects before they reach go-live."
+        : "Qué descarrila estos proyectos antes de llegar a producción.",
+    },
+  ];
 
   usePageMeta({
     title: meta?.title ?? "",
@@ -157,6 +191,14 @@ export default function SeleccionProducto() {
     return <Navigate to={`${prefix}/metodo-cira/seleccion-de-soluciones/seleccion-de-software`} replace />;
   }
 
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+    { label: lang === "en" ? "Solution Selection" : "Selección de Soluciones", href: selectionPath },
+    { label: lang === "en" ? "Software Selection" : "Selección de Software", href: softwarePath },
+    { label: slug.toUpperCase() },
+  ];
+
   const Icon = productIcons[slug as ProductSlug];
   const image = productImages[slug as ProductSlug];
   const evaluamosItems = evaluamos.items.map((item, i) => ({ ...item, icon: evaluamosIcons[i] }));
@@ -176,6 +218,7 @@ export default function SeleccionProducto() {
         title={hero.title}
         description={hero.description}
         image={{ src: image.image, alt: hero.title }}
+        breadcrumbs={breadcrumbItems}
       >
         <ContactCtaButton variant="light" label={hero.ctaLabel} />
       </PageHero>
@@ -268,6 +311,15 @@ export default function SeleccionProducto() {
               {`${solucion.linkLabel} →`}
             </Link>
           </Reveal>
+
+          <Reveal delay={0.18} className="mt-3">
+            <Link
+              to={methodPath}
+              className="text-sm font-semibold text-blue underline-offset-4 hover:underline"
+            >
+              {`${lang === "en" ? "See the full CIRA Method" : "Ver el Método CIRA completo"} →`}
+            </Link>
+          </Reveal>
         </div>
       </section>
 
@@ -337,6 +389,41 @@ export default function SeleccionProducto() {
                     <span className="text-base font-semibold text-navy">{product.title}</span>
                     <span className="mt-auto text-sm font-semibold text-blue">
                       {`${lang === "en" ? "See" : "Ver"} ${product.slug.toUpperCase()} →`}
+                    </span>
+                  </Link>
+                </RevealItem>
+              );
+            })}
+          </RevealGroup>
+        </div>
+      </section>
+
+      {/* 07 — Servicios relacionados */}
+      <section className="w-full bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {lang === "en" ? "Related services" : "Servicios relacionados"}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {lang === "en" ? "The decision doesn't end at the recommendation" : "La decisión no termina en la recomendación"}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {relatedServices.map((item) => {
+              const RelatedIcon = item.icon;
+              return (
+                <RevealItem key={item.title}>
+                  <Link
+                    to={item.href}
+                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    <RelatedIcon className="h-6 w-6 text-blue" />
+                    <span className="text-base font-semibold text-navy">{item.title}</span>
+                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
+                    <span className="mt-auto text-sm font-semibold text-blue">
+                      {`${lang === "en" ? "See more" : "Ver más"} →`}
                     </span>
                   </Link>
                 </RevealItem>

@@ -23,8 +23,8 @@
     "eyebrow": "The foundation",
     "title": "What is strategic planning?",
     "description": "Strategic planning is the process by which a company defines its medium- and long-term direction, translates it into measurable objectives (KPIs), and aligns every area of the organization — from senior leadership down to daily operations — to execute it consistently. It's not a document that gets filed away: it's a system of decisions and priorities that gets reviewed and adjusted with real business data.",
-    "linkLabel": "We go deeper on this in Perspectivas",
-    "linkHref": "/perspectivas"
+    "linkLabel": "Also read: How to choose a trustworthy strategy consultancy",
+    "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable"
   },
   "diagnostico": {
     "eyebrow": "Diagnosis",
@@ -119,20 +119,6 @@
         "description": "Executive cybersecurity leadership: risk management, regulatory compliance, and incident response at the highest level."
       }
     ]
-  },
-  "digitalGap": {
-    "eyebrow": "The problem strategy alone doesn't solve",
-    "title": "A solid strategy is worthless if nobody finds it",
-    "description": "You may have the clearest roadmap in the market, but if your digital presence isn't up to it, that strategy never reaches the customer who was already looking for it. Internal execution and external visibility are part of the same problem.",
-    "problems": [
-      "Your site doesn't reflect the value proposition you just defined.",
-      "Competitors show up first when the customer searches for what you already designed.",
-      "The strategic plan doesn't include how the market finds out you exist."
-    ],
-    "ctaEyebrow": "Cyrrus Digital Presence",
-    "ctaTitle": "Digital Presence: where you're found",
-    "ctaDescription": "The site and visibility that turn strategy into real conversations with the market.",
-    "ctaButtonLabel": "Explore Digital Presence"
   },
   "services": {
     "eyebrow": "Scope",

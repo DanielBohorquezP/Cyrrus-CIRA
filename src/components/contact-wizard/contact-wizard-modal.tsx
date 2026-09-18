@@ -12,6 +12,7 @@ import {
 import { BorderButton } from "@/components/ui/border-button";
 import { cn } from "@/lib/utils";
 import { useContactWizard } from "@/lib/contact-wizard-context";
+import { trackEvent } from "@/lib/analytics";
 import {
   CONTACT_WIZARD_STEPS,
   LAST_STEP_AT_LEAST_ONE_OF,
@@ -124,6 +125,9 @@ export function ContactWizardModal() {
       });
       const result = await response.json();
       setStatus(result.success ? "success" : "error");
+      if (result.success) {
+        trackEvent("wizard_submit", { service: serviceLabel });
+      }
     } catch {
       setStatus("error");
     }
@@ -137,6 +141,7 @@ export function ContactWizardModal() {
       void submit();
       return;
     }
+    trackEvent("wizard_step_complete", { step: step.id, step_number: stepIndex + 1 });
     setStepIndex((i) => i + 1);
   }
 
@@ -190,7 +195,12 @@ export function ContactWizardModal() {
                 size="sm"
                 className="mt-3"
               >
-                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackEvent("wizard_book_call_click")}
+                >
                   {t("success.bookCall.cta")}
                 </a>
               </BorderButton>

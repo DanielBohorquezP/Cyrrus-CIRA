@@ -75,6 +75,11 @@ export default function Seo() {
   const pagePath = lang === "en" ? "/en/presencia-digital/seo" : "/presencia-digital/seo";
   const homePath = lang === "en" ? "/en" : "/";
   const hubPath = lang === "en" ? "/en/presencia-digital" : "/presencia-digital";
+  const breadcrumbItems = [
+    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+    { label: "Cyrrus Presencia Digital", href: hubPath },
+    { label: t("seo.hero.title") },
+  ];
 
   usePageMeta({
     title: t("seo.meta.title"),
@@ -104,11 +109,12 @@ export default function Seo() {
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Presencia Digital", item: `${siteUrl}${hubPath}` },
-          { "@type": "ListItem", position: 3, name: t("seo.hero.title"), item: `${siteUrl}${pagePath}` },
-        ],
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href ?? pagePath}`,
+        })),
       },
     ],
   });
@@ -120,6 +126,7 @@ export default function Seo() {
         eyebrow={t("seo.hero.eyebrow")}
         title={t("seo.hero.title")}
         description={t("seo.hero.description")}
+        breadcrumbs={breadcrumbItems}
         image={{
           src: "/assets/decoracion/IMG_20230302_112825.jpg",
           alt: "Consultores de Cyrrus revisando resultados de posicionamiento en buscadores",
