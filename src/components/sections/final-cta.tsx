@@ -19,7 +19,7 @@ export function FinalCta() {
           </p>
         </Reveal>
         <Reveal delay={0.15}>
-          <BorderButton variant="light" size="lg" className="mt-8" dot onClick={openWizard}>
+          <BorderButton variant="light" size="lg" className="mt-8" dot onClick={() => openWizard()}>
             {t("finalCta.buttonText")}
           </BorderButton>
         </Reveal>

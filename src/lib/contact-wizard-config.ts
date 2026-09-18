@@ -3,6 +3,8 @@
 // step or field is a matter of editing this array — the component itself
 // has no per-field branching beyond `type`.
 
+import { workshops } from "@/lib/workshops-data";
+
 export interface WizardFieldOption {
   value: string;
   labelKey: string;
@@ -29,6 +31,19 @@ export interface WizardStep {
   titleKey: string;
   fields: WizardField[];
 }
+
+/** i18n option key per workshop slug (values match workshops-data.ts) — used
+ *  to build the "leadershipAcademy" group below so the dropdown always has
+ *  one entry per real workshop instead of a single stale placeholder. */
+const WORKSHOP_OPTION_KEY: Record<string, string> = {
+  "ia-para-directivos": "iaDirectivos",
+  "innovacion-empresarial": "innovacionEmpresarial",
+  "iso-27001": "iso27001",
+  "continuidad-de-negocio-drp": "continuidadNegocioDrp",
+  "gestion-del-cambio-para-lideres": "gestionCambioLideres",
+  "gobierno-de-datos-para-ejecutivos": "gobiernoDatosEjecutivos",
+  "liderazgo-digital-y-toma-de-decisiones": "liderazgoDigitalDecisiones",
+};
 
 export const CONTACT_WIZARD_STEPS: WizardStep[] = [
   {
@@ -72,11 +87,11 @@ export const CONTACT_WIZARD_STEPS: WizardStep[] = [
             labelKey: "steps.servicio.options.gobiernoIA.label",
             groupKey: "steps.servicio.groups.intelligenceLab",
           },
-          {
-            value: "leadership-academy-gestion-cambio",
-            labelKey: "steps.servicio.options.gestionCambio.label",
+          ...workshops.map((w) => ({
+            value: `leadership-academy-${w.slug}`,
+            labelKey: `steps.servicio.options.${WORKSHOP_OPTION_KEY[w.slug]}.label`,
             groupKey: "steps.servicio.groups.leadershipAcademy",
-          },
+          })),
           {
             value: "presencia-digital-desarrollo-web",
             labelKey: "steps.servicio.options.desarrolloWeb.label",

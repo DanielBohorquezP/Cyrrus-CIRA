@@ -41,19 +41,17 @@
 > corporativo) — no se recomienda perseguir el conteo de palabras como
 > tarea en sí misma.
 >
-> **Fase 3 (Leadership Academy):** 3.2 (coherencia del hub) cerrada esta
-> sesión. Queda 3.1 (ficha completa por taller, bloqueada — faltan datos del
-> cliente), 3.3 (depende de 3.1) y 3.4 (captura de interesados, sin
-> bloqueos, candidato viable).
+> **Fase 3 (Leadership Academy):** 3.2 y 3.4 cerradas. Queda 3.1 (ficha
+> completa por taller, bloqueada — faltan datos del cliente) y 3.3 (depende
+> de 3.1).
 >
 > **Fase 1** cerrada salvo 1.2 ("Casos destacados", depende de 2.1) y 1.5
 > (destino final de `/presencia-digital/*`, depende del cliente).
 >
-> Candidatos para la próxima sesión, todos sin bloqueos: 3.4 (captura de
-> interesados en talleres), 6.1 (Bing Webmaster + revisión semanal de GSC),
-> 2.4 (política de independencia — validar texto con el CEO antes de
-> publicar) o revisar 8.1 (LCP móvil) con una medición limpia de PageSpeed
-> Insights real.
+> Candidatos para la próxima sesión, todos sin bloqueos: 6.1 (Bing Webmaster
+> + revisión semanal de GSC), 2.4 (política de independencia — validar
+> texto con el CEO antes de publicar) o revisar 8.1 (LCP móvil) con una
+> medición limpia de PageSpeed Insights real.
 
 ---
 
@@ -97,7 +95,7 @@
 | 3.1 | Ficha completa por taller | ⛔ | Faltan agenda, duración, facilitador, fechas |
 | 3.2 | Coherencia del hub (hero, agrupación, CTA) | ✅ | Hero reescrito (ya no habla solo de "gobierno de IA"), talleres agrupados en 3 temas, CTA cambiado de "Agendar un taller" a "Solicitar taller in-company". De paso, corregido un bug real: la descripción de cada taller en el hub EN salía en español |
 | 3.3 | Indexación de talleres | ⬜ | Por taller, cuando cumpla 3.1 |
-| 3.4 | Captura de interesados | ⬜ | |
+| 3.4 | Captura de interesados | ✅ | Botón "Me interesa este taller" por taller (hub y ficha individual) abre el `ContactWizard` con el paso "Servicio" preseleccionado a ese taller exacto + evento `workshop_interest_click` |
 
 ### Fase 4 — Profundidad de servicios
 | ID | Página | Estado | Notas |
@@ -178,6 +176,89 @@
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
+
+### 2026-09-18 — Fase 3: captura de interesados por taller (3.4)
+- **Tarea:** 3.4 — sin bloqueos, siguiente candidato de la sesión anterior.
+- **Punto de partida:** el wizard de contacto (`ContactWizardModal`) ya tenía
+  un paso "Servicio" con un `<select>`, pero Leadership Academy solo tenía
+  **una** opción genérica en él (`leadership-academy-gestion-cambio`, un
+  valor stale sin relación real con ningún taller) — no existía forma de que
+  un visitante indicara interés en un taller *específico*. Las 7 tarjetas del
+  hub tampoco eran clicables (`ComingSoon`, deliberado: no hay fecha/agenda
+  real que mostrar — bloqueado por 3.1) y las fichas individuales
+  (`CursoDetalle.tsx`, noindexadas pero alcanzables por URL directa) solo
+  tenían el `FinalCta` genérico del sitio al final.
+- **Diseño elegido:** no tocar `ComingSoon` (sigue bloqueando la navegación a
+  la ficha del taller, correcto mientras no haya contenido real) — en su
+  lugar, añadir un botón de texto **"Me interesa este taller →"** aparte,
+  fuera del wrapper `ComingSoon`, en cada tarjeta del hub y en la ficha
+  individual. El botón abre el wizard existente con el paso "Servicio" ya
+  preseleccionado a ese taller exacto, en vez de crear un formulario nuevo
+  — más barato de mantener y consistente con "puede ser un paso del
+  ContactWizard con el taller preseleccionado" de PLAN.md 3.4.
+- **Hecho (archivos):**
+  - `src/lib/contact-wizard-context.tsx`: `openWizard()` ahora acepta un
+    `prefill?: Record<string, string>` opcional, expuesto en el contexto
+    junto a `isOpen`; se pasa a `trackEvent("wizard_open", ...)` para que
+    quede el servicio de origen en el evento existente.
+  - `src/components/contact-wizard/contact-wizard-modal.tsx`: nuevo
+    `useEffect` que reseedea `values` con `{ ...emptyValues(), ...prefill }`
+    cada vez que `isOpen` pasa a `true` (no en cada render, para no pisar lo
+    que el usuario esté escribiendo).
+  - `src/lib/contact-wizard-config.ts`: el grupo "Leadership Academy" del
+    `<select>` ahora se genera iterando `workshops` de `workshops-data.ts`
+    (7 opciones, valores `leadership-academy-<slug>`) en vez de la única
+    opción manual anterior — si se agrega un taller nuevo a
+    `workshops-data.ts`, aparece solo en el dropdown (falta añadir su label
+    en `contact-wizard.json`, ver abajo).
+  - `src/i18n/locales/{es,en}/contact-wizard.json`: 7 labels nuevas bajo
+    `steps.servicio.options` (una por taller, texto = título exacto del
+    taller), reemplazando la única label `gestionCambio` que sobraba.
+  - `src/pages/LeadershipAcademy.tsx`: cada tarjeta de taller separa ahora el
+    contenido bloqueado (`ComingSoon`) del nuevo botón de interés
+    (`handleWorkshopInterest`, fuera del wrapper); dispara
+    `trackEvent("workshop_interest_click", { workshop: slug })` y
+    `openWizard({ servicio: "leadership-academy-<slug>" })`.
+  - `src/pages/leadership-academy/CursoDetalle.tsx`: mismo patrón — botón
+    `BorderButton` añadido tras el cuerpo del taller, antes del `FinalCta`
+    genérico.
+  - `src/i18n/locales/{es,en}/leadership-academy.json`: nueva clave
+    `hub.workshopsSection.interestCta` ("Me interesa este taller →" /
+    "I'm interested in this workshop →"), reutilizada en ambas páginas.
+  - `src/components/ui/contact-cta-button.tsx`: nuevo prop opcional
+    `prefill`, pasado a `openWizard()` — no usado todavía por ningún caller,
+    pero deja el componente compartido listo para el mismo patrón en otra
+    página sin duplicar lógica.
+- **Rotura de tipos encontrada y corregida (no relacionada con el diseño,
+  efecto colateral de cambiar la firma de `openWizard`):** los 4 sitios que
+  pasaban `onClick={openWizard}` directo a un `<button>`/`BorderButton`
+  nativo (`site-header.tsx`, `transparent-header.tsx`, `final-cta.tsx`,
+  `footer.tsx`) dejaron de tipar — TS intentaba unificar el
+  `MouseEvent` del navegador con el nuevo parámetro `prefill?`. Corregido
+  envolviendo cada uno en `onClick={() => openWizard()}` (comportamiento
+  idéntico, ahora sin ambigüedad de tipos). `npx tsc --noEmit` no lo había
+  detectado — sí `npm run build` (usa `tsc -b`, distinta configuración) —
+  lección: para este repo, `npm run build` es la verificación de tipos que
+  realmente hay que correr, no solo `tsc --noEmit`.
+- **No tocado:** `ComingSoon` en sí (sigue bloqueando el link a la ficha);
+  el `<select>` de "Método CIRA" y el resto de grupos (solo se tocó
+  "Leadership Academy"); ningún dato de `workshops-data.ts` ni fecha/agenda
+  real (eso es 3.1, sigue bloqueado).
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72 rutas,
+  falló primero por los 4 sitios de arriba, corregido y re-verificado) +
+  navegador embebido en `/leadership-academy`, `/leadership-academy/
+  iso-27001` y `/en/leadership-academy/iso-27001`: consola limpia en las 3.
+  Con un `window.gtag` de prueba inyectado por consola, confirmado que el
+  clic en "Me interesa este taller" dispara `workshop_interest_click` con el
+  slug correcto seguido de `wizard_open` con el `servicio` correcto, que el
+  `<select>` del wizard llega ya con esa opción seleccionada (probado con 2
+  talleres distintos para descartar que siempre cayera en el mismo valor) y
+  que el CTA genérico del sitio (sin `prefill`) sigue abriendo el wizard con
+  "Seleccione un servicio" vacío, sin regresión.
+- **Quedó a medias:** nada de lo iniciado.
+- **Próximo paso:** ver "Próximo paso" arriba — 6.1 (Bing Webmaster), 2.4
+  (política de independencia) u 8.1 (LCP con medición limpia) son los
+  candidatos sin bloqueos.
 
 ### 2026-09-18 — Fase 3: coherencia del hub de Leadership Academy (3.2) + auditoría de Fase 4
 - **Tarea:** 3.2 — sin bloqueos, se pasó a Fase 3 tras confirmar (ver abajo)

@@ -78,7 +78,7 @@ export function Footer() {
           ))}
           <button
             type="button"
-            onClick={openWizard}
+            onClick={() => openWizard()}
             className="text-sm text-gray transition-colors hover:text-navy"
           >
             {lang === "en" ? "Contact" : "Contacto"}

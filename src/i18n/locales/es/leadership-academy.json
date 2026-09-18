@@ -13,7 +13,8 @@
     "workshopsSection": {
       "eyebrow": "Capacitación gerencial empresarial",
       "title": "Siete talleres ejecutivos.",
-      "ctaLabel": "Solicitar taller in-company"
+      "ctaLabel": "Solicitar taller in-company",
+      "interestCta": "Me interesa este taller →"
     },
     "groups": {
       "iaDatos": "IA y datos",

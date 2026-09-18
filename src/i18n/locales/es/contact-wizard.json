@@ -20,7 +20,13 @@
         "automatizacionIA": { "label": "Automatización y Agentes de IA" },
         "arquitecturaIA": { "label": "Arquitectura de IA" },
         "gobiernoIA": { "label": "Gobierno de IA" },
-        "gestionCambio": { "label": "Gestión del Cambio" },
+        "iaDirectivos": { "label": "Taller de IA para directivos" },
+        "innovacionEmpresarial": { "label": "Taller de innovación empresarial" },
+        "iso27001": { "label": "Capacitación ISO 27001 para empresas" },
+        "continuidadNegocioDrp": { "label": "Taller de continuidad de negocio (DRP)" },
+        "gestionCambioLideres": { "label": "Gestión del cambio para líderes" },
+        "gobiernoDatosEjecutivos": { "label": "Gobierno de datos para ejecutivos" },
+        "liderazgoDigitalDecisiones": { "label": "Liderazgo digital y toma de decisiones" },
         "desarrolloWeb": { "label": "Desarrollo Web" },
         "seo": { "label": "Posicionamiento SEO" }
       }

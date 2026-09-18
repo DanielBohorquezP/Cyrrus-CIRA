@@ -8,6 +8,9 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal } from "@/components/ui/reveal";
+import { BorderButton } from "@/components/ui/border-button";
+import { useContactWizard } from "@/lib/contact-wizard-context";
+import { trackEvent } from "@/lib/analytics";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -25,6 +28,7 @@ export default function CursoDetalle() {
   const { curso } = useParams();
   const { t } = useTranslation("leadership-academy");
   const lang = useLang();
+  const { openWizard } = useContactWizard();
   const prefix = lang === "en" ? "/en" : "";
   const entry = getWorkshopBySlug(curso);
   const tr = entry ? (t(`workshops.${entry.slug}`, { returnObjects: true }) as WorkshopTranslation) : undefined;
@@ -101,6 +105,18 @@ export default function CursoDetalle() {
             {tr.body.map((p) => (
               <p key={p}>{p}</p>
             ))}
+            <BorderButton
+              type="button"
+              variant="dark"
+              dot
+              className="mt-2"
+              onClick={() => {
+                trackEvent("workshop_interest_click", { workshop: entry.slug });
+                openWizard({ servicio: `leadership-academy-${entry.slug}` });
+              }}
+            >
+              {t("hub.workshopsSection.interestCta")}
+            </BorderButton>
           </Reveal>
         </div>
       </section>

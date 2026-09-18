@@ -20,7 +20,13 @@
         "automatizacionIA": { "label": "Automation & AI Agents" },
         "arquitecturaIA": { "label": "AI Architecture" },
         "gobiernoIA": { "label": "AI Governance" },
-        "gestionCambio": { "label": "Change Management" },
+        "iaDirectivos": { "label": "AI Workshop for Executives" },
+        "innovacionEmpresarial": { "label": "Business Innovation Workshop" },
+        "iso27001": { "label": "ISO 27001 Training for Companies" },
+        "continuidadNegocioDrp": { "label": "Business Continuity Workshop (DRP)" },
+        "gestionCambioLideres": { "label": "Change Management for Leaders" },
+        "gobiernoDatosEjecutivos": { "label": "Data Governance for Executives" },
+        "liderazgoDigitalDecisiones": { "label": "Digital Leadership & Decision-Making" },
         "desarrolloWeb": { "label": "Web Development" },
         "seo": { "label": "SEO" }
       }

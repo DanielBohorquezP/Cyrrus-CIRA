@@ -13,7 +13,8 @@
     "workshopsSection": {
       "eyebrow": "Executive management training",
       "title": "Seven executive workshops.",
-      "ctaLabel": "Request an in-company workshop"
+      "ctaLabel": "Request an in-company workshop",
+      "interestCta": "I'm interested in this workshop →"
     },
     "groups": {
       "iaDatos": "AI and data",

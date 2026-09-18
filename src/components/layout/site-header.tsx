@@ -115,7 +115,7 @@ export function SiteHeader() {
           size="sm"
           dot
           className="hidden lg:inline-flex"
-          onClick={openWizard}
+          onClick={() => openWizard()}
         >
           {t("cta.agendarConversacion")}
         </BorderButton>

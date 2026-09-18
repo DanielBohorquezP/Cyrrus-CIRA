@@ -133,7 +133,7 @@ export function TransparentHeader() {
           variant={scrolled ? "dark" : "light"}
           dot
           className="hidden lg:inline-flex"
-          onClick={openWizard}
+          onClick={() => openWizard()}
         >
           {t("cta.agendarConversacion")}
         </BorderButton>

@@ -9,6 +9,8 @@ import { Footer } from "@/components/sections/footer";
 import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { ComingSoon } from "@/components/ui/coming-soon";
+import { useContactWizard } from "@/lib/contact-wizard-context";
+import { trackEvent } from "@/lib/analytics";
 import { workshops as workshopEntries } from "@/lib/workshops-data";
 import {
   Brain,
@@ -53,6 +55,12 @@ export default function LeadershipAcademy() {
   const { t } = useTranslation("leadership-academy");
   const lang = useLang();
   const prefix = lang === "en" ? "/en" : "";
+  const { openWizard } = useContactWizard();
+
+  function handleWorkshopInterest(slug: string) {
+    trackEvent("workshop_interest_click", { workshop: slug });
+    openWizard({ servicio: `leadership-academy-${slug}` });
+  }
 
   const workshopTranslations = t("workshops", { returnObjects: true }) as Record<string, WorkshopTranslation>;
 
@@ -141,19 +149,28 @@ export default function LeadershipAcademy() {
                     const Icon = w.icon;
                     return (
                       <RevealItem key={w.title}>
-                        <ComingSoon className="block h-full">
-                          <div className="h-full rounded-2xl border border-border bg-card p-7">
-                            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-light-blue">
-                              <Icon className="h-5 w-5 text-blue" />
+                        <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-7">
+                          <ComingSoon className="block flex-1">
+                            <div>
+                              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-light-blue">
+                                <Icon className="h-5 w-5 text-blue" />
+                              </div>
+                              <h4 className="mt-5 text-base font-semibold text-navy">
+                                {w.title}
+                              </h4>
+                              <p className="mt-2 text-base leading-relaxed text-gray">
+                                {w.description}
+                              </p>
                             </div>
-                            <h4 className="mt-5 text-base font-semibold text-navy">
-                              {w.title}
-                            </h4>
-                            <p className="mt-2 text-base leading-relaxed text-gray">
-                              {w.description}
-                            </p>
-                          </div>
-                        </ComingSoon>
+                          </ComingSoon>
+                          <button
+                            type="button"
+                            onClick={() => handleWorkshopInterest(w.slug)}
+                            className="mt-5 text-left text-sm font-semibold text-blue transition-colors duration-150 hover:text-navy"
+                          >
+                            {t("hub.workshopsSection.interestCta")}
+                          </button>
+                        </div>
                       </RevealItem>
                     );
                   })}

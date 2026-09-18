@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
@@ -48,13 +48,21 @@ function emptyValues(): Record<string, string> {
  */
 export function ContactWizardModal() {
   const { t } = useTranslation("contact-wizard");
-  const { isOpen, closeWizard } = useContactWizard();
+  const { isOpen, prefill, closeWizard } = useContactWizard();
   const reduceMotion = useReducedMotion();
 
   const [stepIndex, setStepIndex] = useState(0);
   const [values, setValues] = useState<Record<string, string>>(emptyValues);
   const [stepError, setStepError] = useState<string | null>(null);
   const [status, setStatus] = useState<Status>("idle");
+
+  // Seed the fields from openWizard()'s prefill (e.g. a workshop-specific
+  // "servicio" value) each time the modal opens — not on every render, so
+  // typing isn't clobbered while it's open.
+  useEffect(() => {
+    if (isOpen) setValues({ ...emptyValues(), ...prefill });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]);
 
   const totalSteps = CONTACT_WIZARD_STEPS.length;
   const step = CONTACT_WIZARD_STEPS[stepIndex];
