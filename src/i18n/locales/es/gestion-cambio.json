@@ -20,7 +20,9 @@
     "academyLinkText": "Nuestros programas de capacitación viven en",
     "academyLinkLabel": "Cyrrus Leadership Academy",
     "articleLinkText": "Lea también:",
-    "articleLinkLabel": "Por qué fracasan los proyectos de transformación digital"
+    "articleLinkLabel": "Por qué fracasan los proyectos de transformación digital",
+    "methodLinkText": "Esta es la fase Adoptar dentro del",
+    "methodLinkLabel": "Método CIRA completo"
   },
   "pillars": {
     "eyebrow": "¿Cómo lo hacemos?",
@@ -109,6 +111,32 @@
       {
         "question": "¿Pueden ayudar si el sistema ya está instalado pero el equipo no lo usa?",
         "answer": "Sí. Aunque el enfoque ideal es integrar la gestión del cambio desde el inicio del proyecto, también intervenimos cuando la adopción ya se estancó, con gestión de stakeholders, plan de comunicación y gestión del clima organizacional."
+      },
+      {
+        "question": "¿Ayudan con la gestión del cambio en implementaciones de ERP?",
+        "answer": "Sí. La adopción de ERP es el caso más frecuente: el sistema queda instalado pero el equipo sigue trabajando por fuera de él. Integramos la gestión del cambio a la implementación desde el kickoff, no como un rescate posterior al go-live."
+      },
+      {
+        "question": "¿En qué se diferencia esto del change management tradicional?",
+        "answer": "El change management tradicional suele llegar como una consultoría aparte, después de decidida la tecnología. El nuestro está embebido en Estrategia, Selección y Gerencia de Proyectos desde el inicio, con medición continua de la adopción — no una encuesta de satisfacción al cierre."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "Servicios relacionados",
+    "title": "La adopción empieza antes de la instalación",
+    "items": [
+      {
+        "title": "Selección de ERP",
+        "description": "El punto donde suele empezar la resistencia al cambio."
+      },
+      {
+        "title": "Gerencia de proyectos (PMO)",
+        "description": "Gobierno del proyecto sobre el que embebemos la adopción."
+      },
+      {
+        "title": "Gobierno de IA",
+        "description": "Cómo extendemos la misma disciplina de adopción a la IA."
       }
     ]
   }

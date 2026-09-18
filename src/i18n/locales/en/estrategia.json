@@ -17,7 +17,9 @@
       "In-depth business diagnosis, not an organizational-climate survey.",
       "Priorities and success metrics defined from day one.",
       "Guided implementation — the same team that diagnoses also executes."
-    ]
+    ],
+    "methodLinkText": "This is the Construct phase within the",
+    "methodLinkLabel": "full CIRA Method"
   },
   "definicion": {
     "eyebrow": "The foundation",
@@ -154,6 +156,28 @@
       {
         "question": "What deliverables does a strategy engagement with Cyrrus produce?",
         "answer": "A diagnostic of the current state of processes and technology, a roadmap prioritized by business impact over a defined horizon, the business case for the highest-weight initiatives, and the criteria against which any later technology decision will be evaluated."
+      },
+      {
+        "question": "Does strategic planning include technology selection and implementation?",
+        "answer": "Those are the following phases of the CIRA Method. Once the roadmap defines what needs to be solved, Identify selects the technology (ERP, CRM, or other), Realize manages the implementation project, and Adopt makes sure the organization actually uses it. You can hire just the strategic diagnosis or the full engagement."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "Related services",
+    "title": "The following phases of the CIRA Method",
+    "items": [
+      {
+        "title": "ERP selection",
+        "description": "The Identify phase: which technology executes the strategy."
+      },
+      {
+        "title": "Project management (PMO)",
+        "description": "The Realize phase: who governs the implementation."
+      },
+      {
+        "title": "Change management",
+        "description": "The Adopt phase: making sure the organization actually uses it."
       }
     ]
   }

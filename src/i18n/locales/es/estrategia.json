@@ -17,7 +17,9 @@
       "Diagnóstico profundo del negocio, no una encuesta de clima organizacional.",
       "Prioridades y métricas de éxito definidas desde el día uno.",
       "Implementación acompañada — el mismo equipo ejecuta lo que diagnostica."
-    ]
+    ],
+    "methodLinkText": "Esta es la fase Construir dentro del",
+    "methodLinkLabel": "Método CIRA completo"
   },
   "definicion": {
     "eyebrow": "La base",
@@ -154,6 +156,28 @@
       {
         "question": "¿Qué entregables deja una consultoría de estrategia con Cyrrus?",
         "answer": "Un diagnóstico del estado actual de procesos y tecnología, una hoja de ruta priorizada por impacto en el negocio con horizonte definido, el caso de negocio de las iniciativas de mayor peso, y los criterios con los que se evaluará después cualquier decisión de tecnología."
+      },
+      {
+        "question": "¿La planeación estratégica incluye la selección de tecnología y la implementación?",
+        "answer": "Son las siguientes fases del Método CIRA. Una vez la hoja de ruta define qué hay que resolver, Identificar selecciona la tecnología (ERP, CRM u otra), Realizar gerencia el proyecto de implementación y Adoptar asegura que la organización lo use. Puede contratar solo el diagnóstico estratégico o el acompañamiento completo."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "Servicios relacionados",
+    "title": "Las siguientes fases del Método CIRA",
+    "items": [
+      {
+        "title": "Selección de ERP",
+        "description": "La fase Identificar: qué tecnología ejecuta la estrategia."
+      },
+      {
+        "title": "Gerencia de proyectos (PMO)",
+        "description": "La fase Realizar: quién gobierna la implementación."
+      },
+      {
+        "title": "Gestión del cambio",
+        "description": "La fase Adoptar: que la organización lo use de verdad."
       }
     ]
   }

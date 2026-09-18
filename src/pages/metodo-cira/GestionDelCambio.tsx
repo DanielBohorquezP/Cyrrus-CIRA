@@ -1,7 +1,10 @@
 import {
+  Boxes,
   CheckCircle2,
+  ClipboardCheck,
   HeartHandshake,
   MessageSquare,
+  Sparkles,
   Users,
   GraduationCap,
 } from "lucide-react";
@@ -49,6 +52,10 @@ export default function GestionDelCambio() {
     icon: benefitIcons[i],
   }));
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
+  const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
+    ...it,
+    icon: [Boxes, ClipboardCheck, Sparkles][i],
+  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -63,6 +70,12 @@ export default function GestionDelCambio() {
   const relatedArticlePath = lang === "en"
     ? "/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
     : "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital";
+  const erpPath = lang === "en"
+    ? "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+    : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
+  const pmoPath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
+  const aiGovernancePath = lang === "en" ? "/en/intelligence-lab/gobierno-de-ia" : "/intelligence-lab/gobierno-de-ia";
+  const relatedPaths = [erpPath, pmoPath, aiGovernancePath];
 
   usePageMeta({
     title: t("meta.title"),
@@ -168,6 +181,12 @@ export default function GestionDelCambio() {
                 </Link>
                 .
               </p>
+              <p className="mt-3 text-base leading-relaxed text-gray">
+                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
+                  {t("intro.methodLinkLabel")}
+                </Link>
+                .
+              </p>
             </Reveal>
           </div>
         </div>
@@ -260,6 +279,40 @@ export default function GestionDelCambio() {
         alt="Consultor de Cyrrus trabajando en un plan de adopción del cambio"
         caption={t("featureImage.caption")}
       />
+
+      <section className="w-full bg-light-blue/40 py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("related.eyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("related.title")}
+            </h2>
+          </Reveal>
+
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {relatedItems.map((item, i) => {
+              const RelatedIcon = item.icon;
+              return (
+                <RevealItem key={item.title}>
+                  <Link
+                    to={relatedPaths[i]}
+                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    <RelatedIcon className="h-6 w-6 text-blue" />
+                    <span className="text-base font-semibold text-navy">{item.title}</span>
+                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
+                    <span className="mt-auto text-sm font-semibold text-blue">
+                      {`${lang === "en" ? "See more" : "Ver más"} →`}
+                    </span>
+                  </Link>
+                </RevealItem>
+              );
+            })}
+          </RevealGroup>
+        </div>
+      </section>
 
       <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
 

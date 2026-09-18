@@ -23,22 +23,30 @@
 
 ## Próximo paso
 
-> **Continuar Fase 4.** 4.3 (ERP) y 4.5 (PMO) ya tienen enlazado interno y FAQ
-> ampliada aplicando la plantilla 1.3 (ver bitácora 2026-09-18 "Fase 4:
-> enlazado interno..."); falta todavía en ambas el bloque "caso real" (2.1) y,
-> en 4.3, aplicar el mismo nivel de profundidad de contenido (síntomas,
-> FAQ ampliada) a CRM/HCM/EAM — hoy solo ERP la tiene, CRM/HCM/EAM solo
-> heredaron la nueva sección "Servicios relacionados" por ser un componente
-> compartido (`SeleccionProducto.tsx`).
+> **Continuar Fase 4.** 4.1 (Estrategia), 4.3 (ERP), 4.5 (PMO) y 4.6 (Gestión
+> del cambio) ya tienen enlazado interno y FAQ ampliada aplicando la
+> plantilla 1.3 (ver bitácora 2026-09-18 "Fase 4: enlazado interno..."):
+> forman una red cerrada — Estrategia (Construir) enlaza a ERP/PMO/Cambio, y
+> ERP/PMO/Cambio enlazan de vuelta entre sí y hacia Estrategia vía
+> `/metodo-cira`. Falta en las cuatro el bloque "caso real" (2.1) y, en 4.3,
+> aplicar el mismo nivel de profundidad de contenido (síntomas, FAQ ampliada)
+> a CRM/HCM/EAM — hoy solo ERP la tiene, CRM/HCM/EAM solo heredaron la nueva
+> sección "Servicios relacionados" por ser un componente compartido
+> (`SeleccionProducto.tsx`).
 >
-> Siguiente candidato: **4.6 Gestión del cambio** o **4.1 Estrategia** (ver
-> tabla "FASE 4" en PLAN.md para longitud objetivo y keywords). Aplicar el
-> mismo patrón usado en 4.3/4.5: sección "Servicios relacionados" (cards con
-> `Link` a 2-3 servicios + el artículo de Perspectivas más afín) y, si falta,
-> un enlace explícito a `/metodo-cira` cerca de la explicación de "cómo lo
-> hacemos". El caso real de cada página sigue bloqueado por 2.1 — dejar ese
-> bloque para después o usar un placeholder que no invente cifras (ver D4 en
-> PLAN.md: toda cifra necesita fuente o se quita).
+> Siguiente candidato: **4.7 Intelligence Lab** (hub + 3 subpáginas:
+> Gobierno de IA, Arquitectura de IA, Automatizaciones) — "las más delgadas"
+> según PLAN.md, y Gobierno de IA ya recibe enlaces desde Gestión del cambio
+> (4.6) pero no enlaza hacia las páginas de nicho tradicionales todavía.
+> Alternativa: **4.2 Selección de soluciones (hub)** o **4.4 Tecnologías
+> avanzadas / Infraestructura**, que comparten `SolucionDetalle.tsx` y aún no
+> tienen el patrón de enlazado ni FAQ ampliada. Aplicar el mismo patrón usado
+> en 4.1/4.3/4.5/4.6: sección "Servicios relacionados" (cards con `Link` a
+> 2-3 servicios + el artículo de Perspectivas más afín) y, si falta, un
+> enlace explícito a `/metodo-cira`. El caso real de cada página sigue
+> bloqueado por 2.1 — dejar ese bloque para después o usar un placeholder que
+> no invente cifras (ver D4 en PLAN.md: toda cifra necesita fuente o se
+> quita).
 > También válido si se prefiere: 4.8 (sincronizar `route-meta.json` con
 > `usePageMeta`, mecánico y sin bloqueos) antes de seguir con contenido.
 >
@@ -92,12 +100,12 @@
 ### Fase 4 — Profundidad de servicios
 | ID | Página | Estado | Notas |
 |---|---|---|---|
-| 4.1 | Estrategia | ⬜ | |
+| 4.1 | Estrategia | 🟡 | Ya era la página más completa (~1.490 palabras, FAQ con CTO as a Service y enlace al artículo de 5.2). Se añadió enlace a `/metodo-cira` en la intro (fase Construir), sección "Servicios relacionados" (ERP → PMO → Gestión del cambio, las 3 fases siguientes del método) y 1 FAQ nueva conectando estrategia con selección/implementación. Falta caso real (2.1) |
 | 4.2 | Selección de soluciones (hub) | ⬜ | |
 | 4.3 | Selección de software + ERP/CRM/HCM/EAM | 🟡 | Prioridad 1 de nicho. ERP: enlace a `/metodo-cira`, sección "Servicios relacionados" (Gestión del cambio, PMO, artículo de Perspectivas) y 2 FAQ nuevas (Colombia/LATAM, selección vs. implementación). CRM/HCM/EAM comparten el componente y heredan "Servicios relacionados", pero no la FAQ ampliada. Falta caso real (2.1) |
 | 4.4 | Tecnologías avanzadas / Infraestructura | ⬜ | |
 | 4.5 | Gerencia de proyectos (PMO) | 🟡 | Prioridad 2 de nicho. Enlace a `/metodo-cira` y al artículo "por qué fracasan los proyectos de transformación" en la intro, sección "Servicios relacionados" (ERP, Gestión del cambio, Automatización con IA) y 2 FAQ nuevas (duración, PMO as a Service). Falta caso real (2.1) |
-| 4.6 | Gestión del cambio | ⬜ | |
+| 4.6 | Gestión del cambio | 🟡 | Enlace a `/metodo-cira` en la intro (fase Adoptar), sección "Servicios relacionados" (Selección de ERP, Gerencia de Proyectos, Gobierno de IA) y 2 FAQ nuevas (adopción de ERP, diferencia con change management tradicional). Falta caso real (2.1) |
 | 4.7 | Intelligence Lab + 3 subpáginas | ⬜ | Las más delgadas |
 | 4.8 | Sincronizar `route-meta.json` con `usePageMeta` | ⬜ | |
 
@@ -168,6 +176,81 @@
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
+
+### 2026-09-18 — Fase 4: enlazado interno y FAQ ampliada en Estrategia (4.1), cierra la red de enlaces
+- **Tarea:** 4.1 (Estrategia / Consultoría en Estrategia), última pendiente
+  de las 4 páginas troncales del Método CIRA para el mismo patrón de
+  enlazado que 4.3/4.5/4.6.
+- **Punto de partida:** era la página más completa del sitio (~1.490
+  palabras): intro, "¿Qué es la planeación estratégica?" con enlace al
+  artículo de 5.2, diagnóstico (5 problemas — ya cumplía el "¿le pasa esto?"
+  de la plantilla 1.3), stats en navy, beneficios, CxaaS (CIOaaS/CTOaaS/
+  CCSOaaS), lista de servicios, testimonios y FAQ con 5 preguntas (incluida
+  "CTO as a Service", keyword secundaria). Le faltaba, como a las demás:
+  enlace explícito a `/metodo-cira` y sección "Servicios relacionados" —
+  y era la única de las 4 páginas troncales sin enlace hacia las otras 3.
+- **Hecho (archivos):**
+  - `src/pages/metodo-cira/PlaneacionEstrategica.tsx`: enlace en línea en la
+    intro ("Esta es la fase Construir dentro del Método CIRA completo") y
+    nueva sección "Servicios relacionados" con las 3 fases siguientes del
+    método en orden — Selección de ERP (Identificar), Gerencia de
+    Proyectos/PMO (Realizar), Gestión del cambio (Adoptar) — cerrando así la
+    red: las 4 páginas troncales (Estrategia, ERP, PMO, Gestión del cambio)
+    ahora se enlazan entre sí.
+  - `src/i18n/locales/{es,en}/estrategia.json`: nuevas claves
+    `intro.methodLinkText/methodLinkLabel`, 1 FAQ nueva ("¿La planeación
+    estratégica incluye la selección de tecnología y la implementación?")
+    y bloque `related` (eyebrow/title/items).
+- **No tocado:** el stat "60% reducción en tiempo de diagnóstico" en la
+  sección `whyCeos` sigue sin fuente — es la tarea 0.6, bloqueada por el
+  cliente, y no se tocó en esta sesión (fuera de alcance de 4.1).
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72 rutas)
+  + navegador embebido en `/metodo-cira/estrategia` y
+  `/en/metodo-cira/estrategia`: consola limpia. Confirmado por el HTML
+  generado que los 4 enlaces nuevos (`/metodo-cira`, ERP, PMO, gestión del
+  cambio) resuelven a rutas reales.
+- **Quedó a medias:** caso real (2.1, bloqueado); el 60% sin fuente (0.6,
+  bloqueado, no es parte de 4.1).
+- **Próximo paso:** con las 4 páginas troncales ya enlazadas entre sí, el
+  siguiente candidato natural es 4.7 (Intelligence Lab, "las más delgadas")
+  o 4.2/4.4 (hub de selección de soluciones y tecnologías
+  avanzadas/infraestructura, que comparten `SolucionDetalle.tsx`).
+
+### 2026-09-18 — Fase 4: enlazado interno y FAQ ampliada en Gestión del Cambio (4.6)
+- **Tarea:** 4.6 (Gestión del cambio), siguiente en la cola de Fase 4 tras
+  4.3/4.5 en esta misma sesión.
+- **Punto de partida:** la página ya tenía intro, 4 pilares ("cómo lo
+  hacemos"), sección "lo que nos distingue", beneficios, imagen con caption y
+  FAQ con `FAQPage` JSON-LD — y desde 5.2 ya enlazaba a Leadership Academy y
+  al artículo de transformación digital. Faltaba, igual que en 4.3/4.5: enlace
+  explícito a `/metodo-cira`, sección "Servicios relacionados" y FAQ con
+  keywords secundarias ("adopción de ERP", "change management").
+- **Hecho (archivos):**
+  - `src/pages/metodo-cira/GestionDelCambio.tsx`: nuevo enlace en línea en la
+    intro ("Esta es la fase Adoptar dentro del Método CIRA completo",
+    mismo patrón que el link a la Academy y al artículo) y nueva sección
+    "Servicios relacionados" (cards a Selección de ERP, Gerencia de
+    Proyectos/PMO y Gobierno de IA — completa el triángulo de enlaces con las
+    páginas de 4.3 y 4.5, que ya apuntaban de vuelta a Gestión del Cambio).
+  - `src/i18n/locales/{es,en}/gestion-cambio.json`: nuevas claves
+    `intro.methodLinkText/methodLinkLabel`, 2 FAQ nuevas (gestión del cambio
+    en implementaciones de ERP, diferencia con el change management
+    tradicional) y bloque `related` (eyebrow/title/items).
+- **No tocado:** meta title/description (ya dentro de los límites); no se
+  añadió una sección explícita "¿Le pasa esto?" con grid de síntomas (a
+  diferencia de la página de ERP) — el dolor sigue expresado en el hero y la
+  intro, no como bloque propio. Se puede revisar si se quiere alinear 100% con
+  la plantilla 1.3, pero no bloqueaba el enlazado interno ni el SEO on-page.
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72 rutas)
+  + `node scripts/serve-dist.mjs` vía navegador embebido: consola limpia en
+  `/metodo-cira/gestion-del-cambio` y `/en/metodo-cira/gestion-del-cambio`.
+  Confirmado por lectura del HTML generado que los 3 enlaces de "Servicios
+  relacionados" y el enlace a `/metodo-cira` resuelven a rutas reales del
+  sitio (no rutas inventadas).
+- **Quedó a medias:** caso real (2.1, bloqueado); bloque "¿Le pasa esto?"
+  explícito si se decide alinear estrictamente con 1.3.
+- **Próximo paso:** 4.1 (Estrategia) para completar la red de enlaces entre
+  las páginas troncales del método, o 4.8 (sincronizar `route-meta.json`).
 
 ### 2026-09-18 — Fase 4: enlazado interno y FAQ ampliada en ERP y PMO (4.3, 4.5)
 - **Tareas:** 4.3 (Selección de software / ERP, prioridad 1 de nicho) y 4.5

@@ -20,7 +20,9 @@
     "academyLinkText": "Our training programs live at",
     "academyLinkLabel": "Cyrrus Leadership Academy",
     "articleLinkText": "Also read:",
-    "articleLinkLabel": "Why digital transformation projects fail"
+    "articleLinkLabel": "Why digital transformation projects fail",
+    "methodLinkText": "This is the Adopt phase within the",
+    "methodLinkLabel": "full CIRA Method"
   },
   "pillars": {
     "eyebrow": "How we do it",
@@ -109,6 +111,32 @@
       {
         "question": "Can you help if the system is already installed but the team isn't using it?",
         "answer": "Yes. While the ideal approach is integrating change management from the start of the project, we also step in when adoption has already stalled, through stakeholder management, a communication plan, and organizational climate management."
+      },
+      {
+        "question": "Do you help with change management for ERP implementations?",
+        "answer": "Yes. ERP adoption is the most common case: the system gets installed but the team keeps working around it. We build change management into the implementation from kickoff, not as a rescue after go-live."
+      },
+      {
+        "question": "How is this different from traditional change management?",
+        "answer": "Traditional change management usually arrives as a separate consulting engagement, after the technology has already been decided. Ours is embedded in Strategy, Selection, and Project Management from the start, with continuous adoption measurement — not a satisfaction survey at close."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "Related services",
+    "title": "Adoption starts before installation",
+    "items": [
+      {
+        "title": "ERP selection",
+        "description": "Where resistance to change usually starts."
+      },
+      {
+        "title": "Project management (PMO)",
+        "description": "The project governance we embed adoption into."
+      },
+      {
+        "title": "AI governance",
+        "description": "How we extend the same adoption discipline to AI."
       }
     ]
   }
