@@ -37,7 +37,17 @@ const icons: Record<string, typeof Brain> = {
 interface WorkshopTranslation {
   title: string;
   shortDescription: string;
+  intro: string;
 }
+
+const WORKSHOP_GROUPS = [
+  { key: "iaDatos", slugs: ["ia-para-directivos", "gobierno-de-datos-para-ejecutivos"] },
+  { key: "seguridadContinuidad", slugs: ["iso-27001", "continuidad-de-negocio-drp"] },
+  {
+    key: "liderazgoCambio",
+    slugs: ["innovacion-empresarial", "gestion-del-cambio-para-lideres", "liderazgo-digital-y-toma-de-decisiones"],
+  },
+] as const;
 
 export default function LeadershipAcademy() {
   const { t } = useTranslation("leadership-academy");
@@ -47,10 +57,16 @@ export default function LeadershipAcademy() {
   const workshopTranslations = t("workshops", { returnObjects: true }) as Record<string, WorkshopTranslation>;
 
   const workshops = workshopEntries.map((w) => ({
+    slug: w.slug,
     icon: icons[w.slug],
     title: workshopTranslations[w.slug].title,
-    description: w.intro,
+    description: workshopTranslations[w.slug].intro,
     href: `${prefix}/leadership-academy/${w.slug}`,
+  }));
+  const workshopsBySlug = new Map(workshops.map((w) => [w.slug, w]));
+  const groups = WORKSHOP_GROUPS.map((group) => ({
+    title: t(`hub.groups.${group.key}`),
+    items: group.slugs.map((slug) => workshopsBySlug.get(slug)!),
   }));
 
   const orbitWorkshops = workshopEntries.map((w) => ({
@@ -114,30 +130,39 @@ export default function LeadershipAcademy() {
             </h2>
           </Reveal>
 
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {workshops.map((w) => {
-              const Icon = w.icon;
-              return (
-                <RevealItem key={w.title} >
-                  <ComingSoon className="block h-full">
-                    <div className="h-full rounded-2xl border border-border bg-card p-7">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-light-blue">
-                        <Icon className="h-5 w-5 text-blue" />
-                      </div>
-                      <h3 className="mt-5 text-base font-semibold text-navy">
-                        {w.title}
-                      </h3>
-                      <p className="mt-2 text-base leading-relaxed text-gray">
-                        {w.description}
-                      </p>
-                    </div>
-                  </ComingSoon>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
+          <div className="mt-14 space-y-14">
+            {groups.map((group) => (
+              <div key={group.title}>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-blue">
+                  {group.title}
+                </h3>
+                <RevealGroup className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {group.items.map((w) => {
+                    const Icon = w.icon;
+                    return (
+                      <RevealItem key={w.title}>
+                        <ComingSoon className="block h-full">
+                          <div className="h-full rounded-2xl border border-border bg-card p-7">
+                            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-light-blue">
+                              <Icon className="h-5 w-5 text-blue" />
+                            </div>
+                            <h4 className="mt-5 text-base font-semibold text-navy">
+                              {w.title}
+                            </h4>
+                            <p className="mt-2 text-base leading-relaxed text-gray">
+                              {w.description}
+                            </p>
+                          </div>
+                        </ComingSoon>
+                      </RevealItem>
+                    );
+                  })}
+                </RevealGroup>
+              </div>
+            ))}
+          </div>
 
-          <Reveal delay={0.15} className="mt-12">
+          <Reveal delay={0.15} className="mt-14">
             <ContactCtaButton label={t("hub.workshopsSection.ctaLabel")} />
           </Reveal>
         </div>

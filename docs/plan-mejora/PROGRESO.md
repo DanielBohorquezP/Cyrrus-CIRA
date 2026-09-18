@@ -23,39 +23,37 @@
 
 ## Próximo paso
 
-> **Continuar Fase 4.** 4.1 (Estrategia), 4.2 (hub de Selección de
-> soluciones), 4.3 (ERP), 4.4 (Tecnologías avanzadas / Infraestructura), 4.5
-> (PMO), 4.6 (Gestión del cambio) y 4.7 (Intelligence Lab) ya tienen
-> enlazado interno y FAQ ampliada aplicando la plantilla 1.3 (ver bitácora).
-> Con 4.2 sumado, la red de las 4 páginas troncales del método (Estrategia,
-> Identificar/hub de selección, PMO, Cambio) queda cerrada: el hub ahora
-> enlaza a las otras 3 fases y aparece como fuente de FAQ ampliada propia —
-> sigue sin recibir enlaces entrantes directos (Estrategia/PMO/Cambio
-> enlazan a la página específica de ERP, no al hub, que es la decisión de
-> nicho ya tomada en sesiones previas).
+> **Fase 4 está funcionalmente cerrada.** Las 4 páginas troncales
+> (Estrategia, hub de Selección de soluciones, PMO, Gestión del cambio),
+> ERP/CRM/HCM/EAM, Tecnologías avanzadas/Infraestructura, y las 4 páginas de
+> Intelligence Lab ya tienen enlace a `/metodo-cira`, sección "Servicios
+> relacionados" y FAQ propia con `FAQPage` JSON-LD — confirmado leyendo cada
+> JSON de i18n directamente en la sesión de 4.8, no solo la bitácora (una
+> nota anterior sobre CRM/HCM/EAM decía que les faltaba FAQ; era
+> incorrecta — ver la corrección en la tabla de 4.3 abajo). 4.8 (sincronizar
+> `route-meta.json`) también cerrado.
 >
-> Falta en todas el bloque "caso real" (2.1) y, en 4.3, aplicar el mismo
-> nivel de profundidad de contenido (síntomas, FAQ ampliada) a CRM/HCM/EAM —
-> hoy solo ERP la tiene, CRM/HCM/EAM solo heredaron la nueva sección
-> "Servicios relacionados" por ser un componente compartido
-> (`SeleccionProducto.tsx`).
+> Lo único genuinamente pendiente en Fase 4 es contenido por debajo del
+> rango orientativo de PLAN.md (1.000-1.800 palabras — hoy 420-790 según la
+> página) y el bloque "caso real" en todas, bloqueado por 2.1. Ampliar
+> palabras solo para llegar a un número, sin información nueva que decir,
+> iría en contra del criterio ya aplicado en 4.2 (quitar relleno
+> corporativo) — no se recomienda perseguir el conteo de palabras como
+> tarea en sí misma.
 >
-> Con 4.8 cerrado, toda la parte técnica de Fase 4 está lista. Queda solo
-> contenido: profundizar (sin FAQ propia ni sección de síntomas, "—" en la
-> tabla de PLAN.md) `seleccion-de-software` (hub bespoke), CRM/HCM/EAM y
-> `arquitectura-de-ia`/`automatizaciones-desarrollo` (Intelligence Lab, ya
-> tienen "Servicios relacionados" desde 4.7 pero no FAQ ampliada nueva).
-> Siguiente candidato natural: CRM/HCM/EAM (mismo componente
-> `SeleccionProducto.tsx` que ya tiene el patrón de enlazado desde ERP en
-> 4.3, solo falta la FAQ propia de cada producto) — o pasar a Fase 3
-> (Leadership Academy, 3.2 "coherencia del hub" no tiene bloqueos) o Fase 6
-> (backlinks/LinkedIn) si se prefiere salir de Fase 4 por ahora.
-> El caso real de cada página sigue bloqueado por 2.1 — dejar ese bloque
-> para después o usar un placeholder que no invente cifras (ver D4 en
-> PLAN.md: toda cifra necesita fuente o se quita).
+> **Fase 3 (Leadership Academy):** 3.2 (coherencia del hub) cerrada esta
+> sesión. Queda 3.1 (ficha completa por taller, bloqueada — faltan datos del
+> cliente), 3.3 (depende de 3.1) y 3.4 (captura de interesados, sin
+> bloqueos, candidato viable).
 >
-> Fase 1 queda cerrada salvo 1.2 ("Casos destacados", depende de 2.1) y 1.5
+> **Fase 1** cerrada salvo 1.2 ("Casos destacados", depende de 2.1) y 1.5
 > (destino final de `/presencia-digital/*`, depende del cliente).
+>
+> Candidatos para la próxima sesión, todos sin bloqueos: 3.4 (captura de
+> interesados en talleres), 6.1 (Bing Webmaster + revisión semanal de GSC),
+> 2.4 (política de independencia — validar texto con el CEO antes de
+> publicar) o revisar 8.1 (LCP móvil) con una medición limpia de PageSpeed
+> Insights real.
 
 ---
 
@@ -97,7 +95,7 @@
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
 | 3.1 | Ficha completa por taller | ⛔ | Faltan agenda, duración, facilitador, fechas |
-| 3.2 | Coherencia del hub (hero, agrupación, CTA) | ⬜ | Se puede hacer ya |
+| 3.2 | Coherencia del hub (hero, agrupación, CTA) | ✅ | Hero reescrito (ya no habla solo de "gobierno de IA"), talleres agrupados en 3 temas, CTA cambiado de "Agendar un taller" a "Solicitar taller in-company". De paso, corregido un bug real: la descripción de cada taller en el hub EN salía en español |
 | 3.3 | Indexación de talleres | ⬜ | Por taller, cuando cumpla 3.1 |
 | 3.4 | Captura de interesados | ⬜ | |
 
@@ -106,7 +104,7 @@
 |---|---|---|---|
 | 4.1 | Estrategia | 🟡 | Ya era la página más completa (~1.490 palabras, FAQ con CTO as a Service y enlace al artículo de 5.2). Se añadió enlace a `/metodo-cira` en la intro (fase Construir), sección "Servicios relacionados" (ERP → PMO → Gestión del cambio, las 3 fases siguientes del método) y 1 FAQ nueva conectando estrategia con selección/implementación. Falta caso real (2.1) |
 | 4.2 | Selección de soluciones (hub) | 🟡 | Enlace a `/metodo-cira` en la intro (fase Identificar) y sección "Servicios relacionados" (Estrategia, PMO, Gestión del cambio — las otras 3 fases del método) y 2 FAQ nuevas (alcance más allá de ERP, diferencia con integrador/distribuidor). Pasada adicional de copy: reescrito el hero, la intro, los 4 criterios de evaluación, "Nuestro reto" y los 6 beneficios quitando lenguaje de relleno ("garantizamos", "aseguramos", "visión integral") por afirmaciones concretas. Falta caso real (2.1) |
-| 4.3 | Selección de software + ERP/CRM/HCM/EAM | 🟡 | Prioridad 1 de nicho. ERP: enlace a `/metodo-cira`, sección "Servicios relacionados" (Gestión del cambio, PMO, artículo de Perspectivas) y 2 FAQ nuevas (Colombia/LATAM, selección vs. implementación). CRM/HCM/EAM comparten el componente y heredan "Servicios relacionados", pero no la FAQ ampliada. Falta caso real (2.1) |
+| 4.3 | Selección de software + ERP/CRM/HCM/EAM | 🟡 | Prioridad 1 de nicho. **Corrección:** la nota anterior decía que CRM/HCM/EAM solo heredaban "Servicios relacionados" sin FAQ propia — al revisar el archivo de nuevo (sesión de 4.8) resultó ser incorrecta: las 4 páginas (`seleccion-productos.json`) ya tenían contenido completo y distinto por producto (dolor, problema real, solución, evaluación, entregables) **y FAQ propia de 5-7 preguntas cada una**, más el enlace a `/metodo-cira` y "Servicios relacionados" que sí es compartido vía `SeleccionProducto.tsx`. 644-789 palabras por página, por debajo del rango orientativo de 1.000-1.800 de PLAN.md pero sin relleno. Falta caso real (2.1) |
 | 4.4 | Tecnologías avanzadas / Infraestructura | 🟡 | Componente compartido `SolucionDetalle.tsx`. Enlace a `/metodo-cira` en la intro, sección "Servicios relacionados" (distinta por entrada: Tecnologías Avanzadas → Gobierno de IA/Automatizaciones/Gestión del cambio; Infraestructura → Arquitectura de IA/PMO/Gestión del cambio) y 3 FAQ nuevas por entrada con `FAQPage` JSON-LD (antes no tenía FAQ). Falta caso real (2.1) |
 | 4.5 | Gerencia de proyectos (PMO) | 🟡 | Prioridad 2 de nicho. Enlace a `/metodo-cira` y al artículo "por qué fracasan los proyectos de transformación" en la intro, sección "Servicios relacionados" (ERP, Gestión del cambio, Automatización con IA) y 2 FAQ nuevas (duración, PMO as a Service). Falta caso real (2.1) |
 | 4.6 | Gestión del cambio | 🟡 | Enlace a `/metodo-cira` en la intro (fase Adoptar), sección "Servicios relacionados" (Selección de ERP, Gerencia de Proyectos, Gobierno de IA) y 2 FAQ nuevas (adopción de ERP, diferencia con change management tradicional). Falta caso real (2.1) |
@@ -180,6 +178,74 @@
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
+
+### 2026-09-18 — Fase 3: coherencia del hub de Leadership Academy (3.2) + auditoría de Fase 4
+- **Tarea:** 3.2 — sin bloqueos, se pasó a Fase 3 tras confirmar (ver abajo)
+  que Fase 4 ya no tenía huecos reales de enlazado/FAQ.
+- **Antes de tocar código:** al ir a elegir "el siguiente candidato" de Fase
+  4 que la sesión anterior había anotado (profundizar CRM/HCM/EAM sin FAQ
+  propia), se leyó `seleccion-productos.json` directamente en vez de confiar
+  en la nota — **la nota era incorrecta**: CRM/HCM/EAM ya tenían contenido
+  completo y distinto por producto (dolor, problema real, solución,
+  evaluación, entregables, 5-7 FAQ cada una) desde antes de que existiera
+  este plan, y heredan el enlace a `/metodo-cira` y "Servicios relacionados"
+  del componente compartido `SeleccionProducto.tsx`. Se corrigió la tabla de
+  4.3. Se revisó también `seleccion-de-software.json` (hub bespoke) e
+  `intelligence-lab.json` (arquitectura/automatizaciones) por la misma
+  razón — ambas ya tenían FAQ propia (4-5 ítems) y enlazado completo. Todo
+  Fase 4 quedó confirmado como funcionalmente cerrado; lo único que falta es
+  contenido por debajo del rango orientativo de palabras y el caso real
+  (2.1, bloqueado) — no se persiguió el conteo de palabras por sí solo (ver
+  Próximo paso).
+- **Hecho (3.2, archivos):**
+  - `src/i18n/locales/{es,en}/leadership-academy.json`: `hub.hero.title` y
+    `hub.hero.description` reescritos — ya no hablan solo de "gobierno de
+    IA" (la oferta real cubre IA, seguridad ISO 27001, continuidad DRP,
+    gestión del cambio y gobierno de datos); `hub.serviceDescription` /
+    `serviceDetail` (usados en el JSON-LD `Service`) actualizados igual;
+    `hub.workshopsSection.ctaLabel` cambiado de "Agendar un taller" /
+    "Schedule a workshop" a "Solicitar taller in-company" / "Request an
+    in-company workshop" — los 7 talleres siguen `comingSoon: true`, un CTA
+    de "agendar" sobre algo sin fecha real era engañoso (criterio explícito
+    de PLAN.md 3.2); nuevo bloque `hub.groups` (3 claves: `iaDatos`,
+    `seguridadContinuidad`, `liderazgoCambio`).
+  - `src/pages/LeadershipAcademy.tsx`: los 7 talleres ahora se renderizan en
+    3 secciones agrupadas por tema (`WORKSHOP_GROUPS`, mapa fijo
+    slug→grupo) en vez de una grilla plana de 7 tarjetas — mismo criterio de
+    agrupación que sugiere PLAN.md (IA y datos · Seguridad y continuidad ·
+    Liderazgo y cambio).
+- **Bug real encontrado y corregido de paso (no estaba en el alcance de
+  3.2, pero estaba en el mismo archivo y bloque de código que se estaba
+  tocando):** la descripción de cada taller en la grilla del hub salía
+  de `w.intro` — el dato crudo de `workshops-data.ts`, que solo existe en
+  español — en vez de `workshopTranslations[w.slug].intro` (la traducción
+  real). Efecto: en `/en/leadership-academy`, el título de cada tarjeta
+  salía en inglés pero el párrafo de abajo en español. Corregido cambiando
+  la fuente a la traducción; interfaz `WorkshopTranslation` ampliada con
+  `intro: string`.
+- **No tocado (flagueado para sesión aparte vía `spawn_task`):** dos bugs
+  de i18n más, encontrados al verificar la página en inglés pero fuera del
+  archivo/alcance de 3.2 — (1) `workshop-orbit.tsx:128`, el pill "Ver
+  taller" del carrusel del hero es un string en español hardcodeado, sin
+  traducción; (2) `contact-cta-button.tsx:12`, el label por defecto del
+  botón de contacto (`"Agendar conversación"`) es español hardcodeado —
+  cualquier página que use `<ContactCtaButton />` sin `label` explícito
+  muestra este texto también en `/en/...`. Requiere auditar todos los usos
+  del componente antes de decidir si se arregla en el componente o en cada
+  caller — se dejó como tarea separada para no mezclar alcance.
+- **Verificación:** `npx tsc --noEmit` limpio + `npm run build` (72/72
+  rutas) + navegador embebido en `/leadership-academy` y
+  `/en/leadership-academy`: consola limpia en ambas, confirmado por
+  `get_page_text` que los 3 grupos, el hero nuevo, el CTA nuevo y (tras el
+  fix del bug) las descripciones de taller en inglés se renderizan
+  correctamente. Primer intento con un typo (`t("groups...")` sin el
+  prefijo `"hub."`) mostró literalmente `GROUPS.IADATOS` en pantalla —
+  detectado y corregido antes de dar la tarea por terminada.
+- **Quedó a medias:** nada de lo iniciado. Los dos bugs de i18n de arriba
+  quedaron flageados, no arreglados.
+- **Próximo paso:** ver "Próximo paso" arriba — 3.4 (captura de
+  interesados), 6.1 (Bing Webmaster), 2.4 (política de independencia) u
+  8.1 (LCP) son los candidatos sin bloqueos.
 
 ### 2026-09-18 — Fase 4: sincronización de `route-meta.json` (4.8)
 - **Tarea:** 4.8 — última pendiente de la parte técnica de Fase 4, sin
