@@ -234,8 +234,51 @@
     "description": "Tell us your organization's challenge. We'll set up a conversation with the right team and tell you straight whether we can help.",
     "buttonText": "Schedule a strategy call"
   },
+  "servicesIntro": {
+    "eyebrow": "What Cyrrus is",
+    "title": "Strategic consulting, from decision to operation",
+    "description": "Cyrrus Consulting Services is a strategic consulting and digital transformation firm with offices in Barranquilla and Bogotá, working with companies across Latin America and the United States. Through the CIRA methodology, one team takes the organization from strategy to vendor-neutral technology selection, project management and adoption, with artificial intelligence in every phase."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions about strategic consulting",
+    "items": [
+      {
+        "question": "What does a strategic consulting firm like Cyrrus do?",
+        "answer": "It works with the company from the moment it defines what it wants to achieve until its team is operating the change. Cyrrus diagnoses the business, builds the roadmap, selects the right technology, manages the implementation and drives adoption, under one method (CIRA) with a single party accountable for the result."
+      },
+      {
+        "question": "What is the CIRA method?",
+        "answer": "It is the four-phase framework Cyrrus works with: Construct (strategy and roadmap), Identify (selecting the right solution), Realize (project management through go-live) and Adopt (change management). Artificial intelligence speeds up every phase instead of being sold as a separate service."
+      },
+      {
+        "question": "Does Cyrrus sell or resell any software?",
+        "answer": "No. Cyrrus takes no commission from any vendor. Selection criteria are defined with the business before looking at any catalog, and every vendor is evaluated against those criteria. The recommendation follows what your company needs, not a commercial incentive."
+      },
+      {
+        "question": "How is Cyrrus different from an ERP integrator or partner?",
+        "answer": "An integrator implements one specific brand and has an incentive for you to choose it. Cyrrus helps you decide which one fits, governs the implementation as an external PMO and drives adoption, protecting the interests of your company with the vendor throughout the project."
+      },
+      {
+        "question": "How does Cyrrus use artificial intelligence?",
+        "answer": "In two ways. Inside the method, AI speeds up diagnosis, vendor evaluation and project tracking. As a service, Cyrrus Intelligence Lab designs AI governance, architecture and agent-based automation, so AI is adopted with clear policies, roles and controls."
+      },
+      {
+        "question": "Which countries does Cyrrus work in?",
+        "answer": "Cyrrus has offices in Barranquilla and Bogotá and has worked with organizations across Latin America and the United States, from Mexico and Central America to Chile and Argentina. The method is the same in every country; what changes is the industry, regulation and culture of each organization."
+      },
+      {
+        "question": "How long does a strategic consulting engagement take?",
+        "answer": "It depends on the scope: a diagnosis with a roadmap, a software selection and support through a full implementation have very different timelines. In the first conversation, Cyrrus understands the challenge and proposes a concrete scope and schedule for your case before anything is committed."
+      },
+      {
+        "question": "How do I start working with Cyrrus?",
+        "answer": "Schedule a strategic conversation from this site and tell us about the challenge your organization faces. Cyrrus sets up a meeting with the right team and tells you candidly whether it can help. If the problem is outside its expertise, you will hear that from the start."
+      }
+    ]
+  },
   "meta": {
-    "title": "Strategic Consulting with AI in Colombia | Cyrrus",
-    "description": "Strategic consulting in Colombia that reaches execution. CIRA methodology: strategy, the right solution, and real adoption, with AI in every phase."
+    "title": "Strategic Consulting with AI, Through Execution | Cyrrus",
+    "description": "Strategic consulting that reaches execution: strategy, vendor-neutral technology, PMO and real adoption, with AI. Schedule a conversation."
   }
 }

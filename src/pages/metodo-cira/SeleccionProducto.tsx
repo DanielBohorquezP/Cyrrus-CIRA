@@ -160,7 +160,7 @@ export default function SeleccionProducto() {
               name: hero.title,
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
-              areaServed: "LATAM",
+              areaServed: "Worldwide",
             },
             {
               "@context": "https://schema.org",

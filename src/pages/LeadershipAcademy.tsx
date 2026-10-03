@@ -101,7 +101,7 @@ export default function LeadershipAcademy() {
         name: "Leadership Academy",
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDetail"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",

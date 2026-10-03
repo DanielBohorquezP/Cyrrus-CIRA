@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Project Management & Implementation | Cyrrus",
-    "description": "External PMO to run your transformation project on time and without cost overruns, from kickoff to go-live, across Colombia and LATAM."
+    "title": "Project Management Services & External PMO | Cyrrus",
+    "description": "Project management services and external PMO: planning, control, and execution on time, on budget, and to quality. ERP, CRM, cloud, and AI projects."
   },
   "hero": {
     "eyebrow": "CIRA Method — Realize",
-    "title": "Project management & implementation",
+    "title": "Project management services and PMO",
     "description": "The project falls behind, goes over budget, and no one owns the risk. Our project management acts as an external PMO, with real accountability for the outcome — not just status reports.",
     "ctaLabel": "Let's talk about your projects"
   },
@@ -20,8 +20,13 @@
     ],
     "methodLinkText": "This is the Realize phase within the",
     "methodLinkLabel": "full CIRA Method",
-    "articleLinkText": "Before managing execution, understand why so many transformation projects fail:",
-    "articleLinkLabel": "why digital transformation projects fail"
+    "articleLinkText": "Before hiring external project management, see the five signs your project needs it:",
+    "articleLinkLabel": "when to hire an external PMO"
+  },
+  "definicion": {
+    "eyebrow": "The foundation",
+    "title": "What are project management services?",
+    "description": "Project management services are the expert planning, direction, control, and execution of a business initiative so it meets the agreed time, cost, scope, and quality. At Cyrrus we specialize in technology and digital transformation projects (ERP, CRM, HCM, cloud, infrastructure, and AI) and manage them as an external PMO, accountable for the outcome and following PMBOK guidelines."
   },
   "differentiators": {
     "eyebrow": "What makes us different?",
@@ -60,7 +65,7 @@
   },
   "benefits": {
     "eyebrow": "Benefits",
-    "title": "Agility, transformation, and efficiency",
+    "title": "Benefits of external project management",
     "items": [
       {
         "title": "Full resource integration",
@@ -86,22 +91,59 @@
   },
   "services": {
     "eyebrow": "Scope",
-    "title": "Core services",
+    "title": "What do project management services include?",
+    "description": "We cover the full project lifecycle. Each service can be engaged on its own.",
     "items": [
-      "Project definition and identification",
-      "Project formulation and planning",
-      "Project implementation and execution",
-      "Project evaluation and monitoring",
-      "Project closeout",
-      "PMO structuring and setup",
-      "Project quality assurance plan",
-      "Diagnosis and intervention of in-flight projects",
-      "Change management and risk management"
+      {
+        "title": "Project definition and identification",
+        "description": "We turn a business need into a concrete project: objectives, scope, expected benefits, and success criteria, before any budget is committed."
+      },
+      {
+        "title": "Project formulation and planning",
+        "description": "We build the full plan (schedule, resources, roles, costs, risks, and quality plan) and take it to the steering committee for approval."
+      },
+      {
+        "title": "Implementation and execution",
+        "description": "We direct day-to-day execution and coordinate the internal team, the technology vendor, and business areas in one management dynamic."
+      },
+      {
+        "title": "Monitoring, control, and risk management",
+        "description": "We track progress, cost, and scope continuously, with AI agents that flag deviations before they become crises."
+      },
+      {
+        "title": "Project quality assurance",
+        "description": "We review deliverables, decisions, and progress against what was agreed, with a senior profile on the executive committee accountable for quality."
+      },
+      {
+        "title": "PMO structuring and setup",
+        "description": "We design and implement your organization's project management office (PMO): methodology, governance, templates, metrics, and tools."
+      },
+      {
+        "title": "PMO as a Service",
+        "description": "We take on the external PMO role for a specific project, such as an ERP implementation, without your company having to hire and sustain an internal project office."
+      },
+      {
+        "title": "Diagnosis and recovery of in-flight projects",
+        "description": "We step into projects that are late or over budget: we diagnose the real cause, rework the plan, and regain control of execution."
+      },
+      {
+        "title": "Change management",
+        "description": "We build change management into execution, so the organization adopts what the project delivers."
+      },
+      {
+        "title": "Closeout and stabilization",
+        "description": "We formally close the project, support post-go-live stabilization, and document the implementation model for future projects."
+      }
     ]
+  },
+  "lead": {
+    "eyebrow": "Who leads this service",
+    "title": "Who is accountable for your project",
+    "bio": "Jackson Bohorquez, founder of Cyrrus and creator of the CIRA method, leads project management and answers to each client's steering committee. Before founding the firm he was an IT director, on the side of the organization that receives and runs the projects."
   },
   "faq": {
     "eyebrow": "Project Management",
-    "title": "Frequently asked questions",
+    "title": "Frequently asked questions about project management",
     "items": [
       {
         "question": "How does the external PMO model work?",

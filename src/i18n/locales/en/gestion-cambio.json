@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Change Management & Training | Cyrrus",
-    "description": "Organizational change management and training built into project execution, with continuous AI-driven adoption measurement in LATAM."
+    "title": "Organizational Change Management Services | Cyrrus",
+    "description": "Organizational change management services: readiness assessment, stakeholders, communication, training, and AI-driven adoption measurement."
   },
   "hero": {
     "eyebrow": "CIRA Method — Adopt",
-    "title": "Change management & training",
+    "title": "Organizational change management services",
     "description": "The system gets installed, but the team doesn't adopt it. Our organizational change management works on adoption from day one of the project, not as a closing activity.",
     "ctaLabel": "Manage the change"
   },
@@ -24,10 +24,54 @@
     "methodLinkText": "This is the Adopt phase within the",
     "methodLinkLabel": "full CIRA Method"
   },
+  "definicion": {
+    "eyebrow": "The foundation",
+    "title": "What are change management services?",
+    "description": "Change management services are consulting and support processes that prepare an organization's people to adopt a new way of working (a system, a structure, or a strategy) and sustain it over time. They include readiness assessment, stakeholder management, communication, training, and adoption measurement. The goal isn't for the solution to be installed, but for it to be used."
+  },
+  "services": {
+    "eyebrow": "Scope",
+    "title": "Core change management services",
+    "description": "The four pillars in the next section run through the whole process. These are the specific services that make it up; they can be engaged within a project or on their own.",
+    "items": [
+      {
+        "title": "Change readiness assessment",
+        "description": "We measure how ready the organization is before starting: risk level, sources of potential resistance, leaders' capacity to sponsor the change, and past experience with similar projects."
+      },
+      {
+        "title": "Organizational impact analysis",
+        "description": "We identify what changes for each area and role (processes, tools, responsibilities, and metrics) to plan the transition around real impacts, not assumptions."
+      },
+      {
+        "title": "Executive sponsorship and change agent network",
+        "description": "We prepare senior leadership to lead the change visibly and build a network of internal agents who drive it in every area."
+      },
+      {
+        "title": "Resistance management",
+        "description": "We spot early where resistance is and why, and address it with concrete actions per group before it stalls the project."
+      },
+      {
+        "title": "Continuous AI-driven adoption measurement",
+        "description": "We track organizational climate and the adoption curve throughout the project with AI, to correct course in time instead of finding out in a survey at close."
+      },
+      {
+        "title": "Reinforcement and sustainability",
+        "description": "After go-live we consolidate new habits with follow-up, usage metrics, and adjustments, so the organization doesn't slide back to the old way of working."
+      },
+      {
+        "title": "Stalled adoption recovery",
+        "description": "When the system is already installed but the team works around it, we diagnose the cause and run a plan to recover adoption."
+      },
+      {
+        "title": "Generative AI adoption",
+        "description": "Programs for senior management and teams to adopt generative AI with sound judgment, through Cyrrus Leadership Academy."
+      }
+    ]
+  },
   "pillars": {
     "eyebrow": "How we do it",
     "title": "Four pillars, one adoption process",
-    "description": "Our Change Management methodology isn't an add-on: it's embedded in our Strategy, Select, and Project Management services. This ensures change management that aligns perfectly with your organization's vision and objectives.",
+    "description": "Our change management methodology isn't an add-on: it's embedded in our Strategy, Solution Selection, and Project Management services. That keeps change management aligned with your organization's vision and objectives.",
     "ctaLabel": "Schedule an executive diagnosis",
     "items": [
       {
@@ -51,21 +95,21 @@
   "distinctive": {
     "eyebrow": "What sets us apart",
     "pullQuote": "Results that add value.",
-    "description": "At Cyrrus CS we don't see change as an obstacle, but as an opportunity for growth and improvement. Our comprehensive Change Management approach shapes organizational culture, making it more flexible and oriented toward continuous success.",
+    "description": "At Cyrrus CS we don't see change as an obstacle, but as an opportunity for growth and improvement. Our comprehensive change management approach shapes organizational culture, making it more flexible and oriented toward continuous success.",
     "solutionTitle": "Embedded in our services",
     "bullets": [
       "Proactive management of the organization's impact, minimizing any operational risk.",
-      "Holistic methodology applied to Select, Strategy, and Project Management.",
+      "Comprehensive methodology applied to Strategy, Solution Selection, and Project Management.",
       "Radical reduction of the natural friction in adapting to new metrics and technology solutions."
     ]
   },
   "benefits": {
     "eyebrow": "Benefits",
-    "title": "Agility, transformation, and efficiency",
+    "title": "Benefits of organizational change management",
     "items": [
       {
         "title": "Comprehensive change management",
-        "description": "Our Change Management service goes beyond convention: it becomes an opportunity for positive, sustainable transformation."
+        "description": "Our change management service goes beyond convention: it becomes an opportunity for positive, sustainable transformation."
       },
       {
         "title": "Embedded in our services",
@@ -92,13 +136,22 @@
   "featureImage": {
     "caption": "Hands-on support in every working session — not just slide decks."
   },
+  "lead": {
+    "eyebrow": "Who leads this service",
+    "title": "Change management with a name behind it",
+    "bio": "Jackson Bohorquez, founder of Cyrrus and creator of the CIRA method, leads the change management practice. He has guided transformation processes in more than 17 countries and speaks and moderates at forums on leadership, strategy, and technology adoption."
+  },
   "faq": {
     "eyebrow": "Change Management",
-    "title": "Frequently asked questions",
+    "title": "Frequently asked questions about change management",
     "items": [
       {
+        "question": "What do change management services include?",
+        "answer": "Readiness assessment, organizational impact analysis, executive sponsorship, stakeholder and resistance management, a communication plan, a training plan, continuous adoption measurement, and reinforcement after go-live. They're built into the project from the start, though we also step in when adoption has already stalled."
+      },
+      {
         "question": "When does change management work actually start?",
-        "answer": "From day one of the project, not as a closing activity — it's embedded in the execution of Strategy, Select, and Project Management, not run as a separate service."
+        "answer": "From day one of the project, not as a closing activity: it's embedded in the execution of Strategy, Solution Selection, and Project Management, not run as a separate service."
       },
       {
         "question": "How do you measure whether the change is actually being adopted?",

@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "Selección de Tecnología sin Sesgo de Proveedor | Cyrrus",
-    "description": "Cómo elegimos tecnología con criterios definidos antes de mirar proveedores: software de gestión, automatización e infraestructura, sin sesgo comercial."
+    "title": "Consultoría Tecnológica: Selección de Soluciones TI | Cyrrus",
+    "description": "Consultoría tecnológica independiente: elegimos software, automatización e infraestructura con criterios definidos antes de mirar proveedores, sin sesgo comercial."
   },
   "hero": {
     "eyebrow": "Método CIRA — Identificar",
-    "title": "Selección de tecnología sin sesgo de proveedor",
+    "title": "Consultoría tecnológica: selección de soluciones TI sin sesgo de proveedor",
     "description": "Muchas decisiones de tecnología no parten de lo que el negocio realmente necesita. Nuestra selección siempre arranca en los requerimientos del negocio, no en el catálogo del proveedor — evaluación 100% agnóstica, con criterios objetivos y comparables.",
     "ctaLabel": "Hablemos de su solución"
   },
   "intro": {
     "kicker": "¿Cómo lo hacemos?",
     "pullQuote": "Una solución a la medida de su contexto empresarial, no del catálogo del proveedor.",
-    "description": "Evaluamos el sector económico, el tamaño de la empresa, su madurez tecnológica y sus procesos de negocio antes de recomendar nada. La solución sale de ese diagnóstico, no de una plantilla genérica.",
+    "description": "Como consultoría tecnológica independiente, evaluamos el sector económico, el tamaño de la empresa, su madurez tecnológica y sus procesos de negocio antes de recomendar nada. La solución sale de ese diagnóstico, no de una plantilla genérica.",
     "bullets": [
       "Evaluación 360º del sector, tamaño y madurez técnica de su negocio.",
       "Comparación 100% agnóstica, sin sesgo comercial hacia ninguna marca.",
@@ -96,8 +96,8 @@
       },
       {
         "slug": "tecnologias-avanzadas",
-        "label": "Tecnologías Avanzadas",
-        "note": "(Automatizaciones, Inteligencia Artificial, RPA, Analítica Avanzada)"
+        "label": "Automatización de Procesos e IA",
+        "note": "(Automatización de procesos, Inteligencia Artificial, RPA, Analítica Avanzada)"
       },
       {
         "slug": "infraestructura-tecnologica",
@@ -176,6 +176,10 @@
     "title": "Preguntas frecuentes",
     "items": [
       {
+        "question": "¿Qué es una consultoría tecnológica y cuándo conviene contratarla?",
+        "answer": "Una consultoría tecnológica ayuda a una empresa a decidir qué tecnología necesita, cómo elegirla entre varias opciones y cómo implementarla sin depender de lo que ofrece un solo proveedor. Conviene antes de comprar un ERP, un CRM u otra plataforma, o cuando un proyecto de tecnología ya se atrasó o se salió de presupuesto."
+      },
+      {
         "question": "¿La evaluación es realmente agnóstica de proveedor?",
         "answer": "Sí. No tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM u otras soluciones empresariales — evaluamos con los mismos cuatro criterios objetivos (funcional, técnico, económico, sostenible) sin importar la marca."
       },
@@ -229,22 +233,34 @@
     "faqTitle": "Preguntas frecuentes",
     "entries": {
       "tecnologias-avanzadas": {
-        "label": "Tecnologías Avanzadas",
+        "label": "Automatización de Procesos e IA",
         "eyebrow": "Selección de Soluciones — Tecnologías Avanzadas",
-        "intro": "Las nuevas tecnologías solo generan valor cuando responden a una necesidad real del negocio. Nuestro papel consiste en identificar dónde pueden generar el mayor impacto y cuáles son las alternativas más adecuadas para cada organización.",
+        "h1": "Automatización de procesos, RPA e IA: selección de tecnología",
+        "intro": "La automatización de procesos y la inteligencia artificial solo generan valor cuando responden a una necesidad real del negocio. Nuestro papel consiste en identificar en qué procesos pueden generar el mayor impacto y cuáles son las herramientas más adecuadas para cada organización.",
         "items": [
           {
             "title": "Inteligencia Artificial",
             "description": "Desde asistentes inteligentes hasta modelos avanzados de analítica, identificamos oportunidades donde la tecnología puede aumentar la productividad, mejorar la toma de decisiones y acelerar la creación de valor."
           },
           {
-            "title": "Automatización",
-            "description": "Seleccionamos plataformas que simplifican procesos, eliminan tareas repetitivas y permiten que las personas dediquen más tiempo a actividades estratégicas."
+            "title": "Automatización de procesos y RPA",
+            "description": "Seleccionamos plataformas de automatización de procesos y RPA (automatización robótica de procesos) que simplifican procesos, eliminan tareas repetitivas y permiten que las personas dediquen más tiempo a actividades estratégicas."
+          },
+          {
+            "title": "Agentes de IA",
+            "description": "Evaluamos agentes capaces de completar tareas de varios pasos —consultar sistemas, redactar, decidir dentro de reglas definidas— y los comparamos con alternativas más simples cuando una regla fija o un RPA son suficientes."
           },
           {
             "title": "Blockchain",
             "description": "Evaluamos soluciones para organizaciones que requieren mayores niveles de trazabilidad, confianza e intercambio seguro de información."
           }
+        ],
+        "body": [
+          "RPA, inteligencia artificial y agentes de IA no compiten entre sí: resuelven problemas distintos. El RPA (automatización robótica de procesos) replica tareas repetitivas con reglas fijas sobre los sistemas existentes, como copiar datos entre aplicaciones. La inteligencia artificial interpreta información no estructurada —textos, documentos, imágenes— y hace predicciones. Un agente de IA combina ambas capacidades para completar una tarea de varios pasos con cierto grado de autonomía.",
+          "Elegir mal sale caro. Un agente de IA donde bastaba una regla añade costo y riesgo; un RPA frágil sobre un proceso que cambia cada mes termina en mantenimiento permanente. Por eso la selección empieza por el proceso y no por la herramienta: qué volumen tiene, qué tan estructurado es, qué excepciones aparecen y qué datos toca.",
+          "Para comparar plataformas de automatización miramos cinco criterios: integración con los sistemas actuales (ERP, CRM, correo, APIs), seguridad y manejo de los datos, costo total a tres años (licencias, infraestructura y mantenimiento), facilidad para que su propio equipo la opere sin depender del proveedor, y capacidad de medir el resultado contra el proceso que reemplaza.",
+          "Los errores más frecuentes al elegir tecnología de automatización son empezar por la herramienta de moda, automatizar un proceso que todavía no está bien definido, ignorar el costo de mantenimiento y no decidir quién será el dueño de la automatización una vez en producción. Automatizar un proceso confuso solo hace que el desorden ocurra más rápido.",
+          "Nuestro acompañamiento cubre levantar y priorizar los procesos candidatos, definir y ponderar los criterios de evaluación, comparar proveedores contra casos reales de su operación y acompañar la negociación y la contratación. La implementación se coordina con Gerencia de proyectos (PMO) y, cuando la solución correcta no existe en el mercado, la construcción a medida se trabaja con nuestra práctica de Agentes de IA. En Cyrrus hacemos esta selección de forma independiente, sin comisiones de fabricantes."
         ],
         "related": [
           {
@@ -252,7 +268,7 @@
             "description": "Defina políticas y controles para la tecnología que seleccione aquí antes de ponerla en producción."
           },
           {
-            "title": "Automatización con agentes de IA",
+            "title": "Agentes de IA para empresas",
             "description": "Lleve la automatización seleccionada a una implementación real con agentes de IA."
           },
           {
@@ -261,6 +277,14 @@
           }
         ],
         "faq": [
+          {
+            "question": "¿Qué es RPA y cuándo conviene usarlo?",
+            "answer": "RPA (Robotic Process Automation) es software que ejecuta tareas repetitivas siguiendo reglas fijas sobre las aplicaciones que ya usa su empresa. Conviene cuando el proceso es estable, de alto volumen y con pocas excepciones. Si el proceso cambia seguido o depende de interpretar textos o documentos, suele convenir más una solución con inteligencia artificial."
+          },
+          {
+            "question": "¿Qué diferencia hay entre RPA, IA y un agente de IA?",
+            "answer": "El RPA sigue reglas fijas; la inteligencia artificial interpreta información no estructurada y predice; un agente de IA combina ambas para completar una tarea de varios pasos con cierta autonomía. No son excluyentes: muchas veces la mejor solución mezcla dos de ellas. Nuestra selección parte del proceso, no de la tecnología de moda."
+          },
           {
             "question": "¿Cómo deciden qué tecnología — IA, automatización o blockchain — necesita mi empresa?",
             "answer": "Partimos del mismo diagnóstico de sector, tamaño y madurez tecnológica que usamos en toda selección de soluciones. No recomendamos una tecnología de moda si no responde a una necesidad real del negocio."
@@ -278,6 +302,7 @@
       "infraestructura-tecnologica": {
         "label": "Infraestructura Tecnológica",
         "eyebrow": "Selección de Soluciones — Infraestructura Tecnológica",
+        "h1": "Migración a la nube y ciberseguridad: selección de infraestructura TI",
         "intro": "La infraestructura adecuada crea las condiciones para que el negocio opere con seguridad, disponibilidad y capacidad de crecimiento.",
         "items": [
           {
@@ -330,11 +355,11 @@
   },
   "detailMeta": {
     "tecnologias-avanzadas": {
-      "title": "Selección de Automatización e IA para Empresas | Cyrrus",
-      "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
+      "title": "Automatización de Procesos, RPA e IA: Selección | Cyrrus",
+      "description": "Seleccionamos las soluciones de automatización de procesos, RPA, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
     },
     "infraestructura-tecnologica": {
-      "title": "Infraestructura Tecnológica: Ciberseguridad y Nube | Cyrrus",
+      "title": "Migración a la Nube y Ciberseguridad para Empresas | Cyrrus",
       "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor."
     }
   }

@@ -6,6 +6,28 @@
       "excerpt": "Organizations don't fail for lack of technology or budget. They fail when no one connects the decision to the people who have to execute it. Seven recurring mistakes — and how to avoid them.",
       "metaDescription": "Why digital transformation projects fail: the 7 most common mistakes, from starting with technology to leaving change management for last.",
       "intro": "There's a question that, in my opinion, should be asked long before a budget is approved, a platform is selected, or a contract is signed: have we already thought about change management?",
+      "serviceCtas": [
+        {
+          "title": "Can your next project avoid this mistake?",
+          "description": "We manage change from the project's design stage, not as an afterthought tacked onto the end of implementation — with the people who will live it, not just the schedule.",
+          "checklist": [
+            "Impact map by area before implementation",
+            "Adoption plan with metrics, not just training sessions"
+          ],
+          "ctaLabel": "Learn about Change Management",
+          "imageAlt": "Jackson Bohórquez moderating a panel on leadership and change management"
+        },
+        {
+          "title": "Adoption doesn't end when the project does",
+          "description": "We stay through the stage almost no one budgets for — the one that decides whether the change sticks or the organization slides back to how it was.",
+          "checklist": [
+            "Real adoption measurement, not just training attendance",
+            "Adjustments during the first months of use, not just at go-live"
+          ],
+          "ctaLabel": "Talk about my project",
+          "imageAlt": "Cyrrus consultant working on a change adoption plan"
+        }
+      ],
       "body": [
         { "type": "p", "text": "Too often, the answer comes too late, isn't given the importance it deserves, or gets assigned to someone without the capabilities needed to manage it." },
         { "type": "p", "text": "I've accompanied organizations through transformation processes where the technology was well chosen, the project had good professionals, and there was a significant budget — on paper, everything seemed to be in order, and yet something wasn't working." },
@@ -35,7 +57,7 @@
         { "type": "h2", "text": "The fourth mistake: leaving change management for the end" },
         { "type": "p", "text": "This is probably one of the mistakes I've seen repeated the most — change management can't show up at the end of the project, once the decision has already been made, the solution has been selected, and the organization is about to receive a new way of working." },
         { "type": "p", "text": "By then, many people have already built their own interpretations of what's happening. When people don't understand the change, fear, resistance, indifference, or simply fatigue show up." },
-        { "type": "p", "text": "For me, change management begins much earlier." },
+        { "type": "p", "text": "For me, change management begins much earlier.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "It begins when people understand why they need to change, what the impact of doing it well will be, and also what the impact of doing it poorly could be." },
         { "type": "p", "text": "A few years ago, during an ERP implementation at a mining-industry organization, we went through a situation that left me with a lesson I still carry." },
         { "type": "p", "text": "A person with a very important role inside the organization was fully involved in the project, and their intention was positive: they wanted to make sure every area of the business was correctly defined." },
@@ -97,6 +119,28 @@
       "excerpt": "Choosing a consulting firm shouldn't be a comparison of proposals. Three signs of a firm that truly understands your business, versus one that just fills out a document.",
       "metaDescription": "How to choose a trustworthy strategic consulting firm: what to ask, which red flags matter, and why vendor-agnosticism is key.",
       "intro": "A good consulting firm isn't the one that knows the most. It's the one that understands the best.",
+      "serviceCtas": [
+        {
+          "title": "Want a consulting firm that tells you what you need to hear?",
+          "description": "Our strategy consulting starts by understanding your business in depth, not by replicating a generic diagnosis from another industry.",
+          "checklist": [
+            "Diagnosis based on your real operation, not a template",
+            "Roadmap prioritized by impact, not by page count"
+          ],
+          "ctaLabel": "Learn about Strategy Consulting",
+          "imageAlt": "Cyrrus consultants presenting strategic planning at a conference"
+        },
+        {
+          "title": "A strategy that stays in the organization, not in a document",
+          "description": "We leave installed capability in your team — criteria, metrics, and a plan your people can execute without depending on us.",
+          "checklist": [
+            "Guided implementation, not just the report",
+            "Technology-agnostic: we recommend what works for you"
+          ],
+          "ctaLabel": "Schedule an executive diagnostic",
+          "imageAlt": "Senior Cyrrus consultant defining the roadmap with the team"
+        }
+      ],
       "body": [
         { "type": "p", "text": "There are decisions an organization can make internally. There are others where bringing in an outsider can make a huge difference." },
         { "type": "p", "text": "Not necessarily because that third party knows more than the internal team. In fact, the knowledge of the business lives inside the organization. The difference lies somewhere else." },
@@ -166,10 +210,10 @@
         { "type": "p", "text": "Let's say a CEO told me:" },
         { "type": "quote", "text": "“Jackson, I have three consulting firms. All three have experience, good clients, and excellent proposals. Which one should I choose?”" },
         { "type": "p", "text": "I probably wouldn't start by comparing the proposals." },
-        { "type": "p", "text": "I'd tell them to look at who thinks differently. Who is more impartial. Who has the best team, not just the best brand. Who asked the best questions before presenting the proposal. Who really listened. Who was capable of pushing back. Who understood the constraints of their organization, and especially, who showed genuine concern for people and for change management." },
+        { "type": "p", "text": "I'd tell them to look at who thinks differently. Who is more impartial. Who has the best team, not just the best brand. Who asked the best questions before presenting the proposal. Who really listened. Who was capable of pushing back. Who understood the constraints of their organization, and especially, who showed genuine concern for people and for change management.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "Because a transformation can have the best strategy, the best technology, and the right budget, but if people aren't ready to live through it, it will hardly be sustainable." },
         { "type": "h2", "text": "One last question" },
-        { "type": "p", "text": "When I think about strategic consulting, I come back once again to an idea that's fundamental to me: people, processes, and technology. Centered on the people who are affected by the organization." },
+        { "type": "p", "text": "When I think about strategic consulting, I come back once again to an idea that's fundamental to me: people, processes, and technology. Centered on the people who are affected by the organization.", "links": [{"text": "strategic consulting", "href": "/metodo-cira/estrategia"}] },
         { "type": "p", "text": "A consulting firm can help map out the path, spot opportunities, question decisions, and build capabilities. But its real value shows up when it helps the organization see more clearly, decide better, and become capable of moving forward on its own." },
         { "type": "p", "text": "Perhaps that's the best question for a CEO to ask before hiring a consulting firm: after working with them, will we be an organization more dependent on their knowledge, or an organization more capable of building our own?" },
         { "type": "p", "text": "The answer says far more about a consulting firm than the size of its proposal." }
@@ -181,6 +225,28 @@
       "excerpt": "Before asking which AI to adopt, every organization should ask whether it's ready to govern it. What AI Governance is, and where a CEO should start.",
       "metaDescription": "What corporate AI Governance is, how it differs from Data Governance, and the questions every CEO should answer before adopting artificial intelligence.",
       "intro": "AI can speed up a decision; governance determines whether that decision should be made at all.",
+      "serviceCtas": [
+        {
+          "title": "Does your company already have Shadow AI and not know it?",
+          "description": "We design your organization's AI Governance framework: what can be automated, what needs human oversight, and who is accountable for each decision.",
+          "checklist": [
+            "Risk map by use case, not a generic policy",
+            "Defined roles between business, IT, and legal"
+          ],
+          "ctaLabel": "Learn about AI Governance",
+          "imageAlt": "Cyrrus consultant working on data policies and controls"
+        },
+        {
+          "title": "Before you scale AI, define your limits",
+          "description": "We help your leadership team decide what to delegate, what to supervise, and what to never automate — before adoption outruns control.",
+          "checklist": [
+            "Governance committee with business, IT, legal, and security",
+            "Clear criteria for approving new AI use cases"
+          ],
+          "ctaLabel": "Schedule a conversation about AI Governance",
+          "imageAlt": "Cyrrus consultant with a notebook in front of work screens"
+        }
+      ],
       "body": [
         { "type": "p", "text": "There's a conversation that's starting to come up more and more often in boardrooms. Which model should we use? Which agents can we deploy? How much can we automate? How much can we save? What is the competition doing?" },
         { "type": "p", "text": "These are legitimate questions. But I think we're starting from the wrong place." },
@@ -215,7 +281,7 @@
         { "type": "h2", "text": "AI Governance can't be IT's responsibility alone" },
         { "type": "p", "text": "Another common mistake is thinking that, because artificial intelligence relies on technology, its governance should sit exclusively with the CIO or the technology area. I don't see it that way." },
         { "type": "p", "text": "AI Governance needs to sit close to strategy, and therefore close to the CEO. IT plays a fundamental role, but so do Security, Internal Control, Legal, Innovation, and Human Talent." },
-        { "type": "p", "text": "The business has to define what value it's after. Technology has to make sure the architecture and systems can support it. Security has to assess information and access risks. Legal has to help understand the regulatory, contractual, and intellectual-property implications. Innovation has to help connect what the technology can do with the strategy. And Human Talent carries an enormous responsibility for adoption, capability-building, training, and change management." },
+        { "type": "p", "text": "The business has to define what value it's after. Technology has to make sure the architecture and systems can support it. Security has to assess information and access risks. Legal has to help understand the regulatory, contractual, and intellectual-property implications. Innovation has to help connect what the technology can do with the strategy. And Human Talent carries an enormous responsibility for adoption, capability-building, training, and change management.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "The conversation, then, shouldn't be about who owns the AI. It should be about who is accountable for the decisions the organization is starting to delegate to it." },
         { "type": "h2", "text": "People remain at the center" },
         { "type": "p", "text": "The arrival of artificial intelligence can make us think the conversation is about models, agents, automation, and productivity, but behind every one of those elements, there are still people." },
@@ -267,6 +333,680 @@
         { "type": "p", "text": "It should start with: “what do we want to transform, and what intelligence do we need to do it better?”" },
         { "type": "p", "text": "That's where AI Governance begins. And that's also where a far more important conversation begins for a CEO: are we using artificial intelligence to transform our business, or are we simply adding intelligence to our processes?" },
         { "type": "p", "text": "The difference may seem small. But it could end up defining who leads the future, and who is simply trying to catch up to it." }
+      ]
+    },
+    "gerencia-de-proyectos-cuando-contratar-una-pmo-externa": {
+      "title": "Project management: when to hire an external PMO",
+      "label": "Project management",
+      "excerpt": "A project doesn't fail for lack of a schedule, but for lack of someone accountable for the outcome. Five signs your project needs external management, and what to demand from it.",
+      "metaDescription": "Project management: what it is, when to hire an external PMO, what it should deliver, and how to choose one. Five signs your project needs help.",
+      "intro": "If no one in your organization can say for certain who owns your project's outcome, the question probably isn't how to track it, but who is managing it.",
+      "serviceCtas": [
+        {
+          "title": "Does your project need an external PMO?",
+          "description": "We take on project governance with real accountability for the outcome, from kickoff through post-go-live stabilization.",
+          "checklist": [
+            "Full plan approved by the steering committee",
+            "Continuous risk monitoring with AI agents"
+          ],
+          "ctaLabel": "Explore Project Management",
+          "imageAlt": "Cyrrus consultant presenting project management methodology"
+        },
+        {
+          "title": "A project ends when the organization uses it",
+          "description": "We build change management into execution so the project is measured by adoption, not just by go-live.",
+          "checklist": [
+            "Scope control that protects the budget",
+            "Change management embedded from the start"
+          ],
+          "ctaLabel": "Talk about my project",
+          "imageAlt": "Cyrrus project management presentation"
+        }
+      ],
+      "body": [
+        { "type": "p", "text": "Almost every technology project starts with optimism. There's an approved budget, a selected vendor, a schedule that fits on one slide, and a team eager to get going." },
+        { "type": "p", "text": "A few months later, the conversation is usually different: the schedule has slipped, the budget no longer covers it, the vendor says the delay is the client's, and the client says it's the vendor's. And when someone asks who is accountable for the outcome, the answer isn't clear." },
+        { "type": "p", "text": "In my experience, that question is what determines whether a project needs different project management than the one it has. It's not about how many tracking tools are in use, but about who holds real accountability for the project delivering what it promised." },
+        { "type": "h2", "text": "What is project management?" },
+        { "type": "p", "text": "Project management is the planning, direction, control, and execution of an initiative so it meets the agreed time, cost, scope, and quality. It's a discipline with recognized frameworks, such as the PMBOK guide, and a very concrete goal: turning a business decision into a delivered result." },
+        { "type": "p", "text": "People often use project management and project administration interchangeably. In practice they overlap. If there's a nuance, it's that management puts the emphasis on direction and accountability for the outcome, not just on administering tasks." },
+        { "type": "p", "text": "That difference matters. A project can have a flawless schedule, weekly meetings, and well-designed reports, and still have no one making the hard calls when something drifts." },
+        { "type": "h2", "text": "Five signs your project needs external project management" },
+        { "type": "p", "text": "Not every project needs an external PMO. But there are signs that repeat in the ones that do." },
+        { "type": "p", "text": "First: no one is accountable for the whole outcome. The vendor answers for its part, each area answers for its own, and the project as a whole has no owner." },
+        { "type": "p", "text": "Second: the reports say everything is fine until, suddenly, everything is wrong. When the status goes from green to red without passing through yellow, the problem isn't the project, it's how it's being measured." },
+        { "type": "p", "text": "Third: the vendor is managing itself. It's natural for an implementer to defend its scope, timelines, and costs. What isn't healthy is for it to also be the one deciding whether it's doing a good job." },
+        { "type": "p", "text": "Fourth: the internal team is doing two jobs. The project's key people still answer for day-to-day operations, and the project ends up getting whatever time is left over." },
+        { "type": "p", "text": "Fifth: it's the first time the organization has run a project this size. An ERP implementation, a cloud migration, or an artificial intelligence initiative doesn't look like the projects the company runs every year, and a first project's mistakes tend to be the most expensive." },
+        { "type": "h2", "text": "Internal PMO, external PMO, or PMO as a Service" },
+        { "type": "p", "text": "A PMO, or project management office, is the structure that defines how an organization's projects are governed: methodology, roles, committees, metrics, and tools." },
+        { "type": "p", "text": "An internal PMO makes sense when the company runs projects continuously and has the volume to sustain a dedicated team. Building one takes time, and keeping it carries a fixed cost." },
+        { "type": "p", "text": "An external PMO, or PMO as a Service, is a team that takes on the governance of a specific project with accountability for the outcome, and is stood down when the project ends. It's the most common option for large initiatives that don't repeat every year, such as an ERP implementation." },
+        { "type": "quote", "text": "The question isn't whether your company needs a PMO. It's who will be accountable for the outcome of this particular project." },
+        { "type": "h2", "text": "What serious project management should deliver" },
+        { "type": "p", "text": "A full plan before starting: scope, schedule, resources, roles, costs, risks, and a quality plan, approved by a steering committee that understands what it's approving." },
+        { "type": "p", "text": "Clear governance: who decides what, at which level, and with what information. A project without decision rules ends up resolving its problems by attrition." },
+        { "type": "p", "text": "Continuous risk monitoring, not just a report at the end of each phase. Today it's possible to monitor project risk permanently, even with artificial intelligence agents that flag deviations before they become crises." },
+        { "type": "p", "text": "Scope control that protects the budget. On a project we managed under PMBOK guidelines, closeout came in with only a 3% variance from estimated cost and just two customizations to the ERP code. That's not luck: it's the result of saying no in time." },
+        { "type": "p", "text": "A formal, documented closeout that leaves the organization with the implementation model for its next projects." },
+        { "type": "h2", "text": "The most common mistake: managing the schedule, not the adoption" },
+        { "type": "p", "text": "A project can finish on time, on budget, and with its full scope delivered, and still fail. It happens when the system gets installed but the organization keeps working the way it did before." },
+        { "type": "p", "text": "That's why I believe project management that doesn't include change management is measuring the wrong kind of success. Change management services have to start the same day as the project, not show up as a closing activity.", "links": [{"text": "Change management services", "href": "/metodo-cira/gestion-del-cambio"}] },
+        { "type": "p", "text": "I wrote about this in detail in why digital transformation projects fail: most don't fail because of the technology, but because of how people receive it.", "links": [{"text": "why digital transformation projects fail", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
+        { "type": "h2", "text": "Before the project: the right decision" },
+        { "type": "p", "text": "Some projects no amount of management can save, because the problem isn't in execution but in the decision that started them: a vague objective, a business case nobody built, or a technology chosen before the problem was understood." },
+        { "type": "p", "text": "That's why, on the highest-impact projects, it's worth starting with strategy consulting that defines what needs to be solved, in what order, and with which indicators. Project management executes better when it knows exactly what it's executing.", "links": [{"text": "strategy consulting", "href": "/metodo-cira/estrategia"}] },
+        { "type": "h2", "text": "How to choose who manages your project" },
+        { "type": "p", "text": "Ask who will be accountable for the outcome, not just who will track progress." },
+        { "type": "p", "text": "Ask how risk will be measured and how often. If the answer is a monthly report, risk will be caught late." },
+        { "type": "p", "text": "Ask what commercial relationship they have with the technology vendor. A manager who depends on the implementer will hardly be able to hold it to account." },
+        { "type": "p", "text": "Ask how they'll work on adoption, not just installation." },
+        { "type": "p", "text": "And ask about past projects with verifiable results: time, cost, scope, and above all, what happened after go-live." },
+        { "type": "h2", "text": "In summary" },
+        { "type": "p", "text": "Good project management doesn't show in the number of reports it produces, but in the number of problems it prevents. If your next project is large, new to the organization, or critical to the business, it's worth asking who will be accountable for it." },
+        { "type": "p", "text": "At Cyrrus we provide project management services as an external PMO, accountable for the outcome and with change management built in from the start.", "links": [{"text": "project management services", "href": "/metodo-cira/gestion-de-proyectos"}] }
+      ]
+    },
+    "que-es-un-erp-guia-para-elegirlo": {
+      "title": "What is an ERP: a guide to understanding it, choosing it and getting it right",
+      "label": "ERP selection",
+      "excerpt": "An ERP brings finance, purchasing, inventory and operations into one platform. What it is, what it is for, which modules it includes and seven criteria for choosing the right one.",
+      "metaDescription": "What an ERP is, what it is for, which modules it includes and how to choose the right one for your company. A guide with selection criteria and common mistakes.",
+      "intro": "If every area of your company has its own version of the numbers, the question is probably not which system to buy, but what an ERP is and whether you really need one.",
+      "serviceCtas": [
+        {
+          "title": "Choosing an ERP?",
+          "description": "We evaluate and compare ERPs independently, with criteria defined before looking at vendors and with no vendor commissions.",
+          "checklist": [
+            "Functional, technical, economic and sustainability criteria",
+            "Support through contracting"
+          ],
+          "ctaLabel": "Explore ERP selection",
+          "imageAlt": "Cyrrus team evaluating ERP options"
+        },
+        {
+          "title": "Choosing well is half the road",
+          "description": "We manage the implementation as an external PMO and work on adoption from day one, so the system gets used and not just installed.",
+          "checklist": [
+            "Project management with real responsibility for the outcome",
+            "Change management built in from the start"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Cyrrus working session on ERP implementation"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Today almost every mid-sized company has a similar problem: its information is scattered. Finance keeps its numbers in one system, purchasing in another, inventory in a spreadsheet and production in a fourth tool. Every area has its own version of the truth, and pulling the numbers together for a decision takes days."
+        },
+        {
+          "type": "p",
+          "text": "An ERP is the most common answer to that problem. But it is also one of the most expensive and hardest-to-reverse technology decisions a company makes. This guide explains what an ERP is, what it is for, which modules it includes and how to choose the right one without getting it wrong."
+        },
+        {
+          "type": "h2",
+          "text": "What is an ERP?"
+        },
+        {
+          "type": "p",
+          "text": "ERP stands for Enterprise Resource Planning. It is a system that brings a company's core processes —finance, purchasing, inventory, sales, production, logistics and human resources— into a single platform built on a shared database."
+        },
+        {
+          "type": "p",
+          "text": "The key word is integrates. An ERP is not a set of separate programs: when one area records a transaction, the others see it immediately. When sales confirms an order, inventory deducts the material, purchasing knows what to reorder and finance records the revenue, without anyone re-entering anything."
+        },
+        {
+          "type": "h2",
+          "text": "What is an ERP for?"
+        },
+        {
+          "type": "p",
+          "text": "An ERP lets the whole organization work with the same information and the same processes. In practice that means four benefits."
+        },
+        {
+          "type": "p",
+          "text": "The first is a single version of the data. The arguments about which figure is right end, because every figure comes from the same source."
+        },
+        {
+          "type": "p",
+          "text": "The second is less manual work and fewer data-entry errors. Processes that used to require copying data between spreadsheets become automatic."
+        },
+        {
+          "type": "p",
+          "text": "The third is visibility for decisions. Leadership can see inventory, cash flow, costs and order fulfillment almost in real time, instead of waiting for the month-end close."
+        },
+        {
+          "type": "p",
+          "text": "The fourth is control: role-based permissions, a trail for every transaction and support for accounting, tax and audit obligations."
+        },
+        {
+          "type": "h2",
+          "text": "Which modules does an ERP include?"
+        },
+        {
+          "type": "p",
+          "text": "Each vendor groups them differently, but these are the most common."
+        },
+        {
+          "type": "p",
+          "text": "Finance and accounting: general ledger, accounts payable and receivable, treasury, fixed assets and closings."
+        },
+        {
+          "type": "p",
+          "text": "Purchasing and suppliers: requisitions, purchase orders, receiving and supplier evaluation."
+        },
+        {
+          "type": "p",
+          "text": "Inventory and logistics: stock, warehouses, movements and traceability."
+        },
+        {
+          "type": "p",
+          "text": "Sales and invoicing: quotes, orders, invoicing and receivables."
+        },
+        {
+          "type": "p",
+          "text": "Production: material planning, manufacturing orders and costing, in industrial companies."
+        },
+        {
+          "type": "p",
+          "text": "Human resources and payroll, which many companies prefer to handle with a specialized system connected to the ERP."
+        },
+        {
+          "type": "p",
+          "text": "No ERP is the best at every module. That is why it is common for a company to use the ERP for its financial and operational core and connect it to specialized systems for CRM, people management or asset maintenance.",
+          "links": [
+            {
+              "text": "CRM",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            },
+            {
+              "text": "people management",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm"
+            },
+            {
+              "text": "asset maintenance",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "ERP, CRM and spreadsheets: what is the difference?"
+        },
+        {
+          "type": "p",
+          "text": "A CRM manages customer relationships and the sales process: contacts, opportunities and sales follow-up. An ERP manages the company's operations and finances. They complement each other and should be connected, but one does not replace the other."
+        },
+        {
+          "type": "p",
+          "text": "Spreadsheets work while the company is small. They stop working when several people need to edit the same data, when errors start costing money or when nobody trusts the numbers. That is usually the sign that it is time for an ERP."
+        },
+        {
+          "type": "h2",
+          "text": "Signs that your company needs an ERP"
+        },
+        {
+          "type": "p",
+          "text": "There is no rule by size, but some signs repeat."
+        },
+        {
+          "type": "p",
+          "text": "The accounting close takes many days because information from several systems has to be consolidated."
+        },
+        {
+          "type": "p",
+          "text": "Inventory in the system does not match the physical count."
+        },
+        {
+          "type": "p",
+          "text": "Every area keeps its own spreadsheets and nobody fully trusts the others'."
+        },
+        {
+          "type": "p",
+          "text": "Growing means hiring more people just to key in and reconcile data."
+        },
+        {
+          "type": "p",
+          "text": "Leadership makes decisions with data that is weeks old."
+        },
+        {
+          "type": "p",
+          "text": "There are audit or regulatory obligations the current system cannot support."
+        },
+        {
+          "type": "h2",
+          "text": "Cloud ERP or installed on your own servers"
+        },
+        {
+          "type": "p",
+          "text": "A cloud ERP is hosted and maintained by the vendor, paid by subscription and updated automatically. It is faster to launch and needs less infrastructure of your own. An ERP installed on your own servers (on-premise) gives more control over data and customization, but requires infrastructure, a technical team and planned upgrades."
+        },
+        {
+          "type": "p",
+          "text": "There is no single right answer. It depends on sector regulation, internal technical capacity, how much customization your processes need and the total cost over several years, not just the first one."
+        },
+        {
+          "type": "h2",
+          "text": "How to choose an ERP: seven criteria"
+        },
+        {
+          "type": "p",
+          "text": "The most common mistake is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating."
+        },
+        {
+          "type": "p",
+          "text": "Functional fit: how much of your real processes it covers without customization and how much requires development."
+        },
+        {
+          "type": "p",
+          "text": "Technical fit: architecture, security, integration with the systems you already have and ability to grow."
+        },
+        {
+          "type": "p",
+          "text": "Total cost of ownership: licenses or subscription, implementation, customization, infrastructure, support, training and upgrades, projected over several years."
+        },
+        {
+          "type": "p",
+          "text": "Vendor sustainability: track record, product roadmap and the network of implementers available in your country."
+        },
+        {
+          "type": "p",
+          "text": "Implementation capability: who will implement it, with what methodology and with what experience in companies like yours."
+        },
+        {
+          "type": "p",
+          "text": "Ease of adoption: how simple it is for users and how much training it requires."
+        },
+        {
+          "type": "p",
+          "text": "Local coverage: tax, accounting and legal requirements in the countries where you operate, including electronic invoicing."
+        },
+        {
+          "type": "h2",
+          "text": "The selection process, step by step"
+        },
+        {
+          "type": "p",
+          "text": "Every company adapts it, but an orderly process usually follows these steps: define the problem and the business goals; gather and prioritize requirements with the areas; build a list of market options; send a request for proposal (RFP) with the same criteria to every vendor; evaluate proposals and demos with a weighted matrix; check references; and negotiate and contract."
+        },
+        {
+          "type": "p",
+          "text": "As a reference, in our methodology the selection phase usually takes 6 to 12 weeks, from the strategic kickoff to support through contracting."
+        },
+        {
+          "type": "quote",
+          "text": "Choosing an ERP is not choosing software. It is choosing how your company will work for the next several years."
+        },
+        {
+          "type": "h2",
+          "text": "What does the cost of an ERP depend on?"
+        },
+        {
+          "type": "p",
+          "text": "There is no single price, because cost depends on factors that vary widely from one company to another: the number of users, the modules contracted, the model (subscription or license), the amount of customization, the complexity of the data migration, the integrations with other systems and the training."
+        },
+        {
+          "type": "p",
+          "text": "A useful warning: the license is usually only part of the investment. Implementation, migration and adoption weigh heavily on the total, which is why it is worth comparing total cost and not just list price."
+        },
+        {
+          "type": "h2",
+          "text": "Why ERP implementations fail"
+        },
+        {
+          "type": "p",
+          "text": "It almost never fails because of the software. The most common causes are choosing without clear requirements, underestimating data migration, customizing too much, not having a project owner with authority and not working on people's adoption."
+        },
+        {
+          "type": "p",
+          "text": "That is why an implementation needs project management with real responsibility for the outcome and change management from day one. We have written before about when to hire an external PMO and about why digital transformation projects fail.",
+          "links": [
+            {
+              "text": "when to hire an external PMO",
+              "href": "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+            },
+            {
+              "text": "why digital transformation projects fail",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Common mistakes when choosing an ERP"
+        },
+        {
+          "type": "p",
+          "text": "Starting with the vendor instead of the problem."
+        },
+        {
+          "type": "p",
+          "text": "Comparing only the license price and not the total cost."
+        },
+        {
+          "type": "p",
+          "text": "Letting only the technology area decide, without the areas that will use the system."
+        },
+        {
+          "type": "p",
+          "text": "Accepting that the selection is made by whoever will also sell the implementation."
+        },
+        {
+          "type": "p",
+          "text": "Expecting the ERP to replicate today's processes exactly, including the ones that should be fixed."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we also do this. We provide independent ERP selection: we help you define requirements, evaluate and compare the options on the market and support the contracting. We have no commercial alliances or commissions with vendors, so the recommendation is based only on what your company needs.",
+          "links": [
+            {
+              "text": "independent ERP selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "After the selection, we can also manage the implementation as an external PMO and work on your team's adoption, so the system gets used and not just installed.",
+          "links": [
+            {
+              "text": "external PMO",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            },
+            {
+              "text": "adoption",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you are evaluating an ERP, or have already started the process and have doubts, contact us: use the contact button below and schedule a conversation with our team. We will help you make the decision with clear criteria."
+        }
+      ]
+    },
+    "que-es-una-pmo-funciones-tipos-cuando-necesitarla": {
+      "title": "What is a PMO: functions, types and when your company needs one",
+      "label": "Project management",
+      "excerpt": "A PMO is the office that brings order to how a company manages its projects. What it is, what it is for, which types exist and how to know whether you need one.",
+      "metaDescription": "What a PMO (project management office) is, what it is for, which functions and types exist and how to tell whether your company needs one. A practical guide.",
+      "intro": "If you have several projects running and nobody can tell you for certain how many are going well, the question is probably not which tool to use, but what a PMO is and whether your company already needs one.",
+      "serviceCtas": [
+        {
+          "title": "Need to bring order to your projects?",
+          "description": "We act as an external PMO: we take over the governance of your projects with real responsibility for the outcome, from kickoff to stabilization.",
+          "checklist": [
+            "Comprehensive plan approved by the steering committee",
+            "Continuous risk monitoring with AI agents"
+          ],
+          "ctaLabel": "Explore Project Management",
+          "imageAlt": "Cyrrus consultant presenting the project management methodology"
+        },
+        {
+          "title": "A project ends when it is used",
+          "description": "We build change management into execution so projects are measured by adoption, not just by delivery.",
+          "checklist": [
+            "Scope control that protects the budget",
+            "Change management built in from the start"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Cyrrus project management presentation"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Almost every mid-sized company reaches the same point: it has several projects running at once, each managed by a different person with their own way of working, and nobody in leadership can say for certain how many are going well, how many are going badly and which ones should be stopped."
+        },
+        {
+          "type": "p",
+          "text": "The PMO exists to bring order to that picture. This guide explains what a PMO is, what functions it performs, which types exist, how it differs from a project manager and how to tell whether your company needs one."
+        },
+        {
+          "type": "h2",
+          "text": "What is a PMO?"
+        },
+        {
+          "type": "p",
+          "text": "PMO stands for Project Management Office. It is the structure within an organization that defines, standardizes and oversees how projects are managed: which methodology is used, how progress is reported, how initiatives are prioritized and who is accountable for each one."
+        },
+        {
+          "type": "p",
+          "text": "Depending on the context, the term is also used for a program or portfolio management office. In every case the idea is the same: projects should be managed with a common standard and with visibility for leadership, rather than depending on each manager's individual skill."
+        },
+        {
+          "type": "h2",
+          "text": "What is a PMO for?"
+        },
+        {
+          "type": "p",
+          "text": "A PMO lets an organization deliver its projects more predictably. In practice, that means five results."
+        },
+        {
+          "type": "p",
+          "text": "A common language: every project uses the same definitions, templates and reporting formats, so they can be compared."
+        },
+        {
+          "type": "p",
+          "text": "Visibility for leadership: a single dashboard with the status, risk and budget of every project, without asking for reports one by one."
+        },
+        {
+          "type": "p",
+          "text": "Clear priorities: explicit criteria for deciding which projects go ahead, which wait and which are stopped."
+        },
+        {
+          "type": "p",
+          "text": "Better use of resources: you can see who is overloaded and who has capacity before committing to a new project."
+        },
+        {
+          "type": "p",
+          "text": "Accumulated learning: what went well or badly on one project is documented and used on the next."
+        },
+        {
+          "type": "h2",
+          "text": "Functions of a PMO"
+        },
+        {
+          "type": "p",
+          "text": "Depending on its maturity, a PMO may perform some or all of these functions."
+        },
+        {
+          "type": "p",
+          "text": "Define the project management methodology and templates, aligned with reference frameworks such as the PMBOK."
+        },
+        {
+          "type": "p",
+          "text": "Track progress, cost and risk across projects, and consolidate reports for the steering committee."
+        },
+        {
+          "type": "p",
+          "text": "Manage the portfolio: evaluate, prioritize and align projects with the business strategy."
+        },
+        {
+          "type": "p",
+          "text": "Manage resources: assign people and resolve capacity conflicts."
+        },
+        {
+          "type": "p",
+          "text": "Support or directly lead critical projects, depending on the PMO model."
+        },
+        {
+          "type": "p",
+          "text": "Train and coach project managers, and maintain the lessons-learned repository."
+        },
+        {
+          "type": "h2",
+          "text": "Types of PMO"
+        },
+        {
+          "type": "p",
+          "text": "The PMBOK guide distinguishes three types of PMO, according to the degree of control they exercise over projects."
+        },
+        {
+          "type": "p",
+          "text": "Supportive PMO: offers templates, good practices, training and access to information. Its control is low and it works as a consulting hub. It is the usual starting point in organizations with low maturity."
+        },
+        {
+          "type": "p",
+          "text": "Controlling PMO: in addition to supporting, it requires compliance with the methodology, templates and certain governance standards. Its control is moderate."
+        },
+        {
+          "type": "p",
+          "text": "Directive PMO: it directly takes over the management of projects and answers for their results. Its control is high."
+        },
+        {
+          "type": "p",
+          "text": "No type is better than the others. The right one depends on how mature project management is in the company, how much autonomy the teams need and how critical the projects being run are."
+        },
+        {
+          "type": "h2",
+          "text": "PMO, project manager and portfolio: what is the difference?"
+        },
+        {
+          "type": "p",
+          "text": "A project manager runs a specific project: its scope, schedule, budget and team. A PMO works on the whole: it defines how all projects are managed, oversees their progress and supports those who manage them."
+        },
+        {
+          "type": "p",
+          "text": "Portfolio management goes one step higher: it decides which projects are worth doing, in what order and with what resources, according to the strategy. Many PMOs combine all three, which is why people sometimes talk about a project, program or portfolio office."
+        },
+        {
+          "type": "h2",
+          "text": "Internal PMO, external PMO or PMO as a Service"
+        },
+        {
+          "type": "p",
+          "text": "A PMO can be internal, with its own staff; external, operated by a specialized firm; or a mix of both. An external PMO, also called PMO as a Service, is a team that takes over the governance of projects with responsibility for the outcome, without the company having to build the whole structure."
+        },
+        {
+          "type": "p",
+          "text": "If you want to go deeper into when each model makes sense, we wrote a guide on when to hire an external PMO and what to demand of it.",
+          "links": [
+            {
+              "text": "when to hire an external PMO",
+              "href": "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "A PMO does not exist to produce reports. It exists so projects reach the result they promised."
+        },
+        {
+          "type": "h2",
+          "text": "Signs that your company needs a PMO"
+        },
+        {
+          "type": "p",
+          "text": "There is no rule by size, but some signs repeat."
+        },
+        {
+          "type": "p",
+          "text": "Several projects run at the same time and nobody has the view of the whole."
+        },
+        {
+          "type": "p",
+          "text": "Projects are frequently late or over budget and it is not clear why."
+        },
+        {
+          "type": "p",
+          "text": "Each project manager uses their own methodology and their own formats."
+        },
+        {
+          "type": "p",
+          "text": "The same teams are committed to several projects and get overloaded."
+        },
+        {
+          "type": "p",
+          "text": "Leadership finds out about problems when they are already crises."
+        },
+        {
+          "type": "p",
+          "text": "Projects are started without clear priority or return criteria."
+        },
+        {
+          "type": "h2",
+          "text": "How to set up a PMO, step by step"
+        },
+        {
+          "type": "p",
+          "text": "Every company adapts it, but an orderly setup usually follows these steps: diagnose how projects are managed today; define the scope and the type of PMO that fits; secure a sponsor from leadership; establish a minimal methodology and simple templates; set the indicators that will be reported; start with a pilot project; and adjust from what was learned before expanding."
+        },
+        {
+          "type": "p",
+          "text": "The useful rule is to start small. A PMO that is born with a hundred procedures before it has helped a single project usually turns into bureaucracy."
+        },
+        {
+          "type": "h2",
+          "text": "PMO indicators"
+        },
+        {
+          "type": "p",
+          "text": "A PMO is measured by the results of the projects it supports, not by the number of documents it produces. Common indicators include schedule compliance, budget variance, the share of projects delivered with the agreed scope, sponsor satisfaction and how far users adopt what was delivered."
+        },
+        {
+          "type": "h2",
+          "text": "Common mistakes when creating a PMO"
+        },
+        {
+          "type": "p",
+          "text": "Creating a PMO without visible sponsorship from leadership."
+        },
+        {
+          "type": "p",
+          "text": "Turning it into an area that only asks for reports and does not help solve problems."
+        },
+        {
+          "type": "p",
+          "text": "Copying another company's templates without adapting them."
+        },
+        {
+          "type": "p",
+          "text": "Measuring activity (meetings, reports) and not results."
+        },
+        {
+          "type": "p",
+          "text": "Managing the schedule and forgetting adoption: a project does not end when it is delivered, but when people use it.",
+          "links": [
+            {
+              "text": "a project does not end when it is delivered",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we also do this. We provide project management services and act as an external PMO: we take over the governance of your projects with real responsibility for the outcome, following PMBOK guidelines and with AI agents that monitor risk to anticipate deviations before they become crises.",
+          "links": [
+            {
+              "text": "project management services",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "We also build change management in from the start, so what is delivered gets used and not just installed.",
+          "links": [
+            {
+              "text": "change management",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you are thinking of setting up a PMO, or already have projects slipping out of control, contact us: use the contact button below and schedule a conversation with our team."
+        }
       ]
     }
   }

@@ -72,7 +72,7 @@ export default function IntelligenceLab() {
         name: "Cyrrus Intelligence Lab",
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDescription"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",

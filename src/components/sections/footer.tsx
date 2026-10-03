@@ -35,6 +35,17 @@ const socialLinks: SocialItem[] = [
   },
 ];
 
+// Same NAP as the Organization JSON-LD in index.html. Keep both in sync: search
+// engines and AI assistants trust contact data that matches what the page shows.
+const offices = [
+  { city: "Barranquilla", street: "Cra. 51B #80-58, Oficina 1505" },
+  { city: "Bogotá", street: "Carrera 62 #103-44, Oficina 401S" },
+];
+const phone = "+57 317 5730635";
+const email = "contacto@cyrruscs.com";
+// Google Business Profile. Also listed in the Organization's sameAs.
+const googleProfile = "https://share.google/R8aiMjHEafT2Vy0py";
+
 export function Footer() {
   const { t } = useTranslation();
   const lang = useLang();
@@ -105,6 +116,36 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <address className="mx-auto mt-10 flex max-w-6xl flex-col items-center gap-x-8 gap-y-2 border-t border-border px-6 pt-6 text-center text-xs not-italic text-muted-foreground md:flex-row md:flex-wrap md:justify-between md:text-left">
+        <span className="font-semibold text-navy">
+          {lang === "en" ? "Cyrrus Consulting Services S.A.S. · Tax ID (NIT) 901.121.953-1" : "Cyrrus Consulting Services S.A.S. · NIT 901.121.953-1"}
+        </span>
+        {offices.map((office) => (
+          <span key={office.city}>{`${office.street}, ${office.city}, Colombia`}</span>
+        ))}
+        <span className="flex flex-wrap justify-center gap-x-4 gap-y-1">
+          <a href={`tel:${phone.replace(/\s/g, "")}`} className="transition-colors hover:text-navy">
+            {phone}
+          </a>
+          <a href={`mailto:${email}`} className="transition-colors hover:text-navy">
+            {email}
+          </a>
+          <a
+            href={googleProfile}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-navy"
+          >
+            {lang === "en" ? "Google Business Profile" : "Perfil de Google"}
+          </a>
+        </span>
+      </address>
+      {/* Agency credit. Google treats followed links in site-wide footers as link
+          schemes, so it stays nofollow with a plain brand anchor. No noreferrer:
+          OPPI should still see the referral in their analytics. */}
+      <p className="mx-auto mt-4 max-w-6xl px-6 text-center text-xs text-muted-foreground md:text-left">
+        {lang === "en" ? "SEO strategy by " : "Estrategia SEO por "}<a href="https://www.oppi.digital/" target="_blank" rel="nofollow noopener" className="transition-colors hover:text-navy">OPPI</a>
+      </p>
     </footer>
   );
 }

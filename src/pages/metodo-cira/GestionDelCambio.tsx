@@ -19,6 +19,9 @@ import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { PageFeatureImage } from "@/components/sections/page-feature-image";
 import { FaqSection } from "@/components/sections/faq-section";
+import { ServiceLead } from "@/components/sections/service-lead";
+import { ServiceDefinition } from "@/components/sections/service-definition";
+import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
@@ -51,6 +54,7 @@ export default function GestionDelCambio() {
     ...it,
     icon: benefitIcons[i],
   }));
+  const services = t("services.items", { returnObjects: true }) as ScopeItem[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
   const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
     ...it,
@@ -86,11 +90,11 @@ export default function GestionDelCambio() {
         "@context": "https://schema.org",
         "@type": "Service",
         "@id": `${siteUrl}${pagePath}#service`,
-        serviceType: lang === "en" ? "Organizational change management" : "Gestión del cambio organizacional",
+        serviceType: lang === "en" ? "Organizational change management services" : "Servicios de gestión del cambio organizacional",
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",
@@ -192,6 +196,20 @@ export default function GestionDelCambio() {
         </div>
       </section>
 
+      <ServiceDefinition
+        eyebrow={t("definicion.eyebrow")}
+        title={t("definicion.title")}
+        description={t("definicion.description")}
+        className="bg-light-blue/40"
+      />
+
+      <ServiceScope
+        eyebrow={t("services.eyebrow")}
+        title={t("services.title")}
+        description={t("services.description")}
+        items={services}
+      />
+
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <Reveal className="mx-auto max-w-2xl text-center">
@@ -267,6 +285,13 @@ export default function GestionDelCambio() {
           </div>
         </div>
       </section>
+
+      <ServiceLead
+        eyebrow={t("lead.eyebrow")}
+        title={t("lead.title")}
+        bio={t("lead.bio")}
+        className="bg-light-blue/40"
+      />
 
       <IncludedGrid
         eyebrow={t("benefits.eyebrow")}

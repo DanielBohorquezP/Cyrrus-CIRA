@@ -73,7 +73,7 @@ export default function ArquitecturaDeIA() {
         name: t("arquitectura.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("arquitectura.meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",

@@ -95,7 +95,7 @@ export default function DesarrolloWeb() {
         name: t("desarrolloWeb.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("desarrolloWeb.meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",

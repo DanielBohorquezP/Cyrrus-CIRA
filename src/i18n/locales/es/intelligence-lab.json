@@ -1,13 +1,13 @@
 {
   "hub": {
     "meta": {
-      "title": "Consultoría en Inteligencia Artificial Empresarial | Cyrrus",
-      "description": "Consultoría en inteligencia artificial para empresas: gobierno de IA, arquitectura y automatización — infraestructura real, no un catálogo de chatbots."
+      "title": "Consultoría de IA para Empresas: Estrategia y Agentes | Cyrrus",
+      "description": "Consultoría de IA para empresas: gobierno de IA, arquitectura y agentes de IA para automatizar procesos — infraestructura real, no un catálogo de chatbots."
     },
     "serviceDescription": "Gobierno de IA corporativo y arquitectura de IA empresarial, transversal a las 4 fases del método CIRA.",
     "hero": {
       "eyebrow": "Cyrrus Intelligence Lab",
-      "title": "Gobierno de IA corporativo y arquitectura de IA empresarial",
+      "title": "Consultoría de IA para empresas: gobierno, arquitectura y agentes",
       "description": "Su equipo ya usa IA sin que nadie audite qué datos toca ni quién responde si falla. Antes de la siguiente herramienta, necesita gobierno — no otro piloto suelto. Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que corre de forma transversal por debajo de las 4 fases del método."
     },
     "pillars": {
@@ -84,12 +84,12 @@
   },
   "automatizaciones": {
     "meta": {
-      "title": "Automatización de Procesos y Agentes de IA | Cyrrus",
-      "description": "Automatización de procesos y agentes de IA integrados a la arquitectura empresarial, medidos contra el proceso real que reemplazan, no contra una demo."
+      "title": "Agentes de IA para Empresas: Desarrollo y Automatización | Cyrrus",
+      "description": "Agentes de IA para empresas y automatización de procesos, integrados a la arquitectura empresarial y medidos contra el proceso real que reemplazan, no contra una demo."
     },
     "serviceDescription": "Automatización de procesos con inteligencia artificial",
     "hero": {
-      "title": "Automatización y Agentes IA",
+      "title": "Agentes de IA para empresas: desarrollo y automatización",
       "description": "Agentes que hacen una demo impecable y no tocan un proceso real del negocio. No partimos de construir software: partimos del mismo diagnóstico y arquitectura que gobernamos en Intelligence Lab, y solo cuando la solución correcta no existe en el mercado, la desarrollamos a la medida — integrada a esa misma arquitectura, no como un desarrollo suelto."
     },
     "included": {
@@ -112,11 +112,23 @@
     },
     "body": [
       "No somos una fábrica de software ni le vamos a proponer construir algo que ya existe en el mercado. El mismo diagnóstico agnóstico que usamos para seleccionar un ERP o un CRM es el que aplicamos aquí: primero evaluamos si la solución correcta ya existe.",
-      "Cuando genuinamente no existe, sí sabemos construirla: automatizaciones de procesos y agentes de IA especializados para tareas dentro de cada fase del método CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — integrados a la arquitectura de IA empresarial que ya gobernamos, para que no se convierta en una herramienta más sin dueño."
+      "Cuando genuinamente no existe, sí sabemos construirla: automatizaciones de procesos y agentes de IA especializados para tareas dentro de cada fase del método CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — integrados a la arquitectura de IA empresarial que ya gobernamos, para que no se convierta en una herramienta más sin dueño.",
+      "Un agente de IA es un sistema que recibe un objetivo y completa por sí mismo una tarea de varios pasos: consulta información en sus sistemas, aplica reglas del negocio, redacta o actualiza registros y avisa a una persona cuando necesita una decisión. Se diferencia de un chatbot en que no solo responde preguntas: actúa sobre los procesos.",
+      "Los casos de uso más habituales en empresas son clasificar y responder solicitudes entrantes, preparar y conciliar información entre sistemas, vigilar indicadores y alertar desviaciones, y asistir a un equipo con tareas de análisis repetitivas. Ninguno funciona bien sin un proceso claro detrás y sin alguien dentro de la organización que responda por el resultado.",
+      "Así trabajamos un agente de IA: primero se elige un proceso concreto y se acuerda cómo se medirá el resultado; después se define qué puede hacer el agente por sí solo y qué debe pasar por aprobación de una persona; luego se prueba con casos reales de la operación y se ajusta; y finalmente se opera con un responsable claro dentro de la organización. Sin ese orden, un agente impresiona en una demostración y no cambia nada en el día a día.",
+      "Un agente de IA no siempre es la respuesta. Si el proceso es estable y de reglas fijas, un RPA o una automatización tradicional es más barato y predecible; si el proceso no está definido, primero hay que ordenarlo. Los riesgos habituales de un agente mal planteado son permisos excesivos, respuestas incorrectas presentadas con seguridad y falta de trazabilidad, y por eso lo diseñamos junto con el gobierno de IA."
     ],
     "faq": {
       "eyebrow": "Automatización y Agentes IA",
       "items": [
+        {
+          "question": "¿Qué es un agente de IA?",
+          "answer": "Es un sistema que recibe un objetivo y completa por sí mismo una tarea de varios pasos: consulta sus sistemas, aplica reglas del negocio, actúa sobre ellos y escala a una persona cuando hace falta una decisión."
+        },
+        {
+          "question": "¿Qué diferencia hay entre un chatbot y un agente de IA?",
+          "answer": "Un chatbot responde preguntas dentro de una conversación. Un agente de IA, además, ejecuta acciones sobre los procesos y sistemas de la empresa. Por eso necesita permisos, gobierno y medición, no solo un buen modelo."
+        },
         {
           "question": "¿Son una fábrica de desarrollo de software?",
           "answer": "No. Somos consultores de transformación digital, no una casa de desarrollo. Primero evaluamos si la solución correcta ya existe en el mercado — como hacemos en la fase de Selección de Soluciones de CIRA. Solo construimos cuando esa opción genuinamente no existe."
@@ -160,12 +172,12 @@
   },
   "arquitectura": {
     "meta": {
-      "title": "Arquitectura de IA Empresarial | Cyrrus Intelligence Lab",
-      "description": "Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que proliferen las herramientas sueltas."
+      "title": "Arquitectura Empresarial y de IA: Datos y Sistemas | Cyrrus",
+      "description": "Arquitectura empresarial y de IA: diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que proliferen las herramientas sueltas."
     },
     "serviceDescription": "Arquitectura de inteligencia artificial empresarial",
     "hero": {
-      "title": "Arquitectura de IA",
+      "title": "Arquitectura empresarial y de IA",
       "description": "Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura técnica que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que la proliferación de herramientas sueltas se vuelva imposible de deshacer."
     },
     "included": {
@@ -187,12 +199,25 @@
       ]
     },
     "body": [
+      "La arquitectura empresarial define cómo se conectan los procesos, los datos y los sistemas de una organización. Aplicada a la inteligencia artificial, evita que cada herramienta nueva se sume como una isla.",
       "Cada área compra su propia herramienta de IA sin visibilidad de lo que ya existe en el resto de la organización. El resultado no es innovación: es una colección de sistemas aislados, sin gobierno de datos común y con riesgo real de seguridad.",
-      "Diseñamos la capa de arquitectura que conecta esos modelos, datos y sistemas de forma segura y escalable — la misma que sostiene, por debajo, la automatización de procesos y el gobierno de IA que trabajamos en Cyrrus Intelligence Lab."
+      "Diseñamos la capa de arquitectura que conecta esos modelos, datos y sistemas de forma segura y escalable — la misma que sostiene, por debajo, la automatización de procesos y el gobierno de IA que trabajamos en Cyrrus Intelligence Lab.",
+      "Una arquitectura empresarial se ordena en tres capas: los procesos del negocio, los datos que esos procesos producen y consumen, y los sistemas que los soportan. La inteligencia artificial se apoya encima de esas tres capas: si los datos están dispersos o los sistemas no se hablan, ningún modelo funciona bien, por avanzado que sea.",
+      "Por eso la arquitectura de datos es parte central del trabajo: definir de dónde sale cada dato, quién es su dueño, cómo se conecta entre sistemas y quién puede usarlo. Es el paso previo a cualquier proyecto serio de IA y evita rehacer integraciones cada vez que se suma un caso de uso.",
+      "Algunas señales de que una organización necesita ordenar su arquitectura: cada área compra sus propias herramientas, las mismas cifras aparecen distintas en sistemas distintos, cada integración nueva toma meses y nadie sabe con certeza qué datos tocan los modelos de inteligencia artificial.",
+      "El resultado del trabajo es un mapa de los sistemas, los datos y los modelos que existen hoy, una arquitectura objetivo que los conecta de forma segura y escalable, y una hoja de ruta priorizada para llegar a ella sin detener la operación."
     ],
     "faq": {
       "eyebrow": "Arquitectura de IA",
       "items": [
+        {
+          "question": "¿Qué es la arquitectura empresarial?",
+          "answer": "Es la descripción de cómo se conectan los procesos, los datos y los sistemas de una organización, y de cómo deberían evolucionar. Sirve para tomar decisiones de tecnología con una visión de conjunto y no herramienta por herramienta."
+        },
+        {
+          "question": "¿Qué es una arquitectura de datos y por qué importa para la IA?",
+          "answer": "Es el diseño de cómo se almacenan, conectan y gobiernan los datos de la empresa. Importa para la IA porque un modelo solo es tan útil como los datos a los que puede acceder de forma confiable y segura."
+        },
         {
           "question": "¿Cómo se ordena una empresa donde cada área compró su propia herramienta de IA?",
           "answer": "Empezamos con un inventario real de lo que existe hoy, antes de diseñar cómo debería conectarse todo."
@@ -220,7 +245,7 @@
           "description": "Las políticas que rigen lo que esta arquitectura conecta."
         },
         {
-          "title": "Automatización y agentes IA",
+          "title": "Agentes de IA y automatización",
           "description": "Lo que se construye encima de esta arquitectura."
         },
         {
@@ -233,7 +258,7 @@
   "gobierno": {
     "meta": {
       "title": "Gobierno de IA en Empresas: Políticas y Controles | Cyrrus",
-      "description": "Definimos las políticas, roles y controles sobre el uso de inteligencia artificial en su empresa: quién decide, quién audita y qué datos se tocan."
+      "description": "Gobierno y gobernanza de IA: definimos las políticas, roles y controles sobre el uso de inteligencia artificial en su empresa: quién decide, quién audita y qué datos se tocan."
     },
     "serviceDescription": "Gobierno de inteligencia artificial corporativo",
     "hero": {
@@ -294,7 +319,7 @@
           "description": "Sobre qué sistemas y datos se aplican estas políticas."
         },
         {
-          "title": "Automatización y agentes IA",
+          "title": "Agentes de IA y automatización",
           "description": "Cómo se ejecuta el gobierno dentro de cada agente."
         },
         {

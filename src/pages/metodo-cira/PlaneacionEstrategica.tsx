@@ -24,6 +24,9 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
+import { ServiceLead } from "@/components/sections/service-lead";
+import { ServiceDefinition } from "@/components/sections/service-definition";
+import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
 import { TrustBar } from "@/components/sections/trust-bar";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
@@ -73,7 +76,8 @@ export default function PlaneacionEstrategica() {
     icon: benefitIcons[i],
   }));
   const cxaas = t("cxaas.roles", { returnObjects: true }) as Role[];
-  const services = t("services.items", { returnObjects: true }) as string[];
+  const services = t("services.items", { returnObjects: true }) as ScopeItem[];
+  const uses = t("definicion.uses", { returnObjects: true }) as Benefit[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
   const stats = t("whyCeos.stats", { returnObjects: true }) as Stat[];
   const relatedItems = (t("related.items", { returnObjects: true }) as Benefit[]).map((it, i) => ({
@@ -106,11 +110,11 @@ export default function PlaneacionEstrategica() {
         "@context": "https://schema.org",
         "@type": "Service",
         "@id": `${siteUrl}${pagePath}#service`,
-        serviceType: lang === "en" ? "Strategic planning consulting" : "Consultoría de planeación estratégica",
+        serviceType: lang === "en" ? "Strategy consulting" : "Consultoría estratégica",
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",
@@ -202,27 +206,14 @@ export default function PlaneacionEstrategica() {
         </div>
       </section>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
-          <Reveal>
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("definicion.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("definicion.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("definicion.description")}
-            </p>
-            <a
-              href={langPath(t("definicion.linkHref"), lang)}
-              className="mt-6 inline-block text-sm font-semibold text-blue underline-offset-4 hover:underline"
-            >
-              {t("definicion.linkLabel")}
-            </a>
-          </Reveal>
-        </div>
-      </section>
+      <ServiceDefinition
+        eyebrow={t("definicion.eyebrow")}
+        title={t("definicion.title")}
+        description={t("definicion.description")}
+        pointsTitle={t("definicion.usesTitle")}
+        points={uses}
+        link={{ href: langPath(t("definicion.linkHref"), lang), label: t("definicion.linkLabel") }}
+      />
 
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
@@ -364,32 +355,19 @@ export default function PlaneacionEstrategica() {
         </div>
       </section>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("services.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("services.title")}
-            </h2>
-          </Reveal>
+      <ServiceScope
+        eyebrow={t("services.eyebrow")}
+        title={t("services.title")}
+        description={t("services.description")}
+        items={services}
+      />
 
-          <Reveal delay={0.1} className="mt-12 divide-y divide-border border-y border-border">
-            {services.map((service, index) => (
-              <div
-                key={service}
-                className="flex items-center gap-6 py-5"
-              >
-                <span className="text-sm font-semibold text-blue">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="text-base font-medium text-navy">{service}</span>
-              </div>
-            ))}
-          </Reveal>
-        </div>
-      </section>
+      <ServiceLead
+        eyebrow={t("lead.eyebrow")}
+        title={t("lead.title")}
+        bio={t("lead.bio")}
+        className="bg-light-blue/40"
+      />
 
       <Testimonials />
 

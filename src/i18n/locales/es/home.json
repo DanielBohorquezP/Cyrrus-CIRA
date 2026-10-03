@@ -69,7 +69,7 @@
         "id": "estrategia",
         "tabLabel": "Estrategia Empresarial",
         "eyebrow": "Cuando el plan no baja a la operación",
-        "title": "Estrategia Empresarial",
+        "title": "Consultoría Estratégica Empresarial",
         "description": "Si el plan se quedó en la presentación, el problema no fue la estrategia — fue no tener quien la ejecutara. Diagnosticamos, priorizamos y dejamos una hoja de ruta con un responsable de principio a fin.",
         "href": "/metodo-cira/estrategia",
         "buttonText": "Conocer Estrategia"
@@ -78,7 +78,7 @@
         "id": "seleccion-de-soluciones",
         "tabLabel": "Selección de Tecnología",
         "eyebrow": "Cuando la tecnología se compra por moda, no por ajuste",
-        "title": "Selección de Tecnología sin Sesgo de Proveedor",
+        "title": "Consultoría Tecnológica: Selección de Soluciones TI",
         "description": "ERP, CRM, HCM o EAM: evaluamos desde los requerimientos reales del negocio, no desde el catálogo del proveedor — criterios objetivos, comparables y 100% independientes.",
         "href": "/metodo-cira/seleccion-de-soluciones",
         "buttonText": "Conocer Selección de Soluciones"
@@ -87,7 +87,7 @@
         "id": "gerencia-de-proyectos",
         "tabLabel": "Gerencia de Proyectos",
         "eyebrow": "Cuando el proyecto se atrasa y nadie asume el riesgo",
-        "title": "Gerencia de Proyectos (PMO Externo)",
+        "title": "Consultoría PMO: Gerencia de Proyectos Externa",
         "description": "Actuamos como PMO externo desde el kickoff hasta el go-live, con responsabilidad real sobre el resultado — no solo reportes de estado.",
         "href": "/metodo-cira/gestion-de-proyectos",
         "buttonText": "Conocer Gerencia de Proyectos"
@@ -105,7 +105,7 @@
         "id": "ia-empresarial",
         "tabLabel": "IA Empresarial",
         "eyebrow": "Cuando la IA se queda en pilotos sueltos",
-        "title": "Inteligencia Artificial Empresarial",
+        "title": "Consultoría de IA Empresarial",
         "description": "Antes de sumar otra herramienta de IA, sepa quién decide, quién audita y qué datos puede tocar. Gobernamos esa capa sobre sus procesos reales — no le vendemos otro catálogo de chatbots.",
         "href": "/intelligence-lab",
         "buttonText": "Conocer Cyrrus Intelligence Lab"
@@ -234,8 +234,51 @@
     "description": "Cuéntenos el reto de su organización. Coordinamos una conversación con el equipo indicado y le decimos con franqueza si podemos ayudar.",
     "buttonText": "Agendar conversación estratégica"
   },
+  "servicesIntro": {
+    "eyebrow": "Qué es Cyrrus",
+    "title": "Consultoría estratégica, de la decisión a la operación",
+    "description": "Cyrrus Consulting Services es una firma de consultoría estratégica y transformación digital con oficinas en Barranquilla y Bogotá, que trabaja con empresas de Latinoamérica y Estados Unidos. Con la metodología CIRA, un mismo equipo acompaña a la organización desde la estrategia hasta la selección de tecnología sin sesgo de proveedor, la gerencia del proyecto y la adopción, con inteligencia artificial en cada fase."
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes sobre consultoría estratégica",
+    "items": [
+      {
+        "question": "¿Qué hace una consultora estratégica como Cyrrus?",
+        "answer": "Acompaña a la empresa desde que define qué quiere lograr hasta que su equipo opera el cambio. Cyrrus diagnostica el negocio, construye la hoja de ruta, selecciona la tecnología adecuada, gerencia la implementación y trabaja la adopción, bajo un mismo método —CIRA— y con un solo responsable del resultado."
+      },
+      {
+        "question": "¿Qué es el método CIRA?",
+        "answer": "Es el marco de cuatro fases de Cyrrus: Construir (estrategia y hoja de ruta), Identificar (selección de la solución correcta), Realizar (gerencia del proyecto hasta el go-live) y Adoptar (gestión del cambio). La inteligencia artificial acelera cada fase en lugar de venderse como un servicio aparte."
+      },
+      {
+        "question": "¿Cyrrus vende o representa algún software?",
+        "answer": "No. Cyrrus no recibe comisión de ningún proveedor. Los criterios de selección se definen con el negocio antes de mirar el catálogo, y cada proveedor se evalúa contra esos criterios. Así la recomendación responde a lo que su empresa necesita, no a un incentivo comercial."
+      },
+      {
+        "question": "¿En qué se diferencia Cyrrus de un integrador o partner de ERP?",
+        "answer": "Un integrador implementa una marca específica y tiene un incentivo en que usted la elija. Cyrrus le ayuda a decidir cuál conviene, gobierna la implementación como PMO externo y trabaja la adopción, cuidando los intereses de su empresa frente al proveedor durante todo el proyecto."
+      },
+      {
+        "question": "¿Cómo usa Cyrrus la inteligencia artificial?",
+        "answer": "De dos formas. Dentro del método, la IA acelera el diagnóstico, la evaluación de proveedores y el seguimiento del proyecto. Como servicio, Cyrrus Intelligence Lab diseña el gobierno de IA, la arquitectura y la automatización con agentes, para que la IA se adopte con políticas, roles y controles claros."
+      },
+      {
+        "question": "¿En qué países trabaja Cyrrus?",
+        "answer": "Cyrrus tiene oficinas en Barranquilla y Bogotá y ha trabajado con organizaciones en Latinoamérica y Estados Unidos, de México y Centroamérica a Chile y Argentina. El método es el mismo en cada país; lo que cambia es el contexto de la industria, la regulación y la cultura de cada organización."
+      },
+      {
+        "question": "¿Cuánto dura un proyecto de consultoría estratégica?",
+        "answer": "Depende del alcance: un diagnóstico con hoja de ruta, una selección de software y el acompañamiento de una implementación completa tienen duraciones muy distintas. En la primera conversación, Cyrrus entiende el reto y propone un alcance y un calendario concretos para su caso antes de comprometer nada."
+      },
+      {
+        "question": "¿Cómo empiezo a trabajar con Cyrrus?",
+        "answer": "Agende una conversación estratégica desde este sitio y cuéntenos el reto de su organización. Cyrrus coordina una reunión con el equipo indicado y le dice con franqueza si puede ayudar. Si el problema no es de su especialidad, se lo dirá desde el principio."
+      }
+    ]
+  },
   "meta": {
-    "title": "Consultoría Estratégica con IA en Colombia | Cyrrus",
-    "description": "Consultoría estratégica en Colombia que llega hasta la ejecución. Metodología CIRA: estrategia, selección de la solución correcta y adopción real, con IA."
+    "title": "Consultoría Estratégica y Tecnológica con IA | Cyrrus",
+    "description": "Consultoría estratégica que llega hasta la ejecución: estrategia, tecnología sin sesgo, PMO y adopción real, con IA. Agende una conversación."
   }
 }

@@ -30,7 +30,7 @@ export const solutionDetailImages: Record<string, { image: string; imagePosition
 };
 
 export const solutionItemIcons: Record<string, LucideIcon[]> = {
-  "tecnologias-avanzadas": [Sparkles, Workflow, Link2],
+  "tecnologias-avanzadas": [Sparkles, Workflow, Bot, Link2],
   "infraestructura-tecnologica": [ShieldCheck, Cloud, Wifi, LifeBuoy],
 };
 

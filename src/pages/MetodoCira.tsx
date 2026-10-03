@@ -85,7 +85,7 @@ export default function MetodoCira() {
         name: t("hero.eyebrow"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",

@@ -60,24 +60,24 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, noCano
     }
 
     // This hook is the only writer of meta[name="robots"] — index.html ships
-    // none. So the tag present on load is always one a *previous* render of this
-    // hook produced (the prerenderer bakes it into the noindex routes' HTML),
-    // never something to preserve. Restoring it on cleanup, as this used to do,
-    // left "noindex, follow" pinned to the document after a client-side
-    // navigation off a coming-soon workshop or the 404 — every subsequent route
-    // in that session rendered as noindex to a crawler that follows links.
+    // none, and the prerenderer bakes whatever this sets into each route's HTML.
+    // It always writes the value for the *current* route: restoring the previous
+    // one on cleanup, as this used to do, left "noindex, follow" pinned to the
+    // document after a client-side navigation off a coming-soon workshop or the
+    // 404. Indexable routes also opt into full-length snippets and large image
+    // previews, which Google otherwise may cap.
     let robotsMeta = document.querySelector('meta[name="robots"]');
-    if (noindex) {
-      if (!robotsMeta) {
-        robotsMeta = document.createElement("meta");
-        robotsMeta.setAttribute("name", "robots");
-        document.head.appendChild(robotsMeta);
-      }
-      robotsMeta.setAttribute("content", "noindex, follow");
-    } else {
-      robotsMeta?.remove();
-      robotsMeta = null;
+    if (!robotsMeta) {
+      robotsMeta = document.createElement("meta");
+      robotsMeta.setAttribute("name", "robots");
+      document.head.appendChild(robotsMeta);
     }
+    robotsMeta.setAttribute(
+      "content",
+      noindex
+        ? "noindex, follow"
+        : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    );
 
     const ogTagConfig: Array<[string, string]> = [
       ["og:title", title],

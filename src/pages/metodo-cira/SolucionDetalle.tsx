@@ -26,9 +26,13 @@ import { Img } from "@/components/ui/img";
 interface DetailEntry {
   label: string;
   eyebrow: string;
+  /** Optional H1 override; falls back to "Selection consulting for <label>". */
+  h1?: string;
   intro: string;
   stat?: { value: string; description: string; source: string };
   items: { title: string; description: string }[];
+  /** Optional long-form paragraphs rendered under the items grid. */
+  body?: string[];
   related: { title: string; description: string }[];
   faq: { question: string; answer: string }[];
 }
@@ -85,7 +89,7 @@ export default function SolucionDetalle() {
               name: entry.label,
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
-              areaServed: "LATAM",
+              areaServed: "Worldwide",
             },
             {
               "@context": "https://schema.org",
@@ -128,7 +132,7 @@ export default function SolucionDetalle() {
       <SiteHeader />
       <PageHero
         eyebrow={entry.eyebrow}
-        title={`${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`}
+        title={entry.h1 ?? `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`}
         description={entry.intro}
         breadcrumbs={breadcrumbItems}
       >
@@ -176,6 +180,12 @@ export default function SolucionDetalle() {
                   );
                 })}
               </RevealGroup>
+
+              {entry.body?.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)} className="mt-6 text-base leading-relaxed text-gray">
+                  {paragraph}
+                </p>
+              ))}
 
               <p className="mt-8 text-base leading-relaxed text-gray">
                 {`${t("detail.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">

@@ -23,7 +23,7 @@
           "hrefSlug": "desarrollo-web"
         },
         {
-          "title": "SEO y Visibilidad con IA",
+          "title": "Consultoría SEO y Visibilidad con IA",
           "description": "Aparecer cuando su cliente busca en Google y cuando le pregunta a ChatGPT quién puede resolverle el problema. Las dos capas, en un mismo plan.",
           "hrefSlug": "seo"
         }
@@ -80,8 +80,8 @@
   },
   "desarrolloWeb": {
     "meta": {
-      "title": "Desarrollo Web Corporativo para Empresas | Cyrrus",
-      "description": "Desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo, no un folleto digital estático."
+      "title": "Desarrollo Web para Empresas: Sitios Corporativos | Cyrrus",
+      "description": "Desarrollo web para empresas: desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo, no un folleto digital estático."
     },
     "serviceDescription": "Desarrollo de sitios web corporativos y portales empresariales",
     "hero": {
@@ -233,20 +233,20 @@
   },
   "seo": {
     "meta": {
-      "title": "Posicionamiento SEO para Empresas y Visibilidad IA | Cyrrus",
-      "description": "Posicionamiento SEO técnico y de contenido para empresas, más visibilidad en motores de respuesta con IA como ChatGPT y Perplexity."
+      "title": "Consultoría SEO y GEO: Visibilidad en Google e IA | Cyrrus",
+      "description": "Consultores SEO para empresas: consultoría SEO técnica y de contenido, más visibilidad en motores de respuesta con IA (GEO) como ChatGPT y Perplexity."
     },
     "serviceDescription": "Posicionamiento SEO y optimización para motores de respuesta con IA",
     "hero": {
       "eyebrow": "Presencia Digital",
-      "title": "SEO y Visibilidad en Buscadores con IA",
+      "title": "Consultoría SEO y visibilidad en buscadores con IA",
       "description": "Su cliente ya no busca solo en Google: le pregunta a ChatGPT quién puede resolverle el problema. Si su empresa no aparece en ninguno de los dos, para ese comprador simplemente no existe. Trabajamos las dos capas — posicionamiento SEO y citabilidad en motores de respuesta con IA.",
       "ctaLabel": "Agendar diagnóstico de visibilidad"
     },
     "intro": {
       "kicker": "SEO y GEO para empresas B2B",
       "pullQuote": "Aparecer cuando su cliente busca — y cuando le pregunta a una IA quién puede resolverlo.",
-      "description": "Auditamos el estado técnico, el contenido existente y la visibilidad actual de su empresa en buscadores y en motores de respuesta con IA. Sobre ese diagnóstico definimos qué búsquedas vale la pena ganar, en qué orden, y qué evidencia necesita ver el comprador para contactarlo.",
+      "description": "Como consultores SEO, auditamos el estado técnico, el contenido existente y la visibilidad actual de su empresa en buscadores y en motores de respuesta con IA. Sobre ese diagnóstico definimos qué búsquedas vale la pena ganar, en qué orden, y qué evidencia necesita ver el comprador para contactarlo.",
       "bullets": [
         "Auditoría técnica, de contenido y de citabilidad en IA antes de escribir una sola página.",
         "Trabajamos las búsquedas que traen negocio, no las que traen tráfico sin intención de compra.",
@@ -362,6 +362,10 @@
       "eyebrow": "Preguntas frecuentes",
       "title": "Sobre SEO y visibilidad con IA",
       "items": [
+        {
+          "question": "¿Qué hace un consultor SEO y en qué se diferencia de una agencia?",
+          "answer": "Un consultor SEO diagnostica por qué un sitio no aparece en Google ni en las respuestas de IA, define qué búsquedas conviene ganar y en qué orden, y acompaña la ejecución. El trabajo parte de una auditoría y se mide por las consultas que traen negocio, no por el volumen de contenido publicado."
+        },
         {
           "question": "¿Qué es el SEO y por qué lo necesita una empresa B2B?",
           "answer": "El SEO es el trabajo de hacer que una empresa aparezca en los resultados de búsqueda cuando alguien busca el problema que esa empresa resuelve, sin pagar por cada clic. En B2B importa más que en otros sectores por una razón concreta: el comprador de una solución empresarial investiga durante semanas antes de contactar a nadie, y toma esa decisión leyendo, no viendo anuncios. Si su empresa no está presente en esa etapa de investigación, entra a la conversación cuando el proveedor ya está prácticamente elegido."

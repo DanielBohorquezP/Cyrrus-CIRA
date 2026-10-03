@@ -74,7 +74,7 @@ export default function GobiernoDeIA() {
         name: t("gobierno.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("gobierno.meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",

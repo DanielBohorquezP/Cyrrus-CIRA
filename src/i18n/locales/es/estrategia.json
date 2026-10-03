@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "Consultoría en Estrategia para Empresas | Cyrrus",
-    "description": "Consultoría en planeación estratégica para empresas en LATAM: diagnóstico, hoja de ruta y objetivos medibles — un plan ejecutado, no archivado."
+    "title": "Consultoría Estratégica y Planeación Estratégica | Cyrrus",
+    "description": "Consultoría estratégica y planeación estratégica para empresas: diagnóstico, hoja de ruta y ejecución acompañada. Estrategia corporativa, de negocio y de TI, con IA."
   },
   "hero": {
     "eyebrow": "Método CIRA — Construir",
-    "title": "Consultoría en Estrategia",
-    "description": "Se define una estrategia... pero nadie sabe cómo bajarla a la operación. Nuestra consultoría de planeación estratégica conecta la visión del negocio con un plan ejecutable, no con un documento que queda en un cajón.",
+    "title": "Consultoría estratégica y planeación estratégica para empresas",
+    "description": "Se define una estrategia... pero nadie sabe cómo bajarla a la operación. Nuestra consultoría y planeación estratégica conecta la visión del negocio con un plan ejecutable, no con un documento que queda en un cajón.",
     "ctaLabel": "Agendar diagnóstico ejecutivo"
   },
   "intro": {
-    "kicker": "Consultoría Estratégica para CEOs",
+    "kicker": "Consultoría estratégica para CEOs",
     "pullQuote": "Ejecución directa y rentabilidad medible — no un documento que queda en un cajón.",
     "description": "Diagnosticamos su negocio a fondo, definimos prioridades junto a su equipo directivo y trazamos una hoja de ruta accionable, con inteligencia artificial aplicada al análisis de datos para decisiones más rápidas y mejor fundamentadas.",
     "bullets": [
@@ -23,10 +23,33 @@
   },
   "definicion": {
     "eyebrow": "La base",
-    "title": "¿Qué es la planeación estratégica?",
-    "description": "La planeación estratégica es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, lo traduce en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales del negocio.",
+    "title": "¿Qué es la consultoría estratégica?",
+    "description": "La consultoría estratégica es un servicio profesional externo que ayuda a la alta dirección de una empresa a definir su rumbo de mediano y largo plazo, tomar decisiones críticas y traducirlas en objetivos medibles (KPIs) que cada área pueda ejecutar. En Cyrrus no termina en un documento: el mismo equipo que hace el diagnóstico acompaña la ejecución y ajusta el plan con datos reales del negocio.",
     "linkLabel": "Lea también: Cómo elegir una consultora estratégica confiable",
-    "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable"
+    "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable",
+    "usesTitle": "¿Para qué sirve la consultoría estratégica?",
+    "uses": [
+      {
+        "title": "Visión externa",
+        "description": "Aporta una mirada objetiva, sin filtros políticos internos, para decidir qué priorizar y qué dejar de hacer."
+      },
+      {
+        "title": "Crecimiento",
+        "description": "Define dónde y cómo crecer (nuevos mercados, productos o unidades de negocio) con un caso de negocio que lo respalde."
+      },
+      {
+        "title": "Eficiencia y rentabilidad",
+        "description": "Detecta las fugas de capital, los silos y los procesos que consumen recursos sin generar retorno."
+      },
+      {
+        "title": "Transformación",
+        "description": "Alinea la estrategia de negocio con la tecnología, para que cada inversión en ERP, datos o IA responda a un objetivo concreto."
+      },
+      {
+        "title": "Gobierno y ejecución",
+        "description": "Convierte el plan en KPIs, responsables y tableros de seguimiento que la junta directiva puede revisar."
+      }
+    ]
   },
   "diagnostico": {
     "eyebrow": "Diagnóstico",
@@ -72,7 +95,7 @@
   },
   "benefits": {
     "eyebrow": "Beneficios",
-    "title": "Agilidad, transformación y eficiencia",
+    "title": "Beneficios de la consultoría estratégica",
     "items": [
       {
         "title": "Decide hoy, no en 3 meses",
@@ -124,22 +147,43 @@
   },
   "services": {
     "eyebrow": "Alcance",
-    "title": "Servicios principales de Strategy",
+    "title": "Servicios de consultoría estratégica",
+    "description": "Cada servicio puede contratarse por separado o como parte de la fase Construir del Método CIRA.",
     "items": [
-      "Estrategia Corporativa",
-      "Centros de Servicios Compartidos",
-      "Estrategia de Negocio",
-      "Plan de Continuidad de Negocio",
-      "IT Strategy & Transformación"
+      {
+        "title": "Estrategia corporativa",
+        "description": "Definimos la visión de mediano y largo plazo, el portafolio de negocios y las prioridades de inversión de la organización, y los bajamos a una hoja de ruta con responsables y KPIs."
+      },
+      {
+        "title": "Estrategia de negocio",
+        "description": "Aterrizamos la estrategia en cada unidad de negocio: propuesta de valor, mercados objetivo, modelo operativo y metas comerciales y financieras medibles."
+      },
+      {
+        "title": "Estrategia de TI y transformación digital",
+        "description": "Alineamos la tecnología con el negocio: arquitectura objetivo y un portafolio de iniciativas (ERP, CRM, datos, IA) priorizado por impacto, con el caso de negocio de cada una."
+      },
+      {
+        "title": "Centros de servicios compartidos",
+        "description": "Diseñamos centros de servicios compartidos para finanzas, gestión humana, compras o TI, con su modelo de gobierno, procesos y niveles de servicio."
+      },
+      {
+        "title": "Plan de continuidad de negocio",
+        "description": "Identificamos los procesos críticos, analizamos el impacto de una interrupción y definimos los planes de respuesta y recuperación para que la operación no se detenga."
+      }
     ]
+  },
+  "lead": {
+    "eyebrow": "Quién lidera este servicio",
+    "title": "Consultoría estratégica con nombre propio",
+    "bio": "Jackson Bohorquez, fundador de Cyrrus y creador del método CIRA, lidera los diagnósticos estratégicos. Antes de fundar la firma fue director de TI: estuvo del lado de quien recibe una consultoría estratégica, y por eso el mismo equipo que diagnostica acompaña la ejecución."
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
-    "title": "Sobre planeación estratégica",
+    "title": "Preguntas frecuentes sobre consultoría estratégica",
     "items": [
       {
-        "question": "¿Qué es la Estrategia?",
-        "answer": "La Estrategia es el proceso mediante el cual una empresa define su rumbo a mediano y largo plazo, traduce ese rumbo en objetivos medibles (KPIs) y alinea a cada área de la organización — desde la Alta Dirección hasta la operación diaria — para ejecutarlo de forma consistente. No es un documento que se archiva: es un sistema de decisiones y prioridades que se revisa y ajusta con datos reales de la operación. Para un CEO o CIO, el valor está en que la estrategia deje de vivir en una presentación y empiece a reflejarse en el flujo de caja, la rentabilidad y el gobierno corporativo del negocio."
+        "question": "¿Qué diferencia a Cyrrus de una consultora estratégica tradicional?",
+        "answer": "Tres cosas. El mismo equipo que hace el diagnóstico acompaña la ejecución, en lugar de entregar un informe y retirarse. Empezamos a implementar desde la semana 1, no al cierre del diagnóstico. Y somos agnósticos de proveedor, así que la estrategia no termina recomendando la tecnología que alguien quiere vender. El resultado se mide en indicadores del negocio, no en el número de páginas del informe."
       },
       {
         "question": "¿Cuándo necesita una empresa consultoría estratégica?",

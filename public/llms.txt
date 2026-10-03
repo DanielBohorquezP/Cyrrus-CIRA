@@ -4,6 +4,8 @@
 
 Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación digital: define la estrategia, selecciona la solución tecnológica correcta sin sesgo de proveedor, gestiona la ejecución del proyecto como PMO externo, y asegura la adopción real por parte del equipo, con inteligencia artificial acelerando cada fase.
 
+Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1). Oficinas en Barranquilla (Cra. 51B #80-58, Oficina 1505) y Bogotá (Carrera 62 #103-44, Oficina 401S), Colombia. Contacto: +57 317 5730635, contacto@cyrruscs.com. Perfil de Google: https://share.google/R8aiMjHEafT2Vy0py
+
 ## Método CIRA
 - [Metodología CIRA](https://cyrruscs.com/metodo-cira): las 4 fases del método.
 - [Estrategia](https://cyrruscs.com/metodo-cira/estrategia): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
@@ -38,7 +40,7 @@ Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación d
 - [Qué es el Gobierno de IA corporativo y por qué su empresa lo necesita](https://cyrruscs.com/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): qué es el Gobierno de IA y por dónde debe empezar un CEO antes de adoptar inteligencia artificial.
 
 ## Otras páginas
-- [Inicio](https://cyrruscs.com/): consultoría estratégica y transformación digital con IA en Colombia y LATAM, vía la metodología CIRA.
+- [Inicio](https://cyrruscs.com/): consultoría estratégica y transformación digital con IA para empresas de Latinoamérica y Estados Unidos, vía la metodología CIRA.
 - [Quiénes Somos](https://cyrruscs.com/quienes-somos): Jackson Bohorquez, CEO y fundador de Cyrrus, creador del método CIRA.
 - [Experiencia](https://cyrruscs.com/experiencia): casos y trayectoria de Cyrrus.
 

@@ -1,12 +1,12 @@
 {
   "erp": {
     "meta": {
-      "title": "Selección de ERP para Empresas | Cyrrus",
-      "description": "Consultoría de selección de ERP: definimos, evaluamos y elegimos con usted el ERP que mejor se ajusta a sus procesos — 100% agnósticos de proveedor."
+      "title": "Qué es un ERP y Cómo Elegirlo: Selección Independiente | Cyrrus",
+      "description": "Qué es un ERP y cómo elegirlo: consultoría de selección de ERP. Definimos, evaluamos y elegimos con usted el ERP que mejor se ajusta a sus procesos — 100% agnósticos de proveedor."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Selección y evaluación de ERP",
+      "title": "Qué es un ERP y cómo elegirlo: selección y evaluación independiente",
       "description": "Elegir un ERP no es elegir software. Es elegir cómo funcionará su empresa durante los próximos años. Ayudamos a las organizaciones a definir, evaluar y seleccionar el ERP que mejor se adapta a sus procesos, objetivos, arquitectura y capacidad de inversión.",
       "ctaLabel": "Evaluar mi necesidad de ERP"
     },
@@ -110,6 +110,10 @@
     },
     "faq": [
       {
+        "question": "¿Qué es un ERP y para qué sirve?",
+        "answer": "Un ERP (Enterprise Resource Planning) es el sistema central que integra en una sola plataforma los procesos de finanzas, compras, inventarios, producción y operación de una empresa, para que todas las áreas trabajen con la misma información. Elegirlo bien importa porque condiciona cómo opera la organización durante años."
+      },
+      {
         "question": "¿Cuánto dura un proceso de selección de ERP?",
         "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
       },
@@ -141,12 +145,12 @@
   },
   "crm": {
     "meta": {
-      "title": "Selección de CRM para Empresas | Cyrrus",
-      "description": "Consultoría de selección de CRM: diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que ventas sí va a adoptar."
+      "title": "Qué es un CRM y Cómo Elegir el Correcto | Cyrrus",
+      "description": "Qué es un CRM y cómo elegir el correcto: consultoría de selección de CRM. Diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que ventas sí va a adoptar."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Selección y evaluación de CRM",
+      "title": "Qué es un CRM y cómo elegir el correcto: selección y evaluación",
       "description": "Un CRM no debería obligar a su equipo comercial a cambiar su forma de vender. Debería ayudarlo a vender mejor. Ayudamos a las organizaciones a definir, evaluar y seleccionar el CRM que mejor se adapta a su proceso comercial.",
       "ctaLabel": "Evaluar mi necesidad de CRM"
     },
@@ -247,6 +251,10 @@
     },
     "faq": [
       {
+        "question": "¿Qué es un CRM y para qué sirve?",
+        "answer": "Un CRM (Customer Relationship Management) es el sistema donde un equipo comercial registra y gestiona clientes, oportunidades y seguimiento de ventas. Sirve para vender de forma ordenada y medible, siempre que se adapte al proceso comercial real y no al revés."
+      },
+      {
         "question": "¿Cuánto dura un proceso de selección de CRM?",
         "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
       },
@@ -270,13 +278,13 @@
   },
   "hcm": {
     "meta": {
-      "title": "Selección de HCM (Gestión Humana) | Cyrrus",
-      "description": "Consultoría de selección de HCM: alineamos la tecnología de gestión humana con su nómina, talento y experiencia del empleado — 100% agnósticos."
+      "title": "Software HCM: Cómo Elegir el Sistema de Gestión Humana | Cyrrus",
+      "description": "Software HCM y software de nómina: consultoría de selección. Alineamos la tecnología de gestión humana con su nómina, talento y experiencia del empleado — 100% agnósticos."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Selección de software de gestión humana (HCM)",
-      "description": "La tecnología de gestión humana debe adaptarse a la organización, no al contrario. Ayudamos a las organizaciones a definir, evaluar y seleccionar el HCM que mejor se adapta a su modelo de gestión de personas.",
+      "title": "Software HCM: selección del sistema de gestión humana",
+      "description": "La tecnología de gestión humana debe adaptarse a la organización, no al contrario. Ayudamos a las organizaciones a definir, evaluar y seleccionar el software HCM — nómina, talento y desempeño — que mejor se adapta a su modelo de gestión de personas.",
       "ctaLabel": "Evaluar mi necesidad de HCM"
     },
     "dolor": {
@@ -375,6 +383,10 @@
     },
     "faq": [
       {
+        "question": "¿Qué es un HCM y en qué se diferencia de un software de nómina?",
+        "answer": "Un HCM (Human Capital Management) es la plataforma que cubre todo el ciclo de gestión de personas: nómina, selección, talento, desempeño y experiencia del empleado. Un software de nómina resuelve solo una parte, el cálculo y pago de la nómina. Elegir entre uno y otro depende del tamaño de la organización y de qué procesos de personas necesita integrar."
+      },
+      {
         "question": "¿Cuánto dura un proceso de selección de HCM?",
         "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
       },
@@ -398,12 +410,12 @@
   },
   "eam": {
     "meta": {
-      "title": "Selección de EAM (Gestión de Activos) | Cyrrus",
-      "description": "Consultoría de selección de EAM: elegimos la plataforma de gestión de activos según el ciclo de vida de su operación, sin sesgo de proveedor."
+      "title": "Gestión de Activos y Software EAM: Selección | Cyrrus",
+      "description": "Gestión de activos y software EAM: consultoría de selección. Elegimos la plataforma de gestión de activos según el ciclo de vida de su operación, sin sesgo de proveedor."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Selección de software de gestión de activos (EAM)",
+      "title": "Gestión de activos: selección de software EAM",
       "description": "La gestión de activos comienza mucho antes del mantenimiento. Comienza con elegir la tecnología adecuada. Ayudamos a las organizaciones a definir, evaluar y seleccionar el EAM que mejor se adapta a su realidad operativa.",
       "ctaLabel": "Evaluar mi necesidad de EAM"
     },

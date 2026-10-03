@@ -18,6 +18,9 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
+import { ServiceLead } from "@/components/sections/service-lead";
+import { ServiceDefinition } from "@/components/sections/service-definition";
+import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
@@ -50,7 +53,7 @@ export default function GestionDeProyectos() {
     ...it,
     icon: benefitIcons[i],
   }));
-  const services = t("services.items", { returnObjects: true }) as string[];
+  const services = t("services.items", { returnObjects: true }) as ScopeItem[];
   const achievements = t("achievements.items", { returnObjects: true }) as string[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
   const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
@@ -76,8 +79,8 @@ export default function GestionDeProyectos() {
     : "/intelligence-lab/automatizaciones-desarrollo";
   const relatedPaths = [erpPath, changePath, automationPath];
   const articlePath = lang === "en"
-    ? "/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
-    : "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital";
+    ? "/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+    : "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa";
 
   usePageMeta({
     title: t("meta.title"),
@@ -88,11 +91,11 @@ export default function GestionDeProyectos() {
         "@context": "https://schema.org",
         "@type": "Service",
         "@id": `${siteUrl}${pagePath}#service`,
-        serviceType: lang === "en" ? "Project management and implementation" : "Gerencia de proyectos e implementación",
+        serviceType: lang === "en" ? "Project management services" : "Gerencia de proyectos",
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",
@@ -187,6 +190,12 @@ export default function GestionDeProyectos() {
           </div>
         </div>
       </section>
+
+      <ServiceDefinition
+        eyebrow={t("definicion.eyebrow")}
+        title={t("definicion.title")}
+        description={t("definicion.description")}
+      />
 
       <section className="w-full bg-light-blue/40 py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">
@@ -283,35 +292,26 @@ export default function GestionDeProyectos() {
         </div>
       </section>
 
+      <ServiceLead
+        eyebrow={t("lead.eyebrow")}
+        title={t("lead.title")}
+        bio={t("lead.bio")}
+        className="bg-light-blue/40"
+      />
+
       <IncludedGrid
         eyebrow={t("benefits.eyebrow")}
         title={t("benefits.title")}
         items={benefits}
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("services.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("services.title")}
-            </h2>
-          </Reveal>
-
-          <Reveal delay={0.1} className="mt-12 divide-y divide-border border-y border-border">
-            {services.map((service, index) => (
-              <div key={service} className="flex items-center gap-6 py-5">
-                <span className="text-sm font-semibold text-blue">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="text-base font-medium text-navy">{service}</span>
-              </div>
-            ))}
-          </Reveal>
-        </div>
-      </section>
+      <ServiceScope
+        eyebrow={t("services.eyebrow")}
+        title={t("services.title")}
+        description={t("services.description")}
+        items={services}
+        className="bg-light-blue/40"
+      />
 
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6 md:px-12">

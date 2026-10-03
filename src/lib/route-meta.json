@@ -1,83 +1,83 @@
 {
   "/": {
-    "title": "Consultoría Estratégica con IA en Colombia | Cyrrus",
-    "description": "Consultoría estratégica en Colombia que llega hasta la ejecución. Metodología CIRA: estrategia, selección de la solución correcta y adopción real, con IA."
+    "title": "Consultoría Estratégica y Tecnológica con IA | Cyrrus",
+    "description": "Consultoría estratégica que llega hasta la ejecución: estrategia, tecnología sin sesgo, PMO y adopción real, con IA. Agende una conversación."
   },
   "/metodo-cira": {
-    "title": "Consultoría en Transformación Digital | Método CIRA | Cyrrus",
-    "description": "Conozca la metodología CIRA de Cyrrus: el marco de 4 fases que lleva a su empresa de la estrategia a la adopción real, con IA en cada paso."
+    "title": "Consultoría Empresarial y de Negocios: Método CIRA | Cyrrus",
+    "description": "Consultoría empresarial y de negocios con el Método CIRA de Cyrrus: el marco de 4 fases que lleva a su empresa de la estrategia a la adopción real, con IA en cada paso."
   },
   "/metodo-cira/estrategia": {
-    "title": "Consultoría en Estrategia para Empresas | Cyrrus",
-    "description": "Consultoría en planeación estratégica para empresas en LATAM: diagnóstico, hoja de ruta y objetivos medibles — un plan ejecutado, no archivado."
+    "title": "Consultoría Estratégica y Planeación Estratégica | Cyrrus",
+    "description": "Consultoría estratégica y planeación estratégica para empresas: diagnóstico, hoja de ruta y ejecución acompañada. Estrategia corporativa, de negocio y de TI, con IA."
   },
   "/metodo-cira/seleccion-de-soluciones": {
-    "title": "Selección de Tecnología sin Sesgo de Proveedor | Cyrrus",
-    "description": "Cómo elegimos tecnología con criterios definidos antes de mirar proveedores: software de gestión, automatización e infraestructura, sin sesgo comercial."
+    "title": "Consultoría Tecnológica: Selección de Soluciones TI | Cyrrus",
+    "description": "Consultoría tecnológica independiente: elegimos software, automatización e infraestructura con criterios definidos antes de mirar proveedores, sin sesgo comercial."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software": {
-    "title": "Selección de Software: ERP, CRM, HCM, EAM | Cyrrus",
-    "description": "Consultoría independiente de selección de ERP, CRM, HCM y EAM: evaluamos y comparamos software empresarial 100% agnósticos de proveedor."
+    "title": "Consultoría ERP y CRM: Selección de Software | Cyrrus",
+    "description": "Consultoría de selección de software ERP y CRM, además de HCM y EAM: evaluamos y comparamos software empresarial de forma independiente, 100% agnósticos de proveedor."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp": {
-    "title": "Selección de ERP para Empresas | Cyrrus",
-    "description": "Consultoría de selección de ERP: definimos, evaluamos y elegimos con usted el ERP que mejor se ajusta a sus procesos — 100% agnósticos de proveedor."
+    "title": "Qué es un ERP y Cómo Elegirlo: Selección Independiente | Cyrrus",
+    "description": "Qué es un ERP y cómo elegirlo: consultoría de selección de ERP. Definimos, evaluamos y elegimos con usted el ERP que mejor se ajusta a sus procesos — 100% agnósticos de proveedor."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm": {
-    "title": "Selección de CRM para Empresas | Cyrrus",
-    "description": "Consultoría de selección de CRM: diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que ventas sí va a adoptar."
+    "title": "Qué es un CRM y Cómo Elegir el Correcto | Cyrrus",
+    "description": "Qué es un CRM y cómo elegir el correcto: consultoría de selección de CRM. Diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que ventas sí va a adoptar."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm": {
-    "title": "Selección de HCM (Gestión Humana) | Cyrrus",
-    "description": "Consultoría de selección de HCM: alineamos la tecnología de gestión humana con su nómina, talento y experiencia del empleado — 100% agnósticos."
+    "title": "Software HCM: Cómo Elegir el Sistema de Gestión Humana | Cyrrus",
+    "description": "Software HCM y software de nómina: consultoría de selección. Alineamos la tecnología de gestión humana con su nómina, talento y experiencia del empleado — 100% agnósticos."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam": {
-    "title": "Selección de EAM (Gestión de Activos) | Cyrrus",
-    "description": "Consultoría de selección de EAM: elegimos la plataforma de gestión de activos según el ciclo de vida de su operación, sin sesgo de proveedor."
+    "title": "Gestión de Activos y Software EAM: Selección | Cyrrus",
+    "description": "Gestión de activos y software EAM: consultoría de selección. Elegimos la plataforma de gestión de activos según el ciclo de vida de su operación, sin sesgo de proveedor."
   },
   "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas": {
-    "title": "Selección de Automatización e IA para Empresas | Cyrrus",
-    "description": "Seleccionamos las soluciones de automatización, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
+    "title": "Automatización de Procesos, RPA e IA: Selección | Cyrrus",
+    "description": "Seleccionamos las soluciones de automatización de procesos, RPA, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
   },
   "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica": {
-    "title": "Infraestructura Tecnológica: Ciberseguridad y Nube | Cyrrus",
+    "title": "Migración a la Nube y Ciberseguridad para Empresas | Cyrrus",
     "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor."
   },
   "/metodo-cira/gestion-de-proyectos": {
-    "title": "Gerencia de Proyectos e Implementación | Cyrrus",
-    "description": "PMO externo para ejecutar su proyecto de transformación digital a tiempo y sin sobrecostos, del kickoff al go-live, en Colombia y LATAM."
+    "title": "Consultoría PMO: Oficina de Gerencia de Proyectos | Cyrrus",
+    "description": "Consultoría PMO y gerencia de proyectos: PMO externo para planeación, control y ejecución a tiempo, en costo y calidad. Proyectos de ERP, CRM, nube e IA."
   },
   "/metodo-cira/gestion-del-cambio": {
-    "title": "Gestión del Cambio y Capacitación | Cyrrus",
-    "description": "Gestión del cambio organizacional y capacitación integradas al proyecto, con medición continua de la adopción vía IA en Colombia y LATAM."
+    "title": "Consultoría en Gestión del Cambio Organizacional | Cyrrus",
+    "description": "Consultoría en gestión del cambio organizacional: diagnóstico de preparación, stakeholders, comunicación, capacitación y medición de la adopción con IA."
   },
   "/intelligence-lab": {
-    "title": "Consultoría en Inteligencia Artificial Empresarial | Cyrrus",
-    "description": "Consultoría en inteligencia artificial para empresas: gobierno de IA, arquitectura y automatización — infraestructura real, no un catálogo de chatbots."
+    "title": "Consultoría de IA para Empresas: Estrategia y Agentes | Cyrrus",
+    "description": "Consultoría de IA para empresas: gobierno de IA, arquitectura y agentes de IA para automatizar procesos — infraestructura real, no un catálogo de chatbots."
   },
   "/intelligence-lab/automatizaciones-desarrollo": {
-    "title": "Automatización de Procesos y Agentes de IA | Cyrrus",
-    "description": "Automatización de procesos y agentes de IA integrados a la arquitectura empresarial, medidos contra el proceso real que reemplazan, no contra una demo."
+    "title": "Agentes de IA para Empresas: Desarrollo y Automatización | Cyrrus",
+    "description": "Agentes de IA para empresas y automatización de procesos, integrados a la arquitectura empresarial y medidos contra el proceso real que reemplazan, no contra una demo."
   },
   "/intelligence-lab/arquitectura-de-ia": {
-    "title": "Arquitectura de IA Empresarial | Cyrrus Intelligence Lab",
-    "description": "Diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que proliferen las herramientas sueltas."
+    "title": "Arquitectura Empresarial y de IA: Datos y Sistemas | Cyrrus",
+    "description": "Arquitectura empresarial y de IA: diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que proliferen las herramientas sueltas."
   },
   "/intelligence-lab/gobierno-de-ia": {
     "title": "Gobierno de IA en Empresas: Políticas y Controles | Cyrrus",
-    "description": "Definimos las políticas, roles y controles sobre el uso de inteligencia artificial en su empresa: quién decide, quién audita y qué datos se tocan."
+    "description": "Gobierno y gobernanza de IA: definimos las políticas, roles y controles sobre el uso de inteligencia artificial en su empresa: quién decide, quién audita y qué datos se tocan."
   },
   "/presencia-digital": {
     "title": "Desarrollo Web y SEO para Empresas | Cyrrus",
     "description": "Desarrollo web corporativo y SEO para empresas: su sitio y su visibilidad en buscadores e IA como activos del negocio, no como un proyecto de agencia."
   },
   "/presencia-digital/desarrollo-web": {
-    "title": "Desarrollo Web Corporativo para Empresas | Cyrrus",
-    "description": "Desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo, no un folleto digital estático."
+    "title": "Desarrollo Web para Empresas: Sitios Corporativos | Cyrrus",
+    "description": "Desarrollo web para empresas: desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo, no un folleto digital estático."
   },
   "/presencia-digital/seo": {
-    "title": "Posicionamiento SEO para Empresas y Visibilidad IA | Cyrrus",
-    "description": "Posicionamiento SEO técnico y de contenido para empresas, más visibilidad en motores de respuesta con IA como ChatGPT y Perplexity."
+    "title": "Consultoría SEO y GEO: Visibilidad en Google e IA | Cyrrus",
+    "description": "Consultores SEO para empresas: consultoría SEO técnica y de contenido, más visibilidad en motores de respuesta con IA (GEO) como ChatGPT y Perplexity."
   },
   "/leadership-academy": {
     "title": "Talleres y Capacitación para Altos Ejecutivos | Cyrrus",
@@ -88,15 +88,15 @@
     "description": "El comité aprueba o rechaza iniciativas de IA por instinto, no por criterio, porque nadie ha traducido los conceptos técnicos a preguntas que el liderazgo pueda evaluar."
   },
   "/leadership-academy/innovacion-empresarial": {
-    "title": "Taller de innovación empresarial | Cyrrus",
+    "title": "Innovación empresarial: taller para directivos | Cyrrus",
     "description": "Hay presupuesto de innovación y ninguna forma de decidir en qué invertirlo sin perseguir la última tendencia."
   },
   "/leadership-academy/iso-27001": {
-    "title": "Capacitación ISO 27001 para empresas | Cyrrus",
+    "title": "Curso ISO 27001 para empresas: capacitación ejecutiva | Cyrrus",
     "description": "Un cliente grande exige certificación ISO 27001 y nadie en la organización sabe por dónde empezar."
   },
   "/leadership-academy/continuidad-de-negocio-drp": {
-    "title": "Taller de continuidad de negocio (DRP) | Cyrrus",
+    "title": "Plan de continuidad de negocio y DRP: taller ejecutivo | Cyrrus",
     "description": "Nunca han probado qué pasa si el sistema principal cae un lunes a las 9am — y un plan de continuidad que no se prueba no es un plan."
   },
   "/leadership-academy/gestion-del-cambio-para-lideres": {

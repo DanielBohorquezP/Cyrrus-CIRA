@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "Strategy Consulting for Companies | Cyrrus",
-    "description": "Strategic planning consulting for companies in LATAM: diagnosis, roadmap, and measurable objectives — a plan that gets executed, not filed away."
+    "title": "Strategy Consulting Services for Companies | Cyrrus",
+    "description": "Strategy consulting for companies: diagnosis, roadmap, and hands-on execution. Corporate, business, and IT strategy, powered by AI."
   },
   "hero": {
     "eyebrow": "CIRA Method — Construct",
-    "title": "Strategy Consulting",
+    "title": "Strategy consulting for companies",
     "description": "A strategy gets defined... but no one knows how to bring it down to the operation. Our strategy consulting connects the business vision to an executable plan, not a document that ends up in a drawer.",
     "ctaLabel": "Schedule an executive diagnosis"
   },
   "intro": {
-    "kicker": "Strategic Consulting for CEOs",
+    "kicker": "Strategy consulting for CEOs",
     "pullQuote": "Direct execution and measurable profitability — not a document that ends up in a drawer.",
     "description": "We diagnose your business in depth, define priorities together with your leadership team, and lay out an actionable roadmap, with artificial intelligence applied to data analysis for faster, better-founded decisions.",
     "bullets": [
@@ -23,10 +23,33 @@
   },
   "definicion": {
     "eyebrow": "The foundation",
-    "title": "What is strategic planning?",
-    "description": "Strategic planning is the process by which a company defines its medium- and long-term direction, translates it into measurable objectives (KPIs), and aligns every area of the organization — from senior leadership down to daily operations — to execute it consistently. It's not a document that gets filed away: it's a system of decisions and priorities that gets reviewed and adjusted with real business data.",
+    "title": "What is strategy consulting?",
+    "description": "Strategy consulting is an external professional service that helps a company's leadership define its medium- and long-term direction, make critical decisions, and translate them into measurable objectives (KPIs) every area can execute. At Cyrrus it doesn't end in a document: the same team that runs the diagnosis stays for execution and adjusts the plan with real business data.",
     "linkLabel": "Also read: How to choose a trustworthy strategy consultancy",
-    "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable"
+    "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable",
+    "usesTitle": "What is strategy consulting for?",
+    "uses": [
+      {
+        "title": "An outside view",
+        "description": "It brings an objective perspective, free of internal politics, to decide what to prioritize and what to stop doing."
+      },
+      {
+        "title": "Growth",
+        "description": "It defines where and how to grow (new markets, products, or business units) with a business case to back it."
+      },
+      {
+        "title": "Efficiency and profitability",
+        "description": "It uncovers capital leaks, silos, and processes that consume resources without producing a return."
+      },
+      {
+        "title": "Transformation",
+        "description": "It aligns business strategy with technology, so every investment in ERP, data, or AI answers a concrete objective."
+      },
+      {
+        "title": "Governance and execution",
+        "description": "It turns the plan into KPIs, owners, and tracking dashboards the board can review."
+      }
+    ]
   },
   "diagnostico": {
     "eyebrow": "Diagnosis",
@@ -72,7 +95,7 @@
   },
   "benefits": {
     "eyebrow": "Benefits",
-    "title": "Agility, transformation, and efficiency",
+    "title": "Benefits of strategy consulting",
     "items": [
       {
         "title": "Decide today, not in 3 months",
@@ -124,22 +147,43 @@
   },
   "services": {
     "eyebrow": "Scope",
-    "title": "Core Strategy services",
+    "title": "Strategy consulting services",
+    "description": "Each service can be engaged on its own or as part of the Build phase of the CIRA Method.",
     "items": [
-      "Corporate Strategy",
-      "Shared Services Centers",
-      "Business Strategy",
-      "Business Continuity Plan",
-      "IT Strategy & Transformation"
+      {
+        "title": "Corporate strategy",
+        "description": "We define the organization's medium- and long-term vision, business portfolio, and investment priorities, and bring them down to a roadmap with owners and KPIs."
+      },
+      {
+        "title": "Business strategy",
+        "description": "We ground the strategy in each business unit: value proposition, target markets, operating model, and measurable commercial and financial goals."
+      },
+      {
+        "title": "IT strategy and digital transformation",
+        "description": "We align technology with the business: target architecture and a portfolio of initiatives (ERP, CRM, data, AI) prioritized by impact, each with its business case."
+      },
+      {
+        "title": "Shared services centers",
+        "description": "We design shared services centers for finance, HR, procurement, or IT, with their governance model, processes, and service levels."
+      },
+      {
+        "title": "Business continuity plan",
+        "description": "We identify critical processes, analyze the impact of a disruption, and define response and recovery plans so operations don't stop."
+      }
     ]
+  },
+  "lead": {
+    "eyebrow": "Who leads this service",
+    "title": "Strategy consulting with a name behind it",
+    "bio": "Jackson Bohorquez, founder of Cyrrus and creator of the CIRA method, leads the strategic diagnoses. Before founding the firm he was an IT director: he was on the receiving end of strategy consulting, which is why the same team that diagnoses stays for execution."
   },
   "faq": {
     "eyebrow": "Frequently asked questions",
-    "title": "About strategic planning",
+    "title": "Frequently asked questions about strategy consulting",
     "items": [
       {
-        "question": "What is Strategy?",
-        "answer": "Strategy is the process by which a company defines its medium- and long-term direction, translates that direction into measurable objectives (KPIs), and aligns every area of the organization — from senior leadership down to daily operations — to execute it consistently. It's not a document that gets filed away: it's a system of decisions and priorities that gets reviewed and adjusted with real operating data. For a CEO or CIO, the value is that strategy stops living in a presentation and starts showing up in cash flow, profitability, and the business's corporate governance."
+        "question": "What sets Cyrrus apart from a traditional strategy consultancy?",
+        "answer": "Three things. The same team that runs the diagnosis stays for execution, instead of handing over a report and leaving. We start implementing from week 1, not at the end of the diagnosis. And we're vendor-agnostic, so the strategy never ends up recommending the technology someone wants to sell. Results are measured in business indicators, not in the page count of the report."
       },
       {
         "question": "When does a company need strategic consulting?",

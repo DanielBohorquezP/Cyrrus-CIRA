@@ -61,7 +61,7 @@ export default function CursoDetalle() {
                     name: tr.title,
                     provider: { "@id": `${siteUrl}/#organization` },
                     description: tr.intro,
-                    areaServed: "LATAM",
+                    areaServed: "Worldwide",
                   },
                 ]),
             {

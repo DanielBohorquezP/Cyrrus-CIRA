@@ -6,6 +6,28 @@
       "excerpt": "Las organizaciones no fracasan por falta de tecnología ni de presupuesto. Fracasan cuando nadie conecta la decisión con las personas que deben ejecutarla. Siete errores que se repiten — y cómo evitarlos.",
       "metaDescription": "Por qué fracasan los proyectos de transformación digital: los 7 errores más comunes, desde empezar por la tecnología hasta dejar la gestión del cambio para el final.",
       "intro": "Hay una pregunta que, en mi opinión, debería hacerse mucho antes de aprobar un presupuesto, seleccionar una plataforma o firmar un contrato: ¿ya contemplamos la gestión del cambio?",
+      "serviceCtas": [
+        {
+          "title": "¿Su próximo proyecto puede evitar este error?",
+          "description": "Gestionamos el cambio desde el diseño del proyecto, no como un anexo al final de la implementación — con las personas que van a vivirlo, no solo con el cronograma.",
+          "checklist": [
+            "Mapa de impacto por área antes de implementar",
+            "Plan de adopción con métricas, no solo capacitaciones"
+          ],
+          "ctaLabel": "Conocer Gestión del Cambio",
+          "imageAlt": "Jackson Bohórquez moderando panel sobre liderazgo y gestión del cambio"
+        },
+        {
+          "title": "La adopción no termina cuando termina el proyecto",
+          "description": "Acompañamos la etapa que casi nadie presupuesta: la que decide si el cambio se sostiene o la organización vuelve a como estaba.",
+          "checklist": [
+            "Medición de adopción real, no solo asistencia a capacitaciones",
+            "Ajustes durante los primeros meses de uso, no solo en el go-live"
+          ],
+          "ctaLabel": "Hablar sobre mi proyecto",
+          "imageAlt": "Consultor de Cyrrus trabajando en un plan de adopción del cambio"
+        }
+      ],
       "body": [
         { "type": "p", "text": "Con frecuencia, la respuesta llega demasiado tarde, no se le da la importancia que merece o se asigna sin contar con las capacidades necesarias para gestionarla." },
         { "type": "p", "text": "He acompañado organizaciones en procesos de transformación en los que la tecnología estaba bien seleccionada, el proyecto tenía buenos profesionales y existía un presupuesto importante, sobre el papel, todo parecía estar en orden, sin embargo, algo no funcionaba." },
@@ -35,7 +57,7 @@
         { "type": "h2", "text": "El cuarto error: dejar la gestión del cambio para el final" },
         { "type": "p", "text": "Este es, probablemente, uno de los errores que más he visto repetirse, la gestión del cambio no puede aparecer al final del proyecto, cuando ya se tomó la decisión, se seleccionó la solución y la organización está a punto de recibir una nueva manera de trabajar." },
         { "type": "p", "text": "Para entonces, muchas personas ya han construido sus propias interpretaciones sobre lo que está ocurriendo, cuando las personas no entienden el cambio, aparecen el temor, la resistencia, la indiferencia o, simplemente, el cansancio." },
-        { "type": "p", "text": "Para mí, la gestión del cambio comienza mucho antes." },
+        { "type": "p", "text": "Para mí, la gestión del cambio comienza mucho antes.", "links": [{"text": "gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "Comienza cuando las personas entienden por qué deben cambiar, cuál será el impacto de hacerlo bien y también cuál puede ser el impacto de hacerlo mal." },
         { "type": "p", "text": "Hace algunos años, durante la implementación de un ERP en una organización de la industria minera, vivimos una situación que me dejó una enseñanza que todavía conservo." },
         { "type": "p", "text": "Una persona con un rol muy importante dentro de la organización estaba completamente involucrada en el proyecto, su intención era positiva: quería asegurar que todas las áreas del negocio estuvieran correctamente definidas." },
@@ -97,6 +119,28 @@
       "excerpt": "Elegir una consultora no debería ser una comparación de propuestas. Tres señales de una firma que realmente entiende su negocio, frente a una que solo completa un documento.",
       "metaDescription": "Cómo elegir una consultora estratégica confiable: qué preguntar, qué señales generan desconfianza y por qué el agnosticismo comercial es clave.",
       "intro": "Una buena consultora no es la que más sabe. Es la que mejor entiende.",
+      "serviceCtas": [
+        {
+          "title": "¿Quiere una consultora que le diga lo que necesita escuchar?",
+          "description": "Nuestra consultoría de estrategia empieza por entender su negocio a fondo, no por replicar un diagnóstico genérico de otra industria.",
+          "checklist": [
+            "Diagnóstico basado en su operación real, no una plantilla",
+            "Hoja de ruta priorizada por impacto, no por cantidad de páginas"
+          ],
+          "ctaLabel": "Conocer Consultoría en Estrategia",
+          "imageAlt": "Consultores de Cyrrus presentando planeación estratégica en conferencia"
+        },
+        {
+          "title": "Una estrategia que se queda en la organización, no en un documento",
+          "description": "Dejamos capacidad instalada en su equipo — criterios, métricas y un plan que su gente puede ejecutar sin depender de nosotros.",
+          "checklist": [
+            "Implementación acompañada, no solo el reporte",
+            "Agnósticos en tecnología: recomendamos lo que le sirve a usted"
+          ],
+          "ctaLabel": "Agendar diagnóstico ejecutivo",
+          "imageAlt": "Consultor senior de Cyrrus definiendo la hoja de ruta con el equipo"
+        }
+      ],
       "body": [
         { "type": "p", "text": "Hay decisiones que una organización puede tomar internamente. Hay otras en las que contar con alguien externo puede marcar una diferencia enorme." },
         { "type": "p", "text": "No necesariamente porque ese tercero tenga más conocimiento que el equipo interno. De hecho, el conocimiento del negocio está dentro de la organización. La diferencia está en otra parte." },
@@ -166,10 +210,10 @@
         { "type": "p", "text": "Supongamos que un CEO me dijera:" },
         { "type": "quote", "text": "“Jackson, tengo tres consultoras. Las tres tienen experiencia, buenos clientes y propuestas excelentes. ¿Cuál debería elegir?”" },
         { "type": "p", "text": "Probablemente no empezaría comparando las propuestas." },
-        { "type": "p", "text": "Le diría que mire quién piensa diferente. Quién es más imparcial. Quién tiene el mejor equipo, no solamente la mejor marca. Quién hizo las mejores preguntas antes de presentar la propuesta. Quién realmente escuchó. Quién fue capaz de cuestionar. Quién entendió las restricciones de su organización y, especialmente, quién mostró preocupación genuina por las personas y por la gestión del cambio." },
+        { "type": "p", "text": "Le diría que mire quién piensa diferente. Quién es más imparcial. Quién tiene el mejor equipo, no solamente la mejor marca. Quién hizo las mejores preguntas antes de presentar la propuesta. Quién realmente escuchó. Quién fue capaz de cuestionar. Quién entendió las restricciones de su organización y, especialmente, quién mostró preocupación genuina por las personas y por la gestión del cambio.", "links": [{"text": "gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "Porque una transformación puede tener la mejor estrategia, la mejor tecnología y el presupuesto adecuado, pero si las personas no están preparadas para vivirla, difícilmente será sostenible." },
         { "type": "h2", "text": "Una última pregunta" },
-        { "type": "p", "text": "Cuando pienso en consultoría estratégica, vuelvo nuevamente a una idea que para mí es fundamental: personas, procesos y tecnología. Centrado en las personas que impactan la organización." },
+        { "type": "p", "text": "Cuando pienso en consultoría estratégica, vuelvo nuevamente a una idea que para mí es fundamental: personas, procesos y tecnología. Centrado en las personas que impactan la organización.", "links": [{"text": "consultoría estratégica", "href": "/metodo-cira/estrategia"}] },
         { "type": "p", "text": "La consultoría puede ayudar a ordenar el camino, identificar oportunidades, cuestionar decisiones y construir capacidades. Pero su verdadero valor aparece cuando logra que la organización vea con mayor claridad, decida mejor y sea capaz de avanzar por sí misma." },
         { "type": "p", "text": "Quizás esa sea la mejor pregunta para un CEO antes de contratar una consultora: ¿después de trabajar con ellos, seremos una organización más dependiente de su conocimiento o una organización más capaz de construir el suyo?" },
         { "type": "p", "text": "La respuesta dice mucho más de una consultora que el tamaño de su propuesta." }
@@ -181,6 +225,28 @@
       "excerpt": "Antes de preguntarse qué inteligencia artificial incorporar, toda organización debería preguntarse si está preparada para gobernarla. Qué es el Gobierno de IA y por dónde debe empezar un CEO.",
       "metaDescription": "Qué es el Gobierno de IA corporativo, por qué es distinto al Gobierno de Datos, y las preguntas que todo CEO debería responder antes de adoptar inteligencia artificial.",
       "intro": "La IA puede acelerar una decisión, el gobierno determina si esa decisión debe tomarse.",
+      "serviceCtas": [
+        {
+          "title": "¿Su empresa ya tiene Shadow AI y no lo sabe?",
+          "description": "Diseñamos el marco de Gobierno de IA de su organización: qué se puede automatizar, qué necesita supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Mapa de riesgo por caso de uso, no una política genérica",
+            "Roles y responsables definidos entre negocio, TI y legal"
+          ],
+          "ctaLabel": "Conocer Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        },
+        {
+          "title": "Antes de escalar la IA, defina sus límites",
+          "description": "Ayudamos a su comité directivo a decidir qué delegar, qué supervisar y qué nunca automatizar — antes de que la adopción avance sin control.",
+          "checklist": [
+            "Comité de gobierno con negocio, TI, legal y seguridad",
+            "Criterios claros para aprobar nuevos casos de uso de IA"
+          ],
+          "ctaLabel": "Agendar conversación sobre Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus con notebook frente a pantallas de trabajo"
+        }
+      ],
       "body": [
         { "type": "p", "text": "Hay una conversación que empieza a aparecer con mayor frecuencia en las salas de juntas. ¿Cuál modelo vamos a utilizar? ¿Qué agentes podemos implementar? ¿Cuánto podemos automatizar? ¿Cuánto podemos ahorrar? ¿Qué está haciendo la competencia?" },
         { "type": "p", "text": "Son preguntas legítimas. Pero creo que estamos empezando por el lugar equivocado." },
@@ -215,7 +281,7 @@
         { "type": "h2", "text": "El Gobierno de IA no puede ser responsabilidad exclusiva de TI" },
         { "type": "p", "text": "Otro error frecuente es pensar que, como la inteligencia artificial utiliza tecnología, su gobierno debe quedar exclusivamente en manos del CIO o del área de tecnología, no lo veo así." },
         { "type": "p", "text": "El Gobierno de IA debe estar cerca de la estrategia y por lo tanto, cerca del CEO. TI tiene un papel fundamental, pero también lo tienen Seguridad, Control Interno, Legal, Innovación y Talento Humano." },
-        { "type": "p", "text": "El negocio debe definir qué valor se busca. Tecnología debe asegurar que la arquitectura y los sistemas puedan soportarlo. Seguridad debe evaluar los riesgos de información y acceso. Legal debe ayudar a entender las implicaciones regulatorias, contractuales y de propiedad intelectual. Innovación debe ayudar a conectar las posibilidades de la tecnología con la estrategia. Y Talento Humano tiene una responsabilidad enorme en adopción, capacidades, formación y gestión del cambio." },
+        { "type": "p", "text": "El negocio debe definir qué valor se busca. Tecnología debe asegurar que la arquitectura y los sistemas puedan soportarlo. Seguridad debe evaluar los riesgos de información y acceso. Legal debe ayudar a entender las implicaciones regulatorias, contractuales y de propiedad intelectual. Innovación debe ayudar a conectar las posibilidades de la tecnología con la estrategia. Y Talento Humano tiene una responsabilidad enorme en adopción, capacidades, formación y gestión del cambio.", "links": [{"text": "gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "La conversación, por tanto, no debería ser quién es dueño de la IA. Debería ser quién responde por las decisiones que la organización está empezando a delegar en ella." },
         { "type": "h2", "text": "Las personas siguen estando en el centro" },
         { "type": "p", "text": "La llegada de la inteligencia artificial puede hacernos pensar que la conversación se trata de modelos, agentes, automatización y productividad, pero detrás de cada uno de esos elementos siguen existiendo personas." },
@@ -267,6 +333,680 @@
         { "type": "p", "text": "Debería comenzar con: “¿qué queremos transformar y qué inteligencia necesitamos para hacerlo mejor?”" },
         { "type": "p", "text": "Ahí comienza el Gobierno de IA. Y también comienza una conversación mucho más importante para un CEO: ¿estamos utilizando la inteligencia artificial para transformar nuestro negocio o simplemente estamos incorporando inteligencia a nuestros procesos?" },
         { "type": "p", "text": "La diferencia puede parecer pequeña. Pero puede terminar definiendo quién lidera el futuro y quién simplemente intenta alcanzarlo." }
+      ]
+    },
+    "gerencia-de-proyectos-cuando-contratar-una-pmo-externa": {
+      "title": "Gerencia de proyectos: cuándo contratar una PMO externa",
+      "label": "Gerencia de proyectos",
+      "excerpt": "Un proyecto no fracasa por falta de cronograma, sino por falta de alguien que responda por el resultado. Cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.",
+      "metaDescription": "Gerencia de proyectos: qué es, cuándo contratar una PMO externa, qué debe entregar y cómo elegirla. Cinco señales de que su proyecto necesita ayuda.",
+      "intro": "Si nadie en su organización puede responder con certeza quién es el dueño del resultado de su proyecto, probablemente la pregunta no es cómo hacerle seguimiento, sino quién lo está gerenciando.",
+      "serviceCtas": [
+        {
+          "title": "¿Su proyecto necesita una PMO externa?",
+          "description": "Asumimos el gobierno del proyecto con responsabilidad real sobre el resultado, desde el kickoff hasta la estabilización después del go-live.",
+          "checklist": [
+            "Plan integral aprobado por el comité de dirección",
+            "Monitoreo continuo del riesgo con agentes de IA"
+          ],
+          "ctaLabel": "Conocer Gerencia de Proyectos",
+          "imageAlt": "Consultor de Cyrrus presentando metodología de gerencia de proyectos"
+        },
+        {
+          "title": "Un proyecto termina cuando la organización lo usa",
+          "description": "Integramos la gestión del cambio a la ejecución para que el proyecto se mida por la adopción, no solo por el go-live.",
+          "checklist": [
+            "Control de alcance que protege el presupuesto",
+            "Gestión del cambio embebida desde el inicio"
+          ],
+          "ctaLabel": "Hablar sobre mi proyecto",
+          "imageAlt": "Presentación de gerencia de proyectos de Cyrrus"
+        }
+      ],
+      "body": [
+        { "type": "p", "text": "Casi todos los proyectos de tecnología arrancan con optimismo. Hay un presupuesto aprobado, un proveedor seleccionado, un cronograma que cabe en una diapositiva y un equipo con ganas de empezar." },
+        { "type": "p", "text": "Unos meses después, la conversación suele ser otra: el cronograma se movió, el presupuesto ya no alcanza, el proveedor dice que el retraso es del cliente y el cliente dice que es del proveedor. Y cuando alguien pregunta quién responde por el resultado, la respuesta no es clara." },
+        { "type": "p", "text": "En mi experiencia, esa pregunta es la que define si un proyecto necesita una gerencia de proyectos distinta a la que tiene. No se trata de cuántas herramientas de seguimiento se usen, sino de quién tiene la responsabilidad real de que el proyecto cumpla lo que prometió." },
+        { "type": "h2", "text": "¿Qué es la gerencia de proyectos?" },
+        { "type": "p", "text": "La gerencia de proyectos es la planeación, dirección, control y ejecución de una iniciativa para que cumpla con el tiempo, el costo, el alcance y la calidad acordados. Es una disciplina con marcos reconocidos, como la guía del PMBOK, y con un objetivo muy concreto: convertir una decisión del negocio en un resultado entregado." },
+        { "type": "p", "text": "Con frecuencia se habla indistintamente de gerencia de proyectos y de gestión de proyectos. En la práctica son sinónimos. Si hay un matiz, es que la palabra gerencia pone el acento en la dirección y en la responsabilidad sobre el resultado, no solo en la administración de tareas." },
+        { "type": "p", "text": "Esa diferencia importa. Un proyecto puede tener un cronograma impecable, reuniones semanales y reportes bien diseñados, y aun así no tener a nadie que tome las decisiones difíciles cuando algo se desvía." },
+        { "type": "h2", "text": "Cinco señales de que su proyecto necesita una gerencia externa" },
+        { "type": "p", "text": "No todos los proyectos necesitan una PMO externa. Pero hay señales que se repiten en los que sí la necesitan." },
+        { "type": "p", "text": "La primera: nadie responde por el resultado completo. El proveedor responde por su parte, cada área responde por la suya y el proyecto, como un todo, no tiene dueño." },
+        { "type": "p", "text": "La segunda: los reportes dicen que todo va bien hasta que, de repente, todo va mal. Cuando el semáforo pasa de verde a rojo sin haber pasado por amarillo, el problema no es el proyecto, es la forma en que se está midiendo." },
+        { "type": "p", "text": "La tercera: el proveedor se está gerenciando a sí mismo. Es natural que un implementador defienda su alcance, sus tiempos y sus costos. Lo que no es sano es que sea también quien decide si lo está haciendo bien." },
+        { "type": "p", "text": "La cuarta: el equipo interno tiene doble función. Las personas clave del proyecto siguen respondiendo por la operación diaria, y el proyecto termina recibiendo el tiempo que sobra." },
+        { "type": "p", "text": "La quinta: es la primera vez que la organización ejecuta un proyecto de este tamaño. Una implementación de ERP, una migración a la nube o una iniciativa de inteligencia artificial no se parecen a los proyectos que la empresa hace todos los años, y los errores de un primer proyecto suelen ser los más costosos." },
+        { "type": "h2", "text": "PMO interna, PMO externa o PMO as a Service" },
+        { "type": "p", "text": "Una PMO, u oficina de gestión de proyectos, es la estructura que define cómo se gobiernan los proyectos de una organización: metodología, roles, comités, indicadores y herramientas." },
+        { "type": "p", "text": "Una PMO interna tiene sentido cuando la empresa ejecuta proyectos de forma permanente y tiene el volumen para sostener un equipo dedicado. Construirla toma tiempo, y mantenerla tiene un costo fijo." },
+        { "type": "p", "text": "Una PMO externa, o PMO as a Service, es un equipo que asume el gobierno de un proyecto puntual con responsabilidad sobre el resultado, y se desmonta cuando el proyecto termina. Es la opción más frecuente para iniciativas grandes que no se repiten cada año, como la implementación de un ERP." },
+        { "type": "quote", "text": "La pregunta no es si su empresa necesita una PMO. Es quién va a responder por el resultado de este proyecto en particular." },
+        { "type": "h2", "text": "Qué debe entregar una gerencia de proyectos seria" },
+        { "type": "p", "text": "Un plan integral antes de empezar: alcance, cronograma, recursos, roles, costos, riesgos y plan de calidad, aprobados por un comité de dirección que entienda lo que está aprobando." },
+        { "type": "p", "text": "Un gobierno claro: quién decide qué, en qué instancia y con qué información. Un proyecto sin reglas de decisión termina resolviendo sus problemas por desgaste." },
+        { "type": "p", "text": "Un seguimiento continuo del riesgo, no solo un reporte al cierre de cada fase. Hoy es posible monitorear el riesgo del proyecto de forma permanente, incluso con agentes de inteligencia artificial que anticipan desviaciones antes de que se conviertan en crisis." },
+        { "type": "p", "text": "Un control del alcance que proteja el presupuesto. En un proyecto que gerenciamos bajo los lineamientos del PMBOK, el cierre llegó con una diferencia de solo 3% frente al costo estimado y con apenas dos personalizaciones al código del ERP. No es casualidad: es el resultado de decir que no a tiempo." },
+        { "type": "p", "text": "Un cierre formal y documentado, que deje a la organización con el modelo de implementación para sus próximos proyectos." },
+        { "type": "h2", "text": "El error más común: gerenciar el cronograma y no la adopción" },
+        { "type": "p", "text": "Un proyecto puede terminar a tiempo, dentro del presupuesto y con todo el alcance entregado, y aun así fracasar. Ocurre cuando el sistema queda instalado pero la organización sigue trabajando como antes." },
+        { "type": "p", "text": "Por eso creo que una gerencia de proyectos que no incluye la gestión del cambio está midiendo el éxito equivocado. Los servicios de gestión del cambio tienen que empezar el mismo día que el proyecto, no aparecer como una actividad de cierre.", "links": [{"text": "servicios de gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
+        { "type": "p", "text": "Escribí sobre esto en detalle en por qué fracasan los proyectos de transformación digital: la mayoría no falla por la tecnología, sino por la forma en que las personas la reciben.", "links": [{"text": "por qué fracasan los proyectos de transformación digital", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
+        { "type": "h2", "text": "Antes del proyecto: la decisión correcta" },
+        { "type": "p", "text": "Hay proyectos que ninguna gerencia puede salvar, porque el problema no está en la ejecución sino en la decisión que les dio origen: un objetivo difuso, un caso de negocio que nadie construyó o una tecnología elegida antes de entender el problema." },
+        { "type": "p", "text": "Por eso, en los proyectos de mayor impacto, vale la pena empezar con una consultoría estratégica que defina qué hay que resolver, en qué orden y con qué indicadores. La gerencia de proyectos ejecuta mejor cuando sabe exactamente qué está ejecutando.", "links": [{"text": "consultoría estratégica", "href": "/metodo-cira/estrategia"}] },
+        { "type": "h2", "text": "Cómo elegir a quién le entrega la gerencia de su proyecto" },
+        { "type": "p", "text": "Pregunte quién va a responder por el resultado, no solo quién va a hacer el seguimiento." },
+        { "type": "p", "text": "Pregunte cómo se va a medir el riesgo y con qué frecuencia. Si la respuesta es un informe mensual, el riesgo se va a detectar tarde." },
+        { "type": "p", "text": "Pregunte qué relación comercial tiene con el proveedor de la tecnología. Una gerencia que depende del implementador difícilmente va a poder exigirle." },
+        { "type": "p", "text": "Pregunte cómo va a trabajar la adopción, no solo la instalación." },
+        { "type": "p", "text": "Y pregunte por proyectos anteriores con resultados verificables: tiempo, costo, alcance y, sobre todo, qué pasó después del go-live." },
+        { "type": "h2", "text": "En resumen" },
+        { "type": "p", "text": "Una buena gerencia de proyectos no se nota por la cantidad de reportes que produce, sino por la cantidad de problemas que evita. Si su próximo proyecto es grande, nuevo para la organización o crítico para el negocio, vale la pena preguntarse quién va a responder por él." },
+        { "type": "p", "text": "En Cyrrus prestamos servicios de gerencia de proyectos como PMO externa, con responsabilidad sobre el resultado y con la gestión del cambio integrada desde el inicio.", "links": [{"text": "servicios de gerencia de proyectos", "href": "/metodo-cira/gestion-de-proyectos"}] }
+      ]
+    },
+    "que-es-un-erp-guia-para-elegirlo": {
+      "title": "Qué es un ERP: guía para entenderlo, elegirlo y no equivocarse",
+      "label": "Selección de ERP",
+      "excerpt": "Un ERP integra las finanzas, las compras, los inventarios y la operación en una sola plataforma. Qué es, para qué sirve, qué módulos incluye y siete criterios para elegir el adecuado.",
+      "metaDescription": "Qué es un ERP, para qué sirve, qué módulos incluye y cómo elegir el adecuado para su empresa. Guía con criterios de selección y errores comunes.",
+      "intro": "Si cada área de su empresa tiene su propia versión de los números, probablemente la pregunta no es qué sistema comprar, sino qué es un ERP y si realmente lo necesita.",
+      "serviceCtas": [
+        {
+          "title": "¿Va a elegir un ERP?",
+          "description": "Evaluamos y comparamos ERP de forma independiente, con criterios definidos antes de mirar a los proveedores y sin comisiones de fabricantes.",
+          "checklist": [
+            "Criterios funcionales, técnicos, económicos y sostenibles",
+            "Acompañamiento hasta la contratación"
+          ],
+          "ctaLabel": "Conocer la selección de ERP",
+          "imageAlt": "Equipo de Cyrrus evaluando opciones de ERP"
+        },
+        {
+          "title": "Elegirlo bien es la mitad del camino",
+          "description": "Gerenciamos la implementación como PMO externa y trabajamos la adopción desde el primer día, para que el sistema se use y no solo quede instalado.",
+          "checklist": [
+            "Gerencia de proyectos con responsabilidad real sobre el resultado",
+            "Gestión del cambio embebida desde el inicio"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Reunión de trabajo de Cyrrus sobre implementación de ERP"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Hoy casi toda empresa mediana tiene un problema parecido: la información está repartida. Finanzas lleva sus cifras en un sistema, compras en otro, inventarios en una hoja de cálculo y producción en una cuarta herramienta. Cada área tiene su propia versión de la verdad, y reunir los números para una decisión toma días."
+        },
+        {
+          "type": "p",
+          "text": "Un ERP es la respuesta más habitual a ese problema. Pero también es una de las decisiones de tecnología más caras y más difíciles de revertir que toma una empresa. Esta guía explica qué es un ERP, para qué sirve, qué módulos incluye y cómo elegir el adecuado sin equivocarse."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "ERP son las siglas en inglés de Enterprise Resource Planning, o planificación de recursos empresariales. Es un sistema que integra en una sola plataforma los procesos centrales de una empresa —finanzas, compras, inventarios, ventas, producción, logística, recursos humanos— sobre una base de datos común."
+        },
+        {
+          "type": "p",
+          "text": "La palabra importante es integra. Un ERP no es un conjunto de programas sueltos: cuando un área registra una operación, las demás la ven al instante. Si ventas confirma un pedido, inventarios descuenta el material, compras sabe qué reponer y finanzas registra el ingreso, sin que nadie tenga que volver a digitar nada."
+        },
+        {
+          "type": "h2",
+          "text": "¿Para qué sirve un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "Un ERP sirve para que toda la organización trabaje con la misma información y los mismos procesos. En la práctica, eso se traduce en cuatro beneficios."
+        },
+        {
+          "type": "p",
+          "text": "El primero es una sola versión de los datos. Se acaban las discusiones sobre cuál cifra es la correcta, porque todas salen de la misma fuente."
+        },
+        {
+          "type": "p",
+          "text": "El segundo es menos trabajo manual y menos errores de digitación. Los procesos que antes obligaban a copiar datos entre hojas de cálculo pasan a ser automáticos."
+        },
+        {
+          "type": "p",
+          "text": "El tercero es visibilidad para decidir. La dirección puede ver inventario, flujo de caja, costos y cumplimiento de pedidos casi en tiempo real, en lugar de esperar al cierre de mes."
+        },
+        {
+          "type": "p",
+          "text": "El cuarto es control: permisos por rol, trazabilidad de cada operación y apoyo para cumplir obligaciones contables, fiscales y de auditoría."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué módulos incluye un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "Cada fabricante los agrupa de forma distinta, pero estos son los más comunes."
+        },
+        {
+          "type": "p",
+          "text": "Finanzas y contabilidad: libro mayor, cuentas por pagar y por cobrar, tesorería, activos fijos y cierres."
+        },
+        {
+          "type": "p",
+          "text": "Compras y proveedores: solicitudes, órdenes de compra, recepción y evaluación de proveedores."
+        },
+        {
+          "type": "p",
+          "text": "Inventarios y logística: existencias, almacenes, movimientos y trazabilidad."
+        },
+        {
+          "type": "p",
+          "text": "Ventas y facturación: cotizaciones, pedidos, facturación y cartera."
+        },
+        {
+          "type": "p",
+          "text": "Producción: planeación de materiales, órdenes de fabricación y costeo, en empresas industriales."
+        },
+        {
+          "type": "p",
+          "text": "Recursos humanos y nómina, que muchas empresas prefieren resolver con un sistema especializado conectado al ERP."
+        },
+        {
+          "type": "p",
+          "text": "Ningún ERP es el mejor en todos los módulos. Por eso es frecuente que una empresa use el ERP para su núcleo financiero y operativo y lo conecte con sistemas especializados de CRM, de gestión de personas o de mantenimiento de activos.",
+          "links": [
+            {
+              "text": "CRM",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            },
+            {
+              "text": "gestión de personas",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm"
+            },
+            {
+              "text": "mantenimiento de activos",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "ERP, CRM y hojas de cálculo: ¿en qué se diferencian?"
+        },
+        {
+          "type": "p",
+          "text": "Un CRM gestiona la relación con los clientes y el proceso comercial: contactos, oportunidades y seguimiento de ventas. Un ERP gestiona la operación y las finanzas del negocio. Se complementan y conviene conectarlos, pero no se reemplazan."
+        },
+        {
+          "type": "p",
+          "text": "Las hojas de cálculo funcionan mientras la empresa es pequeña. Dejan de funcionar cuando varias personas necesitan editar los mismos datos, cuando los errores empiezan a costar dinero o cuando nadie confía en las cifras. Esa suele ser la señal de que llegó el momento de un ERP."
+        },
+        {
+          "type": "h2",
+          "text": "Señales de que su empresa necesita un ERP"
+        },
+        {
+          "type": "p",
+          "text": "No hay una regla por tamaño, pero algunas señales se repiten."
+        },
+        {
+          "type": "p",
+          "text": "El cierre contable toma muchos días porque hay que consolidar información de varios sistemas."
+        },
+        {
+          "type": "p",
+          "text": "Los inventarios del sistema no coinciden con los físicos."
+        },
+        {
+          "type": "p",
+          "text": "Cada área mantiene sus propias hojas de cálculo y nadie confía del todo en las de las demás."
+        },
+        {
+          "type": "p",
+          "text": "Crecer implica contratar más personas solo para digitar y conciliar."
+        },
+        {
+          "type": "p",
+          "text": "La dirección toma decisiones con datos de hace semanas."
+        },
+        {
+          "type": "p",
+          "text": "Hay obligaciones de auditoría o regulación que el sistema actual no soporta."
+        },
+        {
+          "type": "h2",
+          "text": "ERP en la nube o instalado en sus servidores"
+        },
+        {
+          "type": "p",
+          "text": "Un ERP en la nube lo aloja y mantiene el proveedor, se paga por suscripción y se actualiza solo. Es más rápido de poner en marcha y requiere menos infraestructura propia. Un ERP instalado en sus propios servidores (on-premise) da más control sobre los datos y la personalización, pero exige infraestructura, equipo técnico y actualizaciones planificadas."
+        },
+        {
+          "type": "p",
+          "text": "No existe una respuesta correcta. Depende de la regulación del sector, de la capacidad técnica interna, de cuánta personalización requieren sus procesos y del costo total a varios años, no solo del primer año."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo elegir un ERP: siete criterios"
+        },
+        {
+          "type": "p",
+          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar."
+        },
+        {
+          "type": "p",
+          "text": "Ajuste funcional: qué parte de sus procesos reales cubre sin personalización y qué parte requiere desarrollo."
+        },
+        {
+          "type": "p",
+          "text": "Ajuste técnico: arquitectura, seguridad, integración con los sistemas que ya tiene y capacidad de crecer."
+        },
+        {
+          "type": "p",
+          "text": "Costo total de propiedad: licencias o suscripción, implementación, personalización, infraestructura, soporte, capacitación y actualizaciones, proyectado a varios años."
+        },
+        {
+          "type": "p",
+          "text": "Sostenibilidad del proveedor: trayectoria, hoja de ruta del producto y red de implementadores disponibles en su país."
+        },
+        {
+          "type": "p",
+          "text": "Capacidad de implementación: quién va a implementar, con qué metodología y con qué experiencia en empresas como la suya."
+        },
+        {
+          "type": "p",
+          "text": "Facilidad de adopción: qué tan sencillo es para los usuarios y cuánta capacitación requiere."
+        },
+        {
+          "type": "p",
+          "text": "Cobertura local: requisitos fiscales, contables y legales de los países donde opera, incluida la facturación electrónica."
+        },
+        {
+          "type": "h2",
+          "text": "El proceso de selección, paso a paso"
+        },
+        {
+          "type": "p",
+          "text": "Cada empresa lo adapta, pero un proceso ordenado suele seguir estos pasos: definir el problema y los objetivos del negocio; levantar y priorizar los requerimientos con las áreas; construir una lista de opciones del mercado; enviar una solicitud de propuesta (RFP) con los mismos criterios a todos los proveedores; evaluar propuestas y demostraciones con una matriz ponderada; verificar referencias; y negociar y contratar."
+        },
+        {
+          "type": "p",
+          "text": "Como referencia, en nuestra metodología la fase de selección suele tomar de 6 a 12 semanas, desde el arranque estratégico hasta el acompañamiento a la contratación."
+        },
+        {
+          "type": "quote",
+          "text": "Elegir un ERP no es elegir software. Es elegir cómo va a funcionar su empresa durante los próximos años."
+        },
+        {
+          "type": "h2",
+          "text": "¿De qué depende el costo de un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "No hay un precio único, porque el costo depende de factores que varían mucho de una empresa a otra: el número de usuarios, los módulos que se contratan, el modelo (suscripción o licencia), la cantidad de personalización, la complejidad de la migración de datos, las integraciones con otros sistemas y la capacitación."
+        },
+        {
+          "type": "p",
+          "text": "Una advertencia útil: la licencia suele ser solo una parte de la inversión. La implementación, la migración y la adopción pesan mucho en el total, y por eso conviene comparar el costo total y no solo el precio de lista."
+        },
+        {
+          "type": "h2",
+          "text": "Por qué fallan las implementaciones de un ERP"
+        },
+        {
+          "type": "p",
+          "text": "Casi nunca falla por el software. Las causas más comunes son elegir sin requerimientos claros, subestimar la migración de datos, personalizar de más, no tener un responsable del proyecto con autoridad y no trabajar la adopción de las personas."
+        },
+        {
+          "type": "p",
+          "text": "Por eso una implementación necesita gerencia de proyectos con responsabilidad real sobre el resultado y gestión del cambio desde el primer día. Hemos escrito antes sobre cuándo contratar una PMO externa y sobre por qué fracasan los proyectos de transformación digital.",
+          "links": [
+            {
+              "text": "cuándo contratar una PMO externa",
+              "href": "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+            },
+            {
+              "text": "por qué fracasan los proyectos de transformación digital",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Errores comunes al elegir un ERP"
+        },
+        {
+          "type": "p",
+          "text": "Empezar por el proveedor en lugar de por el problema."
+        },
+        {
+          "type": "p",
+          "text": "Comparar solo el precio de la licencia y no el costo total."
+        },
+        {
+          "type": "p",
+          "text": "Dejar que decida solo el área de tecnología, sin las áreas que van a usar el sistema."
+        },
+        {
+          "type": "p",
+          "text": "Aceptar que la selección la haga quien también va a vender la implementación."
+        },
+        {
+          "type": "p",
+          "text": "Pretender que el ERP replique exactamente los procesos de hoy, incluidos los que convendría corregir."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus también hacemos esto. Prestamos el servicio de selección independiente de ERP: le ayudamos a definir los requerimientos, a evaluar y comparar las opciones del mercado y a acompañar la contratación. No tenemos alianzas comerciales ni comisiones con fabricantes, así que la recomendación se basa solo en lo que su empresa necesita.",
+          "links": [
+            {
+              "text": "selección independiente de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Después de la selección, también podemos gerenciar la implementación como PMO externa y trabajar la adopción de su equipo, para que el sistema se use y no solo quede instalado.",
+          "links": [
+            {
+              "text": "PMO externa",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            },
+            {
+              "text": "adopción",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está evaluando un ERP, o ya empezó el proceso y tiene dudas, contáctenos: use el botón de contacto que encuentra a continuación y agende una conversación con nuestro equipo. Le ayudaremos a tomar la decisión con criterios claros."
+        }
+      ]
+    },
+    "que-es-una-pmo-funciones-tipos-cuando-necesitarla": {
+      "title": "Qué es una PMO: funciones, tipos y cuándo la necesita su empresa",
+      "label": "Gerencia de proyectos",
+      "excerpt": "Una PMO es la oficina que ordena cómo se gestionan los proyectos de una empresa. Qué es, para qué sirve, qué tipos existen y cómo saber si la necesita.",
+      "metaDescription": "Qué es una PMO (oficina de gestión de proyectos), para qué sirve, qué funciones y tipos existen y cómo saber si su empresa necesita una. Guía práctica.",
+      "intro": "Si tiene varios proyectos en marcha y nadie puede decirle con certeza cuántos van bien, probablemente la pregunta no es qué herramienta usar, sino qué es una PMO y si su empresa ya la necesita.",
+      "serviceCtas": [
+        {
+          "title": "¿Necesita ordenar sus proyectos?",
+          "description": "Actuamos como PMO externa: asumimos el gobierno de sus proyectos con responsabilidad real sobre el resultado, desde el kickoff hasta la estabilización.",
+          "checklist": [
+            "Plan integral aprobado por el comité de dirección",
+            "Monitoreo continuo del riesgo con agentes de IA"
+          ],
+          "ctaLabel": "Conocer Gerencia de Proyectos",
+          "imageAlt": "Consultor de Cyrrus presentando la metodología de gerencia de proyectos"
+        },
+        {
+          "title": "Un proyecto termina cuando se usa",
+          "description": "Integramos la gestión del cambio a la ejecución para que los proyectos se midan por su adopción, no solo por la entrega.",
+          "checklist": [
+            "Control de alcance que protege el presupuesto",
+            "Gestión del cambio embebida desde el inicio"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Presentación de la gerencia de proyectos de Cyrrus"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Casi todas las empresas medianas llegan al mismo punto: tienen varios proyectos en marcha al mismo tiempo, cada uno lo gerencia una persona distinta con su propia forma de trabajar, y nadie en la dirección puede responder con certeza cuántos van bien, cuántos van mal y cuáles conviene detener."
+        },
+        {
+          "type": "p",
+          "text": "Para ordenar ese panorama existe la PMO. Esta guía explica qué es una PMO, qué funciones cumple, qué tipos existen, en qué se diferencia de un gerente de proyectos y cómo saber si su empresa la necesita."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es una PMO?"
+        },
+        {
+          "type": "p",
+          "text": "PMO son las siglas en inglés de Project Management Office, es decir, oficina de gestión de proyectos (o de dirección de proyectos). Es la estructura de una organización que define, estandariza y supervisa la forma en que se gestionan los proyectos: qué metodología se usa, cómo se reporta el avance, cómo se priorizan las iniciativas y quién responde por cada una."
+        },
+        {
+          "type": "p",
+          "text": "El término también se usa, según el contexto, para hablar de una oficina de programas o de portafolio. En todos los casos la idea es la misma: que los proyectos se gestionen con un criterio común y con visibilidad para la dirección, en lugar de depender de la habilidad individual de cada gerente."
+        },
+        {
+          "type": "h2",
+          "text": "¿Para qué sirve una PMO?"
+        },
+        {
+          "type": "p",
+          "text": "Una PMO sirve para que una organización ejecute sus proyectos de forma más predecible. En la práctica, esto se traduce en cinco resultados."
+        },
+        {
+          "type": "p",
+          "text": "Un lenguaje común: todos los proyectos usan las mismas definiciones, plantillas y formas de reportar, de modo que se pueden comparar."
+        },
+        {
+          "type": "p",
+          "text": "Visibilidad para la dirección: un tablero único con el estado, el riesgo y el presupuesto de cada proyecto, sin tener que pedir reportes uno por uno."
+        },
+        {
+          "type": "p",
+          "text": "Prioridades claras: criterios explícitos para decidir qué proyectos se hacen, cuáles esperan y cuáles se detienen."
+        },
+        {
+          "type": "p",
+          "text": "Mejor uso de los recursos: se ve quién está saturado y quién tiene capacidad, antes de comprometer un nuevo proyecto."
+        },
+        {
+          "type": "p",
+          "text": "Aprendizaje acumulado: lo que salió bien o mal en un proyecto se documenta y se usa en el siguiente."
+        },
+        {
+          "type": "h2",
+          "text": "Funciones de una PMO"
+        },
+        {
+          "type": "p",
+          "text": "Según su madurez, una PMO puede cumplir algunas o todas estas funciones."
+        },
+        {
+          "type": "p",
+          "text": "Definir la metodología y las plantillas de gestión de proyectos, alineadas con marcos de referencia como el PMBOK."
+        },
+        {
+          "type": "p",
+          "text": "Dar seguimiento al avance, al costo y al riesgo de los proyectos, y consolidar reportes para el comité de dirección."
+        },
+        {
+          "type": "p",
+          "text": "Gestionar el portafolio: evaluar, priorizar y alinear los proyectos con la estrategia del negocio."
+        },
+        {
+          "type": "p",
+          "text": "Administrar los recursos: asignación de personas y resolución de conflictos de capacidad."
+        },
+        {
+          "type": "p",
+          "text": "Apoyar o dirigir directamente proyectos críticos, según el modelo de PMO."
+        },
+        {
+          "type": "p",
+          "text": "Capacitar y acompañar a los gerentes de proyecto, y mantener el repositorio de lecciones aprendidas."
+        },
+        {
+          "type": "h2",
+          "text": "Tipos de PMO"
+        },
+        {
+          "type": "p",
+          "text": "La guía del PMBOK distingue tres tipos de PMO, según el grado de control que ejercen sobre los proyectos."
+        },
+        {
+          "type": "p",
+          "text": "PMO de apoyo: ofrece plantillas, buenas prácticas, capacitación y acceso a información. Su control es bajo y funciona como un centro de consulta. Es el punto de partida habitual en organizaciones con poca madurez."
+        },
+        {
+          "type": "p",
+          "text": "PMO de control: además de apoyar, exige el cumplimiento de la metodología, de las plantillas y de ciertos estándares de gobierno. Su control es moderado."
+        },
+        {
+          "type": "p",
+          "text": "PMO directiva: asume directamente la dirección de los proyectos y responde por su resultado. Su control es alto."
+        },
+        {
+          "type": "p",
+          "text": "No hay un tipo mejor que otro. El adecuado depende de qué tan maduro es el manejo de proyectos en la empresa, de cuánta autonomía necesitan los equipos y de qué tan críticos son los proyectos que se ejecutan."
+        },
+        {
+          "type": "h2",
+          "text": "PMO, gerente de proyectos y portafolio: ¿en qué se diferencian?"
+        },
+        {
+          "type": "p",
+          "text": "Un gerente de proyectos lleva un proyecto concreto: su alcance, su cronograma, su presupuesto y su equipo. Una PMO trabaja sobre el conjunto: define cómo se gestionan todos los proyectos, supervisa su avance y apoya a quienes los gerencian."
+        },
+        {
+          "type": "p",
+          "text": "La gestión de portafolio va un paso más arriba: decide qué proyectos conviene hacer, en qué orden y con qué recursos, de acuerdo con la estrategia. Muchas PMO combinan las tres cosas, y de ahí que a veces se hable de oficina de proyectos, de programas o de portafolio."
+        },
+        {
+          "type": "h2",
+          "text": "PMO interna, externa o as a Service"
+        },
+        {
+          "type": "p",
+          "text": "Una PMO puede ser interna, con personal propio; externa, operada por una firma especializada; o un modelo mixto. Una PMO externa, también llamada PMO as a Service, es un equipo que asume el gobierno de los proyectos con responsabilidad sobre el resultado, sin que la empresa tenga que montar toda la estructura."
+        },
+        {
+          "type": "p",
+          "text": "Si quiere profundizar en cuándo tiene sentido cada modelo, escribimos una guía sobre cuándo contratar una PMO externa y qué debe exigirle.",
+          "links": [
+            {
+              "text": "cuándo contratar una PMO externa",
+              "href": "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Una PMO no existe para producir reportes. Existe para que los proyectos lleguen al resultado que prometieron."
+        },
+        {
+          "type": "h2",
+          "text": "Señales de que su empresa necesita una PMO"
+        },
+        {
+          "type": "p",
+          "text": "No hay una regla por tamaño, pero algunas señales se repiten."
+        },
+        {
+          "type": "p",
+          "text": "Hay varios proyectos simultáneos y nadie tiene la visión del conjunto."
+        },
+        {
+          "type": "p",
+          "text": "Los proyectos se retrasan o se pasan del presupuesto con frecuencia y no queda claro por qué."
+        },
+        {
+          "type": "p",
+          "text": "Cada gerente de proyectos usa su propia metodología y sus propios formatos."
+        },
+        {
+          "type": "p",
+          "text": "Los mismos equipos están comprometidos en varios proyectos y se saturan."
+        },
+        {
+          "type": "p",
+          "text": "La dirección se entera de los problemas cuando ya son crisis."
+        },
+        {
+          "type": "p",
+          "text": "Se emprenden proyectos sin criterios claros de prioridad o de retorno."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo implementar una PMO paso a paso"
+        },
+        {
+          "type": "p",
+          "text": "Aunque cada empresa la adapta, una implementación ordenada suele seguir estos pasos: diagnosticar cómo se gestionan hoy los proyectos; definir el alcance y el tipo de PMO que conviene; contar con un patrocinador de la dirección; establecer una metodología mínima y plantillas sencillas; fijar los indicadores que se van a reportar; arrancar con un proyecto piloto; y ajustar a partir de lo aprendido antes de ampliar."
+        },
+        {
+          "type": "p",
+          "text": "La regla útil es empezar pequeño. Una PMO que nace con cien procedimientos antes de haber ayudado a un solo proyecto suele convertirse en burocracia."
+        },
+        {
+          "type": "h2",
+          "text": "Indicadores de una PMO"
+        },
+        {
+          "type": "p",
+          "text": "Una PMO se mide por los resultados de los proyectos que acompaña, no por la cantidad de documentos que produce. Algunos indicadores habituales son el cumplimiento del cronograma, la desviación frente al presupuesto, la proporción de proyectos entregados con el alcance acordado, el nivel de satisfacción de los patrocinadores y la adopción de lo entregado por parte de los usuarios."
+        },
+        {
+          "type": "h2",
+          "text": "Errores comunes al crear una PMO"
+        },
+        {
+          "type": "p",
+          "text": "Crear una PMO sin patrocinio visible de la dirección."
+        },
+        {
+          "type": "p",
+          "text": "Convertirla en un área que solo pide reportes y no ayuda a resolver problemas."
+        },
+        {
+          "type": "p",
+          "text": "Copiar plantillas de otra empresa sin adaptarlas a la propia."
+        },
+        {
+          "type": "p",
+          "text": "Medir la actividad (reuniones, informes) y no los resultados."
+        },
+        {
+          "type": "p",
+          "text": "Gerenciar el cronograma y olvidar la adopción: un proyecto no termina cuando se entrega, sino cuando las personas lo usan.",
+          "links": [
+            {
+              "text": "un proyecto no termina cuando se entrega",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus también hacemos esto. Prestamos servicios de gerencia de proyectos y actuamos como PMO externa: asumimos el gobierno de sus proyectos con responsabilidad real sobre el resultado, bajo los lineamientos del PMBOK y con agentes de IA que monitorean el riesgo para anticipar desviaciones antes de que se vuelvan crisis.",
+          "links": [
+            {
+              "text": "servicios de gerencia de proyectos",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "También integramos la gestión del cambio desde el inicio, para que lo que se entrega se use y no solo quede instalado.",
+          "links": [
+            {
+              "text": "gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está pensando en crear una PMO, o ya tiene proyectos que se están saliendo de control, contáctenos: use el botón de contacto que encuentra a continuación y agende una conversación con nuestro equipo."
+        }
       ]
     }
   }

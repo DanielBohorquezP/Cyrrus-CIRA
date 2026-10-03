@@ -23,6 +23,21 @@
 
 ## Próximo paso
 
+> **Hallazgo crítico de la sesión de 8.1 (2026-09-18): producción está
+> desactualizada desde el 12 de septiembre.** `cyrruscs.com` sirve un build
+> con `Last-Modified: 12-sep-2026` — confirmado por cabeceras HTTP y por el
+> hash del bundle JS, que no coincide con el del build local actual. Eso
+> significa que **todo el trabajo de Fase 3 y Fase 4 de esta semana**
+> (enlazado interno, FAQ ampliada en 8 páginas, agrupación de Leadership
+> Academy, captura de interesados por taller, sincronización de
+> `route-meta.json`) **no está visible para ningún visitante real ni para
+> Google** todavía. Antes de seguir invirtiendo sesiones en contenido o
+> enlazado nuevo, vale la pena que el dueño haga el redeploy (subir el
+> build actual — `npm run build` ya genera `dist/`, o el `cyrrus-dist.zip`
+> si ese es el flujo manual habitual) para que el trabajo empiece a contar
+> para SEO real. Ver la nueva fila en **Bloqueos** y el detalle en la
+> bitácora de hoy.
+>
 > **Fase 4 está funcionalmente cerrada.** Las 4 páginas troncales
 > (Estrategia, hub de Selección de soluciones, PMO, Gestión del cambio),
 > ERP/CRM/HCM/EAM, Tecnologías avanzadas/Infraestructura, y las 4 páginas de
@@ -113,7 +128,7 @@
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
 | 5.1 | Autor real + página de autor | ⬜ | |
-| 5.2 | Enlazado cluster ↔ pilar en los 3 artículos actuales | ✅ | Enlace pilar→artículo (sección "servicio relacionado" en `ArticuloPerspectiva.tsx`, dato en `blog-data.ts`) y artículo→pilar (link en `PlaneacionEstrategica`/`estrategia.json`, `GestionDelCambio`/`gestion-cambio.json`, `GobiernoDeIA`/`intelligence-lab.json`) en ambas direcciones, ES y EN |
+| 5.2 | Enlazado cluster ↔ pilar en los 3 artículos actuales | ✅ | Enlace pilar→artículo (sección "servicio relacionado" en `ArticuloPerspectiva.tsx`, dato en `blog-data.ts`) y artículo→pilar (link en `PlaneacionEstrategica`/`estrategia.json`, `GestionDelCambio`/`gestion-cambio.json`, `GobiernoDeIA`/`intelligence-lab.json`) en ambas direcciones, ES y EN. Ampliado (2026-09-18, a pedido del usuario, no una tarea numerada de PLAN.md): 2 tarjetas de conversión `ArticleServiceCta` insertadas a mitad de cada artículo, ofreciendo el servicio del que habla — ver bitácora |
 | 5.3 | Publicación según calendario (2/mes) | 🟡 | 3 publicados (8, 10 y 12 de septiembre de 2026) |
 | 5.4 | Estudio de datos propios | ⬜ | |
 
@@ -134,8 +149,8 @@
 ### Fase 8 — Rendimiento
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| 8.1 | LCP móvil < 2,5 s en el Inicio | ⬜ | Hoy 2,8 s |
-| 8.2 | Cabeceras de caché y seguridad | ⬜ | Depende del hosting (nginx) |
+| 8.1 | LCP móvil < 2,5 s en el Inicio | ⛔ | Medición real con PageSpeed Insights sobre producción (2026-09-18): LCP = 2,3 s, **meta ya cumplida** — pero esa lectura es de un build del 12-sep, sin el trabajo de Fase 3/4 de esta semana. No se puede cerrar la tarea con una lectura de código que no está desplegado. Bloqueado por el redeploy (ver Bloqueos) |
+| 8.2 | Cabeceras de caché y seguridad | ✅ | Confirmadas en producción con `curl -I` tras el deploy del 23-sep. 2026-09-23: añadidas en `public/.htaccess` (HSTS 1 año sin includeSubDomains, nosniff, X-Frame-Options SAMEORIGIN, Referrer-Policy, Permissions-Policy) — el `.htaccess` sí se aplica en producción (los 301 de 0.4 funcionan). Falta confirmar con `curl -I` tras el deploy. Antes: depende del hosting (nginx). Revisado de paso en 8.1: los assets con hash ya tienen `Cache-Control: max-age=315360000` (10 años) — esa parte ya está bien. Falta revisar cabeceras de seguridad (HSTS, X-Content-Type-Options): no confirmadas |
 
 ### Fase 9 — Revisión posterior
 | ID | Tarea | Estado | Notas |
@@ -159,6 +174,7 @@
 | Detalle de talleres | ⬜ | ⬜ | 3.1, 3.3 |
 | Decisión Presencia Digital (a/b/c) | ⬜ | ⬜ | 1.5 |
 | Decisión `cyrruscs-dist/` y zip | ⬜ | ⬜ | 0.9 |
+| **Redeploy a producción** (el servidor sirve un build del 12-sep; falta subir el build actual, con todo el trabajo de Fase 3/4 de esta semana) | ✅ | ✅ (2026-09-23, bundle `index-DCHW-Og-.js` idéntico al build local) | 8.1 (cierre definitivo), y en general toda medición real de Fase 6/7/GSC sobre el trabajo de Fase 0-4 hecho después del 12-sep |
 
 ---
 
@@ -169,6 +185,7 @@
 | 2026-09-17 | 87 / 100 / 92 | 2,8 s | — | — | Línea base de la auditoría. Google aún muestra el sitio viejo |
 | 2026-09-18 | — | — | 44 / 178 conocidas | 46 (1.840 impr., CTR 2,5 %, pos. media 14,7) | Primera lectura real de Search Console. Casi todo el tráfico es de marca ("cyrrus"); ver `docs/plan-mejora/datos/search-console-2026-09-18.md` |
 | 2026-09-18 | 90 / — / — | 3,09 s | — | — | `node scripts/lh.mjs --runs 3` (mediana) en esta máquina/sesión, no comparable 1:1 con la línea base del 17-09 (otra máquina). El elemento LCP sigue siendo del hero (`min-h-screen`, la sección de tabs no entra en el viewport inicial) — no parece una regresión del reorden del Inicio, pero falta confirmar con PageSpeed Insights real antes de tocar 8.1 |
+| 2026-09-18 | 65 / 100 / 92 | **2,3 s** | — | — | **PageSpeed Insights real sobre `cyrruscs.com` (no lab local)**, tarea 8.1. LCP ya cumple la meta (<2,5s), pero TBT = 1.700 ms y Speed Index = 5,5 s — mucho peor que los 106 ms de TBT del build local actual. Causa: el HTML servido tiene `Last-Modified: 12-sep-2026` (confirmado con `fetch` a las cabeceras) y el bundle JS (`index-CDnTzrKm.js`) no coincide con el hash del build local (`index-CqXVWnTH.js`) — producción no incluye el trabajo de Fase 3/4 de esta semana. Ver bitácora |
 
 ---
 
@@ -176,6 +193,279 @@
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
+
+### 2026-10-03 — Investigación de keywords por servicio, reajuste de títulos y H1, ampliación de páginas y 2 artículos (a pedido del usuario)
+- **Hecho:**
+  - Investigación Ubersuggest (ES; México, Colombia y España) de todos los servicios; resultados en `keywords-servicios.md` y `keywords-ranking.md`. Dominio: DA 13, ~8 visitas/mes. Cuota diaria agotada al final (no se midieron `togaf`, `consultoría en ciberseguridad`, `ley de inteligencia artificial`).
+  - Títulos `<title>`, H1, meta descripciones y anclas internas de ~20 páginas alineados con la keyword principal (ES + `route-meta.json`); sin "Colombia". Reparto anti-canibalización: Tecnologías avanzadas = automatización de procesos/RPA; Automatizaciones = agentes de IA; hub de soluciones = consultoría tecnológica; selección de software = ERP/CRM; Estrategia = estratégica/planeación; Método CIRA = empresarial y de negocios.
+  - Talleres: innovación, ISO 27001 y DRP renombrados; Presencia Digital: "Desarrollo Web para Empresas: Sitios Corporativos" (sin "agencia", por coherencia de marca).
+  - Fase A del plan de contenido: Tecnologías avanzadas (314→~790 palabras), Automatizaciones (→~880), Arquitectura (→~750), Gestión del cambio (+ modelos ADKAR/Kotter/Lewin), hub de soluciones, taller de continuidad. FAQ "¿Qué es un ERP/CRM/HCM?" y de consultor SEO. Código: campo opcional `h1` y `body` en `SolucionDetalle.tsx`; icono de agente en `solutions-icons.ts`.
+  - Artículos nuevos ES+EN: "Qué es un ERP" y "Qué es una PMO" (cada uno con mención del servicio y CTA de contacto al cierre).
+  - Plan en `docs/plan-mejora/plan-contenido-prioritario.md`, con la **instrucción obligatoria**: todo artículo debe dar primero la información y cerrar mencionando que Cyrrus ofrece el servicio, con CTA de contacto.
+- **Verificado:** `npm run build` (78/78 rutas) y consola limpia en las páginas y artículos tocados (ES y EN).
+- **Pendiente / decisiones:** confirmar con el equipo que ADKAR/Kotter/Lewin se presenten así; revisar la traducción al inglés de los dos artículos; el inglés de las páginas no se tocó (mercado EN sin medir); artículos 3 a 17 del plan sin escribir; producción sigue desactualizada hasta el redeploy.
+- **Próximo paso:** redeploy; artículo 3 (planeación estratégica); medir en Ubersuggest los términos pendientes cuando se reinicie la cuota.
+
+### 2026-09-23 — Auditoría SEO+GEO del Inicio y correcciones (a pedido del usuario)
+- **Tarea:** auditoría con la skill daniel-seo-audit sobre `cyrruscs.com/` en vivo
+  (build del 18-sep, 45/70) y aplicación de todo lo que no requiere datos del cliente.
+- **Hecho:**
+  - Title/meta del Inicio sin "Colombia" (`home.json` ES/EN, `route-meta.json`,
+    `index.html`): "Consultoría Estratégica con IA, hasta la ejecución | Cyrrus".
+  - Bloque de entidad "Qué es Cyrrus" con H2 con keyword sobre las pestañas de
+    servicios (`Home.tsx`); el título de cada pestaña pasa de H2 a H3
+    (`tabbed-panels.tsx`).
+  - FAQ de 8 preguntas en el Inicio (`FaqSection`) + `FAQPage` JSON-LD, ES y EN.
+  - Footer con NAP visible: NIT, 2 oficinas, teléfono (`tel:`) y correo (`mailto:`),
+    los mismos datos del JSON-LD (`footer.tsx`).
+  - `meta robots` con `max-snippet:-1, max-image-preview:large` en todas las rutas
+    indexables (`use-page-meta.ts` ahora siempre escribe la etiqueta).
+  - `email` en el nodo Organization (`index.html`); línea del Inicio en `llms.txt`
+    sin "Colombia y LATAM"; `robots.txt` con ChatGPT-User, Claude-SearchBot,
+    Claude-User, Perplexity-User y Bingbot explícitos.
+  - Cabeceras de seguridad en `.htaccess` (8.2).
+  - `blog7.tsx`: tarjetas H3 bajo un H2 (Inicio) y H2 bajo el H1 (/perspectivas);
+    "Ver todos los temas" ya no abre `/perspectivas` en pestaña nueva.
+  - Badge circular del hero con `aria-hidden` (texto decorativo repetido).
+- **Verificación:** `npm run build` (74/74 rutas) + `serve-dist`: consola limpia en
+  `/`, `/en`, `/perspectivas`, `/metodo-cira/estrategia`; sin scroll horizontal a 375px.
+- **Pendiente del cliente:** cifra real de países (+17 vs 10 del mapa vs 15 del schema,
+  0.6), forma societaria para el footer, año de fundación (`foundingDate`), y una
+  métrica real que sustituya "1 método de punta a punta" en la TrustBar.
+- **Deploy confirmado (mismo día):** producción sirve el build nuevo (mismo hash de
+  bundle), title/robots/FAQPage/NAP/cabeceras verificados en vivo, consola limpia en `/` y `/en`.
+- **Próximo paso:** commit; Rich Results Test sobre la FAQ del Inicio; nueva
+  medición de PageSpeed (8.1).
+
+### 2026-09-22 — Equipo con nombre, enlazado blog→servicios, artículo de PMO y plan de autoridad externa (a pedido del usuario)
+- **Tarea:** continuación de la entrada de abajo. El usuario pidió
+  implementar: equipo con nombre y certificaciones en cada página de servicio,
+  enlaces internos desde el blog, un artículo de apoyo por tema y el trabajo
+  de enlaces externos.
+- **Hecho:**
+  - **Bloque "Quién lidera este servicio"** (`src/components/sections/service-lead.tsx`)
+    en Estrategia, Gestión del cambio y PMO: Jackson Bohorquez con foto, rol,
+    una bio específica por servicio (texto `lead` en los 3 JSON, ES/EN) y
+    enlaces a `/quienes-somos` y LinkedIn. Las certificaciones salen de
+    `src/lib/team.ts` (`credentials`). **Está vacío a propósito:** no hay
+    ningún dato de PMP/Prosci en el sitio y no se inventó ninguno. Cuando se
+    agregue uno verificado, aparece como insignia en las 3 páginas.
+  - **Enlaces en el texto de los artículos:** `ArticuloPerspectiva.tsx` ahora
+    admite `links` en los bloques `p` (`renderInline`, una sola cadena por
+    tramo para no romper la hidratación). Se agregaron enlaces sobre frases
+    que ya existían (no se reescribió el texto de Jackson): "Cómo elegir una
+    consultora…" → estrategia y gestión del cambio; "Por qué fracasan…" y
+    "Gobierno de IA…" → gestión del cambio. ES y EN.
+  - **Artículo nuevo** `gerencia-de-proyectos-cuando-contratar-una-pmo-externa`
+    (ES/EN, 41 bloques, portada `IMG_20230705_122802.jpg`, que no se usaba
+    antes). Es el artículo de apoyo del pilar PMO, que no tenía ninguno.
+    Tiene enlaces con el texto exacto a los 3 servicios y al artículo "Por qué
+    fracasan…". Solo usa datos que ya están en el sitio (PMBOK, 3% de
+    desviación, 2 personalizaciones del ERP). La página de PMO ahora enlaza a
+    este artículo en lugar de "Por qué fracasan…".
+  - **`docs/plan-mejora/autoridad-externa.md`:** datos NAP canónicos,
+    descripciones listas para pegar, directorios en orden de prioridad,
+    alianzas, plantilla de nota de prensa, LinkedIn y cómo medirlo en GSC.
+    Esto lo tiene que ejecutar el equipo (crear cuentas, publicar).
+  - `blog.json` se editó con un serializador que conserva el formato compacto
+    (un bloque por línea), comprobado byte a byte contra HEAD.
+- **Verificación:** `tsc -b`, `npm run build` (74/74 rutas), enlaces con la
+  ruta del idioma correcto en el HTML estático (ES y EN), consola sin errores
+  en el artículo nuevo, en las páginas de servicio y en `/perspectivas`, y
+  revisión visual del bloque de equipo y de los enlaces en el texto.
+- **Pendiente:** (1) **Jackson tiene que revisar el artículo nuevo** antes del
+  redeploy: está escrito en primera persona con su firma, igual que los
+  otros. (2) Certificaciones reales para `team.ts`. (3) Ejecutar
+  `autoridad-externa.md`. (4) Redeploy.
+
+### 2026-09-22 — On-page SEO de Estrategia, Gestión del cambio y PMO frente a EY / RSM (a pedido del usuario)
+- **Tarea:** no es un ítem numerado de PLAN.md (encaja con Fase 4). El
+  usuario compartió los SERP de "consultoría estratégica", "servicios gestión
+  del cambio" y "servicios de gerencia de proyectos" (top: EY y RSM) y pidió
+  mejorar las 3 páginas para competir. Regla nueva del usuario: **no usar
+  "en Colombia"** en títulos/metas, porque Cyrrus tiene alcance internacional.
+- **Hecho:**
+  - Title, meta, H1 (`hero.title`) y `serviceType` con la búsqueda exacta
+    en las 3 páginas, ES y EN (`locales/{es,en}/{estrategia,gestion-cambio,gestion-proyectos}.json`,
+    `route-meta.json`, JSON-LD en los 3 `.tsx`).
+  - Bloque de definición "¿Qué es / qué son los servicios de X?" cerca del
+    inicio, redactado para que lo pueda citar la respuesta de IA de Google.
+    Estrategia suma además "¿Para qué sirve la consultoría estratégica?".
+    Componente nuevo `src/components/sections/service-definition.tsx`.
+  - La lista "Alcance" pasó de viñetas sueltas a un H3 con descripción por
+    servicio (el patrón de RSM). Componente nuevo `service-scope.tsx`.
+    Estrategia: 5 servicios. PMO: 10 (se agregó PMO as a Service como
+    servicio propio). Gestión del cambio: sección nueva con 8 servicios que
+    no repiten los 4 pilares.
+  - El H2 genérico "Agilidad, transformación y eficiencia" se reemplazó en
+    las 3 páginas por "Beneficios de …". También se quitó la jerga en inglés
+    del texto en español ("Change Management", "Strategy/Select/Project
+    Management").
+  - FAQ: en Estrategia, "¿Qué es la Estrategia?" pasó a "¿Qué diferencia a
+    Cyrrus de una consultora estratégica tradicional?". Se agregaron "¿Qué
+    incluyen los servicios de gestión del cambio?" y "¿Gerencia vs.
+    gestión de proyectos?" (esta última solo en ES).
+  - Se quitó "en Colombia" del title y la meta de la home (ES y EN) y de las
+    metas de PMO y Gestión del cambio.
+- **Verificación:** `tsc -b`, `npm run build` (72/72), `dist` servido: title,
+  H1 y H2 correctos en el HTML estático y consola sin errores de hidratación
+  en las 3 rutas ES y EN y en `/`. Se revisó el layout de las secciones
+  nuevas en ancho angosto y a 1280px.
+- **Pendiente:** (1) **Canibalización:** la home sigue apuntando a
+  "Consultoría Estratégica con IA" y compite con `/metodo-cira/estrategia`.
+  Hay que revisar en GSC qué URL recibe hoy impresiones para esa búsqueda
+  antes de cambiar el title de la home. (2) ~~`areaServed`~~ resuelto en la
+  misma sesión: el usuario eligió `"Worldwide"`. Se cambió en los 17 `.tsx`
+  con schema `Service` y en el `contactPoint` de `index.html`. Se dejó la
+  lista explícita de 16 países/regiones del `Organization` de `index.html`,
+  porque es un dato más preciso. (3) Nombrar marcos (ADKAR/Prosci, Kotter)
+  y certificaciones (PMP) solo si el equipo de verdad los usa o los tiene;
+  no se inventó nada. (4) Casos con nombre y equipo con credenciales
+  (bloqueado por 2.1). (5) Todo esto necesita redeploy para contar.
+
+### 2026-09-22 — Cambio de portada del artículo de transformación digital (a pedido del usuario)
+- **Tarea:** no es un ítem de PLAN.md. El usuario señaló la foto de portada
+  del artículo "Por qué fracasan los proyectos de transformación digital"
+  (`IMG_20240822_085440_710.jpg`, un gafete de nombre "Jackson Bohorquez" en
+  una mesa de evento) y pidió quitarla de toda la página y reemplazarla.
+- **Hecho:** `src/lib/blog-data.ts` — `coverImage` de ese post cambiado a
+  `/assets/decoracion/1785866331023.jpg` (foto de escritorio con monitores
+  mostrando el sitio de Cyrrus). Se eligió reutilizando la misma imagen que
+  ya representa la fase "Adoptar" (Gestión del Cambio) en `MetodoCira.tsx` —
+  coherente porque ese es justamente el pilar de este artículo. Confirmado
+  con grep que la foto retirada solo se usaba en ese único campo (no había
+  otro sitio en `src/` que la referenciara); no se borró el archivo de
+  imagen original, solo se dejó de usar.
+- **No tocado:** el archivo de imagen en sí sigue en `public/assets/
+  decoracion/` por si se necesita después; no se tocó ningún otro post.
+- **Verificación:** `tsc --noEmit` + `npm run build` (72/72 rutas) +
+  navegador embebido: portada nueva visible en la ficha del artículo
+  (`/perspectivas/por-que-fracasan-...`) y en el listado de `/perspectivas`,
+  consola limpia.
+- **Próximo paso:** el de la sesión de 8.1 sigue vigente (coordinar el
+  redeploy) — este cambio también quedó fuera de producción hasta que se
+  suba el build.
+
+### 2026-09-18 — Tarjetas de conversión a mitad de artículo en Perspectivas (ampliación de 5.2, a pedido del usuario)
+- **Tarea:** no es un ítem numerado de PLAN.md — el usuario pidió directamente
+  "en todos los artículos de blog pon dos secciones ofreciendo el servicio
+  del cual está hablando el artículo de blog", mostrando como referencia
+  visual una tarjeta de otro sitio (fondo oscuro, checklist, imagen, botón).
+  Se implementó adaptando ese patrón a la identidad de Cyrrus (navy/cyan en
+  vez de negro/rojo) sobre los 3 artículos existentes.
+- **Diseño:** nuevo componente `ArticleServiceCta`
+  (`src/components/sections/article-service-cta.tsx`) — tarjeta navy con
+  borde izquierdo cyan, título, descripción, 2 bullets con `CheckCircle2`
+  (mismo patrón que los bullets del hero de Estrategia) y un `BorderButton`
+  que enlaza a la página real del servicio del que habla el artículo (el
+  mismo `pillarHref` que ya usa la tarjeta "Servicio relacionado" del
+  sidebar desde 5.2), más una imagen a la derecha (`<Img>`) tomada de la
+  propia página del servicio para que la foto combine con el destino del
+  enlace. No usa `AnimatedNavyBackground` porque no es una sección a sangre
+  completa — es una tarjeta contenida dentro de la columna de 8/12 del
+  cuerpo del artículo (la regla de CLAUDE.md aplica a secciones full-bleed).
+- **Dónde se insertan:** cada artículo tiene exactamente 2 tarjetas, en
+  índices de bloque fijos (`serviceCtaIndexes` en `blog-data.ts`,
+  compartidos entre ES/EN porque `body` tiene la misma longitud y secuencia
+  de tipos en ambos idiomas — verificado con un script antes de fijar los
+  índices) elegidos justo antes de un `h2` existente, cerca del tercio y
+  las dos terceras partes del artículo, para que la tarjeta lea como un
+  corte de sección y no como una interrupción a mitad de párrafo. En el
+  artículo de transformación digital, la primera tarjeta cae justo antes de
+  "El cuarto error: dejar la gestión del cambio para el final" — coincide
+  con el tema de la tarjeta (Gestión del Cambio) casi por definición, dado
+  que ese es el pilar del artículo.
+- **Hecho (archivos):**
+  - `src/components/sections/article-service-cta.tsx`: componente nuevo.
+  - `src/lib/blog-data.ts`: `BlogPostEntry` gana `serviceCtaIndexes: [number,
+    number]` y `serviceCtaImages: [string, string]` (2 imágenes por
+    artículo, reutilizadas de la página del servicio real — sin fotos
+    nuevas, todas ya tenían derivados WebP optimizados).
+  - `src/pages/ArticuloPerspectiva.tsx`: `BlogPostTranslation` gana
+    `serviceCtas: [BlogServiceCta, BlogServiceCta]`; el `.map` sobre
+    `tr.body` pasó a `.flatMap` para poder intercalar la tarjeta en el
+    índice correspondiente sin envolver todo en un `Fragment` con key.
+  - `src/i18n/locales/{es,en}/blog.json`: bloque `serviceCtas` (2 objetos:
+    title/description/checklist/ctaLabel/imageAlt) añadido a los 3 posts,
+    en ambos idiomas — copy nueva, sin relleno corporativo (mismo criterio
+    de 4.2), en primera persona/tono directo consistente con el resto del
+    artículo.
+- **No tocado:** el contenido narrativo existente de los 3 artículos (no se
+  reescribió ningún párrafo); `blog-data.ts` no ganó artículos nuevos, solo
+  campos en los 3 existentes.
+- **Verificación:** `node -e` para validar JSON + confirmar que `body` tiene
+  la misma longitud/secuencia de tipos ES/EN antes de fijar los índices +
+  `npx tsc --noEmit` limpio + `npm run build` (72/72 rutas) + navegador
+  embebido: los 3 artículos en ES y en EN (`/en/perspectivas/...`), consola
+  limpia en los 6. Confirmado con JS en la página en vivo que el grid
+  interno de la tarjeta sí pasa a 2 columnas en desktop (299px + 299px,
+  medido con `getBoundingClientRect`, no solo por captura de pantalla — la
+  captura del panel salió con un artefacto de escalado que parecía mostrar
+  las columnas apiladas y llevó a verificar dos veces) y en 1 columna en
+  móvil; confirmado que los 6 botones (2 por artículo × 3 artículos)
+  resuelven al `pillarHref` correcto, incluida la ruta con `/en/` prefijado;
+  confirmado con `fetch()` que las 6 imágenes (2 por artículo, reutilizadas
+  de las páginas de servicio) devuelven 200.
+- **Quedó a medias:** nada de lo iniciado. Al publicar futuros artículos
+  (5.3), habrá que añadir su propio `serviceCtaIndexes`/`serviceCtaImages`/
+  `serviceCtas` siguiendo el mismo patrón — no quedó automatizado.
+- **Próximo paso:** el de la sesión de 8.1 sigue vigente (coordinar el
+  redeploy); alternativamente, con el dist ya reconstruido tras este cambio,
+  conviene generar un zip nuevo antes de desplegar para no perder este
+  trabajo también.
+
+### 2026-09-18 — Fase 8: medición real de LCP (8.1) — hallazgo de despliegue desactualizado
+- **Tarea:** 8.1 — sin bloqueos, uno de los tres candidatos de la sesión
+  anterior (junto a 6.1 y 2.4).
+- **Punto de partida:** PLAN.md pedía "medir tras cada fase grande con
+  PageSpeed Insights", pero hasta ahora solo se había medido con
+  `node scripts/lh.mjs` (Lighthouse local contra `dist/` servido por
+  `serve-dist.mjs`), cuyo propio comentario advierte que "los números
+  absolutos no van a coincidir con PageSpeed (máquina y red distintas)".
+  Nunca se había corrido una medición real contra `cyrruscs.com`.
+- **Hecho:**
+  1. Se corrió PageSpeed Insights real (navegador embebido,
+     `pagespeed.web.dev`, perfil móvil) contra `https://cyrruscs.com/` →
+     Performance 65, **LCP 2,3 s** (ya cumple la meta <2,5s), TBT 1.700 ms,
+     Speed Index 5,5 s.
+  2. El TBT de 1.700 ms no cuadraba con los 100-180 ms que reporta
+     `PROGRESO.md` de sesiones de performance anteriores (Fase 0), así que
+     se investigó la causa en vez de aceptar el número: se corrió
+     `npm run build` local (build limpio con el código actual) y
+     `node scripts/lh.mjs --runs 3`, que dio TBT = 106 ms — coherente con
+     el trabajo ya hecho en `ShaderHero` (mount diferido, límites de
+     `minPixelRatio`/`maxPixelCount`, animación pausada fuera de vista).
+  3. Se comparó el hash del bundle: local genera `index-CqXVWnTH.js`;
+     producción sirve `index-CDnTzrKm.js` — **no son el mismo build**.
+  4. Se confirmó con `fetch()` a las cabeceras HTTP reales de
+     `cyrruscs.com`: `Last-Modified: Sat, 12 Sep 2026 18:17:42 GMT` tanto
+     en el HTML como en el JS principal. El repo tiene commits de hoy
+     (3.2, 3.4, 4.8) y de sesiones de esta semana (4.1-4.7, "Fondo blanco y
+     rediseño") que **no están en producción**. Se verificó además
+     navegando a `/metodo-cira/estrategia` en vivo: falta la sección
+     "Servicios relacionados" y la 6ª FAQ que se añadieron en la tarea 4.1
+     — confirma visualmente el desfase, no solo por cabeceras.
+  5. De paso (sin ser el foco de 8.1): se confirmó que los assets con hash
+     ya tienen `Cache-Control: max-age=315360000` en producción — la parte
+     de caché de 8.2 ya está resuelta del lado del hosting; falta revisar
+     cabeceras de seguridad (HSTS, etc.), no confirmadas.
+- **No tocado:** ningún archivo de código — el hallazgo hace que cualquier
+  cambio de performance adicional sea prematuro hasta que se sepa si el
+  build actual, una vez desplegado, ya cumple la meta (todo indica que sí,
+  dado que el build stale de hace 6 días ya la cumple y el local es
+  bastante mejor en TBT).
+- **Verificación:** la propia medición de PSI + comparación de hashes +
+  cabeceras HTTP + lectura del HTML en vivo son la verificación. No se
+  corrió `npm run build && node scripts/serve-dist.mjs` como cierre porque
+  no hubo cambio de código que verificar.
+- **Quedó a medias:** 8.1 no se puede cerrar como "hecho" sin una medición
+  de PSI real *después* del redeploy — queda como bloqueado, no completado,
+  aunque todo apunta a que ya cumple la meta.
+- **Próximo paso:** coordinar con el dueño el redeploy del build actual a
+  producción (ver Bloqueos). Una vez desplegado, repetir la medición de PSI
+  real en 8.1 para cerrarla formalmente. Mientras tanto, los otros dos
+  candidatos sin bloqueos de la sesión anterior siguen disponibles: 6.1
+  (Bing Webmaster) o 2.4 (política de independencia).
 
 ### 2026-09-18 — Fase 3: captura de interesados por taller (3.4)
 - **Tarea:** 3.4 — sin bloqueos, siguiente candidato de la sesión anterior.

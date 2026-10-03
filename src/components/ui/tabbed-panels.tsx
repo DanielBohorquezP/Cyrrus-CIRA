@@ -134,12 +134,12 @@ export function TabbedPanels({
           >
             {panel.eyebrow}
           </span>
-          <h2
+          <h3
             className="panel-enter-child mt-3 text-2xl font-bold text-white md:text-3xl"
             style={{ "--panel-delay": "100ms" } as React.CSSProperties}
           >
             {panel.title}
-          </h2>
+          </h3>
           <p
             className="panel-enter-child mt-4 text-base leading-relaxed text-white/70"
             style={{ "--panel-delay": "150ms" } as React.CSSProperties}

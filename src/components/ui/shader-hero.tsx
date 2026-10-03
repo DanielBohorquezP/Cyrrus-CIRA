@@ -319,6 +319,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
             <div className="hero-badge-ring absolute h-[60px] w-[60px] rounded-full border-2 border-cyan/70" />
             <div className="absolute h-[60px] w-[60px] rounded-full bg-gradient-to-br from-cyan/40 via-blue/30 to-navy/40 backdrop-blur-sm" />
             <svg
+              aria-hidden="true"
               className="hero-badge-spin absolute inset-0 h-full w-full"
               viewBox="0 0 100 100"
             >

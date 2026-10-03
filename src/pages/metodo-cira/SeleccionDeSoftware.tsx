@@ -96,7 +96,7 @@ export default function SeleccionDeSoftware() {
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: "LATAM",
+        areaServed: "Worldwide",
       },
       {
         "@context": "https://schema.org",

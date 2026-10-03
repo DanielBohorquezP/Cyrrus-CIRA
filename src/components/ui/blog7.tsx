@@ -47,7 +47,7 @@ const Blog7 = ({
   headingAs = "h2",
   description = "Discover the latest trends, tips, and best practices in modern web development. From UI components to design systems, stay updated with our expert insights.",
   buttonText = "View all articles",
-  buttonUrl = "https://shadcnblocks.com",
+  buttonUrl = "/perspectivas",
   onButtonClick,
   posts = [
     {
@@ -110,15 +110,18 @@ const Blog7 = ({
             </Button>
           ) : (
             <Button variant="link" className="w-full sm:w-auto" asChild>
-              <a href={buttonUrl} target="_blank" rel="noopener noreferrer">
+              <Link to={buttonUrl}>
                 {buttonText}
                 <ArrowRight className="ml-2 size-4" />
-              </a>
+              </Link>
             </Button>
           )}
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {posts.map((post) => {
+            // One level below the section heading: h2 cards under the
+            // /perspectivas h1, h3 cards under the Home's h2 section.
+            const CardHeading = headingAs === "h1" ? "h2" : "h3";
             const card = (
               <Card className="grid grid-rows-[auto_auto_1fr_auto] transition-[box-shadow] duration-150 ease-out has-[a:hover]:shadow-lg">
                 <div className="relative aspect-[16/9] w-full">
@@ -142,7 +145,7 @@ const Blog7 = ({
                   )}
                 </div>
                 <CardHeader>
-                  <h2 className="text-lg font-semibold md:text-xl">
+                  <CardHeading className="text-lg font-semibold md:text-xl">
                     {post.href ? (
                       <Link to={post.href} className="hover:text-cyan">
                         {post.title}
@@ -150,7 +153,7 @@ const Blog7 = ({
                     ) : (
                       post.title
                     )}
-                  </h2>
+                  </CardHeading>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">{post.summary}</p>

@@ -33,7 +33,7 @@
       ]
     },
     "innovacion-empresarial": {
-      "title": "Taller de innovación empresarial",
+      "title": "Innovación empresarial: taller para directivos",
       "shortDescription": "Presupuesto sin criterio de inversión",
       "intro": "Hay presupuesto de innovación y ninguna forma de decidir en qué invertirlo sin perseguir la última tendencia.",
       "body": [
@@ -42,7 +42,7 @@
       ]
     },
     "iso-27001": {
-      "title": "Capacitación ISO 27001 para empresas",
+      "title": "Curso ISO 27001 para empresas: capacitación ejecutiva",
       "shortDescription": "Certificación exigida, sin plan",
       "intro": "Un cliente grande exige certificación ISO 27001 y nadie en la organización sabe por dónde empezar.",
       "body": [
@@ -51,12 +51,14 @@
       ]
     },
     "continuidad-de-negocio-drp": {
-      "title": "Taller de continuidad de negocio (DRP)",
+      "title": "Plan de continuidad de negocio y DRP: taller ejecutivo",
       "shortDescription": "Un DRP que nunca se ha probado",
       "intro": "Nunca han probado qué pasa si el sistema principal cae un lunes a las 9am — y un plan de continuidad que no se prueba no es un plan.",
       "body": [
         "Un plan de continuidad de negocio que nunca se ha probado no es un plan. Este taller lleva a los equipos a diseñar y ensayar su plan de recuperación ante desastres (DRP) con escenarios reales.",
-        "Ideal para organizaciones que ya migraron o están migrando infraestructura crítica a la nube."
+        "Ideal para organizaciones que ya migraron o están migrando infraestructura crítica a la nube.",
+        "Un plan de continuidad de negocio define cómo sigue operando una organización cuando algo crítico falla. Parte de un análisis de impacto en el negocio (BIA), que identifica qué procesos son indispensables y cuánto daño causa cada hora sin ellos; de ahí salen dos metas medibles: el RTO, el tiempo máximo aceptable para recuperar un servicio, y el RPO, la cantidad máxima de datos que se puede perder.",
+        "El plan de recuperación ante desastres (DRP) es la parte técnica: qué sistemas se restauran, en qué orden, con qué respaldos y quién decide. Sin simulacros periódicos, el plan queda en el papel. El plan es de la dirección, no solo del área de tecnología."
       ]
     },
     "gestion-del-cambio-para-lideres": {
