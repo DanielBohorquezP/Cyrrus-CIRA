@@ -88,6 +88,7 @@ export default function CursoDetalle() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero eyebrow={entry.eyebrow} title={tr.title} description={tr.intro} breadcrumbs={breadcrumbItems} />
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
@@ -121,6 +122,7 @@ export default function CursoDetalle() {
         </div>
       </section>
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

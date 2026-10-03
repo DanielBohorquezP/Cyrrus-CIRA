@@ -6,6 +6,7 @@ import { BorderButton } from "@/components/ui/border-button";
 import { NavMenu } from "@/components/layout/nav-menu";
 import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
 import { useLang } from "@/lib/language";
+import { LanguageLink } from "@/components/layout/language-link";
 import { useScrolled } from "@/lib/use-scrolled";
 import { cn } from "@/lib/utils";
 import { Img } from "@/components/ui/img";
@@ -91,6 +92,13 @@ export function SiteHeader() {
   }, [mobileOpen]);
 
   return (
+    <>
+      <a
+        href="#contenido"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-navy focus:shadow-md"
+      >
+        {lang === "en" ? "Skip to content" : "Saltar al contenido"}
+      </a>
     <header
       className={cn(
         "sticky top-0 z-30 flex h-20 w-full items-center justify-between border-b bg-background/95 px-6 backdrop-blur-md transition-[box-shadow,border-color] duration-100 ease-out md:px-12",
@@ -110,6 +118,7 @@ export function SiteHeader() {
       </Link>
       <NavMenu items={navItems} variant={"light"} />
       <div className="flex items-center gap-2">
+        <LanguageLink className="text-navy hover:text-blue" />
         <BorderButton
           variant="dark"
           size="sm"
@@ -163,5 +172,6 @@ export function SiteHeader() {
         </div>
       </div>
     </header>
+    </>
   );
 }

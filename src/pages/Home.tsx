@@ -58,8 +58,9 @@ export default function Home() {
 
   return (
     <>
+      <TransparentHeader />
+      <main id="contenido">
       <div className="relative">
-        <TransparentHeader />
         <ShaderHero
           eyebrow={t("hero.eyebrow")}
           titleAccent={t("hero.titleAccent")}
@@ -106,6 +107,7 @@ export default function Home() {
       />
       <PerspectivasPreview />
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

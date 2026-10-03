@@ -72,7 +72,9 @@ export default function IntelligenceLab() {
         name: "Cyrrus Intelligence Lab",
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDescription"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -98,6 +100,7 @@ export default function IntelligenceLab() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <IntelligenceLabHero
         eyebrow={t("hub.hero.eyebrow")}
         title={t("hub.hero.title")}
@@ -192,6 +195,7 @@ export default function IntelligenceLab() {
       <FaqSection eyebrow={t("hub.faq.eyebrow")} title={t("hub.faq.title")} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

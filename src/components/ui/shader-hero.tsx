@@ -228,7 +228,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
 
-        <main className="absolute bottom-10 left-6 z-20 max-w-2xl md:bottom-16 md:left-12">
+        <div className="absolute bottom-10 left-6 z-20 max-w-2xl md:bottom-16 md:left-12">
           {/* No opacity in any of these entrance animations, for the same
               reason Reveal avoids it (see src/components/ui/reveal.tsx): the
               prerender bakes the finished state into the static HTML, so
@@ -302,7 +302,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
               <ArrowRight className="h-4 w-4" />
             </HeroLink>
           </div>
-        </main>
+        </div>
 
         {/* The ring and the circling wordmark were framer-motion `repeat:
             Infinity` loops, which tick a requestAnimationFrame callback on the

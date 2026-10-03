@@ -113,19 +113,23 @@ function LevelsStack() {
   );
 }
 
-const clientLogos = clientLogoNames.map((name) => (
-  <div
-    key={name}
-    className="flex h-16 w-40 items-center justify-center rounded-lg bg-white/10 p-2.5"
-  >
-    <Img
-      src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
-      alt={name}
-      sizes="140px"
-      className="h-full w-full object-contain"
-    />
-  </div>
-));
+const renderClientLogos = (decorative: boolean) =>
+  clientLogoNames.map((name) => (
+    <div
+      key={name}
+      className="flex h-16 w-40 items-center justify-center rounded-lg bg-white/10 p-2.5"
+    >
+      <Img
+        src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
+        alt={decorative ? "" : name}
+        sizes="140px"
+        className="h-full w-full object-contain"
+      />
+    </div>
+  ));
+
+const clientLogos = renderClientLogos(false);
+const clientLogosDuplicate = renderClientLogos(true);
 
 function ClientLogos() {
   const { t } = useTranslation("home");
@@ -135,7 +139,7 @@ function ClientLogos() {
         {t("about.clientesTitulo")}
       </p>
       <div className="mt-6">
-        <LogoCarousel items={clientLogos} />
+        <LogoCarousel items={clientLogos} duplicateItems={clientLogosDuplicate} />
       </div>
     </div>
   );

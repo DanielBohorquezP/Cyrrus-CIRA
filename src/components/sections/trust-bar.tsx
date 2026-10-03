@@ -3,19 +3,23 @@ import { LogoCarousel } from "@/components/ui/logo-carousel";
 import { clientLogoNames } from "@/lib/client-logos";
 import { Img } from "@/components/ui/img";
 
-const clientLogos = clientLogoNames.map((name) => (
-  <div
-    key={name}
-    className="flex h-11 w-32 items-center justify-center rounded-md bg-navy p-1.5"
-  >
-    <Img
-      src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
-      alt={name}
-      sizes="140px"
-      className="h-full w-full object-contain"
-    />
-  </div>
-));
+const renderClientLogos = (decorative: boolean) =>
+  clientLogoNames.map((name) => (
+    <div
+      key={name}
+      className="flex h-11 w-32 items-center justify-center rounded-md bg-navy p-1.5"
+    >
+      <Img
+        src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
+        alt={decorative ? "" : name}
+        sizes="140px"
+        className="h-full w-full object-contain"
+      />
+    </div>
+  ));
+
+const clientLogos = renderClientLogos(false);
+const clientLogosDuplicate = renderClientLogos(true);
 
 interface Metric {
   value: string;
@@ -52,6 +56,7 @@ export function TrustBar() {
         <div className="w-full lg:w-auto">
           <LogoCarousel
             items={clientLogos}
+            duplicateItems={clientLogosDuplicate}
             className="lg:w-[420px]"
           />
         </div>

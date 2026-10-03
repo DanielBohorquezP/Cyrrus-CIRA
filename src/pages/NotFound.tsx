@@ -21,6 +21,7 @@ export default function NotFound() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <section className="flex min-h-[60vh] w-full flex-col items-center justify-center bg-background px-6 py-24 text-center md:py-32">
         <p className="text-sm font-semibold uppercase tracking-wide text-blue">404</p>
         <h1 className="mt-3 text-3xl font-semibold text-navy md:text-4xl">
@@ -35,6 +36,7 @@ export default function NotFound() {
           <Link to={isEn ? "/en" : "/"}>{isEn ? "Back to home" : "Volver al inicio"}</Link>
         </BorderButton>
       </section>
+      </main>
       <Footer />
     </>
   );

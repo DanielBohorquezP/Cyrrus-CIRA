@@ -32,11 +32,12 @@ export default function Perspectivas() {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
 
   const publishedPosts = blogPosts.map((entry) => {
     const tr = tBlog(`posts.${entry.slug}`, { returnObjects: true }) as BlogPostSummary;
-    const dateLabel = `${lang === "en" ? "Published" : "Publicado"} ${dateFormatter.format(new Date(`${entry.publishedAt}T00:00:00`))}`;
+    const dateLabel = `${lang === "en" ? "Published" : "Publicado"} ${dateFormatter.format(new Date(`${entry.publishedAt}T00:00:00Z`))}`;
     return {
       id: entry.slug,
       title: tr.title,
@@ -84,6 +85,7 @@ export default function Perspectivas() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
 
       <Blog7
         tagline={t("perspectivas.tagline")}
@@ -92,10 +94,11 @@ export default function Perspectivas() {
         description={t("perspectivas.description")}
         buttonText={t("perspectivas.buttonText")}
         onButtonClick={openWizard}
-        posts={[...publishedPosts, ...upcomingTopics]}
+        posts={[...publishedPosts, ...upcomingTopics.map((topic) => ({ ...topic, dateLabel: lang === "en" ? "Coming soon" : "Próximamente" }))]}
       />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

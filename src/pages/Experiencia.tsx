@@ -108,6 +108,7 @@ export default function Experiencia() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <IntelligenceLabHero
         eyebrow={t("experiencia.hero.eyebrow")}
         title={t("experiencia.hero.title")}
@@ -285,6 +286,7 @@ export default function Experiencia() {
       </section>
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

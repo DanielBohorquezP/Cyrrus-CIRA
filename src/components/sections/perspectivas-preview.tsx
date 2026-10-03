@@ -20,11 +20,12 @@ export function PerspectivasPreview() {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
 
   const publishedPosts = blogPosts.map((entry) => {
     const tr = tBlog(`posts.${entry.slug}`, { returnObjects: true }) as BlogPostSummary;
-    const dateLabel = `${lang === "en" ? "Published" : "Publicado"} ${dateFormatter.format(new Date(`${entry.publishedAt}T00:00:00`))}`;
+    const dateLabel = `${lang === "en" ? "Published" : "Publicado"} ${dateFormatter.format(new Date(`${entry.publishedAt}T00:00:00Z`))}`;
     return {
       id: entry.slug,
       title: tr.title,

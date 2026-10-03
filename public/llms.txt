@@ -1,6 +1,6 @@
 # Cyrrus Consulting Services
 
-> Consultoría estratégica y transformación digital con inteligencia artificial en LATAM, a través de la metodología CIRA: Construir, Identificar, Realizar, Adoptar.
+> Consultoría estratégica y transformación digital con inteligencia artificial para empresas de Latinoamérica y Estados Unidos, a través de la metodología CIRA: Construir, Identificar, Realizar, Adoptar.
 
 Cyrrus acompaña a las empresas a lo largo de todo el ciclo de transformación digital: define la estrategia, selecciona la solución tecnológica correcta sin sesgo de proveedor, gestiona la ejecución del proyecto como PMO externo, y asegura la adopción real por parte del equipo, con inteligencia artificial acelerando cada fase.
 
@@ -35,9 +35,13 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1). Oficinas e
 - [Leadership Academy](https://cyrruscs.com/leadership-academy): talleres para altos ejecutivos y capacitación gerencial.
 
 ## Perspectivas (blog)
+- [Perspectivas](https://cyrruscs.com/perspectivas): índice de artículos de Cyrrus sobre transformación digital, selección de tecnología, gerencia de proyectos y gobierno de IA.
 - [Por qué fracasan los proyectos de transformación digital](https://cyrruscs.com/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital): las organizaciones no fracasan por falta de tecnología ni de presupuesto, sino cuando nadie conecta la decisión con las personas que deben ejecutarla. Siete errores que se repiten y cómo evitarlos.
 - [Cómo elegir una consultora estratégica confiable](https://cyrruscs.com/perspectivas/como-elegir-una-consultora-estrategica-confiable): tres señales de una firma que realmente entiende su negocio, frente a una que solo completa un documento.
 - [Qué es el Gobierno de IA corporativo y por qué su empresa lo necesita](https://cyrruscs.com/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): qué es el Gobierno de IA y por dónde debe empezar un CEO antes de adoptar inteligencia artificial.
+- [Qué es un ERP y cómo elegirlo: guía práctica](https://cyrruscs.com/perspectivas/que-es-un-erp-guia-para-elegirlo): qué es un ERP, para qué sirve, qué módulos incluye y siete criterios para elegir el adecuado.
+- [Qué es una PMO: funciones, tipos y cuándo necesitarla](https://cyrruscs.com/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla): qué es una PMO, para qué sirve, qué tipos existen y cómo saber si su empresa la necesita.
+- [Gerencia de proyectos: cuándo contratar una PMO externa](https://cyrruscs.com/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.
 
 ## Otras páginas
 - [Inicio](https://cyrruscs.com/): consultoría estratégica y transformación digital con IA para empresas de Latinoamérica y Estados Unidos, vía la metodología CIRA.
@@ -71,3 +75,7 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1). Oficinas e
 - [Why Digital Transformation Projects Fail](https://cyrruscs.com/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital): organizations don't fail for lack of technology or budget — they fail when no one connects the decision to the people who have to execute it.
 - [How to Choose a Trustworthy Strategic Consulting Firm](https://cyrruscs.com/en/perspectivas/como-elegir-una-consultora-estrategica-confiable): three signs of a firm that truly understands your business, versus one that just fills out a document.
 - [What Corporate AI Governance Is](https://cyrruscs.com/en/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): what AI Governance is, and where a CEO should start before adopting artificial intelligence.
+- [Perspectives](https://cyrruscs.com/en/perspectivas): index of Cyrrus articles on digital transformation, technology selection, project management and AI governance.
+- [What is an ERP and how to choose one: a practical guide](https://cyrruscs.com/en/perspectivas/que-es-un-erp-guia-para-elegirlo): what an ERP is, what it is for, which modules it includes and seven criteria for choosing the right one.
+- [What is a PMO: functions, types and when you need one](https://cyrruscs.com/en/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla): what a PMO is, what it is for, which types exist and how to tell whether you need one.
+- [Project management: when to hire an external PMO](https://cyrruscs.com/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): five signs your project needs external management and what to demand of it.

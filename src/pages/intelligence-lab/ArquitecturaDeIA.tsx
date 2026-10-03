@@ -73,7 +73,9 @@ export default function ArquitecturaDeIA() {
         name: t("arquitectura.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("arquitectura.meta.description"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -101,6 +103,7 @@ export default function ArquitecturaDeIA() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow="Cyrrus Intelligence Lab"
         title={t("arquitectura.hero.title")}
@@ -175,6 +178,7 @@ export default function ArquitecturaDeIA() {
       <FaqSection eyebrow={t("arquitectura.faq.eyebrow")} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

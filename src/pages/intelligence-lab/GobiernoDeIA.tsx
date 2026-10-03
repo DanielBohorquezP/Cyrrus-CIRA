@@ -74,7 +74,9 @@ export default function GobiernoDeIA() {
         name: t("gobierno.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("gobierno.meta.description"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -102,6 +104,7 @@ export default function GobiernoDeIA() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow="Cyrrus Intelligence Lab"
         title={t("gobierno.hero.title")}
@@ -182,6 +185,7 @@ export default function GobiernoDeIA() {
       <FaqSection eyebrow={t("gobierno.faq.eyebrow")} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

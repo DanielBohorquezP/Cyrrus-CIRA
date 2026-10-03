@@ -114,7 +114,9 @@ export default function PlaneacionEstrategica() {
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -142,6 +144,7 @@ export default function PlaneacionEstrategica() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
@@ -408,6 +411,7 @@ export default function PlaneacionEstrategica() {
       <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

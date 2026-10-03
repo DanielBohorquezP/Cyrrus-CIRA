@@ -160,7 +160,9 @@ export default function SeleccionProducto() {
               name: hero.title,
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
-              areaServed: "Worldwide",
+              areaServed: { "@type": "Place", name: "Worldwide" },
+              url: `${siteUrl}${pagePath}`,
+              mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
             },
             {
               "@context": "https://schema.org",
@@ -213,6 +215,7 @@ export default function SeleccionProducto() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow={hero.eyebrow}
         title={hero.title}
@@ -450,6 +453,7 @@ export default function SeleccionProducto() {
       <FaqSection eyebrow={hero.eyebrow} title={lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes"} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

@@ -89,7 +89,9 @@ export default function SolucionDetalle() {
               name: entry.label,
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
-              areaServed: "Worldwide",
+              areaServed: { "@type": "Place", name: "Worldwide" },
+              url: `${siteUrl}${pagePath}`,
+              mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
             },
             {
               "@context": "https://schema.org",
@@ -130,6 +132,7 @@ export default function SolucionDetalle() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow={entry.eyebrow}
         title={entry.h1 ?? `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`}
@@ -266,6 +269,7 @@ export default function SolucionDetalle() {
       <FaqSection eyebrow={entry.label} title={t("detail.faqTitle")} faqs={entry.faq} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );
