@@ -1,9 +1,9 @@
 export const upcomingTopics = [
   {
     id: "post-4",
-    title: "ERP: qué es y por qué su empresa lo necesita",
+    title: "Qué es RPA y cuándo conviene frente a la IA",
     summary:
-      "Qué es un ERP y qué problemas resuelve. También en qué momento del crecimiento de una empresa se vuelve necesario.",
+      "Qué es la automatización robótica de procesos, en qué se diferencia de la inteligencia artificial y de los agentes de IA, y cómo decidir cuál conviene.",
     label: "Selección de soluciones",
     author: "Equipo Cyrrus",
     published: "Octubre 2026",
@@ -34,9 +34,9 @@ export const upcomingTopics = [
   },
   {
     id: "post-7",
-    title: "Cómo elegir el ERP correcto: 7 criterios clave",
+    title: "Qué es un CRM y cómo elegir el correcto",
     summary:
-      "Los criterios objetivos que debería usar cualquier empresa para comparar proveedores de ERP, más allá del precio y el nombre del fabricante.",
+      "Qué es un CRM, qué problemas resuelve y qué criterios usar para elegir el que su equipo comercial sí va a adoptar.",
     label: "Selección de soluciones",
     author: "Equipo Cyrrus",
     published: "Diciembre 2026",
@@ -45,9 +45,9 @@ export const upcomingTopics = [
   },
   {
     id: "post-8",
-    title: "Gestión del cambio organizacional: por qué fracasan los proyectos de TI",
+    title: "Resistencia al cambio: causas y cómo superarla",
     summary:
-      "La tecnología rara vez es el problema. Un repaso de las razones reales por las que los proyectos de implementación no logran adopción real.",
+      "Por qué las personas se resisten al cambio en una organización y qué hacer para que lo nuevo se adopte y se sostenga.",
     label: "Gestión del cambio",
     author: "Equipo Cyrrus",
     published: "Diciembre 2026",
@@ -56,9 +56,9 @@ export const upcomingTopics = [
   },
   {
     id: "post-9",
-    title: "PMO externo vs. interno: cuál conviene para su próximo proyecto",
+    title: "Agentes de IA para empresas: qué son y casos de uso",
     summary:
-      "Ventajas y límites de cada modelo de gerencia de proyectos, y cómo decidir cuál se ajusta mejor al tamaño y la urgencia de su implementación.",
+      "Qué es un agente de IA, en qué se diferencia de un chatbot y en qué procesos de una empresa tiene sentido usarlo.",
     label: "Gerencia de proyectos",
     author: "Equipo Cyrrus",
     published: "Enero 2027",

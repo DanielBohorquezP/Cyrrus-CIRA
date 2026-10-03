@@ -88,8 +88,8 @@ export function usePageMeta({ title, description, jsonLd, image, noindex, noCano
       // wrong for every /en one — a scraper reading an English page was told it
       // was Colombian Spanish. Managed per-page here like the rest of the OG
       // tags; the static tag stays as the shell's default.
-      ["og:locale", isEnglish ? "en_US" : "es_CO"],
-      ["og:locale:alternate", isEnglish ? "es_CO" : "en_US"],
+      ["og:locale", isEnglish ? "en_US" : "es_LA"],
+      ["og:locale:alternate", isEnglish ? "es_LA" : "en_US"],
     ];
     const previousOg: Array<{ el: Element; value: string }> = [];
     for (const [property, content] of ogTagConfig) {

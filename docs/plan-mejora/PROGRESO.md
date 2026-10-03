@@ -194,6 +194,14 @@
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
 
+### 2026-10-03 (2) — Auditoría SEO+IA de la home y correcciones aplicadas (a pedido del usuario)
+- **Auditoría** (`/claude-seo-ai:audit`, build local): Search SEO 68,6 (D) y AI Visibility 62,5 (D) antes de corregir; sin tope por gravedad. Con la verificación en producción (gzip, caché 10 años, redirecciones y 404 ya resueltos por el hosting) Search sube a ~76,6 (C) sin recalcular lo demás.
+- **Correcciones aplicadas** (rama `seo-fixes-2026-10-03`): logo del Organization restaurado (`cyrrus-logo-color.png`); `llms.txt` con los 3 artículos y `/perspectivas`; schema (WebSite `alternateName`, descripción es/en, `sameAs` del fundador, `hasOfferCatalog`, oficinas como nodos `ProfessionalService`, `areaServed` como Place en los Service); autor del BlogPosting por `@id`, campo `updatedAt`, fechas en UTC; títulos de los artículos ERP/PMO acortados; 3 meta descriptions recortadas; H2 de la home; enlace real al otro idioma en el header (botón EN/ES nuevo) y columna "Servicios" en el footer; marquee de logos con duplicado `aria-hidden`; hub `/perspectivas` con "Próximamente" y 4 temas solapados reemplazados (RPA, CRM, resistencia al cambio, agentes de IA); `<main id="contenido">` único en todas las páginas + enlace "Saltar al contenido".
+- **Decisiones de negocio tomadas:** se quitó `share.google` del `sameAs` (se mantiene el enlace visible del footer); no se añadió X (cuenta sin confirmar); `taxID` se mantiene (el NIT es visible en el footer); `og:locale` pasa de `es_CO` a `es_LA`.
+- **Verificado:** `tsc` limpio, build 78/78, un `<main>` por página en `dist/` (79 html), JSON-LD válido, consola limpia en `/`, `/en/metodo-cira`, `/privacidad`, ERP y 404.
+- **No aplicado:** cifras de países/"60%"/casos/credenciales (tarea 0.6, requiere al cliente), política editorial, tabla comparativa, rangos de duración.
+- **Próximo paso:** redeploy; revisar el botón de idioma nuevo; resolver 0.6 con el cliente.
+
 ### 2026-10-03 — Investigación de keywords por servicio, reajuste de títulos y H1, ampliación de páginas y 2 artículos (a pedido del usuario)
 - **Hecho:**
   - Investigación Ubersuggest (ES; México, Colombia y España) de todos los servicios; resultados en `keywords-servicios.md` y `keywords-ranking.md`. Dominio: DA 13, ~8 visitas/mes. Cuota diaria agotada al final (no se midieron `togaf`, `consultoría en ciberseguridad`, `ley de inteligencia artificial`).

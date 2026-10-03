@@ -59,6 +59,18 @@ export function Footer() {
     { label: t("nav.perspectivas", { ns: "common" }), href: langPath("/perspectivas", lang) },
   ];
 
+  // Descriptive-anchor links to the service pages, so the home (and every page
+  // that renders the footer) passes link equity to them with crawlable <a href>.
+  const serviceLinks = [
+    { label: t("nav.estrategia", { ns: "common" }), href: langPath("/metodo-cira/estrategia", lang) },
+    { label: t("nav.seleccionSoftware", { ns: "common" }), href: langPath("/metodo-cira/seleccion-de-soluciones/seleccion-de-software", lang) },
+    { label: t("nav.gerenciaProyectos", { ns: "common" }), href: langPath("/metodo-cira/gestion-de-proyectos", lang) },
+    { label: t("nav.gestionCambio", { ns: "common" }), href: langPath("/metodo-cira/gestion-del-cambio", lang) },
+    { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/intelligence-lab", lang) },
+    { label: t("footer.presenciaDigital", { ns: "common" }), href: langPath("/presencia-digital", lang) },
+    { label: t("nav.leadershipAcademy", { ns: "common" }), href: langPath("/leadership-academy", lang) },
+  ];
+
   const legalLinks = [
     { label: t("footer.privacidad", { ns: "common" }), href: langPath("/privacidad", lang) },
     { label: t("footer.cookies", { ns: "common" }), href: langPath("/cookies", lang) },
@@ -116,7 +128,18 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <address className="mx-auto mt-10 flex max-w-6xl flex-col items-center gap-x-8 gap-y-2 border-t border-border px-6 pt-6 text-center text-xs not-italic text-muted-foreground md:flex-row md:flex-wrap md:justify-between md:text-left">
+      <nav
+        aria-label={t("footer.servicios", { ns: "common" })}
+        className="mx-auto mt-10 flex max-w-6xl flex-col items-center gap-3 border-t border-border px-6 pt-6 text-center md:flex-row md:flex-wrap md:items-baseline md:gap-x-6 md:text-left"
+      >
+        <span className="text-xs font-semibold uppercase tracking-wide text-navy">{t("footer.servicios", { ns: "common" })}</span>
+        {serviceLinks.map((link) => (
+          <Link key={link.href} to={link.href} className="text-sm text-gray transition-colors hover:text-navy">
+            {link.label}
+          </Link>
+        ))}
+      </nav>
+      <address className="mx-auto mt-6 flex max-w-6xl flex-col items-center gap-x-8 gap-y-2 border-t border-border px-6 pt-6 text-center text-xs not-italic text-muted-foreground md:flex-row md:flex-wrap md:justify-between md:text-left">
         <span className="font-semibold text-navy">
           {lang === "en" ? "Cyrrus Consulting Services S.A.S. · Tax ID (NIT) 901.121.953-1" : "Cyrrus Consulting Services S.A.S. · NIT 901.121.953-1"}
         </span>

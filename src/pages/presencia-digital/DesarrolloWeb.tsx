@@ -95,7 +95,9 @@ export default function DesarrolloWeb() {
         name: t("desarrolloWeb.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("desarrolloWeb.meta.description"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -123,6 +125,7 @@ export default function DesarrolloWeb() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow={t("desarrolloWeb.hero.eyebrow")}
         title={t("desarrolloWeb.hero.title")}
@@ -383,6 +386,7 @@ export default function DesarrolloWeb() {
       <FaqSection eyebrow={t("desarrolloWeb.faq.eyebrow")} title={t("desarrolloWeb.faq.title")} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

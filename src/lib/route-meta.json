@@ -5,7 +5,7 @@
   },
   "/metodo-cira": {
     "title": "Consultoría Empresarial y de Negocios: Método CIRA | Cyrrus",
-    "description": "Consultoría empresarial y de negocios con el Método CIRA de Cyrrus: el marco de 4 fases que lleva a su empresa de la estrategia a la adopción real, con IA en cada paso."
+    "description": "Consultoría empresarial y de negocios con el Método CIRA de Cyrrus: 4 fases que llevan a su empresa de la estrategia a la adopción real, con IA."
   },
   "/metodo-cira/estrategia": {
     "title": "Consultoría Estratégica y Planeación Estratégica | Cyrrus",
@@ -21,7 +21,7 @@
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp": {
     "title": "Qué es un ERP y Cómo Elegirlo: Selección Independiente | Cyrrus",
-    "description": "Qué es un ERP y cómo elegirlo: consultoría de selección de ERP. Definimos, evaluamos y elegimos con usted el ERP que mejor se ajusta a sus procesos — 100% agnósticos de proveedor."
+    "description": "Qué es un ERP y cómo elegirlo: consultoría de selección de ERP. Evaluamos y elegimos el que mejor se ajusta a sus procesos, 100% agnósticos de proveedor."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm": {
     "title": "Qué es un CRM y Cómo Elegir el Correcto | Cyrrus",
@@ -61,7 +61,7 @@
   },
   "/intelligence-lab/arquitectura-de-ia": {
     "title": "Arquitectura Empresarial y de IA: Datos y Sistemas | Cyrrus",
-    "description": "Arquitectura empresarial y de IA: diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que proliferen las herramientas sueltas."
+    "description": "Arquitectura empresarial y de IA: diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable."
   },
   "/intelligence-lab/gobierno-de-ia": {
     "title": "Gobierno de IA en Empresas: Políticas y Controles | Cyrrus",

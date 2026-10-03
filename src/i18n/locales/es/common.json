@@ -58,6 +58,8 @@
     "cerrarMenu": "Cerrar menú"
   },
   "footer": {
+    "servicios": "Servicios",
+    "presenciaDigital": "Presencia Digital",
     "privacidad": "Privacidad",
     "cookies": "Cookies"
   }

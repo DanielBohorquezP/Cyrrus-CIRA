@@ -69,7 +69,9 @@ export default function AutomatizacionesDesarrollo() {
         name: t("automatizaciones.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("automatizaciones.meta.description"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -97,6 +99,7 @@ export default function AutomatizacionesDesarrollo() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow="Cyrrus Intelligence Lab"
         title={t("automatizaciones.hero.title")}
@@ -171,6 +174,7 @@ export default function AutomatizacionesDesarrollo() {
       <FaqSection eyebrow={t("automatizaciones.faq.eyebrow")} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

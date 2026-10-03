@@ -3,6 +3,8 @@ export interface BlogPostEntry {
   coverImage: string;
   /** ISO date (YYYY-MM-DD). Drives the displayed date and the BlogPosting JSON-LD. */
   publishedAt: string;
+  /** ISO date (YYYY-MM-DD) of the last substantive edit. Optional; drives dateModified, falling back to publishedAt. */
+  updatedAt?: string;
   /**
    * The service page (pillar) this article's cluster belongs to — canonical
    * Spanish path. Pass through langPath() for the EN route. Used to render

@@ -97,8 +97,9 @@ export default function ArticuloPerspectiva() {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
-  const displayDate = entry ? dateFormatter.format(new Date(`${entry.publishedAt}T00:00:00`)) : "";
+  const displayDate = entry ? dateFormatter.format(new Date(`${entry.publishedAt}T00:00:00Z`)) : "";
 
   usePageMeta({
     title: tr?.title ? `${tr.title} | Cyrrus` : "Perspectivas | Cyrrus",
@@ -120,10 +121,12 @@ export default function ArticuloPerspectiva() {
               description: tr.excerpt,
               image: `${siteUrl}${entry.coverImage}`,
               datePublished: entry.publishedAt,
-              dateModified: entry.publishedAt,
+              dateModified: entry.updatedAt ?? entry.publishedAt,
               inLanguage: lang === "en" ? "en" : "es",
               author: {
                 "@type": "Person",
+                "@id": `${siteUrl}/quienes-somos#jackson-bohorquez`,
+                url: `${siteUrl}/quienes-somos`,
                 name: tHome("ceo.name"),
                 jobTitle: tHome("ceo.role"),
               },
@@ -156,6 +159,7 @@ export default function ArticuloPerspectiva() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow={tr.label}
         title={tr.title}
@@ -239,6 +243,7 @@ export default function ArticuloPerspectiva() {
         </div>
       </section>
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

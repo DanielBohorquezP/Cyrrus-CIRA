@@ -70,6 +70,7 @@ export default function QuienesSomos() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <IntelligenceLabHero
         eyebrow={t("quienesSomos.hero.eyebrow")}
         title={t("quienesSomos.hero.title")}
@@ -186,6 +187,7 @@ export default function QuienesSomos() {
       </section>
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

@@ -65,7 +65,9 @@ export default function PresenciaDigital() {
         name: "Cyrrus Presencia Digital",
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDescription"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -91,6 +93,7 @@ export default function PresenciaDigital() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero
         eyebrow={t("hub.hero.eyebrow")}
         title={t("hub.hero.title")}
@@ -185,6 +188,7 @@ export default function PresenciaDigital() {
       <FaqSection eyebrow={t("hub.faq.eyebrow")} title={t("hub.faq.title")} faqs={faqs} />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

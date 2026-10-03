@@ -85,7 +85,9 @@ export default function MetodoCira() {
         name: t("hero.eyebrow"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -125,6 +127,7 @@ export default function MetodoCira() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <IntelligenceLabHero
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
@@ -156,6 +159,7 @@ export default function MetodoCira() {
       <CiraFaq />
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

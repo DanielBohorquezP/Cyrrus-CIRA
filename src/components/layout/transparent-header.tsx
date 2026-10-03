@@ -6,6 +6,7 @@ import { BorderButton } from "@/components/ui/border-button";
 import { NavMenu } from "@/components/layout/nav-menu";
 import { getNavItems, type NavChild, type NavItem } from "@/lib/nav-config";
 import { useLang } from "@/lib/language";
+import { LanguageLink } from "@/components/layout/language-link";
 import { useScrolled } from "@/lib/use-scrolled";
 import { cn } from "@/lib/utils";
 import { Img } from "@/components/ui/img";
@@ -93,6 +94,13 @@ export function TransparentHeader() {
   const iconDark = !scrolled && !mobileOpen;
 
   return (
+    <>
+      <a
+        href="#contenido"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-navy focus:shadow-md"
+      >
+        {lang === "en" ? "Skip to content" : "Saltar al contenido"}
+      </a>
     <header
       className={cn(
         "fixed top-0 z-50 flex h-20 w-full items-center justify-between px-6 backdrop-blur-md transition-[background-color,box-shadow,border-color] duration-200 ease-out md:px-12",
@@ -129,6 +137,7 @@ export function TransparentHeader() {
       </Link>
       <NavMenu items={navItems} variant={scrolled ? "light" : "dark"} />
       <div className="flex items-center gap-2">
+        <LanguageLink className={iconDark ? "text-white hover:text-white/80" : "text-navy hover:text-blue"} />
         <BorderButton
           variant={scrolled ? "dark" : "light"}
           dot
@@ -184,5 +193,6 @@ export function TransparentHeader() {
         </div>
       </div>
     </header>
+    </>
   );
 }

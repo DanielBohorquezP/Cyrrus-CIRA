@@ -101,7 +101,9 @@ export default function LeadershipAcademy() {
         name: "Leadership Academy",
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDetail"),
-        areaServed: "Worldwide",
+        areaServed: { "@type": "Place", name: "Worldwide" },
+        url: `${siteUrl}${pagePath}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },
       {
         "@context": "https://schema.org",
@@ -117,6 +119,7 @@ export default function LeadershipAcademy() {
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <IntelligenceLabHero
         eyebrow="Leadership Academy"
         title={t("hub.hero.title")}
@@ -186,6 +189,7 @@ export default function LeadershipAcademy() {
       </section>
 
       <FinalCta />
+      </main>
       <Footer />
     </>
   );

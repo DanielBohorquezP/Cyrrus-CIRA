@@ -17,6 +17,7 @@ export function LegalPage({ eyebrow, title, description, lastUpdated, children }
   return (
     <>
       <SiteHeader />
+      <main id="contenido">
       <PageHero eyebrow={eyebrow} title={title} description={description} />
 
       <section className="w-full bg-background py-20 md:py-28">
@@ -33,6 +34,7 @@ export function LegalPage({ eyebrow, title, description, lastUpdated, children }
         </div>
       </section>
 
+      </main>
       <Footer />
     </>
   );

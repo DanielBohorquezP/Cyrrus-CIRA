@@ -29,7 +29,7 @@
       content="En LATAM, la mayoría de las transformaciones se detiene entre la decisión y la operación. La metodología CIRA las conecta: estrategia, la solución correcta y adopción real, con IA en cada fase."
     />
     <meta property="og:url" content="https://cyrruscs.com/" />
-    <meta property="og:locale" content="es_CO" />
+    <meta property="og:locale" content="es_LA" />
     <meta property="og:image" content="https://cyrruscs.com/assets/og-image.png" />
     <meta property="og:image:secure_url" content="https://cyrruscs.com/assets/og-image.png" />
     <meta property="og:image:type" content="image/png" />
@@ -62,14 +62,86 @@
             "name": "Cyrrus Consulting Services",
             "legalName": "Cyrrus Consulting Services S.A.S.",
             "url": "https://cyrruscs.com/",
-            "description": "Consultoría estratégica y transformación digital con inteligencia artificial, a través de la metodología CIRA: Construir, Identificar, Realizar, Adoptar.",
+            "description": [
+              {
+                "@language": "es",
+                "@value": "Consultoría estratégica y transformación digital con inteligencia artificial, a través de la metodología CIRA: Construir, Identificar, Realizar, Adoptar."
+              },
+              {
+                "@language": "en",
+                "@value": "Strategic consulting and AI-driven digital transformation through the CIRA methodology: Build, Identify, Realize, Adopt."
+              }
+            ],
             "logo": "https://cyrruscs.com/assets/logos-cyrrus/cyrrus-logo-color.png",
             "founder": {
               "@id": "https://cyrruscs.com/quienes-somos#jackson-bohorquez",
               "@type": "Person",
               "name": "Jackson Bohorquez",
               "jobTitle": "CEO & Fundador",
-              "url": "https://cyrruscs.com/quienes-somos"
+              "url": "https://cyrruscs.com/quienes-somos",
+              "sameAs": ["https://www.linkedin.com/in/jacksonbohorquezb/"]
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Servicios de consultoría Cyrrus (método CIRA)",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Estrategia",
+                    "url": "https://cyrruscs.com/metodo-cira/estrategia"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Selección de soluciones",
+                    "url": "https://cyrruscs.com/metodo-cira/seleccion-de-soluciones"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gerencia de proyectos",
+                    "url": "https://cyrruscs.com/metodo-cira/gestion-de-proyectos"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gestión del cambio",
+                    "url": "https://cyrruscs.com/metodo-cira/gestion-del-cambio"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Cyrrus Intelligence Lab",
+                    "url": "https://cyrruscs.com/intelligence-lab"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Presencia digital",
+                    "url": "https://cyrruscs.com/presencia-digital"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Leadership Academy",
+                    "url": "https://cyrruscs.com/leadership-academy"
+                  }
+                }
+              ]
             },
             "areaServed": [
               { "@type": "Country", "name": "Colombia" },
@@ -100,7 +172,6 @@
               "https://www.linkedin.com/company/cyrrus-cs/",
               "https://www.instagram.com/cyrruscs/",
               "https://www.youtube.com/@cyrrusconsultingservices3066",
-              "https://share.google/R8aiMjHEafT2Vy0py",
               "https://www.google.com/search?kgmid=/g/11hzx37vdw"
             ],
             "taxID": "9011219531",
@@ -114,28 +185,8 @@
               "addressCountry": "CO"
             },
             "location": [
-              {
-                "@type": "Place",
-                "name": "Cyrrus Consulting Services — Barranquilla",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Cra. 51B #80-58 Oficina 1505, Nte. Centro Historico",
-                  "addressLocality": "Barranquilla",
-                  "addressRegion": "Atlántico",
-                  "addressCountry": "CO"
-                }
-              },
-              {
-                "@type": "Place",
-                "name": "Cyrrus Consulting Services — Bogotá",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Carrera 62 #103-44 Oficina 401S",
-                  "addressLocality": "Bogotá",
-                  "addressRegion": "Bogotá D.C.",
-                  "addressCountry": "CO"
-                }
-              }
+              { "@id": "https://cyrruscs.com/#office-barranquilla" },
+              { "@id": "https://cyrruscs.com/#office-bogota" }
             ],
             "contactPoint": {
               "@type": "ContactPoint",
@@ -147,10 +198,39 @@
             }
           },
           {
+            "@type": "ProfessionalService",
+            "@id": "https://cyrruscs.com/#office-barranquilla",
+            "name": "Cyrrus Consulting Services — Barranquilla",
+            "url": "https://cyrruscs.com/",
+            "parentOrganization": { "@id": "https://cyrruscs.com/#organization" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Cra. 51B #80-58 Oficina 1505, Nte. Centro Historico",
+              "addressLocality": "Barranquilla",
+              "addressRegion": "Atlántico",
+              "addressCountry": "CO"
+            }
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://cyrruscs.com/#office-bogota",
+            "name": "Cyrrus Consulting Services — Bogotá",
+            "url": "https://cyrruscs.com/",
+            "parentOrganization": { "@id": "https://cyrruscs.com/#organization" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Carrera 62 #103-44 Oficina 401S",
+              "addressLocality": "Bogotá",
+              "addressRegion": "Bogotá D.C.",
+              "addressCountry": "CO"
+            }
+          },
+          {
             "@type": "WebSite",
             "@id": "https://cyrruscs.com/#website",
             "url": "https://cyrruscs.com/",
             "name": "Cyrrus Consulting Services",
+            "alternateName": ["Cyrrus", "Cyrrus CS"],
             "publisher": { "@id": "https://cyrruscs.com/#organization" },
             "inLanguage": ["es", "en"]
           }
