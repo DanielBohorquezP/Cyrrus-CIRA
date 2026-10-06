@@ -2,11 +2,19 @@
 
 ## Plan de mejora en curso
 
-Hay un plan de mejora del sitio (UX, SEO, contenido, autoridad) en varias
-sesiones. Al empezar cualquier sesión de mejora, leer
-`docs/plan-mejora/PROGRESO.md` (estado, próximo paso, bloqueos, bitácora) y la
-sección correspondiente de `docs/plan-mejora/PLAN.md`. Al terminar, actualizar
-`PROGRESO.md`.
+Hay un plan de mejora del sitio en varias sesiones (etapa 2: competir y vender).
+Tres archivos en `docs/plan-mejora/`:
+
+- `PLAN.md` — qué hay que hacer y por qué (fases A–L, decisiones, KPIs).
+- `PASO-A-PASO.md` — cómo se hace cada tarea (pasos, archivos, verificación).
+- `PROGRESO.md` — estado de cada tarea, próxima sesión, bloqueos, métricas y
+  bitácora numerada de sesiones.
+
+Al empezar una sesión de mejora, seguir el "Protocolo de sesión" de
+`PROGRESO.md`. Al cerrarla, **siempre** registrar la sesión en la bitácora
+(número, fecha, tareas, commits, zip) y actualizar estado, bloqueos y próxima
+sesión, aunque el trabajo haya quedado a medias. La etapa 1 está en
+`docs/plan-mejora/archivo/`.
 
 ## Performance: animations & transitions
 

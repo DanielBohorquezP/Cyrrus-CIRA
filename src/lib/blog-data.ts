@@ -9,7 +9,7 @@ export interface BlogPostEntry {
    * The service page (pillar) this article's cluster belongs to — canonical
    * Spanish path. Pass through langPath() for the EN route. Used to render
    * the "related service" link on the article and keep cluster ↔ pillar
-   * cross-linking in sync (see PLAN.md Fase 5.2).
+   * cross-linking in sync (see docs/plan-mejora/archivo/PLAN-etapa-1.md, Fase 5.2).
    */
   pillarHref: string;
   /** i18n key into the `common:nav` namespace for the pillar's label. */
