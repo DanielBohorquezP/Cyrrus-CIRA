@@ -27,7 +27,7 @@ const socialLinks: SocialItem[] = [
     icon: InstagramIcon,
   },
   {
-    href: "https://www.youtube.com/@cyrrusconsultingservices3066",
+    href: "https://www.youtube.com/@cyrruscs",
     ariaLabel: "YouTube de Cyrrus Consulting Services",
     tooltip: "YouTube",
     color: "#FF0000",

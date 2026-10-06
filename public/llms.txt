@@ -41,6 +41,7 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1). Oficinas e
 - [Qué es el Gobierno de IA corporativo y por qué su empresa lo necesita](https://cyrruscs.com/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): qué es el Gobierno de IA y por dónde debe empezar un CEO antes de adoptar inteligencia artificial.
 - [Qué es un ERP y cómo elegirlo: guía práctica](https://cyrruscs.com/perspectivas/que-es-un-erp-guia-para-elegirlo): qué es un ERP, para qué sirve, qué módulos incluye y siete criterios para elegir el adecuado.
 - [Qué es una PMO: funciones, tipos y cuándo necesitarla](https://cyrruscs.com/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla): qué es una PMO, para qué sirve, qué tipos existen y cómo saber si su empresa la necesita.
+- [Planeación estratégica: qué es, etapas y ejemplo](https://cyrruscs.com/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo): qué es la planeación estratégica, sus siete etapas, herramientas (FODA, OKR, Balanced Scorecard) y un ejemplo ilustrativo.
 - [Gerencia de proyectos: cuándo contratar una PMO externa](https://cyrruscs.com/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.
 
 ## Otras páginas
@@ -78,4 +79,5 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1). Oficinas e
 - [Perspectives](https://cyrruscs.com/en/perspectivas): index of Cyrrus articles on digital transformation, technology selection, project management and AI governance.
 - [What is an ERP and how to choose one: a practical guide](https://cyrruscs.com/en/perspectivas/que-es-un-erp-guia-para-elegirlo): what an ERP is, what it is for, which modules it includes and seven criteria for choosing the right one.
 - [What is a PMO: functions, types and when you need one](https://cyrruscs.com/en/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla): what a PMO is, what it is for, which types exist and how to tell whether you need one.
+- [Strategic planning: what it is, stages and an example](https://cyrruscs.com/en/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo): what strategic planning is, its seven stages, tools (SWOT, OKR, Balanced Scorecard) and an illustrative example.
 - [Project management: when to hire an external PMO](https://cyrruscs.com/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): five signs your project needs external management and what to demand of it.

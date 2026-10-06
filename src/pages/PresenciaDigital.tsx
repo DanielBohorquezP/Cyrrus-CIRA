@@ -32,6 +32,14 @@ interface Faq {
 
 const pillarIcons = [Globe, Search];
 
+// Each CIRA phase has its own service page; /metodo-cira has no #phase anchors.
+const phasePaths: Record<string, string> = {
+  construir: "/metodo-cira/estrategia",
+  identificar: "/metodo-cira/seleccion-de-soluciones",
+  realizar: "/metodo-cira/gestion-de-proyectos",
+  adoptar: "/metodo-cira/gestion-del-cambio",
+};
+
 export default function PresenciaDigital() {
   const { t } = useTranslation("presencia-digital");
   const lang = useLang();
@@ -44,7 +52,7 @@ export default function PresenciaDigital() {
   }));
   const phaseLinks = (t("hub.transversal.phases", { returnObjects: true }) as PhaseLink[]).map((p) => ({
     ...p,
-    href: `${prefix}/metodo-cira#${p.hash}`,
+    href: `${prefix}${phasePaths[p.hash] ?? "/metodo-cira"}`,
   }));
   const faqs = t("hub.faq.items", { returnObjects: true }) as Faq[];
 

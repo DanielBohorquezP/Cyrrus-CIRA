@@ -1008,6 +1008,263 @@
           "text": "If you are thinking of setting up a PMO, or already have projects slipping out of control, contact us: use the contact button below and schedule a conversation with our team."
         }
       ]
+    },
+    "planeacion-estrategica-que-es-etapas-y-ejemplo": {
+      "title": "Strategic planning: what it is, stages and an example",
+      "label": "Strategy",
+      "excerpt": "Strategic planning defines where a company is going and how it will get there. What it is, what it is for, its seven stages, the most widely used tools and an illustrative example.",
+      "metaDescription": "What strategic planning is, what it is for, its stages and tools (SWOT, OKR, Balanced Scorecard) and a step-by-step illustrative example.",
+      "intro": "If your company already had a strategic plan that ended up filed away, the problem was probably not the document, but how the planning was done and how it was executed.",
+      "serviceCtas": [
+        {
+          "title": "Building your strategic plan?",
+          "description": "We diagnose your business, define priorities together with your leadership team and lay out an actionable roadmap, not a document that ends up in a drawer.",
+          "checklist": [
+            "Business diagnosis and priorities with your leadership team",
+            "Roadmap with indicators and owners"
+          ],
+          "ctaLabel": "Explore Strategy Consulting",
+          "imageAlt": "Leadership team working on a strategic plan with Cyrrus"
+        },
+        {
+          "title": "A plan is measured by what gets executed",
+          "description": "The same team that does the diagnosis supports the execution and adjusts the plan with real business data.",
+          "checklist": [
+            "Execution supported by the same team",
+            "Follow-up with real data from your operation"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Cyrrus strategy working session"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Almost every company builds a strategic plan at some point. Leadership meets, goals are discussed, a document is written and presented with enthusiasm. Six months later the document is in a folder and the company keeps deciding the way it always has."
+        },
+        {
+          "type": "p",
+          "text": "The difference between a plan that gets executed and one that gets filed away is rarely the format: it is how the planning was done. This guide explains what strategic planning is, what it is for, what its stages are, which tools are used and what it looks like in a concrete case."
+        },
+        {
+          "type": "h2",
+          "text": "What is strategic planning?"
+        },
+        {
+          "type": "p",
+          "text": "Strategic planning is the process through which a company's leadership defines where it wants to go, what it will decide to do and what it will decide not to do, and how it will get there. It is usually set over a horizon of three to five years and is reviewed regularly, not just once."
+        },
+        {
+          "type": "p",
+          "text": "Its output is the strategic plan: a short document that captures the direction, the objectives, the priority initiatives and the indicators used to measure progress. The plan is the result; planning is the process that produces it and keeps it alive."
+        },
+        {
+          "type": "h2",
+          "text": "What is strategic planning for?"
+        },
+        {
+          "type": "p",
+          "text": "It serves five very concrete purposes."
+        },
+        {
+          "type": "p",
+          "text": "Aligning leadership: every executive understands and defends the same direction."
+        },
+        {
+          "type": "p",
+          "text": "Prioritizing resources: deciding where money, time and talent go, and where they do not."
+        },
+        {
+          "type": "p",
+          "text": "Being able to say no: having a clear criterion for discarding initiatives that do not fit the strategy."
+        },
+        {
+          "type": "p",
+          "text": "Measuring: turning the vision into objectives with indicators that each area can follow."
+        },
+        {
+          "type": "p",
+          "text": "Anticipating: reviewing changes in the environment, competitors and technology in an orderly way before they become crises."
+        },
+        {
+          "type": "h2",
+          "text": "Strategic planning, strategic plan and strategy: what is the difference?"
+        },
+        {
+          "type": "p",
+          "text": "The three terms are used as synonyms, but they mean different things. Strategy is the key decisions about where to compete and how to win. The strategic plan is the document that captures them together with the objectives and initiatives. Strategic planning is the process that leads from one to the other and keeps it up to date."
+        },
+        {
+          "type": "p",
+          "text": "That is also why people talk about business strategy, which is strategy at the level of the whole company, above the strategy of each business line or each area."
+        },
+        {
+          "type": "h2",
+          "text": "The stages of strategic planning, step by step"
+        },
+        {
+          "type": "p",
+          "text": "Every organization adapts the process, but almost all follow these seven stages."
+        },
+        {
+          "type": "p",
+          "text": "First, the diagnosis. You analyze where the company stands today: results, market, customers, competitors, internal capabilities and environment. Without an honest diagnosis, the plan is built on assumptions."
+        },
+        {
+          "type": "p",
+          "text": "Second, the direction. You define or review the purpose, vision, mission and values, and agree on where you want to be by the end of the plan's horizon."
+        },
+        {
+          "type": "p",
+          "text": "Third, the strategic objectives. The vision is turned into a small number of clear, measurable objectives with an owner. A few well-chosen objectives are worth more than a long list."
+        },
+        {
+          "type": "p",
+          "text": "Fourth, the strategies and initiatives. You decide the main bets for achieving each objective and the concrete projects that deliver them."
+        },
+        {
+          "type": "p",
+          "text": "Fifth, the indicators. Each objective has indicators that show whether you are making progress, with a target and a measurement frequency."
+        },
+        {
+          "type": "p",
+          "text": "Sixth, the action plan. Owners, deadlines, resources and budget are assigned to each initiative, and you define how projects will be coordinated with each other."
+        },
+        {
+          "type": "p",
+          "text": "Seventh, execution and follow-up. Progress is reviewed in a regular committee, deviations are corrected and the plan is updated when the environment changes. This is the stage that is almost always neglected."
+        },
+        {
+          "type": "h2",
+          "text": "The most widely used strategic planning tools"
+        },
+        {
+          "type": "p",
+          "text": "SWOT matrix: summarizes strengths, weaknesses, opportunities and threats. It is useful as a synthesis of the diagnosis, as long as each point is backed by data."
+        },
+        {
+          "type": "p",
+          "text": "PESTEL analysis: examines the political, economic, social, technological, environmental and legal factors of the environment."
+        },
+        {
+          "type": "p",
+          "text": "Porter's five forces: assesses industry rivalry, the threat of new entrants and substitutes, and the power of customers and suppliers."
+        },
+        {
+          "type": "p",
+          "text": "Balanced Scorecard: organizes objectives into perspectives such as finance, customers, processes and learning, and connects them to each other."
+        },
+        {
+          "type": "p",
+          "text": "OKR: defines ambitious objectives and accompanies them with measurable key results in short cycles, usually quarterly."
+        },
+        {
+          "type": "p",
+          "text": "No tool replaces the conversation of the leadership team. They are aids for organizing information and making better decisions, not an end in themselves."
+        },
+        {
+          "type": "h2",
+          "text": "An illustrative example of strategic planning"
+        },
+        {
+          "type": "p",
+          "text": "This is a hypothetical example, built only to illustrate the process. It does not correspond to any client. Imagine a mid-sized distributor of consumer products that wants to define a three-year plan."
+        },
+        {
+          "type": "p",
+          "text": "In the diagnosis it finds that a large share of its margin depends on a few large customers, that its inventory does not move at the same pace in every region and that its competitors are growing in online sales."
+        },
+        {
+          "type": "p",
+          "text": "In the direction stage it agrees on its vision: to be the preferred distributor for mid-sized customers in its region, with more reliable service than its competitors."
+        },
+        {
+          "type": "p",
+          "text": "It defines three objectives: reduce its dependence on its largest customers, improve product availability in every region and build an online ordering channel."
+        },
+        {
+          "type": "p",
+          "text": "For each objective it chooses the main initiatives, such as a mid-sized customer acquisition program, an inventory planning project and the development of the digital channel, and assigns indicators such as the share of sales from its main customers, product availability and the percentage of orders placed online."
+        },
+        {
+          "type": "p",
+          "text": "Finally, the leadership committee reviews progress every month, adjusts priorities and decides which initiative to stop if the budget is not enough. That follow-up discipline is what turns the plan into results."
+        },
+        {
+          "type": "h2",
+          "text": "Common mistakes in strategic planning"
+        },
+        {
+          "type": "p",
+          "text": "Making the plan once a year and never looking at it again."
+        },
+        {
+          "type": "p",
+          "text": "Defining too many objectives, so nothing is really a priority."
+        },
+        {
+          "type": "p",
+          "text": "Stopping at a statement of intent without owners, deadlines or indicators."
+        },
+        {
+          "type": "p",
+          "text": "Building it only at the top, without testing it with the areas that will execute it."
+        },
+        {
+          "type": "p",
+          "text": "Separating strategy from technology, when almost every initiative depends on it today."
+        },
+        {
+          "type": "p",
+          "text": "Finishing the plan and not managing its execution, which is where most strategies are lost.",
+          "links": [
+            {
+              "text": "managing its execution",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "When does it make sense to work with a consultant?"
+        },
+        {
+          "type": "p",
+          "text": "It makes sense when leadership needs an outside, structured view, when there are internal disagreements about direction, when the company faces a major change (growth, a new market, digital transformation) or when previous plans were not executed. If you are weighing that option, we wrote a guide on how to choose a trustworthy strategic consulting firm.",
+          "links": [
+            {
+              "text": "how to choose a trustworthy strategic consulting firm",
+              "href": "/perspectivas/como-elegir-una-consultora-estrategica-confiable"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "A strategic plan is not measured by how well it is written, but by what it changes in day-to-day decisions."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we also do this. We provide strategy consulting services: we diagnose your business, define priorities together with your leadership team and lay out an executable roadmap, with artificial intelligence applied to data analysis so you can decide faster and on firmer ground.",
+          "links": [
+            {
+              "text": "strategy consulting",
+              "href": "/metodo-cira/estrategia"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "And we do not stop at a document: the same team that does the diagnosis supports the execution and adjusts the plan with real data from your operation."
+        },
+        {
+          "type": "p",
+          "text": "If you are about to build or redo your company's strategic plan, contact us: use the contact button below and schedule a conversation with our team."
+        }
+      ]
     }
   }
 }

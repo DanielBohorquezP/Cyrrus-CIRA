@@ -101,6 +101,18 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230228_091017.jpg",
     ],
   },
+  {
+    slug: "planeacion-estrategica-que-es-etapas-y-ejemplo",
+    coverImage: "/assets/decoracion/evento-planeacion-estrategica.jpeg",
+    publishedAt: "2026-10-03",
+    pillarHref: "/metodo-cira/estrategia",
+    pillarLabelKey: "estrategia",
+    serviceCtaIndexes: [15, 48],
+    serviceCtaImages: [
+      "/assets/decoracion/IMG_20200313_092604173.jpg",
+      "/assets/decoracion/IMG_20230227_164810.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

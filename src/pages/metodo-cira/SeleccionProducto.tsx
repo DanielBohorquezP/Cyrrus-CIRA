@@ -129,16 +129,29 @@ export default function SeleccionProducto() {
         ? "External PMO for the implementation once you've chosen."
         : "PMO externo para la implementación una vez decida.",
     },
-    {
-      href: articlePath,
-      icon: BookOpen,
-      title: lang === "en"
-        ? "Why transformation projects fail"
-        : "Por qué fracasan los proyectos de transformación",
-      description: lang === "en"
-        ? "What derails these projects before they reach go-live."
-        : "Qué descarrila estos proyectos antes de llegar a producción.",
-    },
+    // The ERP page links to the ERP guide, which owns the informational
+    // "qué es un ERP" query; this page keeps the commercial one.
+    slug === "erp"
+      ? {
+          href: `${prefix}/perspectivas/que-es-un-erp-guia-para-elegirlo`,
+          icon: BookOpen,
+          title: lang === "en"
+            ? "What is an ERP and how to choose one"
+            : "Qué es un ERP y cómo elegirlo",
+          description: lang === "en"
+            ? "A practical guide: modules, selection criteria and common mistakes."
+            : "Guía práctica: módulos, criterios de selección y errores comunes.",
+        }
+      : {
+          href: articlePath,
+          icon: BookOpen,
+          title: lang === "en"
+            ? "Why transformation projects fail"
+            : "Por qué fracasan los proyectos de transformación",
+          description: lang === "en"
+            ? "What derails these projects before they reach go-live."
+            : "Qué descarrila estos proyectos antes de llegar a producción.",
+        },
   ];
 
   usePageMeta({
@@ -157,7 +170,7 @@ export default function SeleccionProducto() {
               "@type": "Service",
               "@id": `${siteUrl}${pagePath}#service`,
               serviceType: `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${slug.toUpperCase()}`,
-              name: hero.title,
+              name: `${lang === "en" ? "Selection of" : "Selección de"} ${slug.toUpperCase()}`,
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
               areaServed: { "@type": "Place", name: "Worldwide" },

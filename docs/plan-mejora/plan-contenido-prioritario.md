@@ -133,5 +133,6 @@ La versión en inglés no se tocó.
 |---|---|---|---|---|
 | 1 | Qué es un ERP y cómo elegirlo: guía práctica | 2026-10-03 | `/perspectivas/que-es-un-erp-guia-para-elegirlo` (+ `/en/…`) | Escrito en ES y EN, ~1.400 palabras, 2 tarjetas de servicio, mención de que Cyrrus ofrece la selección de ERP y CTA al cierre. Pendiente de redeploy. |
 | 2 | Qué es una PMO: funciones, tipos y cuándo necesitarla | 2026-10-03 | `/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla` (+ `/en/…`) | Escrito en ES y EN, ~1.200 palabras, 2 tarjetas de servicio, mención de que Cyrrus actúa como PMO externa y CTA al cierre. Pendiente de redeploy. |
+| 3 | Planeación estratégica: qué es, etapas y ejemplo | 2026-10-03 | `/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo` (+ `/en/…`) | Escrito en ES y EN, ~1.200 palabras, 2 tarjetas de servicio, ejemplo ilustrativo declarado como hipotético, mención de la consultoría estratégica de Cyrrus y CTA al cierre. Pendiente de redeploy. |
 
 Nota: el slug en inglés reutiliza el slug en español, como los demás artículos del sitio.

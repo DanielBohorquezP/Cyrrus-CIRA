@@ -11,17 +11,6 @@ export const upcomingTopics = [
     image: "/assets/decoracion/IMG_20230228_082632.jpg",
   },
   {
-    id: "post-5",
-    title: "Planeación estratégica empresarial: qué es y cómo se hace",
-    summary:
-      "Qué diferencia a un plan estratégico que sí se ejecuta de un documento que termina archivado, y los pasos concretos para construir uno.",
-    label: "Estrategia",
-    author: "Equipo Cyrrus",
-    published: "Noviembre 2026",
-    url: "/perspectivas",
-    image: "/assets/decoracion/evento-planeacion-estrategica.jpeg",
-  },
-  {
     id: "post-6",
     title: "Cómo implementar IA en una empresa: guía paso a paso",
     summary:

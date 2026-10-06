@@ -3,3 +3,6 @@ dist
 dist-ssr
 *.local
 .DS_Store
+
+# Deploy bundles live outside the repo (../Cyrrus builds)
+*.zip

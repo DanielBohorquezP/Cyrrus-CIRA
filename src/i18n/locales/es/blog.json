@@ -1008,6 +1008,263 @@
           "text": "Si está pensando en crear una PMO, o ya tiene proyectos que se están saliendo de control, contáctenos: use el botón de contacto que encuentra a continuación y agende una conversación con nuestro equipo."
         }
       ]
+    },
+    "planeacion-estrategica-que-es-etapas-y-ejemplo": {
+      "title": "Planeación estratégica: qué es, etapas y ejemplo",
+      "label": "Estrategia",
+      "excerpt": "La planeación estratégica define hacia dónde va una empresa y cómo lo logrará. Qué es, para qué sirve, sus siete etapas, las herramientas más usadas y un ejemplo ilustrativo.",
+      "metaDescription": "Qué es la planeación estratégica, para qué sirve, cuáles son sus etapas y herramientas (FODA, OKR, Balanced Scorecard) y un ejemplo ilustrativo paso a paso.",
+      "intro": "Si su empresa ya tuvo un plan estratégico que terminó archivado, probablemente el problema no fue el documento, sino cómo se hizo la planeación y cómo se ejecutó.",
+      "serviceCtas": [
+        {
+          "title": "¿Va a construir su plan estratégico?",
+          "description": "Diagnosticamos su negocio, definimos prioridades junto con su equipo directivo y trazamos una hoja de ruta accionable, no un documento que queda en un cajón.",
+          "checklist": [
+            "Diagnóstico del negocio y prioridades con su equipo directivo",
+            "Hoja de ruta con indicadores y responsables"
+          ],
+          "ctaLabel": "Conocer Consultoría Estratégica",
+          "imageAlt": "Equipo directivo trabajando en un plan estratégico con Cyrrus"
+        },
+        {
+          "title": "Un plan se mide por lo que se ejecuta",
+          "description": "El mismo equipo que hace el diagnóstico acompaña la ejecución y ajusta el plan con datos reales del negocio.",
+          "checklist": [
+            "Ejecución acompañada por el mismo equipo",
+            "Seguimiento con datos reales de su operación"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Sesión de trabajo de estrategia de Cyrrus"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Casi todas las empresas hacen alguna vez un plan estratégico. Se reúne la dirección, se discuten metas, se redacta un documento y se presenta con entusiasmo. Seis meses después, el documento está en una carpeta y la empresa sigue decidiendo como siempre."
+        },
+        {
+          "type": "p",
+          "text": "La diferencia entre un plan que se ejecuta y uno que se archiva casi nunca está en el formato: está en cómo se hizo la planeación. Esta guía explica qué es la planeación estratégica, para qué sirve, cuáles son sus etapas, qué herramientas se usan y cómo se ve en un caso concreto."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es la planeación estratégica?"
+        },
+        {
+          "type": "p",
+          "text": "La planeación estratégica es el proceso mediante el cual la dirección de una empresa define hacia dónde quiere ir, qué decidirá hacer y qué decidirá no hacer, y cómo lo va a lograr. Suele plantearse a un horizonte de tres a cinco años y se revisa con regularidad, no una sola vez."
+        },
+        {
+          "type": "p",
+          "text": "Su resultado es el plan estratégico: un documento corto que recoge el rumbo, los objetivos, las iniciativas prioritarias y los indicadores con los que se medirá el avance. El plan es el resultado; la planeación es el proceso que lo produce y lo mantiene vivo."
+        },
+        {
+          "type": "h2",
+          "text": "¿Para qué sirve la planeación estratégica?"
+        },
+        {
+          "type": "p",
+          "text": "Sirve para cinco cosas muy concretas."
+        },
+        {
+          "type": "p",
+          "text": "Alinear a la dirección: que todos los directivos entiendan y defiendan el mismo rumbo."
+        },
+        {
+          "type": "p",
+          "text": "Priorizar recursos: decidir dónde se invierte dinero, tiempo y talento, y dónde no."
+        },
+        {
+          "type": "p",
+          "text": "Poder decir que no: tener un criterio claro para descartar iniciativas que no encajan con la estrategia."
+        },
+        {
+          "type": "p",
+          "text": "Medir: traducir la visión en objetivos con indicadores que cada área pueda seguir."
+        },
+        {
+          "type": "p",
+          "text": "Anticiparse: revisar con orden los cambios del entorno, los competidores y la tecnología antes de que se conviertan en crisis."
+        },
+        {
+          "type": "h2",
+          "text": "Planeación estratégica, plan estratégico y estrategia: ¿en qué se diferencian?"
+        },
+        {
+          "type": "p",
+          "text": "Los tres términos se usan como sinónimos, pero designan cosas distintas. La estrategia son las decisiones clave sobre dónde competir y cómo ganar. El plan estratégico es el documento que las recoge junto con los objetivos y las iniciativas. La planeación estratégica es el proceso que lleva de una cosa a la otra y lo mantiene actualizado."
+        },
+        {
+          "type": "p",
+          "text": "Por eso se habla también de estrategia empresarial, que es la estrategia a nivel de toda la compañía, por encima de la estrategia de cada línea de negocio o de cada área."
+        },
+        {
+          "type": "h2",
+          "text": "Las etapas de la planeación estratégica, paso a paso"
+        },
+        {
+          "type": "p",
+          "text": "Cada organización adapta el proceso, pero casi todas siguen estas siete etapas."
+        },
+        {
+          "type": "p",
+          "text": "Primera, el diagnóstico. Se analiza dónde está hoy la empresa: resultados, mercado, clientes, competencia, capacidades internas y entorno. Sin un diagnóstico honesto, el plan se construye sobre supuestos."
+        },
+        {
+          "type": "p",
+          "text": "Segunda, el direccionamiento. Se define o se revisa el propósito, la visión, la misión y los valores, y se acuerda hacia dónde se quiere llegar en el horizonte del plan."
+        },
+        {
+          "type": "p",
+          "text": "Tercera, los objetivos estratégicos. Se traduce la visión en un número reducido de objetivos claros, medibles y con responsable. Pocos objetivos bien elegidos valen más que una lista larga."
+        },
+        {
+          "type": "p",
+          "text": "Cuarta, las estrategias e iniciativas. Se deciden las apuestas principales para lograr cada objetivo y los proyectos concretos que las materializan."
+        },
+        {
+          "type": "p",
+          "text": "Quinta, los indicadores. Cada objetivo tiene indicadores que permiten saber si se avanza, con una meta y una frecuencia de medición."
+        },
+        {
+          "type": "p",
+          "text": "Sexta, el plan de acción. Se asignan responsables, plazos, recursos y presupuesto a cada iniciativa, y se define cómo se coordinarán los proyectos entre sí."
+        },
+        {
+          "type": "p",
+          "text": "Séptima, la ejecución y el seguimiento. Se revisa el avance en un comité periódico, se corrigen las desviaciones y se actualiza el plan cuando el entorno cambia. Esta etapa es la que casi siempre se descuida."
+        },
+        {
+          "type": "h2",
+          "text": "Herramientas más usadas en la planeación estratégica"
+        },
+        {
+          "type": "p",
+          "text": "Matriz FODA (o DOFA): resume fortalezas, oportunidades, debilidades y amenazas. Es útil como síntesis del diagnóstico, siempre que cada punto esté respaldado por datos."
+        },
+        {
+          "type": "p",
+          "text": "Análisis PESTEL: examina los factores políticos, económicos, sociales, tecnológicos, ecológicos y legales del entorno."
+        },
+        {
+          "type": "p",
+          "text": "Cinco fuerzas de Porter: evalúa la rivalidad del sector, la amenaza de nuevos competidores y de sustitutos, y el poder de clientes y proveedores."
+        },
+        {
+          "type": "p",
+          "text": "Cuadro de mando integral (Balanced Scorecard): organiza los objetivos en perspectivas, como finanzas, clientes, procesos y aprendizaje, y los conecta entre sí."
+        },
+        {
+          "type": "p",
+          "text": "OKR: define objetivos ambiciosos y los acompaña con resultados clave medibles en ciclos cortos, normalmente trimestrales."
+        },
+        {
+          "type": "p",
+          "text": "Ninguna herramienta reemplaza la conversación de la dirección. Son apoyos para ordenar la información y tomar mejores decisiones, no un fin en sí mismas."
+        },
+        {
+          "type": "h2",
+          "text": "Ejemplo ilustrativo de planeación estratégica"
+        },
+        {
+          "type": "p",
+          "text": "Este es un ejemplo hipotético, construido solo para ilustrar el proceso. No corresponde a ningún cliente. Imaginemos una distribuidora mediana de productos de consumo que quiere definir su plan a tres años."
+        },
+        {
+          "type": "p",
+          "text": "En el diagnóstico descubre que gran parte de su margen depende de unos pocos clientes grandes, que sus inventarios no se mueven al mismo ritmo en todas las zonas y que sus competidores están creciendo en venta en línea."
+        },
+        {
+          "type": "p",
+          "text": "En el direccionamiento acuerda su visión: ser el distribuidor preferido de sus clientes medianos en su región, con un servicio más confiable que el de sus competidores."
+        },
+        {
+          "type": "p",
+          "text": "Define tres objetivos: reducir la dependencia de sus clientes más grandes, mejorar la disponibilidad de producto en todas las zonas y construir un canal de pedidos en línea."
+        },
+        {
+          "type": "p",
+          "text": "Para cada objetivo elige las iniciativas principales, como un programa de captación de clientes medianos, un proyecto de planeación de inventarios y el desarrollo del canal digital, y les asigna indicadores como la participación de los clientes principales en la venta, la disponibilidad de producto y el porcentaje de pedidos en línea."
+        },
+        {
+          "type": "p",
+          "text": "Por último, el comité de dirección revisa el avance cada mes, ajusta prioridades y decide qué iniciativa se detiene si el presupuesto no alcanza. Esa disciplina de seguimiento es lo que convierte el plan en resultados."
+        },
+        {
+          "type": "h2",
+          "text": "Errores comunes en la planeación estratégica"
+        },
+        {
+          "type": "p",
+          "text": "Hacer el plan una vez al año y no volver a mirarlo."
+        },
+        {
+          "type": "p",
+          "text": "Definir demasiados objetivos, de modo que nada es realmente prioritario."
+        },
+        {
+          "type": "p",
+          "text": "Quedarse en una declaración de intenciones sin responsables, plazos ni indicadores."
+        },
+        {
+          "type": "p",
+          "text": "Construirlo solo en la cúpula, sin contrastarlo con las áreas que lo van a ejecutar."
+        },
+        {
+          "type": "p",
+          "text": "Separar la estrategia de la tecnología, cuando hoy casi toda iniciativa depende de ella."
+        },
+        {
+          "type": "p",
+          "text": "Terminar el plan y no gerenciar su ejecución, que es donde se pierde la mayoría de las estrategias.",
+          "links": [
+            {
+              "text": "gerenciar su ejecución",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene apoyarse en un consultor?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la dirección necesita una mirada externa y estructurada, cuando hay desacuerdos internos sobre el rumbo, cuando la empresa enfrenta un cambio importante (crecimiento, nuevo mercado, transformación digital) o cuando los planes anteriores no se ejecutaron. Si está evaluando esa opción, escribimos una guía sobre cómo elegir una consultora estratégica confiable.",
+          "links": [
+            {
+              "text": "cómo elegir una consultora estratégica confiable",
+              "href": "/perspectivas/como-elegir-una-consultora-estrategica-confiable"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Un plan estratégico no se mide por lo bien redactado que está, sino por lo que cambia en las decisiones del día a día."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus también hacemos esto. Prestamos servicios de consultoría estratégica: diagnosticamos su negocio, definimos prioridades junto con su equipo directivo y trazamos una hoja de ruta ejecutable, con inteligencia artificial aplicada al análisis de datos para decidir más rápido y con mejor fundamento.",
+          "links": [
+            {
+              "text": "consultoría estratégica",
+              "href": "/metodo-cira/estrategia"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Y no terminamos en un documento: el mismo equipo que hace el diagnóstico acompaña la ejecución y ajusta el plan con datos reales de su operación."
+        },
+        {
+          "type": "p",
+          "text": "Si va a construir o a rehacer el plan estratégico de su empresa, contáctenos: use el botón de contacto que encuentra a continuación y agende una conversación con nuestro equipo."
+        }
+      ]
     }
   }
 }

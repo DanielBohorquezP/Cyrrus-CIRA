@@ -83,7 +83,7 @@
 | 0.6 | Unificar cifras (países, industrias, 60%) | ⛔ | Falta confirmación del cliente |
 | 0.7 | Tuteo → usted | ✅ | `contact-wizard.json`, `metodo-cira.json`, `route-meta.json` |
 | 0.8 | Accesibilidad Método CIRA / Academy ≥ 95 | ✅ | Lighthouse: ambas rutas en 100/100 (antes 89/96) |
-| 0.9 | Higiene del repo (`cyrruscs-dist/`, zip) | ⛔ | Decisión del dueño |
+| 0.9 | Higiene del repo (`cyrruscs-dist/`, zip) | 🟡 | 2026-10-05: los zips de deploy se movieron a `../Cyrrus builds/` y `*.zip` va en `.gitignore`. `cyrruscs-dist/` sigue versionado (no se decidió) |
 
 ### Fase 1 — Arquitectura y navegación
 | ID | Tarea | Estado | Notas |
@@ -92,7 +92,7 @@
 | 1.2 | Reordenar el Inicio | 🟡 | Orden nuevo aplicado y tab de Presencia Digital quitado; tabs de Servicios ampliadas de 3 a 6 (5 servicios + Academy). Sección "Casos destacados" sigue pendiente de 2.1 |
 | 1.3 | Plantilla única de página de servicio | ⬜ | Es una guía para Fase 4, no una tarea propia — no se aplica hasta reescribir cada página de servicio |
 | 1.4 | `/metodo-cira` como página de metodología | ✅ | Ya era en gran parte una página de metodología (4 fases con enlace a cada servicio); enlazada desde "Nosotros" en el menú (1.1) y ahora también desde `QuienesSomos.tsx` ("Conozca el Método CIRA..."); cada página de servicio ya enlaza de vuelta a `/metodo-cira` desde su breadcrumb (1.6) |
-| 1.5 | Sacar Presencia Digital de consultoría | ⛔ | Hecho: sección "digitalGap" quitada de `PlaneacionEstrategica.tsx` + `estrategia.json` (ES/EN), enlace quitado del footer. Sigue bloqueado el destino final de las páginas `/presencia-digital/*` (decisión del cliente) |
+| 1.5 | Sacar Presencia Digital de consultoría | ✅ | Sección "digitalGap" quitada de `PlaneacionEstrategica.tsx` + `estrategia.json` (ES/EN). 2026-10-05: el cliente decidió mantenerla como **servicio aparte** (indexada, en la lista de servicios del footer y en el wizard). Corregidos los enlaces del hub a `/metodo-cira#fase` (anclas inexistentes) → páginas reales de cada fase |
 | 1.6 | Breadcrumbs visibles | ✅ | Componente `Breadcrumbs` (`src/components/ui/breadcrumbs.tsx`) integrado en `PageHero`; aplicado a las 14 páginas de nivel 2+ que ya tenían `BreadcrumbList` en JSON-LD |
 
 ### Fase 2 — Prueba y confianza
@@ -172,8 +172,8 @@
 | Datos del equipo | ⬜ | ⬜ | 2.2 |
 | Historia de la empresa | ⬜ | ⬜ | 2.3 |
 | Detalle de talleres | ⬜ | ⬜ | 3.1, 3.3 |
-| Decisión Presencia Digital (a/b/c) | ⬜ | ⬜ | 1.5 |
-| Decisión `cyrruscs-dist/` y zip | ⬜ | ⬜ | 0.9 |
+| Decisión Presencia Digital (a/b/c) | ✅ | ✅ (2026-10-05: servicio aparte) | 1.5 ✅ |
+| Decisión `cyrruscs-dist/` y zip | ✅ | 🟡 (2026-10-05: zips fuera del repo; falta decidir `cyrruscs-dist/`) | 0.9 |
 | **Redeploy a producción** (el servidor sirve un build del 12-sep; falta subir el build actual, con todo el trabajo de Fase 3/4 de esta semana) | ✅ | ✅ (2026-09-23, bundle `index-DCHW-Og-.js` idéntico al build local) | 8.1 (cierre definitivo), y en general toda medición real de Fase 6/7/GSC sobre el trabajo de Fase 0-4 hecho después del 12-sep |
 
 ---
@@ -190,6 +190,13 @@
 ---
 
 ## Bitácora de sesiones
+
+### 2026-10-05 — Auditoría SEO+IA en producción + Ubersuggest, y primeras correcciones
+- **Auditoría** (`/audit` sobre `cyrruscs.com` en vivo, 4 especialistas + Ubersuggest): Search SEO ~76 (C), AI Visibility ~66 (D). Técnico sólido; faltan autoridad, casos, datos con fuente y bajar TBT (1,5 s en PSI móvil vía Ubersuggest).
+- **Ubersuggest (estimaciones):** 7 keywords, ~8 visitas/mes, DA 13, 66 dominios de referencia — la muestra son casi todos directorios de spam (PBN) aparecidos 25-ago a 3-oct. Demanda: "gestión del cambio organizacional" 260 CO / 320 MX (SD 23-42) es la mayor; "consultoría estratégica" 70 CO / 260 MX; ERP/PMO ≈ 0 en español.
+- **Hecho:** página de servicio de ERP pasa a intención comercial ("Selección de ERP Independiente para Empresas") y enlaza a la guía, que se queda "qué es un ERP" (anticanibalización); `name` del Service de productos = "Selección de ERP/CRM/…" en vez del H1; YouTube corregido a `@cyrruscs` (footer + schema); hub de Presencia Digital con enlaces a fases reales; `Cache-Control: no-cache` para HTML en `.htaccess`; zips fuera del repo; artículo 3 (planeación estratégica) commiteado.
+- **Pendiente del cliente:** transcripciones de los 4 videos de reseñas de YouTube para extraer casos de éxito (2.1); resto de insumos en la lista entregada en el chat.
+- **Próximo paso:** subir el zip nuevo; extraer casos de las transcripciones; schema (Person/AboutPage/EN), alt de logos, respuesta directa en artículos.
 
 > Una entrada por sesión, la más reciente arriba. Formato:
 > fecha · tareas trabajadas · qué se hizo (archivos) · verificación · qué quedó a medias · próximo paso.
