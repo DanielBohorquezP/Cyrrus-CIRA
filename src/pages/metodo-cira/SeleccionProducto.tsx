@@ -173,7 +173,7 @@ export default function SeleccionProducto() {
               name: `${lang === "en" ? "Selection of" : "Selección de"} ${slug.toUpperCase()}`,
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
-              areaServed: { "@type": "Place", name: "Worldwide" },
+              areaServed: "Worldwide",
               url: `${siteUrl}${pagePath}`,
               mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
             },

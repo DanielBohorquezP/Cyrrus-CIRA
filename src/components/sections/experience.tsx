@@ -35,7 +35,7 @@ export function Experience() {
               </div>
               <div>
                 <div className="text-4xl font-bold tracking-tight text-navy">
-                  +17
+                  15+
                 </div>
                 <div className="text-sm font-bold uppercase tracking-wider text-blue">
                   {t("experience.paisesLabel")}

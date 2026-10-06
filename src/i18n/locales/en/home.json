@@ -12,12 +12,12 @@
   "trustBar": {
     "metrics": [
       {
-        "value": "+17",
+        "value": "15+",
         "label": "countries"
       },
       {
-        "value": "1",
-        "label": "end-to-end method"
+        "value": "4",
+        "label": "proprietary methodologies, one per phase"
       },
       {
         "value": "100%",
@@ -217,26 +217,34 @@
     "footerNote": "See the full team, industries, and clients on the Experience page.",
     "countries": [
       "Mexico",
+      "Guatemala",
       "Central America",
       "Panama",
+      "Dominican Republic",
+      "Puerto Rico",
+      "Venezuela",
       "Colombia",
       "Ecuador",
       "Peru",
       "Brazil",
       "Chile",
       "Argentina",
+      "Uruguay",
       "United States"
     ],
     "industries": [
+      "Healthcare",
       "Education",
-      "Finance & Insurance",
-      "Public Utilities",
-      "Food & Beverage",
-      "Consumer Goods",
-      "Oil & Gas",
+      "Retail",
       "Manufacturing",
-      "Logistics",
-      "Distribution"
+      "Ports",
+      "Energy",
+      "Banking",
+      "Financial services",
+      "Oil & Gas",
+      "Environmental",
+      "Transportation",
+      "Construction"
     ]
   },
   "perspectivasPreview": {

@@ -12,12 +12,12 @@
   "trustBar": {
     "metrics": [
       {
-        "value": "+17",
+        "value": "15+",
         "label": "países"
       },
       {
-        "value": "1",
-        "label": "método de punta a punta"
+        "value": "4",
+        "label": "metodologías propias, una por fase"
       },
       {
         "value": "100%",
@@ -217,26 +217,34 @@
     "footerNote": "Ver el equipo completo, industrias y clientes en la página de Experiencia.",
     "countries": [
       "México",
+      "Guatemala",
       "Centroamérica",
       "Panamá",
+      "República Dominicana",
+      "Puerto Rico",
+      "Venezuela",
       "Colombia",
       "Ecuador",
       "Perú",
       "Brasil",
       "Chile",
       "Argentina",
+      "Uruguay",
       "Estados Unidos"
     ],
     "industries": [
+      "Salud",
       "Educación",
-      "Finanzas & Seguros",
-      "Servicios Públicos",
-      "Alimentos & Bebidas",
-      "Consumo Masivo",
-      "Oil & Gas",
+      "Retail",
       "Manufactura",
-      "Logística",
-      "Distribución"
+      "Puertos",
+      "Energía",
+      "Banca",
+      "Servicios financieros",
+      "Oil & Gas",
+      "Ambiental",
+      "Transporte",
+      "Construcción"
     ]
   },
   "perspectivasPreview": {

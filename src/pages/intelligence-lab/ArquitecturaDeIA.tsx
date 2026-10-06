@@ -73,7 +73,7 @@ export default function ArquitecturaDeIA() {
         name: t("arquitectura.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("arquitectura.meta.description"),
-        areaServed: { "@type": "Place", name: "Worldwide" },
+        areaServed: "Worldwide",
         url: `${siteUrl}${pagePath}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },

@@ -22,6 +22,12 @@ import {
   Fuel,
   ShoppingBag,
   HeartPulse,
+  GraduationCap,
+  Anchor,
+  Wallet,
+  Leaf,
+  Truck,
+  HardHat,
 } from "lucide-react";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
@@ -50,8 +56,22 @@ interface TeamRole {
 }
 
 const statIcons = [Globe2, Layers, Sparkles];
-const industryIcons = [Factory, Landmark, Zap, Fuel, ShoppingBag, HeartPulse];
-const industryBgs = ["bg-navy", "bg-blue", "bg-cyan", "bg-navy", "bg-blue", "bg-cyan"];
+// Same order as experiencia.industries in paginas.json.
+const industryIcons = [
+  HeartPulse,
+  GraduationCap,
+  ShoppingBag,
+  Factory,
+  Anchor,
+  Zap,
+  Landmark,
+  Wallet,
+  Fuel,
+  Leaf,
+  Truck,
+  HardHat,
+];
+const industryBgColors = ["bg-navy", "bg-blue", "bg-cyan"];
 
 const gallerySrcs = [
   { src: "/assets/decoracion/Cesar.jpg", alt: "Consultores de Cyrrus trabajando en un diagnóstico de procesos" },
@@ -72,7 +92,7 @@ export default function Experiencia() {
   const industries = (t("experiencia.industries", { returnObjects: true }) as Industry[]).map((it, i) => ({
     ...it,
     icon: industryIcons[i],
-    bg: industryBgs[i],
+    bg: industryBgColors[i % industryBgColors.length],
   }));
   const gallery = (t("experiencia.gallery.items", { returnObjects: true }) as GalleryItem[]).map((g, i) => ({
     ...g,

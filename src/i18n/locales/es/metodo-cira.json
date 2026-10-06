@@ -54,7 +54,7 @@
     "ctaLabel": "Agendar conversación",
     "stats": [
       {
-        "value": "+17",
+        "value": "15+",
         "label": "países con proyectos ejecutados"
       },
       {
@@ -63,7 +63,7 @@
       },
       {
         "value": "60%",
-        "label": "más rápido el diagnóstico, con IA integrada al método"
+        "label": "más rápido el diagnóstico con IA integrada al método (medición interna)"
       }
     ]
   },

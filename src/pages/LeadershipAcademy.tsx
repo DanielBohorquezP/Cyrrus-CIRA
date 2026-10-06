@@ -101,7 +101,7 @@ export default function LeadershipAcademy() {
         name: "Leadership Academy",
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDetail"),
-        areaServed: { "@type": "Place", name: "Worldwide" },
+        areaServed: "Worldwide",
         url: `${siteUrl}${pagePath}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },

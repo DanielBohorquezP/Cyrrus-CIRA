@@ -23,7 +23,11 @@ const DEFAULT_MARKERS = [
   { lat: -35.68, lng: -71.54, label: "Chile" },
   { lat: -38.42, lng: -63.62, label: "Argentina" },
   { lat: 39.83, lng: -98.58, label: "Estados Unidos" },
-  { lat: 18.74, lng: -70.16, label: "Caribe" },
+  { lat: 14.63, lng: -90.51, label: "Guatemala" },
+  { lat: 18.74, lng: -70.16, label: "República Dominicana" },
+  { lat: 18.22, lng: -66.59, label: "Puerto Rico" },
+  { lat: 6.42, lng: -66.59, label: "Venezuela" },
+  { lat: -32.52, lng: -55.77, label: "Uruguay" },
 ];
 
 const DEFAULT_CONNECTIONS: { from: [number, number]; to: [number, number] }[] =
@@ -34,6 +38,9 @@ const DEFAULT_CONNECTIONS: { from: [number, number]; to: [number, number] }[] =
     { from: [8.98, -79.52], to: [4.71, -74.07] },
     { from: [4.71, -74.07], to: [-1.83, -78.18] },
     { from: [4.71, -74.07], to: [18.74, -70.16] },
+    { from: [18.74, -70.16], to: [18.22, -66.59] },
+    { from: [4.71, -74.07], to: [6.42, -66.59] },
+    { from: [-38.42, -63.62], to: [-32.52, -55.77] },
     { from: [-1.83, -78.18], to: [-9.19, -75.02] },
     { from: [-9.19, -75.02], to: [-35.68, -71.54] },
     { from: [-35.68, -71.54], to: [-38.42, -63.62] },

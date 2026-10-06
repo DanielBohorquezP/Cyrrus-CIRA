@@ -94,7 +94,7 @@ export default function Seo() {
         name: t("seo.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("seo.meta.description"),
-        areaServed: { "@type": "Place", name: "Worldwide" },
+        areaServed: "Worldwide",
         url: `${siteUrl}${pagePath}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },

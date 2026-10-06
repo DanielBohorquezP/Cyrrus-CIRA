@@ -54,7 +54,7 @@
     "ctaLabel": "Schedule a call",
     "stats": [
       {
-        "value": "+17",
+        "value": "15+",
         "label": "countries with projects delivered"
       },
       {
@@ -63,7 +63,7 @@
       },
       {
         "value": "60%",
-        "label": "faster diagnosis, with AI built into the method"
+        "label": "faster diagnosis with AI built into the method (internal measurement)"
       }
     ]
   },

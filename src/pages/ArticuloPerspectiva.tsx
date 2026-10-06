@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { langPath, useLang, type Lang } from "@/lib/language";
 import { getBlogPostBySlug } from "@/lib/blog-data";
+import imageManifest from "@/lib/image-manifest.json";
 import { useScrollDepthEvent } from "@/lib/use-scroll-depth-event";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
@@ -86,6 +87,9 @@ export default function ArticuloPerspectiva() {
   const { t: tHome } = useTranslation("home");
   const lang = useLang();
   const entry = getBlogPostBySlug(articulo);
+  const coverSize = entry
+    ? (imageManifest as Record<string, number[]>)[encodeURI(entry.coverImage)]
+    : undefined;
   const tr = entry ? (t(`posts.${entry.slug}`, { returnObjects: true }) as BlogPostTranslation) : undefined;
 
   const siteUrl = "https://cyrruscs.com";
@@ -119,18 +123,24 @@ export default function ArticuloPerspectiva() {
               url: `${siteUrl}${pagePath}`,
               headline: tr.title,
               description: tr.excerpt,
-              image: `${siteUrl}${entry.coverImage}`,
+              image: {
+                "@type": "ImageObject",
+                url: `${siteUrl}${entry.coverImage}`,
+                ...(coverSize && { width: coverSize[0], height: coverSize[1] }),
+              },
               datePublished: entry.publishedAt,
               dateModified: entry.updatedAt ?? entry.publishedAt,
               inLanguage: lang === "en" ? "en" : "es",
+              // The full Person (bio, education, sameAs) lives on /quienes-somos
+              // under this @id; repeating its fields here only lets them drift.
               author: {
                 "@type": "Person",
                 "@id": `${siteUrl}/quienes-somos#jackson-bohorquez`,
                 url: `${siteUrl}/quienes-somos`,
                 name: tHome("ceo.name"),
-                jobTitle: tHome("ceo.role"),
               },
               publisher: { "@id": `${siteUrl}/#organization` },
+              isPartOf: { "@id": `${siteUrl}/#website` },
               mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
             },
             {

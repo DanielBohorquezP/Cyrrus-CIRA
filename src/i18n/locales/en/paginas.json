@@ -7,27 +7,57 @@
     },
     "meta": {
       "title": "Multinational Consulting in LATAM: Cases and Team | Cyrrus",
-      "description": "Multinational consulting across +17 countries. Cases in manufacturing, financial services, energy, and oil & gas, and the team behind CIRA."
+      "description": "Multinational consulting across 15+ countries. Cases in manufacturing, financial services, energy, and oil & gas, and the team behind CIRA."
     },
     "hero": {
       "eyebrow": "Experience",
-      "title": "Multinational consulting across LATAM, with a presence in +17 countries",
+      "title": "Multinational consulting across LATAM, with a presence in 15+ countries",
       "description": "Digital transformation success stories across industries, a leadership team with a real track record executing the CIRA method, and the companies that have already trusted us."
     },
     "stats": [
-      { "value": "+17", "label": "countries with a presence" },
-      { "value": "4", "label": "phases, one method" },
-      { "value": "60%", "label": "faster diagnosis with AI" }
+      { "value": "15+", "label": "countries with a presence" },
+      { "value": "4", "label": "phases, each with its own methodology" },
+      { "value": "60%", "label": "faster diagnosis with AI (internal measurement)" }
     ],
     "industriesLabel": "Industries we operate in",
     "industriesPrefix": "Consulting for",
     "industries": [
-      { "name": "Manufacturing" },
-      { "name": "Financial services" },
-      { "name": "Energy" },
-      { "name": "Oil & Gas" },
-      { "name": "Retail" },
-      { "name": "Healthcare" }
+      {
+        "name": "Healthcare"
+      },
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Retail"
+      },
+      {
+        "name": "Manufacturing"
+      },
+      {
+        "name": "Ports"
+      },
+      {
+        "name": "Energy"
+      },
+      {
+        "name": "Banking"
+      },
+      {
+        "name": "Financial services"
+      },
+      {
+        "name": "Oil & Gas"
+      },
+      {
+        "name": "Environmental"
+      },
+      {
+        "name": "Transportation"
+      },
+      {
+        "name": "Construction"
+      }
     ],
     "gallery": {
       "eyebrow": "In action",
@@ -60,22 +90,34 @@
     "hero": {
       "eyebrow": "About us",
       "title": "Jackson Bohorquez, CEO and founder of Cyrrus",
-      "description": "The person behind the CIRA method: two decades connecting strategy, technology, and execution for companies across LATAM."
+      "description": "The person behind the CIRA method: 30 years connecting strategy, technology and execution, from Oracle and PepsiCo to leading IT at major companies across LATAM."
     },
     "linkedInLabel": "LinkedIn",
     "photoAlt": "Jackson Bohorquez, CEO of Cyrrus Consulting Services",
     "role": "CEO & Founder, Cyrrus Consulting Services",
-    "bio": "Jackson Bohorquez founded Cyrrus Consulting Services to close the gap he sees causing most organizations to fail: not a lack of strategy or technology, but the fact that no one connects the decision to the execution. That's where the CIRA method was born — Construct, Identify, Realize, Adopt — the framework that now guides Cyrrus's digital transformation projects in more than 17 countries.",
+    "bio": "Jackson Bohorquez founded Cyrrus Consulting Services in 2017 to close the gap he sees causing most organizations to fail: not a lack of strategy or technology, but the fact that no one connects the decision to the execution. Before that he sat on the other side of the table: he implemented ERP as an Oracle consultant, led PepsiCo's back-office systems in Latin America, and ran IT at Covidien, Fundación Santa Fe de Bogotá and Coremar. That experience gave rise to the CIRA method (Construct, Identify, Realize, Adopt), the framework that now guides Cyrrus's projects in more than 15 countries.",
     "quote": "\"Organizations don't fail for lack of strategy or technology. They fail when no one connects the decision to the execution. CIRA exists to close exactly that gap.\"",
     "trajectory": {
       "label": "Track record",
       "items": [
-        "Founder and CEO of Cyrrus Consulting Services",
-        "Creator of the CIRA method: Construct, Identify, Realize, Adopt",
-        "Digital transformation and corporate AI governance consultant for companies across LATAM",
-        "Speaker and moderator at university and business forums on strategy, technology, and AI"
+        "Founder of Cyrrus Consulting Services (2017) and creator of the CIRA method",
+        "Corporate IT Director at Coremar (2012-2016): led the ERP, CRM and EAM implementation for more than six business units and raised technology maturity from 2.2 to 8.4 out of 10 in a year and a half",
+        "Director of IT and Communications at Fundación Santa Fe de Bogotá (2011)",
+        "Information Services Manager for Northern Latin America at Covidien (2010-2011): IT audit and control standards across six countries in under four months",
+        "IT BackOffice Manager for Latin America at PepsiCo (2002-2010): implemented Oracle Process Manufacturing and Oracle Financials, cutting monthly close time by 60%",
+        "Application Services Manager for the industrial sector at NTT DATA Europe & Latam (2025)",
+        "Oracle consultant (1996-1999): Oracle Financials implementations in Colombia and the United States",
+        "Professor of Negotiation in a graduate program in Telematic Systems Management (2019-2025), and speaker at forums on strategy, technology and AI"
       ],
       "methodLinkLabel": "Learn about the CIRA Method we apply in every project"
+    },
+    "education": {
+      "label": "Education",
+      "items": [
+        "MBA, Universidad del Norte (2016)",
+        "Specialization in Engineering Management Systems, Pontificia Universidad Javeriana (2002)",
+        "Systems Engineer, Universidad Distrital Francisco José de Caldas (1997)"
+      ]
     },
     "milestones": {
       "eyebrow": "Key milestones",

@@ -35,6 +35,7 @@ export default function QuienesSomos() {
     ...milestoneSrcs[i],
   }));
   const credentials = t("quienesSomos.trajectory.items", { returnObjects: true }) as string[];
+  const education = t("quienesSomos.education.items", { returnObjects: true }) as string[];
 
   const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/quienes-somos" : "/quienes-somos";
@@ -48,13 +49,36 @@ export default function QuienesSomos() {
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "@id": `${siteUrl}${pagePath}#jackson-bohorquez`,
+        // One @id for both languages: index.html (founder) and every article
+        // (author) point at the Spanish URL.
+        "@id": `${siteUrl}/quienes-somos#jackson-bohorquez`,
         name: "Jackson Bohorquez",
         jobTitle: lang === "en" ? "CEO & Founder" : "CEO & Fundador",
+        description: t("quienesSomos.bio"),
         worksFor: { "@id": `${siteUrl}/#organization` },
         url: `${siteUrl}${pagePath}`,
         image: "https://cyrruscs.com/assets/decoracion/JacksonCEO1.jpeg",
         sameAs: ["https://www.linkedin.com/in/jacksonbohorquezb/"],
+        alumniOf: [
+          { "@type": "CollegeOrUniversity", name: "Universidad del Norte" },
+          { "@type": "CollegeOrUniversity", name: "Pontificia Universidad Javeriana" },
+          { "@type": "CollegeOrUniversity", name: "Universidad Distrital Francisco José de Caldas" },
+        ],
+        knowsAbout:
+          lang === "en"
+            ? ["Business and IT strategy", "Digital transformation", "ERP, CRM and EAM selection and implementation", "Project management", "Change management", "IT governance", "Shared services centers"]
+            : ["Estrategia de negocio y de TI", "Transformación digital", "Selección e implementación de ERP, CRM y EAM", "Gerencia de proyectos", "Gestión del cambio", "Gobierno de TI", "Centros de servicios compartidos"],
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "@id": `${siteUrl}${pagePath}#webpage`,
+        url: `${siteUrl}${pagePath}`,
+        name: t("quienesSomos.meta.title"),
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        about: { "@id": `${siteUrl}/#organization` },
+        mainEntity: { "@id": `${siteUrl}/quienes-somos#jackson-bohorquez` },
+        inLanguage: lang,
       },
       {
         "@context": "https://schema.org",
@@ -140,6 +164,19 @@ export default function QuienesSomos() {
                   </RevealItem>
                 ))}
               </RevealGroup>
+            </Reveal>
+
+            <Reveal delay={0.2} className="mt-10">
+              <div className="text-base font-bold uppercase tracking-wider text-gray">
+                {t("quienesSomos.education.label")}
+              </div>
+              <ul className="mt-4 flex flex-col gap-2">
+                {education.map((item) => (
+                  <li key={item} className="text-sm text-navy">
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </Reveal>
 
             <Reveal delay={0.2} className="mt-6">

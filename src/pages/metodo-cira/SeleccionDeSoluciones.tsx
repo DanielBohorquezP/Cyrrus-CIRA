@@ -111,7 +111,7 @@ export default function SeleccionDeSoluciones() {
         name: t("hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("meta.description"),
-        areaServed: { "@type": "Place", name: "Worldwide" },
+        areaServed: "Worldwide",
         url: `${siteUrl}${pagePath}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },

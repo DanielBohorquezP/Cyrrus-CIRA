@@ -89,7 +89,7 @@ export default function SolucionDetalle() {
               name: entry.label,
               provider: { "@id": `${siteUrl}/#organization` },
               description: meta?.description,
-              areaServed: { "@type": "Place", name: "Worldwide" },
+              areaServed: "Worldwide",
               url: `${siteUrl}${pagePath}`,
               mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
             },

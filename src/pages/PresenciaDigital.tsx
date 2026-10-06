@@ -73,7 +73,7 @@ export default function PresenciaDigital() {
         name: "Cyrrus Presencia Digital",
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("hub.serviceDescription"),
-        areaServed: { "@type": "Place", name: "Worldwide" },
+        areaServed: "Worldwide",
         url: `${siteUrl}${pagePath}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },

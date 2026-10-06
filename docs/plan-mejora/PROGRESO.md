@@ -166,10 +166,10 @@
 |---|---|---|---|
 | Acceso a Search Console | ✅ | ✅ (2026-09-18) | 0.4 ✅, 6.1 🟡 |
 | Acceso a GA4 | ⬜ | ⬜ | 7.2 |
-| Número real de países + industrias | ⬜ | ⬜ | 0.6, 2.5 |
-| Fuente del "60%" o quitarlo | ⬜ | ⬜ | 0.6 |
-| 3+ casos con cifras + autorización | ⬜ | ⬜ | 2.1, 1.2 |
-| Datos del equipo | ⬜ | ⬜ | 2.2 |
+| Número real de países + industrias | ✅ | ✅ (2026-10-05: 15+ países = los 15 del schema; 12 industrias) | 0.6, 2.5 |
+| Fuente del "60%" o quitarlo | ✅ | ✅ (2026-10-05: métrica interna no publicable → se mantiene marcada "medición interna") | 0.6 |
+| 3+ casos con cifras + autorización | ✅ | 🟡 (2026-10-05: 2 casos publicados desde los videos — 3 Castillos y Morelco; falta un 3.º, autorización escrita, nombre del CIO, ERP elegido) | 2.1, 1.2 |
+| Datos del equipo | ✅ | 🟡 (2026-10-05: bio y formación de Jackson recibidas y publicadas; Daniel y resto del equipo pendientes) | 2.2 |
 | Historia de la empresa | ⬜ | ⬜ | 2.3 |
 | Detalle de talleres | ⬜ | ⬜ | 3.1, 3.3 |
 | Decisión Presencia Digital (a/b/c) | ✅ | ✅ (2026-10-05: servicio aparte) | 1.5 ✅ |

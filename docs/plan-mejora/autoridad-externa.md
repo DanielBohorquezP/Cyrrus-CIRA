@@ -26,7 +26,7 @@ LinkedIn:   https://www.linkedin.com/company/cyrrus-cs/
 ### Descripción corta (≈160 caracteres)
 
 > Consultoría estratégica, gerencia de proyectos y gestión del cambio con IA.
-> Método CIRA: de la estrategia a la adopción real. Presencia en +17 países.
+> Método CIRA: de la estrategia a la adopción real. Presencia en 15+ países.
 
 ### Descripción larga (≈700 caracteres)
 
@@ -37,12 +37,12 @@ LinkedIn:   https://www.linkedin.com/company/cyrrus-cs/
 > tecnológicas sin sesgo de proveedor, gerencia de proyectos como PMO externa y
 > gestión del cambio organizacional, con inteligencia artificial aplicada en
 > cada fase. Fundada por Jackson Bohorquez, Cyrrus trabaja con organizaciones de
-> manufactura, servicios financieros, energía y oil & gas en más de 17 países.
+> manufactura, servicios financieros, energía y oil & gas en más de 15 países.
 
 ### English short description
 
 > Strategy consulting, project management, and change management powered by
-> AI. The CIRA method: from strategy to real adoption. Active in 17+ countries.
+> AI. The CIRA method: from strategy to real adoption. Active in 15+ countries.
 
 ## 2. Directorios (en orden de prioridad)
 
@@ -102,7 +102,7 @@ servicio y no solo a la home.
 > **Cyrrus Consulting Services [noticia en una línea con un dato concreto]**
 >
 > Barranquilla, [fecha]. Cyrrus Consulting Services, firma de consultoría
-> estratégica con presencia en más de 17 países, [qué pasó]. [Dato verificable].
+> estratégica con presencia en más de 15 países, [qué pasó]. [Dato verificable].
 >
 > "[Cita de Jackson Bohorquez, CEO y fundador, con una opinión, no un eslogan]".
 >

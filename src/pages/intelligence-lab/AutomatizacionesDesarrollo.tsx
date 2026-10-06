@@ -69,7 +69,7 @@ export default function AutomatizacionesDesarrollo() {
         name: t("automatizaciones.hero.title"),
         provider: { "@id": `${siteUrl}/#organization` },
         description: t("automatizaciones.meta.description"),
-        areaServed: { "@type": "Place", name: "Worldwide" },
+        areaServed: "Worldwide",
         url: `${siteUrl}${pagePath}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
       },

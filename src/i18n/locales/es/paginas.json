@@ -7,27 +7,57 @@
     },
     "meta": {
       "title": "Consultoría Multinacional en LATAM: Casos y Equipo | Cyrrus",
-      "description": "Consultoría multinacional con presencia en +17 países. Casos en manufactura, servicios financieros, energía y oil & gas, y el equipo detrás de CIRA."
+      "description": "Consultoría multinacional con presencia en 15+ países. Casos en manufactura, servicios financieros, energía y oil & gas, y el equipo detrás de CIRA."
     },
     "hero": {
       "eyebrow": "Experiencia",
-      "title": "Consultoría multinacional en LATAM, con presencia en +17 países",
+      "title": "Consultoría multinacional en LATAM, con presencia en 15+ países",
       "description": "Casos de éxito en transformación digital a través de industrias, un equipo de liderazgo con trayectoria real ejecutando el método CIRA, y las empresas que ya confiaron en nosotros."
     },
     "stats": [
-      { "value": "+17", "label": "países con presencia" },
-      { "value": "4", "label": "fases, un solo método" },
-      { "value": "60%", "label": "diagnóstico más rápido con IA" }
+      { "value": "15+", "label": "países con presencia" },
+      { "value": "4", "label": "fases, cada una con metodología propia" },
+      { "value": "60%", "label": "diagnóstico más rápido con IA (medición interna)" }
     ],
     "industriesLabel": "Industrias donde operamos",
     "industriesPrefix": "Consultoría para",
     "industries": [
-      { "name": "Manufactura" },
-      { "name": "Servicios financieros" },
-      { "name": "Energía" },
-      { "name": "Oil & Gas" },
-      { "name": "Retail" },
-      { "name": "Salud" }
+      {
+        "name": "Salud"
+      },
+      {
+        "name": "Educación"
+      },
+      {
+        "name": "Retail"
+      },
+      {
+        "name": "Manufactura"
+      },
+      {
+        "name": "Puertos"
+      },
+      {
+        "name": "Energía"
+      },
+      {
+        "name": "Banca"
+      },
+      {
+        "name": "Servicios financieros"
+      },
+      {
+        "name": "Oil & Gas"
+      },
+      {
+        "name": "Ambiental"
+      },
+      {
+        "name": "Transporte"
+      },
+      {
+        "name": "Construcción"
+      }
     ],
     "gallery": {
       "eyebrow": "En acción",
@@ -60,22 +90,34 @@
     "hero": {
       "eyebrow": "Quiénes somos",
       "title": "Jackson Bohorquez, CEO y fundador de Cyrrus",
-      "description": "La persona detrás del método CIRA: dos décadas conectando estrategia, tecnología y ejecución para empresas en toda LATAM."
+      "description": "La persona detrás del método CIRA: 30 años conectando estrategia, tecnología y ejecución, de Oracle y PepsiCo a la dirección de TI de grandes compañías en LATAM."
     },
     "linkedInLabel": "LinkedIn",
     "photoAlt": "Jackson Bohorquez, CEO de Cyrrus Consulting Services",
     "role": "CEO & Fundador, Cyrrus Consulting Services",
-    "bio": "Jackson Bohorquez fundó Cyrrus Consulting Services para cerrar la brecha que ve fallar a la mayoría de las organizaciones: no por falta de estrategia ni de tecnología, sino porque nadie conecta la decisión con la ejecución. De ahí nace el método CIRA — Construir, Identificar, Realizar, Adoptar — el marco que hoy guía los proyectos de transformación digital de Cyrrus en más de 17 países.",
+    "bio": "Jackson Bohorquez fundó Cyrrus Consulting Services en 2017 para cerrar la brecha que ve fallar a la mayoría de las organizaciones: no por falta de estrategia ni de tecnología, sino porque nadie conecta la decisión con la ejecución. Antes estuvo del otro lado de la mesa: implementó ERP como consultor de Oracle, lideró los sistemas de back office de PepsiCo en Latinoamérica y dirigió áreas de TI en Covidien, la Fundación Santa Fe de Bogotá y Coremar. De esa experiencia nace el método CIRA (Construir, Identificar, Realizar, Adoptar), el marco que hoy guía los proyectos de Cyrrus en más de 15 países.",
     "quote": "\"Las organizaciones no fallan por falta de estrategia ni de tecnología. Fallan cuando nadie conecta la decisión con la ejecución. CIRA existe para cerrar exactamente esa brecha.\"",
     "trajectory": {
       "label": "Trayectoria",
       "items": [
-        "Fundador y CEO de Cyrrus Consulting Services",
-        "Creador del método CIRA: Construir, Identificar, Realizar, Adoptar",
-        "Consultor en transformación digital y gobierno de IA corporativo para empresas en LATAM",
-        "Conferencista y moderador en foros universitarios y empresariales sobre estrategia, tecnología e IA"
+        "Fundador de Cyrrus Consulting Services (2017) y creador del método CIRA",
+        "Director Corporativo de TI en Coremar (2012-2016): lideró la implementación de ERP, CRM y EAM para más de seis unidades de negocio y llevó la madurez tecnológica de 2,2 a 8,4 sobre 10 en año y medio",
+        "Director de Tecnología Informática y Comunicaciones en la Fundación Santa Fe de Bogotá (2011)",
+        "Information Services Manager para el norte de Latinoamérica en Covidien (2010-2011): estándares de auditoría y control de TI en seis países en menos de cuatro meses",
+        "IT BackOffice Manager para Latinoamérica en PepsiCo (2002-2010): implementó Oracle Process Manufacturing y Oracle Financials, con 60% menos tiempo en los cierres mensuales",
+        "Application Services Manager para el sector industrial en NTT DATA Europe & Latam (2025)",
+        "Consultor de Oracle (1996-1999): implementación de Oracle Financials en Colombia y Estados Unidos",
+        "Profesor de la cátedra de Negociación en la especialización en Administración de Sistemas Telemáticos (2019-2025), y conferencista en foros sobre estrategia, tecnología e IA"
       ],
       "methodLinkLabel": "Conozca el Método CIRA que aplicamos en cada proyecto"
+    },
+    "education": {
+      "label": "Formación",
+      "items": [
+        "MBA, Universidad del Norte (2016)",
+        "Especialista en Sistemas Gerenciales de Ingeniería, Pontificia Universidad Javeriana (2002)",
+        "Ingeniero de Sistemas, Universidad Distrital Francisco José de Caldas (1997)"
+      ]
     },
     "milestones": {
       "eyebrow": "Momentos clave",
