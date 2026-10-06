@@ -18,6 +18,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
+import { Testimonials } from "@/components/sections/testimonials";
 import { ServiceLead } from "@/components/sections/service-lead";
 import { ServiceDefinition } from "@/components/sections/service-definition";
 import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
@@ -374,6 +375,8 @@ export default function GestionDeProyectos() {
           </RevealGroup>
         </div>
       </section>
+
+      <Testimonials />
 
       <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
 

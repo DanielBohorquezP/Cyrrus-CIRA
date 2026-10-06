@@ -48,6 +48,8 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1). Oficinas e
 - [Inicio](https://cyrruscs.com/): consultoría estratégica y transformación digital con IA para empresas de Latinoamérica y Estados Unidos, vía la metodología CIRA.
 - [Quiénes Somos](https://cyrruscs.com/quienes-somos): Jackson Bohorquez, CEO y fundador de Cyrrus, creador del método CIRA.
 - [Experiencia](https://cyrruscs.com/experiencia): casos y trayectoria de Cyrrus.
+- [Caso 3 Castillos](https://cyrruscs.com/experiencia/3-castillos): empresa de alimentos fundada en 1861; planeación estratégica de TI (nov. 2020), 92 requerimientos de negocio, selección de infraestructura, ERP y CRM, y salida en vivo del ERP en octubre de 2021 tras 8 meses de implementación.
+- [Caso Morelco](https://cyrruscs.com/experiencia/morelco): modelo de trabajo en casa para el personal de obra de Morelco (hoy Cumbra) en 2020; en un mes, −36% riesgos ergonómicos altos, +54% condiciones del espacio de trabajo en casa y −10% sintomatología física.
 
 ## English
 - [Home](https://cyrruscs.com/en): strategic consulting and digital transformation with AI, via the CIRA methodology.
@@ -73,6 +75,8 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1). Oficinas e
 - [Leadership Academy](https://cyrruscs.com/en/leadership-academy): executive workshops and management training.
 - [About Us](https://cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://cyrruscs.com/en/experiencia): Cyrrus's cases and track record.
+- [3 Castillos case study](https://cyrruscs.com/en/experiencia/3-castillos): food company founded in 1861; IT strategic planning (Nov. 2020), 92 business requirements, infrastructure, ERP and CRM selection, and ERP go-live in October 2021 after 8 months of implementation.
+- [Morelco case study](https://cyrruscs.com/en/experiencia/morelco): work-from-home model for Morelco's (now Cumbra) field staff in 2020; within one month, −36% high ergonomic risks, +54% home workspace conditions and −10% physical symptoms.
 - [Why Digital Transformation Projects Fail](https://cyrruscs.com/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital): organizations don't fail for lack of technology or budget — they fail when no one connects the decision to the people who have to execute it.
 - [How to Choose a Trustworthy Strategic Consulting Firm](https://cyrruscs.com/en/perspectivas/como-elegir-una-consultora-estrategica-confiable): three signs of a firm that truly understands your business, versus one that just fills out a document.
 - [What Corporate AI Governance Is](https://cyrruscs.com/en/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): what AI Governance is, and where a CEO should start before adopting artificial intelligence.

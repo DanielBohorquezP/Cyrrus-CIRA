@@ -168,27 +168,43 @@
   "testimonials": {
     "eyebrow": "On the other side of the gap",
     "title": "This is what it looks like when the decision does reach execution.",
+    "readCase": "Read the case",
     "items": [
+      {
+        "videoId": "X-XO1T35RK4",
+        "name": "",
+        "role": "CIO",
+        "company": "3 Castillos",
+        "quote": "\"Thanks to Cyrrus's support we were able to dream it and do it, and we're ready for the next dream.\"",
+        "metric": "92 requirements · ERP and CRM live in 8 months",
+        "caseSlug": "3-castillos"
+      },
       {
         "videoId": "7czOH9eH6lw",
         "name": "Sebastián Hoyos",
         "role": "CFO",
         "company": "3 Castillos",
-        "quote": "\"We decided to work with Cyrrus because it offered us a path to world-class best practices.\" Today they have a platform that lets them see information live and better understand what's happening with their customers."
+        "quote": "\"We decided to work with Cyrrus because it offered us a path to world-class best practices.\" Today they have a platform that lets them see information live and better understand what's happening with their customers.",
+        "metric": "From Excel sheets to live customer data",
+        "caseSlug": "3-castillos"
       },
       {
         "videoId": "C8aDacFpwBY",
         "name": "Vanessa Ramírez",
-        "role": "HR",
+        "role": "Human Resources",
         "company": "3 Castillos",
-        "quote": "\"It's not just an ERP change — it's an organization-wide change management process.\""
+        "quote": "\"It's not just an ERP change — it's an organization-wide change management process.\"",
+        "metric": "Change management from the planning stage",
+        "caseSlug": "3-castillos"
       },
       {
         "videoId": "2oWuE5RFskI",
         "name": "Fernando Gutiérrez",
-        "role": "Home Worker",
+        "role": "Home Worker project",
         "company": "Morelco",
-        "quote": "Cyrrus helped Morelco implement remote work during the pandemic, adapting working conditions for its employees while maintaining their quality of life and productivity. The solution reinvented how infrastructure projects get done."
+        "quote": "\"We came to Cyrrus for something that was strategic and vital for us: keeping our people's quality of life during the pandemic.\"",
+        "metric": "−36% high ergonomic risks in one month",
+        "caseSlug": "morelco"
       }
     ]
   },

@@ -12,7 +12,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cyrruscs.com/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/" />
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/" />
@@ -408,7 +408,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/experiencia</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/experiencia" />
@@ -417,12 +417,48 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en/experiencia</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/experiencia" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/experiencia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/experiencia" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/experiencia/3-castillos</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/experiencia/3-castillos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/experiencia/3-castillos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/experiencia/3-castillos" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/experiencia/3-castillos</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/experiencia/3-castillos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/experiencia/3-castillos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/experiencia/3-castillos" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/experiencia/morelco</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/experiencia/morelco" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/experiencia/morelco" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/experiencia/morelco" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/experiencia/morelco</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/experiencia/morelco" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/experiencia/morelco" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/experiencia/morelco" />
   </url>
   <url>
     <loc>https://cyrruscs.com/perspectivas</loc>

@@ -114,6 +114,8 @@ function contentSourceFor(esPath) {
   if (CONTENT_SOURCE[esPath]) return CONTENT_SOURCE[esPath];
   const workshopSlug = esPath.match(/^\/leadership-academy\/([a-z0-9-]+)$/)?.[1];
   if (workshopSlug) return { ns: "leadership-academy", pick: [`workshops.${workshopSlug}`] };
+  const caseSlug = esPath.match(/^\/experiencia\/([a-z0-9-]+)$/)?.[1];
+  if (caseSlug) return { ns: "paginas", pick: [`casos.${caseSlug}`, "casos.labels"] };
   const blogSlug = esPath.match(/^\/perspectivas\/([a-z0-9-]+)$/)?.[1];
   if (blogSlug) return { ns: "blog", pick: [`posts.${blogSlug}`] };
   return null;

@@ -1,5 +1,10 @@
 {
   "experiencia": {
+    "cases": {
+      "eyebrow": "Casos de éxito",
+      "title": "Lo que pasó cuando la decisión sí llegó a la ejecución",
+      "description": "Proyectos reales, contados por los clientes en video y con las cifras que se midieron."
+    },
     "meta": {
       "title": "Consultoría Multinacional en LATAM: Casos y Equipo | Cyrrus",
       "description": "Consultoría multinacional con presencia en +17 países. Casos en manufactura, servicios financieros, energía y oil & gas, y el equipo detrás de CIRA."
@@ -91,5 +96,170 @@
     "heading": "Blog de transformación digital, gobierno de IA y gestión del cambio",
     "description": "El espacio editorial de Cyrrus: análisis sobre por qué fracasan los proyectos de transformación digital, cómo elegir una consultora confiable, y el pensamiento detrás del método CIRA.",
     "buttonText": "¿Quiere sugerir un tema?"
+  },
+  "casos": {
+    "labels": {
+      "eyebrowPrefix": "Caso de éxito",
+      "challenge": "El reto",
+      "approach": "Qué hizo Cyrrus",
+      "results": "Resultados",
+      "testimonials": "En palabras del cliente",
+      "services": "Servicios que intervinieron",
+      "otherCase": "Otro caso de éxito",
+      "readCase": "Leer el caso",
+      "videoSuffix": "testimonio en video"
+    },
+    "3-castillos": {
+      "meta": {
+        "title": "Caso 3 Castillos: Transformación Digital, ERP y CRM | Cyrrus",
+        "description": "Cómo 3 Castillos, empresa de alimentos fundada en 1861, pasó de la planeación estratégica al go-live de ERP y CRM en octubre de 2021 con el método CIRA."
+      },
+      "company": "3 Castillos",
+      "industry": "Alimentos",
+      "title": "3 Castillos: de la planeación estratégica al go-live de ERP y CRM",
+      "summary": "3 Castillos (Rafael del Castillo & Cía.), empresa de alimentos fundada en 1861, trabajó con Cyrrus entre noviembre de 2020 y octubre de 2021 en un ciclo completo de transformación: planeación estratégica de TI, selección de infraestructura tecnológica como servicio, selección de ERP y CRM, gerencia del proyecto y gestión del cambio. El ERP salió en vivo en octubre de 2021, tras ocho meses de implementación.",
+      "facts": [
+        {
+          "value": "1861",
+          "label": "año de fundación de la compañía"
+        },
+        {
+          "value": "92",
+          "label": "requerimientos de negocio levantados"
+        },
+        {
+          "value": "8 meses",
+          "label": "de implementación"
+        },
+        {
+          "value": "Oct. 2021",
+          "label": "salida en vivo del ERP"
+        }
+      ],
+      "challenge": [
+        "3 Castillos nació hace más de 160 años como casa comercializadora y molino de harina de trigo. En los últimos años dejó de ser solo una molinera: entró en pastas alimenticias y harina de maíz, y empezó a exportar.",
+        "El crecimiento fue rápido, pero los procesos y la tecnología no lo acompañaron. Mucha gente trabajaba todo el día en Excel y la empresa necesitaba datos en vivo para decidir. Para estar a la altura de los nuevos negocios hacía falta un plan estratégico de tecnología, no solo comprar un sistema."
+      ],
+      "phases": [
+        {
+          "phase": "Construir",
+          "title": "Planeación estratégica y transformación digital",
+          "text": "Desde noviembre de 2020, un levantamiento «base cero» de todos los procesos de la empresa, contrastado con los dolores de la organización. De ahí salieron 92 requerimientos asociados al desarrollo del negocio en los cinco años siguientes."
+        },
+        {
+          "phase": "Identificar",
+          "title": "Dos selecciones de soluciones, sin sesgo de proveedor",
+          "text": "Primero, la infraestructura tecnológica como servicio: comunicaciones corporativas, internet, wifi, capacidad de cómputo y seguridad perimetral y de endpoint. Después, la selección del ERP y del CRM, y del aliado de implementación más apropiado para la compañía."
+        },
+        {
+          "phase": "Realizar",
+          "title": "Gerencia del proyecto de implementación",
+          "text": "Cyrrus gerenció la implementación a lo largo de 2021: entendimiento de la solución, adaptación a la compañía y salida en vivo en octubre de 2021, ocho meses después de iniciar."
+        },
+        {
+          "phase": "Adoptar",
+          "title": "Gestión del cambio desde la planeación",
+          "text": "Los líderes de cada área describieron sus necesidades y calificaron las propuestas de los proveedores, y después formaron parte del equipo de implementación. El trabajo con la gente empezó por el personal auxiliar: escuchar sus necesidades y escalarlas."
+        }
+      ],
+      "results": [
+        "ERP y CRM en producción desde octubre de 2021, ocho meses después de iniciar la implementación.",
+        "La información que vivía en hojas de Excel ahora está en una sola plataforma, con datos de clientes en vivo.",
+        "Un equipo interno involucrado desde la selección, que llegó a la implementación conociendo y respaldando la solución elegida.",
+        "Una base tecnológica para seguir creciendo: según su CFO, la compañía apenas empieza a aprovechar lo que la plataforma le permite («vamos en un 5%»)."
+      ],
+      "testimonials": [
+        {
+          "name": "",
+          "role": "CIO",
+          "quote": "Gracias al acompañamiento de Cyrrus pudimos soñarlo y hacerlo, y estamos listos para el siguiente sueño."
+        },
+        {
+          "name": "Sebastián Hoyos",
+          "role": "CFO",
+          "quote": "Decidimos tomar a Cyrrus porque nos ofrecía ir a las mejores prácticas mundiales."
+        },
+        {
+          "name": "Vanessa Ramírez",
+          "role": "Recursos Humanos",
+          "quote": "No solamente es un cambio de un ERP, sino un proceso de gestión de cambio a nivel organizacional."
+        }
+      ],
+      "card": {
+        "excerpt": "Planeación estratégica de TI, selección de infraestructura, ERP y CRM, gerencia del proyecto y gestión del cambio en una empresa de alimentos fundada en 1861.",
+        "metric": "92 requerimientos · ERP en vivo en 8 meses"
+      }
+    },
+    "morelco": {
+      "meta": {
+        "title": "Caso Morelco: Trabajo en Casa y Gestión del Cambio | Cyrrus",
+        "description": "Cómo Morelco (hoy Cumbra) llevó a sus equipos de obra a un modelo de trabajo en casa en 2020: 36% menos riesgos ergonómicos altos en un mes."
+      },
+      "company": "Morelco",
+      "industry": "Infraestructura",
+      "title": "Morelco: un modelo de trabajo en casa para equipos de obra, en plena pandemia",
+      "summary": "Morelco (hoy Cumbra), empresa de proyectos de infraestructura, trabajó con Cyrrus en 2020 para llevar a su personal de obra a un nuevo modelo de trabajo en casa sin perder su calidad de vida. En un mes de intervención en personas, procesos y tecnología, los riesgos ergonómicos altos bajaron 36%, la sintomatología física bajó 10% y las condiciones del espacio de trabajo en casa mejoraron 54%.",
+      "facts": [
+        {
+          "value": "−36%",
+          "label": "riesgos ergonómicos altos"
+        },
+        {
+          "value": "+54%",
+          "label": "condiciones del espacio de trabajo en casa"
+        },
+        {
+          "value": "−10%",
+          "label": "sintomatología física"
+        },
+        {
+          "value": "1 mes",
+          "label": "de intervención"
+        }
+      ],
+      "challenge": [
+        "Morelco vive de sus proyectos: obras de infraestructura de interés para el país, normalmente en regiones apartadas y de difícil acceso. Su gente estaba acostumbrada a pasar largas temporadas en obra.",
+        "Con la pandemia, la empresa tuvo que desmovilizar al personal de los proyectos. Las personas no tenían en casa condiciones para trabajar, y el modelo de operación que conocían dejó de servir de un día para otro."
+      ],
+      "phases": [
+        {
+          "phase": "Personas",
+          "title": "La calidad de vida como objetivo del proyecto",
+          "text": "El punto de partida no fue la tecnología sino la gente: mantener su bienestar mientras cambiaba por completo su forma de trabajar."
+        },
+        {
+          "phase": "Procesos",
+          "title": "Una nueva forma de organizar el trabajo",
+          "text": "Se replanteó la rotación entre obra y casa: de pasar tres meses en el proyecto y volver dos fines de semana, a ir unas semanas cada mes o cada dos meses."
+        },
+        {
+          "phase": "Tecnología",
+          "title": "Condiciones reales para trabajar desde casa",
+          "text": "Las herramientas para operar a distancia y la mejora del espacio de trabajo en casa de cada persona, con medición de sus riesgos ergonómicos antes y después."
+        },
+        {
+          "phase": "Adopción",
+          "title": "Gestión del cambio",
+          "text": "Un cambio completo de vida para personas acostumbradas a la obra. El acompañamiento buscó que el nuevo modelo se sostuviera en el tiempo, no solo que se anunciara."
+        }
+      ],
+      "results": [
+        "36% menos riesgos ergonómicos altos en un mes de intervención.",
+        "54% de mejora en las condiciones del espacio físico de trabajo en casa.",
+        "10% menos sintomatología física en los colaboradores.",
+        "Un modelo que el propio equipo valida: «hoy nos dicen: esto funciona»."
+      ],
+      "testimonials": [
+        {
+          "name": "Fernando Gutiérrez",
+          "role": "Proyecto Home Worker",
+          "quote": "Acudimos a Cyrrus por un tema que para nosotros era estratégico y vital: mantener la calidad de vida de nuestra gente en la pandemia."
+        }
+      ],
+      "card": {
+        "excerpt": "Un nuevo modelo de trabajo en casa para el personal de obra de una empresa de infraestructura, con intervención en personas, procesos y tecnología.",
+        "metric": "−36% riesgos ergonómicos altos en 1 mes"
+      }
+    }
   }
 }

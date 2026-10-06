@@ -1,5 +1,10 @@
 {
   "experiencia": {
+    "cases": {
+      "eyebrow": "Case studies",
+      "title": "What happened when the decision actually reached execution",
+      "description": "Real projects, told by the clients on video and with the figures that were measured."
+    },
     "meta": {
       "title": "Multinational Consulting in LATAM: Cases and Team | Cyrrus",
       "description": "Multinational consulting across +17 countries. Cases in manufacturing, financial services, energy, and oil & gas, and the team behind CIRA."
@@ -91,5 +96,170 @@
     "heading": "Digital transformation, AI governance, and change management blog",
     "description": "Cyrrus's editorial space: analysis of why digital transformation projects fail, how to choose a reliable consulting firm, and the thinking behind the CIRA method.",
     "buttonText": "Want to suggest a topic?"
+  },
+  "casos": {
+    "labels": {
+      "eyebrowPrefix": "Case study",
+      "challenge": "The challenge",
+      "approach": "What Cyrrus did",
+      "results": "Results",
+      "testimonials": "In the client's words",
+      "services": "Services involved",
+      "otherCase": "Another case study",
+      "readCase": "Read the case",
+      "videoSuffix": "video testimonial"
+    },
+    "3-castillos": {
+      "meta": {
+        "title": "3 Castillos Case: Digital Transformation, ERP & CRM | Cyrrus",
+        "description": "How 3 Castillos, a food company founded in 1861, went from strategic planning to an ERP and CRM go-live in October 2021 with the CIRA method."
+      },
+      "company": "3 Castillos",
+      "industry": "Food",
+      "title": "3 Castillos: from strategic planning to an ERP and CRM go-live",
+      "summary": "3 Castillos (Rafael del Castillo & Cía.), a food company founded in 1861, worked with Cyrrus from November 2020 to October 2021 on a full transformation cycle: IT strategic planning, selection of technology infrastructure as a service, ERP and CRM selection, project management and change management. The ERP went live in October 2021, after eight months of implementation.",
+      "facts": [
+        {
+          "value": "1861",
+          "label": "year the company was founded"
+        },
+        {
+          "value": "92",
+          "label": "business requirements gathered"
+        },
+        {
+          "value": "8 months",
+          "label": "of implementation"
+        },
+        {
+          "value": "Oct. 2021",
+          "label": "ERP go-live"
+        }
+      ],
+      "challenge": [
+        "3 Castillos was founded more than 160 years ago as a trading house and wheat flour mill. In recent years it stopped being just a miller: it moved into pasta and corn flour and started exporting.",
+        "Growth was fast, but processes and technology didn't keep up. Many people spent the whole day in Excel, and the company needed live data to make decisions. Living up to the new businesses called for a technology strategy, not just a new system."
+      ],
+      "phases": [
+        {
+          "phase": "Build",
+          "title": "Strategic planning and digital transformation",
+          "text": "Starting in November 2020, a zero-based review of every company process, set against the organization's pain points. It produced 92 requirements tied to the business's development over the following five years."
+        },
+        {
+          "phase": "Identify",
+          "title": "Two vendor-neutral solution selections",
+          "text": "First, technology infrastructure as a service: corporate communications, internet, wifi, computing capacity, and perimeter and endpoint security. Then the selection of the ERP and the CRM, and of the most suitable implementation partner."
+        },
+        {
+          "phase": "Realize",
+          "title": "Managing the implementation project",
+          "text": "Cyrrus managed the implementation throughout 2021: understanding the solution, adapting it to the company, and going live in October 2021, eight months after starting."
+        },
+        {
+          "phase": "Adopt",
+          "title": "Change management from the planning stage",
+          "text": "Each area's leaders described their needs and scored the vendors' proposals, then joined the implementation team. The work with people started with support staff: listening to their needs and escalating them."
+        }
+      ],
+      "results": [
+        "ERP and CRM in production since October 2021, eight months after implementation began.",
+        "Information that lived in Excel sheets is now on a single platform, with live customer data.",
+        "An internal team involved since the selection, which reached implementation knowing and backing the chosen solution.",
+        "A technology base to keep growing: according to the CFO, the company is only beginning to use what the platform makes possible (“we're at about 5%”)."
+      ],
+      "testimonials": [
+        {
+          "name": "",
+          "role": "CIO",
+          "quote": "Thanks to Cyrrus's support we were able to dream it and do it, and we're ready for the next dream."
+        },
+        {
+          "name": "Sebastián Hoyos",
+          "role": "CFO",
+          "quote": "We chose Cyrrus because it offered to take us to global best practices."
+        },
+        {
+          "name": "Vanessa Ramírez",
+          "role": "Human Resources",
+          "quote": "It isn't just an ERP change; it's an organizational change management process."
+        }
+      ],
+      "card": {
+        "excerpt": "IT strategic planning, infrastructure, ERP and CRM selection, project management and change management at a food company founded in 1861.",
+        "metric": "92 requirements · ERP live in 8 months"
+      }
+    },
+    "morelco": {
+      "meta": {
+        "title": "Morelco Case: Remote Work and Change Management | Cyrrus",
+        "description": "How Morelco (now Cumbra) moved its field crews to a work-from-home model in 2020: 36% fewer high ergonomic risks within one month."
+      },
+      "company": "Morelco",
+      "industry": "Infrastructure",
+      "title": "Morelco: a work-from-home model for field crews, in the middle of the pandemic",
+      "summary": "Morelco (now Cumbra), an infrastructure projects company, worked with Cyrrus in 2020 to move its field staff to a new work-from-home model without losing their quality of life. In one month of intervention across people, processes and technology, high ergonomic risks fell 36%, physical symptoms fell 10%, and home workspace conditions improved 54%.",
+      "facts": [
+        {
+          "value": "−36%",
+          "label": "high ergonomic risks"
+        },
+        {
+          "value": "+54%",
+          "label": "home workspace conditions"
+        },
+        {
+          "value": "−10%",
+          "label": "physical symptoms"
+        },
+        {
+          "value": "1 month",
+          "label": "of intervention"
+        }
+      ],
+      "challenge": [
+        "Morelco lives by its projects: infrastructure works of national interest, usually in remote, hard-to-reach regions. Its people were used to spending long stretches on site.",
+        "When the pandemic hit, the company had to demobilize its project staff. People had no setup at home to work, and the operating model they knew stopped working overnight."
+      ],
+      "phases": [
+        {
+          "phase": "People",
+          "title": "Quality of life as the project's goal",
+          "text": "The starting point wasn't technology but people: keeping them well while their way of working changed completely."
+        },
+        {
+          "phase": "Processes",
+          "title": "A new way to organize the work",
+          "text": "Site rotation was rethought: from three months on the project and two weekends home, to a few weeks on site every month or two."
+        },
+        {
+          "phase": "Technology",
+          "title": "Real conditions to work from home",
+          "text": "The tools to operate remotely and an improved home workspace for each person, with their ergonomic risks measured before and after."
+        },
+        {
+          "phase": "Adoption",
+          "title": "Change management",
+          "text": "A complete change of life for people used to working on site. The support aimed for a model that would last, not one that was merely announced."
+        }
+      ],
+      "results": [
+        "36% fewer high ergonomic risks within one month of intervention.",
+        "54% improvement in the physical conditions of the home workspace.",
+        "10% fewer physical symptoms among employees.",
+        "A model the team itself endorses: “today they tell us: this works.”"
+      ],
+      "testimonials": [
+        {
+          "name": "Fernando Gutiérrez",
+          "role": "Home Worker project",
+          "quote": "We came to Cyrrus for something that was strategic and vital for us: keeping our people's quality of life during the pandemic."
+        }
+      ],
+      "card": {
+        "excerpt": "A new work-from-home model for an infrastructure company's field staff, intervening in people, processes and technology.",
+        "metric": "−36% high ergonomic risks in 1 month"
+      }
+    }
   }
 }

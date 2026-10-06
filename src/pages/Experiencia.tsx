@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
 import { clientLogoNames } from "@/lib/client-logos";
+import { caseStudies } from "@/lib/case-studies";
 import { SiteHeader } from "@/components/layout/site-header";
 import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
 import { InteractiveGlobe } from "@/components/ui/interactive-globe";
@@ -36,6 +38,11 @@ interface Industry {
 }
 interface GalleryItem {
   caption: string;
+}
+interface CaseCard {
+  title: string;
+  industry: string;
+  card: { excerpt: string; metric: string };
 }
 interface TeamRole {
   role: string;
@@ -74,6 +81,11 @@ export default function Experiencia() {
   const team = (t("experiencia.team.roles", { returnObjects: true }) as TeamRole[]).map((m, i) => ({
     ...m,
     photo: teamPhotos[i],
+  }));
+
+  const cases = caseStudies.map((c) => ({
+    ...c,
+    ...(t(`casos.${c.slug}`, { returnObjects: true }) as CaseCard),
   }));
 
   const siteUrl = "https://cyrruscs.com";
@@ -167,6 +179,49 @@ export default function Experiencia() {
               ))}
             </RevealGroup>
           </Reveal>
+        </div>
+      </section>
+
+      <section id="casos" className="w-full bg-light-blue/40 py-24 md:py-32">
+        <div className="mx-auto max-w-6xl px-6 md:px-12">
+          <Reveal className="max-w-2xl">
+            <span className="text-base font-bold uppercase tracking-wider text-blue">
+              {t("experiencia.cases.eyebrow")}
+            </span>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              {t("experiencia.cases.title")}
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-gray">
+              {t("experiencia.cases.description")}
+            </p>
+          </Reveal>
+
+          <RevealGroup className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {cases.map((c) => (
+              <RevealItem key={c.slug}>
+                <Link
+                  to={`${pagePath}/${c.slug}`}
+                  className="group flex h-full flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-xl"
+                >
+                  <span className="flex h-14 w-36 items-center justify-center rounded-xl bg-navy p-2">
+                    <Img
+                      src={`/assets/logos-clientes/${encodeURIComponent(c.logo)}.webp`}
+                      alt={c.logo}
+                      sizes="140px"
+                      className="h-full w-full object-contain"
+                    />
+                  </span>
+                  <span className="mt-6 text-sm font-bold uppercase tracking-wider text-blue">{c.industry}</span>
+                  <h3 className="mt-2 text-xl font-semibold text-navy">{c.title}</h3>
+                  <p className="mt-3 text-base leading-relaxed text-gray">{c.card.excerpt}</p>
+                  <p className="mt-4 text-base font-semibold text-navy">{c.card.metric}</p>
+                  <span className="mt-auto pt-6 text-sm font-semibold text-blue">
+                    {`${t("casos.labels.readCase")} →`}
+                  </span>
+                </Link>
+              </RevealItem>
+            ))}
+          </RevealGroup>
         </div>
       </section>
 
