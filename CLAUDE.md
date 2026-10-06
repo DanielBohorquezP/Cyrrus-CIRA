@@ -38,6 +38,10 @@ the static HTML matches what React renders on its **first** pass. If it stops
 matching, React reports a hydration error and silently rebuilds the subtree:
 nothing looks broken, the page just gets slow again.
 
+Hydration itself runs inside `startTransition` (`src/main.tsx`), so React
+renders it in short slices instead of one long task — that alone took the
+home page's lab TBT from ~127ms to ~33ms. Don't move `hydrateRoot` out of it.
+
 Four rules keep it matching. All four have already cost a whole page its
 hydration at least once.
 

@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, startTransition } from 'react'
 import { hydrateRoot, createRoot } from 'react-dom/client'
 import './index.css'
 import './i18n'
@@ -40,13 +40,22 @@ if (container.firstChild && documentLang === targetLang) {
   // suspended boundary — it discards the markup and rebuilds, which is the one
   // thing we're here to avoid. The page is already painted, so this costs a
   // fetch before the page becomes interactive, not before it becomes visible.
+  //
+  // Hydrating inside startTransition puts it on a transition lane, which React
+  // renders in ~5ms slices and yields between, instead of the default lane's
+  // one uninterrupted pass. Same work, but as many short tasks rather than one
+  // ~500ms long task — and long tasks are what Total Blocking Time counts. A
+  // click that lands mid-hydration still works: React hydrates that subtree
+  // first and replays the event.
   preloadRouteChunk(window.location.pathname).then(() => {
-    hydrateRoot(
-      container,
-      <StrictMode>
-        <App />
-      </StrictMode>,
-    )
+    startTransition(() => {
+      hydrateRoot(
+        container,
+        <StrictMode>
+          <App />
+        </StrictMode>,
+      )
+    })
   })
 } else {
   // The dev server and the pristine build shell both serve an empty #root.
