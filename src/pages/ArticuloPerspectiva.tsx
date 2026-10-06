@@ -79,6 +79,10 @@ interface BlogPostTranslation {
   /** Copy for the 2 mid-article service-promo cards — see
    *  BlogPostEntry.serviceCtaIndexes in blog-data.ts for where they render. */
   serviceCtas: [BlogServiceCta, BlogServiceCta];
+  /** 3 one-line takeaways shown in an "In short" box above the body. */
+  keyTakeaways?: string[];
+  /** External sources for the figures cited in the body. */
+  sources?: { label: string; url: string }[];
 }
 
 export default function ArticuloPerspectiva() {
@@ -180,6 +184,21 @@ export default function ArticuloPerspectiva() {
       <section className="w-full bg-background py-20 md:py-28">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-12 md:px-12">
           <Reveal className="order-2 space-y-6 text-lg leading-relaxed text-gray md:order-1 md:col-span-8">
+            {tr.keyTakeaways && tr.keyTakeaways.length > 0 && (
+              <aside className="rounded-2xl border border-blue/20 bg-light-blue/40 p-6">
+                <div className="text-sm font-bold uppercase tracking-wider text-blue">
+                  {lang === "en" ? "In short" : "En breve"}
+                </div>
+                <ul className="mt-3 space-y-2 text-base text-navy">
+                  {tr.keyTakeaways.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan" aria-hidden="true" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+            )}
             {tr.body.flatMap((block, i) => {
               const nodes: ReactNode[] = [];
               const ctaIndex = entry.serviceCtaIndexes.indexOf(i);
@@ -215,6 +234,25 @@ export default function ArticuloPerspectiva() {
               }
               return nodes;
             })}
+            {tr.sources && tr.sources.length > 0 && (
+              <div className="border-t border-border pt-6">
+                <h2 className="text-base font-semibold text-navy">{lang === "en" ? "Sources" : "Fuentes"}</h2>
+                <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm">
+                  {tr.sources.map((source) => (
+                    <li key={source.url}>
+                      <a
+                        href={source.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue underline underline-offset-4 hover:text-navy"
+                      >
+                        {source.label}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
           </Reveal>
           <Reveal delay={0.1} className="order-1 md:order-2 md:col-span-4">
             <div className="space-y-6 rounded-2xl border border-border bg-white p-6 shadow-sm md:sticky md:top-28">
@@ -232,6 +270,18 @@ export default function ArticuloPerspectiva() {
                   <div className="text-xs text-muted-foreground">{tHome("ceo.role")}</div>
                 </div>
               </div>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {lang === "en"
+                  ? "30 years in strategy and IT: Oracle consultant, IT leader at PepsiCo Latin America, Covidien and Coremar, and founder of Cyrrus in 2017. MBA, Universidad del Norte."
+                  : "30 años en estrategia y TI: consultor de Oracle, líder de TI en PepsiCo Latinoamérica, Covidien y Coremar, y fundador de Cyrrus en 2017. MBA de la Universidad del Norte."}
+              </p>
+              <Link
+                to={langPath("/quienes-somos", lang)}
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue underline-offset-4 hover:underline"
+              >
+                {lang === "en" ? "About the author" : "Sobre el autor"}
+                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
               <div className="border-t border-border pt-4 text-sm text-muted-foreground">
                 <span className="font-medium text-navy">{lang === "en" ? "Published" : "Publicado"}</span>
                 {` · ${displayDate}`}

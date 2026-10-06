@@ -6,6 +6,11 @@
       "excerpt": "Organizations don't fail for lack of technology or budget. They fail when no one connects the decision to the people who have to execute it. Seven recurring mistakes — and how to avoid them.",
       "metaDescription": "Why digital transformation projects fail: the 7 most common mistakes, from starting with technology to leaving change management for last.",
       "intro": "There's a question that, in my opinion, should be asked long before a budget is approved, a platform is selected, or a contract is signed: have we already thought about change management?",
+      "keyTakeaways": [
+        "Transformation projects rarely fail because of technology: they fail when no one connects the decision to the people who must execute it.",
+        "The seven most common mistakes run from starting with the tool to treating the transformation as finished when the project closes.",
+        "Change management starts before the solution is chosen, and the CEO has to lead it by example."
+      ],
       "serviceCtas": [
         {
           "title": "Can your next project avoid this mistake?",
@@ -31,7 +36,7 @@
       "body": [
         { "type": "p", "text": "Too often, the answer comes too late, isn't given the importance it deserves, or gets assigned to someone without the capabilities needed to manage it." },
         { "type": "p", "text": "I've accompanied organizations through transformation processes where the technology was well chosen, the project had good professionals, and there was a significant budget — on paper, everything seemed to be in order, and yet something wasn't working." },
-        { "type": "p", "text": "Over the years I've learned that transformation projects rarely fail for a single reason. They fail when an organization starts transforming part of the business without having sufficiently understood what it's trying to transform, why it needs to do it, and how it will affect the people who make that business run every day." },
+        { "type": "p", "text": "Over the years I've learned that transformation projects rarely fail for a single reason. They fail when an organization starts transforming part of the business without having sufficiently understood what it's trying to transform, why it needs to do it, and how it will affect the people who make that business run every day. Industry data points the same way: in a BCG study published in 2020, 70% of digital transformations fell short of their objectives." },
         { "type": "p", "text": "That's why, before talking about technology, I prefer to talk about three things: people, processes, and technology — in that order." },
         { "type": "h2", "text": "The first mistake: starting with technology" },
         { "type": "p", "text": "It's a conversation that repeats itself constantly:" },
@@ -55,7 +60,7 @@
         { "type": "quote", "text": "What else changes in the organization when this process changes?" },
         { "type": "p", "text": "That's where transformation really begins." },
         { "type": "h2", "text": "The fourth mistake: leaving change management for the end" },
-        { "type": "p", "text": "This is probably one of the mistakes I've seen repeated the most — change management can't show up at the end of the project, once the decision has already been made, the solution has been selected, and the organization is about to receive a new way of working." },
+        { "type": "p", "text": "This is probably one of the mistakes I've seen repeated the most — change management can't show up at the end of the project, once the decision has already been made, the solution has been selected, and the organization is about to receive a new way of working. Prosci's research backs this up: projects with excellent change management are about seven times more likely to meet their objectives than those with poor change management." },
         { "type": "p", "text": "By then, many people have already built their own interpretations of what's happening. When people don't understand the change, fear, resistance, indifference, or simply fatigue show up." },
         { "type": "p", "text": "For me, change management begins much earlier.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "It begins when people understand why they need to change, what the impact of doing it well will be, and also what the impact of doing it poorly could be." },
@@ -111,6 +116,16 @@
         { "type": "p", "text": "That's why, whenever I think about transformation, I always come back to one simple idea: people, processes, technology." },
         { "type": "p", "text": "But there's a principle that has to stay at the center: people. Because, in the end, technology can enable change and processes can give it structure, but it's people who make a transformation actually happen." },
         { "type": "quote", "text": "“Technologies change. A culture of innovation and change endures and evolves.”" }
+      ],
+      "sources": [
+        {
+          "label": "BCG (2020). Flipping the Odds of Digital Transformation Success",
+          "url": "https://www.bcg.com/publications/2020/increasing-odds-of-success-in-digital-transformation"
+        },
+        {
+          "label": "Prosci. The Correlation Between Change Management and Project Success",
+          "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
+        }
       ]
     },
     "como-elegir-una-consultora-estrategica-confiable": {
@@ -119,6 +134,11 @@
       "excerpt": "Choosing a consulting firm shouldn't be a comparison of proposals. Three signs of a firm that truly understands your business, versus one that just fills out a document.",
       "metaDescription": "How to choose a trustworthy strategic consulting firm: what to ask, which red flags matter, and why vendor-agnosticism is key.",
       "intro": "A good consulting firm isn't the one that knows the most. It's the one that understands the best.",
+      "keyTakeaways": [
+        "A strategy consulting firm shouldn't be chosen by brand, price or the size of its proposal, but by how well it understands your business.",
+        "Signs of trust: it assumes nothing, it is willing to have uncomfortable conversations, and it has no commercial preference for any vendor.",
+        "When it's over, what should remain is a more capable organization, not just a document."
+      ],
       "serviceCtas": [
         {
           "title": "Want a consulting firm that tells you what you need to hear?",
@@ -183,7 +203,7 @@
         { "type": "p", "text": "Constraints exist. Budget, talent, culture, regulation, infrastructure, processes, time, execution capacity, and organizational and technological maturity." },
         { "type": "p", "text": "Ignoring them doesn't make them disappear. A strategic recommendation that can't coexist with the organization's reality stops being strategic." },
         { "type": "h2", "text": "How do you recognize a good consulting firm?" },
-        { "type": "p", "text": "There's one sign that, for me, sums up many of the previous ones." },
+        { "type": "p", "text": "You can recognize a good firm because it understands your business, not just what you tell it, and gives it back to you from a perspective your team didn't have. There's one sign that, for me, sums up many of the previous ones." },
         { "type": "p", "text": "It understands your business." },
         { "type": "p", "text": "But not only what you tell it. It understands your pain points, understands the environment, understands the constraints, understands the people, and over time, it may even identify pain points the owner or CEO hasn't yet seen." },
         { "type": "p", "text": "That's where the real value of a consulting engagement starts to show up. Not when it delivers a document, but when it helps the organization understand its own reality better." },
@@ -196,7 +216,7 @@
         { "type": "quote", "text": "Which of the solutions we sell can we recommend?" },
         { "type": "p", "text": "Independence allows for greater freedom of evaluation. And that freedom matters especially when the decisions involve significant investments and long-term commitments." },
         { "type": "h2", "text": "What should remain once a consulting engagement ends?" },
-        { "type": "p", "text": "For me, this is one of the most important questions." },
+        { "type": "p", "text": "When a consulting engagement ends, what should remain is a more capable organization, not just a document. For me, this is one of the most important questions." },
         { "type": "p", "text": "A consulting engagement shouldn't end simply by leaving behind a document. It should leave behind capability: a better understanding of the business, better criteria for making decisions, knowledge installed within the team, and better-prepared people." },
         { "type": "p", "text": "But there's something even more important: an organization capable of questioning, analyzing, and improving — a more innovative, critical, people-centered organizational culture oriented toward continuous improvement." },
         { "type": "p", "text": "Because if every time the organization faces a problem it needs to hire an outsider again to figure out what to do, the consulting engagement probably didn't fully accomplish its purpose." },
@@ -225,6 +245,11 @@
       "excerpt": "Before asking which AI to adopt, every organization should ask whether it's ready to govern it. What AI Governance is, and where a CEO should start.",
       "metaDescription": "What corporate AI Governance is, how it differs from Data Governance, and the questions every CEO should answer before adopting artificial intelligence.",
       "intro": "AI can speed up a decision; governance determines whether that decision should be made at all.",
+      "keyTakeaways": [
+        "AI Governance is the set of rules, roles and controls that ensure a company's AI is profitable, safe and aligned with its strategy.",
+        "It should be proportional to risk: more freedom to experiment where impact is low, more control where AI decides or acts on its own.",
+        "It isn't an IT-only matter: the CEO doesn't govern the algorithm, the CEO governs the decision."
+      ],
       "serviceCtas": [
         {
           "title": "Does your company already have Shadow AI and not know it?",
@@ -273,7 +298,7 @@
         { "type": "p", "text": "That case points to another reality CEOs should keep in mind: artificial intelligence can enter an organization long before the organization has formally decided how to govern it. This is now commonly called Shadow AI — tools used by employees without a formal process of approval, evaluation, or control." },
         { "type": "p", "text": "That's why AI Governance shouldn't begin when the company decides to buy a platform. It should begin when it understands that AI is already changing the way people work." },
         { "type": "h2", "text": "Governing doesn't mean adding bureaucracy" },
-        { "type": "p", "text": "One of the mistakes that would concern me most would be turning AI Governance into a bureaucratic process that ends up holding back innovation." },
+        { "type": "p", "text": "One of the mistakes that would concern me most would be turning AI Governance into a bureaucratic process that ends up holding back innovation. There are reference frameworks that help strike that balance, such as NIST's AI Risk Management Framework (2023) or ISO/IEC 42001, the first certifiable international standard for artificial intelligence management systems." },
         { "type": "p", "text": "Not every AI application carries the same risk or requires the same level of control. A low-impact tool used to summarize internal documents shouldn't go through the same process as an intelligence that takes part in a credit decision, recommends a hire, or has access to sensitive customer information." },
         { "type": "quote", "text": "“Governance should be proportional to risk and to the level of autonomy.”" },
         { "type": "p", "text": "Lower risk means more room to experiment quickly; higher impact and autonomy call for greater controls, traceability, and accountability." },
@@ -318,7 +343,7 @@
         { "type": "p", "text": "It should help decide when an initiative should continue, when it should change, when it's time to retire a model, and when it's better to simply say: this doesn't make sense for our business." },
         { "type": "p", "text": "Ultimately, governing well doesn't mean saying no to artificial intelligence — it means knowing where to say yes, where to set limits, and under what conditions the risk is worth taking." },
         { "type": "h2", "text": "Where should a CEO start?" },
-        { "type": "p", "text": "I would start with very simple questions, though not necessarily easy ones to answer." },
+        { "type": "p", "text": "A CEO should start by defining what they want to use artificial intelligence for and which concrete business problem it will solve, before choosing any technology. I would start with very simple questions, though not necessarily easy ones to answer." },
         { "type": "p", "text": "What do we want to use artificial intelligence for?" },
         { "type": "p", "text": "What specific pain point do we want to solve?" },
         { "type": "p", "text": "What advantage can it give us over our competitors?" },
@@ -333,6 +358,24 @@
         { "type": "p", "text": "It should start with: “what do we want to transform, and what intelligence do we need to do it better?”" },
         { "type": "p", "text": "That's where AI Governance begins. And that's also where a far more important conversation begins for a CEO: are we using artificial intelligence to transform our business, or are we simply adding intelligence to our processes?" },
         { "type": "p", "text": "The difference may seem small. But it could end up defining who leads the future, and who is simply trying to catch up to it." }
+      ],
+      "sources": [
+        {
+          "label": "British Columbia Civil Resolution Tribunal (2024). Moffatt v. Air Canada, 2024 BCCRT 149",
+          "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/525448/1/document.do"
+        },
+        {
+          "label": "CNBC (2023). Samsung bans use of AI like ChatGPT for staff after misuse",
+          "url": "https://www.cnbc.com/2023/05/02/samsung-bans-use-of-ai-like-chatgpt-for-staff-after-misuse-of-chatbot.html"
+        },
+        {
+          "label": "NIST (2023). AI Risk Management Framework (AI RMF 1.0)",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        },
+        {
+          "label": "ISO/IEC 42001:2023. Artificial intelligence management systems",
+          "url": "https://www.iso.org/standard/42001"
+        }
       ]
     },
     "gerencia-de-proyectos-cuando-contratar-una-pmo-externa": {
@@ -341,6 +384,11 @@
       "excerpt": "A project doesn't fail for lack of a schedule, but for lack of someone accountable for the outcome. Five signs your project needs external management, and what to demand from it.",
       "metaDescription": "Project management: what it is, when to hire an external PMO, what it should deliver, and how to choose one. Five signs your project needs help.",
       "intro": "If no one in your organization can say for certain who owns your project's outcome, the question probably isn't how to track it, but who is managing it.",
+      "keyTakeaways": [
+        "Project management is the planning, direction, control and execution of an initiative so it meets its agreed time, cost, scope and quality.",
+        "An external PMO makes sense when no one owns the result, the project is critical, or the internal team lacks the capacity to govern it.",
+        "A project can finish on time and on budget and still fail if no one managed adoption."
+      ],
       "serviceCtas": [
         {
           "title": "Does your project need an external PMO?",
@@ -372,7 +420,7 @@
         { "type": "p", "text": "People often use project management and project administration interchangeably. In practice they overlap. If there's a nuance, it's that management puts the emphasis on direction and accountability for the outcome, not just on administering tasks." },
         { "type": "p", "text": "That difference matters. A project can have a flawless schedule, weekly meetings, and well-designed reports, and still have no one making the hard calls when something drifts." },
         { "type": "h2", "text": "Five signs your project needs external project management" },
-        { "type": "p", "text": "Not every project needs an external PMO. But there are signs that repeat in the ones that do." },
+        { "type": "p", "text": "The cost of poor project management is measurable: according to PMI's 2020 Pulse of the Profession report, organizations waste an average of 11.4% of their project investment due to poor performance. Not every project needs an external PMO. But there are signs that repeat in the ones that do." },
         { "type": "p", "text": "First: no one is accountable for the whole outcome. The vendor answers for its part, each area answers for its own, and the project as a whole has no owner." },
         { "type": "p", "text": "Second: the reports say everything is fine until, suddenly, everything is wrong. When the status goes from green to red without passing through yellow, the problem isn't the project, it's how it's being measured." },
         { "type": "p", "text": "Third: the vendor is managing itself. It's natural for an implementer to defend its scope, timelines, and costs. What isn't healthy is for it to also be the one deciding whether it's doing a good job." },
@@ -405,6 +453,12 @@
         { "type": "h2", "text": "In summary" },
         { "type": "p", "text": "Good project management doesn't show in the number of reports it produces, but in the number of problems it prevents. If your next project is large, new to the organization, or critical to the business, it's worth asking who will be accountable for it." },
         { "type": "p", "text": "At Cyrrus we provide project management services as an external PMO, accountable for the outcome and with change management built in from the start.", "links": [{"text": "project management services", "href": "/metodo-cira/gestion-de-proyectos"}] }
+      ],
+      "sources": [
+        {
+          "label": "PMI (2020). Pulse of the Profession: Ahead of the Curve",
+          "url": "https://www.pmi.org/learning/thought-leadership/pulse/pulse-of-the-profession-2020"
+        }
       ]
     },
     "que-es-un-erp-guia-para-elegirlo": {
@@ -413,6 +467,11 @@
       "excerpt": "An ERP brings finance, purchasing, inventory and operations into one platform. What it is, what it is for, which modules it includes and seven criteria for choosing the right one.",
       "metaDescription": "What an ERP is, what it is for, which modules it includes and how to choose the right one for your company. A guide with selection criteria and common mistakes.",
       "intro": "If every area of your company has its own version of the numbers, the question is probably not which system to buy, but what an ERP is and whether you really need one.",
+      "keyTakeaways": [
+        "An ERP is a system that brings a company's finance, purchasing, inventory, sales and production onto a single platform.",
+        "It is chosen on seven criteria: functional and technical fit, total cost of ownership, vendor soundness, implementation capacity, adoption and local coverage.",
+        "Implementations almost never fail because of the software, but because of unclear requirements, poorly migrated data and no change management."
+      ],
       "serviceCtas": [
         {
           "title": "Choosing an ERP?",
@@ -486,7 +545,7 @@
         },
         {
           "type": "p",
-          "text": "Each vendor groups them differently, but these are the most common."
+          "text": "An ERP usually includes finance and accounting, purchasing, inventory and logistics, sales and invoicing, production and, in some cases, human resources and payroll. Each vendor groups them differently, but these are the most common."
         },
         {
           "type": "p",
@@ -656,7 +715,7 @@
         },
         {
           "type": "p",
-          "text": "It almost never fails because of the software. The most common causes are choosing without clear requirements, underestimating data migration, customizing too much, not having a project owner with authority and not working on people's adoption."
+          "text": "It almost never fails because of the software. The most common causes are choosing without clear requirements, underestimating data migration, customizing too much, not having a project owner with authority and not working on people's adoption. Prosci's research confirms it: projects with excellent change management are about seven times more likely to meet their objectives."
         },
         {
           "type": "p",
@@ -728,6 +787,12 @@
           "type": "p",
           "text": "If you are evaluating an ERP, or have already started the process and have doubts, contact us: use the contact button below and schedule a conversation with our team. We will help you make the decision with clear criteria."
         }
+      ],
+      "sources": [
+        {
+          "label": "Prosci. The Correlation Between Change Management and Project Success",
+          "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
+        }
       ]
     },
     "que-es-una-pmo-funciones-tipos-cuando-necesitarla": {
@@ -736,6 +801,11 @@
       "excerpt": "A PMO is the office that brings order to how a company manages its projects. What it is, what it is for, which types exist and how to know whether you need one.",
       "metaDescription": "What a PMO (project management office) is, what it is for, which functions and types exist and how to tell whether your company needs one. A practical guide.",
       "intro": "If you have several projects running and nobody can tell you for certain how many are going well, the question is probably not which tool to use, but what a PMO is and whether your company already needs one.",
+      "keyTakeaways": [
+        "A PMO (project management office) is the structure that defines how an organization selects, governs and measures its projects.",
+        "The PMBOK Guide distinguishes three types by degree of control: supportive, controlling and directive.",
+        "It is worth creating one when several projects run at once with no overall view, delays are frequent or teams are overloaded."
+      ],
       "serviceCtas": [
         {
           "title": "Need to bring order to your projects?",
@@ -785,7 +855,7 @@
         },
         {
           "type": "p",
-          "text": "A PMO lets an organization deliver its projects more predictably. In practice, that means five results."
+          "text": "A PMO lets an organization deliver its projects more predictably. In practice, that means five results. What's at stake is concrete: PMI estimates that organizations waste an average of 11.4% of their project investment due to poor performance (Pulse of the Profession, 2020)."
         },
         {
           "type": "p",
@@ -1007,6 +1077,16 @@
           "type": "p",
           "text": "If you are thinking of setting up a PMO, or already have projects slipping out of control, contact us: use the contact button below and schedule a conversation with our team."
         }
+      ],
+      "sources": [
+        {
+          "label": "PMI (2020). Pulse of the Profession: Ahead of the Curve",
+          "url": "https://www.pmi.org/learning/thought-leadership/pulse/pulse-of-the-profession-2020"
+        },
+        {
+          "label": "PMI. PMBOK Guide",
+          "url": "https://www.pmi.org/standards/pmbok"
+        }
       ]
     },
     "planeacion-estrategica-que-es-etapas-y-ejemplo": {
@@ -1015,6 +1095,11 @@
       "excerpt": "Strategic planning defines where a company is going and how it will get there. What it is, what it is for, its seven stages, the most widely used tools and an illustrative example.",
       "metaDescription": "What strategic planning is, what it is for, its stages and tools (SWOT, OKR, Balanced Scorecard) and a step-by-step illustrative example.",
       "intro": "If your company already had a strategic plan that ended up filed away, the problem was probably not the document, but how the planning was done and how it was executed.",
+      "keyTakeaways": [
+        "Strategic planning is the process by which leadership defines where the company is going, what it will and won't do, and how it will measure progress.",
+        "It follows seven stages: diagnosis, direction-setting, objectives, strategies and initiatives, indicators, action plan and follow-up.",
+        "Most strategies aren't lost in the document but in the execution."
+      ],
       "serviceCtas": [
         {
           "title": "Building your strategic plan?",
@@ -1064,7 +1149,7 @@
         },
         {
           "type": "p",
-          "text": "It serves five very concrete purposes."
+          "text": "It serves five concrete purposes: aligning leadership, prioritizing resources, being able to say no, measuring progress and anticipating change."
         },
         {
           "type": "p",
@@ -1216,7 +1301,7 @@
         },
         {
           "type": "p",
-          "text": "Finishing the plan and not managing its execution, which is where most strategies are lost.",
+          "text": "Finishing the plan and not managing its execution, which is where most strategies are lost. Kaplan and Norton documented it in Harvard Business Review: in a global sample of 1,854 large companies, seven out of eight failed to achieve profitable growth between 1988 and 1998, even though more than 90% had detailed strategic plans.",
           "links": [
             {
               "text": "managing its execution",
@@ -1263,6 +1348,12 @@
         {
           "type": "p",
           "text": "If you are about to build or redo your company's strategic plan, contact us: use the contact button below and schedule a conversation with our team."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Kaplan, R. & Norton, D. (2005). The Office of Strategy Management. Harvard Business Review",
+          "url": "https://hbr.org/2005/10/the-office-of-strategy-management"
         }
       ]
     }
