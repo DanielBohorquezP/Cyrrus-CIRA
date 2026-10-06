@@ -44,12 +44,14 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Planeación estratégica: qué es, etapas y ejemplo](https://cyrruscs.com/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo): qué es la planeación estratégica, sus siete etapas, herramientas (FODA, OKR, Balanced Scorecard) y un ejemplo ilustrativo.
 - [Gerencia de proyectos: cuándo contratar una PMO externa](https://cyrruscs.com/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.
 
+## Casos de éxito
+- [Caso 3 Castillos](https://cyrruscs.com/experiencia/3-castillos): empresa de alimentos fundada en 1861; planeación estratégica de TI (nov. 2020), 92 requerimientos de negocio, selección de infraestructura, ERP y CRM, y salida en vivo del ERP en octubre de 2021 tras 8 meses de implementación.
+- [Caso Morelco](https://cyrruscs.com/experiencia/morelco): modelo de trabajo en casa para el personal de obra de Morelco (hoy Cumbra) en 2020; en un mes, −36% riesgos ergonómicos altos, +54% condiciones del espacio de trabajo en casa y −10% sintomatología física.
+
 ## Otras páginas
 - [Inicio](https://cyrruscs.com/): consultoría estratégica y transformación digital con IA para empresas de Latinoamérica y Estados Unidos, vía la metodología CIRA.
 - [Quiénes Somos](https://cyrruscs.com/quienes-somos): Jackson Bohorquez, CEO y fundador de Cyrrus, creador del método CIRA.
 - [Experiencia](https://cyrruscs.com/experiencia): casos y trayectoria de Cyrrus.
-- [Caso 3 Castillos](https://cyrruscs.com/experiencia/3-castillos): empresa de alimentos fundada en 1861; planeación estratégica de TI (nov. 2020), 92 requerimientos de negocio, selección de infraestructura, ERP y CRM, y salida en vivo del ERP en octubre de 2021 tras 8 meses de implementación.
-- [Caso Morelco](https://cyrruscs.com/experiencia/morelco): modelo de trabajo en casa para el personal de obra de Morelco (hoy Cumbra) en 2020; en un mes, −36% riesgos ergonómicos altos, +54% condiciones del espacio de trabajo en casa y −10% sintomatología física.
 
 ## English
 - [Home](https://cyrruscs.com/en): strategic consulting and digital transformation with AI, via the CIRA methodology.
@@ -75,13 +77,22 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Leadership Academy](https://cyrruscs.com/en/leadership-academy): executive workshops and management training.
 - [About Us](https://cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://cyrruscs.com/en/experiencia): Cyrrus's cases and track record.
+
+### Case studies
 - [3 Castillos case study](https://cyrruscs.com/en/experiencia/3-castillos): food company founded in 1861; IT strategic planning (Nov. 2020), 92 business requirements, infrastructure, ERP and CRM selection, and ERP go-live in October 2021 after 8 months of implementation.
 - [Morelco case study](https://cyrruscs.com/en/experiencia/morelco): work-from-home model for Morelco's (now Cumbra) field staff in 2020; within one month, −36% high ergonomic risks, +54% home workspace conditions and −10% physical symptoms.
+
+### Perspectives (blog)
+- [Perspectives](https://cyrruscs.com/en/perspectivas): index of Cyrrus articles on digital transformation, technology selection, project management and AI governance.
 - [Why Digital Transformation Projects Fail](https://cyrruscs.com/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital): organizations don't fail for lack of technology or budget — they fail when no one connects the decision to the people who have to execute it.
 - [How to Choose a Trustworthy Strategic Consulting Firm](https://cyrruscs.com/en/perspectivas/como-elegir-una-consultora-estrategica-confiable): three signs of a firm that truly understands your business, versus one that just fills out a document.
 - [What Corporate AI Governance Is](https://cyrruscs.com/en/perspectivas/gobierno-de-ia-corporativo-en-la-empresa): what AI Governance is, and where a CEO should start before adopting artificial intelligence.
-- [Perspectives](https://cyrruscs.com/en/perspectivas): index of Cyrrus articles on digital transformation, technology selection, project management and AI governance.
 - [What is an ERP and how to choose one: a practical guide](https://cyrruscs.com/en/perspectivas/que-es-un-erp-guia-para-elegirlo): what an ERP is, what it is for, which modules it includes and seven criteria for choosing the right one.
 - [What is a PMO: functions, types and when you need one](https://cyrruscs.com/en/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla): what a PMO is, what it is for, which types exist and how to tell whether you need one.
 - [Strategic planning: what it is, stages and an example](https://cyrruscs.com/en/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo): what strategic planning is, its seven stages, tools (SWOT, OKR, Balanced Scorecard) and an illustrative example.
 - [Project management: when to hire an external PMO](https://cyrruscs.com/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): five signs your project needs external management and what to demand of it.
+
+## Optional
+- [Sitemap](https://cyrruscs.com/sitemap.xml): lista completa de URLs en español e inglés, con fecha de última modificación.
+- [Política de privacidad](https://cyrruscs.com/privacidad): tratamiento de datos personales.
+- [Política de cookies](https://cyrruscs.com/cookies): cookies que usa el sitio y cómo gestionarlas.
