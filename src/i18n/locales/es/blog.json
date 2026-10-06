@@ -1356,6 +1356,226 @@
           "url": "https://hbr.org/2005/10/the-office-of-strategy-management"
         }
       ]
+    },
+    "gestion-del-cambio-organizacional-que-es-modelos-y-plantilla": {
+      "title": "Gestión del cambio organizacional: qué es, modelos y plan (con plantilla)",
+      "label": "Gestión del cambio",
+      "excerpt": "Qué es la gestión del cambio organizacional, en qué se diferencia del cambio organizacional, los modelos ADKAR, Kotter y Lewin, y cómo hacer un plan en ocho pasos. Incluye plantilla descargable.",
+      "metaDescription": "Qué es la gestión del cambio organizacional, modelos (ADKAR, Kotter, Lewin) y cómo hacer un plan en 8 pasos. Descargue gratis la plantilla en Excel.",
+      "intro": "Si su empresa ya implementó un sistema que nadie usa como se esperaba, probablemente el problema no fue la tecnología, sino cómo se gestionó el cambio en las personas.",
+      "keyTakeaways": [
+        "La gestión del cambio organizacional prepara y acompaña a las personas para que adopten y sostengan una nueva forma de trabajar.",
+        "Los modelos más usados son ADKAR, los ocho pasos de Kotter y el modelo de Lewin; en la práctica se combinan.",
+        "Un plan tiene ocho partes: cambio, impacto, interesados, preparación, comunicación, capacitación, resistencia y medición de la adopción."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Tiene un cambio importante en camino?",
+          "description": "Diagnosticamos la preparación de cada grupo y diseñamos el plan de gestión del cambio desde la planeación, no al final del proyecto.",
+          "checklist": [
+            "Diagnóstico de preparación por grupo (ADKAR)",
+            "Comunicación y capacitación por rol"
+          ],
+          "ctaLabel": "Conocer la gestión del cambio",
+          "imageAlt": "Jackson Bohorquez moderando un foro sobre transformación"
+        },
+        {
+          "title": "Que se use, no solo que se instale",
+          "description": "Medimos la adopción real después de la salida en vivo y la reforzamos hasta que la nueva forma de trabajar se sostiene sola.",
+          "checklist": [
+            "Indicadores de adopción a 30 y 90 días",
+            "Red de usuarios clave"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Casi toda empresa ha vivido una versión de esta historia: el proyecto se aprobó, la tecnología se eligió bien, la implementación terminó en la fecha prevista y, meses después, la gente sigue trabajando como antes, con hojas de cálculo paralelas y atajos para evitar el sistema nuevo."
+        },
+        {
+          "type": "p",
+          "text": "Eso no es un problema de tecnología. Es un problema de gestión del cambio. Esta guía explica qué es la gestión del cambio organizacional, en qué se diferencia del cambio organizacional, cuáles son los modelos más usados y cómo armar un plan paso a paso, con una plantilla que puede descargar y usar."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es la gestión del cambio organizacional?"
+        },
+        {
+          "type": "p",
+          "text": "La gestión del cambio organizacional es el conjunto de prácticas con el que una empresa prepara, acompaña y apoya a las personas para que adopten una nueva forma de trabajar —un sistema, un proceso, una estructura o una estrategia— y la sostengan en el tiempo. Su objetivo no es que el cambio se anuncie ni que la solución quede instalada, sino que se use."
+        },
+        {
+          "type": "p",
+          "text": "Se ocupa del lado humano de la transformación: por qué las personas deben cambiar, qué ganan y qué pierden, qué necesitan saber y saber hacer, y qué las hará volver a la forma anterior si nadie refuerza la nueva."
+        },
+        {
+          "type": "h2",
+          "text": "Cambio organizacional y gestión del cambio: ¿en qué se diferencian?"
+        },
+        {
+          "type": "p",
+          "text": "El cambio organizacional es lo que se transforma: una nueva estructura, un ERP, una fusión, un proceso rediseñado. La gestión del cambio es la forma en que se lleva a las personas a través de esa transformación. Una empresa puede ejecutar un cambio sin gestionarlo, y el resultado suele ser una solución instalada que nadie adopta del todo."
+        },
+        {
+          "type": "h2",
+          "text": "¿Por qué es importante la gestión del cambio?"
+        },
+        {
+          "type": "p",
+          "text": "Porque el retorno de un proyecto no llega el día de la salida en vivo, sino cuando las personas trabajan de la nueva manera. Si la adopción es baja, el beneficio también lo es, aunque el proyecto haya terminado a tiempo y dentro del presupuesto."
+        },
+        {
+          "type": "p",
+          "text": "Los datos lo respaldan. Según la investigación de Prosci, los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos que los que la gestionan mal. Y en el estudio de BCG publicado en 2020, el 70% de las transformaciones digitales no alcanzó sus objetivos."
+        },
+        {
+          "type": "h2",
+          "text": "Los modelos de gestión del cambio más usados"
+        },
+        {
+          "type": "p",
+          "text": "Modelo ADKAR (Prosci). Sigue el cambio persona por persona a través de cinco pasos: conciencia de por qué hay que cambiar (Awareness), deseo de participar (Desire), conocimiento de cómo hacerlo (Knowledge), habilidad para hacerlo en la práctica (Ability) y refuerzo para sostenerlo (Reinforcement). Su mayor utilidad es diagnosticar en qué paso se atasca cada grupo."
+        },
+        {
+          "type": "p",
+          "text": "Los ocho pasos de Kotter. Propuestos por John Kotter, se centran en el liderazgo del cambio: crear sentido de urgencia, formar una coalición que lo guíe, definir una visión, comunicarla, eliminar obstáculos, conseguir victorias tempranas, consolidar las mejoras y anclar el cambio en la cultura."
+        },
+        {
+          "type": "p",
+          "text": "El modelo de Lewin. Kurt Lewin describió el cambio en tres etapas: descongelar (preparar a la organización y romper la inercia), cambiar (hacer la transición) y recongelar (estabilizar la nueva forma de trabajar para que no se revierta). Es simple y muy útil para explicar el recorrido a la dirección."
+        },
+        {
+          "type": "p",
+          "text": "No hay un modelo mejor que otro. En la práctica se combinan: Kotter para el liderazgo, ADKAR para seguir a las personas y Lewin para explicar el proceso. Más importante que el modelo elegido es medir si las personas realmente adoptan lo nuevo."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo hacer un plan de gestión del cambio, paso a paso"
+        },
+        {
+          "type": "p",
+          "text": "Primero, defina el cambio y su porqué. Qué cambia, para quién, desde cuándo y qué problema del negocio resuelve. Si la dirección no puede explicarlo en dos frases, el resto de la organización tampoco lo entenderá."
+        },
+        {
+          "type": "p",
+          "text": "Segundo, analice el impacto. Para cada área y rol, qué cambia en su trabajo diario: procesos, herramientas, responsabilidades e indicadores. El nivel de impacto define cuánto acompañamiento necesita cada grupo."
+        },
+        {
+          "type": "p",
+          "text": "Tercero, mapee a los interesados. Quién patrocina, quién decide, quién se ve afectado y quién influye en los demás. Involucre desde el principio a los líderes de cada área: si participan en la decisión, defenderán la solución durante la implementación."
+        },
+        {
+          "type": "p",
+          "text": "Cuarto, evalúe la preparación. Con un diagnóstico breve, por ejemplo con los cinco pasos de ADKAR, sabrá si cada grupo entiende el porqué, quiere el cambio y tiene los conocimientos para hacerlo."
+        },
+        {
+          "type": "p",
+          "text": "Quinto, diseñe la comunicación. Qué se dice, a quién, por qué canal, quién lo dice y cuándo. Los mensajes sobre el porqué deben venir de la dirección; los mensajes sobre el cómo, del jefe directo."
+        },
+        {
+          "type": "p",
+          "text": "Sexto, planee la capacitación y el acompañamiento. Formación por rol, materiales de consulta y una red de usuarios clave que acompañen a sus compañeros en las primeras semanas."
+        },
+        {
+          "type": "p",
+          "text": "Séptimo, gestione la resistencia. Anticipe dónde va a aparecer, escuche sus causas —miedo a perder control, a no saber hacerlo o a una carga de trabajo adicional— y defina quién la atiende y cómo."
+        },
+        {
+          "type": "p",
+          "text": "Octavo, mida y refuerce la adopción. Defina indicadores de uso real, no solo de asistencia a capacitaciones; revíselos a los 30 y a los 90 días de la salida en vivo, y reconozca a quienes adoptan el cambio."
+        },
+        {
+          "type": "download",
+          "text": "Descargue la plantilla del plan de gestión del cambio",
+          "href": "/descargas/plantilla-plan-gestion-del-cambio.xlsx",
+          "note": "Excel con las ocho partes del plan: cambio, impacto, interesados, preparación (ADKAR), comunicación, capacitación, resistencia y adopción. Gratis y sin registro."
+        },
+        {
+          "type": "h2",
+          "text": "Errores comunes en la gestión del cambio"
+        },
+        {
+          "type": "p",
+          "text": "Empezar a gestionar el cambio cuando el proyecto ya está por salir en vivo."
+        },
+        {
+          "type": "p",
+          "text": "Confundir comunicar con informar: anunciar el cambio no es lo mismo que explicar el porqué y escuchar a quienes lo van a vivir."
+        },
+        {
+          "type": "p",
+          "text": "Dejarla solo en manos de Recursos Humanos o de Tecnología, sin un patrocinio visible de la dirección."
+        },
+        {
+          "type": "p",
+          "text": "Medir la capacitación (cuántos asistieron) en lugar de la adopción (cuántos trabajan de la nueva forma)."
+        },
+        {
+          "type": "p",
+          "text": "Dar el cambio por terminado al cierre del proyecto, sin un periodo de refuerzo."
+        },
+        {
+          "type": "h2",
+          "text": "Un ejemplo real"
+        },
+        {
+          "type": "p",
+          "text": "En el proyecto de 3 Castillos, una empresa de alimentos fundada en 1861, la gestión del cambio empezó en la planeación estratégica: los líderes de cada área describieron sus necesidades y calificaron las propuestas de los proveedores, y después formaron parte del equipo de implementación. El ERP salió en vivo en ocho meses, con un equipo que conocía y respaldaba la solución elegida.",
+          "links": [
+            {
+              "text": "proyecto de 3 Castillos",
+              "href": "/experiencia/3-castillos"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene apoyarse en un consultor?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando el cambio afecta a varias áreas al mismo tiempo, cuando hay una implementación tecnológica grande, como un ERP o un CRM, cuando ya hubo un intento que no se adoptó o cuando la organización no tiene a nadie con experiencia en gestión del cambio dedicado al proyecto."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus, la gestión del cambio es la fase Adoptar del método CIRA. Diagnosticamos la preparación, trabajamos con los líderes, diseñamos la comunicación y la capacitación, y medimos la adopción hasta que la nueva forma de trabajar se sostiene sola.",
+          "links": [
+            {
+              "text": "la gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si va a implementar un cambio importante, o ya lo implementó y no se está usando como esperaba, contáctenos."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Prosci. The Correlation Between Change Management and Project Success",
+          "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
+        },
+        {
+          "label": "Prosci. El modelo ADKAR",
+          "url": "https://www.prosci.com/methodology/adkar"
+        },
+        {
+          "label": "Kotter Inc. The 8 Steps for Leading Change",
+          "url": "https://www.kotterinc.com/methodology/8-steps/"
+        },
+        {
+          "label": "BCG (2020). Flipping the Odds of Digital Transformation Success",
+          "url": "https://www.bcg.com/publications/2020/increasing-odds-of-success-in-digital-transformation"
+        }
+      ]
     }
   }
 }

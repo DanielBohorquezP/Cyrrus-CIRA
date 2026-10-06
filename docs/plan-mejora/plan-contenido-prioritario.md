@@ -65,6 +65,7 @@ Existen 4 artículos (transformación digital, consultora estratégica, gobierno
 | 1 | Qué es un ERP: guía para elegirlo y no equivocarse | que es un erp | MX 8.100 · 14 / ES 4.400 · 41 / CO 2.900 · 30 | ERP | **Alta** |
 | 2 | Qué es una PMO: funciones, tipos y cuándo necesitarla | pmo | MX 3.600 · 23 / ES 2.900 · 19 / CO 1.900 · 15 | PMO | **Alta** |
 | 3 | Planeación estratégica: qué es, etapas y ejemplo | planeación estratégica (+ plan estratégico) | MX 3.600 · 34 (+ 2.400 · 42) | Estrategia | **Alta** |
+| 4 | Gestión del cambio organizacional: qué es, modelos y plan (con plantilla) | 2026-10-05 | `/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla` (+ `/en/…`) | Escrito en ES y EN, ~1.300 palabras, ADKAR/Kotter/Lewin, plan en 8 pasos, plantilla Excel descargable, caso 3 Castillos enlazado, fuentes Prosci/BCG/Kotter. Enlazado desde la página de servicio. Pendiente de redeploy. |
 | 4 | Qué es RPA y cuándo conviene frente a la IA | rpa | MX 2.900 · 28 / ES 4.400 · 50 | Tecnologías avanzadas | **Alta** |
 | 5 | Qué es un CRM y cómo elegir el correcto | que es un crm | ES 3.600 · 34 / MX 5.400 · 43 | CRM | Media |
 | 6 | Resistencia al cambio: causas y cómo superarla | resistencia al cambio | MX 1.600 · 34 | Gestión del cambio | **Alta** |

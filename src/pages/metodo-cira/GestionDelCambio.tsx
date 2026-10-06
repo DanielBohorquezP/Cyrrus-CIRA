@@ -75,6 +75,9 @@ export default function GestionDelCambio() {
   const relatedArticlePath = lang === "en"
     ? "/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
     : "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital";
+  const guidePath = lang === "en"
+    ? "/en/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+    : "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla";
   const erpPath = lang === "en"
     ? "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
     : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
@@ -186,6 +189,12 @@ export default function GestionDelCambio() {
               <p className="mt-3 text-base leading-relaxed text-gray">
                 {`${t("intro.articleLinkText")} `}<Link to={relatedArticlePath} className="text-navy underline underline-offset-2">
                   {t("intro.articleLinkLabel")}
+                </Link>
+                .
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-gray">
+                {`${t("intro.guideLinkText")} `}<Link to={guidePath} className="text-navy underline underline-offset-2">
+                  {t("intro.guideLinkLabel")}
                 </Link>
                 .
               </p>

@@ -113,6 +113,18 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230227_164810.jpg",
     ],
   },
+  {
+    slug: "gestion-del-cambio-organizacional-que-es-modelos-y-plantilla",
+    coverImage: "/assets/decoracion/IMG_20230302_112828.jpg",
+    publishedAt: "2026-10-05",
+    pillarHref: "/metodo-cira/gestion-del-cambio",
+    pillarLabelKey: "gestionCambio",
+    serviceCtaIndexes: [10, 25],
+    serviceCtaImages: [
+      "/assets/decoracion/evento-jackson-moderador.jpeg",
+      "/assets/decoracion/Trabajo.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

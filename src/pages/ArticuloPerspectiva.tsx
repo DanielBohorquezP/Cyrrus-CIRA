@@ -1,12 +1,13 @@
 import type { ReactNode } from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { langPath, useLang, type Lang } from "@/lib/language";
 import { getBlogPostBySlug } from "@/lib/blog-data";
 import imageManifest from "@/lib/image-manifest.json";
 import { useScrollDepthEvent } from "@/lib/use-scroll-depth-event";
+import { trackEvent } from "@/lib/analytics";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
@@ -27,10 +28,13 @@ interface BlogInlineLink {
 }
 
 interface BlogBodyBlock {
-  type: "p" | "h2" | "quote";
+  type: "p" | "h2" | "quote" | "download";
   text: string;
   /** Contextual links to service pages, in the order they appear in `text`. */
   links?: BlogInlineLink[];
+  /** "download" blocks: file under public/, and a one-line description. */
+  href?: string;
+  note?: string;
 }
 
 /**
@@ -222,6 +226,25 @@ export default function ArticuloPerspectiva() {
                   <h2 key={key} className="pt-4 text-2xl font-semibold text-navy first:pt-0">
                     {block.text}
                   </h2>
+                );
+              } else if (block.type === "download" && block.href) {
+                const href = block.href;
+                nodes.push(
+                  <a
+                    key={key}
+                    href={href}
+                    download
+                    onClick={() => trackEvent("file_download", { file_name: href })}
+                    className="group flex items-center gap-4 rounded-2xl border border-blue/30 bg-light-blue/40 p-6 no-underline transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  >
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue text-white">
+                      <Download className="h-6 w-6" aria-hidden="true" />
+                    </span>
+                    <span>
+                      <span className="block text-lg font-semibold text-navy">{block.text}</span>
+                      {block.note && <span className="mt-1 block text-sm text-gray">{block.note}</span>}
+                    </span>
+                  </a>
                 );
               } else if (block.type === "quote") {
                 nodes.push(

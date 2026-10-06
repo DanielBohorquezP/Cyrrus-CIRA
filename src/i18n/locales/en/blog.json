@@ -1356,6 +1356,226 @@
           "url": "https://hbr.org/2005/10/the-office-of-strategy-management"
         }
       ]
+    },
+    "gestion-del-cambio-organizacional-que-es-modelos-y-plantilla": {
+      "title": "Organizational change management: what it is, models and a plan (with template)",
+      "label": "Change management",
+      "excerpt": "What organizational change management is, how it differs from organizational change, the ADKAR, Kotter and Lewin models, and how to build a plan in eight steps. Includes a downloadable template.",
+      "metaDescription": "What organizational change management is, its models (ADKAR, Kotter, Lewin) and how to build a plan in 8 steps. Download the free Excel template.",
+      "intro": "If your company already implemented a system that no one uses as expected, the problem probably wasn't the technology, but how the change was managed with people.",
+      "keyTakeaways": [
+        "Organizational change management prepares and supports people so they adopt and sustain a new way of working.",
+        "The most widely used models are ADKAR, Kotter's eight steps and Lewin's model; in practice they are combined.",
+        "A plan has eight parts: change, impact, stakeholders, readiness, communication, training, resistance and adoption measurement."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Is a major change coming?",
+          "description": "We assess each group's readiness and design the change management plan from the planning stage, not at the end of the project.",
+          "checklist": [
+            "Readiness assessment by group (ADKAR)",
+            "Role-based communication and training"
+          ],
+          "ctaLabel": "Explore change management",
+          "imageAlt": "Jackson Bohorquez moderating a forum on transformation"
+        },
+        {
+          "title": "Used, not just installed",
+          "description": "We measure real adoption after go-live and reinforce it until the new way of working sustains itself.",
+          "checklist": [
+            "Adoption indicators at 30 and 90 days",
+            "Key user network"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Cyrrus team working with a client"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Almost every company has lived some version of this story: the project was approved, the technology was well chosen, the implementation finished on schedule and, months later, people still work the old way, with parallel spreadsheets and workarounds to avoid the new system."
+        },
+        {
+          "type": "p",
+          "text": "That isn't a technology problem. It's a change management problem. This guide explains what organizational change management is, how it differs from organizational change, which models are most widely used and how to build a plan step by step, with a template you can download and use."
+        },
+        {
+          "type": "h2",
+          "text": "What is organizational change management?"
+        },
+        {
+          "type": "p",
+          "text": "Organizational change management is the set of practices a company uses to prepare, guide and support people so they adopt a new way of working —a system, a process, a structure or a strategy— and sustain it over time. Its goal isn't for the change to be announced or for the solution to be installed, but for it to be used."
+        },
+        {
+          "type": "p",
+          "text": "It deals with the human side of transformation: why people need to change, what they gain and what they lose, what they need to know and be able to do, and what will pull them back to the old way if no one reinforces the new one."
+        },
+        {
+          "type": "h2",
+          "text": "Organizational change and change management: what's the difference?"
+        },
+        {
+          "type": "p",
+          "text": "Organizational change is what gets transformed: a new structure, an ERP, a merger, a redesigned process. Change management is how people are taken through that transformation. A company can carry out a change without managing it, and the usual result is an installed solution that no one fully adopts."
+        },
+        {
+          "type": "h2",
+          "text": "Why does change management matter?"
+        },
+        {
+          "type": "p",
+          "text": "Because a project's return doesn't arrive on go-live day, but when people actually work the new way. If adoption is low, so is the benefit, even if the project finished on time and on budget."
+        },
+        {
+          "type": "p",
+          "text": "The data backs this up. According to Prosci's research, projects with excellent change management are about seven times more likely to meet their objectives than those with poor change management. And in BCG's study published in 2020, 70% of digital transformations fell short of their objectives."
+        },
+        {
+          "type": "h2",
+          "text": "The most widely used change management models"
+        },
+        {
+          "type": "p",
+          "text": "The ADKAR model (Prosci). It follows change person by person through five steps: Awareness of why change is needed, Desire to take part, Knowledge of how to change, Ability to do it in practice and Reinforcement to sustain it. Its main use is diagnosing the step where each group gets stuck."
+        },
+        {
+          "type": "p",
+          "text": "Kotter's eight steps. Proposed by John Kotter, they focus on leading change: create a sense of urgency, build a guiding coalition, form a vision, communicate it, remove obstacles, generate short-term wins, consolidate gains and anchor the change in the culture."
+        },
+        {
+          "type": "p",
+          "text": "Lewin's model. Kurt Lewin described change in three stages: unfreeze (prepare the organization and break inertia), change (make the transition) and refreeze (stabilize the new way of working so it doesn't revert). It is simple and very useful for explaining the journey to leadership."
+        },
+        {
+          "type": "p",
+          "text": "No model is better than the others. In practice they are combined: Kotter for leadership, ADKAR to follow people and Lewin to explain the process. More important than the model you choose is measuring whether people actually adopt the new way."
+        },
+        {
+          "type": "h2",
+          "text": "How to build a change management plan, step by step"
+        },
+        {
+          "type": "p",
+          "text": "First, define the change and its why. What changes, for whom, from when, and which business problem it solves. If leadership can't explain it in two sentences, the rest of the organization won't understand it either."
+        },
+        {
+          "type": "p",
+          "text": "Second, analyze the impact. For each area and role, what changes in their daily work: processes, tools, responsibilities and indicators. The level of impact defines how much support each group needs."
+        },
+        {
+          "type": "p",
+          "text": "Third, map the stakeholders. Who sponsors, who decides, who is affected and who influences others. Involve each area's leaders from the start: if they take part in the decision, they will champion the solution during implementation."
+        },
+        {
+          "type": "p",
+          "text": "Fourth, assess readiness. With a short diagnosis, for example using ADKAR's five steps, you will know whether each group understands the why, wants the change and has the knowledge to make it."
+        },
+        {
+          "type": "p",
+          "text": "Fifth, design the communication. What is said, to whom, through which channel, by whom and when. Messages about the why should come from leadership; messages about the how, from each person's direct manager."
+        },
+        {
+          "type": "p",
+          "text": "Sixth, plan training and support. Role-based training, reference materials and a network of key users who support their peers in the first weeks."
+        },
+        {
+          "type": "p",
+          "text": "Seventh, manage resistance. Anticipate where it will appear, listen to its causes —fear of losing control, of not knowing how, or of extra workload— and define who will address it and how."
+        },
+        {
+          "type": "p",
+          "text": "Eighth, measure and reinforce adoption. Define indicators of real use, not just training attendance; review them 30 and 90 days after go-live, and recognize the people who adopt the change."
+        },
+        {
+          "type": "download",
+          "text": "Download the change management plan template",
+          "href": "/descargas/change-management-plan-template.xlsx",
+          "note": "Excel with the eight parts of the plan: change, impact, stakeholders, readiness (ADKAR), communication, training, resistance and adoption. Free, no sign-up."
+        },
+        {
+          "type": "h2",
+          "text": "Common change management mistakes"
+        },
+        {
+          "type": "p",
+          "text": "Starting to manage the change when the project is about to go live."
+        },
+        {
+          "type": "p",
+          "text": "Confusing communicating with informing: announcing the change is not the same as explaining the why and listening to the people who will live it."
+        },
+        {
+          "type": "p",
+          "text": "Leaving it only to Human Resources or IT, without visible sponsorship from leadership."
+        },
+        {
+          "type": "p",
+          "text": "Measuring training (how many attended) instead of adoption (how many work the new way)."
+        },
+        {
+          "type": "p",
+          "text": "Treating the change as finished when the project closes, with no reinforcement period."
+        },
+        {
+          "type": "h2",
+          "text": "A real example"
+        },
+        {
+          "type": "p",
+          "text": "On the 3 Castillos project, a food company founded in 1861, change management started at the strategic planning stage: each area's leaders described their needs and scored the vendors' proposals, then joined the implementation team. The ERP went live in eight months, with a team that knew and backed the chosen solution.",
+          "links": [
+            {
+              "text": "3 Castillos project",
+              "href": "/experiencia/3-castillos"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "When is it worth bringing in a consultant?"
+        },
+        {
+          "type": "p",
+          "text": "It's worth it when the change affects several areas at once, when there is a large technology implementation such as an ERP or a CRM, when a previous attempt wasn't adopted, or when the organization has no one with change management experience dedicated to the project."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus, change management is the Adopt phase of the CIRA method. We assess readiness, work with leaders, design communication and training, and measure adoption until the new way of working sustains itself.",
+          "links": [
+            {
+              "text": "change management",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you are about to implement a major change, or already did and it isn't being used as you expected, get in touch."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Prosci. The Correlation Between Change Management and Project Success",
+          "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
+        },
+        {
+          "label": "Prosci. The ADKAR Model",
+          "url": "https://www.prosci.com/methodology/adkar"
+        },
+        {
+          "label": "Kotter Inc. The 8 Steps for Leading Change",
+          "url": "https://www.kotterinc.com/methodology/8-steps/"
+        },
+        {
+          "label": "BCG (2020). Flipping the Odds of Digital Transformation Success",
+          "url": "https://www.bcg.com/publications/2020/increasing-odds-of-success-in-digital-transformation"
+        }
+      ]
     }
   }
 }
