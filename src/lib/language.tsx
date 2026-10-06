@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
+import { localizeSiteGraph } from "@/lib/site-graph-locale";
 
 export type Lang = "es" | "en";
 
@@ -56,6 +57,7 @@ export function LanguageProvider({ lang, children }: { lang: Lang; children: Rea
   useEffect(() => {
     i18n.changeLanguage(lang);
     document.documentElement.lang = lang;
+    localizeSiteGraph(lang);
   }, [lang, i18n]);
 
   return <LanguageContext.Provider value={lang}>{children}</LanguageContext.Provider>;
