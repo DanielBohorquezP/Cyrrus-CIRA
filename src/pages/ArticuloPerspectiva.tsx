@@ -28,13 +28,16 @@ interface BlogInlineLink {
 }
 
 interface BlogBodyBlock {
-  type: "p" | "h2" | "quote" | "download";
+  type: "p" | "h2" | "quote" | "download" | "table";
   text: string;
   /** Contextual links to service pages, in the order they appear in `text`. */
   links?: BlogInlineLink[];
   /** "download" blocks: file under public/, and a one-line description. */
   href?: string;
   note?: string;
+  /** "table" blocks: header row and body rows; `text` is the caption. */
+  columns?: string[];
+  rows?: string[][];
 }
 
 /**
@@ -83,6 +86,8 @@ interface BlogPostTranslation {
   /** Copy for the 2 mid-article service-promo cards — see
    *  BlogPostEntry.serviceCtaIndexes in blog-data.ts for where they render. */
   serviceCtas: [BlogServiceCta, BlogServiceCta];
+  /** Shorter <title> (≤ 51 chars + " | Cyrrus") when `title`, used as the H1, is too long for search results. */
+  seoTitle?: string;
   /** 3 one-line takeaways shown in an "In short" box above the body. */
   keyTakeaways?: string[];
   /** External sources for the figures cited in the body. */
@@ -114,7 +119,7 @@ export default function ArticuloPerspectiva() {
   const displayDate = entry ? dateFormatter.format(new Date(`${entry.publishedAt}T00:00:00Z`)) : "";
 
   usePageMeta({
-    title: tr?.title ? `${tr.title} | Cyrrus` : "Perspectivas | Cyrrus",
+    title: tr?.title ? `${tr.seoTitle ?? tr.title} | Cyrrus` : "Perspectivas | Cyrrus",
     description: tr?.metaDescription ?? "",
     alternatePath: entry
       ? lang === "en"
@@ -245,6 +250,42 @@ export default function ArticuloPerspectiva() {
                       {block.note && <span className="mt-1 block text-sm text-gray">{block.note}</span>}
                     </span>
                   </a>
+                );
+              } else if (block.type === "table" && block.columns && block.rows) {
+                nodes.push(
+                  <figure key={key} className="-mx-1 overflow-x-auto">
+                    <table className="w-full min-w-[560px] border-collapse text-left text-sm">
+                      <caption className="mb-3 caption-top text-left text-sm font-semibold text-navy">
+                        {block.text}
+                      </caption>
+                      <thead>
+                        <tr>
+                          {block.columns.map((col) => (
+                            <th key={col} scope="col" className="border-b-2 border-blue/30 bg-light-blue/40 px-3 py-2 font-semibold text-navy">
+                              {col}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {block.rows.map((row) => (
+                          <tr key={row[0]} className="align-top">
+                            {row.map((cell, c) =>
+                              c === 0 ? (
+                                <th key={`${row[0]}-${c}`} scope="row" className="border-b border-border px-3 py-2 font-semibold text-navy">
+                                  {cell}
+                                </th>
+                              ) : (
+                                <td key={`${row[0]}-${c}`} className="border-b border-border px-3 py-2 text-gray">
+                                  {cell}
+                                </td>
+                              ),
+                            )}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </figure>
                 );
               } else if (block.type === "quote") {
                 nodes.push(

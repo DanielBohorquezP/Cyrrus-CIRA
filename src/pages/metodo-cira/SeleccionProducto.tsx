@@ -130,7 +130,8 @@ export default function SeleccionProducto() {
         : "PMO externo para la implementación una vez decida.",
     },
     // The ERP page links to the ERP guide, which owns the informational
-    // "qué es un ERP" query; this page keeps the commercial one.
+    // "qué es un ERP" query; this page keeps the commercial one. The CRM page
+    // links to the CRM comparison for the same reason.
     slug === "erp"
       ? {
           href: `${prefix}/perspectivas/que-es-un-erp-guia-para-elegirlo`,
@@ -141,6 +142,17 @@ export default function SeleccionProducto() {
           description: lang === "en"
             ? "A practical guide: modules, selection criteria and common mistakes."
             : "Guía práctica: módulos, criterios de selección y errores comunes.",
+        }
+      : slug === "crm"
+      ? {
+          href: `${prefix}/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm`,
+          icon: BookOpen,
+          title: lang === "en"
+            ? "Salesforce vs HubSpot vs Dynamics 365"
+            : "Salesforce vs HubSpot vs Dynamics 365",
+          description: lang === "en"
+            ? "An independent comparison of the three most evaluated CRMs, with published prices."
+            : "Comparación independiente de los tres CRM más evaluados, con precios publicados.",
         }
       : {
           href: articlePath,

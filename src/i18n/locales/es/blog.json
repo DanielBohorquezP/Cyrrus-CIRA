@@ -651,7 +651,7 @@
         },
         {
           "type": "p",
-          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar."
+          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}]
         },
         {
           "type": "p",
@@ -1574,6 +1574,945 @@
         {
           "label": "BCG (2020). Flipping the Odds of Digital Transformation Success",
           "url": "https://www.bcg.com/publications/2020/increasing-odds-of-success-in-digital-transformation"
+        }
+      ]
+    },
+    "mejores-erp-para-medianas-empresas": {
+      "title": "Mejores ERP para medianas empresas en 2026: cómo compararlos",
+      "seoTitle": "Mejores ERP para medianas empresas en 2026",
+      "label": "Selección de ERP",
+      "excerpt": "Comparativa independiente de seis ERP para medianas empresas —SAP Business One, NetSuite, Business Central, Odoo, Acumatica y SAP S/4HANA Cloud— y cómo elegir entre ellos.",
+      "metaDescription": "Comparativa independiente de los mejores ERP para medianas empresas en 2026: SAP Business One, NetSuite, Business Central, Odoo y más. Precios y criterios.",
+      "intro": "Si está buscando el mejor ERP para su empresa, probablemente ya descubrió que todos los fabricantes dicen ser el mejor. La respuesta honesta es que depende de su operación, y esta guía le muestra de qué.",
+      "keyTakeaways": [
+        "No existe un mejor ERP en abstracto: el adecuado es el que se ajusta a sus procesos, su presupuesto total y la capacidad de implementación disponible en su país.",
+        "Para la mediana empresa, las opciones más evaluadas son SAP Business One, Oracle NetSuite, Microsoft Dynamics 365 Business Central, Odoo, Acumatica y SAP S/4HANA Cloud.",
+        "Solo Business Central y Odoo publican precios por usuario; los demás se cotizan, así que la comparación real exige pedir propuestas con los mismos requerimientos."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Va a elegir un ERP?",
+          "description": "Hacemos la selección con criterios definidos antes de mirar proveedores y sin comisiones de fabricantes, hasta la firma del contrato.",
+          "checklist": [
+            "Requerimientos y matriz de evaluación ponderada",
+            "Demostraciones guiadas con sus casos reales"
+          ],
+          "ctaLabel": "Conocer la selección de ERP",
+          "imageAlt": "Equipo de Cyrrus evaluando opciones de ERP"
+        },
+        {
+          "title": "Elegirlo bien es la mitad del camino",
+          "description": "Después de la selección gerenciamos la implementación como PMO externa y trabajamos la adopción desde el primer día.",
+          "checklist": [
+            "Gerencia del proyecto con responsabilidad sobre el resultado",
+            "Gestión del cambio integrada"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Reunión de trabajo de Cyrrus sobre implementación de ERP"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Elegir un ERP es una de las decisiones de tecnología más caras y difíciles de revertir que toma una empresa mediana. Y el mercado no ayuda: cada fabricante tiene una demostración impecable y una lista de clientes satisfechos."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias. Si todavía no tiene claro qué es un ERP y qué módulos incluye, empiece por nuestra guía práctica sobre qué es un ERP y cómo elegirlo.",
+          "links": [
+            {
+              "text": "guía práctica sobre qué es un ERP y cómo elegirlo",
+              "href": "/perspectivas/que-es-un-erp-guia-para-elegirlo"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es el mejor ERP para una mediana empresa?"
+        },
+        {
+          "type": "p",
+          "text": "No hay un ERP que sea el mejor para todas las medianas empresas. El adecuado es el que cubre sus procesos críticos con la menor personalización, tiene un costo total que la empresa puede sostener durante años y cuenta con buenos implementadores en su país. Una distribuidora, una manufacturera y una firma de servicios pueden llegar a respuestas distintas con la misma lista de candidatos."
+        },
+        {
+          "type": "h2",
+          "text": "Los ERP más evaluados por medianas empresas"
+        },
+        {
+          "type": "p",
+          "text": "SAP Business One. SAP lo define como su solución para pequeñas y medianas empresas, frente a SAP S/4HANA, pensado para organizaciones de todos los tamaños. Cubre finanzas, compras, inventarios, ventas y relación con clientes, funciona sobre SAP HANA o Microsoft SQL Server y se compra e implementa a través de socios de SAP. No publica precios: se cotiza."
+        },
+        {
+          "type": "p",
+          "text": "Oracle NetSuite. Es un ERP nativo en la nube, con más de 44.000 clientes según el fabricante. Se paga con una licencia anual que combina tres componentes —plataforma base, módulos opcionales y número de usuarios— más una tarifa única de implementación. Tampoco publica precios."
+        },
+        {
+          "type": "p",
+          "text": "Microsoft Dynamics 365 Business Central. Puede usarse en la nube de Microsoft o instalado en servidores propios, y se integra de forma natural con Microsoft 365. Es de los pocos que publica precios: US$80 por usuario al mes en el plan Essentials y US$110 en Premium (que añade manufactura y gestión de servicios), con pago anual."
+        },
+        {
+          "type": "p",
+          "text": "Odoo. Tiene una edición Community de código abierto (licencia LGPLv3) y una edición Enterprise de pago. En su plan Custom, que permite alojarlo en la nube de Odoo, en Odoo.sh o en servidores propios, cuesta US$13,40 por usuario al mes con pago anual. Su fortaleza es la flexibilidad y el costo de licencia; su riesgo, que la calidad del resultado depende mucho del implementador."
+        },
+        {
+          "type": "p",
+          "text": "Acumatica. Es un ERP en la nube que no cobra por usuario: su precio depende de las aplicaciones contratadas, del consumo de recursos previsto y del tipo de licencia, con usuarios ilimitados. Encaja en empresas con muchos usuarios ocasionales. Se cotiza a través de socios."
+        },
+        {
+          "type": "p",
+          "text": "SAP S/4HANA Cloud, edición pública. SAP lo ofrece a empresas medianas a través de GROW with SAP, con mejores prácticas preconfiguradas y, según el fabricante, salidas en vivo en apenas cuatro semanas. Encaja mejor en la mediana empresa grande, con varias sociedades o expansión internacional, que acepta adaptar sus procesos al estándar."
+        },
+        {
+          "type": "table",
+          "text": "Comparativa resumida de ERP para medianas empresas (octubre de 2026)",
+          "columns": [
+            "ERP",
+            "Despliegue",
+            "Modelo de precio",
+            "Encaja mejor en"
+          ],
+          "rows": [
+            [
+              "SAP Business One",
+              "Nube o servidores propios",
+              "Cotización vía socio",
+              "Pymes y medianas con procesos estándar de distribución y manufactura ligera"
+            ],
+            [
+              "Oracle NetSuite",
+              "Solo nube",
+              "Licencia anual: plataforma + módulos + usuarios",
+              "Empresas en crecimiento, multisociedad, que quieren evitar infraestructura"
+            ],
+            [
+              "Dynamics 365 Business Central",
+              "Nube o servidores propios",
+              "Desde US$80/usuario/mes (Essentials)",
+              "Empresas que ya trabajan con Microsoft 365"
+            ],
+            [
+              "Odoo",
+              "Nube, Odoo.sh o servidores propios",
+              "Desde US$7,95/usuario/mes (Standard) y US$13,40 (Custom)",
+              "Empresas que valoran flexibilidad y bajo costo de licencia, con buen implementador"
+            ],
+            [
+              "Acumatica",
+              "Nube",
+              "Por aplicaciones y consumo; usuarios ilimitados",
+              "Empresas con muchos usuarios ocasionales"
+            ],
+            [
+              "SAP S/4HANA Cloud (GROW)",
+              "Nube pública",
+              "Suscripción cotizada",
+              "Medianas grandes con expansión internacional"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Los precios citados son precios de lista en dólares estadounidenses publicados por cada fabricante, consultados en octubre de 2026. Cambian con frecuencia y pueden variar por país, moneda y negociación."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo comparar ERP sin equivocarse?"
+        },
+        {
+          "type": "p",
+          "text": "Se comparan con los mismos requerimientos escritos y la misma matriz de evaluación para todos los candidatos. Antes de ver una sola demostración, defina sus procesos críticos y pondere siete criterios: ajuste funcional, ajuste técnico, costo total a cinco años, solidez del fabricante, capacidad del implementador, facilidad de adopción y cobertura local (normativa, facturación electrónica e idioma)."
+        },
+        {
+          "type": "p",
+          "text": "Después, pida a cada finalista una demostración guiada con sus propios casos —no la demo estándar— y una propuesta con el mismo alcance. Así las cifras son comparables."
+        },
+        {
+          "type": "h2",
+          "text": "Errores comunes al elegir un ERP"
+        },
+        {
+          "type": "p",
+          "text": "Elegir por la marca o por la demostración más vistosa, en lugar de por el ajuste a los procesos."
+        },
+        {
+          "type": "p",
+          "text": "Comparar solo el precio de la licencia y no el costo total: implementación, migración de datos, integraciones, soporte y tiempo del equipo interno."
+        },
+        {
+          "type": "p",
+          "text": "Dejar que la selección la haga quien también va a vender la implementación."
+        },
+        {
+          "type": "p",
+          "text": "Subestimar la adopción. La investigación de Prosci muestra que los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus hacemos la selección de ERP de forma independiente: levantamos sus requerimientos, construimos la matriz de evaluación, guiamos las demostraciones y lo acompañamos hasta la contratación. Así lo hicimos con 3 Castillos, que pasó de la planeación estratégica a la salida en vivo de su ERP en ocho meses de implementación.",
+          "links": [
+            {
+              "text": "selección de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está comparando ERP, o ya tiene propuestas sobre la mesa y no sabe cómo decidir, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "SAP. SAP Business One (página oficial y preguntas frecuentes)",
+          "url": "https://www.sap.com/products/erp/business-one.html"
+        },
+        {
+          "label": "SAP Community. SAP Business One 10.0, disponible para SAP HANA y Microsoft SQL Server",
+          "url": "https://blogs.sap.com/2019/11/19/sap-business-one-10.0-now-available-for-early-adopters/"
+        },
+        {
+          "label": "Oracle NetSuite. NetSuite ERP: qué es y cómo se licencia",
+          "url": "https://www.netsuite.com/portal/products/erp.shtml"
+        },
+        {
+          "label": "Microsoft. Dynamics 365 Business Central: planes y precios",
+          "url": "https://www.microsoft.com/en-us/dynamics-365/products/business-central/pricing"
+        },
+        {
+          "label": "Microsoft Learn. Despliegue de Business Central en línea o local",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/deployment"
+        },
+        {
+          "label": "Odoo. Precios (planes One App Free, Standard y Custom)",
+          "url": "https://www.odoo.com/pricing"
+        },
+        {
+          "label": "Odoo. Licencias: Community (LGPLv3) y Enterprise",
+          "url": "https://www.odoo.com/documentation/18.0/legal/licenses.html"
+        },
+        {
+          "label": "Acumatica. Modelo de precios con usuarios ilimitados",
+          "url": "https://www.acumatica.com/pricing/"
+        },
+        {
+          "label": "SAP News. GROW with SAP para empresas medianas",
+          "url": "https://news.sap.com/2023/03/partner-quotes-grow-with-sap/"
+        },
+        {
+          "label": "Prosci. The Correlation Between Change Management and Project Success",
+          "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
+        }
+      ]
+    },
+    "sap-business-one-vs-netsuite-vs-dynamics-365-business-central": {
+      "title": "SAP Business One vs NetSuite vs Dynamics 365 Business Central: ¿cuál le conviene?",
+      "seoTitle": "SAP Business One vs NetSuite vs Business Central",
+      "label": "Selección de ERP",
+      "excerpt": "Comparación independiente de SAP Business One, Oracle NetSuite y Microsoft Dynamics 365 Business Central para medianas empresas: despliegue, licenciamiento, ecosistema y para quién es cada uno.",
+      "metaDescription": "SAP Business One vs NetSuite vs Business Central: comparación independiente de despliegue, precios, ecosistema y para qué mediana empresa conviene cada uno.",
+      "intro": "Si su lista corta de ERP terminó en SAP Business One, NetSuite y Business Central, está en buena compañía: son tres de las opciones más evaluadas por medianas empresas. La diferencia está en los detalles que las demostraciones no muestran.",
+      "keyTakeaways": [
+        "SAP Business One se instala en la nube o en servidores propios y se compra vía socios; NetSuite es solo nube; Business Central admite ambas opciones.",
+        "Business Central es el único de los tres que publica precios: US$80 por usuario al mes (Essentials) y US$110 (Premium), con pago anual.",
+        "La decisión depende de su ecosistema actual, de cuánto quiere evitar infraestructura y de la calidad del socio implementador en su país."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Va a elegir un ERP?",
+          "description": "Hacemos la selección con criterios definidos antes de mirar proveedores y sin comisiones de fabricantes, hasta la firma del contrato.",
+          "checklist": [
+            "Requerimientos y matriz de evaluación ponderada",
+            "Demostraciones guiadas con sus casos reales"
+          ],
+          "ctaLabel": "Conocer la selección de ERP",
+          "imageAlt": "Equipo de Cyrrus evaluando opciones de ERP"
+        },
+        {
+          "title": "Elegirlo bien es la mitad del camino",
+          "description": "Después de la selección gerenciamos la implementación como PMO externa y trabajamos la adopción desde el primer día.",
+          "checklist": [
+            "Gerencia del proyecto con responsabilidad sobre el resultado",
+            "Gestión del cambio integrada"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Reunión de trabajo de Cyrrus sobre implementación de ERP"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Los tres ERP resuelven lo mismo en el papel: finanzas, compras, inventarios, ventas y reportes en una sola plataforma. Por eso las demostraciones se parecen tanto, y por eso la elección suele terminar decidiéndose por la simpatía con el vendedor."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es la diferencia principal entre SAP Business One, NetSuite y Business Central?"
+        },
+        {
+          "type": "p",
+          "text": "La diferencia principal está en el modelo de despliegue y en el ecosistema. NetSuite funciona solo en la nube de Oracle. Business Central puede usarse en la nube de Microsoft o instalado en servidores propios y se integra de forma natural con Microsoft 365. SAP Business One puede desplegarse en la nube o en servidores propios, sobre SAP HANA o Microsoft SQL Server, y se compra, implementa y soporta a través de socios de SAP."
+        },
+        {
+          "type": "table",
+          "text": "SAP Business One vs NetSuite vs Business Central (octubre de 2026)",
+          "columns": [
+            "Criterio",
+            "SAP Business One",
+            "Oracle NetSuite",
+            "Dynamics 365 Business Central"
+          ],
+          "rows": [
+            [
+              "Despliegue",
+              "Nube o servidores propios",
+              "Solo nube",
+              "Nube o servidores propios"
+            ],
+            [
+              "Base de datos",
+              "SAP HANA o Microsoft SQL Server",
+              "Gestionada por Oracle",
+              "Gestionada por Microsoft en la nube; SQL Server en local"
+            ],
+            [
+              "Precio publicado",
+              "No; se cotiza con un socio",
+              "No; licencia anual cotizada",
+              "Sí: US$80 (Essentials) y US$110 (Premium) por usuario/mes"
+            ],
+            [
+              "Cómo se compra",
+              "Socios de SAP",
+              "Oracle NetSuite o socios",
+              "Socios de Microsoft"
+            ],
+            [
+              "Encaja mejor en",
+              "Distribución y manufactura ligera con procesos estándar",
+              "Empresas en crecimiento y multisociedad que no quieren infraestructura",
+              "Empresas que ya trabajan con Microsoft 365"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Los precios citados son precios de lista en dólares estadounidenses publicados por cada fabricante, consultados en octubre de 2026. Cambian con frecuencia y pueden variar por país, moneda y negociación."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene SAP Business One?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la empresa quiere un ERP de una marca con amplia presencia, con procesos de distribución o manufactura ligera bastante estándar, y cuando hay en su país un socio de SAP con experiencia comprobable en su industria. SAP lo posiciona para pequeñas y medianas empresas; si la empresa crece hacia varias sociedades y países, la ruta natural dentro de SAP es S/4HANA."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene NetSuite?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la empresa quiere evitar por completo la infraestructura y las actualizaciones, crece rápido o maneja varias sociedades. Su modelo de licencia anual —plataforma, módulos y usuarios— permite activar módulos a medida que se necesitan, pero conviene revisar con cuidado cómo crece el costo con cada módulo y usuario adicional."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene Business Central?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la empresa ya vive en Microsoft 365 (Outlook, Teams, Excel) y quiere un ERP que se sienta parte de esas herramientas, o cuando necesita la opción de instalarlo en sus propios servidores. Al publicar sus precios, también facilita estimar el costo de licencias desde el principio."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo decidir entre los tres?"
+        },
+        {
+          "type": "p",
+          "text": "Con requerimientos escritos, la misma matriz de evaluación para los tres y una demostración guiada con sus propios casos. Pida además a cada socio implementador referencias de clientes de su industria y tamaño en su país: en este segmento, la calidad del implementador pesa tanto como el software."
+        },
+        {
+          "type": "p",
+          "text": "Si quiere entender primero todos los costos que entran en juego, lea nuestra guía sobre cuánto cuesta implementar un ERP.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un ERP",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus comparamos SAP Business One, NetSuite, Business Central y otras alternativas con criterios definidos antes de mirar proveedores y sin comisiones de fabricantes. Nuestra selección de ERP termina con una recomendación argumentada y el acompañamiento hasta la firma del contrato.",
+          "links": [
+            {
+              "text": "selección de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está entre estos tres, agende una conversación: le ayudamos a decidir con datos y no con demostraciones."
+        }
+      ],
+      "sources": [
+        {
+          "label": "SAP. SAP Business One (página oficial y preguntas frecuentes)",
+          "url": "https://www.sap.com/products/erp/business-one.html"
+        },
+        {
+          "label": "SAP Community. SAP Business One 10.0, disponible para SAP HANA y Microsoft SQL Server",
+          "url": "https://blogs.sap.com/2019/11/19/sap-business-one-10.0-now-available-for-early-adopters/"
+        },
+        {
+          "label": "Oracle NetSuite. NetSuite ERP: qué es y cómo se licencia",
+          "url": "https://www.netsuite.com/portal/products/erp.shtml"
+        },
+        {
+          "label": "Microsoft. Dynamics 365 Business Central: planes y precios",
+          "url": "https://www.microsoft.com/en-us/dynamics-365/products/business-central/pricing"
+        },
+        {
+          "label": "Microsoft Learn. Despliegue de Business Central en línea o local",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/deployment"
+        }
+      ]
+    },
+    "odoo-vs-sap-business-one-diferencias": {
+      "title": "Odoo vs SAP Business One: diferencias reales para elegir",
+      "seoTitle": "Odoo vs SAP Business One: diferencias reales",
+      "label": "Selección de ERP",
+      "excerpt": "Odoo vs SAP Business One: licenciamiento, costo, despliegue, flexibilidad y riesgos de cada uno, en una comparación independiente para medianas empresas.",
+      "metaDescription": "Odoo vs SAP Business One: diferencias reales en licencia, costo, despliegue y flexibilidad. Comparación independiente para elegir el ERP de su empresa.",
+      "intro": "Odoo y SAP Business One suelen llegar juntos a la misma lista corta, pero responden a filosofías distintas: uno es modular y de código abierto en su base; el otro es un producto cerrado de una de las marcas más grandes del software empresarial.",
+      "keyTakeaways": [
+        "Odoo tiene una edición Community de código abierto (LGPLv3) y una Enterprise de pago desde US$7,95 por usuario al mes; SAP Business One no publica precios y se cotiza con un socio.",
+        "Odoo ofrece más flexibilidad y menor costo de licencia; SAP Business One, un producto más estandarizado y un ecosistema de socios con larga trayectoria.",
+        "En ambos casos, el implementador define buena parte del éxito: pida referencias de su industria antes de decidir."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Va a elegir un ERP?",
+          "description": "Hacemos la selección con criterios definidos antes de mirar proveedores y sin comisiones de fabricantes, hasta la firma del contrato.",
+          "checklist": [
+            "Requerimientos y matriz de evaluación ponderada",
+            "Demostraciones guiadas con sus casos reales"
+          ],
+          "ctaLabel": "Conocer la selección de ERP",
+          "imageAlt": "Equipo de Cyrrus evaluando opciones de ERP"
+        },
+        {
+          "title": "Elegirlo bien es la mitad del camino",
+          "description": "Después de la selección gerenciamos la implementación como PMO externa y trabajamos la adopción desde el primer día.",
+          "checklist": [
+            "Gerencia del proyecto con responsabilidad sobre el resultado",
+            "Gestión del cambio integrada"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Reunión de trabajo de Cyrrus sobre implementación de ERP"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Cuando una mediana empresa compara Odoo con SAP, casi siempre está comparando Odoo con SAP Business One, la solución de SAP para pequeñas y medianas empresas. SAP S/4HANA, el ERP de SAP para organizaciones de todos los tamaños, juega en otra liga de alcance y costo."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es la diferencia entre Odoo y SAP Business One?"
+        },
+        {
+          "type": "p",
+          "text": "La diferencia de fondo es de modelo. Odoo es una suite modular con una edición Community de código abierto bajo licencia LGPLv3 y una edición Enterprise de pago con funciones adicionales. SAP Business One es un producto propietario de SAP que se compra, implementa y soporta a través de socios, y que funciona sobre SAP HANA o Microsoft SQL Server."
+        },
+        {
+          "type": "table",
+          "text": "Odoo vs SAP Business One (octubre de 2026)",
+          "columns": [
+            "Criterio",
+            "Odoo",
+            "SAP Business One"
+          ],
+          "rows": [
+            [
+              "Licencia",
+              "Community: código abierto (LGPLv3). Enterprise: licencia de pago",
+              "Propietaria de SAP"
+            ],
+            [
+              "Precio publicado",
+              "Sí: Standard US$7,95 y Custom US$13,40 por usuario/mes (pago anual); una app gratis",
+              "No; se cotiza con un socio"
+            ],
+            [
+              "Despliegue",
+              "Nube de Odoo; Odoo.sh y servidores propios en el plan Custom",
+              "Nube o servidores propios"
+            ],
+            [
+              "Personalización",
+              "Alta: Odoo Studio y desarrollo sobre el código",
+              "Moderada, sobre un producto estandarizado"
+            ],
+            [
+              "Riesgo principal",
+              "Exceso de personalización y dependencia del implementador",
+              "Costo total y dependencia del socio"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Los precios citados son precios de lista en dólares estadounidenses publicados por cada fabricante, consultados en octubre de 2026. Cambian con frecuencia y pueden variar por país, moneda y negociación."
+        },
+        {
+          "type": "h2",
+          "text": "¿Es Odoo más barato que SAP Business One?"
+        },
+        {
+          "type": "p",
+          "text": "En licencias, por lo general sí: Odoo publica precios desde US$7,95 por usuario al mes en su plan Standard, mientras SAP Business One se cotiza. Pero el costo total no es solo la licencia. Implementación, migración de datos, integraciones, personalizaciones y soporte suelen pesar más, y una implementación de Odoo muy personalizada puede terminar costando más de lo previsto."
+        },
+        {
+          "type": "p",
+          "text": "Por eso conviene comparar el costo total a cinco años con el mismo alcance. Lo explicamos en detalle en cuánto cuesta implementar un ERP.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un ERP",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene Odoo?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la empresa valora la flexibilidad, quiere empezar por pocos módulos y crecer, tiene procesos que no encajan bien en un estándar rígido y cuenta con un implementador sólido que sepa decir que no a las personalizaciones innecesarias. Tenga en cuenta que el plan Standard no incluye multisociedad ni Odoo Studio: para eso se necesita el plan Custom."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene SAP Business One?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la empresa prefiere un producto más estandarizado, con una marca de amplia presencia y un ecosistema de socios con larga trayectoria, y cuando sus procesos se ajustan bien a las prácticas que el sistema trae de fábrica. También cuando la casa matriz o los clientes valoran trabajar con SAP."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo decidir?"
+        },
+        {
+          "type": "p",
+          "text": "Con sus procesos críticos por escrito, una matriz de evaluación ponderada y una demostración guiada con sus casos reales en ambos sistemas. Y pidiendo a cada implementador tres referencias de clientes de su tamaño e industria, con quienes pueda hablar."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus evaluamos Odoo, SAP Business One y otras alternativas sin comisiones de fabricantes. Nuestra selección de ERP define sus requerimientos antes de mirar proveedores y le entrega una recomendación argumentada, con el costo total de cada opción.",
+          "links": [
+            {
+              "text": "selección de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está decidiendo entre Odoo y SAP, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Odoo. Precios (planes One App Free, Standard y Custom)",
+          "url": "https://www.odoo.com/pricing"
+        },
+        {
+          "label": "Odoo. Licencias: Community (LGPLv3) y Enterprise",
+          "url": "https://www.odoo.com/documentation/18.0/legal/licenses.html"
+        },
+        {
+          "label": "Odoo. Comparación de ediciones Community y Enterprise",
+          "url": "https://www.odoo.com/page/editions"
+        },
+        {
+          "label": "SAP. SAP Business One (página oficial y preguntas frecuentes)",
+          "url": "https://www.sap.com/products/erp/business-one.html"
+        },
+        {
+          "label": "SAP Community. SAP Business One 10.0, disponible para SAP HANA y Microsoft SQL Server",
+          "url": "https://blogs.sap.com/2019/11/19/sap-business-one-10.0-now-available-for-early-adopters/"
+        }
+      ]
+    },
+    "cuanto-cuesta-implementar-un-erp": {
+      "title": "Cuánto cuesta implementar un ERP: rangos y de qué depende",
+      "seoTitle": "Cuánto cuesta implementar un ERP",
+      "label": "Selección de ERP",
+      "excerpt": "De qué depende el costo de un ERP, qué precios publican los fabricantes, un ejemplo de cálculo de licencias y los costos ocultos que más desvían el presupuesto.",
+      "metaDescription": "Cuánto cuesta implementar un ERP: componentes del costo, precios publicados por fabricantes, ejemplo de cálculo y costos ocultos. Guía para medianas empresas.",
+      "intro": "Si está preguntando cuánto cuesta un ERP, probablemente recibió respuestas que van de unos pocos miles a cientos de miles de dólares. Las dos pueden ser ciertas: el costo depende de decisiones que conviene conocer antes de pedir propuestas.",
+      "keyTakeaways": [
+        "El costo de un ERP tiene cuatro bloques: licencias o suscripción, implementación, infraestructura y soporte, y el tiempo del equipo interno.",
+        "Algunos fabricantes publican precios por usuario (Business Central desde US$80 y Odoo desde US$7,95 al mes); otros, como SAP Business One y NetSuite, solo cotizan.",
+        "Los costos que más desvían el presupuesto son la personalización, la migración de datos, las integraciones y una adopción que no se planeó."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Va a elegir un ERP?",
+          "description": "Hacemos la selección con criterios definidos antes de mirar proveedores y sin comisiones de fabricantes, hasta la firma del contrato.",
+          "checklist": [
+            "Requerimientos y matriz de evaluación ponderada",
+            "Demostraciones guiadas con sus casos reales"
+          ],
+          "ctaLabel": "Conocer la selección de ERP",
+          "imageAlt": "Equipo de Cyrrus evaluando opciones de ERP"
+        },
+        {
+          "title": "Elegirlo bien es la mitad del camino",
+          "description": "Después de la selección gerenciamos la implementación como PMO externa y trabajamos la adopción desde el primer día.",
+          "checklist": [
+            "Gerencia del proyecto con responsabilidad sobre el resultado",
+            "Gestión del cambio integrada"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Reunión de trabajo de Cyrrus sobre implementación de ERP"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "No hay un precio único para un ERP porque no hay dos implementaciones iguales. El mismo sistema puede costar muy distinto en una distribuidora con 15 usuarios que en una manufacturera con tres plantas y 120 usuarios."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿De qué depende el costo de un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "Depende sobre todo del número de usuarios, de los módulos que se necesitan, del modelo de despliegue (nube o servidores propios), de cuánto hay que personalizar e integrar, del volumen de datos a migrar y de la capacitación y el soporte. La propia Oracle NetSuite enumera trece factores, desde el modelo de licencia y el tipo de despliegue hasta la industria, las integraciones y los complementos de terceros."
+        },
+        {
+          "type": "h2",
+          "text": "Los cuatro bloques del costo total"
+        },
+        {
+          "type": "p",
+          "text": "Licencias o suscripción. En la nube se paga una cuota mensual o anual que suele incluir el alojamiento y las actualizaciones; con licencia perpetua se paga más al principio y luego un mantenimiento anual."
+        },
+        {
+          "type": "p",
+          "text": "Implementación. Análisis de procesos, configuración, personalización, integraciones, migración de datos, pruebas y capacitación. La hace el fabricante o un socio implementador; NetSuite, por ejemplo, la cobra como una tarifa única aparte de la licencia."
+        },
+        {
+          "type": "p",
+          "text": "Infraestructura y soporte. Servidores, bases de datos y respaldos si el sistema se instala en casa; soporte, actualizaciones y complementos en cualquier caso."
+        },
+        {
+          "type": "p",
+          "text": "Tiempo del equipo interno. Es el costo que casi nadie presupuesta: las personas clave de cada área dedican semanas a definir procesos, validar configuraciones y probar."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué precios publican los fabricantes?"
+        },
+        {
+          "type": "p",
+          "text": "Pocos fabricantes publican precios. Esto es lo que muestran hoy en sus sitios oficiales:"
+        },
+        {
+          "type": "table",
+          "text": "Precios de licencia publicados por fabricantes de ERP (octubre de 2026)",
+          "columns": [
+            "ERP",
+            "Precio publicado",
+            "Notas"
+          ],
+          "rows": [
+            [
+              "Dynamics 365 Business Central",
+              "US$80/usuario/mes (Essentials); US$110 (Premium); US$8 (Team Members)",
+              "Pago anual; se compra con un socio de Microsoft"
+            ],
+            [
+              "Odoo",
+              "US$7,95/usuario/mes (Standard); US$13,40 (Custom)",
+              "Pago anual; una aplicación gratis con usuarios ilimitados"
+            ],
+            [
+              "Oracle NetSuite",
+              "No publica",
+              "Licencia anual: plataforma + módulos + usuarios, más tarifa única de implementación"
+            ],
+            [
+              "SAP Business One",
+              "No publica",
+              "Se cotiza con un socio de SAP"
+            ],
+            [
+              "Acumatica",
+              "No publica",
+              "Por aplicaciones y consumo; usuarios ilimitados"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Los precios citados son precios de lista en dólares estadounidenses publicados por cada fabricante, consultados en octubre de 2026. Cambian con frecuencia y pueden variar por país, moneda y negociación."
+        },
+        {
+          "type": "h2",
+          "text": "Un ejemplo de cálculo de licencias"
+        },
+        {
+          "type": "p",
+          "text": "Para una empresa con 25 usuarios completos, solo en licencias y con los precios publicados: Business Central Essentials costaría 25 × US$80 × 12 = US$24.000 al año; Business Central Premium, US$33.000; Odoo Custom, 25 × US$13,40 × 12 = US$4.020 al año. Es solo la licencia: no incluye implementación, integraciones, migración, soporte ni el tiempo del equipo interno, que en la mayoría de los proyectos pesan más."
+        },
+        {
+          "type": "h2",
+          "text": "Los costos ocultos que más desvían el presupuesto"
+        },
+        {
+          "type": "p",
+          "text": "Personalizar en exceso. Cada cambio al estándar encarece la implementación y complica las actualizaciones; la propia NetSuite advierte que las personalizaciones pueden aumentar costos, generar errores y dificultar el mantenimiento."
+        },
+        {
+          "type": "p",
+          "text": "Subestimar la migración de datos. Limpiar y depurar maestros de clientes, productos y proveedores toma más tiempo del previsto."
+        },
+        {
+          "type": "p",
+          "text": "Olvidar las integraciones con facturación electrónica, bancos, comercio electrónico o sistemas de planta."
+        },
+        {
+          "type": "p",
+          "text": "No planear la adopción. Un sistema que la gente no usa no devuelve la inversión. La investigación de Prosci muestra que los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo pedir propuestas comparables?"
+        },
+        {
+          "type": "p",
+          "text": "Con un mismo documento de requerimientos para todos los proveedores, el mismo alcance (módulos, usuarios, integraciones, migración) y la petición explícita de desglosar licencias, implementación, soporte y supuestos. Después, compare el costo total a cinco años, no solo el primer año. En nuestra metodología, esa fase de selección suele tomar de 6 a 12 semanas."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus construimos el caso de negocio y el costo total de cada alternativa antes de que usted firme. Nuestra selección de ERP es independiente y no recibe comisiones de fabricantes, así que la cifra que le entregamos no está inflada ni maquillada.",
+          "links": [
+            {
+              "text": "selección de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si tiene propuestas de ERP sobre la mesa y no sabe si el precio es razonable, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Oracle NetSuite. How Much Does ERP Cost? ERP Pricing Explained",
+          "url": "https://www.netsuite.com/portal/resource/articles/erp/erp-pricing.shtml"
+        },
+        {
+          "label": "Oracle NetSuite. NetSuite ERP: qué es y cómo se licencia",
+          "url": "https://www.netsuite.com/portal/products/erp.shtml"
+        },
+        {
+          "label": "Microsoft. Dynamics 365 Business Central: planes y precios",
+          "url": "https://www.microsoft.com/en-us/dynamics-365/products/business-central/pricing"
+        },
+        {
+          "label": "Odoo. Precios (planes One App Free, Standard y Custom)",
+          "url": "https://www.odoo.com/pricing"
+        },
+        {
+          "label": "SAP. SAP Business One (página oficial y preguntas frecuentes)",
+          "url": "https://www.sap.com/products/erp/business-one.html"
+        },
+        {
+          "label": "Acumatica. Modelo de precios con usuarios ilimitados",
+          "url": "https://www.acumatica.com/pricing/"
+        },
+        {
+          "label": "Prosci. The Correlation Between Change Management and Project Success",
+          "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
+        }
+      ]
+    },
+    "salesforce-vs-hubspot-vs-dynamics-365-crm": {
+      "title": "Salesforce vs HubSpot vs Dynamics 365: qué CRM elegir",
+      "seoTitle": "Salesforce vs HubSpot vs Dynamics 365: qué CRM elegir",
+      "label": "Selección de CRM",
+      "excerpt": "Comparación independiente de Salesforce Sales Cloud, HubSpot Sales Hub y Dynamics 365 Sales: precios publicados, fortalezas, costos de arranque y para qué equipo comercial conviene cada uno.",
+      "metaDescription": "Salesforce vs HubSpot vs Dynamics 365 Sales: precios publicados, fortalezas y para qué empresa conviene cada CRM. Comparación independiente.",
+      "intro": "Si su equipo comercial necesita un CRM, la lista corta casi siempre termina en Salesforce, HubSpot y Dynamics 365. Los tres son buenos; la pregunta es cuál va a usar su equipo todos los días.",
+      "keyTakeaways": [
+        "Los tres publican precios: Salesforce desde US$25 por usuario al mes, HubSpot tiene un plan gratuito para dos usuarios y Dynamics 365 Sales arranca en US$65.",
+        "HubSpot destaca por facilidad de uso y marketing integrado; Salesforce, por profundidad y ecosistema; Dynamics 365, por su integración con Microsoft 365.",
+        "El CRM correcto es el que se ajusta a su proceso comercial real y que su equipo de ventas adopta; sin adopción, ningún CRM devuelve la inversión."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Va a elegir un CRM?",
+          "description": "Diseñamos la evaluación alrededor de su proceso comercial real para elegir el CRM que su equipo de ventas sí va a usar.",
+          "checklist": [
+            "Mapa del proceso comercial y requerimientos",
+            "Comparación independiente, sin comisiones"
+          ],
+          "ctaLabel": "Conocer la selección de CRM",
+          "imageAlt": "Equipo de Cyrrus revisando un proceso comercial"
+        },
+        {
+          "title": "Que ventas lo use",
+          "description": "Acompañamos la implementación y la adopción para que el CRM se convierta en la herramienta diaria del equipo, no en otro sistema paralelo.",
+          "checklist": [
+            "Gerencia del proyecto de implementación",
+            "Capacitación por rol y medición de uso"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Un CRM gestiona la relación con los clientes y el proceso comercial: contactos, oportunidades, seguimiento y pronósticos de venta. Elegir mal no suele notarse el primer mes, sino seis meses después, cuando el equipo sigue llevando sus clientes en hojas de cálculo."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es la diferencia entre Salesforce, HubSpot y Dynamics 365?"
+        },
+        {
+          "type": "p",
+          "text": "Salesforce es el CRM con más profundidad funcional y el ecosistema de aplicaciones y especialistas más amplio, con planes que escalan desde equipos pequeños hasta grandes corporaciones. HubSpot se distingue por su facilidad de uso y porque integra ventas y marketing en la misma plataforma, con un plan gratuito para empezar. Dynamics 365 Sales es la opción natural para empresas que ya trabajan en Microsoft 365, por su integración con Outlook, Teams y Excel."
+        },
+        {
+          "type": "table",
+          "text": "Precios publicados de los CRM (octubre de 2026)",
+          "columns": [
+            "CRM",
+            "Planes y precio de lista",
+            "A tener en cuenta"
+          ],
+          "rows": [
+            [
+              "Salesforce Sales Cloud",
+              "Free Suite US$0; Starter Suite US$25; Pro Suite US$100; Core US$195; Advanced US$395; Max US$550 por usuario/mes",
+              "Desde Pro Suite, pago anual; complementos de IA y analítica se cobran aparte"
+            ],
+            [
+              "HubSpot Sales Hub",
+              "Plan gratuito hasta 2 usuarios; Starter, Professional y Enterprise por puesto",
+              "Professional exige un onboarding único de US$1.500 y Enterprise de US$3.500; HubSpot publica promociones frecuentes"
+            ],
+            [
+              "Dynamics 365 Sales",
+              "Professional US$65; Enterprise US$105; Premium US$150 por usuario/mes",
+              "Pago anual; se integra con Microsoft 365"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Los precios citados son precios de lista en dólares estadounidenses publicados por cada fabricante, consultados en octubre de 2026. Cambian con frecuencia y pueden variar por país, moneda y negociación."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene Salesforce?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando el proceso comercial es complejo —varias líneas de negocio, ciclos de venta largos, pronósticos detallados, cotizaciones— o cuando la empresa prevé crecer mucho y necesita un sistema que escale. Su amplio ecosistema facilita encontrar integraciones y especialistas, pero el costo crece rápido al subir de plan y sumar complementos."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene HubSpot?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la prioridad es que el equipo lo adopte rápido, cuando ventas y marketing deben trabajar sobre la misma base de contactos, o cuando la empresa quiere empezar gratis y crecer por etapas. Al presupuestar, incluya el onboarding obligatorio de los planes Professional y Enterprise."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene Dynamics 365 Sales?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene cuando la empresa ya vive en Microsoft 365 y quiere que el CRM aparezca dentro de Outlook y Teams, o cuando usa Dynamics 365 Business Central como ERP y busca una sola plataforma de Microsoft para ventas y operación."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo elegir el CRM correcto?"
+        },
+        {
+          "type": "p",
+          "text": "Empiece por su proceso comercial, no por la herramienta: cómo entra un prospecto, cómo se califica, cuántas etapas tiene la venta, qué necesita ver la dirección. Con eso escrito, pida a cada proveedor una demostración con sus propios datos y su propio proceso, y pruebe el sistema con dos o tres vendedores reales antes de decidir. El CRM que el equipo encuentra útil en la prueba es el que va a usar."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus hacemos la selección de CRM alrededor de su proceso comercial real, comparando Salesforce, HubSpot, Dynamics 365 y otras alternativas sin comisiones de fabricantes. Y acompañamos la implementación y la adopción para que el CRM se convierta en la herramienta diaria del equipo.",
+          "links": [
+            {
+              "text": "selección de CRM",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está eligiendo un CRM, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Salesforce. Precios de Sales Cloud",
+          "url": "https://www.salesforce.com/sales/pricing/"
+        },
+        {
+          "label": "HubSpot. Precios de Sales Hub",
+          "url": "https://www.hubspot.com/pricing/sales"
+        },
+        {
+          "label": "Microsoft. Dynamics 365 Sales: planes y precios",
+          "url": "https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing"
         }
       ]
     }

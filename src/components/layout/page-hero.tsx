@@ -1,5 +1,4 @@
 import * as React from "react";
-import { motion } from "framer-motion";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { Img } from "@/components/ui/img";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/ui/breadcrumbs";
@@ -15,45 +14,41 @@ interface PageHeroProps {
   breadcrumbs?: BreadcrumbItem[];
 }
 
+// The entrance uses the same CSS `hero-rise` keyframes as ShaderHero
+// (src/index.css): transform only, never opacity. framer-motion's
+// `initial={{ opacity: 0 }}` was baked into the prerendered HTML, so every
+// interior page shipped its H1 — the LCP element — invisible until hydration.
 export function PageHero({ eyebrow, title, description, children, image, breadcrumbs }: PageHeroProps) {
   const copy = (
     <div className={image ? "" : "mx-auto max-w-4xl px-6 md:px-12"}>
       {breadcrumbs && breadcrumbs.length > 0 && (
         <Breadcrumbs items={breadcrumbs} className="mb-5" />
       )}
-      <motion.span
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-        className="text-base font-bold uppercase tracking-wider text-cyan"
+      <span
+        className="hero-rise inline-block text-base font-bold uppercase tracking-wider text-cyan"
+        style={{ "--hero-rise-y": "12px", "--hero-rise-duration": "500ms" } as React.CSSProperties}
       >
         {eyebrow}
-      </motion.span>
-      <motion.h1
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
-        className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl"
+      </span>
+      <h1
+        className="hero-rise mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl"
+        style={{ "--hero-rise-y": "16px", "--hero-rise-delay": "50ms" } as React.CSSProperties}
       >
         {title}
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-        className="mt-5 max-w-2xl text-lg leading-relaxed text-white/75"
+      </h1>
+      <p
+        className="hero-rise mt-5 max-w-2xl text-lg leading-relaxed text-white/75"
+        style={{ "--hero-rise-y": "16px", "--hero-rise-delay": "100ms" } as React.CSSProperties}
       >
         {description}
-      </motion.p>
+      </p>
       {children && (
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-          className="mt-8"
+        <div
+          className="hero-rise mt-8"
+          style={{ "--hero-rise-y": "16px", "--hero-rise-delay": "150ms" } as React.CSSProperties}
         >
           {children}
-        </motion.div>
+        </div>
       )}
     </div>
   );
@@ -71,10 +66,9 @@ export function PageHero({ eyebrow, title, description, children, image, breadcr
             (half of max-w-6xl above the md breakpoint, full width below it),
             and fetchPriority tells the browser to fetch it ahead of
             below-the-fold images instead of at default priority. */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+        <div
+          className="hero-rise"
+          style={{ "--hero-rise-y": "16px", "--hero-rise-delay": "100ms" } as React.CSSProperties}
         >
           <Img
             src={image.src}
@@ -86,7 +80,7 @@ export function PageHero({ eyebrow, title, description, children, image, breadcr
             sizes="(min-width: 768px) 504px, 100vw"
             className="h-56 w-full rounded-2xl object-cover shadow-xl ring-1 ring-white/10 sm:h-72 md:h-96"
           />
-        </motion.div>
+        </div>
       </div>
     </AnimatedNavyBackground>
   );

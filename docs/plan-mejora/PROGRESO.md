@@ -47,26 +47,24 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 0 (2026-10-05, línea base).
+**Última sesión cerrada:** Sesión 1 (2026-10-05, comparativas C1–C5).
 
-**Próxima: Sesión 1.** Orden sugerido:
-1. Confirmar con el cliente si subió `cyrrus-dist-2026-10-05-v2.zip` → si sí, **A1** + **A5**.
-2. **A2** (sitemap + pedir indexación de casos y guía de gestión del cambio).
-3. **C1** "Mejores ERP para medianas empresas 2026" (o **C4** si Ubersuggest
-   muestra más volumen para "cuánto cuesta un ERP").
-4. Si el cliente ya entregó los datos de B1/B3: empezar **B1** y **B3**.
+**Próxima: Sesión 2.** Orden sugerido:
+1. Confirmar si el cliente subió `cyrrus-dist-2026-10-05-v3.zip` → si sí, **A1**, **A2** (pedir indexación de los 5 artículos nuevos, los 2 casos y la guía de gestión del cambio) y **A5**/**K1** (PageSpeed real).
+2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**.
+3. Si no: **C6** (Mejores CRM) y **C7** (ERP vs Excel, medir keyword) + **I1** (publicaciones de LinkedIn para C1–C5).
 
 **Hoja de ruta de las siguientes sesiones** (se ajusta al cerrar cada una):
 
 | Sesión | Foco | Tareas |
 |---|---|---|
-| 1 | Despliegue + primera comparativa | A1, A2, A5, C1 |
-| 2 | Vender ya | B1, B3, B5 (con insumos del cliente) |
-| 3 | Comparativas | C2, C4, I1 de las piezas nuevas |
+| 1 ✅ | Comparativas (adelantadas a pedido del cliente) | C1–C5 + K1 parcial |
+| 2 | Despliegue + vender ya | A1, A2, A5, B1, B3, B5 |
+| 3 | Comparativas restantes + distribución | C6, C7, I1 de C1–C5 |
 | 4 | Primera herramienta | D1 + B4 |
 | 5 | Contenido con volumen | G1, G2 |
-| 6 | Comparativas CRM + contenido | C5, G3 |
-| 7 | Herramienta de costo | D2, C7 |
+| 6 | Contenido CRM | G3 |
+| 7 | Herramienta de costo | D2 (enlazada desde C4) |
 | 8 | Contenido | G4, G5 |
 | 9 | Estudio propio (diseño) | E1 + G6 |
 | 10 | Industrias | H1, H2 |
@@ -83,7 +81,7 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase A — Despliegue y medición
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| A1 | Desplegar y verificar en producción | ⛔ | Zip listo: `../Cyrrus builds/cyrrus-dist-2026-10-05-v2.zip`. Falta que el cliente lo suba |
+| A1 | Desplegar y verificar en producción | ⛔ | Zip listo: `../Cyrrus builds/cyrrus-dist-2026-10-05-v3.zip` (reemplaza a v2). Falta que el cliente lo suba |
 | A2 | Search Console: sitemap, indexación, revisión semanal | 🟡 | Acceso desde 2026-09-18; falta reenviar sitemap tras A1 y la revisión semanal |
 | A3 | Bing Webmaster Tools | ⬜ | |
 | A4 | GA4 con conversiones | ⛔ | Falta acceso a GA4. `file_download` ya existe en artículos |
@@ -103,11 +101,11 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase C — Comparativas agnósticas
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| C1 | Mejores ERP para medianas empresas | ⬜ | |
-| C2 | SAP B1 vs NetSuite vs Dynamics 365 BC | ⬜ | |
-| C3 | Odoo vs SAP Business One | ⬜ | |
-| C4 | Cuánto cuesta implementar un ERP | ⬜ | Medir keyword primero |
-| C5 | Salesforce vs HubSpot vs Dynamics 365 | ⬜ | |
+| C1 | Mejores ERP para medianas empresas | ✅ | 2026-10-05 (Sesión 1). `/perspectivas/mejores-erp-para-medianas-empresas`, ES/EN, 6 ERP, tabla, 10 fuentes. "mejores erp" MX 110 · SD 35 |
+| C2 | SAP B1 vs NetSuite vs Dynamics 365 BC | ✅ | Sesión 1. `/perspectivas/sap-business-one-vs-netsuite-vs-dynamics-365-business-central`. MX 10 · SD 27 · CPC US$7,7 |
+| C3 | Odoo vs SAP Business One | ✅ | Sesión 1. `/perspectivas/odoo-vs-sap-business-one-diferencias`. "odoo vs sap" MX 70 · SD 17 |
+| C4 | Cuánto cuesta implementar un ERP | ✅ | Sesión 1. `/perspectivas/cuanto-cuesta-implementar-un-erp`. MX 20 · SD 27; ejemplo de cálculo con precios publicados |
+| C5 | Salesforce vs HubSpot vs Dynamics 365 | ✅ | Sesión 1. `/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm`. MX 20 · SD 25 · CPC US$8; enlazada desde la página de CRM |
 | C6 | Mejores CRM | ⬜ | |
 | C7 | ERP vs Excel | ⬜ | Medir keyword primero |
 
@@ -190,7 +188,7 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase K — Rendimiento y técnico
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| K1 | LCP móvil < 2,5 s en producción | ⬜ | Lab local: LCP 3,39 s (simulado); medir en PageSpeed tras A1 |
+| K1 | LCP móvil < 2,5 s en producción | 🟡 | Sesión 1: `PageHero` sin `opacity: 0` (CSS `hero-rise`): LCP de laboratorio en /metodo-cira/estrategia 4,77 → 3,61 s. Falta medir en producción tras A1 |
 | K2 | Portada horizontal para ERP | ⬜ | Hoy 720×1600 |
 | K3 | `cyrruscs-dist/` en el repo | ⛔ | Decisión del cliente |
 | K4 | Profundidad de Intelligence Lab | ⬜ | |
@@ -207,7 +205,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-05-v2.zip` | 2026-10-05 | ⬜ | A1, A2, A5, K1 |
+| Subir `cyrrus-dist-2026-10-05-v3.zip` (reemplaza v2) | 2026-10-05 | ⬜ | A1, A2, A5, K1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Diagnóstico de entrada: alcance, duración, precio | 2026-10-05 | ⬜ | B1 |
 | Rangos de precio por servicio | 2026-10-05 | ⬜ | B2 |
@@ -229,10 +227,27 @@ qué llegó y lo integra (F8, J1, J3…).
 | 2026-09-18 | Search Console | ~15 (46 en 3 meses) | — | — | — | Casi todo tráfico de marca |
 | 2026-10-05 | Ubersuggest | ~8 (estimado) | 0 (7 keywords posicionadas) | 13 / 66 (spam) | PageSpeed (vía Ubersuggest): LCP 2,9 s, TBT 1,5 s | Producción con el build del 3-oct |
 | 2026-10-05 | `scripts/lh.mjs` (local, 3 runs) | — | — | — | 87 / 3,39 s / 33 ms | Tras hidratar en `startTransition` (antes 127 ms) |
+| 2026-10-05 | `scripts/lh.mjs --route metodo-cira/estrategia` (local, 3 runs) | — | — | — | 85 / 3,61 s / 13 ms | Antes del arreglo de `PageHero`: 77 / 4,77 s / 15 ms |
 
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 1 — 2026-10-05 — Comparativas agnósticas de ERP y CRM (C1–C5)
+- **Tareas trabajadas:** C1 ✅, C2 ✅, C3 ✅, C4 ✅, C5 ✅, K1 🟡 (a pedido del cliente se adelantaron las comparativas; A1 sigue esperando el deploy).
+- **Hecho:**
+  - Keywords medidas en Ubersuggest (MX): "mejores erp" 110 · SD 35; "odoo vs sap" 70 · SD 17; "cuanto cuesta un erp" 20 · SD 27; "sap business one vs netsuite" 10 · CPC US$7,7; "salesforce vs hubspot" 20 · CPC US$8. Poco volumen, pero intención de compra alta.
+  - 5 artículos ES/EN en `blog.json` + `blog-data.ts`: mejores ERP, SAP B1 vs NetSuite vs Business Central, Odoo vs SAP B1, cuánto cuesta un ERP, Salesforce vs HubSpot vs Dynamics 365. Cada uno con respuesta directa, tabla comparativa, declaración de independencia, 2 tarjetas de servicio, CTA final y fuentes.
+  - Datos verificados en fuentes oficiales (octubre de 2026): Business Central US$80/110/8; Odoo Standard US$7,95 y Custom US$13,40 (anual), Community LGPLv3; NetSuite licencia anual = plataforma + módulos + usuarios + implementación única; SAP B1 para pymes, cotizado vía socios, SAP HANA o SQL Server; Acumatica por consumo con usuarios ilimitados; GROW with SAP; Salesforce US$0/25/100/195/395/550; HubSpot gratis 2 usuarios y onboarding US$1.500/3.500; Dynamics 365 Sales US$65/105/150. Se descartaron precios de NetSuite publicados por terceros (no oficiales).
+  - Renderizador de artículos: bloque `table` y `seoTitle` opcional (títulos ≤ 60 caracteres en el `<title>`; el H1 se mantiene completo).
+  - Enlaces: guía de ERP → mejores ERP y costo; página de servicio de CRM → comparativa de CRM; `llms.txt`.
+  - `PageHero` pasó de framer-motion (`opacity: 0` en el HTML estático) a la clase CSS `hero-rise`: el H1 de todas las páginas interiores es visible antes del JavaScript. LCP de laboratorio 4,77 → 3,61 s en Estrategia. Regla añadida a `CLAUDE.md`.
+  - `public/favicon.ico` (antes 404 en producción).
+- **Verificación:** build de 96 rutas; las 10 versiones nuevas con tabla, 3 ideas clave, fuentes, 4 enlaces al servicio y JSON-LD válido; consola limpia en pestaña nueva (artículos, Estrategia, caso EN).
+- **Commits:** ver `git log` (mensaje "Sesión 1: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-05-v3.zip`.
+- **Pendiente / bloqueos nuevos:** artículos de 460–770 palabras de texto (más tabla); se pueden ampliar con FAQ cuando haya datos de Search Console. Precios a revisar cada trimestre (L1).
+- **Próxima sesión:** Sesión 2 (ver arriba).
 
 ### Sesión 0 — 2026-10-05 — Línea base: auditoría, casos, datos del cliente y nuevo plan
 - **Tareas trabajadas:** auditoría `/audit` + Ubersuggest; D4 ✅; base de A, F8, J, K.

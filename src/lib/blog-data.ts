@@ -125,6 +125,66 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/Trabajo.jpg",
     ],
   },
+  {
+    slug: "mejores-erp-para-medianas-empresas",
+    coverImage: "/assets/decoracion/IMG_20230227_164308.jpg",
+    publishedAt: "2026-10-05",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [4, 16],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "sap-business-one-vs-netsuite-vs-dynamics-365-business-central",
+    coverImage: "/assets/decoracion/1785866224151.jpg",
+    publishedAt: "2026-10-05",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [6, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "odoo-vs-sap-business-one-diferencias",
+    coverImage: "/assets/decoracion/1785866224326.jpg",
+    publishedAt: "2026-10-05",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [6, 11],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "cuanto-cuesta-implementar-un-erp",
+    coverImage: "/assets/decoracion/IMG_20200313_092604173.jpg",
+    publishedAt: "2026-10-05",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [9, 15],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "salesforce-vs-hubspot-vs-dynamics-365-crm",
+    coverImage: "/assets/decoracion/IMG_20230228_083642.jpg",
+    publishedAt: "2026-10-05",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [6, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/IMG_20230228_082632.jpg",
+      "/assets/decoracion/Trabajo.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

@@ -23,6 +23,7 @@ The site must always feel instant and fluid — never sluggish or janky. Apply t
 - **Never `transition-all`.** Name the exact properties (`transition-[background-color,box-shadow,border-color]`). Animating properties that don't change wastes cycles and can trigger layout/paint on unrelated properties.
 - **Keep durations short.** 150ms–200ms `ease-out` for UI chrome (headers, nav, hovers). Longer durations (300ms+) read as slow on repeated interactions like scroll-driven state changes.
 - **Prefer `opacity`/`transform` over layout-affecting properties.** They're GPU-composited and don't trigger reflow.
+- **Never fade in above-the-fold prerendered text from `opacity: 0`.** framer-motion's `initial` is baked into the static HTML, so the H1 (the LCP element) ships invisible until hydration. Use the CSS `hero-rise` class (transform only) as `ShaderHero` and `PageHero` do — that change alone took an interior page's lab LCP from 4.8s to 3.6s.
 - **Don't animate `backdrop-filter`/blur radius.** Blur is expensive to recompute per frame; toggle it as a plain class swap (instant), never as part of a timed transition.
 - **Throttle scroll/resize listeners to one update per frame** via `requestAnimationFrame` (see `src/lib/use-scrolled.ts`), and always register with `{ passive: true }`. Only call `setState` when a value actually crosses a meaningful threshold, not on every pixel.
 - **Reuse shared hooks** (e.g. `useScrolled`) instead of duplicating scroll logic per component, so fixes/optimizations apply everywhere at once.
