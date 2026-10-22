@@ -29,26 +29,31 @@ interface Faq {
 
 type Model = "cloud" | "perpetual";
 
-// Example values, deliberately round and not any vendor's price list. The page
-// says so; they only exist so the first render shows a coherent result.
-const DEFAULTS = {
+// No invented defaults: every field starts empty (a percentage "typical" of
+// ERP projects has no verifiable primary source). `anios` is a planning horizon
+// the visitor chooses, not a claim about the market. The one example loads a
+// published vendor list price (Dynamics 365 Business Central Essentials, US$80 per
+// user per month, billed yearly, checked October 2026) and leaves the rest at zero.
+const EMPTY = {
   modelo: "cloud" as Model,
-  usuarios: "25",
-  precioCloud: "80",
-  precioPerp: "3000",
-  mantenimiento: "20",
-  implPct: "100",
-  integPct: "25",
-  trainPct: "15",
-  personas: "3",
-  meses: "6",
-  costoMes: "4000",
-  dedicacion: "50",
-  infra: "3000",
-  contPct: "15",
+  usuarios: "",
+  precioCloud: "",
+  precioPerp: "",
+  mantenimiento: "",
+  implPct: "",
+  integPct: "",
+  trainPct: "",
+  personas: "",
+  meses: "",
+  costoMes: "",
+  dedicacion: "",
+  infra: "",
+  contPct: "",
   anios: "5",
 };
-type Values = typeof DEFAULTS;
+type Values = typeof EMPTY;
+const EXAMPLE: Values = { ...EMPTY, usuarios: "25", precioCloud: "80" };
+
 
 const SERVICE = "metodo-cira-seleccion-soluciones";
 
@@ -112,7 +117,7 @@ function Field({
 export default function CalculadoraCostoErp() {
   const { t } = useTranslation("herramientas");
   const lang = useLang();
-  const [v, setV] = useState<Values>(DEFAULTS);
+  const [v, setV] = useState<Values>(EMPTY);
   const [touched, setTouched] = useState(false);
 
   const set = <K extends keyof Values>(key: K, value: Values[K]) => {
@@ -233,15 +238,26 @@ export default function CalculadoraCostoErp() {
           <div className="mx-auto max-w-6xl px-6 md:px-12">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <p className="max-w-3xl text-base leading-relaxed text-gray">{t("calculadoraErp.intro.text")}</p>
-              <button
-                type="button"
-                onClick={() => setV(DEFAULTS)}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-navy/70 transition-colors duration-150 ease-out hover:text-navy"
-              >
-                <RotateCcw className="h-4 w-4" />
-                {t("calculadoraErp.intro.reset")}
-              </button>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+                <button
+                  type="button"
+                  onClick={() => setV(EXAMPLE)}
+                  className="text-sm font-semibold text-blue underline underline-offset-2 transition-colors duration-150 ease-out hover:text-navy"
+                >
+                  {t("calculadoraErp.intro.example")}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setV(EMPTY)}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-navy/70 transition-colors duration-150 ease-out hover:text-navy"
+                >
+                  <RotateCcw className="h-4 w-4" />
+                  {t("calculadoraErp.intro.clear")}
+                </button>
+              </div>
             </div>
+
+            <p className="mt-3 max-w-3xl text-xs leading-relaxed text-gray">{t("calculadoraErp.intro.exampleNote")}</p>
 
             <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12">
               <div className="space-y-8 lg:col-span-7">
@@ -334,12 +350,16 @@ export default function CalculadoraCostoErp() {
                     {`${t("calculadoraErp.results.perYear")}: ${fmt(total / years)}`}
                   </p>
 
-                  <div className="mt-6 rounded-xl bg-white/10 p-4">
-                    <p className="text-base font-semibold">
-                      {t("calculadoraErp.results.share", { pct: licenseShare })}
-                    </p>
-                    <p className="mt-1 text-sm text-white/70">{t("calculadoraErp.results.shareNote")}</p>
-                  </div>
+                  {total > 0 ? (
+                    <div className="mt-6 rounded-xl bg-white/10 p-4">
+                      <p className="text-base font-semibold">
+                        {t("calculadoraErp.results.share", { pct: licenseShare })}
+                      </p>
+                      <p className="mt-1 text-sm text-white/70">{t("calculadoraErp.results.shareNote")}</p>
+                    </div>
+                  ) : (
+                    <p className="mt-6 rounded-xl bg-white/10 p-4 text-base">{t("calculadoraErp.results.empty")}</p>
+                  )}
 
                   <h3 className="mt-6 text-sm font-semibold uppercase tracking-wider text-white/70">
                     {t("calculadoraErp.results.breakdown")}
@@ -405,7 +425,8 @@ export default function CalculadoraCostoErp() {
                     </p>
                   </div>
                 </div>
-                <p className="mt-4 text-xs leading-relaxed text-gray">{t("calculadoraErp.results.disclaimer")}</p>
+                <p className="mt-4 text-xs leading-relaxed text-gray">{t("calculadoraErp.results.reference")}</p>
+                <p className="mt-2 text-xs leading-relaxed text-gray">{t("calculadoraErp.results.disclaimer")}</p>
               </aside>
             </div>
           </div>

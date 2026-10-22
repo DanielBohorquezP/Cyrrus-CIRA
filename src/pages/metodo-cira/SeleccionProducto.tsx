@@ -152,8 +152,8 @@ export default function SeleccionProducto() {
             ? "Salesforce vs HubSpot vs Dynamics 365"
             : "Salesforce vs HubSpot vs Dynamics 365",
           description: lang === "en"
-            ? "An independent comparison of the three most evaluated CRMs, with published prices."
-            : "Comparación independiente de los tres CRM más evaluados, con precios publicados.",
+            ? "An independent comparison of Salesforce, HubSpot and Dynamics 365, with published prices."
+            : "Comparación independiente de Salesforce, HubSpot y Dynamics 365, con precios publicados.",
         }
       : {
           href: articlePath,

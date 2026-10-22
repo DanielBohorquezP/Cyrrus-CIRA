@@ -1586,7 +1586,7 @@
       "intro": "If you're looking for the best ERP for your company, you've probably noticed every vendor claims to be the best. The honest answer is that it depends on your operation, and this guide shows you on what.",
       "keyTakeaways": [
         "There is no best ERP in the abstract: the right one fits your processes, your total budget and the implementation capacity available in your country.",
-        "For midsize companies, the most evaluated options are SAP Business One, Oracle NetSuite, Microsoft Dynamics 365 Business Central, Odoo, Acumatica and SAP S/4HANA Cloud.",
+        "For midsize companies, options include SAP Business One, Oracle NetSuite, Microsoft Dynamics 365 Business Central, Odoo, Acumatica and SAP S/4HANA Cloud.",
         "Only Business Central and Odoo publish per-user prices; the rest are quoted, so a real comparison means requesting proposals against the same requirements."
       ],
       "serviceCtas": [
@@ -1636,7 +1636,7 @@
         },
         {
           "type": "h2",
-          "text": "The ERP systems midsize companies evaluate most"
+          "text": "Six ERP systems for midsize companies"
         },
         {
           "type": "p",
@@ -1828,7 +1828,7 @@
       "label": "ERP selection",
       "excerpt": "An independent comparison of SAP Business One, Oracle NetSuite and Microsoft Dynamics 365 Business Central for midsize companies: deployment, licensing, ecosystem and who each one is for.",
       "metaDescription": "SAP Business One vs NetSuite vs Business Central: independent comparison of deployment, pricing, ecosystem and which midsize company each one suits.",
-      "intro": "If your ERP shortlist ended up as SAP Business One, NetSuite and Business Central, you're in good company: they're three of the options midsize companies evaluate most. The difference lies in details the demos don't show.",
+      "intro": "If your ERP shortlist includes SAP Business One, NetSuite and Business Central, they're three common alternatives to compare. The difference lies in details the demos don't show.",
       "keyTakeaways": [
         "SAP Business One runs in the cloud or on your own servers and is bought through partners; NetSuite is cloud only; Business Central supports both.",
         "Business Central is the only one of the three that publishes prices: US$80 per user per month (Essentials) and US$110 (Premium), paid yearly.",
@@ -1859,7 +1859,7 @@
       "body": [
         {
           "type": "p",
-          "text": "On paper the three ERP systems solve the same things: finance, purchasing, inventory, sales and reporting on a single platform. That's why the demos look so alike, and why the choice often ends up being decided by rapport with the salesperson."
+          "text": "On paper the three ERP systems solve the same things: finance, purchasing, inventory, sales and reporting on a single platform. That's why the demos look so alike: it pays to compare against criteria defined beforehand, not by the impression a demo leaves."
         },
         {
           "type": "p",
@@ -1949,7 +1949,7 @@
         },
         {
           "type": "p",
-          "text": "With written requirements, the same evaluation matrix for all three, and a guided demo built on your own cases. Also ask each implementation partner for references from clients of your industry and size in your country: in this segment, the implementer's quality weighs as much as the software."
+          "text": "With written requirements, the same evaluation matrix for all three, and a guided demo built on your own cases. Also ask each implementation partner for references from clients of your industry and size in your country: in this segment the implementer is part of the decision, along with the software."
         },
         {
           "type": "p",
@@ -2019,7 +2019,7 @@
       "label": "ERP selection",
       "excerpt": "Odoo vs SAP Business One: licensing, cost, deployment, flexibility and the risks of each, in an independent comparison for midsize companies.",
       "metaDescription": "Odoo vs SAP Business One: real differences in licensing, cost, deployment and flexibility. An independent comparison to choose your company's ERP.",
-      "intro": "Odoo and SAP Business One often reach the same shortlist, but they follow different philosophies: one is modular and open source at its core; the other is a closed product from one of the biggest brands in enterprise software.",
+      "intro": "Odoo and SAP Business One can reach the same shortlist, but they follow different philosophies: one is modular and open source at its core; the other is a closed product from one of the biggest brands in enterprise software.",
       "keyTakeaways": [
         "Odoo has an open-source Community edition (LGPLv3) and a paid Enterprise edition from US$7.95 per user per month; SAP Business One doesn't publish prices and is quoted through a partner.",
         "Odoo offers more flexibility and lower license cost; SAP Business One, a more standardized product and a partner ecosystem with a long track record.",
@@ -2050,7 +2050,7 @@
       "body": [
         {
           "type": "p",
-          "text": "When a midsize company compares Odoo with SAP, it's almost always comparing Odoo with SAP Business One, SAP's solution for small and midsize businesses. SAP S/4HANA, SAP's ERP for organizations of all sizes, plays in a different league of scope and cost."
+          "text": "When a midsize company compares Odoo with SAP, the relevant comparison is with SAP Business One, SAP's solution for small and midsize businesses. SAP S/4HANA, SAP's ERP for organizations of all sizes, plays in a different league of scope and cost."
         },
         {
           "type": "p",
@@ -2110,7 +2110,7 @@
         },
         {
           "type": "p",
-          "text": "On licenses, usually yes: Odoo publishes prices from US$7.95 per user per month on its Standard plan, while SAP Business One is quoted. But total cost isn't just the license. Implementation, data migration, integrations, customizations and support often weigh more, and a heavily customized Odoo implementation can end up costing more than planned."
+          "text": "On licenses, usually yes: Odoo publishes prices from US$7.95 per user per month on its Standard plan, while SAP Business One is quoted. But total cost isn't just the license. Implementation, data migration, integrations, customizations and support add to the license and must be budgeted; a heavily customized Odoo implementation can cost more than planned."
         },
         {
           "type": "p",
@@ -2208,7 +2208,7 @@
       "keyTakeaways": [
         "An ERP's cost has four blocks: licenses or subscription, implementation, infrastructure and support, and internal team time.",
         "Some vendors publish per-user prices (Business Central from US$80 and Odoo from US$7.95 a month); others, such as SAP Business One and NetSuite, only quote.",
-        "The costs that most often break the budget are customization, data migration, integrations and adoption that wasn't planned."
+        "According to Panorama Consulting (2026 report, 170 organizations), more than a quarter of projects went over budget; the most common cause was an unexpected need for additional technology."
       ],
       "serviceCtas": [
         {
@@ -2267,7 +2267,7 @@
         },
         {
           "type": "p",
-          "text": "Internal team time. It's the cost almost no one budgets: key people from each area spend weeks defining processes, validating configurations and testing."
+          "text": "Internal team time. It's a cost worth budgeting for: key people from each area spend time defining processes, validating configurations and testing."
         },
         {
           "type": "h2",
@@ -2323,11 +2323,11 @@
         },
         {
           "type": "p",
-          "text": "For a company with 25 full users, licenses only and at published prices: Business Central Essentials would cost 25 × US$80 × 12 = US$24,000 a year; Business Central Premium, US$33,000; Odoo Custom, 25 × US$13.40 × 12 = US$4,020 a year. That's the license alone: it excludes implementation, integrations, migration, support and internal team time, which weigh more in most projects."
+          "text": "For a company with 25 full users, licenses only and at published prices: Business Central Essentials would cost 25 × US$80 × 12 = US$24,000 a year; Business Central Premium, US$33,000; Odoo Custom, 25 × US$13.40 × 12 = US$4,020 a year. That's the license alone: it excludes implementation, integrations, migration, support and internal team time, which must also be budgeted."
         },
         {
           "type": "h2",
-          "text": "The hidden costs that most often break the budget"
+          "text": "The hidden costs worth budgeting for"
         },
         {
           "type": "p",
@@ -2335,7 +2335,7 @@
         },
         {
           "type": "p",
-          "text": "Underestimating data migration. Cleaning and de-duplicating customer, product and supplier masters takes longer than expected."
+          "text": "Underestimating data migration. Cleaning and de-duplicating customer, product and supplier masters is work that must be budgeted."
         },
         {
           "type": "p",
@@ -2422,6 +2422,10 @@
         {
           "label": "Prosci. The Correlation Between Change Management and Project Success",
           "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
+        },
+        {
+          "label": "Panorama Consulting Group. The 2026 ERP Report (170 organizations, January 2025 to January 2026)",
+          "url": "https://4439340.fs1.hubspotusercontent-na1.net/hubfs/4439340/Reports/ERP%20Report/2026-erp-report-panorama-consulting-group.pdf"
         }
       ]
     },
@@ -2431,7 +2435,7 @@
       "label": "CRM selection",
       "excerpt": "An independent comparison of Salesforce Sales Cloud, HubSpot Sales Hub and Dynamics 365 Sales: published prices, strengths, onboarding costs and which sales team each one suits.",
       "metaDescription": "Salesforce vs HubSpot vs Dynamics 365 Sales: published prices, strengths and which company each CRM suits. An independent comparison.",
-      "intro": "If your sales team needs a CRM, the shortlist almost always ends up as Salesforce, HubSpot and Dynamics 365. All three are good; the question is which one your team will use every day.",
+      "intro": "If your sales team needs a CRM, Salesforce, HubSpot and Dynamics 365 are three common alternatives to compare. All three are good; the question is which one your team will use every day.",
       "keyTakeaways": [
         "All three publish prices: Salesforce from US$25 per user per month, HubSpot has a free plan for two users, and Dynamics 365 Sales starts at US$65.",
         "HubSpot stands out for ease of use and built-in marketing; Salesforce for depth and ecosystem; Dynamics 365 for its Microsoft 365 integration.",
@@ -2462,7 +2466,7 @@
       "body": [
         {
           "type": "p",
-          "text": "A CRM manages customer relationships and the sales process: contacts, opportunities, follow-up and sales forecasts. A bad choice rarely shows in the first month, but six months later, when the team still tracks its customers in spreadsheets."
+          "text": "A CRM manages customer relationships and the sales process: contacts, opportunities, follow-up and sales forecasts. A badly chosen CRM shows when the team is still tracking its customers in spreadsheets."
         },
         {
           "type": "p",
@@ -2536,7 +2540,7 @@
         },
         {
           "type": "p",
-          "text": "The question changes: it stops being which tool has the better features and becomes what it costs, and what risk it carries, to run it for five years. At this size the license is usually the most visible line item but not the largest: implementation, integration with the ERP and other systems, customer data quality, and adoption by sales, service and finance all weigh more. A CRM that doesn't integrate with billing and receivables forces manual reconciliation, and the forecast that reaches the board stops being reliable. Switching CRM later is possible, but it means migrating data, rebuilding integrations and retraining the whole team, so decide with the multi-year total cost on the table. For that calculation, see what it costs to implement an enterprise system and how it compares with the license.",
+          "text": "The question changes: it stops being which tool has the better features and becomes what it costs, and what risk it carries, to run it for five years. At this size, beyond the license you must budget for implementation, integration with the ERP and other systems, customer data quality, and adoption by sales, service and finance. A CRM that doesn't integrate with billing and receivables forces manual reconciliation, and the forecast that reaches the board stops being reliable. Switching CRM later is possible, but it means migrating data, rebuilding integrations and retraining the whole team, so decide with the multi-year total cost on the table. For that calculation, see what it costs to implement an enterprise system and how it compares with the license.",
           "links": [
             {
               "text": "what it costs to implement an enterprise system",
@@ -2638,7 +2642,7 @@
       "label": "Software selection",
       "excerpt": "What a warehouse management system (WMS) is, how it differs from an ERP, when the ERP's inventory module stops being enough and what leadership should ask before buying.",
       "metaDescription": "What a WMS is, the difference between WMS and ERP, when a warehouse needs one and how to choose it using total cost and risk criteria.",
-      "intro": "When system inventory doesn't match the warehouse, the company pays for it in lost sales, tied-up capital and overtime. A WMS aims to close that gap; the decision is whether your ERP already does it or you need a separate system.",
+      "intro": "When system inventory doesn't match the warehouse, the company can pay for it in lost sales, tied-up capital and overtime. A WMS aims to close that gap; the decision is whether your ERP already does it or you need a separate system.",
       "keyTakeaways": [
         "A WMS directs and records the physical work of the warehouse (receiving, putaway, picking, shipping); the ERP records inventory as value and as a commercial commitment.",
         "You don't always need a separate WMS: many ERPs include a warehouse module, and some WMS products can run alongside another vendor's ERP.",
@@ -2727,7 +2731,7 @@
         },
         {
           "type": "p",
-          "text": "The signals tend to be operational, but their effect reaches leadership: frequent differences between system and physical inventory, full counts that stop operations, orders that ship incomplete or late even though the system showed stock, picking times that grow with every new customer, and operators who depend on one person who knows where everything is. If two or three of these keep recurring, the cost is already in your margin even if it has no line of its own on the income statement."
+          "text": "These are the signals we review with clients; they are operational, but their effect reaches leadership: frequent differences between system and physical inventory, full counts that stop operations, orders that ship incomplete or late even though the system showed stock, picking times that grow with every new customer, and operators who depend on one person who knows where everything is. If two or three of these keep recurring, it's worth measuring what they cost you."
         },
         {
           "type": "h2",
@@ -2844,7 +2848,7 @@
         },
         {
           "type": "p",
-          "text": "No. As of October 2026, SAP's site shows no list price for Business One: it is bought through implementation partners, who quote based on scope, region and deployment model (cloud or your own infrastructure). Per-user figures circulating on third-party blogs are estimates from partners or resellers, differ from each other and age quickly; use them as an order of magnitude to start the conversation, never as a budget."
+          "text": "No. The official SAP licensing documents we reviewed (the Business One 10.0 license guide and the cloud supplement) define user types and conditions but include no prices. Business One is bought through implementation partners, who quote based on scope, region and deployment model (cloud or your own infrastructure). Per-user figures circulating on third-party blogs are estimates from third parties (some from SAP partners), differ from each other and may be out of date; use them as an order of magnitude to start the conversation, never as a budget."
         },
         {
           "type": "h2",
@@ -2852,7 +2856,7 @@
         },
         {
           "type": "p",
-          "text": "A Business One license is per named user, and each person has a type. According to SAP's license guide, the types are Professional (broad access to functionality), Limited (Financials, Logistics and CRM, for operational staff with narrower access) and Starter Package, which allows a maximum of five users, can't be combined with other types and excludes advanced functions. Classifying each person correctly before quoting is one of the decisions that moves the price the most. The Android mobile app carries no additional fee for these user types. The license guide cited is for version 10.0, so confirm the current terms for your version with the partner."
+          "text": "A Business One license is per named user, and each person has a type. According to SAP's license guide, the types are Professional (broad access to functionality), Limited (Financials, Logistics and CRM, for operational staff with narrower access) and Starter Package; in the cloud edition, SAP sets a maximum of five users for the latter, and in general it can't be combined with other license types. Classifying each person correctly before quoting is one of the decisions that moves the price the most. The Android mobile app carries no additional fee for these user types. The license guide cited is for version 10.0, so confirm the current terms for your version with the partner."
         },
         {
           "type": "table",
@@ -2896,7 +2900,7 @@
         },
         {
           "type": "p",
-          "text": "Calculate the five-year cost: licenses or subscription plus support multiplied by five, plus implementation, integrations, infrastructure and internal team time. Ask at least three partners for the same proposal with the same scope, and demand the breakdown by block: compare hours and assumptions, not just the total. A cheap proposal with a narrow scope tends to end in change orders. Our article on what it costs to implement an ERP details the hidden costs that most often derail budgets.",
+          "text": "Calculate the five-year cost: licenses or subscription plus support multiplied by five, plus implementation, integrations, infrastructure and internal team time. Ask at least three partners for the same proposal with the same scope, and demand the breakdown by block: compare hours and assumptions, not just the total. A cheap proposal with a narrow scope can end in change orders. Our article on what it costs to implement an ERP details the hidden costs worth budgeting for.",
           "links": [
             {
               "text": "what it costs to implement an ERP",
@@ -2968,7 +2972,7 @@
       "label": "Software selection",
       "excerpt": "The difference between a CMMS, an EAM and the ERP's maintenance module, when each justifies the investment and what leadership should measure before choosing.",
       "metaDescription": "What CMMS software is, how it differs from an EAM and the ERP module, and how to choose using downtime cost and risk criteria.",
-      "intro": "An unplanned shutdown can cost more than the software that would have helped avoid it. Leadership's decision is choosing between a CMMS, an EAM or the ERP's maintenance module without overpaying or falling short.",
+      "intro": "Before choosing maintenance software, it pays to know what an unplanned shutdown costs you today. Leadership's decision is choosing between a CMMS, an EAM or the ERP's maintenance module without overpaying or falling short.",
       "keyTakeaways": [
         "A CMMS manages maintenance tasks (work orders, spare parts, scheduling); an EAM covers the asset's whole lifecycle, including capital planning, risk and performance.",
         "An EAM is justified with high-cost physical assets and several areas (finance, operations, maintenance) using the same system; a full CMMS may be enough and is simpler to implement.",
@@ -3045,7 +3049,7 @@
         },
         {
           "type": "p",
-          "text": "A full CMMS is usually enough when the problem is execution: paper work orders, uncontrolled spare parts, reactive maintenance. An EAM is justified when leadership's question is about the portfolio: when to replace an asset, how much to invest in each plant, what risk to accept. As CMMS products add EAM-type functions the gap narrows, which is why a cost-benefit analysis makes sense before paying for the extra features."
+          "text": "A full CMMS can be enough when the problem is execution: paper work orders, uncontrolled spare parts, reactive maintenance. An EAM is justified when leadership's question is about the portfolio: when to replace an asset, how much to invest in each plant, what risk to accept. As CMMS products add EAM-type functions the gap narrows, which is why a cost-benefit analysis makes sense before paying for the extra features."
         },
         {
           "type": "h2",
@@ -3117,7 +3121,7 @@
       "label": "Software selection",
       "excerpt": "SAP's official dates for ECC, what changes as each maintenance stage ends, the routes available and what leadership should decide before requesting quotes.",
       "metaDescription": "SAP ECC standard maintenance ends December 31, 2027. Official dates, migration routes and what to decide before requesting quotes.",
-      "intro": "For a company running SAP ECC, the calendar is already a senior-leadership decision: standard maintenance ends on December 31, 2027, and just over fourteen months remain.",
+      "intro": "For a company running SAP ECC, the calendar is already a senior-leadership decision: standard maintenance ends on December 31, 2027, and, as of October 2026, just over fourteen months remain.",
       "keyTakeaways": [
         "SAP keeps standard maintenance for ECC through December 31, 2027 and offers optional extended maintenance through December 31, 2030, with a two-percentage-point surcharge on the maintenance basis.",
         "After 2030, or without extended maintenance, customer-specific maintenance applies, which SAP doesn't recommend as a long-term model for business-critical systems; with third-party databases, converting the system is only possible before the end of 2030.",
@@ -3199,7 +3203,7 @@
         },
         {
           "type": "p",
-          "text": "The system doesn't switch off on January 1, 2028: it keeps running. What changes is the vendor's backing and the cost of staying where you are. There is also a critical date for those on third-party databases: according to SAP, converting a Business Suite 7 system with a third-party database to S/4HANA or SAP Cloud ERP is only possible until the end of 2030; after that only a new implementation remains. Waiting has an opportunity cost, because it narrows your options just when teams and vendors are most stretched."
+          "text": "The system doesn't switch off on January 1, 2028: it keeps running. What changes is the vendor's backing and the cost of staying where you are. There is also a critical date for those on third-party databases: according to SAP, converting a Business Suite 7 system with a third-party database to S/4HANA or SAP Cloud ERP is only possible until the end of 2030; after that only a new implementation remains. That's why it pays to define the route early."
         },
         {
           "type": "h2",
@@ -3304,7 +3308,7 @@
       "label": "Software selection",
       "excerpt": "The difference between payroll software, HRIS and HCM, what changes once a company passes 100 employees and what leadership should decide before choosing.",
       "metaDescription": "HR and payroll software for companies with over 100 employees: payroll, HRIS or HCM, what changes with size and how to choose.",
-      "intro": "With 20 employees, payroll is a process. With over 100 and operations in several countries, it is a compliance risk, a large cost and the company's biggest store of personal data.",
+      "intro": "With 20 employees, payroll is a process. With over 100 and operations in several countries, it is a compliance risk, a significant cost and one of the company's most sensitive stores of personal data.",
       "keyTakeaways": [
         "Payroll software processes pay; an HRIS manages employee data; an HCM covers the whole people lifecycle. Vendors don't define these terms the same way, so compare functions, not labels.",
         "Past 100 employees, what weighs more is integration with finance and the ERP, labor and payroll compliance in each country, personal data protection and adoption by managers and employees.",
@@ -3335,7 +3339,7 @@
       "body": [
         {
           "type": "p",
-          "text": "HR software is the set of systems where a company keeps its employees' data and runs the processes that depend on it: hiring, payroll, absences, performance and development. The label changes by vendor, and that confusion is the first cause of comparisons that aren't comparable."
+          "text": "HR software is the set of systems where a company keeps its employees' data and runs the processes that depend on it: hiring, payroll, absences, performance and development. The label changes by vendor, and that confusion can make comparisons not comparable."
         },
         {
           "type": "p",
@@ -3381,7 +3385,7 @@
         },
         {
           "type": "p",
-          "text": "What's at stake changes. Payroll errors stop being rework and become legal and reputational exposure. Turnover and absenteeism start to weigh on the margin. And leadership needs reliable personnel-cost figures, which today usually come from spreadsheets. If the company operates in several countries, each brings its own labor and payroll legislation, and the system must support it or rely on a local partner; that often decides which alternatives are viable before you compare features."
+          "text": "What's at stake changes. Payroll errors stop being rework and become legal and reputational exposure. Turnover and absenteeism start to weigh on the margin. And leadership needs reliable personnel-cost figures. If the company operates in several countries, each brings its own labor and payroll legislation, and the system must support it or rely on a local partner; that can decide which alternatives are viable before you compare features."
         },
         {
           "type": "h2",
@@ -3389,7 +3393,7 @@
         },
         {
           "type": "p",
-          "text": "Payroll is one of the company's largest expenses and must reach accounting without rework. Before choosing, define which system is the source of truth for the employee master, the organizational structures and cost centers, and who maintains the integration. If you haven't chosen the ERP yet, decide both together; doing it separately multiplies the interfaces."
+          "text": "Payroll is a significant expense and must reach accounting without rework. Before choosing, define which system is the source of truth for the employee master, the organizational structures and cost centers, and who maintains the integration. If you haven't chosen the ERP yet, decide both together; doing it separately multiplies the interfaces."
         },
         {
           "type": "h2",
@@ -3544,7 +3548,7 @@
         },
         {
           "type": "p",
-          "text": "Not every plant does. The clearest signals are these: lot or serial traceability is a customer or regulatory requirement; quality is critical and defects are found late; the ERP's plan and what happens on the floor diverge and nobody sees it until month-end; downtime and cycle times are logged by hand; or several plants run on different rules. If none apply, a good production setup in the ERP may be enough."
+          "text": "Not every plant does. These are the signals we look for: lot or serial traceability is a customer or regulatory requirement; quality is critical and defects are found late; the ERP's plan and what happens on the floor diverge and nobody sees it until month-end; downtime and cycle times are logged by hand; or several plants run on different rules. If none apply, a good production setup in the ERP may be enough."
         },
         {
           "type": "h2",

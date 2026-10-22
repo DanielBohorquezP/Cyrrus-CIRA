@@ -12,7 +12,7 @@
     },
     "intro": {
       "kicker": "Antes de comparar proveedores",
-      "text": "La mayoría de los ERP que fracasan no fallan por el software: fallan por lo que la empresa no tenía listo. Este test mide cinco bases y le dice cuáles cerrar primero.",
+      "text": "Un proyecto de ERP depende del software y de lo que la empresa tenga listo. Este test mide cinco bases que Cyrrus revisa antes de un proceso de selección y le dice cuáles cerrar primero.",
       "bullets": [
         "Procesos, datos, equipo, presupuesto y patrocinio: dos preguntas por cada una.",
         "Pensado para CEO, CFO, COO y miembros del comité de dirección.",
@@ -165,11 +165,11 @@
       "bands": [
         {
           "title": "Todavía no: empiece por las bases",
-          "summary": "Seleccionar un ERP hoy lo expondría a un proyecto caro y con riesgo de fracasar. Las brechas de abajo son el trabajo previo; cerrarlas suele costar menos que corregirlas dentro del proyecto."
+          "summary": "Seleccionar un ERP hoy lo expondría a un proyecto con riesgos que aún no controla. Las brechas de abajo son el trabajo previo recomendado."
         },
         {
           "title": "Casi listo: cierre las brechas antes de comprar",
-          "summary": "Tiene bases para empezar, pero algunas áreas pueden desviar el proyecto. Trabajar las brechas de abajo en paralelo a la definición de requerimientos le ahorra tiempo y dinero."
+          "summary": "Tiene bases para empezar, pero algunas áreas pueden desviar el proyecto. Trabajar las brechas de abajo en paralelo a la definición de requerimientos le permite llegar a la selección con menos riesgos."
         },
         {
           "title": "Listo para seleccionar",
@@ -182,12 +182,12 @@
           "mid": "Cierre las excepciones: decida qué diferencias entre áreas o sedes son legítimas y cuáles son costumbre. Cada excepción que conserve se paga en la implementación."
         },
         "datos": {
-          "low": "Depure los maestros de clientes, productos y proveedores y nombre un responsable de cada uno. Subestimar la migración de datos es uno de los errores que más desvían el presupuesto.",
+          "low": "Depure los maestros de clientes, productos y proveedores y nombre un responsable de cada uno. La migración de datos debe presupuestarse y tener un responsable.",
           "mid": "Defina la fuente única de cada dato y mida los duplicados antes del proyecto, no durante."
         },
         "equipo": {
-          "low": "Defina quién dedicará tiempo real: las personas clave de cada área necesitan semanas para definir procesos, validar configuraciones y probar. Sin ellas, el proyecto queda en manos del proveedor.",
-          "mid": "Formalice la dedicación por rol y cubra sus tareas habituales. El tiempo del equipo interno es el costo que casi nadie presupuesta."
+          "low": "Defina quién dedicará tiempo real: las personas clave de cada área necesitan tiempo para definir procesos, validar configuraciones y probar. Sin ellas, el proyecto queda en manos del proveedor.",
+          "mid": "Formalice la dedicación por rol y cubra sus tareas habituales. El tiempo del equipo interno es un costo que conviene presupuestar."
         },
         "presupuesto": {
           "low": "Construya el costo total a cinco años: licencias, implementación, infraestructura, integraciones y tiempo interno. Una cotización de licencias no es un presupuesto.",
@@ -235,7 +235,7 @@
         },
         {
           "question": "¿Quién debería responderlo?",
-          "answer": "Idealmente varios miembros del comité de dirección (gerencia general, finanzas, operaciones y TI), cada uno por separado. Las diferencias entre sus respuestas suelen ser más reveladoras que el puntaje."
+          "answer": "Idealmente varios miembros del comité de dirección (gerencia general, finanzas, operaciones y TI), cada uno por separado. Las diferencias entre sus respuestas pueden ser tan reveladoras como el puntaje."
         },
         {
           "question": "¿Qué hago con el resultado?",
@@ -252,12 +252,14 @@
     "hero": {
       "eyebrow": "Herramienta",
       "title": "Calculadora de costo total de un ERP",
-      "description": "Una cotización de licencias no es un presupuesto. Arme el costo a varios años con los cuatro bloques que casi nunca aparecen juntos, con supuestos visibles y editables.",
+      "description": "Una cotización de licencias no es un presupuesto. Arme el costo a varios años con los bloques que una cotización de licencias no incluye, con supuestos visibles y editables.",
       "ctaLabel": "Revisar mi cifra con Cyrrus"
     },
     "intro": {
-      "text": "Los valores iniciales son ejemplos, no cotizaciones ni cifras de ningún fabricante. Cámbielos por los de sus propuestas. Todas las cifras van en la misma moneda (los ejemplos están en dólares).",
-      "reset": "Restablecer los ejemplos"
+      "text": "Los campos están vacíos a propósito: no usamos porcentajes \"típicos\" porque no existe una fuente primaria verificable para ellos. Ingrese las cifras de las propuestas que tiene (pida a cada proveedor el desglose). Todas las cifras van en la misma moneda.",
+      "example": "Cargar el ejemplo con precio publicado",
+      "clear": "Limpiar los campos",
+      "exampleNote": "El ejemplo carga solo un dato público: Dynamics 365 Business Central Essentials, US$80 por usuario al mes con pago anual, y 25 usuarios (precio de lista publicado por Microsoft, consultado en octubre de 2026; puede variar por país y negociación). El resto queda en cero."
     },
     "groups": {
       "license": "Licencias o suscripción",
@@ -297,7 +299,7 @@
       },
       "trainPct": {
         "label": "Capacitación y gestión del cambio (% de la implementación)",
-        "hint": "Casi nunca viene en la cotización del fabricante."
+        "hint": "Pregunte si está incluida en la cotización."
       },
       "personas": {
         "label": "Personas internas dedicadas al proyecto",
@@ -350,7 +352,9 @@
       "ctaText": "Podemos revisar con usted las propuestas que tiene sobre la mesa y construir el costo total comparable de cada una.",
       "ctaLabel": "Revisar mi cifra con Cyrrus",
       "diagnosticLink": "Solicitar una sesión de diagnóstico gratuita",
-      "currency": "US$"
+      "currency": "US$",
+      "empty": "Ingrese sus cifras para ver el costo total.",
+      "reference": "Dato verificable sobre el riesgo de presupuesto: en el informe The 2026 ERP Report de Panorama Consulting (170 organizaciones, enero 2025 a enero 2026), más de una cuarta parte de los proyectos superó su presupuesto y la causa más común fue la necesidad inesperada de tecnología adicional."
     },
     "links": {
       "title": "Para seguir",
@@ -377,8 +381,8 @@
       "title": "Sobre la calculadora",
       "items": [
         {
-          "question": "¿De dónde salen los valores iniciales?",
-          "answer": "Son ejemplos para que la calculadora muestre algo coherente desde el primer momento. No son precios de ningún fabricante ni una cotización. Reemplácelos por los de sus propuestas."
+          "question": "¿Hay valores iniciales o porcentajes de referencia?",
+          "answer": "No. Los campos están vacíos porque no encontramos una fuente primaria verificable para porcentajes \"típicos\" de implementación, integración o mantenimiento; las guías del sector los dan como reglas generales sin respaldo. El botón de ejemplo solo carga un precio publicado por un fabricante (Business Central Essentials)."
         },
         {
           "question": "¿Se guarda lo que ingreso?",
@@ -390,7 +394,7 @@
         },
         {
           "question": "¿Qué no incluye?",
-          "answer": "No incluye impuestos, financiación ni los beneficios del proyecto (ahorros, ingresos, reducción de riesgo). Es el lado del costo, que es el que más se subestima."
+          "answer": "No incluye impuestos, financiación ni los beneficios del proyecto (ahorros, ingresos, reducción de riesgo). Es solo el lado del costo."
         }
       ]
     }

@@ -12,7 +12,7 @@
     },
     "intro": {
       "kicker": "Before comparing vendors",
-      "text": "Most ERPs that fail don't fail because of the software: they fail because of what the company didn't have ready. This test measures five foundations and tells you which to close first.",
+      "text": "An ERP project depends on the software and on what the company has ready. This test measures five foundations Cyrrus reviews before a selection process and tells you which to close first.",
       "bullets": [
         "Processes, data, team, budget and sponsorship: two questions for each.",
         "Designed for CEOs, CFOs, COOs and leadership-committee members.",
@@ -165,11 +165,11 @@
       "bands": [
         {
           "title": "Not yet: start with the foundations",
-          "summary": "Selecting an ERP today would expose you to an expensive project at risk of failing. The gaps below are the groundwork; closing them usually costs less than fixing them inside the project."
+          "summary": "Selecting an ERP today would expose you to a project with risks you don't yet control. The gaps below are the recommended groundwork."
         },
         {
           "title": "Almost ready: close the gaps before buying",
-          "summary": "You have foundations to start, but some areas could derail the project. Working on the gaps below in parallel with defining requirements saves time and money."
+          "summary": "You have foundations to start, but some areas could derail the project. Working on the gaps below in parallel with defining requirements lets you reach selection with fewer risks."
         },
         {
           "title": "Ready to select",
@@ -182,12 +182,12 @@
           "mid": "Close the exceptions: decide which differences between areas or sites are legitimate and which are habit. Every exception you keep is paid for in the implementation."
         },
         "datos": {
-          "low": "Clean up the customer, product and supplier masters and name an owner for each. Underestimating data migration is one of the mistakes that most often derail budgets.",
+          "low": "Clean up the customer, product and supplier masters and name an owner for each. Data migration must be budgeted and have an owner.",
           "mid": "Define the single source for each piece of data and measure duplicates before the project, not during it."
         },
         "equipo": {
-          "low": "Define who will give real time: the key people in each area need weeks to define processes, validate configurations and test. Without them, the project is left in the vendor's hands.",
-          "mid": "Formalize the time commitment by role and cover their usual tasks. Internal team time is the cost almost nobody budgets."
+          "low": "Define who will give real time: the key people in each area need time to define processes, validate configurations and test. Without them, the project is left in the vendor's hands.",
+          "mid": "Formalize the time commitment by role and cover their usual tasks. Internal team time is a cost worth budgeting for."
         },
         "presupuesto": {
           "low": "Build the five-year total cost: licenses, implementation, infrastructure, integrations and internal time. A license quote is not a budget.",
@@ -235,7 +235,7 @@
         },
         {
           "question": "Who should answer it?",
-          "answer": "Ideally several members of the leadership committee (general management, finance, operations and IT), each on their own. The differences between their answers are often more revealing than the score."
+          "answer": "Ideally several members of the leadership committee (general management, finance, operations and IT), each on their own. The differences between their answers can be as revealing as the score."
         },
         {
           "question": "What do I do with the result?",
@@ -252,12 +252,14 @@
     "hero": {
       "eyebrow": "Tool",
       "title": "ERP total cost calculator",
-      "description": "A license quote is not a budget. Build the multi-year cost with the four blocks that rarely appear together, with visible and editable assumptions.",
+      "description": "A license quote is not a budget. Build the multi-year cost with the blocks a license quote leaves out, with visible and editable assumptions.",
       "ctaLabel": "Review my number with Cyrrus"
     },
     "intro": {
-      "text": "The starting values are examples, not quotes or any vendor's figures. Replace them with the ones in your proposals. All figures use the same currency (the examples are in US dollars).",
-      "reset": "Reset the examples"
+      "text": "The fields are empty on purpose: we don't use \"typical\" percentages because no verifiable primary source exists for them. Enter the figures from the proposals you have (ask each vendor for the breakdown). All figures use the same currency.",
+      "example": "Load the example with a published price",
+      "clear": "Clear the fields",
+      "exampleNote": "The example loads only one public data point: Dynamics 365 Business Central Essentials, US$80 per user per month billed annually, and 25 users (list price published by Microsoft, checked in October 2026; it can vary by country and negotiation). Everything else stays at zero."
     },
     "groups": {
       "license": "Licenses or subscription",
@@ -297,7 +299,7 @@
       },
       "trainPct": {
         "label": "Training and change management (% of implementation)",
-        "hint": "Almost never included in the vendor's quote."
+        "hint": "Ask whether it's included in the quote."
       },
       "personas": {
         "label": "Internal people dedicated to the project",
@@ -350,7 +352,9 @@
       "ctaText": "We can review the proposals you have on the table with you and build each one's comparable total cost.",
       "ctaLabel": "Review my number with Cyrrus",
       "diagnosticLink": "Request a free diagnostic session",
-      "currency": "US$"
+      "currency": "US$",
+      "empty": "Enter your figures to see the total cost.",
+      "reference": "A verifiable data point on budget risk: in Panorama Consulting's The 2026 ERP Report (170 organizations, January 2025 to January 2026), more than a quarter of projects went over budget and the most common cause was an unexpected need for additional technology."
     },
     "links": {
       "title": "Keep going",
@@ -377,8 +381,8 @@
       "title": "About the calculator",
       "items": [
         {
-          "question": "Where do the starting values come from?",
-          "answer": "They are examples so the calculator shows something coherent from the start. They are not any vendor's prices or a quote. Replace them with the ones in your proposals."
+          "question": "Are there starting values or reference percentages?",
+          "answer": "No. The fields are empty because we couldn't find a verifiable primary source for \"typical\" implementation, integration or maintenance percentages; industry guides give them as unsourced rules of thumb. The example button loads only a price published by a vendor (Business Central Essentials)."
         },
         {
           "question": "Is what I enter stored?",
@@ -390,7 +394,7 @@
         },
         {
           "question": "What does it leave out?",
-          "answer": "It leaves out taxes, financing and the project's benefits (savings, revenue, risk reduction). It's the cost side, which is the most underestimated."
+          "answer": "It leaves out taxes, financing and the project's benefits (savings, revenue, risk reduction). It covers only the cost side."
         }
       ]
     }

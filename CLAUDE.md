@@ -16,6 +16,29 @@ Al empezar una sesión de mejora, seguir el "Protocolo de sesión" de
 sesión, aunque el trabajo haya quedado a medias. La etapa 1 está en
 `docs/plan-mejora/archivo/`.
 
+## Contenido: nada inventado, todo verificable
+
+Regla del cliente (2026-10-21). Todo lo que se publique en el sitio, en las
+herramientas o en las piezas de LinkedIn debe poder verificarse:
+
+- **Cifras, fechas, precios y estadísticas**: solo de una fuente que se pueda abrir
+  (fabricante, norma, informe primario) y citada en `sources` con la fecha de
+  consulta. Si solo la repiten blogs o consultoras sin fuente, **no se usa**.
+- **Estimaciones** ("el costo suele ser X veces la licencia"): solo si tienen una
+  fuente primaria. Una "regla de dedo" de un tercero no sirve; se omite.
+- **Generalizaciones** ("casi nadie", "la mayoría", "suele", "es el que más pesa"):
+  no se escriben sin fuente. Usar "puede", "conviene" o describir lo que Cyrrus
+  revisa, y marcar la opinión como opinión.
+- **Herramientas** (calculadoras, tests): sin valores iniciales ni porcentajes
+  "típicos" inventados. Los campos arrancan vacíos; un ejemplo solo carga un dato
+  público (p. ej. un precio de lista publicado).
+- **Ejemplos ilustrativos** (una historia con números inventados) deben decir que
+  lo son.
+- Lo que dice Cyrrus de sí misma (metodología, "6 a 12 semanas", independencia) lo
+  aporta el cliente; no se amplía ni se redondea.
+- Si no se pudo abrir la fuente (403, PDF ilegible), **no se afirma**: se anota en
+  `PROGRESO.md` como no verificado.
+
 ## Performance: animations & transitions
 
 The site must always feel instant and fluid — never sluggish or janky. Apply this on every change that touches motion, scroll listeners, or transitions:

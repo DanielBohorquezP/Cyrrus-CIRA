@@ -7,6 +7,8 @@
 > después de la primera. Todas las cifras y fechas salen de los artículos y de
 > sus fuentes oficiales.
 >
+> **Regla (2026-10-21): ninguna frase sin respaldo.** Cada dato o afirmación debe estar en el artículo enlazado, con su fuente. Si es una opinión de Cyrrus, se escribe como opinión. Ejemplos con nombres de personas, cifras o historias son ilustrativos y deben decirlo.
+>
 > Pendiente: publicaciones para C1–C3 (la siguiente sesión de I1). Sesión 5 añadió C13, C14, C4 y C5/C8.
 
 ## Orden sugerido
@@ -34,7 +36,7 @@ Slug: `migrar-sap-ecc-a-s4hana-plazos-costos-alternativas`
 
 31 de diciembre de 2027.
 
-Esa es la fecha en que SAP termina el mantenimiento estándar de ECC. Hoy faltan poco más de catorce meses.
+Esa es la fecha en que SAP termina el mantenimiento estándar de ECC. Desde octubre de 2026, faltan poco más de catorce meses.
 
 No es una fecha técnica. Es una decisión de directorio.
 
@@ -48,7 +50,7 @@ El sistema no se apaga el 1 de enero de 2028.
 
 Lo que se acaba es el margen para decidir con calma.
 
-Esperar no es neutral. Reduce tus opciones justo cuando los equipos y los proveedores estén más saturados.
+Esperar no es neutral. Si tu sistema usa una base de datos de terceros, convertirlo a S/4HANA solo es posible antes de que termine 2030.
 
 ¿Tu junta ya tiene una ruta definida para ECC, o todavía es un tema "de TI"?
 
@@ -58,7 +60,7 @@ Esperar no es neutral. Reduce tus opciones justo cuando los equipos y los provee
 
 Es una de cuatro.
 
-La mayoría de las empresas con ECC discute la herramienta antes de decidir la ruta. Al revés.
+Conviene decidir la ruta antes que la herramienta.
 
 Las rutas reales:
 
@@ -67,11 +69,11 @@ Las rutas reales:
 → Extender el mantenimiento y decidir después
 → Evaluar un ERP distinto
 
-Cada una tiene un costo que no aparece en la cotización: el tiempo de tu equipo, la capacitación, el cambio.
+Cada una tiene costos que conviene presupuestar: el tiempo de tu equipo, la capacitación, el cambio.
 
-Y la que más se subestima: cada personalización que decides conservar se paga en la migración y en cada actualización futura.
+Y cada personalización que decides conservar hay que migrarla y mantenerla.
 
-El error más caro de estos proyectos no es técnico. Es ignorar a las personas que van a usar el sistema.
+Según Prosci, los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos.
 
 La tecnología no compensa la ambigüedad. La expone.
 
@@ -88,22 +90,22 @@ Slug: `cuanto-cuesta-sap-business-one`
 
 Pregunta simple. Respuesta incómoda.
 
-SAP no publica un precio de lista. Se compra a través de socios que cotizan según alcance, región y modelo de despliegue.
+En sus documentos oficiales de licenciamiento, SAP no publica precios. Se compra a través de socios que cotizan según alcance, región y modelo de despliegue.
 
 Entonces, ¿de dónde salen las cifras que circulan en internet?
 
-De estimaciones de socios y revendedores. Distintas entre sí. Envejecen rápido.
+De estimaciones de terceros. Distintas entre sí. Pueden estar desactualizadas.
 
 Úsalas como orden de magnitud. Nunca como presupuesto.
 
 Lo que sí mueve el precio, y está en la guía de licencias de SAP:
 
-+ El tipo de usuario: Professional, Limited o Starter Package (máximo cinco usuarios)
++ El tipo de usuario: Professional, Limited o Starter Package (en la nube, máximo cinco usuarios)
 + La base de datos: SAP HANA o SQL Server
 + El alcance de la implementación y las integraciones
 + El soporte, y las horas internas de tu equipo
 
-Una cotización barata con un alcance angosto suele terminar en órdenes de cambio.
+Una cotización barata con un alcance angosto puede terminar en órdenes de cambio.
 
 ¿Tienes una propuesta de ERP sobre la mesa que nadie te ha desglosado a cinco años?
 
@@ -127,9 +129,9 @@ Pídeles a tres socios la misma propuesta, con el mismo alcance, y exige el desg
 
 Después, calcula a cinco años.
 
-La licencia suele ser la partida más visible. No suele ser la más grande.
+La licencia es una parte del costo.
 
-El costo que casi nadie presupuesta es el tiempo de tus propias personas clave.
+Falta sumar lo que la cotización de licencias no incluye, empezando por el tiempo de tus propias personas clave.
 
 ¿Tu comité de inversión ve el costo a cinco años, o solo el del primer año?
 
@@ -140,13 +142,11 @@ Slug: `sistema-wms-que-es-y-como-elegir`
 
 ### Post A — inventario que no coincide (≈180 palabras)
 
-El sistema dice que hay 40 unidades.
+Imagina esto (ejemplo ilustrativo): el sistema dice que hay 40 unidades.
 
 En la bodega hay 12.
 
-Ese día perdiste una venta, inmovilizaste capital y alguien hizo horas extra para entender qué pasó.
-
-Y no aparece en una sola línea del estado de resultados.
+Ese día puedes perder una venta, tener capital inmovilizado y pagar horas extra para entender qué pasó.
 
 Un WMS es el sistema que decide y registra el trabajo físico de la bodega: qué llega, dónde va, qué se saca, en qué orden.
 
@@ -166,8 +166,6 @@ Señales de que no: diferencias frecuentes entre sistema y físico, conteos gene
 ### Post B — las cuatro preguntas (≈190 palabras)
 
 Antes de pedir cotizaciones de un WMS, tu gerencia debería poder responder cuatro preguntas.
-
-Casi nadie puede.
 
 → ¿Cuál es el problema en términos de negocio? Ventas perdidas, capital inmovilizado, costo por pedido o incumplimientos de entrega
 → ¿Cuál es el costo total a cinco años? Licencias, implementación, integración con el ERP, dispositivos y mantenimiento
@@ -191,9 +189,9 @@ Slug: `software-cmms-eam-como-elegir`
 
 ### Post A — el costo de la parada (≈180 palabras)
 
-Una parada no planificada puede costar más que el software que habría ayudado a evitarla.
+Una parada no planificada tiene un costo que puedes medir.
 
-Y casi nadie sabe cuánto cuesta una hora de parada en sus líneas críticas.
+Antes de elegir un sistema de mantenimiento, conviene saber cuánto es.
 
 Antes de elegir un sistema de mantenimiento, mide lo que hoy no ves:
 
@@ -255,11 +253,9 @@ Slug: `software-recursos-humanos-nomina-mas-de-100-empleados`
 
 Con 20 empleados, la nómina es un proceso.
 
-Con más de 100, es otra cosa.
+Con más de 100 y operación en varios países, es otra cosa.
 
-Es una exposición legal. Es uno de los mayores gastos de la empresa. Y es la base de datos personales más sensible que tienes.
-
-Y aun así, muchas empresas la manejan con hojas de cálculo y tres sistemas que no se hablan.
+Es un riesgo de cumplimiento. Es un costo importante. Y es una de las bases de datos personales más sensibles de tu empresa.
 
 Primero hay que distinguir lo que se compra:
 
@@ -267,7 +263,7 @@ Primero hay que distinguir lo que se compra:
 → HRIS: administra el registro del empleado
 → HCM: todo el ciclo de vida de las personas
 
-Los proveedores no trazan esas fronteras igual. Por eso las comparaciones no se comparan.
+Los proveedores no trazan esas fronteras igual. Por eso las comparaciones pueden no ser comparables.
 
 Si operas en varios países, cada uno trae su legislación laboral y de nómina. Eso define qué alternativas son viables antes de mirar una sola función.
 
@@ -284,7 +280,7 @@ El ERP sabe cuánto debía producirse.
 
 El piso de planta sabe cuánto se produjo.
 
-Entre los dos hay una brecha. Y casi nadie la ve hasta el cierre del mes.
+Entre los dos hay una brecha. Y puede pasar desapercibida hasta el cierre del mes.
 
 Un MES es el sistema que la cierra: recibe las órdenes del ERP, las programa y despacha, registra lo que ocurre en producción y devuelve los resultados.
 
@@ -316,7 +312,7 @@ Slug: `cuanto-cuesta-implementar-un-erp`
 
 Solo licencias. Con el precio de lista que publica el fabricante.
 
-Y esa es la parte fácil del presupuesto.
+Y esa es solo la licencia.
 
 El costo total de un ERP tiene cuatro bloques:
 
@@ -325,11 +321,9 @@ El costo total de un ERP tiene cuatro bloques:
 - Infraestructura y soporte
 - Tiempo de tu equipo interno
 
-El cuarto es el que casi nadie presupuesta.
+Según Panorama Consulting (informe 2026, 170 organizaciones), más de una cuarta parte de los proyectos superó su presupuesto. La causa más común: la necesidad inesperada de tecnología adicional.
 
-Los costos ocultos que más desvían el presupuesto: personalizar en exceso, subestimar la migración de datos, olvidar las integraciones y no planear la adopción.
-
-Un ERP que la gente no usa no devuelve la inversión.
+Por eso conviene presupuestar también las integraciones, la migración de datos y la adopción.
 
 Pide a cada proveedor la misma propuesta, con el mismo alcance, desglosada por bloque. Si no la desglosan, no puedes compararlas.
 
@@ -342,17 +336,15 @@ Slug: `salesforce-vs-hubspot-vs-dynamics-365-crm`
 
 Salesforce, HubSpot o Dynamics 365.
 
-La lista corta casi siempre es la misma.
-
-Y casi siempre se decide con la pregunta equivocada: ¿cuál tiene mejores funciones?
+Son tres alternativas habituales de comparar.
 
 Con más de 100 empleados, la pregunta cambia.
 
 ¿Cuánto cuesta y qué riesgo tiene tenerlo en operación durante cinco años?
 
-La licencia suele ser la partida más visible. No la más grande.
+La licencia es solo una parte del costo.
 
-Pesan más:
+Hay que presupuestar además:
 
 → La implementación
 → La integración con el ERP
@@ -370,9 +362,9 @@ URL: `https://cyrruscs.com/herramientas/test-preparacion-erp` (primer comentario
 
 ### Post (≈170 palabras)
 
-La mayoría de los ERP que fracasan no fallan por el software.
+Un proyecto de ERP depende del software. Y de lo que la empresa tenga listo.
 
-Fallan por lo que la empresa no tenía listo.
+Según Panorama Consulting (informe 2026, 170 organizaciones), más de una cuarta parte de los proyectos superó su presupuesto.
 
 Antes de comparar proveedores, hay cinco bases que conviene medir:
 
@@ -388,7 +380,7 @@ Tres minutos. Sin registro. Resultado inmediato, con las brechas que conviene ce
 
 Un consejo: que lo respondan varios directivos por separado.
 
-Las diferencias entre sus respuestas suelen decir más que el puntaje.
+Las diferencias entre sus respuestas pueden decir tanto como el puntaje.
 
 ¿Tu comité de dirección contestaría lo mismo sobre quién patrocina tu próximo proyecto de sistemas?
 
@@ -399,11 +391,9 @@ URL: `https://cyrruscs.com/herramientas/calculadora-costo-erp` (primer comentari
 
 Una cotización de licencias no es un presupuesto.
 
-Es una parte. Y casi nunca la más grande.
+Es una parte.
 
-Muchas guías del sector estiman que implementar un ERP cuesta entre una y tres veces la licencia del primer año.
-
-Esa parte no aparece en la cotización de licencias:
+El resto no aparece en esa cotización:
 
 → Implementación e integraciones
 → Capacitación y gestión del cambio
@@ -412,9 +402,7 @@ Esa parte no aparece en la cotización de licencias:
 
 Hicimos una calculadora para armar ese costo total.
 
-Los supuestos son visibles y editables. Los valores iniciales son ejemplos, no precios de ningún fabricante.
-
-> Nota interna: el "una a tres veces" viene de fuentes secundarias (consultoras y blogs), no de un estudio primario. Verificar o suavizar antes de publicar.
+Los campos arrancan vacíos: no usamos porcentajes "típicos", porque no hay una fuente primaria verificable para ellos. Tú ingresas las cifras de tus propuestas.
 
 Úsala con las propuestas que ya tienes sobre la mesa. Una por una.
 
