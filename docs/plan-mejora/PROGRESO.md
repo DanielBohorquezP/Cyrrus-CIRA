@@ -47,10 +47,10 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 6 (2026-10-21, D1 publicado: test de preparación para un ERP).
+**Última sesión cerrada:** Sesión 7 (2026-10-21, B1 publicado como sesión de diagnóstico gratuita; investigación de competidores).
 
-**Próxima: Sesión 7.** Orden sugerido:
-1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v7.zip` (C8–C14 y D1; reemplaza al v6, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 12 artículos y páginas nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
+**Próxima: Sesión 8.** Orden sugerido:
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-21-v8.zip` (C8–C14, D1 y B1; reemplaza al v7, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 12 artículos y páginas nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
 2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**, **B4** (con la herramienta de correo, conectar el test para enviar el informe).
 3. Sin insumos: **G1** y **G2** (contenido con volumen) o **D2** (calculadora de costo total de ERP, enlazada desde C4 y el test). Luego **D3** (plantilla de RFP).
 4. **I1** de C1–C3 (faltan).
@@ -97,8 +97,8 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase B — Conversión inmediata
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| B1 | Diagnóstico a precio fijo | ⛔ | Falta alcance, duración y precio |
-| B2 | Rangos de precio por servicio | ⛔ | Faltan rangos |
+| B1 | Sesión de diagnóstico gratuita | ✅ | Sesión 7. `/diagnostico` ES/EN (D13). Enlazada desde el CTA final de todas las páginas y 11 artículos. Supuestos por confirmar (ver Bloqueos) |
+| B2 | Rangos de precio por servicio | ⛔ | Faltan rangos. Contexto: la competencia casi no publica precios; decidir si se publican (ver PLAN D13) |
 | B3 | Agenda directa + WhatsApp | ⛔ | Falta enlace de agenda y número |
 | B4 | Secuencia de correos | ⛔ | Falta elegir herramienta |
 | B5 | Revisión del formulario | ⬜ | |
@@ -221,9 +221,9 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-21-v7.zip` (C8–C14 y D1; reemplaza al v6 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-21-v8.zip` (C8–C14, D1 y B1; reemplaza al v7 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
-| Diagnóstico de entrada: alcance, duración, precio | 2026-10-05 | ⬜ | B1 |
 | Rangos de precio por servicio | 2026-10-05 | ⬜ | B2 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
 | Herramienta de correo | 2026-10-05 | ⬜ | B4, D1 |
@@ -248,6 +248,19 @@ qué llegó y lo integra (F8, J1, J3…).
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 7 — 2026-10-21 — Sesión de diagnóstico gratuita (B1) e investigación de competidores
+- **Tareas trabajadas:** B1 ✅ (con supuestos por confirmar). Decisión del cliente: la oferta de entrada es **una sesión de diagnóstico gratuita**, no un servicio de pago (PLAN D13).
+- **Hecho:**
+  - Investigación: se pidió saber cuántos competidores ofrecen un diagnóstico de entrada con precio. En México y Colombia, de unas doce firmas revisadas, solo **erp.com.mx** publica precio (Básico US$0, Premium US$1.500; sin declarar independencia). Ninguna consultora independiente colombiana de selección de ERP apareció; las locales son implantadoras de su propio producto (Ofima, SAP B1, etc.). Panorama (oficina en Ciudad de México) y enterDATA se declaran independientes pero no publican precio. Fuentes con límites: búsqueda desde EE. UU. y sitios de las propias empresas.
+  - Página nueva `/diagnostico` (ES/EN): `src/pages/Diagnostico.tsx`, textos en `locales/{es,en}/diagnostico.json`. Para quién es (50+ empleados, decisión en 12 meses) y cuándo no lo es (quien solo quiere cotización de licencias); sesión de 60 min en tres bloques; qué se lleva; cómo funciona; FAQ con "sin comisiones" y confidencialidad; enlace al test D1. JSON-LD `Service` (oferta a precio 0) + `FAQPage` + `BreadcrumbList`.
+  - Enlaces: `FinalCta` (todas las páginas) ahora muestra "¿Aún no sabe por dónde empezar? Solicite una sesión de diagnóstico gratuita" (apagado en la propia página); la frase final de 11 artículos (C1–C14) enlaza al diagnóstico; `llms.txt`.
+  - **Supuestos míos que el cliente debe confirmar**: duración de 60 minutos y reparto 15/30/15; nota de una página en los 3 días hábiles siguientes; filtro de 50+ empleados; que la dirige "un consultor senior" (sin nombre); tres preguntas de preparación enviadas por correo; confidencialidad según la política de privacidad.
+- **Verificación:** `tsc` limpio; build de 112 rutas; ES y EN con título, H1, JSON-LD válido; enlace de FinalCta en Inicio; enlace en artículo EN; consola sin errores.
+- **Commits:** ver `git log` ("Sesión 7: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v8.zip` (reemplaza al v7, eliminado).
+- **Pendiente / bloqueos nuevos:** confirmar los supuestos de arriba; B3 (agenda y WhatsApp) sigue bloqueada: hoy la solicitud va por el formulario de contacto, no por calendario. B2 (precios) queda como decisión: la competencia casi no publica precios.
+- **Próxima sesión:** Sesión 8 (ver arriba).
 
 ### Sesión 6 — 2026-10-21 — Primera herramienta: test de preparación para un ERP (D1)
 - **Tareas trabajadas:** D1 ✅, I1 🟡 (post de la herramienta). B4 sigue bloqueada (falta elegir herramienta de correo). Producción sigue sin el v6 (artículos nuevos dan 404).

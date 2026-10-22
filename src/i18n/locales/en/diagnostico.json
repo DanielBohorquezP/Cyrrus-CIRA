@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Free diagnostic session for your project | Cyrrus",
+    "description": "A free 60-minute session with a senior Cyrrus consultant to decide how to approach your ERP, CRM or transformation project. No commitment."
+  },
+  "hero": {
+    "eyebrow": "First step",
+    "title": "Free diagnostic session",
+    "description": "Sixty minutes with a senior Cyrrus consultant to clarify the decision you have pending: what's at stake, what to resolve first and what the sensible next step is. No cost and no commitment.",
+    "ctaLabel": "Request the session"
+  },
+  "who": {
+    "eyebrow": "Who it's for",
+    "title": "For anyone facing a big decision",
+    "items": [
+      "General managers, CEOs, CFOs, COOs and IT directors of companies with more than 50 employees.",
+      "With a technology or transformation decision in the next twelve months: choosing or replacing an ERP or CRM, migrating a system, getting a project back under control.",
+      "Who want an independent second opinion before requesting proposals or signing a contract."
+    ],
+    "notTitle": "When this isn't the right session",
+    "notText": "If you're looking for a license quote or a vendor to implement right away, this isn't the conversation: Cyrrus doesn't resell licenses or take commissions from vendors."
+  },
+  "session": {
+    "eyebrow": "What happens in the session",
+    "title": "Sixty minutes, three blocks",
+    "steps": [
+      {
+        "time": "15 min",
+        "title": "Your context",
+        "description": "What decision you have pending, which systems you use today, who is involved and what happens if nothing is decided."
+      },
+      {
+        "time": "30 min",
+        "title": "The risks",
+        "description": "Together we review the five foundations of any systems project (processes, data, team, budget and sponsorship) and where your gaps are."
+      },
+      {
+        "time": "15 min",
+        "title": "The next step",
+        "description": "We tell you frankly what we would do in your place, even if the recommendation doesn't include hiring us."
+      }
+    ]
+  },
+  "take": {
+    "eyebrow": "What you take away",
+    "title": "Something useful, whether or not you hire us",
+    "items": [
+      "An honest read of your situation and of the decisions to make first.",
+      "A one-page note with the findings and recommended steps, within the next three business days.",
+      "If it makes sense, a proposal for how we could support you, with clear scope and price and no pressure."
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Three steps",
+    "steps": [
+      {
+        "title": "Request the session",
+        "description": "Tell us in the form who you are and what decision you have pending."
+      },
+      {
+        "title": "We confirm the date",
+        "description": "We write to agree on a time and send you three short preparation questions."
+      },
+      {
+        "title": "Video call session",
+        "description": "With a senior Cyrrus consultant, not a salesperson."
+      }
+    ],
+    "toolText": "Want to arrive with the foundations measured? First take the",
+    "toolLink": "ERP readiness test",
+    "ctaLabel": "Request the free session"
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "About the session",
+    "items": [
+      {
+        "question": "Is it really free?",
+        "answer": "Yes. The session has no cost or obligation. If you later want to work with us, we present a proposal with scope and price; if not, you keep the findings note."
+      },
+      {
+        "question": "Who leads the session?",
+        "answer": "A senior Cyrrus consultant. It isn't a sales call: the goal is for you to leave with more clarity about your decision."
+      },
+      {
+        "question": "What do I need to prepare?",
+        "answer": "Nothing is mandatory. It helps to bring the pending decision, the systems you use today and the people involved. If you like, take the ERP readiness test first."
+      },
+      {
+        "question": "Does Cyrrus take commissions from software vendors?",
+        "answer": "No. Cyrrus doesn't resell licenses or take commissions from any vendor, so its recommendation doesn't depend on which product is chosen."
+      },
+      {
+        "question": "Is what I discuss confidential?",
+        "answer": "Yes. The information you share in the session is not disclosed and is handled under our privacy policy."
+      }
+    ]
+  }
+}

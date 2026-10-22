@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Reveal } from "@/components/ui/reveal";
 import { BorderButton } from "@/components/ui/border-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { useContactWizard } from "@/lib/contact-wizard-context";
+import { langPath, useLang } from "@/lib/language";
 
-export function FinalCta() {
+/** `showDiagnostic` is turned off on the diagnostic page itself, which would otherwise link to itself. */
+export function FinalCta({ showDiagnostic = true }: { showDiagnostic?: boolean }) {
   const { t } = useTranslation("home");
+  const lang = useLang();
   const { openWizard } = useContactWizard();
   return (
     <AnimatedNavyBackground id="contacto" className="cv-section py-24 md:py-32">
@@ -22,6 +26,16 @@ export function FinalCta() {
           <BorderButton variant="light" size="lg" className="mt-8" dot onClick={() => openWizard()}>
             {t("finalCta.buttonText")}
           </BorderButton>
+          {showDiagnostic && (
+            <p className="mt-6 text-base text-white/70">
+              {`${t("finalCta.diagnosticText")} `}<Link
+                to={langPath("/diagnostico", lang)}
+                className="font-semibold text-white underline underline-offset-4"
+              >
+                {t("finalCta.diagnosticLink")}
+              </Link>
+            </p>
+          )}
         </Reveal>
       </div>
     </AnimatedNavyBackground>

@@ -1770,7 +1770,13 @@
         },
         {
           "type": "p",
-          "text": "If you're comparing ERP systems, or already have proposals on the table and don't know how to decide, schedule a conversation with our team."
+          "text": "If you're comparing ERP systems, or already have proposals on the table and don't know how to decide, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -1975,7 +1981,13 @@
         },
         {
           "type": "p",
-          "text": "If you're torn among these three, schedule a conversation: we'll help you decide with data, not demos."
+          "text": "If you're torn among these three, request a free diagnostic session: we'll help you decide with data, not demos.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2154,7 +2166,13 @@
         },
         {
           "type": "p",
-          "text": "If you're deciding between Odoo and SAP, schedule a conversation with our team."
+          "text": "If you're deciding between Odoo and SAP, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2363,7 +2381,13 @@
         },
         {
           "type": "p",
-          "text": "If you have ERP proposals on the table and don't know whether the price is reasonable, schedule a conversation with our team."
+          "text": "If you have ERP proposals on the table and don't know whether the price is reasonable, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2580,7 +2604,13 @@
         },
         {
           "type": "p",
-          "text": "If you're choosing a CRM, schedule a conversation with our team."
+          "text": "If you're choosing a CRM, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2737,7 +2767,13 @@
         },
         {
           "type": "p",
-          "text": "If your warehouse already costs you more than you think, schedule a conversation with our team."
+          "text": "If your warehouse already costs you more than you think, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2898,7 +2934,13 @@
         },
         {
           "type": "p",
-          "text": "If you have a SAP Business One proposal on the table, schedule a conversation with our team."
+          "text": "If you have a SAP Business One proposal on the table, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3045,7 +3087,13 @@
         },
         {
           "type": "p",
-          "text": "If you're evaluating a maintenance system, schedule a conversation with our team."
+          "text": "If you're evaluating a maintenance system, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3222,7 +3270,13 @@
         },
         {
           "type": "p",
-          "text": "If you run SAP ECC and don't have a route defined yet, schedule a conversation with our team."
+          "text": "If you run SAP ECC and don't have a route defined yet, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3375,7 +3429,13 @@
         },
         {
           "type": "p",
-          "text": "If you're evaluating a payroll or HR system, schedule a conversation with our team."
+          "text": "If you're evaluating a payroll or HR system, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3524,7 +3584,13 @@
         },
         {
           "type": "p",
-          "text": "If you're evaluating a system for your plant, schedule a conversation with our team."
+          "text": "If you're evaluating a system for your plant, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [

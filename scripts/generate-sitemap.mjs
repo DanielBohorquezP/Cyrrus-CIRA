@@ -106,6 +106,7 @@ const CONTENT_SOURCE = {
   "/quienes-somos": { ns: "paginas", pick: ["quienesSomos"] },
   "/experiencia": { ns: "paginas", pick: ["experiencia"] },
   "/perspectivas": { ns: "paginas", pick: ["perspectivas"] },
+  "/diagnostico": { ns: "diagnostico" },
   "/herramientas/test-preparacion-erp": { ns: "herramientas", pick: ["testErp"] },
   "/privacidad": { ns: "legal", pick: ["privacidad"] },
   "/cookies": { ns: "legal", pick: ["cookies"] },

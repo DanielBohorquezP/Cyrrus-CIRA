@@ -134,5 +134,9 @@
   "/herramientas/test-preparacion-erp": {
     "title": "Test de preparación para un ERP | Cyrrus",
     "description": "Diez preguntas para saber si su empresa está lista para seleccionar un ERP: procesos, datos, equipo, presupuesto y patrocinio. Resultado inmediato."
+  },
+  "/diagnostico": {
+    "title": "Sesión de diagnóstico gratuita para su proyecto | Cyrrus",
+    "description": "Una sesión gratuita de 60 minutos con un consultor senior de Cyrrus para decidir cómo abordar su proyecto de ERP, CRM o transformación. Sin compromiso."
   }
 }

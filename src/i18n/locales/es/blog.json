@@ -1770,7 +1770,13 @@
         },
         {
           "type": "p",
-          "text": "Si está comparando ERP, o ya tiene propuestas sobre la mesa y no sabe cómo decidir, agende una conversación con nuestro equipo."
+          "text": "Si está comparando ERP, o ya tiene propuestas sobre la mesa y no sabe cómo decidir, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -1975,7 +1981,13 @@
         },
         {
           "type": "p",
-          "text": "Si está entre estos tres, agende una conversación: le ayudamos a decidir con datos y no con demostraciones."
+          "text": "Si está entre estos tres, solicite una sesión de diagnóstico gratuita: le ayudamos a decidir con datos y no con demostraciones.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2154,7 +2166,13 @@
         },
         {
           "type": "p",
-          "text": "Si está decidiendo entre Odoo y SAP, agende una conversación con nuestro equipo."
+          "text": "Si está decidiendo entre Odoo y SAP, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2363,7 +2381,13 @@
         },
         {
           "type": "p",
-          "text": "Si tiene propuestas de ERP sobre la mesa y no sabe si el precio es razonable, agende una conversación con nuestro equipo."
+          "text": "Si tiene propuestas de ERP sobre la mesa y no sabe si el precio es razonable, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2580,7 +2604,13 @@
         },
         {
           "type": "p",
-          "text": "Si está eligiendo un CRM, agende una conversación con nuestro equipo."
+          "text": "Si está eligiendo un CRM, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2737,7 +2767,13 @@
         },
         {
           "type": "p",
-          "text": "Si su bodega ya le cuesta más de lo que cree, agende una conversación con nuestro equipo."
+          "text": "Si su bodega ya le cuesta más de lo que cree, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -2898,7 +2934,13 @@
         },
         {
           "type": "p",
-          "text": "Si tiene una propuesta de SAP Business One sobre la mesa, agende una conversación con nuestro equipo."
+          "text": "Si tiene una propuesta de SAP Business One sobre la mesa, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3045,7 +3087,13 @@
         },
         {
           "type": "p",
-          "text": "Si está evaluando un sistema de mantenimiento, agende una conversación con nuestro equipo."
+          "text": "Si está evaluando un sistema de mantenimiento, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3222,7 +3270,13 @@
         },
         {
           "type": "p",
-          "text": "Si opera SAP ECC y aún no tiene una ruta definida, agende una conversación con nuestro equipo."
+          "text": "Si opera SAP ECC y aún no tiene una ruta definida, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3375,7 +3429,13 @@
         },
         {
           "type": "p",
-          "text": "Si está evaluando un sistema de nómina o de recursos humanos, agende una conversación con nuestro equipo."
+          "text": "Si está evaluando un sistema de nómina o de recursos humanos, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3524,7 +3584,13 @@
         },
         {
           "type": "p",
-          "text": "Si está evaluando un sistema para su planta, agende una conversación con nuestro equipo."
+          "text": "Si está evaluando un sistema para su planta, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
         }
       ],
       "sources": [

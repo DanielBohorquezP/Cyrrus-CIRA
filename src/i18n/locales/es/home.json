@@ -256,7 +256,9 @@
   "finalCta": {
     "title": "¿Listo para conectar la decisión con la ejecución?",
     "description": "Cuéntenos el reto de su organización. Coordinamos una conversación con el equipo indicado y le decimos con franqueza si podemos ayudar.",
-    "buttonText": "Agendar conversación estratégica"
+    "buttonText": "Agendar conversación estratégica",
+    "diagnosticText": "¿Aún no sabe por dónde empezar?",
+    "diagnosticLink": "Solicite una sesión de diagnóstico gratuita"
   },
   "servicesIntro": {
     "eyebrow": "Qué es Cyrrus",

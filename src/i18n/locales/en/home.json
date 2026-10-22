@@ -256,7 +256,9 @@
   "finalCta": {
     "title": "Ready to connect the decision to the execution?",
     "description": "Tell us your organization's challenge. We'll set up a conversation with the right team and tell you straight whether we can help.",
-    "buttonText": "Schedule a strategy call"
+    "buttonText": "Schedule a strategy call",
+    "diagnosticText": "Not sure where to start?",
+    "diagnosticLink": "Request a free diagnostic session"
   },
   "servicesIntro": {
     "eyebrow": "What Cyrrus is",

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Sesión de diagnóstico gratuita para su proyecto | Cyrrus",
+    "description": "Una sesión gratuita de 60 minutos con un consultor senior de Cyrrus para decidir cómo abordar su proyecto de ERP, CRM o transformación. Sin compromiso."
+  },
+  "hero": {
+    "eyebrow": "Primer paso",
+    "title": "Sesión de diagnóstico gratuita",
+    "description": "Sesenta minutos con un consultor senior de Cyrrus para aclarar la decisión que tiene pendiente: qué está en juego, qué conviene resolver primero y cuál es el siguiente paso razonable. Sin costo y sin compromiso.",
+    "ctaLabel": "Solicitar la sesión"
+  },
+  "who": {
+    "eyebrow": "Para quién es",
+    "title": "Para quien tiene una decisión grande por delante",
+    "items": [
+      "Gerentes generales, CEO, CFO, COO y directores de TI de empresas con más de 50 empleados.",
+      "Con una decisión de tecnología o de transformación en los próximos doce meses: elegir o cambiar un ERP o un CRM, migrar un sistema, ordenar un proyecto que se salió de control.",
+      "Que quieren una segunda opinión independiente antes de pedir propuestas o firmar un contrato."
+    ],
+    "notTitle": "Cuándo no es la sesión adecuada",
+    "notText": "Si busca una cotización de licencias o un proveedor para implementar de inmediato, esta no es la conversación: Cyrrus no revende licencias ni recibe comisiones de fabricantes."
+  },
+  "session": {
+    "eyebrow": "Qué ocurre en la sesión",
+    "title": "Sesenta minutos, tres bloques",
+    "steps": [
+      {
+        "time": "15 min",
+        "title": "Su contexto",
+        "description": "Qué decisión tiene pendiente, qué sistemas usa hoy, quién interviene y qué pasa si no se decide."
+      },
+      {
+        "time": "30 min",
+        "title": "Los riesgos",
+        "description": "Revisamos juntos las cinco bases de cualquier proyecto de sistemas (procesos, datos, equipo, presupuesto y patrocinio) y dónde están sus brechas."
+      },
+      {
+        "time": "15 min",
+        "title": "El siguiente paso",
+        "description": "Le decimos con franqueza qué haríamos en su lugar, aunque la recomendación no incluya contratarnos."
+      }
+    ]
+  },
+  "take": {
+    "eyebrow": "Qué se lleva",
+    "title": "Algo útil, contrate o no con nosotros",
+    "items": [
+      "Una lectura honesta de su situación y de las decisiones que conviene tomar primero.",
+      "Una nota de una página con los hallazgos y los pasos recomendados, en los tres días hábiles siguientes.",
+      "Si tiene sentido, una propuesta de cómo podríamos acompañarle, con alcance y precio claros y sin presión."
+    ]
+  },
+  "how": {
+    "eyebrow": "Cómo funciona",
+    "title": "Tres pasos",
+    "steps": [
+      {
+        "title": "Solicite la sesión",
+        "description": "Cuéntenos en el formulario quién es y qué decisión tiene pendiente."
+      },
+      {
+        "title": "Confirmamos la fecha",
+        "description": "Le escribimos para acordar el horario y le enviamos tres preguntas breves de preparación."
+      },
+      {
+        "title": "Sesión por videollamada",
+        "description": "Con un consultor senior de Cyrrus, no con un vendedor."
+      }
+    ],
+    "toolText": "¿Quiere llegar con las bases medidas? Haga antes el",
+    "toolLink": "test de preparación para un ERP",
+    "ctaLabel": "Solicitar la sesión gratuita"
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Sobre la sesión",
+    "items": [
+      {
+        "question": "¿Realmente es gratis?",
+        "answer": "Sí. La sesión no tiene costo ni obligación. Si después quiere trabajar con nosotros, le presentamos una propuesta con alcance y precio; si no, se queda con la nota de hallazgos."
+      },
+      {
+        "question": "¿Quién dirige la sesión?",
+        "answer": "Un consultor senior de Cyrrus. No es una llamada comercial: el objetivo es que usted salga con más claridad sobre su decisión."
+      },
+      {
+        "question": "¿Qué necesito preparar?",
+        "answer": "Nada es obligatorio. Ayuda traer la decisión pendiente, los sistemas que usa hoy y las personas que intervienen. Si lo desea, haga antes el test de preparación para un ERP."
+      },
+      {
+        "question": "¿Cyrrus recibe comisiones de fabricantes de software?",
+        "answer": "No. Cyrrus no revende licencias ni recibe comisiones de ningún fabricante, por eso su recomendación no depende de qué producto se elija."
+      },
+      {
+        "question": "¿Lo que converso es confidencial?",
+        "answer": "Sí. La información que comparta en la sesión no se divulga y se trata según nuestra política de privacidad."
+      }
+    ]
+  }
+}

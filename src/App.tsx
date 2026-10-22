@@ -144,6 +144,7 @@ const Seo = lazyPage(() => import("@/pages/presencia-digital/Seo"));
 const CursoDetalle = lazyPage(() => import("@/pages/leadership-academy/CursoDetalle"));
 const ArticuloPerspectiva = lazyPage(() => import("@/pages/ArticuloPerspectiva"));
 const CasoDetalle = lazyPage(() => import("@/pages/CasoDetalle"));
+const Diagnostico = lazyPage(() => import("@/pages/Diagnostico"));
 const TestPreparacionErp = lazyPage(() => import("@/pages/herramientas/TestPreparacionErp"));
 const Privacidad = lazyPage(() => import("@/pages/Privacidad"));
 const Cookies = lazyPage(() => import("@/pages/Cookies"));
@@ -186,6 +187,7 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/quienes-somos", Component: QuienesSomos },
   { path: "/perspectivas", Component: Perspectivas },
   { path: "/perspectivas/:articulo", Component: ArticuloPerspectiva },
+  { path: "/diagnostico", Component: Diagnostico },
   { path: "/herramientas/test-preparacion-erp", Component: TestPreparacionErp },
   { path: "/privacidad", Component: Privacidad },
   { path: "/cookies", Component: Cookies },

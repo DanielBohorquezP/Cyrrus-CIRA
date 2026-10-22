@@ -111,7 +111,9 @@ Ver "Protocolo de sesión" en `PROGRESO.md`.
 
 ## Fase B — Conversión inmediata
 
-### B1 Diagnóstico a precio fijo
+### B1 Sesión de diagnóstico gratuita (D13)
+> Estado: publicada en la Sesión 7 como `/diagnostico` (ES/EN). Lo de abajo es el diseño original a precio fijo; se descartó el precio (D13). Pendiente: confirmar con Cyrrus los supuestos (60 min, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados).
+
 1. **[Cliente]** Definir: nombre, alcance (qué se entrega), duración (p. ej. 2
    semanas), precio o "desde", para quién es.
 2. **[Claude]** Página `/diagnostico` (ES/EN):
