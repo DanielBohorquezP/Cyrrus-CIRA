@@ -7,7 +7,7 @@
 > después de la primera. Todas las cifras y fechas salen de los artículos y de
 > sus fuentes oficiales.
 >
-> Pendiente: publicaciones para C1–C5 y C8 (la siguiente sesión de I1).
+> Pendiente: publicaciones para C1–C3 (la siguiente sesión de I1). Sesión 5 añadió C13, C14, C4 y C5/C8.
 
 ## Orden sugerido
 
@@ -232,3 +232,133 @@ Pagar funciones de EAM para resolver un problema de CMMS es sobrepagar.
 Lo contrario es quedarse corto.
 
 ¿Tu pregunta de hoy es de ejecución o de portafolio?
+
+---
+
+## Añadidas en la Sesión 5
+
+Orden sugerido: semanas 5 y 6, martes y jueves, tras publicar las semanas 1–4.
+
+| Semana | Día | Artículo |
+|---|---|---|
+| 5 | Martes | C13 — RR. HH. y nómina |
+| 5 | Jueves | C14 — MES |
+| 6 | Martes | C4 — Cuánto cuesta implementar un ERP |
+| 6 | Jueves | C5/C8 — CRM para 100+ empleados |
+
+## C13 — Software de RR. HH. y nómina para más de 100 empleados
+Slug: `software-recursos-humanos-nomina-mas-de-100-empleados`
+
+### Post (≈190 palabras)
+
+Con 20 empleados, la nómina es un proceso.
+
+Con más de 100, es otra cosa.
+
+Es una exposición legal. Es uno de los mayores gastos de la empresa. Y es la base de datos personales más sensible que tienes.
+
+Y aun así, muchas empresas la manejan con hojas de cálculo y tres sistemas que no se hablan.
+
+Primero hay que distinguir lo que se compra:
+
+→ Software de nómina: calcula y paga
+→ HRIS: administra el registro del empleado
+→ HCM: todo el ciclo de vida de las personas
+
+Los proveedores no trazan esas fronteras igual. Por eso las comparaciones no se comparan.
+
+Si operas en varios países, cada uno trae su legislación laboral y de nómina. Eso define qué alternativas son viables antes de mirar una sola función.
+
+Un sistema de personas bien elegido y mal adoptado sigue obligando a trabajar en Excel.
+
+¿Quién es hoy el dueño de ese sistema en tu empresa: recursos humanos, finanzas o TI?
+
+## C14 — Software MES
+Slug: `software-mes-que-es-y-cuando-lo-necesita-su-planta`
+
+### Post (≈180 palabras)
+
+El ERP sabe cuánto debía producirse.
+
+El piso de planta sabe cuánto se produjo.
+
+Entre los dos hay una brecha. Y casi nadie la ve hasta el cierre del mes.
+
+Un MES es el sistema que la cierra: recibe las órdenes del ERP, las programa y despacha, registra lo que ocurre en producción y devuelve los resultados.
+
+En el estándar ISA-95, el ERP vive en el nivel 4. El MES, en el nivel 3.
+
+No toda planta lo necesita.
+
+Las señales:
+
++ La trazabilidad por lote o serie la exige el cliente o el regulador
++ Los defectos se descubren tarde
++ El plan y la ejecución divergen sin que nadie lo note
++ Las paradas se registran a mano
+
+Si ninguna se cumple, una buena configuración del ERP puede alcanzar.
+
+Y un MES que los operarios no registran a tiempo no cumple su función.
+
+¿Qué decisión no puedes tomar hoy por falta de datos de tu planta?
+
+## C4 — Cuánto cuesta implementar un ERP
+Slug: `cuanto-cuesta-implementar-un-erp`
+
+### Post (≈190 palabras)
+
+25 usuarios. Dynamics 365 Business Central Essentials.
+
+25 × US$80 × 12 = US$24.000 al año.
+
+Solo licencias. Con el precio de lista que publica el fabricante.
+
+Y esa es la parte fácil del presupuesto.
+
+El costo total de un ERP tiene cuatro bloques:
+
+- Licencias o suscripción
+- Implementación
+- Infraestructura y soporte
+- Tiempo de tu equipo interno
+
+El cuarto es el que casi nadie presupuesta.
+
+Los costos ocultos que más desvían el presupuesto: personalizar en exceso, subestimar la migración de datos, olvidar las integraciones y no planear la adopción.
+
+Un ERP que la gente no usa no devuelve la inversión.
+
+Pide a cada proveedor la misma propuesta, con el mismo alcance, desglosada por bloque. Si no la desglosan, no puedes compararlas.
+
+¿Tu comité de inversión está viendo el costo a cinco años o solo el del primer año?
+
+## C5 / C8 — CRM para empresas de más de 100 empleados
+Slug: `salesforce-vs-hubspot-vs-dynamics-365-crm`
+
+### Post (≈190 palabras)
+
+Salesforce, HubSpot o Dynamics 365.
+
+La lista corta casi siempre es la misma.
+
+Y casi siempre se decide con la pregunta equivocada: ¿cuál tiene mejores funciones?
+
+Con más de 100 empleados, la pregunta cambia.
+
+¿Cuánto cuesta y qué riesgo tiene tenerlo en operación durante cinco años?
+
+La licencia suele ser la partida más visible. No la más grande.
+
+Pesan más:
+
+→ La implementación
+→ La integración con el ERP
+→ La calidad de los datos de clientes
+→ La adopción de ventas, servicio y finanzas
+
+Un CRM que no se integra con facturación y cartera obliga a conciliar a mano. Y el pronóstico que llega a la junta deja de ser confiable.
+
+Cambiar de CRM después es posible. Implica migrar datos, rehacer integraciones y reentrenar a todos.
+
+¿Tu CRM y tu ERP hablan el mismo idioma sobre quién es el cliente?

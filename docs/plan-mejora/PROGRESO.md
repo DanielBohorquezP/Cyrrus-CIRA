@@ -47,13 +47,13 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 4 (2026-10-21, C10, C11, C12 publicados; I1 para C9–C12).
+**Última sesión cerrada:** Sesión 5 (2026-10-21, C13 y C14 publicados; enlaces cruzados; I1 ampliado).
 
-**Próxima: Sesión 5.** Orden sugerido:
-1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v5.zip` (C8–C12; reemplaza al v4, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 9 artículos nuevos, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
-2. Si llegaron los insumos de venta: **B1**, **B3**, **B5** (son lo que convierte el tráfico que traen C9–C12).
-3. **C13** (RR. HH. y nómina 100+; medir y coordinar con G8), **C14** (MES), **I1** de C1–C5 y C8. Luego **D1** (test de preparación para ERP) + **B4**.
-4. Enlazar C10–C12 desde la página de servicio de ERP/EAM y desde C2, C3 y C4 (no se hizo en la Sesión 4).
+**Próxima: Sesión 6.** Orden sugerido:
+1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v6.zip` (C8–C14; reemplaza al v5, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 11 artículos nuevos, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
+2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**. Sin ellos, el tráfico de C9–C14 llega a un sitio sin oferta de entrada concreta.
+3. **D1** (test de preparación para ERP) + **B4** (si hay herramienta de correo). Si no, **C15–C18** (satélites de CRM) o **C6**/**C7**.
+4. **I1** de C1–C3 (faltan). **C8**: cambiar el CTA a diagnóstico cuando exista B1 y enlazar C15–C18.
 
 **Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
 
@@ -65,8 +65,8 @@
 | 2 ✅ | Investigación de temas para compradores de 50–100+ empleados | C8–C18 (definidas) |
 | 3 ✅ | Verificar despliegue + primeras categorías caras | A1, C8, C9 |
 | 4 ✅ | Categorías de software caro | C10, C11, C12, I1 (C9–C12) |
-| 5 | Indexación, medición, RR. HH. y MES | A2, A5, C13, C14, I1 (C1–C5, C8); B1, B3, B5 si llegan insumos |
-| 6 | Primera herramienta | D1 + B4 |
+| 5 ✅ | RR. HH., MES y enlaces cruzados | C13, C14, I1 (C4, C5/C8, C13, C14) |
+| 6 | Indexación, medición y primera herramienta | A2, A5, D1 + B4; B1, B3, B5 si llegan insumos |
 | 7 | Contenido con volumen | G1, G2 |
 | 8 | Contenido CRM | G3 |
 | 9 | Herramienta de costo | D2 (enlazada desde C4) |
@@ -118,8 +118,8 @@ qué llegó y lo integra (F8, J1, J3…).
 | C10 | Cuánto cuesta SAP Business One | ✅ | Sesión 4. `/perspectivas/cuanto-cuesta-sap-business-one`, ES/EN. SAP no publica precios: el artículo explica qué define el costo (tipos de usuario según la guía de licencias de SAP, despliegue, implementación, soporte) y cómo presupuestar a 5 años. Sin cifras de terceros. MX 140 + 110 · SD 23–28 |
 | C11 | Software de mantenimiento (CMMS/EAM) | ✅ | Sesión 4. `/perspectivas/software-cmms-eam-como-elegir`, ES/EN. CMMS vs EAM vs módulo del ERP, qué medir (costo de parada), ISO 55001. Fuentes: TechTarget, ISO. Enlaza a la página de EAM. MX 170 · SD 34 · CPC US$54 |
 | C12 | Migrar de SAP ECC a S/4HANA | ✅ | Sesión 4. `/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas`, ES/EN. Fechas verificadas en SAP Support y SAP News (oct-2026): estándar hasta 31-dic-2027, extendido hasta 31-dic-2030 (+2 puntos), S/4HANA hasta 2040. MX 1.900 · SD 28. Revisar si SAP cambia fechas (L1) |
-| C13 | Software de RR. HH. y nómina (100+) | ⬜ | Sesión 2: MX 260 · SD 18 · CPC US$22,6. Coordinar con G8 |
-| C14 | Software MES | ⬜ | Sesión 2: MX 140 · SD 17 |
+| C13 | Software de RR. HH. y nómina (100+) | ✅ | Sesión 5. `/perspectivas/software-recursos-humanos-nomina-mas-de-100-empleados`, ES/EN, título filtrado por tamaño, sin país. Nómina vs HRIS vs HCM, multi-país, integración con finanzas, datos personales. Fuentes débiles (Avanti, Microsoft Learn): no hay definición oficial única; el artículo lo dice. G8 (nómina vs HCM) debe enlazar aquí y no repetirlo. MX 260 · SD 18 |
+| C14 | Software MES | ✅ | Sesión 5. `/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta`, ES/EN. ISA-95 (nivel 3 vs 4, fuente ISA), funciones del MES (Infor), cuándo se justifica. MX 140 · SD 17 |
 | C15 | Integrar ERP y CRM sin middleware | ⬜ | Sesión 2: satélite para respuestas de IA |
 | C16 | Costo total de propiedad de un CRM | ⬜ | Sesión 2: satélite para respuestas de IA |
 | C17 | Fin de venta de Salesforce CPQ | ⬜ | Sesión 2: verificar fechas en Salesforce |
@@ -183,7 +183,7 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase I — Marca personal y distribución
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| I1 | Calendario de LinkedIn por artículo | 🟡 | Sesión 4: `docs/plan-mejora/datos/linkedin-calendario-2026-10.md` (2 posts por artículo para C9–C12, orden y días). Faltan C1–C5 y C8. [Cliente] publica tras subir el v5 |
+| I1 | Calendario de LinkedIn por artículo | 🟡 | `docs/plan-mejora/datos/linkedin-calendario-2026-10.md`: 2 posts por artículo para C9–C12 y 1 para C4, C5/C8, C13, C14 (seis semanas). Faltan C1–C3. [Cliente] publica tras subir el v6 |
 | I2 | Videos cortos | ⬜ | |
 | I3 | Newsletter de LinkedIn | ⬜ | |
 | I4 | Perfiles alineados | ⬜ | |
@@ -221,7 +221,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-21-v5.zip` (C8–C12; reemplaza al v4 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-21-v6.zip` (C8–C14; reemplaza al v5 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Diagnóstico de entrada: alcance, duración, precio | 2026-10-05 | ⬜ | B1 |
 | Rangos de precio por servicio | 2026-10-05 | ⬜ | B2 |
@@ -248,6 +248,19 @@ qué llegó y lo integra (F8, J1, J3…).
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 5 — 2026-10-21 — RR. HH. y MES (C13, C14), enlaces cruzados y LinkedIn
+- **Tareas trabajadas:** C13 ✅, C14 ✅, I1 🟡 (ampliado). Producción sigue sin el v5 (artículos de C9–C12 dan 404), así que A2/A5 siguen esperando.
+- **Hecho:**
+  - C13 *Software de RR. HH. y nómina para más de 100 empleados*: nómina vs HRIS vs HCM (aclara que los proveedores no usan los términos igual), qué cambia con el tamaño (exposición legal, rotación, cifras de personal, multi-país), integración con finanzas/ERP, protección de datos, cinco decisiones de la gerencia. Título sin país (ver memoria). Enlaza a la página HCM.
+  - C14 *Software MES*: qué hace, MES vs ERP según ISA-95 (nivel 3 vs 4), tabla por niveles, señales de que una planta lo necesita, cuatro preguntas de la gerencia.
+  - Enlaces cruzados pendientes de la Sesión 4: guía de mejores ERP → migración a S/4HANA; comparativas de SAP B1 vs NetSuite/BC y Odoo vs SAP B1 → cuánto cuesta SAP B1; artículo de costo de ERP → ambos. ES/EN. `llms.txt` actualizado.
+  - Calendario de LinkedIn: añadidas piezas para C13, C14, C4 y C5/C8 (cifras solo de los artículos).
+- **Verificación:** build de 108 rutas; las nuevas ES/EN con título, tabla y JSON-LD válido; enlaces cruzados presentes con el prefijo `/en` correcto; sin errores de hidratación en consola.
+- **Commits:** ver `git log` ("Sesión 5: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v6.zip` (reemplaza al v5, eliminado).
+- **Pendiente / bloqueos nuevos:** ninguno nuevo. No se enlazó aún C10–C14 desde las páginas de servicio de ERP/HCM/EAM (solo hay tarjeta de recurso por servicio). La página de MES/manufactura no existe como servicio.
+- **Próxima sesión:** Sesión 6 (ver arriba).
 
 ### Sesión 4 — 2026-10-21 — Categorías de software caro (C10, C11, C12) y LinkedIn (I1)
 - **Tareas trabajadas:** C10 ✅, C11 ✅, C12 ✅, I1 🟡. Se confirmó que producción aún no tiene el v4 (el artículo de WMS da 404), así que A2/A5 siguen esperando.

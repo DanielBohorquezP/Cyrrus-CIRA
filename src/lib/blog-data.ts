@@ -233,6 +233,30 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230228_091017.jpg",
     ],
   },
+  {
+    slug: "software-recursos-humanos-nomina-mas-de-100-empleados",
+    coverImage: "/assets/decoracion/Portada.jpg",
+    publishedAt: "2026-10-21",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [7, 13],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "software-mes-que-es-y-cuando-lo-necesita-su-planta",
+    coverImage: "/assets/decoracion/IMG_20200313_092701647.jpg",
+    publishedAt: "2026-10-21",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [7, 11],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

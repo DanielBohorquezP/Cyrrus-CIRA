@@ -1752,11 +1752,15 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus hacemos la selección de ERP de forma independiente: levantamos sus requerimientos, construimos la matriz de evaluación, guiamos las demostraciones y lo acompañamos hasta la contratación. Así lo hicimos con 3 Castillos, que pasó de la planeación estratégica a la salida en vivo de su ERP en ocho meses de implementación.",
+          "text": "En Cyrrus hacemos la selección de ERP de forma independiente: levantamos sus requerimientos, construimos la matriz de evaluación, guiamos las demostraciones y lo acompañamos hasta la contratación. Así lo hicimos con 3 Castillos, que pasó de la planeación estratégica a la salida en vivo de su ERP en ocho meses de implementación. Si opera SAP ECC, vea también el calendario oficial de migración a S/4HANA.",
           "links": [
             {
               "text": "selección de ERP",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "calendario oficial de migración a S/4HANA",
+              "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
             }
           ]
         },
@@ -1953,11 +1957,15 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus comparamos SAP Business One, NetSuite, Business Central y otras alternativas con criterios definidos antes de mirar proveedores y sin comisiones de fabricantes. Nuestra selección de ERP termina con una recomendación argumentada y el acompañamiento hasta la firma del contrato.",
+          "text": "En Cyrrus comparamos SAP Business One, NetSuite, Business Central y otras alternativas con criterios definidos antes de mirar proveedores y sin comisiones de fabricantes. Nuestra selección de ERP termina con una recomendación argumentada y el acompañamiento hasta la firma del contrato. Para presupuestar SAP Business One, vea cuánto cuesta SAP Business One.",
           "links": [
             {
               "text": "selección de ERP",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "cuánto cuesta SAP Business One",
+              "href": "/perspectivas/cuanto-cuesta-sap-business-one"
             }
           ]
         },
@@ -2128,11 +2136,15 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus evaluamos Odoo, SAP Business One y otras alternativas sin comisiones de fabricantes. Nuestra selección de ERP define sus requerimientos antes de mirar proveedores y le entrega una recomendación argumentada, con el costo total de cada opción.",
+          "text": "En Cyrrus evaluamos Odoo, SAP Business One y otras alternativas sin comisiones de fabricantes. Nuestra selección de ERP define sus requerimientos antes de mirar proveedores y le entrega una recomendación argumentada, con el costo total de cada opción. Para presupuestar SAP Business One, vea cuánto cuesta SAP Business One.",
           "links": [
             {
               "text": "selección de ERP",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "cuánto cuesta SAP Business One",
+              "href": "/perspectivas/cuanto-cuesta-sap-business-one"
             }
           ]
         },
@@ -2325,11 +2337,19 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus construimos el caso de negocio y el costo total de cada alternativa antes de que usted firme. Nuestra selección de ERP es independiente y no recibe comisiones de fabricantes, así que la cifra que le entregamos no está inflada ni maquillada.",
+          "text": "En Cyrrus construimos el caso de negocio y el costo total de cada alternativa antes de que usted firme. Nuestra selección de ERP es independiente y no recibe comisiones de fabricantes, así que la cifra que le entregamos no está inflada ni maquillada. Si ya evalúa SAP Business One o debe migrar de SAP ECC, vea cuánto cuesta SAP Business One y las fechas de migración a S/4HANA.",
           "links": [
             {
               "text": "selección de ERP",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "cuánto cuesta SAP Business One",
+              "href": "/perspectivas/cuanto-cuesta-sap-business-one"
+            },
+            {
+              "text": "migración a S/4HANA",
+              "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
             }
           ]
         },
@@ -3209,6 +3229,308 @@
         {
           "label": "SAP News. Updated Policy Gives Customers More Time to Complete SAP S/4HANA Transition",
           "url": "https://news.sap.com/2020/02/sap-s4hana-transition-updated-policy/"
+        }
+      ]
+    },
+    "software-recursos-humanos-nomina-mas-de-100-empleados": {
+      "title": "Software de RR. HH. y nómina para más de 100 empleados",
+      "seoTitle": "Software de RR. HH. y nómina para más de 100 empleados",
+      "label": "Selección de software",
+      "excerpt": "Diferencia entre software de nómina, HRIS y HCM, qué cambia cuando la empresa supera los 100 empleados y qué debe decidir la gerencia antes de elegir.",
+      "metaDescription": "Software de recursos humanos y nómina para empresas de más de 100 empleados: nómina, HRIS o HCM, qué cambia con el tamaño y cómo elegir.",
+      "intro": "Con 20 empleados, la nómina es un proceso. Con más de 100 y operación en varios países, es un riesgo de cumplimiento, un costo grande y la mayor base de datos personales de la empresa.",
+      "keyTakeaways": [
+        "El software de nómina procesa pagos; el HRIS administra los datos del empleado; el HCM cubre todo el ciclo de vida de las personas. Los proveedores no definen estos términos igual, así que compare funciones, no etiquetas.",
+        "Con más de 100 empleados pesan la integración con finanzas y ERP, el cumplimiento laboral y de nómina de cada país, la protección de datos personales y la adopción por parte de gerentes y empleados.",
+        "La decisión de la gerencia es sobre costo total, riesgo y calidad de los datos de personas, no sobre cuántos módulos trae el sistema."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Evalúa un sistema de RR. HH. o de nómina?",
+          "description": "Definimos los requerimientos con recursos humanos, finanzas y TI y comparamos las alternativas sin comisiones de fabricantes.",
+          "checklist": [
+            "Requerimientos por país e integración con finanzas",
+            "Comparación independiente, sin comisiones"
+          ],
+          "ctaLabel": "Conocer la selección de HCM",
+          "imageAlt": "Equipo de Cyrrus revisando requerimientos de recursos humanos"
+        },
+        {
+          "title": "Que la gente lo use",
+          "description": "Un sistema de personas fracasa si gerentes y empleados no lo adoptan. Gerenciamos la implementación y el cambio.",
+          "checklist": [
+            "Gerencia del proyecto de implementación",
+            "Capacitación por rol y seguimiento de uso"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "El software de recursos humanos es el conjunto de sistemas donde la empresa guarda los datos de sus empleados y ejecuta los procesos que dependen de ellos: contratación, nómina, ausencias, desempeño y desarrollo. La etiqueta cambia según el proveedor, y esa confusión es la primera causa de comparaciones que no son comparables."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es la diferencia entre nómina, HRIS y HCM?"
+        },
+        {
+          "type": "p",
+          "text": "El software de nómina se ocupa de calcular y pagar. Un HRIS (sistema de información de recursos humanos) administra el registro del empleado: datos, contratos, beneficios, historial. Un HCM (gestión del capital humano) incluye lo anterior y añade el resto del ciclo de vida: reclutamiento, programación de turnos, ausencias, evaluación del desempeño, capacitación y analítica. Los proveedores no trazan estas fronteras de la misma manera; algunos incluyen la nómina dentro del HRIS y otros la tratan como un componente del HCM."
+        },
+        {
+          "type": "table",
+          "text": "Tres niveles de software de personas",
+          "columns": [
+            "Opción",
+            "Qué resuelve",
+            "Cuándo suele bastar"
+          ],
+          "rows": [
+            [
+              "Software de nómina",
+              "Cálculo y pago de la nómina, con las obligaciones de cada país",
+              "Empresas con una sola jurisdicción y procesos de personas simples"
+            ],
+            [
+              "HRIS",
+              "Registro único del empleado, contratos, beneficios, autoservicio básico",
+              "Cuando el problema es de datos dispersos y trámites manuales"
+            ],
+            [
+              "HCM",
+              "Ciclo de vida completo: contratación, nómina, desempeño, desarrollo y analítica",
+              "Más de 100 empleados, varias sedes o países, y necesidad de gestionar el talento con datos"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué cambia cuando la empresa supera los 100 empleados?"
+        },
+        {
+          "type": "p",
+          "text": "Cambia lo que está en juego. Los errores de nómina dejan de ser un reproceso y pasan a ser una exposición legal y de reputación. La rotación y el ausentismo empiezan a pesar en el margen. Y la dirección necesita cifras confiables de costo de personal, que hoy suelen salir de hojas de cálculo. Si la empresa opera en varios países, cada uno trae su legislación laboral y de nómina, y el sistema debe soportarla o apoyarse en un socio local; eso suele definir qué alternativas son viables antes de comparar funciones."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se integra con finanzas y con el ERP?"
+        },
+        {
+          "type": "p",
+          "text": "La nómina es uno de los mayores gastos de la empresa y debe llegar a la contabilidad sin reprocesos. Antes de elegir, defina qué sistema es la fuente de verdad del maestro de empleados, de las estructuras organizacionales y de los centros de costo, y quién mantiene la integración. Si aún no ha definido el ERP, decida ambos temas juntos; hacerlo por separado multiplica las interfaces."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la gerencia antes de cotizar?"
+        },
+        {
+          "type": "p",
+          "text": "Primero, el problema en términos de negocio: riesgo de cumplimiento, costo del proceso, rotación o falta de datos para decidir. Segundo, el alcance geográfico y legal. Tercero, quién es dueño del sistema: recursos humanos, finanzas o TI. Cuarto, la protección de los datos personales, que en recursos humanos incluye información sensible y exige controles de acceso por rol. Y quinto, el costo total a varios años, con la misma lógica de cuánto cuesta implementar un sistema empresarial, además del tiempo de su equipo.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un sistema empresarial",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo elegir el software de recursos humanos?"
+        },
+        {
+          "type": "p",
+          "text": "Parta de sus procesos reales y de los países donde opera. Pida a cada proveedor una demostración con su propio caso, incluida una nómina real de prueba, y consulte a clientes de tamaño y regiones parecidas. Pruebe la experiencia de gerentes y empleados, porque de ella depende la adopción. Y verifique quién responde por los cambios legales de cada país. Un sistema bien elegido y mal adoptado sigue obligando a trabajar en hojas de cálculo."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus definimos los requerimientos con recursos humanos, finanzas y TI, comparamos las alternativas sin comisiones y gerenciamos la implementación y la adopción. Conozca nuestra selección de HCM y la gestión del cambio.",
+          "links": [
+            {
+              "text": "selección de HCM",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm"
+            },
+            {
+              "text": "gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está evaluando un sistema de nómina o de recursos humanos, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Avanti. What is HCM software?",
+          "url": "https://avanti.ca/post/what-is-an-hcm-software"
+        },
+        {
+          "label": "Microsoft Learn. Dynamics 365 Human Resources: administration overview",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-admin-overview"
+        }
+      ]
+    },
+    "software-mes-que-es-y-cuando-lo-necesita-su-planta": {
+      "title": "Software MES: qué es y cuándo lo necesita su planta",
+      "seoTitle": "Software MES: qué es y cuándo lo necesita su planta",
+      "label": "Selección de software",
+      "excerpt": "Qué hace un sistema de ejecución de manufactura (MES), en qué se diferencia del ERP, cuándo una planta lo necesita y qué debe preguntar la gerencia antes de invertir.",
+      "metaDescription": "Qué es un software MES, en qué se diferencia del ERP, cuándo lo necesita una planta y qué debe decidir la gerencia antes de invertir.",
+      "intro": "El ERP sabe cuánto debía producirse. El piso de planta sabe cuánto se produjo. Un MES es el sistema que cierra esa brecha, y la pregunta de la gerencia es si su operación ya la sufre.",
+      "keyTakeaways": [
+        "Un MES es el software de la planta: programa y despacha el trabajo que viene del ERP, registra lo que ocurre en producción y devuelve los resultados; en el modelo ISA-95 es el nivel 3, entre el control de planta y la planeación empresarial.",
+        "No toda planta lo necesita: se justifica con trazabilidad exigente, calidad crítica, necesidad de visibilidad en tiempo real o brecha entre el plan y la ejecución.",
+        "La decisión de fondo es la integración con el ERP y la adopción en el piso; sin ellas, el MES solo agrega otra pantalla."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Evalúa un MES o un ERP para su planta?",
+          "description": "Definimos qué necesita su operación y cómo debe integrarse con el ERP, y comparamos las alternativas sin comisiones de fabricantes.",
+          "checklist": [
+            "Requerimientos de planta e integración con el ERP",
+            "Comparación independiente, sin comisiones"
+          ],
+          "ctaLabel": "Conocer la selección de software",
+          "imageAlt": "Equipo de Cyrrus revisando requerimientos de manufactura"
+        },
+        {
+          "title": "Que el piso de planta lo adopte",
+          "description": "Un MES cambia la forma de trabajar de operarios y supervisores. Gerenciamos la implementación y la adopción.",
+          "checklist": [
+            "Gerencia del proyecto de implementación",
+            "Capacitación por rol y seguimiento de uso"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Un MES (sistema de ejecución de manufactura) es el software diseñado para la fábrica. Coordina, registra y vigila la producción desde las materias primas hasta el producto terminado, y se ubica entre el ERP y los sistemas de control de planta."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué hace un MES?"
+        },
+        {
+          "type": "p",
+          "text": "Recibe del ERP las órdenes de trabajo y las programa según prioridades y recursos disponibles; despacha el trabajo a líneas y personas; asigna y sigue la mano de obra, los materiales y las máquinas; mantiene un intercambio de datos en ambos sentidos con el piso para corregir en tiempo real; controla documentos, calidad y trazabilidad por lote, serie o número de orden; y recoge datos de producción para medir el desempeño. Al terminar, devuelve los resultados al ERP."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es la diferencia entre un MES y un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "El ERP gestiona el negocio en su conjunto: planeación de largo plazo, compras, costos y pedidos de clientes. El MES gestiona la ejecución en la planta. El estándar ISA-95 (IEC 62264) describe cómo se comunican: sitúa el ERP en el nivel 4 (planeación del negocio) y el MES en el nivel 3 (gestión de operaciones de manufactura), y se centra en la interfaz entre ambos."
+        },
+        {
+          "type": "table",
+          "text": "Dónde vive cada sistema en una planta",
+          "columns": [
+            "Nivel (ISA-95)",
+            "Qué contiene",
+            "Qué responde"
+          ],
+          "rows": [
+            [
+              "Nivel 4: negocio",
+              "ERP: planeación, compras, costos, pedidos",
+              "¿Qué debemos producir y a qué costo?"
+            ],
+            [
+              "Nivel 3: operaciones de manufactura",
+              "MES: programación, despacho, trazabilidad, calidad",
+              "¿Qué está pasando ahora en la planta y cómo se ejecuta?"
+            ],
+            [
+              "Niveles 0 a 2: control",
+              "Máquinas, sensores, PLC y supervisión",
+              "¿Cómo funciona el proceso físico?"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo una planta necesita un MES?"
+        },
+        {
+          "type": "p",
+          "text": "No toda planta lo necesita. Las señales más claras son estas: la trazabilidad por lote o por serie es una exigencia del cliente o del regulador; la calidad es crítica y los defectos se descubren tarde; el plan del ERP y lo que sucede en el piso divergen y nadie lo ve hasta el cierre del mes; las paradas y los tiempos de ciclo se registran a mano; o varias plantas operan con reglas distintas. Si ninguna se cumple, una buena configuración de producción en el ERP puede alcanzar."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe preguntar la gerencia antes de invertir?"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro cosas. Primero, qué decisión no puede tomar hoy por falta de datos de planta, y cuánto cuesta no tomarla. Segundo, cómo se integrará con el ERP, quién mantiene la interfaz y qué pasa cuando cambia alguno de los dos. Tercero, cuál es el costo total a varios años, con la lógica de cuánto cuesta implementar un sistema empresarial, incluidos dispositivos, redes en planta y tiempo de supervisores. Y cuarto, cómo se hará la puesta en marcha sin detener la producción.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un sistema empresarial",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo elegir un MES?"
+        },
+        {
+          "type": "p",
+          "text": "Parta de su proceso real: tipo de producción, número de plantas, requisitos de calidad y trazabilidad, y el equipo de planta disponible. Pida demostraciones con sus propios flujos, visite plantas de clientes parecidos y valore la integración con su ERP actual. Pruebe la pantalla con operarios reales: si les estorba, no la usarán, y un MES que no se registra a tiempo no cumple su función."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus definimos los requerimientos de planta, comparamos las alternativas sin comisiones y gerenciamos la implementación y la adopción. Conozca nuestra selección de software y de ERP.",
+          "links": [
+            {
+              "text": "selección de software",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+            },
+            {
+              "text": "selección de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está evaluando un sistema para su planta, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Infor. What is a Manufacturing Execution System (MES) and why you should care?",
+          "url": "https://www.infor.com/blog/what-is-a-manufacturing-execution-system-mes"
+        },
+        {
+          "label": "ISA. ISA-95 Standard: Enterprise-Control System Integration",
+          "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard"
+        },
+        {
+          "label": "SAP. What is a manufacturing execution system (MES)?",
+          "url": "https://www.sap.com/resources/what-is-mes"
         }
       ]
     }

@@ -1752,11 +1752,15 @@
         },
         {
           "type": "p",
-          "text": "At Cyrrus we run ERP selection independently: we gather your requirements, build the evaluation matrix, guide the demos and support you through contracting. That's how we worked with 3 Castillos, which went from strategic planning to its ERP go-live in eight months of implementation.",
+          "text": "At Cyrrus we run ERP selection independently: we gather your requirements, build the evaluation matrix, guide the demos and support you through contracting. That's how we worked with 3 Castillos, which went from strategic planning to its ERP go-live in eight months of implementation. If you run SAP ECC, also see the official S/4HANA migration timeline.",
           "links": [
             {
               "text": "ERP selection",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "official S/4HANA migration timeline",
+              "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
             }
           ]
         },
@@ -1953,11 +1957,15 @@
         },
         {
           "type": "p",
-          "text": "At Cyrrus we compare SAP Business One, NetSuite, Business Central and other alternatives with criteria defined before looking at vendors and with no vendor commissions. Our ERP selection ends with a reasoned recommendation and support through contract signature.",
+          "text": "At Cyrrus we compare SAP Business One, NetSuite, Business Central and other alternatives with criteria defined before looking at vendors and with no vendor commissions. Our ERP selection ends with a reasoned recommendation and support through contract signature. To budget SAP Business One, see how much SAP Business One costs.",
           "links": [
             {
               "text": "ERP selection",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "how much SAP Business One costs",
+              "href": "/perspectivas/cuanto-cuesta-sap-business-one"
             }
           ]
         },
@@ -2128,11 +2136,15 @@
         },
         {
           "type": "p",
-          "text": "At Cyrrus we evaluate Odoo, SAP Business One and other alternatives with no vendor commissions. Our ERP selection defines your requirements before looking at vendors and gives you a reasoned recommendation, with the total cost of each option.",
+          "text": "At Cyrrus we evaluate Odoo, SAP Business One and other alternatives with no vendor commissions. Our ERP selection defines your requirements before looking at vendors and gives you a reasoned recommendation, with the total cost of each option. To budget SAP Business One, see how much SAP Business One costs.",
           "links": [
             {
               "text": "ERP selection",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "how much SAP Business One costs",
+              "href": "/perspectivas/cuanto-cuesta-sap-business-one"
             }
           ]
         },
@@ -2325,11 +2337,19 @@
         },
         {
           "type": "p",
-          "text": "At Cyrrus we build the business case and the total cost of each alternative before you sign. Our ERP selection is independent and takes no vendor commissions, so the figure we give you isn't inflated or dressed up.",
+          "text": "At Cyrrus we build the business case and the total cost of each alternative before you sign. Our ERP selection is independent and takes no vendor commissions, so the figure we give you isn't inflated or dressed up. If you're already evaluating SAP Business One or must migrate from SAP ECC, see how much SAP Business One costs and the S/4HANA migration dates.",
           "links": [
             {
               "text": "ERP selection",
               "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "how much SAP Business One costs",
+              "href": "/perspectivas/cuanto-cuesta-sap-business-one"
+            },
+            {
+              "text": "S/4HANA migration",
+              "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
             }
           ]
         },
@@ -3209,6 +3229,308 @@
         {
           "label": "SAP News. Updated Policy Gives Customers More Time to Complete SAP S/4HANA Transition",
           "url": "https://news.sap.com/2020/02/sap-s4hana-transition-updated-policy/"
+        }
+      ]
+    },
+    "software-recursos-humanos-nomina-mas-de-100-empleados": {
+      "title": "HR and payroll software for companies with over 100 employees",
+      "seoTitle": "HR and payroll software for 100+ employees",
+      "label": "Software selection",
+      "excerpt": "The difference between payroll software, HRIS and HCM, what changes once a company passes 100 employees and what leadership should decide before choosing.",
+      "metaDescription": "HR and payroll software for companies with over 100 employees: payroll, HRIS or HCM, what changes with size and how to choose.",
+      "intro": "With 20 employees, payroll is a process. With over 100 and operations in several countries, it is a compliance risk, a large cost and the company's biggest store of personal data.",
+      "keyTakeaways": [
+        "Payroll software processes pay; an HRIS manages employee data; an HCM covers the whole people lifecycle. Vendors don't define these terms the same way, so compare functions, not labels.",
+        "Past 100 employees, what weighs more is integration with finance and the ERP, labor and payroll compliance in each country, personal data protection and adoption by managers and employees.",
+        "Leadership's decision is about total cost, risk and the quality of people data, not about how many modules the system has."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Evaluating an HR or payroll system?",
+          "description": "We define requirements with HR, finance and IT and compare the alternatives with no vendor commissions.",
+          "checklist": [
+            "Requirements by country and finance integration",
+            "Independent comparison, no commissions"
+          ],
+          "ctaLabel": "Explore HCM selection",
+          "imageAlt": "Cyrrus team reviewing HR requirements"
+        },
+        {
+          "title": "Get people to use it",
+          "description": "A people system fails if managers and employees don't adopt it. We manage the implementation and the change.",
+          "checklist": [
+            "Implementation project management",
+            "Role-based training and usage tracking"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Cyrrus team working with a client"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "HR software is the set of systems where a company keeps its employees' data and runs the processes that depend on it: hiring, payroll, absences, performance and development. The label changes by vendor, and that confusion is the first cause of comparisons that aren't comparable."
+        },
+        {
+          "type": "p",
+          "text": "A disclosure before we continue: Cyrrus doesn't resell licenses or take commissions from any vendor. That's why we can compare without preferences."
+        },
+        {
+          "type": "h2",
+          "text": "What is the difference between payroll, HRIS and HCM?"
+        },
+        {
+          "type": "p",
+          "text": "Payroll software calculates and pays. An HRIS (human resources information system) manages the employee record: data, contracts, benefits, history. An HCM (human capital management) includes that and adds the rest of the lifecycle: recruiting, shift scheduling, absences, performance reviews, training and analytics. Vendors don't draw these lines the same way; some include payroll inside the HRIS and others treat it as a component of the HCM."
+        },
+        {
+          "type": "table",
+          "text": "Three levels of people software",
+          "columns": [
+            "Option",
+            "What it solves",
+            "When it usually suffices"
+          ],
+          "rows": [
+            [
+              "Payroll software",
+              "Payroll calculation and payment, with each country's obligations",
+              "Companies with a single jurisdiction and simple people processes"
+            ],
+            [
+              "HRIS",
+              "A single employee record, contracts, benefits, basic self-service",
+              "When the problem is scattered data and manual paperwork"
+            ],
+            [
+              "HCM",
+              "The full lifecycle: hiring, payroll, performance, development and analytics",
+              "Over 100 employees, several sites or countries, and a need to manage talent with data"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "What changes when the company passes 100 employees?"
+        },
+        {
+          "type": "p",
+          "text": "What's at stake changes. Payroll errors stop being rework and become legal and reputational exposure. Turnover and absenteeism start to weigh on the margin. And leadership needs reliable personnel-cost figures, which today usually come from spreadsheets. If the company operates in several countries, each brings its own labor and payroll legislation, and the system must support it or rely on a local partner; that often decides which alternatives are viable before you compare features."
+        },
+        {
+          "type": "h2",
+          "text": "How does it integrate with finance and the ERP?"
+        },
+        {
+          "type": "p",
+          "text": "Payroll is one of the company's largest expenses and must reach accounting without rework. Before choosing, define which system is the source of truth for the employee master, the organizational structures and cost centers, and who maintains the integration. If you haven't chosen the ERP yet, decide both together; doing it separately multiplies the interfaces."
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership decide before quoting?"
+        },
+        {
+          "type": "p",
+          "text": "First, the problem in business terms: compliance risk, process cost, turnover or lack of data to decide. Second, the geographic and legal scope. Third, who owns the system: HR, finance or IT. Fourth, personal data protection, which in HR includes sensitive information and demands role-based access controls. And fifth, the multi-year total cost, using the same logic as what it costs to implement an enterprise system, plus your team's time.",
+          "links": [
+            {
+              "text": "what it costs to implement an enterprise system",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "How do you choose HR software?"
+        },
+        {
+          "type": "p",
+          "text": "Start from your real processes and the countries where you operate. Ask each vendor for a demo with your own case, including a real test payroll, and talk to customers of similar size and regions. Test the experience of managers and employees, because adoption depends on it. And verify who is responsible for legal changes in each country. A well-chosen but poorly adopted system still forces people back into spreadsheets."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we define requirements with HR, finance and IT, compare the alternatives with no commissions and manage the implementation and adoption. Learn about our HCM selection and change management.",
+          "links": [
+            {
+              "text": "HCM selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm"
+            },
+            {
+              "text": "change management",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you're evaluating a payroll or HR system, schedule a conversation with our team."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Avanti. What is HCM software?",
+          "url": "https://avanti.ca/post/what-is-an-hcm-software"
+        },
+        {
+          "label": "Microsoft Learn. Dynamics 365 Human Resources: administration overview",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-admin-overview"
+        }
+      ]
+    },
+    "software-mes-que-es-y-cuando-lo-necesita-su-planta": {
+      "title": "MES software: what it is and when your plant needs it",
+      "seoTitle": "MES software: what it is and when your plant needs it",
+      "label": "Software selection",
+      "excerpt": "What a manufacturing execution system (MES) does, how it differs from the ERP, when a plant needs one and what leadership should ask before investing.",
+      "metaDescription": "What MES software is, how it differs from an ERP, when a plant needs one and what leadership should decide before investing.",
+      "intro": "The ERP knows how much should have been produced. The plant floor knows how much was. An MES is the system that closes that gap, and leadership's question is whether its operation already suffers from it.",
+      "keyTakeaways": [
+        "An MES is the plant's software: it schedules and dispatches the work that comes from the ERP, records what happens in production and returns the results; in the ISA-95 model it is level 3, between plant control and enterprise planning.",
+        "Not every plant needs one: it's justified by demanding traceability, critical quality, a need for real-time visibility or a gap between plan and execution.",
+        "The underlying decision is ERP integration and floor adoption; without them, an MES just adds another screen."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Evaluating an MES or an ERP for your plant?",
+          "description": "We define what your operation needs and how it must integrate with the ERP, and compare the alternatives with no vendor commissions.",
+          "checklist": [
+            "Plant requirements and ERP integration",
+            "Independent comparison, no commissions"
+          ],
+          "ctaLabel": "Explore software selection",
+          "imageAlt": "Cyrrus team reviewing manufacturing requirements"
+        },
+        {
+          "title": "Get the plant floor to adopt it",
+          "description": "An MES changes how operators and supervisors work. We manage the implementation and adoption.",
+          "checklist": [
+            "Implementation project management",
+            "Role-based training and usage tracking"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Cyrrus team working with a client"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "An MES (manufacturing execution system) is software designed for the factory. It coordinates, records and monitors production from raw materials to finished goods, and sits between the ERP and the plant control systems."
+        },
+        {
+          "type": "p",
+          "text": "A disclosure before we continue: Cyrrus doesn't resell licenses or take commissions from any vendor. That's why we can compare without preferences."
+        },
+        {
+          "type": "h2",
+          "text": "What does an MES do?"
+        },
+        {
+          "type": "p",
+          "text": "It receives work orders from the ERP and schedules them by priorities and available resources; dispatches the work to lines and people; allocates and tracks labor, materials and machines; keeps a two-way data exchange with the floor to correct in real time; controls documents, quality and traceability by lot, serial or order number; and collects production data to measure performance. When finished, it returns the results to the ERP."
+        },
+        {
+          "type": "h2",
+          "text": "What is the difference between an MES and an ERP?"
+        },
+        {
+          "type": "p",
+          "text": "The ERP manages the business as a whole: long-term planning, purchasing, costing and customer orders. The MES manages execution on the plant floor. The ISA-95 standard (IEC 62264) describes how they communicate: it places the ERP at level 4 (business planning) and the MES at level 3 (manufacturing operations management), and focuses on the interface between the two."
+        },
+        {
+          "type": "table",
+          "text": "Where each system lives in a plant",
+          "columns": [
+            "Level (ISA-95)",
+            "What it contains",
+            "What it answers"
+          ],
+          "rows": [
+            [
+              "Level 4: business",
+              "ERP: planning, purchasing, costing, orders",
+              "What should we produce and at what cost?"
+            ],
+            [
+              "Level 3: manufacturing operations",
+              "MES: scheduling, dispatch, traceability, quality",
+              "What is happening in the plant right now and how is it executed?"
+            ],
+            [
+              "Levels 0 to 2: control",
+              "Machines, sensors, PLCs and supervision",
+              "How does the physical process run?"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "When does a plant need an MES?"
+        },
+        {
+          "type": "p",
+          "text": "Not every plant does. The clearest signals are these: lot or serial traceability is a customer or regulatory requirement; quality is critical and defects are found late; the ERP's plan and what happens on the floor diverge and nobody sees it until month-end; downtime and cycle times are logged by hand; or several plants run on different rules. If none apply, a good production setup in the ERP may be enough."
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership ask before investing?"
+        },
+        {
+          "type": "p",
+          "text": "Four things. First, which decision you can't make today for lack of plant data, and what not making it costs. Second, how it will integrate with the ERP, who maintains the interface and what happens when either changes. Third, the multi-year total cost, using the logic of what it costs to implement an enterprise system, including devices, plant networks and supervisors' time. And fourth, how go-live will happen without stopping production.",
+          "links": [
+            {
+              "text": "what it costs to implement an enterprise system",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "How do you choose an MES?"
+        },
+        {
+          "type": "p",
+          "text": "Start from your real process: type of production, number of plants, quality and traceability requirements, and the plant team available. Ask for demos with your own flows, visit similar customers' plants and weigh integration with your current ERP. Test the screen with real operators: if it gets in their way they won't use it, and an MES that isn't logged on time doesn't do its job."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we define plant requirements, compare the alternatives with no commissions and manage the implementation and adoption. Learn about our software selection and ERP selection.",
+          "links": [
+            {
+              "text": "software selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+            },
+            {
+              "text": "ERP selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you're evaluating a system for your plant, schedule a conversation with our team."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Infor. What is a Manufacturing Execution System (MES) and why you should care?",
+          "url": "https://www.infor.com/blog/what-is-a-manufacturing-execution-system-mes"
+        },
+        {
+          "label": "ISA. ISA-95 Standard: Enterprise-Control System Integration",
+          "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard"
+        },
+        {
+          "label": "SAP. What is a manufacturing execution system (MES)?",
+          "url": "https://www.sap.com/resources/what-is-mes"
         }
       ]
     }
