@@ -401,9 +401,9 @@ Una cotización de licencias no es un presupuesto.
 
 Es una parte. Y casi nunca la más grande.
 
-Con los valores de ejemplo de nuestra calculadora, la licencia de un ERP pesa 56% del costo a cinco años.
+Muchas guías del sector estiman que implementar un ERP cuesta entre una y tres veces la licencia del primer año.
 
-El otro 44% es lo que la cotización no muestra:
+Esa parte no aparece en la cotización de licencias:
 
 → Implementación e integraciones
 → Capacitación y gestión del cambio
@@ -413,6 +413,8 @@ El otro 44% es lo que la cotización no muestra:
 Hicimos una calculadora para armar ese costo total.
 
 Los supuestos son visibles y editables. Los valores iniciales son ejemplos, no precios de ningún fabricante.
+
+> Nota interna: el "una a tres veces" viene de fuentes secundarias (consultoras y blogs), no de un estudio primario. Verificar o suavizar antes de publicar.
 
 Úsala con las propuestas que ya tienes sobre la mesa. Una por una.
 
