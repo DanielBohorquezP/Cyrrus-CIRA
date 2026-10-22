@@ -651,7 +651,7 @@
         },
         {
           "type": "p",
-          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP. Si su cuello de botella está en la bodega, vea también qué es un sistema WMS y cuándo necesita uno.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "qué es un sistema WMS", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}]
+          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP. Si su cuello de botella está en la bodega, vea también qué es un sistema WMS y cuándo necesita uno. Antes de comparar proveedores, pruebe si su empresa está lista con el test de preparación para un ERP.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "qué es un sistema WMS", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "test de preparación para un ERP", "href": "/herramientas/test-preparacion-erp"}]
         },
         {
           "type": "p",
@@ -1752,7 +1752,7 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus hacemos la selección de ERP de forma independiente: levantamos sus requerimientos, construimos la matriz de evaluación, guiamos las demostraciones y lo acompañamos hasta la contratación. Así lo hicimos con 3 Castillos, que pasó de la planeación estratégica a la salida en vivo de su ERP en ocho meses de implementación. Si opera SAP ECC, vea también el calendario oficial de migración a S/4HANA.",
+          "text": "En Cyrrus hacemos la selección de ERP de forma independiente: levantamos sus requerimientos, construimos la matriz de evaluación, guiamos las demostraciones y lo acompañamos hasta la contratación. Así lo hicimos con 3 Castillos, que pasó de la planeación estratégica a la salida en vivo de su ERP en ocho meses de implementación. Si opera SAP ECC, vea también el calendario oficial de migración a S/4HANA. Antes de empezar, el test de preparación para un ERP le dice qué bases cerrar primero.",
           "links": [
             {
               "text": "selección de ERP",
@@ -1761,6 +1761,10 @@
             {
               "text": "calendario oficial de migración a S/4HANA",
               "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
+            },
+            {
+              "text": "test de preparación para un ERP",
+              "href": "/herramientas/test-preparacion-erp"
             }
           ]
         },
@@ -2337,7 +2341,7 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus construimos el caso de negocio y el costo total de cada alternativa antes de que usted firme. Nuestra selección de ERP es independiente y no recibe comisiones de fabricantes, así que la cifra que le entregamos no está inflada ni maquillada. Si ya evalúa SAP Business One o debe migrar de SAP ECC, vea cuánto cuesta SAP Business One y las fechas de migración a S/4HANA.",
+          "text": "En Cyrrus construimos el caso de negocio y el costo total de cada alternativa antes de que usted firme. Nuestra selección de ERP es independiente y no recibe comisiones de fabricantes, así que la cifra que le entregamos no está inflada ni maquillada. Si ya evalúa SAP Business One o debe migrar de SAP ECC, vea cuánto cuesta SAP Business One y las fechas de migración a S/4HANA. Antes de empezar, el test de preparación para un ERP le dice qué bases cerrar primero.",
           "links": [
             {
               "text": "selección de ERP",
@@ -2350,6 +2354,10 @@
             {
               "text": "migración a S/4HANA",
               "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
+            },
+            {
+              "text": "test de preparación para un ERP",
+              "href": "/herramientas/test-preparacion-erp"
             }
           ]
         },

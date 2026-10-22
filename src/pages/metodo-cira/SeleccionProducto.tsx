@@ -1,4 +1,5 @@
 import { useParams, Navigate, Link } from "react-router-dom";
+import { cn } from "@/lib/utils";
 import {
   BookOpen,
   Building2,
@@ -164,6 +165,20 @@ export default function SeleccionProducto() {
             ? "What derails these projects before they reach go-live."
             : "Qué descarrila estos proyectos antes de llegar a producción.",
         },
+    // Interactive tool, ERP page only: the readiness test is the entry point for
+    // a buyer who isn't ready to compare vendors yet.
+    ...(slug === "erp"
+      ? [
+          {
+            href: `${prefix}/herramientas/test-preparacion-erp`,
+            icon: ClipboardCheck,
+            title: lang === "en" ? "ERP readiness test" : "Test de preparación para un ERP",
+            description: lang === "en"
+              ? "Ten questions to see whether your company is ready to select."
+              : "Diez preguntas para saber si su empresa está lista para seleccionar.",
+          },
+        ]
+      : []),
   ];
 
   usePageMeta({
@@ -438,7 +453,12 @@ export default function SeleccionProducto() {
             </h2>
           </Reveal>
 
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <RevealGroup
+            className={cn(
+              "mt-10 grid grid-cols-1 gap-6",
+              relatedServices.length > 3 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3",
+            )}
+          >
             {relatedServices.map((item) => {
               const RelatedIcon = item.icon;
               return (

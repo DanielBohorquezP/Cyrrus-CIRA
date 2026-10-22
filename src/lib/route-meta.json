@@ -130,5 +130,9 @@
   "/perspectivas": {
     "title": "Blog de Transformación Digital y Gobierno de IA | Cyrrus",
     "description": "Análisis sobre transformación digital, gobierno de IA y gestión del cambio organizacional, escritos por el CEO de Cyrrus."
+  },
+  "/herramientas/test-preparacion-erp": {
+    "title": "Test de preparación para un ERP | Cyrrus",
+    "description": "Diez preguntas para saber si su empresa está lista para seleccionar un ERP: procesos, datos, equipo, presupuesto y patrocinio. Resultado inmediato."
   }
 }

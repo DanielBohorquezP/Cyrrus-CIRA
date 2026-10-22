@@ -1,0 +1,242 @@
+{
+  "testErp": {
+    "meta": {
+      "title": "Test de preparación para un ERP | Cyrrus",
+      "description": "Diez preguntas para saber si su empresa está lista para seleccionar un ERP: procesos, datos, equipo, presupuesto y patrocinio. Resultado inmediato."
+    },
+    "hero": {
+      "eyebrow": "Herramienta",
+      "title": "¿Está su empresa lista para un ERP?",
+      "description": "Diez preguntas para el comité de dirección, antes de abrir un proceso de selección. Tres minutos, resultado inmediato y sin dejar datos.",
+      "ctaLabel": "Hablar con nuestro equipo"
+    },
+    "intro": {
+      "kicker": "Antes de comparar proveedores",
+      "text": "La mayoría de los ERP que fracasan no fallan por el software: fallan por lo que la empresa no tenía listo. Este test mide cinco bases y le dice cuáles cerrar primero.",
+      "bullets": [
+        "Procesos, datos, equipo, presupuesto y patrocinio: dos preguntas por cada una.",
+        "Pensado para CEO, CFO, COO y miembros del comité de dirección.",
+        "Orientativo: lo ideal es que varios directivos lo respondan por separado y comparen."
+      ]
+    },
+    "quiz": {
+      "title": "Responda según cómo está hoy su empresa, no como querría estar",
+      "step": "Pregunta {{n}} de {{total}}",
+      "back": "Anterior",
+      "restart": "Repetir el test",
+      "score": "{{score}} de {{max}} puntos",
+      "dimensionsTitle": "Sus cinco bases",
+      "gapsTitle": "Qué cerrar primero",
+      "nextTitle": "Para seguir",
+      "disclaimer": "Guía orientativa construida por Cyrrus a partir de su experiencia. No es un estudio estadístico ni sustituye un diagnóstico.",
+      "levels": {
+        "low": "Brecha",
+        "mid": "En desarrollo",
+        "high": "Sólida"
+      },
+      "ctaLabel": "Revisar mis resultados con Cyrrus",
+      "ctaText": "Podemos revisar el resultado con su comité y convertirlo en un plan antes de seleccionar."
+    },
+    "dimensions": [
+      {
+        "id": "procesos",
+        "name": "Procesos"
+      },
+      {
+        "id": "datos",
+        "name": "Datos"
+      },
+      {
+        "id": "equipo",
+        "name": "Equipo"
+      },
+      {
+        "id": "presupuesto",
+        "name": "Presupuesto y caso de negocio"
+      },
+      {
+        "id": "patrocinio",
+        "name": "Patrocinio y alineación"
+      }
+    ],
+    "questions": [
+      {
+        "dimension": 0,
+        "text": "¿Sus procesos principales (de compra a pago, de pedido a cobro) están documentados y tienen un responsable?",
+        "options": [
+          "No están documentados; cada persona los hace a su manera",
+          "Los conocen las personas que los ejecutan, sin documentar",
+          "Están documentados en parte y con responsables en algunas áreas",
+          "Están documentados, con dueño y con indicadores"
+        ]
+      },
+      {
+        "dimension": 0,
+        "text": "¿Qué tan parecidos son los procesos entre áreas o sedes?",
+        "options": [
+          "Cada área o sede trabaja de forma distinta",
+          "Hay reglas comunes en algunos procesos",
+          "Son casi iguales, con excepciones que conocemos",
+          "Están estandarizados, y las excepciones se aprueban"
+        ]
+      },
+      {
+        "dimension": 1,
+        "text": "¿Dónde vive hoy la información de clientes, productos y proveedores?",
+        "options": [
+          "En hojas de cálculo y archivos personales",
+          "En varios sistemas que no se concilian entre sí",
+          "En un sistema principal, con duplicados e inconsistencias",
+          "En una fuente única depurada, con un responsable"
+        ]
+      },
+      {
+        "dimension": 1,
+        "text": "¿Cuánto confía en las cifras de inventario y de cartera que recibe?",
+        "options": [
+          "Las verifico a mano o las reconstruyo",
+          "Las uso, pero suelen cambiar al cierre",
+          "Son confiables salvo en puntos conocidos",
+          "Son confiables y trazables a su origen"
+        ]
+      },
+      {
+        "dimension": 2,
+        "text": "¿Hay personas de negocio (no solo de TI) que puedan dedicar tiempo real al proyecto?",
+        "options": [
+          "Nadie puede salir de su operación",
+          "Unas pocas horas a la semana",
+          "Personas clave con medio tiempo",
+          "Un equipo dedicado, con su trabajo habitual cubierto"
+        ]
+      },
+      {
+        "dimension": 2,
+        "text": "¿Cómo le fue a la empresa en cambios de sistemas anteriores?",
+        "options": [
+          "Hubo implementaciones fallidas y no se aprendió de ellas",
+          "Se implantaron, pero la adopción fue irregular",
+          "Se adoptaron bien, sin un método formal de cambio",
+          "Se adoptaron con gestión del cambio y se midió el uso"
+        ]
+      },
+      {
+        "dimension": 3,
+        "text": "¿Cómo se ha presupuestado el proyecto?",
+        "options": [
+          "Todavía no hay presupuesto",
+          "Solo con las licencias",
+          "Con licencias e implementación",
+          "Con el costo total a cinco años: licencias, implementación, integraciones, equipo interno y contingencia"
+        ]
+      },
+      {
+        "dimension": 3,
+        "text": "¿Está claro el problema de negocio y el beneficio esperado?",
+        "options": [
+          "No está claro; se busca \"modernizar\"",
+          "Hay una idea general de lo que se quiere mejorar",
+          "Hay metas cualitativas",
+          "Hay metas medibles con una línea base de hoy"
+        ]
+      },
+      {
+        "dimension": 4,
+        "text": "¿Quién patrocina el proyecto en la alta dirección?",
+        "options": [
+          "Nadie está definido",
+          "Lo impulsa TI sola",
+          "Un directivo lo apoya, sin dedicarle tiempo",
+          "Un patrocinador ejecutivo y un comité que decide"
+        ]
+      },
+      {
+        "dimension": 4,
+        "text": "¿Los líderes de las áreas están alineados con los cambios que verán en sus procesos?",
+        "options": [
+          "No han sido consultados o se oponen",
+          "Opinan, pero no hay acuerdo",
+          "Hay acuerdo general, sin compromisos concretos",
+          "Están alineados y son corresponsables de los resultados"
+        ]
+      }
+    ],
+    "results": {
+      "bands": [
+        {
+          "title": "Todavía no: empiece por las bases",
+          "summary": "Seleccionar un ERP hoy lo expondría a un proyecto caro y con riesgo de fracasar. Las brechas de abajo son el trabajo previo; cerrarlas suele costar menos que corregirlas dentro del proyecto."
+        },
+        {
+          "title": "Casi listo: cierre las brechas antes de comprar",
+          "summary": "Tiene bases para empezar, pero algunas áreas pueden desviar el proyecto. Trabajar las brechas de abajo en paralelo a la definición de requerimientos le ahorra tiempo y dinero."
+        },
+        {
+          "title": "Listo para seleccionar",
+          "summary": "Sus bases permiten abrir un proceso de selección con criterios claros. Lo que sigue es definir los requerimientos y comparar las alternativas con independencia."
+        }
+      ],
+      "recommendations": {
+        "procesos": {
+          "low": "Documente y estandarice los procesos que más dinero mueven (compra a pago, pedido a cobro, inventario, cierre contable) antes de comparar sistemas. Un ERP automatiza lo que existe: si el proceso es ambiguo, escala la ambigüedad.",
+          "mid": "Cierre las excepciones: decida qué diferencias entre áreas o sedes son legítimas y cuáles son costumbre. Cada excepción que conserve se paga en la implementación."
+        },
+        "datos": {
+          "low": "Depure los maestros de clientes, productos y proveedores y nombre un responsable de cada uno. Subestimar la migración de datos es uno de los errores que más desvían el presupuesto.",
+          "mid": "Defina la fuente única de cada dato y mida los duplicados antes del proyecto, no durante."
+        },
+        "equipo": {
+          "low": "Defina quién dedicará tiempo real: las personas clave de cada área necesitan semanas para definir procesos, validar configuraciones y probar. Sin ellas, el proyecto queda en manos del proveedor.",
+          "mid": "Formalice la dedicación por rol y cubra sus tareas habituales. El tiempo del equipo interno es el costo que casi nadie presupuesta."
+        },
+        "presupuesto": {
+          "low": "Construya el costo total a cinco años: licencias, implementación, infraestructura, integraciones y tiempo interno. Una cotización de licencias no es un presupuesto.",
+          "mid": "Complete el presupuesto con lo que falta (integraciones, migración de datos, capacitación, contingencia) y fije metas de beneficio con línea base."
+        },
+        "patrocinio": {
+          "low": "Nombre un patrocinador de la alta dirección con autoridad para decidir y resolver conflictos entre áreas. Un proyecto que solo impulsa TI se vuelve un proyecto de tecnología y no de negocio.",
+          "mid": "Convierta el apoyo en un comité con decisiones y fechas, y alinee a los líderes de cada área con los cambios que verán en sus procesos."
+        }
+      },
+      "links": [
+        {
+          "label": "Cuánto cuesta implementar un ERP",
+          "description": "Los cuatro bloques del costo total y los costos ocultos.",
+          "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+        },
+        {
+          "label": "Gestión del cambio organizacional",
+          "description": "Guía y plantilla para planear la adopción.",
+          "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+        },
+        {
+          "label": "Selección de ERP independiente",
+          "description": "Cómo elegimos con usted, sin comisiones de fabricantes.",
+          "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Sobre el test",
+      "items": [
+        {
+          "question": "¿Cuánto tarda el test?",
+          "answer": "Unos tres minutos. Son diez preguntas de opción única y el resultado aparece al terminar, sin registro."
+        },
+        {
+          "question": "¿Se guarda mi información?",
+          "answer": "No pedimos datos personales. Las respuestas se calculan en su navegador y no se envían a Cyrrus. Si aceptó las cookies analíticas, solo registramos que completó el test y el rango del resultado."
+        },
+        {
+          "question": "¿Quién debería responderlo?",
+          "answer": "Idealmente varios miembros del comité de dirección (gerencia general, finanzas, operaciones y TI), cada uno por separado. Las diferencias entre sus respuestas suelen ser más reveladoras que el puntaje."
+        },
+        {
+          "question": "¿Qué hago con el resultado?",
+          "answer": "Úselo como lista de trabajo previa a la selección. Si quiere, lo revisamos con su comité y lo convertimos en un plan con responsables y fechas."
+        }
+      ]
+    }
+  }
+}

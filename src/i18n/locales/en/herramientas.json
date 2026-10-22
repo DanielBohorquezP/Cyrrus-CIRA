@@ -1,0 +1,242 @@
+{
+  "testErp": {
+    "meta": {
+      "title": "ERP readiness test | Cyrrus",
+      "description": "Ten questions to find out whether your company is ready to select an ERP: processes, data, team, budget and sponsorship. Instant result."
+    },
+    "hero": {
+      "eyebrow": "Tool",
+      "title": "Is your company ready for an ERP?",
+      "description": "Ten questions for the leadership committee, before opening a selection process. Three minutes, instant result and no data left behind.",
+      "ctaLabel": "Talk to our team"
+    },
+    "intro": {
+      "kicker": "Before comparing vendors",
+      "text": "Most ERPs that fail don't fail because of the software: they fail because of what the company didn't have ready. This test measures five foundations and tells you which to close first.",
+      "bullets": [
+        "Processes, data, team, budget and sponsorship: two questions for each.",
+        "Designed for CEOs, CFOs, COOs and leadership-committee members.",
+        "Indicative: ideally several executives answer it separately and compare."
+      ]
+    },
+    "quiz": {
+      "title": "Answer for how your company is today, not how you'd like it to be",
+      "step": "Question {{n}} of {{total}}",
+      "back": "Previous",
+      "restart": "Retake the test",
+      "score": "{{score}} of {{max}} points",
+      "dimensionsTitle": "Your five foundations",
+      "gapsTitle": "What to close first",
+      "nextTitle": "Keep going",
+      "disclaimer": "Indicative guide built by Cyrrus from its experience. It is not a statistical study and does not replace a diagnosis.",
+      "levels": {
+        "low": "Gap",
+        "mid": "Developing",
+        "high": "Solid"
+      },
+      "ctaLabel": "Review my results with Cyrrus",
+      "ctaText": "We can review the result with your committee and turn it into a plan before you select."
+    },
+    "dimensions": [
+      {
+        "id": "procesos",
+        "name": "Processes"
+      },
+      {
+        "id": "datos",
+        "name": "Data"
+      },
+      {
+        "id": "equipo",
+        "name": "Team"
+      },
+      {
+        "id": "presupuesto",
+        "name": "Budget and business case"
+      },
+      {
+        "id": "patrocinio",
+        "name": "Sponsorship and alignment"
+      }
+    ],
+    "questions": [
+      {
+        "dimension": 0,
+        "text": "Are your main processes (procure-to-pay, order-to-cash) documented and owned by someone?",
+        "options": [
+          "They aren't documented; each person does them their own way",
+          "The people who run them know them, but nothing is written down",
+          "They are partly documented, with owners in some areas",
+          "They are documented, owned and measured with indicators"
+        ]
+      },
+      {
+        "dimension": 0,
+        "text": "How similar are processes across areas or sites?",
+        "options": [
+          "Each area or site works differently",
+          "Some processes share common rules",
+          "They are nearly identical, with exceptions we know about",
+          "They are standardized, and exceptions are approved"
+        ]
+      },
+      {
+        "dimension": 1,
+        "text": "Where does customer, product and supplier information live today?",
+        "options": [
+          "In spreadsheets and personal files",
+          "In several systems that aren't reconciled with each other",
+          "In a main system, with duplicates and inconsistencies",
+          "In a single clean source, with an owner"
+        ]
+      },
+      {
+        "dimension": 1,
+        "text": "How much do you trust the inventory and receivables figures you receive?",
+        "options": [
+          "I check them by hand or rebuild them",
+          "I use them, but they usually change at close",
+          "They're reliable except in known spots",
+          "They're reliable and traceable to their source"
+        ]
+      },
+      {
+        "dimension": 2,
+        "text": "Are there business people (not just IT) who can give real time to the project?",
+        "options": [
+          "Nobody can step away from operations",
+          "A few hours a week",
+          "Key people at half time",
+          "A dedicated team, with their usual work covered"
+        ]
+      },
+      {
+        "dimension": 2,
+        "text": "How did the company fare with previous system changes?",
+        "options": [
+          "There were failed implementations and nothing was learned",
+          "They went live, but adoption was uneven",
+          "They were adopted well, without a formal change method",
+          "They were adopted with change management and usage was measured"
+        ]
+      },
+      {
+        "dimension": 3,
+        "text": "How has the project been budgeted?",
+        "options": [
+          "There is no budget yet",
+          "With licenses only",
+          "With licenses and implementation",
+          "With the five-year total cost: licenses, implementation, integrations, internal team and contingency"
+        ]
+      },
+      {
+        "dimension": 3,
+        "text": "Are the business problem and the expected benefit clear?",
+        "options": [
+          "Not clear; the aim is to \"modernize\"",
+          "There's a general idea of what to improve",
+          "There are qualitative goals",
+          "There are measurable goals with a baseline from today"
+        ]
+      },
+      {
+        "dimension": 4,
+        "text": "Who sponsors the project at senior leadership level?",
+        "options": [
+          "Nobody is defined",
+          "IT drives it alone",
+          "An executive supports it, without giving it time",
+          "An executive sponsor and a committee that decides"
+        ]
+      },
+      {
+        "dimension": 4,
+        "text": "Are the area leaders aligned with the changes they will see in their processes?",
+        "options": [
+          "They haven't been consulted or they oppose it",
+          "They have opinions, but there's no agreement",
+          "There's general agreement, without concrete commitments",
+          "They're aligned and co-accountable for results"
+        ]
+      }
+    ],
+    "results": {
+      "bands": [
+        {
+          "title": "Not yet: start with the foundations",
+          "summary": "Selecting an ERP today would expose you to an expensive project at risk of failing. The gaps below are the groundwork; closing them usually costs less than fixing them inside the project."
+        },
+        {
+          "title": "Almost ready: close the gaps before buying",
+          "summary": "You have foundations to start, but some areas could derail the project. Working on the gaps below in parallel with defining requirements saves time and money."
+        },
+        {
+          "title": "Ready to select",
+          "summary": "Your foundations allow you to open a selection process with clear criteria. Next comes defining requirements and comparing alternatives independently."
+        }
+      ],
+      "recommendations": {
+        "procesos": {
+          "low": "Document and standardize the processes that move the most money (procure-to-pay, order-to-cash, inventory, accounting close) before comparing systems. An ERP automates what exists: if the process is ambiguous, it scales the ambiguity.",
+          "mid": "Close the exceptions: decide which differences between areas or sites are legitimate and which are habit. Every exception you keep is paid for in the implementation."
+        },
+        "datos": {
+          "low": "Clean up the customer, product and supplier masters and name an owner for each. Underestimating data migration is one of the mistakes that most often derail budgets.",
+          "mid": "Define the single source for each piece of data and measure duplicates before the project, not during it."
+        },
+        "equipo": {
+          "low": "Define who will give real time: the key people in each area need weeks to define processes, validate configurations and test. Without them, the project is left in the vendor's hands.",
+          "mid": "Formalize the time commitment by role and cover their usual tasks. Internal team time is the cost almost nobody budgets."
+        },
+        "presupuesto": {
+          "low": "Build the five-year total cost: licenses, implementation, infrastructure, integrations and internal time. A license quote is not a budget.",
+          "mid": "Complete the budget with what's missing (integrations, data migration, training, contingency) and set benefit goals with a baseline."
+        },
+        "patrocinio": {
+          "low": "Name a senior-leadership sponsor with the authority to decide and resolve conflicts between areas. A project driven only by IT becomes a technology project, not a business one.",
+          "mid": "Turn support into a committee with decisions and dates, and align each area's leaders with the changes they will see in their processes."
+        }
+      },
+      "links": [
+        {
+          "label": "How much does it cost to implement an ERP",
+          "description": "The four blocks of total cost and the hidden costs.",
+          "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+        },
+        {
+          "label": "Organizational change management",
+          "description": "A guide and template to plan adoption.",
+          "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+        },
+        {
+          "label": "Independent ERP selection",
+          "description": "How we choose with you, with no vendor commissions.",
+          "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "title": "About the test",
+      "items": [
+        {
+          "question": "How long does the test take?",
+          "answer": "About three minutes. It has ten single-choice questions and the result appears at the end, with no sign-up."
+        },
+        {
+          "question": "Is my information stored?",
+          "answer": "We don't ask for personal data. Answers are calculated in your browser and are not sent to Cyrrus. If you accepted analytics cookies, we only record that you completed the test and the result range."
+        },
+        {
+          "question": "Who should answer it?",
+          "answer": "Ideally several members of the leadership committee (general management, finance, operations and IT), each on their own. The differences between their answers are often more revealing than the score."
+        },
+        {
+          "question": "What do I do with the result?",
+          "answer": "Use it as a to-do list before selection. If you like, we review it with your committee and turn it into a plan with owners and dates."
+        }
+      ]
+    }
+  }
+}

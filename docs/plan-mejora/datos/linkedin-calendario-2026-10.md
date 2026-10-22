@@ -245,6 +245,7 @@ Orden sugerido: semanas 5 y 6, martes y jueves, tras publicar las semanas 1–4.
 | 5 | Jueves | C14 — MES |
 | 6 | Martes | C4 — Cuánto cuesta implementar un ERP |
 | 6 | Jueves | C5/C8 — CRM para 100+ empleados |
+| 7 | Martes | D1 — Test de preparación para un ERP |
 
 ## C13 — Software de RR. HH. y nómina para más de 100 empleados
 Slug: `software-recursos-humanos-nomina-mas-de-100-empleados`
@@ -362,3 +363,30 @@ Un CRM que no se integra con facturación y cartera obliga a conciliar a mano. Y
 Cambiar de CRM después es posible. Implica migrar datos, rehacer integraciones y reentrenar a todos.
 
 ¿Tu CRM y tu ERP hablan el mismo idioma sobre quién es el cliente?
+
+## D1 — Test de preparación para un ERP (herramienta)
+URL: `https://cyrruscs.com/herramientas/test-preparacion-erp` (primer comentario)
+
+### Post (≈170 palabras)
+
+La mayoría de los ERP que fracasan no fallan por el software.
+
+Fallan por lo que la empresa no tenía listo.
+
+Antes de comparar proveedores, hay cinco bases que conviene medir:
+
++ Procesos: ¿están documentados y tienen dueño?
++ Datos: ¿hay una fuente única y confiable?
++ Equipo: ¿quién dedica tiempo real?
++ Presupuesto: ¿está el costo total a cinco años?
++ Patrocinio: ¿quién decide en la alta dirección?
+
+Armamos un test de diez preguntas para el comité de dirección.
+
+Tres minutos. Sin registro. Resultado inmediato, con las brechas que conviene cerrar primero.
+
+Un consejo: que lo respondan varios directivos por separado.
+
+Las diferencias entre sus respuestas suelen decir más que el puntaje.
+
+¿Tu comité de dirección contestaría lo mismo sobre quién patrocina tu próximo proyecto de sistemas?

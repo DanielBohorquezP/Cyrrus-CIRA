@@ -47,13 +47,13 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 5 (2026-10-21, C13 y C14 publicados; enlaces cruzados; I1 ampliado).
+**Última sesión cerrada:** Sesión 6 (2026-10-21, D1 publicado: test de preparación para un ERP).
 
-**Próxima: Sesión 6.** Orden sugerido:
-1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v6.zip` (C8–C14; reemplaza al v5, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 11 artículos nuevos, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
-2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**. Sin ellos, el tráfico de C9–C14 llega a un sitio sin oferta de entrada concreta.
-3. **D1** (test de preparación para ERP) + **B4** (si hay herramienta de correo). Si no, **C15–C18** (satélites de CRM) o **C6**/**C7**.
-4. **I1** de C1–C3 (faltan). **C8**: cambiar el CTA a diagnóstico cuando exista B1 y enlazar C15–C18.
+**Próxima: Sesión 7.** Orden sugerido:
+1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v7.zip` (C8–C14 y D1; reemplaza al v6, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 12 artículos y páginas nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
+2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**, **B4** (con la herramienta de correo, conectar el test para enviar el informe).
+3. Sin insumos: **G1** y **G2** (contenido con volumen) o **D2** (calculadora de costo total de ERP, enlazada desde C4 y el test). Luego **D3** (plantilla de RFP).
+4. **I1** de C1–C3 (faltan).
 
 **Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
 
@@ -66,8 +66,8 @@
 | 3 ✅ | Verificar despliegue + primeras categorías caras | A1, C8, C9 |
 | 4 ✅ | Categorías de software caro | C10, C11, C12, I1 (C9–C12) |
 | 5 ✅ | RR. HH., MES y enlaces cruzados | C13, C14, I1 (C4, C5/C8, C13, C14) |
-| 6 | Indexación, medición y primera herramienta | A2, A5, D1 + B4; B1, B3, B5 si llegan insumos |
-| 7 | Contenido con volumen | G1, G2 |
+| 6 ✅ | Primera herramienta | D1 |
+| 7 | Indexación, medición y contenido/herramienta | A2, A5, G1, G2 o D2; B1, B3, B4, B5 si llegan insumos |
 | 8 | Contenido CRM | G3 |
 | 9 | Herramienta de costo | D2 (enlazada desde C4) |
 | 10 | Contenido | G4, G5 |
@@ -128,7 +128,7 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase D — Herramientas
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| D1 | Test de preparación para ERP | ⬜ | |
+| D1 | Test de preparación para ERP | ✅ | Sesión 6. `/herramientas/test-preparacion-erp`, ES/EN: 10 preguntas en 5 bases (procesos, datos, equipo, presupuesto, patrocinio), puntaje 0–30, 3 rangos, brechas con recomendaciones, sin registro. Eventos `tool_start`/`tool_complete`. Falta el informe por correo (B4) |
 | D2 | Calculadora de costo total de ERP | ⬜ | |
 | D3 | Plantilla de RFP para ERP | ⬜ | Reutilizar patrón de `scripts/build-change-template.py` |
 | D4 | Plantilla de gestión del cambio | ✅ | 2026-10-05, ES/EN, enlazada desde la guía |
@@ -183,7 +183,7 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase I — Marca personal y distribución
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| I1 | Calendario de LinkedIn por artículo | 🟡 | `docs/plan-mejora/datos/linkedin-calendario-2026-10.md`: 2 posts por artículo para C9–C12 y 1 para C4, C5/C8, C13, C14 (seis semanas). Faltan C1–C3. [Cliente] publica tras subir el v6 |
+| I1 | Calendario de LinkedIn por artículo | 🟡 | `docs/plan-mejora/datos/linkedin-calendario-2026-10.md`: 2 posts por artículo para C9–C12 y 1 para C4, C5/C8, C13, C14 y D1 (siete semanas). Faltan C1–C3. [Cliente] publica tras subir el v7 |
 | I2 | Videos cortos | ⬜ | |
 | I3 | Newsletter de LinkedIn | ⬜ | |
 | I4 | Perfiles alineados | ⬜ | |
@@ -221,7 +221,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-21-v6.zip` (C8–C14; reemplaza al v5 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-21-v7.zip` (C8–C14 y D1; reemplaza al v6 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Diagnóstico de entrada: alcance, duración, precio | 2026-10-05 | ⬜ | B1 |
 | Rangos de precio por servicio | 2026-10-05 | ⬜ | B2 |
@@ -248,6 +248,22 @@ qué llegó y lo integra (F8, J1, J3…).
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 6 — 2026-10-21 — Primera herramienta: test de preparación para un ERP (D1)
+- **Tareas trabajadas:** D1 ✅, I1 🟡 (post de la herramienta). B4 sigue bloqueada (falta elegir herramienta de correo). Producción sigue sin el v6 (artículos nuevos dan 404).
+- **Hecho:**
+  - Página nueva `/herramientas/test-preparacion-erp` (ES/EN): `src/pages/herramientas/TestPreparacionErp.tsx`, textos en `src/i18n/locales/{es,en}/herramientas.json` y `src/i18n/ns/herramientas.ts`; ruta en `PAGES` (`src/App.tsx`), `route-meta.json` y `CONTENT_SOURCE` del sitemap.
+  - Diseño para el decisor: diez preguntas en cinco bases (procesos, datos, equipo, presupuesto y caso de negocio, patrocinio), una a la vez, con "Anterior". Resultado inmediato: puntaje sobre 30, tres rangos (no / casi / listo), barras por base (brecha / en desarrollo / sólida) y las tres brechas más débiles con recomendación y enlace a C4, guía de cambio y selección de ERP. CTA a contacto con el servicio de selección precargado. Aviso de que es orientativo, no un estudio.
+  - Privacidad: no pide datos; las respuestas se calculan en el navegador. Eventos GA4 `tool_start` y `tool_complete` (con rango y puntaje) solo con consentimiento.
+  - Hidratación: el estado empieza vacío (pregunta 1) igual en el HTML estático y en el primer render; barras con `transform: scaleX`, sin `opacity` ni atajos CSS; foco al cambiar de pregunta solo tras un clic.
+  - Enlaces: tarjeta nueva en la página de servicio de ERP (la cuadrícula pasa a 4 columnas solo ahí), guía "Qué es un ERP", mejores ERP y costo de ERP, ES/EN; `llms.txt`.
+  - JSON-LD `WebApplication` + `FAQPage` + `BreadcrumbList`.
+  - LinkedIn: post de D1 y semana 7 en el calendario.
+- **Verificación:** `tsc` limpio; build de 110 rutas; recorrido completo de las 10 preguntas en ES (puntaje 15/30, 3 brechas), EN con 4 opciones y JSON-LD, móvil 375 px sin desborde; consola sin errores de hidratación (solo el `ERR_CONNECTION_REFUSED` del panel que sale en cualquier página).
+- **Commits:** ver `git log` ("Sesión 6: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v7.zip` (reemplaza al v6, eliminado).
+- **Pendiente / bloqueos nuevos:** el informe por correo depende de B4. El contenido de las preguntas y los umbrales de puntaje son criterio de Cyrrus, no están validados con datos: conviene revisarlos con Jackson y ajustarlos con las primeras respuestas (GA4 cuando exista A4).
+- **Próxima sesión:** Sesión 7 (ver arriba).
 
 ### Sesión 5 — 2026-10-21 — RR. HH. y MES (C13, C14), enlaces cruzados y LinkedIn
 - **Tareas trabajadas:** C13 ✅, C14 ✅, I1 🟡 (ampliado). Producción sigue sin el v5 (artículos de C9–C12 dan 404), así que A2/A5 siguen esperando.

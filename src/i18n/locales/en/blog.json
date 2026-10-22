@@ -651,7 +651,7 @@
         },
         {
           "type": "p",
-          "text": "The most common mistake is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP. If your bottleneck is the warehouse, also see what a WMS is and when you need one.", "links": [{"text": "best ERP for midsize companies", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "how much it costs to implement an ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "what a WMS is", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}]
+          "text": "The most common mistake is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP. If your bottleneck is the warehouse, also see what a WMS is and when you need one. Before comparing vendors, check whether your company is ready with the ERP readiness test.", "links": [{"text": "best ERP for midsize companies", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "how much it costs to implement an ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "what a WMS is", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "ERP readiness test", "href": "/herramientas/test-preparacion-erp"}]
         },
         {
           "type": "p",
@@ -1752,7 +1752,7 @@
         },
         {
           "type": "p",
-          "text": "At Cyrrus we run ERP selection independently: we gather your requirements, build the evaluation matrix, guide the demos and support you through contracting. That's how we worked with 3 Castillos, which went from strategic planning to its ERP go-live in eight months of implementation. If you run SAP ECC, also see the official S/4HANA migration timeline.",
+          "text": "At Cyrrus we run ERP selection independently: we gather your requirements, build the evaluation matrix, guide the demos and support you through contracting. That's how we worked with 3 Castillos, which went from strategic planning to its ERP go-live in eight months of implementation. If you run SAP ECC, also see the official S/4HANA migration timeline. Before you start, the ERP readiness test shows which foundations to close first.",
           "links": [
             {
               "text": "ERP selection",
@@ -1761,6 +1761,10 @@
             {
               "text": "official S/4HANA migration timeline",
               "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
+            },
+            {
+              "text": "ERP readiness test",
+              "href": "/herramientas/test-preparacion-erp"
             }
           ]
         },
@@ -2337,7 +2341,7 @@
         },
         {
           "type": "p",
-          "text": "At Cyrrus we build the business case and the total cost of each alternative before you sign. Our ERP selection is independent and takes no vendor commissions, so the figure we give you isn't inflated or dressed up. If you're already evaluating SAP Business One or must migrate from SAP ECC, see how much SAP Business One costs and the S/4HANA migration dates.",
+          "text": "At Cyrrus we build the business case and the total cost of each alternative before you sign. Our ERP selection is independent and takes no vendor commissions, so the figure we give you isn't inflated or dressed up. If you're already evaluating SAP Business One or must migrate from SAP ECC, see how much SAP Business One costs and the S/4HANA migration dates. Before you start, the ERP readiness test shows which foundations to close first.",
           "links": [
             {
               "text": "ERP selection",
@@ -2350,6 +2354,10 @@
             {
               "text": "S/4HANA migration",
               "href": "/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas"
+            },
+            {
+              "text": "ERP readiness test",
+              "href": "/herramientas/test-preparacion-erp"
             }
           ]
         },
