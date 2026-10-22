@@ -22,7 +22,7 @@
       "title": "Identify the best solution",
       "service": "Select",
       "ctaText": "See Solution Selection in detail",
-      "problem": "Technology gets bought because it's trending, not because it truly fits the business. Our ERP and enterprise software selection consulting always starts from the business's actual requirements, not the vendor's catalog.",
+      "problem": "Technology can get bought because it's trending, not because it truly fits the business. Our ERP and enterprise software selection consulting always starts from the business's actual requirements, not the vendor's catalog.",
       "how": "100% vendor-agnostic technology evaluation, with objective, comparable criteria and no commercial bias toward any brand.",
       "outcome": "The right solution for your organization, selected in weeks instead of months, with the risk of a bad technology decision minimized."
     },
@@ -50,7 +50,7 @@
   "socialProof": {
     "eyebrow": "CIRA Method",
     "title": "How we work",
-    "description": "Most of these projects don't fail because of the technology. They fail because of the bias of whoever sold it. That's why we define the business requirements first and only then compare vendors, with objective, measurable criteria — the same team accompanies all four phases of the cycle, with AI accelerating every stretch.",
+    "description": "In Panorama Consulting's 2026 report, among ERP projects that went over budget, the most common reason was an unexpected need for additional technology. That's why we define the business requirements first and only then compare vendors, with objective, measurable criteria — the same team accompanies all four phases of the cycle, with AI accelerating every stretch.",
     "ctaLabel": "Schedule a call",
     "stats": [
       {
@@ -79,7 +79,7 @@
       },
       {
         "question": "Can we hire a single phase of the CIRA method?",
-        "answer": "Each phase — Strategy, Select, Project Management, and Change Management — is hired independently. Most of our clients start with a single phase and expand scope once they see results."
+        "answer": "Each phase — Strategy, Select, Project Management, and Change Management — is hired independently. A client can start with a single phase and expand scope once they see results."
       },
       {
         "question": "Can you review a vendor decision we already made?",

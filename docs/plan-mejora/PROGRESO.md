@@ -50,8 +50,8 @@
 **Última sesión cerrada:** Sesión 8 (2026-10-21, D2 publicado: calculadora de costo total de un ERP).
 
 **Próxima: Sesión 9.** Orden sugerido:
-0. **Auditoría de verificabilidad de todo el contenido anterior a la Sesión 1 y de las páginas de servicio** (regla en `CLAUDE.md`). Cada cifra y afirmación: fuente abierta y citada, o se quita.
-1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-21-v10.zip` (C8–C14, D1, D2 y B1; reemplaza al v9, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
+0. ~~Auditoría de verificabilidad completa~~ ✅ hecha (ver `AUDITORIA-VERIFICABILIDAD.md`). Pendiente de la sección 5 de ese archivo: respaldo documental de los datos propios y autorizaciones J2.
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-21-v11.zip` (C8–C14, D1, D2 y B1; reemplaza al v9, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
 2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
 3. Sin insumos: **D3** (plantilla de RFP en Excel, patrón de `scripts/build-change-template.py`; "rfp software" MX 40) o contenido **G1/G2**. Luego **C15–C18**, **C6/C7**.
 4. **I1** de C1–C3 (faltan).
@@ -223,7 +223,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-21-v10.zip` (C8–C14, D1, D2 y B1; reemplaza al v8 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-21-v11.zip` (C8–C14, D1, D2 y B1; reemplaza al v8 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
@@ -250,6 +250,14 @@ qué llegó y lo integra (F8, J1, J3…).
 
 ## Bitácora de sesiones
 
+### Sesión 8c — 2026-10-21 — Auditoría completa de verificabilidad
+- **Alcance:** los 19 artículos, todas las páginas de servicio, inicio, métodos, casos, herramientas, `llms.txt`, datos estructurados y descripciones (ES y EN). Registro completo y con fuentes en [`AUDITORIA-VERIFICABILIDAD.md`](./AUDITORIA-VERIFICABILIDAD.md).
+- **Verificado en fuente abierta:** BCG (70%), Prosci (88% vs 13%, unas 7 veces), Panorama 2026 (más de una cuarta parte sobre presupuesto), HBR/Zook y Allen (1.854 empresas, 7 de 8, 90%), SAP (fechas de ECC, licencias de Business One), Microsoft (precios de Business Central, bodega), TechTarget, ISA, Infor; PMI 11,4%, Air Canada, Samsung e ISO 42001 por confirmación de terceros (las páginas dieron 403).
+- **Corregido:** HBR atribuía el estudio a Kaplan y Norton y decía "más del 90%": es de Zook y Allen y dice 90%. Se quitaron/suavizaron en ES y EN decenas de afirmaciones sin fuente ("la mayoría de las iniciativas de IA fallan…", "casi nunca falla por el software", "el sesgo de quien la vendió", "garantizamos…", "alineación perfecta", "casi toda empresa que nos llama", "mandos medios boicotean…"). "Resultados verificables" pasó a "Resultados de un proyecto de Cyrrus". Inicio ahora cita a BCG; Método CIRA cita a Panorama; el plazo de SEO usa lo que Google sí dice. Fuente Samsung: CNBC (403) → Bloomberg. Retirada la frase de ISO 55001 que no se pudo abrir.
+- **Queda como dato del cliente (sin respaldo comprobable desde fuera):** 15+ países, 2017, trayectoria de Jackson, cifras de casos, 6 a 12 semanas, "sin comisiones", etc. Lista en la sección 2 del archivo de auditoría.
+- **Verificación:** `tsc` limpio; build de 114 rutas; páginas tocadas cargan sin errores de hidratación.
+- **Zip:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v11.zip` (reemplaza al v10, eliminado).
+
 ### Sesión 8b — 2026-10-21 — Auditoría de verificabilidad (regla del cliente: nada inventado)
 - **Disparador:** el cliente preguntó si la calculadora era real y exigió que todo lo publicado sea 100% verificable. Regla guardada en `CLAUDE.md` ("Contenido: nada inventado, todo verificable") y en la memoria.
 - **Calculadora D2:** sin valores iniciales. Campos vacíos; el único ejemplo carga un precio publicado (Business Central Essentials, US$80 por usuario al mes, pago anual, verificado en la página de Microsoft el 2026-10-21) y 25 usuarios. Se añadió un dato verificable del informe The 2026 ERP Report de Panorama Consulting (170 organizaciones, ene 2025–ene 2026): más de una cuarta parte superó su presupuesto; la causa más común fue la necesidad inesperada de tecnología adicional (PDF leído directamente).
@@ -257,8 +265,8 @@ qué llegó y lo integra (F8, J1, J3…).
 - **Texto corregido en ES/EN:** quitadas generalizaciones sin fuente ("la licencia suele ser la partida más visible pero no la más grande", "los costos que más desvían el presupuesto", "casi nadie presupuesta", "la mayoría de los ERP que fracasan…", "más evaluados", "la elección suele decidirse por la simpatía", entre otras) en 9 artículos, el test D1, la calculadora, `/diagnostico`, la página de servicio de CRM y el calendario de LinkedIn. C4 ahora cita a Panorama.
 - **C10 (SAP Business One):** verificado en documentos oficiales de SAP: tipos de usuario (Professional, Limited CRM/Financials/Logistics, Starter), Starter máximo 5 usuarios en la edición en la nube (Cloud Supplement), la app móvil está incluida en la licencia (guía 10.0). Retirado "excluye funciones avanzadas" (no verificado). La página de producto de SAP y la de ISO dieron 403: lo que dependía de ellas se redactó solo con lo que sí se leyó.
 - **Sigue sin verificarse (y por qué):** ISO 55001 "aplica a todo tipo y tamaño de organización" (la página de ISO dio 403; la frase vino de un resumen de búsqueda); "6 a 12 semanas" de la fase de selección y la declaración "Cyrrus no recibe comisiones" (datos de Cyrrus, los aporta el cliente); el reparto 15/30/15 y el resto de supuestos de `/diagnostico` (a confirmar con el cliente); preguntas y rangos de puntaje del test D1 (criterio de Cyrrus, rotulado como orientativo).
-- **Pendiente:** no se re-auditaron los artículos anteriores a la Sesión 1 (guía de ERP, PMO, planeación estratégica, gestión del cambio, gobierno de IA, consultora estratégica) ni las páginas de servicio. Hacer una auditoría completa en la Sesión 9.
-- **Zip:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v10.zip` (reemplaza al v9, eliminado).
+- **Pendiente:** la auditoría de lo anterior a la Sesión 1 se hizo en la Sesión 8c (abajo).
+- **Zip:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v11.zip` (reemplaza al v9, eliminado).
 
 ### Sesión 8 — 2026-10-21 — Segunda herramienta: calculadora de costo total de un ERP (D2)
 - **Tareas trabajadas:** D2 ✅, I1 🟡 (post de D2). Producción sigue sin el v8.
@@ -270,7 +278,7 @@ qué llegó y lo integra (F8, J1, J3…).
   - Post de LinkedIn de D2 (semana 7).
 - **Verificación:** `tsc` limpio; build de 114 rutas; cuatro escenarios calculados a mano y comparados con la pantalla (25 usuarios 215.040; 100 usuarios 690.960; perpetuo 1.139.400; 3 años 1.013.400; campo vacío 50.400), todos coinciden; EN con comas; móvil 375 px sin desborde; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 8: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v10.zip` (reemplaza al v8, eliminado).
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v11.zip` (reemplaza al v8, eliminado).
 - **Pendiente / bloqueos nuevos:** ninguno nuevo. Los porcentajes de ejemplo (implementación 100%, integraciones 25%, capacitación 15%, contingencia 15%, mantenimiento 20%) son criterio de Cyrrus sin fuente: conviene validarlos con Jackson. Solo calcula costo, no beneficios.
 - **Próxima sesión:** Sesión 9 (ver arriba).
 

@@ -4,11 +4,11 @@
       "title": "Why Digital Transformation Projects Fail",
       "label": "Digital Transformation",
       "excerpt": "Organizations don't fail for lack of technology or budget. They fail when no one connects the decision to the people who have to execute it. Seven recurring mistakes — and how to avoid them.",
-      "metaDescription": "Why digital transformation projects fail: the 7 most common mistakes, from starting with technology to leaving change management for last.",
+      "metaDescription": "Why digital transformation projects fail: the seven mistakes the author identifies, from starting with technology to leaving change management for last.",
       "intro": "There's a question that, in my opinion, should be asked long before a budget is approved, a platform is selected, or a contract is signed: have we already thought about change management?",
       "keyTakeaways": [
-        "Transformation projects rarely fail because of technology: they fail when no one connects the decision to the people who must execute it.",
-        "The seven most common mistakes run from starting with the tool to treating the transformation as finished when the project closes.",
+        "In the author's experience, transformation projects fail when no one connects the decision to the people who must execute it.",
+        "The seven mistakes the author identifies run from starting with the tool to treating the transformation as finished when the project closes.",
         "Change management starts before the solution is chosen, and the CEO has to lead it by example."
       ],
       "serviceCtas": [
@@ -24,7 +24,7 @@
         },
         {
           "title": "Adoption doesn't end when the project does",
-          "description": "We stay through the stage almost no one budgets for — the one that decides whether the change sticks or the organization slides back to how it was.",
+          "description": "We stay through a stage worth budgeting for — the one that decides whether the change sticks or the organization slides back to how it was.",
           "checklist": [
             "Real adoption measurement, not just training attendance",
             "Adjustments during the first months of use, not just at go-live"
@@ -168,7 +168,7 @@
         { "type": "p", "text": "That's why, when a company decides to hire a strategic consulting firm, in my opinion it shouldn't only ask what experience the firm has, which clients it has served, or how much it costs. It should ask something more important: will this firm actually help us see what we aren't seeing?" },
         { "type": "p", "text": "Throughout my career I've been on both sides of this conversation. As a technology executive, I was on the receiving end of a strategic consulting engagement, and today, from Cyrrus, it's my job to guide executive teams through decisions that can have a major impact on their organizations. That experience has left me with a few conclusions." },
         { "type": "h2", "text": "The mistake of choosing by brand and price" },
-        { "type": "p", "text": "One of the most common mistakes is turning the selection of a consulting firm into a comparison of proposals." },
+        { "type": "p", "text": "One possible mistake is turning the selection of a consulting firm into a comparison of proposals." },
         { "type": "p", "text": "Who has the most recognized brand. Who charges the least. Who submitted the biggest document. Who included more pages, more methodologies, more charts, or more specialists." },
         { "type": "p", "text": "But a strategic consulting engagement shouldn't be won by the size of its document. In fact, an overly long proposal can hide a question that still hasn't been answered: did they actually understand my problem?" },
         { "type": "p", "text": "I've seen organizations make important decisions based on a firm's reputation or on a technically flawless proposal, without stopping long enough to evaluate whether that firm truly understands their business, their environment, and their constraints. That's where a fundamental difference begins." },
@@ -273,7 +273,7 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "There's a conversation that's starting to come up more and more often in boardrooms. Which model should we use? Which agents can we deploy? How much can we automate? How much can we save? What is the competition doing?" },
+        { "type": "p", "text": "There's a conversation that can come up in boardrooms. Which model should we use? Which agents can we deploy? How much can we automate? How much can we save? What is the competition doing?" },
         { "type": "p", "text": "These are legitimate questions. But I think we're starting from the wrong place." },
         { "type": "p", "text": "Before asking ourselves which artificial intelligence we're going to adopt, we should ask something far more important: are we ready to govern it?" },
         { "type": "p", "text": "Artificial intelligence is no longer purely a technology conversation. It's entering commercial, financial, operational, legal, and HR processes — it's helping analyze information, generate content, recommend decisions and, increasingly, execute certain activities. And when a technology starts taking part in decisions that affect the business, customers, employees, or the organization's information, the conversation necessarily changes. It's no longer enough to ask what AI can do. We have to decide what we allow it to do, under what conditions, and who is accountable when something goes wrong." },
@@ -304,7 +304,7 @@
         { "type": "p", "text": "Lower risk means more room to experiment quickly; higher impact and autonomy call for greater controls, traceability, and accountability." },
         { "type": "p", "text": "The organization needs to find that balance. Controlling too much can hold back innovation; controlling too little can lead to innovating without understanding the consequences and with little relevance to the business." },
         { "type": "h2", "text": "AI Governance can't be IT's responsibility alone" },
-        { "type": "p", "text": "Another common mistake is thinking that, because artificial intelligence relies on technology, its governance should sit exclusively with the CIO or the technology area. I don't see it that way." },
+        { "type": "p", "text": "Another mistake is thinking that, because artificial intelligence relies on technology, its governance should sit exclusively with the CIO or the technology area. I don't see it that way." },
         { "type": "p", "text": "AI Governance needs to sit close to strategy, and therefore close to the CEO. IT plays a fundamental role, but so do Security, Internal Control, Legal, Innovation, and Human Talent." },
         { "type": "p", "text": "The business has to define what value it's after. Technology has to make sure the architecture and systems can support it. Security has to assess information and access risks. Legal has to help understand the regulatory, contractual, and intellectual-property implications. Innovation has to help connect what the technology can do with the strategy. And Human Talent carries an enormous responsibility for adoption, capability-building, training, and change management.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "The conversation, then, shouldn't be about who owns the AI. It should be about who is accountable for the decisions the organization is starting to delegate to it." },
@@ -332,7 +332,7 @@
         { "type": "h2", "text": "A mature organization knows where to set limits" },
         { "type": "p", "text": "In one of the projects I've been developing around the concept of AI governance, there's an idea I find especially powerful: before adopting artificial intelligence, we should sit down and define our limits." },
         { "type": "p", "text": "What are we going to delegate? What are we going to supervise? What will we never delegate? Who is accountable? What data can the AI use? What decisions can it execute? What happens when it makes a mistake? What principles are we not willing to negotiate, even if an AI promises to make things faster or cheaper?" },
-        { "type": "p", "text": "This may sound simple, but it forces a conversation many organizations still aren't having." },
+        { "type": "p", "text": "This may sound simple, but it forces a conversation worth having." },
         { "type": "p", "text": "A mature organization isn't necessarily the one that automates the most — it's the one that knows what it should automate, what it should keep under human control, and why." },
         { "type": "p", "text": "That judgment becomes even more important as autonomy increases. First AI recommends, then it automates, then it executes, and at some point someone may ask why it still needs human authorization at all." },
         { "type": "p", "text": "The line between autonomy and responsibility shouldn't move simply because the technology proved it can do something." },
@@ -365,8 +365,8 @@
           "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/525448/1/document.do"
         },
         {
-          "label": "CNBC (2023). Samsung bans use of AI like ChatGPT for staff after misuse",
-          "url": "https://www.cnbc.com/2023/05/02/samsung-bans-use-of-ai-like-chatgpt-for-staff-after-misuse-of-chatbot.html"
+          "label": "Bloomberg (2023). Samsung Bans Staff's AI Use After Spotting ChatGPT Data Leak",
+          "url": "https://www.bloomberg.com/news/articles/2023-05-02/samsung-bans-chatgpt-and-other-generative-ai-use-by-staff-after-leak"
         },
         {
           "label": "NIST (2023). AI Risk Management Framework (AI RMF 1.0)",
@@ -412,35 +412,35 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Almost every technology project starts with optimism. There's an approved budget, a selected vendor, a schedule that fits on one slide, and a team eager to get going." },
-        { "type": "p", "text": "A few months later, the conversation is usually different: the schedule has slipped, the budget no longer covers it, the vendor says the delay is the client's, and the client says it's the vendor's. And when someone asks who is accountable for the outcome, the answer isn't clear." },
+        { "type": "p", "text": "Picture a technology project that starts with optimism. There's an approved budget, a selected vendor, a schedule that fits on one slide, and a team eager to get going." },
+        { "type": "p", "text": "A few months later, the conversation can be different: the schedule has slipped, the budget no longer covers it, the vendor says the delay is the client's, and the client says it's the vendor's. And when someone asks who is accountable for the outcome, the answer isn't clear." },
         { "type": "p", "text": "In my experience, that question is what determines whether a project needs different project management than the one it has. It's not about how many tracking tools are in use, but about who holds real accountability for the project delivering what it promised." },
         { "type": "h2", "text": "What is project management?" },
         { "type": "p", "text": "Project management is the planning, direction, control, and execution of an initiative so it meets the agreed time, cost, scope, and quality. It's a discipline with recognized frameworks, such as the PMBOK guide, and a very concrete goal: turning a business decision into a delivered result." },
         { "type": "p", "text": "People often use project management and project administration interchangeably. In practice they overlap. If there's a nuance, it's that management puts the emphasis on direction and accountability for the outcome, not just on administering tasks." },
         { "type": "p", "text": "That difference matters. A project can have a flawless schedule, weekly meetings, and well-designed reports, and still have no one making the hard calls when something drifts." },
         { "type": "h2", "text": "Five signs your project needs external project management" },
-        { "type": "p", "text": "The cost of poor project management is measurable: according to PMI's 2020 Pulse of the Profession report, organizations waste an average of 11.4% of their project investment due to poor performance. Not every project needs an external PMO. But there are signs that repeat in the ones that do." },
+        { "type": "p", "text": "The cost of poor project management is measurable: according to PMI's 2020 Pulse of the Profession report, organizations waste an average of 11.4% of their project investment due to poor performance. Not every project needs an external PMO. These are signs we check to see whether yours does." },
         { "type": "p", "text": "First: no one is accountable for the whole outcome. The vendor answers for its part, each area answers for its own, and the project as a whole has no owner." },
         { "type": "p", "text": "Second: the reports say everything is fine until, suddenly, everything is wrong. When the status goes from green to red without passing through yellow, the problem isn't the project, it's how it's being measured." },
         { "type": "p", "text": "Third: the vendor is managing itself. It's natural for an implementer to defend its scope, timelines, and costs. What isn't healthy is for it to also be the one deciding whether it's doing a good job." },
         { "type": "p", "text": "Fourth: the internal team is doing two jobs. The project's key people still answer for day-to-day operations, and the project ends up getting whatever time is left over." },
-        { "type": "p", "text": "Fifth: it's the first time the organization has run a project this size. An ERP implementation, a cloud migration, or an artificial intelligence initiative doesn't look like the projects the company runs every year, and a first project's mistakes tend to be the most expensive." },
+        { "type": "p", "text": "Fifth: it's the first time the organization has run a project this size. An ERP implementation, a cloud migration, or an artificial intelligence initiative doesn't look like the projects the company runs every year, and a first project's mistakes can be expensive." },
         { "type": "h2", "text": "Internal PMO, external PMO, or PMO as a Service" },
         { "type": "p", "text": "A PMO, or project management office, is the structure that defines how an organization's projects are governed: methodology, roles, committees, metrics, and tools." },
         { "type": "p", "text": "An internal PMO makes sense when the company runs projects continuously and has the volume to sustain a dedicated team. Building one takes time, and keeping it carries a fixed cost." },
-        { "type": "p", "text": "An external PMO, or PMO as a Service, is a team that takes on the governance of a specific project with accountability for the outcome, and is stood down when the project ends. It's the most common option for large initiatives that don't repeat every year, such as an ERP implementation." },
+        { "type": "p", "text": "An external PMO, or PMO as a Service, is a team that takes on the governance of a specific project with accountability for the outcome, and is stood down when the project ends. It's an option for large initiatives that don't repeat every year, such as an ERP implementation." },
         { "type": "quote", "text": "The question isn't whether your company needs a PMO. It's who will be accountable for the outcome of this particular project." },
         { "type": "h2", "text": "What serious project management should deliver" },
         { "type": "p", "text": "A full plan before starting: scope, schedule, resources, roles, costs, risks, and a quality plan, approved by a steering committee that understands what it's approving." },
-        { "type": "p", "text": "Clear governance: who decides what, at which level, and with what information. A project without decision rules ends up resolving its problems by attrition." },
+        { "type": "p", "text": "Clear governance: who decides what, at which level, and with what information. A project without decision rules can end up resolving its problems by attrition." },
         { "type": "p", "text": "Continuous risk monitoring, not just a report at the end of each phase. Today it's possible to monitor project risk permanently, even with artificial intelligence agents that flag deviations before they become crises." },
         { "type": "p", "text": "Scope control that protects the budget. On a project we managed under PMBOK guidelines, closeout came in with only a 3% variance from estimated cost and just two customizations to the ERP code. That's not luck: it's the result of saying no in time." },
         { "type": "p", "text": "A formal, documented closeout that leaves the organization with the implementation model for its next projects." },
-        { "type": "h2", "text": "The most common mistake: managing the schedule, not the adoption" },
+        { "type": "h2", "text": "A risk: managing the schedule, not the adoption" },
         { "type": "p", "text": "A project can finish on time, on budget, and with its full scope delivered, and still fail. It happens when the system gets installed but the organization keeps working the way it did before." },
         { "type": "p", "text": "That's why I believe project management that doesn't include change management is measuring the wrong kind of success. Change management services have to start the same day as the project, not show up as a closing activity.", "links": [{"text": "Change management services", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "I wrote about this in detail in why digital transformation projects fail: most don't fail because of the technology, but because of how people receive it.", "links": [{"text": "why digital transformation projects fail", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
+        { "type": "p", "text": "I wrote about this in detail in why digital transformation projects fail: in my experience, the decisive factor is how people receive the technology.", "links": [{"text": "why digital transformation projects fail", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
         { "type": "h2", "text": "Before the project: the right decision" },
         { "type": "p", "text": "Some projects no amount of management can save, because the problem isn't in execution but in the decision that started them: a vague objective, a business case nobody built, or a technology chosen before the problem was understood." },
         { "type": "p", "text": "That's why, on the highest-impact projects, it's worth starting with strategy consulting that defines what needs to be solved, in what order, and with which indicators. Project management executes better when it knows exactly what it's executing.", "links": [{"text": "strategy consulting", "href": "/metodo-cira/estrategia"}] },
@@ -470,7 +470,7 @@
       "keyTakeaways": [
         "An ERP is a system that brings a company's finance, purchasing, inventory, sales and production onto a single platform.",
         "It is chosen on seven criteria: functional and technical fit, total cost of ownership, vendor soundness, implementation capacity, adoption and local coverage.",
-        "Implementations almost never fail because of the software, but because of unclear requirements, poorly migrated data and no change management."
+        "An ERP project depends on the software and also on clear requirements, well-executed data migration and change management."
       ],
       "serviceCtas": [
         {
@@ -497,11 +497,11 @@
       "body": [
         {
           "type": "p",
-          "text": "Today almost every mid-sized company has a similar problem: its information is scattered. Finance keeps its numbers in one system, purchasing in another, inventory in a spreadsheet and production in a fourth tool. Every area has its own version of the truth, and pulling the numbers together for a decision takes days."
+          "text": "Picture a company where information is scattered. Finance keeps its numbers in one system, purchasing in another, inventory in a spreadsheet and production in a fourth tool. Every area has its own version of the truth, and pulling the numbers together for a decision takes days."
         },
         {
           "type": "p",
-          "text": "An ERP is the most common answer to that problem. But it is also one of the most expensive and hardest-to-reverse technology decisions a company makes. This guide explains what an ERP is, what it is for, which modules it includes and how to choose the right one without getting it wrong."
+          "text": "An ERP is one possible answer to that problem, and it can be an expensive technology decision that is hard to reverse. This guide explains what an ERP is, what it is for, which modules it includes and how to choose the right one without getting it wrong."
         },
         {
           "type": "h2",
@@ -545,7 +545,7 @@
         },
         {
           "type": "p",
-          "text": "An ERP usually includes finance and accounting, purchasing, inventory and logistics, sales and invoicing, production and, in some cases, human resources and payroll. Each vendor groups them differently, but these are the most common."
+          "text": "An ERP usually includes finance and accounting, purchasing, inventory and logistics, sales and invoicing, production and, in some cases, human resources and payroll. Each vendor groups them differently; these are some of the modules."
         },
         {
           "type": "p",
@@ -573,7 +573,7 @@
         },
         {
           "type": "p",
-          "text": "No ERP is the best at every module. That is why it is common for a company to use the ERP for its financial and operational core and connect it to specialized systems for CRM, people management or asset maintenance.",
+          "text": "An ERP doesn't have to cover every module with the same depth. A company can use the ERP for its financial and operational core and connect it to specialized systems for CRM, people management or asset maintenance.",
           "links": [
             {
               "text": "CRM",
@@ -599,7 +599,7 @@
         },
         {
           "type": "p",
-          "text": "Spreadsheets work while the company is small. They stop working when several people need to edit the same data, when errors start costing money or when nobody trusts the numbers. That is usually the sign that it is time for an ERP."
+          "text": "Spreadsheets work while the company is small. They stop working when several people need to edit the same data, when errors start costing money or when nobody trusts the numbers. That can be a sign that it is time for an ERP."
         },
         {
           "type": "h2",
@@ -607,7 +607,7 @@
         },
         {
           "type": "p",
-          "text": "There is no rule by size, but some signs repeat."
+          "text": "There is no rule by size; these are signs we look for:"
         },
         {
           "type": "p",
@@ -651,7 +651,7 @@
         },
         {
           "type": "p",
-          "text": "The most common mistake is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP. If your bottleneck is the warehouse, also see what a WMS is and when you need one. Before comparing vendors, check whether your company is ready with the ERP readiness test.", "links": [{"text": "best ERP for midsize companies", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "how much it costs to implement an ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "what a WMS is", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "ERP readiness test", "href": "/herramientas/test-preparacion-erp"}]
+          "text": "One risk is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP. If your bottleneck is the warehouse, also see what a WMS is and when you need one. Before comparing vendors, check whether your company is ready with the ERP readiness test.", "links": [{"text": "best ERP for midsize companies", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "how much it costs to implement an ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "what a WMS is", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "ERP readiness test", "href": "/herramientas/test-preparacion-erp"}]
         },
         {
           "type": "p",
@@ -687,7 +687,7 @@
         },
         {
           "type": "p",
-          "text": "Every company adapts it, but an orderly process usually follows these steps: define the problem and the business goals; gather and prioritize requirements with the areas; build a list of market options; send a request for proposal (RFP) with the same criteria to every vendor; evaluate proposals and demos with a weighted matrix; check references; and negotiate and contract."
+          "text": "Every company adapts it, but an orderly process can follow these steps: define the problem and the business goals; gather and prioritize requirements with the areas; build a list of market options; send a request for proposal (RFP) with the same criteria to every vendor; evaluate proposals and demos with a weighted matrix; check references; and negotiate and contract."
         },
         {
           "type": "p",
@@ -707,15 +707,15 @@
         },
         {
           "type": "p",
-          "text": "A useful warning: the license is usually only part of the investment. Implementation, migration and adoption weigh heavily on the total, which is why it is worth comparing total cost and not just list price."
+          "text": "A useful warning: beyond the license you must budget for implementation, migration and adoption, which is why it is worth comparing total cost and not just list price."
         },
         {
           "type": "h2",
-          "text": "Why ERP implementations fail"
+          "text": "What puts an ERP implementation at risk"
         },
         {
           "type": "p",
-          "text": "It almost never fails because of the software. The most common causes are choosing without clear requirements, underestimating data migration, customizing too much, not having a project owner with authority and not working on people's adoption. Prosci's research confirms it: projects with excellent change management are about seven times more likely to meet their objectives."
+          "text": "Risks worth managing: choosing without clear requirements, not budgeting for data migration, customizing too much, not having a project owner with authority and not working on people's adoption. Prosci's research shows that 88% of projects with excellent change management met their objectives, versus 13% of those with poor change management (about seven times more likely)."
         },
         {
           "type": "p",
@@ -733,7 +733,7 @@
         },
         {
           "type": "h2",
-          "text": "Common mistakes when choosing an ERP"
+          "text": "Risks when choosing an ERP"
         },
         {
           "type": "p",
@@ -831,7 +831,7 @@
       "body": [
         {
           "type": "p",
-          "text": "Almost every mid-sized company reaches the same point: it has several projects running at once, each managed by a different person with their own way of working, and nobody in leadership can say for certain how many are going well, how many are going badly and which ones should be stopped."
+          "text": "Your company may be at this point: it has several projects running at once, each managed by a different person with their own way of working, and nobody in leadership can say for certain how many are going well, how many are going badly and which ones should be stopped."
         },
         {
           "type": "p",
@@ -919,7 +919,7 @@
         },
         {
           "type": "p",
-          "text": "Supportive PMO: offers templates, good practices, training and access to information. Its control is low and it works as a consulting hub. It is the usual starting point in organizations with low maturity."
+          "text": "Supportive PMO: offers templates, good practices, training and access to information. Its control is low and it works as a consulting hub. It can be the starting point in organizations with low maturity."
         },
         {
           "type": "p",
@@ -973,7 +973,7 @@
         },
         {
           "type": "p",
-          "text": "There is no rule by size, but some signs repeat."
+          "text": "There is no rule by size; these are signs we look for:"
         },
         {
           "type": "p",
@@ -1005,11 +1005,11 @@
         },
         {
           "type": "p",
-          "text": "Every company adapts it, but an orderly setup usually follows these steps: diagnose how projects are managed today; define the scope and the type of PMO that fits; secure a sponsor from leadership; establish a minimal methodology and simple templates; set the indicators that will be reported; start with a pilot project; and adjust from what was learned before expanding."
+          "text": "Every company adapts it, but an orderly setup can follow these steps: diagnose how projects are managed today; define the scope and the type of PMO that fits; secure a sponsor from leadership; establish a minimal methodology and simple templates; set the indicators that will be reported; start with a pilot project; and adjust from what was learned before expanding."
         },
         {
           "type": "p",
-          "text": "The useful rule is to start small. A PMO that is born with a hundred procedures before it has helped a single project usually turns into bureaucracy."
+          "text": "The useful rule is to start small. A PMO that is born with a hundred procedures before it has helped a single project can turn into bureaucracy."
         },
         {
           "type": "h2",
@@ -1017,11 +1017,11 @@
         },
         {
           "type": "p",
-          "text": "A PMO is measured by the results of the projects it supports, not by the number of documents it produces. Common indicators include schedule compliance, budget variance, the share of projects delivered with the agreed scope, sponsor satisfaction and how far users adopt what was delivered."
+          "text": "A PMO is measured by the results of the projects it supports, not by the number of documents it produces. Possible indicators include schedule compliance, budget variance, the share of projects delivered with the agreed scope, sponsor satisfaction and how far users adopt what was delivered."
         },
         {
           "type": "h2",
-          "text": "Common mistakes when creating a PMO"
+          "text": "Mistakes to avoid when creating a PMO"
         },
         {
           "type": "p",
@@ -1092,13 +1092,13 @@
     "planeacion-estrategica-que-es-etapas-y-ejemplo": {
       "title": "Strategic planning: what it is, stages and an example",
       "label": "Strategy",
-      "excerpt": "Strategic planning defines where a company is going and how it will get there. What it is, what it is for, its seven stages, the most widely used tools and an illustrative example.",
+      "excerpt": "Strategic planning defines where a company is going and how it will get there. What it is, what it is for, its seven stages, well-known tools and an illustrative example.",
       "metaDescription": "What strategic planning is, what it is for, its stages and tools (SWOT, OKR, Balanced Scorecard) and a step-by-step illustrative example.",
       "intro": "If your company already had a strategic plan that ended up filed away, the problem was probably not the document, but how the planning was done and how it was executed.",
       "keyTakeaways": [
         "Strategic planning is the process by which leadership defines where the company is going, what it will and won't do, and how it will measure progress.",
         "It follows seven stages: diagnosis, direction-setting, objectives, strategies and initiatives, indicators, action plan and follow-up.",
-        "Most strategies aren't lost in the document but in the execution."
+        "A study cited by Kaplan and Norton found that seven of eight large companies failed to achieve profitable growth even though 90% had detailed strategic plans."
       ],
       "serviceCtas": [
         {
@@ -1125,11 +1125,11 @@
       "body": [
         {
           "type": "p",
-          "text": "Almost every company builds a strategic plan at some point. Leadership meets, goals are discussed, a document is written and presented with enthusiasm. Six months later the document is in a folder and the company keeps deciding the way it always has."
+          "text": "Picture this: leadership meets, goals are discussed, a document is written and presented with enthusiasm. Six months later the document is in a folder and the company keeps deciding the way it always has."
         },
         {
           "type": "p",
-          "text": "The difference between a plan that gets executed and one that gets filed away is rarely the format: it is how the planning was done. This guide explains what strategic planning is, what it is for, what its stages are, which tools are used and what it looks like in a concrete case."
+          "text": "The difference between a plan that gets executed and one that gets filed away is not only the format: it is also how the planning was done. This guide explains what strategic planning is, what it is for, what its stages are, which tools are used and what it looks like in a concrete case."
         },
         {
           "type": "h2",
@@ -1137,7 +1137,7 @@
         },
         {
           "type": "p",
-          "text": "Strategic planning is the process through which a company's leadership defines where it wants to go, what it will decide to do and what it will decide not to do, and how it will get there. It is usually set over a horizon of three to five years and is reviewed regularly, not just once."
+          "text": "Strategic planning is the process through which a company's leadership defines where it wants to go, what it will decide to do and what it will decide not to do, and how it will get there. It can be set over a horizon of three to five years and is reviewed regularly, not just once."
         },
         {
           "type": "p",
@@ -1189,7 +1189,7 @@
         },
         {
           "type": "p",
-          "text": "Every organization adapts the process, but almost all follow these seven stages."
+          "text": "Every organization adapts the process, this is a sequence of seven stages."
         },
         {
           "type": "p",
@@ -1217,11 +1217,11 @@
         },
         {
           "type": "p",
-          "text": "Seventh, execution and follow-up. Progress is reviewed in a regular committee, deviations are corrected and the plan is updated when the environment changes. This is the stage that is almost always neglected."
+          "text": "Seventh, execution and follow-up. Progress is reviewed in a regular committee, deviations are corrected and the plan is updated when the environment changes. This is a stage worth not neglecting."
         },
         {
           "type": "h2",
-          "text": "The most widely used strategic planning tools"
+          "text": "Well-known strategic planning tools"
         },
         {
           "type": "p",
@@ -1277,7 +1277,7 @@
         },
         {
           "type": "h2",
-          "text": "Common mistakes in strategic planning"
+          "text": "Mistakes to avoid in strategic planning"
         },
         {
           "type": "p",
@@ -1297,11 +1297,11 @@
         },
         {
           "type": "p",
-          "text": "Separating strategy from technology, when almost every initiative depends on it today."
+          "text": "Separating strategy from technology, when many initiatives depend on it."
         },
         {
           "type": "p",
-          "text": "Finishing the plan and not managing its execution, which is where most strategies are lost. Kaplan and Norton documented it in Harvard Business Review: in a global sample of 1,854 large companies, seven out of eight failed to achieve profitable growth between 1988 and 1998, even though more than 90% had detailed strategic plans.",
+          "text": "Finishing the plan and not managing its execution. Kaplan and Norton cite a Zook and Allen study in Harvard Business Review: in a global sample of 1,854 large companies, seven out of eight failed to achieve profitable growth between 1988 and 1998, even though 90% had detailed strategic plans.",
           "links": [
             {
               "text": "managing its execution",
@@ -1365,7 +1365,7 @@
       "intro": "If your company already implemented a system that no one uses as expected, the problem probably wasn't the technology, but how the change was managed with people.",
       "keyTakeaways": [
         "Organizational change management prepares and supports people so they adopt and sustain a new way of working.",
-        "The most widely used models are ADKAR, Kotter's eight steps and Lewin's model; in practice they are combined.",
+        "Three well-known models are ADKAR, Kotter's eight steps and Lewin's model; in practice they are combined.",
         "A plan has eight parts: change, impact, stakeholders, readiness, communication, training, resistance and adoption measurement."
       ],
       "serviceCtas": [
@@ -1393,11 +1393,11 @@
       "body": [
         {
           "type": "p",
-          "text": "Almost every company has lived some version of this story: the project was approved, the technology was well chosen, the implementation finished on schedule and, months later, people still work the old way, with parallel spreadsheets and workarounds to avoid the new system."
+          "text": "This story may sound familiar: the project was approved, the technology was well chosen, the implementation finished on schedule and, months later, people still work the old way, with parallel spreadsheets and workarounds to avoid the new system."
         },
         {
           "type": "p",
-          "text": "That isn't a technology problem. It's a change management problem. This guide explains what organizational change management is, how it differs from organizational change, which models are most widely used and how to build a plan step by step, with a template you can download and use."
+          "text": "That isn't a technology problem. It's a change management problem. This guide explains what organizational change management is, how it differs from organizational change, which are three well-known models and how to build a plan step by step, with a template you can download and use."
         },
         {
           "type": "h2",
@@ -1433,7 +1433,7 @@
         },
         {
           "type": "h2",
-          "text": "The most widely used change management models"
+          "text": "Three well-known change management models"
         },
         {
           "type": "p",
@@ -1495,7 +1495,7 @@
         },
         {
           "type": "h2",
-          "text": "Common change management mistakes"
+          "text": "Change management mistakes to avoid"
         },
         {
           "type": "p",
@@ -1614,7 +1614,7 @@
       "body": [
         {
           "type": "p",
-          "text": "Choosing an ERP is one of the most expensive and hardest-to-reverse technology decisions a midsize company makes. And the market doesn't help: every vendor has a flawless demo and a list of happy customers."
+          "text": "Choosing an ERP can be an expensive technology decision that is hard to reverse for a midsize company. And the market doesn't help: every vendor has a flawless demo and a list of happy customers."
         },
         {
           "type": "p",
@@ -1728,7 +1728,7 @@
         },
         {
           "type": "h2",
-          "text": "Common mistakes when choosing an ERP"
+          "text": "Risks when choosing an ERP"
         },
         {
           "type": "p",
@@ -2202,7 +2202,7 @@
       "title": "How much does it cost to implement an ERP: ranges and what drives them",
       "seoTitle": "How Much Does It Cost to Implement an ERP?",
       "label": "ERP selection",
-      "excerpt": "What drives the cost of an ERP, which prices vendors publish, a sample license calculation, and the hidden costs that most often break the budget.",
+      "excerpt": "What drives the cost of an ERP, which prices vendors publish, a sample license calculation, and the hidden costs worth budgeting for.",
       "metaDescription": "How much it costs to implement an ERP: cost components, vendor-published prices, a sample calculation and hidden costs. A guide for midsize companies.",
       "intro": "If you're asking how much an ERP costs, you've probably heard answers ranging from a few thousand to hundreds of thousands of dollars. Both can be true: the cost depends on decisions worth understanding before you request proposals.",
       "keyTakeaways": [
@@ -2478,7 +2478,7 @@
         },
         {
           "type": "p",
-          "text": "Salesforce is the CRM with the most functional depth and the broadest ecosystem of apps and specialists, with plans that scale from small teams to large corporations. HubSpot stands out for ease of use and for integrating sales and marketing on the same platform, with a free plan to get started. Dynamics 365 Sales is the natural option for companies that already work in Microsoft 365, given its integration with Outlook, Teams and Excel."
+          "text": "Salesforce offers broad functional depth and an extensive ecosystem of apps and specialists, with plans that scale from small teams to large corporations. HubSpot stands out for ease of use and for integrating sales and marketing on the same platform, with a free plan to get started. Dynamics 365 Sales is the natural option for companies that already work in Microsoft 365, given its integration with Outlook, Teams and Excel."
         },
         {
           "type": "table",
@@ -2890,7 +2890,7 @@
             [
               "Internal team",
               "Key people who spend weeks defining, validating and testing",
-              "A time-commitment plan by role (the cost almost nobody budgets)"
+              "A time-commitment plan by role (a cost worth budgeting for)"
             ]
           ]
         },
@@ -3073,7 +3073,7 @@
         },
         {
           "type": "p",
-          "text": "Start from your real operation: equipment criticality, number of plants, technical staff and how work is logged today. Ask for a demo with your own assets and test field use with two or three technicians on the device they will actually use. If you want to certify your asset management, the ISO 55000 family sets the framework: ISO 55001 establishes the requirements of an asset management system and applies to any type and size of organization."
+          "text": "Start from your real operation: equipment criticality, number of plants, technical staff and how work is logged today. Ask for a demo with your own assets and test field use with two or three technicians on the device they will actually use. If you want to certify your asset management, the ISO 55000 family sets the framework: ISO 55001 establishes the requirements of an asset management system."
         },
         {
           "type": "h2",

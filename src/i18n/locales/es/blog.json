@@ -4,11 +4,11 @@
       "title": "Por qué fracasan los proyectos de transformación digital",
       "label": "Transformación digital",
       "excerpt": "Las organizaciones no fracasan por falta de tecnología ni de presupuesto. Fracasan cuando nadie conecta la decisión con las personas que deben ejecutarla. Siete errores que se repiten — y cómo evitarlos.",
-      "metaDescription": "Por qué fracasan los proyectos de transformación digital: los 7 errores más comunes, desde empezar por la tecnología hasta dejar la gestión del cambio para el final.",
+      "metaDescription": "Por qué fracasan los proyectos de transformación digital: los siete errores que identifica el autor, desde empezar por la tecnología hasta dejar la gestión del cambio para el final.",
       "intro": "Hay una pregunta que, en mi opinión, debería hacerse mucho antes de aprobar un presupuesto, seleccionar una plataforma o firmar un contrato: ¿ya contemplamos la gestión del cambio?",
       "keyTakeaways": [
-        "Los proyectos de transformación rara vez fracasan por la tecnología: fracasan cuando nadie conecta la decisión con las personas que deben ejecutarla.",
-        "Los siete errores más comunes van de empezar por la herramienta a dar la transformación por terminada cuando se cierra el proyecto.",
+        "En la experiencia del autor, los proyectos de transformación fracasan cuando nadie conecta la decisión con las personas que deben ejecutarla.",
+        "Los siete errores que el autor identifica van de empezar por la herramienta a dar la transformación por terminada cuando se cierra el proyecto.",
         "La gestión del cambio empieza antes de elegir la solución, y el CEO debe liderarla con el ejemplo."
       ],
       "serviceCtas": [
@@ -24,7 +24,7 @@
         },
         {
           "title": "La adopción no termina cuando termina el proyecto",
-          "description": "Acompañamos la etapa que casi nadie presupuesta: la que decide si el cambio se sostiene o la organización vuelve a como estaba.",
+          "description": "Acompañamos una etapa que conviene presupuestar: la que decide si el cambio se sostiene o la organización vuelve a como estaba.",
           "checklist": [
             "Medición de adopción real, no solo asistencia a capacitaciones",
             "Ajustes durante los primeros meses de uso, no solo en el go-live"
@@ -168,7 +168,7 @@
         { "type": "p", "text": "Por eso, cuando una empresa decide contratar una consultora estratégica, en mi opinión no debería preguntarse solamente qué experiencia tiene, qué clientes ha atendido o cuánto cuesta. Debería preguntarse algo más importante: ¿esta consultora realmente va a ayudarnos a ver lo que nosotros no estamos viendo?" },
         { "type": "p", "text": "A lo largo de mi experiencia he estado en los dos lados de esta conversación. Como ejecutivo de tecnología recibí los resultados de una consultoría estratégica y hoy, desde Cyrrus, me corresponde acompañar a equipos directivos en decisiones que pueden tener un impacto importante en sus organizaciones. Esa experiencia me ha dejado algunas conclusiones." },
         { "type": "h2", "text": "El error de elegir por marca y precio" },
-        { "type": "p", "text": "Uno de los errores más frecuentes es convertir la selección de una consultora en una comparación de propuestas." },
+        { "type": "p", "text": "Un error posible es convertir la selección de una consultora en una comparación de propuestas." },
         { "type": "p", "text": "Quién tiene la marca más reconocida. Quién cobra menos. Quién presentó el documento más grande. Quién incluyó más páginas, más metodologías, más gráficos o más especialistas." },
         { "type": "p", "text": "Pero una consultoría estratégica no debería ganarse por el tamaño de su documento. De hecho, una propuesta demasiado extensa puede esconder una pregunta que todavía no ha sido respondida: ¿entendieron realmente mi problema?" },
         { "type": "p", "text": "He visto organizaciones tomar decisiones importantes basándose en la reputación de una firma o en una propuesta técnicamente impecable, sin detenerse suficientemente a evaluar si esa firma comprende realmente su negocio, su entorno y sus restricciones. Ahí comienza una diferencia fundamental." },
@@ -273,7 +273,7 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Hay una conversación que empieza a aparecer con mayor frecuencia en las salas de juntas. ¿Cuál modelo vamos a utilizar? ¿Qué agentes podemos implementar? ¿Cuánto podemos automatizar? ¿Cuánto podemos ahorrar? ¿Qué está haciendo la competencia?" },
+        { "type": "p", "text": "Hay una conversación que puede aparecer en las salas de juntas. ¿Cuál modelo vamos a utilizar? ¿Qué agentes podemos implementar? ¿Cuánto podemos automatizar? ¿Cuánto podemos ahorrar? ¿Qué está haciendo la competencia?" },
         { "type": "p", "text": "Son preguntas legítimas. Pero creo que estamos empezando por el lugar equivocado." },
         { "type": "p", "text": "Antes de preguntarnos qué inteligencia artificial vamos a incorporar, deberíamos preguntarnos algo mucho más importante: ¿estamos preparados para gobernarla?" },
         { "type": "p", "text": "La inteligencia artificial está dejando de ser una conversación exclusivamente tecnológica. Está entrando en procesos comerciales, financieros, operativos, jurídicos y de talento humano, está ayudando a analizar información, generar contenido, recomendar decisiones y cada vez más, ejecutar determinadas actividades, y cuando una tecnología empieza a participar en decisiones que afectan al negocio, a los clientes, a los empleados o a la información de la organización, la conversación necesariamente cambia, ya no basta con preguntarnos qué puede hacer la IA. Tenemos que decidir qué le permitimos hacer, bajo qué condiciones y quién responde cuando algo sale mal." },
@@ -304,7 +304,7 @@
         { "type": "p", "text": "A menor riesgo, mayor velocidad para experimentar, a mayor impacto y autonomía, mayores controles, trazabilidad y responsabilidad." },
         { "type": "p", "text": "La organización necesita encontrar ese equilibrio, si controla demasiado, puede frenar la innovación, si controla demasiado poco, puede terminar innovando sin entender las consecuencias y con poca relevancia en el negocio." },
         { "type": "h2", "text": "El Gobierno de IA no puede ser responsabilidad exclusiva de TI" },
-        { "type": "p", "text": "Otro error frecuente es pensar que, como la inteligencia artificial utiliza tecnología, su gobierno debe quedar exclusivamente en manos del CIO o del área de tecnología, no lo veo así." },
+        { "type": "p", "text": "Otro error es pensar que, como la inteligencia artificial utiliza tecnología, su gobierno debe quedar exclusivamente en manos del CIO o del área de tecnología, no lo veo así." },
         { "type": "p", "text": "El Gobierno de IA debe estar cerca de la estrategia y por lo tanto, cerca del CEO. TI tiene un papel fundamental, pero también lo tienen Seguridad, Control Interno, Legal, Innovación y Talento Humano." },
         { "type": "p", "text": "El negocio debe definir qué valor se busca. Tecnología debe asegurar que la arquitectura y los sistemas puedan soportarlo. Seguridad debe evaluar los riesgos de información y acceso. Legal debe ayudar a entender las implicaciones regulatorias, contractuales y de propiedad intelectual. Innovación debe ayudar a conectar las posibilidades de la tecnología con la estrategia. Y Talento Humano tiene una responsabilidad enorme en adopción, capacidades, formación y gestión del cambio.", "links": [{"text": "gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
         { "type": "p", "text": "La conversación, por tanto, no debería ser quién es dueño de la IA. Debería ser quién responde por las decisiones que la organización está empezando a delegar en ella." },
@@ -332,7 +332,7 @@
         { "type": "h2", "text": "Una organización madura sabe dónde poner los límites" },
         { "type": "p", "text": "En uno de los trabajos que he venido desarrollando alrededor del concepto de gobierno de IA, hay una idea que considero especialmente poderosa: antes de incorporar inteligencia artificial, deberíamos sentarnos a definir nuestros límites." },
         { "type": "p", "text": "¿Qué vamos a delegar? ¿Qué vamos a supervisar? ¿Qué nunca vamos a delegar? ¿Quién responde? ¿Qué datos puede utilizar la IA? ¿Qué decisiones puede ejecutar? ¿Qué pasa cuando se equivoca? ¿Qué principios no estamos dispuestos a negociar, aunque una IA nos prometa hacerlo más rápido o más barato?" },
-        { "type": "p", "text": "Esto puede parecer sencillo, pero obliga a una conversación que muchas organizaciones todavía no están teniendo." },
+        { "type": "p", "text": "Esto puede parecer sencillo, pero obliga a una conversación que conviene tener." },
         { "type": "p", "text": "Una organización madura no es necesariamente aquella que automatiza más, es aquella que sabe qué debe automatizar, qué debe conservar bajo control humano y por qué." },
         { "type": "p", "text": "Ese criterio se vuelve todavía más importante a medida que aumenta la autonomía, primero la IA recomienda, después automatiza, luego ejecuta y en algún momento alguien puede preguntarse por qué todavía necesita autorización humana." },
         { "type": "p", "text": "La frontera entre autonomía y responsabilidad no debería moverse simplemente porque la tecnología demostró que puede hacer algo." },
@@ -365,8 +365,8 @@
           "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/525448/1/document.do"
         },
         {
-          "label": "CNBC (2023). Samsung prohíbe a su personal el uso de IA generativa tras un uso indebido",
-          "url": "https://www.cnbc.com/2023/05/02/samsung-bans-use-of-ai-like-chatgpt-for-staff-after-misuse-of-chatbot.html"
+          "label": "Bloomberg (2023). Samsung prohíbe a su personal el uso de IA generativa tras detectar una filtración en ChatGPT",
+          "url": "https://www.bloomberg.com/news/articles/2023-05-02/samsung-bans-chatgpt-and-other-generative-ai-use-by-staff-after-leak"
         },
         {
           "label": "NIST (2023). AI Risk Management Framework (AI RMF 1.0)",
@@ -412,35 +412,35 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Casi todos los proyectos de tecnología arrancan con optimismo. Hay un presupuesto aprobado, un proveedor seleccionado, un cronograma que cabe en una diapositiva y un equipo con ganas de empezar." },
-        { "type": "p", "text": "Unos meses después, la conversación suele ser otra: el cronograma se movió, el presupuesto ya no alcanza, el proveedor dice que el retraso es del cliente y el cliente dice que es del proveedor. Y cuando alguien pregunta quién responde por el resultado, la respuesta no es clara." },
+        { "type": "p", "text": "Piense en un proyecto de tecnología que arranca con optimismo. Hay un presupuesto aprobado, un proveedor seleccionado, un cronograma que cabe en una diapositiva y un equipo con ganas de empezar." },
+        { "type": "p", "text": "Unos meses después, la conversación puede ser otra: el cronograma se movió, el presupuesto ya no alcanza, el proveedor dice que el retraso es del cliente y el cliente dice que es del proveedor. Y cuando alguien pregunta quién responde por el resultado, la respuesta no es clara." },
         { "type": "p", "text": "En mi experiencia, esa pregunta es la que define si un proyecto necesita una gerencia de proyectos distinta a la que tiene. No se trata de cuántas herramientas de seguimiento se usen, sino de quién tiene la responsabilidad real de que el proyecto cumpla lo que prometió." },
         { "type": "h2", "text": "¿Qué es la gerencia de proyectos?" },
         { "type": "p", "text": "La gerencia de proyectos es la planeación, dirección, control y ejecución de una iniciativa para que cumpla con el tiempo, el costo, el alcance y la calidad acordados. Es una disciplina con marcos reconocidos, como la guía del PMBOK, y con un objetivo muy concreto: convertir una decisión del negocio en un resultado entregado." },
         { "type": "p", "text": "Con frecuencia se habla indistintamente de gerencia de proyectos y de gestión de proyectos. En la práctica son sinónimos. Si hay un matiz, es que la palabra gerencia pone el acento en la dirección y en la responsabilidad sobre el resultado, no solo en la administración de tareas." },
         { "type": "p", "text": "Esa diferencia importa. Un proyecto puede tener un cronograma impecable, reuniones semanales y reportes bien diseñados, y aun así no tener a nadie que tome las decisiones difíciles cuando algo se desvía." },
         { "type": "h2", "text": "Cinco señales de que su proyecto necesita una gerencia externa" },
-        { "type": "p", "text": "El costo de una mala gerencia es medible: según el informe Pulse of the Profession 2020 del PMI, las organizaciones pierden en promedio el 11,4% de lo que invierten en proyectos por su bajo desempeño. No todos los proyectos necesitan una PMO externa. Pero hay señales que se repiten en los que sí la necesitan." },
+        { "type": "p", "text": "El costo de una mala gerencia es medible: según el informe Pulse of the Profession 2020 del PMI, las organizaciones pierden en promedio el 11,4% de lo que invierten en proyectos por su bajo desempeño. No todos los proyectos necesitan una PMO externa. Estas son señales que revisamos para saber si el suyo la necesita." },
         { "type": "p", "text": "La primera: nadie responde por el resultado completo. El proveedor responde por su parte, cada área responde por la suya y el proyecto, como un todo, no tiene dueño." },
         { "type": "p", "text": "La segunda: los reportes dicen que todo va bien hasta que, de repente, todo va mal. Cuando el semáforo pasa de verde a rojo sin haber pasado por amarillo, el problema no es el proyecto, es la forma en que se está midiendo." },
         { "type": "p", "text": "La tercera: el proveedor se está gerenciando a sí mismo. Es natural que un implementador defienda su alcance, sus tiempos y sus costos. Lo que no es sano es que sea también quien decide si lo está haciendo bien." },
         { "type": "p", "text": "La cuarta: el equipo interno tiene doble función. Las personas clave del proyecto siguen respondiendo por la operación diaria, y el proyecto termina recibiendo el tiempo que sobra." },
-        { "type": "p", "text": "La quinta: es la primera vez que la organización ejecuta un proyecto de este tamaño. Una implementación de ERP, una migración a la nube o una iniciativa de inteligencia artificial no se parecen a los proyectos que la empresa hace todos los años, y los errores de un primer proyecto suelen ser los más costosos." },
+        { "type": "p", "text": "La quinta: es la primera vez que la organización ejecuta un proyecto de este tamaño. Una implementación de ERP, una migración a la nube o una iniciativa de inteligencia artificial no se parecen a los proyectos que la empresa hace todos los años, y los errores de un primer proyecto pueden ser costosos." },
         { "type": "h2", "text": "PMO interna, PMO externa o PMO as a Service" },
         { "type": "p", "text": "Una PMO, u oficina de gestión de proyectos, es la estructura que define cómo se gobiernan los proyectos de una organización: metodología, roles, comités, indicadores y herramientas." },
         { "type": "p", "text": "Una PMO interna tiene sentido cuando la empresa ejecuta proyectos de forma permanente y tiene el volumen para sostener un equipo dedicado. Construirla toma tiempo, y mantenerla tiene un costo fijo." },
-        { "type": "p", "text": "Una PMO externa, o PMO as a Service, es un equipo que asume el gobierno de un proyecto puntual con responsabilidad sobre el resultado, y se desmonta cuando el proyecto termina. Es la opción más frecuente para iniciativas grandes que no se repiten cada año, como la implementación de un ERP." },
+        { "type": "p", "text": "Una PMO externa, o PMO as a Service, es un equipo que asume el gobierno de un proyecto puntual con responsabilidad sobre el resultado, y se desmonta cuando el proyecto termina. Es una opción para iniciativas grandes que no se repiten cada año, como la implementación de un ERP." },
         { "type": "quote", "text": "La pregunta no es si su empresa necesita una PMO. Es quién va a responder por el resultado de este proyecto en particular." },
         { "type": "h2", "text": "Qué debe entregar una gerencia de proyectos seria" },
         { "type": "p", "text": "Un plan integral antes de empezar: alcance, cronograma, recursos, roles, costos, riesgos y plan de calidad, aprobados por un comité de dirección que entienda lo que está aprobando." },
-        { "type": "p", "text": "Un gobierno claro: quién decide qué, en qué instancia y con qué información. Un proyecto sin reglas de decisión termina resolviendo sus problemas por desgaste." },
+        { "type": "p", "text": "Un gobierno claro: quién decide qué, en qué instancia y con qué información. Un proyecto sin reglas de decisión puede terminar resolviendo sus problemas por desgaste." },
         { "type": "p", "text": "Un seguimiento continuo del riesgo, no solo un reporte al cierre de cada fase. Hoy es posible monitorear el riesgo del proyecto de forma permanente, incluso con agentes de inteligencia artificial que anticipan desviaciones antes de que se conviertan en crisis." },
         { "type": "p", "text": "Un control del alcance que proteja el presupuesto. En un proyecto que gerenciamos bajo los lineamientos del PMBOK, el cierre llegó con una diferencia de solo 3% frente al costo estimado y con apenas dos personalizaciones al código del ERP. No es casualidad: es el resultado de decir que no a tiempo." },
         { "type": "p", "text": "Un cierre formal y documentado, que deje a la organización con el modelo de implementación para sus próximos proyectos." },
-        { "type": "h2", "text": "El error más común: gerenciar el cronograma y no la adopción" },
+        { "type": "h2", "text": "Un riesgo: gerenciar el cronograma y no la adopción" },
         { "type": "p", "text": "Un proyecto puede terminar a tiempo, dentro del presupuesto y con todo el alcance entregado, y aun así fracasar. Ocurre cuando el sistema queda instalado pero la organización sigue trabajando como antes." },
         { "type": "p", "text": "Por eso creo que una gerencia de proyectos que no incluye la gestión del cambio está midiendo el éxito equivocado. Los servicios de gestión del cambio tienen que empezar el mismo día que el proyecto, no aparecer como una actividad de cierre.", "links": [{"text": "servicios de gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "Escribí sobre esto en detalle en por qué fracasan los proyectos de transformación digital: la mayoría no falla por la tecnología, sino por la forma en que las personas la reciben.", "links": [{"text": "por qué fracasan los proyectos de transformación digital", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
+        { "type": "p", "text": "Escribí sobre esto en detalle en por qué fracasan los proyectos de transformación digital: en mi experiencia, el factor decisivo es la forma en que las personas reciben la tecnología.", "links": [{"text": "por qué fracasan los proyectos de transformación digital", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
         { "type": "h2", "text": "Antes del proyecto: la decisión correcta" },
         { "type": "p", "text": "Hay proyectos que ninguna gerencia puede salvar, porque el problema no está en la ejecución sino en la decisión que les dio origen: un objetivo difuso, un caso de negocio que nadie construyó o una tecnología elegida antes de entender el problema." },
         { "type": "p", "text": "Por eso, en los proyectos de mayor impacto, vale la pena empezar con una consultoría estratégica que defina qué hay que resolver, en qué orden y con qué indicadores. La gerencia de proyectos ejecuta mejor cuando sabe exactamente qué está ejecutando.", "links": [{"text": "consultoría estratégica", "href": "/metodo-cira/estrategia"}] },
@@ -470,7 +470,7 @@
       "keyTakeaways": [
         "Un ERP es un sistema que integra en una sola plataforma las finanzas, las compras, los inventarios, las ventas y la producción de una empresa.",
         "Se elige con siete criterios: ajuste funcional y técnico, costo total de propiedad, solidez del proveedor, capacidad de implementación, adopción y cobertura local.",
-        "Las implementaciones casi nunca fallan por el software, sino por requerimientos poco claros, datos mal migrados y falta de gestión del cambio."
+        "Un proyecto de ERP depende del software y también de requerimientos claros, de una migración de datos bien hecha y de la gestión del cambio."
       ],
       "serviceCtas": [
         {
@@ -497,11 +497,11 @@
       "body": [
         {
           "type": "p",
-          "text": "Hoy casi toda empresa mediana tiene un problema parecido: la información está repartida. Finanzas lleva sus cifras en un sistema, compras en otro, inventarios en una hoja de cálculo y producción en una cuarta herramienta. Cada área tiene su propia versión de la verdad, y reunir los números para una decisión toma días."
+          "text": "Piense en una empresa donde la información está repartida. Finanzas lleva sus cifras en un sistema, compras en otro, inventarios en una hoja de cálculo y producción en una cuarta herramienta. Cada área tiene su propia versión de la verdad, y reunir los números para una decisión toma días."
         },
         {
           "type": "p",
-          "text": "Un ERP es la respuesta más habitual a ese problema. Pero también es una de las decisiones de tecnología más caras y más difíciles de revertir que toma una empresa. Esta guía explica qué es un ERP, para qué sirve, qué módulos incluye y cómo elegir el adecuado sin equivocarse."
+          "text": "Un ERP es una de las respuestas posibles a ese problema, y puede ser una decisión de tecnología costosa y difícil de revertir. Esta guía explica qué es un ERP, para qué sirve, qué módulos incluye y cómo elegir el adecuado sin equivocarse."
         },
         {
           "type": "h2",
@@ -545,7 +545,7 @@
         },
         {
           "type": "p",
-          "text": "Un ERP suele incluir finanzas y contabilidad, compras, inventarios y logística, ventas y facturación, producción y, en algunos casos, recursos humanos y nómina. Cada fabricante los agrupa de forma distinta, pero estos son los más comunes."
+          "text": "Un ERP suele incluir finanzas y contabilidad, compras, inventarios y logística, ventas y facturación, producción y, en algunos casos, recursos humanos y nómina. Cada fabricante los agrupa de forma distinta; estos son algunos de los módulos."
         },
         {
           "type": "p",
@@ -573,7 +573,7 @@
         },
         {
           "type": "p",
-          "text": "Ningún ERP es el mejor en todos los módulos. Por eso es frecuente que una empresa use el ERP para su núcleo financiero y operativo y lo conecte con sistemas especializados de CRM, de gestión de personas o de mantenimiento de activos.",
+          "text": "Un ERP no tiene por qué cubrir todos los módulos con la misma profundidad: una empresa puede usar el ERP para su núcleo financiero y operativo y conectarlo con sistemas especializados de CRM, de gestión de personas o de mantenimiento de activos.",
           "links": [
             {
               "text": "CRM",
@@ -599,7 +599,7 @@
         },
         {
           "type": "p",
-          "text": "Las hojas de cálculo funcionan mientras la empresa es pequeña. Dejan de funcionar cuando varias personas necesitan editar los mismos datos, cuando los errores empiezan a costar dinero o cuando nadie confía en las cifras. Esa suele ser la señal de que llegó el momento de un ERP."
+          "text": "Las hojas de cálculo funcionan mientras la empresa es pequeña. Dejan de funcionar cuando varias personas necesitan editar los mismos datos, cuando los errores empiezan a costar dinero o cuando nadie confía en las cifras. Esa puede ser una señal de que llegó el momento de un ERP."
         },
         {
           "type": "h2",
@@ -607,7 +607,7 @@
         },
         {
           "type": "p",
-          "text": "No hay una regla por tamaño, pero algunas señales se repiten."
+          "text": "No hay una regla por tamaño; estas son señales que revisamos:"
         },
         {
           "type": "p",
@@ -651,7 +651,7 @@
         },
         {
           "type": "p",
-          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP. Si su cuello de botella está en la bodega, vea también qué es un sistema WMS y cuándo necesita uno. Antes de comparar proveedores, pruebe si su empresa está lista con el test de preparación para un ERP.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "qué es un sistema WMS", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "test de preparación para un ERP", "href": "/herramientas/test-preparacion-erp"}]
+          "text": "Un riesgo es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP. Si su cuello de botella está en la bodega, vea también qué es un sistema WMS y cuándo necesita uno. Antes de comparar proveedores, pruebe si su empresa está lista con el test de preparación para un ERP.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "qué es un sistema WMS", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "test de preparación para un ERP", "href": "/herramientas/test-preparacion-erp"}]
         },
         {
           "type": "p",
@@ -687,7 +687,7 @@
         },
         {
           "type": "p",
-          "text": "Cada empresa lo adapta, pero un proceso ordenado suele seguir estos pasos: definir el problema y los objetivos del negocio; levantar y priorizar los requerimientos con las áreas; construir una lista de opciones del mercado; enviar una solicitud de propuesta (RFP) con los mismos criterios a todos los proveedores; evaluar propuestas y demostraciones con una matriz ponderada; verificar referencias; y negociar y contratar."
+          "text": "Cada empresa lo adapta, pero un proceso ordenado puede seguir estos pasos: definir el problema y los objetivos del negocio; levantar y priorizar los requerimientos con las áreas; construir una lista de opciones del mercado; enviar una solicitud de propuesta (RFP) con los mismos criterios a todos los proveedores; evaluar propuestas y demostraciones con una matriz ponderada; verificar referencias; y negociar y contratar."
         },
         {
           "type": "p",
@@ -707,15 +707,15 @@
         },
         {
           "type": "p",
-          "text": "Una advertencia útil: la licencia suele ser solo una parte de la inversión. La implementación, la migración y la adopción pesan mucho en el total, y por eso conviene comparar el costo total y no solo el precio de lista."
+          "text": "Una advertencia útil: además de la licencia hay que presupuestar la implementación, la migración y la adopción, y por eso conviene comparar el costo total y no solo el precio de lista."
         },
         {
           "type": "h2",
-          "text": "Por qué fallan las implementaciones de un ERP"
+          "text": "Qué pone en riesgo una implementación de ERP"
         },
         {
           "type": "p",
-          "text": "Casi nunca falla por el software. Las causas más comunes son elegir sin requerimientos claros, subestimar la migración de datos, personalizar de más, no tener un responsable del proyecto con autoridad y no trabajar la adopción de las personas. La investigación de Prosci lo confirma: los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos."
+          "text": "Riesgos que conviene gestionar: elegir sin requerimientos claros, no presupuestar la migración de datos, personalizar de más, no tener un responsable del proyecto con autoridad y no trabajar la adopción de las personas. La investigación de Prosci muestra que el 88% de los proyectos con una gestión del cambio excelente cumplió sus objetivos, frente al 13% de los que la gestionaron mal (unas siete veces más probabilidades)."
         },
         {
           "type": "p",
@@ -733,7 +733,7 @@
         },
         {
           "type": "h2",
-          "text": "Errores comunes al elegir un ERP"
+          "text": "Riesgos al elegir un ERP"
         },
         {
           "type": "p",
@@ -831,7 +831,7 @@
       "body": [
         {
           "type": "p",
-          "text": "Casi todas las empresas medianas llegan al mismo punto: tienen varios proyectos en marcha al mismo tiempo, cada uno lo gerencia una persona distinta con su propia forma de trabajar, y nadie en la dirección puede responder con certeza cuántos van bien, cuántos van mal y cuáles conviene detener."
+          "text": "Puede que su empresa esté en este punto: tiene varios proyectos en marcha al mismo tiempo, cada uno lo gerencia una persona distinta con su propia forma de trabajar, y nadie en la dirección puede responder con certeza cuántos van bien, cuántos van mal y cuáles conviene detener."
         },
         {
           "type": "p",
@@ -919,7 +919,7 @@
         },
         {
           "type": "p",
-          "text": "PMO de apoyo: ofrece plantillas, buenas prácticas, capacitación y acceso a información. Su control es bajo y funciona como un centro de consulta. Es el punto de partida habitual en organizaciones con poca madurez."
+          "text": "PMO de apoyo: ofrece plantillas, buenas prácticas, capacitación y acceso a información. Su control es bajo y funciona como un centro de consulta. Puede ser el punto de partida en organizaciones con poca madurez."
         },
         {
           "type": "p",
@@ -973,7 +973,7 @@
         },
         {
           "type": "p",
-          "text": "No hay una regla por tamaño, pero algunas señales se repiten."
+          "text": "No hay una regla por tamaño; estas son señales que revisamos:"
         },
         {
           "type": "p",
@@ -1005,11 +1005,11 @@
         },
         {
           "type": "p",
-          "text": "Aunque cada empresa la adapta, una implementación ordenada suele seguir estos pasos: diagnosticar cómo se gestionan hoy los proyectos; definir el alcance y el tipo de PMO que conviene; contar con un patrocinador de la dirección; establecer una metodología mínima y plantillas sencillas; fijar los indicadores que se van a reportar; arrancar con un proyecto piloto; y ajustar a partir de lo aprendido antes de ampliar."
+          "text": "Aunque cada empresa la adapta, una implementación ordenada puede seguir estos pasos: diagnosticar cómo se gestionan hoy los proyectos; definir el alcance y el tipo de PMO que conviene; contar con un patrocinador de la dirección; establecer una metodología mínima y plantillas sencillas; fijar los indicadores que se van a reportar; arrancar con un proyecto piloto; y ajustar a partir de lo aprendido antes de ampliar."
         },
         {
           "type": "p",
-          "text": "La regla útil es empezar pequeño. Una PMO que nace con cien procedimientos antes de haber ayudado a un solo proyecto suele convertirse en burocracia."
+          "text": "La regla útil es empezar pequeño. Una PMO que nace con cien procedimientos antes de haber ayudado a un solo proyecto puede convertirse en burocracia."
         },
         {
           "type": "h2",
@@ -1017,11 +1017,11 @@
         },
         {
           "type": "p",
-          "text": "Una PMO se mide por los resultados de los proyectos que acompaña, no por la cantidad de documentos que produce. Algunos indicadores habituales son el cumplimiento del cronograma, la desviación frente al presupuesto, la proporción de proyectos entregados con el alcance acordado, el nivel de satisfacción de los patrocinadores y la adopción de lo entregado por parte de los usuarios."
+          "text": "Una PMO se mide por los resultados de los proyectos que acompaña, no por la cantidad de documentos que produce. Algunos indicadores posibles son el cumplimiento del cronograma, la desviación frente al presupuesto, la proporción de proyectos entregados con el alcance acordado, el nivel de satisfacción de los patrocinadores y la adopción de lo entregado por parte de los usuarios."
         },
         {
           "type": "h2",
-          "text": "Errores comunes al crear una PMO"
+          "text": "Errores a evitar al crear una PMO"
         },
         {
           "type": "p",
@@ -1092,13 +1092,13 @@
     "planeacion-estrategica-que-es-etapas-y-ejemplo": {
       "title": "Planeación estratégica: qué es, etapas y ejemplo",
       "label": "Estrategia",
-      "excerpt": "La planeación estratégica define hacia dónde va una empresa y cómo lo logrará. Qué es, para qué sirve, sus siete etapas, las herramientas más usadas y un ejemplo ilustrativo.",
+      "excerpt": "La planeación estratégica define hacia dónde va una empresa y cómo lo logrará. Qué es, para qué sirve, sus siete etapas, herramientas conocidas y un ejemplo ilustrativo.",
       "metaDescription": "Qué es la planeación estratégica, para qué sirve, cuáles son sus etapas y herramientas (FODA, OKR, Balanced Scorecard) y un ejemplo ilustrativo paso a paso.",
       "intro": "Si su empresa ya tuvo un plan estratégico que terminó archivado, probablemente el problema no fue el documento, sino cómo se hizo la planeación y cómo se ejecutó.",
       "keyTakeaways": [
         "La planeación estratégica es el proceso con el que la dirección define hacia dónde va la empresa, qué hará y qué no, y cómo medirá el avance.",
         "Sigue siete etapas: diagnóstico, direccionamiento, objetivos, estrategias e iniciativas, indicadores, plan de acción y seguimiento.",
-        "La mayoría de las estrategias no se pierde en el documento, sino en la ejecución."
+        "Un estudio citado por Kaplan y Norton halló que siete de cada ocho grandes empresas no lograron crecimiento rentable aunque el 90% tenía planes estratégicos detallados."
       ],
       "serviceCtas": [
         {
@@ -1125,11 +1125,11 @@
       "body": [
         {
           "type": "p",
-          "text": "Casi todas las empresas hacen alguna vez un plan estratégico. Se reúne la dirección, se discuten metas, se redacta un documento y se presenta con entusiasmo. Seis meses después, el documento está en una carpeta y la empresa sigue decidiendo como siempre."
+          "text": "Imagine este caso: se reúne la dirección, se discuten metas, se redacta un documento y se presenta con entusiasmo. Seis meses después, el documento está en una carpeta y la empresa sigue decidiendo como siempre."
         },
         {
           "type": "p",
-          "text": "La diferencia entre un plan que se ejecuta y uno que se archiva casi nunca está en el formato: está en cómo se hizo la planeación. Esta guía explica qué es la planeación estratégica, para qué sirve, cuáles son sus etapas, qué herramientas se usan y cómo se ve en un caso concreto."
+          "text": "La diferencia entre un plan que se ejecuta y uno que se archiva no está solo en el formato: está también en cómo se hizo la planeación. Esta guía explica qué es la planeación estratégica, para qué sirve, cuáles son sus etapas, qué herramientas se usan y cómo se ve en un caso concreto."
         },
         {
           "type": "h2",
@@ -1137,7 +1137,7 @@
         },
         {
           "type": "p",
-          "text": "La planeación estratégica es el proceso mediante el cual la dirección de una empresa define hacia dónde quiere ir, qué decidirá hacer y qué decidirá no hacer, y cómo lo va a lograr. Suele plantearse a un horizonte de tres a cinco años y se revisa con regularidad, no una sola vez."
+          "text": "La planeación estratégica es el proceso mediante el cual la dirección de una empresa define hacia dónde quiere ir, qué decidirá hacer y qué decidirá no hacer, y cómo lo va a lograr. Puede plantearse a un horizonte de tres a cinco años y se revisa con regularidad, no una sola vez."
         },
         {
           "type": "p",
@@ -1189,7 +1189,7 @@
         },
         {
           "type": "p",
-          "text": "Cada organización adapta el proceso, pero casi todas siguen estas siete etapas."
+          "text": "Cada organización adapta el proceso, esta es una secuencia de siete etapas."
         },
         {
           "type": "p",
@@ -1217,11 +1217,11 @@
         },
         {
           "type": "p",
-          "text": "Séptima, la ejecución y el seguimiento. Se revisa el avance en un comité periódico, se corrigen las desviaciones y se actualiza el plan cuando el entorno cambia. Esta etapa es la que casi siempre se descuida."
+          "text": "Séptima, la ejecución y el seguimiento. Se revisa el avance en un comité periódico, se corrigen las desviaciones y se actualiza el plan cuando el entorno cambia. Es una etapa que conviene no descuidar."
         },
         {
           "type": "h2",
-          "text": "Herramientas más usadas en la planeación estratégica"
+          "text": "Herramientas conocidas de la planeación estratégica"
         },
         {
           "type": "p",
@@ -1277,7 +1277,7 @@
         },
         {
           "type": "h2",
-          "text": "Errores comunes en la planeación estratégica"
+          "text": "Errores a evitar en la planeación estratégica"
         },
         {
           "type": "p",
@@ -1297,11 +1297,11 @@
         },
         {
           "type": "p",
-          "text": "Separar la estrategia de la tecnología, cuando hoy casi toda iniciativa depende de ella."
+          "text": "Separar la estrategia de la tecnología, cuando muchas iniciativas dependen de ella."
         },
         {
           "type": "p",
-          "text": "Terminar el plan y no gerenciar su ejecución, que es donde se pierde la mayoría de las estrategias. Kaplan y Norton lo documentaron en Harvard Business Review: en una muestra global de 1.854 grandes empresas, siete de cada ocho no lograron un crecimiento rentable entre 1988 y 1998, aunque más del 90% tenía planes estratégicos detallados.",
+          "text": "Terminar el plan y no gerenciar su ejecución. Kaplan y Norton citan en Harvard Business Review un estudio de Zook y Allen: en una muestra global de 1.854 grandes empresas, siete de cada ocho no lograron un crecimiento rentable entre 1988 y 1998, aunque el 90% tenía planes estratégicos detallados.",
           "links": [
             {
               "text": "gerenciar su ejecución",
@@ -1365,7 +1365,7 @@
       "intro": "Si su empresa ya implementó un sistema que nadie usa como se esperaba, probablemente el problema no fue la tecnología, sino cómo se gestionó el cambio en las personas.",
       "keyTakeaways": [
         "La gestión del cambio organizacional prepara y acompaña a las personas para que adopten y sostengan una nueva forma de trabajar.",
-        "Los modelos más usados son ADKAR, los ocho pasos de Kotter y el modelo de Lewin; en la práctica se combinan.",
+        "Tres modelos conocidos son ADKAR, los ocho pasos de Kotter y el modelo de Lewin; en la práctica se combinan.",
         "Un plan tiene ocho partes: cambio, impacto, interesados, preparación, comunicación, capacitación, resistencia y medición de la adopción."
       ],
       "serviceCtas": [
@@ -1393,11 +1393,11 @@
       "body": [
         {
           "type": "p",
-          "text": "Casi toda empresa ha vivido una versión de esta historia: el proyecto se aprobó, la tecnología se eligió bien, la implementación terminó en la fecha prevista y, meses después, la gente sigue trabajando como antes, con hojas de cálculo paralelas y atajos para evitar el sistema nuevo."
+          "text": "Esta historia puede resultar reconocible: el proyecto se aprobó, la tecnología se eligió bien, la implementación terminó en la fecha prevista y, meses después, la gente sigue trabajando como antes, con hojas de cálculo paralelas y atajos para evitar el sistema nuevo."
         },
         {
           "type": "p",
-          "text": "Eso no es un problema de tecnología. Es un problema de gestión del cambio. Esta guía explica qué es la gestión del cambio organizacional, en qué se diferencia del cambio organizacional, cuáles son los modelos más usados y cómo armar un plan paso a paso, con una plantilla que puede descargar y usar."
+          "text": "Eso no es un problema de tecnología. Es un problema de gestión del cambio. Esta guía explica qué es la gestión del cambio organizacional, en qué se diferencia del cambio organizacional, cuáles son tres modelos conocidos y cómo armar un plan paso a paso, con una plantilla que puede descargar y usar."
         },
         {
           "type": "h2",
@@ -1433,7 +1433,7 @@
         },
         {
           "type": "h2",
-          "text": "Los modelos de gestión del cambio más usados"
+          "text": "Tres modelos conocidos de gestión del cambio"
         },
         {
           "type": "p",
@@ -1495,7 +1495,7 @@
         },
         {
           "type": "h2",
-          "text": "Errores comunes en la gestión del cambio"
+          "text": "Errores a evitar en la gestión del cambio"
         },
         {
           "type": "p",
@@ -1614,7 +1614,7 @@
       "body": [
         {
           "type": "p",
-          "text": "Elegir un ERP es una de las decisiones de tecnología más caras y difíciles de revertir que toma una empresa mediana. Y el mercado no ayuda: cada fabricante tiene una demostración impecable y una lista de clientes satisfechos."
+          "text": "Elegir un ERP puede ser una decisión de tecnología costosa y difícil de revertir para una empresa mediana. Y el mercado no ayuda: cada fabricante tiene una demostración impecable y una lista de clientes satisfechos."
         },
         {
           "type": "p",
@@ -1728,7 +1728,7 @@
         },
         {
           "type": "h2",
-          "text": "Errores comunes al elegir un ERP"
+          "text": "Riesgos al elegir un ERP"
         },
         {
           "type": "p",
@@ -2478,7 +2478,7 @@
         },
         {
           "type": "p",
-          "text": "Salesforce es el CRM con más profundidad funcional y el ecosistema de aplicaciones y especialistas más amplio, con planes que escalan desde equipos pequeños hasta grandes corporaciones. HubSpot se distingue por su facilidad de uso y porque integra ventas y marketing en la misma plataforma, con un plan gratuito para empezar. Dynamics 365 Sales es la opción natural para empresas que ya trabajan en Microsoft 365, por su integración con Outlook, Teams y Excel."
+          "text": "Salesforce ofrece una amplia profundidad funcional y un extenso ecosistema de aplicaciones y especialistas, con planes que escalan desde equipos pequeños hasta grandes corporaciones. HubSpot se distingue por su facilidad de uso y porque integra ventas y marketing en la misma plataforma, con un plan gratuito para empezar. Dynamics 365 Sales es la opción natural para empresas que ya trabajan en Microsoft 365, por su integración con Outlook, Teams y Excel."
         },
         {
           "type": "table",
@@ -2890,7 +2890,7 @@
             [
               "Equipo interno",
               "Personas clave que dedican semanas a definir, validar y probar",
-              "Un plan de dedicación por rol (es el costo que casi nadie presupuesta)"
+              "Un plan de dedicación por rol (un costo que conviene presupuestar)"
             ]
           ]
         },
@@ -3073,7 +3073,7 @@
         },
         {
           "type": "p",
-          "text": "Parta de su operación real: criticidad de los equipos, número de plantas, personal técnico y cómo registra hoy el trabajo. Pida una demostración con sus propios activos y pruebe el uso en campo con dos o tres técnicos, en el dispositivo que usarán. Si busca certificar su gestión de activos, la familia ISO 55000 define el marco: ISO 55001 establece los requisitos de un sistema de gestión de activos y aplica a cualquier tipo y tamaño de organización."
+          "text": "Parta de su operación real: criticidad de los equipos, número de plantas, personal técnico y cómo registra hoy el trabajo. Pida una demostración con sus propios activos y pruebe el uso en campo con dos o tres técnicos, en el dispositivo que usarán. Si busca certificar su gestión de activos, la familia ISO 55000 define el marco: ISO 55001 establece los requisitos de un sistema de gestión de activos."
         },
         {
           "type": "h2",

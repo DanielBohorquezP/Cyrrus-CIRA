@@ -86,7 +86,7 @@
       },
       {
         "title": "Training plan",
-        "description": "We design personalized plans to ensure the team is prepared and confident using the new solution."
+        "description": "We design personalized plans so the team is prepared and confident using the new solution."
       },
       {
         "title": "Climate management",
@@ -115,7 +115,7 @@
       },
       {
         "title": "Embedded in our services",
-        "description": "Our methodology guarantees change management perfectly aligned with corporate vision and specific objectives."
+        "description": "Our methodology aims to align change management with the corporate vision and its specific objectives."
       },
       {
         "title": "Comprehensive approach",
@@ -127,7 +127,7 @@
       },
       {
         "title": "Personalization and competency",
-        "description": "We design personalized training that ensures a highly informed team, driving a successful implementation."
+        "description": "We design personalized training so the team is informed and supports the implementation."
       },
       {
         "title": "Proactive impact management",
@@ -169,11 +169,11 @@
       },
       {
         "question": "Do you help with change management for ERP implementations?",
-        "answer": "Yes. ERP adoption is the most common case: the system gets installed but the team keeps working around it. We build change management into the implementation from kickoff, not as a rescue after go-live."
+        "answer": "Yes. A typical case is ERP adoption: the system gets installed but the team keeps working around it. We build change management into the implementation from kickoff, not as a rescue after go-live."
       },
       {
         "question": "How is this different from traditional change management?",
-        "answer": "Traditional change management usually arrives as a separate consulting engagement, after the technology has already been decided. Ours is embedded in Strategy, Selection, and Project Management from the start, with continuous adoption measurement — not a satisfaction survey at close."
+        "answer": "In our approach, change management doesn't arrive as a separate engagement after the technology has been decided: it is embedded in Strategy, Selection, and Project Management from the start, with continuous adoption measurement — not a satisfaction survey at close."
       }
     ]
   },
@@ -183,7 +183,7 @@
     "items": [
       {
         "title": "ERP selection",
-        "description": "Where resistance to change usually starts."
+        "description": "A point where resistance to change can start."
       },
       {
         "title": "Project management (PMO)",

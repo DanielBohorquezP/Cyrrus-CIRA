@@ -131,7 +131,7 @@
       },
       {
         "question": "¿Por qué contratar un consultor independiente en vez de ir directo al proveedor del ERP?",
-        "answer": "Porque el proveedor tiene un solo producto que vender y su evaluación siempre terminará en ese producto. Cyrrus no tiene alianzas comerciales ni comisiones con ningún fabricante de ERP: el criterio se define desde su operación, no desde el catálogo, y el resultado puede ser perfectamente que la mejor decisión sea no cambiar de plataforma."
+        "answer": "Porque el proveedor tiene un solo producto que vender y su evaluación puede terminar en ese producto. Cyrrus no tiene alianzas comerciales ni comisiones con ningún fabricante de ERP: el criterio se define desde su operación, no desde el catálogo, y el resultado puede ser perfectamente que la mejor decisión sea no cambiar de plataforma."
       },
       {
         "question": "¿Ayudan a elegir ERP para empresas en Colombia o LATAM?",
@@ -188,7 +188,7 @@
     "problemaReal": {
       "eyebrow": "02 — El problema",
       "title": "El reto no es encontrar un CRM. Es encontrar uno que su organización realmente adopte.",
-      "body": "Un CRM puede tener 200 funcionalidades — pero si los vendedores no lo utilizan, la inversión fracasa.",
+      "body": "Un CRM puede tener cientos de funcionalidades — pero si los vendedores no lo utilizan, la inversión fracasa.",
       "punch": "El ajuste con el proceso comercial real importa más que la lista de funcionalidades."
     },
     "solucion": {
@@ -404,7 +404,7 @@
       },
       {
         "question": "¿Por qué usar un consultor independiente para elegir un HCM?",
-        "answer": "Porque la nómina es el módulo donde más caro sale equivocarse y donde el proveedor tiene menos incentivo para señalar sus propios vacíos por país. Un evaluador sin comisión puede decir cuál plataforma no cubre bien su legislación local."
+        "answer": "Porque en la nómina un error puede ser costoso, y un proveedor puede tener poco incentivo para señalar sus propios vacíos por país. Un evaluador sin comisión puede decir cuál plataforma no cubre bien su legislación local."
       }
     ]
   },

@@ -64,7 +64,7 @@
     "gestion-del-cambio-para-lideres": {
       "title": "Gestión del cambio para líderes",
       "shortDescription": "Adopción que no sobrevive la salida del consultor",
-      "intro": "Los mandos medios boicotean en silencio cada iniciativa nueva, y la adopción se cae en cuanto Cyrrus se retira.",
+      "intro": "Si los mandos medios no respaldan una iniciativa nueva, la adopción puede caerse en cuanto Cyrrus se retira.",
       "body": [
         "Formamos a los líderes internos del cliente en las mismas herramientas de gestión del cambio que aplicamos durante un proyecto, para que la adopción se sostenga después de que Cyrrus se retire.",
         "Este taller es la extensión natural de la fase de Adopción del método CIRA hacia el equipo de liderazgo interno."

@@ -8,7 +8,7 @@
     "hero": {
       "eyebrow": "Cyrrus Digital Presence",
       "title": "Your company is worth more than your digital presence shows",
-      "description": "You have the track record, the case studies, and the team. But when a buyer searches for what you do, they find a smaller competitor with a better site and better positioning. Digital Presence treats your site and your visibility as what they are: business assets, with an owner, a budget, and metrics.",
+      "description": "You have the track record, the case studies, and the team. But when a buyer searches for what you do, they may find a competitor with a better site and better positioning. Digital Presence treats your site and your visibility as what they are: business assets, with an owner, a budget, and metrics.",
       "ctaLabel": "Schedule a digital diagnosis"
     },
     "pillars": {
@@ -102,7 +102,7 @@
     },
     "diagnostico": {
       "eyebrow": "Diagnosis",
-      "title": "What we find on the site of almost every company that calls us",
+      "title": "What we review on a company's site",
       "description": "The site was built four years ago, by an agency that no longer answers, on a platform no one inside the company knows how to touch. It works — but it doesn't sell, doesn't measure, and can't be changed. That isn't a design problem: it's a business asset with no owner.",
       "problems": [
         {
@@ -115,7 +115,7 @@
         },
         {
           "title": "Slow where it matters",
-          "description": "It opens fine from the office and lags on a phone with mobile data, which is how most of your clients open it. Every second of waiting is a conversation that doesn't happen."
+          "description": "It opens fine from the office and can lag on a phone with mobile data. A slow site can mean a conversation that doesn't happen."
         },
         {
           "title": "Blind to the data",
@@ -222,7 +222,7 @@
         },
         {
           "question": "Who can update the site after delivery?",
-          "answer": "Your team. Delivery includes a content manager and the training to use it, because the most common reason a corporate site goes stale isn't a lack of content — it's the friction of having to request every change from a provider. If you'd also rather leave ongoing maintenance to us, that's arranged separately — but never as a forced dependency."
+          "answer": "Your team. Delivery includes a content manager and the training to use it, because one possible reason a corporate site goes stale is the friction of having to request every change from a provider. If you'd also rather leave ongoing maintenance to us, that's arranged separately — but never as a forced dependency."
         },
         {
           "question": "Does development include search engine positioning?",
@@ -272,7 +272,7 @@
         },
         {
           "title": "Content that answers nothing",
-          "description": "The blog publishes company news. The buyer searches for how to solve a problem. The two never meet."
+          "description": "The blog publishes company news. The buyer searches for how to solve a problem. The two may never meet."
         },
         {
           "title": "Invisible technical problems",
@@ -283,7 +283,7 @@
     "whyCyrrus": {
       "eyebrow": "Why Cyrrus",
       "title": "SEO from consulting, not from content volume",
-      "description": "Most agencies sell a number of articles per month. We start from the business: which buying decisions we want to intercept, what questions that buyer asks, and what evidence they need to see before picking up the phone. Content is the consequence, not the product.",
+      "description": "An agency may sell a number of articles per month. We start from the business: which buying decisions we want to intercept, what questions that buyer asks, and what evidence they need to see before picking up the phone. Content is the consequence, not the product.",
       "stats": [
         {
           "value": "2",
@@ -364,7 +364,7 @@
       "items": [
         {
           "question": "What is SEO and why does a B2B company need it?",
-          "answer": "SEO is the work of making a company appear in search results when someone searches for the problem that company solves, without paying for every click. It matters more in B2B than in other sectors for a concrete reason: the buyer of an enterprise solution researches for weeks before contacting anyone, and makes that decision by reading, not by watching ads. If your company isn't present during that research stage, it enters the conversation once the provider is practically already chosen."
+          "answer": "SEO is the work of making a company appear in search results when someone searches for the problem that company solves, without paying for every click. It matters more in B2B than in other sectors for a concrete reason: the buyer of an enterprise solution may research for weeks before contacting anyone, reading rather than watching ads. If your company isn't present during that research stage, it may enter the conversation late."
         },
         {
           "question": "What is GEO and how is it different from SEO?",
@@ -372,11 +372,11 @@
         },
         {
           "question": "How long does SEO take to show results?",
-          "answer": "Technical fixes can move rankings within weeks, because they correct something that was actively blocking the search engine. Positioning through content and authority is measured in months: three to six to see sustained movement in competitive searches. Anyone promising top rankings in thirty days is either buying links or targeting searches no one makes. What is reported from month one is implementation progress and the change in technical metrics."
+          "answer": "Technical fixes can move rankings within weeks, because they correct something that was actively blocking the search engine. Positioning through content and authority is measured in months: Google notes that some changes can take effect in a few hours while others can take several months. Be wary of anyone promising top rankings in thirty days. What is reported from month one is implementation progress and the change in technical metrics."
         },
         {
           "question": "Does SEO replace paid ad spend?",
-          "answer": "It doesn't replace it, it makes it optional. Paid ads and SEO solve different moments: ads buy immediate visibility and stop existing when the budget turns off; SEO builds an asset that keeps bringing demand. Most companies that work positioning well don't stop running ads — they stop depending on them, which is a very different financial situation."
+          "answer": "It doesn't replace it, it makes it optional. Paid ads and SEO solve different moments: ads buy immediate visibility and stop existing when the budget turns off; SEO builds an asset that keeps bringing demand. A company that works its positioning well can keep running ads, but stops depending on them, which is a different financial situation."
         },
         {
           "question": "Can we start SEO right away on a newly launched site?",

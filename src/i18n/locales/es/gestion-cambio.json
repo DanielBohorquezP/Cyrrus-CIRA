@@ -86,7 +86,7 @@
       },
       {
         "title": "Plan de entrenamiento",
-        "description": "Diseñamos planes personalizados para garantizar que el equipo esté preparado y confiado en el uso de la nueva solución."
+        "description": "Diseñamos planes personalizados para que el equipo esté preparado y confiado en el uso de la nueva solución."
       },
       {
         "title": "Gestión del clima",
@@ -115,7 +115,7 @@
       },
       {
         "title": "Embebido en nuestros servicios",
-        "description": "Nuestra metodología garantiza una gestión de cambios perfectamente alineada con la visión corporativa y sus objetivos específicos."
+        "description": "Nuestra metodología busca alinear la gestión del cambio con la visión corporativa y sus objetivos específicos."
       },
       {
         "title": "Enfoque integral",
@@ -127,7 +127,7 @@
       },
       {
         "title": "Personalización y competencia",
-        "description": "Diseñamos entrenamientos personalizados que garantizan un equipo altamente informado, impulsando una implementación exitosa."
+        "description": "Diseñamos entrenamientos personalizados para que el equipo esté informado y respalde la implementación."
       },
       {
         "title": "Gestión proactiva del impacto",
@@ -149,7 +149,7 @@
     "items": [
       {
         "question": "¿Por qué las personas se resisten al cambio en una organización?",
-        "answer": "Casi nunca es por rebeldía. Las causas más comunes son no entender por qué se cambia, temor a perder control o competencia, sobrecarga de trabajo y experiencias anteriores de cambios que no se sostuvieron. La resistencia se reduce con patrocinio ejecutivo visible, comunicación clara y capacitación a tiempo."
+        "answer": "No necesariamente es rebeldía. Algunas causas posibles son no entender por qué se cambia, temor a perder control o competencia, sobrecarga de trabajo y experiencias anteriores de cambios que no se sostuvieron. La resistencia se reduce con patrocinio ejecutivo visible, comunicación clara y capacitación a tiempo."
       },
       {
         "question": "¿Qué modelos de gestión del cambio existen?",
@@ -177,11 +177,11 @@
       },
       {
         "question": "¿Ayudan con la gestión del cambio en implementaciones de ERP?",
-        "answer": "Sí. La adopción de ERP es el caso más frecuente: el sistema queda instalado pero el equipo sigue trabajando por fuera de él. Integramos la gestión del cambio a la implementación desde el kickoff, no como un rescate posterior al go-live."
+        "answer": "Sí. Un caso típico es la adopción de ERP: el sistema queda instalado pero el equipo sigue trabajando por fuera de él. Integramos la gestión del cambio a la implementación desde el kickoff, no como un rescate posterior al go-live."
       },
       {
         "question": "¿En qué se diferencia esto del change management tradicional?",
-        "answer": "El change management tradicional suele llegar como una consultoría aparte, después de decidida la tecnología. El nuestro está embebido en Estrategia, Selección y Gerencia de Proyectos desde el inicio, con medición continua de la adopción — no una encuesta de satisfacción al cierre."
+        "answer": "En nuestro enfoque, la gestión del cambio no llega como una consultoría aparte después de decidida la tecnología: está embebida en Estrategia, Selección y Gerencia de Proyectos desde el inicio, con medición continua de la adopción — no una encuesta de satisfacción al cierre."
       }
     ]
   },
@@ -191,7 +191,7 @@
     "items": [
       {
         "title": "Selección de ERP",
-        "description": "El punto donde suele empezar la resistencia al cambio."
+        "description": "Un punto donde puede empezar la resistencia al cambio."
       },
       {
         "title": "Gerencia de proyectos (PMO)",

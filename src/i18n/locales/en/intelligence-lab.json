@@ -8,12 +8,12 @@
     "hero": {
       "eyebrow": "Cyrrus Intelligence Lab",
       "title": "Corporate AI governance and enterprise AI architecture",
-      "description": "Your team is already using AI without anyone auditing what data it touches or who's accountable if it fails. Before the next tool, you need governance — not another loose pilot. Cyrrus Intelligence Lab is the corporate AI governance and enterprise AI architecture layer that runs transversally beneath the method's 4 phases."
+      "description": "Your team may already be using AI without anyone auditing what data it touches or who's accountable if it fails. Before the next tool, you need governance — not another loose pilot. Cyrrus Intelligence Lab is the corporate AI governance and enterprise AI architecture layer that runs transversally beneath the method's 4 phases."
     },
     "pillars": {
       "eyebrow": "The three pillars",
       "title": "Governance first. Tools second.",
-      "description": "Most AI initiatives fail because they start with the tool. We start with the governance framework that makes that tool safe, auditable, and scalable.",
+      "description": "An AI initiative that starts with the tool can leave security and traceability unresolved. We start with the governance framework that makes that tool safe, auditable, and scalable.",
       "verMas": "Learn more",
       "items": [
         {
@@ -69,7 +69,7 @@
         },
         {
           "question": "Where do you start — governance or tools?",
-          "answer": "Governance. Most AI initiatives fail because they start with the tool; we start with the framework that makes that tool safe, auditable, and scalable."
+          "answer": "Governance. An AI initiative that starts with the tool can leave security and traceability unresolved; we start with the framework that makes that tool safe, auditable, and scalable."
         },
         {
           "question": "How does Intelligence Lab connect to the CIRA method?",
@@ -225,7 +225,7 @@
         },
         {
           "title": "ERP selection",
-          "description": "The core system that almost always needs integrating."
+          "description": "The core system worth integrating."
         }
       ]
     }
@@ -281,7 +281,7 @@
         },
         {
           "question": "Does AI governance slow down innovation inside the company?",
-          "answer": "The goal isn't slower approval — it's approval with judgment. Most initiatives move faster once there are clear rules for what's in and what's out."
+          "answer": "The goal isn't slower approval — it's approval with judgment. With clear rules for what's in and what's out, approval can be faster."
         }
       ]
     },

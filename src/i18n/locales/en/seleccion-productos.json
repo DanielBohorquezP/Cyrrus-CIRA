@@ -127,7 +127,7 @@
       },
       {
         "question": "Why hire an independent consultant instead of going straight to the ERP vendor?",
-        "answer": "Because a vendor has one product to sell and their evaluation will always end at that product. Cyrrus holds no commercial alliances or commissions with any ERP manufacturer: the criteria come from your operation, not from a catalog, and the outcome may well be that the best decision is not to change platforms at all."
+        "answer": "Because a vendor has one product to sell and their evaluation may end at that product. Cyrrus holds no commercial alliances or commissions with any ERP manufacturer: the criteria come from your operation, not from a catalog, and the outcome may well be that the best decision is not to change platforms at all."
       },
       {
         "question": "Do you help select an ERP for companies in Colombia or LATAM?",
@@ -184,7 +184,7 @@
     "problemaReal": {
       "eyebrow": "02 — The problem",
       "title": "The challenge isn't finding a CRM. It's finding one your organization will actually adopt.",
-      "body": "A CRM can have 200 features — but if the sales team doesn't use it, the investment fails.",
+      "body": "A CRM can have hundreds of features — but if the sales team doesn't use it, the investment fails.",
       "punch": "Fit with the real sales process matters more than the feature list."
     },
     "solucion": {
@@ -392,7 +392,7 @@
       },
       {
         "question": "Why use an independent consultant to choose an HCM?",
-        "answer": "Because payroll is the module where getting it wrong is most expensive, and where a vendor has the least incentive to point out their own country-level gaps. An evaluator with no commission can tell you which platform does not properly cover your local legislation."
+        "answer": "Because in payroll a mistake can be costly, and a vendor may have little incentive to point out its own country-level gaps. An evaluator with no commission can tell you which platform does not properly cover your local legislation."
       }
     ]
   },

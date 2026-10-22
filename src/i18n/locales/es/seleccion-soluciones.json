@@ -6,7 +6,7 @@
   "hero": {
     "eyebrow": "Método CIRA — Identificar",
     "title": "Consultoría tecnológica: selección de soluciones TI sin sesgo de proveedor",
-    "description": "Muchas decisiones de tecnología no parten de lo que el negocio realmente necesita. Nuestra selección siempre arranca en los requerimientos del negocio, no en el catálogo del proveedor — evaluación 100% agnóstica, con criterios objetivos y comparables.",
+    "description": "Una decisión de tecnología puede no partir de lo que el negocio realmente necesita. Nuestra selección siempre arranca en los requerimientos del negocio, no en el catálogo del proveedor — evaluación 100% agnóstica, con criterios objetivos y comparables.",
     "ctaLabel": "Hablemos de su solución"
   },
   "intro": {
@@ -259,7 +259,7 @@
           "RPA, inteligencia artificial y agentes de IA no compiten entre sí: resuelven problemas distintos. El RPA (automatización robótica de procesos) replica tareas repetitivas con reglas fijas sobre los sistemas existentes, como copiar datos entre aplicaciones. La inteligencia artificial interpreta información no estructurada —textos, documentos, imágenes— y hace predicciones. Un agente de IA combina ambas capacidades para completar una tarea de varios pasos con cierto grado de autonomía.",
           "Elegir mal sale caro. Un agente de IA donde bastaba una regla añade costo y riesgo; un RPA frágil sobre un proceso que cambia cada mes termina en mantenimiento permanente. Por eso la selección empieza por el proceso y no por la herramienta: qué volumen tiene, qué tan estructurado es, qué excepciones aparecen y qué datos toca.",
           "Para comparar plataformas de automatización miramos cinco criterios: integración con los sistemas actuales (ERP, CRM, correo, APIs), seguridad y manejo de los datos, costo total a tres años (licencias, infraestructura y mantenimiento), facilidad para que su propio equipo la opere sin depender del proveedor, y capacidad de medir el resultado contra el proceso que reemplaza.",
-          "Los errores más frecuentes al elegir tecnología de automatización son empezar por la herramienta de moda, automatizar un proceso que todavía no está bien definido, ignorar el costo de mantenimiento y no decidir quién será el dueño de la automatización una vez en producción. Automatizar un proceso confuso solo hace que el desorden ocurra más rápido.",
+          "Algunos errores al elegir tecnología de automatización son empezar por la herramienta de moda, automatizar un proceso que todavía no está bien definido, ignorar el costo de mantenimiento y no decidir quién será el dueño de la automatización una vez en producción. Automatizar un proceso confuso solo hace que el desorden ocurra más rápido.",
           "Nuestro acompañamiento cubre levantar y priorizar los procesos candidatos, definir y ponderar los criterios de evaluación, comparar proveedores contra casos reales de su operación y acompañar la negociación y la contratación. La implementación se coordina con Gerencia de proyectos (PMO) y, cuando la solución correcta no existe en el mercado, la construcción a medida se trabaja con nuestra práctica de Agentes de IA. En Cyrrus hacemos esta selección de forma independiente, sin comisiones de fabricantes."
         ],
         "related": [

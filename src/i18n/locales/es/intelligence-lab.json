@@ -8,12 +8,12 @@
     "hero": {
       "eyebrow": "Cyrrus Intelligence Lab",
       "title": "Consultoría de IA para empresas: gobierno, arquitectura y agentes",
-      "description": "Su equipo ya usa IA sin que nadie audite qué datos toca ni quién responde si falla. Antes de la siguiente herramienta, necesita gobierno — no otro piloto suelto. Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que corre de forma transversal por debajo de las 4 fases del método."
+      "description": "Es posible que su equipo ya use IA sin que nadie audite qué datos toca ni quién responde si falla. Antes de la siguiente herramienta, necesita gobierno — no otro piloto suelto. Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que corre de forma transversal por debajo de las 4 fases del método."
     },
     "pillars": {
       "eyebrow": "Los tres pilares",
       "title": "Gobierno primero. Herramientas después.",
-      "description": "La mayoría de las iniciativas de IA fallan porque empiezan por la herramienta. Nosotros empezamos por el marco de gobierno que hace que esa herramienta sea segura, auditable y escalable.",
+      "description": "Una iniciativa de IA que empieza por la herramienta puede dejar sin resolver la seguridad y la trazabilidad. Nosotros empezamos por el marco de gobierno que hace que esa herramienta sea segura, auditable y escalable.",
       "verMas": "Ver más",
       "items": [
         {
@@ -69,7 +69,7 @@
         },
         {
           "question": "¿Por dónde empiezan, gobierno o herramientas?",
-          "answer": "Por gobierno. La mayoría de las iniciativas de IA fallan porque empiezan por la herramienta; nosotros empezamos por el marco que hace que esa herramienta sea segura, auditable y escalable."
+          "answer": "Por gobierno. Una iniciativa de IA que empieza por la herramienta puede dejar sin resolver la seguridad y la trazabilidad; nosotros empezamos por el marco que hace que esa herramienta sea segura, auditable y escalable."
         },
         {
           "question": "¿Cómo se conecta Intelligence Lab con el método CIRA?",
@@ -114,9 +114,9 @@
       "No somos una fábrica de software ni le vamos a proponer construir algo que ya existe en el mercado. El mismo diagnóstico agnóstico que usamos para seleccionar un ERP o un CRM es el que aplicamos aquí: primero evaluamos si la solución correcta ya existe.",
       "Cuando genuinamente no existe, sí sabemos construirla: automatizaciones de procesos y agentes de IA especializados para tareas dentro de cada fase del método CIRA — diagnóstico, evaluación de proveedores, monitoreo de riesgo, medición de adopción — integrados a la arquitectura de IA empresarial que ya gobernamos, para que no se convierta en una herramienta más sin dueño.",
       "Un agente de IA es un sistema que recibe un objetivo y completa por sí mismo una tarea de varios pasos: consulta información en sus sistemas, aplica reglas del negocio, redacta o actualiza registros y avisa a una persona cuando necesita una decisión. Se diferencia de un chatbot en que no solo responde preguntas: actúa sobre los procesos.",
-      "Los casos de uso más habituales en empresas son clasificar y responder solicitudes entrantes, preparar y conciliar información entre sistemas, vigilar indicadores y alertar desviaciones, y asistir a un equipo con tareas de análisis repetitivas. Ninguno funciona bien sin un proceso claro detrás y sin alguien dentro de la organización que responda por el resultado.",
+      "Algunos casos de uso en empresas son clasificar y responder solicitudes entrantes, preparar y conciliar información entre sistemas, vigilar indicadores y alertar desviaciones, y asistir a un equipo con tareas de análisis repetitivas. Ninguno funciona bien sin un proceso claro detrás y sin alguien dentro de la organización que responda por el resultado.",
       "Así trabajamos un agente de IA: primero se elige un proceso concreto y se acuerda cómo se medirá el resultado; después se define qué puede hacer el agente por sí solo y qué debe pasar por aprobación de una persona; luego se prueba con casos reales de la operación y se ajusta; y finalmente se opera con un responsable claro dentro de la organización. Sin ese orden, un agente impresiona en una demostración y no cambia nada en el día a día.",
-      "Un agente de IA no siempre es la respuesta. Si el proceso es estable y de reglas fijas, un RPA o una automatización tradicional es más barato y predecible; si el proceso no está definido, primero hay que ordenarlo. Los riesgos habituales de un agente mal planteado son permisos excesivos, respuestas incorrectas presentadas con seguridad y falta de trazabilidad, y por eso lo diseñamos junto con el gobierno de IA."
+      "Un agente de IA no siempre es la respuesta. Si el proceso es estable y de reglas fijas, un RPA o una automatización tradicional es más barato y predecible; si el proceso no está definido, primero hay que ordenarlo. Algunos riesgos de un agente mal planteado son permisos excesivos, respuestas incorrectas presentadas con seguridad y falta de trazabilidad, y por eso lo diseñamos junto con el gobierno de IA."
     ],
     "faq": {
       "eyebrow": "Automatización y Agentes IA",
@@ -250,7 +250,7 @@
         },
         {
           "title": "Selección de ERP",
-          "description": "El sistema central que casi siempre hay que integrar."
+          "description": "El sistema central que conviene integrar."
         }
       ]
     }
@@ -306,7 +306,7 @@
         },
         {
           "question": "¿El gobierno de IA frena la innovación dentro de la empresa?",
-          "answer": "El objetivo no es aprobar más lento, es aprobar con criterio. La mayoría de las iniciativas se mueven más rápido una vez que hay reglas claras de qué sí y qué no."
+          "answer": "El objetivo no es aprobar más lento, es aprobar con criterio. Con reglas claras de qué sí y qué no, aprobar puede ser más rápido."
         }
       ]
     },

@@ -22,7 +22,7 @@
       "title": "Identificar la mejor solución",
       "service": "Select",
       "ctaText": "Ver Selección de Soluciones en detalle",
-      "problem": "Se compra tecnología por moda, no por ajuste real al negocio. Nuestra consultoría de selección de ERP y de software empresarial parte siempre de los requerimientos del negocio, no del catálogo del proveedor.",
+      "problem": "Puede comprarse tecnología por moda y no por ajuste real al negocio. Nuestra consultoría de selección de ERP y de software empresarial parte siempre de los requerimientos del negocio, no del catálogo del proveedor.",
       "how": "Evaluación de proveedores tecnológicos 100% agnóstica, con criterios objetivos y comparables, sin sesgos comerciales hacia ninguna marca.",
       "outcome": "La solución correcta para su organización, seleccionada en semanas y no en meses, con el riesgo de una mala decisión tecnológica minimizado."
     },
@@ -50,7 +50,7 @@
   "socialProof": {
     "eyebrow": "Método CIRA",
     "title": "Cómo trabajamos",
-    "description": "La mayoría de estos proyectos no fracasa por la tecnología. Fracasa por el sesgo de quien la vendió. Por eso definimos primero los requerimientos del negocio y solo después comparamos proveedores, con criterios objetivos y medibles — el mismo equipo acompaña las cuatro fases del ciclo, con inteligencia artificial acelerando cada tramo.",
+    "description": "En el informe 2026 de Panorama Consulting, entre los proyectos de ERP que superaron su presupuesto, la razón más común fue la necesidad inesperada de tecnología adicional. Por eso definimos primero los requerimientos del negocio y solo después comparamos proveedores, con criterios objetivos y medibles — el mismo equipo acompaña las cuatro fases del ciclo, con inteligencia artificial acelerando cada tramo.",
     "ctaLabel": "Agendar conversación",
     "stats": [
       {
@@ -79,7 +79,7 @@
       },
       {
         "question": "¿Se puede contratar una sola fase del método CIRA?",
-        "answer": "Cada fase — Strategy, Select, Project Management y Change Management — se contrata de forma independiente. La mayoría de nuestros clientes empieza por una sola fase y expande el alcance cuando ve el resultado."
+        "answer": "Cada fase — Strategy, Select, Project Management y Change Management — se contrata de forma independiente. Un cliente puede empezar por una sola fase y ampliar el alcance cuando ve el resultado."
       },
       {
         "question": "¿Pueden revisar una decisión de proveedor que ya tomamos?",

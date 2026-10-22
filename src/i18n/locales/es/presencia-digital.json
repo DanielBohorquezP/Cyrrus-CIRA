@@ -8,7 +8,7 @@
     "hero": {
       "eyebrow": "Cyrrus Presencia Digital",
       "title": "Su empresa vale más de lo que su presencia digital demuestra",
-      "description": "Tiene la trayectoria, los casos y el equipo. Pero cuando un comprador busca lo que usted hace, encuentra a un competidor más pequeño con mejor sitio y mejor posicionamiento. Presencia Digital trata su sitio y su visibilidad como lo que son: activos del negocio, con dueño, presupuesto y métricas.",
+      "description": "Tiene la trayectoria, los casos y el equipo. Pero cuando un comprador busca lo que usted hace, puede encontrar a un competidor con mejor sitio y mejor posicionamiento. Presencia Digital trata su sitio y su visibilidad como lo que son: activos del negocio, con dueño, presupuesto y métricas.",
       "ctaLabel": "Agendar diagnóstico digital"
     },
     "pillars": {
@@ -102,7 +102,7 @@
     },
     "diagnostico": {
       "eyebrow": "Diagnóstico",
-      "title": "Lo que encontramos en el sitio de casi toda empresa que nos llama",
+      "title": "Lo que revisamos en el sitio de una empresa",
       "description": "El sitio se hizo hace cuatro años, con una agencia que ya no responde, sobre una plataforma que nadie dentro de la empresa sabe tocar. Funciona — pero no vende, no mide y no se puede cambiar. Eso no es un problema de diseño: es un activo del negocio sin dueño.",
       "problems": [
         {
@@ -115,7 +115,7 @@
         },
         {
           "title": "Lento donde importa",
-          "description": "Abre bien desde la oficina y tarda desde un celular con datos móviles, que es como lo abre la mayoría de sus clientes. Cada segundo de espera es una conversación que no ocurre."
+          "description": "Abre bien desde la oficina y puede tardar desde un celular con datos móviles. Un sitio lento puede hacer que una conversación no ocurra."
         },
         {
           "title": "Ciego a los datos",
@@ -222,7 +222,7 @@
         },
         {
           "question": "¿Quién puede actualizar el sitio después de la entrega?",
-          "answer": "Su equipo. La entrega incluye un gestor de contenido y la capacitación para usarlo, porque la razón más común por la que un sitio corporativo queda desactualizado no es la falta de contenido, sino la fricción de tener que pedirle cada cambio a un proveedor. Si además prefiere dejarnos el mantenimiento evolutivo, se acuerda aparte — pero nunca como una dependencia obligada."
+          "answer": "Su equipo. La entrega incluye un gestor de contenido y la capacitación para usarlo, porque una razón posible por la que un sitio corporativo queda desactualizado es la fricción de tener que pedirle cada cambio a un proveedor. Si además prefiere dejarnos el mantenimiento evolutivo, se acuerda aparte — pero nunca como una dependencia obligada."
         },
         {
           "question": "¿El desarrollo incluye el posicionamiento en buscadores?",
@@ -272,7 +272,7 @@
         },
         {
           "title": "Contenido que no responde nada",
-          "description": "El blog publica noticias de la empresa. El comprador busca cómo resolver un problema. Las dos cosas nunca se cruzan."
+          "description": "El blog publica noticias de la empresa. El comprador busca cómo resolver un problema. Las dos cosas pueden no cruzarse."
         },
         {
           "title": "Problemas técnicos invisibles",
@@ -283,7 +283,7 @@
     "whyCyrrus": {
       "eyebrow": "Por qué Cyrrus",
       "title": "SEO desde la consultoría, no desde el volumen de contenido",
-      "description": "La mayoría de las agencias venden una cantidad de artículos al mes. Nosotros partimos del negocio: qué decisiones de compra queremos interceptar, qué preguntas hace ese comprador y qué evidencia necesita ver para levantar el teléfono. El contenido es la consecuencia, no el producto.",
+      "description": "Una agencia puede vender una cantidad de artículos al mes. Nosotros partimos del negocio: qué decisiones de compra queremos interceptar, qué preguntas hace ese comprador y qué evidencia necesita ver para levantar el teléfono. El contenido es la consecuencia, no el producto.",
       "stats": [
         {
           "value": "2",
@@ -368,7 +368,7 @@
         },
         {
           "question": "¿Qué es el SEO y por qué lo necesita una empresa B2B?",
-          "answer": "El SEO es el trabajo de hacer que una empresa aparezca en los resultados de búsqueda cuando alguien busca el problema que esa empresa resuelve, sin pagar por cada clic. En B2B importa más que en otros sectores por una razón concreta: el comprador de una solución empresarial investiga durante semanas antes de contactar a nadie, y toma esa decisión leyendo, no viendo anuncios. Si su empresa no está presente en esa etapa de investigación, entra a la conversación cuando el proveedor ya está prácticamente elegido."
+          "answer": "El SEO es el trabajo de hacer que una empresa aparezca en los resultados de búsqueda cuando alguien busca el problema que esa empresa resuelve, sin pagar por cada clic. En B2B importa más que en otros sectores por una razón concreta: el comprador de una solución empresarial puede investigar durante semanas antes de contactar a alguien, leyendo y no viendo anuncios. Si su empresa no está presente en esa etapa de investigación, puede entrar tarde a la conversación."
         },
         {
           "question": "¿Qué es GEO y en qué se diferencia del SEO?",
@@ -376,11 +376,11 @@
         },
         {
           "question": "¿Cuánto tarda el SEO en dar resultados?",
-          "answer": "Los arreglos técnicos pueden mover posiciones en semanas, porque corrigen algo que estaba bloqueando activamente al buscador. El posicionamiento por contenido y autoridad se mide en meses: entre tres y seis para ver movimiento sostenido en búsquedas competitivas. Cualquiera que le prometa primeras posiciones en treinta días está comprando enlaces o apuntando a búsquedas que nadie hace. Lo que sí se reporta desde el primer mes es el avance de la implementación y el cambio en las métricas técnicas."
+          "answer": "Los arreglos técnicos pueden mover posiciones en semanas, porque corrigen algo que estaba bloqueando activamente al buscador. El posicionamiento por contenido y autoridad se mide en meses: Google indica que algunos cambios pueden surtir efecto en horas y otros pueden tardar varios meses. Desconfíe de quien prometa primeras posiciones en treinta días. Lo que sí se reporta desde el primer mes es el avance de la implementación y el cambio en las métricas técnicas."
         },
         {
           "question": "¿El SEO reemplaza la inversión en anuncios?",
-          "answer": "No la reemplaza, la vuelve opcional. La pauta y el SEO resuelven momentos distintos: la pauta compra visibilidad inmediata y deja de existir cuando se apaga el presupuesto; el SEO construye un activo que sigue trayendo demanda. La mayoría de las empresas que trabajan bien el posicionamiento no dejan de pautar — dejan de depender de la pauta, que es una situación financiera muy distinta."
+          "answer": "No la reemplaza, la vuelve opcional. La pauta y el SEO resuelven momentos distintos: la pauta compra visibilidad inmediata y deja de existir cuando se apaga el presupuesto; el SEO construye un activo que sigue trayendo demanda. Una empresa que trabaja bien su posicionamiento puede seguir pautando, pero deja de depender de la pauta, que es una situación financiera distinta."
         },
         {
           "question": "¿Se puede empezar con SEO desde el lanzamiento de un sitio nuevo?",

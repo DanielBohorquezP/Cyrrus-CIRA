@@ -31,16 +31,16 @@
   "differentiators": {
     "eyebrow": "What makes us different?",
     "title": "One management dynamic, no friction between teams",
-    "description": "We guarantee the transformation's success by bringing operational variables, technical expertise, and human resources together in one coherent management dynamic.",
+    "description": "We work toward the transformation's success by bringing operational variables, technical expertise, and human resources together in one coherent management dynamic.",
     "ctaLabel": "Schedule an executive diagnosis",
     "items": [
       {
         "title": "Full resource integration",
-        "description": "We use our proven experience to integrate every critical element of your projects, ensuring smooth execution."
+        "description": "We use our experience to integrate every critical element of your projects and keep execution smooth."
       },
       {
         "title": "Quality assurance",
-        "description": "We assign a senior resource within the executive committee to guarantee quality and fast, expert attention to every request."
+        "description": "We assign a senior resource within the executive committee to look after quality and give fast, expert attention to every request."
       },
       {
         "title": "Professional change management",
@@ -81,7 +81,7 @@
       },
       {
         "title": "Business process experts",
-        "description": "We reduce risks tied to critical aspects and guarantee perfect alignment with functional best practices."
+        "description": "We reduce risks tied to critical aspects and align the project with reference functional practices."
       },
       {
         "title": "Results that transform",
@@ -155,7 +155,7 @@
       },
       {
         "question": "How do you measure project success?",
-        "answer": "With verifiable results, not sales promises: projects executed under PMBOK guidelines, zero scope deviations, and cost variances as low as 3% versus estimates."
+        "answer": "With results from a Cyrrus project: execution under PMBOK guidelines, zero scope deviations, and a 3% difference versus the estimated cost."
       },
       {
         "question": "Is risk monitoring just a report at the end of each phase?",
@@ -173,7 +173,7 @@
   },
   "achievements": {
     "eyebrow": "Our track record",
-    "title": "Verifiable results, not sales promises",
+    "title": "Results from a Cyrrus project",
     "items": [
       "Project executed start to finish under PMBOK guidelines.",
       "Implementation with a positive impact on business continuity.",
