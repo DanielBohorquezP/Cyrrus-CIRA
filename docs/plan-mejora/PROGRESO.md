@@ -47,28 +47,32 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 1 (2026-10-05, comparativas C1–C5).
+**Última sesión cerrada:** Sesión 3 (2026-10-21, A1 verificado; C8 y C9 publicados).
 
-**Próxima: Sesión 2.** Orden sugerido:
-1. Confirmar si el cliente subió `cyrrus-dist-2026-10-05-v3.zip` → si sí, **A1**, **A2** (pedir indexación de los 5 artículos nuevos, los 2 casos y la guía de gestión del cambio) y **A5**/**K1** (PageSpeed real).
+**Próxima: Sesión 4.** Orden sugerido:
+1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v4.zip` (C8 + C9). Hacer **A2** (pedir indexación de los 6 artículos nuevos, los 2 casos y la guía de gestión del cambio; reenviar sitemap) y **A5**/**K1** (PageSpeed real de producción).
 2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**.
-3. Si no: **C6** (Mejores CRM) y **C7** (ERP vs Excel, medir keyword) + **I1** (publicaciones de LinkedIn para C1–C5).
+3. **C10** (SAP B1 precio), **C11** (CMMS), **C12** (S/4HANA, verificar fechas en SAP), y **I1** (LinkedIn para C1–C5 y C9). Medir cada keyword antes de escribir.
+4. Después: C13–C14, C6/C7.
+
+**Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
 
 **Hoja de ruta de las siguientes sesiones** (se ajusta al cerrar cada una):
 
 | Sesión | Foco | Tareas |
 |---|---|---|
 | 1 ✅ | Comparativas (adelantadas a pedido del cliente) | C1–C5 + K1 parcial |
-| 2 | Despliegue + vender ya | A1, A2, A5, B1, B3, B5 |
-| 3 | Comparativas restantes + distribución | C6, C7, I1 de C1–C5 |
-| 4 | Primera herramienta | D1 + B4 |
-| 5 | Contenido con volumen | G1, G2 |
-| 6 | Contenido CRM | G3 |
-| 7 | Herramienta de costo | D2 (enlazada desde C4) |
-| 8 | Contenido | G4, G5 |
-| 9 | Estudio propio (diseño) | E1 + G6 |
-| 10 | Industrias | H1, H2 |
-| 11–14 | Contenido G7–G16 a 2 por sesión; E3 cuando haya respuestas | — |
+| 2 ✅ | Investigación de temas para compradores de 50–100+ empleados | C8–C18 (definidas) |
+| 3 ✅ | Verificar despliegue + primeras categorías caras | A1, C8, C9 |
+| 4 | Indexación, medición y siguientes categorías | A2, A5, C10, C11, C12, I1 (B1, B3, B5 si llegan insumos) |
+| 5 | Primera herramienta | D1 + B4 |
+| 6 | Contenido con volumen | G1, G2 |
+| 7 | Contenido CRM | G3 |
+| 8 | Herramienta de costo | D2 (enlazada desde C4) |
+| 9 | Contenido | G4, G5 |
+| 10 | Estudio propio (diseño) | E1 + G6 |
+| 11 | Industrias | H1, H2 |
+| 12–15 | Contenido G7–G16 a 2 por sesión; E3 cuando haya respuestas | — |
 | 15 (≈ 90 días) | Revisión trimestral | L1 |
 
 Las tareas **[Cliente]** de F, I y J se avanzan en paralelo; cada sesión revisa
@@ -81,8 +85,8 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase A — Despliegue y medición
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| A1 | Desplegar y verificar en producción | ⛔ | Zip listo: `../Cyrrus builds/cyrrus-dist-2026-10-05-v3.zip` (reemplaza a v2). Falta que el cliente lo suba |
-| A2 | Search Console: sitemap, indexación, revisión semanal | 🟡 | Acceso desde 2026-09-18; falta reenviar sitemap tras A1 y la revisión semanal |
+| A1 | Desplegar y verificar en producción | ✅ | 2026-10-21: producción sirve el build v3 (hash del bundle idéntico, 10 rutas 200, `Cache-Control: no-cache`). El v4 está pendiente de subir |
+| A2 | Search Console: sitemap, indexación, revisión semanal | 🟡 | Acceso desde 2026-09-18; falta reenviar sitemap y pedir indexación tras subir el v4, y la revisión semanal |
 | A3 | Bing Webmaster Tools | ⬜ | |
 | A4 | GA4 con conversiones | ⛔ | Falta acceso a GA4. `file_download` ya existe en artículos |
 | A5 | PageSpeed real tras cada deploy | ⬜ | Lab local 2026-10-05: TBT 33 ms tras `startTransition` |
@@ -108,6 +112,17 @@ qué llegó y lo integra (F8, J1, J3…).
 | C5 | Salesforce vs HubSpot vs Dynamics 365 | ✅ | Sesión 1. `/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm`. MX 20 · SD 25 · CPC US$8; enlazada desde la página de CRM |
 | C6 | Mejores CRM | ⬜ | |
 | C7 | ERP vs Excel | ⬜ | Medir keyword primero |
+| C8 | Reforzar C5 para empresas de 100+ | ✅ | Sesión 3. Sección "¿Qué cambia si su empresa tiene más de 100 empleados?" (costo total, integración con ERP, riesgo de migración) + tabla por situación, ES/EN. Falta cambiar el CTA a diagnóstico cuando exista B1 y enlazar C15–C18 |
+| C9 | Sistema WMS y cómo elegirlo | ✅ | Sesión 3. `/perspectivas/sistema-wms-que-es-y-como-elegir`, ES/EN. Enfocado en decisión gerencial (WMS vs ERP, costo total a 5 años, señales de alerta). Fuentes: Microsoft Learn (2) y SAP Press. MX 880 · SD 10 |
+| C10 | Cuánto cuesta SAP Business One | ⬜ | Sesión 2: MX 140 + 110 · SD 23–28 |
+| C11 | Software de mantenimiento (CMMS/EAM) | ⬜ | Sesión 2: MX 170 · SD 34 · CPC US$54 |
+| C12 | Migrar de SAP ECC a S/4HANA | ⬜ | Sesión 2: MX 1.900 · SD 28. Verificar fechas de soporte en SAP |
+| C13 | Software de RR. HH. y nómina (100+) | ⬜ | Sesión 2: MX 260 · SD 18 · CPC US$22,6. Coordinar con G8 |
+| C14 | Software MES | ⬜ | Sesión 2: MX 140 · SD 17 |
+| C15 | Integrar ERP y CRM sin middleware | ⬜ | Sesión 2: satélite para respuestas de IA |
+| C16 | Costo total de propiedad de un CRM | ⬜ | Sesión 2: satélite para respuestas de IA |
+| C17 | Fin de venta de Salesforce CPQ | ⬜ | Sesión 2: verificar fechas en Salesforce |
+| C18 | Gobernanza y deduplicación de datos en el CRM | ⬜ | Sesión 2: satélite para respuestas de IA |
 
 ### Fase D — Herramientas
 | ID | Tarea | Estado | Notas |
@@ -205,7 +220,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-05-v3.zip` (reemplaza v2) | 2026-10-05 | ⬜ | A1, A2, A5, K1 |
+| Subir `cyrrus-dist-2026-10-21-v4.zip` (C8 + C9; reemplaza v3, que ya está en producción) | 2026-10-21 | ⬜ | A2, A5, K1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Diagnóstico de entrada: alcance, duración, precio | 2026-10-05 | ⬜ | B1 |
 | Rangos de precio por servicio | 2026-10-05 | ⬜ | B2 |
@@ -232,6 +247,32 @@ qué llegó y lo integra (F8, J1, J3…).
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 3 — 2026-10-21 — Despliegue verificado y primeras categorías de software caro (C8, C9)
+- **Tareas trabajadas:** A1 ✅, C8 ✅, C9 ✅. Criterio nuevo del cliente: lector objetivo = alta gerencia (CEO/CFO/COO) de empresas de 50+ empleados que pueden pagar consultorías de COP 30 millones o más.
+- **Hecho:**
+  - A1: producción ya servía el build v3 (hash del bundle `index-Bw1hGO1U.js` idéntico al de `dist/`, 10 rutas en 200, `Cache-Control: no-cache`, `Last-Modified` 2026-10-05).
+  - C8: en el artículo de CRM (el de más tráfico) se añadió la sección "¿Qué cambia si su empresa tiene más de 100 empleados?" (la licencia deja de ser la partida mayor; pesan implementación, integración con ERP, calidad de datos, adopción y costo de migrar después) y la tabla "Mejor punto de partida según su situación" (5 escenarios, con qué validar antes de decidir). ES/EN. Segundo CTA de servicio movido tras la sección nueva (`serviceCtaIndexes` [6, 16]).
+  - C9: artículo nuevo "Sistema WMS: qué es, WMS vs ERP y cómo elegirlo" (ES/EN) escrito para quien decide, no para quien opera: señales que llegan al margen, tabla de tres formas de resolver la bodega, cuatro preguntas de la gerencia antes de comprar (problema en términos de negocio, costo total a 5 años, quién sostiene el sistema, día del cambio). Sin cifras de mercado inventadas. Enlazado desde la guía de ERP, `llms.txt` y (ida y vuelta) al artículo de costo de ERP.
+- **Verificación:** build de 98 rutas; consola limpia en WMS (ES/EN) y CRM; JSON-LD válido; tabla y H2 correctos.
+- **Commits:** ver `git log` (mensaje "Sesión 3: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v4.zip`.
+- **Pendiente / bloqueos nuevos:** subir el v4. No se pudo abrir las páginas de Oracle y SAP (403); la definición de WMS se apoya en Microsoft Learn y SAP Press. Falta el enlace de C9 desde la página de servicio de ERP (hoy solo desde la guía) y revisar la portada (reutiliza una foto genérica).
+- **Próxima sesión:** Sesión 4 (ver arriba).
+
+### Sesión 2 — 2026-10-21 — Investigación de temas para compradores de software de 50–100+ empleados
+- **Tareas trabajadas:** C8–C18 (definidas en el plan, ⬜); sin cambios en el sitio.
+- **Hecho:**
+  - Evaluación del artículo C5 (Salesforce vs HubSpot vs Dynamics 365), el de más tráfico: sirve como puerta de entrada (intención de compra, agnóstico, tabla de precios), pero atrae a pymes y a quien solo compara. Le faltan lo que le importa a una empresa de 100+ (integración con ERP, gobernanza, costo de implementación), una tabla "mejor opción por escenario" y un CTA de nivel adecuado. → C8.
+  - Investigación en Ubersuggest (2026-10-21), por país en español. Hallazgo: casi nadie busca "cómo seleccionar software"; el comprador grande busca **la categoría**. Oportunidades medidas: sistema WMS MX 880 · SD 10 (CO 390); SAP Business One precio MX 140 + 110 · SD 23–28; software CMMS MX 170 · SD 34 · CPC US$54; SAP S/4HANA MX 1.900 · SD 28; software de RR. HH. MX 260 · SD 18 · CPC US$22,6; software MES MX 140 · SD 17.
+  - Cuatro satélites de CRM (C15–C18) pensados para las respuestas de IA de directores de operaciones y RevOps (sin volumen medible en Ubersuggest).
+  - Decisiones nuevas en `PLAN.md`: D10 (cliente 50–100+ y temas por categoría), D11 (medir por país en español), D12 (tabla "mejor opción por escenario"). Fase C ampliada con la subfase C-bis; detalle, notas y descartes en `PASO-A-PASO.md`.
+  - Descartado: comparativas en español entre ERP/CRM por nombre (≈10 búsquedas/mes en México; las cifras grandes eran búsquedas en inglés), "selección de erp", "migración erp"; "consultoría erp" (170) va a la página de servicio.
+- **Verificación:** no aplica (solo documentación). Los volúmenes se vuelven a medir antes de escribir cada artículo.
+- **Commits:** incluidos en el commit de la Sesión 3.
+- **Zip para subir:** no aplica (el zip v3 de la Sesión 1 sigue esperando deploy).
+- **Pendiente / bloqueos nuevos:** ninguno nuevo. Para C12 y C17 hay que verificar fechas oficiales (SAP, Salesforce) antes de publicar.
+- **Próxima sesión:** Sesión 3 (ver arriba).
 
 ### Sesión 1 — 2026-10-05 — Comparativas agnósticas de ERP y CRM (C1–C5)
 - **Tareas trabajadas:** C1 ✅, C2 ✅, C3 ✅, C4 ✅, C5 ✅, K1 🟡 (a pedido del cliente se adelantaron las comparativas; A1 sigue esperando el deploy).

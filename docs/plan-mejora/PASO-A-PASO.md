@@ -178,6 +178,34 @@ Procedimiento común: 0.2, más estas reglas:
 
 **Hecho cuando:** publicada, enlazada desde su servicio y desde la guía de ERP/CRM.
 
+### C8–C18 Categorías de software caro (empresas de 50–100+ empleados)
+
+Procedimiento 0.2 más las reglas de esta fase. Fuente: Ubersuggest, 2026-10-21,
+medido por país en español (D11). **Volver a medir antes de escribir.**
+
+| ID | Artículo | Keyword · volumen · SD | Enlaza a | Notas |
+|---|---|---|---|---|
+| C8 | Reforzar C5 (no es un artículo nuevo) | — | CRM + B1 | Añadir sección "Si su empresa tiene 100+ empleados" (integración con ERP, gobernanza de datos, el costo de implementación suele superar el de licencias, riesgo de migración); tabla "mejor opción por escenario" (ya usa Microsoft 365, necesita ERP integrado, quiere adopción rápida…) (D12); cambiar el CTA a diagnóstico cuando exista B1. Enlazar a C15–C18 |
+| C9 | Qué es un sistema WMS y cómo elegir uno (WMS vs ERP) | sistema wms · MX 880 · SD 10 (CO 390 · SD 9) | Selección de Software (ERP) | **Primera prioridad**: volumen alto y competencia mínima. Intención informativa; relacionadas: "que es el sistema wms" 50, "sistema wms ejemplos" 50, "software wms" MX 320 · SD 36 |
+| C10 | Cuánto cuesta SAP Business One | sap business one precio · MX 140 · SD 28 · CPC US$6; precio sap business one · MX 110 · SD 23 | Selección de Software (ERP) + C2, C3, C4 | Intención comercial confirmada. "sap business one" solo (MX 2.900) es mayormente empleo/cursos: no apuntar a eso. No repetir C2/C4: enlazar |
+| C11 | Cómo elegir un software de mantenimiento (CMMS/EAM) | software cmms · MX 170 · SD 34 · CPC US$54 | Selección de Software | CPC más alto del estudio: el comprador es industrial. Relacionadas en ES: "software de mantenimiento" 880, "software de mantenimiento industrial" 90 (medir por país) |
+| C12 | Migrar de SAP ECC a S/4HANA: plazos, costos y alternativas | sap s4hana · MX 1.900 · SD 28 | Selección de Software + Gerencia de proyectos | Parte del volumen es empleo/cursos. **Las fechas de fin de soporte de ECC se verifican en la fuente de SAP antes de publicar (D4)** |
+| C13 | Software de RR. HH. y nómina para empresas de más de 100 empleados | software de recursos humanos · MX 260 · SD 18 · CPC US$22,6 (CO 90 · SD 21) | HCM; relacionar con G8 | Atrae mucha pyme: el título debe filtrar por tamaño. Coordinar con G8 para no canibalizar (D8) |
+| C14 | Qué es un software MES y cuándo lo necesita una planta | software mes · MX 140 · SD 17 · CPC US$5,4 | Selección de Software | Nicho de manufactura, poca competencia |
+| C15 | Integrar el ERP con el CRM sin middleware | (sin volumen medible) | CRM + ERP | Para responder a la IA; prompt de seguimiento de directores de operaciones en LATAM |
+| C16 | Costo total de propiedad de un CRM en una mediana empresa | (sin volumen medible) | CRM + C4 | Licencias + onboarding + complementos + implementación; precios solo de páginas oficiales |
+| C17 | Fin de venta de Salesforce CPQ: qué opciones tiene | (sin volumen medible) | CRM | **Verificar fechas y productos en la fuente de Salesforce (D4).** Comparar Revenue Cloud, HubSpot CPQ y Dynamics 365 |
+| C18 | Gobernanza y deduplicación de datos en el CRM | (sin volumen medible) | CRM | Para RevOps; incluye lista de verificación descargable si hay tiempo |
+
+**Descartado en esta investigación (no escribir):**
+- Comparativas en español entre ERP/CRM por nombre (p. ej. "netsuite vs sap business one" MX 10, "dynamics 365 vs ..." ≤ 20): las cifras grandes de Ubersuggest sin país son búsquedas en inglés. C2, C3 y C5 ya cubren el tema.
+- "selección de erp" (10), "migración erp" (0), "costo implementación erp" (0): sin volumen; se cubren dentro de C4.
+- "consultoría erp" (170): intención comercial, corresponde a la **página de servicio** de ERP, no a un artículo (D8). Reforzar esa página con la palabra.
+- "rfp software" (MX 40 · SD 24 · CPC US$8,5): confirma la tarea D3 (plantilla de RFP) como herramienta.
+
+**Hecho cuando:** cada artículo publicado (0.2), enlazado desde su servicio y
+desde C5/C2 según corresponda, con impresiones en Search Console a las 4 semanas.
+
 ---
 
 ## Fase D — Herramientas

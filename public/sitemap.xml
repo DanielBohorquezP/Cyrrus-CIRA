@@ -552,7 +552,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/perspectivas/que-es-un-erp-guia-para-elegirlo</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/que-es-un-erp-guia-para-elegirlo" />
@@ -561,7 +561,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en/perspectivas/que-es-un-erp-guia-para-elegirlo</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/que-es-un-erp-guia-para-elegirlo" />
@@ -696,7 +696,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm" />
@@ -705,12 +705,30 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/perspectivas/sistema-wms-que-es-y-como-elegir</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/sistema-wms-que-es-y-como-elegir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/sistema-wms-que-es-y-como-elegir" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/sistema-wms-que-es-y-como-elegir" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/perspectivas/sistema-wms-que-es-y-como-elegir</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/sistema-wms-que-es-y-como-elegir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/sistema-wms-que-es-y-como-elegir" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/sistema-wms-que-es-y-como-elegir" />
   </url>
   <url>
     <loc>https://cyrruscs.com/privacidad</loc>

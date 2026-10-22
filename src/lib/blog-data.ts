@@ -179,10 +179,22 @@ export const blogPosts: BlogPostEntry[] = [
     publishedAt: "2026-10-05",
     pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
     pillarLabelKey: "seleccionSoftware",
-    serviceCtaIndexes: [6, 12],
+    serviceCtaIndexes: [6, 16],
     serviceCtaImages: [
       "/assets/decoracion/IMG_20230228_082632.jpg",
       "/assets/decoracion/Trabajo.jpg",
+    ],
+  },
+  {
+    slug: "sistema-wms-que-es-y-como-elegir",
+    coverImage: "/assets/decoracion/1785866223667.jpg",
+    publishedAt: "2026-10-21",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [8, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
     ],
   },
 ];

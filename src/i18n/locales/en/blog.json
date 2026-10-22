@@ -651,7 +651,7 @@
         },
         {
           "type": "p",
-          "text": "The most common mistake is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP.", "links": [{"text": "best ERP for midsize companies", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "how much it costs to implement an ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}]
+          "text": "The most common mistake is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP. If your bottleneck is the warehouse, also see what a WMS is and when you need one.", "links": [{"text": "best ERP for midsize companies", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "how much it costs to implement an ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "what a WMS is", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}]
         },
         {
           "type": "p",
@@ -2476,6 +2476,60 @@
         },
         {
           "type": "h2",
+          "text": "What changes if your company has more than 100 employees?"
+        },
+        {
+          "type": "p",
+          "text": "The question changes: it stops being which tool has the better features and becomes what it costs, and what risk it carries, to run it for five years. At this size the license is usually the most visible line item but not the largest: implementation, integration with the ERP and other systems, customer data quality, and adoption by sales, service and finance all weigh more. A CRM that doesn't integrate with billing and receivables forces manual reconciliation, and the forecast that reaches the board stops being reliable. Switching CRM later is possible, but it means migrating data, rebuilding integrations and retraining the whole team, so decide with the multi-year total cost on the table. For that calculation, see what it costs to implement an enterprise system and how it compares with the license.",
+          "links": [
+            {
+              "text": "what it costs to implement an enterprise system",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "text": "A reasonable starting point by situation",
+          "columns": [
+            "Your situation",
+            "Reasonable starting point",
+            "What to validate before deciding"
+          ],
+          "rows": [
+            [
+              "You already work in Microsoft 365 or use Business Central as your ERP",
+              "Dynamics 365 Sales",
+              "Real integration with your ERP and consolidated Microsoft licensing"
+            ],
+            [
+              "Complex sales process: several business lines, quoting, long cycles",
+              "Salesforce",
+              "Add-on costs, availability of specialists and governance of the configuration"
+            ],
+            [
+              "Sales and marketing must share one base and fast adoption is the goal",
+              "HubSpot",
+              "Plan customization limits and cost as users and contacts grow"
+            ],
+            [
+              "Your current ERP offers no standard integration with any CRM",
+              "Define the integration first, then choose the CRM",
+              "Who maintains the integration and what happens at each ERP upgrade"
+            ],
+            [
+              "Limited budget and a need to test before committing",
+              "HubSpot (free plan) or Salesforce Starter, in stages",
+              "That the pilot uses your real data and process, with real salespeople"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "This table is a starting point for the conversation, not a verdict: the right decision depends on your current systems, your sales process and your internal capacity to sustain the change."
+        },
+        {
+          "type": "h2",
           "text": "How do you choose the right CRM?"
         },
         {
@@ -2513,6 +2567,163 @@
         {
           "label": "Microsoft. Dynamics 365 Sales: plans and pricing",
           "url": "https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing"
+        }
+      ]
+    },
+    "sistema-wms-que-es-y-como-elegir": {
+      "title": "WMS system: what it is, WMS vs ERP and how to choose",
+      "seoTitle": "WMS system: what it is, WMS vs ERP, how to choose",
+      "label": "Software selection",
+      "excerpt": "What a warehouse management system (WMS) is, how it differs from an ERP, when the ERP's inventory module stops being enough and what leadership should ask before buying.",
+      "metaDescription": "What a WMS is, the difference between WMS and ERP, when a warehouse needs one and how to choose it using total cost and risk criteria.",
+      "intro": "When system inventory doesn't match the warehouse, the company pays for it in lost sales, tied-up capital and overtime. A WMS aims to close that gap; the decision is whether your ERP already does it or you need a separate system.",
+      "keyTakeaways": [
+        "A WMS directs and records the physical work of the warehouse (receiving, putaway, picking, shipping); the ERP records inventory as value and as a commercial commitment.",
+        "You don't always need a separate WMS: many ERPs include a warehouse module, and some WMS products can run alongside another vendor's ERP.",
+        "Leadership's decision isn't about features but about total cost, integration risk and internal capacity to sustain the change on the floor."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Evaluating a WMS or an ERP?",
+          "description": "We define your operation's requirements and compare the alternatives with no vendor commissions, with the multi-year total cost on the table.",
+          "checklist": [
+            "Warehouse and integration requirements",
+            "Independent comparison, no commissions"
+          ],
+          "ctaLabel": "Explore software selection",
+          "imageAlt": "Cyrrus team reviewing warehouse system requirements"
+        },
+        {
+          "title": "Get the warehouse to adopt it",
+          "description": "A WMS changes how operators and supervisors work. We manage the implementation and the change so the system's inventory is the warehouse's inventory.",
+          "checklist": [
+            "Implementation project management",
+            "Role-based training and adoption tracking"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Cyrrus team working with a client"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "A warehouse management system (WMS) is the software that controls how goods move through a facility: from the moment a truck arrives at the dock until a shipment leaves it. It directs operators' work, knows where every unit is and connects the warehouse to sales, purchasing, production and transportation."
+        },
+        {
+          "type": "p",
+          "text": "A disclosure before we continue: Cyrrus doesn't resell licenses or take commissions from any vendor. That's why we can compare without preferences."
+        },
+        {
+          "type": "h2",
+          "text": "What is a WMS and what does it do?"
+        },
+        {
+          "type": "p",
+          "text": "A WMS is the system that decides and records the physical work of a warehouse. At receiving, it confirms what arrives against what was expected; in storage, it tells operators which location each pallet goes to; in picking, it assigns tasks and routes; at shipping, it packs, labels and closes the shipment. Cycle counting also lets you verify inventory continuously without stopping operations. The business result is inventory you can trust down to the location level and an operation that depends less on people's memory."
+        },
+        {
+          "type": "h2",
+          "text": "What is the difference between a WMS and an ERP?"
+        },
+        {
+          "type": "p",
+          "text": "The ERP is the company's record: finance, purchasing, sales and inventory as value and as a commitment to the customer. The WMS is the execution system on the warehouse floor: what to do, where and in what order. They aren't mutually exclusive. Many ERPs ship with their own warehouse module, and the practical question is whether that module is enough for your operation."
+        },
+        {
+          "type": "table",
+          "text": "Three ways to handle the warehouse",
+          "columns": [
+            "Option",
+            "Who it usually suits",
+            "Risk to assess"
+          ],
+          "rows": [
+            [
+              "Basic ERP inventory",
+              "Small warehouses, a single site, few movements and control at the warehouse level",
+              "Little control by location: a shortfall shows up late, and in the balance sheet"
+            ],
+            [
+              "The ERP's own warehouse module",
+              "Companies that want a single platform and have mid-complexity operations",
+              "Dependence on one vendor; configuration is the biggest implementation effort"
+            ],
+            [
+              "Specialized WMS connected to the ERP",
+              "Large or complex operations: several sites, high volume, automation, third-party operations",
+              "Cost and upkeep of the integration; two systems to update and coordinate"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Some vendors already contemplate this scenario. For example, Microsoft documents a warehouse-only mode that can run alongside another vendor's ERP, which shows the warehouse and the ERP can be decided separately."
+        },
+        {
+          "type": "h2",
+          "text": "When does the ERP's inventory module stop being enough?"
+        },
+        {
+          "type": "p",
+          "text": "The signals tend to be operational, but their effect reaches leadership: frequent differences between system and physical inventory, full counts that stop operations, orders that ship incomplete or late even though the system showed stock, picking times that grow with every new customer, and operators who depend on one person who knows where everything is. If two or three of these keep recurring, the cost is already in your margin even if it has no line of its own on the income statement."
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership ask before buying a WMS?"
+        },
+        {
+          "type": "p",
+          "text": "Before requesting quotes, answer four questions. First, what is the problem in business terms: lost sales from stockouts, capital tied up in inventory, labor cost per order or missed deliveries. Second, what is the five-year total cost, which includes licenses or subscription, implementation, ERP integration, scanning devices and maintenance; the same logic as what it costs to implement an enterprise system applies here. Third, who sustains the system after go-live. And fourth, what happens to operations on cutover day: a WMS is largely configured with rules, and those rules are tested before they reach the floor.",
+          "links": [
+            {
+              "text": "what it costs to implement an enterprise system",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "How do you choose a WMS?"
+        },
+        {
+          "type": "p",
+          "text": "Start by describing your real operation —type of product, number of warehouses, order lines per day, seasonal peaks, traceability requirements— not a vendor's catalog. With that written down, ask each vendor for a demo using your own flows and talk to customers of similar size and sector. Weigh especially the integration with your current ERP, the ecosystem of implementers in your country and how easily your team can adjust the rules without depending on the vendor. A well-chosen but poorly adopted WMS doesn't fix inventory."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we define the operation's requirements, compare the alternatives with no vendor commissions and manage the implementation and adoption. If you're still deciding between ERP and WMS, we also help with software selection and ERP selection.",
+          "links": [
+            {
+              "text": "software selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+            },
+            {
+              "text": "ERP selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If your warehouse already costs you more than you think, schedule a conversation with our team."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Learn. Warehouse management overview (Dynamics 365 Supply Chain Management)",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview"
+        },
+        {
+          "label": "Microsoft Learn. Warehouse management only mode overview",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/wms-only-mode-overview"
+        },
+        {
+          "label": "SAP Press. An overview of EWM with SAP S/4HANA: embedded, decentralized and stock room management",
+          "url": "https://blog.sap-press.com/an-overview-of-ewm-with-sap-s4hana-embedded-decentralized-and-stock-room-management"
         }
       ]
     }

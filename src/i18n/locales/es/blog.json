@@ -651,7 +651,7 @@
         },
         {
           "type": "p",
-          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}]
+          "text": "El error más frecuente es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP. Si su cuello de botella está en la bodega, vea también qué es un sistema WMS y cuándo necesita uno.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "qué es un sistema WMS", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}]
         },
         {
           "type": "p",
@@ -2476,6 +2476,60 @@
         },
         {
           "type": "h2",
+          "text": "¿Qué cambia si su empresa tiene más de 100 empleados?"
+        },
+        {
+          "type": "p",
+          "text": "Cambia la pregunta: deja de ser cuál herramienta tiene mejores funciones y pasa a ser cuánto cuesta y qué riesgo tiene tenerla en operación durante cinco años. En una empresa de este tamaño, la licencia suele ser la partida más visible, pero no la más grande: pesan la implementación, la integración con el ERP y con los demás sistemas, la calidad de los datos de clientes y la adopción por parte de vendedores, servicio y finanzas. Un CRM que no se integra con la facturación y la cartera obliga a conciliar cifras a mano, y el pronóstico que llega a la junta deja de ser confiable. Cambiar de CRM después es posible, pero implica migrar datos, rehacer integraciones y volver a capacitar a todo el equipo; por eso conviene decidir con el costo total a varios años sobre la mesa. Para ese cálculo, vea cuánto cuesta implementar un sistema empresarial y cómo se compara con la licencia.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un sistema empresarial",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "text": "Mejor punto de partida según su situación",
+          "columns": [
+            "Su situación",
+            "Punto de partida razonable",
+            "Qué validar antes de decidir"
+          ],
+          "rows": [
+            [
+              "Ya trabaja en Microsoft 365 o usa Business Central como ERP",
+              "Dynamics 365 Sales",
+              "Integración real con su ERP y licenciamiento consolidado con Microsoft"
+            ],
+            [
+              "Proceso comercial complejo: varias líneas de negocio, cotizaciones, ciclos largos",
+              "Salesforce",
+              "Costo de complementos, disponibilidad de especialistas y gobierno de la configuración"
+            ],
+            [
+              "Ventas y marketing deben compartir una sola base y se busca adopción rápida",
+              "HubSpot",
+              "Límites de personalización del plan y costo al crecer en usuarios y contactos"
+            ],
+            [
+              "Su ERP actual no ofrece integración estándar con ningún CRM",
+              "Defina primero la integración y luego elija el CRM",
+              "Quién mantiene la integración y qué pasa en cada actualización del ERP"
+            ],
+            [
+              "Presupuesto acotado y necesidad de probar antes de comprometerse",
+              "HubSpot (plan gratuito) o Salesforce Starter, por etapas",
+              "Que el piloto use sus datos y su proceso reales, con vendedores reales"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Esta tabla es un punto de partida para la conversación, no un veredicto: la decisión correcta depende de sus sistemas actuales, su proceso comercial y su capacidad interna para sostener el cambio."
+        },
+        {
+          "type": "h2",
           "text": "¿Cómo elegir el CRM correcto?"
         },
         {
@@ -2513,6 +2567,163 @@
         {
           "label": "Microsoft. Dynamics 365 Sales: planes y precios",
           "url": "https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing"
+        }
+      ]
+    },
+    "sistema-wms-que-es-y-como-elegir": {
+      "title": "Sistema WMS: qué es, WMS vs ERP y cómo elegirlo",
+      "seoTitle": "Sistema WMS: qué es, WMS vs ERP y cómo elegirlo",
+      "label": "Selección de software",
+      "excerpt": "Qué es un sistema de gestión de bodegas (WMS), en qué se diferencia del ERP, cuándo el módulo de inventario ya no alcanza y qué debe preguntar la gerencia antes de comprar.",
+      "metaDescription": "Qué es un sistema WMS, diferencias entre WMS y ERP, cuándo la bodega necesita uno y cómo elegirlo con criterios de costo total y riesgo.",
+      "intro": "Cuando el inventario del sistema no coincide con el de la bodega, la empresa lo paga en ventas perdidas, capital inmovilizado y horas extra. Un sistema WMS busca cerrar esa brecha; la decisión es si su ERP ya lo hace o si necesita uno aparte.",
+      "keyTakeaways": [
+        "Un WMS dirige y registra el trabajo físico de la bodega (recibo, ubicación, picking, despacho); el ERP registra el inventario como valor y como compromiso comercial.",
+        "No siempre se necesita un WMS aparte: muchos ERP incluyen un módulo de bodega, y algunos WMS pueden operar junto a un ERP de otro fabricante.",
+        "La decisión de la gerencia no es de funciones sino de costo total, riesgo de integración y capacidad interna para sostener el cambio en la operación."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Evalúa un WMS o un ERP?",
+          "description": "Definimos los requerimientos de su operación y comparamos las alternativas sin comisiones de fabricantes, con el costo total a varios años sobre la mesa.",
+          "checklist": [
+            "Requerimientos de bodega y de integración",
+            "Comparación independiente, sin comisiones"
+          ],
+          "ctaLabel": "Conocer la selección de software",
+          "imageAlt": "Equipo de Cyrrus revisando requerimientos de un sistema de bodega"
+        },
+        {
+          "title": "Que la bodega lo adopte",
+          "description": "Un WMS cambia la forma de trabajar de operarios y supervisores. Gerenciamos la implementación y el cambio para que el inventario del sistema sea el de la bodega.",
+          "checklist": [
+            "Gerencia del proyecto de implementación",
+            "Capacitación por rol y seguimiento de la adopción"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Un sistema de gestión de bodegas, conocido por sus siglas en inglés WMS (warehouse management system), es el software que controla cómo se mueve la mercancía dentro de una instalación: desde que llega el camión al muelle hasta que sale el despacho. Dirige el trabajo de los operarios, sabe dónde está cada unidad y conecta la bodega con ventas, compras, producción y transporte."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es un sistema WMS y qué hace?"
+        },
+        {
+          "type": "p",
+          "text": "Un WMS es el sistema que decide y registra el trabajo físico de una bodega. En el recibo, confirma lo que llega contra lo esperado; en el almacenamiento, indica a qué ubicación va cada tarima; en el picking, asigna las tareas y la ruta; en el despacho, empaca, etiqueta y cierra el envío. Además, el conteo cíclico permite verificar el inventario de forma continua sin detener la operación. Su resultado de negocio es un inventario confiable al nivel de ubicación y una operación que depende menos de la memoria de las personas."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es la diferencia entre un WMS y un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "El ERP es el registro de la empresa: finanzas, compras, ventas e inventario como valor y como compromiso con el cliente. El WMS es el sistema de ejecución en la bodega: qué hacer, dónde y en qué orden. No son excluyentes. Muchos ERP traen su propio módulo de bodega, y la pregunta práctica es si ese módulo alcanza para su operación."
+        },
+        {
+          "type": "table",
+          "text": "Tres formas de resolver la bodega",
+          "columns": [
+            "Opción",
+            "Para quién suele servir",
+            "Riesgo a evaluar"
+          ],
+          "rows": [
+            [
+              "Inventario básico del ERP",
+              "Bodegas pequeñas, un solo sitio, pocos movimientos y control por almacén",
+              "Poco control por ubicación: el faltante aparece tarde y en el balance"
+            ],
+            [
+              "Módulo de bodega del propio ERP",
+              "Empresas que quieren una sola plataforma y tienen operación de complejidad media",
+              "Dependencia de un solo fabricante; la configuración es el mayor esfuerzo de implementación"
+            ],
+            [
+              "WMS especializado conectado al ERP",
+              "Operaciones grandes o complejas: varios sitios, alto volumen, automatización, operación para terceros",
+              "Costo y mantenimiento de la integración; dos sistemas que actualizar y coordinar"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Algunos fabricantes ya contemplan este escenario. Por ejemplo, Microsoft documenta un modo de uso solo de bodega que puede operar junto a un ERP de otro proveedor, lo que muestra que la bodega y el ERP pueden decidirse por separado."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo el módulo de inventario del ERP deja de alcanzar?"
+        },
+        {
+          "type": "p",
+          "text": "Las señales suelen ser operativas, pero su efecto llega a la dirección: diferencias frecuentes entre el inventario del sistema y el físico, conteos generales que detienen la operación, pedidos que salen incompletos o tarde aunque el sistema mostraba existencias, tiempos de picking que crecen con cada nuevo cliente, y operarios que dependen de una persona que sabe dónde está todo. Si dos o tres de estas señales se repiten, el costo ya está en el margen aunque no tenga un renglón propio en el estado de resultados."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe preguntar la gerencia antes de comprar un WMS?"
+        },
+        {
+          "type": "p",
+          "text": "Antes de pedir cotizaciones, conviene responder cuatro preguntas. Primero, cuál es el problema en términos de negocio: ventas perdidas por faltantes, capital inmovilizado en inventario, costo de mano de obra por pedido o incumplimientos de entrega. Segundo, cuál es el costo total a cinco años, que incluye licencias o suscripción, implementación, integración con el ERP, dispositivos de lectura y mantenimiento; para estimarlo, la misma lógica de cuánto cuesta implementar un sistema empresarial aplica aquí. Tercero, quién sostiene el sistema después de la puesta en marcha. Y cuarto, qué ocurre con la operación el día del cambio: un WMS se configura en gran parte con reglas, y esas reglas se prueban antes de llegar al piso.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un sistema empresarial",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo elegir un WMS?"
+        },
+        {
+          "type": "p",
+          "text": "Empiece por describir su operación real —tipo de producto, número de bodegas, volumen de líneas por día, picos de temporada, requisitos de trazabilidad—, no por el catálogo de un proveedor. Con eso escrito, pida a cada proveedor una demostración con sus propios flujos y consulte a clientes de tamaño y sector parecidos. Valore especialmente la integración con su ERP actual, el ecosistema de implementadores en su país y la facilidad con que su equipo puede ajustar las reglas sin depender del fabricante. Un WMS bien elegido pero mal adoptado no corrige el inventario."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus definimos los requerimientos de la operación, comparamos las alternativas sin comisiones de fabricantes y gerenciamos la implementación y la adopción. Si todavía está decidiendo entre ERP y WMS, también le ayudamos con la selección de software y con la selección de ERP.",
+          "links": [
+            {
+              "text": "selección de software",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+            },
+            {
+              "text": "selección de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si su bodega ya le cuesta más de lo que cree, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Learn. Warehouse management overview (Dynamics 365 Supply Chain Management)",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview"
+        },
+        {
+          "label": "Microsoft Learn. Warehouse management only mode overview",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/wms-only-mode-overview"
+        },
+        {
+          "label": "SAP Press. An overview of EWM with SAP S/4HANA: embedded, decentralized and stock room management",
+          "url": "https://blog.sap-press.com/an-overview-of-ewm-with-sap-s4hana-embedded-decentralized-and-stock-room-management"
         }
       ]
     }

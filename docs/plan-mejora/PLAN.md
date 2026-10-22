@@ -72,6 +72,9 @@ no puede o no quiere estar:
 | D7 | Las métricas internas de Cyrrus (p. ej. el 60% de diagnóstico más rápido) se publican marcadas como "medición interna", sin revelar el detalle. | Decisión del cliente, 2026-10-05. |
 | D8 | Cada página de servicio tiene intención **comercial**; cada artículo, **informativa**. Nunca dos páginas para la misma búsqueda. | Evita canibalización (ver caso ERP, 2026-10-05). |
 | D9 | Los backlinks spam no se desautorizan salvo acción manual de Google; se vigilan. | Google los ignora solos; el disavow mal hecho resta. |
+| D10 | Cliente objetivo: empresas de **50–100+ empleados** que van a comprar software caro. Los artículos nuevos se eligen por **la categoría de software que esa empresa busca** (WMS, SAP, CMMS, RR. HH.…), no por "cómo seleccionar software": esa frase casi no tiene búsquedas en español. | Investigación Ubersuggest 2026-10-21 (Sesión 2). |
+| D11 | Los volúmenes se miden **por país en español** (México 2484, Colombia 2170). Sin país, Ubersuggest mezcla búsquedas en inglés y sobrestima (p. ej. "netsuite vs sap" 590 global frente a ~10 en México). | Idem. |
+| D12 | Todo comparativo termina con una tabla **"mejor opción por escenario"** (no solo "depende"), para ser citable por la IA y ayudar a decidir. | Prompts de seguimiento de IA que piden "ranking de mejor a peor" (2026-10-13). |
 
 ## 5. Fases
 
@@ -104,6 +107,18 @@ El contenido que busca alguien a punto de comprar, y que EY no puede escribir.
 - **C5** Salesforce vs HubSpot vs Dynamics 365 (CRM).
 - **C6** Mejores CRM: criterios para compararlos.
 - **C7** ERP vs Excel: cuándo dar el salto.
+
+**Subfase C-bis — categorías de software caro para empresas de 50–100+
+empleados** (investigación Ubersuggest del 2026-10-21; datos y orden en
+`PASO-A-PASO.md`). Se publica en este orden:
+- **C8** Reforzar C5 (Salesforce vs HubSpot vs Dynamics 365): sección "Si su empresa tiene 100+ empleados", tabla "mejor opción por escenario" y CTA al diagnóstico.
+- **C9** Qué es un sistema WMS y cómo elegir uno (incluye WMS vs ERP).
+- **C10** Cuánto cuesta SAP Business One: licencias, implementación y costos ocultos.
+- **C11** Cómo elegir un software de mantenimiento (CMMS/EAM).
+- **C12** Migrar de SAP ECC a S/4HANA: plazos, costos y alternativas.
+- **C13** Software de RR. HH. y nómina para empresas de más de 100 empleados.
+- **C14** Qué es un software MES y cuándo lo necesita una planta.
+- **C15–C18** Satélites del CRM para compradores grandes (los que preguntan a la IA): integración ERP–CRM sin middleware, costo total de propiedad de un CRM, fin de venta de Salesforce CPQ, gobernanza y deduplicación de datos en el CRM. Sin volumen medible en Ubersuggest; se miden con los prompts de seguimiento (KPI de menciones en IA).
 
 ### Fase D — Herramientas que capturan contactos
 Consiguen enlaces de forma natural y entregan datos de contacto.
