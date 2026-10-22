@@ -138,5 +138,9 @@
   "/diagnostico": {
     "title": "Sesión de diagnóstico gratuita para su proyecto | Cyrrus",
     "description": "Una sesión gratuita de 60 minutos con un consultor senior de Cyrrus para decidir cómo abordar su proyecto de ERP, CRM o transformación. Sin compromiso."
+  },
+  "/herramientas/calculadora-costo-erp": {
+    "title": "Calculadora de costo total de un ERP | Cyrrus",
+    "description": "Calcule el costo total de un ERP a varios años: licencias, implementación, integraciones, equipo interno y contingencia. Supuestos visibles y editables."
   }
 }

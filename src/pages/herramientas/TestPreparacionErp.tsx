@@ -364,7 +364,7 @@ export default function TestPreparacionErp() {
         <section className="w-full bg-light-blue/40 py-16 md:py-20">
           <div className="mx-auto max-w-6xl px-6 md:px-12">
             <h2 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">{t("testErp.quiz.nextTitle")}</h2>
-            <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div className={cn("mt-8 grid grid-cols-1 gap-6", links.length > 3 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3")}>
               {links.map((item) => (
                 <Link
                   key={item.href}

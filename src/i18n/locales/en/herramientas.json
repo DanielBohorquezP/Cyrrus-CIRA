@@ -205,6 +205,11 @@
           "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
         },
         {
+          "label": "ERP total cost calculator",
+          "description": "Turn the quote into a multi-year cost.",
+          "href": "/herramientas/calculadora-costo-erp"
+        },
+        {
           "label": "Organizational change management",
           "description": "A guide and template to plan adoption.",
           "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
@@ -235,6 +240,157 @@
         {
           "question": "What do I do with the result?",
           "answer": "Use it as a to-do list before selection. If you like, we review it with your committee and turn it into a plan with owners and dates."
+        }
+      ]
+    }
+  },
+  "calculadoraErp": {
+    "meta": {
+      "title": "ERP total cost calculator | Cyrrus",
+      "description": "Calculate the total cost of an ERP over several years: licenses, implementation, integrations, internal team and contingency. Visible, editable assumptions."
+    },
+    "hero": {
+      "eyebrow": "Tool",
+      "title": "ERP total cost calculator",
+      "description": "A license quote is not a budget. Build the multi-year cost with the four blocks that rarely appear together, with visible and editable assumptions.",
+      "ctaLabel": "Review my number with Cyrrus"
+    },
+    "intro": {
+      "text": "The starting values are examples, not quotes or any vendor's figures. Replace them with the ones in your proposals. All figures use the same currency (the examples are in US dollars).",
+      "reset": "Reset the examples"
+    },
+    "groups": {
+      "license": "Licenses or subscription",
+      "project": "Implementation and project",
+      "team": "Internal team time",
+      "other": "Operation and horizon"
+    },
+    "fields": {
+      "modelo": {
+        "label": "Purchase model",
+        "cloud": "Cloud subscription",
+        "perpetual": "Perpetual license plus maintenance"
+      },
+      "usuarios": {
+        "label": "Users",
+        "hint": "Full users who will use the system."
+      },
+      "precioCloud": {
+        "label": "Subscription per user per month",
+        "hint": "Take the value from your quote."
+      },
+      "precioPerpetual": {
+        "label": "License per user (one-time)",
+        "hint": "Take the value from your quote."
+      },
+      "mantenimiento": {
+        "label": "Annual maintenance (% of the license)",
+        "hint": "Applies only to a perpetual license."
+      },
+      "implPct": {
+        "label": "Implementation (% of the first-year license or subscription)",
+        "hint": "Analysis, configuration, testing. Ask the implementation partner for the value."
+      },
+      "integPct": {
+        "label": "Integrations and data migration (% of the same)",
+        "hint": "E-invoicing, banks, other systems, master-data cleanup."
+      },
+      "trainPct": {
+        "label": "Training and change management (% of implementation)",
+        "hint": "Almost never included in the vendor's quote."
+      },
+      "personas": {
+        "label": "Internal people dedicated to the project",
+        "hint": "Those who define processes, validate and test."
+      },
+      "meses": {
+        "label": "Project duration (months)",
+        "hint": ""
+      },
+      "costoMes": {
+        "label": "Monthly cost per person",
+        "hint": "Salary and charges of an area leader."
+      },
+      "dedicacion": {
+        "label": "Time given to the project (%)",
+        "hint": "Share of their time taken from their usual work."
+      },
+      "infra": {
+        "label": "Infrastructure, support and add-ons per year",
+        "hint": "Servers, backups, support, extra modules."
+      },
+      "contPct": {
+        "label": "Contingency (% of project costs)",
+        "hint": "A margin for what wasn't foreseen."
+      },
+      "anios": {
+        "label": "Years to analyze",
+        "hint": "Between 1 and 10."
+      }
+    },
+    "results": {
+      "title": "Your total cost",
+      "total": "Total cost over {{years}} years",
+      "perYear": "Average per year",
+      "share": "The license or subscription is {{pct}}% of the total cost.",
+      "shareNote": "The rest is what a license quote doesn't show.",
+      "breakdown": "Where the money goes",
+      "categories": {
+        "license": "Licenses or subscription",
+        "project": "Implementation, integration and training",
+        "team": "Internal team",
+        "infra": "Infrastructure and support",
+        "contingency": "Contingency"
+      },
+      "byYear": "By year",
+      "year": "Year {{n}}",
+      "yearTotal": "Total",
+      "note": "The project is assumed to happen in year 1. Recurring costs repeat every year.",
+      "disclaimer": "Indicative tool: not a quote, excludes taxes and benefits, and does not replace a business-case analysis.",
+      "ctaText": "We can review the proposals you have on the table with you and build each one's comparable total cost.",
+      "ctaLabel": "Review my number with Cyrrus",
+      "diagnosticLink": "Request a free diagnostic session",
+      "currency": "US$"
+    },
+    "links": {
+      "title": "Keep going",
+      "items": [
+        {
+          "label": "How much does it cost to implement an ERP",
+          "description": "The four cost blocks and the hidden costs.",
+          "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+        },
+        {
+          "label": "ERP readiness test",
+          "description": "Measure whether your company is ready before selecting.",
+          "href": "/herramientas/test-preparacion-erp"
+        },
+        {
+          "label": "Independent ERP selection",
+          "description": "How we choose with you, with no vendor commissions.",
+          "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "title": "About the calculator",
+      "items": [
+        {
+          "question": "Where do the starting values come from?",
+          "answer": "They are examples so the calculator shows something coherent from the start. They are not any vendor's prices or a quote. Replace them with the ones in your proposals."
+        },
+        {
+          "question": "Is what I enter stored?",
+          "answer": "No. Calculations run in your browser and are not sent to Cyrrus. If you accepted analytics cookies, we only record that you used the tool."
+        },
+        {
+          "question": "How do I use it to compare vendors?",
+          "answer": "Ask each vendor for the same proposal, with the same scope and broken down by block, and load each one separately. Compare the total cost, not the license."
+        },
+        {
+          "question": "What does it leave out?",
+          "answer": "It leaves out taxes, financing and the project's benefits (savings, revenue, risk reduction). It's the cost side, which is the most underestimated."
         }
       ]
     }

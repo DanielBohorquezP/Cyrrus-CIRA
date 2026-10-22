@@ -47,12 +47,12 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 7 (2026-10-21, B1 publicado como sesión de diagnóstico gratuita; investigación de competidores).
+**Última sesión cerrada:** Sesión 8 (2026-10-21, D2 publicado: calculadora de costo total de un ERP).
 
-**Próxima: Sesión 8.** Orden sugerido:
-1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-21-v8.zip` (C8–C14, D1 y B1; reemplaza al v7, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 12 artículos y páginas nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
-2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**, **B4** (con la herramienta de correo, conectar el test para enviar el informe).
-3. Sin insumos: **G1** y **G2** (contenido con volumen) o **D2** (calculadora de costo total de ERP, enlazada desde C4 y el test). Luego **D3** (plantilla de RFP).
+**Próxima: Sesión 9.** Orden sugerido:
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-21-v9.zip` (C8–C14, D1, D2 y B1; reemplaza al v8, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
+2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
+3. Sin insumos: **D3** (plantilla de RFP en Excel, patrón de `scripts/build-change-template.py`; "rfp software" MX 40) o contenido **G1/G2**. Luego **C15–C18**, **C6/C7**.
 4. **I1** de C1–C3 (faltan).
 
 **Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
@@ -67,7 +67,8 @@
 | 4 ✅ | Categorías de software caro | C10, C11, C12, I1 (C9–C12) |
 | 5 ✅ | RR. HH., MES y enlaces cruzados | C13, C14, I1 (C4, C5/C8, C13, C14) |
 | 6 ✅ | Primera herramienta | D1 |
-| 7 | Indexación, medición y contenido/herramienta | A2, A5, G1, G2 o D2; B1, B3, B4, B5 si llegan insumos |
+| 8 ✅ | Segunda herramienta | D2 |
+| 9 | Indexación, medición y contenido | A2, A5, G1, G2 o D3; B3, B4, B5 si llegan insumos |
 | 8 | Contenido CRM | G3 |
 | 9 | Herramienta de costo | D2 (enlazada desde C4) |
 | 10 | Contenido | G4, G5 |
@@ -129,7 +130,7 @@ qué llegó y lo integra (F8, J1, J3…).
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
 | D1 | Test de preparación para ERP | ✅ | Sesión 6. `/herramientas/test-preparacion-erp`, ES/EN: 10 preguntas en 5 bases (procesos, datos, equipo, presupuesto, patrocinio), puntaje 0–30, 3 rangos, brechas con recomendaciones, sin registro. Eventos `tool_start`/`tool_complete`. Falta el informe por correo (B4) |
-| D2 | Calculadora de costo total de ERP | ⬜ | |
+| D2 | Calculadora de costo total de ERP | ✅ | Sesión 8. `/herramientas/calculadora-costo-erp`, ES/EN. Nube o licencia perpetua; usuarios, implementación, integraciones, capacitación, equipo interno, infraestructura, contingencia, 1–10 años. Supuestos editables, valores de ejemplo (no precios de fabricantes). Cálculo en el navegador |
 | D3 | Plantilla de RFP para ERP | ⬜ | Reutilizar patrón de `scripts/build-change-template.py` |
 | D4 | Plantilla de gestión del cambio | ✅ | 2026-10-05, ES/EN, enlazada desde la guía |
 | D5 | Test de preparación para el cambio | ⬜ | |
@@ -221,7 +222,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-21-v8.zip` (C8–C14, D1 y B1; reemplaza al v7 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-21-v9.zip` (C8–C14, D1, D2 y B1; reemplaza al v8 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
@@ -247,6 +248,20 @@ qué llegó y lo integra (F8, J1, J3…).
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 8 — 2026-10-21 — Segunda herramienta: calculadora de costo total de un ERP (D2)
+- **Tareas trabajadas:** D2 ✅, I1 🟡 (post de D2). Producción sigue sin el v8.
+- **Hecho:**
+  - `/herramientas/calculadora-costo-erp` (ES/EN): `src/pages/herramientas/CalculadoraCostoErp.tsx`, textos bajo `calculadoraErp` en `herramientas.json`. Entradas: modelo (nube o perpetua más mantenimiento), usuarios, precio por usuario, implementación, integraciones y migración, capacitación y cambio, contingencia, equipo interno (personas × meses × costo × dedicación), infraestructura y años (1–10). Salida: costo total y por año, parte de la licencia en el total ("la licencia es el 56% del costo"), desglose por categoría (barra y lista) y tabla por año. Botón para restablecer.
+  - Sin cifras de fabricantes: los valores iniciales son ejemplos redondos y la página lo dice; el usuario los reemplaza por los de sus cotizaciones.
+  - Hidratación: números con separador de miles manual (no `Intl`), anchos con un decimal, estado inicial igual en HTML estático y primer render.
+  - Enlaces: artículo de costo de ERP (C4), test de preparación (ahora 4 tarjetas), `llms.txt`. Eventos GA4 `tool_start`.
+  - Post de LinkedIn de D2 (semana 7).
+- **Verificación:** `tsc` limpio; build de 114 rutas; cuatro escenarios calculados a mano y comparados con la pantalla (25 usuarios 215.040; 100 usuarios 690.960; perpetuo 1.139.400; 3 años 1.013.400; campo vacío 50.400), todos coinciden; EN con comas; móvil 375 px sin desborde; consola sin errores.
+- **Commits:** ver `git log` ("Sesión 8: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v9.zip` (reemplaza al v8, eliminado).
+- **Pendiente / bloqueos nuevos:** ninguno nuevo. Los porcentajes de ejemplo (implementación 100%, integraciones 25%, capacitación 15%, contingencia 15%, mantenimiento 20%) son criterio de Cyrrus sin fuente: conviene validarlos con Jackson. Solo calcula costo, no beneficios.
+- **Próxima sesión:** Sesión 9 (ver arriba).
 
 ### Sesión 7 — 2026-10-21 — Sesión de diagnóstico gratuita (B1) e investigación de competidores
 - **Tareas trabajadas:** B1 ✅ (con supuestos por confirmar). Decisión del cliente: la oferta de entrada es **una sesión de diagnóstico gratuita**, no un servicio de pago (PLAN D13).

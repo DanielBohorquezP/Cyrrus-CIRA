@@ -54,6 +54,7 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Software de RR. HH. y nómina para más de 100 empleados](https://cyrruscs.com/perspectivas/software-recursos-humanos-nomina-mas-de-100-empleados): nómina, HRIS o HCM, qué cambia con el tamaño y qué decide la gerencia.
 - [Software MES: qué es y cuándo lo necesita su planta](https://cyrruscs.com/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta): qué hace un MES, diferencia con el ERP (ISA-95) y cuándo se justifica.
 - [Test de preparación para un ERP](https://cyrruscs.com/herramientas/test-preparacion-erp): diez preguntas sobre procesos, datos, equipo, presupuesto y patrocinio, con resultado inmediato.
+- [Calculadora de costo total de un ERP](https://cyrruscs.com/herramientas/calculadora-costo-erp): costo a varios años con licencias, implementación, integraciones, equipo interno y contingencia; supuestos editables.
 - [Sesión de diagnóstico gratuita](https://cyrruscs.com/diagnostico): 60 minutos con un consultor senior para aclarar una decisión de ERP, CRM o transformación, sin costo ni compromiso.
 - [Salesforce vs HubSpot vs Dynamics 365: qué CRM elegir](https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm): precios publicados, fortalezas y para qué equipo comercial conviene cada CRM.
 - [Gerencia de proyectos: cuándo contratar una PMO externa](https://cyrruscs.com/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.
@@ -116,6 +117,7 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [HR and payroll software for 100+ employees](https://cyrruscs.com/en/perspectivas/software-recursos-humanos-nomina-mas-de-100-empleados): payroll, HRIS or HCM, what changes with size and what leadership decides.
 - [MES software: what it is and when your plant needs it](https://cyrruscs.com/en/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta): what an MES does, how it differs from the ERP (ISA-95) and when it's justified.
 - [ERP readiness test](https://cyrruscs.com/en/herramientas/test-preparacion-erp): ten questions on processes, data, team, budget and sponsorship, with an instant result.
+- [ERP total cost calculator](https://cyrruscs.com/en/herramientas/calculadora-costo-erp): multi-year cost with licenses, implementation, integrations, internal team and contingency; editable assumptions.
 - [Free diagnostic session](https://cyrruscs.com/en/diagnostico): 60 minutes with a senior consultant to clarify an ERP, CRM or transformation decision, at no cost or commitment.
 - [Salesforce vs HubSpot vs Dynamics 365: which CRM to choose](https://cyrruscs.com/en/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm): published prices, strengths and which sales team each CRM suits.
 - [Project management: when to hire an external PMO](https://cyrruscs.com/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): five signs your project needs external management and what to demand of it.

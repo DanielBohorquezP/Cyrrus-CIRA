@@ -2359,7 +2359,7 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus construimos el caso de negocio y el costo total de cada alternativa antes de que usted firme. Nuestra selección de ERP es independiente y no recibe comisiones de fabricantes, así que la cifra que le entregamos no está inflada ni maquillada. Si ya evalúa SAP Business One o debe migrar de SAP ECC, vea cuánto cuesta SAP Business One y las fechas de migración a S/4HANA. Antes de empezar, el test de preparación para un ERP le dice qué bases cerrar primero.",
+          "text": "En Cyrrus construimos el caso de negocio y el costo total de cada alternativa antes de que usted firme. Nuestra selección de ERP es independiente y no recibe comisiones de fabricantes, así que la cifra que le entregamos no está inflada ni maquillada. Si ya evalúa SAP Business One o debe migrar de SAP ECC, vea cuánto cuesta SAP Business One y las fechas de migración a S/4HANA. Antes de empezar, el test de preparación para un ERP le dice qué bases cerrar primero. Para calcular su caso, use la calculadora de costo total de un ERP.",
           "links": [
             {
               "text": "selección de ERP",
@@ -2376,6 +2376,10 @@
             {
               "text": "test de preparación para un ERP",
               "href": "/herramientas/test-preparacion-erp"
+            },
+            {
+              "text": "calculadora de costo total de un ERP",
+              "href": "/herramientas/calculadora-costo-erp"
             }
           ]
         },

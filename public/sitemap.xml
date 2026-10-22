@@ -515,6 +515,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/diagnostico" />
   </url>
   <url>
+    <loc>https://cyrruscs.com/herramientas/calculadora-costo-erp</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/herramientas/calculadora-costo-erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/herramientas/calculadora-costo-erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/herramientas/calculadora-costo-erp" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/herramientas/calculadora-costo-erp</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/herramientas/calculadora-costo-erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/herramientas/calculadora-costo-erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/herramientas/calculadora-costo-erp" />
+  </url>
+  <url>
     <loc>https://cyrruscs.com/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>

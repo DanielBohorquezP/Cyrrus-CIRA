@@ -107,6 +107,7 @@ const CONTENT_SOURCE = {
   "/experiencia": { ns: "paginas", pick: ["experiencia"] },
   "/perspectivas": { ns: "paginas", pick: ["perspectivas"] },
   "/diagnostico": { ns: "diagnostico" },
+  "/herramientas/calculadora-costo-erp": { ns: "herramientas", pick: ["calculadoraErp"] },
   "/herramientas/test-preparacion-erp": { ns: "herramientas", pick: ["testErp"] },
   "/privacidad": { ns: "legal", pick: ["privacidad"] },
   "/cookies": { ns: "legal", pick: ["cookies"] },

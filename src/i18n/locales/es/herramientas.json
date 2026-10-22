@@ -205,6 +205,11 @@
           "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
         },
         {
+          "label": "Calculadora de costo total de un ERP",
+          "description": "Convierta la cotización en un costo a varios años.",
+          "href": "/herramientas/calculadora-costo-erp"
+        },
+        {
           "label": "Gestión del cambio organizacional",
           "description": "Guía y plantilla para planear la adopción.",
           "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
@@ -235,6 +240,157 @@
         {
           "question": "¿Qué hago con el resultado?",
           "answer": "Úselo como lista de trabajo previa a la selección. Si quiere, lo revisamos con su comité y lo convertimos en un plan con responsables y fechas."
+        }
+      ]
+    }
+  },
+  "calculadoraErp": {
+    "meta": {
+      "title": "Calculadora de costo total de un ERP | Cyrrus",
+      "description": "Calcule el costo total de un ERP a varios años: licencias, implementación, integraciones, equipo interno y contingencia. Supuestos visibles y editables."
+    },
+    "hero": {
+      "eyebrow": "Herramienta",
+      "title": "Calculadora de costo total de un ERP",
+      "description": "Una cotización de licencias no es un presupuesto. Arme el costo a varios años con los cuatro bloques que casi nunca aparecen juntos, con supuestos visibles y editables.",
+      "ctaLabel": "Revisar mi cifra con Cyrrus"
+    },
+    "intro": {
+      "text": "Los valores iniciales son ejemplos, no cotizaciones ni cifras de ningún fabricante. Cámbielos por los de sus propuestas. Todas las cifras van en la misma moneda (los ejemplos están en dólares).",
+      "reset": "Restablecer los ejemplos"
+    },
+    "groups": {
+      "license": "Licencias o suscripción",
+      "project": "Implementación y proyecto",
+      "team": "Tiempo del equipo interno",
+      "other": "Operación y análisis"
+    },
+    "fields": {
+      "modelo": {
+        "label": "Modelo de compra",
+        "cloud": "Suscripción en la nube",
+        "perpetual": "Licencia perpetua más mantenimiento"
+      },
+      "usuarios": {
+        "label": "Usuarios",
+        "hint": "Usuarios completos que usarán el sistema."
+      },
+      "precioCloud": {
+        "label": "Suscripción por usuario al mes",
+        "hint": "Tome el valor de su cotización."
+      },
+      "precioPerpetual": {
+        "label": "Licencia por usuario (pago único)",
+        "hint": "Tome el valor de su cotización."
+      },
+      "mantenimiento": {
+        "label": "Mantenimiento anual (% de la licencia)",
+        "hint": "Solo aplica a la licencia perpetua."
+      },
+      "implPct": {
+        "label": "Implementación (% de la licencia o suscripción del primer año)",
+        "hint": "Análisis, configuración, pruebas. Pida el valor al socio implementador."
+      },
+      "integPct": {
+        "label": "Integraciones y migración de datos (% de lo mismo)",
+        "hint": "Facturación electrónica, bancos, otros sistemas, depuración de maestros."
+      },
+      "trainPct": {
+        "label": "Capacitación y gestión del cambio (% de la implementación)",
+        "hint": "Casi nunca viene en la cotización del fabricante."
+      },
+      "personas": {
+        "label": "Personas internas dedicadas al proyecto",
+        "hint": "Las que definen procesos, validan y prueban."
+      },
+      "meses": {
+        "label": "Duración del proyecto (meses)",
+        "hint": ""
+      },
+      "costoMes": {
+        "label": "Costo mensual por persona",
+        "hint": "Salario y cargas de un líder de área."
+      },
+      "dedicacion": {
+        "label": "Dedicación al proyecto (%)",
+        "hint": "Parte de su tiempo que sale de su trabajo habitual."
+      },
+      "infra": {
+        "label": "Infraestructura, soporte y complementos por año",
+        "hint": "Servidores, respaldos, soporte, módulos adicionales."
+      },
+      "contPct": {
+        "label": "Contingencia (% de los costos del proyecto)",
+        "hint": "Margen para lo que no se previó."
+      },
+      "anios": {
+        "label": "Años de análisis",
+        "hint": "Entre 1 y 10."
+      }
+    },
+    "results": {
+      "title": "Su costo total",
+      "total": "Costo total a {{years}} años",
+      "perYear": "Promedio por año",
+      "share": "La licencia o suscripción es el {{pct}}% del costo total.",
+      "shareNote": "El resto es lo que una cotización de licencias no muestra.",
+      "breakdown": "Dónde se va el dinero",
+      "categories": {
+        "license": "Licencias o suscripción",
+        "project": "Implementación, integración y capacitación",
+        "team": "Equipo interno",
+        "infra": "Infraestructura y soporte",
+        "contingency": "Contingencia"
+      },
+      "byYear": "Por año",
+      "year": "Año {{n}}",
+      "yearTotal": "Total",
+      "note": "El proyecto se asume en el año 1. Los costos recurrentes se repiten cada año.",
+      "disclaimer": "Herramienta orientativa: no es una cotización, no incluye impuestos ni beneficios y no sustituye un análisis de caso de negocio.",
+      "ctaText": "Podemos revisar con usted las propuestas que tiene sobre la mesa y construir el costo total comparable de cada una.",
+      "ctaLabel": "Revisar mi cifra con Cyrrus",
+      "diagnosticLink": "Solicitar una sesión de diagnóstico gratuita",
+      "currency": "US$"
+    },
+    "links": {
+      "title": "Para seguir",
+      "items": [
+        {
+          "label": "Cuánto cuesta implementar un ERP",
+          "description": "Los cuatro bloques del costo y los costos ocultos.",
+          "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+        },
+        {
+          "label": "Test de preparación para un ERP",
+          "description": "Mida si su empresa está lista antes de seleccionar.",
+          "href": "/herramientas/test-preparacion-erp"
+        },
+        {
+          "label": "Selección de ERP independiente",
+          "description": "Cómo elegimos con usted, sin comisiones de fabricantes.",
+          "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Sobre la calculadora",
+      "items": [
+        {
+          "question": "¿De dónde salen los valores iniciales?",
+          "answer": "Son ejemplos para que la calculadora muestre algo coherente desde el primer momento. No son precios de ningún fabricante ni una cotización. Reemplácelos por los de sus propuestas."
+        },
+        {
+          "question": "¿Se guarda lo que ingreso?",
+          "answer": "No. Los cálculos se hacen en su navegador y no se envían a Cyrrus. Si aceptó las cookies analíticas, solo registramos que usó la herramienta."
+        },
+        {
+          "question": "¿Cómo la uso para comparar proveedores?",
+          "answer": "Pida a cada proveedor la misma propuesta, con el mismo alcance y desglosada por bloque, y cargue cada una por separado. Compare el costo total, no el de la licencia."
+        },
+        {
+          "question": "¿Qué no incluye?",
+          "answer": "No incluye impuestos, financiación ni los beneficios del proyecto (ahorros, ingresos, reducción de riesgo). Es el lado del costo, que es el que más se subestima."
         }
       ]
     }

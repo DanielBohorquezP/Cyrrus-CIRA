@@ -246,6 +246,7 @@ Orden sugerido: semanas 5 y 6, martes y jueves, tras publicar las semanas 1–4.
 | 6 | Martes | C4 — Cuánto cuesta implementar un ERP |
 | 6 | Jueves | C5/C8 — CRM para 100+ empleados |
 | 7 | Martes | D1 — Test de preparación para un ERP |
+| 7 | Jueves | D2 — Calculadora de costo total de un ERP |
 
 ## C13 — Software de RR. HH. y nómina para más de 100 empleados
 Slug: `software-recursos-humanos-nomina-mas-de-100-empleados`
@@ -390,3 +391,31 @@ Un consejo: que lo respondan varios directivos por separado.
 Las diferencias entre sus respuestas suelen decir más que el puntaje.
 
 ¿Tu comité de dirección contestaría lo mismo sobre quién patrocina tu próximo proyecto de sistemas?
+
+## D2 — Calculadora de costo total de un ERP (herramienta)
+URL: `https://cyrruscs.com/herramientas/calculadora-costo-erp` (primer comentario)
+
+### Post (≈160 palabras)
+
+Una cotización de licencias no es un presupuesto.
+
+Es una parte. Y casi nunca la más grande.
+
+Con los valores de ejemplo de nuestra calculadora, la licencia de un ERP pesa 56% del costo a cinco años.
+
+El otro 44% es lo que la cotización no muestra:
+
+→ Implementación e integraciones
+→ Capacitación y gestión del cambio
+→ El tiempo de tus propios equipos
+→ Infraestructura, soporte y contingencia
+
+Hicimos una calculadora para armar ese costo total.
+
+Los supuestos son visibles y editables. Los valores iniciales son ejemplos, no precios de ningún fabricante.
+
+Úsala con las propuestas que ya tienes sobre la mesa. Una por una.
+
+Y compara el total, no la licencia.
+
+¿Cuánto le han dicho a tu junta que costará el ERP: el primer año o los cinco?
