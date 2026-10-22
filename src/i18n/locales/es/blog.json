@@ -756,6 +756,12 @@
           "text": "Pretender que el ERP replique exactamente los procesos de hoy, incluidos los que convendría corregir."
         },
         {
+          "type": "download",
+          "text": "Descargue la plantilla de RFP para seleccionar un ERP",
+          "href": "/descargas/plantilla-rfp-erp.xlsx",
+          "note": "Excel con requerimientos funcionales y técnicos por módulo, costo total por proveedor, matriz de evaluación ponderada, calendario y referencias. Sin precios ni pesos de ejemplo. Gratis y sin registro."
+        },
+        {
           "type": "h2",
           "text": "Cómo podemos ayudarle"
         },
@@ -1747,6 +1753,12 @@
           "text": "Subestimar la adopción. La investigación de Prosci muestra que los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos."
         },
         {
+          "type": "download",
+          "text": "Descargue la plantilla de RFP para seleccionar un ERP",
+          "href": "/descargas/plantilla-rfp-erp.xlsx",
+          "note": "Excel con requerimientos funcionales y técnicos por módulo, costo total por proveedor, matriz de evaluación ponderada, calendario y referencias. Sin precios ni pesos de ejemplo. Gratis y sin registro."
+        },
+        {
           "type": "h2",
           "text": "Cómo podemos ayudarle"
         },
@@ -2352,6 +2364,12 @@
         {
           "type": "p",
           "text": "Con un mismo documento de requerimientos para todos los proveedores, el mismo alcance (módulos, usuarios, integraciones, migración) y la petición explícita de desglosar licencias, implementación, soporte y supuestos. Después, compare el costo total a cinco años, no solo el primer año. En nuestra metodología, esa fase de selección suele tomar de 6 a 12 semanas."
+        },
+        {
+          "type": "download",
+          "text": "Descargue la plantilla de RFP para seleccionar un ERP",
+          "href": "/descargas/plantilla-rfp-erp.xlsx",
+          "note": "Excel con requerimientos funcionales y técnicos por módulo, costo total por proveedor, matriz de evaluación ponderada, calendario y referencias. Sin precios ni pesos de ejemplo. Gratis y sin registro."
         },
         {
           "type": "h2",

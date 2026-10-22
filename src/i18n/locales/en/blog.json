@@ -756,6 +756,12 @@
           "text": "Expecting the ERP to replicate today's processes exactly, including the ones that should be fixed."
         },
         {
+          "type": "download",
+          "text": "Download the ERP RFP template",
+          "href": "/descargas/erp-rfp-template.xlsx",
+          "note": "Excel with functional and technical requirements by module, total cost by vendor, a weighted evaluation matrix, a calendar and references. No sample prices or weights. Free, no sign-up."
+        },
+        {
           "type": "h2",
           "text": "How we can help"
         },
@@ -1747,6 +1753,12 @@
           "text": "Underestimating adoption. Prosci's research shows that projects with excellent change management are about seven times more likely to meet their objectives."
         },
         {
+          "type": "download",
+          "text": "Download the ERP RFP template",
+          "href": "/descargas/erp-rfp-template.xlsx",
+          "note": "Excel with functional and technical requirements by module, total cost by vendor, a weighted evaluation matrix, a calendar and references. No sample prices or weights. Free, no sign-up."
+        },
+        {
           "type": "h2",
           "text": "How we can help"
         },
@@ -2352,6 +2364,12 @@
         {
           "type": "p",
           "text": "With the same requirements document for every vendor, the same scope (modules, users, integrations, migration) and an explicit request to break down licenses, implementation, support and assumptions. Then compare the five-year total cost, not just year one. In our methodology, that selection phase usually takes 6 to 12 weeks."
+        },
+        {
+          "type": "download",
+          "text": "Download the ERP RFP template",
+          "href": "/descargas/erp-rfp-template.xlsx",
+          "note": "Excel with functional and technical requirements by module, total cost by vendor, a weighted evaluation matrix, a calendar and references. No sample prices or weights. Free, no sign-up."
         },
         {
           "type": "h2",

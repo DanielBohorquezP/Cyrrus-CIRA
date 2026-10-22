@@ -47,11 +47,11 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 8 (2026-10-21, D2 publicado: calculadora de costo total de un ERP).
+**Última sesión cerrada:** Sesión 9 (2026-10-21, D3: plantilla de RFP para ERP; tras la auditoría de verificabilidad).
 
-**Próxima: Sesión 9.** Orden sugerido:
+**Próxima: Sesión 10.** Orden sugerido:
 0. ~~Auditoría de verificabilidad completa~~ ✅ hecha (ver `AUDITORIA-VERIFICABILIDAD.md`). Pendiente de la sección 5 de ese archivo: respaldo documental de los datos propios y autorizaciones J2.
-1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-21-v11.zip` (C8–C14, D1, D2 y B1; reemplaza al v9, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-21-v12.zip` (C8–C14, D1, D2 y B1; reemplaza al v9, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
 2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
 3. Sin insumos: **D3** (plantilla de RFP en Excel, patrón de `scripts/build-change-template.py`; "rfp software" MX 40) o contenido **G1/G2**. Luego **C15–C18**, **C6/C7**.
 4. **I1** de C1–C3 (faltan).
@@ -132,7 +132,7 @@ qué llegó y lo integra (F8, J1, J3…).
 |---|---|---|---|
 | D1 | Test de preparación para ERP | ✅ | Sesión 6. `/herramientas/test-preparacion-erp`, ES/EN: 10 preguntas en 5 bases (procesos, datos, equipo, presupuesto, patrocinio), puntaje 0–30, 3 rangos, brechas con recomendaciones, sin registro. Eventos `tool_start`/`tool_complete`. Falta el informe por correo (B4) |
 | D2 | Calculadora de costo total de ERP | ✅ | Sesión 8. `/herramientas/calculadora-costo-erp`, ES/EN. Nube o licencia perpetua; usuarios, implementación, integraciones, capacitación, equipo interno, infraestructura, contingencia, 1–10 años. Supuestos editables, valores de ejemplo (no precios de fabricantes). Cálculo en el navegador |
-| D3 | Plantilla de RFP para ERP | ⬜ | Reutilizar patrón de `scripts/build-change-template.py` |
+| D3 | Plantilla de RFP para ERP | ✅ | Sesión 9. `scripts/build-rfp-template.py` → `public/descargas/plantilla-rfp-erp.xlsx` y `erp-rfp-template.xlsx`. 8 hojas (empresa, funcionales, técnicos, costo total con sumas, matriz ponderada con verificación de pesos, calendario, referencias). Sin precios ni pesos de ejemplo. Descarga en la guía de ERP, mejores ERP y costo de ERP |
 | D4 | Plantilla de gestión del cambio | ✅ | 2026-10-05, ES/EN, enlazada desde la guía |
 | D5 | Test de preparación para el cambio | ⬜ | |
 
@@ -223,7 +223,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-21-v11.zip` (C8–C14, D1, D2 y B1; reemplaza al v8 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-21-v12.zip` (C8–C14, D1, D2 y B1; reemplaza al v8 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
@@ -250,13 +250,21 @@ qué llegó y lo integra (F8, J1, J3…).
 
 ## Bitácora de sesiones
 
+### Sesión 9 — 2026-10-21 — Plantilla de RFP para ERP (D3)
+- **Tareas trabajadas:** D3 ✅. Producción sigue sin los zips v4–v12 (las páginas nuevas dan 404), así que A2/A5 siguen esperando.
+- **Hecho:** `scripts/build-rfp-template.py` genera dos Excel (ES/EN) como estructura, no como datos: instrucciones; empresa y alcance; requerimientos funcionales (6 módulos × 4 filas, con prioridad y respuesta por proveedor); técnicos y cobertura local; costo total por proveedor con sumas; matriz de evaluación ponderada con los siete criterios de la guía de ERP, validación 1–5, pesos que deben sumar 100 y aviso si no; calendario con las siete etapas de la guía; referencias. Pesos, precios y plazos los pone la empresa (regla de `CLAUDE.md`). Bloque de descarga en la guía de ERP, en mejores ERP y en costo de ERP (ES/EN); `llms.txt`.
+- **Verificación:** fórmulas revisadas a mano (ponderado = peso/100 × calificación; suma; chequeo de pesos); descarga 200 en ES y EN; build de 114 rutas; consola sin errores. No hay LibreOffice para recalcular las fórmulas con datos.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v12.zip` (reemplaza al v11, eliminado).
+- **Pendiente / bloqueos nuevos:** ninguno nuevo. Abrir el Excel en Excel una vez para confirmar el formato de las listas desplegables.
+- **Próxima sesión:** Sesión 10 (ver arriba).
+
 ### Sesión 8c — 2026-10-21 — Auditoría completa de verificabilidad
 - **Alcance:** los 19 artículos, todas las páginas de servicio, inicio, métodos, casos, herramientas, `llms.txt`, datos estructurados y descripciones (ES y EN). Registro completo y con fuentes en [`AUDITORIA-VERIFICABILIDAD.md`](./AUDITORIA-VERIFICABILIDAD.md).
 - **Verificado en fuente abierta:** BCG (70%), Prosci (88% vs 13%, unas 7 veces), Panorama 2026 (más de una cuarta parte sobre presupuesto), HBR/Zook y Allen (1.854 empresas, 7 de 8, 90%), SAP (fechas de ECC, licencias de Business One), Microsoft (precios de Business Central, bodega), TechTarget, ISA, Infor; PMI 11,4%, Air Canada, Samsung e ISO 42001 por confirmación de terceros (las páginas dieron 403).
 - **Corregido:** HBR atribuía el estudio a Kaplan y Norton y decía "más del 90%": es de Zook y Allen y dice 90%. Se quitaron/suavizaron en ES y EN decenas de afirmaciones sin fuente ("la mayoría de las iniciativas de IA fallan…", "casi nunca falla por el software", "el sesgo de quien la vendió", "garantizamos…", "alineación perfecta", "casi toda empresa que nos llama", "mandos medios boicotean…"). "Resultados verificables" pasó a "Resultados de un proyecto de Cyrrus". Inicio ahora cita a BCG; Método CIRA cita a Panorama; el plazo de SEO usa lo que Google sí dice. Fuente Samsung: CNBC (403) → Bloomberg. Retirada la frase de ISO 55001 que no se pudo abrir.
 - **Queda como dato del cliente (sin respaldo comprobable desde fuera):** 15+ países, 2017, trayectoria de Jackson, cifras de casos, 6 a 12 semanas, "sin comisiones", etc. Lista en la sección 2 del archivo de auditoría.
 - **Verificación:** `tsc` limpio; build de 114 rutas; páginas tocadas cargan sin errores de hidratación.
-- **Zip:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v11.zip` (reemplaza al v10, eliminado).
+- **Zip:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v12.zip` (reemplaza al v10, eliminado).
 
 ### Sesión 8b — 2026-10-21 — Auditoría de verificabilidad (regla del cliente: nada inventado)
 - **Disparador:** el cliente preguntó si la calculadora era real y exigió que todo lo publicado sea 100% verificable. Regla guardada en `CLAUDE.md` ("Contenido: nada inventado, todo verificable") y en la memoria.
@@ -266,7 +274,7 @@ qué llegó y lo integra (F8, J1, J3…).
 - **C10 (SAP Business One):** verificado en documentos oficiales de SAP: tipos de usuario (Professional, Limited CRM/Financials/Logistics, Starter), Starter máximo 5 usuarios en la edición en la nube (Cloud Supplement), la app móvil está incluida en la licencia (guía 10.0). Retirado "excluye funciones avanzadas" (no verificado). La página de producto de SAP y la de ISO dieron 403: lo que dependía de ellas se redactó solo con lo que sí se leyó.
 - **Sigue sin verificarse (y por qué):** ISO 55001 "aplica a todo tipo y tamaño de organización" (la página de ISO dio 403; la frase vino de un resumen de búsqueda); "6 a 12 semanas" de la fase de selección y la declaración "Cyrrus no recibe comisiones" (datos de Cyrrus, los aporta el cliente); el reparto 15/30/15 y el resto de supuestos de `/diagnostico` (a confirmar con el cliente); preguntas y rangos de puntaje del test D1 (criterio de Cyrrus, rotulado como orientativo).
 - **Pendiente:** la auditoría de lo anterior a la Sesión 1 se hizo en la Sesión 8c (abajo).
-- **Zip:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v11.zip` (reemplaza al v9, eliminado).
+- **Zip:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v12.zip` (reemplaza al v9, eliminado).
 
 ### Sesión 8 — 2026-10-21 — Segunda herramienta: calculadora de costo total de un ERP (D2)
 - **Tareas trabajadas:** D2 ✅, I1 🟡 (post de D2). Producción sigue sin el v8.
@@ -278,7 +286,7 @@ qué llegó y lo integra (F8, J1, J3…).
   - Post de LinkedIn de D2 (semana 7).
 - **Verificación:** `tsc` limpio; build de 114 rutas; cuatro escenarios calculados a mano y comparados con la pantalla (25 usuarios 215.040; 100 usuarios 690.960; perpetuo 1.139.400; 3 años 1.013.400; campo vacío 50.400), todos coinciden; EN con comas; móvil 375 px sin desborde; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 8: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v11.zip` (reemplaza al v8, eliminado).
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v12.zip` (reemplaza al v8, eliminado).
 - **Pendiente / bloqueos nuevos:** ninguno nuevo. Los porcentajes de ejemplo (implementación 100%, integraciones 25%, capacitación 15%, contingencia 15%, mantenimiento 20%) son criterio de Cyrrus sin fuente: conviene validarlos con Jackson. Solo calcula costo, no beneficios.
 - **Próxima sesión:** Sesión 9 (ver arriba).
 
