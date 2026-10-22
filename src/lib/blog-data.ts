@@ -197,6 +197,42 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230228_091017.jpg",
     ],
   },
+  {
+    slug: "cuanto-cuesta-sap-business-one",
+    coverImage: "/assets/decoracion/1785866224006.jpg",
+    publishedAt: "2026-10-21",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [4, 9],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "software-cmms-eam-como-elegir",
+    coverImage: "/assets/decoracion/IMG_20230302_112825.jpg",
+    publishedAt: "2026-10-21",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [5, 13],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "migrar-sap-ecc-a-s4hana-plazos-costos-alternativas",
+    coverImage: "/assets/decoracion/IMG_20230228_091017.jpg",
+    publishedAt: "2026-10-21",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [5, 9],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

@@ -47,13 +47,13 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 3 (2026-10-21, A1 verificado; C8 y C9 publicados).
+**Última sesión cerrada:** Sesión 4 (2026-10-21, C10, C11, C12 publicados; I1 para C9–C12).
 
-**Próxima: Sesión 4.** Orden sugerido:
-1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v4.zip` (C8 + C9). Hacer **A2** (pedir indexación de los 6 artículos nuevos, los 2 casos y la guía de gestión del cambio; reenviar sitemap) y **A5**/**K1** (PageSpeed real de producción).
-2. Si llegaron los insumos de venta: **B1**, **B3**, **B5**.
-3. **C10** (SAP B1 precio), **C11** (CMMS), **C12** (S/4HANA, verificar fechas en SAP), y **I1** (LinkedIn para C1–C5 y C9). Medir cada keyword antes de escribir.
-4. Después: C13–C14, C6/C7.
+**Próxima: Sesión 5.** Orden sugerido:
+1. Confirmar si el cliente subió `cyrrus-dist-2026-10-21-v5.zip` (C8–C12; reemplaza al v4, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de los 9 artículos nuevos, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar al cliente para publicar el calendario de LinkedIn.
+2. Si llegaron los insumos de venta: **B1**, **B3**, **B5** (son lo que convierte el tráfico que traen C9–C12).
+3. **C13** (RR. HH. y nómina 100+; medir y coordinar con G8), **C14** (MES), **I1** de C1–C5 y C8. Luego **D1** (test de preparación para ERP) + **B4**.
+4. Enlazar C10–C12 desde la página de servicio de ERP/EAM y desde C2, C3 y C4 (no se hizo en la Sesión 4).
 
 **Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
 
@@ -64,16 +64,17 @@
 | 1 ✅ | Comparativas (adelantadas a pedido del cliente) | C1–C5 + K1 parcial |
 | 2 ✅ | Investigación de temas para compradores de 50–100+ empleados | C8–C18 (definidas) |
 | 3 ✅ | Verificar despliegue + primeras categorías caras | A1, C8, C9 |
-| 4 | Indexación, medición y siguientes categorías | A2, A5, C10, C11, C12, I1 (B1, B3, B5 si llegan insumos) |
-| 5 | Primera herramienta | D1 + B4 |
-| 6 | Contenido con volumen | G1, G2 |
-| 7 | Contenido CRM | G3 |
-| 8 | Herramienta de costo | D2 (enlazada desde C4) |
-| 9 | Contenido | G4, G5 |
-| 10 | Estudio propio (diseño) | E1 + G6 |
-| 11 | Industrias | H1, H2 |
-| 12–15 | Contenido G7–G16 a 2 por sesión; E3 cuando haya respuestas | — |
-| 15 (≈ 90 días) | Revisión trimestral | L1 |
+| 4 ✅ | Categorías de software caro | C10, C11, C12, I1 (C9–C12) |
+| 5 | Indexación, medición, RR. HH. y MES | A2, A5, C13, C14, I1 (C1–C5, C8); B1, B3, B5 si llegan insumos |
+| 6 | Primera herramienta | D1 + B4 |
+| 7 | Contenido con volumen | G1, G2 |
+| 8 | Contenido CRM | G3 |
+| 9 | Herramienta de costo | D2 (enlazada desde C4) |
+| 10 | Contenido | G4, G5 |
+| 11 | Estudio propio (diseño) | E1 + G6 |
+| 12 | Industrias | H1, H2 |
+| 13–16 | Contenido G7–G16 a 2 por sesión; E3 cuando haya respuestas | — |
+| 16 (≈ 90 días) | Revisión trimestral | L1 |
 
 Las tareas **[Cliente]** de F, I y J se avanzan en paralelo; cada sesión revisa
 qué llegó y lo integra (F8, J1, J3…).
@@ -114,9 +115,9 @@ qué llegó y lo integra (F8, J1, J3…).
 | C7 | ERP vs Excel | ⬜ | Medir keyword primero |
 | C8 | Reforzar C5 para empresas de 100+ | ✅ | Sesión 3. Sección "¿Qué cambia si su empresa tiene más de 100 empleados?" (costo total, integración con ERP, riesgo de migración) + tabla por situación, ES/EN. Falta cambiar el CTA a diagnóstico cuando exista B1 y enlazar C15–C18 |
 | C9 | Sistema WMS y cómo elegirlo | ✅ | Sesión 3. `/perspectivas/sistema-wms-que-es-y-como-elegir`, ES/EN. Enfocado en decisión gerencial (WMS vs ERP, costo total a 5 años, señales de alerta). Fuentes: Microsoft Learn (2) y SAP Press. MX 880 · SD 10 |
-| C10 | Cuánto cuesta SAP Business One | ⬜ | Sesión 2: MX 140 + 110 · SD 23–28 |
-| C11 | Software de mantenimiento (CMMS/EAM) | ⬜ | Sesión 2: MX 170 · SD 34 · CPC US$54 |
-| C12 | Migrar de SAP ECC a S/4HANA | ⬜ | Sesión 2: MX 1.900 · SD 28. Verificar fechas de soporte en SAP |
+| C10 | Cuánto cuesta SAP Business One | ✅ | Sesión 4. `/perspectivas/cuanto-cuesta-sap-business-one`, ES/EN. SAP no publica precios: el artículo explica qué define el costo (tipos de usuario según la guía de licencias de SAP, despliegue, implementación, soporte) y cómo presupuestar a 5 años. Sin cifras de terceros. MX 140 + 110 · SD 23–28 |
+| C11 | Software de mantenimiento (CMMS/EAM) | ✅ | Sesión 4. `/perspectivas/software-cmms-eam-como-elegir`, ES/EN. CMMS vs EAM vs módulo del ERP, qué medir (costo de parada), ISO 55001. Fuentes: TechTarget, ISO. Enlaza a la página de EAM. MX 170 · SD 34 · CPC US$54 |
+| C12 | Migrar de SAP ECC a S/4HANA | ✅ | Sesión 4. `/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas`, ES/EN. Fechas verificadas en SAP Support y SAP News (oct-2026): estándar hasta 31-dic-2027, extendido hasta 31-dic-2030 (+2 puntos), S/4HANA hasta 2040. MX 1.900 · SD 28. Revisar si SAP cambia fechas (L1) |
 | C13 | Software de RR. HH. y nómina (100+) | ⬜ | Sesión 2: MX 260 · SD 18 · CPC US$22,6. Coordinar con G8 |
 | C14 | Software MES | ⬜ | Sesión 2: MX 140 · SD 17 |
 | C15 | Integrar ERP y CRM sin middleware | ⬜ | Sesión 2: satélite para respuestas de IA |
@@ -182,7 +183,7 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase I — Marca personal y distribución
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| I1 | Calendario de LinkedIn por artículo | ⬜ | |
+| I1 | Calendario de LinkedIn por artículo | 🟡 | Sesión 4: `docs/plan-mejora/datos/linkedin-calendario-2026-10.md` (2 posts por artículo para C9–C12, orden y días). Faltan C1–C5 y C8. [Cliente] publica tras subir el v5 |
 | I2 | Videos cortos | ⬜ | |
 | I3 | Newsletter de LinkedIn | ⬜ | |
 | I4 | Perfiles alineados | ⬜ | |
@@ -220,7 +221,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-21-v4.zip` (C8 + C9; reemplaza v3, que ya está en producción) | 2026-10-21 | ⬜ | A2, A5, K1 |
+| Subir `cyrrus-dist-2026-10-21-v5.zip` (C8–C12; reemplaza al v4 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Diagnóstico de entrada: alcance, duración, precio | 2026-10-05 | ⬜ | B1 |
 | Rangos de precio por servicio | 2026-10-05 | ⬜ | B2 |
@@ -247,6 +248,20 @@ qué llegó y lo integra (F8, J1, J3…).
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 4 — 2026-10-21 — Categorías de software caro (C10, C11, C12) y LinkedIn (I1)
+- **Tareas trabajadas:** C10 ✅, C11 ✅, C12 ✅, I1 🟡. Se confirmó que producción aún no tiene el v4 (el artículo de WMS da 404), así que A2/A5 siguen esperando.
+- **Hecho:**
+  - C10 *Cuánto cuesta SAP Business One*: no se inventaron precios. SAP no publica lista y no pude verificar cifras de socios (403 en la fuente), así que el artículo explica qué define el costo con la guía de licencias oficial (Professional, Limited, Starter de hasta 5 usuarios), tabla de componentes con "qué pedir en la cotización" y método de 5 años.
+  - C11 *Software CMMS y EAM*: tabla de tres opciones, cuándo basta cada una, qué medir (costo de parada, preventivo vs correctivo), integración con el ERP, ISO 55001. Enlazado a la página de EAM.
+  - C12 *SAP ECC a S/4HANA*: fechas verificadas en SAP Support y SAP News de octubre de 2026; tabla de etapas, tabla de cuatro rutas y cinco decisiones de la gerencia. Es la de más urgencia comercial: quedan poco más de 14 meses.
+  - Los tres escritos para el lector decisor (CEO/CFO/COO): costo total, riesgo, capital, gobierno. `llms.txt` actualizado (ES/EN).
+  - I1: calendario de LinkedIn de C9–C12 con la voz del skill `linkedin-cyrrus`.
+- **Verificación:** build de 104 rutas; las 6 versiones nuevas cargan con título correcto, tablas y JSON-LD válido. En la consola solo aparece un `ERR_CONNECTION_REFUSED` que también sale en `/quienes-somos` (página sin cambios): viene del navegador del panel, no del sitio.
+- **Commits:** ver `git log` ("Sesión 4: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v5.zip` (reemplaza al v4, eliminado).
+- **Pendiente / bloqueos nuevos:** ninguno nuevo. Falta enlazar C10–C12 desde ERP/EAM y desde C2–C4; portadas reutilizan fotos genéricas (K2 pendiente).
+- **Próxima sesión:** Sesión 5 (ver arriba).
 
 ### Sesión 3 — 2026-10-21 — Despliegue verificado y primeras categorías de software caro (C8, C9)
 - **Tareas trabajadas:** A1 ✅, C8 ✅, C9 ✅. Criterio nuevo del cliente: lector objetivo = alta gerencia (CEO/CFO/COO) de empresas de 50+ empleados que pueden pagar consultorías de COP 30 millones o más.

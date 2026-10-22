@@ -2726,6 +2726,491 @@
           "url": "https://blog.sap-press.com/an-overview-of-ewm-with-sap-s4hana-embedded-decentralized-and-stock-room-management"
         }
       ]
+    },
+    "cuanto-cuesta-sap-business-one": {
+      "title": "Cuánto cuesta SAP Business One: qué define el precio",
+      "seoTitle": "Cuánto cuesta SAP Business One: qué define el precio",
+      "label": "Selección de software",
+      "excerpt": "SAP Business One no publica precios de lista. Qué define el costo (usuarios, despliegue, implementación y soporte) y cómo presupuestarlo a cinco años para decidir con la gerencia.",
+      "metaDescription": "SAP Business One no publica precios. Qué define su costo (usuarios, despliegue, implementación, soporte) y cómo presupuestarlo a cinco años.",
+      "intro": "Quien busca el precio de SAP Business One encuentra cifras muy distintas. No es descuido: SAP no publica una lista de precios, y el costo final lo fija la cotización de un socio implementador.",
+      "keyTakeaways": [
+        "SAP Business One se cotiza a través de socios; no hay precio de lista público, así que las cifras de terceros sirven como referencia, no como presupuesto.",
+        "La licencia se define por usuarios nominales de tipos distintos (Professional, Limited y Starter Package, este con un máximo de cinco usuarios), y el tipo de cada persona cambia el costo.",
+        "Para la gerencia, la cifra que importa es el costo total a cinco años: licencia o suscripción, implementación, integraciones, soporte y tiempo del equipo interno."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Recibió una cotización de SAP Business One?",
+          "description": "Revisamos la propuesta con usted: alcance, supuestos y costos que no aparecen, y la comparamos con otras alternativas sin comisiones de fabricantes.",
+          "checklist": [
+            "Revisión independiente de la propuesta",
+            "Costo total a cinco años"
+          ],
+          "ctaLabel": "Conocer la selección de ERP",
+          "imageAlt": "Equipo de Cyrrus revisando una propuesta de ERP"
+        },
+        {
+          "title": "Que el proyecto llegue a producción",
+          "description": "Gerenciamos la implementación con el socio para controlar alcance, presupuesto y cronograma, y acompañamos la adopción.",
+          "checklist": [
+            "Gerencia del proyecto del lado del cliente",
+            "Control de cambios y de alcance"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "SAP Business One es el ERP de SAP pensado para la mediana empresa. Preguntar cuánto cuesta es razonable, pero la respuesta honesta empieza por otra cosa: no existe una cifra única, y quien le dé una sin conocer su operación está estimando."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos explicar el costo sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿SAP publica el precio de Business One?"
+        },
+        {
+          "type": "p",
+          "text": "No. En octubre de 2026 el sitio de SAP no muestra un precio de lista para Business One: se compra a través de socios implementadores, que cotizan según el alcance, la región y el modelo de despliegue (nube o infraestructura propia). Las cifras por usuario que circulan en blogs de terceros son estimaciones de socios o revendedores, difieren entre sí y envejecen rápido; úselas como orden de magnitud para empezar la conversación, nunca como presupuesto."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué define el costo de la licencia?"
+        },
+        {
+          "type": "p",
+          "text": "La licencia de Business One es por usuario nominal, y cada persona tiene un tipo. Según la guía de licenciamiento de SAP, los tipos son Professional (acceso amplio a la funcionalidad), Limited (Financials, Logistics y CRM, para personal operativo con acceso acotado) y Starter Package, que admite un máximo de cinco usuarios, no se combina con otros tipos y excluye funciones avanzadas. Clasificar bien a cada persona antes de cotizar es una de las decisiones que más mueve el precio. La aplicación móvil para Android no tiene costo adicional para estos tipos de usuario. La guía de licencias citada corresponde a la versión 10.0, así que confirme las condiciones vigentes de su versión con el socio."
+        },
+        {
+          "type": "table",
+          "text": "Los componentes del costo de SAP Business One",
+          "columns": [
+            "Componente",
+            "Qué lo determina",
+            "Qué pedir en la cotización"
+          ],
+          "rows": [
+            [
+              "Licencias o suscripción",
+              "Número y tipo de usuarios; compra de licencia o suscripción en la nube",
+              "Desglose por tipo de usuario y condiciones de plazo y renovación"
+            ],
+            [
+              "Base de datos y despliegue",
+              "SAP HANA o Microsoft SQL Server; nube del socio o infraestructura propia",
+              "Quién provee y mantiene la infraestructura, y su costo recurrente"
+            ],
+            [
+              "Implementación",
+              "Alcance de procesos, localización fiscal y facturación electrónica, migración de datos, integraciones",
+              "Horas por actividad, supuestos de alcance y cómo se cobra lo que se sale de él"
+            ],
+            [
+              "Soporte y actualizaciones",
+              "Mantenimiento de la licencia y soporte del socio",
+              "Qué incluye, niveles de servicio y costo anual"
+            ],
+            [
+              "Equipo interno",
+              "Personas clave que dedican semanas a definir, validar y probar",
+              "Un plan de dedicación por rol (es el costo que casi nadie presupuesta)"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo presupuestarlo para el comité o la junta?"
+        },
+        {
+          "type": "p",
+          "text": "Calcule el costo a cinco años: licencias o suscripción y soporte multiplicados por cinco, más implementación, integraciones, infraestructura y tiempo del equipo interno. Pida a al menos tres socios la misma propuesta, con el mismo alcance, y exija el desglose por bloque: compare horas y supuestos, no solo el valor total. Una propuesta barata con un alcance angosto suele terminar con órdenes de cambio. El artículo sobre cuánto cuesta implementar un ERP detalla los costos ocultos que más desvían el presupuesto.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un ERP",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo Business One deja de ser la opción adecuada?"
+        },
+        {
+          "type": "p",
+          "text": "Business One está pensado para la mediana empresa. Conviene revisar alternativas cuando aparecen consolidación de varias entidades en distintos países, volúmenes de transacciones muy altos o procesos industriales complejos. En ese caso compárelo con otros ERP en las comparativas de SAP Business One, NetSuite y Dynamics 365 Business Central, y de Odoo y SAP Business One.",
+          "links": [
+            {
+              "text": "SAP Business One, NetSuite y Dynamics 365 Business Central",
+              "href": "/perspectivas/sap-business-one-vs-netsuite-vs-dynamics-365-business-central"
+            },
+            {
+              "text": "Odoo y SAP Business One",
+              "href": "/perspectivas/odoo-vs-sap-business-one-diferencias"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus revisamos las cotizaciones con usted, construimos el costo total de cada alternativa antes de que firme y gerenciamos la implementación del lado del cliente. Nuestra selección de ERP es independiente.",
+          "links": [
+            {
+              "text": "selección de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si tiene una propuesta de SAP Business One sobre la mesa, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "SAP. License Guide for SAP Business One 10.0",
+          "url": "https://help.sap.com/doc/14c6d92982fd4a9dbf7df66b5108433b/10.0/en-US/LicenseGuide.pdf"
+        },
+        {
+          "label": "SAP. Licensing - SAP Business One (SAP Help Portal)",
+          "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/a2c93a1c88a24f1faeee3d3f62fbde7a/9e7768e321e4454fa5be4b599bc2bf81.html"
+        },
+        {
+          "label": "SAP. SAP Business One (página oficial)",
+          "url": "https://www.sap.com/products/erp/business-one.html"
+        }
+      ]
+    },
+    "software-cmms-eam-como-elegir": {
+      "title": "Software CMMS y EAM: qué es y cómo elegirlo",
+      "seoTitle": "Software CMMS y EAM: qué es y cómo elegirlo",
+      "label": "Selección de software",
+      "excerpt": "Diferencia entre CMMS, EAM y el módulo de mantenimiento del ERP, cuándo justifica cada uno la inversión y qué debe medir la gerencia antes de elegir.",
+      "metaDescription": "Qué es un software CMMS, en qué se diferencia de un EAM y del módulo del ERP, y cómo elegir con criterios de costo de parada y riesgo.",
+      "intro": "Una parada no planificada puede costar más que el software que habría ayudado a evitarla. La decisión de la gerencia es elegir entre un CMMS, un EAM o el módulo de mantenimiento del ERP sin sobrepagar ni quedarse corta.",
+      "keyTakeaways": [
+        "Un CMMS gestiona las tareas de mantenimiento (órdenes de trabajo, repuestos, programación); un EAM cubre todo el ciclo de vida del activo, incluida la planeación de capital, el riesgo y el desempeño.",
+        "Un EAM se justifica con activos físicos de alto costo y varias áreas (finanzas, operaciones, mantenimiento) usando el mismo sistema; un CMMS completo puede bastar y es más sencillo de implementar.",
+        "Decida con el costo de las paradas, la proporción de mantenimiento preventivo y el riesgo, no con listas de funciones; la norma ISO 55001 ofrece un marco si busca certificar la gestión de activos."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Evalúa un CMMS o un EAM?",
+          "description": "Definimos qué necesita su operación, medimos el costo de las paradas y comparamos las alternativas sin comisiones de fabricantes.",
+          "checklist": [
+            "Requerimientos de mantenimiento e integración con el ERP",
+            "Comparación independiente, sin comisiones"
+          ],
+          "ctaLabel": "Conocer la selección de EAM",
+          "imageAlt": "Equipo de Cyrrus revisando requerimientos de mantenimiento"
+        },
+        {
+          "title": "Que mantenimiento lo use",
+          "description": "Un sistema de mantenimiento fracasa si los técnicos no registran el trabajo. Gerenciamos la implementación y la adopción.",
+          "checklist": [
+            "Gerencia del proyecto de implementación",
+            "Capacitación por rol y seguimiento de uso"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Un CMMS (sistema computarizado de gestión del mantenimiento) es el software que programa, asigna y registra el trabajo de mantenimiento: órdenes de trabajo, mantenimiento preventivo, repuestos e historial de cada equipo. Un EAM (gestión de activos empresariales) hace eso y, además, acompaña al activo durante toda su vida, desde la compra hasta la baja."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuál es la diferencia entre un CMMS y un EAM?"
+        },
+        {
+          "type": "p",
+          "text": "El CMMS se centra en la etapa de mantenimiento y lo usan sobre todo los equipos de mantenimiento y producción, con el objetivo de evitar paradas inesperadas. El EAM abarca el ciclo de vida completo e involucra también a finanzas, operaciones y dirección, porque incluye planeación de activos nuevos, análisis de riesgo y de desempeño. Los productos se solapan y muchos proveedores usan los dos términos como sinónimos, así que compare funciones reales, no etiquetas."
+        },
+        {
+          "type": "table",
+          "text": "Tres formas de gestionar el mantenimiento",
+          "columns": [
+            "Opción",
+            "Quién la usa y qué cubre",
+            "Cuándo suele bastar"
+          ],
+          "rows": [
+            [
+              "Módulo de mantenimiento del ERP",
+              "Mantenimiento y finanzas sobre una sola plataforma; órdenes y costos integrados",
+              "Operaciones de complejidad media que ya tienen ERP y priorizan una plataforma única"
+            ],
+            [
+              "CMMS especializado",
+              "Mantenimiento y producción; programación, repuestos, historial",
+              "Plantas con necesidad clara de ordenar el trabajo y reducir paradas, con implementación rápida"
+            ],
+            [
+              "EAM",
+              "Mantenimiento, operaciones, finanzas y dirección; ciclo de vida, riesgo y capital",
+              "Activos de alto costo, varias plantas o sedes, exigencias regulatorias o de certificación"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo basta un CMMS y cuándo se justifica un EAM?"
+        },
+        {
+          "type": "p",
+          "text": "Un CMMS completo suele ser suficiente cuando el problema es de ejecución: órdenes de trabajo en papel, repuestos sin control, mantenimiento reactivo. Un EAM se justifica cuando la pregunta de la dirección es de portafolio: cuándo reemplazar un activo, cuánto invertir en cada planta, qué riesgo se acepta. A medida que los CMMS incorporan funciones de EAM, la brecha se reduce; por eso conviene un análisis de costo y beneficio antes de pagar las funciones adicionales."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe medir la gerencia para justificar la inversión?"
+        },
+        {
+          "type": "p",
+          "text": "Antes de pedir demostraciones, mida lo que hoy no ve: cuánto cuesta una hora de parada no planificada en sus líneas críticas, qué proporción del trabajo es preventivo frente a correctivo, cuánto se gasta en repuestos de emergencia y cuántos equipos críticos no tienen historial confiable. Con esos datos el caso de negocio se escribe solo, y sirve además para medir el resultado un año después."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se conecta con el ERP?"
+        },
+        {
+          "type": "p",
+          "text": "El mantenimiento consume repuestos, genera compras y carga costos a la contabilidad. Una integración deficiente obliga a registrar dos veces o a conciliar a mano. Defina antes de elegir qué sistema es la fuente de verdad del maestro de equipos, del inventario de repuestos y de los costos, y quién mantiene la integración. Si aún no ha definido el ERP, decida las dos cosas juntas."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo elegir el software de mantenimiento?"
+        },
+        {
+          "type": "p",
+          "text": "Parta de su operación real: criticidad de los equipos, número de plantas, personal técnico y cómo registra hoy el trabajo. Pida una demostración con sus propios activos y pruebe el uso en campo con dos o tres técnicos, en el dispositivo que usarán. Si busca certificar su gestión de activos, la familia ISO 55000 define el marco: ISO 55001 establece los requisitos de un sistema de gestión de activos y aplica a cualquier tipo y tamaño de organización."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus definimos los requerimientos, medimos el costo de las paradas, comparamos las alternativas sin comisiones y gerenciamos la implementación. Conozca nuestra selección de EAM y de software.",
+          "links": [
+            {
+              "text": "selección de EAM",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam"
+            },
+            {
+              "text": "software",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está evaluando un sistema de mantenimiento, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "TechTarget. EAM vs. CMMS: What are the differences?",
+          "url": "https://www.techtarget.com/enterprise-software/tip/EAM-vs-CMMS-What-are-the-differences"
+        },
+        {
+          "label": "ISO. ISO 55001:2024 Asset management. Asset management system. Requirements",
+          "url": "https://www.iso.org/standard/83054.html"
+        }
+      ]
+    },
+    "migrar-sap-ecc-a-s4hana-plazos-costos-alternativas": {
+      "title": "Migrar de SAP ECC a S/4HANA: plazos y alternativas",
+      "seoTitle": "Migrar de SAP ECC a S/4HANA: plazos y alternativas",
+      "label": "Selección de software",
+      "excerpt": "Las fechas oficiales de SAP para ECC, qué cambia al terminar cada etapa de mantenimiento, las rutas disponibles y qué debe decidir la gerencia antes de pedir cotizaciones.",
+      "metaDescription": "El mantenimiento estándar de SAP ECC termina el 31 de diciembre de 2027. Fechas oficiales, rutas de migración y qué decidir antes de cotizar.",
+      "intro": "Para una empresa que opera SAP ECC, el calendario ya es una decisión de la alta dirección: el mantenimiento estándar termina el 31 de diciembre de 2027, y hoy faltan poco más de catorce meses.",
+      "keyTakeaways": [
+        "SAP mantiene el mantenimiento estándar de ECC hasta el 31 de diciembre de 2027 y ofrece un mantenimiento extendido opcional hasta el 31 de diciembre de 2030, con un recargo de dos puntos porcentuales sobre la base de mantenimiento.",
+        "Después de 2030, o sin mantenimiento extendido, aplica el mantenimiento específico del cliente, que SAP no recomienda como modelo de largo plazo para sistemas críticos; con bases de datos de terceros, convertir el sistema solo es posible antes de que termine 2030.",
+        "No hay una única ruta: convertir el sistema actual, implementar desde cero, extender y decidir después, o cambiar de ERP. La decisión de fondo es de alcance, presupuesto y capacidad de cambio, no solo técnica."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Tiene SAP ECC y no ha decidido la ruta?",
+          "description": "Evaluamos con usted las alternativas, el costo total y el calendario realista, sin comisiones de fabricantes ni de integradores.",
+          "checklist": [
+            "Comparación de rutas y alternativas",
+            "Caso de negocio para la junta"
+          ],
+          "ctaLabel": "Conocer la selección de software",
+          "imageAlt": "Equipo de Cyrrus revisando un plan de migración de ERP"
+        },
+        {
+          "title": "Que el proyecto no se descarrile",
+          "description": "Un proyecto de esta magnitud necesita gerencia del lado del cliente y gestión del cambio desde el primer día.",
+          "checklist": [
+            "Gerencia de proyectos y control de alcance",
+            "Gestión del cambio y capacitación"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "SAP ECC (parte de SAP Business Suite 7, con SAP ERP 6.0 como núcleo) es el ERP sobre el que operan muchas empresas medianas y grandes de América Latina. SAP S/4HANA es su sucesor. El debate ya no es si migrar, sino cuándo, cómo y a qué costo."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no es socio ni revendedor de SAP ni de sus alternativas. Por eso podemos plantear las opciones sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué fechas fija SAP para ECC?"
+        },
+        {
+          "type": "p",
+          "text": "Las fechas oficiales no han cambiado desde el anuncio de SAP de 2020 y SAP las reiteró en octubre de 2026."
+        },
+        {
+          "type": "table",
+          "text": "Fechas y condiciones oficiales de SAP (consultadas en octubre de 2026)",
+          "columns": [
+            "Etapa",
+            "Fecha",
+            "Qué implica"
+          ],
+          "rows": [
+            [
+              "Mantenimiento estándar",
+              "Hasta el 31 de diciembre de 2027",
+              "Soporte pleno de las aplicaciones núcleo de Business Suite 7, incluido SAP ERP 6.0"
+            ],
+            [
+              "Mantenimiento extendido (opcional)",
+              "Del 1 de enero de 2028 al 31 de diciembre de 2030",
+              "Recargo de dos puntos porcentuales sobre la base de mantenimiento"
+            ],
+            [
+              "Mantenimiento específico del cliente",
+              "Desde 2031, o sin mantenimiento extendido",
+              "SAP no lo recomienda como modelo de largo plazo para sistemas críticos de negocio"
+            ],
+            [
+              "SAP S/4HANA",
+              "Al menos una versión en mantenimiento hasta 2040",
+              "Compromiso de innovación de SAP anunciado en 2020"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué pasa si no migro a tiempo?"
+        },
+        {
+          "type": "p",
+          "text": "El sistema no se apaga el 1 de enero de 2028: sigue funcionando. Lo que cambia es el respaldo del fabricante y el costo de seguir donde está. Además, hay una fecha crítica para quienes usan bases de datos de terceros: según SAP, convertir un sistema de Business Suite 7 con base de datos de terceros a S/4HANA o a SAP Cloud ERP solo es posible hasta fin de 2030; después solo queda una implementación nueva. Esperar tiene un costo de oportunidad, porque limita las opciones justo cuando el equipo y los proveedores estén más saturados."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué rutas existen?"
+        },
+        {
+          "type": "table",
+          "text": "Rutas frente al fin del mantenimiento de ECC",
+          "columns": [
+            "Ruta",
+            "En qué consiste",
+            "Qué evaluar"
+          ],
+          "rows": [
+            [
+              "Convertir el sistema actual",
+              "Llevar el sistema existente, con su historia y configuración, a S/4HANA",
+              "Cuánta personalización propia y datos antiguos arrastra; cuánto del diseño de hoy conviene conservar"
+            ],
+            [
+              "Implementar desde cero",
+              "Diseñar de nuevo los procesos en un sistema limpio y migrar solo lo necesario",
+              "Mayor esfuerzo de cambio organizacional; oportunidad de simplificar"
+            ],
+            [
+              "Extender y decidir después",
+              "Contratar el mantenimiento extendido hasta 2030",
+              "Costo adicional anual y riesgo de dejar la decisión para cuando haya menos holgura"
+            ],
+            [
+              "Cambiar de ERP",
+              "Evaluar una plataforma distinta a la de SAP",
+              "Costo total a cinco años, migración de datos y capacidad del equipo"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la gerencia antes de pedir cotizaciones?"
+        },
+        {
+          "type": "p",
+          "text": "Primero, la ruta y el objetivo de negocio: qué se quiere simplificar o habilitar, no solo cumplir una fecha. Segundo, el alcance de las personalizaciones: cada una que se conserva se paga en la migración y en cada actualización futura. Tercero, el patrocinio y quién gerencia el proyecto del lado de la empresa. Cuarto, el presupuesto total, que debe incluir el tiempo del equipo interno, la capacitación y la gestión del cambio, además de licencias y servicios; el artículo sobre cuánto cuesta implementar un ERP detalla esos bloques. Y quinto, un calendario con holgura frente a 2027 y 2030. Ignorar la parte humana es el error más caro: la guía de gestión del cambio organizacional explica cómo evitarlo.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un ERP",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            },
+            {
+              "text": "gestión del cambio organizacional",
+              "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus comparamos las rutas y alternativas sin comisiones, construimos el caso de negocio para la junta y gerenciamos el proyecto y el cambio del lado de la empresa. Conozca nuestra selección de software y la gerencia de proyectos.",
+          "links": [
+            {
+              "text": "selección de software",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+            },
+            {
+              "text": "gerencia de proyectos",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si opera SAP ECC y aún no tiene una ruta definida, agende una conversación con nuestro equipo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "SAP. Innovation Commitment for SAP S/4HANA until 2040 (maintenance strategy)",
+          "url": "https://support.sap.com/en/release-upgrade-maintenance/maintenance-information/maintenance-strategy/s4hana-business-suite7.html"
+        },
+        {
+          "label": "SAP News. Planning Beyond 2030: SAP Business Suite 7 and SAP NetWeaver customers using third-party databases or Java (octubre de 2026)",
+          "url": "https://news.sap.com/2026/10/beyond-2030-sap-business-suite-7-sap-netweaver-customers-third-party-databases-java/"
+        },
+        {
+          "label": "SAP News. Updated Policy Gives Customers More Time to Complete SAP S/4HANA Transition",
+          "url": "https://news.sap.com/2020/02/sap-s4hana-transition-updated-policy/"
+        }
+      ]
     }
   }
 }
