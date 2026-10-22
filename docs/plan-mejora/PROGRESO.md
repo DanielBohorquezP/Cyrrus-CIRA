@@ -98,7 +98,7 @@ qué llegó y lo integra (F8, J1, J3…).
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
 | B1 | Sesión de diagnóstico gratuita | ✅ | Sesión 7. `/diagnostico` ES/EN (D13). Enlazada desde el CTA final de todas las páginas y 11 artículos. Supuestos por confirmar (ver Bloqueos) |
-| B2 | Rangos de precio por servicio | ⛔ | Faltan rangos. Contexto: la competencia casi no publica precios; decidir si se publican (ver PLAN D13) |
+| B2 | Rangos de precio por servicio | ➖ | Descartada por el cliente (2026-10-21, PLAN D14): no se publican precios de Cyrrus |
 | B3 | Agenda directa + WhatsApp | ⛔ | Falta enlace de agenda y número |
 | B4 | Secuencia de correos | ⛔ | Falta elegir herramienta |
 | B5 | Revisión del formulario | ⬜ | |
@@ -224,7 +224,6 @@ qué llegó y lo integra (F8, J1, J3…).
 | Subir `cyrrus-dist-2026-10-21-v8.zip` (C8–C14, D1 y B1; reemplaza al v7 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
-| Rangos de precio por servicio | 2026-10-05 | ⬜ | B2 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
 | Herramienta de correo | 2026-10-05 | ⬜ | B4, D1 |
 | Datos faltantes de casos + autorización escrita | 2026-10-05 | ⬜ | J1, J2 |
@@ -259,7 +258,7 @@ qué llegó y lo integra (F8, J1, J3…).
 - **Verificación:** `tsc` limpio; build de 112 rutas; ES y EN con título, H1, JSON-LD válido; enlace de FinalCta en Inicio; enlace en artículo EN; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 7: …").
 - **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-21-v8.zip` (reemplaza al v7, eliminado).
-- **Pendiente / bloqueos nuevos:** confirmar los supuestos de arriba; B3 (agenda y WhatsApp) sigue bloqueada: hoy la solicitud va por el formulario de contacto, no por calendario. B2 (precios) queda como decisión: la competencia casi no publica precios.
+- **Pendiente / bloqueos nuevos:** confirmar los supuestos de arriba; B3 (agenda y WhatsApp) sigue bloqueada: hoy la solicitud va por el formulario de contacto, no por calendario. B2 (precios) quedó descartada (D14).
 - **Próxima sesión:** Sesión 8 (ver arriba).
 
 ### Sesión 6 — 2026-10-21 — Primera herramienta: test de preparación para un ERP (D1)

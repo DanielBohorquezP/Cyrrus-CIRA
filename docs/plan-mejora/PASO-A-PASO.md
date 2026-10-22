@@ -128,7 +128,7 @@ Ver "Protocolo de sesión" en `PROGRESO.md`.
    servicio y desde las tarjetas `serviceCtas` de los artículos.
 **Hecho cuando:** la página está publicada y enlazada desde Inicio + 4 servicios.
 
-### B2 Rangos de precio orientativos
+### B2 Rangos de precio orientativos — ➖ DESCARTADA (PLAN D14: no se publican precios de Cyrrus)
 1. **[Cliente]** Rango por servicio (estrategia, selección ERP, PMO, gestión del
    cambio) y de qué depende.
 2. **[Claude]** Sección "¿Cuánto cuesta?" en cada página de servicio + pregunta

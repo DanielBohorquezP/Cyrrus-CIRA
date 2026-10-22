@@ -74,6 +74,7 @@ no puede o no quiere estar:
 | D9 | Los backlinks spam no se desautorizan salvo acción manual de Google; se vigilan. | Google los ignora solos; el disavow mal hecho resta. |
 | D10 | Cliente objetivo: empresas de **50–100+ empleados** que van a comprar software caro. Los artículos nuevos se eligen por **la categoría de software que esa empresa busca** (WMS, SAP, CMMS, RR. HH.…), no por "cómo seleccionar software": esa frase casi no tiene búsquedas en español. | Investigación Ubersuggest 2026-10-21 (Sesión 2). |
 | D11 | Los volúmenes se miden **por país en español** (México 2484, Colombia 2170). Sin país, Ubersuggest mezcla búsquedas en inglés y sobrestima (p. ej. "netsuite vs sap" 590 global frente a ~10 en México). | Idem. |
+| D14 | **No se publican precios de Cyrrus** (ni rangos por servicio). El precio se da en la propuesta, después de la sesión de diagnóstico. Los artículos solo citan precios de lista de los fabricantes, con su fuente. | Decisión del cliente (2026-10-21). Coherente con el mercado: la competencia casi no los publica. |
 | D13 | La oferta de entrada (B1) es **una sesión de diagnóstico gratuita de 60 minutos**, no un servicio de pago a precio fijo. | Decisión del cliente (2026-10-21). Investigación: en México y Colombia casi nadie publica alcance y precio de un diagnóstico (erp.com.mx cobra US$1.500; el resto cotiza "bajo solicitud") y ninguno independiente declara "sin comisiones". Lo gratuito baja la barrera para el decisor; se filtra por tamaño (50+ empleados) y por decisión próxima. |
 | D12 | Todo comparativo termina con una tabla **"mejor opción por escenario"** (no solo "depende"), para ser citable por la IA y ayudar a decidir. | Prompts de seguimiento de IA que piden "ranking de mejor a peor" (2026-10-13). |
 
@@ -94,7 +95,7 @@ Sin producción actualizada y sin medición, todo lo demás es a ciegas.
 ### Fase B — Conversión inmediata (vender ya)
 Hoy el único llamado es "Agendar conversación", y eso le pide demasiado a alguien que no conoce a Cyrrus.
 - **B1** Oferta de entrada: **sesión de diagnóstico gratuita** de 60 minutos (D13), con su propia página `/diagnostico`.
-- **B2** **Rangos de precio orientativos** por servicio. Las Big Four nunca los publican.
+- ~~**B2** Rangos de precio orientativos por servicio.~~ **Descartada (D14).**
 - **B3** **Agenda directa** (Calendly o Google Calendar) y **botón de WhatsApp**.
 - **B4** Secuencia de correos para quien deja sus datos (herramientas, plantillas).
 - **B5** Revisión del formulario de contacto: pasos, campos y mensaje de confirmación con tiempo de respuesta.
@@ -224,7 +225,7 @@ consola limpia en ES y EN. El detalle por tarea está en `PASO-A-PASO.md`.
 | Subir el zip a producción (cada vez que se genera) | A1 y toda medición |
 | Acceso a GA4 (o un usuario con permiso de edición) | A4, A6 |
 | ~~Alcance, duración y precio del diagnóstico~~ (resuelto: sesión gratuita; confirmar los supuestos de la página, ver PROGRESO Sesión 7) | B1 |
-| Rangos de precio por servicio | B2 |
+| ~~Rangos de precio por servicio~~ (descartado, D14) | B2 |
 | Enlace de agenda (Calendly/Google) y número de WhatsApp de ventas | B3 |
 | Herramienta de correo para la secuencia (o aprobar n8n/Brevo) | B4, D1 |
 | Difundir la encuesta del estudio (LinkedIn, clientes) | E2 |
