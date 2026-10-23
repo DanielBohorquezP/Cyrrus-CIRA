@@ -21,6 +21,9 @@ RewriteRule ^en/metodo-cira/planeacion-estrategica/?$ /en/metodo-cira/estrategia
 # page, so the visitor and Googlebot land somewhere relevant.
 RewriteRule ^strategy/?$ /metodo-cira/estrategia [R=301,L]
 RewriteRule ^en/strategy/?$ /en/metodo-cira/estrategia [R=301,L]
+# URL con el slug duplicado que algunas IA inventan al citar la comparativa de CRM (2026-10-23)
+RewriteRule ^perspectivas/salesforce-vs-hubspot-vs-salesforce-vs-hubspot-vs-dynamics-365-crm/?$ /perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm [R=301,L]
+RewriteRule ^en/perspectivas/salesforce-vs-hubspot-vs-salesforce-vs-hubspot-vs-dynamics-365-crm/?$ /en/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm [R=301,L]
 RewriteRule ^cio-aas/?$ /metodo-cira/estrategia [R=301,L]
 RewriteRule ^en/cio-aas/?$ /en/metodo-cira/estrategia [R=301,L]
 RewriteRule ^cfo-aas/?$ /metodo-cira/estrategia [R=301,L]

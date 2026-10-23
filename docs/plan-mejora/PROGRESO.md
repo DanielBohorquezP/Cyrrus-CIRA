@@ -47,11 +47,11 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 12 (2026-10-23, G3: qué es un CRM).
+**Última sesión cerrada:** Sesión 13 (2026-10-23, lectura de Search Console y ajuste de títulos y descripciones).
 
-**Próxima: Sesión 13.** Orden sugerido:
+**Próxima: Sesión 14.** Orden sugerido:
 0. ~~Auditoría de verificabilidad completa~~ ✅ hecha (ver `AUDITORIA-VERIFICABILIDAD.md`). Pendiente de la sección 5 de ese archivo: respaldo documental de los datos propios y autorizaciones J2.
-1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v16.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v17.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
 2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
 3. Sin insumos: contenido **C15, C16, C18** (satélites de CRM), luego **G4, G5**, **C6/C7** (C17 y G1 en la Sesión 10; G2 en la 11).
 4. **I1** de C1–C3 (faltan).
@@ -223,7 +223,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-23-v16.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-23-v17.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
@@ -250,13 +250,25 @@ qué llegó y lo integra (F8, J1, J3…).
 
 ## Bitácora de sesiones
 
+### Sesión 13 — 2026-10-23 — Lectura de Search Console (3 meses) y ajuste de títulos
+- **Tareas trabajadas:** A2 (lectura de datos). Sin tarea nueva del plan.
+- **Datos (exportación 2026-07-22 a 2026-10-21):** 52 clics, 7,27 mil impresiones, CTR 0,7 %, posición media 17,4. Las impresiones pasan de ~20 al día a 400–470 desde el 6–10 de oct. (el build del 5 de oct.). Colombia da 32 de los 52 clics.
+- **Hallazgos:** (1) 177 consultas con formato de instrucción a un asistente de IA ("compara HubSpot con Salesforce… debes proporcionar un ranking") suman 1.624 de las 5.717 impresiones listadas (28 %), posición media 5,3, 0 clics: no son búsquedas de personas; el origen (herramientas de medición de IA o respuestas de IA) es una hipótesis sin confirmar. (2) 29 de los 30 clics listados son de la consulta de marca "cyrrus" (posición 4,9). (3) Las consultas reales de ERP están en posición 73–86 (páginas recién publicadas); "pmo" y "strategic planning" en 20; "pmo que es" en 10,2; "crm microsoft vs hubspot" en 7,3. (4) Las URL del sitio anterior ya redirigen con 301; la URL con slug duplicado de la comparativa de CRM daba 404.
+- **Hecho:** título SEO y descripción de la comparativa de CRM (ahora con "Microsoft Dynamics 365") y descripción de la guía de PMO (abre con la definición), ES/EN, en `blog.json`; redirección 301 de la URL con slug duplicado en `public/.htaccess` (no se puede probar con el servidor local; probar en producción tras subir). El título de PMO no se cambió: ya coincide con la búsqueda.
+- **Medir:** a las 3–4 semanas de subir, comparar clics y CTR de esas dos páginas en Search Console. Para ver solo personas: filtro de Consulta → expresión regular personalizada → "no coincide" `(.*\s){7,}.*`.
+- **Verificación:** build de 122 rutas; título y descripción nuevos en el HTML de ES y EN; JSON válido.
+- **Commits:** ver `git log` ("Sesión 13: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v17.zip` (reemplaza al v16). Incluye el rediseño ajeno sin confirmar.
+- **Pendiente / bloqueos nuevos:** ninguno nuevo. Para subir posiciones en ERP hacen falta tiempo y enlaces externos (F).
+- **Próxima sesión:** Sesión 14 (ver arriba).
+
 ### Sesión 12 — 2026-10-23 — Qué es un CRM (G3)
 - **Tareas trabajadas:** G3 ✅. Sin insumos del cliente (siguen bloqueados B3, B4, A4).
 - **Hecho:** artículo ES/EN `que-es-un-crm-y-como-elegir-el-correcto`. Verificado en IBM (definición; operativo, analítico y colaborativo; funciones; riesgos de adopción, proveedor y tamaño) y Microsoft Learn (qué gestiona Dynamics 365 Sales). **No se usó:** cifras de retorno ni estadísticas de mercado (sin fuente primaria); IBM no trata la calidad de datos como reto aparte, por eso no se afirma. Criterios de elección rotulados como criterio de Cyrrus. Se quitaron de `perspectivas-topics.ts` los temas "próximamente" ya publicados (RPA, CRM, resistencia al cambio).
 - **Imágenes:** portada y tarjetas con fotos de cámara de 1600 px; `node scripts/audit-images.mjs` sin fotos ampliadas.
 - **Verificación:** `tsc` limpio; build de 122 rutas; ES y EN con título y tabla; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 12: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v16.zip` (reemplaza al v15). Incluye el rediseño ajeno sin confirmar.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v17.zip` (reemplaza al v15). Incluye el rediseño ajeno sin confirmar.
 - **Pendiente / bloqueos nuevos:** enlazar G2 y G3 desde sus páginas de servicio (la de CRM está en archivos del rediseño).
 - **Próxima sesión:** Sesión 13 (ver arriba).
 
@@ -265,7 +277,7 @@ qué llegó y lo integra (F8, J1, J3…).
 - **Hecho:** artículo ES/EN `que-es-rpa-y-cuando-conviene-frente-a-la-ia` (`blog.json`, `blog-data.ts`, `llms.txt`). Verificado en IBM (definición, "guiada por el proceso" vs "guiada por los datos", capa de presentación sin API, límites de escala, casos en seguros/banca/comercio) y Microsoft Learn (desktop flows, aplicaciones antiguas, captura de datos en un ERP). **No se usó:** la página de SAP (403) ni cifras de ahorro (sin fuente primaria). Preguntas y decisiones de la gerencia rotuladas como criterio de Cyrrus.
 - **Verificación:** `tsc` limpio; build de 120 rutas; ES y EN con título, H1 y tabla; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 11: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v16.zip`. El árbol sigue con el rediseño ajeno sin confirmar; el v13 se conserva.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v17.zip`. El árbol sigue con el rediseño ajeno sin confirmar; el v13 se conserva.
 - **Imágenes (a pedido del cliente: ninguna borrosa):** `scripts/audit-images.mjs` (con `dist` servido) recorre las rutas del sitemap y lista las fotos que se muestran más grandes que su archivo. Causa principal: en recortes por altura (`object-cover` en tarjetas casi cuadradas) el `sizes` por ancho hacía elegir una versión chica y el navegador la ampliaba 1,5x a 2,5x; se subieron los `sizes` de `page-hero`, `included-grid`, `service-body`, `service-intro`, `article-service-cta`, `card-grid`, `blog7`, Experiencia y Quiénes somos. Se reemplazaron las fotos `evento-*` (capturas de video con barras negras, 1280×575 con contenido de ~430 px; una es la foto de una pantalla) y las de WhatsApp por fotos de cámara de 1600 px, con alt neutro donde el alt afirmaba quién aparecía. Foto de Jackson: de `.webp` 256×320 a `.jpeg` 800×1000. Miniaturas de YouTube: `maxresdefault` (1280×720) en vez de `hqdefault` (480×360). **Logo del encabezado:** apuntaba a un `.webp` que no existe (404, desde la Sesión de rendimiento 5018963); ahora usa el `.png` que sí está en el manifiesto. Resultado de la auditoría: 0 fotos ampliadas.
 - **Pendiente / bloqueos nuevos:** enlazar G2 desde la página de tecnologías avanzadas. **Logos de clientes**: los archivos fuente miden ~43 px de alto (Marympunt 43×43, Parex 71×29…); se ven bien a 1x y blandos en pantallas retina: el cliente debe enviar los logos en SVG o a mayor resolución. **Foro Caribe 2030** (Quiénes somos, hito 3): es una foto de evento de 1280×575 con barras negras; se ve aceptable recortada, pero conviene el original. Los archivos del rediseño ajeno siguen sin confirmar (incluye los cambios de `sizes` y de fotos en esos componentes).
 - **Próxima sesión:** Sesión 12 (ver arriba).

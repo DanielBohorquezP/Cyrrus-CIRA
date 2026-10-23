@@ -805,7 +805,7 @@
       "title": "What is a PMO: functions, types and when you need one",
       "label": "Project management",
       "excerpt": "A PMO is the office that brings order to how a company manages its projects. What it is, what it is for, which types exist and how to know whether you need one.",
-      "metaDescription": "What a PMO (project management office) is, what it is for, which functions and types exist and how to tell whether your company needs one. A practical guide.",
+      "metaDescription": "A PMO (project management office) defines, standardizes and oversees how projects are managed. Functions, the PMBOK types and when your company needs one.",
       "intro": "If you have several projects running and nobody can tell you for certain how many are going well, the question is probably not which tool to use, but what a PMO is and whether your company already needs one.",
       "keyTakeaways": [
         "A PMO (project management office) is the structure that defines how an organization selects, governs and measures its projects.",
@@ -2449,10 +2449,10 @@
     },
     "salesforce-vs-hubspot-vs-dynamics-365-crm": {
       "title": "Salesforce vs HubSpot vs Dynamics 365: which CRM to choose",
-      "seoTitle": "Salesforce vs HubSpot vs Dynamics 365 CRM",
+      "seoTitle": "CRM: Salesforce vs HubSpot vs Microsoft Dynamics 365",
       "label": "CRM selection",
       "excerpt": "An independent comparison of Salesforce Sales Cloud, HubSpot Sales Hub and Dynamics 365 Sales: published prices, strengths, onboarding costs and which sales team each one suits.",
-      "metaDescription": "Salesforce vs HubSpot vs Dynamics 365 Sales: published prices, strengths and which company each CRM suits. An independent comparison.",
+      "metaDescription": "Compare Salesforce, HubSpot and Microsoft Dynamics 365 Sales: published prices, strengths and which company each CRM suits. An independent comparison.",
       "intro": "If your sales team needs a CRM, Salesforce, HubSpot and Dynamics 365 are three common alternatives to compare. All three are good; the question is which one your team will use every day.",
       "keyTakeaways": [
         "All three publish prices: Salesforce from US$25 per user per month, HubSpot has a free plan for two users, and Dynamics 365 Sales starts at US$65.",
