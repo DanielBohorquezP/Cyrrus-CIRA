@@ -305,6 +305,42 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230228_083642.jpg",
     ],
   },
+  {
+    slug: "integrar-erp-y-crm-conector-nativo-o-middleware",
+    coverImage: "/assets/decoracion/IMG_20230227_164308.jpg",
+    publishedAt: "2026-10-23",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [6, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/Trabajo.jpg",
+      "/assets/decoracion/IMG_20230302_112828.jpg",
+    ],
+  },
+  {
+    slug: "costo-total-de-un-crm-que-sumar-ademas-de-la-licencia",
+    coverImage: "/assets/decoracion/IMG_20200313_092604173.jpg",
+    publishedAt: "2026-10-23",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [6, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/IMG_20230228_083642.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
+  {
+    slug: "gobernanza-y-deduplicacion-de-datos-en-el-crm",
+    coverImage: "/assets/decoracion/1785866224151.jpg",
+    publishedAt: "2026-10-23",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [6, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/IMG_20230302_112825.jpg",
+      "/assets/decoracion/Trabajo.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

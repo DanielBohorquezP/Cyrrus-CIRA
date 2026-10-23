@@ -624,7 +624,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla" />
@@ -633,7 +633,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla" />
@@ -750,7 +750,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm" />
@@ -759,7 +759,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm" />
@@ -945,6 +945,60 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/que-es-un-crm-y-como-elegir-el-correcto" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/que-es-un-crm-y-como-elegir-el-correcto" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/que-es-un-crm-y-como-elegir-el-correcto" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm" />
   </url>
   <url>
     <loc>https://cyrruscs.com/privacidad</loc>

@@ -4257,6 +4257,24 @@
           "text": "Four decisions, per Cyrrus's judgment. First, who owns the CRM in the company and who answers for the quality of its data. Second, which sales indicators will be drawn from it and who reviews them. Third, how it connects to the ERP so that customer, order and invoice are not entered twice. Fourth, how you will measure that the team is actually using it."
         },
         {
+          "type": "p",
+          "text": "To go deeper on three decisions that often stay open: the total cost of a CRM, how to integrate the ERP with the CRM and data governance and deduplication.",
+          "links": [
+            {
+              "text": "the total cost of a CRM",
+              "href": "/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia"
+            },
+            {
+              "text": "how to integrate the ERP with the CRM",
+              "href": "/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware"
+            },
+            {
+              "text": "data governance and deduplication",
+              "href": "/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm"
+            }
+          ]
+        },
+        {
           "type": "h2",
           "text": "How we can help"
         },
@@ -4289,6 +4307,555 @@
         {
           "label": "Microsoft Learn. Welcome to Dynamics 365 Sales",
           "url": "https://learn.microsoft.com/en-us/dynamics365/sales/overview"
+        }
+      ]
+    },
+    "integrar-erp-y-crm-conector-nativo-o-middleware": {
+      "title": "Integrating ERP and CRM: when a native connector is enough and when it is not",
+      "seoTitle": "ERP and CRM integration: native connector or middleware",
+      "label": "Software selection",
+      "excerpt": "What Microsoft documents about the Business Central and Dynamics 365 Sales integration, which data it syncs, which limits it states and what leadership should define before connecting ERP and CRM.",
+      "metaDescription": "How to integrate ERP with CRM: what a native connector syncs (a Microsoft example), what its limits are and what leadership decides before connecting them.",
+      "intro": "When the CRM and the ERP do not talk, customer, order and invoice get entered twice. Before paying for integration software, it helps to know what the connector the vendor already ships offers, and which business decisions stay open whether you use it or not.",
+      "keyTakeaways": [
+        "Microsoft documents a built-in integration between Business Central and Dynamics 365 Sales that works through Dataverse and is set up with an assisted setup guide.",
+        "That integration syncs products, price lists, opportunities, orders and invoices, with rules, directions and frequencies that must be defined.",
+        "Leadership must decide, for each piece of data, which system is the master and in which direction it flows; no connector decides that for you (Cyrrus's judgment)."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Are your ERP and CRM talking?",
+          "description": "We review which data they must share, which system is the master for each and whether a vendor connector is enough.",
+          "checklist": [
+            "Data map between ERP and CRM",
+            "Criteria to choose a connector or a custom integration"
+          ],
+          "ctaLabel": "See CRM selection",
+          "imageAlt": "Consultant working in front of a board with process diagrams"
+        },
+        {
+          "title": "Choose ERP and CRM together",
+          "description": "If you have not chosen them yet, we assess how they will connect before comparing products.",
+          "checklist": [
+            "Joint ERP and CRM assessment",
+            "Total cost over several years"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Group of team members gathered in an office"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "A salesperson closes an order in the CRM and someone types it again into the ERP. Billing invoices one price and sales quoted another. This guide explains what a connector shipped by the vendor can do, using the example documented by Microsoft, and what leadership must decide before connecting the two systems."
+        },
+        {
+          "type": "p",
+          "text": "A note: the only case with an open source that we reviewed for this guide is Business Central with Dynamics 365 Sales, in Microsoft Learn (cited at the end). That page does not use the word middleware or compare other ways to integrate. For other combinations, such as an SAP ERP with a Salesforce or HubSpot CRM, we claim nothing: ask the vendor for its documentation. The decision criteria are Cyrrus's judgment."
+        },
+        {
+          "type": "h2",
+          "text": "What is a native connector?"
+        },
+        {
+          "type": "p",
+          "text": "It is an integration that the system's vendor ships and documents, rather than third-party integration software. In Microsoft's case, the documentation states that Business Central integrates with Dynamics 365 Sales through Dataverse, and that a first-time integration must be done that way. The connection is set up with an assisted setup guide inside Business Central."
+        },
+        {
+          "type": "h2",
+          "text": "Which data does it sync?"
+        },
+        {
+          "type": "p",
+          "text": "Microsoft's documentation lists a standard mapping between tables in the two systems:"
+        },
+        {
+          "type": "table",
+          "text": "Standard mapping between Business Central and Dynamics 365 Sales, per Microsoft",
+          "columns": [
+            "Business Central",
+            "Dynamics 365 Sales",
+            "Direction"
+          ],
+          "rows": [
+            [
+              "Items",
+              "Products",
+              "Both ways"
+            ],
+            [
+              "Customer price groups",
+              "Price lists",
+              "From Business Central to Sales"
+            ],
+            [
+              "Opportunities",
+              "Opportunities",
+              "Both ways"
+            ],
+            [
+              "Posted sales invoices",
+              "Invoices",
+              "From Business Central to Sales"
+            ],
+            [
+              "Sales orders",
+              "Sales orders",
+              "Both ways, if bidirectional sync is turned on"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Microsoft also describes a scheduled job that updates item availability every 30 minutes and synchronization jobs with a default frequency of 30 minutes. In other words, information is not updated instantly: there is a frequency you must accept or adjust."
+        },
+        {
+          "type": "h2",
+          "text": "Which limits and conditions does the source state?"
+        },
+        {
+          "type": "p",
+          "text": "Among the conditions listed in the documentation:"
+        },
+        {
+          "type": "p",
+          "text": "There are two ways to synchronize sales orders, the legacy one (only from Sales to Business Central) and the bidirectional one, and they cannot be used at the same time."
+        },
+        {
+          "type": "p",
+          "text": "Changes made by the integration user account are not synchronized, so Microsoft recommends not changing data with that account."
+        },
+        {
+          "type": "p",
+          "text": "If you reconnect through Dataverse, the default synchronization settings are applied and existing configurations are overwritten."
+        },
+        {
+          "type": "p",
+          "text": "To sync items with different units of measure you must turn on a separate option, and Microsoft notes that Dynamics 365 Sales does not allow changing a product's unit group."
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership decide, whatever the connector?"
+        },
+        {
+          "type": "p",
+          "text": "Five decisions, per Cyrrus's judgment. First, which system is the master for each piece of data: customer, price, inventory and invoice often have different owners. Second, in which direction each piece flows. Third, which update frequency the business needs: what the salesperson sees must be current when quoting. Fourth, who answers when synchronization fails. Fifth, what happens with duplicate or incomplete data before connecting: a connector does not fix it."
+        },
+        {
+          "type": "p",
+          "text": "For the last point, see the guide on data governance and deduplication in the CRM.",
+          "links": [
+            {
+              "text": "the guide on data governance and deduplication in the CRM",
+              "href": "/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "When is it worth looking at another option?"
+        },
+        {
+          "type": "p",
+          "text": "When the vendor's connector does not cover your company's processes, when the systems come from different vendors with no documented integration, or when the business needs rules the connector does not allow. In those cases the alternative is a custom integration or integration software, with its own cost and upkeep. Ask each vendor for its documentation and its list of data and limits, and add them to the project's total cost."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we assess ERP and CRM together, including how to connect them, without selling a product of our own. Learn about CRM selection and ERP selection, and if you are still comparing products, see what a CRM is.",
+          "links": [
+            {
+              "text": "CRM selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            },
+            {
+              "text": "ERP selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            },
+            {
+              "text": "what a CRM is",
+              "href": "/perspectivas/que-es-un-crm-y-como-elegir-el-correcto"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you are unsure whether a connector is enough, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Learn. Integrating with Dynamics 365 Sales (Business Central)",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration"
+        }
+      ]
+    },
+    "costo-total-de-un-crm-que-sumar-ademas-de-la-licencia": {
+      "title": "Total cost of a CRM: what to add beyond the license",
+      "seoTitle": "Total cost of a CRM: what to add beyond the license",
+      "label": "Software selection",
+      "excerpt": "Prices published by Salesforce, HubSpot and Microsoft, which costs the official pages leave out of the license and how to build the multi-year total cost.",
+      "metaDescription": "Total cost of a CRM: prices published by Salesforce, HubSpot and Microsoft Dynamics 365, and what to add beyond the license to budget over several years.",
+      "intro": "Price per user is the first thing compared and is rarely the total. The vendors' official pages already say which things are charged separately; this guide gathers them and proposes an orderly way to budget.",
+      "keyTakeaways": [
+        "Vendors publish the price per user, but their pages note separate costs: add-ons, AI credits, support plans and onboarding fees.",
+        "HubSpot publishes a one-time onboarding fee of US$1,500 (Professional) and US$3,500 (Enterprise), not included in the per-user price.",
+        "Total cost is the sum of several items over several years, not one month of licenses (Cyrrus's judgment)."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Budget your CRM over several years",
+          "description": "We help build the total cost with licenses, implementation, integrations, training and add-ons.",
+          "checklist": [
+            "3 or 5 year total cost per alternative",
+            "Questions to ask each vendor"
+          ],
+          "ctaLabel": "See CRM selection",
+          "imageAlt": "Consultant with a laptop in front of a process board"
+        },
+        {
+          "title": "Compare without bias",
+          "description": "We assess alternatives without being tied to a vendor and hand you the assumptions behind each calculation.",
+          "checklist": [
+            "Comparison by scenario",
+            "Explicit assumptions"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Team gathered around a work table"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "A company compares three CRMs by price per user and picks the cheapest. Six months later it finds missing items: onboarding, features charged separately, ERP integration, training. This guide gathers what the official pages themselves say is charged and proposes how to add it up."
+        },
+        {
+          "type": "p",
+          "text": "A note: the prices are those each vendor shows on its page, checked on October 23, 2026, in US dollars, and may change; each page warns that they are informational or that the final price can vary. Implementation and training percentages are not published, so we do not invent them: each company supplies them from its quotes. The criteria are Cyrrus's."
+        },
+        {
+          "type": "h2",
+          "text": "Which prices do vendors publish?"
+        },
+        {
+          "type": "table",
+          "text": "Price per user per month published by each vendor (checked on October 23, 2026)",
+          "columns": [
+            "Vendor and plan",
+            "Published price",
+            "Condition shown on the page"
+          ],
+          "rows": [
+            [
+              "Salesforce Sales Cloud, Starter Suite",
+              "US$25",
+              "Monthly or annual"
+            ],
+            [
+              "Salesforce Sales Cloud, Pro Suite",
+              "US$100",
+              "Billed annually"
+            ],
+            [
+              "Salesforce Sales Cloud, Core",
+              "US$195",
+              "Billed annually"
+            ],
+            [
+              "Salesforce Sales Cloud, Advanced",
+              "US$395",
+              "Billed annually"
+            ],
+            [
+              "Salesforce Sales Cloud, Max",
+              "US$550",
+              "Billed annually"
+            ],
+            [
+              "Dynamics 365 Sales, Professional",
+              "US$65",
+              "Paid yearly"
+            ],
+            [
+              "Dynamics 365 Sales, Enterprise",
+              "US$105",
+              "Paid yearly"
+            ],
+            [
+              "Dynamics 365 Sales, Premium",
+              "US$150",
+              "Paid yearly"
+            ],
+            [
+              "HubSpot Sales Hub, Enterprise",
+              "US$150",
+              "Plus a one-time onboarding fee of US$3,500"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "HubSpot also shows free, Starter and Professional plans (the latter with a one-time onboarding fee of US$1,500), but its page does not clearly say which figure is monthly and which annual; for that reason we leave them out of the table."
+        },
+        {
+          "type": "h2",
+          "text": "Which costs do those figures leave out?"
+        },
+        {
+          "type": "p",
+          "text": "The pages themselves say so:"
+        },
+        {
+          "type": "p",
+          "text": "Salesforce: the pricing page publishes no implementation price; it mentions professional services and certified partners. Some support is included by plan (the Premier success plan comes with Core, Advanced and Max, and is an add-on for Pro Suite). Add-ons are charged separately: for example Agentforce for Sales from US$125 per user per month, Revenue Intelligence from US$220 and Revenue Cloud from US$200."
+        },
+        {
+          "type": "p",
+          "text": "Microsoft: Copilot Credits are sold separately, pre-purchased or pay-as-you-go, and using agents requires an Azure subscription. Sales Premium includes 1,000 credits per user. The page warns that prices may not reflect the actual list price."
+        },
+        {
+          "type": "p",
+          "text": "HubSpot: the onboarding fee for Professional and Enterprise is not included in the per-user price. For some data quality tools, such as bulk duplicate management and custom rules, HubSpot states that its Data Hub is required, which is another subscription."
+        },
+        {
+          "type": "h2",
+          "text": "How do you build the total cost?"
+        },
+        {
+          "type": "p",
+          "text": "Six items, per Cyrrus's judgment: licenses (users times price times 12 months times the years analyzed), add-ons and credits, onboarding or implementation, integrations (with the ERP and other tools), training and change management, and the internal team that administers the system. The last four have no published price: they are obtained by getting quotes and estimating the team's time."
+        },
+        {
+          "type": "p",
+          "text": "Illustrative example: the number of users is an assumption. With 25 users, the Dynamics 365 Sales Enterprise licenses alone would be 25 × US$105 × 12 = US$31,500 a year, and Salesforce Core 25 × US$195 × 12 = US$58,500 a year. Those are the license sums; every other item is missing."
+        },
+        {
+          "type": "p",
+          "text": "For the same exercise with an ERP, see how much an ERP implementation costs.",
+          "links": [
+            {
+              "text": "how much an ERP implementation costs",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership ask each vendor?"
+        },
+        {
+          "type": "p",
+          "text": "Four things, per Cyrrus's judgment. First, the full list of what is charged apart from the per-user price. Second, the onboarding or implementation cost, in writing. Third, how much the price changes if the number of users goes up or down. Fourth, how data is exported if you ever change vendors."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we build the total cost of a CRM from your own quotes, without selling a product of our own. Learn about CRM selection, and to compare the three products see the Salesforce, HubSpot and Dynamics 365 comparison.",
+          "links": [
+            {
+              "text": "CRM selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            },
+            {
+              "text": "the Salesforce, HubSpot and Dynamics 365 comparison",
+              "href": "/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you want a second look at your budget, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Salesforce. Sales Cloud pricing",
+          "url": "https://www.salesforce.com/sales/pricing/"
+        },
+        {
+          "label": "HubSpot. Sales Hub pricing",
+          "url": "https://www.hubspot.com/pricing/sales"
+        },
+        {
+          "label": "Microsoft. Dynamics 365 Sales pricing",
+          "url": "https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing"
+        },
+        {
+          "label": "HubSpot. Manage duplicate records",
+          "url": "https://knowledge.hubspot.com/records/manage-duplicate-records"
+        }
+      ]
+    },
+    "gobernanza-y-deduplicacion-de-datos-en-el-crm": {
+      "title": "Data governance and deduplication in the CRM: what to decide and what to configure",
+      "seoTitle": "Data governance and deduplication in the CRM",
+      "label": "Software selection",
+      "excerpt": "How Dynamics 365 and HubSpot detect and handle duplicates per their own documentation, which limits they state and which governance rules leadership must define.",
+      "metaDescription": "Data governance and deduplication in the CRM: how Dynamics 365 and HubSpot detect duplicates, their limits and the rules leadership must define.",
+      "intro": "A CRM with duplicate customers spreads an account's history across several records and nobody sees the full picture. Deduplication tools exist, but they do not decide for you what counts as a duplicate or who answers for the data.",
+      "keyTakeaways": [
+        "Microsoft documents that Dynamics 365 ships default duplicate detection rules only for accounts and contacts; for other records you must create new rules.",
+        "HubSpot compares records daily to suggest possible duplicates, and warns that merges cannot be reverted.",
+        "The tool detects; leadership must decide the matching criteria, who approves merges and who answers for data quality (Cyrrus's judgment)."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Does your CRM hold data you can trust?",
+          "description": "We review how your data is captured, duplicated and corrected, and design the governance rules.",
+          "checklist": [
+            "Matching and merge rules",
+            "Owners and data quality routines"
+          ],
+          "ctaLabel": "See CRM selection",
+          "imageAlt": "Consultant working in front of a board with process diagrams"
+        },
+        {
+          "title": "Clean up before migrating or connecting",
+          "description": "We prepare the data before changing CRM or connecting it to the ERP.",
+          "checklist": [
+            "Phased cleanup plan",
+            "Criteria for what to migrate and what not"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Group of team members gathered in an office"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "The same customer appears three times in the CRM: with the full name, with an acronym and with another person's email. Each salesperson sees part of the history. This guide explains how two widely used platforms detect duplicates, per their own documentation, and what leadership should define."
+        },
+        {
+          "type": "p",
+          "text": "A note: the features, limits and requirements come from Microsoft Learn and the HubSpot knowledge base, cited at the end. We did not review Salesforce's documentation because its help page could not be opened. The governance recommendations are Cyrrus's judgment."
+        },
+        {
+          "type": "h2",
+          "text": "How does Dynamics 365 detect duplicates?"
+        },
+        {
+          "type": "p",
+          "text": "According to Microsoft, the Dynamics 365 Sales and Customer Service apps include default duplicate detection rules for accounts and contacts, but not for other record types. To detect duplicates in other records you must create new rules and turn them on."
+        },
+        {
+          "type": "p",
+          "text": "A rule lets you choose the record type, the fields and the comparison criterion, for example exact match, same first characters or same last characters, whether it is case-sensitive, whether it ignores blank fields and whether it excludes inactive records. Microsoft recommends basing the criterion on a field with unique values, such as email. Five rules can be published at a time for the same base record type."
+        },
+        {
+          "type": "h2",
+          "text": "How does HubSpot do it?"
+        },
+        {
+          "type": "p",
+          "text": "HubSpot states that it compares property values daily to surface possible duplicates. By default, contacts are compared on fields such as name, email, phone, zip code and company, and companies on domain, name, country, phone and industry. Pairs can be reviewed one by one or in bulk and merged or rejected. A HubSpot warning: merged records cannot be reverted."
+        },
+        {
+          "type": "p",
+          "text": "According to the same page, custom rules, the audit log and bulk management at larger volumes require its Data Hub product, which is another subscription."
+        },
+        {
+          "type": "table",
+          "text": "What each vendor documents",
+          "columns": [
+            "Aspect",
+            "Dynamics 365 (Microsoft)",
+            "HubSpot"
+          ],
+          "rows": [
+            [
+              "Default rules",
+              "Accounts and contacts",
+              "Contacts and companies (default criteria)"
+            ],
+            [
+              "Own rules",
+              "Yes, for any record type; at most five published per base type",
+              "Yes, with Data Hub"
+            ],
+            [
+              "Merging",
+              "Merge duplicate accounts, contacts or leads",
+              "Individual or bulk merge; cannot be reverted"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership define?"
+        },
+        {
+          "type": "p",
+          "text": "Five governance rules, per Cyrrus's judgment. First, an owner: one person answers for the quality of the CRM's data. Second, the matching criterion: which fields make two records the same customer (email, domain, tax ID). Third, who approves a merge and which record prevails, knowing that in HubSpot it cannot be undone. Fourth, which fields are mandatory when creating a record and from which sources data comes in. Fifth, a periodic review routine with an indicator that someone watches."
+        },
+        {
+          "type": "h2",
+          "text": "When does it matter most?"
+        },
+        {
+          "type": "p",
+          "text": "Before connecting the CRM to the ERP, because the integration copies what is there, duplicates included, and before changing CRM, because you should decide what gets migrated. For the first, see how to integrate ERP and CRM.",
+          "links": [
+            {
+              "text": "how to integrate ERP and CRM",
+              "href": "/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we design data governance rules and support cleanup, without selling a product of our own. Learn about CRM selection and the guide on what a CRM is.",
+          "links": [
+            {
+              "text": "CRM selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            },
+            {
+              "text": "what a CRM is",
+              "href": "/perspectivas/que-es-un-crm-y-como-elegir-el-correcto"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you do not know how clean your data is, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Learn. Set up duplicate detection rules to keep your data clean",
+          "url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean"
+        },
+        {
+          "label": "HubSpot. Manage duplicate records",
+          "url": "https://knowledge.hubspot.com/records/manage-duplicate-records"
         }
       ]
     }

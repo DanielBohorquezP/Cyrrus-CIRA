@@ -47,13 +47,13 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 13 (2026-10-23, lectura de Search Console y ajuste de títulos y descripciones).
+**Última sesión cerrada:** Sesión 14 (2026-10-23, C15, C16 y C18: satélites de CRM).
 
-**Próxima: Sesión 14.** Orden sugerido:
+**Próxima: Sesión 15.** Orden sugerido:
 0. ~~Auditoría de verificabilidad completa~~ ✅ hecha (ver `AUDITORIA-VERIFICABILIDAD.md`). Pendiente de la sección 5 de ese archivo: respaldo documental de los datos propios y autorizaciones J2.
-1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v17.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v18.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
 2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
-3. Sin insumos: contenido **C15, C16, C18** (satélites de CRM), luego **G4, G5**, **C6/C7** (C17 y G1 en la Sesión 10; G2 en la 11).
+3. Sin insumos: contenido **G4, G5**, luego **C6/C7**, **G6**, **D5**, **C6/C7** (C17 y G1 en la Sesión 10; G2 en la 11).
 4. **I1** de C1–C3 (faltan).
 
 **Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
@@ -122,10 +122,10 @@ qué llegó y lo integra (F8, J1, J3…).
 | C12 | Migrar de SAP ECC a S/4HANA | ✅ | Sesión 4. `/perspectivas/migrar-sap-ecc-a-s4hana-plazos-costos-alternativas`, ES/EN. Fechas verificadas en SAP Support y SAP News (oct-2026): estándar hasta 31-dic-2027, extendido hasta 31-dic-2030 (+2 puntos), S/4HANA hasta 2040. MX 1.900 · SD 28. Revisar si SAP cambia fechas (L1) |
 | C13 | Software de RR. HH. y nómina (100+) | ✅ | Sesión 5. `/perspectivas/software-recursos-humanos-nomina-mas-de-100-empleados`, ES/EN, título filtrado por tamaño, sin país. Nómina vs HRIS vs HCM, multi-país, integración con finanzas, datos personales. Fuentes débiles (Avanti, Microsoft Learn): no hay definición oficial única; el artículo lo dice. G8 (nómina vs HCM) debe enlazar aquí y no repetirlo. MX 260 · SD 18 |
 | C14 | Software MES | ✅ | Sesión 5. `/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta`, ES/EN. ISA-95 (nivel 3 vs 4, fuente ISA), funciones del MES (Infor), cuándo se justifica. MX 140 · SD 17 |
-| C15 | Integrar ERP y CRM sin middleware | ⬜ | Sesión 2: satélite para respuestas de IA |
-| C16 | Costo total de propiedad de un CRM | ⬜ | Sesión 2: satélite para respuestas de IA |
+| C15 | Integrar ERP y CRM sin middleware | ✅ | Sesión 14. `/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware`, ES/EN. Única fuente: Microsoft Learn (Business Central con Dynamics 365 Sales por Dataverse); esa página no usa "middleware", el artículo lo dice y no afirma nada de otras combinaciones |
+| C16 | Costo total de propiedad de un CRM | ✅ | Sesión 14. `/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia`, ES/EN. Precios de las páginas oficiales de Salesforce, HubSpot y Microsoft (consultados 2026-10-23); HubSpot Starter/Professional no se tabularon porque la página no aclara mensual vs anual. Ejemplo ilustrativo con 25 usuarios supuestos. Revisar precios en L1 |
 | C17 | Fin de venta de Salesforce CPQ | ✅ | Sesión 10. `/perspectivas/fin-de-venta-salesforce-cpq-opciones`, ES/EN. Fuente: página oficial de Salesforce (consultada 2026-10-23): fin de venta, no fin de vida; **sin fecha publicada**; sucesor Revenue Cloud Advanced; sin migración forzosa. Alternativas con HubSpot (Revenue Hub) y Microsoft Learn. Sin enlaces cruzados desde C5/CRM aún |
-| C18 | Gobernanza y deduplicación de datos en el CRM | ⬜ | Sesión 2: satélite para respuestas de IA |
+| C18 | Gobernanza y deduplicación de datos en el CRM | ✅ | Sesión 14. `/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm`, ES/EN. Fuentes: Microsoft Learn (reglas de duplicados) y HubSpot (duplicados). La ayuda de Salesforce no se pudo abrir: no se cubre. Sin lista descargable |
 
 ### Fase D — Herramientas
 | ID | Tarea | Estado | Notas |
@@ -223,7 +223,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-23-v17.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-23-v18.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
@@ -250,6 +250,16 @@ qué llegó y lo integra (F8, J1, J3…).
 
 ## Bitácora de sesiones
 
+### Sesión 14 — 2026-10-23 — Satélites de CRM (C15, C16, C18)
+- **Tareas trabajadas:** C15 ✅, C16 ✅, C18 ✅. Sin insumos del cliente (siguen bloqueados B3, B4, A4).
+- **Hecho:** tres artículos ES/EN en `blog.json`, `blog-data.ts` y `llms.txt`; enlazados entre sí y desde la guía "Qué es un CRM" (bloque nuevo antes de "Cómo podemos ayudarle"), a la comparativa C5 y al servicio de CRM/ERP. **C15:** tabla de correspondencia, frecuencia de 30 minutos y límites tal como los declara Microsoft; el resto son decisiones de la gerencia rotuladas como criterio de Cyrrus. **C16:** tabla de precios por usuario (Salesforce 25/100/195/395/550; Dynamics 65/105/150; HubSpot Enterprise 150 más cuota de US$3.500; cuota de Professional US$1.500) y costos aparte según las propias páginas (complementos, créditos de Copilot, soportes, Data Hub). **C18:** reglas de detección de Dynamics 365 (predeterminadas solo para cuentas y contactos; máximo cinco publicadas por tipo base) y de HubSpot (comparación diaria; fusiones irreversibles; reglas propias con Data Hub). **No se usó:** porcentajes de implementación o capacitación (no publicados), la ayuda de Salesforce (no abrió), cualquier afirmación de integración fuera de Microsoft.
+- **Imágenes:** fotos de cámara de 1600 px; `scripts/audit-images.mjs` sin fotos ampliadas.
+- **Verificación:** `tsc` limpio; build de 128 rutas; las seis páginas con título, H1 y tabla, 0 imágenes rotas, 0 enlaces internos rotos, consola sin errores. Descripciones ≤ 155 caracteres.
+- **Commits:** ver `git log` ("Sesión 14: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v18.zip` (reemplaza al v17). Incluye el rediseño ajeno sin confirmar.
+- **Pendiente / bloqueos nuevos:** revisar los precios de C16 en L1 (las páginas avisan que pueden cambiar); enlazar C15, C16 y C18 desde la página de servicio de CRM (archivo del rediseño).
+- **Próxima sesión:** Sesión 15 (ver arriba).
+
 ### Sesión 13 — 2026-10-23 — Lectura de Search Console (3 meses) y ajuste de títulos
 - **Tareas trabajadas:** A2 (lectura de datos). Sin tarea nueva del plan.
 - **Datos (exportación 2026-07-22 a 2026-10-21):** 52 clics, 7,27 mil impresiones, CTR 0,7 %, posición media 17,4. Las impresiones pasan de ~20 al día a 400–470 desde el 6–10 de oct. (el build del 5 de oct.). Colombia da 32 de los 52 clics.
@@ -258,7 +268,7 @@ qué llegó y lo integra (F8, J1, J3…).
 - **Medir:** a las 3–4 semanas de subir, comparar clics y CTR de esas dos páginas en Search Console. Para ver solo personas: filtro de Consulta → expresión regular personalizada → "no coincide" `(.*\s){7,}.*`.
 - **Verificación:** build de 122 rutas; título y descripción nuevos en el HTML de ES y EN; JSON válido.
 - **Commits:** ver `git log` ("Sesión 13: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v17.zip` (reemplaza al v16). Incluye el rediseño ajeno sin confirmar.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v18.zip` (reemplaza al v16). Incluye el rediseño ajeno sin confirmar.
 - **Pendiente / bloqueos nuevos:** ninguno nuevo. Para subir posiciones en ERP hacen falta tiempo y enlaces externos (F).
 - **Próxima sesión:** Sesión 14 (ver arriba).
 
@@ -268,7 +278,7 @@ qué llegó y lo integra (F8, J1, J3…).
 - **Imágenes:** portada y tarjetas con fotos de cámara de 1600 px; `node scripts/audit-images.mjs` sin fotos ampliadas.
 - **Verificación:** `tsc` limpio; build de 122 rutas; ES y EN con título y tabla; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 12: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v17.zip` (reemplaza al v15). Incluye el rediseño ajeno sin confirmar.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v18.zip` (reemplaza al v15). Incluye el rediseño ajeno sin confirmar.
 - **Pendiente / bloqueos nuevos:** enlazar G2 y G3 desde sus páginas de servicio (la de CRM está en archivos del rediseño).
 - **Próxima sesión:** Sesión 13 (ver arriba).
 
@@ -277,7 +287,7 @@ qué llegó y lo integra (F8, J1, J3…).
 - **Hecho:** artículo ES/EN `que-es-rpa-y-cuando-conviene-frente-a-la-ia` (`blog.json`, `blog-data.ts`, `llms.txt`). Verificado en IBM (definición, "guiada por el proceso" vs "guiada por los datos", capa de presentación sin API, límites de escala, casos en seguros/banca/comercio) y Microsoft Learn (desktop flows, aplicaciones antiguas, captura de datos en un ERP). **No se usó:** la página de SAP (403) ni cifras de ahorro (sin fuente primaria). Preguntas y decisiones de la gerencia rotuladas como criterio de Cyrrus.
 - **Verificación:** `tsc` limpio; build de 120 rutas; ES y EN con título, H1 y tabla; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 11: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v17.zip`. El árbol sigue con el rediseño ajeno sin confirmar; el v13 se conserva.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v18.zip`. El árbol sigue con el rediseño ajeno sin confirmar; el v13 se conserva.
 - **Imágenes (a pedido del cliente: ninguna borrosa):** `scripts/audit-images.mjs` (con `dist` servido) recorre las rutas del sitemap y lista las fotos que se muestran más grandes que su archivo. Causa principal: en recortes por altura (`object-cover` en tarjetas casi cuadradas) el `sizes` por ancho hacía elegir una versión chica y el navegador la ampliaba 1,5x a 2,5x; se subieron los `sizes` de `page-hero`, `included-grid`, `service-body`, `service-intro`, `article-service-cta`, `card-grid`, `blog7`, Experiencia y Quiénes somos. Se reemplazaron las fotos `evento-*` (capturas de video con barras negras, 1280×575 con contenido de ~430 px; una es la foto de una pantalla) y las de WhatsApp por fotos de cámara de 1600 px, con alt neutro donde el alt afirmaba quién aparecía. Foto de Jackson: de `.webp` 256×320 a `.jpeg` 800×1000. Miniaturas de YouTube: `maxresdefault` (1280×720) en vez de `hqdefault` (480×360). **Logo del encabezado:** apuntaba a un `.webp` que no existe (404, desde la Sesión de rendimiento 5018963); ahora usa el `.png` que sí está en el manifiesto. Resultado de la auditoría: 0 fotos ampliadas.
 - **Pendiente / bloqueos nuevos:** enlazar G2 desde la página de tecnologías avanzadas. **Logos de clientes**: los archivos fuente miden ~43 px de alto (Marympunt 43×43, Parex 71×29…); se ven bien a 1x y blandos en pantallas retina: el cliente debe enviar los logos en SVG o a mayor resolución. **Foro Caribe 2030** (Quiénes somos, hito 3): es una foto de evento de 1280×575 con barras negras; se ve aceptable recortada, pero conviene el original. Los archivos del rediseño ajeno siguen sin confirmar (incluye los cambios de `sizes` y de fotos en esos componentes).
 - **Próxima sesión:** Sesión 12 (ver arriba).
