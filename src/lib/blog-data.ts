@@ -257,6 +257,18 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230228_091017.jpg",
     ],
   },
+  {
+    slug: "fin-de-venta-salesforce-cpq-opciones",
+    coverImage: "/assets/decoracion/IMG_20230228_091017.jpg",
+    publishedAt: "2026-10-23",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [8, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224286.jpg",
+      "/assets/decoracion/IMG_20230228_091017.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

@@ -3633,6 +3633,157 @@
           "url": "https://www.sap.com/resources/what-is-mes"
         }
       ]
+    },
+    "fin-de-venta-salesforce-cpq-opciones": {
+      "title": "Fin de venta de Salesforce CPQ: qué significa y qué opciones tiene",
+      "seoTitle": "Fin de venta de Salesforce CPQ: qué opciones tiene",
+      "label": "Selección de software",
+      "excerpt": "Salesforce CPQ ya no se vende a clientes nuevos, pero Salesforce dice que no es fin de vida ni migración forzosa. Qué significa para su empresa y cómo decidir entre quedarse, migrar o cambiar de plataforma.",
+      "metaDescription": "Salesforce CPQ está en fin de venta, no en fin de vida. Qué dice Salesforce, qué cambia para clientes actuales y qué opciones evaluar: Revenue Cloud, HubSpot o Dynamics 365.",
+      "intro": "Si su empresa cotiza con Salesforce CPQ, el anuncio de fin de venta no obliga a nada hoy, pero sí obliga a decidir con calma antes de que la brecha con lo que necesita el negocio crezca.",
+      "keyTakeaways": [
+        "Según Salesforce, CPQ está en fin de venta, no en fin de vida: no se vende a clientes nuevos, y los actuales pueden seguir usándolo, agregar usuarios, renovar y recibir soporte. Salesforce no ha anunciado una fecha de fin de vida.",
+        "Salesforce nombra a Revenue Cloud Advanced como sucesor y dice que no hay migración forzosa. Quedarse, migrar o cambiar de plataforma son decisiones legítimas; cada una tiene un costo distinto.",
+        "La decisión es de negocio, no solo técnica: depende de cuán complejas son sus reglas de precios, de cuánto personalizó CPQ y de qué otros sistemas dependen de él."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Debe quedarse en CPQ, migrar o cambiar de CRM?",
+          "description": "Revisamos cómo cotiza hoy su empresa, qué personalizó y qué depende de CPQ, y comparamos las rutas sin comisiones de fabricantes.",
+          "checklist": [
+            "Inventario de reglas de precios e integraciones",
+            "Comparación independiente, sin comisiones"
+          ],
+          "ctaLabel": "Conocer la selección de CRM",
+          "imageAlt": "Equipo de Cyrrus revisando el proceso de cotización de un cliente"
+        },
+        {
+          "title": "Si decide migrar, que no se detenga la venta",
+          "description": "Un cambio de plataforma de cotización toca a ventas, finanzas y operaciones. Gerenciamos el proyecto y la adopción.",
+          "checklist": [
+            "Plan de migración y puesta en marcha por etapas",
+            "Capacitación por rol y seguimiento de uso"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus trabajando con un cliente"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "CPQ (configurar, fijar precio y cotizar) es el módulo con el que un equipo comercial arma ofertas con productos, descuentos y aprobaciones. Salesforce comunicó que CPQ pasó a fin de venta. Antes de reaccionar conviene leer con precisión qué dice la propia Salesforce y qué no."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración antes de seguir: Cyrrus no revende licencias ni recibe comisiones de ningún fabricante. Por eso podemos comparar sin preferencias."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué significa «fin de venta» según Salesforce?"
+        },
+        {
+          "type": "p",
+          "text": "Salesforce titula su página «End of Sale (Not End of Life)»: CPQ ya no se vende a clientes nuevos, pero no es fin de vida. Los clientes actuales pueden seguir usándolo, agregar usuarios, renovar licencias y recibir soporte bajo sus contratos, incluidas correcciones críticas. CPQ queda en una fase de mantenimiento, sin funciones nuevas. Salesforce indica que no ha anunciado una fecha de fin de vida y que no hay migración forzosa."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué producto reemplaza a CPQ?"
+        },
+        {
+          "type": "p",
+          "text": "Salesforce nombra a Revenue Cloud Advanced, parte de la suite Revenue Cloud, como el sucesor de CPQ. Revenue Cloud Billing es un producto complementario para facturación y cobranza. La misma página afirma que cerca del 15 % de los clientes de Revenue Cloud Advanced migró desde CPQ, que una migración típica toma de 3 a 6 meses (más en implementaciones complejas) y que existen herramientas de socios para migrar. Son cifras de Salesforce sobre su propio producto: las reportamos tal cual, sin verificación independiente."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué opciones tiene una empresa que usa CPQ?"
+        },
+        {
+          "type": "table",
+          "text": "Tres rutas y qué validar antes de elegir",
+          "columns": [
+            "Ruta",
+            "Qué implica",
+            "Qué validar"
+          ],
+          "rows": [
+            [
+              "Quedarse en CPQ por ahora",
+              "Seguir con el producto actual, con soporte y correcciones críticas, sin funciones nuevas",
+              "Qué necesidades del negocio ya no cubre, y si su contrato y plan de renovación lo permiten"
+            ],
+            [
+              "Migrar a Revenue Cloud Advanced",
+              "Pasar al sucesor que nombra Salesforce, con el trabajo de rediseñar el catálogo y las reglas de precios",
+              "Alcance, plazo, costo de migrar lo que personalizó y qué socio lo ejecutará"
+            ],
+            [
+              "Cambiar de plataforma de cotización",
+              "Evaluar otra herramienta, como la de HubSpot o la de Dynamics 365",
+              "Si cubre sus reglas de precios, aprobaciones e integraciones con el ERP, y el costo total a varios años"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se comparan las alternativas?"
+        },
+        {
+          "type": "p",
+          "text": "HubSpot ofrece CPQ dentro de Revenue Hub: su página indica que requiere un puesto Professional o Enterprise, e incluye productos con precios planos o escalonados, plantillas de cotización, aprobaciones, firma electrónica, pagos desde la cotización y contratos. Dynamics 365 Sales maneja cotizaciones con catálogo de productos, familias, paquetes, listas de precios y listas de descuento; su motor de precios admite un conjunto estándar de métodos, y la lógica propia se programa con complementos. Ninguna de las dos es un reemplazo uno a uno de CPQ: lo que importa es si cubre sus reglas concretas."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe preguntar la gerencia?"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro cosas. Primero, qué reglas de precios, descuentos y aprobaciones usa hoy y cuáles son realmente necesarias. Segundo, qué personalizó en CPQ y qué sistemas (ERP, facturación, portales) dependen de él. Tercero, cuál es el costo total a varios años de cada ruta, con la lógica de cuánto cuesta implementar un sistema empresarial, incluida la migración de datos y la capacitación. Y cuarto, cuándo es el mejor momento: renovar, migrar o cambiar sin frenar el cierre de ventas del trimestre.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un sistema empresarial",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus inventariamos cómo cotiza su empresa, comparamos las rutas sin comisiones y gerenciamos la migración y la adopción si hay cambio. Conozca nuestra selección de CRM.",
+          "links": [
+            {
+              "text": "selección de CRM",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si está decidiendo qué hacer con CPQ, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Salesforce. Navigating the Future of Salesforce CPQ: Product End of Sale (Not End of Life)",
+          "url": "https://www.salesforce.com/sales/cpq/end-of-life/"
+        },
+        {
+          "label": "HubSpot. CPQ (Revenue Hub)",
+          "url": "https://www.hubspot.com/products/sales/cpq"
+        },
+        {
+          "label": "Microsoft Learn. Create or edit quotes in Dynamics 365 Sales",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-edit-quote-sales"
+        }
+      ]
     }
   }
 }
