@@ -37,13 +37,13 @@ export const blogPosts: BlogPostEntry[] = [
     pillarLabelKey: "gestionCambio",
     serviceCtaIndexes: [25, 55],
     serviceCtaImages: [
-      "/assets/decoracion/evento-jackson-moderador.jpeg",
+      "/assets/decoracion/IMG_20230302_112828.jpg",
       "/assets/decoracion/Trabajo.jpg",
     ],
   },
   {
     slug: "como-elegir-una-consultora-estrategica-confiable",
-    coverImage: "/assets/decoracion/IMG-20240215-WA0022.jpg",
+    coverImage: "/assets/decoracion/IMG_20200313_092701647.jpg",
     publishedAt: "2026-09-10",
     pillarHref: "/metodo-cira/estrategia",
     pillarLabelKey: "estrategia",
@@ -55,7 +55,7 @@ export const blogPosts: BlogPostEntry[] = [
   },
   {
     slug: "gobierno-de-ia-corporativo-en-la-empresa",
-    coverImage: "/assets/decoracion/evento-ia-tecnologia.jpeg",
+    coverImage: "/assets/decoracion/1785866223775.jpg",
     publishedAt: "2026-09-12",
     pillarHref: "/intelligence-lab/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
@@ -103,7 +103,7 @@ export const blogPosts: BlogPostEntry[] = [
   },
   {
     slug: "planeacion-estrategica-que-es-etapas-y-ejemplo",
-    coverImage: "/assets/decoracion/evento-planeacion-estrategica.jpeg",
+    coverImage: "/assets/decoracion/Evento%20mesas.jpg",
     publishedAt: "2026-10-03",
     pillarHref: "/metodo-cira/estrategia",
     pillarLabelKey: "estrategia",
@@ -121,7 +121,7 @@ export const blogPosts: BlogPostEntry[] = [
     pillarLabelKey: "gestionCambio",
     serviceCtaIndexes: [10, 25],
     serviceCtaImages: [
-      "/assets/decoracion/evento-jackson-moderador.jpeg",
+      "/assets/decoracion/IMG_20230302_112828.jpg",
       "/assets/decoracion/Trabajo.jpg",
     ],
   },
@@ -278,19 +278,19 @@ export const blogPosts: BlogPostEntry[] = [
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
       "/assets/decoracion/Trabajo.jpg",
-      "/assets/decoracion/evento-jackson-moderador.jpeg",
+      "/assets/decoracion/IMG_20230302_112828.jpg",
     ],
   },
   {
     slug: "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
-    coverImage: "/assets/decoracion/IMG_20230228_082627.jpg",
+    coverImage: "/assets/decoracion/IMG_20230228_091017.jpg",
     publishedAt: "2026-10-23",
     pillarHref: "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas",
     pillarLabelKey: "seleccionSoluciones",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
       "/assets/decoracion/Trabajo.jpg",
-      "/assets/decoracion/evento-jackson-moderador.jpeg",
+      "/assets/decoracion/IMG_20230228_083642.jpg",
     ],
   },
 ];

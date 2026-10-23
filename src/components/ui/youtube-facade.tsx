@@ -44,10 +44,10 @@ export function YoutubeFacade({ videoId, title, className }: YoutubeFacadeProps)
       )}
     >
       <img
-        src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
+        src={`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`}
         alt={title}
-        width={480}
-        height={360}
+        width={1280}
+        height={720}
         loading="lazy"
         className="h-full w-full object-cover transition-[opacity] duration-200 ease-out group-hover:opacity-80"
       />

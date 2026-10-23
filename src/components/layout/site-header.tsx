@@ -107,7 +107,7 @@ export function SiteHeader() {
     >
       <Link to={lang === "en" ? "/en" : "/"} className="flex items-center gap-2">
         <Img
-          src="/assets/logos-cyrrus/cyrrus-logo-color.webp"
+          src="/assets/logos-cyrrus/cyrrus-logo-color.png"
           alt="Cyrrus Consulting Services"
           width={140}
           height={44}

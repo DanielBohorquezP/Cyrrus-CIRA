@@ -14,7 +14,7 @@ export interface TeamMember {
 }
 
 export const jacksonBohorquez: TeamMember = {
-  photo: "/assets/decoracion/JacksonCEO1.webp",
+  photo: "/assets/decoracion/JacksonCEO1.jpeg",
   linkedIn: "https://www.linkedin.com/in/jacksonbohorquezb/",
   credentials: [],
 };

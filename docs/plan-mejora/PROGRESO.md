@@ -51,7 +51,7 @@
 
 **Próxima: Sesión 12.** Orden sugerido:
 0. ~~Auditoría de verificabilidad completa~~ ✅ hecha (ver `AUDITORIA-VERIFICABILIDAD.md`). Pendiente de la sección 5 de ese archivo: respaldo documental de los datos propios y autorizaciones J2.
-1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v14.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v15.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
 2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
 3. Sin insumos: contenido **G3**, luego **C15, C16, C18**, **C6/C7** (C17 y G1 en la Sesión 10; G2 en la 11).
 4. **I1** de C1–C3 (faltan).
@@ -223,7 +223,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-23-v14.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-23-v15.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
@@ -255,8 +255,9 @@ qué llegó y lo integra (F8, J1, J3…).
 - **Hecho:** artículo ES/EN `que-es-rpa-y-cuando-conviene-frente-a-la-ia` (`blog.json`, `blog-data.ts`, `llms.txt`). Verificado en IBM (definición, "guiada por el proceso" vs "guiada por los datos", capa de presentación sin API, límites de escala, casos en seguros/banca/comercio) y Microsoft Learn (desktop flows, aplicaciones antiguas, captura de datos en un ERP). **No se usó:** la página de SAP (403) ni cifras de ahorro (sin fuente primaria). Preguntas y decisiones de la gerencia rotuladas como criterio de Cyrrus.
 - **Verificación:** `tsc` limpio; build de 120 rutas; ES y EN con título, H1 y tabla; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 11: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v14.zip`. El árbol sigue con el rediseño ajeno sin confirmar; el v13 se conserva.
-- **Pendiente / bloqueos nuevos:** enlazar G2 desde la página de tecnologías avanzadas.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v15.zip`. El árbol sigue con el rediseño ajeno sin confirmar; el v13 se conserva.
+- **Imágenes (a pedido del cliente: ninguna borrosa):** `scripts/audit-images.mjs` (con `dist` servido) recorre las rutas del sitemap y lista las fotos que se muestran más grandes que su archivo. Causa principal: en recortes por altura (`object-cover` en tarjetas casi cuadradas) el `sizes` por ancho hacía elegir una versión chica y el navegador la ampliaba 1,5x a 2,5x; se subieron los `sizes` de `page-hero`, `included-grid`, `service-body`, `service-intro`, `article-service-cta`, `card-grid`, `blog7`, Experiencia y Quiénes somos. Se reemplazaron las fotos `evento-*` (capturas de video con barras negras, 1280×575 con contenido de ~430 px; una es la foto de una pantalla) y las de WhatsApp por fotos de cámara de 1600 px, con alt neutro donde el alt afirmaba quién aparecía. Foto de Jackson: de `.webp` 256×320 a `.jpeg` 800×1000. Miniaturas de YouTube: `maxresdefault` (1280×720) en vez de `hqdefault` (480×360). **Logo del encabezado:** apuntaba a un `.webp` que no existe (404, desde la Sesión de rendimiento 5018963); ahora usa el `.png` que sí está en el manifiesto. Resultado de la auditoría: 0 fotos ampliadas.
+- **Pendiente / bloqueos nuevos:** enlazar G2 desde la página de tecnologías avanzadas. **Logos de clientes**: los archivos fuente miden ~43 px de alto (Marympunt 43×43, Parex 71×29…); se ven bien a 1x y blandos en pantallas retina: el cliente debe enviar los logos en SVG o a mayor resolución. **Foro Caribe 2030** (Quiénes somos, hito 3): es una foto de evento de 1280×575 con barras negras; se ve aceptable recortada, pero conviene el original. Los archivos del rediseño ajeno siguen sin confirmar (incluye los cambios de `sizes` y de fotos en esos componentes).
 - **Próxima sesión:** Sesión 12 (ver arriba).
 
 ### Sesión 10 — 2026-10-23 — Fin de venta de Salesforce CPQ (C17)

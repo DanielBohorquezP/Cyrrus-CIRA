@@ -30,7 +30,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Diciembre 2026",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-conferencistas-panel.jpeg",
+    image: "/assets/decoracion/1785866224151.jpg",
   },
   {
     id: "post-8",
@@ -74,7 +74,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Febrero 2027",
     url: "/perspectivas",
-    image: "/assets/decoracion/IMG-20240215-WA0029.jpg",
+    image: "/assets/decoracion/IMG_20230227_164308.jpg",
   },
   {
     id: "post-12",
@@ -85,7 +85,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Febrero 2027",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-clase-universidad.jpeg",
+    image: "/assets/decoracion/IMG_20200313_092713184.jpg",
   },
   {
     id: "post-13",
@@ -96,7 +96,7 @@ export const upcomingTopics = [
     author: "Equipo Cyrrus",
     published: "Marzo 2027",
     url: "/perspectivas",
-    image: "/assets/decoracion/evento-universidad-simon-bolivar.jpeg",
+    image: "/assets/decoracion/1785866224006.jpg",
   },
   {
     id: "post-14",
