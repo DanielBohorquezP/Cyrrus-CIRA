@@ -3959,6 +3959,171 @@
           "url": "https://www.kotterinc.com/methodology/8-steps/"
         }
       ]
+    },
+    "que-es-rpa-y-cuando-conviene-frente-a-la-ia": {
+      "title": "Qué es RPA y cuándo conviene frente a la inteligencia artificial",
+      "seoTitle": "Qué es RPA y cuándo conviene frente a la IA",
+      "label": "Automatización",
+      "excerpt": "RPA automatiza tareas repetitivas que siguen reglas; la IA aprende de datos. Qué hace cada una, dónde tiene límites y qué debe preguntarse la gerencia antes de invertir.",
+      "metaDescription": "Qué es RPA (automatización robótica de procesos), en qué se diferencia de la IA y cuándo conviene cada una. Preguntas para la gerencia antes de automatizar.",
+      "intro": "RPA e inteligencia artificial suelen mencionarse juntas, pero resuelven problemas distintos. Elegir mal puede significar automatizar un proceso que debía rediseñarse, o pedirle a la IA lo que una regla simple ya resolvía.",
+      "keyTakeaways": [
+        "RPA (automatización robótica de procesos) usa software que reproduce tareas repetitivas que una persona hace en un computador, siguiendo pasos definidos.",
+        "IBM distingue ambas así: la RPA se guía por el proceso y la IA se guía por los datos. Un robot de RPA solo sigue los procesos que alguien definió.",
+        "Antes de automatizar conviene decidir si el proceso es estable y está bien definido: automatizar un proceso mal diseñado puede hacerlo solo más rápido (criterio de Cyrrus)."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Qué proceso conviene automatizar primero?",
+          "description": "Revisamos sus procesos y datos, y le decimos si lo que necesita es RPA, IA o un rediseño, sin atarnos a un proveedor.",
+          "checklist": [
+            "Selección independiente de la tecnología",
+            "Criterios de decisión para la gerencia"
+          ],
+          "ctaLabel": "Conocer la selección de tecnologías avanzadas",
+          "imageAlt": "Equipo en una sesión de capacitación acompañada por Cyrrus"
+        },
+        {
+          "title": "Automatizar con gobierno",
+          "description": "Definimos qué se automatiza, qué requiere supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Reglas de supervisión y responsabilidad",
+            "Hoja de ruta por etapas"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Jackson Bohorquez moderando un foro sobre transformación"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Una persona copia datos de un correo a una hoja de cálculo y luego los digita en el ERP. Es repetitivo y sigue reglas. Para ese tipo de tarea existe la RPA. Esta guía explica qué es, en qué se diferencia de la inteligencia artificial y qué debe revisar la gerencia antes de invertir."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: las definiciones y los límites vienen de IBM y de Microsoft Learn, citados al final. Las preguntas y recomendaciones para decidir son criterio de Cyrrus, no resultados de un estudio. No incluimos cifras de ahorro porque no tenemos una fuente primaria que las respalde."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es RPA?"
+        },
+        {
+          "type": "p",
+          "text": "RPA es la automatización robótica de procesos. IBM la describe como el uso de tecnologías de automatización para asumir tareas repetitivas de oficina que normalmente hacen las personas. Microsoft, en la documentación de Power Automate, la presenta como una forma de automatizar tareas repetitivas en el computador, incluidas aplicaciones antiguas, usando elementos de la interfaz, imágenes o coordenadas."
+        },
+        {
+          "type": "p",
+          "text": "Según IBM, los robots trabajan sobre la capa de presentación de las aplicaciones existentes, así que pueden usarse donde no hay una API. Esa es su ventaja práctica: no obliga a cambiar el sistema que ya se tiene."
+        },
+        {
+          "type": "h2",
+          "text": "¿En qué se diferencia de la inteligencia artificial?"
+        },
+        {
+          "type": "p",
+          "text": "IBM lo resume así: la RPA se guía por el proceso y la IA se guía por los datos. Los robots de RPA solo siguen los procesos que un usuario definió; la IA usa aprendizaje automático para encontrar patrones, sobre todo en datos no estructurados, y mejora con el tiempo."
+        },
+        {
+          "type": "table",
+          "text": "RPA frente a IA (según IBM; la última fila es criterio de Cyrrus)",
+          "columns": [
+            "Aspecto",
+            "RPA",
+            "IA"
+          ],
+          "rows": [
+            [
+              "Se guía por",
+              "El proceso definido",
+              "Los datos"
+            ],
+            [
+              "Qué hace",
+              "Sigue pasos fijos",
+              "Encuentra patrones y mejora"
+            ],
+            [
+              "Cuándo conviene",
+              "Tarea repetitiva, con reglas claras y entradas estables",
+              "Datos desordenados o decisiones que no caben en una regla"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "En la práctica pueden combinarse: la IA interpreta un documento y la RPA carga el resultado en el sistema. Pero son dos decisiones de inversión distintas."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene la RPA?"
+        },
+        {
+          "type": "p",
+          "text": "Cuando la tarea es repetitiva, sigue reglas que se pueden escribir y se hace sobre sistemas que no van a cambiar pronto. IBM menciona usos como el procesamiento de reclamaciones en seguros, la apertura de cuentas en banca o la gestión de pedidos en comercio. Microsoft cita la captura de datos en un ERP como ejemplo."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo no conviene?"
+        },
+        {
+          "type": "p",
+          "text": "IBM señala límites de la RPA: solo sigue los procesos definidos y puede ser difícil de escalar en una empresa cuando cambian las normas o la operación interna. Con base en eso, Cyrrus recomienda preguntar antes de contratar:"
+        },
+        {
+          "type": "p",
+          "text": "¿El proceso cambia seguido? Si cambia cada trimestre, el robot necesitará ajustes constantes."
+        },
+        {
+          "type": "p",
+          "text": "¿El problema es el proceso o la tarea? Si el proceso tiene pasos innecesarios, conviene rediseñarlo antes de automatizarlo."
+        },
+        {
+          "type": "p",
+          "text": "¿Hay una forma directa de conectar los sistemas? Si el ERP y el CRM pueden integrarse, una integración puede ser más estable que un robot que copia datos por pantalla."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la gerencia?"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro decisiones, de criterio de Cyrrus. Primero, qué proceso y por qué: elegir por impacto en el negocio. Segundo, quién es responsable del robot cuando el proceso cambie. Tercero, qué se mide para saber que funciona (tiempo, errores, excepciones). Cuarto, quién supervisa lo que el robot hace, en especial si toca datos financieros o de clientes."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus seleccionamos tecnologías de automatización, RPA e inteligencia artificial según la madurez de sus procesos y datos. Conozca la selección de tecnologías avanzadas.",
+          "links": [
+            {
+              "text": "la selección de tecnologías avanzadas",
+              "href": "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si no sabe si lo que necesita es RPA, IA o rediseñar un proceso, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "IBM. ¿Qué es la automatización robótica de procesos (RPA)?",
+          "url": "https://www.ibm.com/think/topics/rpa"
+        },
+        {
+          "label": "Microsoft Learn. Introduction to desktop flows (Power Automate)",
+          "url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/introduction"
+        }
+      ]
     }
   }
 }

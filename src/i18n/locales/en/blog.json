@@ -3959,6 +3959,171 @@
           "url": "https://www.kotterinc.com/methodology/8-steps/"
         }
       ]
+    },
+    "que-es-rpa-y-cuando-conviene-frente-a-la-ia": {
+      "title": "What is RPA and when it makes sense versus artificial intelligence",
+      "seoTitle": "What is RPA and when it beats AI",
+      "label": "Automation",
+      "excerpt": "RPA automates repetitive, rule-based tasks; AI learns from data. What each does, where each has limits and what leadership should ask before investing.",
+      "metaDescription": "What RPA (robotic process automation) is, how it differs from AI and when each makes sense. Questions for leadership before automating.",
+      "intro": "RPA and artificial intelligence are often mentioned together, but they solve different problems. Choosing wrong can mean automating a process that should have been redesigned, or asking AI to do what a simple rule already handled.",
+      "keyTakeaways": [
+        "RPA (robotic process automation) is software that reproduces repetitive tasks a person does on a computer, following defined steps.",
+        "IBM draws the line this way: RPA is process-driven and AI is data-driven. An RPA bot only follows the processes someone defined.",
+        "Before automating, decide whether the process is stable and well defined: automating a poorly designed process can just make it faster (Cyrrus's judgment)."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Which process should you automate first?",
+          "description": "We review your processes and data and tell you whether you need RPA, AI or a redesign, without being tied to a vendor.",
+          "checklist": [
+            "Independent technology selection",
+            "Decision criteria for leadership"
+          ],
+          "ctaLabel": "Learn about advanced technology selection",
+          "imageAlt": "Team in a training session supported by Cyrrus"
+        },
+        {
+          "title": "Automate with governance",
+          "description": "We define what gets automated, what needs human oversight and who answers for each decision.",
+          "checklist": [
+            "Oversight and accountability rules",
+            "Phased roadmap"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Jackson Bohorquez moderating a transformation forum"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Someone copies data from an email into a spreadsheet and then types it into the ERP. It is repetitive and rule-based. RPA exists for that kind of task. This guide explains what it is, how it differs from artificial intelligence and what leadership should check before investing."
+        },
+        {
+          "type": "p",
+          "text": "A note: the definitions and limits come from IBM and Microsoft Learn, cited at the end. The questions and recommendations for deciding are Cyrrus's judgment, not study results. We include no savings figures because we have no primary source to back them."
+        },
+        {
+          "type": "h2",
+          "text": "What is RPA?"
+        },
+        {
+          "type": "p",
+          "text": "RPA is robotic process automation. IBM describes it as using automation technologies to take over repetitive office tasks that people normally do. Microsoft, in the Power Automate documentation, presents it as a way to automate repetitive tasks on a computer, including legacy applications, using interface elements, images or coordinates."
+        },
+        {
+          "type": "p",
+          "text": "According to IBM, bots work on the presentation layer of existing applications, so they can be used where no API exists. That is its practical advantage: it does not force you to change the system you already have."
+        },
+        {
+          "type": "h2",
+          "text": "How is it different from artificial intelligence?"
+        },
+        {
+          "type": "p",
+          "text": "IBM sums it up: RPA is process-driven, whereas AI is data-driven. RPA bots only follow the processes a user defined; AI uses machine learning to find patterns, especially in unstructured data, and improves over time."
+        },
+        {
+          "type": "table",
+          "text": "RPA versus AI (per IBM; the last row is Cyrrus's judgment)",
+          "columns": [
+            "Aspect",
+            "RPA",
+            "AI"
+          ],
+          "rows": [
+            [
+              "Guided by",
+              "The defined process",
+              "The data"
+            ],
+            [
+              "What it does",
+              "Follows fixed steps",
+              "Finds patterns and improves"
+            ],
+            [
+              "When it fits",
+              "Repetitive task, clear rules, stable inputs",
+              "Messy data or decisions that do not fit a rule"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In practice they can be combined: AI interprets a document and RPA loads the result into the system. But they are two separate investment decisions."
+        },
+        {
+          "type": "h2",
+          "text": "When does RPA make sense?"
+        },
+        {
+          "type": "p",
+          "text": "When the task is repetitive, follows rules that can be written down and runs on systems that will not change soon. IBM mentions uses such as claims processing in insurance, account opening in banking or order management in retail. Microsoft cites data entry into an ERP as an example."
+        },
+        {
+          "type": "h2",
+          "text": "When does it not?"
+        },
+        {
+          "type": "p",
+          "text": "IBM points to limits: RPA only follows defined processes and can be hard to scale in an enterprise when regulations or internal operations change. Based on that, Cyrrus recommends asking before you buy:"
+        },
+        {
+          "type": "p",
+          "text": "Does the process change often? If it changes every quarter, the bot will need constant adjustment."
+        },
+        {
+          "type": "p",
+          "text": "Is the problem the process or the task? If the process has unnecessary steps, redesign it before automating it."
+        },
+        {
+          "type": "p",
+          "text": "Is there a direct way to connect the systems? If the ERP and CRM can be integrated, an integration may be steadier than a bot copying data through the screen."
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership decide?"
+        },
+        {
+          "type": "p",
+          "text": "Four decisions, per Cyrrus's judgment. First, which process and why: choose by business impact. Second, who is responsible for the bot when the process changes. Third, what is measured to know it works (time, errors, exceptions). Fourth, who oversees what the bot does, especially if it touches financial or customer data."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we select automation, RPA and artificial intelligence technology based on the maturity of your processes and data. Learn about advanced technology selection.",
+          "links": [
+            {
+              "text": "advanced technology selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you are unsure whether you need RPA, AI or a process redesign, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "IBM. What is robotic process automation (RPA)?",
+          "url": "https://www.ibm.com/think/topics/rpa"
+        },
+        {
+          "label": "Microsoft Learn. Introduction to desktop flows (Power Automate)",
+          "url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/introduction"
+        }
+      ]
     }
   }
 }

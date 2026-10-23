@@ -281,6 +281,18 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/evento-jackson-moderador.jpeg",
     ],
   },
+  {
+    slug: "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+    coverImage: "/assets/decoracion/IMG_20230228_082627.jpg",
+    publishedAt: "2026-10-23",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas",
+    pillarLabelKey: "seleccionSoluciones",
+    serviceCtaIndexes: [6, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/Trabajo.jpg",
+      "/assets/decoracion/evento-jackson-moderador.jpeg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

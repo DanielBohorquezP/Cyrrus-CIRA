@@ -47,13 +47,13 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 10 (2026-10-23, C17: fin de venta de Salesforce CPQ; G1: resistencia al cambio).
+**Última sesión cerrada:** Sesión 11 (2026-10-23, G2: qué es RPA y cuándo conviene frente a la IA).
 
-**Próxima: Sesión 11.** Orden sugerido:
+**Próxima: Sesión 12.** Orden sugerido:
 0. ~~Auditoría de verificabilidad completa~~ ✅ hecha (ver `AUDITORIA-VERIFICABILIDAD.md`). Pendiente de la sección 5 de ese archivo: respaldo documental de los datos propios y autorizaciones J2.
-1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v13.zip` (C8–C14, C17, D1–D3 y B1; reemplaza al v12, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
+1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v14.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
 2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
-3. Sin insumos: contenido **G2**, luego **C15, C16, C18**, **C6/C7** (C17 y G1 hechas en la Sesión 10).
+3. Sin insumos: contenido **G3**, luego **C15, C16, C18**, **C6/C7** (C17 y G1 en la Sesión 10; G2 en la 11).
 4. **I1** de C1–C3 (faltan).
 
 **Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
@@ -160,7 +160,7 @@ qué llegó y lo integra (F8, J1, J3…).
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
 | G1 | Resistencia al cambio | ✅ | Sesión 10. `/perspectivas/resistencia-al-cambio-como-diagnosticarla-y-que-hacer`, ES/EN. Solo Prosci (ADKAR, patrocinio) y Kotter (8 pasos); sin estadísticas. Keyword (MX 1.600) sin volver a medir |
-| G2 | Qué es RPA | ⬜ | |
+| G2 | Qué es RPA | ✅ | Sesión 11. `/perspectivas/que-es-rpa-y-cuando-conviene-frente-a-la-ia`, ES/EN. Solo IBM (RPA guiada por proceso, IA por datos; límites) y Microsoft Learn (desktop flows); sin cifras. SAP dio 403: no se citó. Keyword (MX 2.900) sin volver a medir. Falta enlazarla desde la página de tecnologías avanzadas |
 | G3 | Qué es un CRM | ⬜ | |
 | G4 | Agentes de IA | ⬜ | |
 | G5 | Cambio organizacional | ⬜ | |
@@ -223,7 +223,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-10-23-v13.zip` (C8–C14, C17, D1–D3 y B1; reemplaza al v12 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
+| Subir `cyrrus-dist-2026-10-23-v14.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
 | Confirmar los supuestos de la sesión de diagnóstico (duración, entregable, filtro, quién la dirige) | 2026-10-21 | ⬜ | Cierre de B1 |
 | Acceso a GA4 | sep-2026 | ⬜ | A4, A6 |
 | Enlace de agenda + número de WhatsApp | 2026-10-05 | ⬜ | B3 |
@@ -249,6 +249,15 @@ qué llegó y lo integra (F8, J1, J3…).
 ---
 
 ## Bitácora de sesiones
+
+### Sesión 11 — 2026-10-23 — Qué es RPA (G2)
+- **Tareas trabajadas:** G2 ✅. Sin insumos del cliente (siguen bloqueados B3, B4, A4).
+- **Hecho:** artículo ES/EN `que-es-rpa-y-cuando-conviene-frente-a-la-ia` (`blog.json`, `blog-data.ts`, `llms.txt`). Verificado en IBM (definición, "guiada por el proceso" vs "guiada por los datos", capa de presentación sin API, límites de escala, casos en seguros/banca/comercio) y Microsoft Learn (desktop flows, aplicaciones antiguas, captura de datos en un ERP). **No se usó:** la página de SAP (403) ni cifras de ahorro (sin fuente primaria). Preguntas y decisiones de la gerencia rotuladas como criterio de Cyrrus.
+- **Verificación:** `tsc` limpio; build de 120 rutas; ES y EN con título, H1 y tabla; consola sin errores.
+- **Commits:** ver `git log` ("Sesión 11: …").
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v14.zip`. El árbol sigue con el rediseño ajeno sin confirmar; el v13 se conserva.
+- **Pendiente / bloqueos nuevos:** enlazar G2 desde la página de tecnologías avanzadas.
+- **Próxima sesión:** Sesión 12 (ver arriba).
 
 ### Sesión 10 — 2026-10-23 — Fin de venta de Salesforce CPQ (C17)
 - **Tareas trabajadas:** C17 ✅. Sin insumos del cliente (siguen bloqueados B3, B4, A4).
