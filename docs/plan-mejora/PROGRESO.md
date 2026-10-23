@@ -47,13 +47,13 @@
 
 ## Sesión actual / próxima
 
-**Última sesión cerrada:** Sesión 10 (2026-10-23, C17: fin de venta de Salesforce CPQ).
+**Última sesión cerrada:** Sesión 10 (2026-10-23, C17: fin de venta de Salesforce CPQ; G1: resistencia al cambio).
 
 **Próxima: Sesión 11.** Orden sugerido:
 0. ~~Auditoría de verificabilidad completa~~ ✅ hecha (ver `AUDITORIA-VERIFICABILIDAD.md`). Pendiente de la sección 5 de ese archivo: respaldo documental de los datos propios y autorizaciones J2.
 1. **Cliente: confirmar los supuestos de `/diagnostico`** (60 minutos, tres bloques, nota de una página en 3 días hábiles, filtro 50+ empleados, quién dirige la sesión). Confirmar si subió `cyrrus-dist-2026-10-23-v13.zip` (C8–C14, C17, D1–D3 y B1; reemplaza al v12, que no se subió). Si sí: **A2** (reenviar sitemap y pedir indexación de las 14 URLs nuevas, los 2 casos y la guía de cambio), **A5**/**K1** (PageSpeed real) y avisar para publicar el calendario de LinkedIn.
 2. Si llegaron: **B3** (agenda y WhatsApp), **B4** (herramienta de correo: enviar el informe del test y la calculadora).
-3. Sin insumos: contenido **G1/G2**, luego **C15, C16, C18**, **C6/C7** (C17 hecha en la Sesión 10).
+3. Sin insumos: contenido **G2**, luego **C15, C16, C18**, **C6/C7** (C17 y G1 hechas en la Sesión 10).
 4. **I1** de C1–C3 (faltan).
 
 **Criterio editorial (decidido por el cliente en la Sesión 3):** el lector objetivo es alta gerencia (CEO, CFO, COO) de empresas de 50+ empleados que pueden contratar consultorías de COP 30 millones o más. Cada artículo debe hablar en costo total a varios años, riesgo, capital de trabajo y gobierno, no en funciones del producto; el CTA lleva a una conversación de diagnóstico, no a una descarga.
@@ -159,7 +159,7 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Fase G — Contenido con volumen
 | ID | Tarea | Estado | Notas |
 |---|---|---|---|
-| G1 | Resistencia al cambio | ⬜ | |
+| G1 | Resistencia al cambio | ✅ | Sesión 10. `/perspectivas/resistencia-al-cambio-como-diagnosticarla-y-que-hacer`, ES/EN. Solo Prosci (ADKAR, patrocinio) y Kotter (8 pasos); sin estadísticas. Keyword (MX 1.600) sin volver a medir |
 | G2 | Qué es RPA | ⬜ | |
 | G3 | Qué es un CRM | ⬜ | |
 | G4 | Agentes de IA | ⬜ | |
@@ -253,9 +253,11 @@ qué llegó y lo integra (F8, J1, J3…).
 ### Sesión 10 — 2026-10-23 — Fin de venta de Salesforce CPQ (C17)
 - **Tareas trabajadas:** C17 ✅. Sin insumos del cliente (siguen bloqueados B3, B4, A4).
 - **Hecho:** artículo ES/EN `fin-de-venta-salesforce-cpq-opciones` (`blog.json`, `blog-data.ts`, `llms.txt`). Solo afirma lo que dice Salesforce en su página oficial (leída 2026-10-23): CPQ no se vende a clientes nuevos; los actuales pueden usarlo, agregar usuarios, renovar y recibir soporte con correcciones críticas, sin funciones nuevas; no hay fecha de fin de vida ni migración forzosa; sucesor Revenue Cloud Advanced; Salesforce cita ~15 % de migrados y 3–6 meses (rotulado como cifras de Salesforce). HubSpot: CPQ en Revenue Hub Professional/Enterprise (página de HubSpot). Dynamics 365: catálogo, listas de precios y plug-ins (Microsoft Learn). **No se usó:** fecha de "19-mar-2025" ni "fin de vida 2029–2030" (solo terceros), ni el nombre "Agentforce Revenue Management" (no aparece en la página de Salesforce).
-- **Verificación:** `tsc` limpio; build de 116 rutas; ES y EN con título, H1, tabla y enlaces; consola sin errores.
+- **G1 ✅:** artículo ES/EN `resistencia-al-cambio-como-diagnosticarla-y-que-hacer`. Verificado: elementos de ADKAR y "barrera más temprana" (página de Prosci), patrocinio activo como principal contribuyente "por más de 25 años", "tres a uno" y prácticas del patrocinador (blog de Prosci), 8 pasos de Kotter. **No se usó** (no se pudo abrir o no figura en la página): 72 % vs 29 % de patrocinadores, "falta de conciencia es la causa principal" y la definición numérica de barrera (≤3); HBR de Kanter (de pago, no lista los diez motivos). Preguntas de diagnóstico y acciones rotuladas como criterio de Cyrrus.
+- **Rediseño:** los artículos nuevos usan el renderizador de `ArticuloPerspectiva` del rediseño en curso (hero oscuro compacto, cuerpo a 720 px, tokens `mist`/`line`/`slate`); no necesitan componentes propios. Portada de G1: foto existente del manifiesto. La foto "Evento mesas" no está en el manifiesto (requiere `npm run images`).
+- **Verificación:** `tsc` limpio; build de 118 rutas; ES y EN con título, H1, tabla y enlaces; G1 sin desborde horizontal; consola sin errores.
 - **Commits:** ver `git log` ("Sesión 10: …").
-- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v13.zip`. **Ojo:** el árbol de trabajo tiene ~60 archivos sin confirmar de un rediseño ajeno a esta sesión (componentes de layout, `index.css`, páginas) y el build los incluye; revisar antes de subir. El v12 se conserva por eso.
+- **Zip para subir:** `../Cyrrus builds/cyrrus-dist-2026-10-23-v13.zip` (regenerado al añadir G1). **Ojo:** el árbol de trabajo tiene ~60 archivos sin confirmar de un rediseño ajeno a esta sesión (componentes de layout, `index.css`, páginas) y el build los incluye; revisar antes de subir. El v12 se conserva por eso.
 - **Pendiente / bloqueos nuevos:** enlazar C17 desde C5 y desde la página de CRM; la fecha de la página de Salesforce no figura, por lo que revisar en L1.
 - **Próxima sesión:** Sesión 11 (ver arriba).
 

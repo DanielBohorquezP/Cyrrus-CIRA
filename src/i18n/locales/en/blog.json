@@ -3784,6 +3784,181 @@
           "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-edit-quote-sales"
         }
       ]
+    },
+    "resistencia-al-cambio-como-diagnosticarla-y-que-hacer": {
+      "title": "Resistance to Change: How to Diagnose It and What to Do in Each Case",
+      "seoTitle": "Resistance to Change: How to Diagnose and Overcome It",
+      "label": "Change Management",
+      "excerpt": "Resistance to change is not a flaw in people: it is a signal. How to locate where a change is stuck using the five ADKAR elements and what leadership does in each case.",
+      "metaDescription": "Resistance to change at work: how to diagnose it with ADKAR, what falls to leadership and which actions to apply depending on where the change gets stuck.",
+      "intro": "When a change stalls, the temptation is to blame people. It is more useful to treat resistance as a symptom and ask where each group stopped.",
+      "keyTakeaways": [
+        "It helps to treat resistance as a signal, not a flaw: it shows that a group lacks understanding, willingness, knowledge or ability to change, or that nothing reinforces the change.",
+        "Prosci's ADKAR gives an order for diagnosing it: awareness, desire, knowledge, ability and reinforcement. Prosci recommends focusing support on the earliest barrier.",
+        "Leadership has its own role: Prosci describes the sponsor communicating directly with employees, and Kotter puts urgency first and then removing obstacles."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Is the change not being used as expected?",
+          "description": "We diagnose where each group got stuck and design the communication, training and reinforcement actions.",
+          "checklist": [
+            "Group-level diagnosis with ADKAR",
+            "Role-based actions, with usage follow-up"
+          ],
+          "ctaLabel": "Explore change management",
+          "imageAlt": "Team in a training session supported by Cyrrus"
+        },
+        {
+          "title": "Let leadership lead the change",
+          "description": "We prepare sponsors for their role: what to say, to whom and when, and how to make support visible.",
+          "checklist": [
+            "Sponsor roadmap",
+            "Messages and conversation spaces with teams"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Jackson Bohorquez moderating a forum on transformation"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "A new system, a reorganization or a redesigned process reaches a group that does not use it as expected. In meetings it is called “resistance.” This guide offers another reading: resistance is information about where the change got stuck, and it can be diagnosed."
+        },
+        {
+          "type": "p",
+          "text": "A note on what follows: the model and the sponsor behaviors come from Prosci and Kotter, cited at the end. The diagnostic questions and suggested actions are Cyrrus's judgment, not the results of a study."
+        },
+        {
+          "type": "h2",
+          "text": "What is resistance to change?"
+        },
+        {
+          "type": "p",
+          "text": "It is people's reaction when a change asks them to give up a familiar way of working. It can look like slow compliance, doubts that go unspoken, or open rejection. Treating it as a character flaw can lead to persuading or pressuring; treating it as a signal makes it possible to ask what that group lacks in order to move forward."
+        },
+        {
+          "type": "h2",
+          "text": "How do you diagnose it with ADKAR?"
+        },
+        {
+          "type": "p",
+          "text": "Prosci's ADKAR describes five things each person needs to change: awareness (understanding why the change is needed), desire (choosing to participate in and support it), knowledge (knowing how to change and what success requires), ability (putting new skills and behaviors into practice) and reinforcement (sustaining the new way and preventing backsliding). Prosci proposes identifying the earliest barrier and focusing support where people need it most."
+        },
+        {
+          "type": "table",
+          "text": "Where the change gets stuck and what to ask (Cyrrus's judgment)",
+          "columns": [
+            "Element",
+            "Question for the group",
+            "Action to consider"
+          ],
+          "rows": [
+            [
+              "Awareness",
+              "Can you explain in your own words why this is changing?",
+              "Leadership explains the why and listens to doubts"
+            ],
+            [
+              "Desire",
+              "What do you gain and lose with the change?",
+              "Group conversations, addressing what is lost and showing what is gained"
+            ],
+            [
+              "Knowledge",
+              "Do you know what to do differently from Monday?",
+              "Role-based training with real situations from their work"
+            ],
+            [
+              "Ability",
+              "Can you do it in your daily work, with the time and tools you have?",
+              "Supported practice and a network of support users"
+            ],
+            [
+              "Reinforcement",
+              "What happens if you go back to the old way?",
+              "Real-usage indicators, recognition and follow-up after go-live"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Order matters: training a group that does not yet understand why it is changing, or does not want to, does not resolve the stall. That is why you look first for the earliest element that is not covered."
+        },
+        {
+          "type": "h2",
+          "text": "What falls to leadership?"
+        },
+        {
+          "type": "p",
+          "text": "Prosci has identified active and visible sponsorship as the top contributor to change success for over 25 years, and in its most recent study places it there by a three-to-one margin. Among the practices it recommends for the sponsor are direct communication with employees (face-to-face conversations, speeches or videos), agreeing on activities by phase and audience, and holding the sponsor accountable with clear objectives. Kotter, for his part, starts by creating a sense of urgency, and his fifth step asks to enable action by removing obstacles that slow things down or create roadblocks."
+        },
+        {
+          "type": "h2",
+          "text": "What should you do when resistance is already there?"
+        },
+        {
+          "type": "p",
+          "text": "Four practical steps, based on Cyrrus's judgment. First, listen group by group before acting, with questions like those in the table. Second, find the earliest element that is not covered and address it before the others. Third, remove the obstacles the company itself created: no time to learn, incomplete tools or managers who do not use the new way. Fourth, show small, real progress: Kotter calls it generating short-term wins."
+        },
+        {
+          "type": "h2",
+          "text": "Mistakes to avoid"
+        },
+        {
+          "type": "p",
+          "text": "Answering everything with more training without knowing whether people lack understanding, willingness or ability."
+        },
+        {
+          "type": "p",
+          "text": "Leaving the conversation to HR or IT, with leadership not speaking to the teams."
+        },
+        {
+          "type": "p",
+          "text": "Declaring the change finished at go-live, with no reinforcement period."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus, change management is the Adopt phase of the CIRA method: we diagnose group by group, prepare sponsors and support reinforcement. Explore change management and the full guide with its template.",
+          "links": [
+            {
+              "text": "change management",
+              "href": "/metodo-cira/gestion-del-cambio"
+            },
+            {
+              "text": "the full guide with its template",
+              "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If a change you already implemented is not being used as expected, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Prosci. El modelo ADKAR",
+          "url": "https://www.prosci.com/methodology/adkar"
+        },
+        {
+          "label": "Prosci. Using the ADKAR Model to Build Better Sponsors",
+          "url": "https://www.prosci.com/blog/using-the-adkar-model-to-build-better-sponsors"
+        },
+        {
+          "label": "Kotter Inc. The 8 Steps for Leading Change",
+          "url": "https://www.kotterinc.com/methodology/8-steps/"
+        }
+      ]
     }
   }
 }

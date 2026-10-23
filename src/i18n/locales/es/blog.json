@@ -3784,6 +3784,181 @@
           "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-edit-quote-sales"
         }
       ]
+    },
+    "resistencia-al-cambio-como-diagnosticarla-y-que-hacer": {
+      "title": "Resistencia al cambio: cómo diagnosticarla y qué hacer en cada caso",
+      "seoTitle": "Resistencia al cambio: cómo diagnosticarla y superarla",
+      "label": "Gestión del cambio",
+      "excerpt": "La resistencia al cambio no es un defecto de las personas: es una señal. Cómo ubicar dónde se atasca el cambio con los cinco elementos de ADKAR y qué hace la dirección en cada caso.",
+      "metaDescription": "Resistencia al cambio en la empresa: cómo diagnosticarla con ADKAR, qué le toca a la dirección y qué acciones aplicar según dónde se atasque el cambio.",
+      "intro": "Cuando un cambio no avanza, la tentación es culpar a las personas. Es más útil tratar la resistencia como un síntoma y preguntarse en qué punto se detuvo cada grupo.",
+      "keyTakeaways": [
+        "Conviene tratar la resistencia como una señal y no como un defecto: indica que a un grupo le falta entender, querer, saber o poder cambiar, o que nada refuerza el cambio.",
+        "ADKAR de Prosci ofrece un orden para diagnosticarla: conciencia, deseo, conocimiento, habilidad y refuerzo. Prosci recomienda enfocar el apoyo en la primera barrera, la más temprana.",
+        "La dirección tiene un papel propio: Prosci describe que el patrocinador debe comunicar directamente con los empleados, y Kotter pone primero el sentido de urgencia y luego quitar obstáculos."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿El cambio no se está usando como esperaba?",
+          "description": "Diagnosticamos en qué punto se atascó cada grupo y diseñamos las acciones de comunicación, capacitación y refuerzo.",
+          "checklist": [
+            "Diagnóstico por grupo con ADKAR",
+            "Acciones por rol, con seguimiento de uso"
+          ],
+          "ctaLabel": "Conocer la gestión del cambio",
+          "imageAlt": "Equipo en una sesión de capacitación acompañada por Cyrrus"
+        },
+        {
+          "title": "Que la dirección lidere el cambio",
+          "description": "Preparamos a los patrocinadores para su papel: qué decir, a quién y cuándo, y cómo hacer visible el apoyo.",
+          "checklist": [
+            "Hoja de ruta del patrocinador",
+            "Mensajes y espacios de conversación con los equipos"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Jackson Bohorquez moderando un foro sobre transformación"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Un nuevo sistema, una reorganización o un proceso rediseñado llegan a un grupo que no los usa como se esperaba. En las reuniones se llama «resistencia». Esta guía propone otra lectura: la resistencia es información sobre dónde se atascó el cambio, y se puede diagnosticar."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración sobre lo que sigue: el modelo y los comportamientos del patrocinador vienen de Prosci y de Kotter, y se citan al final. Las preguntas de diagnóstico y las acciones sugeridas son criterio de Cyrrus, no resultados de un estudio."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es la resistencia al cambio?"
+        },
+        {
+          "type": "p",
+          "text": "Es la reacción de las personas cuando un cambio les exige dejar una forma de trabajar conocida. Puede verse como cumplimiento lento, dudas que no se expresan, o rechazo abierto. Tratarla como un defecto del carácter de las personas puede llevar a convencer o a presionar; tratarla como una señal permite preguntar qué le falta a ese grupo para avanzar."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se diagnostica con ADKAR?"
+        },
+        {
+          "type": "p",
+          "text": "ADKAR, de Prosci, describe cinco cosas que cada persona necesita para cambiar: conciencia (entender por qué se necesita el cambio), deseo (decidir participar y apoyarlo), conocimiento (saber cómo cambiar y qué se requiere para tener éxito), habilidad (poner en práctica las nuevas destrezas y comportamientos) y refuerzo (sostener la nueva forma y evitar el retroceso). Prosci propone identificar la barrera más temprana y enfocar el apoyo donde las personas más lo necesitan."
+        },
+        {
+          "type": "table",
+          "text": "Dónde se atasca el cambio y qué preguntar (criterio de Cyrrus)",
+          "columns": [
+            "Elemento",
+            "Pregunta para el grupo",
+            "Acción que conviene"
+          ],
+          "rows": [
+            [
+              "Conciencia",
+              "¿Puede explicar con sus palabras por qué cambia esto?",
+              "Que la dirección explique el porqué y escuche las dudas"
+            ],
+            [
+              "Deseo",
+              "¿Qué gana y qué pierde con el cambio?",
+              "Conversaciones por grupo, atender lo que se pierde y mostrar lo que se gana"
+            ],
+            [
+              "Conocimiento",
+              "¿Sabe qué debe hacer distinto desde el lunes?",
+              "Capacitación por rol, con situaciones reales de su trabajo"
+            ],
+            [
+              "Habilidad",
+              "¿Puede hacerlo en su trabajo diario, con el tiempo y las herramientas que tiene?",
+              "Práctica acompañada y red de usuarios de apoyo"
+            ],
+            [
+              "Refuerzo",
+              "¿Qué pasa si vuelve a la forma anterior?",
+              "Indicadores de uso real, reconocimiento y seguimiento después de la salida en vivo"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "El orden importa: capacitar a un grupo que aún no entiende por qué cambia, o que no quiere hacerlo, no resuelve el atasco. Por eso se busca primero el elemento más temprano que no esté cubierto."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué le toca a la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "Prosci ha identificado el patrocinio activo y visible como el principal contribuyente al éxito del cambio durante más de 25 años, y en su estudio más reciente lo ubica así por un margen de tres a uno. Entre las prácticas que recomienda para el patrocinador están la comunicación directa con los empleados (en conversaciones cara a cara, discursos o videos), acordar sus actividades por fase y público, y hacerle seguimiento con objetivos claros. Kotter, por su parte, empieza por crear sentido de urgencia, y en su quinto paso pide habilitar la acción quitando obstáculos que frenan o bloquean el avance."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué conviene hacer cuando ya hay resistencia?"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro pasos prácticos, de criterio de Cyrrus. Primero, escuchar por grupo antes de actuar, con preguntas como las de la tabla. Segundo, ubicar el elemento más temprano que no esté cubierto y atenderlo antes que los demás. Tercero, quitar los obstáculos que la propia empresa puso: falta de tiempo para aprender, herramientas incompletas o jefes que no usan lo nuevo. Cuarto, mostrar avances pequeños y reales: Kotter lo llama generar victorias de corto plazo."
+        },
+        {
+          "type": "h2",
+          "text": "Errores a evitar"
+        },
+        {
+          "type": "p",
+          "text": "Responder a todo con más capacitación sin saber si falta entender, querer o poder."
+        },
+        {
+          "type": "p",
+          "text": "Delegar la conversación en Recursos Humanos o en Tecnología, sin que la dirección hable con los equipos."
+        },
+        {
+          "type": "p",
+          "text": "Dar el cambio por terminado en la salida en vivo, sin un periodo de refuerzo."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus, la gestión del cambio es la fase Adoptar del método CIRA: diagnosticamos por grupo, preparamos a los patrocinadores y acompañamos el refuerzo. Conozca la gestión del cambio y la guía completa con su plantilla.",
+          "links": [
+            {
+              "text": "la gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            },
+            {
+              "text": "la guía completa con su plantilla",
+              "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si un cambio ya implementado no se está usando como esperaba, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Prosci. El modelo ADKAR",
+          "url": "https://www.prosci.com/methodology/adkar"
+        },
+        {
+          "label": "Prosci. Using the ADKAR Model to Build Better Sponsors",
+          "url": "https://www.prosci.com/blog/using-the-adkar-model-to-build-better-sponsors"
+        },
+        {
+          "label": "Kotter Inc. The 8 Steps for Leading Change",
+          "url": "https://www.kotterinc.com/methodology/8-steps/"
+        }
+      ]
     }
   }
 }
