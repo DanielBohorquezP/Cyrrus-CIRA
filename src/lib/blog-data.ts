@@ -293,6 +293,18 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230228_083642.jpg",
     ],
   },
+  {
+    slug: "que-es-un-crm-y-como-elegir-el-correcto",
+    coverImage: "/assets/decoracion/IMG_20200313_092713184.jpg",
+    publishedAt: "2026-10-23",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarLabelKey: "seleccionSoftware",
+    serviceCtaIndexes: [6, 12],
+    serviceCtaImages: [
+      "/assets/decoracion/Trabajo.jpg",
+      "/assets/decoracion/IMG_20230228_083642.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

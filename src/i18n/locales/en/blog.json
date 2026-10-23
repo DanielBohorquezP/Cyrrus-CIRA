@@ -4124,6 +4124,173 @@
           "url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/introduction"
         }
       ]
+    },
+    "que-es-un-crm-y-como-elegir-el-correcto": {
+      "title": "What is a CRM and how to choose the right one for your company",
+      "seoTitle": "What is a CRM and how to choose the right one",
+      "label": "Software selection",
+      "excerpt": "What a CRM is, which types IBM describes, which risks the sources acknowledge and what leadership should decide before choosing one.",
+      "metaDescription": "What a CRM is, which types exist, what risks it carries and how to choose the right one. Criteria for leadership before buying, with IBM and Microsoft sources.",
+      "intro": "A CRM is often bought as a sales tool and ends up as a system the whole company must use. That is why it pays to decide first which process you want to organize and who will use it, and only then compare products.",
+      "keyTakeaways": [
+        "According to IBM, a CRM is a set of integrated technologies used to document, track and manage an organization's relationships with existing and potential customers.",
+        "IBM distinguishes three types: operational (sales, service and marketing), analytical (analysis of large volumes of data) and collaborative (customer data shared across teams).",
+        "IBM flags two risks: adoption, because staff need training or may resist, and vendor dependence, because switching vendors can significantly increase costs."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Which CRM fits your sales team?",
+          "description": "We start from your sales process and how it connects to the ERP, and compare options without being tied to a vendor.",
+          "checklist": [
+            "Independent CRM selection",
+            "Decision criteria for leadership"
+          ],
+          "ctaLabel": "See CRM selection",
+          "imageAlt": "Consultant working in front of a board with process diagrams"
+        },
+        {
+          "title": "Make sure the CRM gets used",
+          "description": "We support adoption: training by role, usage tracking and backing from leadership.",
+          "checklist": [
+            "Adoption plan by role",
+            "Usage tracking after go-live"
+          ],
+          "ctaLabel": "Talk to our team",
+          "imageAlt": "Consultant with a laptop in front of a process board"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "A company grows and its customer data ends up scattered across spreadsheets, emails and each salesperson's memory. That is when a CRM gets bought. This guide explains what it is, which types exist, which risks the sources acknowledge and what leadership should check before choosing."
+        },
+        {
+          "type": "p",
+          "text": "A note: the definitions, types and risks come from IBM and Microsoft's documentation, cited at the end. The selection criteria are Cyrrus's judgment, not study results. We include no return figures because we have no primary source to back them."
+        },
+        {
+          "type": "h2",
+          "text": "What is a CRM?"
+        },
+        {
+          "type": "p",
+          "text": "CRM stands for customer relationship management. IBM defines it as a set of integrated technologies used to document, track and manage an organization's relationships with existing and potential customers. In the Dynamics 365 Sales documentation, Microsoft describes it as the tool to keep track of accounts and contacts, move a sale from lead to order, create marketing lists and campaigns and follow service cases."
+        },
+        {
+          "type": "h2",
+          "text": "Which types of CRM exist?"
+        },
+        {
+          "type": "p",
+          "text": "IBM distinguishes three types, which are not mutually exclusive:"
+        },
+        {
+          "type": "table",
+          "text": "Types of CRM according to IBM",
+          "columns": [
+            "Type",
+            "What it is for",
+            "Detail IBM points out"
+          ],
+          "rows": [
+            [
+              "Operational",
+              "Customer interactions: sales, service and marketing automation",
+              "The most common; its success depends on the organization's data entry"
+            ],
+            [
+              "Analytical",
+              "Sorting large volumes of data to see trends, channels and preferences",
+              "Better suited to mid-sized and large organizations; may require skilled staff"
+            ],
+            [
+              "Collaborative",
+              "Sharing customer data across teams",
+              "Also called strategic; useful if the company operates in several locations"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "IBM also notes that a CRM can be installed on the company's own infrastructure, used in the cloud or customized."
+        },
+        {
+          "type": "h2",
+          "text": "What problems does it solve?"
+        },
+        {
+          "type": "p",
+          "text": "According to IBM, a CRM lets you track leads and the sales pipeline on a single dashboard, forecast sales, manage communication with prospects and analyze the frequency, volume and outcome of follow-ups. IBM also credits it with benefits such as better customer segmentation, higher retention and less time spent searching for information. These are benefits described by the source; each company's result depends on how it uses the system."
+        },
+        {
+          "type": "h2",
+          "text": "What risks do the sources acknowledge?"
+        },
+        {
+          "type": "p",
+          "text": "IBM points to three. First, adoption: staff must be trained or may resist the new system, and sales leadership is key to getting it used. Second, the vendor: switching vendors can significantly increase costs. Third, size: cost and benefit estimates are less accurate for larger projects."
+        },
+        {
+          "type": "h2",
+          "text": "How do you choose the right CRM?"
+        },
+        {
+          "type": "p",
+          "text": "Five criteria, per Cyrrus's judgment. First, the process: describe how you sell today and what you want to change before looking at products. Second, the users: choose with the daily user in mind, not the buyer. Third, integration: define which data must be shared with the ERP and invoicing. Fourth, total cost over several years: licenses, implementation, integrations and training. Fifth, the exit: ask how data is exported if you ever change vendors."
+        },
+        {
+          "type": "p",
+          "text": "If you are already comparing products, see the Salesforce, HubSpot and Dynamics 365 comparison.",
+          "links": [
+            {
+              "text": "the Salesforce, HubSpot and Dynamics 365 comparison",
+              "href": "/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "What should leadership decide?"
+        },
+        {
+          "type": "p",
+          "text": "Four decisions, per Cyrrus's judgment. First, who owns the CRM in the company and who answers for the quality of its data. Second, which sales indicators will be drawn from it and who reviews them. Third, how it connects to the ERP so that customer, order and invoice are not entered twice. Fourth, how you will measure that the team is actually using it."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we select the CRM based on your sales process and your ERP, without selling a product of our own. Learn about CRM selection.",
+          "links": [
+            {
+              "text": "CRM selection",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you are unsure where to start, request a free diagnostic session with our team.",
+          "links": [
+            {
+              "text": "request a free diagnostic session",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "IBM. What is customer relationship management (CRM)?",
+          "url": "https://www.ibm.com/think/topics/crm"
+        },
+        {
+          "label": "Microsoft Learn. Welcome to Dynamics 365 Sales",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/sales/overview"
+        }
+      ]
     }
   }
 }

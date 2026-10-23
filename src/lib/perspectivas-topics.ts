@@ -1,16 +1,5 @@
 export const upcomingTopics = [
   {
-    id: "post-4",
-    title: "Qué es RPA y cuándo conviene frente a la IA",
-    summary:
-      "Qué es la automatización robótica de procesos, en qué se diferencia de la inteligencia artificial y de los agentes de IA, y cómo decidir cuál conviene.",
-    label: "Selección de soluciones",
-    author: "Equipo Cyrrus",
-    published: "Octubre 2026",
-    url: "/perspectivas",
-    image: "/assets/decoracion/IMG_20230228_082632.jpg",
-  },
-  {
     id: "post-6",
     title: "Cómo implementar IA en una empresa: guía paso a paso",
     summary:
@@ -20,28 +9,6 @@ export const upcomingTopics = [
     published: "Noviembre 2026",
     url: "/perspectivas",
     image: "/assets/decoracion/Evento.jpg",
-  },
-  {
-    id: "post-7",
-    title: "Qué es un CRM y cómo elegir el correcto",
-    summary:
-      "Qué es un CRM, qué problemas resuelve y qué criterios usar para elegir el que su equipo comercial sí va a adoptar.",
-    label: "Selección de soluciones",
-    author: "Equipo Cyrrus",
-    published: "Diciembre 2026",
-    url: "/perspectivas",
-    image: "/assets/decoracion/1785866224151.jpg",
-  },
-  {
-    id: "post-8",
-    title: "Resistencia al cambio: causas y cómo superarla",
-    summary:
-      "Por qué las personas se resisten al cambio en una organización y qué hacer para que lo nuevo se adopte y se sostenga.",
-    label: "Gestión del cambio",
-    author: "Equipo Cyrrus",
-    published: "Diciembre 2026",
-    url: "/perspectivas",
-    image: "/assets/decoracion/IMG_20230302_112828.jpg",
   },
   {
     id: "post-9",

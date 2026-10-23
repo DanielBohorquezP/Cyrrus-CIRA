@@ -4124,6 +4124,173 @@
           "url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/introduction"
         }
       ]
+    },
+    "que-es-un-crm-y-como-elegir-el-correcto": {
+      "title": "Qué es un CRM y cómo elegir el correcto para su empresa",
+      "seoTitle": "Qué es un CRM y cómo elegir el correcto",
+      "label": "Selección de software",
+      "excerpt": "Qué es un CRM, qué tipos hay según IBM, qué riesgos reconoce el propio fabricante de tecnología y qué debe decidir la gerencia antes de elegir uno.",
+      "metaDescription": "Qué es un CRM, qué tipos existen, qué riesgos tiene y cómo elegir el correcto. Criterios para la gerencia antes de comprar, con fuentes de IBM y Microsoft.",
+      "intro": "Un CRM suele comprarse como una herramienta de ventas y terminar siendo un sistema que toda la empresa debe usar. Por eso conviene decidir primero qué proceso se quiere ordenar y quién lo va a usar, y solo después comparar productos.",
+      "keyTakeaways": [
+        "Según IBM, un CRM es un conjunto de tecnologías integradas para documentar, dar seguimiento y gestionar las relaciones de una organización con clientes actuales y potenciales.",
+        "IBM distingue tres tipos: operativo (ventas, servicio y marketing), analítico (análisis de grandes volúmenes de datos) y colaborativo (datos de clientes compartidos entre equipos).",
+        "IBM advierte dos riesgos: la adopción, porque el personal necesita capacitación o puede resistirse, y la dependencia del proveedor, porque cambiar de proveedor puede aumentar mucho los costos."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Qué CRM le conviene a su equipo comercial?",
+          "description": "Partimos de su proceso comercial y de cómo se conecta con el ERP, y comparamos opciones sin atarnos a un proveedor.",
+          "checklist": [
+            "Selección independiente del CRM",
+            "Criterios de decisión para la gerencia"
+          ],
+          "ctaLabel": "Ver selección de CRM",
+          "imageAlt": "Consultor trabajando frente a un tablero con diagramas de procesos"
+        },
+        {
+          "title": "Que el CRM sí se use",
+          "description": "Acompañamos la adopción: capacitación por rol, seguimiento de uso y apoyo de la dirección.",
+          "checklist": [
+            "Plan de adopción por rol",
+            "Seguimiento de uso después de la salida en vivo"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Consultor con computador portátil frente a un tablero de procesos"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Una empresa crece y los datos de clientes quedan repartidos entre hojas de cálculo, correos y la memoria de cada vendedor. Para eso se compra un CRM. Esta guía explica qué es, qué tipos hay, qué riesgos reconocen las fuentes y qué debe revisar la gerencia antes de elegir."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: las definiciones, los tipos y los riesgos vienen de IBM y de la documentación de Microsoft, citadas al final. Los criterios de elección son criterio de Cyrrus, no resultados de un estudio. No incluimos cifras de retorno porque no tenemos una fuente primaria que las respalde."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es un CRM?"
+        },
+        {
+          "type": "p",
+          "text": "CRM significa gestión de las relaciones con los clientes. IBM lo define como un conjunto de tecnologías integradas para documentar, dar seguimiento y gestionar las relaciones de una organización con clientes actuales y potenciales. En la documentación de Dynamics 365 Sales, Microsoft lo describe como la herramienta para llevar las cuentas y los contactos, llevar una venta desde el cliente potencial hasta el pedido, crear listas y campañas de marketing y seguir los casos de servicio."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué tipos de CRM existen?"
+        },
+        {
+          "type": "p",
+          "text": "IBM distingue tres tipos, que no son excluyentes:"
+        },
+        {
+          "type": "table",
+          "text": "Tipos de CRM según IBM",
+          "columns": [
+            "Tipo",
+            "Para qué sirve",
+            "Detalle que señala IBM"
+          ],
+          "rows": [
+            [
+              "Operativo",
+              "Interacciones con clientes: automatización de ventas, servicio y marketing",
+              "Es el más común; su éxito depende de la captura de datos de la organización"
+            ],
+            [
+              "Analítico",
+              "Ordenar grandes volúmenes de datos para ver tendencias, canales y preferencias",
+              "Más adecuado para organizaciones medianas y grandes; puede requerir personal con habilidades específicas"
+            ],
+            [
+              "Colaborativo",
+              "Compartir datos de clientes entre los equipos",
+              "También llamado estratégico; útil si la empresa opera en varias sedes"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "IBM menciona además que un CRM puede instalarse en la propia empresa, usarse en la nube o personalizarse."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué problemas resuelve?"
+        },
+        {
+          "type": "p",
+          "text": "Según IBM, un CRM permite seguir los clientes potenciales y el embudo de ventas en un solo tablero, proyectar ventas, gestionar la comunicación con los prospectos y analizar la frecuencia, el volumen y el resultado de los seguimientos. IBM también atribuye beneficios como mejor segmentación de clientes, más retención y menos tiempo buscando información. Son beneficios descritos por la fuente; el resultado de cada empresa depende de cómo lo use."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué riesgos reconocen las fuentes?"
+        },
+        {
+          "type": "p",
+          "text": "IBM señala tres. Primero, la adopción: el personal debe capacitarse o puede resistirse al nuevo sistema, y la dirección comercial es clave para que se use. Segundo, el proveedor: cambiar de proveedor puede aumentar mucho los costos. Tercero, el tamaño: las estimaciones de costo y beneficio son menos precisas en proyectos grandes."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo elegir el CRM correcto?"
+        },
+        {
+          "type": "p",
+          "text": "Cinco criterios, de criterio de Cyrrus. Primero, el proceso: describa cómo vende hoy y qué quiere cambiar, antes de ver productos. Segundo, los usuarios: elija pensando en quien lo va a usar cada día, no en quien lo compra. Tercero, la integración: defina qué datos deben compartirse con el ERP y la facturación. Cuarto, el costo total a varios años: licencias, implementación, integraciones y capacitación. Quinto, la salida: pregunte cómo se exportan los datos si algún día cambia de proveedor."
+        },
+        {
+          "type": "p",
+          "text": "Si ya está comparando productos, vea la comparativa de Salesforce, HubSpot y Dynamics 365.",
+          "links": [
+            {
+              "text": "la comparativa de Salesforce, HubSpot y Dynamics 365",
+              "href": "/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la gerencia?"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro decisiones, de criterio de Cyrrus. Primero, quién es el dueño del CRM en la empresa y quién responde por la calidad de sus datos. Segundo, qué indicadores comerciales se van a sacar de él y quién los revisa. Tercero, cómo se conecta con el ERP para que cliente, pedido y factura no se capturen dos veces. Cuarto, cómo se mide que el equipo lo está usando."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus seleccionamos el CRM a partir de su proceso comercial y de su ERP, sin vender un producto propio. Conozca la selección de CRM.",
+          "links": [
+            {
+              "text": "la selección de CRM",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si no sabe por dónde empezar, solicite una sesión de diagnóstico gratuita con nuestro equipo.",
+          "links": [
+            {
+              "text": "solicite una sesión de diagnóstico gratuita",
+              "href": "/diagnostico"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "IBM. ¿Qué es la gestión de las relaciones con los clientes (CRM)?",
+          "url": "https://www.ibm.com/think/topics/crm"
+        },
+        {
+          "label": "Microsoft Learn. Welcome to Dynamics 365 Sales",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/sales/overview"
+        }
+      ]
     }
   }
 }
