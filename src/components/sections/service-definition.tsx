@@ -1,4 +1,5 @@
-import { Reveal } from "@/components/ui/reveal";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { cn } from "@/lib/utils";
 
 interface DefinitionPoint {
@@ -32,42 +33,45 @@ export function ServiceDefinition({
   className,
 }: ServiceDefinitionProps) {
   return (
-    <section className={cn("w-full bg-background py-20 md:py-28", className)}>
-      <div className="mx-auto max-w-3xl px-6 md:px-12">
-        <Reveal className="text-center">
-          <span className="text-base font-bold uppercase tracking-wider text-blue">
-            {eyebrow}
-          </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            {title}
-          </h2>
-          <p className="mt-5 text-base leading-relaxed text-gray">{description}</p>
-          {link && (
-            <a
-              href={link.href}
-              className="mt-6 inline-block text-sm font-semibold text-blue underline-offset-4 hover:underline"
-            >
-              {link.label}
-            </a>
-          )}
+    <section className={cn("section-y w-full bg-mist", className)}>
+      <div className="container-site">
+        <Reveal className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,380px),1fr))] gap-x-24 gap-y-10">
+          <div>
+            <Eyebrow>{eyebrow}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{title}</h2>
+          </div>
+          <div>
+            <p className="t-lead text-slate">{description}</p>
+            {link && (
+              <a
+                href={link.href}
+                className="mt-6 inline-block font-heading text-sm font-medium text-blue hover:text-navy"
+              >
+                {link.label}
+              </a>
+            )}
+          </div>
         </Reveal>
 
         {pointsTitle && points && points.length > 0 && (
-          <Reveal delay={0.1} className="mt-14">
-            <h3 className="text-center text-xl font-semibold text-navy sm:text-2xl">
-              {pointsTitle}
-            </h3>
-            <ul className="mt-8 space-y-5">
+          <div className="mt-20">
+            <Reveal>
+              <h3 className="border-b-2 border-navy pb-5 font-heading text-sm font-semibold uppercase tracking-[0.12em] text-navy">
+                {pointsTitle}
+              </h3>
+            </Reveal>
+            <RevealGroup className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,210px),1fr))]">
               {points.map((point) => (
-                <li key={point.title} className="border-l-2 border-cyan pl-5">
-                  <span className="block text-base font-semibold text-navy">{point.title}</span>
-                  <span className="mt-1 block text-base leading-relaxed text-gray">
-                    {point.description}
-                  </span>
-                </li>
+                <RevealItem
+                  key={point.title}
+                  className="border-b border-line-2 py-8 pr-7"
+                >
+                  <p className="font-heading text-lg font-semibold text-navy">{point.title}</p>
+                  <p className="mt-3 text-base leading-[1.65] text-slate">{point.description}</p>
+                </RevealItem>
               ))}
-            </ul>
-          </Reveal>
+            </RevealGroup>
+          </div>
         )}
       </div>
     </section>

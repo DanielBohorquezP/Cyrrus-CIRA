@@ -1,17 +1,17 @@
+import * as React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { langPath, useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
-import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import { BorderButton } from "@/components/ui/border-button";
+import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { CiraSocialProof } from "@/components/sections/cira-social-proof";
 import { CiraFaq } from "@/components/sections/cira-faq";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
-import { CircularCarousel } from "@/components/ui/circular-carousel";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { Reveal } from "@/components/ui/reveal";
 
 interface Phase {
   id: string;
@@ -26,7 +26,7 @@ interface Phase {
 
 const phaseAssets: Record<string, { href: string; image: string }> = {
   construir: { href: "/metodo-cira/estrategia", image: "/assets/decoracion/Portada.jpg" },
-  identificar: { href: "/metodo-cira/seleccion-de-soluciones", image: "/assets/decoracion/evento-panel-universidad-bolivar.jpeg" },
+  identificar: { href: "/metodo-cira/seleccion-de-soluciones", image: "/assets/decoracion/IMG_20230228_091017.jpg" },
   realizar: { href: "/metodo-cira/gestion-de-proyectos", image: "/assets/decoracion/IMG_20200313_092701647.jpg" },
   adoptar: { href: "/metodo-cira/gestion-del-cambio", image: "/assets/decoracion/1785866331023.jpg" },
 };
@@ -37,35 +37,6 @@ export default function MetodoCira() {
   const phases = (t("phases", { returnObjects: true }) as Phase[]).map((p) => ({
     ...p,
     ...phaseAssets[p.id],
-  }));
-
-  const stickyContent = phases.map((p) => ({
-    title: p.title,
-    description: `${p.problem} ${p.how}`,
-    content: (
-      <div
-        className="relative flex h-full w-full flex-col justify-between overflow-hidden p-6"
-        style={{
-          backgroundImage: `linear-gradient(to top, rgba(6,17,41,0.92), rgba(6,17,41,0.4)), url(${p.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="flex items-center gap-3">
-          <span className="text-xs font-semibold uppercase tracking-wider text-white/80">
-            {p.service}
-          </span>
-        </div>
-        <div>
-          <p className="text-base leading-relaxed text-white/90">{p.outcome}</p>
-          <BorderButton asChild variant="light" size="sm" className="mt-4" dot>
-            <Link to={langPath(p.href, lang)}>
-              {p.ctaText}
-            </Link>
-          </BorderButton>
-        </div>
-      </div>
-    ),
   }));
 
   const siteUrl = "https://cyrruscs.com";
@@ -124,35 +95,107 @@ export default function MetodoCira() {
     ],
   });
 
+  const [titleLead, ...titleRest] = t("hero.title").split("? ");
+  const labels = {
+    problem: t("phaseLabels.problem"),
+    how: t("phaseLabels.how"),
+    outcome: t("phaseLabels.outcome"),
+  };
+
   return (
     <>
       <SiteHeader />
       <main id="contenido">
-      <IntelligenceLabHero
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        description={t("hero.description")}
-        showVisual={false}
-        visual={
-          <CircularCarousel
-            items={phases.map((p) => ({
-              id: p.id,
-              tag: p.letter,
-              title: p.title.split(" ")[0],
-              description: p.outcome,
-            }))}
-          />
-        }
-      >
-        <span className="inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-cyan backdrop-blur-sm">
-          {t("hero.badge")}
-        </span>
-        <div className="mt-6">
-          <ContactCtaButton variant="light" label={lang === "en" ? "Schedule a call" : "Agendar conversación"} />
-        </div>
-      </IntelligenceLabHero>
+      <AnimatedNavyBackground className="pt-[clamp(72px,9vw,120px)]">
+        <div className="container-site">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] items-end gap-x-24 gap-y-10">
+            <div>
+              <div className="hero-rise" style={{ "--hero-rise-y": "12px" } as React.CSSProperties}>
+                <Eyebrow tone="dark">{t("hero.eyebrow")}</Eyebrow>
+              </div>
+              <h1
+                className="hero-rise mt-7 font-heading text-[clamp(40px,5vw,68px)] font-bold leading-[1.05] tracking-[-0.03em] text-balance text-white"
+                style={{ "--hero-rise-y": "16px", "--hero-rise-delay": "50ms" } as React.CSSProperties}
+              >
+                {titleRest.length > 0 ? (
+                  <>
+                    {`${titleLead}? `}
+                    <span className="font-light text-white/80">{titleRest.join("? ")}</span>
+                  </>
+                ) : (
+                  titleLead
+                )}
+              </h1>
+            </div>
+            <div className="hero-rise" style={{ "--hero-rise-y": "16px", "--hero-rise-delay": "100ms" } as React.CSSProperties}>
+              <p className="t-lead text-white/80">{t("hero.description")}</p>
+              <div className="mt-8">
+                <ContactCtaButton variant="light" label={lang === "en" ? "Schedule a call" : "Agendar conversación"} />
+              </div>
+            </div>
+          </div>
 
-      <StickyScroll content={stickyContent} eyebrow={t("hero.eyebrow")} />
+          <nav
+            aria-label={t("hero.eyebrow")}
+            className="mt-20 grid grid-cols-2 border-t border-white/20 md:mt-24 md:grid-cols-4"
+          >
+            {phases.map((p, i) => (
+              <a
+                key={p.id}
+                href={`#${p.id}`}
+                className="block border-r border-white/15 pb-10 pr-6 pt-7 text-white transition-[background-color] duration-150 ease-out hover:bg-white/[0.04]"
+              >
+                <span className="block pl-[clamp(0px,1.5vw,24px)] font-heading text-[clamp(72px,11vw,168px)] font-semibold leading-[0.9] tracking-[-0.05em]">
+                  {p.letter}
+                </span>
+                <span className="mt-5 block pl-[clamp(0px,1.5vw,24px)] font-heading text-xs font-semibold uppercase tracking-[0.14em] text-sky">
+                  {`${String(i + 1).padStart(2, "0")} · ${p.service}`}
+                </span>
+              </a>
+            ))}
+          </nav>
+        </div>
+      </AnimatedNavyBackground>
+
+      {phases.map((p, i) => (
+        <section
+          key={p.id}
+          id={p.id}
+          className={`section-y scroll-mt-20 border-b border-line ${i % 2 ? "bg-mist" : "bg-background"}`}
+        >
+          <Reveal className="container-site grid grid-cols-1 gap-x-20 gap-y-12 lg:grid-cols-3">
+            <div>
+              <span className="cira-initial-outline-lg block font-heading text-[clamp(120px,14vw,200px)] font-bold leading-[0.85] tracking-[-0.05em] text-light-blue">
+                {p.letter}
+              </span>
+              <Eyebrow className="mt-8">{`${String(i + 1).padStart(2, "0")} · ${p.service}`}</Eyebrow>
+              <h2 className="mt-3.5 font-heading text-[clamp(28px,3vw,40px)] font-bold leading-[1.12] tracking-[-0.025em] text-navy">
+                {p.title}
+              </h2>
+              <Link
+                to={langPath(p.href, lang)}
+                className="mt-7 inline-block border-b border-navy pb-1 font-heading text-sm font-medium text-navy hover:border-blue hover:text-blue"
+              >
+                {`${p.ctaText} →`}
+              </Link>
+            </div>
+            <div className="grid content-end gap-10 sm:grid-cols-3 lg:col-span-2">
+              <div className="border-t-2 border-navy pt-6">
+                <p className="font-heading text-xs font-semibold uppercase tracking-[0.14em] text-navy">{labels.problem}</p>
+                <p className="mt-4 text-[17px] leading-[1.7] text-pretty text-slate">{p.problem}</p>
+              </div>
+              <div className="border-t-2 border-navy pt-6">
+                <p className="font-heading text-xs font-semibold uppercase tracking-[0.14em] text-navy">{labels.how}</p>
+                <p className="mt-4 text-[17px] leading-[1.7] text-pretty text-slate">{p.how}</p>
+              </div>
+              <div className="border-t-2 border-blue pt-6">
+                <p className="font-heading text-xs font-semibold uppercase tracking-[0.14em] text-blue">{labels.outcome}</p>
+                <p className="mt-4 font-heading text-lg font-medium leading-[1.55] text-pretty text-navy">{p.outcome}</p>
+              </div>
+            </div>
+          </Reveal>
+        </section>
+      ))}
 
       <CiraSocialProof />
 

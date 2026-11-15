@@ -1,4 +1,3 @@
-import { CheckCircle2, ClipboardCheck, MessagesSquare, Scale } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -9,6 +8,10 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { FaqSection } from "@/components/sections/faq-section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { CardGrid } from "@/components/ui/card-grid";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SectionHeader } from "@/components/ui/section-header";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
@@ -26,7 +29,6 @@ interface Faq {
 }
 
 const SERVICE = "metodo-cira-seleccion-soluciones";
-const sessionIcons = [MessagesSquare, Scale, ClipboardCheck];
 
 export default function Diagnostico() {
   const { t } = useTranslation("diagnostico");
@@ -99,100 +101,64 @@ export default function Diagnostico() {
           <ContactCtaButton variant="light" label={t("hero.ctaLabel")} prefill={{ servicio: SERVICE }} />
         </PageHero>
 
-        <section className="w-full bg-background py-20 md:py-28">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-10 md:px-12">
-            <Reveal className="md:col-span-5">
-              <span className="block text-base font-bold uppercase tracking-wider text-blue">{t("who.eyebrow")}</span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">{t("who.title")}</h2>
+        <section className="section-y w-full bg-background">
+          <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))] items-start gap-x-24 gap-y-12">
+            <Reveal>
+              <Eyebrow>{t("who.eyebrow")}</Eyebrow>
+              <h2 className="t-h2 mt-5 text-navy">{t("who.title")}</h2>
             </Reveal>
-            <Reveal delay={0.1} className="md:col-span-7">
-              <ul className="space-y-4">
-                {whoItems.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8 rounded-2xl border border-border bg-card p-6">
-                <h3 className="text-base font-semibold text-navy">{t("who.notTitle")}</h3>
-                <p className="mt-2 text-base leading-relaxed text-gray">{t("who.notText")}</p>
-              </div>
-            </Reveal>
+            <div>
+              <RuledBullets items={whoItems} />
+              <Reveal delay={0.1}>
+                <div className="mt-10 border-t-2 border-navy pt-6">
+                  <h3 className="font-heading text-xl font-semibold text-navy">{t("who.notTitle")}</h3>
+                  <p className="mt-3 text-[17px] leading-[1.7] text-slate">{t("who.notText")}</p>
+                </div>
+              </Reveal>
+            </div>
           </div>
         </section>
 
-        <section className="w-full bg-light-blue/40 py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
-            <Reveal className="max-w-2xl">
-              <span className="block text-base font-bold uppercase tracking-wider text-blue">{t("session.eyebrow")}</span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">{t("session.title")}</h2>
-            </Reveal>
-            <RevealGroup className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-              {sessionSteps.map((step, i) => {
-                const Icon = sessionIcons[i];
-                return (
-                  <RevealItem key={step.title} className="rounded-2xl border border-border bg-card p-7">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
-                      <Icon className="h-5 w-5 text-cyan" />
-                    </div>
-                    <span className="mt-5 block text-xs font-semibold uppercase tracking-wider text-blue">
-                      {step.time}
-                    </span>
-                    <h3 className="mt-1 text-lg font-semibold text-navy">{step.title}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-gray">{step.description}</p>
-                  </RevealItem>
-                );
-              })}
-            </RevealGroup>
-          </div>
-        </section>
-
-        <section className="w-full bg-background py-20 md:py-28">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-10 md:px-12">
-            <Reveal className="md:col-span-5">
-              <span className="block text-base font-bold uppercase tracking-wider text-blue">{t("take.eyebrow")}</span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">{t("take.title")}</h2>
-            </Reveal>
-            <Reveal delay={0.1} className="md:col-span-7">
-              <ul className="space-y-4">
-                {takeItems.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
-        </section>
-
-        <section className="w-full bg-light-blue/40 py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
-            <Reveal className="max-w-2xl">
-              <span className="block text-base font-bold uppercase tracking-wider text-blue">{t("how.eyebrow")}</span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">{t("how.title")}</h2>
-            </Reveal>
-            <RevealGroup className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-              {howSteps.map((step, i) => (
-                <RevealItem key={step.title} className="rounded-2xl border border-border bg-card p-7">
-                  <span className="block text-xs font-semibold uppercase tracking-wider text-blue">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="mt-1 text-lg font-semibold text-navy">{step.title}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-gray">{step.description}</p>
+        <section className="section-y w-full bg-mist">
+          <div className="container-site">
+            <SectionHeader eyebrow={t("session.eyebrow")} title={t("session.title")} />
+            <RevealGroup
+              as="ol"
+              className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))] gap-x-16 gap-y-12"
+            >
+              {sessionSteps.map((step) => (
+                <RevealItem as="li" key={step.title} className="border-t-2 border-navy pt-6">
+                  {step.time && <Eyebrow as="span">{step.time}</Eyebrow>}
+                  <h3 className="mt-3 font-heading text-xl font-semibold leading-snug text-navy">{step.title}</h3>
+                  <p className="mt-3.5 text-[17px] leading-[1.7] text-slate">{step.description}</p>
                 </RevealItem>
               ))}
             </RevealGroup>
-            <Reveal delay={0.1} className="mt-10">
-              <p className="text-base leading-relaxed text-gray">
+          </div>
+        </section>
+
+        <section className="section-y w-full bg-background">
+          <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))] items-start gap-x-24 gap-y-12">
+            <Reveal>
+              <Eyebrow>{t("take.eyebrow")}</Eyebrow>
+              <h2 className="t-h2 mt-5 text-navy">{t("take.title")}</h2>
+            </Reveal>
+            <RuledBullets items={takeItems} />
+          </div>
+        </section>
+
+        <section className="section-y w-full bg-mist">
+          <div className="container-site">
+            <SectionHeader eyebrow={t("how.eyebrow")} title={t("how.title")} />
+            <CardGrid className="mt-16" numbered min="sm" items={howSteps} />
+            <Reveal delay={0.1} className="mt-14">
+              <p className="text-base text-slate">
                 {`${t("how.toolText")} `}<Link
                   to={langPath("/herramientas/test-preparacion-erp", lang)}
-                  className="text-navy underline underline-offset-2"
+                  className="font-bold text-blue hover:text-navy"
                 >
                   {t("how.toolLink")}
                 </Link>
-                .
               </p>
               <div className="mt-6">
                 <ContactCtaButton label={t("how.ctaLabel")} prefill={{ servicio: SERVICE }} />

@@ -22,21 +22,25 @@ export const solutionCategoryImages: Record<string, string> = {
   "seleccion-de-software": "/assets/decoracion/1785866224286.jpg",
   "tecnologias-avanzadas": "/assets/decoracion/1785872413278.jpg",
   "infraestructura-tecnologica": "/assets/decoracion/IMG_20230705_122802.jpg",
+  ciberseguridad: "/assets/decoracion/IMG_20230228_082632.jpg",
 };
 
 export const solutionDetailImages: Record<string, { image: string; imagePosition?: string }> = {
   "tecnologias-avanzadas": { image: "/assets/decoracion/Cascosss.jpg", imagePosition: "center 42%" },
   "infraestructura-tecnologica": { image: "/assets/decoracion/IMG_20230227_164308.jpg" },
+  ciberseguridad: { image: "/assets/decoracion/IMG_20230228_082632.jpg" },
 };
 
 export const solutionItemIcons: Record<string, LucideIcon[]> = {
   "tecnologias-avanzadas": [Sparkles, Workflow, Bot, Link2],
   "infraestructura-tecnologica": [ShieldCheck, Cloud, Wifi, LifeBuoy],
+  ciberseguridad: [ShieldCheck, Workflow, Link2],
 };
 
 export const solutionRelatedIcons: Record<string, LucideIcon[]> = {
   "tecnologias-avanzadas": [FileCheck, Bot, HeartHandshake],
   "infraestructura-tecnologica": [Network, ClipboardCheck, HeartHandshake],
+  ciberseguridad: [Network, LifeBuoy, ClipboardCheck, HeartHandshake],
 };
 
 export const solutionsClosingIcon = HeartHandshake;
@@ -45,7 +49,7 @@ export const solutionsClosingIcon = HeartHandshake;
 // "seleccion-de-software" (formerly "tecnologias-maduras") moved to its own
 // bespoke page — see SeleccionDeSoftware.tsx — because it now has 8 distinct
 // sections the generic template doesn't support.
-export const solutionSlugs = ["tecnologias-avanzadas", "infraestructura-tecnologica"] as const;
+export const solutionSlugs = ["tecnologias-avanzadas", "infraestructura-tecnologica", "ciberseguridad"] as const;
 
 // Product slugs for the 4 subpages under Selección de Software.
 export const productSlugs = ["erp", "crm", "hcm", "eam"] as const;

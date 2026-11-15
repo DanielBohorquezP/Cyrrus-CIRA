@@ -6,7 +6,7 @@ import { langPath, useLang } from "@/lib/language";
 // order as servicesTabs.panels in home.json.
 const images = [
   "/assets/decoracion/IMG_20200313_092643427.webp",
-  "/assets/decoracion/evento-panel-universidad-bolivar.jpeg",
+  "/assets/decoracion/IMG_20230228_091017.jpg",
   "/assets/decoracion/IMG_20200313_092701647.jpg",
   "/assets/decoracion/1785866331023.jpg",
   "/assets/decoracion/Cyrrus.webp",

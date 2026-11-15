@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { langPath, useLang } from "@/lib/language";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { ShaderHero } from "@/components/ui/shader-hero";
-import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
+import { SectionHeader } from "@/components/ui/section-header";
 import { TransparentHeader } from "@/components/layout/transparent-header";
 import { HeroServicesTabs } from "@/components/sections/hero-services-tabs";
 import { TrustBar } from "@/components/sections/trust-bar";
@@ -71,29 +71,23 @@ export default function Home() {
           onPrimaryButtonClick={openWizard}
           secondaryButtonText={t("hero.secondaryButtonText")}
           secondaryButtonHref={langPath("/metodo-cira", lang)}
-          badgeText={t("hero.badgeText")}
+          metrics={t("trustBar.metrics", { returnObjects: true }) as { value: string; label: string }[]}
         />
       </div>
       <TrustBar />
-      <AnimatedNavyBackground
-        id="servicios"
-        className="cv-section px-6 py-14 md:px-12 [--cv-h:1000px]"
-      >
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-3xl">
-            <span className="text-sm font-bold uppercase tracking-wider text-cyan">
-              {t("servicesIntro.eyebrow")}
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
-              {t("servicesIntro.title")}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-white/80 md:text-lg">
-              {t("servicesIntro.description")}
-            </p>
+      <section id="servicios" className="cv-section section-y [--cv-h:1000px]">
+        <div className="container-site">
+          <SectionHeader
+            eyebrow={t("servicesIntro.eyebrow")}
+            title={t("servicesIntro.title")}
+            description={t("servicesIntro.description")}
+            align="start"
+          />
+          <div className="mt-20">
+            <HeroServicesTabs />
           </div>
-          <HeroServicesTabs />
         </div>
-      </AnimatedNavyBackground>
+      </section>
       <WhyCyrrus />
       <CyrrusAbout />
       <CiraJourney />
@@ -104,6 +98,7 @@ export default function Home() {
         eyebrow={t("faq.eyebrow")}
         title={t("faq.title")}
         faqs={faqs}
+        layout="split"
       />
       <PerspectivasPreview />
       <FinalCta />

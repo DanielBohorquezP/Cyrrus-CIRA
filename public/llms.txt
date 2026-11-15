@@ -9,6 +9,8 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 ## Método CIRA
 - [Metodología CIRA](https://cyrruscs.com/metodo-cira): las 4 fases del método.
 - [Estrategia](https://cyrruscs.com/metodo-cira/estrategia): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
+- [Estrategia de TI](https://cyrruscs.com/metodo-cira/estrategia/estrategia-de-ti): consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas con caso de negocio.
+- [Continuidad del negocio](https://cyrruscs.com/metodo-cira/estrategia/continuidad-del-negocio): consultoría en continuidad del negocio: BIA, RTO/RPO, plan de continuidad (BCP) y DRP probado.
 - [Selección de Soluciones](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones): cómo se selecciona tecnología con criterios definidos antes de mirar proveedores, sin sesgo comercial.
 - [Selección de Software](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software): evaluación y selección independiente de software empresarial — ERP, CRM, HCM y EAM.
 - [Selección de ERP](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): consultoría de selección de ERP 100% agnóstica de proveedor.
@@ -17,6 +19,7 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Selección de EAM](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam): selección de plataformas de gestión de activos y mantenimiento.
 - [Tecnologías Avanzadas](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas): selección de automatización, IA y analítica avanzada.
 - [Infraestructura Tecnológica](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica): selección de ciberseguridad, redes, nube y continuidad de negocio.
+- [Ciberseguridad](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/ciberseguridad): consultoría en ciberseguridad independiente: diagnóstico de riesgo, controles y selección de proveedores.
 - [Gerencia de Proyectos](https://cyrruscs.com/metodo-cira/gestion-de-proyectos): PMO externo para la ejecución de proyectos de implementación.
 - [Gestión del Cambio](https://cyrruscs.com/metodo-cira/gestion-del-cambio): adopción organizacional y capacitación.
 
@@ -25,6 +28,8 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Automatización y Agentes IA](https://cyrruscs.com/intelligence-lab/automatizaciones-desarrollo): automatización de procesos, agentes de IA y desarrollos a la medida.
 - [Arquitectura de IA](https://cyrruscs.com/intelligence-lab/arquitectura-de-ia): diseño técnico que conecta modelos, datos y sistemas empresariales.
 - [Gobierno de IA](https://cyrruscs.com/intelligence-lab/gobierno-de-ia): políticas, roles y controles sobre el uso de IA en la organización.
+- [Gobierno de datos](https://cyrruscs.com/intelligence-lab/gobierno-de-datos): consultoría en gobierno de datos: dueños, reglas de calidad y controles de datos para IA.
+- [Estrategia de IA](https://cyrruscs.com/intelligence-lab/estrategia-de-ia): consultoría en estrategia de IA: casos de uso priorizados, hoja de ruta, gobierno y medición.
 
 ## Presencia Digital
 - [Presencia Digital](https://cyrruscs.com/presencia-digital): desarrollo web corporativo y SEO tratados como activos del negocio.
@@ -59,6 +64,12 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Integrar el ERP con el CRM: cuándo basta un conector nativo y cuándo no](https://cyrruscs.com/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware): qué sincroniza el conector de Microsoft entre Business Central y Dynamics 365 Sales, sus límites y qué decide la gerencia.
 - [Costo total de un CRM: qué sumar además de la licencia](https://cyrruscs.com/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia): precios publicados por Salesforce, HubSpot y Microsoft, costos aparte que figuran en sus páginas y cómo armar el total a varios años.
 - [Gobernanza y deduplicación de datos en el CRM](https://cyrruscs.com/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm): cómo detectan duplicados Dynamics 365 y HubSpot, sus límites y qué reglas de gobierno debe definir la gerencia.
+- [Qué es la gobernanza de IA y qué marcos usar: NIST, OCDE e ISO/IEC 42001](https://cyrruscs.com/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar): Qué publican el NIST, la OCDE y la IEC sobre cómo gestionar la IA, en qué se diferencian sus tres referencias y qué debe decidir la gerencia antes de elegir una.
+- [Regulación de la IA en 2026: qué exigen la Unión Europea, Estados Unidos y España](https://cyrruscs.com/perspectivas/regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana): Qué dicen las fuentes oficiales sobre el Reglamento de IA europeo, dos leyes estatales de EE. UU., la agencia de supervisión de España y la política nacional de Colombia.
+- [ISO/IEC 42001: qué es la norma de gestión de IA y a quién aplica](https://cyrruscs.com/perspectivas/iso-iec-42001-que-es-y-a-quien-aplica): Qué publica la IEC sobre ISO/IEC 42001:2023, a quién aplica, qué se sabe de su certificación y qué no se puede afirmar sin leer el texto completo.
+- [Modelo de madurez de gobernanza de IA: qué mide y cómo usarlo](https://cyrruscs.com/perspectivas/modelo-de-madurez-de-gobernanza-de-ia): Cómo está construido el modelo de madurez de IA responsable que publicó Microsoft, qué reglas de uso da su propio documento y qué debe decidir la gerencia.
+- [Cumplimiento de IA: qué evidencia debe poder mostrar la empresa](https://cyrruscs.com/perspectivas/cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa): Qué obligaciones documenta el Reglamento de IA europeo para proveedores y desplegadores, qué aclara la Comisión sobre alfabetización en IA y qué evidencia conviene guardar.
+- [Herramientas y plataformas de gobernanza de IA: cómo evaluarlas antes de comprar](https://cyrruscs.com/perspectivas/herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas): Qué debería poder apoyar una herramienta o plataforma de gobernanza de IA según lo que documentan el Reglamento europeo, el NIST y Microsoft, y qué preguntar al proveedor.
 - [Test de preparación para un ERP](https://cyrruscs.com/herramientas/test-preparacion-erp): diez preguntas sobre procesos, datos, equipo, presupuesto y patrocinio, con resultado inmediato.
 - [Calculadora de costo total de un ERP](https://cyrruscs.com/herramientas/calculadora-costo-erp): costo a varios años con licencias, implementación, integraciones, equipo interno y contingencia; supuestos editables.
 - [Plantilla de RFP para un ERP (Excel)](https://cyrruscs.com/descargas/plantilla-rfp-erp.xlsx): requerimientos por módulo, costo total por proveedor, matriz de evaluación ponderada y calendario; sin precios ni pesos de ejemplo.
@@ -66,6 +77,12 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Salesforce vs HubSpot vs Dynamics 365: qué CRM elegir](https://cyrruscs.com/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm): precios publicados, fortalezas y para qué equipo comercial conviene cada CRM.
 - [Fin de venta de Salesforce CPQ: qué opciones tiene](https://cyrruscs.com/perspectivas/fin-de-venta-salesforce-cpq-opciones): qué dice Salesforce, qué cambia para clientes actuales y rutas: quedarse, migrar o cambiar.
 - [Gerencia de proyectos: cuándo contratar una PMO externa](https://cyrruscs.com/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.
+- [Plan de continuidad del negocio: qué es, BIA, RTO y RPO](https://cyrruscs.com/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo): BCP vs. DRP vs. plan de contingencia, qué es el BIA y qué son el RTO y el RPO según NIST SP 800-34 e ISO 22301.
+- [Estrategia de TI: qué es, qué incluye y cómo se construye](https://cyrruscs.com/perspectivas/estrategia-de-ti-que-es-y-que-incluye): las cinco piezas de una estrategia de TI, qué dicen ISO/IEC 38500 y COBIT 2019 y los pasos para construirla.
+- [Cómo elegir una consultoría de ciberseguridad](https://cyrruscs.com/perspectivas/como-elegir-una-consultoria-de-ciberseguridad): tipos de servicio, las seis funciones del NIST CSF 2.0, ISO/IEC 27001, criterios para comparar propuestas y qué preguntar.
+- [Gobierno de datos: qué es, qué decide la dirección y cómo empezar](https://cyrruscs.com/perspectivas/gobierno-de-datos-que-es-y-como-empezar): ISO/IEC 38505-1:2026, diferencia con gestión y calidad de datos, cinco decisiones de la dirección y siete pasos para empezar.
+- [Estrategia de IA para empresas: cómo construir la hoja de ruta](https://cyrruscs.com/perspectivas/estrategia-de-ia-para-empresas-hoja-de-ruta): priorización de casos de uso (impacto, viabilidad, datos, riesgo), NIST AI RMF 1.0 y siete pasos de la hoja de ruta.
+- [Implementación de ERP con PMO: cómo gobernar el proyecto](https://cyrruscs.com/perspectivas/implementacion-de-erp-con-pmo-como-gobernar-el-proyecto): qué hace una PMO en un ERP, las seis áreas de gobierno de la guía de Microsoft, comité de dirección, contrato con el integrador y qué se recorta primero.
 
 ## Casos de éxito
 - [Caso 3 Castillos](https://cyrruscs.com/experiencia/3-castillos): empresa de alimentos fundada en 1861; planeación estratégica de TI (nov. 2020), 92 requerimientos de negocio, selección de infraestructura, ERP y CRM, y salida en vivo del ERP en octubre de 2021 tras 8 meses de implementación.
@@ -80,6 +97,8 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Home](https://cyrruscs.com/en): strategic consulting and digital transformation with AI, via the CIRA methodology.
 - [CIRA Method](https://cyrruscs.com/en/metodo-cira): the 4 phases of the method — Construct, Identify, Realize, Adopt.
 - [Strategy](https://cyrruscs.com/en/metodo-cira/estrategia): business and IT strategy consulting, CTO/CIO as a Service.
+- [IT Strategy](https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-de-ti): IT strategy consulting services: target architecture and a portfolio of initiatives with business cases.
+- [Business Continuity](https://cyrruscs.com/en/metodo-cira/estrategia/continuidad-del-negocio): business continuity consulting services: BIA, RTO/RPO, continuity plan (BCP) and tested DRP.
 - [Solution Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones): how technology is selected against criteria defined before looking at vendors, with no commercial bias.
 - [Software Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software): independent evaluation and selection of enterprise software — ERP, CRM, HCM, and EAM.
 - [ERP Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): 100% vendor-agnostic ERP selection consulting.
@@ -88,12 +107,15 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [EAM Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam): selection of asset management and maintenance platforms.
 - [Advanced Technologies](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas): selection of automation, AI, and advanced analytics.
 - [Technology Infrastructure](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica): selection of cybersecurity, networking, cloud, and business continuity.
+- [Cybersecurity](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/ciberseguridad): independent cybersecurity consulting services: risk assessment, controls and vendor selection.
 - [Project Management](https://cyrruscs.com/en/metodo-cira/gestion-de-proyectos): external PMO for implementation project execution.
 - [Change Management](https://cyrruscs.com/en/metodo-cira/gestion-del-cambio): organizational adoption and training.
 - [Cyrrus Intelligence Lab](https://cyrruscs.com/en/intelligence-lab): enterprise artificial intelligence consulting — governance, architecture, and automation.
 - [Automation & AI Agents](https://cyrruscs.com/en/intelligence-lab/automatizaciones-desarrollo): process automation, AI agents, and custom development.
 - [AI Architecture](https://cyrruscs.com/en/intelligence-lab/arquitectura-de-ia): technical design connecting models, data, and enterprise systems.
 - [AI Governance](https://cyrruscs.com/en/intelligence-lab/gobierno-de-ia): policies, roles, and controls over AI use in the organization.
+- [Data Governance](https://cyrruscs.com/en/intelligence-lab/gobierno-de-datos): data governance consulting services: owners, quality rules and data controls for AI.
+- [AI Strategy](https://cyrruscs.com/en/intelligence-lab/estrategia-de-ia): AI strategy consulting services: prioritized use cases, roadmap, governance and measurement.
 - [Digital Presence](https://cyrruscs.com/en/presencia-digital): corporate web development and SEO treated as business assets.
 - [Web Development](https://cyrruscs.com/en/presencia-digital/desarrollo-web): fast, measurable corporate sites editable by the client's own team.
 - [SEO](https://cyrruscs.com/en/presencia-digital/seo): SEO positioning and visibility in AI answer engines (GEO).
@@ -130,6 +152,12 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [ERP and CRM integration: when a native connector is enough](https://cyrruscs.com/en/perspectivas/integrar-erp-y-crm-conector-nativo-o-middleware): what Microsoft's Business Central and Dynamics 365 Sales connector syncs, its limits and what leadership decides.
 - [Total cost of a CRM: what to add beyond the license](https://cyrruscs.com/en/perspectivas/costo-total-de-un-crm-que-sumar-ademas-de-la-licencia): prices published by Salesforce, HubSpot and Microsoft, separate costs noted on their pages and how to build the multi-year total.
 - [Data governance and deduplication in the CRM](https://cyrruscs.com/en/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm): how Dynamics 365 and HubSpot detect duplicates, their limits and which governance rules leadership must define.
+- [What is AI governance and which frameworks to use: NIST, OECD and ISO/IEC 42001](https://cyrruscs.com/en/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar): What NIST, the OECD and the IEC publish on managing AI, how the three references differ and what leadership should decide before picking one.
+- [AI regulation in 2026: what the European Union, the United States and Spain require](https://cyrruscs.com/en/perspectivas/regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana): What official sources say about the EU AI Act, two U.S. state laws, Spain’s supervisory agency and Colombia’s national policy.
+- [ISO/IEC 42001: what the AI management standard is and who it applies to](https://cyrruscs.com/en/perspectivas/iso-iec-42001-que-es-y-a-quien-aplica): What the IEC publishes about ISO/IEC 42001:2023, who it applies to, what is known about certification and what cannot be stated without reading the full text.
+- [AI governance maturity model: what it measures and how to use it](https://cyrruscs.com/en/perspectivas/modelo-de-madurez-de-gobernanza-de-ia): How the responsible AI maturity model published by Microsoft is built, what usage rules its own document gives and what leadership should decide.
+- [AI compliance: what evidence your company should be able to show](https://cyrruscs.com/en/perspectivas/cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa): What obligations the EU AI Act documents for providers and deployers, what the Commission clarifies on AI literacy and what evidence is worth keeping.
+- [AI governance tools and platforms: how to evaluate them before you buy](https://cyrruscs.com/en/perspectivas/herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas): What an AI governance tool or platform should be able to support per what the EU AI Act, NIST and Microsoft document, and what to ask the vendor.
 - [ERP readiness test](https://cyrruscs.com/en/herramientas/test-preparacion-erp): ten questions on processes, data, team, budget and sponsorship, with an instant result.
 - [ERP total cost calculator](https://cyrruscs.com/en/herramientas/calculadora-costo-erp): multi-year cost with licenses, implementation, integrations, internal team and contingency; editable assumptions.
 - [ERP RFP template (Excel)](https://cyrruscs.com/descargas/erp-rfp-template.xlsx): requirements by module, total cost by vendor, weighted evaluation matrix and calendar; no sample prices or weights.
@@ -137,6 +165,12 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Salesforce vs HubSpot vs Dynamics 365: which CRM to choose](https://cyrruscs.com/en/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm): published prices, strengths and which sales team each CRM suits.
 - [Salesforce CPQ end of sale: your options](https://cyrruscs.com/en/perspectivas/fin-de-venta-salesforce-cpq-opciones): what Salesforce says, what changes for current customers and the routes: stay, migrate or switch.
 - [Project management: when to hire an external PMO](https://cyrruscs.com/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): five signs your project needs external management and what to demand of it.
+- [Business continuity plan: what it is, BIA, RTO and RPO](https://cyrruscs.com/en/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo): BCP vs. DRP vs. contingency plan, what the BIA is and what RTO and RPO mean per NIST SP 800-34 and ISO 22301.
+- [IT strategy: what it is, what it includes and how to build one](https://cyrruscs.com/en/perspectivas/estrategia-de-ti-que-es-y-que-incluye): the five pieces of an IT strategy, what ISO/IEC 38500 and COBIT 2019 say and the steps to build it.
+- [How to choose a cybersecurity consulting firm](https://cyrruscs.com/en/perspectivas/como-elegir-una-consultoria-de-ciberseguridad): types of service, the six NIST CSF 2.0 Functions, ISO/IEC 27001, criteria to compare proposals and what to ask.
+- [Data governance: what it is, what leadership decides and how to start](https://cyrruscs.com/en/perspectivas/gobierno-de-datos-que-es-y-como-empezar): ISO/IEC 38505-1:2026, difference from data management and quality, five leadership decisions and seven steps to start.
+- [AI strategy for companies: how to build the roadmap](https://cyrruscs.com/en/perspectivas/estrategia-de-ia-para-empresas-hoja-de-ruta): use case prioritization (impact, feasibility, data, risk), NIST AI RMF 1.0 and the seven steps of the roadmap.
+- [ERP implementation with a PMO: how to govern the project](https://cyrruscs.com/en/perspectivas/implementacion-de-erp-con-pmo-como-gobernar-el-proyecto): what a PMO does on an ERP, the six governance areas in Microsoft's guide, steering committee, integrator contract and what gets cut first.
 
 ## Optional
 - [Sitemap](https://cyrruscs.com/sitemap.xml): lista completa de URLs en español e inglés, con fecha de última modificación.

@@ -12,25 +12,23 @@ export function FinalCta({ showDiagnostic = true }: { showDiagnostic?: boolean }
   const lang = useLang();
   const { openWizard } = useContactWizard();
   return (
-    <AnimatedNavyBackground id="contacto" className="cv-section py-24 md:py-32">
-      <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
+    <AnimatedNavyBackground id="contacto" className="cv-section section-y">
+      <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] items-end gap-x-24 gap-y-12">
         <Reveal>
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="font-heading text-[clamp(34px,4.4vw,60px)] font-bold leading-[1.06] tracking-[-0.03em] text-balance text-white">
             {t("finalCta.title")}
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-white/70">
-            {t("finalCta.description")}
-          </p>
         </Reveal>
-        <Reveal delay={0.15}>
-          <BorderButton variant="light" size="lg" className="mt-8" dot onClick={() => openWizard()}>
+        <Reveal delay={0.1}>
+          <p className="t-lead text-white/80">{t("finalCta.description")}</p>
+          <BorderButton variant="light" size="lg" className="mt-9" dot onClick={() => openWizard()}>
             {t("finalCta.buttonText")}
           </BorderButton>
           {showDiagnostic && (
-            <p className="mt-6 text-base text-white/70">
+            <p className="mt-7 text-base text-white/70">
               {`${t("finalCta.diagnosticText")} `}<Link
                 to={langPath("/diagnostico", lang)}
-                className="font-semibold text-white underline underline-offset-4"
+                className="font-bold text-white underline underline-offset-4"
               >
                 {t("finalCta.diagnosticLink")}
               </Link>

@@ -1,13 +1,3 @@
-import {
-  Boxes,
-  Building2,
-  Cpu,
-  DollarSign,
-  Target,
-  TrendingUp,
-  Users,
-  XCircle,
-} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -19,6 +9,12 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
+import { RelatedServices } from "@/components/sections/related-services";
+import { CardGrid } from "@/components/ui/card-grid";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SecondaryButton } from "@/components/ui/border-button";
+import { SectionHeader } from "@/components/ui/section-header";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
@@ -26,7 +22,6 @@ import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/seleccion-de-software";
-import { Img } from "@/components/ui/img";
 
 interface CategoryItem {
   slug: string;
@@ -47,8 +42,10 @@ interface Faq {
   question: string;
   answer: string;
 }
+interface Guide extends EvalItem {
+  slug: string;
+}
 
-const evaluamosIcons = [Target, Cpu, DollarSign, TrendingUp, Building2, Users];
 
 export default function SeleccionDeSoftware() {
   const { t } = useTranslation("seleccion-de-software");
@@ -60,15 +57,18 @@ export default function SeleccionDeSoftware() {
     href: `${prefix}/metodo-cira/seleccion-de-soluciones/seleccion-de-software/${c.slug}`,
     image: productImages[c.slug as ProductSlug],
   }));
-  const evaluamos = (t("evaluamos.items", { returnObjects: true }) as EvalItem[]).map((item, i) => ({
-    ...item,
-    icon: evaluamosIcons[i],
-  }));
+  const evaluamos = t("evaluamos.items", { returnObjects: true }) as EvalItem[];
   const fases = t("metodo.fases", { returnObjects: true }) as Fase[];
   const problemaBullets = t("problema.bullets", { returnObjects: true }) as string[];
   const costoBullets = t("costo.bullets", { returnObjects: true }) as string[];
   const preguntaSteps = t("preguntaCorrecta.steps", { returnObjects: true }) as string[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
+  const answerItems = t("respuesta.items", { returnObjects: true }) as EvalItem[];
+  const guides = (t("guides.items", { returnObjects: true }) as Guide[]).map((g) => ({
+    href: `${prefix}/perspectivas/${g.slug}`,
+    title: g.title,
+    description: g.description,
+  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -134,45 +134,28 @@ export default function SeleccionDeSoftware() {
         image={{ src: softwareHubImage, alt: t("hero.title") }}
         breadcrumbs={breadcrumbItems}
       >
-        <div className="flex flex-wrap items-center gap-4">
-          <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
-          <Link
-            to={`${prefix}/metodo-cira`}
-            className="text-sm font-semibold text-white/80 underline-offset-4 hover:underline"
-          >
-            {t("hero.ctaSecondaryLabel")}
-          </Link>
-        </div>
+        <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
+        <SecondaryButton asChild>
+          <Link to={`${prefix}/metodo-cira`}>{t("hero.ctaSecondaryLabel")}</Link>
+        </SecondaryButton>
       </PageHero>
 
+      {/* Answer-first block: what software selection is, in the searcher's words */}
+      <IncludedGrid
+        className="bg-mist"
+        eyebrow={t("respuesta.eyebrow")}
+        title={t("respuesta.title")}
+        description={t("respuesta.body")}
+        items={answerItems}
+      />
+
       {/* 02 — El problema */}
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("problema.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("problema.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("problema.intro")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
-            {problemaBullets.map((item) => (
-              <RevealItem
-                key={item}
-                className="rounded-xl border border-border bg-card px-4 py-3 text-center text-sm font-medium text-navy/80"
-              >
-                {item}
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
-          <Reveal delay={0.1} className="mt-10 max-w-3xl border-l-2 border-cyan pl-6">
-            <p className="text-lg font-semibold leading-snug text-navy">
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("problema.eyebrow")} title={t("problema.title")} description={t("problema.intro")} />
+          <RuledBullets items={problemaBullets} columns={2} className="mt-14" />
+          <Reveal>
+            <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
               {t("problema.punch")}
             </p>
           </Reveal>
@@ -180,31 +163,12 @@ export default function SeleccionDeSoftware() {
       </section>
 
       {/* 03 — El costo de equivocarse */}
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("costo.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("costo.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {costoBullets.map((item) => (
-              <RevealItem
-                key={item}
-                className="flex items-start gap-3 rounded-2xl border border-border bg-card p-5"
-              >
-                <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                <span className="text-sm leading-relaxed text-navy/80">{item}</span>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
-          <Reveal delay={0.1} className="mx-auto mt-12 max-w-2xl text-center">
-            <p className="text-lg font-semibold leading-snug text-navy">
+      <section className="section-y w-full bg-mist">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("costo.eyebrow")} title={t("costo.title")} />
+          <RuledBullets items={costoBullets} columns={2} className="mt-14" />
+          <Reveal>
+            <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
               {t("costo.punch")}
             </p>
           </Reveal>
@@ -212,27 +176,21 @@ export default function SeleccionDeSoftware() {
       </section>
 
       {/* 04 — La pregunta correcta */}
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-4xl px-6 text-center md:px-12">
+      <section className="section-y w-full bg-background">
+        <div className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
           <Reveal>
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("preguntaCorrecta.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("preguntaCorrecta.title")}
-            </h2>
-            <p className="mt-8 text-lg text-navy/40 line-through">
-              {t("preguntaCorrecta.notQuestion")}
-            </p>
-            <p className="mt-3 text-2xl font-semibold text-navy">
+            <Eyebrow>{t("preguntaCorrecta.eyebrow")}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{t("preguntaCorrecta.title")}</h2>
+            <p className="mt-10 text-lg text-slate/60 line-through">{t("preguntaCorrecta.notQuestion")}</p>
+            <p className="mt-3 font-heading text-[clamp(24px,2.6vw,34px)] font-light leading-[1.3] tracking-[-0.01em] text-navy">
               {t("preguntaCorrecta.realQuestion")}
             </p>
           </Reveal>
 
-          <Reveal delay={0.1} className="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <Reveal delay={0.1} className="mt-12 flex flex-wrap items-center justify-center gap-3">
             {preguntaSteps.map((step, i) => (
               <span key={step} className="flex items-center gap-3">
-                <span className="rounded-full bg-light-blue px-4 py-2 text-sm font-semibold text-navy">
+                <span className="rounded-full border border-line-2 px-4 py-2 font-heading text-sm font-semibold text-navy">
                   {step}
                 </span>
                 {i < preguntaSteps.length - 1 && (
@@ -245,31 +203,17 @@ export default function SeleccionDeSoftware() {
       </section>
 
       {/* 05 — Nuestra solución: aquí, y solo aquí, se explica el Método CIRA completo */}
-      <AnimatedNavyBackground id="metodo" className="py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-bold uppercase tracking-wider text-cyan">
-              {t("metodo.eyebrow")}
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
-              {t("metodo.title")}
-            </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/70">
-              {t("metodo.intro")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <AnimatedNavyBackground id="metodo" className="section-y">
+        <div className="container-site text-white">
+          <SectionHeader tone="dark" eyebrow={t("metodo.eyebrow")} title={t("metodo.title")} description={t("metodo.intro")} />
+          <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,240px),1fr))] gap-x-10 gap-y-12">
             {fases.map((fase) => (
-              <RevealItem
-                key={fase.letra}
-                className="rounded-2xl border border-white/10 bg-white/5 p-7"
-              >
-                <span className="text-4xl font-extrabold tracking-tight text-cyan">
+              <RevealItem key={fase.letra} className="border-t border-white/25 pt-7">
+                <span className="block font-heading text-[clamp(64px,7vw,88px)] font-light leading-none tracking-[-0.04em] text-sky">
                   {fase.letra}
                 </span>
-                <h3 className="mt-4 text-lg font-semibold text-white">{fase.titulo}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/70">{fase.descripcion}</p>
+                <h3 className="mt-6 font-heading text-xl font-semibold">{fase.titulo}</h3>
+                <p className="mt-3 text-[17px] leading-[1.65] text-white/75">{fase.descripcion}</p>
               </RevealItem>
             ))}
           </RevealGroup>
@@ -277,70 +221,52 @@ export default function SeleccionDeSoftware() {
       </AnimatedNavyBackground>
 
       {/* 06 — Qué seleccionamos: enlaces a las 4 subpáginas de producto */}
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("categorias.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("categorias.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {categorias.map((item) => (
-              <RevealItem key={item.slug}>
-                <Link
-                  to={item.href}
-                  className="group block h-full overflow-hidden rounded-2xl border border-border bg-card transition-[border-color,background-color] duration-150 ease-out hover:border-navy hover:bg-white"
-                >
-                  <Img
-                    src={item.image.image}
-                    alt=""
-                    width={320}
-                    height={160}
-                    style={{ objectPosition: item.image.imagePosition ?? "center" }}
-                    className="h-28 w-full object-cover"
-                    sizes="(min-width: 1024px) 264px, (min-width: 640px) 45vw, calc(100vw - 3rem)"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-lg font-semibold text-navy">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray">{item.description}</p>
-                    <span className="mt-4 inline-block text-sm font-semibold text-blue group-hover:underline">
-                      {`${item.linkLabel} →`}
-                    </span>
-                  </div>
-                </Link>
-              </RevealItem>
-            ))}
-          </RevealGroup>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("categorias.eyebrow")} title={t("categorias.title")} />
+          <CardGrid
+            className="mt-16"
+            min="sm"
+            items={categorias.map((c) => ({
+              title: c.title,
+              description: c.description,
+              href: c.href,
+              linkLabel: c.linkLabel,
+              image: { src: c.image.image, alt: "", position: c.image.imagePosition },
+            }))}
+          />
         </div>
       </section>
 
       {/* 07 — Cómo evaluamos */}
       <IncludedGrid
+        className="bg-mist"
         eyebrow={t("evaluamos.eyebrow")}
         title={t("evaluamos.title")}
         items={evaluamos}
+        numbered
       />
 
       {/* Cierre — 100% agnósticos */}
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
-          <Reveal>
-            <Boxes className="mx-auto h-8 w-8 text-blue" />
-            <p className="mt-6 border-l-2 border-cyan pl-6 text-left text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {`"${t("closingQuote")}"`}
-            </p>
-          </Reveal>
-          <Reveal delay={0.1} className="mt-10 flex justify-center">
+      <section className="section-y w-full bg-background">
+        <Reveal className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
+          <blockquote className="m-0 font-heading text-[clamp(26px,3vw,40px)] font-light leading-[1.3] tracking-[-0.02em] text-pretty text-navy">
+            {`"${t("closingQuote")}"`}
+          </blockquote>
+          <div className="mt-10 flex justify-center">
             <ContactCtaButton label={t("hero.ctaLabel")} />
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </section>
 
-      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
+      <RelatedServices
+        className="bg-mist"
+        eyebrow={t("guides.eyebrow")}
+        title={t("guides.title")}
+        items={guides}
+      />
+
+      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} className="bg-background" />
 
       <FinalCta />
       </main>

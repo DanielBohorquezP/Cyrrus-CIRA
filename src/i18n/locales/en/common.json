@@ -35,6 +35,26 @@
     "arquitecturaIADesc": "Models, data, and systems connected without chaos",
     "gobiernoIA": "AI Governance",
     "gobiernoIADesc": "Clear policies and controls over AI use",
+
+    "estrategiaTi": "IT Strategy",
+
+    "estrategiaTiDesc": "Technology roadmap aligned with the business",
+
+    "continuidadNegocioServicio": "Business Continuity",
+
+    "continuidadNegocioServicioDesc": "BIA, continuity plan and tested DRP",
+
+    "ciberseguridad": "Cybersecurity",
+
+    "ciberseguridadDesc": "Risk assessment and control selection",
+
+    "estrategiaIA": "AI Strategy",
+
+    "estrategiaIADesc": "Prioritized use cases and AI roadmap",
+
+    "gobiernoDatosServicio": "Data Governance",
+
+    "gobiernoDatosServicioDesc": "Data owners, rules and quality",
     "tallerIADirectivos": "AI Workshop for Executives",
     "tallerIADirectivosDesc": "AI applied to decision-making",
     "innovacionEmpresarial": "Business Innovation",

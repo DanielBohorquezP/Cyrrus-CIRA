@@ -1,14 +1,33 @@
 {
   "hub": {
     "meta": {
-      "title": "Artificial Intelligence Consulting for Companies | Cyrrus",
+      "title": "AI Consulting Services: Governance & Architecture | Cyrrus",
       "description": "Artificial intelligence consulting for companies: AI governance, architecture, and automation — real infrastructure, not a catalog of chatbots."
     },
     "serviceDescription": "Corporate artificial intelligence governance and enterprise AI architecture, cutting across all 4 phases of the CIRA method.",
     "hero": {
       "eyebrow": "Cyrrus Intelligence Lab",
-      "title": "Corporate AI governance and enterprise AI architecture",
+      "title": "AI consulting services for companies: governance, architecture, and AI agents",
       "description": "Your team may already be using AI without anyone auditing what data it touches or who's accountable if it fails. Before the next tool, you need governance — not another loose pilot. Cyrrus Intelligence Lab is the corporate AI governance and enterprise AI architecture layer that runs transversally beneath the method's 4 phases."
+    },
+    "respuesta": {
+      "eyebrow": "AI consulting",
+      "title": "What does an AI consulting service for companies do?",
+      "description": "It helps an organization use AI with clear rules before adding more tools. At Cyrrus we don't sell tools or chatbots: we start from the AI already in use in the company and from the governance framework that makes it safe, auditable, and scalable; then we design the architecture and the agents that bring it into real processes.",
+      "items": [
+        {
+          "title": "When you need it",
+          "description": "When your team already uses AI without anyone auditing what data it touches or who is accountable if it fails, or when several areas bought AI tools that don't talk to each other."
+        },
+        {
+          "title": "Where to start",
+          "description": "With governance: we audit what already exists in the organization and bring it into a single framework, instead of asking each area to start from scratch."
+        },
+        {
+          "title": "What it isn't",
+          "description": "It isn't a catalog of chatbots or tools, or another loose pilot: it's the governance and architecture layer that lets AI reach the business's processes."
+        }
+      ]
     },
     "pillars": {
       "eyebrow": "The three pillars",
@@ -59,10 +78,35 @@
         }
       ]
     },
+    "guides": {
+      "eyebrow": "Guides",
+      "title": "Before you decide, read this",
+      "items": [
+        {
+          "slug": "gobierno-de-ia-corporativo-en-la-empresa",
+          "title": "What corporate AI governance is",
+          "description": "Why an organization should ask whether it's ready to govern AI before choosing which AI to adopt."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "AI governance: NIST, OECD and ISO/IEC 42001",
+          "description": "What each reference publishes, how they differ, and what leadership should decide before picking one."
+        },
+        {
+          "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+          "title": "RPA or artificial intelligence",
+          "description": "What each does, where each has limits, and what to ask before investing."
+        }
+      ]
+    },
     "faq": {
       "eyebrow": "Cyrrus Intelligence Lab",
       "title": "Frequently asked questions",
       "items": [
+        {
+          "question": "What does Cyrrus's AI consulting include?",
+          "answer": "Three connected fronts: corporate AI governance (who decides, who audits, and which data can be touched), enterprise AI architecture (how existing models, data, and systems connect securely and scalably), and process automation with AI agents, all under the same governance framework."
+        },
         {
           "question": "Does Cyrrus Intelligence Lab sell AI tools?",
           "answer": "No. It's not a catalog of chatbots or tools — it's the corporate AI governance and enterprise AI architecture layer that makes it possible to implement AI in business processes securely and in an auditable way."
@@ -84,12 +128,12 @@
   },
   "automatizaciones": {
     "meta": {
-      "title": "Process Automation and AI Agents | Cyrrus",
+      "title": "Process Automation Consulting & AI Agents | Cyrrus",
       "description": "Process automation and AI agents integrated into the enterprise architecture, measured against the real process they replace, not against a demo."
     },
     "serviceDescription": "Process automation with artificial intelligence",
     "hero": {
-      "title": "Automation & AI Agents",
+      "title": "Process automation consulting and AI agents for companies",
       "description": "Agents that nail a demo and never touch a real business process. We don't start by building software: we start from the same diagnosis and architecture we govern in Intelligence Lab, and only when the right solution genuinely doesn't exist in the market do we build it custom — integrated into that same architecture, not as a standalone build."
     },
     "included": {
@@ -112,11 +156,27 @@
     },
     "body": [
       "We're not a software factory, and we won't propose building something that already exists in the market. The same agnostic diagnosis we use to select an ERP or CRM is what we apply here: we first evaluate whether the right solution already exists.",
-      "When it genuinely doesn't, we know how to build it: process automations and specialized AI agents for tasks within each phase of the CIRA method — diagnosis, vendor evaluation, risk monitoring, adoption measurement — integrated into the enterprise AI architecture we already govern, so it doesn't become one more ownerless tool."
+      "When it genuinely doesn't, we know how to build it: process automations and specialized AI agents for tasks within each phase of the CIRA method — diagnosis, vendor evaluation, risk monitoring, adoption measurement — integrated into the enterprise AI architecture we already govern, so it doesn't become one more ownerless tool.",
+      "An AI agent is a system that receives a goal and completes a multi-step task on its own: it looks up information in your systems, applies business rules, drafts or updates records, and alerts a person when it needs a decision. It differs from a chatbot in that it doesn't just answer questions: it acts on processes.",
+      "Some use cases in companies are classifying and answering incoming requests, preparing and reconciling information across systems, watching indicators and flagging deviations, and assisting a team with repetitive analysis tasks. None of them works well without a clear process behind it and someone inside the organization who is accountable for the result.",
+      "This is how we work on an AI agent: first a specific process is chosen and the way the result will be measured is agreed; then we define what the agent can do on its own and what must go through a person's approval; next it's tested with real cases from operations and adjusted; and finally it runs with a clear owner inside the organization. Without that order, an agent impresses in a demo and changes nothing day to day.",
+      "An AI agent isn't always the answer. If the process is stable and rule-based, RPA or traditional automation is cheaper and more predictable; if the process isn't defined, it has to be put in order first. Some risks of a poorly designed agent are excessive permissions, wrong answers delivered with confidence, and lack of traceability, which is why we design it together with AI governance."
     ],
     "faq": {
       "eyebrow": "Automation & AI Agents",
       "items": [
+        {
+          "question": "What is an AI agent?",
+          "answer": "It's a system that receives a goal and completes a multi-step task on its own: it queries your systems, applies business rules, acts on them, and escalates to a person when a decision is needed."
+        },
+        {
+          "question": "What's the difference between a chatbot and an AI agent?",
+          "answer": "A chatbot answers questions within a conversation. An AI agent also takes actions on the company's processes and systems. That's why it needs permissions, governance, and measurement, not just a good model."
+        },
+        {
+          "question": "When should a company hire an AI automation consultant?",
+          "answer": "When there's a specific, repetitive process with a measurable result that takes up the team's time today, and someone inside the organization can be accountable for it. If the process is stable and rule-based, RPA or traditional automation may be cheaper and more predictable; if it isn't defined, it has to be put in order first."
+        },
         {
           "question": "Are you a software development shop?",
           "answer": "No. We're digital transformation consultants, not a development house. We first evaluate whether the right solution already exists in the market — as we do in CIRA's Solution Selection phase. We only build when that option genuinely doesn't exist."
@@ -160,12 +220,12 @@
   },
   "arquitectura": {
     "meta": {
-      "title": "Enterprise AI Architecture | Cyrrus Intelligence Lab",
+      "title": "Enterprise AI Architecture & Implementation | Cyrrus",
       "description": "We design the architecture that connects existing models, data, and systems securely and scalably, before loose tools sprawl beyond repair."
     },
     "serviceDescription": "Enterprise artificial intelligence architecture",
     "hero": {
-      "title": "AI Architecture",
+      "title": "Enterprise AI architecture and AI implementation consulting",
       "description": "Five AI tools, bought by five different areas, that don't talk to each other. We design the technical architecture that connects existing models, data, and systems securely and scalably, before the sprawl of loose tools becomes impossible to undo."
     },
     "included": {
@@ -187,12 +247,29 @@
       ]
     },
     "body": [
+      "Enterprise architecture defines how an organization's processes, data, and systems connect. Applied to artificial intelligence, it keeps each new tool from being added as an island.",
       "Every area buys its own AI tool with no visibility into what already exists elsewhere in the organization. The result isn't innovation — it's a collection of isolated systems, with no common data governance and real security risk.",
-      "We design the architecture layer that connects those models, data, and systems securely and scalably — the same layer that underpins the process automation and AI governance we work on at Cyrrus Intelligence Lab."
+      "We design the architecture layer that connects those models, data, and systems securely and scalably — the same layer that underpins the process automation and AI governance we work on at Cyrrus Intelligence Lab.",
+      "An enterprise architecture is organized in three layers: the business processes, the data those processes produce and consume, and the systems that support them. Artificial intelligence sits on top of those three layers: if the data is scattered or the systems don't talk to each other, no model works well, however advanced it is.",
+      "That's why data architecture is a central part of the work: defining where each piece of data comes from, who owns it, how it connects across systems, and who can use it. It's the step before any serious AI project, and it avoids redoing integrations every time a new use case is added.",
+      "Some signs an organization needs to put its architecture in order: each area buys its own tools, the same figures show up differently in different systems, every new integration takes months, and no one knows for certain what data the AI models touch.",
+      "The outcome of the work is a map of the systems, data, and models that exist today, a target architecture that connects them securely and scalably, and a prioritized roadmap to get there without stopping operations."
     ],
     "faq": {
       "eyebrow": "AI Architecture",
       "items": [
+        {
+          "question": "When should a company hire an AI architecture consultant?",
+          "answer": "When each area buys its own AI tools, the same figures show up differently in different systems, every new integration takes months, or no one knows for certain what data the AI models touch."
+        },
+        {
+          "question": "What is enterprise architecture?",
+          "answer": "It's the description of how an organization's processes, data, and systems connect, and of how they should evolve. It's used to make technology decisions with a view of the whole, not tool by tool."
+        },
+        {
+          "question": "What is a data architecture, and why does it matter for AI?",
+          "answer": "It's the design of how the company's data is stored, connected, and governed. It matters for AI because a model is only as useful as the data it can access reliably and securely."
+        },
         {
           "question": "How do you bring order to a company where every area bought its own AI tool?",
           "answer": "We start with a real inventory of what exists today, before designing how everything should connect."
@@ -232,12 +309,12 @@
   },
   "gobierno": {
     "meta": {
-      "title": "AI Governance for Companies: Policies and Controls | Cyrrus",
-      "description": "We define the policies, roles, and controls over how AI is used in your company: who decides, who audits, and what data can be touched."
+      "title": "AI Governance Consulting & Data Governance Services | Cyrrus",
+      "description": "AI governance consulting for companies: policies, roles, and controls over how AI is used, and which reference to follow (NIST AI RMF, OECD, or ISO/IEC 42001)."
     },
     "serviceDescription": "Corporate artificial intelligence governance",
     "hero": {
-      "title": "AI Governance",
+      "title": "AI governance consulting for companies",
       "description": "No one in the organization can explain which model made which decision, or with what data. We define the policies, roles, and clear controls over how artificial intelligence is used within your company — who decides, who audits, which data can be touched and which can't."
     },
     "included": {
@@ -260,6 +337,9 @@
     },
     "body": [
       "Without a governance framework, every AI initiative is left to the judgment of whoever implemented it. When something goes wrong — sensitive data exposed, an automated decision with no traceability — there's no one to turn to and no way to audit what happened.",
+      "We don't start from scratch or stop what already works: we audit the AI already in use in the organization — which tools exist, who bought them, and what data they work with — and bring it into a single framework, instead of asking each area to start over.",
+      "With that inventory, leadership makes four decisions (Cyrrus's judgment): which framework to use as the reference and for what — managing risk (NIST), setting values (OECD), or certifying a management system (ISO/IEC 42001), which can be combined —, who is accountable for AI in the company, what evidence to keep for each decision, and how often to review it all.",
+      "AI governance rests on data governance: what information a model can touch, what stays out of scope, and who owns each piece of data. That's why data controls are part of the framework, not a separate project.",
       "This framework runs transversally beneath the CIRA method's four phases, so every AI decision — from diagnosis to adoption — stays documented and auditable."
     ],
     "articleLinkText": "Also read:",
@@ -267,6 +347,18 @@
     "faq": {
       "eyebrow": "AI Governance",
       "items": [
+        {
+          "question": "When should a company hire an AI governance consulting firm?",
+          "answer": "When your team already uses AI without anyone auditing what data it touches or who is accountable if it fails, when several areas bought AI tools on their own, or when a client or a regulator asks for evidence of how AI is governed in the company."
+        },
+        {
+          "question": "Which AI governance framework should we use: NIST, OECD, or ISO/IEC 42001?",
+          "answer": "It depends on what you need it for (Cyrrus's judgment): the NIST AI RMF is for managing risk, the OECD principles for setting values, and the ISO/IEC 42001 standard for implementing and certifying an AI management system. They aren't mutually exclusive and can be combined."
+        },
+        {
+          "question": "What's the difference between AI governance and data governance?",
+          "answer": "Data governance defines where each piece of data comes from, who owns it, and who can use it. AI governance rests on it and adds who approves each AI use case, which data a model can touch, and who audits its decisions. At Cyrrus we work on both together."
+        },
         {
           "question": "How do you implement AI governance from scratch, with no framework in place?",
           "answer": "We start from zero: we define policies, roles, and controls from week one, without stopping initiatives already underway."
@@ -300,6 +392,344 @@
         {
           "title": "Change management",
           "description": "The same adoption discipline, applied to AI."
+        },
+        {
+          "title": "Data governance",
+          "description": "Data owners, rules and controls that AI policies rest on."
+        }
+      ]
+    },
+    "respuesta": {
+      "eyebrow": "AI governance",
+      "title": "What is AI governance, and which framework do you use?",
+      "body": "It's the set of rules that defines who decides about artificial intelligence in the company, with what criteria, and with what evidence. The official sources we reviewed give no single definition; what the three public references we take as a starting point share is putting management rules around the use of AI. What we say about each one comes from its official pages, cited in our frameworks guide.",
+      "items": [
+        {
+          "title": "NIST AI RMF",
+          "description": "The US NIST's AI risk management framework, voluntary to use. Its core has four functions: govern, map, measure, and manage."
+        },
+        {
+          "title": "OECD AI Principles",
+          "description": "Five values-based principles for trustworthy AI, including transparency and explainability, robustness and safety, and accountability."
+        },
+        {
+          "title": "ISO/IEC 42001",
+          "description": "An international AI management system standard for any organization that provides or uses products or services with AI. It's a certifiable standard, not a law."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "AI governance guides",
+      "title": "Before choosing a framework, read this",
+      "items": [
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "Which AI governance frameworks to use",
+          "description": "NIST AI RMF, the OECD principles, and ISO/IEC 42001 per their official sources, and what leadership decides."
+        },
+        {
+          "slug": "iso-iec-42001-que-es-y-a-quien-aplica",
+          "title": "ISO/IEC 42001: what it is and who it applies to",
+          "description": "The AI management system standard: what it requires, who it applies to, and how certification works."
+        },
+        {
+          "slug": "regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana",
+          "title": "AI regulation in 2026",
+          "description": "What the European Union, the United States, and Spain require of companies that use AI."
+        }
+      ]
+    }
+  },
+  "gobiernoDatos": {
+    "meta": {
+      "title": "Data Governance Consulting Services | Cyrrus",
+      "description": "Data governance consulting services: who owns each data set, which quality rules apply and what information an AI model may touch. The foundation of AI governance."
+    },
+    "serviceDescription": "Data governance consulting",
+    "hero": {
+      "title": "Data governance consulting: one version of the right number",
+      "description": "Every department defends its own version of the right number, and boards end up arguing about which figure is true. We define where each data point comes from, who owns it, who may use it and under which quality rules, so decisions — and AI models — rest on reliable data."
+    },
+    "respuesta": {
+      "eyebrow": "Data governance",
+      "title": "What is data governance and what is it for?",
+      "body": "Data governance defines where each data point comes from, who owns it and who may use it. It is the foundation AI governance rests on: what information a model may touch, what is out of scope and who answers for its quality. Without that foundation, every department reports its own figure and no model is auditable.",
+      "items": [
+        {
+          "title": "Owners and rules",
+          "description": "One accountable owner per data domain (customers, products, finance, people) and the quality, access and retention rules that apply."
+        },
+        {
+          "title": "Catalog and lineage",
+          "description": "Which data exists, in which system it lives, how it is transformed and which one the official figure comes from."
+        },
+        {
+          "title": "Public reference",
+          "description": "The DAMA-DMBOK, published by DAMA International as the recognized framework for data management, serves as a guide to structure the functions; the scope adapts to the company's size."
+        }
+      ]
+    },
+    "included": {
+      "eyebrow": "What's included",
+      "title": "Governance that orders the data before the model.",
+      "items": [
+        {
+          "title": "Data assessment",
+          "description": "Which systems generate data, where it is duplicated (CRM, ERP, spreadsheets) and which figures don't reconcile between departments."
+        },
+        {
+          "title": "Governance model",
+          "description": "Data domains, owners, committee and the decisions each one makes. What leadership decides and what it delegates."
+        },
+        {
+          "title": "Quality and access policies",
+          "description": "Capture, deduplication, validation and access rules, written and enforceable in the systems that already exist."
+        },
+        {
+          "title": "Catalog and lineage",
+          "description": "Inventory of critical data and where every indicator the board sees comes from."
+        },
+        {
+          "title": "Controls for AI",
+          "description": "Which data a model may use, which it may not, and with what traceability, integrated into the AI governance framework."
+        },
+        {
+          "title": "Adoption plan",
+          "description": "Training and measurement so the rules keep being followed after Cyrrus steps back."
+        }
+      ]
+    },
+    "body": [
+      "Data governance solves a problem recognized in the first board meeting: two departments present different figures for the same indicator and the discussion turns into which number is true, not what to do about it.",
+      "Defining data governance means deciding, for each domain (customers, products, finance, people), who owns the data, which system the official version comes from, which quality rules apply when it is captured and who may use it. These are leadership decisions, not system settings.",
+      "We don't start from scratch or propose a year-long project: we audit the data the company already has — which systems generate it, where it is duplicated, which figures don't reconcile — and define the rules on the systems already in production. The CRM and the ERP are a frequent starting point in our projects, because that is where customers, sales and finance live.",
+      "Data governance is the foundation of AI governance: a model is only auditable if it is known which data it used, where it came from and who answered for its quality. That is why data controls for AI — what a model may touch and what it may not — are defined here and integrated into the AI governance framework, not as a separate project.",
+      "The DAMA-DMBOK, published by DAMA International, is the recognized reference framework for data management and serves as a guide to structure functions and responsibilities. In our view, a midsize company doesn't need to implement all of it: it needs clear owners, a catalog of critical data and rules that are followed in the systems it already uses. To prepare leadership we offer the data governance for executives workshop at Leadership Academy."
+    ],
+    "articleLinkText": "Read also:",
+    "articleLinkLabel": "Data governance and deduplication in the CRM",
+    "related": {
+      "eyebrow": "Related services",
+      "title": "Data orders what comes next",
+      "items": [
+        {
+          "title": "AI governance",
+          "description": "AI policies rest on the data owners and controls defined here."
+        },
+        {
+          "title": "AI architecture",
+          "description": "Which systems and data the models connect to."
+        },
+        {
+          "title": "Data governance for executives workshop",
+          "description": "What leadership must decide and what it can delegate, in one working session."
+        },
+        {
+          "title": "CRM consulting",
+          "description": "The system where customer data concentrates and where the rules are applied first."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guides",
+      "title": "Before defining data governance, read this",
+      "items": [
+        {
+          "slug": "gobierno-de-datos-que-es-y-como-empezar",
+          "title": "Data governance: what it is and how to start",
+          "description": "What ISO/IEC 38505-1 says about the role of leadership, what management decides and the seven steps to start without a year-long project."
+        },
+        {
+          "slug": "gobernanza-y-deduplicacion-de-datos-en-el-crm",
+          "title": "Data governance and deduplication in the CRM",
+          "description": "How Dynamics 365 and HubSpot detect duplicates, their limits and which rules leadership must define."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "What is AI governance and which frameworks to use",
+          "description": "NIST AI RMF, the OECD principles and ISO/IEC 42001 per their official sources."
+        },
+        {
+          "slug": "integrar-erp-y-crm-conector-nativo-o-middleware",
+          "title": "ERP and CRM integration: native connector or middleware",
+          "description": "What Microsoft's connector syncs, its limits and what leadership decides."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Data governance",
+      "title": "Frequently asked questions about data governance consulting",
+      "items": [
+        {
+          "question": "When should a company hire data governance consulting services?",
+          "answer": "When two departments present different figures for the same indicator; when the CRM or the ERP has duplicate customers and products; before an analytics or AI project, so the model doesn't inherit data with no owner; or when a customer or a regulator asks who is accountable for a data point."
+        },
+        {
+          "question": "What is the difference between data governance and AI governance?",
+          "answer": "Data governance defines where each data point comes from, who owns it and who may use it. AI governance rests on it and adds who approves each AI use case, which data a model may touch and who audits its decisions. At Cyrrus we work on both together."
+        },
+        {
+          "question": "Is data governance the same as data quality?",
+          "answer": "No. Data quality (completeness, duplicates, validity) is one of the outcomes of governance. Governance defines who answers for that quality, under which rules and in which system; without owners, data cleanup repeats every year."
+        },
+        {
+          "question": "Do we need a data governance tool?",
+          "answer": "Not at first. Capture, deduplication and access rules are applied first in the systems that already exist (CRM, ERP). A catalog or quality tool is evaluated later, with the same vendor-independent criteria we use in every selection."
+        },
+        {
+          "question": "What deliverables does data governance consulting with Cyrrus leave?",
+          "answer": "A data assessment, the governance model (domains, owners, committee), the quality and access policies, the catalog of critical data with its lineage and the data controls for AI, plus the adoption plan."
+        },
+        {
+          "question": "What is leadership's role in data governance?",
+          "answer": "It decides who owns each domain, which indicator is the official one and which data stays out of AI's reach. The data governance for executives workshop at Leadership Academy prepares those decisions."
+        }
+      ]
+    }
+  },
+  "estrategiaIa": {
+    "meta": {
+      "title": "AI Strategy Consulting Services for Companies | Cyrrus",
+      "description": "AI strategy consulting services: use cases prioritized by impact, a roadmap, governance and architecture, measured against the real process they change, not a demo."
+    },
+    "serviceDescription": "AI strategy consulting",
+    "hero": {
+      "title": "AI strategy consulting: from a list of ideas to a roadmap",
+      "description": "The committee approves or rejects AI initiatives on instinct, not criteria. We define which use cases have real business impact, in what order they run, what governance and architecture they need, and how each one will be measured."
+    },
+    "respuesta": {
+      "eyebrow": "AI strategy",
+      "title": "What is AI strategy consulting?",
+      "body": "It is the service that turns interest in artificial intelligence into a roadmap: which business processes can change with AI, how much changing them is worth, which data and systems are needed and what governance makes them auditable. At Cyrrus the AI strategy is built on three pillars we already work on: AI governance, architecture and automation with agents.",
+      "items": [
+        {
+          "title": "Starting point",
+          "description": "The company's real processes and the data that already exists, not a vendor's tool catalog."
+        },
+        {
+          "title": "Deliverables",
+          "description": "Use cases prioritized by impact and feasibility, a roadmap with sequence and owners, data and architecture requirements, and the governance framework."
+        },
+        {
+          "title": "Public reference",
+          "description": "The NIST AI RMF serves to manage the risks of each use case from design; which framework to use is leadership's decision (see AI governance)."
+        }
+      ]
+    },
+    "included": {
+      "eyebrow": "What's included",
+      "title": "An AI roadmap the committee can approve with criteria.",
+      "items": [
+        {
+          "title": "Inventory of existing AI",
+          "description": "Which AI tools are already in use, who bought them and which data they work with, before proposing new ones."
+        },
+        {
+          "title": "Use case discovery",
+          "description": "Sessions with departments to identify candidate processes: volume, repetitiveness, available data and current cost."
+        },
+        {
+          "title": "Prioritization",
+          "description": "Business impact, technical feasibility, data needed and risk, with a single criterion for every case."
+        },
+        {
+          "title": "Roadmap",
+          "description": "Sequence, dependencies (data, integrations, governance), owners and how each case will be measured against the process it replaces."
+        },
+        {
+          "title": "Governance and architecture",
+          "description": "Which policies, roles and controls apply, and on which architecture models, data and systems connect."
+        },
+        {
+          "title": "Measured pilots",
+          "description": "The first cases are executed with our automation team and measured against the real process, not a demo."
+        }
+      ]
+    },
+    "body": [
+      "An AI strategy answers three questions: in which processes AI changes a business outcome, in what order it's worth doing, and what it takes — data, systems, governance — for it to work in production and not only in a demonstration.",
+      "That is why we don't start with the tool. First we inventory the AI already in use in the organization and the data that exists; then, with the departments, we identify candidate processes and prioritize them with a single criterion: impact, feasibility, data and risk. The result is a short list leadership can approve or reject with the same criteria.",
+      "Each use case in the roadmap carries how it will be measured: against the real process it replaces — time, errors, cost — and not against the demo. It is the same criterion we use to execute automation with AI agents, so strategy and execution use the same yardstick.",
+      "The AI strategy rests on governance and architecture: which data each model may touch, who approves and audits, and which systems it connects to. Defining it in the strategy prevents, in our view, two failures we see in our projects: pilots that can't move to production for lack of data, and tools bought by five departments that don't talk to each other.",
+      "This service is the entry point to Cyrrus Intelligence Lab and connects with the IT strategy of the CIRA method's Construct phase: AI is one more initiative in the technology portfolio, with its business case, not a separate project. To prepare the committee we offer the AI for executives workshop at Leadership Academy."
+    ],
+    "articleLinkText": "Read also:",
+    "articleLinkLabel": "What is AI governance and which frameworks to use",
+    "related": {
+      "eyebrow": "Related services",
+      "title": "The strategy runs on the three pillars",
+      "items": [
+        {
+          "title": "AI governance",
+          "description": "Policies, roles and controls that make every use case auditable."
+        },
+        {
+          "title": "AI architecture",
+          "description": "Which systems and data the roadmap's models connect to."
+        },
+        {
+          "title": "Automation and AI agents",
+          "description": "How the first use cases are executed and measured."
+        },
+        {
+          "title": "IT strategy",
+          "description": "The technology portfolio AI is one more initiative of."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guides",
+      "title": "Before approving a use case, read this",
+      "items": [
+        {
+          "slug": "estrategia-de-ia-para-empresas-hoja-de-ruta",
+          "title": "AI strategy for companies: how to build the roadmap",
+          "description": "How to prioritize use cases with a single criterion, what the NIST AI RMF says and the seven steps of the roadmap."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "What is AI governance and which frameworks to use",
+          "description": "NIST AI RMF, the OECD principles and ISO/IEC 42001 per their official sources, and what leadership decides."
+        },
+        {
+          "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+          "title": "What is RPA and when it makes sense versus AI",
+          "description": "What each technology solves and what leadership should decide before automating."
+        },
+        {
+          "slug": "cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa",
+          "title": "AI compliance: what evidence your company should be able to show",
+          "description": "What obligations the EU AI Act documents and what evidence is worth keeping."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "AI strategy",
+      "title": "Frequently asked questions about AI strategy consulting",
+      "items": [
+        {
+          "question": "When should a company hire AI strategy consulting services?",
+          "answer": "When the committee receives AI proposals and has no criteria to compare them; when several departments have already bought tools on their own; when a pilot worked in a demo and didn't move to production; or when the board asks for an AI plan with benefits, costs and risks before approving a budget."
+        },
+        {
+          "question": "What is the difference between AI strategy and AI governance?",
+          "answer": "The strategy decides which use cases are done, in what order and with what measurement. Governance defines the policies, roles and controls they are executed and audited with. Strategy without governance produces unauditable pilots; governance without strategy produces rules for initiatives no one prioritized. At Cyrrus they are worked on together."
+        },
+        {
+          "question": "What deliverables does AI strategy consulting with Cyrrus leave?",
+          "answer": "An inventory of existing AI, a list of prioritized use cases with their criteria, a roadmap with sequence and owners, data and architecture requirements, the applicable governance framework and the measurement plan for each case."
+        },
+        {
+          "question": "Do you recommend specific AI tools or models?",
+          "answer": "Only after defining the use case, the data and the governance. AI and automation platform selection is done with the same vendor-independent criteria we use in every solution selection."
+        },
+        {
+          "question": "How do you measure whether the AI strategy worked?",
+          "answer": "Case by case, against the real process it changes: time, errors, cost or revenue of the process before and after. That criterion is defined in the strategy and applied when the case is executed."
+        },
+        {
+          "question": "What is leadership's role in the AI strategy?",
+          "answer": "Approving the prioritized list, deciding the governance framework and the data AI may not touch, and reviewing the measurement. The AI for executives workshop at Leadership Academy prepares those decisions."
         }
       ]
     }

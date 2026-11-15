@@ -139,6 +139,10 @@ const AutomatizacionesDesarrollo = lazyPage(
 );
 const ArquitecturaDeIA = lazyPage(() => import("@/pages/intelligence-lab/ArquitecturaDeIA"));
 const GobiernoDeIA = lazyPage(() => import("@/pages/intelligence-lab/GobiernoDeIA"));
+const GobiernoDeDatos = lazyPage(() => import("@/pages/intelligence-lab/GobiernoDeDatos"));
+const EstrategiaDeIA = lazyPage(() => import("@/pages/intelligence-lab/EstrategiaDeIA"));
+const EstrategiaDeTi = lazyPage(() => import("@/pages/metodo-cira/EstrategiaDeTi"));
+const ContinuidadDelNegocio = lazyPage(() => import("@/pages/metodo-cira/ContinuidadDelNegocio"));
 const DesarrolloWeb = lazyPage(() => import("@/pages/presencia-digital/DesarrolloWeb"));
 const Seo = lazyPage(() => import("@/pages/presencia-digital/Seo"));
 const CursoDetalle = lazyPage(() => import("@/pages/leadership-academy/CursoDetalle"));
@@ -168,6 +172,8 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/", Component: Home },
   { path: "/metodo-cira", Component: MetodoCira },
   { path: "/metodo-cira/estrategia", Component: PlaneacionEstrategica },
+  { path: "/metodo-cira/estrategia/estrategia-de-ti", Component: EstrategiaDeTi },
+  { path: "/metodo-cira/estrategia/continuidad-del-negocio", Component: ContinuidadDelNegocio },
   { path: "/metodo-cira/seleccion-de-soluciones", Component: SeleccionDeSoluciones },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software", Component: SeleccionDeSoftware },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/:producto", Component: SeleccionProducto },
@@ -178,6 +184,8 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/intelligence-lab/automatizaciones-desarrollo", Component: AutomatizacionesDesarrollo },
   { path: "/intelligence-lab/arquitectura-de-ia", Component: ArquitecturaDeIA },
   { path: "/intelligence-lab/gobierno-de-ia", Component: GobiernoDeIA },
+  { path: "/intelligence-lab/gobierno-de-datos", Component: GobiernoDeDatos },
+  { path: "/intelligence-lab/estrategia-de-ia", Component: EstrategiaDeIA },
   { path: "/presencia-digital", Component: PresenciaDigital },
   { path: "/presencia-digital/desarrollo-web", Component: DesarrolloWeb },
   { path: "/presencia-digital/seo", Component: Seo },

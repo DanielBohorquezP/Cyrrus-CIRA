@@ -2,26 +2,24 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
-import {
-  solutionDetailImages,
-  solutionItemIcons,
-  solutionRelatedIcons,
-  solutionsClosingIcon as ClosingIcon,
-  solutionSlugs,
-} from "@/lib/solutions-icons";
+import { solutionDetailImages, solutionSlugs } from "@/lib/solutions-icons";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { FaqSection } from "@/components/sections/faq-section";
+import { IncludedGrid } from "@/components/sections/included-grid";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
+import { RelatedServices } from "@/components/sections/related-services";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { CardGrid } from "@/components/ui/card-grid";
+import { SecondaryButton } from "@/components/ui/border-button";
+import { SectionHeader } from "@/components/ui/section-header";
+import { Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/seleccion-soluciones";
-import { Img } from "@/components/ui/img";
 
 interface DetailEntry {
   label: string;
@@ -29,6 +27,10 @@ interface DetailEntry {
   /** Optional H1 override; falls back to "Selection consulting for <label>". */
   h1?: string;
   intro: string;
+  /** Optional answer-first block rendered right under the hero. */
+  answer?: { eyebrow: string; title: string; body: string; items: { title: string; description: string }[] };
+  /** Optional links to published guides (perspectivas slugs). */
+  guides?: { eyebrow: string; title: string; items: { slug: string; title: string; description: string }[] };
   stat?: { value: string; description: string; source: string };
   items: { title: string; description: string }[];
   /** Optional long-form paragraphs rendered under the items grid. */
@@ -47,6 +49,16 @@ const relatedPathsBySlug: Record<string, string[]> = {
     "/intelligence-lab/arquitectura-de-ia",
     "/metodo-cira/gestion-de-proyectos",
     "/metodo-cira/gestion-del-cambio",
+    "/leadership-academy/iso-27001",
+    "/leadership-academy/continuidad-de-negocio-drp",
+    "/metodo-cira/seleccion-de-soluciones/ciberseguridad",
+    "/metodo-cira/estrategia/continuidad-del-negocio",
+  ],
+  ciberseguridad: [
+    "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica",
+    "/metodo-cira/estrategia/continuidad-del-negocio",
+    "/metodo-cira/gestion-de-proyectos",
+    "/leadership-academy/iso-27001",
   ],
 };
 
@@ -60,8 +72,6 @@ export default function SolucionDetalle() {
   const entry = slug ? (t(`detail.entries.${slug}`, { returnObjects: true }) as DetailEntry) : undefined;
   const meta = slug ? (t(`detailMeta.${slug}`, { returnObjects: true }) as { title: string; description: string }) : undefined;
   const assets = slug ? solutionDetailImages[slug] : undefined;
-  const icons = slug ? solutionItemIcons[slug] : undefined;
-  const relatedIcons = slug ? solutionRelatedIcons[slug] : undefined;
   const relatedPaths = slug ? relatedPathsBySlug[slug]?.map((p) => `${prefix}${p}`) : undefined;
 
   const siteUrl = "https://cyrruscs.com";
@@ -138,135 +148,104 @@ export default function SolucionDetalle() {
         title={entry.h1 ?? `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`}
         description={entry.intro}
         breadcrumbs={breadcrumbItems}
+        image={{ src: assets.image, alt: entry.label, position: assets.imagePosition }}
       >
         <ContactCtaButton variant="light" label={t("detail.ctaLabel")} />
+        <SecondaryButton asChild>
+          <Link to={methodPath}>{t("detail.methodLinkLabel")}</Link>
+        </SecondaryButton>
       </PageHero>
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
-            <Reveal className="md:col-span-4">
-              <Img
-                src={assets.image}
-                alt={entry.label}
-                width={480}
-                height={600}
-                className="h-64 w-full rounded-2xl object-cover md:h-full"
-                style={{ objectPosition: assets.imagePosition ?? "center" }}
-                sizes="(min-width: 1152px) 352px, (min-width: 768px) 33vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-            <div className="md:col-span-8">
-              <Reveal className="max-w-2xl">
-                <span className="text-base font-bold uppercase tracking-wider text-blue">
-                  {t("detail.whatWeHelp")}
-                </span>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-                  {entry.label}
-                </h2>
-              </Reveal>
+      {entry.answer && (
+        <IncludedGrid
+          className="bg-mist"
+          eyebrow={entry.answer.eyebrow}
+          title={entry.answer.title}
+          description={entry.answer.body}
+          items={entry.answer.items}
+        />
+      )}
 
-              <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-                {entry.items.map((item, index) => {
-                  const Icon = icons?.[index];
-                  return (
-                    <RevealItem
-                      key={item.title}
-                      className="rounded-2xl border border-border bg-card p-7"
-                    >
-                      <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
-                        {Icon && <Icon className="h-5 w-5 text-cyan" />}
-                      </div>
-                      <h3 className="mt-5 text-lg font-semibold text-navy">{item.title}</h3>
-                      <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                    </RevealItem>
-                  );
-                })}
-              </RevealGroup>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("detail.whatWeHelp")} title={entry.label} />
+          <CardGrid
+            className="mt-16"
+            numbered
+            items={entry.items}
+          />
 
-              {entry.body?.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)} className="mt-6 text-base leading-relaxed text-gray">
+          {entry.body && entry.body.length > 0 && (
+            <Reveal className="mt-16 max-w-3xl space-y-6">
+              {entry.body.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)} className="t-lead text-slate">
                   {paragraph}
                 </p>
               ))}
-
-              <p className="mt-8 text-base leading-relaxed text-gray">
-                {`${t("detail.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
-                  {t("detail.methodLinkLabel")}
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {entry.stat && (
-        <AnimatedNavyBackground className="py-20 md:py-28">
-          <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
-            <Reveal>
-              <span className="text-6xl font-bold tracking-tight text-cyan sm:text-7xl">
-                {entry.stat.value}
-              </span>
-              <p className="mt-4 text-lg leading-relaxed text-white/85">
-                {entry.stat.description}
-              </p>
-              <span className="mt-3 block text-sm font-medium uppercase tracking-wider text-white/50">
-                {entry.stat.source}
-              </span>
             </Reveal>
-          </div>
-        </AnimatedNavyBackground>
-      )}
+          )}
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
-          <Reveal>
-            <ClosingIcon className="mx-auto h-8 w-8 text-blue" />
-            <p className="mt-6 border-l-2 border-cyan pl-6 text-left text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {`“${t("closingQuote")}”`}
+          <Reveal className="mt-10">
+            <p className="text-base text-slate">
+              {`${t("detail.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
+                {t("detail.methodLinkLabel")}
+              </Link>
             </p>
           </Reveal>
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("detail.relatedEyebrow")}
+      {entry.stat && (
+        <AnimatedNavyBackground className="section-y">
+          <Reveal className="container-site text-center text-white">
+            <p className="font-heading text-[clamp(72px,10vw,120px)] font-light leading-none tracking-[-0.04em]">
+              {entry.stat.value}
+            </p>
+            <p className="t-lead mx-auto mt-6 max-w-2xl text-white/85">{entry.stat.description}</p>
+            <span className="mt-4 block font-heading text-xs font-medium uppercase tracking-[0.12em] text-white/60">
+              {entry.stat.source}
             </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("detail.relatedTitle")}
-            </h2>
           </Reveal>
+        </AnimatedNavyBackground>
+      )}
 
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {entry.related.map((item, i) => {
-              const RelatedIcon = relatedIcons?.[i];
-              const href = relatedPaths?.[i];
-              if (!href) return null;
-              return (
-                <RevealItem key={item.title}>
-                  <Link
-                    to={href}
-                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-                  >
-                    {RelatedIcon && <RelatedIcon className="h-6 w-6 text-blue" />}
-                    <span className="text-base font-semibold text-navy">{item.title}</span>
-                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
-                    <span className="mt-auto text-sm font-semibold text-blue">
-                      {`${lang === "en" ? "See more" : "Ver más"} →`}
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
+      <section className="section-y w-full bg-mist">
+        <Reveal className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
+          <blockquote className="m-0 font-heading text-[clamp(26px,3vw,40px)] font-light leading-[1.3] tracking-[-0.02em] text-pretty text-navy">
+            {`“${t("closingQuote")}”`}
+          </blockquote>
+        </Reveal>
       </section>
 
-      <FaqSection eyebrow={entry.label} title={t("detail.faqTitle")} faqs={entry.faq} />
+      <RelatedServices
+        eyebrow={t("detail.relatedEyebrow")}
+        title={t("detail.relatedTitle")}
+        items={entry.related.flatMap((item, i) => {
+          const href = relatedPaths?.[i];
+          return href ? [{ ...item, href }] : [];
+        })}
+        className="bg-background"
+      />
+
+      {entry.guides && (
+        <RelatedServices
+          className="bg-mist"
+          eyebrow={entry.guides.eyebrow}
+          title={entry.guides.title}
+          items={entry.guides.items.map((g) => ({
+            href: `${prefix}/perspectivas/${g.slug}`,
+            title: g.title,
+            description: g.description,
+          }))}
+        />
+      )}
+
+      <FaqSection
+        eyebrow={entry.label}
+        title={t("detail.faqTitle")}
+        faqs={entry.faq}
+        className={entry.guides ? "bg-background" : "bg-mist"}
+      />
 
       <FinalCta />
       </main>

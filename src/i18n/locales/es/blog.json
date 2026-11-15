@@ -115,7 +115,25 @@
         { "type": "p", "text": "Significa aprender a trabajar, decidir y evolucionar de una manera diferente." },
         { "type": "p", "text": "Por eso, cuando pienso en transformación, vuelvo siempre a una idea sencilla: personas, procesos, tecnología." },
         { "type": "p", "text": "Pero hay un principio que debe permanecer en el centro: las personas. Porque, al final, la tecnología puede habilitar el cambio y los procesos pueden darle estructura, pero son las personas quienes hacen que una transformación realmente ocurra." },
-        { "type": "quote", "text": "“Las tecnologías cambian. Una cultura de innovación y de cambio permanece y evoluciona.”" }
+        { "type": "quote", "text": "“Las tecnologías cambian. Una cultura de innovación y de cambio permanece y evoluciona.”" },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y cómo diagnosticar la resistencia al cambio.",
+          "links": [
+            {
+              "text": "qué es la planeación estratégica",
+              "href": "/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo"
+            },
+            {
+              "text": "qué es una PMO y qué funciones tiene",
+              "href": "/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla"
+            },
+            {
+              "text": "cómo diagnosticar la resistencia al cambio",
+              "href": "/perspectivas/resistencia-al-cambio-como-diagnosticarla-y-que-hacer"
+            }
+          ]
+        }
       ],
       "sources": [
         {
@@ -236,11 +254,30 @@
         { "type": "p", "text": "Cuando pienso en consultoría estratégica, vuelvo nuevamente a una idea que para mí es fundamental: personas, procesos y tecnología. Centrado en las personas que impactan la organización.", "links": [{"text": "consultoría estratégica", "href": "/metodo-cira/estrategia"}] },
         { "type": "p", "text": "La consultoría puede ayudar a ordenar el camino, identificar oportunidades, cuestionar decisiones y construir capacidades. Pero su verdadero valor aparece cuando logra que la organización vea con mayor claridad, decida mejor y sea capaz de avanzar por sí misma." },
         { "type": "p", "text": "Quizás esa sea la mejor pregunta para un CEO antes de contratar una consultora: ¿después de trabajar con ellos, seremos una organización más dependiente de su conocimiento o una organización más capaz de construir el suyo?" },
-        { "type": "p", "text": "La respuesta dice mucho más de una consultora que el tamaño de su propuesta." }
+        { "type": "p", "text": "La respuesta dice mucho más de una consultora que el tamaño de su propuesta." },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y por qué fracasan los proyectos de transformación digital.",
+          "links": [
+            {
+              "text": "qué es la planeación estratégica",
+              "href": "/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo"
+            },
+            {
+              "text": "qué es una PMO y qué funciones tiene",
+              "href": "/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla"
+            },
+            {
+              "text": "por qué fracasan los proyectos de transformación digital",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        }
       ]
     },
     "gobierno-de-ia-corporativo-en-la-empresa": {
       "title": "Qué es el Gobierno de IA corporativo y por qué su empresa lo necesita",
+      "seoTitle": "Gobierno de IA: qué es y por qué importa",
       "label": "Gobierno de IA",
       "excerpt": "Antes de preguntarse qué inteligencia artificial incorporar, toda organización debería preguntarse si está preparada para gobernarla. Qué es el Gobierno de IA y por dónde debe empezar un CEO.",
       "metaDescription": "Qué es el Gobierno de IA corporativo, por qué es distinto al Gobierno de Datos, y las preguntas que todo CEO debería responder antes de adoptar inteligencia artificial.",
@@ -357,7 +394,21 @@
         { "type": "p", "text": "Por eso, una estrategia de IA no debería comenzar con: “¿qué IA podemos comprar?”" },
         { "type": "p", "text": "Debería comenzar con: “¿qué queremos transformar y qué inteligencia necesitamos para hacerlo mejor?”" },
         { "type": "p", "text": "Ahí comienza el Gobierno de IA. Y también comienza una conversación mucho más importante para un CEO: ¿estamos utilizando la inteligencia artificial para transformar nuestro negocio o simplemente estamos incorporando inteligencia a nuestros procesos?" },
-        { "type": "p", "text": "La diferencia puede parecer pequeña. Pero puede terminar definiendo quién lidera el futuro y quién simplemente intenta alcanzarlo." }
+        { "type": "p", "text": "La diferencia puede parecer pequeña. Pero puede terminar definiendo quién lidera el futuro y quién simplemente intenta alcanzarlo." },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es RPA y cuándo conviene frente a la IA y qué es la gobernanza de IA y qué marcos usar.",
+          "links": [
+            {
+              "text": "qué es RPA y cuándo conviene frente a la IA",
+              "href": "/perspectivas/que-es-rpa-y-cuando-conviene-frente-a-la-ia"
+            },
+            {
+              "text": "qué es la gobernanza de IA y qué marcos usar",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            }
+          ]
+        }
       ],
       "sources": [
         {
@@ -380,6 +431,7 @@
     },
     "gerencia-de-proyectos-cuando-contratar-una-pmo-externa": {
       "title": "Gerencia de proyectos: cuándo contratar una PMO externa",
+      "seoTitle": "Outsourcing de PMO: cuándo conviene contratarla",
       "label": "Gerencia de proyectos",
       "excerpt": "Un proyecto no fracasa por falta de cronograma, sino por falta de alguien que responda por el resultado. Cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.",
       "metaDescription": "Gerencia de proyectos: qué es, cuándo contratar una PMO externa, qué debe entregar y cómo elegirla. Cinco señales de que su proyecto necesita ayuda.",
@@ -429,7 +481,7 @@
         { "type": "h2", "text": "PMO interna, PMO externa o PMO as a Service" },
         { "type": "p", "text": "Una PMO, u oficina de gestión de proyectos, es la estructura que define cómo se gobiernan los proyectos de una organización: metodología, roles, comités, indicadores y herramientas." },
         { "type": "p", "text": "Una PMO interna tiene sentido cuando la empresa ejecuta proyectos de forma permanente y tiene el volumen para sostener un equipo dedicado. Construirla toma tiempo, y mantenerla tiene un costo fijo." },
-        { "type": "p", "text": "Una PMO externa, o PMO as a Service, es un equipo que asume el gobierno de un proyecto puntual con responsabilidad sobre el resultado, y se desmonta cuando el proyecto termina. Es una opción para iniciativas grandes que no se repiten cada año, como la implementación de un ERP." },
+        { "type": "p", "text": "Una PMO externa, o PMO as a Service, es un equipo que asume el gobierno de un proyecto puntual con responsabilidad sobre el resultado, y se desmonta cuando el proyecto termina. Es una opción para iniciativas grandes que no se repiten cada año, como la implementación de un ERP.", "links": [{"text":"PMO as a Service","href":"/metodo-cira/gestion-de-proyectos"}] },
         { "type": "quote", "text": "La pregunta no es si su empresa necesita una PMO. Es quién va a responder por el resultado de este proyecto en particular." },
         { "type": "h2", "text": "Qué debe entregar una gerencia de proyectos seria" },
         { "type": "p", "text": "Un plan integral antes de empezar: alcance, cronograma, recursos, roles, costos, riesgos y plan de calidad, aprobados por un comité de dirección que entienda lo que está aprobando." },
@@ -452,7 +504,25 @@
         { "type": "p", "text": "Y pregunte por proyectos anteriores con resultados verificables: tiempo, costo, alcance y, sobre todo, qué pasó después del go-live." },
         { "type": "h2", "text": "En resumen" },
         { "type": "p", "text": "Una buena gerencia de proyectos no se nota por la cantidad de reportes que produce, sino por la cantidad de problemas que evita. Si su próximo proyecto es grande, nuevo para la organización o crítico para el negocio, vale la pena preguntarse quién va a responder por él." },
-        { "type": "p", "text": "En Cyrrus prestamos servicios de gerencia de proyectos como PMO externa, con responsabilidad sobre el resultado y con la gestión del cambio integrada desde el inicio.", "links": [{"text": "servicios de gerencia de proyectos", "href": "/metodo-cira/gestion-de-proyectos"}] }
+        { "type": "p", "text": "En Cyrrus prestamos servicios de gerencia de proyectos como PMO externa, con responsabilidad sobre el resultado y con la gestión del cambio integrada desde el inicio.", "links": [{"text": "servicios de gerencia de proyectos", "href": "/metodo-cira/gestion-de-proyectos"}] },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y qué es la gestión del cambio organizacional.",
+          "links": [
+            {
+              "text": "qué es la planeación estratégica",
+              "href": "/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo"
+            },
+            {
+              "text": "qué es una PMO y qué funciones tiene",
+              "href": "/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla"
+            },
+            {
+              "text": "qué es la gestión del cambio organizacional",
+              "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+            }
+          ]
+        }
       ],
       "sources": [
         {
@@ -762,6 +832,24 @@
           "note": "Excel con requerimientos funcionales y técnicos por módulo, costo total por proveedor, matriz de evaluación ponderada, calendario y referencias. Sin precios ni pesos de ejemplo. Gratis y sin registro."
         },
         {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: cómo elegir software de recursos humanos y nómina, cómo elegir un software CMMS o EAM y qué es un software MES.",
+          "links": [
+            {
+              "text": "cómo elegir software de recursos humanos y nómina",
+              "href": "/perspectivas/software-recursos-humanos-nomina-mas-de-100-empleados"
+            },
+            {
+              "text": "cómo elegir un software CMMS o EAM",
+              "href": "/perspectivas/software-cmms-eam-como-elegir"
+            },
+            {
+              "text": "qué es un software MES",
+              "href": "/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta"
+            }
+          ]
+        },
+        {
           "type": "h2",
           "text": "Cómo podemos ayudarle"
         },
@@ -803,10 +891,11 @@
     },
     "que-es-una-pmo-funciones-tipos-cuando-necesitarla": {
       "title": "Qué es una PMO: funciones, tipos y cuándo necesitarla",
+      "seoTitle": "Qué es una PMO: funciones, tipos y cuándo crearla",
       "label": "Gerencia de proyectos",
       "excerpt": "Una PMO es la oficina que ordena cómo se gestionan los proyectos de una empresa. Qué es, para qué sirve, qué tipos existen y cómo saber si la necesita.",
       "metaDescription": "Una PMO (oficina de gestión de proyectos) define, estandariza y supervisa cómo se gestionan los proyectos. Funciones, tipos del PMBOK y cuándo la necesita.",
-      "intro": "Si tiene varios proyectos en marcha y nadie puede decirle con certeza cuántos van bien, probablemente la pregunta no es qué herramienta usar, sino qué es una PMO y si su empresa ya la necesita.",
+      "intro": "Una PMO (oficina de gestión de proyectos) es la estructura que define, estandariza y supervisa cómo se gestionan los proyectos de una organización. Si tiene varios proyectos en marcha y nadie puede decirle con certeza cuántos van bien, esta guía explica qué es una PMO, qué funciones cumple, qué tipos existen y cuándo la necesita su empresa.",
       "keyTakeaways": [
         "Una PMO (oficina de gestión de proyectos) es la estructura que define cómo se seleccionan, gobiernan y miden los proyectos de una organización.",
         "La guía del PMBOK distingue tres tipos según su grado de control: de apoyo, de control y directiva.",
@@ -957,7 +1046,7 @@
         },
         {
           "type": "p",
-          "text": "Una PMO puede ser interna, con personal propio; externa, operada por una firma especializada; o un modelo mixto. Una PMO externa, también llamada PMO as a Service, es un equipo que asume el gobierno de los proyectos con responsabilidad sobre el resultado, sin que la empresa tenga que montar toda la estructura."
+          "text": "Una PMO puede ser interna, con personal propio; externa, operada por una firma especializada; o un modelo mixto. Una PMO externa, también llamada PMO as a Service, es un equipo que asume el gobierno de los proyectos con responsabilidad sobre el resultado, sin que la empresa tenga que montar toda la estructura.", "links": [{"text":"PMO as a Service","href":"/metodo-cira/gestion-de-proyectos"}]
         },
         {
           "type": "p",
@@ -1082,6 +1171,24 @@
         {
           "type": "p",
           "text": "Si está pensando en crear una PMO, o ya tiene proyectos que se están saliendo de control, contáctenos: use el botón de contacto que encuentra a continuación y agende una conversación con nuestro equipo."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, cómo diagnosticar la resistencia al cambio y cómo elegir una consultora estratégica.",
+          "links": [
+            {
+              "text": "qué es la planeación estratégica",
+              "href": "/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo"
+            },
+            {
+              "text": "cómo diagnosticar la resistencia al cambio",
+              "href": "/perspectivas/resistencia-al-cambio-como-diagnosticarla-y-que-hacer"
+            },
+            {
+              "text": "cómo elegir una consultora estratégica",
+              "href": "/perspectivas/como-elegir-una-consultora-estrategica-confiable"
+            }
+          ]
         }
       ],
       "sources": [
@@ -1354,6 +1461,24 @@
         {
           "type": "p",
           "text": "Si va a construir o a rehacer el plan estratégico de su empresa, contáctenos: use el botón de contacto que encuentra a continuación y agende una conversación con nuestro equipo."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es una PMO y qué funciones tiene, cuándo contratar una PMO externa y qué es la gestión del cambio organizacional.",
+          "links": [
+            {
+              "text": "qué es una PMO y qué funciones tiene",
+              "href": "/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla"
+            },
+            {
+              "text": "cuándo contratar una PMO externa",
+              "href": "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+            },
+            {
+              "text": "qué es la gestión del cambio organizacional",
+              "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+            }
+          ]
         }
       ],
       "sources": [
@@ -1365,6 +1490,7 @@
     },
     "gestion-del-cambio-organizacional-que-es-modelos-y-plantilla": {
       "title": "Gestión del cambio organizacional: qué es, modelos y plan (con plantilla)",
+      "seoTitle": "Gestión del cambio organizacional: modelos y plan",
       "label": "Gestión del cambio",
       "excerpt": "Qué es la gestión del cambio organizacional, en qué se diferencia del cambio organizacional, los modelos ADKAR, Kotter y Lewin, y cómo hacer un plan en ocho pasos. Incluye plantilla descargable.",
       "metaDescription": "Qué es la gestión del cambio organizacional, modelos (ADKAR, Kotter, Lewin) y cómo hacer un plan en 8 pasos. Descargue gratis la plantilla en Excel.",
@@ -1546,6 +1672,24 @@
           "text": "Conviene cuando el cambio afecta a varias áreas al mismo tiempo, cuando hay una implementación tecnológica grande, como un ERP o un CRM, cuando ya hubo un intento que no se adoptó o cuando la organización no tiene a nadie con experiencia en gestión del cambio dedicado al proyecto."
         },
         {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y por qué fracasan los proyectos de transformación digital.",
+          "links": [
+            {
+              "text": "qué es la planeación estratégica",
+              "href": "/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo"
+            },
+            {
+              "text": "qué es una PMO y qué funciones tiene",
+              "href": "/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla"
+            },
+            {
+              "text": "por qué fracasan los proyectos de transformación digital",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        },
+        {
           "type": "h2",
           "text": "Cómo podemos ayudarle"
         },
@@ -1585,7 +1729,7 @@
     },
     "mejores-erp-para-medianas-empresas": {
       "title": "Mejores ERP para medianas empresas en 2026: cómo compararlos",
-      "seoTitle": "Mejores ERP para medianas empresas en 2026",
+      "seoTitle": "ERP para medianas empresas: mejores opciones 2026",
       "label": "Selección de ERP",
       "excerpt": "Comparativa independiente de seis ERP para medianas empresas —SAP Business One, NetSuite, Business Central, Odoo, Acumatica y SAP S/4HANA Cloud— y cómo elegir entre ellos.",
       "metaDescription": "Comparativa independiente de los mejores ERP para medianas empresas en 2026: SAP Business One, NetSuite, Business Central, Odoo y más. Precios y criterios.",
@@ -1757,6 +1901,24 @@
           "text": "Descargue la plantilla de RFP para seleccionar un ERP",
           "href": "/descargas/plantilla-rfp-erp.xlsx",
           "note": "Excel con requerimientos funcionales y técnicos por módulo, costo total por proveedor, matriz de evaluación ponderada, calendario y referencias. Sin precios ni pesos de ejemplo. Gratis y sin registro."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es un sistema WMS, cómo elegir un software CMMS o EAM y qué es un software MES.",
+          "links": [
+            {
+              "text": "qué es un sistema WMS",
+              "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"
+            },
+            {
+              "text": "cómo elegir un software CMMS o EAM",
+              "href": "/perspectivas/software-cmms-eam-como-elegir"
+            },
+            {
+              "text": "qué es un software MES",
+              "href": "/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta"
+            }
+          ]
         },
         {
           "type": "h2",
@@ -2216,7 +2378,7 @@
       "label": "Selección de ERP",
       "excerpt": "De qué depende el costo de un ERP, qué precios publican los fabricantes, un ejemplo de cálculo de licencias y los costos ocultos que conviene presupuestar.",
       "metaDescription": "Cuánto cuesta implementar un ERP: componentes del costo, precios publicados por fabricantes, ejemplo de cálculo y costos ocultos. Guía para medianas empresas.",
-      "intro": "Si está preguntando cuánto cuesta un ERP, probablemente recibió respuestas que van de unos pocos miles a cientos de miles de dólares. Las dos pueden ser ciertas: el costo depende de decisiones que conviene conocer antes de pedir propuestas.",
+      "intro": "El costo de implementar un ERP tiene cuatro bloques: licencias o suscripción, implementación, infraestructura y soporte, y tiempo del equipo interno. Algunos fabricantes publican precios por usuario (Business Central desde US$ 80 y Odoo desde US$ 7,95 al mes); otros solo cotizan. Esta guía desglosa los bloques, los precios publicados, un ejemplo de cálculo, los costos ocultos y cómo pedir propuestas comparables.",
       "keyTakeaways": [
         "El costo de un ERP tiene cuatro bloques: licencias o suscripción, implementación, infraestructura y soporte, y el tiempo del equipo interno.",
         "Algunos fabricantes publican precios por usuario (Business Central desde US$80 y Odoo desde US$7,95 al mes); otros, como SAP Business One y NetSuite, solo cotizan.",
@@ -2371,6 +2533,14 @@
           "href": "/descargas/plantilla-rfp-erp.xlsx",
           "note": "Excel con requerimientos funcionales y técnicos por módulo, costo total por proveedor, matriz de evaluación ponderada, calendario y referencias. Sin precios ni pesos de ejemplo. Gratis y sin registro."
         },
+        {"type":"h2","text":"¿Cómo estimar el costo de implementar un ERP en su empresa?"},
+        {"type":"p","text":"En seis pasos, antes de pedir una sola propuesta:"},
+        {"type":"p","text":"1. Cuente los usuarios por tipo: completos, limitados y de solo lectura. Casi todos los precios publicados son por usuario al mes, así que este número define el bloque de licencias."},
+        {"type":"p","text":"2. Liste los módulos e integraciones que de verdad necesita: finanzas, inventario, ventas, producción, nómina, facturación electrónica, bancos, comercio electrónico. Cada módulo suma licencia; cada integración suma implementación."},
+        {"type":"p","text":"3. Decida el modelo de despliegue: suscripción en la nube o servidores propios. El primero convierte el costo en una cuota recurrente; el segundo añade infraestructura y soporte."},
+        {"type":"p","text":"4. Presupueste la implementación como una línea aparte: análisis, configuración, migración, pruebas y capacitación, a cargo de un partner o del fabricante. Pida a cada proveedor que la cotice separada de la licencia."},
+        {"type":"p","text":"5. Sume el tiempo del equipo interno y una contingencia. El informe 2026 de Panorama encontró que más de una cuarta parte de los proyectos superó el presupuesto, casi siempre por una necesidad imprevista de tecnología adicional."},
+        {"type":"p","text":"6. Lleve todo a cinco años, no a uno, y compare las alternativas sobre ese total. Nuestra calculadora de costo total de un ERP hace la aritmética con sus propios supuestos y sin cifras precargadas.","links":[{"text":"calculadora de costo total de un ERP","href":"/herramientas/calculadora-costo-erp"}]},
         {
           "type": "h2",
           "text": "Cómo podemos ayudarle"
@@ -2615,6 +2785,20 @@
           "text": "Empiece por su proceso comercial, no por la herramienta: cómo entra un prospecto, cómo se califica, cuántas etapas tiene la venta, qué necesita ver la dirección. Con eso escrito, pida a cada proveedor una demostración con sus propios datos y su propio proceso, y pruebe el sistema con dos o tres vendedores reales antes de decidir. El CRM que el equipo encuentra útil en la prueba es el que va a usar."
         },
         {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué pasa con el fin de venta de Salesforce CPQ y qué es un CRM.",
+          "links": [
+            {
+              "text": "qué pasa con el fin de venta de Salesforce CPQ",
+              "href": "/perspectivas/fin-de-venta-salesforce-cpq-opciones"
+            },
+            {
+              "text": "qué es un CRM",
+              "href": "/perspectivas/que-es-un-crm-y-como-elegir-el-correcto"
+            }
+          ]
+        },
+        {
           "type": "h2",
           "text": "Cómo podemos ayudarle"
         },
@@ -2772,6 +2956,24 @@
         {
           "type": "p",
           "text": "Empiece por describir su operación real —tipo de producto, número de bodegas, volumen de líneas por día, picos de temporada, requisitos de trazabilidad—, no por el catálogo de un proveedor. Con eso escrito, pida a cada proveedor una demostración con sus propios flujos y consulte a clientes de tamaño y sector parecidos. Valore especialmente la integración con su ERP actual, el ecosistema de implementadores en su país y la facilidad con que su equipo puede ajustar las reglas sin depender del fabricante. Un WMS bien elegido pero mal adoptado no corrige el inventario."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: los mejores ERP para medianas empresas, cómo elegir un software CMMS o EAM y qué es un software MES.",
+          "links": [
+            {
+              "text": "los mejores ERP para medianas empresas",
+              "href": "/perspectivas/mejores-erp-para-medianas-empresas"
+            },
+            {
+              "text": "cómo elegir un software CMMS o EAM",
+              "href": "/perspectivas/software-cmms-eam-como-elegir"
+            },
+            {
+              "text": "qué es un software MES",
+              "href": "/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta"
+            }
+          ]
         },
         {
           "type": "h2",
@@ -3120,6 +3322,24 @@
               "href": "/diagnostico"
             }
           ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: los mejores ERP para medianas empresas, qué es un software MES y qué es un sistema WMS.",
+          "links": [
+            {
+              "text": "los mejores ERP para medianas empresas",
+              "href": "/perspectivas/mejores-erp-para-medianas-empresas"
+            },
+            {
+              "text": "qué es un software MES",
+              "href": "/perspectivas/software-mes-que-es-y-cuando-lo-necesita-su-planta"
+            },
+            {
+              "text": "qué es un sistema WMS",
+              "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3462,6 +3682,20 @@
               "href": "/diagnostico"
             }
           ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es un ERP y qué es la gestión del cambio organizacional.",
+          "links": [
+            {
+              "text": "qué es un ERP",
+              "href": "/perspectivas/que-es-un-erp-guia-para-elegirlo"
+            },
+            {
+              "text": "qué es la gestión del cambio organizacional",
+              "href": "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3589,6 +3823,24 @@
         {
           "type": "p",
           "text": "Parta de su proceso real: tipo de producción, número de plantas, requisitos de calidad y trazabilidad, y el equipo de planta disponible. Pida demostraciones con sus propios flujos, visite plantas de clientes parecidos y valore la integración con su ERP actual. Pruebe la pantalla con operarios reales: si les estorba, no la usarán, y un MES que no se registra a tiempo no cumple su función."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: los mejores ERP para medianas empresas, cómo elegir un software CMMS o EAM y qué es un ERP.",
+          "links": [
+            {
+              "text": "los mejores ERP para medianas empresas",
+              "href": "/perspectivas/mejores-erp-para-medianas-empresas"
+            },
+            {
+              "text": "cómo elegir un software CMMS o EAM",
+              "href": "/perspectivas/software-cmms-eam-como-elegir"
+            },
+            {
+              "text": "qué es un ERP",
+              "href": "/perspectivas/que-es-un-erp-guia-para-elegirlo"
+            }
+          ]
         },
         {
           "type": "h2",
@@ -3768,6 +4020,20 @@
               "href": "/diagnostico"
             }
           ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es un CRM y la comparativa de Salesforce, HubSpot y Dynamics 365.",
+          "links": [
+            {
+              "text": "qué es un CRM",
+              "href": "/perspectivas/que-es-un-crm-y-como-elegir-el-correcto"
+            },
+            {
+              "text": "la comparativa de Salesforce, HubSpot y Dynamics 365",
+              "href": "/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm"
+            }
+          ]
         }
       ],
       "sources": [
@@ -3915,6 +4181,24 @@
         {
           "type": "p",
           "text": "Dar el cambio por terminado en la salida en vivo, sin un periodo de refuerzo."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y cuándo contratar una PMO externa.",
+          "links": [
+            {
+              "text": "qué es la planeación estratégica",
+              "href": "/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo"
+            },
+            {
+              "text": "qué es una PMO y qué funciones tiene",
+              "href": "/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla"
+            },
+            {
+              "text": "cuándo contratar una PMO externa",
+              "href": "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+            }
+          ]
         },
         {
           "type": "h2",
@@ -4088,6 +4372,20 @@
         {
           "type": "p",
           "text": "Cuatro decisiones, de criterio de Cyrrus. Primero, qué proceso y por qué: elegir por impacto en el negocio. Segundo, quién es responsable del robot cuando el proceso cambie. Tercero, qué se mide para saber que funciona (tiempo, errores, excepciones). Cuarto, quién supervisa lo que el robot hace, en especial si toca datos financieros o de clientes."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es el gobierno de IA corporativo y qué es la gobernanza de IA y qué marcos usar.",
+          "links": [
+            {
+              "text": "qué es el gobierno de IA corporativo",
+              "href": "/perspectivas/gobierno-de-ia-corporativo-en-la-empresa"
+            },
+            {
+              "text": "qué es la gobernanza de IA y qué marcos usar",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            }
+          ]
         },
         {
           "type": "h2",
@@ -4271,6 +4569,16 @@
             {
               "text": "la gobernanza y deduplicación de datos",
               "href": "/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué pasa con el fin de venta de Salesforce CPQ.",
+          "links": [
+            {
+              "text": "qué pasa con el fin de venta de Salesforce CPQ",
+              "href": "/perspectivas/fin-de-venta-salesforce-cpq-opciones"
             }
           ]
         },
@@ -4856,6 +5164,2378 @@
         {
           "label": "HubSpot. Manage duplicate records",
           "url": "https://knowledge.hubspot.com/records/manage-duplicate-records"
+        }
+      ]
+    },
+    "que-es-gobernanza-de-ia-y-que-marcos-usar": {
+      "title": "Qué es la gobernanza de IA y qué marcos usar: NIST, OCDE e ISO/IEC 42001",
+      "seoTitle": "Qué es la gobernanza de IA y qué marcos usar",
+      "label": "Gobierno de IA",
+      "excerpt": "Qué publican el NIST, la OCDE y la IEC sobre cómo gestionar la IA, en qué se diferencian sus tres referencias y qué debe decidir la gerencia antes de elegir una.",
+      "metaDescription": "Qué es la gobernanza de IA y qué marcos usar: NIST AI RMF, principios de la OCDE e ISO/IEC 42001 según sus fuentes oficiales, y qué decide la gerencia.",
+      "intro": "Antes de comprar una herramienta de gobernanza conviene saber qué se va a gobernar y con qué referencia. Tres referencias públicas sirven de punto de partida: el marco del NIST, los principios de la OCDE y la norma ISO/IEC 42001.",
+      "keyTakeaways": [
+        "El NIST describe su AI RMF como un marco de uso voluntario con cuatro funciones: gobernar, mapear, medir y gestionar.",
+        "Los principios de la OCDE se adoptaron en mayo de 2019 y se actualizaron en mayo de 2024; son cinco principios basados en valores.",
+        "ISO/IEC 42001:2023 es una norma internacional de sistema de gestión de IA para cualquier organización que ofrezca o use productos o servicios con IA; no es una ley."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Qué marco de gobierno de IA le conviene a su empresa?",
+          "description": "Diseñamos el marco de Gobierno de IA de su organización: qué se puede automatizar, qué necesita supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Mapa de riesgo por caso de uso, no una política genérica",
+            "Roles y responsables definidos entre negocio, TI y legal"
+          ],
+          "ctaLabel": "Conocer Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        },
+        {
+          "title": "Antes de escalar la IA, defina sus límites",
+          "description": "Ayudamos a su comité directivo a decidir qué delegar, qué supervisar y qué nunca automatizar — antes de que la adopción avance sin control.",
+          "checklist": [
+            "Comité de gobierno con negocio, TI, legal y seguridad",
+            "Criterios claros para aprobar nuevos casos de uso de IA"
+          ],
+          "ctaLabel": "Agendar conversación sobre Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus con notebook frente a pantallas de trabajo"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "¿Quién responde si una herramienta de IA que usa su equipo toma una mala decisión? Gobernar la IA es definir quién decide, con qué criterios y con qué evidencia. Esta guía resume tres referencias públicas para hacerlo y lo que debe decidir la gerencia."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: lo que decimos de cada marco viene de las páginas oficiales del NIST, de la OCDE y de la IEC (citadas al final, consultadas en noviembre de 2026). No pudimos abrir la página de la norma en iso.org (devolvió error 403), así que de ISO/IEC 42001 afirmamos solo lo que publica la IEC; el texto de la norma es de pago y no lo revisamos. Las recomendaciones para decidir son criterio de Cyrrus."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es la gobernanza de IA?"
+        },
+        {
+          "type": "p",
+          "text": "En las fuentes que revisamos no encontramos una definición única, y no la inventamos. Lo que sí hacen los tres marcos es poner reglas de gestión alrededor del uso de IA: el NIST habla de gestionar riesgos para personas, organizaciones y sociedad; la OCDE, de promover una IA innovadora y confiable; ISO/IEC 42001, de un sistema de gestión dentro de la organización. En este artículo usamos «gobernanza de IA» en ese sentido amplio (criterio de Cyrrus)."
+        },
+        {
+          "type": "h2",
+          "text": "NIST AI RMF: un marco de riesgos de uso voluntario"
+        },
+        {
+          "type": "p",
+          "text": "El NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.) publicó la versión 1.0 de su AI Risk Management Framework el 26 de enero de 2023 (documento NIST.AI.100-1). Su página oficial dice que el marco es de uso voluntario, y el propio documento lo describe como voluntario, que preserva derechos, no específico de un sector y aplicable a cualquier caso de uso. La página también indica que la versión 1.0 se está revisando como parte del Plan de Acción de IA de la Casa Blanca, así que conviene confirmar cuál es la versión vigente."
+        },
+        {
+          "type": "p",
+          "text": "El núcleo del marco tiene cuatro funciones, según el NIST: gobernar (govern), mapear (map), medir (measure) y gestionar (manage). Gobernar es una función transversal presente en toda la gestión de riesgos de IA; mapear establece el contexto para enmarcar los riesgos de un sistema; medir usa herramientas y métodos para analizar, evaluar y monitorear el riesgo; gestionar asigna recursos a los riesgos ya mapeados y medidos."
+        },
+        {
+          "type": "p",
+          "text": "El documento enumera las características de una IA confiable: válida y fiable; segura; protegida y resiliente; responsable y transparente; explicable e interpretable; con privacidad reforzada; y justa, con los sesgos nocivos gestionados. El NIST también publicó un perfil para IA generativa (NIST AI 600-1, 26 de julio de 2024) y un Playbook complementario."
+        },
+        {
+          "type": "h2",
+          "text": "Principios de la OCDE: valores comunes para una IA confiable"
+        },
+        {
+          "type": "p",
+          "text": "Según la página de la OCDE, los principios se adoptaron en mayo de 2019 y se actualizaron en mayo de 2024. La OCDE los describe como el primer estándar intergubernamental sobre IA. Son cinco principios basados en valores: crecimiento inclusivo, desarrollo sostenible y bienestar; derechos humanos y valores democráticos, incluidas la equidad y la privacidad; transparencia y explicabilidad; robustez, seguridad y protección; y rendición de cuentas."
+        },
+        {
+          "type": "p",
+          "text": "La OCDE lista además cinco recomendaciones para quienes diseñan política pública: invertir en investigación y desarrollo de IA, fomentar un ecosistema inclusivo, dar forma a un entorno de gobernanza interoperable, desarrollar capacidades humanas y preparar la transición laboral, y cooperar a nivel internacional. Para una empresa, el uso práctico de los principios es criterio de Cyrrus: fijar los valores que luego una política interna y un sistema de gestión convierten en reglas."
+        },
+        {
+          "type": "h2",
+          "text": "ISO/IEC 42001: una norma para gestionar la IA como sistema"
+        },
+        {
+          "type": "p",
+          "text": "La IEC publica ISO/IEC 42001:2023, «Information technology — Artificial intelligence — Management system», edición 1.0, del 18 de diciembre de 2023, de 51 páginas y a cargo del comité técnico ISO/IEC JTC 1/SC 42. Según su ficha, especifica requisitos y da orientación para establecer, implementar, mantener y mejorar continuamente un sistema de gestión de IA dentro de una organización, y aplica a cualquier organización, sin importar su tamaño, tipo y naturaleza, que ofrezca o use productos o servicios que usan sistemas de IA."
+        },
+        {
+          "type": "p",
+          "text": "Para auditar y certificar frente a ISO/IEC 42001 existe la norma ISO/IEC 42006, que según el organismo de normalización de Estonia (que cita a la IEC) fija requisitos adicionales para los organismos que auditan y certifican sistemas de gestión de IA. Ampliamos el tema en nuestra guía sobre ISO/IEC 42001.",
+          "links": [
+            {
+              "text": "nuestra guía sobre ISO/IEC 42001",
+              "href": "/perspectivas/iso-iec-42001-que-es-y-a-quien-aplica"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe decidir la gerencia"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro decisiones, de criterio de Cyrrus y no de las fuentes citadas. Primero, qué marco usará como referencia y para qué: gestionar riesgos (NIST), fijar valores (OCDE) o certificar un sistema de gestión (ISO/IEC 42001); pueden combinarse. Segundo, quién responde por la IA en la empresa. Tercero, qué evidencia guardará de cada decisión. Cuarto, cada cuánto revisará todo esto."
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar: qué es el gobierno de IA corporativo desde la mirada del CEO, qué regulaciones ya aplican y cómo evaluar herramientas de gobernanza.",
+          "links": [
+            {
+              "text": "qué es el gobierno de IA corporativo",
+              "href": "/perspectivas/gobierno-de-ia-corporativo-en-la-empresa"
+            },
+            {
+              "text": "qué regulaciones ya aplican",
+              "href": "/perspectivas/regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana"
+            },
+            {
+              "text": "cómo evaluar herramientas de gobernanza",
+              "href": "/perspectivas/herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es RPA y cuándo conviene frente a la IA.",
+          "links": [
+            {
+              "text": "qué es RPA y cuándo conviene frente a la IA",
+              "href": "/perspectivas/que-es-rpa-y-cuando-conviene-frente-a-la-ia"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "NIST. AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        },
+        {
+          "label": "NIST (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST.AI.100-1",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+        },
+        {
+          "label": "NIST AIRC. AI RMF Core",
+          "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+        },
+        {
+          "label": "OECD.AI. OECD AI Principles",
+          "url": "https://oecd.ai/en/ai-principles"
+        },
+        {
+          "label": "IEC Webstore. ISO/IEC 42001:2023, Information technology — Artificial intelligence — Management system",
+          "url": "https://webstore.iec.ch/publication/90574"
+        },
+        {
+          "label": "EVS (organismo de normalización de Estonia). New international standard sets rules for auditing AI management systems (ISO/IEC 42006)",
+          "url": "https://www.evs.ee/en/auditing-ai-management-systems"
+        }
+      ]
+    },
+    "regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana": {
+      "title": "Regulación de la IA en 2026: qué exigen la Unión Europea, Estados Unidos y España",
+      "seoTitle": "Regulación de la IA: Unión Europea, EE. UU. y España",
+      "label": "Gobierno de IA",
+      "excerpt": "Qué dicen las fuentes oficiales sobre el Reglamento de IA europeo, dos leyes estatales de EE. UU., la agencia de supervisión de España y la política nacional de Colombia.",
+      "metaDescription": "Regulación de la IA en 2026: fechas y multas del Reglamento europeo, leyes de Texas y Colorado, la agencia AESIA y qué debe revisar la gerencia.",
+      "intro": "Cada país regula la IA a su ritmo y en su forma. Esta guía resume lo que dicen los textos y las páginas oficiales sobre la Unión Europea, dos leyes estatales de Estados Unidos, España y Colombia.",
+      "keyTakeaways": [
+        "Según la Comisión Europea, el Reglamento de IA es aplicable desde el 2 de agosto de 2026; los sistemas de alto riesgo del Anexo III pasaron al 2 de diciembre de 2027 y los del Anexo I al 2 de agosto de 2028.",
+        "El artículo 99 fija multas máximas de hasta 35 millones de euros o el 7 % de la facturación anual mundial para las prácticas prohibidas, y de hasta 15 millones o el 3 % para otras obligaciones.",
+        "En Texas y Colorado, el texto oficial asigna la aplicación al fiscal general del estado; Texas dice que no da un derecho de acción privada y Colorado no crea uno nuevo."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Sabe qué normas de IA le aplican?",
+          "description": "Diseñamos el marco de Gobierno de IA de su organización: qué se puede automatizar, qué necesita supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Mapa de riesgo por caso de uso, no una política genérica",
+            "Roles y responsables definidos entre negocio, TI y legal"
+          ],
+          "ctaLabel": "Conocer Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        },
+        {
+          "title": "Defina quién sigue los cambios normativos de IA",
+          "description": "Ayudamos a su comité directivo a decidir qué delegar, qué supervisar y qué nunca automatizar — antes de que la adopción avance sin control.",
+          "checklist": [
+            "Comité de gobierno con negocio, TI, legal y seguridad",
+            "Criterios claros para aprobar nuevos casos de uso de IA"
+          ],
+          "ctaLabel": "Agendar conversación sobre Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus con notebook frente a pantallas de trabajo"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "¿Qué norma le aplica a la IA que usa su empresa? Depende de dónde ofrece productos o servicios y sobre quién usa la IA. Esta guía reúne lo que dicen las fuentes oficiales y deja claro qué no pudimos verificar."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: cada dato viene de un texto o una página oficial citada al final, consultada en noviembre de 2026. Las normas cambian con frecuencia (el propio Reglamento europeo fue modificado en julio de 2026), así que confirme la versión vigente antes de decidir. Esto no es asesoría legal; lo que es criterio de Cyrrus lo decimos."
+        },
+        {
+          "type": "h2",
+          "text": "Unión Europea: el Reglamento de IA"
+        },
+        {
+          "type": "p",
+          "text": "Según la Comisión Europea, el Reglamento de IA entró en vigor el 1 de agosto de 2024 y define cuatro niveles de riesgo: riesgo inaceptable (prácticas prohibidas), alto riesgo, riesgo de transparencia (por ejemplo, avisar a la persona de que interactúa con un chatbot) y riesgo mínimo o nulo, para el cual no se introducen reglas."
+        },
+        {
+          "type": "p",
+          "text": "La aplicación es escalonada. La Comisión indica que el AI Omnibus, una modificación del reglamento, entró en vigor el 27 de julio de 2026 y extendió los plazos de los sistemas de alto riesgo. La tabla resume las fechas que publican la Comisión y el texto consolidado al 27 de julio de 2026."
+        },
+        {
+          "type": "table",
+          "text": "Fechas de aplicación del Reglamento de IA, según la Comisión Europea y el texto consolidado",
+          "columns": [
+            "Qué",
+            "Desde"
+          ],
+          "rows": [
+            [
+              "Prácticas prohibidas y obligaciones de alfabetización en IA",
+              "2 de febrero de 2025"
+            ],
+            [
+              "Gobernanza y obligaciones para modelos de IA de propósito general",
+              "2 de agosto de 2025"
+            ],
+            [
+              "Aplicación general del reglamento",
+              "2 de agosto de 2026"
+            ],
+            [
+              "Algunas prohibiciones nuevas del artículo 5 (añadidas por el Omnibus)",
+              "2 de diciembre de 2026"
+            ],
+            [
+              "Sistemas de alto riesgo del Anexo III",
+              "2 de diciembre de 2027"
+            ],
+            [
+              "Sistemas de alto riesgo del Anexo I (productos regulados)",
+              "2 de agosto de 2028"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Sanciones del Reglamento europeo"
+        },
+        {
+          "type": "p",
+          "text": "El artículo 99, en el texto que publica el AI Act Service Desk de la Comisión Europea, fija estos máximos: para las prácticas prohibidas, hasta 35 millones de euros o el 7 % de la facturación anual mundial del ejercicio anterior, la cifra que sea mayor; para otras obligaciones de los operadores, hasta 15 millones o el 3 %; y para información incorrecta, incompleta o engañosa a las autoridades, hasta 7,5 millones o el 1 %. Para pymes, incluidas las empresas emergentes, se aplica la cifra menor de las dos."
+        },
+        {
+          "type": "h2",
+          "text": "Estados Unidos: dos ejemplos estatales"
+        },
+        {
+          "type": "p",
+          "text": "No revisamos normas federales de Estados Unidos para esta guía. Los dos ejemplos que siguen se leyeron en el texto o la página oficial de cada estado."
+        },
+        {
+          "type": "p",
+          "text": "Texas: la ley H.B. 149, de título corto Texas Responsible Artificial Intelligence Governance Act, entra en vigor el 1 de enero de 2026. El fiscal general tiene autoridad exclusiva para aplicarla y la ley dice que no da un derecho de acción privada. Antes de demandar, el fiscal general debe dar un aviso y esperar 60 días para que se subsane la infracción. Las multas civiles son de 10.000 a 12.000 dólares por infracción subsanable, de 80.000 a 200.000 por infracción no subsanable y de 2.000 a 40.000 por cada día que continúe la infracción."
+        },
+        {
+          "type": "p",
+          "text": "Colorado: la página oficial del proyecto SB26-189, «Automated Decision-Making Technology», lo muestra como ley firmada el 14 de mayo de 2026. Según ese resumen, deroga y vuelve a promulgar disposiciones de la SB 24-205 y regula la tecnología de decisión automatizada en decisiones consecuentes sobre educación, empleo, vivienda, servicios financieros o de crédito, seguros, salud y servicios públicos esenciales. Los desarrolladores deben dar documentación técnica a quienes la usan; estos deben avisar a las personas, explicar en lenguaje claro un resultado adverso y reconocer derechos de acceso, corrección y revisión humana. La aplica el fiscal general y no crea un nuevo derecho de acción privada. La página indica que la documentación de los desarrolladores empieza el 1 de enero de 2027 y que el fiscal general debe adoptar sus reglas a más tardar en esa fecha."
+        },
+        {
+          "type": "h2",
+          "text": "España: una agencia de supervisión"
+        },
+        {
+          "type": "p",
+          "text": "El Real Decreto 729/2023, de 22 de agosto, publicado en el BOE núm. 210 del 2 de septiembre de 2023, creó la Agencia Española de Supervisión de Inteligencia Artificial (AESIA) como entidad de derecho público con sede en A Coruña. Su artículo 4.1 le atribuye tareas de supervisión, asesoramiento, concienciación y formación. No revisamos qué competencias le asigna el Reglamento europeo ni normas posteriores a 2023; para su estado actual conviene consultar a la propia agencia."
+        },
+        {
+          "type": "h2",
+          "text": "Colombia: una política nacional"
+        },
+        {
+          "type": "p",
+          "text": "El DNP describe el documento CONPES 4144, la Política Nacional de Inteligencia Artificial, aprobado el 14 de febrero de 2025. Según esa página, busca convertir a Colombia en un referente en el uso, desarrollo y apropiación de la IA, con más de 100 acciones hasta 2030 y una inversión de $479.000 millones; MinTIC, DAPRE, MinCiencias y el DNP lideran su implementación. Se trata de un artículo divulgativo del DNP, no del texto del CONPES. No revisamos el documento completo, así que no afirmamos si impone obligaciones a las empresas."
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe revisar la gerencia"
+        },
+        {
+          "type": "p",
+          "text": "Tres preguntas, de criterio de Cyrrus. Primero, en qué países ofrece productos o servicios que usan IA, o usa IA sobre personas, porque de eso depende qué norma le aplica. Segundo, si alguno de sus sistemas toma o apoya decisiones sobre empleo, crédito, salud o seguros, que son ejemplos que aparecen en la ley de Colorado, y si podría caer en una categoría de alto riesgo del reglamento europeo. Tercero, quién en la empresa sigue los cambios normativos y cada cuánto."
+        },
+        {
+          "type": "p",
+          "text": "Para pasar de las normas a la práctica, lea qué evidencia debe poder mostrar la empresa y cómo evaluar herramientas de gobernanza.",
+          "links": [
+            {
+              "text": "qué evidencia debe poder mostrar la empresa",
+              "href": "/perspectivas/cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa"
+            },
+            {
+              "text": "cómo evaluar herramientas de gobernanza",
+              "href": "/perspectivas/herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Comisión Europea. AI Act: regulatory framework for AI",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 99: Penalties",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-99"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 113: Entry into force and application",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113"
+        },
+        {
+          "label": "Legislatura de Texas. H.B. 149, Texas Responsible Artificial Intelligence Governance Act (texto inscrito)",
+          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm"
+        },
+        {
+          "label": "Asamblea General de Colorado. SB26-189, Automated Decision-Making Technology",
+          "url": "https://leg.colorado.gov/bills/sb26-189"
+        },
+        {
+          "label": "BOE. Real Decreto 729/2023, de 22 de agosto, por el que se aprueba el Estatuto de la Agencia Española de Supervisión de Inteligencia Artificial",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-18911"
+        },
+        {
+          "label": "DNP (2025). CONPES 4144: hoja de ruta de Colombia en inteligencia artificial",
+          "url": "https://www.dnp.gov.co/publicaciones/Planeacion/Paginas/conpes-4144-hoja-de-ruta-colombia-inteligencia-artificial-retos-actuales-transformacion-futura.aspx?ID=291"
+        }
+      ]
+    },
+    "iso-iec-42001-que-es-y-a-quien-aplica": {
+      "title": "ISO/IEC 42001: qué es la norma de gestión de IA y a quién aplica",
+      "seoTitle": "ISO/IEC 42001: qué es y a quién aplica",
+      "label": "Gobierno de IA",
+      "excerpt": "Qué publica la IEC sobre ISO/IEC 42001:2023, a quién aplica, qué se sabe de su certificación y qué no se puede afirmar sin leer el texto completo.",
+      "metaDescription": "ISO/IEC 42001: qué es la norma de gestión de IA, ficha de la IEC (edición 1.0, 2023), a quién aplica y qué se sabe de su certificación con ISO/IEC 42006.",
+      "intro": "ISO/IEC 42001 es la norma internacional de sistemas de gestión de inteligencia artificial. Esta guía explica qué publica la IEC sobre ella, a quién aplica y qué no se puede afirmar sin leer el texto completo.",
+      "keyTakeaways": [
+        "ISO/IEC 42001:2023 es la edición 1.0, del 18 de diciembre de 2023, de 51 páginas, según la ficha de la IEC.",
+        "La ficha dice que aplica a cualquier organización, sin importar su tamaño, tipo y naturaleza, que ofrezca o use productos o servicios con sistemas de IA.",
+        "La auditoría y certificación frente a la norma tiene su propio estándar para certificadores, ISO/IEC 42006; no revisamos el texto de ninguna de las dos."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Le preguntaron por ISO/IEC 42001?",
+          "description": "Diseñamos el marco de Gobierno de IA de su organización: qué se puede automatizar, qué necesita supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Mapa de riesgo por caso de uso, no una política genérica",
+            "Roles y responsables definidos entre negocio, TI y legal"
+          ],
+          "ctaLabel": "Conocer Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        },
+        {
+          "title": "Defina el alcance antes de pensar en certificarse",
+          "description": "Ayudamos a su comité directivo a decidir qué delegar, qué supervisar y qué nunca automatizar — antes de que la adopción avance sin control.",
+          "checklist": [
+            "Comité de gobierno con negocio, TI, legal y seguridad",
+            "Criterios claros para aprobar nuevos casos de uso de IA"
+          ],
+          "ctaLabel": "Agendar conversación sobre Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus con notebook frente a pantallas de trabajo"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Cuando un cliente o un socio pregunta si su empresa «cumple ISO 42001», conviene saber qué es esa norma antes de responder. Esta guía reúne lo que se puede afirmar con fuentes abiertas."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: los datos de la norma vienen de la ficha de la IEC y de un artículo del organismo de normalización de Estonia que cita a la IEC (ambos al final, consultados en noviembre de 2026). La página de la norma en iso.org devolvió error 403 y el texto completo es de pago, por lo que no lo revisamos y no describimos sus cláusulas. Lo que es criterio de Cyrrus lo decimos."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es ISO/IEC 42001?"
+        },
+        {
+          "type": "p",
+          "text": "Según la ficha de la IEC, ISO/IEC 42001:2023 especifica requisitos y da orientación para establecer, implementar, mantener y mejorar continuamente un sistema de gestión de IA dentro de una organización. Es una norma internacional, no una ley."
+        },
+        {
+          "type": "table",
+          "text": "Ficha de ISO/IEC 42001:2023, según la IEC",
+          "columns": [
+            "Dato",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "Título",
+              "Information technology — Artificial intelligence — Management system"
+            ],
+            [
+              "Edición",
+              "1.0"
+            ],
+            [
+              "Fecha de publicación",
+              "18 de diciembre de 2023"
+            ],
+            [
+              "Páginas",
+              "51"
+            ],
+            [
+              "Comité técnico",
+              "ISO/IEC JTC 1/SC 42, Inteligencia artificial"
+            ],
+            [
+              "Clasificación ICS",
+              "35.020 y 03.100.70"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿A quién aplica?"
+        },
+        {
+          "type": "p",
+          "text": "La ficha de la IEC dice que aplica a cualquier organización, sin importar su tamaño, tipo y naturaleza, que ofrezca o use productos o servicios que utilizan sistemas de IA. Es decir, no se limita a quien desarrolla IA: incluye a quien la usa."
+        },
+        {
+          "type": "h2",
+          "text": "¿Se puede certificar?"
+        },
+        {
+          "type": "p",
+          "text": "El organismo de normalización de Estonia, citando a la IEC, informa que ISO/IEC 42006 define requisitos adicionales para los organismos que auditan y certifican sistemas de gestión de IA frente a ISO/IEC 42001, y que se apoya en ISO/IEC 17021-1 sin reemplazarla. Es decir, existe un estándar para quienes certifican. No revisamos qué certificadores están acreditados en su país ni qué cuesta o cuánto tarda una certificación: no tenemos fuente primaria y no damos cifras."
+        },
+        {
+          "type": "h2",
+          "text": "Lo que no afirmamos"
+        },
+        {
+          "type": "p",
+          "text": "No describimos los requisitos por cláusula ni los controles de la norma, porque no leímos el texto. Tampoco afirmamos que cumplirla equivalga a cumplir el Reglamento de IA europeo ni otra ley: no encontramos en las fuentes revisadas una equivalencia oficial. Si un proveedor o un asesor le dice lo contrario, pídale la fuente."
+        },
+        {
+          "type": "p",
+          "text": "Lo mismo vale para su relación con el marco del NIST: son documentos distintos, uno de gestión de riesgos de uso voluntario y otro de sistema de gestión, y cualquier mapeo entre ambos sería criterio propio."
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe decidir la gerencia"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro preguntas, de criterio de Cyrrus. Primero, quién se lo está pidiendo y qué espera: un certificado, o alinearse con la norma. Segundo, qué sistemas de IA entran en el alcance, los propios y los que solo usa. Tercero, quién será el responsable dentro de la empresa. Cuarto, quién pagará la auditoría; cualquier cifra debe salir de una cotización, no de una regla general."
+        },
+        {
+          "type": "p",
+          "text": "Para ver cómo encaja con otros marcos y con las normas, lea qué es la gobernanza de IA y qué marcos usar y qué evidencia debe poder mostrar la empresa.",
+          "links": [
+            {
+              "text": "qué es la gobernanza de IA y qué marcos usar",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            },
+            {
+              "text": "qué evidencia debe poder mostrar la empresa",
+              "href": "/perspectivas/cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "IEC Webstore. ISO/IEC 42001:2023, Information technology — Artificial intelligence — Management system",
+          "url": "https://webstore.iec.ch/publication/90574"
+        },
+        {
+          "label": "EVS (organismo de normalización de Estonia). New international standard sets rules for auditing AI management systems (ISO/IEC 42006)",
+          "url": "https://www.evs.ee/en/auditing-ai-management-systems"
+        }
+      ]
+    },
+    "modelo-de-madurez-de-gobernanza-de-ia": {
+      "title": "Modelo de madurez de gobernanza de IA: qué mide y cómo usarlo",
+      "seoTitle": "Modelo de madurez de gobernanza de IA: cómo usarlo",
+      "label": "Gobierno de IA",
+      "excerpt": "Cómo está construido el modelo de madurez de IA responsable que publicó Microsoft, qué reglas de uso da su propio documento y qué debe decidir la gerencia.",
+      "metaDescription": "Modelo de madurez de gobernanza de IA: 24 dimensiones y 5 niveles del modelo de Microsoft, sus reglas de uso y qué debe decidir la gerencia al evaluarse.",
+      "intro": "Un modelo de madurez ordena en niveles qué tan preparada está una empresa para gobernar la IA. Esta guía explica cómo está construido un modelo publicado por Microsoft y cómo usarlo sin convertirlo en una calificación.",
+      "keyTakeaways": [
+        "Microsoft publicó en mayo de 2023 un modelo de madurez de IA responsable con 24 dimensiones en tres categorías y cinco niveles, de «Latente» a «Líder».",
+        "El propio documento recomienda usarlo como un mapa y no como una medición punitiva, y no promediar los puntajes entre dimensiones.",
+        "En nuestra búsqueda, los demás modelos de madurez de gobernanza de IA eran de consultoras y proveedores; no encontramos un estándar oficial único y por eso describimos solo uno."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Dónde está hoy el gobierno de IA de su empresa?",
+          "description": "Diseñamos el marco de Gobierno de IA de su organización: qué se puede automatizar, qué necesita supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Mapa de riesgo por caso de uso, no una política genérica",
+            "Roles y responsables definidos entre negocio, TI y legal"
+          ],
+          "ctaLabel": "Conocer Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        },
+        {
+          "title": "Convierta el diagnóstico en un plan",
+          "description": "Ayudamos a su comité directivo a decidir qué delegar, qué supervisar y qué nunca automatizar — antes de que la adopción avance sin control.",
+          "checklist": [
+            "Comité de gobierno con negocio, TI, legal y seguridad",
+            "Criterios claros para aprobar nuevos casos de uso de IA"
+          ],
+          "ctaLabel": "Agendar conversación sobre Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus con notebook frente a pantallas de trabajo"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "¿Qué tan preparada está su empresa para gobernar la IA? Un modelo de madurez ordena la respuesta en niveles. Esta guía explica cómo está construido un modelo publicado por Microsoft y cómo usarlo bien."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: el único modelo que describimos es el Responsible AI Maturity Model de Microsoft (informe MSR-TR-2023-26, versión 1 del 17 de mayo de 2023), leído en su página de Microsoft Research y en su documento (citados al final, consultados en noviembre de 2026). Mide madurez en IA responsable, un tema cercano a la gobernanza pero no idéntico. En nuestra búsqueda, los demás modelos de «madurez de gobernanza de IA» eran de consultoras y proveedores y no encontramos un estándar oficial único; no los usamos. Lo que es criterio de Cyrrus lo decimos."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es un modelo de madurez?"
+        },
+        {
+          "type": "p",
+          "text": "Microsoft presenta su modelo como un marco para que las organizaciones identifiquen sus niveles actuales y deseados de madurez en IA responsable, y lo describe como un mapa de un territorio complejo y cambiante, no como una medida. En general (criterio de Cyrrus), un modelo de madurez ordena prácticas en niveles para decidir por dónde seguir."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo está construido el modelo de Microsoft"
+        },
+        {
+          "type": "p",
+          "text": "Tiene 24 dimensiones derivadas empíricamente de entrevistas y grupos focales con más de 90 especialistas y profesionales de IA. Cada dimensión tiene cinco niveles, del 1 al 5: Latente (Latent), Emergente (Emerging), En desarrollo (Developing), Realizado (Realizing) y Líder (Leading). Las dimensiones se agrupan en tres categorías."
+        },
+        {
+          "type": "table",
+          "text": "Categorías y algunas dimensiones del modelo, según su documento",
+          "columns": [
+            "Categoría",
+            "Algunas dimensiones"
+          ],
+          "rows": [
+            [
+              "Fundamentos de la organización",
+              "Liderazgo y cultura; gobernanza; política de IA responsable; procesos de cumplimiento e infraestructura; recursos de conocimiento; herramientas"
+            ],
+            [
+              "Enfoque de los equipos",
+              "Equipos que valoran la IA responsable; momento de la IA responsable en el ciclo de vida; motivación de los productos de IA; colaboración entre disciplinas"
+            ],
+            [
+              "Práctica de IA responsable",
+              "Rendición de cuentas; transparencia externa e interna; identificar, medir, mitigar y monitorear riesgos; privacidad y seguridad de la IA"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Según el documento, los fundamentos de la organización son la base de las otras dos categorías, y las dimensiones dependen unas de otras: el avance en una puede depender de la madurez de otras."
+        },
+        {
+          "type": "h2",
+          "text": "Reglas de uso que da el propio documento"
+        },
+        {
+          "type": "p",
+          "text": "Microsoft recomienda usar el modelo como un mapa de orientación y no como una medición con fines punitivos; no calcular un puntaje global ni promediar entre dimensiones, porque unas pesan más que otras (un nivel 5 en herramientas no tiene el mismo impacto que un nivel 5 en cultura y liderazgo); usarlo para complementar, no reemplazar, otros modelos de madurez de IA, seguridad y privacidad; y pedir que lo respondan tanto líderes como equipos, tomando las diferencias de percepción como señal de que hay espacio para mejorar."
+        },
+        {
+          "type": "p",
+          "text": "También advierte que el avance entre niveles no es lineal: salir de los niveles 1 y 2 puede exigir crear procesos nuevos, lo que consume recursos, mientras que pasar de los niveles 3 y 4 puede ser formalizar o integrar lo que ya existe. Añade que el nivel 5 puede no ser aplicable o deseable para todas las organizaciones y que conviene cumplir todos los criterios de un nivel antes de pasar al siguiente."
+        },
+        {
+          "type": "h2",
+          "text": "Qué no resuelve"
+        },
+        {
+          "type": "p",
+          "text": "El documento es de mayo de 2023, anterior a la entrada en vigor del Reglamento de IA europeo (1 de agosto de 2024), y se describe a sí mismo como un artefacto vivo que seguirá evolucionando. No vimos en él una correspondencia con ese reglamento ni con ISO/IEC 42001; cualquier correspondencia sería criterio propio. No incluimos cifras de referencia entre empresas porque no tenemos una fuente primaria que las respalde."
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe decidir la gerencia"
+        },
+        {
+          "type": "p",
+          "text": "Tres decisiones, de criterio de Cyrrus. Primero, qué dimensiones atender primero; el documento ubica los fundamentos de la organización (liderazgo, gobernanza, política) como base de las demás. Segundo, quién responde por cada dimensión. Tercero, cada cuánto repetir la evaluación y quién la revisa. Úselo como punto de partida de una conversación, no como una nota."
+        },
+        {
+          "type": "p",
+          "text": "Para ver los marcos que acompañan a un modelo de madurez y cómo evaluar herramientas, lea qué es la gobernanza de IA y qué marcos usar y cómo evaluar herramientas de gobernanza.",
+          "links": [
+            {
+              "text": "qué es la gobernanza de IA y qué marcos usar",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            },
+            {
+              "text": "cómo evaluar herramientas de gobernanza",
+              "href": "/perspectivas/herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Research (2023). Responsible AI Maturity Model, MSR-TR-2023-26",
+          "url": "https://www.microsoft.com/en-us/research/publication/responsible-ai-maturity-model/"
+        },
+        {
+          "label": "Vorvoreanu, Heger, Passi, Dhanorkar, Kahn y Wang (2023). Responsible AI Maturity Model: Mapping your organization’s goals on the path to responsible AI, v1 (Microsoft)",
+          "url": "https://www.microsoft.com/research/uploads/prod/2023/05/RAI_Maturity_Model_Aether_Microsoft_whitepaper.pdf"
+        }
+      ]
+    },
+    "cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa": {
+      "title": "Cumplimiento de IA: qué evidencia debe poder mostrar la empresa",
+      "seoTitle": "Cumplimiento de IA: qué evidencia mostrar",
+      "label": "Gobierno de IA",
+      "excerpt": "Qué obligaciones documenta el Reglamento de IA europeo para proveedores y desplegadores, qué aclara la Comisión sobre alfabetización en IA y qué evidencia conviene guardar.",
+      "metaDescription": "Cumplimiento de IA: obligaciones del Reglamento europeo (arts. 4, 9, 11, 12, 14, 17 y 26), alfabetización en IA y qué evidencia guardar.",
+      "intro": "En criterio de Cyrrus, cumplir una norma de IA se demuestra con evidencia y no solo con una política. Esta guía toma las obligaciones que documenta el Reglamento de IA europeo y propone qué evidencia guardar, separando lo que dice el texto de lo que es criterio de Cyrrus.",
+      "keyTakeaways": [
+        "El Reglamento de IA distingue al proveedor, que desarrolla un sistema de IA o lo hace desarrollar y lo comercializa, del desplegador, que lo usa bajo su autoridad; las obligaciones cambian según el rol.",
+        "La obligación de alfabetización en IA (artículo 4) aplica a proveedores y desplegadores desde el 2 de febrero de 2025; la Comisión aclara que no exige un nivel específico ni un certificado.",
+        "Los desplegadores de sistemas de alto riesgo deben conservar los registros que controlan al menos seis meses, salvo que otra norma disponga otra cosa (artículo 26)."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Podría mostrar evidencia de cómo gobierna su IA?",
+          "description": "Diseñamos el marco de Gobierno de IA de su organización: qué se puede automatizar, qué necesita supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Mapa de riesgo por caso de uso, no una política genérica",
+            "Roles y responsables definidos entre negocio, TI y legal"
+          ],
+          "ctaLabel": "Conocer Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        },
+        {
+          "title": "Asigne responsables antes de que pidan evidencia",
+          "description": "Ayudamos a su comité directivo a decidir qué delegar, qué supervisar y qué nunca automatizar — antes de que la adopción avance sin control.",
+          "checklist": [
+            "Comité de gobierno con negocio, TI, legal y seguridad",
+            "Criterios claros para aprobar nuevos casos de uso de IA"
+          ],
+          "ctaLabel": "Agendar conversación sobre Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus con notebook frente a pantallas de trabajo"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "¿Qué le pediría una autoridad, un cliente o un auditor si le preguntara cómo gobierna la IA que usa? Esta guía parte de lo que documenta el Reglamento de IA europeo y lo traduce en qué evidencia conviene tener a mano."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: los artículos citados son los del texto consolidado al 27 de julio de 2026 que publica el AI Act Service Desk de la Comisión Europea, y lo de alfabetización viene de las preguntas y respuestas de la Comisión (ambos al final, consultados en noviembre de 2026). La columna de evidencia es criterio de Cyrrus; no es asesoría legal ni dice qué le aplica a su empresa, que depende de su rol y de sus sistemas."
+        },
+        {
+          "type": "h2",
+          "text": "Primero: ¿es proveedor o desplegador?"
+        },
+        {
+          "type": "p",
+          "text": "El artículo 3 define al proveedor como la persona natural o jurídica, autoridad pública u otro organismo que desarrolla un sistema de IA, o lo hace desarrollar, y lo comercializa. El desplegador es quien usa un sistema de IA bajo su autoridad, salvo que sea en una actividad personal no profesional. Una empresa puede ser ambas cosas según el sistema. El mismo artículo define el sistema de IA como un sistema basado en máquinas, diseñado para operar con distintos niveles de autonomía, que puede mostrar adaptabilidad tras su despliegue y que, a partir de los datos que recibe, infiere cómo generar resultados, como predicciones, capaces de influir en entornos físicos o virtuales."
+        },
+        {
+          "type": "h2",
+          "text": "Segundo: ¿algún sistema es de alto riesgo?"
+        },
+        {
+          "type": "p",
+          "text": "Según el artículo 6, un sistema de IA es de alto riesgo cuando es un componente de seguridad de un producto del Anexo I, o es él mismo ese producto, y el producto debe pasar una evaluación de conformidad de tercera parte; o cuando está en la lista del Anexo III. Un sistema del Anexo III no se considera de alto riesgo si no plantea un riesgo significativo de daño, por ejemplo si realiza una tarea procedimental limitada, pero esa excepción no aplica si el sistema elabora perfiles de personas naturales."
+        },
+        {
+          "type": "p",
+          "text": "Según el artículo 113 en su versión vigente, las reglas de alto riesgo del Anexo III aplican desde el 2 de diciembre de 2027 y las del Anexo I desde el 2 de agosto de 2028. Las fechas completas están en nuestra guía sobre regulación de la IA.",
+          "links": [
+            {
+              "text": "nuestra guía sobre regulación de la IA",
+              "href": "/perspectivas/regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Qué documenta el reglamento y qué evidencia guardar"
+        },
+        {
+          "type": "table",
+          "text": "Obligaciones del Reglamento de IA y evidencia sugerida (la evidencia es criterio de Cyrrus)",
+          "columns": [
+            "Obligación",
+            "Artículo",
+            "Qué dice el texto",
+            "Evidencia que conviene guardar"
+          ],
+          "rows": [
+            [
+              "Alfabetización en IA",
+              "4",
+              "Proveedores y desplegadores toman medidas para apoyar la alfabetización en IA de su personal y de otras personas que operan o usan sistemas de IA en su nombre",
+              "Registro interno de iniciativas de formación"
+            ],
+            [
+              "Gestión de riesgos",
+              "9",
+              "Para sistemas de alto riesgo, un sistema de gestión de riesgos establecido, implementado, documentado y mantenido, como proceso continuo e iterativo durante todo el ciclo de vida",
+              "Registro de riesgos, decisiones y revisiones con fecha"
+            ],
+            [
+              "Documentación técnica",
+              "11",
+              "Se elabora antes de comercializar o poner en servicio el sistema, se mantiene actualizada y contiene como mínimo los elementos del Anexo IV",
+              "Documentación versionada y con responsable"
+            ],
+            [
+              "Registro de eventos",
+              "12",
+              "Los sistemas de alto riesgo deben poder registrar eventos automáticamente durante su vida útil",
+              "Constancia de que los registros se generan y de dónde se guardan"
+            ],
+            [
+              "Supervisión humana",
+              "14",
+              "Los sistemas de alto riesgo se diseñan para que personas puedan supervisarlos eficazmente mientras están en uso",
+              "Designación de quienes supervisan y su formación"
+            ],
+            [
+              "Sistema de gestión de calidad",
+              "17",
+              "Los proveedores de sistemas de alto riesgo establecen un sistema de gestión de calidad que cubre, entre otros aspectos, estrategia de cumplimiento, gestión de datos, gestión de riesgos, monitoreo posterior y un marco de rendición de cuentas",
+              "Manuales y procedimientos aprobados"
+            ],
+            [
+              "Obligaciones de los desplegadores",
+              "26",
+              "Usar el sistema según sus instrucciones, asignar la supervisión humana a personas con competencia, formación y autoridad, vigilar su funcionamiento y conservar los registros bajo su control al menos seis meses",
+              "Lista de sistemas, responsables, revisiones y registros conservados"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "El artículo 26 añade que los desplegadores deben informar a los representantes de los trabajadores y a los trabajadores afectados antes de usar un sistema de alto riesgo en el lugar de trabajo, informar a las personas sujetas a decisiones apoyadas por sistemas del Anexo III, avisar sin demora al proveedor o distribuidor y a la autoridad de vigilancia del mercado si ven un riesgo, y suspender el uso del sistema, reportar de inmediato los incidentes graves y cooperar con las autoridades competentes."
+        },
+        {
+          "type": "h2",
+          "text": "Alfabetización en IA: lo que aclara la Comisión"
+        },
+        {
+          "type": "p",
+          "text": "Según las preguntas y respuestas de la Comisión Europea, el artículo 4 aplica desde el 2 de febrero de 2025 y no contiene requisitos estrictos ni formaciones obligatorias: no exige garantizar un nivel específico de alfabetización a ninguna persona ni un certificado, y la organización puede llevar un registro interno de las formaciones y otras iniciativas. La Comisión añade que apoyarse solo en las instrucciones de uso puede ser ineficaz. Las autoridades nacionales de vigilancia del mercado podrían imponer sanciones proporcionadas, con supervisión y aplicación desde el 2 de agosto de 2026, y el reglamento no crea delitos penales ni un derecho a indemnización."
+        },
+        {
+          "type": "h2",
+          "text": "Sanciones y quién decide"
+        },
+        {
+          "type": "p",
+          "text": "Las multas máximas del reglamento están en el artículo 99 y las resumimos en la guía de regulación. Qué sistemas son de alto riesgo, qué rol tiene su empresa y qué le aplica son decisiones que requieren análisis legal; este artículo no las toma por usted."
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe decidir la gerencia"
+        },
+        {
+          "type": "p",
+          "text": "Cuatro decisiones, de criterio de Cyrrus. Primero, quién hace y mantiene la lista de sistemas de IA, con el rol de la empresa en cada uno. Segundo, quién responde por la evidencia de cada fila de la tabla. Tercero, cada cuánto se revisa y quién la aprueba. Cuarto, cuándo se consulta a un asesor legal, antes de que alguien externo pida la evidencia."
+        },
+        {
+          "type": "p",
+          "text": "Para elegir con qué apoyar todo esto, lea cómo evaluar herramientas de gobernanza; para ubicarse en una escala de preparación, el modelo de madurez.",
+          "links": [
+            {
+              "text": "cómo evaluar herramientas de gobernanza",
+              "href": "/perspectivas/herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas"
+            },
+            {
+              "text": "el modelo de madurez",
+              "href": "/perspectivas/modelo-de-madurez-de-gobernanza-de-ia"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 3: Definitions",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-3"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 6: Classification rules for high-risk AI systems",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-6"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 9: Risk management system",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-9"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 11: Technical documentation",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-11"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 12: Record-keeping",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 14: Human oversight",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-14"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 17: Quality management system",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-17"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 26: Obligations of deployers of high-risk AI systems",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 4: AI literacy",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 113: Entry into force and application",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113"
+        },
+        {
+          "label": "Comisión Europea. AI Literacy: questions and answers",
+          "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers"
+        }
+      ]
+    },
+    "herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas": {
+      "title": "Herramientas y plataformas de gobernanza de IA: cómo evaluarlas antes de comprar",
+      "seoTitle": "Herramientas de gobernanza de IA: cómo evaluarlas",
+      "label": "Gobierno de IA",
+      "excerpt": "Qué debería poder apoyar una herramienta o plataforma de gobernanza de IA según lo que documentan el Reglamento europeo, el NIST y Microsoft, y qué preguntar al proveedor.",
+      "metaDescription": "Herramientas y plataformas de gobernanza de IA: criterios para evaluarlas según el Reglamento europeo, el NIST y Microsoft, y qué pedir al proveedor.",
+      "intro": "Una herramienta no gobierna la IA por sí sola: apoya decisiones y guarda evidencia. Esta guía no compara productos; propone criterios para evaluar cualquier herramienta o plataforma, ligados a lo que documentan fuentes abiertas.",
+      "keyTakeaways": [
+        "Para sistemas de alto riesgo, el Reglamento de IA europeo documenta gestión de riesgos continua (art. 9), documentación técnica actualizada (art. 11), registro automático de eventos (art. 12) y supervisión humana (art. 14); son criterios útiles para evaluar una herramienta.",
+        "El NIST describe cuatro funciones, gobernar, mapear, medir y gestionar, que sirven para preguntar qué parte del ciclo cubre cada herramienta.",
+        "Según Microsoft, un nivel 5 en herramientas no tiene el mismo impacto que un nivel 5 en cultura y liderazgo: la herramienta es una dimensión entre 24."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Va a comprar una plataforma de gobernanza de IA?",
+          "description": "Diseñamos el marco de Gobierno de IA de su organización: qué se puede automatizar, qué necesita supervisión humana y quién responde por cada decisión.",
+          "checklist": [
+            "Mapa de riesgo por caso de uso, no una política genérica",
+            "Roles y responsables definidos entre negocio, TI y legal"
+          ],
+          "ctaLabel": "Conocer Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        },
+        {
+          "title": "Primero defina el problema, después la herramienta",
+          "description": "Ayudamos a su comité directivo a decidir qué delegar, qué supervisar y qué nunca automatizar — antes de que la adopción avance sin control.",
+          "checklist": [
+            "Comité de gobierno con negocio, TI, legal y seguridad",
+            "Criterios claros para aprobar nuevos casos de uso de IA"
+          ],
+          "ctaLabel": "Agendar conversación sobre Gobierno de IA",
+          "imageAlt": "Consultor de Cyrrus con notebook frente a pantallas de trabajo"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Si un proveedor le presenta una plataforma de gobernanza de IA, ¿qué debería poder hacer para que valga la pena? Esta guía propone una lista de criterios."
+        },
+        {
+          "type": "p",
+          "text": "Una aclaración: no nombramos ni comparamos productos, ni damos precios, porque no tenemos fuente primaria para afirmar qué ofrece un proveedor concreto. Las funciones salen de requisitos documentados en el Reglamento de IA europeo (texto consolidado al 27 de julio de 2026), en el marco del NIST y en el modelo de madurez de Microsoft, citados al final y consultados en noviembre de 2026. Las preguntas al proveedor son criterio de Cyrrus."
+        },
+        {
+          "type": "h2",
+          "text": "Primero: qué hay que gobernar"
+        },
+        {
+          "type": "p",
+          "text": "Antes de ver herramientas hace falta una lista de los sistemas de IA que usa la empresa, propios y de terceros, con el rol de la empresa en cada uno. Sin esa lista, cualquier herramienta queda vacía (criterio de Cyrrus). La guía sobre qué evidencia debe poder mostrar la empresa explica cómo armarla.",
+          "links": [
+            {
+              "text": "qué evidencia debe poder mostrar la empresa",
+              "href": "/perspectivas/cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Qué debería poder apoyar una herramienta"
+        },
+        {
+          "type": "table",
+          "text": "Criterios para evaluar una herramienta de gobernanza de IA, con la fuente que los respalda",
+          "columns": [
+            "Necesidad",
+            "Qué documenta la fuente",
+            "Pregunta para el proveedor (criterio de Cyrrus)"
+          ],
+          "rows": [
+            [
+              "Clasificar sistemas por riesgo",
+              "La Comisión describe cuatro niveles de riesgo y el artículo 6 define cuándo un sistema es de alto riesgo",
+              "¿Cómo clasifica los sistemas y quién valida esa clasificación?"
+            ],
+            [
+              "Gestionar riesgos en todo el ciclo de vida",
+              "Artículo 9: proceso continuo e iterativo, documentado y mantenido",
+              "¿Qué riesgos registra, cada cuánto se revisan y quién aprueba?"
+            ],
+            [
+              "Mantener documentación técnica",
+              "Artículo 11: se elabora antes de comercializar y se mantiene actualizada",
+              "¿Guarda versiones y quién puede modificarlas?"
+            ],
+            [
+              "Conservar registros de eventos",
+              "Artículo 12 (registro automático) y artículo 26 (los desplegadores conservan los registros que controlan al menos seis meses)",
+              "¿Dónde se guardan los registros y por cuánto tiempo?"
+            ],
+            [
+              "Asignar supervisión humana",
+              "Artículos 14 y 26: personas con competencia, formación y autoridad",
+              "¿Permite asignar responsables y registrar sus decisiones?"
+            ],
+            [
+              "Medir y monitorear",
+              "NIST: medir usa herramientas y métodos para analizar, evaluar, comparar y monitorear el riesgo de IA",
+              "¿Qué se mide, con qué método y cómo se reporta?"
+            ],
+            [
+              "Registrar la formación",
+              "Artículo 4 y la Comisión: no hay certificado obligatorio y la organización puede llevar un registro interno",
+              "¿Permite guardar el registro de las iniciativas de formación?"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Según el NIST, gobernar es una función transversal presente en toda la gestión de riesgos de IA y busca cultivar e implementar una cultura de gestión de riesgos. Una herramienta puede guardar roles y registros, pero la cultura y las decisiones no vienen incluidas (criterio de Cyrrus)."
+        },
+        {
+          "type": "h2",
+          "text": "Lo que una demostración no prueba"
+        },
+        {
+          "type": "p",
+          "text": "El modelo de madurez de Microsoft incluye las herramientas como una de sus 24 dimensiones y advierte que un nivel 5 en herramientas no tiene el mismo impacto que un nivel 5 en cultura y liderazgo. Es decir, comprar una herramienta no sube por sí solo la madurez de las demás dimensiones."
+        },
+        {
+          "type": "p",
+          "text": "Un cuidado más, de criterio de Cyrrus: que un proveedor diga estar alineado o certificado con una norma como ISO/IEC 42001 habla de su propio sistema de gestión; no certifica el de su empresa. La ficha de la IEC dice que la norma aplica a las organizaciones que ofrecen o usan IA, y su empresa es una de ellas."
+        },
+        {
+          "type": "h2",
+          "text": "Preguntas para pedir por escrito"
+        },
+        {
+          "type": "p",
+          "text": "Cinco preguntas, de criterio de Cyrrus. Dónde se alojan los datos y quién accede a ellos. Qué normas dice cumplir y con qué evidencia, no solo con un logotipo. Cómo se exportan los datos si termina la relación. Qué parte del producto es configuración y qué es desarrollo a medida. Y cuál es el costo total a varios años, con licencia, implementación, personal interno y cambios, a partir de una cotización por escrito y no de una cifra de ejemplo."
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe decidir la gerencia"
+        },
+        {
+          "type": "p",
+          "text": "Tres decisiones, de criterio de Cyrrus. Primero, qué problema concreto resolverá la herramienta: inventario, riesgos, documentación, registros o formación. Segundo, quién será el dueño de la herramienta y de la evidencia que guarde. Tercero, cómo medirá a los seis meses si se usa. Si la respuesta a las tres no está clara, probablemente la compra es prematura."
+        },
+        {
+          "type": "p",
+          "text": "Para ubicar la herramienta dentro de un marco y de una escala de preparación, lea qué es la gobernanza de IA y qué marcos usar y el modelo de madurez.",
+          "links": [
+            {
+              "text": "qué es la gobernanza de IA y qué marcos usar",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            },
+            {
+              "text": "el modelo de madurez",
+              "href": "/perspectivas/modelo-de-madurez-de-gobernanza-de-ia"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Comisión Europea. AI Act: regulatory framework for AI",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 6: Classification rules for high-risk AI systems",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-6"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 9: Risk management system",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-9"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 11: Technical documentation",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-11"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 12: Record-keeping",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 14: Human oversight",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-14"
+        },
+        {
+          "label": "AI Act Service Desk (Comisión Europea). Article 26: Obligations of deployers of high-risk AI systems",
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26"
+        },
+        {
+          "label": "Comisión Europea. AI Literacy: questions and answers",
+          "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers"
+        },
+        {
+          "label": "NIST AIRC. AI RMF Core",
+          "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+        },
+        {
+          "label": "Vorvoreanu et al. (2023). Responsible AI Maturity Model, v1 (Microsoft)",
+          "url": "https://www.microsoft.com/research/uploads/prod/2023/05/RAI_Maturity_Model_Aether_Microsoft_whitepaper.pdf"
+        },
+        {
+          "label": "IEC Webstore. ISO/IEC 42001:2023, Information technology — Artificial intelligence — Management system",
+          "url": "https://webstore.iec.ch/publication/90574"
+        }
+      ]
+    },
+    "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo": {
+      "title": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
+      "seoTitle": "Plan de continuidad del negocio: qué es y cómo se hace",
+      "label": "Estrategia",
+      "excerpt": "Qué es un plan de continuidad del negocio, en qué se diferencia del DRP y del plan de contingencia, qué es el BIA, qué son el RTO y el RPO, y qué debe decidir la dirección, según NIST SP 800-34 e ISO 22301.",
+      "metaDescription": "Qué es un plan de continuidad del negocio (BCP), su diferencia con el DRP, qué es el BIA y qué son el RTO y el RPO, según NIST SP 800-34 e ISO 22301. Pasos y decisiones.",
+      "intro": "Si su empresa tiene un plan de continuidad que nadie ha probado, o un respaldo que nadie ha restaurado, esta guía explica qué debería contener ese plan y quién debe decidirlo, con las definiciones de las fuentes oficiales.",
+      "keyTakeaways": [
+        "Un plan de continuidad del negocio (BCP) se centra en sostener los procesos de negocio durante y después de una interrupción; el DRP, en restaurar los sistemas de información (NIST SP 800-34).",
+        "El análisis de impacto en el negocio (BIA) relaciona cada sistema con los procesos que soporta y caracteriza las consecuencias de una interrupción; de ahí salen el RTO y el RPO.",
+        "ISO 22301:2019 es la norma internacional de sistemas de gestión de continuidad del negocio; certificarse no es obligatorio, pero el plan debería resistir esa lógica."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Su plan de continuidad nunca se ha probado?",
+          "description": "Hacemos el análisis de impacto, definimos RTO y RPO con la dirección y diseñamos un plan de continuidad y de recuperación que se ensaya antes de darlo por terminado.",
+          "checklist": [
+            "BIA con procesos críticos y prioridad de recuperación",
+            "Simulacro con un escenario real"
+          ],
+          "ctaLabel": "Conocer la consultoría en continuidad del negocio",
+          "imageAlt": "Equipo de Cyrrus revisando un plan de continuidad del negocio"
+        },
+        {
+          "title": "Las soluciones del plan, sin comisiones de fabricantes",
+          "description": "Si el plan exige respaldo, alta disponibilidad o un sitio alterno, seleccionamos proveedores con criterios definidos antes de ver propuestas.",
+          "checklist": [
+            "Cuatro criterios: funcional, técnico, económico y sostenible",
+            "Implementación gobernada por la PMO"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Consultor de Cyrrus explicando un análisis de impacto en el negocio"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Un lunes a las 9 de la mañana el ERP no responde. Nadie sabe si el respaldo de anoche sirve, quién autoriza trabajar con planillas mientras tanto ni a quién llamar en el proveedor. Ese escenario es el que un plan de continuidad del negocio debería haber resuelto antes de que ocurra."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué es un plan de continuidad del negocio, en qué se diferencia de un plan de recuperación ante desastres y de un plan de contingencia, qué es el análisis de impacto en el negocio (BIA), qué significan RTO y RPO, qué dice la norma ISO 22301 y qué decisiones son de la dirección. Las definiciones salen de dos fuentes oficiales: la guía NIST SP 800-34 Rev. 1 y la página de ISO sobre la norma 22301."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es un plan de continuidad del negocio?"
+        },
+        {
+          "type": "p",
+          "text": "Un plan de continuidad del negocio (BCP, por business continuity plan) es el plan que define cómo sigue operando una organización cuando una interrupción afecta sus procesos críticos. Según la guía NIST SP 800-34, el BCP se centra en sostener los procesos de negocio de la organización durante y después de una interrupción; puede escribirse para los procesos de una sola unidad de negocio o abarcar toda la organización, y puede limitarse a las funciones que se consideran prioritarias."
+        },
+        {
+          "type": "p",
+          "text": "La misma guía aclara una confusión frecuente: la planificación de continuidad se aplica al negocio en sí —la capacidad de seguir ejecutando funciones y procesos críticos durante y después de una emergencia—, mientras que la planificación de contingencia se aplica a los sistemas de información y describe los pasos para recuperar su operación."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué diferencia hay entre plan de continuidad, DRP y plan de contingencia?"
+        },
+        {
+          "type": "p",
+          "text": "Son tres planes distintos que deben coordinarse. NIST SP 800-34 los describe así:"
+        },
+        {
+          "type": "p",
+          "text": "Plan de continuidad del negocio (BCP): sostiene los procesos de negocio durante y después de una interrupción. Es el plan de la dirección."
+        },
+        {
+          "type": "p",
+          "text": "Plan de recuperación ante desastres (DRP): aplica a interrupciones mayores, normalmente físicas, que impiden el acceso a la instalación principal durante un periodo extendido. Es un plan centrado en los sistemas de información, diseñado para restaurar la operación del sistema, la aplicación o la infraestructura en un sitio alterno después de una emergencia."
+        },
+        {
+          "type": "p",
+          "text": "Plan de contingencia de un sistema de información (ISCP): establece los procedimientos para evaluar y recuperar un sistema concreto tras una interrupción, con roles, inventario, procedimientos de recuperación y pruebas. A diferencia del DRP, puede activarse en la ubicación actual del sistema o en una alterna."
+        },
+        {
+          "type": "quote",
+          "text": "El BCP es del negocio; el DRP y los planes de contingencia son de tecnología. Sin el primero, los otros dos recuperan sistemas que quizá nadie necesitaba primero."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es el análisis de impacto en el negocio (BIA)?"
+        },
+        {
+          "type": "p",
+          "text": "El análisis de impacto en el negocio es el paso que convierte la continuidad en algo medible. Según NIST SP 800-34, el propósito del BIA es relacionar el sistema con los procesos de negocio y servicios críticos que soporta y, a partir de esa información, caracterizar las consecuencias de una interrupción."
+        },
+        {
+          "type": "p",
+          "text": "La guía describe tres pasos para hacerlo. Primero, determinar los procesos de negocio que el sistema soporta y su criticidad de recuperación, junto con los impactos de una interrupción y el tiempo de inactividad estimado, que debe reflejar el máximo que la organización puede tolerar. Segundo, identificar los recursos necesarios para reanudar esos procesos: instalaciones, personal, equipos, software, datos, componentes y registros vitales. Tercero, identificar las prioridades de recuperación de los recursos del sistema, para establecer en qué orden se recupera cada cosa."
+        },
+        {
+          "type": "p",
+          "text": "En la práctica, el BIA es una conversación con los dueños de los procesos y la dirección, no un ejercicio del área de tecnología: son ellos quienes saben cuánto cuesta cada hora sin facturar, sin despachar o sin pagar nómina."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué son el RTO, el RPO y el MTD?"
+        },
+        {
+          "type": "p",
+          "text": "Del BIA salen tres medidas que NIST SP 800-34 define así:"
+        },
+        {
+          "type": "p",
+          "text": "Tiempo máximo tolerable de inactividad (MTD): el tiempo total que el dueño del sistema o la autoridad responsable está dispuesto a aceptar para una interrupción de un proceso de negocio, incluyendo todas las consideraciones de impacto."
+        },
+        {
+          "type": "p",
+          "text": "Objetivo de tiempo de recuperación (RTO): el tiempo máximo que un recurso del sistema puede permanecer no disponible antes de que haya un impacto inaceptable en otros recursos, en los procesos de negocio que soporta y en el MTD. Como el RTO debe asegurar que no se exceda el MTD, normalmente debe ser más corto que este."
+        },
+        {
+          "type": "p",
+          "text": "Objetivo de punto de recuperación (RPO): el punto en el tiempo, anterior a la interrupción, hasta el que se pueden recuperar los datos del proceso de negocio con la copia de respaldo más reciente. A diferencia del RTO, no forma parte del MTD: es una medida de cuánta pérdida de datos tolera el proceso."
+        },
+        {
+          "type": "p",
+          "text": "La guía añade una idea útil para la dirección: cuanto más corto es el RTO, más costosas son las soluciones de recuperación. Un sistema que debe recuperarse de inmediato exige redundancia y sitios alternos; uno de bajo impacto con un RTO largo puede resolverse con un respaldo sencillo. El punto de equilibrio entre el costo de la interrupción y el costo de recuperar es distinto para cada organización y cada sistema."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué dice la norma ISO 22301?"
+        },
+        {
+          "type": "p",
+          "text": "ISO 22301:2019 es la norma internacional de sistemas de gestión de continuidad del negocio (BCMS). Según la página oficial de ISO, proporciona un marco para que las organizaciones planifiquen, establezcan, implementen, operen, monitoreen, revisen, mantengan y mejoren continuamente un sistema de gestión documentado que proteja contra incidentes disruptivos, reduzca su probabilidad y asegure la recuperación. Su segunda edición se publicó en octubre de 2019 y tiene una enmienda de 2024."
+        },
+        {
+          "type": "p",
+          "text": "Certificarse no es obligatorio. Tiene sentido cuando un cliente, un banco o el sector lo exige. Lo que sí conviene, en nuestro criterio, es construir el plan con la lógica de un sistema de gestión —responsables, documentación, pruebas y revisión periódica— aunque la empresa nunca se certifique."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se hace un plan de continuidad del negocio, paso a paso?"
+        },
+        {
+          "type": "p",
+          "text": "NIST SP 800-34 describe un proceso de siete pasos para la planificación de contingencia de sistemas, que sirve como estructura también para el plan de continuidad:"
+        },
+        {
+          "type": "p",
+          "text": "1. Definir la política: objetivos, alcance, roles y responsabilidades, y la frecuencia de pruebas y mantenimiento."
+        },
+        {
+          "type": "p",
+          "text": "2. Hacer el análisis de impacto en el negocio (BIA): procesos críticos, impactos, recursos y prioridades de recuperación."
+        },
+        {
+          "type": "p",
+          "text": "3. Identificar controles preventivos: medidas que reducen los efectos de una interrupción antes de que ocurra."
+        },
+        {
+          "type": "p",
+          "text": "4. Crear las estrategias de contingencia: respaldos, sitios alternos, roles y consideraciones de costo, integradas a la arquitectura."
+        },
+        {
+          "type": "p",
+          "text": "5. Desarrollar el plan: documentar la estrategia de recuperación con procedimientos detallados."
+        },
+        {
+          "type": "p",
+          "text": "6. Probar, capacitar y ejercitar: ensayar el plan, entrenar al personal y hacer simulacros."
+        },
+        {
+          "type": "p",
+          "text": "7. Mantener el plan: revisarlo y actualizarlo cuando cambian los sistemas, los procesos o la organización."
+        },
+        {
+          "type": "quote",
+          "text": "Un plan de continuidad que no se ha probado no es un plan. El simulacro muestra en horas lo que el documento no muestra en meses."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "Hay decisiones que no puede tomar el área de tecnología sola. Qué procesos son críticos y en qué orden se recuperan. Cuánto tiempo tolera cada uno sin operar (MTD y RTO) y cuántos datos puede perder (RPO). Cuánto está dispuesta la empresa a invertir en redundancia frente al costo de la interrupción. Quién activa el plan, quién comunica a clientes y autoridades, y quién decide volver a la normalidad. Y con qué frecuencia se ensaya."
+        },
+        {
+          "type": "p",
+          "text": "Lo que sí es de tecnología es el DRP: qué sistemas se restauran, con qué respaldos, en qué sitio y con qué procedimientos. Las dos partes deben encajar: el DRP recupera lo que el BIA dijo que era crítico, en el orden y los tiempos que la dirección fijó."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus prestamos consultoría en continuidad del negocio: identificamos los procesos críticos, hacemos el análisis de impacto, definimos RTO y RPO con la dirección y diseñamos el plan de continuidad y el de recuperación, que se ensaya con un escenario real antes de darlo por terminado.",
+          "links": [
+            {
+              "text": "consultoría en continuidad del negocio",
+              "href": "/metodo-cira/estrategia/continuidad-del-negocio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si el plan exige nuevas soluciones de respaldo, alta disponibilidad o un sitio alterno, las seleccionamos con nuestra consultoría de infraestructura tecnológica, sin comisiones de fabricantes, y la implementación la gobierna la Gerencia de Proyectos. Para preparar al equipo directivo, Leadership Academy ofrece un taller de continuidad de negocio y DRP.",
+          "links": [
+            {
+              "text": "consultoría de infraestructura tecnológica",
+              "href": "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica"
+            },
+            {
+              "text": "taller de continuidad de negocio y DRP",
+              "href": "/leadership-academy/continuidad-de-negocio-drp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: cómo elegir una consultoría de ciberseguridad y qué es la estrategia de TI.",
+          "links": [
+            {
+              "text": "cómo elegir una consultoría de ciberseguridad",
+              "href": "/perspectivas/como-elegir-una-consultoria-de-ciberseguridad"
+            },
+            {
+              "text": "qué es la estrategia de TI",
+              "href": "/perspectivas/estrategia-de-ti-que-es-y-que-incluye"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "NIST (2010). SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems (secciones 2.2, 3 y 3.2). Consultado el 12 de noviembre de 2026",
+          "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+        },
+        {
+          "label": "ISO. ISO 22301:2019 Security and resilience — Business continuity management systems — Requirements. Consultado el 12 de noviembre de 2026",
+          "url": "https://www.iso.org/standard/75106.html"
+        }
+      ]
+    },
+    "estrategia-de-ti-que-es-y-que-incluye": {
+      "title": "Estrategia de TI: qué es, qué incluye y cómo se construye",
+      "seoTitle": "Estrategia de TI: qué es y qué incluye",
+      "label": "Estrategia",
+      "excerpt": "Qué es una estrategia de TI, para qué sirve, qué entregables deja, qué es el gobierno de TI según ISO/IEC 38500 y COBIT, y cómo se construye paso a paso.",
+      "metaDescription": "Qué es una estrategia de TI, qué incluye (diagnóstico, arquitectura objetivo, portafolio, casos de negocio, gobierno), qué dicen ISO/IEC 38500 y COBIT 2019 y cómo se construye.",
+      "intro": "Si en su empresa cada área compra su propia herramienta y el presupuesto de tecnología se decide proyecto por proyecto, lo que falta no es más tecnología: es una estrategia de TI. Esta guía explica qué es, qué debe contener y cómo se construye.",
+      "keyTakeaways": [
+        "Una estrategia de TI define qué tecnología necesita la empresa para ejecutar su estrategia de negocio, en qué orden y con qué caso de negocio.",
+        "Incluye cinco piezas: diagnóstico, arquitectura objetivo, portafolio priorizado, caso de negocio por iniciativa y gobierno de TI.",
+        "ISO/IEC 38500:2024 da principios de gobierno de TI para la dirección; COBIT 2019 es un marco de gobierno y gestión de TI empresarial. Ambos sirven de referencia, no de receta."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Su plan de tecnología cabe en una hoja?",
+          "description": "Definimos la arquitectura objetivo y el portafolio de iniciativas que su estrategia de negocio necesita, cada una con su caso de negocio, y acompañamos la ejecución.",
+          "checklist": [
+            "Portafolio priorizado por impacto en el negocio",
+            "Criterios de selección definidos antes de ver proveedores"
+          ],
+          "ctaLabel": "Conocer la consultoría en estrategia de TI",
+          "imageAlt": "Consultor de Cyrrus revisando la arquitectura tecnológica objetivo con un directivo"
+        },
+        {
+          "title": "Dirección tecnológica sin un cargo de tiempo completo",
+          "description": "CIO o CTO as a Service: gobierno de TI, arquitectura y alineación de la tecnología con el negocio, bajo demanda.",
+          "checklist": [
+            "Mismo criterio, dedicación ajustada",
+            "Agnósticos de proveedor"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Sesión de trabajo de estrategia de TI con el equipo directivo"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "La pregunta llega en el comité de presupuesto: ventas pide un CRM, operaciones un sistema de mantenimiento, finanzas quiere cambiar el ERP y alguien propone 'hacer algo con IA'. Cada propuesta tiene sentido por separado. Lo que no existe es el criterio para decidir cuál va primero, cómo se conectan entre sí y qué aporta cada una al plan de negocio."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué es una estrategia de TI, para qué sirve, qué debe incluir, qué dicen dos marcos públicos de gobierno de TI y cómo se construye paso a paso."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es la estrategia de TI?"
+        },
+        {
+          "type": "p",
+          "text": "La estrategia de TI es el plan que define qué tecnología necesita una empresa para ejecutar su estrategia de negocio, en qué orden la va a incorporar y con qué caso de negocio. Parte del negocio —qué quiere lograr la empresa, qué procesos lo sostienen— y termina en un portafolio de iniciativas de tecnología (ERP, CRM, datos, inteligencia artificial, infraestructura) con responsables, secuencia y costos a varios años."
+        },
+        {
+          "type": "p",
+          "text": "No es un inventario de sistemas ni una lista de deseos de cada área. Es una decisión de la dirección sobre dónde invertir en tecnología y dónde no, con los mismos criterios que se usan para cualquier otra inversión."
+        },
+        {
+          "type": "h2",
+          "text": "¿Para qué sirve una estrategia de TI?"
+        },
+        {
+          "type": "p",
+          "text": "Sirve para tres cosas. Primero, para que la tecnología responda a un objetivo de negocio y no al catálogo de un proveedor: cada iniciativa se justifica por lo que cambia en la operación o en los ingresos. Segundo, para que los sistemas se decidan juntos y no uno a uno: un CRM que no se integra con el ERP, o un proyecto de IA sin datos gobernados, son el resultado de decidir proyecto por proyecto. Tercero, para que la junta directiva pueda aprobar un presupuesto de tecnología con beneficios, costos y riesgos, en lugar de aprobar herramientas."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué incluye una estrategia de TI?"
+        },
+        {
+          "type": "p",
+          "text": "Una estrategia de TI completa tiene cinco piezas:"
+        },
+        {
+          "type": "p",
+          "text": "Diagnóstico de TI: qué sistemas soportan la operación hoy, cómo se integran, qué contratos y qué deuda técnica existen, y dónde la tecnología actual frena al negocio."
+        },
+        {
+          "type": "p",
+          "text": "Arquitectura objetivo: cómo deben quedar conectados los sistemas, los datos y la infraestructura para ejecutar la estrategia, y qué cambia respecto al estado actual."
+        },
+        {
+          "type": "p",
+          "text": "Portafolio de iniciativas priorizado: la lista de proyectos ordenada por impacto en el negocio, con sus dependencias (un proyecto de analítica depende de los datos del ERP, por ejemplo) y su secuencia."
+        },
+        {
+          "type": "p",
+          "text": "Caso de negocio por iniciativa: beneficio esperado, costo total a varios años —licencias, implementación, integraciones, equipo interno, soporte—, riesgo y responsable."
+        },
+        {
+          "type": "p",
+          "text": "Gobierno de TI: quién decide sobre el portafolio, con qué comité, con qué indicadores se revisa y cada cuánto se actualiza."
+        },
+        {
+          "type": "quote",
+          "text": "Una estrategia de TI sin caso de negocio por iniciativa es una lista de proyectos. Sin gobierno, es un documento que nadie vuelve a abrir."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es el gobierno de TI y qué dicen ISO/IEC 38500 y COBIT?"
+        },
+        {
+          "type": "p",
+          "text": "El gobierno de TI es la parte de la estrategia que define quién decide y cómo se controla el uso de la tecnología en la organización. Dos marcos públicos sirven de referencia."
+        },
+        {
+          "type": "p",
+          "text": "ISO/IEC 38500:2024, Information technology — Governance of IT for the organization, publicada en febrero de 2024 en su tercera edición, proporciona principios orientadores para los miembros de los órganos de gobierno de las organizaciones, y para quienes los apoyan, sobre el uso eficaz, eficiente y aceptable de la tecnología de la información. Según su resumen oficial, aplica al gobierno del uso actual y futuro de TI y a organizaciones de todos los tamaños, públicas, privadas, gubernamentales y sin ánimo de lucro, independientemente de cuánto usen la tecnología."
+        },
+        {
+          "type": "p",
+          "text": "COBIT, publicado por ISACA, es descrito por su editor como el marco de referencia para el gobierno y la gestión de la TI empresarial; su versión actual es COBIT 2019. Entre lo que ISACA destaca está la alineación de los objetivos de TI con los objetivos estratégicos del negocio, y la relación entre objetivos de gobierno y gestión, objetivos de alineación y objetivos empresariales."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, ninguno de los dos se adopta completo en una empresa mediana. ISO/IEC 38500 ayuda a la dirección a entender cuál es su papel —evaluar, dirigir y supervisar el uso de la tecnología—; COBIT ayuda al equipo de TI a estructurar procesos y controles. La estrategia de TI toma de cada uno lo que el tamaño y las exigencias de la empresa justifican."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se construye una estrategia de TI, paso a paso?"
+        },
+        {
+          "type": "p",
+          "text": "1. Partir de la estrategia de negocio. Si no existe o no está escrita, el primer paso es la planeación estratégica, no la tecnología."
+        },
+        {
+          "type": "p",
+          "text": "2. Diagnosticar lo que hay: sistemas, integraciones, contratos, datos y personas. Qué funciona, qué frena y qué cuesta mantener."
+        },
+        {
+          "type": "p",
+          "text": "3. Definir la arquitectura objetivo: cómo deben quedar conectados sistemas, datos e infraestructura para ejecutar la estrategia."
+        },
+        {
+          "type": "p",
+          "text": "4. Identificar y priorizar iniciativas con un criterio único: impacto en el negocio, dependencias, riesgo y capacidad de la organización para absorber el cambio."
+        },
+        {
+          "type": "p",
+          "text": "5. Construir el caso de negocio de las iniciativas de mayor peso, con costo total a varios años y responsable."
+        },
+        {
+          "type": "p",
+          "text": "6. Definir el gobierno: comité, indicadores, frecuencia de revisión y los criterios con los que se evaluará cualquier proveedor después."
+        },
+        {
+          "type": "p",
+          "text": "7. Ejecutar y revisar: la estrategia se ajusta cuando cambia el negocio, no cuando se cumple el calendario."
+        },
+        {
+          "type": "h2",
+          "text": "Errores a evitar en una estrategia de TI"
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, los más costosos son cuatro. Elegir el software antes de definir la arquitectura, con lo que la herramienta termina dictando el proceso. Planear sin un dueño por iniciativa, con lo que el proyecto recibe el tiempo que sobra. Calcular solo la licencia y no el costo total a varios años. Y no revisar el portafolio cuando cambia el negocio, con lo que la estrategia se vuelve un documento histórico."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene una consultoría en estrategia de TI?"
+        },
+        {
+          "type": "p",
+          "text": "Cuando la empresa va a invertir en varios sistemas en los próximos años y no tiene un mapa que diga qué va primero; cuando las áreas compran herramientas por su cuenta y nada se integra; cuando la junta directiva pide un plan de tecnología con costos y beneficios antes de aprobar presupuesto; o cuando la empresa necesita dirección tecnológica de alto nivel pero no tiene volumen de decisión diario para justificar un CIO o un CTO de tiempo completo."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus prestamos consultoría en estrategia de TI como parte de la fase Construir del método CIRA: diagnóstico, arquitectura objetivo, portafolio priorizado con el caso de negocio de cada iniciativa y los criterios con los que después seleccionamos software e infraestructura sin sesgo de proveedor. El mismo equipo que hace el diagnóstico acompaña la ejecución.",
+          "links": [
+            {
+              "text": "consultoría en estrategia de TI",
+              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si lo que falta es la estrategia de negocio, empezamos por la consultoría estratégica y planeación estratégica. Y si la empresa necesita dirección tecnológica sin un cargo de tiempo completo, ofrecemos CIO y CTO as a Service.",
+          "links": [
+            {
+              "text": "consultoría estratégica y planeación estratégica",
+              "href": "/metodo-cira/estrategia"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es un ERP y cómo elegirlo, y qué es la gobernanza de IA.",
+          "links": [
+            {
+              "text": "qué es la planeación estratégica",
+              "href": "/perspectivas/planeacion-estrategica-que-es-etapas-y-ejemplo"
+            },
+            {
+              "text": "qué es un ERP y cómo elegirlo",
+              "href": "/perspectivas/que-es-un-erp-guia-para-elegirlo"
+            },
+            {
+              "text": "qué es la gobernanza de IA",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "ISO. ISO/IEC 38500:2024 Information technology — Governance of IT for the organization (resumen oficial). Consultado el 12 de noviembre de 2026",
+          "url": "https://www.iso.org/standard/81684.html"
+        },
+        {
+          "label": "ISACA. COBIT — Control Objectives for Information Technologies (página oficial de COBIT 2019). Consultado el 12 de noviembre de 2026",
+          "url": "https://www.isaca.org/resources/cobit"
+        }
+      ]
+    },
+    "como-elegir-una-consultoria-de-ciberseguridad": {
+      "title": "Cómo elegir una consultoría de ciberseguridad: alcance, marcos y preguntas",
+      "seoTitle": "Cómo elegir una consultoría de ciberseguridad",
+      "label": "Selección de soluciones",
+      "excerpt": "Qué hace una consultoría de ciberseguridad, qué tipos de servicio existen, qué marcos públicos sirven de referencia (NIST CSF 2.0, ISO/IEC 27001), cómo comparar propuestas y qué preguntar antes de contratar.",
+      "metaDescription": "Cómo elegir una consultoría de ciberseguridad: tipos de servicio, qué dicen NIST CSF 2.0 e ISO/IEC 27001, criterios para comparar propuestas y las preguntas que la dirección debe hacer.",
+      "intro": "Si tiene propuestas de varios proveedores de ciberseguridad y no sabe cómo compararlas, esta guía explica qué debería cubrir una consultoría, qué marcos públicos sirven de referencia y qué preguntar antes de firmar.",
+      "keyTakeaways": [
+        "Una consultoría de ciberseguridad debería empezar por qué proteger y qué riesgos existen, no por la herramienta que vende.",
+        "El NIST CSF 2.0 (febrero de 2024) organiza los resultados de ciberseguridad en seis funciones —gobernar, identificar, proteger, detectar, responder y recuperar— y no prescribe cómo lograrlos.",
+        "ISO/IEC 27001:2022 define los requisitos de un sistema de gestión de seguridad de la información y permite certificarse; es complementaria al NIST CSF, no sustituta."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Tiene propuestas y no tiene criterios para compararlas?",
+          "description": "Diagnosticamos el riesgo, definimos los controles que la empresa necesita y seleccionamos soluciones y proveedores con criterios definidos antes de ver propuestas, sin comisiones de fabricantes.",
+          "checklist": [
+            "Diagnóstico ordenado por las funciones del NIST CSF 2.0",
+            "Cuatro criterios: funcional, técnico, económico y sostenible"
+          ],
+          "ctaLabel": "Conocer la consultoría en ciberseguridad",
+          "imageAlt": "Consultor de Cyrrus revisando controles de ciberseguridad con un equipo directivo"
+        },
+        {
+          "title": "La seguridad es parte de la continuidad",
+          "description": "Los controles reducen la probabilidad del incidente; el plan de continuidad define cómo sigue operando la empresa si ocurre. Los diseñamos juntos.",
+          "checklist": [
+            "BIA que dice qué proteger primero",
+            "Plan probado con un escenario real"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo de Cyrrus revisando un plan de continuidad del negocio"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Tres proveedores, tres propuestas, tres listas de siglas. Uno ofrece monitoreo, otro una plataforma de protección de identidades, el tercero una auditoría. Todos dicen que lo suyo es lo urgente. Sin un criterio propio, la decisión termina siendo cuál presentó mejor o cuál cobra menos."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué hace una consultoría de ciberseguridad, qué tipos de servicio existen, qué dicen dos marcos públicos que sirven de referencia, cómo comparar propuestas y qué debe preguntar la dirección antes de contratar."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué hace una consultoría de ciberseguridad?"
+        },
+        {
+          "type": "p",
+          "text": "Una consultoría de ciberseguridad ayuda a la empresa a decidir qué proteger, con qué controles y con qué proveedores, y a verificar que esos controles funcionen. Su trabajo empieza por el negocio —qué sistemas soportan la operación, qué datos no pueden exponerse, qué exigen los clientes y el sector— y termina en una lista de controles priorizados y en la selección de las soluciones que los cubren."
+        },
+        {
+          "type": "p",
+          "text": "Lo que distingue a una consultoría de un proveedor de herramientas es el orden: la consultoría define el riesgo y los criterios antes de proponer una solución; el proveedor parte de su producto. Las dos cosas pueden coexistir, pero conviene saber cuál está contratando."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué tipos de servicios de ciberseguridad existen?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene separar cuatro tipos de servicio, porque se contratan y se evalúan de forma distinta:"
+        },
+        {
+          "type": "p",
+          "text": "Asesoría y diagnóstico: evaluar el riesgo, definir controles y políticas, preparar la empresa para una norma o una exigencia de un cliente. Es el alcance de una consultoría independiente."
+        },
+        {
+          "type": "p",
+          "text": "Implementación: desplegar y configurar las soluciones elegidas. Lo hace el fabricante, un integrador o el equipo interno."
+        },
+        {
+          "type": "p",
+          "text": "Operación: monitoreo, detección y respuesta de forma continua, normalmente contratados como servicio a un proveedor especializado."
+        },
+        {
+          "type": "p",
+          "text": "Verificación: auditorías, pruebas de intrusión y revisiones periódicas que comprueban que los controles funcionan."
+        },
+        {
+          "type": "quote",
+          "text": "La pregunta útil no es 'qué herramienta compro', sino 'qué riesgo estoy cubriendo, con qué control y quién responde si falla'."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué marcos públicos sirven de referencia?"
+        },
+        {
+          "type": "p",
+          "text": "Dos marcos públicos ayudan a ordenar el diagnóstico y a comparar propuestas sin atarse a un fabricante."
+        },
+        {
+          "type": "p",
+          "text": "El NIST Cybersecurity Framework 2.0, publicado por el Instituto Nacional de Estándares y Tecnología de Estados Unidos el 26 de febrero de 2024, ofrece una taxonomía de resultados de ciberseguridad de alto nivel que cualquier organización —independientemente de su tamaño, sector o madurez— puede usar para entender, evaluar, priorizar y comunicar sus esfuerzos de ciberseguridad. El marco no prescribe cómo lograr los resultados; organiza las categorías en seis funciones: gobernar (la estrategia, las expectativas y la política de gestión del riesgo se establecen, comunican y supervisan), identificar (se entienden los riesgos actuales), proteger (se usan salvaguardas para gestionar los riesgos), detectar (se encuentran y analizan posibles ataques), responder (se actúa ante un incidente detectado) y recuperar (se restauran los activos y operaciones afectados). Según el documento, el marco está diseñado para organizaciones de todos los tamaños y sectores."
+        },
+        {
+          "type": "p",
+          "text": "ISO/IEC 27001:2022, Information security, cybersecurity and privacy protection — Information security management systems — Requirements, es, según la página oficial de ISO, la norma más conocida para sistemas de gestión de seguridad de la información (SGSI) y define los requisitos que un SGSI debe cumplir. Da a empresas de cualquier tamaño y sector orientación para establecer, implementar, mantener y mejorar continuamente ese sistema, y la conformidad con la norma significa que la organización ha puesto en marcha un sistema para gestionar los riesgos relacionados con la seguridad de los datos que posee o maneja. Su tercera edición se publicó en octubre de 2022."
+        },
+        {
+          "type": "p",
+          "text": "Son complementarios: el NIST CSF ordena el diagnóstico y la priorización; ISO/IEC 27001 estructura el sistema de gestión y permite certificarse cuando un cliente o el sector lo exige."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo comparar propuestas de ciberseguridad?"
+        },
+        {
+          "type": "p",
+          "text": "Con los mismos cuatro criterios que sirven para cualquier selección de tecnología. Funcional: qué riesgos identificados cubre la propuesta y cuáles deja fuera, función por función. Técnico: cómo se integra con lo que ya existe —identidades, dispositivos, nube, sistemas de negocio— y qué exige del equipo interno. Económico: el costo total a varios años, incluida la operación, no solo la licencia o el proyecto inicial. Sostenible: qué pasa cuando la empresa crece, cambia de sistemas o el proveedor cambia de condiciones."
+        },
+        {
+          "type": "p",
+          "text": "Y un criterio previo: si las propuestas no responden a un diagnóstico propio de la empresa, no son comparables entre sí. Cada una resuelve el problema que su autor sabe resolver."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué preguntar antes de contratar una consultoría de ciberseguridad?"
+        },
+        {
+          "type": "p",
+          "text": "Cinco preguntas, en nuestro criterio, distinguen una consultoría independiente de un canal de ventas:"
+        },
+        {
+          "type": "p",
+          "text": "¿El diagnóstico se hace antes de proponer herramientas, y con qué marco se ordena?"
+        },
+        {
+          "type": "p",
+          "text": "¿La firma recibe comisiones o incentivos de los fabricantes que recomienda?"
+        },
+        {
+          "type": "p",
+          "text": "¿Qué entregables quedan: inventario de riesgos, lista de controles priorizados, criterios de selección, comparación de proveedores?"
+        },
+        {
+          "type": "p",
+          "text": "¿Quién implementa y quién opera después, y cómo se gobierna esa implementación?"
+        },
+        {
+          "type": "p",
+          "text": "¿Cómo se conecta con el plan de continuidad del negocio y con las exigencias de certificación, si existen?"
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "La ciberseguridad tiene decisiones que no son del área de tecnología: qué datos y procesos no pueden exponerse bajo ninguna circunstancia, cuánto riesgo acepta la empresa y cuánto invierte en reducirlo, quién responde ante un incidente y quién comunica a clientes y autoridades, y si la empresa necesita certificarse. El NIST CSF 2.0 pone la función de gobernar en el centro precisamente por eso: informa cómo se ejecutan las otras cinco."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus prestamos consultoría en ciberseguridad independiente: diagnosticamos el riesgo partiendo de lo que ya está en producción, definimos los controles que la empresa necesita y seleccionamos soluciones y proveedores con criterios definidos antes de ver propuestas, sin comisiones de fabricantes. La implementación la gobierna nuestra Gerencia de Proyectos.",
+          "links": [
+            {
+              "text": "consultoría en ciberseguridad",
+              "href": "/metodo-cira/seleccion-de-soluciones/ciberseguridad"
+            },
+            {
+              "text": "Gerencia de Proyectos",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "La seguridad se diseña junto con el plan de continuidad del negocio, y si un cliente exige la certificación, la dirección se prepara con el curso de ISO 27001 de Leadership Academy.",
+          "links": [
+            {
+              "text": "plan de continuidad del negocio",
+              "href": "/metodo-cira/estrategia/continuidad-del-negocio"
+            },
+            {
+              "text": "curso de ISO 27001",
+              "href": "/leadership-academy/iso-27001"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es un plan de continuidad del negocio y qué es la estrategia de TI.",
+          "links": [
+            {
+              "text": "qué es un plan de continuidad del negocio",
+              "href": "/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo"
+            },
+            {
+              "text": "qué es la estrategia de TI",
+              "href": "/perspectivas/estrategia-de-ti-que-es-y-que-incluye"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "NIST (2024). The NIST Cybersecurity Framework (CSF) 2.0, NIST CSWP 29, 26 de febrero de 2024 (resumen, prefacio y sección 2). Consultado el 12 de noviembre de 2026",
+          "url": "https://doi.org/10.6028/NIST.CSWP.29"
+        },
+        {
+          "label": "ISO. ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements. Consultado el 12 de noviembre de 2026",
+          "url": "https://www.iso.org/standard/27001"
+        }
+      ]
+    },
+    "gobierno-de-datos-que-es-y-como-empezar": {
+      "title": "Gobierno de datos: qué es, qué decide la dirección y cómo empezar",
+      "seoTitle": "Gobierno de datos: qué es y cómo empezar",
+      "label": "Gobierno de IA",
+      "excerpt": "Qué es el gobierno de datos, qué dice ISO/IEC 38505-1 sobre el papel de la dirección, en qué se diferencia de la calidad y de la gestión de datos, y cómo empezar sin un proyecto de un año.",
+      "metaDescription": "Qué es el gobierno de datos según ISO/IEC 38505-1:2026, qué decide la dirección (dueños, versión oficial, reglas), su diferencia con calidad y gestión de datos, y por dónde empezar.",
+      "intro": "El gobierno de datos es el conjunto de decisiones sobre quién es dueño de cada dato, de qué sistema sale la versión oficial, qué reglas se aplican al capturarlo y quién puede usarlo. Si en su junta dos áreas presentan cifras distintas del mismo indicador, esta guía explica qué decidir y por dónde empezar.",
+      "keyTakeaways": [
+        "ISO/IEC 38505-1:2026 define el gobierno de datos como un subconjunto del gobierno de TI, que a su vez es parte del gobierno corporativo, y lo dirige a los órganos de gobierno de la organización.",
+        "Gobernar datos es decidir dueños, versión oficial, reglas de calidad y acceso; la calidad de datos es un resultado de esas decisiones, no un proyecto aparte.",
+        "Para empezar no hace falta una herramienta: hacen falta dueños por dominio, un catálogo de los datos críticos y reglas aplicadas en el CRM y el ERP que ya existen."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Cada área tiene su propia cifra correcta?",
+          "description": "Definimos dueños, versión oficial y reglas de calidad y acceso sobre los sistemas que ya están en producción, y los controles de datos que la IA puede y no puede tocar.",
+          "checklist": [
+            "Modelo de gobierno: dominios, dueños y comité",
+            "Catálogo de datos críticos con su linaje"
+          ],
+          "ctaLabel": "Conocer la consultoría en gobierno de datos",
+          "imageAlt": "Consultor de Cyrrus revisando tableros de datos con un equipo directivo"
+        },
+        {
+          "title": "El dato ordenado es la base del gobierno de IA",
+          "description": "Un modelo solo es auditable si se sabe qué datos usó y quién respondía por su calidad. Trabajamos los dos gobiernos juntos.",
+          "checklist": [
+            "Controles de datos para IA integrados al marco",
+            "Plan de adopción para que las reglas se cumplan"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Consultor de Cyrrus trabajando en políticas y controles de datos"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "La escena se repite en muchas juntas directivas: comercial presenta una cifra de ventas, finanzas otra, y los siguientes veinte minutos se dedican a discutir cuál es la verdadera en lugar de qué hacer con ella. El problema no es el tablero ni el sistema: es que nadie decidió de qué fuente sale la cifra oficial ni quién responde por ella."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué es el gobierno de datos, qué dice la norma internacional sobre el papel de la dirección, en qué se diferencia de la calidad y de la gestión de datos, qué debe decidir la gerencia y cómo empezar sin un proyecto de un año."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es el gobierno de datos?"
+        },
+        {
+          "type": "p",
+          "text": "El gobierno de datos es el conjunto de decisiones y reglas que definen quién es dueño de cada dato, de qué sistema sale su versión oficial, qué reglas de calidad se aplican al capturarlo y transformarlo, quién puede usarlo y para qué. No es una herramienta ni un proyecto de limpieza: es la estructura de decisión que hace que la limpieza no tenga que repetirse cada año."
+        },
+        {
+          "type": "p",
+          "text": "La norma ISO/IEC 38505-1:2026, Information technology — Governance of data — Part 1, publicada en agosto de 2026 en su segunda edición, define el gobierno de datos como un subconjunto o dominio del gobierno de TI, que a su vez es un subconjunto del gobierno organizacional o corporativo. Es decir: gobernar los datos es una responsabilidad del gobierno de la empresa, no solo del área de tecnología."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué dice ISO/IEC 38505-1 sobre el papel de la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "Según su resumen oficial, la norma proporciona principios para los órganos de gobierno de las organizaciones —propietarios, directores, socios, gerentes ejecutivos o similares— sobre el uso eficaz, eficiente y aceptable de los datos, aplicando los principios y el modelo de gobierno de TI de ISO/IEC 38500 al gobierno de datos, dando confianza a las partes interesadas y orientando a los órganos de gobierno en el uso y la protección de los datos."
+        },
+        {
+          "type": "p",
+          "text": "Aplica al gobierno del uso actual y futuro de los datos creados, recogidos, almacenados, asegurados, protegidos o controlados por sistemas de TI, y a organizaciones de todos los tamaños, independientemente de cuánto dependan de los datos. También orienta a gerentes ejecutivos, especialistas externos, proveedores de servicios (incluidos consultores) y auditores."
+        },
+        {
+          "type": "quote",
+          "text": "Si la norma dirige el gobierno de datos a propietarios y directores, la pregunta para la gerencia no es qué herramienta comprar, sino qué decisiones son suyas."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué diferencia hay entre gobierno, gestión y calidad de datos?"
+        },
+        {
+          "type": "p",
+          "text": "Conviene separar tres cosas que se mezclan. El gobierno de datos decide: dueños, versión oficial, reglas y quién puede usar qué. La gestión de datos ejecuta: captura, integra, almacena, protege y entrega los datos según esas reglas; el DAMA-DMBOK, publicado por DAMA International, es el marco de referencia reconocido para esa gestión. La calidad de datos es un resultado: completitud, unicidad, validez y consistencia de los datos que la gestión produce bajo las reglas que el gobierno definió."
+        },
+        {
+          "type": "p",
+          "text": "Cuando una empresa 'limpia el CRM' cada año y los duplicados vuelven, lo que falta no es más limpieza: es gobierno. Nadie decidió quién es dueño del dato de cliente ni qué regla impide crear un cliente que ya existe."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "Cinco decisiones, en nuestro criterio, no se pueden delegar al área de tecnología:"
+        },
+        {
+          "type": "p",
+          "text": "Dominios y dueños: qué dominios de datos existen (clientes, productos, proveedores, finanzas, personas) y quién responde por cada uno, con nombre y apellido."
+        },
+        {
+          "type": "p",
+          "text": "Versión oficial: de qué sistema sale la cifra que ve la junta —ventas del CRM o del ERP, inventario del ERP o del WMS— y por qué."
+        },
+        {
+          "type": "p",
+          "text": "Reglas mínimas: qué campos son obligatorios, qué impide duplicados, quién valida un cambio en un dato maestro."
+        },
+        {
+          "type": "p",
+          "text": "Acceso y uso: quién puede ver, cambiar y exportar cada dominio, y qué datos quedan fuera del alcance de cualquier modelo de inteligencia artificial."
+        },
+        {
+          "type": "p",
+          "text": "Revisión: cada cuánto se revisa el catálogo, quién mide la calidad y a quién se reporta."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo empezar con el gobierno de datos, paso a paso?"
+        },
+        {
+          "type": "p",
+          "text": "1. Elija dos o tres dominios críticos, no todos. Clientes y productos suelen ser el punto de partida en nuestros proyectos, porque viven en el CRM y el ERP y alimentan ventas, facturación e inventario."
+        },
+        {
+          "type": "p",
+          "text": "2. Haga un diagnóstico corto: qué sistemas generan ese dato, dónde se duplica (hojas de cálculo incluidas) y qué cifras no cuadran entre áreas."
+        },
+        {
+          "type": "p",
+          "text": "3. Nombre un dueño por dominio y defina la versión oficial. Es la decisión que más discusiones evita después."
+        },
+        {
+          "type": "p",
+          "text": "4. Escriba las reglas mínimas de captura, deduplicación y acceso, y aplíquelas en los sistemas que ya existen: campos obligatorios, validaciones y detección de duplicados del CRM y del ERP."
+        },
+        {
+          "type": "p",
+          "text": "5. Levante el catálogo de los datos críticos y su linaje: de dónde sale cada indicador que ve la junta."
+        },
+        {
+          "type": "p",
+          "text": "6. Defina los controles para IA: qué datos puede usar un modelo, cuáles no, y con qué trazabilidad. Es el puente con el gobierno de IA."
+        },
+        {
+          "type": "p",
+          "text": "7. Mida y revise: duplicados, campos vacíos, cifras que cuadran. Sin medición, las reglas se relajan en meses."
+        },
+        {
+          "type": "h2",
+          "text": "¿Hace falta una herramienta de gobierno de datos?"
+        },
+        {
+          "type": "p",
+          "text": "No al principio. Las reglas de captura, deduplicación y acceso se aplican primero en el CRM y el ERP que ya existen. Una herramienta de catálogo o de calidad de datos se evalúa después, cuando los dueños y las reglas ya están definidos, y con los mismos criterios independientes de proveedor que se usan en cualquier selección de software. Comprar la herramienta antes de nombrar a los dueños es, en nuestro criterio, la forma más rápida de tener un catálogo que nadie mantiene."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué relación tiene con el gobierno de IA?"
+        },
+        {
+          "type": "p",
+          "text": "El gobierno de datos es la base del gobierno de IA. Un modelo solo es auditable si se sabe qué datos usó, de dónde salieron y quién respondía por su calidad; y solo es seguro si está escrito qué datos no puede tocar. Por eso los controles de datos para IA se definen dentro del gobierno de datos y se integran al marco de gobierno de IA, no como un proyecto aparte.",
+          "links": [
+            {
+              "text": "gobierno de IA",
+              "href": "/intelligence-lab/gobierno-de-ia"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus prestamos consultoría en gobierno de datos: diagnóstico de datos, modelo de gobierno (dominios, dueños, comité), políticas de calidad y acceso aplicadas en los sistemas que ya existen, catálogo de datos críticos con su linaje y los controles de datos para IA, con un plan de adopción para que las reglas se cumplan después de que nos retiramos.",
+          "links": [
+            {
+              "text": "consultoría en gobierno de datos",
+              "href": "/intelligence-lab/gobierno-de-datos"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para preparar a la dirección, Leadership Academy ofrece el taller de gobierno de datos para ejecutivos. Si el punto de partida es el CRM, lea cómo detectan duplicados Dynamics 365 y HubSpot y qué reglas debe definir la dirección.",
+          "links": [
+            {
+              "text": "taller de gobierno de datos para ejecutivos",
+              "href": "/leadership-academy/gobierno-de-datos-para-ejecutivos"
+            },
+            {
+              "text": "cómo detectan duplicados Dynamics 365 y HubSpot",
+              "href": "/perspectivas/gobernanza-y-deduplicacion-de-datos-en-el-crm"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es la gobernanza de IA y qué marcos usar, y qué es la estrategia de TI.",
+          "links": [
+            {
+              "text": "qué es la gobernanza de IA y qué marcos usar",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            },
+            {
+              "text": "qué es la estrategia de TI",
+              "href": "/perspectivas/estrategia-de-ti-que-es-y-que-incluye"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "ISO. ISO/IEC 38505-1:2026 Information technology — Governance of data — Part 1: Application of ISO/IEC 38500 to the governance of data (resumen oficial). Consultado el 13 de noviembre de 2026",
+          "url": "https://www.iso.org/standard/87195.html"
+        },
+        {
+          "label": "DAMA International. DAMA-DMBOK: Data Management Body of Knowledge (página oficial). Consultado el 12 de noviembre de 2026",
+          "url": "https://www.dama.org/cpages/body-of-knowledge"
+        }
+      ]
+    },
+    "estrategia-de-ia-para-empresas-hoja-de-ruta": {
+      "title": "Estrategia de IA para empresas: cómo construir la hoja de ruta",
+      "seoTitle": "Estrategia de IA para empresas: hoja de ruta",
+      "label": "Gobierno de IA",
+      "excerpt": "Qué es una estrategia de IA, qué la diferencia de comprar herramientas, cómo priorizar casos de uso, qué dice el NIST AI RMF sobre gestionar el riesgo desde el diseño y qué decide la dirección.",
+      "metaDescription": "Cómo construir una estrategia de IA para su empresa: inventario, casos de uso priorizados, hoja de ruta, gobierno (NIST AI RMF) y medición contra el proceso real, no contra la demo.",
+      "intro": "Una estrategia de IA es la hoja de ruta que define en qué procesos la inteligencia artificial cambia un resultado del negocio, en qué orden conviene hacerlo y qué hace falta —datos, sistemas, gobierno— para que funcione en producción. Si su comité aprueba o rechaza iniciativas de IA por instinto, esta guía explica cómo construirla.",
+      "keyTakeaways": [
+        "Una estrategia de IA empieza por los procesos y los datos que ya existen, no por el catálogo de herramientas de un proveedor.",
+        "Cada caso de uso se prioriza con un criterio único (impacto, viabilidad, datos, riesgo) y se mide contra el proceso real que reemplaza, no contra una demostración.",
+        "El NIST AI RMF 1.0 (enero de 2023, de uso voluntario) organiza la gestión del riesgo de IA en cuatro funciones: gobernar, mapear, medir y gestionar; su perfil de IA generativa es de julio de 2024."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Su comité decide sobre IA por instinto?",
+          "description": "Inventariamos la IA que ya se usa, identificamos y priorizamos casos de uso con un criterio único y construimos la hoja de ruta con su gobierno, su arquitectura y su medición.",
+          "checklist": [
+            "Lista corta de casos de uso priorizados",
+            "Cómo se medirá cada uno contra el proceso real"
+          ],
+          "ctaLabel": "Conocer la consultoría en estrategia de IA",
+          "imageAlt": "Directivos y consultor de Cyrrus definiendo una hoja de ruta de inteligencia artificial"
+        },
+        {
+          "title": "De la hoja de ruta al proceso real",
+          "description": "Los primeros casos se ejecutan con nuestro equipo de automatización y agentes de IA, bajo el mismo marco de gobierno y con la misma vara de medición.",
+          "checklist": [
+            "Agentes medidos contra el proceso que reemplazan",
+            "Gobierno de IA auditable desde el primer caso"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Sesión de trabajo sobre casos de uso de IA en una empresa"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Llegan al comité tres propuestas de inteligencia artificial: un asistente para atención al cliente, un modelo para predecir la demanda y una herramienta que 'automatiza todo' el área administrativa. Cada una viene con una demo impecable. Lo que no viene es el criterio para decidir cuál vale la pena, en qué orden y qué hace falta para que funcione con los datos y los sistemas que la empresa realmente tiene."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué es una estrategia de IA, qué la diferencia de comprar herramientas, cómo se priorizan los casos de uso, qué dice el marco público del NIST sobre gestionar el riesgo desde el diseño, cómo se construye la hoja de ruta y qué decisiones son de la dirección."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es una estrategia de IA?"
+        },
+        {
+          "type": "p",
+          "text": "Una estrategia de IA responde tres preguntas: en qué procesos del negocio la inteligencia artificial cambia un resultado medible, en qué orden conviene hacerlo y qué hace falta —datos, sistemas, gobierno, personas— para que funcione en producción y no solo en una demostración. Su resultado es una hoja de ruta: una lista corta de casos de uso priorizados, con secuencia, responsables, dependencias y la forma en que se medirá cada uno."
+        },
+        {
+          "type": "p",
+          "text": "No es una lista de herramientas ni una declaración de intenciones. Es una decisión de inversión, con el mismo rigor que cualquier otra iniciativa del portafolio tecnológico de la empresa."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué diferencia hay entre una estrategia de IA y comprar herramientas de IA?"
+        },
+        {
+          "type": "p",
+          "text": "El orden. Comprar herramientas empieza por lo que un proveedor ofrece y busca después dónde aplicarlo; una estrategia empieza por los procesos y los datos que ya existen y decide después qué tecnología, si alguna, los mejora. La primera ruta produce lo que vemos en nuestros proyectos: cinco herramientas compradas por cinco áreas que no se hablan entre sí, y pilotos que no pasan a producción porque los datos que necesitaban nunca existieron."
+        },
+        {
+          "type": "quote",
+          "text": "La pregunta no es qué puede hacer la IA. Es qué proceso de su empresa cambia un resultado si se hace distinto, y qué hace falta para hacerlo distinto."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se priorizan los casos de uso de IA?"
+        },
+        {
+          "type": "p",
+          "text": "Con un criterio único aplicado a todos los candidatos, para que el comité compare peras con peras. En nuestro criterio, cuatro dimensiones bastan:"
+        },
+        {
+          "type": "p",
+          "text": "Impacto: qué resultado del negocio cambia —tiempo de ciclo, errores, costo, ingresos— y cuánto vale ese cambio."
+        },
+        {
+          "type": "p",
+          "text": "Viabilidad: si la tecnología necesaria existe y está probada, y si el equipo puede operarla."
+        },
+        {
+          "type": "p",
+          "text": "Datos: si los datos que el caso necesita existen, con qué calidad, quién es su dueño y si pueden usarse para ese fin."
+        },
+        {
+          "type": "p",
+          "text": "Riesgo: qué pasa si el modelo se equivoca, a quién afecta y qué controles hacen falta."
+        },
+        {
+          "type": "p",
+          "text": "El resultado es una lista corta ordenada, con lo que cada caso necesita antes de empezar. Lo que no tiene datos o dueño no se descarta: se pospone hasta que el gobierno de datos lo resuelva."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué dice el NIST AI RMF sobre gestionar el riesgo de la IA?"
+        },
+        {
+          "type": "p",
+          "text": "El AI Risk Management Framework del Instituto Nacional de Estándares y Tecnología de Estados Unidos es un marco de uso voluntario para incorporar la confiabilidad en el diseño, el desarrollo, el uso y la evaluación de sistemas de IA. Su versión 1.0 se publicó el 26 de enero de 2023 y el NIST indica que está en revisión. Su núcleo organiza la gestión del riesgo en cuatro funciones: gobernar, mapear, medir y gestionar."
+        },
+        {
+          "type": "p",
+          "text": "En julio de 2024 el NIST publicó el perfil de IA generativa (NIST-AI-600-1), que ayuda a identificar los riesgos específicos de esa tecnología. Para una estrategia de IA el valor práctico del marco es que obliga a definir, caso por caso y antes de construir, qué riesgo se acepta, quién responde y cómo se medirá; qué marco adopta la empresa para gobernar la IA es una decisión de la dirección que tratamos en la guía de gobernanza de IA.",
+          "links": [
+            {
+              "text": "guía de gobernanza de IA",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se construye la hoja de ruta de IA, paso a paso?"
+        },
+        {
+          "type": "p",
+          "text": "1. Inventaríe la IA que ya se usa: qué herramientas hay, quién las compró, con qué datos trabajan y qué resultado dan. En muchas empresas la estrategia empieza por ordenar lo que ya existe."
+        },
+        {
+          "type": "p",
+          "text": "2. Descubra casos de uso con las áreas, no con el proveedor: procesos con volumen, repetitividad, datos disponibles y un costo actual conocido."
+        },
+        {
+          "type": "p",
+          "text": "3. Priorice con el criterio único (impacto, viabilidad, datos, riesgo) y produzca una lista corta."
+        },
+        {
+          "type": "p",
+          "text": "4. Defina para cada caso cómo se medirá: el proceso real antes y después —tiempo, errores, costo, ingresos—, nunca la demo."
+        },
+        {
+          "type": "p",
+          "text": "5. Resuelva las dependencias: datos (gobierno y calidad), integraciones (arquitectura) y controles (gobierno de IA). Un caso sin dependencias resueltas no entra en la hoja de ruta."
+        },
+        {
+          "type": "p",
+          "text": "6. Secuencie y asigne responsables: qué va primero, qué depende de qué, quién responde por cada caso en el negocio, no en tecnología."
+        },
+        {
+          "type": "p",
+          "text": "7. Ejecute los primeros casos como pilotos medidos, y revise la hoja de ruta con los resultados reales."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "Aprobar la lista priorizada con el mismo criterio para todos los casos. Decidir qué datos no puede tocar ningún modelo y quién responde por cada caso de uso. Elegir el marco de gobierno de IA. Y revisar la medición: si un caso no cambió el proceso real, se detiene, aunque la demo siga siendo impecable."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus prestamos consultoría en estrategia de IA: inventario de la IA existente, descubrimiento y priorización de casos de uso con un criterio único, hoja de ruta con secuencia y responsables, requisitos de datos y arquitectura, el marco de gobierno aplicable y el plan de medición de cada caso. Los primeros casos se ejecutan con nuestro equipo de automatización y agentes de IA, medidos contra el proceso real.",
+          "links": [
+            {
+              "text": "consultoría en estrategia de IA",
+              "href": "/intelligence-lab/estrategia-de-ia"
+            },
+            {
+              "text": "automatización y agentes de IA",
+              "href": "/intelligence-lab/automatizaciones-desarrollo"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para preparar al comité, Leadership Academy ofrece el taller de IA para directivos. La estrategia de IA se conecta con la estrategia de TI de la fase Construir del método CIRA: la IA es una iniciativa más del portafolio tecnológico, con su caso de negocio.",
+          "links": [
+            {
+              "text": "taller de IA para directivos",
+              "href": "/leadership-academy/ia-para-directivos"
+            },
+            {
+              "text": "estrategia de TI",
+              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es el gobierno de datos y cómo empezar, y qué es RPA y cuándo conviene frente a la IA.",
+          "links": [
+            {
+              "text": "qué es el gobierno de datos y cómo empezar",
+              "href": "/perspectivas/gobierno-de-datos-que-es-y-como-empezar"
+            },
+            {
+              "text": "qué es RPA y cuándo conviene frente a la IA",
+              "href": "/perspectivas/que-es-rpa-y-cuando-conviene-frente-a-la-ia"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "NIST. AI Risk Management Framework (página oficial: uso voluntario, versión 1.0 del 26 de enero de 2023, perfil de IA generativa NIST-AI-600-1 del 26 de julio de 2024). Consultado el 13 de noviembre de 2026",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        },
+        {
+          "label": "NIST AIRC. AI RMF Core (funciones Govern, Map, Measure y Manage). Consultado el 2 de noviembre de 2026",
+          "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+        }
+      ]
+    },
+    "implementacion-de-erp-con-pmo-como-gobernar-el-proyecto": {
+      "title": "Implementación de ERP con PMO: cómo gobernar el proyecto",
+      "seoTitle": "Implementación de ERP con PMO: gobierno del proyecto",
+      "label": "Gerencia de proyectos",
+      "excerpt": "Qué hace una PMO en la implementación de un ERP, qué áreas debe gobernar el proyecto, quién decide qué, qué se recorta primero cuando el presupuesto aprieta y qué debe decidir la dirección antes de firmar.",
+      "metaDescription": "Implementación de ERP con PMO: qué áreas gobierna el proyecto, quién decide qué, qué se recorta primero y cómo se mide el trabajo, según la guía pública de Microsoft.",
+      "intro": "Una PMO en la implementación de un ERP gobierna el proyecto en nombre de la empresa: define las metas medibles, la organización y los roles, el enfoque, el control de cambios, riesgos y asuntos, y el plan. El integrador entrega el sistema; alguien tiene que responder por que el proyecto cumpla lo que el comité aprobó. Esta guía explica cómo se reparte ese trabajo.",
+      "keyTakeaways": [
+        "La guía pública de implementación de Dynamics 365 de Microsoft define el gobierno del proyecto como el marco que conecta las metas del negocio con acciones y medidas, y lista seis áreas: metas, organización, enfoque, estructuras clásicas (cambios, riesgos, asuntos), áreas clave (diseño, pruebas, despliegue) y plan.",
+        "Microsoft advierte que los contratos con el integrador suelen describir actividades de alto nivel y que eso produce confusión: la guía pide detallar actividades, supuestos, roles y lo que queda fuera de alcance.",
+        "Según la misma guía, las actividades del final del proyecto (pruebas de desempeño, validación de datos, capacitación y gestión del cambio) suelen recortarse primero cuando el presupuesto aprieta, y eso afecta la calidad de la implementación."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Quién responde por el proyecto de ERP en su empresa?",
+          "description": "Actuamos como PMO externo: planeación de recursos, roles, tiempos, costos y alcance, aprobación del comité de dirección y seguimiento de la ejecución con los actores directivos, operativos y técnicos.",
+          "checklist": [
+            "Gobierno del proyecto definido antes de firmar",
+            "Roles y alcance detallados entre empresa e integrador"
+          ],
+          "ctaLabel": "Conocer la consultoría PMO y gerencia de proyectos",
+          "imageAlt": "Consultor de Cyrrus presentando el gobierno de un proyecto de ERP al comité de dirección"
+        },
+        {
+          "title": "Antes de implementar, elegir bien",
+          "description": "Si todavía no ha elegido el ERP, la selección independiente de software ordena los requisitos, las propuestas y el costo total antes de comprometer el proyecto.",
+          "checklist": [
+            "Requisitos y propuestas comparables",
+            "Costo total a varios años, no solo la licencia"
+          ],
+          "ctaLabel": "Ver la selección independiente de ERP",
+          "imageAlt": "Equipo directivo revisando propuestas de ERP con un consultor de Cyrrus"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "El contrato del ERP está firmado, el integrador tiene su plan de trabajo y el fabricante su cronograma. Queda una pregunta que ningún documento del proveedor responde: quién, del lado de la empresa, responde por que el proyecto cumpla lo que el comité aprobó en alcance, tiempo y costo."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué hace una PMO en la implementación de un ERP, qué áreas debe gobernar el proyecto según la guía pública de un fabricante, quién decide qué, qué suele recortarse primero cuando el presupuesto aprieta, cómo se mide el trabajo de la PMO y qué debe decidir la dirección antes de firmar."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué hace una PMO en la implementación de un ERP?"
+        },
+        {
+          "type": "p",
+          "text": "Gobierna el proyecto. La guía de implementación de Dynamics 365 de Microsoft define el gobierno del proyecto como el marco y las técnicas que permiten conectar las metas del negocio con acciones y medidas, estructurar y planificar el proyecto, anticipar y evitar problemas, detectar y corregir riesgos, y responder a los cambios. Esa es, en la práctica, la tarea de una PMO externa en un proyecto de ERP."
+        },
+        {
+          "type": "p",
+          "text": "La misma guía subraya algo que conviene tener presente al discutirlo en el comité: un proyecto de ERP no es solo un proyecto técnico, es un proyecto de transformación del negocio que afecta a los procesos y a las personas y es afectado por ellos. Por eso el gobierno debe involucrar al negocio y no quedarse en el equipo de sistemas."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, la diferencia práctica es esta: el integrador responde por entregar y configurar el sistema; la PMO responde ante la dirección por que el proyecto, en su conjunto, avance hacia las metas aprobadas, con un solo lugar donde se registran los riesgos, los cambios de alcance y las decisiones pendientes."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué áreas debe cubrir el gobierno de un proyecto de ERP?"
+        },
+        {
+          "type": "p",
+          "text": "La guía de Microsoft enumera seis áreas de gobierno que, según el propio documento, son relevantes para cualquier metodología de implementación. Aunque está escrita para productos de Microsoft, sirve como lista de verificación pública para revisar cualquier proyecto de ERP:"
+        },
+        {
+          "type": "p",
+          "text": "Metas del proyecto: metas claras y medibles que den dirección y enfoque, alineadas con los objetivos del negocio."
+        },
+        {
+          "type": "p",
+          "text": "Organización del proyecto: la estructura y los roles que dan eficiencia y eficacia al proyecto."
+        },
+        {
+          "type": "p",
+          "text": "Enfoque del proyecto: la metodología que se ajusta al alcance, la complejidad y las restricciones."
+        },
+        {
+          "type": "p",
+          "text": "Estructuras clásicas: la gestión de cambios, de riesgos y de asuntos, y qué tan efectivas son."
+        },
+        {
+          "type": "p",
+          "text": "Áreas clave: el diseño de la solución, las pruebas y el despliegue, que según la guía suelen recibir atención técnica pero carecer de dirección, planeación y supervisión suficientes."
+        },
+        {
+          "type": "p",
+          "text": "Plan del proyecto: un plan bien estructurado que permita seguir y mejorar el avance y los resultados."
+        },
+        {
+          "type": "p",
+          "text": "La guía recomienda definir el modelo de gobierno lo antes posible, de preferencia en la fase de inicio, porque determina el enfoque, la supervisión, los recursos y el plan, y revisarlo durante todo el proyecto."
+        },
+        {
+          "type": "h2",
+          "text": "¿Quién decide qué: comité de dirección y equipo de implementación?"
+        },
+        {
+          "type": "p",
+          "text": "Microsoft agrupa los roles en dos estructuras. El comité de dirección es un grupo de directivos con la autoridad para asegurar que el equipo se mantenga alineado con los indicadores: al seguir el avance, puede tomar decisiones que afectan la estrategia general, incluidos el presupuesto, los costos y la funcionalidad esperada. Suele componerse de la alta dirección y de los líderes de las áreas de negocio incluidas en el despliegue."
+        },
+        {
+          "type": "p",
+          "text": "El equipo central de implementación ejecuta el proyecto. Según la guía, incluye gerentes de proyecto, expertos de negocio, arquitectos de solución, consultores funcionales y técnicos, desarrolladores, probadores, capacitadores, asesores de adopción y gestión del cambio, y usuarios líderes. La guía advierte que la falta de disponibilidad de alguno de estos roles puede producir retrasos, comprensión incompleta de los procesos y baja adopción."
+        },
+        {
+          "type": "p",
+          "text": "Cuando hay un integrador externo, la guía pide que el contrato (SoW) no se quede en actividades de alto nivel: debe detallar actividades, supuestos, roles y responsabilidades, y lo que queda fuera de alcance. Describe el riesgo así: el cliente supone que el integrador hará una actividad y el integrador supone que la hará el cliente. Entre las actividades que cita están el modelado de procesos, la migración de datos, las integraciones con otros sistemas, la estrategia y ejecución de pruebas, la coordinación de las pruebas de aceptación de usuarios, el diseño de seguridad y roles, el plan y la ejecución del cambio de sistema (cutover) y la adopción y gestión del cambio."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué se recorta primero cuando el presupuesto aprieta?"
+        },
+        {
+          "type": "p",
+          "text": "La guía de estrategia de implementación de Microsoft lo dice sin rodeos: a medida que cambian el alcance y los plazos, las actividades del final del ciclo suelen quedar fuera para cumplir el presupuesto, y menciona las pruebas de desempeño, las pruebas de validación de datos, la capacitación y la gestión del cambio. Añade que esto puede afectar de forma significativa la calidad y el éxito de la implementación."
+        },
+        {
+          "type": "p",
+          "text": "Esa es una razón concreta para tener una PMO: alguien con mandato del comité para defender esas actividades cuando el cronograma se aprieta, o para dejar documentado qué se decidió recortar y quién lo aprobó. Para entender qué más conviene presupuestar, vea cuánto cuesta implementar un ERP y los costos que suelen quedar fuera de la propuesta.",
+          "links": [
+            {
+              "text": "cuánto cuesta implementar un ERP",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se mide el trabajo de la PMO?"
+        },
+        {
+          "type": "p",
+          "text": "La guía de Microsoft pide acordar, desde el inicio, indicadores concretos del éxito del proyecto y usarlos para priorizar el alcance. También pide una evaluación constante de la variación entre el presupuesto y el costo real durante todo el ciclo del proyecto."
+        },
+        {
+          "type": "p",
+          "text": "A partir de eso, en nuestro criterio la dirección puede pedir a la PMO un tablero corto y estable, con estos puntos:"
+        },
+        {
+          "type": "p",
+          "text": "Hitos cumplidos frente al plan aprobado, y desviaciones con su causa."
+        },
+        {
+          "type": "p",
+          "text": "Variación entre presupuesto y costo real, con la proyección al cierre."
+        },
+        {
+          "type": "p",
+          "text": "Riesgos abiertos, cada uno con dueño, fecha y acción."
+        },
+        {
+          "type": "p",
+          "text": "Cambios de alcance solicitados, decididos y su efecto en plazo y costo."
+        },
+        {
+          "type": "p",
+          "text": "Disponibilidad de los dueños de proceso y de los usuarios líderes que el plan suponía."
+        },
+        {
+          "type": "p",
+          "text": "Estado de las actividades de cierre que suelen recortarse: pruebas, validación de datos, capacitación y gestión del cambio."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección antes de firmar?"
+        },
+        {
+          "type": "p",
+          "text": "Quién preside el gobierno del proyecto y quién integra el comité de dirección. Que el contrato con el integrador detalle actividades, supuestos y roles. Qué presupuesto y qué plazo se protegen para las actividades del final del proyecto. Qué indicadores medirán el éxito. Y qué metodología encaja con la cultura de la empresa: la guía de Microsoft observa que las organizaciones acostumbradas a un enfoque tradicional, como cascada, pueden necesitar más planeación de gestión del cambio para adoptar un enfoque ágil o híbrido."
+        },
+        {
+          "type": "p",
+          "text": "Si todavía no ha elegido el ERP, conviene resolver antes esa decisión: la guía de mejores ERP para medianas empresas ordena las opciones, y la calculadora de costo total ayuda a estimar el presupuesto a varios años.",
+          "links": [
+            {
+              "text": "mejores ERP para medianas empresas",
+              "href": "/perspectivas/mejores-erp-para-medianas-empresas"
+            },
+            {
+              "text": "calculadora de costo total",
+              "href": "/herramientas/calculadora-costo-erp"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus gerenciamos proyectos de tecnología, incluidos ERP, CRM y HCM, como PMO externo, bajo los lineamientos del PMBOK: planeación de recursos, roles, tiempos, costos y alcance; aprobación del comité de dirección; seguimiento de la ejecución con los actores directivos, operativos y técnicos; y monitoreo continuo del riesgo. Si antes necesita elegir la solución, nuestra selección independiente de ERP cubre requisitos, propuestas y costo total.",
+          "links": [
+            {
+              "text": "PMO externo",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            },
+            {
+              "text": "selección independiente de ERP",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar en temas relacionados: qué es una PMO, sus funciones y cuándo necesitarla, y cuándo contratar una PMO externa.",
+          "links": [
+            {
+              "text": "qué es una PMO, sus funciones y cuándo necesitarla",
+              "href": "/perspectivas/que-es-una-pmo-funciones-tipos-cuando-necesitarla"
+            },
+            {
+              "text": "cuándo contratar una PMO externa",
+              "href": "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Learn. Implement Dynamics 365 projects with effective governance (guía de gobierno del proyecto: definición y seis áreas; actualizada en 2024). Consultado el 14 de noviembre de 2026",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/project-governance"
+        },
+        {
+          "label": "Microsoft Learn. Plan a Dynamics 365 implementation strategy (comité de dirección, equipo central, contrato con el integrador, presupuesto y metodología; 2024). Consultado el 14 de noviembre de 2026",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/implementation-strategy"
         }
       ]
     }

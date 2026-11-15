@@ -1,18 +1,3 @@
-import {
-  BarChart3,
-  Boxes,
-  CheckCircle2,
-  ClipboardCheck,
-  Cpu,
-  Gauge,
-  HeartHandshake,
-  Leaf,
-  ListChecks,
-  Scale,
-  Settings2,
-  Target,
-  Wrench,
-} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -24,13 +9,17 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { ServiceIntro } from "@/components/sections/service-intro";
+import { RelatedServices } from "@/components/sections/related-services";
+import { CardGrid } from "@/components/ui/card-grid";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SecondaryButton } from "@/components/ui/border-button";
+import { SectionHeader } from "@/components/ui/section-header";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/seleccion-soluciones";
-import { Img } from "@/components/ui/img";
 
 interface CriteriaItem {
   title: string;
@@ -54,23 +43,14 @@ interface Faq {
   answer: string;
 }
 
-const criteriaIcons = [Target, Cpu, Scale, Leaf];
-const benefitIcons = [Gauge, ListChecks, Settings2, BarChart3, Wrench, Leaf];
-const relatedIcons = [Boxes, ClipboardCheck, HeartHandshake];
 
 export default function SeleccionDeSoluciones() {
   const { t } = useTranslation("seleccion-soluciones");
   const lang = useLang();
   const prefix = lang === "en" ? "/en" : "";
 
-  const criteria = (t("criteria.items", { returnObjects: true }) as CriteriaItem[]).map((c, i) => ({
-    ...c,
-    icon: criteriaIcons[i],
-  }));
-  const benefits = (t("benefits.items", { returnObjects: true }) as BenefitItem[]).map((b, i) => ({
-    ...b,
-    icon: benefitIcons[i],
-  }));
+  const criteria = t("criteria.items", { returnObjects: true }) as CriteriaItem[];
+  const benefits = t("benefits.items", { returnObjects: true }) as BenefitItem[];
   const categories = (t("categories.items", { returnObjects: true }) as CategoryItem[]).map((c) => ({
     ...c,
     href: `${prefix}/metodo-cira/seleccion-de-soluciones/${c.slug}`,
@@ -79,10 +59,6 @@ export default function SeleccionDeSoluciones() {
   const services = t("services.items", { returnObjects: true }) as string[];
   const process = t("process.steps", { returnObjects: true }) as ProcessStep[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
-  const relatedItems = (t("related.items", { returnObjects: true }) as BenefitItem[]).map((it, i) => ({
-    ...it,
-    icon: relatedIcons[i],
-  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -90,7 +66,14 @@ export default function SeleccionDeSoluciones() {
   const estrategiaPath = `${prefix}/metodo-cira/estrategia`;
   const pmoPath = `${prefix}/metodo-cira/gestion-de-proyectos`;
   const changePath = `${prefix}/metodo-cira/gestion-del-cambio`;
-  const relatedPaths = [estrategiaPath, pmoPath, changePath];
+  // The 3 Castillos case is the published proof of an infrastructure, ERP and CRM selection.
+  const casePath = `${prefix}/experiencia/3-castillos`;
+  const relatedPaths = [estrategiaPath, pmoPath, changePath, casePath];
+  const answerItems = t("respuesta.items", { returnObjects: true }) as CriteriaItem[];
+  const relatedItems = (t("related.items", { returnObjects: true }) as BenefitItem[]).map((it, i) => ({
+    ...it,
+    href: relatedPaths[i],
+  }));
   const pagePath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
@@ -147,273 +130,101 @@ export default function SeleccionDeSoluciones() {
         title={t("hero.title")}
         description={t("hero.description")}
         breadcrumbs={breadcrumbItems}
+        image={{
+          src: "/assets/decoracion/IMG_20200313_092713184.jpg",
+          alt: "Sesión de trabajo con un equipo en un salón de capacitación",
+          position: "50% 50%",
+        }}
       >
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
+        <SecondaryButton asChild>
+          <Link to={methodPath}>{t("intro.methodLinkLabel")}</Link>
+        </SecondaryButton>
       </PageHero>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("intro.kicker")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("intro.pullQuote")}
-            </p>
-          </Reveal>
+      {/* Answer-first block: what technology consulting is, in the searcher's words */}
+      <IncludedGrid
+        className="bg-mist"
+        eyebrow={t("respuesta.eyebrow")}
+        title={t("respuesta.title")}
+        description={t("respuesta.body")}
+        items={answerItems}
+      />
 
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            {/* h-64 md:h-auto + relative/absolute image: with a plain md:h-full
-                image, the grid row's auto height was set by the image's own
-                tall intrinsic aspect ratio (not by the text column), so the
-                photo dictated a row far taller than the text and cropped to
-                mostly floor. Taking the image out of flow (absolute) removes
-                its intrinsic-size contribution to the row, so the row is
-                sized by the text column and the photo just fills whatever
-                height that turns out to be. */}
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
-            >
-              <Img
-                src="/assets/decoracion/Presentacion-BEC-jackson.webp"
-                alt="Jackson Bohórquez, fundador de Cyrrus, presentando la metodología de evaluación de proveedores"
-                width={470}
-                height={730}
-                // object-top: this photo is a tall portrait crop with
-                // Jackson's face right at the top. Once the row's height
-                // followed the (shorter) text column, object-cover's default
-                // center position cropped in below his face, showing only
-                // his body. Anchoring to the top keeps the face in frame at
-                // any row height.
-                className="absolute inset-0 h-full w-full object-cover object-top"
-                sizes="(min-width: 1152px) 440px, (min-width: 768px) 40vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-
-            <Reveal delay={0.15} className="md:col-span-7">
-              <p className="text-lg leading-relaxed text-gray">
-                {t("intro.description")}
-              </p>
-              <ul className="mt-8 space-y-4">
-                {(t("intro.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-base leading-relaxed text-gray">
-                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
-                  {t("intro.methodLinkLabel")}
-                </Link>
-                .
-              </p>
-              <div className="mt-8">
-                <ContactCtaButton label={t("intro.ctaLabel")} />
-              </div>
-            </Reveal>
-          </div>
+      <ServiceIntro
+        eyebrow={t("intro.kicker")}
+        quote={t("intro.pullQuote")}
+        description={t("intro.description")}
+        bullets={t("intro.bullets", { returnObjects: true }) as string[]}
+      >
+        <p>
+          {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
+            {t("intro.methodLinkLabel")}
+          </Link>
+        </p>
+        <div className="pt-3">
+          <ContactCtaButton label={t("intro.ctaLabel")} />
         </div>
-      </section>
-
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("criteria.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("criteria.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {criteria.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <RevealItem
-                  key={item.title}
-                  className="rounded-2xl border border-border bg-card p-7"
-                >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
-                    <Icon className="h-5 w-5 text-cyan" />
-                  </div>
-                  <span className="mt-5 block text-xs font-semibold uppercase tracking-wider text-blue">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="mt-1 text-lg font-semibold text-navy">{item.title}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
-      </section>
-
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("reto.eyebrow")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("reto.pullQuote")}
-            </p>
-          </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-2 md:gap-8">
-            <Reveal delay={0.1}>
-              <p className="text-base leading-relaxed text-gray">
-                {t("reto.description")}
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.15}>
-              <h3 className="text-base font-bold uppercase tracking-wider text-blue">
-                {t("reto.solutionTitle")}
-              </h3>
-              <ul className="mt-6 space-y-4">
-                {(t("reto.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
-        </div>
-      </section>
+      </ServiceIntro>
 
       <IncludedGrid
+        className="bg-mist"
+        eyebrow={t("criteria.eyebrow")}
+        title={t("criteria.title")}
+        items={criteria}
+        numbered
+      />
+
+      <ServiceIntro
+        eyebrow={t("reto.eyebrow")}
+        quote={t("reto.pullQuote")}
+        description={t("reto.description")}
+        bulletsTitle={t("reto.solutionTitle")}
+        bullets={t("reto.bullets", { returnObjects: true }) as string[]}
+      />
+
+      <IncludedGrid
+        className="bg-mist"
         eyebrow={t("benefits.eyebrow")}
         title={t("benefits.title")}
         items={benefits}
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("categories.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("categories.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((s) => (
-              <RevealItem key={s.href} >
-                <Link
-                  to={s.href}
-                  className="block h-full overflow-hidden rounded-2xl border border-border bg-card transition-[border-color,background-color] duration-150 ease-out hover:border-navy hover:bg-white"
-                >
-                  <Img
-                    src={s.image}
-                    alt=""
-                    width={400}
-                    height={160}
-                    className="h-32 w-full object-cover"
-                    sizes="(min-width: 1152px) 352px, (min-width: 640px) 45vw, calc(100vw - 3rem)"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-lg font-semibold text-navy">{s.label}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-gray">{s.note}</p>
-                  </div>
-                </Link>
-              </RevealItem>
-            ))}
-          </RevealGroup>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("categories.eyebrow")} title={t("categories.title")} />
+          <CardGrid
+            className="mt-16"
+            items={categories.map((c) => ({
+              title: c.label,
+              description: c.note,
+              href: c.href,
+              image: { src: c.image, alt: "" },
+            }))}
+          />
         </div>
       </section>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("services.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("services.title")}
-            </h2>
-          </Reveal>
-
-          <Reveal delay={0.1} className="mt-12 divide-y divide-border border-y border-border">
-            {services.map((service, index) => (
-              <div key={service} className="flex items-center gap-6 py-5">
-                <span className="text-sm font-semibold text-blue">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="text-base font-medium text-navy">{service}</span>
-              </div>
-            ))}
-          </Reveal>
+      <section className="section-y w-full bg-mist">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("services.eyebrow")} title={t("services.title")} />
+          <RuledBullets items={services} numbered columns={2} className="mt-14" />
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("process.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("process.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {process.map((step, index) => (
-              <RevealItem
-                key={step.title}
-                className="rounded-2xl border border-border bg-card p-6"
-              >
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy text-sm font-semibold text-cyan">
-                  {index + 1}
-                </span>
-                <h3 className="mt-4 text-base font-semibold text-navy">{step.title}</h3>
-                <p className="mt-2 text-base leading-relaxed text-gray">{step.description}</p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("process.eyebrow")} title={t("process.title")} />
+          <CardGrid className="mt-16" numbered min="sm" items={process} />
         </div>
       </section>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("related.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("related.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {relatedItems.map((item, i) => {
-              const RelatedIcon = item.icon;
-              return (
-                <RevealItem key={item.title}>
-                  <Link
-                    to={relatedPaths[i]}
-                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-                  >
-                    <RelatedIcon className="h-6 w-6 text-blue" />
-                    <span className="text-base font-semibold text-navy">{item.title}</span>
-                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
-                    <span className="mt-auto text-sm font-semibold text-blue">
-                      {`${lang === "en" ? "See more" : "Ver más"} →`}
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
-      </section>
+      <RelatedServices
+        className="bg-mist"
+        eyebrow={t("related.eyebrow")}
+        title={t("related.title")}
+        items={relatedItems}
+      />
 
       <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
 

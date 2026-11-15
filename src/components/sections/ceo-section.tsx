@@ -6,35 +6,26 @@ import { Img } from "@/components/ui/img";
 export function CeoSection() {
   const { t } = useTranslation("home");
   return (
-    <AnimatedNavyBackground className="cv-section py-24 md:py-32">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 text-center md:px-12">
-        <Reveal>
-          <Img
-            src="/assets/decoracion/JacksonCEO1.webp"
-            alt={t("ceo.photoAlt")}
-            width={96}
-            height={96}
-            sizes="96px"
-            loading="eager"
-            className="mx-auto h-24 w-24 rounded-full object-cover ring-4 ring-white/10"
-          />
-        </Reveal>
-        <Reveal delay={0.1}>
-          <blockquote className="text-2xl font-medium leading-snug text-white sm:text-3xl">
+    <AnimatedNavyBackground className="cv-section py-[clamp(96px,12vw,152px)] [--cv-h:560px]">
+      <Reveal className="mx-auto grid w-full max-w-[1080px] grid-cols-1 items-start gap-x-14 gap-y-10 px-[clamp(24px,5vw,64px)] text-white sm:grid-cols-[220px_1fr]">
+        <Img
+          src="/assets/decoracion/JacksonCEO1.jpeg"
+          alt={t("ceo.photoAlt")}
+          width={220}
+          height={275}
+          sizes="220px"
+          className="aspect-[4/5] w-[220px] rounded-2xl object-cover"
+        />
+        <div className="max-w-[760px]">
+          <blockquote className="m-0 font-heading text-[clamp(24px,2.6vw,34px)] font-light leading-[1.4] tracking-[-0.01em] text-pretty">
             {t("ceo.quote")}
           </blockquote>
-        </Reveal>
-        <Reveal delay={0.2}>
-          <div>
-            <div className="text-sm font-semibold text-white">
-              {t("ceo.name")}
-            </div>
-            <div className="text-sm text-white/60">
-              {t("ceo.role")}
-            </div>
+          <div className="mt-10">
+            <p className="font-heading text-[15px] font-semibold">{t("ceo.name")}</p>
+            <p className="mt-1 text-[15px] text-white/70">{t("ceo.role")}</p>
           </div>
-        </Reveal>
-      </div>
+        </div>
+      </Reveal>
     </AnimatedNavyBackground>
   );
 }

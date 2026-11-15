@@ -7,6 +7,8 @@ Tres archivos en `docs/plan-mejora/`:
 
 - `PLAN.md` — qué hay que hacer y por qué (fases A–L, decisiones, KPIs).
 - `PASO-A-PASO.md` — cómo se hace cada tarea (pasos, archivos, verificación).
+- `PLAN-CLICS.md` — **prioridad 0** (2026-11-14): más clics de búsquedas reales,
+  Colombia primero, luego México y EE. UU.; enlaces de último (fase M).
 - `PROGRESO.md` — estado de cada tarea, próxima sesión, bloqueos, métricas y
   bitácora numerada de sesiones.
 

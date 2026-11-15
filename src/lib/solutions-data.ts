@@ -105,6 +105,38 @@ export const solutions: SolutionEntry[] = [
       },
     ],
   },
+  // Cybersecurity used to be one of the four items of "infraestructura-
+  // tecnologica". It now has its own route because "consultoría en
+  // ciberseguridad" / "cybersecurity consulting services" is a search with its
+  // own intent (Sesión 17); the infrastructure page keeps a summary and links here.
+  {
+    slug: "ciberseguridad",
+    label: "Ciberseguridad",
+    eyebrow: "Selección de Soluciones — Ciberseguridad",
+    intro:
+      "Proteger la operación empieza por saber qué hay que proteger. Ayudamos a decidir qué controles necesita la empresa y a elegir las soluciones y proveedores de ciberseguridad con criterios definidos antes de ver propuestas.",
+    image: "/assets/decoracion/IMG_20230228_082632.jpg",
+    items: [
+      {
+        icon: ShieldCheck,
+        title: "Diagnóstico de riesgo",
+        description:
+          "Inventario de lo que soporta la operación, qué depende de qué y dónde están los riesgos actuales, antes de recomendar una herramienta.",
+      },
+      {
+        icon: Workflow,
+        title: "Controles y arquitectura",
+        description:
+          "Identidades, dispositivos, monitoreo y respuesta ante incidentes: qué controles cubren los riesgos encontrados y en qué orden.",
+      },
+      {
+        icon: Link2,
+        title: "Selección de proveedores",
+        description:
+          "Comparación de soluciones y proveedores con los mismos cuatro criterios de toda selección: funcional, técnico, económico y sostenible.",
+      },
+    ],
+  },
 ];
 
 export const solutionsClosingQuote =

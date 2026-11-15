@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -6,10 +5,10 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
+import { CardGrid } from "@/components/ui/card-grid";
+import { SectionHeader } from "@/components/ui/section-header";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Globe, Search, ArrowRight } from "lucide-react";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -30,8 +29,6 @@ interface Faq {
   answer: string;
 }
 
-const pillarIcons = [Globe, Search];
-
 // Each CIRA phase has its own service page; /metodo-cira has no #phase anchors.
 const phasePaths: Record<string, string> = {
   construir: "/metodo-cira/estrategia",
@@ -45,9 +42,8 @@ export default function PresenciaDigital() {
   const lang = useLang();
   const prefix = lang === "en" ? "/en" : "";
 
-  const pillars = (t("hub.pillars.items", { returnObjects: true }) as Pillar[]).map((p, i) => ({
+  const pillars = (t("hub.pillars.items", { returnObjects: true }) as Pillar[]).map((p) => ({
     ...p,
-    icon: pillarIcons[i],
     href: `${prefix}/presencia-digital/${p.hrefSlug}`,
   }));
   const phaseLinks = (t("hub.transversal.phases", { returnObjects: true }) as PhaseLink[]).map((p) => ({
@@ -110,86 +106,38 @@ export default function PresenciaDigital() {
         <ContactCtaButton variant="light" label={t("hub.hero.ctaLabel")} />
       </PageHero>
 
-      <section className="w-full bg-background py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("hub.pillars.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("hub.pillars.title")}
-            </h2>
-            <p className="mt-4 text-lg leading-relaxed text-gray">
-              {t("hub.pillars.description")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {pillars.map((pillar) => {
-              const Icon = pillar.icon;
-              return (
-                <RevealItem key={pillar.title}>
-                  <Link
-                    to={pillar.href}
-                    className="group flex h-full flex-col rounded-2xl border border-border bg-card p-8 transition-colors hover:border-blue/30"
-                  >
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-light-blue">
-                      <Icon className="h-6 w-6 text-blue" />
-                    </div>
-                    <h3 className="mt-6 text-lg font-semibold text-navy">
-                      {pillar.title}
-                    </h3>
-                    <p className="mt-3 text-base leading-relaxed text-gray">
-                      {pillar.description}
-                    </p>
-                    <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-blue">
-                      {t("hub.pillars.verMas")}
-                      <ArrowRight className="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" />
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-12">
-            <ContactCtaButton />
-          </Reveal>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader
+            eyebrow={t("hub.pillars.eyebrow")}
+            title={t("hub.pillars.title")}
+            description={t("hub.pillars.description")}
+          />
+          <CardGrid
+            className="mt-16"
+            numbered
+            items={pillars.map((pillar) => ({
+              title: pillar.title,
+              description: pillar.description,
+              href: pillar.href,
+              linkLabel: t("hub.pillars.verMas"),
+            }))}
+          />
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("hub.transversal.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("hub.transversal.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {phaseLinks.map((item) => (
-              <RevealItem
-                as="a"
-                key={item.phase}
-                href={item.href}
-                className="hover:-translate-y-1 flex flex-col rounded-2xl border border-border bg-card p-6 hover:border-blue/30"
-              >
-                <span className="text-sm font-bold uppercase tracking-wider text-blue">
-                  {item.phase}
-                </span>
-                <span className="mt-3 text-base leading-relaxed text-gray">
-                  {item.note}
-                </span>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-12">
-            <ContactCtaButton />
-          </Reveal>
+      <section className="section-y w-full bg-mist">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("hub.transversal.eyebrow")} title={t("hub.transversal.title")} />
+          <CardGrid
+            className="mt-16"
+            min="sm"
+            items={phaseLinks.map((item) => ({
+              title: item.phase,
+              description: item.note,
+              href: item.href,
+            }))}
+          />
         </div>
       </section>
 

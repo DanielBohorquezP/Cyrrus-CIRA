@@ -1,9 +1,8 @@
 import * as React from "react";
 import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { BorderButton } from "@/components/ui/border-button";
+import { BorderButton, SecondaryButton } from "@/components/ui/border-button";
 import { isPrerender } from "@/lib/prerender";
 
 // @paper-design/shaders-react used to sit in the entry chunk, so every visitor
@@ -27,7 +26,8 @@ interface ShaderHeroProps extends React.HTMLAttributes<HTMLDivElement> {
   onPrimaryButtonClick: () => void;
   secondaryButtonText: string;
   secondaryButtonHref: string;
-  badgeText?: string;
+  /** Headline figures shown beside the copy (stacked under it on narrow screens). */
+  metrics?: { value: string; label: string }[];
 }
 
 /** How long the hero animates once mounted before freezing into a still frame. */
@@ -81,29 +81,6 @@ function useDeferredMount() {
   return ready;
 }
 
-function HeroLink({
-  href,
-  children,
-  className,
-}: {
-  href: string;
-  children: React.ReactNode;
-  className?: string;
-}) {
-  if (href.startsWith("/")) {
-    return (
-      <Link to={href} className={className}>
-        {children}
-      </Link>
-    );
-  }
-  return (
-    <a href={href} className={className}>
-      {children}
-    </a>
-  );
-}
-
 const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
   (
     {
@@ -117,7 +94,7 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
       onPrimaryButtonClick,
       secondaryButtonText,
       secondaryButtonHref,
-      badgeText = "Cyrrus Consulting Services",
+      metrics = [],
       ...props
     },
     ref
@@ -228,119 +205,98 @@ const ShaderHero = React.forwardRef<HTMLDivElement, ShaderHeroProps>(
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
 
-        <div className="absolute bottom-10 left-6 z-20 max-w-2xl md:bottom-16 md:left-12">
-          {/* No opacity in any of these entrance animations, for the same
-              reason Reveal avoids it (see src/components/ui/reveal.tsx): the
-              prerender bakes the finished state into the static HTML, so
-              fading in from 0 made framer-motion blank out already-painted
-              text on mount. That deferred the LCP element ("Consulting")
-              behind hydration plus a 0.35s delay and a 0.8s fade — a
-              2,330ms LCP render delay and a visible flash. Only y animates. */}
-          <div
-            className="hero-rise relative mb-6 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm"
-            style={{ "--hero-rise-delay": "200ms" } as React.CSSProperties}
-          >
-            <span className="text-xs font-semibold uppercase tracking-widest text-cyan">
-              {eyebrow}
-            </span>
-          </div>
+        <div className="relative z-20 mx-auto flex min-h-screen w-full max-w-[1280px] flex-col justify-end px-[clamp(24px,5vw,64px)] pb-16 pt-40 md:pb-20">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] items-end gap-x-16 gap-y-14">
+            <div className="max-w-[720px]">
+              {/* No opacity in any of these entrance animations, for the same
+                  reason Reveal avoids it (see src/components/ui/reveal.tsx): the
+                  prerender bakes the finished state into the static HTML, so
+                  fading in from 0 made framer-motion blank out already-painted
+                  text on mount. That deferred the LCP element ("Consulting")
+                  behind hydration plus a 0.35s delay and a 0.8s fade — a
+                  2,330ms LCP render delay and a visible flash. Only y animates. */}
+              <div
+                className="hero-rise inline-flex items-center rounded-full border border-white/10 bg-white/5 px-[18px] py-2"
+                style={{ "--hero-rise-delay": "200ms" } as React.CSSProperties}
+              >
+                <span className="font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-sky">
+                  {eyebrow}
+                </span>
+              </div>
 
-          <h1
-            className="hero-rise mb-6 leading-[0.95] tracking-tight text-white"
-            style={
-              {
-                "--hero-rise-y": "30px",
-                "--hero-rise-duration": "800ms",
-                "--hero-rise-delay": "350ms",
-              } as React.CSSProperties
-            }
-          >
-            <span
-              // Own line-height, not the h1's tight leading-[0.95]: this span
-              // is gradient-filled via background-clip, so a line box shorter
-              // than the font's descender extent clips descenders (e.g. the
-              // "g" in "Strategic") instead of just tightening whitespace.
-              className="hero-accent-gradient block text-3xl font-light leading-[1.2] tracking-wide sm:text-4xl md:text-5xl"
-            >
-              {titleAccent}
-            </span>
-            <span className="block text-5xl font-black drop-shadow-2xl sm:text-6xl md:text-7xl">
-              {titleBold}
-            </span>
-            {titleLight && (
-              <span className="block text-3xl font-light italic text-white/80 sm:text-4xl md:text-5xl">
-                {titleLight}
-              </span>
+              <h1
+                className="hero-rise mt-7 font-heading leading-[0.95] tracking-[-0.02em] text-white"
+                style={
+                  {
+                    "--hero-rise-y": "30px",
+                    "--hero-rise-duration": "800ms",
+                    "--hero-rise-delay": "350ms",
+                  } as React.CSSProperties
+                }
+              >
+                <span
+                  // Own line-height, not the h1's tight leading-[0.95]: this span
+                  // is gradient-filled via background-clip, so a line box shorter
+                  // than the font's descender extent clips descenders (e.g. the
+                  // "g" in "Strategic") instead of just tightening whitespace.
+                  className="hero-accent-gradient block text-[clamp(32px,4vw,52px)] font-light leading-[1.2] tracking-[0.01em]"
+                >
+                  {titleAccent}
+                </span>
+                <span className="block text-[clamp(52px,7.4vw,96px)] font-extrabold tracking-[-0.03em]">
+                  {titleBold}
+                </span>
+                {titleLight && (
+                  <span className="mt-2 block text-[clamp(30px,3.8vw,50px)] font-light italic leading-[1.15] text-white/80">
+                    {titleLight}
+                  </span>
+                )}
+              </h1>
+
+              <p
+                className="hero-rise mt-8 max-w-[560px] text-[clamp(18px,1.7vw,20px)] leading-[1.6] text-white/75"
+                style={{ "--hero-rise-delay": "550ms" } as React.CSSProperties}
+              >
+                {subtitle}
+              </p>
+
+              <div
+                className="hero-rise mt-11 flex flex-wrap items-center gap-x-7 gap-y-5"
+                style={{ "--hero-rise-delay": "700ms" } as React.CSSProperties}
+              >
+                <BorderButton variant="light" size="lg" dot onClick={onPrimaryButtonClick}>
+                  {primaryButtonText}
+                </BorderButton>
+                {secondaryButtonHref.startsWith("/") ? (
+                  <SecondaryButton asChild>
+                    <Link to={secondaryButtonHref}>{secondaryButtonText}</Link>
+                  </SecondaryButton>
+                ) : (
+                  <SecondaryButton href={secondaryButtonHref}>{secondaryButtonText}</SecondaryButton>
+                )}
+              </div>
+            </div>
+
+            {metrics.length > 0 && (
+              <dl
+                className="hero-rise m-0 grid border-t border-white/20"
+                style={{ "--hero-rise-delay": "800ms" } as React.CSSProperties}
+              >
+                {metrics.map((metric) => (
+                  <div
+                    key={metric.label}
+                    className="grid grid-cols-[minmax(96px,120px)_1fr] items-baseline gap-6 border-b border-white/20 py-5"
+                  >
+                    <dd className="font-heading text-[clamp(36px,3.4vw,44px)] font-light tracking-[-0.02em] text-white">
+                      {metric.value}
+                    </dd>
+                    <dt className="font-heading text-[13px] font-medium uppercase tracking-[0.1em] text-white/75">
+                      {metric.label}
+                    </dt>
+                  </div>
+                ))}
+              </dl>
             )}
-          </h1>
-
-          <p
-            className="hero-rise mb-8 max-w-lg text-base font-light leading-relaxed text-white/70 md:text-lg"
-            style={{ "--hero-rise-delay": "550ms" } as React.CSSProperties}
-          >
-            {subtitle}
-          </p>
-
-          <div
-            className="hero-rise flex flex-wrap items-center gap-4"
-            style={{ "--hero-rise-delay": "700ms" } as React.CSSProperties}
-          >
-            <BorderButton
-              variant="light"
-              size="lg"
-              className="px-8"
-              dot
-              onClick={onPrimaryButtonClick}
-            >
-              {primaryButtonText}
-            </BorderButton>
-            <HeroLink
-              href={secondaryButtonHref}
-              className="inline-flex items-center gap-1.5 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:border-cyan/50 hover:text-cyan"
-            >
-              {secondaryButtonText}
-              <ArrowRight className="h-4 w-4" />
-            </HeroLink>
-          </div>
-        </div>
-
-        {/* The ring and the circling wordmark were framer-motion `repeat:
-            Infinity` loops, which tick a requestAnimationFrame callback on the
-            main thread for as long as the page is open. As pure CSS keyframes
-            over transform/opacity only, the compositor owns them and the main
-            thread stays free — so they can keep running without costing TBT.
-            They still stop when the hero scrolls away, the tab is hidden, or
-            the visitor asked for reduced motion. */}
-        <div
-          className="absolute bottom-8 right-8 z-30 hidden md:block"
-          data-motion={isDecorAnimating ? "on" : "off"}
-        >
-          <div className="relative flex h-20 w-20 items-center justify-center">
-            <div className="hero-badge-ring absolute h-[60px] w-[60px] rounded-full border-2 border-cyan/70" />
-            <div className="absolute h-[60px] w-[60px] rounded-full bg-gradient-to-br from-cyan/40 via-blue/30 to-navy/40 backdrop-blur-sm" />
-            <svg
-              aria-hidden="true"
-              className="hero-badge-spin absolute inset-0 h-full w-full"
-              viewBox="0 0 100 100"
-            >
-              <defs>
-                <path
-                  id="shader-hero-circle"
-                  d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
-                />
-              </defs>
-              <text className="fill-white/70 text-[9px] font-medium uppercase tracking-widest">
-                {/* One interpolation, not `{badgeText} • {badgeText} •`. Those
-                    are three adjacent children, which React tracks as three
-                    separate text nodes — but the DOM merges them into one when
-                    the prerenderer serialises the page, and React then can't
-                    hydrate the node it expected to find. A single string is a
-                    single text node on both sides. */}
-                <textPath href="#shader-hero-circle" startOffset="0%">
-                  {`${badgeText} • ${badgeText} •`}
-                </textPath>
-              </text>
-            </svg>
           </div>
         </div>
       </div>

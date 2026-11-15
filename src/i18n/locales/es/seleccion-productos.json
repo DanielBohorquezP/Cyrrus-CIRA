@@ -1,14 +1,33 @@
 {
   "erp": {
     "meta": {
-      "title": "Selección de ERP Independiente para Empresas | Cyrrus",
+      "title": "Consultoría ERP: Selección Independiente de ERP | Cyrrus",
       "description": "Consultoría de selección de ERP: definimos requisitos, evaluamos proveedores y elegimos con usted el ERP que se ajusta a sus procesos. 100% agnósticos."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Selección de ERP: evaluación independiente, sin sesgo de proveedor",
+      "title": "Consultoría ERP independiente: selección sin sesgo de proveedor",
       "description": "Elegir un ERP no es elegir software. Es elegir cómo funcionará su empresa durante los próximos años. Ayudamos a las organizaciones a definir, evaluar y seleccionar el ERP que mejor se adapta a sus procesos, objetivos, arquitectura y capacidad de inversión.",
       "ctaLabel": "Evaluar mi necesidad de ERP"
+    },
+    "respuesta": {
+      "eyebrow": "Consultor ERP independiente",
+      "title": "¿Qué hace un consultor ERP independiente?",
+      "body": "Ayuda a la empresa a decidir qué ERP necesita antes de firmar con un fabricante o un implementador. En Cyrrus esa decisión se toma con criterios definidos desde su operación: no tenemos alianzas comerciales ni comisiones con ningún fabricante de ERP, y la recomendación puede ser cambiar de plataforma, optimizar la actual o no cambiar.",
+      "items": [
+        {
+          "title": "Selección",
+          "description": "Levanta los requerimientos, arma la longlist y la shortlist, conduce el RFI/RFP y las demos, y compara a los proveedores con seis criterios y el costo total de propiedad."
+        },
+        {
+          "title": "Tiempo",
+          "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+        },
+        {
+          "title": "Implementación",
+          "description": "La selección y la implementación son fases distintas. Durante la implementación del ERP recomendado podemos actuar como PMO externo, que gobierna cronograma, riesgos y proveedores."
+        }
+      ]
     },
     "dolor": {
       "eyebrow": "01 — Dolor",
@@ -114,6 +133,10 @@
         "answer": "Un ERP (Enterprise Resource Planning) es el sistema central que integra en una sola plataforma los procesos de finanzas, compras, inventarios, producción y operación de una empresa, para que todas las áreas trabajen con la misma información. Elegirlo bien importa porque condiciona cómo opera la organización durante años."
       },
       {
+        "question": "¿Cuándo conviene contratar un consultor ERP?",
+        "answer": "Cuando la empresa creció más rápido que su plataforma, tiene sistemas que no se hablan entre sí, depende de hojas de cálculo paralelas, tarda semanas en consolidar su información financiera, su ERP dejó de recibir soporte real o va a expandirse a nuevas unidades o países. También antes de renovar o ampliar el ERP actual: a veces la respuesta es optimizar, no reemplazar."
+      },
+      {
         "question": "¿Cuánto dura un proceso de selección de ERP?",
         "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
       },
@@ -145,14 +168,33 @@
   },
   "crm": {
     "meta": {
-      "title": "Qué es un CRM y Cómo Elegir el Correcto | Cyrrus",
+      "title": "Consultoría CRM: Selección Independiente de CRM | Cyrrus",
       "description": "Qué es un CRM y cómo elegir el correcto: consultoría de selección de CRM. Diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que ventas sí va a adoptar."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Qué es un CRM y cómo elegir el correcto: selección y evaluación",
+      "title": "Consultoría CRM independiente: el CRM que su equipo sí adopte",
       "description": "Un CRM no debería obligar a su equipo comercial a cambiar su forma de vender. Debería ayudarlo a vender mejor. Ayudamos a las organizaciones a definir, evaluar y seleccionar el CRM que mejor se adapta a su proceso comercial.",
       "ctaLabel": "Evaluar mi necesidad de CRM"
+    },
+    "respuesta": {
+      "eyebrow": "Consultoría CRM independiente",
+      "title": "¿Qué hace una consultoría CRM independiente?",
+      "body": "Ayuda a la empresa a elegir el CRM que se ajusta a su proceso comercial real antes de comprar licencias o contratar una implementación. En Cyrrus partimos de su proceso de ventas, no del catálogo de un fabricante: no tenemos comisión con ninguno, y la evaluación puede concluir que le sirve la plataforma más barata del mercado o que la que ya tiene solo necesita reconfigurarse.",
+      "items": [
+        {
+          "title": "Selección",
+          "description": "Mapea el proceso comercial, arma la shortlist, guía demos funcionales y compara proveedores por ajuste al proceso, facilidad de uso, integración con el ERP, costo total por usuario y sostenibilidad del proveedor."
+        },
+        {
+          "title": "Adopción",
+          "description": "El criterio de adopción se evalúa desde el primer día con su equipo comercial, no al final del proceso."
+        },
+        {
+          "title": "Tiempo e implementación",
+          "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas. Durante la implementación podemos actuar como PMO externo, con la gestión del cambio acompañando la adopción."
+        }
+      ]
     },
     "dolor": {
       "eyebrow": "01 — Dolor",
@@ -255,6 +297,10 @@
         "answer": "Un CRM (Customer Relationship Management) es el sistema donde un equipo comercial registra y gestiona clientes, oportunidades y seguimiento de ventas. Sirve para vender de forma ordenada y medible, siempre que se adapte al proceso comercial real y no al revés."
       },
       {
+        "question": "¿Cuándo conviene contratar una consultoría CRM?",
+        "answer": "Cuando la información de los clientes está dispersa, los leads se pierden, el seguimiento es manual, no hay visibilidad del pipeline, cada equipo usa una herramienta distinta o la información depende de las personas. También cuando el equipo comercial ya rechazó un CRM antes y no quiere repetir la experiencia."
+      },
+      {
         "question": "¿Cuánto dura un proceso de selección de CRM?",
         "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
       },
@@ -278,12 +324,12 @@
   },
   "hcm": {
     "meta": {
-      "title": "Software HCM: Cómo Elegir el Sistema de Gestión Humana | Cyrrus",
-      "description": "Software HCM y software de nómina: consultoría de selección. Alineamos la tecnología de gestión humana con su nómina, talento y experiencia del empleado — 100% agnósticos."
+      "title": "Software de Recursos Humanos (HCM): Consultoría | Cyrrus",
+      "description": "Consultoría HCM independiente: le ayudamos a elegir el software de recursos humanos y nómina que se ajusta a su gestión de personas, sin comisiones de proveedores."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Software HCM: selección del sistema de gestión humana",
+      "title": "Consultoría HCM: selección de software de recursos humanos y nómina",
       "description": "La tecnología de gestión humana debe adaptarse a la organización, no al contrario. Ayudamos a las organizaciones a definir, evaluar y seleccionar el software HCM — nómina, talento y desempeño — que mejor se adapta a su modelo de gestión de personas.",
       "ctaLabel": "Evaluar mi necesidad de HCM"
     },
@@ -387,6 +433,10 @@
         "answer": "Un HCM (Human Capital Management) es la plataforma que cubre todo el ciclo de gestión de personas: nómina, selección, talento, desempeño y experiencia del empleado. Un software de nómina resuelve solo una parte, el cálculo y pago de la nómina. Elegir entre uno y otro depende del tamaño de la organización y de qué procesos de personas necesita integrar."
       },
       {
+        "question": "¿Cuándo conviene contratar una consultoría HCM?",
+        "answer": "Cuando la nómina, el talento y el reclutamiento viven en plataformas separadas que no se conectan, cuando vacaciones, evaluaciones y compensación se gestionan en hojas de cálculo, o cuando la plataforma actual no soporta el crecimiento del número de colaboradores ni la operación en nuevos países."
+      },
+      {
         "question": "¿Cuánto dura un proceso de selección de HCM?",
         "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
       },
@@ -406,16 +456,35 @@
         "question": "¿Por qué usar un consultor independiente para elegir un HCM?",
         "answer": "Porque en la nómina un error puede ser costoso, y un proveedor puede tener poco incentivo para señalar sus propios vacíos por país. Un evaluador sin comisión puede decir cuál plataforma no cubre bien su legislación local."
       }
-    ]
+    ],
+    "respuesta": {
+      "eyebrow": "Consultoría HCM independiente",
+      "title": "¿Qué hace una consultoría HCM independiente?",
+      "body": "Ayuda a la empresa a decidir qué software de recursos humanos y nómina necesita antes de firmar con un proveedor. En Cyrrus esa decisión parte de su modelo de gestión de personas: no tenemos alianzas comerciales ni comisiones con fabricantes de HCM, así que podemos decir qué plataforma no cubre bien su legislación local.",
+      "items": [
+        {
+          "title": "Selección",
+          "description": "Levanta los requerimientos de gestión humana, evalúa y compara a los proveedores con seis criterios, y entrega una matriz de decisión, la evaluación económica y una recomendación."
+        },
+        {
+          "title": "Nómina y países",
+          "description": "El cumplimiento normativo y de nómina de cada país donde opera la empresa se evalúa desde el inicio, no como un ajuste posterior a la selección."
+        },
+        {
+          "title": "Tiempo",
+          "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+        }
+      ]
+    }
   },
   "eam": {
     "meta": {
-      "title": "Gestión de Activos y Software EAM: Selección | Cyrrus",
-      "description": "Gestión de activos y software EAM: consultoría de selección. Elegimos la plataforma de gestión de activos según el ciclo de vida de su operación, sin sesgo de proveedor."
+      "title": "Software de Mantenimiento (EAM/CMMS): Consultoría | Cyrrus",
+      "description": "Consultoría EAM independiente: elegimos el software de mantenimiento y gestión de activos según el ciclo de vida de su operación, sin comisiones de proveedores."
     },
     "hero": {
       "eyebrow": "Selección de Soluciones — Selección de Software",
-      "title": "Gestión de activos: selección de software EAM",
+      "title": "Consultoría EAM: selección de software de mantenimiento y gestión de activos",
       "description": "La gestión de activos comienza mucho antes del mantenimiento. Comienza con elegir la tecnología adecuada. Ayudamos a las organizaciones a definir, evaluar y seleccionar el EAM que mejor se adapta a su realidad operativa.",
       "ctaLabel": "Evaluar mi necesidad de EAM"
     },
@@ -516,6 +585,14 @@
     },
     "faq": [
       {
+        "question": "¿Cuándo conviene contratar una consultoría EAM?",
+        "answer": "Cuando el mantenimiento es reactivo y se interviene el activo cuando ya falló, cuando el historial vive en bitácoras físicas o archivos sueltos, cuando hay paradas no planificadas sin alerta previa o cuando compras no sabe qué repuestos hay antes de generar una orden."
+      },
+      {
+        "question": "¿Qué diferencia hay entre un CMMS y un EAM?",
+        "answer": "Un CMMS gestiona las tareas de mantenimiento: órdenes de trabajo, repuestos y programación. Un EAM cubre todo el ciclo de vida del activo, incluida la planeación de capital, el riesgo y el desempeño. Lo explicamos con más detalle en nuestra guía de software CMMS y EAM."
+      },
+      {
         "question": "¿Cuánto dura un proceso de selección de EAM?",
         "answer": "Como referencia, la fase de Identificar del método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
       },
@@ -533,8 +610,27 @@
       },
       {
         "question": "¿Por qué contratar un consultor independiente para elegir un EAM?",
-        "answer": "Porque en gestión de activos la brecha entre lo que promete una demostración y lo que soporta la operación en campo es la más amplia del software empresarial. Al no tener comisión con ningún fabricante, evaluamos esa brecha con criterios definidos antes de ver cualquier producto."
+        "answer": "Porque en gestión de activos la brecha entre lo que promete una demostración y lo que soporta la operación en campo puede ser amplia. Al no tener comisión con ningún fabricante, evaluamos esa brecha con criterios definidos antes de ver cualquier producto."
       }
-    ]
+    ],
+    "respuesta": {
+      "eyebrow": "Consultoría EAM independiente",
+      "title": "¿Qué hace una consultoría EAM independiente?",
+      "body": "Ayuda a la empresa a decidir qué software de mantenimiento y gestión de activos necesita — un CMMS, un EAM o el módulo de mantenimiento del ERP — antes de firmar con un proveedor. En Cyrrus esa decisión parte de la realidad operativa de sus activos, con criterios definidos antes de ver cualquier producto y sin comisiones de fabricantes.",
+      "items": [
+        {
+          "title": "Selección",
+          "description": "Levanta el mapa de requerimientos operativos, arma la matriz de evaluación técnica, compara a los proveedores y calcula el costo total de propiedad del ciclo de vida."
+        },
+        {
+          "title": "Industria",
+          "description": "Evalúa la experiencia real del proveedor en su industria — manufactura, energía, minería o transporte —, no solo la capacidad genérica de la plataforma."
+        },
+        {
+          "title": "Tiempo",
+          "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+        }
+      ]
+    }
   }
 }

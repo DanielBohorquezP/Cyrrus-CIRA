@@ -49,7 +49,7 @@ export function ArticleServiceCta({
           <Img
             src={image.src}
             alt={image.alt}
-            sizes="(min-width: 768px) 420px, 100vw"
+            sizes="1280px"
             className="absolute inset-0 h-full w-full object-cover"
           />
         </div>

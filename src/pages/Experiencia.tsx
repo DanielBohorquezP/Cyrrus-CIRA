@@ -5,30 +5,18 @@ import { useLang } from "@/lib/language";
 import { clientLogoNames } from "@/lib/client-logos";
 import { caseStudies } from "@/lib/case-studies";
 import { SiteHeader } from "@/components/layout/site-header";
-import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
+import { PageHero } from "@/components/layout/page-hero";
 import { InteractiveGlobe } from "@/components/ui/interactive-globe";
 import { ClientOnly } from "@/components/ui/client-only";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { RevealGroup, RevealItem, Reveal } from "@/components/ui/reveal";
-import {
-  User,
-  Globe2,
-  Layers,
-  Sparkles,
-  Factory,
-  Landmark,
-  Zap,
-  Fuel,
-  ShoppingBag,
-  HeartPulse,
-  GraduationCap,
-  Anchor,
-  Wallet,
-  Leaf,
-  Truck,
-  HardHat,
-} from "lucide-react";
+import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { PhotoCaption } from "@/components/ui/photo-caption";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SectionHeader } from "@/components/ui/section-header";
+import { User } from "lucide-react";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -55,45 +43,20 @@ interface TeamRole {
   name?: string;
 }
 
-const statIcons = [Globe2, Layers, Sparkles];
-// Same order as experiencia.industries in paginas.json.
-const industryIcons = [
-  HeartPulse,
-  GraduationCap,
-  ShoppingBag,
-  Factory,
-  Anchor,
-  Zap,
-  Landmark,
-  Wallet,
-  Fuel,
-  Leaf,
-  Truck,
-  HardHat,
-];
-const industryBgColors = ["bg-navy", "bg-blue", "bg-cyan"];
-
 const gallerySrcs = [
   { src: "/assets/decoracion/Cesar.jpg", alt: "Consultores de Cyrrus trabajando en un diagnóstico de procesos" },
   { src: "/assets/decoracion/IMG_20230302_112825.jpg", alt: "Equipo de un cliente de Cyrrus al cierre de un proyecto de transformación" },
   { src: "/assets/decoracion/Evento%20mesas.jpg", alt: "Cyrrus en un evento corporativo" },
 ];
 
-const teamPhotos = ["/assets/decoracion/JacksonCEO1.webp", "/assets/decoracion/DanielBohorquez.JPG.jpeg"];
+const teamPhotos = ["/assets/decoracion/JacksonCEO1.jpeg", "/assets/decoracion/DanielBohorquez.JPG.jpeg"];
 
 export default function Experiencia() {
   const { t } = useTranslation("paginas");
   const lang = useLang();
 
-  const stats = (t("experiencia.stats", { returnObjects: true }) as Stat[]).map((s, i) => ({
-    ...s,
-    icon: statIcons[i],
-  }));
-  const industries = (t("experiencia.industries", { returnObjects: true }) as Industry[]).map((it, i) => ({
-    ...it,
-    icon: industryIcons[i],
-    bg: industryBgColors[i % industryBgColors.length],
-  }));
+  const stats = t("experiencia.stats", { returnObjects: true }) as Stat[];
+  const industries = t("experiencia.industries", { returnObjects: true }) as Industry[];
   const gallery = (t("experiencia.gallery.items", { returnObjects: true }) as GalleryItem[]).map((g, i) => ({
     ...g,
     ...gallerySrcs[i],
@@ -141,11 +104,10 @@ export default function Experiencia() {
     <>
       <SiteHeader />
       <main id="contenido">
-      <IntelligenceLabHero
+      <PageHero
         eyebrow={t("experiencia.hero.eyebrow")}
         title={t("experiencia.hero.title")}
         description={t("experiencia.hero.description")}
-        showVisual={false}
         visual={
           // Deferred for the same reason as CyrrusGlobe — a WebGL canvas can't be
           // prerendered into markup React will agree with.
@@ -155,176 +117,136 @@ export default function Experiencia() {
         }
       />
 
-      <section className="w-full bg-background py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <RevealGroup
+            as="dl"
+            className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,240px),1fr))] border-b border-line"
+          >
             {stats.map((stat) => (
               <RevealItem
                 key={stat.label}
-                className="hover:-translate-y-1 rounded-2xl border border-border bg-card p-8 text-center shadow-sm hover:shadow-xl"
+                className="flex flex-col-reverse justify-end border-r border-line py-10 pr-8 last:border-r-0"
               >
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-light-blue">
-                  <stat.icon className="h-6 w-6 text-blue" strokeWidth={1.75} />
-                </div>
-                <dd className="mt-5 bg-gradient-to-br from-navy to-blue bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl">
+                <dt className="mt-4 text-base leading-[1.5] text-slate">{stat.label}</dt>
+                <dd className="font-heading text-[clamp(56px,6vw,72px)] font-light leading-none tracking-[-0.04em] text-navy">
                   {stat.value}
                 </dd>
-                <div className="mt-2 text-sm text-gray">
-                  {stat.label}
-                </div>
-                <span className="mx-auto mt-3 block h-[3px] w-9 rounded-full bg-cyan" />
               </RevealItem>
             ))}
           </RevealGroup>
 
-          <Reveal delay={0.1} className="mt-16">
-            <div className="text-base font-bold uppercase tracking-wider text-gray">
-              {t("experiencia.industriesLabel")}
+          <div className="mt-24 grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-x-24 gap-y-10">
+            <Reveal>
+              <h2 className="font-heading text-sm font-semibold uppercase tracking-[0.12em] text-navy">
+                {t("experiencia.industriesLabel")}
+              </h2>
+            </Reveal>
+            <div className="md:col-span-2">
+              <RuledBullets
+                columns={2}
+                numbered
+                items={industries.map((industry) => `${t("experiencia.industriesPrefix")} ${industry.name.toLowerCase()}`)}
+              />
             </div>
-            <RevealGroup className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {industries.map((industry) => (
-                <RevealItem
-                  key={industry.name}
-                  className="hover:-translate-y-0.5 flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-sm hover:shadow-md hover:border-blue/40"
-                >
-                  <span
-                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${industry.bg} text-white`}
-                  >
-                    <industry.icon className="h-5 w-5" strokeWidth={1.75} />
-                  </span>
-                  <span className="text-sm font-medium text-navy">
-                    {`${t("experiencia.industriesPrefix")} ${industry.name.toLowerCase()}`}
-                  </span>
-                </RevealItem>
-              ))}
-            </RevealGroup>
-          </Reveal>
+          </div>
         </div>
       </section>
 
-      <section id="casos" className="w-full bg-light-blue/40 py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("experiencia.cases.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("experiencia.cases.title")}
-            </h2>
-            <p className="mt-4 text-lg leading-relaxed text-gray">
-              {t("experiencia.cases.description")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+      <AnimatedNavyBackground id="casos" className="section-y">
+        <div className="container-site text-white">
+          <SectionHeader
+            tone="dark"
+            eyebrow={t("experiencia.cases.eyebrow")}
+            title={t("experiencia.cases.title")}
+            description={t("experiencia.cases.description")}
+          />
+          <RevealGroup className="mt-16 border-t border-white/20">
             {cases.map((c) => (
               <RevealItem key={c.slug}>
                 <Link
                   to={`${pagePath}/${c.slug}`}
-                  className="group flex h-full flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-xl"
+                  className="group grid grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] items-center gap-x-16 gap-y-10 border-b border-white/20 py-14 text-white"
                 >
-                  <span className="flex h-14 w-36 items-center justify-center rounded-xl bg-navy p-2">
+                  <span className="flex aspect-[16/10] items-center justify-center rounded-2xl bg-white/10 p-10">
                     <Img
                       src={`/assets/logos-clientes/${encodeURIComponent(c.logo)}.webp`}
                       alt={c.logo}
-                      sizes="140px"
-                      className="h-full w-full object-contain"
+                      sizes="240px"
+                      className="max-h-20 w-auto max-w-[70%] object-contain"
                     />
                   </span>
-                  <span className="mt-6 text-sm font-bold uppercase tracking-wider text-blue">{c.industry}</span>
-                  <h3 className="mt-2 text-xl font-semibold text-navy">{c.title}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-gray">{c.card.excerpt}</p>
-                  <p className="mt-4 text-base font-semibold text-navy">{c.card.metric}</p>
-                  <span className="mt-auto pt-6 text-sm font-semibold text-blue">
-                    {`${t("casos.labels.readCase")} →`}
+                  <span className="block">
+                    <Eyebrow as="span" tone="dark">{c.industry}</Eyebrow>
+                    <h3 className="mt-4 font-heading text-[clamp(24px,2.4vw,32px)] font-semibold leading-[1.2] tracking-[-0.02em] text-balance">
+                      {c.title}
+                    </h3>
+                    <span className="mt-4 block text-[17px] leading-[1.7] text-white/75">{c.card.excerpt}</span>
+                    <span className="mt-6 block border-t border-white/20 pt-5 font-heading text-lg font-medium">
+                      {c.card.metric}
+                    </span>
+                    <span className="mt-5 inline-block border-b border-white/50 pb-1 font-heading text-sm font-medium group-hover:border-white">
+                      {`${t("casos.labels.readCase")} →`}
+                    </span>
                   </span>
                 </Link>
               </RevealItem>
             ))}
           </RevealGroup>
         </div>
-      </section>
+      </AnimatedNavyBackground>
 
-      <section className="w-full bg-background py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("experiencia.gallery.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("experiencia.gallery.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("experiencia.gallery.eyebrow")} title={t("experiencia.gallery.title")} />
+          <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-6">
             {gallery.map((item) => (
-              <RevealItem
-                as="figure"
-                key={item.src}
-                className="hover:-translate-y-1 overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl"
-              >
-                <Img
+              <RevealItem key={item.src}>
+                <PhotoCaption
                   src={item.src}
                   alt={item.alt}
-                  width={480}
-                  height={320}
-                  sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
-                  className="h-56 w-full object-cover object-top"
+                  caption={item.caption}
+                  aspect="aspect-[4/5]"
+                  position="50% 0%"
+                  sizes="1100px"
                 />
-                <figcaption className="p-4 text-sm text-gray">
-                  {item.caption}
-                </figcaption>
               </RevealItem>
             ))}
           </RevealGroup>
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("experiencia.team.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("experiencia.team.title")}
-            </h2>
+      <section className="section-y w-full bg-mist">
+        <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-x-24 gap-y-12">
+          <Reveal>
+            <Eyebrow>{t("experiencia.team.eyebrow")}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{t("experiencia.team.title")}</h2>
           </Reveal>
-
-          <RevealGroup className="mx-auto mt-12 grid max-w-xl grid-cols-1 gap-6 sm:grid-cols-2">
+          <RevealGroup className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,240px),1fr))] gap-8 md:col-span-2">
             {team.map((member) => (
-              <RevealItem
-                key={member.role}
-                className={`flex flex-col items-center rounded-2xl border p-6 text-center shadow-sm hover:-translate-y-1 hover:shadow-xl ${
-                  member.name ? "border-border bg-card" : "border-dashed border-border bg-card"
-                }`}
-              >
+              <RevealItem key={member.role}>
                 {member.photo ? (
                   <Img
                     src={member.photo}
                     alt={member.name ?? ""}
-                    width={64}
-                    height={64}
-                    sizes="64px"
-                    className="h-16 w-16 rounded-full object-cover"
+                    width={480}
+                    height={600}
+                    sizes="1100px"
+                    className="aspect-[4/5] w-full rounded-2xl bg-line object-cover object-top"
                   />
                 ) : (
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-light-blue">
-                    <User className="h-7 w-7 text-blue" />
+                  <div className="flex aspect-[4/5] w-full items-center justify-center rounded-2xl bg-line">
+                    <User className="h-12 w-12 text-blue" />
                   </div>
                 )}
                 {member.name && (
-                  <div className="mt-4 text-sm font-semibold text-navy">
-                    {member.name}
-                  </div>
+                  <p className="mt-5 font-heading text-[19px] font-semibold text-navy">{member.name}</p>
                 )}
-                <div className={member.name ? "mt-1 text-xs text-muted-foreground" : "mt-4 text-sm font-semibold text-navy"}>
+                <p className={member.name ? "mt-1.5 text-base text-slate" : "mt-5 font-heading text-[19px] font-semibold text-navy"}>
                   {member.role}
-                </div>
+                </p>
                 {!member.name && (
-                  <div className="mt-1 text-xs text-muted-foreground">
-                    {t("experiencia.team.photoNamePending")}
-                  </div>
+                  <p className="mt-1.5 text-sm text-slate">{t("experiencia.team.photoNamePending")}</p>
                 )}
               </RevealItem>
             ))}
@@ -332,27 +254,17 @@ export default function Experiencia() {
         </div>
       </section>
 
-      <section className="w-full bg-background py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("experiencia.trust.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("experiencia.trust.title")}
-            </h2>
-          </Reveal>
-          <RevealGroup className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("experiencia.trust.eyebrow")} title={t("experiencia.trust.title")} />
+          <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-px border border-navy bg-white/20">
             {clientLogoNames.map((name) => (
-              <RevealItem
-                key={name}
-                className="hover:-translate-y-0.5 flex h-20 items-center justify-center rounded-xl bg-navy p-3 shadow-sm"
-              >
+              <RevealItem key={name} className="flex h-28 items-center justify-center bg-navy px-7 py-5">
                 <Img
                   src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
                   alt={name}
                   sizes="140px"
-                  className="h-full w-full object-contain"
+                  className="max-h-11 w-full object-contain"
                 />
               </RevealItem>
             ))}

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ArrowUpRight } from "lucide-react";
 import { langPath, useLang } from "@/lib/language";
 import { jacksonBohorquez, type TeamMember } from "@/lib/team";
+import { Eyebrow } from "@/components/ui/eyebrow";
 import { Reveal } from "@/components/ui/reveal";
 import { Img } from "@/components/ui/img";
 import { LinkedInIcon } from "@/components/ui/social-media";
@@ -27,66 +27,56 @@ export function ServiceLead({ eyebrow, title, bio, member = jacksonBohorquez, cl
   const lang = useLang();
 
   return (
-    <section className={cn("w-full bg-background py-20 md:py-28", className)}>
-      <div className="mx-auto max-w-4xl px-6 md:px-12">
-        <Reveal className="text-center">
-          <span className="text-base font-bold uppercase tracking-wider text-blue">
-            {eyebrow}
-          </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+    <section className={cn("w-full bg-mist py-[clamp(80px,10vw,120px)]", className)}>
+      <Reveal className="mx-auto grid w-full max-w-[1080px] grid-cols-1 items-center gap-x-14 gap-y-10 px-[clamp(24px,5vw,64px)] sm:grid-cols-[240px_1fr]">
+        <Img
+          src={member.photo}
+          alt={t("ceo.photoAlt")}
+          width={240}
+          height={300}
+          sizes="240px"
+          className="aspect-[4/5] w-60 rounded-2xl object-cover"
+        />
+        <div className="max-w-[700px]">
+          <Eyebrow>{eyebrow}</Eyebrow>
+          <h2 className="mt-5 font-heading text-[clamp(28px,3vw,40px)] font-bold leading-[1.15] tracking-[-0.02em] text-navy">
             {title}
           </h2>
-        </Reveal>
-
-        <Reveal
-          delay={0.1}
-          className="mt-12 flex flex-col items-center gap-6 rounded-2xl border border-border bg-card p-7 text-center sm:flex-row sm:items-start sm:gap-8 sm:p-8 sm:text-left"
-        >
-          <Img
-            src={member.photo}
-            alt={t("ceo.photoAlt")}
-            width={128}
-            height={128}
-            sizes="128px"
-            className="h-28 w-28 shrink-0 rounded-full object-cover sm:h-32 sm:w-32"
-          />
-          <div>
-            <h3 className="text-xl font-semibold text-navy">{t("ceo.name")}</h3>
-            <p className="mt-1 text-sm font-medium text-blue">{t("ceo.role")}</p>
-            {member.credentials.length > 0 && (
-              <ul className="mt-3 flex flex-wrap justify-center gap-2 sm:justify-start">
-                {member.credentials.map((credential) => (
-                  <li
-                    key={credential}
-                    className="rounded-full bg-light-blue px-3 py-1 text-xs font-semibold text-navy"
-                  >
-                    {credential}
-                  </li>
-                ))}
-              </ul>
-            )}
-            <p className="mt-4 text-base leading-relaxed text-gray">{bio}</p>
-            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 sm:justify-start">
-              <Link
-                to={langPath("/quienes-somos", lang)}
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue underline-offset-4 hover:underline"
-              >
-                {lang === "en" ? "Full profile" : "Perfil completo"}
-                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <a
-                href={member.linkedIn}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy underline-offset-4 hover:underline"
-              >
-                <LinkedInIcon className="h-4 w-4" />
-                LinkedIn
-              </a>
-            </div>
+          <p className="mt-3 font-heading text-sm font-semibold text-navy">
+            {`${t("ceo.name")} · ${t("ceo.role")}`}
+          </p>
+          {member.credentials.length > 0 && (
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {member.credentials.map((credential) => (
+                <li
+                  key={credential}
+                  className="rounded-full border border-line-2 bg-white px-3 py-1 text-xs font-semibold text-navy"
+                >
+                  {credential}
+                </li>
+              ))}
+            </ul>
+          )}
+          <p className="t-lead mt-6 text-slate">{bio}</p>
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 font-heading text-sm font-medium">
+            <Link
+              to={langPath("/quienes-somos", lang)}
+              className="text-blue hover:text-navy"
+            >
+              {`${lang === "en" ? "Full profile" : "Perfil completo"} →`}
+            </Link>
+            <a
+              href={member.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-navy hover:text-blue"
+            >
+              <LinkedInIcon className="h-4 w-4" />
+              LinkedIn
+            </a>
           </div>
-        </Reveal>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 }

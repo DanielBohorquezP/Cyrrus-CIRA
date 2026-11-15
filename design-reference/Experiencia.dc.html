@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff;color:#1a1a1a;font-family:Carlito,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+a{color:#1b6fc2;text-decoration:none}
+a:hover{color:#0a2c63}
+</style>
+</helmet>
+<div data-screen-label="Experiencia" style="font-family:Carlito,system-ui,sans-serif">
+
+<header style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,64px);min-height:88px;padding-top:16px;padding-bottom:16px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px">
+  <a href="Home.dc.html"><img src="public/assets/logos-cyrrus/cyrrus-logo-color.png" alt="Cyrrus Consulting Services" style="height:40px;width:auto;display:block"></a>
+  <nav style="display:flex;gap:clamp(16px,2.4vw,36px);white-space:nowrap;font-family:Poppins,sans-serif;font-size:14px;font-weight:500;flex-wrap:wrap">
+    <a href="Home.dc.html" style="color:#414a58">Servicios</a><a href="#" style="color:#414a58">Capacitación Ejecutiva</a><a href="Experiencia.dc.html" style="color:#0a2c63">Nosotros</a><a href="#" style="color:#414a58">Perspectivas</a>
+  </nav>
+  <a href="#contacto" style="display:inline-flex;align-items:center;gap:10px;height:42px;white-space:nowrap;padding:0 20px;background:#0a2c63;border-radius:999px;color:#fff;font-family:Poppins,sans-serif;font-size:13px;font-weight:500">Agendar conversación<span style="width:7px;height:7px;border-radius:50%;background:#3fb6e8"></span></a>
+</header>
+
+<!-- HERO -->
+<section style="padding:clamp(56px,7vw,96px) clamp(24px,5vw,64px) 0">
+  <div style="max-width:1280px;margin:0 auto">
+    <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#1b6fc2">Experiencia</p>
+    <h1 style="margin-top:28px;max-width:1120px;font-family:Poppins,sans-serif;font-weight:600;font-size:clamp(40px,5.6vw,78px);line-height:1.04;letter-spacing:-.035em;color:#0a2c63;text-wrap:balance">Consultoría multinacional en LATAM, con presencia en 15+ países</h1>
+    <p style="margin-top:32px;max-width:720px;font-size:20px;line-height:1.65;color:#414a58;text-wrap:pretty">Casos de éxito en transformación digital a través de industrias, un equipo de liderazgo con trayectoria real ejecutando el método CIRA, y las empresas que ya confiaron en nosotros.</p>
+  </div>
+</section>
+
+<!-- PHOTO + STATS -->
+<section style="padding:64px clamp(24px,5vw,64px) 0">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="position:relative;aspect-ratio:21/9;min-height:320px;overflow:hidden;background:#0a2c63">
+      <img src="public/assets/decoracion/Cyrrus panel.jpg" alt="Cyrrus en un panel del sector" style="width:100%;height:100%;object-fit:cover">
+    </div>
+    <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));border-bottom:1px solid #e6e8ec">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="3">
+        <div style="padding:40px 32px 40px 0;border-right:1px solid #e6e8ec">
+          <dd style="margin:0;font-family:Poppins,sans-serif;font-size:72px;font-weight:300;line-height:1;letter-spacing:-.04em;color:#0a2c63">{{ s.value }}</dd>
+          <dt style="margin-top:16px;font-size:16px;line-height:1.5;color:#414a58">{{ s.label }}</dt>
+        </div>
+      </sc-for>
+    </dl>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section style="padding:clamp(80px,10vw,120px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:40px 96px">
+    <p style="font-family:Poppins,sans-serif;font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#0a2c63">Industrias donde operamos</p>
+    <ul style="grid-column:span 2;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));column-gap:40px;border-top:1px solid #0a2c63">
+      <sc-for list="{{ industries }}" as="i" hint-placeholder-count="12">
+        <li style="display:flex;gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px solid #e6e8ec;font-family:Poppins,sans-serif;font-size:16px;font-weight:500;color:#0a2c63"><span style="font-size:12px;color:#1b6fc2;width:20px">{{ i.n }}</span>Consultoría para {{ i.name }}</li>
+      </sc-for>
+    </ul>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="casos" style="background:#0a2c63;color:#fff;padding:clamp(80px,10vw,128px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:24px 96px;align-items:end">
+      <div>
+        <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#3fb6e8">Casos de éxito</p>
+        <h2 style="margin-top:20px;font-family:Poppins,sans-serif;font-weight:600;font-size:clamp(30px,3.6vw,50px);line-height:1.1;letter-spacing:-.03em;text-wrap:balance">Lo que pasó cuando la decisión sí llegó a la ejecución</h2>
+      </div>
+      <p style="font-size:19px;line-height:1.7;color:rgba(255,255,255,.75)">Proyectos reales, contados por los clientes en video y con las cifras que se midieron.</p>
+    </div>
+    <div style="margin-top:72px;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.2)">
+      <sc-for list="{{ cases }}" as="c" hint-placeholder-count="2">
+        <a href="#" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:40px 64px;padding:56px 0;border-bottom:1px solid rgba(255,255,255,.2);color:#fff;align-items:center">
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:#061129">
+            <img src="{{ c.thumb }}" alt="" style="width:100%;height:100%;object-fit:cover;opacity:.8">
+            <img src="{{ c.logo }}" alt="{{ c.logoName }}" style="position:absolute;left:24px;bottom:24px;height:44px;width:auto;max-width:160px;object-fit:contain">
+          </div>
+          <div>
+            <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#3fb6e8">Caso de éxito · {{ c.industry }}</p>
+            <h3 style="margin-top:16px;font-family:Poppins,sans-serif;font-size:clamp(24px,2.4vw,32px);font-weight:600;line-height:1.2;letter-spacing:-.02em;text-wrap:balance">{{ c.title }}</h3>
+            <p style="margin-top:18px;font-size:17px;line-height:1.7;color:rgba(255,255,255,.75);text-wrap:pretty">{{ c.excerpt }}</p>
+            <p style="margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.2);font-family:Poppins,sans-serif;font-size:18px;font-weight:500">{{ c.metric }}</p>
+            <span style="display:inline-block;margin-top:24px;font-family:Poppins,sans-serif;font-size:14px;font-weight:500;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:4px">Leer el caso →</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section style="padding:clamp(80px,10vw,128px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#1b6fc2">En acción</p>
+    <h2 style="margin-top:20px;font-family:Poppins,sans-serif;font-weight:600;font-size:clamp(30px,3.4vw,46px);line-height:1.1;letter-spacing:-.025em;color:#0a2c63">Cyrrus en el terreno</h2>
+    <div style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+      <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="3">
+        <figure style="margin:0">
+          <img src="{{ g.src }}" alt="{{ g.alt }}" style="width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#e6e8ec">
+          <figcaption style="margin-top:16px;padding-top:14px;border-top:1px solid #e6e8ec;font-size:15px;line-height:1.55;color:#414a58">{{ g.caption }}</figcaption>
+        </figure>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section style="background:#f5f7fa;padding:clamp(80px,10vw,128px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px 96px">
+    <div>
+      <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#1b6fc2">Liderazgo</p>
+      <h2 style="margin-top:20px;font-family:Poppins,sans-serif;font-weight:600;font-size:clamp(30px,3.4vw,46px);line-height:1.1;letter-spacing:-.025em;color:#0a2c63">El equipo detrás del método.</h2>
+    </div>
+    <div style="grid-column:span 2;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:32px">
+      <sc-for list="{{ team }}" as="t" hint-placeholder-count="2">
+        <div>
+          <img src="{{ t.photo }}" alt="{{ t.name }}" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block;background:#e6e8ec">
+          <p style="margin-top:20px;font-family:Poppins,sans-serif;font-size:19px;font-weight:600;color:#0a2c63">{{ t.name }}</p>
+          <p style="margin-top:6px;font-size:16px;color:#414a58">{{ t.role }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section style="padding:clamp(80px,10vw,128px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#1b6fc2">Confianza</p>
+    <h2 style="margin-top:20px;font-family:Poppins,sans-serif;font-weight:600;font-size:clamp(30px,3.4vw,46px);line-height:1.1;letter-spacing:-.025em;color:#0a2c63">Empresas que han confiado en Cyrrus.</h2>
+    <div style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:#1c3d73;border:1px solid #1c3d73">
+      <sc-for list="{{ logos }}" as="l" hint-placeholder-count="21">
+        <div style="background:#0a2c63;height:112px;display:flex;align-items:center;justify-content:center;padding:20px 28px"><img src="{{ l.src }}" alt="{{ l.name }}" style="max-height:44px;max-width:100%;object-fit:contain"></div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contacto" style="background:#061129;color:#fff;padding:clamp(96px,12vw,144px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px 96px;align-items:end">
+    <h2 style="font-family:Poppins,sans-serif;font-weight:600;font-size:clamp(34px,4.4vw,60px);line-height:1.06;letter-spacing:-.03em;text-wrap:balance">¿Listo para conectar la decisión con la ejecución?</h2>
+    <div>
+      <p style="font-size:19px;line-height:1.7;color:rgba(255,255,255,.78);text-wrap:pretty">Cuéntenos el reto de su organización. Coordinamos una conversación con el equipo indicado y le decimos con franqueza si podemos ayudar.</p>
+      <a href="#" style="margin-top:36px;display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 30px;background:#fff;color:#0a2c63;border-radius:999px;font-family:Poppins,sans-serif;font-size:15px;font-weight:600">Agendar conversación estratégica<span style="width:8px;height:8px;border-radius:50%;background:#3fb6e8"></span></a>
+    </div>
+  </div>
+  <div style="max-width:1280px;margin:96px auto 0;padding-top:32px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font-size:13px;color:rgba(255,255,255,.6)">
+    <img src="public/assets/logos-cyrrus/cyrrus-logo-blanco.png" alt="Cyrrus" style="height:32px;width:auto">
+    <span>© 2026 Cyrrus Consulting Services · Barranquilla · Bogotá</span>
+  </div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const logoNames = ["3 Castillos","Ansell","Antonio Jose Camacho","BEC","Brenntag","Compas","El Heraldo","Enlace","Fortia","Iteria","Marympunt","Metalcorp","Millicom","Morelco","Nose","Oben","Parex","Pepsico","SGS","Unibol","Verano"];
+    const ind = ["Salud","Educación","Retail","Manufactura","Puertos","Energía","Banca","Servicios financieros","Oil & Gas","Ambiental","Transporte","Construcción"];
+    return {
+      stats:[{value:"15+",label:"países con presencia"},{value:"4",label:"fases, cada una con metodología propia"},{value:"60%",label:"diagnóstico más rápido con IA (medición interna)"}],
+      industries: ind.map((name,i)=>({n:String(i+1).padStart(2,"0"),name:name.toLowerCase()})),
+      cases:[
+        {title:"3 Castillos: de la planeación estratégica al go-live de ERP y CRM",industry:"Alimentos",excerpt:"Planeación estratégica de TI, selección de infraestructura, ERP y CRM, gerencia del proyecto y gestión del cambio en una empresa de alimentos fundada en 1861.",metric:"92 requerimientos · ERP en vivo en 8 meses",thumb:"https://i.ytimg.com/vi/X-XO1T35RK4/hqdefault.jpg",logo:"public/assets/logos-clientes/3 Castillos.webp",logoName:"3 Castillos"},
+        {title:"Morelco: un modelo de trabajo en casa para equipos de obra, en plena pandemia",industry:"Infraestructura",excerpt:"Un nuevo modelo de trabajo en casa para el personal de obra de una empresa de infraestructura, con intervención en personas, procesos y tecnología.",metric:"−36% riesgos ergonómicos altos en 1 mes",thumb:"https://i.ytimg.com/vi/2oWuE5RFskI/hqdefault.jpg",logo:"public/assets/logos-clientes/Morelco.webp",logoName:"Morelco"}
+      ],
+      gallery:[
+        {src:"public/assets/decoracion/Cesar.jpg",alt:"Consultores de Cyrrus trabajando en un diagnóstico de procesos",caption:"Diagnóstico de procesos en sitio con el equipo consultor."},
+        {src:"public/assets/decoracion/IMG_20230302_112825.jpg",alt:"Equipo de un cliente de Cyrrus al cierre de un proyecto",caption:"Cierre de un proyecto de transformación con el equipo de un cliente."},
+        {src:"public/assets/decoracion/Evento mesas.jpg",alt:"Cyrrus en un evento corporativo",caption:"Cyrrus presente en foros y eventos del sector en toda LATAM."}
+      ],
+      team:[{name:"Jackson Bohorquez",role:"CEO & Fundador",photo:"public/assets/decoracion/JacksonCEO1.webp"},{name:"Daniel Bohorquez",role:"Director de Cyrrus Intelligence Lab",photo:"public/assets/decoracion/DanielBohorquez.JPG.jpeg"}],
+      logos: logoNames.map(n=>({name:n,src:"public/assets/logos-clientes/"+n+".webp"}))
+    };
+  }
+}
+</script>
+</body>
+</html>

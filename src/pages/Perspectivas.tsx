@@ -5,6 +5,8 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Blog7 } from "@/components/ui/blog7";
+import { PageHero } from "@/components/layout/page-hero";
+import { BorderButton } from "@/components/ui/border-button";
 import { upcomingTopics } from "@/lib/perspectivas-topics";
 import { blogPosts } from "@/lib/blog-data";
 import { useContactWizard } from "@/lib/contact-wizard-context";
@@ -87,7 +89,18 @@ export default function Perspectivas() {
       <SiteHeader />
       <main id="contenido">
 
+      <PageHero
+        eyebrow={t("perspectivas.tagline")}
+        title={t("perspectivas.heading")}
+        description={t("perspectivas.description")}
+      >
+        <BorderButton variant="light" size="lg" dot onClick={() => openWizard()}>
+          {t("perspectivas.buttonText")}
+        </BorderButton>
+      </PageHero>
+
       <Blog7
+        showHeader={false}
         tagline={t("perspectivas.tagline")}
         headingAs="h1"
         heading={t("perspectivas.heading")}

@@ -1,17 +1,3 @@
-import {
-  BarChart3,
-  Bot,
-  Bug,
-  FileQuestion,
-  FileText,
-  Link2,
-  SearchX,
-  Sparkles,
-  Stethoscope,
-  Target,
-  TrendingDown,
-} from "lucide-react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -20,15 +6,20 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
+import { ServiceIntro } from "@/components/sections/service-intro";
+import { RelatedServices } from "@/components/sections/related-services";
+import { DarkStatBand } from "@/components/ui/dark-stat-band";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { NumberedList } from "@/components/ui/numbered-list";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SectionHeader } from "@/components/ui/section-header";
+import { Reveal } from "@/components/ui/reveal";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
-import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/presencia-digital";
-import { Img } from "@/components/ui/img";
 
 interface Problem {
   title: string;
@@ -51,21 +42,13 @@ interface Stat {
   label: string;
 }
 
-const problemIcons = [SearchX, Bot, TrendingDown, FileQuestion, Bug];
-const includedIcons = [Stethoscope, Target, FileText, Sparkles, Link2, BarChart3];
 
 export default function Seo() {
   const { t } = useTranslation("presencia-digital");
   const lang = useLang();
 
-  const problems = (t("seo.diagnostico.problems", { returnObjects: true }) as Problem[]).map((p, i) => ({
-    ...p,
-    icon: problemIcons[i],
-  }));
-  const included = (t("seo.included.items", { returnObjects: true }) as Included[]).map((it, i) => ({
-    ...it,
-    icon: includedIcons[i],
-  }));
+  const problems = t("seo.diagnostico.problems", { returnObjects: true }) as Problem[];
+  const included = t("seo.included.items", { returnObjects: true }) as Included[];
   const steps = t("seo.proceso.steps", { returnObjects: true }) as Step[];
   const services = t("seo.services.items", { returnObjects: true }) as string[];
   const faqs = t("seo.faq.items", { returnObjects: true }) as Faq[];
@@ -138,249 +121,79 @@ export default function Seo() {
         <ContactCtaButton variant="light" label={t("seo.hero.ctaLabel")} />
       </PageHero>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("seo.intro.kicker")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("seo.intro.pullQuote")}
-            </p>
+      <ServiceIntro
+        eyebrow={t("seo.intro.kicker")}
+        quote={t("seo.intro.pullQuote")}
+        description={t("seo.intro.description")}
+        bullets={t("seo.intro.bullets", { returnObjects: true }) as string[]}
+        image={{
+          src: "/assets/decoracion/Cyrrus%20panel.jpg",
+          alt: "Analista de Cyrrus revisando métricas de visibilidad en buscadores",
+        }}
+      />
+
+      <section className="section-y w-full bg-mist">
+        <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))] items-start gap-x-24 gap-y-14">
+          <Reveal className="lg:sticky lg:top-28">
+            <Eyebrow>{t("seo.diagnostico.eyebrow")}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{t("seo.diagnostico.title")}</h2>
+            <p className="mt-6 text-lg leading-[1.7] text-pretty text-slate">{t("seo.diagnostico.description")}</p>
           </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
-            >
-              <Img
-                src="/assets/decoracion/Cyrrus%20panel.jpg"
-                alt="Analista de Cyrrus revisando métricas de visibilidad en buscadores"
-                width={1600}
-                height={720}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-
-            <Reveal delay={0.15} className="md:col-span-7">
-              <p className="text-lg leading-relaxed text-gray">
-                {t("seo.intro.description")}
-              </p>
-              <ul className="mt-8 space-y-4">
-                {(t("seo.intro.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <Target className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
+          <NumberedList items={problems} />
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("seo.diagnostico.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("seo.diagnostico.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("seo.diagnostico.description")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
-            {problems.map((problem, index) => {
-              const Icon = problem.icon;
-              return (
-                <RevealItem
-                  key={problem.title}
-                  className="flex gap-5 rounded-2xl border border-border bg-card p-7"
-                >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy">
-                    <Icon className="h-5 w-5 text-cyan" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-blue">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="mt-1 text-lg font-semibold text-navy">
-                      {problem.title}
-                    </h3>
-                    <p className="mt-2 text-base leading-relaxed text-gray">
-                      {problem.description}
-                    </p>
-                  </div>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("seo.hero.ctaLabel")} />
-          </Reveal>
-        </div>
-      </section>
-
-      <AnimatedNavyBackground className="py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-6 text-center md:px-12">
-          <Reveal>
-            <span className="text-sm font-bold uppercase tracking-wider text-cyan">
-              {t("seo.whyCyrrus.eyebrow")}
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
-              {t("seo.whyCyrrus.title")}
-            </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70">
-              {t("seo.whyCyrrus.description")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2">
-            {stats.map((stat) => (
-              <RevealItem key={stat.value} className="px-4">
-                <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
-                  {stat.value}
-                </dd>
-                <span className="mt-3 block text-base leading-relaxed text-white/70">
-                  {stat.label}
-                </span>
-                <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </div>
-      </AnimatedNavyBackground>
+      <DarkStatBand
+        eyebrow={t("seo.whyCyrrus.eyebrow")}
+        title={t("seo.whyCyrrus.title")}
+        description={t("seo.whyCyrrus.description")}
+        stats={stats}
+      />
 
       <IncludedGrid
         eyebrow={t("seo.included.eyebrow")}
         title={t("seo.included.title")}
         items={included}
+        numbered
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-8">
-            <Reveal className="md:col-span-7">
-              <span className="text-base font-bold uppercase tracking-wider text-blue">
-                {t("seo.proceso.eyebrow")}
-              </span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-                {t("seo.proceso.title")}
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-gray">
-                {t("seo.proceso.description")}
-              </p>
-            </Reveal>
+      <IncludedGrid
+        className="bg-mist"
+        eyebrow={t("seo.proceso.eyebrow")}
+        title={t("seo.proceso.title")}
+        description={t("seo.proceso.description")}
+        items={steps}
+        numbered
+        image={{
+          src: "/assets/decoracion/IMG_20230228_082632.jpg",
+          alt: "Equipo de Cyrrus definiendo la estrategia de contenido y palabras clave",
+        }}
+      />
 
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto md:min-h-[220px]"
-            >
-              <Img
-                src="/assets/decoracion/IMG_20230228_082632.jpg"
-                alt="Equipo de Cyrrus definiendo la estrategia de contenido y palabras clave"
-                width={720}
-                height={1600}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-          </div>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {steps.map((step, index) => (
-              <RevealItem
-                key={step.title}
-                className="rounded-2xl border border-border bg-card p-7"
-              >
-                <span className="text-xs font-semibold uppercase tracking-wider text-blue">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-2 text-base font-semibold text-navy">{step.title}</h3>
-                <p className="mt-2 text-base leading-relaxed text-gray">{step.description}</p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("seo.hero.ctaLabel")} />
-          </Reveal>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("seo.services.eyebrow")} title={t("seo.services.title")} />
+          <RuledBullets items={services} numbered columns={2} className="mt-14" />
         </div>
       </section>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("seo.services.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("seo.services.title")}
-            </h2>
-          </Reveal>
-
-          <Reveal delay={0.1} className="mt-12 divide-y divide-border border-y border-border">
-            {services.map((service, index) => (
-              <div
-                key={service}
-                className="flex items-center gap-6 py-5"
-              >
-                <span className="text-sm font-semibold text-blue">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="text-base font-medium text-navy">{service}</span>
-              </div>
-            ))}
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {lang === "en" ? "Related solutions" : "Soluciones relacionadas"}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {lang === "en" ? "Presencia Digital also includes" : "Presencia Digital también incluye"}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <RevealItem>
-              <Link
-                to={hubPath}
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-              >
-                <span className="text-base font-semibold text-navy">
-                  {lang === "en" ? "Cyrrus Digital Presence" : "Cyrrus Presencia Digital"}
-                </span>
-                <span className="mt-auto text-sm font-semibold text-blue">
-                  {`${lang === "en" ? "See overview" : "Ver panorama"} →`}
-                </span>
-              </Link>
-            </RevealItem>
-            <RevealItem>
-              <Link
-                to={lang === "en" ? "/en/presencia-digital/desarrollo-web" : "/presencia-digital/desarrollo-web"}
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-              >
-                <span className="text-base font-semibold text-navy">{t("desarrolloWeb.hero.title")}</span>
-                <span className="mt-auto text-sm font-semibold text-blue">
-                  {`${lang === "en" ? "See Web Development" : "Ver Desarrollo Web"} →`}
-                </span>
-              </Link>
-            </RevealItem>
-          </RevealGroup>
-        </div>
-      </section>
+      <RelatedServices
+        className="bg-mist"
+        eyebrow={lang === "en" ? "Related solutions" : "Soluciones relacionadas"}
+        title={lang === "en" ? "Presencia Digital also includes" : "Presencia Digital también incluye"}
+        items={[
+          {
+            href: hubPath,
+            title: lang === "en" ? "Cyrrus Digital Presence" : "Cyrrus Presencia Digital",
+            description: lang === "en" ? "See overview" : "Ver panorama",
+          },
+          {
+            href: lang === "en" ? "/en/presencia-digital/desarrollo-web" : "/presencia-digital/desarrollo-web",
+            title: t("desarrolloWeb.hero.title"),
+            description: lang === "en" ? "See Web Development" : "Ver Desarrollo Web",
+          },
+        ]}
+      />
 
       <FaqSection eyebrow={t("seo.faq.eyebrow")} title={t("seo.faq.title")} faqs={faqs} />
 

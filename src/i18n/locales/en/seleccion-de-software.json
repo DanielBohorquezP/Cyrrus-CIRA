@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Software Selection: ERP, CRM, HCM, EAM | Cyrrus",
+    "title": "ERP & CRM Software Selection Consulting | Cyrrus",
     "description": "Independent ERP, CRM, HCM, and EAM selection consulting: we evaluate and compare enterprise software, 100% vendor-agnostic."
   },
   "hero": {
     "eyebrow": "Solution Selection",
-    "title": "Enterprise software selection and evaluation",
+    "title": "Software selection consulting: independent ERP and CRM evaluation",
     "description": "The right technology starts with the right decision. We independently evaluate, compare, and select enterprise software, aligning your organization's needs with the solution it actually needs.",
     "ctaLabel": "Evaluate a technology need",
     "ctaSecondaryLabel": "Learn our methodology"
@@ -146,7 +146,11 @@
     "items": [
       {
         "question": "What is enterprise software selection and how does it work?",
-        "answer": "Before choosing a platform, make sure you're solving the right problem — that's why we always start from the business, not the vendor's catalog."
+        "answer": "It is the process of deciding which platform fits the company by comparing several alternatives against criteria defined before any demo. At Cyrrus it follows five steps: understand the business, map the processes, turn them into requirements, evaluate the technology and, last, choose the vendor. We start from the business, not the vendor's catalog."
+      },
+      {
+        "question": "When should a company hire a software selection consultant?",
+        "answer": "When it has to decide whether to replace or modernize an ERP, CRM, HCM, or EAM and has demos, proposals, and internal opinions, but no criteria to compare them. Also when there is already a preferred vendor and the decision should be validated against objective criteria before signing."
       },
       {
         "question": "Is the evaluation really vendor-agnostic?",
@@ -162,7 +166,52 @@
       },
       {
         "question": "Who from our team should take part in the selection?",
-        "answer": "The owners of the processes the tool will support, an IT counterpart, and a sponsor with budget authority. Involving end users from the criteria-definition stage is what separates a selection that gets adopted from one that gets resisted."
+        "answer": "The owners of the processes the tool will support, an IT counterpart, and a sponsor with budget authority. In our view, end users should take part from the criteria-definition stage: that way the evaluation covers usability and adoption starts early."
+      }
+    ]
+  },
+  "respuesta": {
+    "eyebrow": "Software selection",
+    "title": "What is enterprise software selection?",
+    "body": "It is the process of defining what the company needs to solve, turning it into criteria and requirements, and comparing several platforms against them before signing with a vendor. At Cyrrus we do it independently: we have no commercial partnerships or commissions with ERP, CRM, HCM, or EAM vendors.",
+    "items": [
+      {
+        "title": "What we select",
+        "description": "ERP, CRM, HR and payroll software (HCM), and maintenance and asset management software (EAM)."
+      },
+      {
+        "title": "How we evaluate",
+        "description": "Six dimensions defined before any demo: functional, technical, economic (licensing, implementation, and TCO), strategic, vendor, and user."
+      },
+      {
+        "title": "Timing",
+        "description": "As a reference, the CIRA Method's Identify phase takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+      }
+    ]
+  },
+  "guides": {
+    "eyebrow": "Guides",
+    "title": "Read the guides before you choose",
+    "items": [
+      {
+        "slug": "que-es-un-erp-guia-para-elegirlo",
+        "title": "What is an ERP and how to choose one",
+        "description": "What an ERP does, which modules it has, and what to ask before requesting demos."
+      },
+      {
+        "slug": "que-es-un-crm-y-como-elegir-el-correcto",
+        "title": "What is a CRM and how to choose the right one",
+        "description": "Types of CRM and how to evaluate one around your real sales process."
+      },
+      {
+        "slug": "software-recursos-humanos-nomina-mas-de-100-empleados",
+        "title": "HR and payroll software",
+        "description": "What to check in an HCM once the company has more than 100 employees."
+      },
+      {
+        "slug": "software-cmms-eam-como-elegir",
+        "title": "CMMS and EAM software",
+        "description": "What each one is, how they differ, and how to choose."
       }
     ]
   }

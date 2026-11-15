@@ -78,7 +78,13 @@ const esRoutes = [
 const CONTENT_SOURCE = {
   "/": { ns: "home" },
   "/metodo-cira": { ns: "metodo-cira" },
-  "/metodo-cira/planeacion-estrategica": { ns: "estrategia" },
+  "/metodo-cira/estrategia": { ns: "estrategia", omit: ["estrategiaTi", "continuidad"] },
+  "/metodo-cira/estrategia/estrategia-de-ti": { ns: "estrategia", pick: ["estrategiaTi"] },
+  "/metodo-cira/estrategia/continuidad-del-negocio": { ns: "estrategia", pick: ["continuidad"] },
+  "/metodo-cira/seleccion-de-soluciones/ciberseguridad": {
+    ns: "seleccion-soluciones",
+    pick: ["detailMeta.ciberseguridad", "detail.entries.ciberseguridad"],
+  },
   "/metodo-cira/seleccion-de-soluciones": { ns: "seleccion-soluciones", omit: ["detail", "detailMeta"] },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software": { ns: "seleccion-de-software" },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp": { ns: "seleccion-productos", pick: ["erp"] },
@@ -99,6 +105,8 @@ const CONTENT_SOURCE = {
   "/intelligence-lab/automatizaciones-desarrollo": { ns: "intelligence-lab", pick: ["automatizaciones"] },
   "/intelligence-lab/arquitectura-de-ia": { ns: "intelligence-lab", pick: ["arquitectura"] },
   "/intelligence-lab/gobierno-de-ia": { ns: "intelligence-lab", pick: ["gobierno"] },
+  "/intelligence-lab/gobierno-de-datos": { ns: "intelligence-lab", pick: ["gobiernoDatos"] },
+  "/intelligence-lab/estrategia-de-ia": { ns: "intelligence-lab", pick: ["estrategiaIa"] },
   "/presencia-digital": { ns: "presencia-digital", pick: ["hub"] },
   "/presencia-digital/desarrollo-web": { ns: "presencia-digital", pick: ["desarrolloWeb"] },
   "/presencia-digital/seo": { ns: "presencia-digital", pick: ["seo"] },

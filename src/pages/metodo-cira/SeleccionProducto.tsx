@@ -1,32 +1,23 @@
 import { useParams, Navigate, Link } from "react-router-dom";
-import { cn } from "@/lib/utils";
-import {
-  BookOpen,
-  Building2,
-  CheckCircle2,
-  ClipboardCheck,
-  Cpu,
-  DollarSign,
-  HeartHandshake,
-  Target,
-  TrendingUp,
-  Users,
-  XCircle,
-} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
-import { productIcons, productImages, productSlugs, type ProductSlug } from "@/lib/solutions-icons";
+import { productImages, productSlugs, type ProductSlug } from "@/lib/solutions-icons";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { FaqSection } from "@/components/sections/faq-section";
-import { TrustBar } from "@/components/sections/trust-bar";
+import { RelatedServices } from "@/components/sections/related-services";
 import { Testimonials } from "@/components/sections/testimonials";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { NumberedList } from "@/components/ui/numbered-list";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SectionHeader } from "@/components/ui/section-header";
+import { Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+import { SecondaryButton } from "@/components/ui/border-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -78,14 +69,19 @@ interface Meta {
   title: string;
   description: string;
 }
+/** Optional answer-first block under the hero ("what does a consultant do?"). Only the ERP page has one so far. */
+interface Respuesta {
+  eyebrow: string;
+  title: string;
+  body: string;
+  items: EvalItem[];
+}
 interface Hero {
   eyebrow: string;
   title: string;
   description: string;
   ctaLabel: string;
 }
-
-const evaluamosIcons = [Target, Cpu, DollarSign, TrendingUp, Building2, Users];
 
 export default function SeleccionProducto() {
   const { producto } = useParams();
@@ -103,6 +99,9 @@ export default function SeleccionProducto() {
   const evaluamos = slug ? (t(`${slug}.evaluamos`, { ns: "seleccion-productos", returnObjects: true }) as Evaluamos) : undefined;
   const entregables = slug ? (t(`${slug}.entregables`, { ns: "seleccion-productos", returnObjects: true }) as Entregables) : undefined;
   const faqs = slug ? (t(`${slug}.faq`, { ns: "seleccion-productos", returnObjects: true }) as Faq[]) : undefined;
+  // A missing key comes back as the key string, so only an object counts.
+  const respuestaRaw = slug ? t(`${slug}.respuesta`, { ns: "seleccion-productos", returnObjects: true }) : undefined;
+  const respuesta = typeof respuestaRaw === "object" && respuestaRaw !== null ? (respuestaRaw as Respuesta) : undefined;
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -116,7 +115,6 @@ export default function SeleccionProducto() {
   const relatedServices = [
     {
       href: changePath,
-      icon: HeartHandshake,
       title: lang === "en" ? "Change management" : "Gestión del cambio",
       description: lang === "en"
         ? "So the organization actually adopts the new platform."
@@ -124,7 +122,6 @@ export default function SeleccionProducto() {
     },
     {
       href: pmoPath,
-      icon: ClipboardCheck,
       title: lang === "en" ? "Project management (PMO)" : "Gerencia de proyectos (PMO)",
       description: lang === "en"
         ? "External PMO for the implementation once you've chosen."
@@ -136,7 +133,6 @@ export default function SeleccionProducto() {
     slug === "erp"
       ? {
           href: `${prefix}/perspectivas/que-es-un-erp-guia-para-elegirlo`,
-          icon: BookOpen,
           title: lang === "en"
             ? "What is an ERP and how to choose one"
             : "Qué es un ERP y cómo elegirlo",
@@ -147,7 +143,6 @@ export default function SeleccionProducto() {
       : slug === "crm"
       ? {
           href: `${prefix}/perspectivas/salesforce-vs-hubspot-vs-dynamics-365-crm`,
-          icon: BookOpen,
           title: lang === "en"
             ? "Salesforce vs HubSpot vs Dynamics 365"
             : "Salesforce vs HubSpot vs Dynamics 365",
@@ -155,9 +150,28 @@ export default function SeleccionProducto() {
             ? "An independent comparison of Salesforce, HubSpot and Dynamics 365, with published prices."
             : "Comparación independiente de Salesforce, HubSpot y Dynamics 365, con precios publicados.",
         }
+      : slug === "hcm"
+      ? {
+          href: `${prefix}/perspectivas/software-recursos-humanos-nomina-mas-de-100-empleados`,
+          title: lang === "en"
+            ? "HR and payroll software for 100+ employees"
+            : "Software de RR. HH. y nómina para más de 100 empleados",
+          description: lang === "en"
+            ? "What to evaluate in an HR and payroll platform before choosing one."
+            : "Qué evaluar en una plataforma de RR. HH. y nómina antes de elegirla.",
+        }
+      : slug === "eam"
+      ? {
+          href: `${prefix}/perspectivas/software-cmms-eam-como-elegir`,
+          title: lang === "en"
+            ? "CMMS and EAM software: how to choose"
+            : "Software CMMS y EAM: cómo elegirlo",
+          description: lang === "en"
+            ? "The difference between a CMMS, an EAM and the ERP's maintenance module."
+            : "Diferencia entre CMMS, EAM y el módulo de mantenimiento del ERP.",
+        }
       : {
           href: articlePath,
-          icon: BookOpen,
           title: lang === "en"
             ? "Why transformation projects fail"
             : "Por qué fracasan los proyectos de transformación",
@@ -171,11 +185,22 @@ export default function SeleccionProducto() {
       ? [
           {
             href: `${prefix}/herramientas/test-preparacion-erp`,
-            icon: ClipboardCheck,
             title: lang === "en" ? "ERP readiness test" : "Test de preparación para un ERP",
             description: lang === "en"
               ? "Ten questions to see whether your company is ready to select."
               : "Diez preguntas para saber si su empresa está lista para seleccionar.",
+          },
+        ]
+      : []),
+    // The 3 Castillos case is the published proof of an ERP and CRM go-live with the method.
+    ...(slug === "erp" || slug === "crm"
+      ? [
+          {
+            href: `${prefix}/experiencia/3-castillos`,
+            title: lang === "en" ? "3 Castillos case: ERP and CRM" : "Caso 3 Castillos: ERP y CRM",
+            description: lang === "en"
+              ? "From strategic planning to an ERP and CRM go-live in October 2021 with the CIRA Method."
+              : "De la planeación estratégica al go-live de ERP y CRM en octubre de 2021 con el Método CIRA.",
           },
         ]
       : []),
@@ -241,14 +266,11 @@ export default function SeleccionProducto() {
     { label: slug.toUpperCase() },
   ];
 
-  const Icon = productIcons[slug as ProductSlug];
   const image = productImages[slug as ProductSlug];
-  const evaluamosItems = evaluamos.items.map((item, i) => ({ ...item, icon: evaluamosIcons[i] }));
   const otherProducts = productSlugs
     .filter((s) => s !== slug)
     .map((s) => ({
       slug: s,
-      icon: productIcons[s],
       title: t(`${s}.hero.title`, { ns: "seleccion-productos" }) as string,
     }));
 
@@ -260,83 +282,67 @@ export default function SeleccionProducto() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         description={hero.description}
-        image={{ src: image.image, alt: hero.title }}
+        image={{ src: image.image, alt: hero.title, position: image.imagePosition }}
         breadcrumbs={breadcrumbItems}
       >
         <ContactCtaButton variant="light" label={hero.ctaLabel} />
+        {slug === "erp" && (
+          <SecondaryButton asChild>
+            <Link to={`${prefix}/herramientas/test-preparacion-erp`}>
+              {lang === "en" ? "ERP readiness test" : "Test de preparación para un ERP"}
+            </Link>
+          </SecondaryButton>
+        )}
       </PageHero>
 
-      <TrustBar />
+      {/* Answer-first block: what the consultant does, in the searcher's words */}
+      {respuesta && (
+        <IncludedGrid
+          className="bg-mist"
+          eyebrow={respuesta.eyebrow}
+          title={respuesta.title}
+          description={respuesta.body}
+          items={respuesta.items}
+        />
+      )}
 
       {/* 01 — Dolor */}
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {dolor.eyebrow}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {dolor.title}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {dolor.items.map((item) => (
-              <RevealItem
-                key={item.title}
-                className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6"
-              >
-                <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                <div>
-                  <h3 className="text-base font-semibold text-navy">{item.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-gray">{item.description}</p>
-                </div>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
-          <Reveal delay={0.1} className="mt-10 max-w-3xl border-l-2 border-cyan pl-6">
-            <p className="text-lg font-semibold leading-snug text-navy">{dolor.narrativa}</p>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={dolor.eyebrow} title={dolor.title} />
+          <NumberedList items={dolor.items} layout="columns" className="mt-14" />
+          <Reveal>
+            <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
+              {dolor.narrativa}
+            </p>
           </Reveal>
         </div>
       </section>
 
       {/* 02 — El problema real */}
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
-          <Reveal>
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {problemaReal.eyebrow}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {problemaReal.title}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {problemaReal.body}
-            </p>
-            <p className="mt-6 text-xl font-semibold text-navy">
-              {problemaReal.punch}
-            </p>
-          </Reveal>
-        </div>
+      <section className="section-y w-full bg-mist">
+        <Reveal className="mx-auto w-full max-w-[860px] px-[clamp(24px,5vw,64px)] text-center">
+          <Eyebrow>{problemaReal.eyebrow}</Eyebrow>
+          <h2 className="t-h2 mt-5 text-navy">{problemaReal.title}</h2>
+          <p className="t-lead mt-6 text-slate">{problemaReal.body}</p>
+          <p className="mt-8 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
+            {problemaReal.punch}
+          </p>
+        </Reveal>
       </section>
 
       {/* 03 — Lo que hacemos / Nuestra solución */}
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-4xl px-6 text-center md:px-12">
+      <section className="section-y w-full bg-background">
+        <div className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
           <Reveal>
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {solucion.eyebrow}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {solucion.title}
-            </h2>
+            <Eyebrow>{solucion.eyebrow}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{solucion.title}</h2>
           </Reveal>
 
-          <Reveal delay={0.1} className="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <Reveal delay={0.1} className="mt-12 flex flex-wrap items-center justify-center gap-3">
             {solucion.steps.map((step, i) => (
               <span key={step} className="flex items-center gap-3">
-                <span className="rounded-full bg-light-blue px-4 py-2 text-sm font-semibold text-navy">
+                <span className="rounded-full border border-line-2 px-4 py-2 font-heading text-sm font-semibold text-navy">
                   {step}
                 </span>
                 {i < solucion.steps.length - 1 && (
@@ -346,20 +352,14 @@ export default function SeleccionProducto() {
             ))}
           </Reveal>
 
-          <Reveal delay={0.15} className="mt-8">
+          <Reveal delay={0.15} className="mt-10 flex flex-col items-center gap-3 font-heading text-sm font-medium">
             <Link
               to={`${prefix}/metodo-cira/seleccion-de-soluciones/seleccion-de-software#metodo`}
-              className="text-sm font-semibold text-blue underline-offset-4 hover:underline"
+              className="text-blue hover:text-navy"
             >
               {`${solucion.linkLabel} →`}
             </Link>
-          </Reveal>
-
-          <Reveal delay={0.18} className="mt-3">
-            <Link
-              to={methodPath}
-              className="text-sm font-semibold text-blue underline-offset-4 hover:underline"
-            >
+            <Link to={methodPath} className="text-blue hover:text-navy">
               {`${lang === "en" ? "See the full CIRA Method" : "Ver el Método CIRA completo"} →`}
             </Link>
           </Reveal>
@@ -367,135 +367,64 @@ export default function SeleccionProducto() {
       </section>
 
       {/* 04 — Evaluación */}
-      <IncludedGrid eyebrow={evaluamos.eyebrow} title={evaluamos.title} items={evaluamosItems} />
+      <IncludedGrid
+        className="bg-mist"
+        eyebrow={evaluamos.eyebrow}
+        title={evaluamos.title}
+        items={evaluamos.items}
+        numbered
+      />
 
       {/* 05 — Entregables / Resultado */}
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {entregables.eyebrow}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {entregables.title}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {entregables.items.map((item) => (
-              <RevealItem
-                key={item}
-                className="flex items-start gap-3 rounded-xl border border-border bg-card px-4 py-3"
-              >
-                <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue" />
-                <span className="text-sm font-medium text-navy/80">{item}</span>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={entregables.eyebrow} title={entregables.title} />
+          <RuledBullets items={entregables.items} columns={2} className="mt-14" />
           {entregables.closingQuote && (
-            <Reveal delay={0.1} className="mx-auto mt-12 max-w-2xl text-center">
-              <p className="text-lg font-semibold leading-snug text-navy">
+            <Reveal>
+              <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
                 {entregables.closingQuote}
               </p>
             </Reveal>
           )}
-
-          <Reveal delay={0.15} className="mt-12 text-center">
+          <Reveal delay={0.1} className="mt-12">
             <ContactCtaButton label={hero.ctaLabel} />
           </Reveal>
         </div>
       </section>
 
       {/* 06 — Otras soluciones que evaluamos */}
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {lang === "en" ? "Related solutions" : "Otras soluciones que evaluamos"}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {lang === "en" ? "We also help you select" : "También te ayudamos a seleccionar"}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {otherProducts.map((product) => {
-              const OtherIcon = product.icon;
-              return (
-                <RevealItem key={product.slug}>
-                  <Link
-                    to={`${softwarePath}/${product.slug}`}
-                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-                  >
-                    <OtherIcon className="h-6 w-6 text-blue" />
-                    <span className="text-base font-semibold text-navy">{product.title}</span>
-                    <span className="mt-auto text-sm font-semibold text-blue">
-                      {`${lang === "en" ? "See" : "Ver"} ${product.slug.toUpperCase()} →`}
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
-      </section>
+      <RelatedServices
+        className="bg-mist"
+        eyebrow={lang === "en" ? "Related solutions" : "Otras soluciones que evaluamos"}
+        title={lang === "en" ? "We also help you select" : "También te ayudamos a seleccionar"}
+        items={otherProducts.map((product) => ({
+          href: `${softwarePath}/${product.slug}`,
+          title: product.title,
+          description: `${lang === "en" ? "See" : "Ver"} ${product.slug.toUpperCase()}`,
+        }))}
+      />
 
       {/* 07 — Servicios relacionados */}
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {lang === "en" ? "Related services" : "Servicios relacionados"}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {lang === "en" ? "The decision doesn't end at the recommendation" : "La decisión no termina en la recomendación"}
-            </h2>
-          </Reveal>
-
-          <RevealGroup
-            className={cn(
-              "mt-10 grid grid-cols-1 gap-6",
-              relatedServices.length > 3 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3",
-            )}
-          >
-            {relatedServices.map((item) => {
-              const RelatedIcon = item.icon;
-              return (
-                <RevealItem key={item.title}>
-                  <Link
-                    to={item.href}
-                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-                  >
-                    <RelatedIcon className="h-6 w-6 text-blue" />
-                    <span className="text-base font-semibold text-navy">{item.title}</span>
-                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
-                    <span className="mt-auto text-sm font-semibold text-blue">
-                      {`${lang === "en" ? "See more" : "Ver más"} →`}
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
-      </section>
+      <RelatedServices
+        className="bg-background"
+        eyebrow={lang === "en" ? "Related services" : "Servicios relacionados"}
+        title={lang === "en" ? "The decision doesn't end at the recommendation" : "La decisión no termina en la recomendación"}
+        items={relatedServices}
+      />
 
       {/* Por qué Cyrrus — 100% agnósticos */}
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-12">
-          <Reveal>
-            <Icon className="mx-auto h-8 w-8 text-blue" />
-            <p className="mt-6 border-l-2 border-cyan pl-6 text-left text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {`"${t("closingQuote", { ns: "seleccion-de-software" })}"`}
-            </p>
-          </Reveal>
-        </div>
+      <section className="section-y w-full bg-mist">
+        <Reveal className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
+          <blockquote className="m-0 font-heading text-[clamp(26px,3vw,40px)] font-light leading-[1.3] tracking-[-0.02em] text-pretty text-navy">
+            {`"${t("closingQuote", { ns: "seleccion-de-software" })}"`}
+          </blockquote>
+        </Reveal>
       </section>
 
-      <Testimonials />
+      <Testimonials className="bg-background" />
 
-      <FaqSection eyebrow={hero.eyebrow} title={lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes"} faqs={faqs} />
+      <FaqSection eyebrow={hero.eyebrow} title={lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes"} faqs={faqs} className="bg-mist" />
 
       <FinalCta />
       </main>

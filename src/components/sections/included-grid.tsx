@@ -1,8 +1,12 @@
 import type { LucideIcon } from "lucide-react";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { SectionHeader } from "@/components/ui/section-header";
+import { CardGrid, type CardItem } from "@/components/ui/card-grid";
+import { PhotoCaption } from "@/components/ui/photo-caption";
+import { cn } from "@/lib/utils";
 
 export interface IncludedItem {
-  icon: LucideIcon;
+  /** Ignored: the redesign dropped icons from these cards. Pages that still pass one keep compiling until they migrate. */
+  icon?: LucideIcon;
   title: string;
   description: string;
 }
@@ -10,44 +14,41 @@ export interface IncludedItem {
 interface IncludedGridProps {
   eyebrow: string;
   title: string;
+  /** Short supporting text beside the heading. With `image`, it sits under the heading instead. */
+  description?: string;
   items: IncludedItem[];
+  /** A photo of boards/screens next to the heading, with a grey caption. */
+  image?: { src: string; alt: string; caption?: string; position?: string };
+  /** Show a blue `01` index before each card title. */
+  numbered?: boolean;
+  className?: string;
 }
 
-/** Generic "qué incluye" section: eyebrow + heading, then a 3-column icon/title/description grid. Reused across detail pages so the section shape stays consistent site-wide. */
-export function IncludedGrid({ eyebrow, title, items }: IncludedGridProps) {
-  return (
-    <section className="w-full bg-background py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-6 md:px-12">
-        <Reveal className="max-w-2xl">
-          <span className="text-base font-bold uppercase tracking-wider text-blue">
-            {eyebrow}
-          </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            {title}
-          </h2>
-        </Reveal>
+/** Generic "benefits / what's included" section: heading (optionally beside a photo), then a grid of ruled cards. */
+export function IncludedGrid({ eyebrow, title, description, items, image, numbered, className }: IncludedGridProps) {
+  const cards: CardItem[] = items.map(({ title: t, description: d }) => ({ title: t, description: d }));
 
-        <RevealGroup className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {items.map((item) => {
-            const Icon = item.icon;
-            return (
-              <RevealItem
-                key={item.title}
-                className="rounded-2xl border border-border bg-card p-7"
-              >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-light-blue">
-                  <Icon className="h-5 w-5 text-blue" />
-                </div>
-                <h3 className="mt-5 text-base font-semibold text-navy">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-base leading-relaxed text-gray">
-                  {item.description}
-                </p>
-              </RevealItem>
-            );
-          })}
-        </RevealGroup>
+  return (
+    <section className={cn("section-y w-full bg-background", className)}>
+      <div className="container-site">
+        {image ? (
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,380px),1fr))] items-center gap-x-20 gap-y-10">
+            <div>
+              <SectionHeader eyebrow={eyebrow} title={title} className="block" />
+              {description && <p className="t-lead mt-6 text-slate">{description}</p>}
+            </div>
+            <PhotoCaption
+              src={image.src}
+              alt={image.alt}
+              caption={image.caption}
+              position={image.position}
+              sizes="1000px"
+            />
+          </div>
+        ) : (
+          <SectionHeader eyebrow={eyebrow} title={title} description={description} />
+        )}
+        <CardGrid items={cards} numbered={numbered} className="mt-16" />
       </div>
     </section>
   );

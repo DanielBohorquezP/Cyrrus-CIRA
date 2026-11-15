@@ -103,6 +103,11 @@
         "slug": "infraestructura-tecnologica",
         "label": "Infraestructura Tecnológica",
         "note": "(Ciberseguridad, Redes, Nube, Continuidad y Respaldo)"
+      },
+      {
+        "slug": "ciberseguridad",
+        "label": "Ciberseguridad",
+        "note": "(Diagnóstico de riesgo, controles, selección de proveedores)"
       }
     ]
   },
@@ -220,6 +225,10 @@
       {
         "title": "Gestión del cambio",
         "description": "La fase Adoptar: que la organización use lo que se seleccionó."
+      },
+      {
+        "title": "Caso 3 Castillos",
+        "description": "Planeación estratégica de TI y selección de infraestructura, ERP y CRM en una empresa de alimentos fundada en 1861."
       }
     ]
   },
@@ -235,7 +244,7 @@
       "tecnologias-avanzadas": {
         "label": "Automatización de Procesos e IA",
         "eyebrow": "Selección de Soluciones — Tecnologías Avanzadas",
-        "h1": "Automatización de procesos, RPA e IA: selección de tecnología",
+        "h1": "Consultoría RPA e IA: selección de software de automatización de procesos",
         "intro": "La automatización de procesos y la inteligencia artificial solo generan valor cuando responden a una necesidad real del negocio. Nuestro papel consiste en identificar en qué procesos pueden generar el mayor impacto y cuáles son las herramientas más adecuadas para cada organización.",
         "items": [
           {
@@ -257,9 +266,9 @@
         ],
         "body": [
           "RPA, inteligencia artificial y agentes de IA no compiten entre sí: resuelven problemas distintos. El RPA (automatización robótica de procesos) replica tareas repetitivas con reglas fijas sobre los sistemas existentes, como copiar datos entre aplicaciones. La inteligencia artificial interpreta información no estructurada —textos, documentos, imágenes— y hace predicciones. Un agente de IA combina ambas capacidades para completar una tarea de varios pasos con cierto grado de autonomía.",
-          "Elegir mal sale caro. Un agente de IA donde bastaba una regla añade costo y riesgo; un RPA frágil sobre un proceso que cambia cada mes termina en mantenimiento permanente. Por eso la selección empieza por el proceso y no por la herramienta: qué volumen tiene, qué tan estructurado es, qué excepciones aparecen y qué datos toca.",
+          "Elegir mal puede salir caro. Un agente de IA donde bastaba una regla añade costo y riesgo; un RPA sobre un proceso que cambia cada mes necesita ajustes constantes (IBM señala que la RPA puede ser difícil de escalar cuando cambian las normas o la operación). Por eso la selección empieza por el proceso y no por la herramienta: qué volumen tiene, qué tan estructurado es, qué excepciones aparecen y qué datos toca.",
           "Para comparar plataformas de automatización miramos cinco criterios: integración con los sistemas actuales (ERP, CRM, correo, APIs), seguridad y manejo de los datos, costo total a tres años (licencias, infraestructura y mantenimiento), facilidad para que su propio equipo la opere sin depender del proveedor, y capacidad de medir el resultado contra el proceso que reemplaza.",
-          "Algunos errores al elegir tecnología de automatización son empezar por la herramienta de moda, automatizar un proceso que todavía no está bien definido, ignorar el costo de mantenimiento y no decidir quién será el dueño de la automatización una vez en producción. Automatizar un proceso confuso solo hace que el desorden ocurra más rápido.",
+          "Algunos errores al elegir tecnología de automatización son empezar por la herramienta de moda, automatizar un proceso que todavía no está bien definido, ignorar el costo de mantenimiento y no decidir quién será el dueño de la automatización una vez en producción. En nuestro criterio, automatizar un proceso confuso solo hace que el desorden ocurra más rápido.",
           "Nuestro acompañamiento cubre levantar y priorizar los procesos candidatos, definir y ponderar los criterios de evaluación, comparar proveedores contra casos reales de su operación y acompañar la negociación y la contratación. La implementación se coordina con Gerencia de proyectos (PMO) y, cuando la solución correcta no existe en el mercado, la construcción a medida se trabaja con nuestra práctica de Agentes de IA. En Cyrrus hacemos esta selección de forma independiente, sin comisiones de fabricantes."
         ],
         "related": [
@@ -278,12 +287,16 @@
         ],
         "faq": [
           {
+            "question": "¿Cuándo conviene contratar una consultoría RPA o de automatización?",
+            "answer": "Cuando la empresa quiere automatizar tareas repetitivas o usar IA y tiene propuestas de varios proveedores, pero no sabe si el proceso necesita RPA, IA, un agente o primero un rediseño. También cuando ya eligió una plataforma y quiere validar la decisión con criterios objetivos antes de contratar."
+          },
+          {
             "question": "¿Qué es RPA y cuándo conviene usarlo?",
-            "answer": "RPA (Robotic Process Automation) es software que ejecuta tareas repetitivas siguiendo reglas fijas sobre las aplicaciones que ya usa su empresa. Conviene cuando el proceso es estable, de alto volumen y con pocas excepciones. Si el proceso cambia seguido o depende de interpretar textos o documentos, suele convenir más una solución con inteligencia artificial."
+            "answer": "RPA (automatización robótica de procesos) es software que reproduce tareas repetitivas que una persona hace en un computador, siguiendo pasos definidos sobre las aplicaciones que ya usa la empresa. IBM la resume como guiada por el proceso, frente a la IA, guiada por los datos. Conviene cuando la tarea es repetitiva, sigue reglas que se pueden escribir y se hace sobre sistemas estables. Si el proceso cambia seguido o depende de interpretar textos o documentos, puede convenir más una solución con inteligencia artificial."
           },
           {
             "question": "¿Qué diferencia hay entre RPA, IA y un agente de IA?",
-            "answer": "El RPA sigue reglas fijas; la inteligencia artificial interpreta información no estructurada y predice; un agente de IA combina ambas para completar una tarea de varios pasos con cierta autonomía. No son excluyentes: muchas veces la mejor solución mezcla dos de ellas. Nuestra selección parte del proceso, no de la tecnología de moda."
+            "answer": "El RPA sigue reglas fijas; la inteligencia artificial interpreta información no estructurada y encuentra patrones; un agente de IA combina ambas para completar una tarea de varios pasos con cierta autonomía. No son excluyentes: por ejemplo, la IA puede interpretar un documento y el RPA cargar el resultado en el sistema. Nuestra selección parte del proceso, no de la tecnología de moda."
           },
           {
             "question": "¿Cómo deciden qué tecnología — IA, automatización o blockchain — necesita mi empresa?",
@@ -297,13 +310,72 @@
             "question": "¿Qué pasa si mi empresa ya identificó un proveedor de IA o automatización?",
             "answer": "Evaluamos la decisión con los mismos criterios objetivos, incluso si el proceso ya empezó. Al ser 100% agnósticos, podemos validar una elección en curso sin sesgo hacia ningún proveedor."
           }
-        ]
+        ],
+        "answer": {
+          "eyebrow": "Consultoría RPA e IA",
+          "title": "¿Qué hace una consultoría RPA independiente?",
+          "body": "Le ayuda a decidir si un proceso necesita RPA, inteligencia artificial, un agente de IA o primero un rediseño, y a elegir la plataforma con criterios definidos antes de ver demos. En Cyrrus lo hacemos sin comisiones de fabricantes.",
+          "items": [
+            {
+              "title": "Diagnóstico del proceso",
+              "description": "Volumen, qué tan estructurado es, qué excepciones aparecen y qué datos toca. De eso depende si conviene RPA, IA o una integración directa."
+            },
+            {
+              "title": "Criterios de evaluación",
+              "description": "Integración con sus sistemas, seguridad y manejo de datos, costo total a tres años, operación por su propio equipo y medición contra el proceso que reemplaza."
+            },
+            {
+              "title": "Alcance",
+              "description": "Selección y acompañamiento a la contratación. La implementación se coordina con la PMO y la construcción a medida con nuestra práctica de Agentes de IA."
+            }
+          ]
+        },
+        "guides": {
+          "eyebrow": "Guías",
+          "title": "Para decidir con información",
+          "items": [
+            {
+              "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+              "title": "Qué es RPA y cuándo conviene frente a la IA",
+              "description": "Definiciones de IBM y Microsoft, límites de la RPA y preguntas para la gerencia."
+            },
+            {
+              "slug": "integrar-erp-y-crm-conector-nativo-o-middleware",
+              "title": "Integrar el ERP con el CRM",
+              "description": "Cuándo una integración directa es más estable que un robot que copia datos por pantalla."
+            },
+            {
+              "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+              "title": "Qué es la gobernanza de IA y qué marcos usar",
+              "description": "NIST AI RMF, OCDE e ISO/IEC 42001 antes de poner la IA en producción."
+            }
+          ]
+        }
       },
       "infraestructura-tecnologica": {
         "label": "Infraestructura Tecnológica",
         "eyebrow": "Selección de Soluciones — Infraestructura Tecnológica",
-        "h1": "Migración a la nube y ciberseguridad: selección de infraestructura TI",
+        "h1": "Consultoría en ciberseguridad y nube: selección independiente de infraestructura TI",
         "intro": "La infraestructura adecuada crea las condiciones para que el negocio opere con seguridad, disponibilidad y capacidad de crecimiento.",
+        "answer": {
+          "eyebrow": "Consultoría de infraestructura TI",
+          "title": "¿Qué hace una consultoría de infraestructura y ciberseguridad independiente?",
+          "body": "Le ayuda a decidir qué infraestructura necesita la empresa —seguridad, nube, redes y continuidad— y a elegir proveedores con criterios definidos antes de ver propuestas. En Cyrrus partimos de lo que ya está en producción y no tenemos comisiones de fabricantes.",
+          "items": [
+            {
+              "title": "Diagnóstico de lo existente",
+              "description": "Revisamos primero lo que la empresa tiene en producción y qué riesgos hay hoy, antes de recomendar una arquitectura nueva."
+            },
+            {
+              "title": "Cuatro criterios",
+              "description": "Funcional, técnico, económico y sostenible: que resuelva la operación real, sea compatible con lo existente, el presupuesto alcance para sostenerla y crezca con la empresa."
+            },
+            {
+              "title": "Alcance",
+              "description": "Selección de proveedores y arquitecturas, y acompañamiento a la contratación. La implementación se gestiona con nuestra Gerencia de Proyectos (PMO)."
+            }
+          ]
+        },
         "items": [
           {
             "title": "Ciberseguridad",
@@ -322,6 +394,13 @@
             "description": "Ayudamos a definir las capacidades necesarias para proteger la operación mediante estrategias de continuidad, recuperación ante desastres y alta disponibilidad."
           }
         ],
+        "body": [
+          "La infraestructura tecnológica reúne cuatro frentes que se deciden juntos: la ciberseguridad (identidades, dispositivos, monitoreo y respuesta ante incidentes), la nube (cloud, híbrida o multicloud), la conectividad (LAN, WLAN, WAN, SD-WAN e Internet) y la continuidad del negocio (recuperación ante desastres y alta disponibilidad). Una decisión en uno afecta a los otros: mover un sistema a la nube cambia qué hay que proteger, qué enlaces necesita la operación y cómo se recupera si falla.",
+          "Por eso la selección empieza por un diagnóstico de lo que ya existe y no por el catálogo de un proveedor: qué sistemas soportan la operación, qué depende de qué, dónde están los riesgos actuales y qué exigencias tiene la empresa por sus clientes o su sector.",
+          "Con ese diagnóstico definimos los criterios antes de pedir propuestas y comparamos proveedores y arquitecturas concretas con los mismos cuatro criterios que usamos en toda selección: funcional, técnico, económico y sostenible.",
+          "En nuestro criterio, algunos errores al elegir infraestructura son comprar la herramienta de seguridad antes de saber qué hay que proteger, migrar a la nube sin revisar el costo de operarla después, y tener un plan de continuidad que nunca se ha probado.",
+          "La infraestructura que se elige aquí es la base de la arquitectura de IA. La implementación se gestiona con nuestra Gerencia de Proyectos (PMO), y para preparar a los directivos ofrecemos talleres de ISO 27001 y de continuidad de negocio (DRP) en Leadership Academy."
+        ],
         "related": [
           {
             "title": "Arquitectura de IA",
@@ -334,9 +413,29 @@
           {
             "title": "Gestión del cambio",
             "description": "La fase Adoptar: que la organización adopte la nueva infraestructura sin fricciones."
+          },
+          {
+            "title": "Taller de ISO 27001",
+            "description": "Capacitación ejecutiva para la empresa a la que un cliente le exige la certificación."
+          },
+          {
+            "title": "Continuidad de negocio y DRP",
+            "description": "Taller ejecutivo para diseñar y probar el plan de continuidad."
+          },
+          {
+            "title": "Ciberseguridad",
+            "description": "Diagnóstico de riesgo y selección de controles y proveedores, en su propia página."
+          },
+          {
+            "title": "Continuidad del negocio",
+            "description": "BIA, plan de continuidad y DRP probado, como servicio de consultoría."
           }
         ],
         "faq": [
+          {
+            "question": "¿Cuándo conviene contratar una consultoría de infraestructura o ciberseguridad?",
+            "answer": "Cuando la empresa tiene que decidir una migración a la nube, renovar su seguridad, sus redes o su plan de continuidad, y tiene propuestas de varios proveedores pero no criterios para compararlas. También cuando un cliente o una norma le exige controles de seguridad y necesita saber qué soluciones los cubren."
+          },
           {
             "question": "¿Evalúan proveedores específicos de ciberseguridad y nube, o solo arquitecturas generales?",
             "answer": "Evaluamos proveedores y arquitecturas concretas — ciberseguridad, cloud/híbrido/multicloud, conectividad (LAN, WLAN, WAN, SD-WAN) y continuidad de negocio — con los mismos cuatro criterios objetivos que usamos en toda selección."
@@ -350,17 +449,142 @@
             "answer": "La implementación se coordina con Gerencia de Proyectos (PMO), que gobierna cronograma, riesgos y proveedores durante todo el despliegue."
           }
         ]
+      },
+      "ciberseguridad": {
+        "label": "Ciberseguridad",
+        "eyebrow": "Selección de Soluciones — Ciberseguridad",
+        "h1": "Consultoría en ciberseguridad para empresas: controles y proveedores sin sesgo",
+        "intro": "Proteger la operación empieza por saber qué hay que proteger. Ayudamos a decidir qué controles necesita la empresa y a elegir las soluciones y proveedores de ciberseguridad con criterios definidos antes de ver propuestas.",
+        "answer": {
+          "eyebrow": "Consultoría en ciberseguridad",
+          "title": "¿Qué hace una consultoría en ciberseguridad independiente?",
+          "body": "Le ayuda a decidir qué proteger, con qué controles y con qué proveedores, antes de comprar una herramienta. Partimos de lo que ya está en producción, tomamos como referencia marcos públicos (NIST CSF 2.0, ISO/IEC 27001) y no tenemos comisiones de fabricantes. El alcance es la selección y el gobierno: definir controles, elegir proveedores y gobernar la implementación; la operación diaria la presta el proveedor seleccionado.",
+          "items": [
+            {
+              "title": "Diagnóstico de riesgo",
+              "description": "Inventario de lo que soporta la operación, qué depende de qué y dónde están los riesgos actuales, antes de recomendar una herramienta."
+            },
+            {
+              "title": "Cuatro criterios",
+              "description": "Funcional, técnico, económico y sostenible: que cubra los riesgos encontrados, se integre con lo existente, el presupuesto alcance para operarla y crezca con la empresa."
+            },
+            {
+              "title": "Alcance",
+              "description": "Definición de controles, selección de soluciones y proveedores y acompañamiento a la contratación. La implementación se gestiona con nuestra Gerencia de Proyectos (PMO)."
+            }
+          ]
+        },
+        "items": [
+          {
+            "title": "Diagnóstico de riesgo",
+            "description": "Inventario de lo que soporta la operación, qué depende de qué y dónde están los riesgos actuales, antes de recomendar una herramienta."
+          },
+          {
+            "title": "Controles y arquitectura",
+            "description": "Identidades, dispositivos, monitoreo y respuesta ante incidentes: qué controles cubren los riesgos encontrados y en qué orden."
+          },
+          {
+            "title": "Selección de proveedores",
+            "description": "Comparación de soluciones y proveedores con los mismos cuatro criterios de toda selección: funcional, técnico, económico y sostenible."
+          }
+        ],
+        "body": [
+          "La ciberseguridad se decide con la misma lógica que el resto de la infraestructura: primero qué soporta la operación y qué riesgos hay hoy, después qué controles los cubren y solo al final qué herramienta o proveedor. Comprar la herramienta antes de saber qué hay que proteger es, en nuestro criterio, el error más caro.",
+          "El NIST Cybersecurity Framework 2.0, publicado en febrero de 2024, organiza los resultados de ciberseguridad en seis funciones: gobernar, identificar, proteger, detectar, responder y recuperar. Está diseñado para organizaciones de todos los tamaños y sectores y no prescribe cómo lograr cada resultado; por eso sirve como referencia pública para ordenar el diagnóstico sin atarlo a un fabricante.",
+          "Con el diagnóstico ordenado por funciones, definimos los criterios antes de pedir propuestas —qué debe cubrir la solución, con qué debe integrarse, cuánto cuesta operarla y cómo crece con la empresa— y comparamos proveedores de protección de identidades, dispositivos, monitoreo y respuesta ante incidentes con los mismos cuatro criterios de toda selección: funcional, técnico, económico y sostenible.",
+          "Si un cliente o el sector exige la certificación ISO/IEC 27001, la norma internacional de sistemas de gestión de seguridad de la información, el diagnóstico se alinea con sus requisitos desde el inicio, y la dirección se prepara con el curso de ISO 27001 de Leadership Academy. La certificación no es obligatoria para proteger la operación; sí lo es saber qué controles existen y quién responde por ellos.",
+          "La ciberseguridad es parte del plan de continuidad del negocio: los controles reducen la probabilidad del incidente, y el plan de continuidad define cómo sigue operando la empresa si ocurre. La implementación de las soluciones elegidas la gobierna nuestra Gerencia de Proyectos (PMO)."
+        ],
+        "related": [
+          {
+            "title": "Infraestructura tecnológica",
+            "description": "Nube, conectividad y continuidad se deciden junto con la seguridad."
+          },
+          {
+            "title": "Continuidad del negocio",
+            "description": "Cómo sigue operando la empresa si el incidente ocurre."
+          },
+          {
+            "title": "Gerencia de proyectos (PMO)",
+            "description": "Quién gobierna la implementación de los controles elegidos."
+          },
+          {
+            "title": "Curso ISO 27001",
+            "description": "Capacitación ejecutiva cuando un cliente exige la certificación."
+          }
+        ],
+        "guides": {
+          "eyebrow": "Guías",
+          "title": "Antes de elegir un proveedor de ciberseguridad, lea esto",
+          "items": [
+            {
+              "slug": "como-elegir-una-consultoria-de-ciberseguridad",
+              "title": "Cómo elegir una consultoría de ciberseguridad",
+              "description": "Qué debe cubrir, qué marcos públicos sirven de referencia y qué preguntar antes de contratar."
+            },
+            {
+              "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
+              "title": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
+              "description": "Cómo sigue operando la empresa cuando el incidente ya ocurrió."
+            }
+          ]
+        },
+        "faq": [
+          {
+            "question": "¿Cuándo conviene contratar una consultoría en ciberseguridad?",
+            "answer": "Cuando la empresa tiene propuestas de varios proveedores y no tiene criterios para compararlas; cuando un cliente, un banco o un regulador exige controles o la certificación ISO/IEC 27001; después de un incidente; o cuando migró a la nube y los controles antiguos ya no aplican."
+          },
+          {
+            "question": "¿Evalúan proveedores de ciberseguridad concretos o solo recomiendan una arquitectura?",
+            "answer": "Evaluamos proveedores y soluciones concretas —identidades, dispositivos, monitoreo y respuesta— con los mismos cuatro criterios objetivos que usamos en toda selección, y sin comisiones de fabricantes."
+          },
+          {
+            "question": "¿Qué marco de referencia conviene: NIST CSF o ISO/IEC 27001?",
+            "answer": "Son complementarios. El NIST CSF 2.0 es un marco público, no prescriptivo, para entender, evaluar y priorizar riesgos de ciberseguridad en organizaciones de cualquier tamaño; ISO/IEC 27001 define los requisitos de un sistema de gestión de seguridad de la información y permite certificarse. Cuál guía el diagnóstico depende de si la empresa necesita certificarse (criterio de Cyrrus)."
+          },
+          {
+            "question": "¿Incluye la operación de la seguridad (monitoreo y respuesta)?",
+            "answer": "El alcance es definir los controles, seleccionar las soluciones y proveedores y gobernar la implementación con la PMO. La operación diaria la presta el proveedor seleccionado; nosotros definimos qué debe cumplir y cómo se mide."
+          },
+          {
+            "question": "¿Qué relación tiene la ciberseguridad con el plan de continuidad del negocio?",
+            "answer": "Los controles de ciberseguridad reducen la probabilidad de un incidente; el plan de continuidad define cómo sigue operando la empresa si ocurre. Se diseñan juntos: el análisis de impacto (BIA) dice qué proteger primero."
+          }
+        ]
       }
     }
   },
   "detailMeta": {
     "tecnologias-avanzadas": {
-      "title": "Automatización de Procesos, RPA e IA: Selección | Cyrrus",
-      "description": "Seleccionamos las soluciones de automatización de procesos, RPA, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
+      "title": "Consultoría RPA: Software de Automatización e IA | Cyrrus",
+      "description": "Consultoría RPA e IA independiente: decidimos si su proceso necesita RPA, IA o un agente de IA y elegimos la plataforma sin comisiones de fabricantes."
     },
     "infraestructura-tecnologica": {
-      "title": "Migración a la Nube y Ciberseguridad para Empresas | Cyrrus",
-      "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor."
+      "title": "Consultoría en Ciberseguridad y Nube para Empresas | Cyrrus",
+      "description": "Consultoría de infraestructura TI independiente: elegimos ciberseguridad, nube, conectividad y continuidad de negocio, sin comisiones de fabricantes."
+    },
+    "ciberseguridad": {
+      "title": "Consultoría en Ciberseguridad para Empresas | Cyrrus",
+      "description": "Consultoría en ciberseguridad independiente: diagnóstico de riesgo, controles que necesita la empresa y selección de soluciones y proveedores sin comisiones de fabricantes."
     }
+  },
+  "respuesta": {
+    "eyebrow": "Consultoría tecnológica",
+    "title": "¿Qué hace una consultoría tecnológica independiente?",
+    "body": "Ayuda a la empresa a decidir qué tecnología necesita y a elegirla entre varias opciones sin depender de lo que ofrece un solo proveedor. En Cyrrus la selección arranca en los requerimientos del negocio, no en el catálogo del proveedor: no tenemos alianzas comerciales ni comisiones con fabricantes.",
+    "items": [
+      {
+        "title": "Qué elegimos",
+        "description": "Software de gestión (ERP, CRM, HCM, EAM), automatización de procesos e inteligencia artificial, e infraestructura tecnológica (ciberseguridad, nube, conectividad y continuidad del negocio)."
+      },
+      {
+        "title": "Cómo lo hacemos",
+        "description": "Un RFP clasificado por atributos técnicos y funcionales, y cuatro criterios definidos antes de mirar proveedores: funcional, técnico, económico y sostenible."
+      },
+      {
+        "title": "Tiempo",
+        "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+      }
+    ]
   }
 }

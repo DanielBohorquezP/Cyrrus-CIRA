@@ -7,7 +7,9 @@
     "eyebrow": "Método CIRA — Construir",
     "title": "Consultoría estratégica y planeación estratégica para empresas",
     "description": "Se define una estrategia... pero nadie sabe cómo bajarla a la operación. Nuestra consultoría y planeación estratégica conecta la visión del negocio con un plan ejecutable, no con un documento que queda en un cajón.",
-    "ctaLabel": "Agendar diagnóstico ejecutivo"
+    "ctaLabel": "Agendar diagnóstico ejecutivo",
+    "imageAlt": "Sesión de trabajo en una sala de reuniones, con un facilitador frente a un tablero con diagramas",
+    "imageCaption": "Sesión de trabajo con el equipo en una sala de reuniones."
   },
   "intro": {
     "kicker": "Consultoría estratégica para CEOs",
@@ -17,6 +19,16 @@
       "Diagnóstico profundo del negocio, no una encuesta de clima organizacional.",
       "Prioridades y métricas de éxito definidas desde el día uno.",
       "Implementación acompañada — el mismo equipo ejecuta lo que diagnostica."
+    ],
+    "bulletTitles": [
+      "Diagnóstico",
+      "Prioridades",
+      "Ejecución acompañada"
+    ],
+    "bulletImageAlts": [
+      "Consultor dibujando un diagrama de procesos en un tablero",
+      "Taller con participantes en mesas redondas y un facilitador junto a la proyección",
+      "Equipo de trabajo reunido para una foto en una sala de oficinas"
     ],
     "methodLinkText": "Esta es la fase Construir dentro del",
     "methodLinkLabel": "Método CIRA completo"
@@ -222,7 +234,298 @@
       {
         "title": "Gestión del cambio",
         "description": "La fase Adoptar: que la organización lo use de verdad."
+      },
+      {
+        "title": "Caso 3 Castillos: de la estrategia al go-live",
+        "description": "Cómo 3 Castillos, empresa de alimentos fundada en 1861, pasó de la planeación estratégica al go-live de ERP y CRM en octubre de 2021 con el método CIRA."
+      },
+      {
+        "title": "Estrategia de TI",
+        "description": "Arquitectura objetivo y portafolio de iniciativas priorizado por impacto."
+      },
+      {
+        "title": "Continuidad del negocio",
+        "description": "BIA, plan de continuidad y DRP probado para que la operación no se detenga."
       }
     ]
+  },
+  "estrategiaTi": {
+    "meta": {
+      "title": "Consultoría en Estrategia de TI para Empresas | Cyrrus",
+      "description": "Consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas (ERP, CRM, datos, IA) priorizado por impacto, con el caso de negocio de cada una."
+    },
+    "serviceDescription": "Consultoría en estrategia de TI",
+    "hero": {
+      "title": "Consultoría en estrategia de TI: la tecnología al servicio del plan de negocio",
+      "description": "La empresa invierte en tecnología proyecto por proyecto, sin un mapa que diga qué va primero ni por qué. Nuestra consultoría en estrategia de TI define la arquitectura objetivo y el portafolio de iniciativas que la estrategia del negocio necesita, cada una con su caso de negocio."
+    },
+    "respuesta": {
+      "eyebrow": "Estrategia de TI",
+      "title": "¿Qué es una consultoría en estrategia de TI?",
+      "body": "Es el servicio que alinea la tecnología con la estrategia del negocio: parte de lo que la empresa quiere lograr, revisa los sistemas que ya tiene y define qué iniciativas de tecnología (ERP, CRM, datos, IA, infraestructura) necesita, en qué orden y con qué caso de negocio. En Cyrrus es parte de la fase Construir del método CIRA y la lidera el mismo equipo que después acompaña la selección y la ejecución.",
+      "items": [
+        {
+          "title": "Punto de partida",
+          "description": "La estrategia corporativa y de negocio ya definida, o el diagnóstico con el que la construimos. La tecnología se decide después, no antes."
+        },
+        {
+          "title": "Entregables",
+          "description": "Arquitectura objetivo, portafolio de iniciativas priorizado por impacto, caso de negocio de cada una y los criterios con los que se evaluará cualquier proveedor."
+        },
+        {
+          "title": "Referencias públicas",
+          "description": "ISO/IEC 38500 (principios de gobierno de TI para la dirección) y COBIT 2019 (gobierno y gestión de TI empresarial) sirven como referencia para ordenar las decisiones; el alcance se adapta al tamaño de la empresa."
+        }
+      ]
+    },
+    "included": {
+      "eyebrow": "Qué incluye",
+      "title": "Un mapa tecnológico que la junta directiva puede revisar.",
+      "items": [
+        {
+          "title": "Diagnóstico de TI",
+          "description": "Inventario de sistemas, integraciones, contratos y deuda técnica: qué soporta la operación hoy y qué la frena."
+        },
+        {
+          "title": "Arquitectura objetivo",
+          "description": "Cómo deben quedar conectados los sistemas, los datos y la infraestructura para ejecutar la estrategia, y qué cambia respecto a hoy."
+        },
+        {
+          "title": "Portafolio priorizado",
+          "description": "Lista de iniciativas (ERP, CRM, datos, IA, nube) ordenada por impacto en el negocio, con dependencias y secuencia."
+        },
+        {
+          "title": "Caso de negocio por iniciativa",
+          "description": "Beneficio esperado, costo total a varios años, riesgo y responsable, para que cada inversión se apruebe con criterio."
+        },
+        {
+          "title": "Gobierno de TI",
+          "description": "Quién decide, con qué comité y con qué indicadores se revisa el portafolio, para que la hoja de ruta no se quede en un documento."
+        },
+        {
+          "title": "Criterios de selección",
+          "description": "Los requisitos y criterios con los que se evaluará cualquier software o proveedor en la fase Identificar, definidos antes de ver propuestas."
+        }
+      ]
+    },
+    "body": [
+      "Una estrategia de TI responde a una pregunta sencilla: qué tecnología necesita la empresa para ejecutar su estrategia de negocio, y en qué orden. Sin esa respuesta, cada área compra su herramienta, los sistemas no se integran y el presupuesto de tecnología se decide proyecto por proyecto.",
+      "Por eso la estrategia de TI no empieza por la tecnología sino por el negocio: qué quiere lograr la empresa en los próximos años, qué procesos lo sostienen y dónde la tecnología actual lo frena. Con ese diagnóstico definimos la arquitectura objetivo y el portafolio de iniciativas.",
+      "Cada iniciativa del portafolio lleva su caso de negocio: beneficio esperado, costo total a varios años (no solo la licencia), riesgo y responsable. Es lo que permite a la dirección aprobar, posponer o descartar con el mismo criterio, y lo que después se usa para medir si la inversión cumplió.",
+      "En nuestro criterio, los errores más costosos en una estrategia de TI son elegir el software antes de definir la arquitectura, planear sin un dueño por iniciativa y no revisar el portafolio cuando cambia el negocio. El gobierno de TI —quién decide y con qué indicadores— es lo que evita los tres.",
+      "Este servicio es parte de la fase Construir del método CIRA. De aquí salen los criterios con los que seleccionamos software e infraestructura sin sesgo de proveedor (fase Identificar), el plan que gobierna la Gerencia de Proyectos (Realizar) y la base de la gestión del cambio (Adoptar). También puede contratarse como CIO o CTO as a Service, cuando la empresa necesita dirección tecnológica sin un ejecutivo de tiempo completo."
+    ],
+    "articleLinkText": "Lea también:",
+    "articleLinkLabel": "Qué es la estrategia de TI y qué incluye",
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "De la estrategia de TI a la ejecución",
+      "items": [
+        {
+          "title": "Consultoría estratégica",
+          "description": "La estrategia corporativa y de negocio de la que parte la estrategia de TI."
+        },
+        {
+          "title": "Selección de soluciones",
+          "description": "La fase Identificar: elegir software e infraestructura con los criterios definidos aquí."
+        },
+        {
+          "title": "Arquitectura de IA",
+          "description": "Cómo se conectan modelos, datos y sistemas dentro de la arquitectura objetivo."
+        },
+        {
+          "title": "Gerencia de proyectos (PMO)",
+          "description": "Quién gobierna la ejecución del portafolio."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guías",
+      "title": "Antes de definir su estrategia de TI, lea esto",
+      "items": [
+        {
+          "slug": "estrategia-de-ti-que-es-y-que-incluye",
+          "title": "Qué es la estrategia de TI y qué incluye",
+          "description": "Qué responde, qué entregables deja y qué marcos públicos (ISO/IEC 38500, COBIT 2019) sirven de referencia."
+        },
+        {
+          "slug": "planeacion-estrategica-que-es-etapas-y-ejemplo",
+          "title": "Planeación estratégica: qué es, etapas y ejemplo",
+          "description": "La estrategia de negocio de la que parte toda estrategia de TI."
+        },
+        {
+          "slug": "que-es-un-erp-guia-para-elegirlo",
+          "title": "Qué es un ERP y cómo elegirlo",
+          "description": "La guía para la iniciativa de ERP del portafolio, sin sesgo de proveedor."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Estrategia de TI",
+      "title": "Preguntas frecuentes sobre consultoría en estrategia de TI",
+      "items": [
+        {
+          "question": "¿Cuándo conviene contratar una consultoría en estrategia de TI?",
+          "answer": "Cuando la empresa va a invertir en varios sistemas en los próximos años y no tiene un mapa que diga qué va primero; cuando las áreas compran herramientas por su cuenta y nada se integra; o cuando la junta directiva pide un plan de tecnología con costos y beneficios antes de aprobar un presupuesto."
+        },
+        {
+          "question": "¿Qué diferencia hay entre estrategia de TI y transformación digital?",
+          "answer": "La estrategia de TI es el plan: qué tecnología necesita el negocio, en qué orden y con qué caso de negocio. La transformación digital es la ejecución de ese plan hasta que la organización adopta lo nuevo. En Cyrrus las dos van en el mismo ciclo: el método CIRA cubre desde la estrategia (Construir) hasta la adopción (Adoptar)."
+        },
+        {
+          "question": "¿Qué entregables deja una consultoría en estrategia de TI con Cyrrus?",
+          "answer": "Un diagnóstico del estado actual de procesos y tecnología, la arquitectura objetivo, un portafolio de iniciativas priorizado por impacto con horizonte definido, el caso de negocio de las iniciativas de mayor peso y los criterios con los que se evaluará después cualquier software o proveedor."
+        },
+        {
+          "question": "¿Cuánto dura una estrategia de TI?",
+          "answer": "Como referencia, la fase Construir del método CIRA toma de 4 a 8 semanas, según el tamaño de la organización y la cantidad de áreas involucradas, e incluye el diagnóstico, la arquitectura objetivo y el portafolio priorizado."
+        },
+        {
+          "question": "¿Incluye la selección del software?",
+          "answer": "No en esta fase: aquí se definen la arquitectura y los criterios. La evaluación de proveedores se hace en la fase Identificar con nuestra consultoría de selección de soluciones, 100 % agnóstica de proveedor, para que la estrategia no termine recomendando la tecnología que alguien quiere vender."
+        },
+        {
+          "question": "¿Qué es un CIO as a Service y cuándo tiene sentido?",
+          "answer": "Es dirección tecnológica ejecutiva bajo demanda: gobierno de TI, arquitectura empresarial y alineación de la tecnología con la estrategia de negocio, sin el costo fijo de un ejecutivo de tiempo completo. Tiene sentido cuando la empresa necesita ese criterio pero no tiene volumen de decisión diario para justificar el cargo."
+        }
+      ]
+    }
+  },
+  "continuidad": {
+    "meta": {
+      "title": "Consultoría en Continuidad del Negocio: BIA y BCP | Cyrrus",
+      "description": "Consultoría en continuidad del negocio: identificamos los procesos críticos, analizamos el impacto de una interrupción (BIA) y definimos el plan de continuidad y de recuperación (DRP), probado."
+    },
+    "serviceDescription": "Consultoría en continuidad del negocio",
+    "hero": {
+      "title": "Consultoría en continuidad del negocio: un plan que se prueba antes de necesitarlo",
+      "description": "Nunca han probado qué pasa si el sistema principal cae un lunes a las 9 a. m. Identificamos los procesos críticos, analizamos el impacto de una interrupción y definimos los planes de respuesta y recuperación para que la operación no se detenga."
+    },
+    "respuesta": {
+      "eyebrow": "Continuidad del negocio",
+      "title": "¿Qué hace una consultoría en continuidad del negocio?",
+      "body": "Define cómo sigue operando la empresa cuando algo crítico falla. Parte de un análisis de impacto en el negocio (BIA) que identifica qué procesos son indispensables y cuánto daño causa cada hora sin ellos; de ahí salen las metas de recuperación (RTO y RPO), el plan de continuidad (BCP) y el plan de recuperación ante desastres (DRP). El plan es de la dirección, no solo del área de tecnología.",
+      "items": [
+        {
+          "title": "BIA",
+          "description": "Qué procesos son críticos, de qué sistemas y personas dependen y cuánto tiempo puede estar cada uno sin operar."
+        },
+        {
+          "title": "Metas medibles",
+          "description": "RTO: tiempo máximo para recuperar un servicio. RPO: cuántos datos se pueden perder. Se definen con la dirección, no con el proveedor."
+        },
+        {
+          "title": "Referencias públicas",
+          "description": "ISO 22301 es la norma internacional de sistemas de gestión de continuidad del negocio; la guía NIST SP 800-34 describe el BIA y los tipos de plan (BCP, DRP). Sirven como referencia; la certificación no es obligatoria."
+        }
+      ]
+    },
+    "included": {
+      "eyebrow": "Qué incluye",
+      "title": "Del análisis de impacto al simulacro.",
+      "items": [
+        {
+          "title": "Análisis de impacto en el negocio (BIA)",
+          "description": "Procesos críticos, dependencias, impacto por hora de interrupción y prioridad de recuperación."
+        },
+        {
+          "title": "Estrategias de continuidad",
+          "description": "Cómo sigue operando cada proceso crítico mientras se recupera el sistema: alternativas manuales, sitios o servicios alternos, respaldos."
+        },
+        {
+          "title": "Plan de continuidad (BCP)",
+          "description": "Quién decide, quién comunica, qué se hace en las primeras horas y cómo se vuelve a la normalidad."
+        },
+        {
+          "title": "Plan de recuperación ante desastres (DRP)",
+          "description": "La parte técnica: qué sistemas se restauran, en qué orden, con qué respaldos y quién lo ejecuta."
+        },
+        {
+          "title": "Simulacro y ajuste",
+          "description": "Un ejercicio con un escenario real antes de dar el plan por terminado, y el calendario para repetirlo."
+        },
+        {
+          "title": "Selección de soluciones",
+          "description": "Si el plan exige respaldo, alta disponibilidad o un sitio alterno, elegimos proveedores con criterios definidos y sin comisiones de fabricantes."
+        }
+      ]
+    },
+    "body": [
+      "Un plan de continuidad del negocio define cómo sigue operando la organización cuando algo crítico falla: un sistema, un proveedor, una sede o una persona clave. No es un documento del área de tecnología: es una decisión de la dirección sobre qué procesos no pueden parar y cuánto está dispuesta a invertir para que no paren.",
+      "Por eso empezamos por el análisis de impacto en el negocio (BIA). Según la guía NIST SP 800-34, el BIA relaciona cada sistema con los procesos de negocio que soporta y, a partir de eso, caracteriza las consecuencias de una interrupción. De ahí salen dos metas medibles: el RTO, el tiempo máximo que un recurso puede estar fuera de servicio antes de un impacto inaceptable, y el RPO, el punto en el tiempo hasta el que se pueden recuperar los datos después de una falla.",
+      "Con las metas definidas se diseñan las estrategias de continuidad y el plan de recuperación ante desastres (DRP): qué sistemas se restauran, en qué orden, con qué respaldos y quién decide. La misma guía distingue el plan de continuidad (BCP), centrado en sostener los procesos de negocio durante y después de una interrupción, del DRP, centrado en restaurar los sistemas de información.",
+      "En nuestro criterio, el error más frecuente es tener un plan que nunca se ha probado. Un simulacro con un escenario real —el ERP cae un lunes a las 9 a. m.— muestra en horas lo que un documento no muestra en meses: quién no sabía que tenía que decidir, qué respaldo no restauraba y qué proveedor no contestaba.",
+      "La norma ISO 22301:2019 es la referencia internacional para sistemas de gestión de continuidad del negocio: un marco para planificar, implementar, operar, revisar y mejorar un sistema documentado que proteja a la organización de incidentes disruptivos y asegure su recuperación. No toda empresa necesita certificarse, pero sí tener un plan que resista esa lógica. Si el plan exige nuevas soluciones de respaldo, alta disponibilidad o un sitio alterno, las seleccionamos con nuestra consultoría de infraestructura, sin comisiones de fabricantes, y la implementación la gobierna la Gerencia de Proyectos."
+    ],
+    "articleLinkText": "Lea también:",
+    "articleLinkLabel": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "La continuidad se apoya en la infraestructura",
+      "items": [
+        {
+          "title": "Infraestructura tecnológica",
+          "description": "Selección de respaldo, nube, conectividad y alta disponibilidad que el plan exige."
+        },
+        {
+          "title": "Ciberseguridad",
+          "description": "Los controles que reducen la probabilidad del incidente que el plan recupera."
+        },
+        {
+          "title": "Taller de continuidad de negocio y DRP",
+          "description": "Capacitación ejecutiva para diseñar y ensayar el plan con el equipo directivo."
+        },
+        {
+          "title": "Gerencia de proyectos (PMO)",
+          "description": "Quién gobierna la implementación de las soluciones del plan."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guías",
+      "title": "Antes de escribir el plan, lea esto",
+      "items": [
+        {
+          "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
+          "title": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
+          "description": "Los conceptos según NIST SP 800-34 e ISO 22301, la diferencia entre BCP, DRP y plan de contingencia, y qué decide la dirección."
+        },
+        {
+          "slug": "como-elegir-una-consultoria-de-ciberseguridad",
+          "title": "Cómo elegir una consultoría de ciberseguridad",
+          "description": "Qué debe cubrir, qué marcos públicos sirven de referencia (NIST CSF 2.0, ISO/IEC 27001) y qué preguntar."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Continuidad del negocio",
+      "title": "Preguntas frecuentes sobre consultoría en continuidad del negocio",
+      "items": [
+        {
+          "question": "¿Cuándo conviene contratar una consultoría en continuidad del negocio?",
+          "answer": "Cuando la operación depende de uno o dos sistemas y nadie ha probado qué pasa si caen; cuando un cliente, un banco o un regulador pide el plan de continuidad; cuando la empresa migró infraestructura crítica a la nube y el plan antiguo ya no aplica; o cuando existe un plan en papel que nunca se ha ensayado."
+        },
+        {
+          "question": "¿Qué diferencia hay entre plan de continuidad (BCP), plan de recuperación ante desastres (DRP) y plan de contingencia?",
+          "answer": "Según la guía NIST SP 800-34, el plan de continuidad se centra en sostener los procesos de negocio durante y después de una interrupción; el DRP es un plan centrado en los sistemas de información para restaurarlos, normalmente en un sitio alterno, tras una interrupción mayor; y el plan de contingencia de un sistema describe cómo evaluar y recuperar ese sistema concreto. El BCP es de la dirección; el DRP y los planes de contingencia, de tecnología; los tres deben estar coordinados."
+        },
+        {
+          "question": "¿Qué es el BIA y qué resultados deja?",
+          "answer": "El análisis de impacto en el negocio relaciona cada sistema con los procesos que soporta y caracteriza las consecuencias de una interrupción. Deja tres resultados: qué procesos son críticos y cuánto tiempo toleran sin operar, qué recursos hacen falta para recuperarlos y en qué orden se recuperan."
+        },
+        {
+          "question": "¿Qué son el RTO y el RPO?",
+          "answer": "El RTO (Recovery Time Objective) es el tiempo máximo que un recurso puede estar fuera de servicio antes de causar un impacto inaceptable en los procesos que soporta. El RPO (Recovery Point Objective) es el punto en el tiempo, antes de la falla, hasta el que se pueden recuperar los datos con el último respaldo; mide cuánta pérdida de datos tolera el proceso. Los define la dirección con el negocio, no el proveedor."
+        },
+        {
+          "question": "¿Hay que certificarse en ISO 22301?",
+          "answer": "No es obligatorio. ISO 22301:2019 es la norma internacional de sistemas de gestión de continuidad del negocio y sirve como referencia para estructurar el plan; certificarse tiene sentido cuando un cliente o el sector lo exige. Nuestro servicio define y prueba el plan; si la empresa decide certificarse, el plan queda construido con esa lógica."
+        },
+        {
+          "question": "¿Quién implementa las soluciones que el plan exige?",
+          "answer": "Si el plan requiere respaldo, alta disponibilidad, un sitio alterno o nube, seleccionamos las soluciones con nuestra consultoría de infraestructura, sin comisiones de fabricantes, y la implementación la gobierna la Gerencia de Proyectos (PMO)."
+        }
+      ]
+    }
   }
 }

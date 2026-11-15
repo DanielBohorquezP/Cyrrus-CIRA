@@ -1,18 +1,3 @@
-import {
-  BarChart3,
-  CheckCircle2,
-  EyeOff,
-  FileText,
-  Gauge,
-  LayoutGrid,
-  Lock,
-  Pencil,
-  PenTool,
-  Search,
-  UserX,
-  Zap,
-} from "lucide-react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
@@ -21,15 +6,20 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
+import { ServiceIntro } from "@/components/sections/service-intro";
+import { RelatedServices } from "@/components/sections/related-services";
+import { DarkStatBand } from "@/components/ui/dark-stat-band";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { NumberedList } from "@/components/ui/numbered-list";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SectionHeader } from "@/components/ui/section-header";
+import { Reveal } from "@/components/ui/reveal";
 import { FaqSection } from "@/components/sections/faq-section";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
-import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/presencia-digital";
-import { Img } from "@/components/ui/img";
 
 interface Problem {
   title: string;
@@ -52,21 +42,13 @@ interface Stat {
   label: string;
 }
 
-const problemIcons = [FileText, Lock, Gauge, EyeOff, UserX];
-const includedIcons = [LayoutGrid, PenTool, Zap, Pencil, Search, BarChart3];
 
 export default function DesarrolloWeb() {
   const { t } = useTranslation("presencia-digital");
   const lang = useLang();
 
-  const problems = (t("desarrolloWeb.diagnostico.problems", { returnObjects: true }) as Problem[]).map((p, i) => ({
-    ...p,
-    icon: problemIcons[i],
-  }));
-  const included = (t("desarrolloWeb.included.items", { returnObjects: true }) as Included[]).map((it, i) => ({
-    ...it,
-    icon: includedIcons[i],
-  }));
+  const problems = t("desarrolloWeb.diagnostico.problems", { returnObjects: true }) as Problem[];
+  const included = t("desarrolloWeb.included.items", { returnObjects: true }) as Included[];
   const steps = t("desarrolloWeb.proceso.steps", { returnObjects: true }) as Step[];
   const services = t("desarrolloWeb.services.items", { returnObjects: true }) as string[];
   const faqs = t("desarrolloWeb.faq.items", { returnObjects: true }) as Faq[];
@@ -139,249 +121,80 @@ export default function DesarrolloWeb() {
         <ContactCtaButton variant="light" label={t("desarrolloWeb.hero.ctaLabel")} />
       </PageHero>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("desarrolloWeb.intro.kicker")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("desarrolloWeb.intro.pullQuote")}
-            </p>
+      <ServiceIntro
+        eyebrow={t("desarrolloWeb.intro.kicker")}
+        quote={t("desarrolloWeb.intro.pullQuote")}
+        description={t("desarrolloWeb.intro.description")}
+        bullets={t("desarrolloWeb.intro.bullets", { returnObjects: true }) as string[]}
+        image={{
+          src: "/assets/decoracion/IMG_20230705_122802.jpg",
+          alt: "Diseñador de Cyrrus revisando la arquitectura de un sitio web corporativo",
+        }}
+      />
+
+      <section className="section-y w-full bg-mist">
+        <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))] items-start gap-x-24 gap-y-14">
+          <Reveal className="lg:sticky lg:top-28">
+            <Eyebrow>{t("desarrolloWeb.diagnostico.eyebrow")}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{t("desarrolloWeb.diagnostico.title")}</h2>
+            <p className="mt-6 text-lg leading-[1.7] text-pretty text-slate">{t("desarrolloWeb.diagnostico.description")}</p>
           </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
-            >
-              <Img
-                src="/assets/decoracion/IMG_20230705_122802.jpg"
-                alt="Diseñador de Cyrrus revisando la arquitectura de un sitio web corporativo"
-                width={1600}
-                height={720}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-
-            <Reveal delay={0.15} className="md:col-span-7">
-              <p className="text-lg leading-relaxed text-gray">
-                {t("desarrolloWeb.intro.description")}
-              </p>
-              <ul className="mt-8 space-y-4">
-                {(t("desarrolloWeb.intro.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
+          <NumberedList items={problems} />
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("desarrolloWeb.diagnostico.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("desarrolloWeb.diagnostico.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("desarrolloWeb.diagnostico.description")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
-            {problems.map((problem, index) => {
-              const Icon = problem.icon;
-              return (
-                <RevealItem
-                  key={problem.title}
-                  className="flex gap-5 rounded-2xl border border-border bg-card p-7"
-                >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy">
-                    <Icon className="h-5 w-5 text-cyan" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-blue">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="mt-1 text-lg font-semibold text-navy">
-                      {problem.title}
-                    </h3>
-                    <p className="mt-2 text-base leading-relaxed text-gray">
-                      {problem.description}
-                    </p>
-                  </div>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("desarrolloWeb.hero.ctaLabel")} />
-          </Reveal>
-        </div>
-      </section>
-
-      <AnimatedNavyBackground className="py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-6 text-center md:px-12">
-          <Reveal>
-            <span className="text-sm font-bold uppercase tracking-wider text-cyan">
-              {t("desarrolloWeb.whyCyrrus.eyebrow")}
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
-              {t("desarrolloWeb.whyCyrrus.title")}
-            </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70">
-              {t("desarrolloWeb.whyCyrrus.description")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2">
-            {stats.map((stat) => (
-              <RevealItem key={stat.value} className="px-4">
-                <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
-                  {stat.value}
-                </dd>
-                <span className="mt-3 block text-base leading-relaxed text-white/70">
-                  {stat.label}
-                </span>
-                <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </div>
-      </AnimatedNavyBackground>
+      <DarkStatBand
+        eyebrow={t("desarrolloWeb.whyCyrrus.eyebrow")}
+        title={t("desarrolloWeb.whyCyrrus.title")}
+        description={t("desarrolloWeb.whyCyrrus.description")}
+        stats={stats}
+      />
 
       <IncludedGrid
         eyebrow={t("desarrolloWeb.included.eyebrow")}
         title={t("desarrolloWeb.included.title")}
         items={included}
+        numbered
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-8">
-            <Reveal className="md:col-span-7">
-              <span className="text-base font-bold uppercase tracking-wider text-blue">
-                {t("desarrolloWeb.proceso.eyebrow")}
-              </span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-                {t("desarrolloWeb.proceso.title")}
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-gray">
-                {t("desarrolloWeb.proceso.description")}
-              </p>
-            </Reveal>
+      <IncludedGrid
+        className="bg-mist"
+        eyebrow={t("desarrolloWeb.proceso.eyebrow")}
+        title={t("desarrolloWeb.proceso.title")}
+        description={t("desarrolloWeb.proceso.description")}
+        items={steps}
+        numbered
+        image={{
+          src: "/assets/decoracion/IMG_20230228_082627.jpg",
+          alt: "Consultor de Cyrrus capacitando al equipo de un cliente para operar su sitio web",
+          position: "50% 71%",
+        }}
+      />
 
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto md:min-h-[220px]"
-            >
-              <Img
-                src="/assets/decoracion/IMG_20230228_082627.jpg"
-                alt="Consultor de Cyrrus capacitando al equipo de un cliente para operar su sitio web"
-                width={720}
-                height={1600}
-                      className="absolute inset-0 h-full w-full object-cover object-[center_71%]"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-          </div>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {steps.map((step, index) => (
-              <RevealItem
-                key={step.title}
-                className="rounded-2xl border border-border bg-card p-7"
-              >
-                <span className="text-xs font-semibold uppercase tracking-wider text-blue">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-2 text-base font-semibold text-navy">{step.title}</h3>
-                <p className="mt-2 text-base leading-relaxed text-gray">{step.description}</p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("desarrolloWeb.hero.ctaLabel")} />
-          </Reveal>
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("desarrolloWeb.services.eyebrow")} title={t("desarrolloWeb.services.title")} />
+          <RuledBullets items={services} numbered columns={2} className="mt-14" />
         </div>
       </section>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("desarrolloWeb.services.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("desarrolloWeb.services.title")}
-            </h2>
-          </Reveal>
-
-          <Reveal delay={0.1} className="mt-12 divide-y divide-border border-y border-border">
-            {services.map((service, index) => (
-              <div
-                key={service}
-                className="flex items-center gap-6 py-5"
-              >
-                <span className="text-sm font-semibold text-blue">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="text-base font-medium text-navy">{service}</span>
-              </div>
-            ))}
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {lang === "en" ? "Related solutions" : "Soluciones relacionadas"}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {lang === "en" ? "Presencia Digital also includes" : "Presencia Digital también incluye"}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <RevealItem>
-              <Link
-                to={hubPath}
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-              >
-                <span className="text-base font-semibold text-navy">
-                  {lang === "en" ? "Cyrrus Digital Presence" : "Cyrrus Presencia Digital"}
-                </span>
-                <span className="mt-auto text-sm font-semibold text-blue">
-                  {`${lang === "en" ? "See overview" : "Ver panorama"} →`}
-                </span>
-              </Link>
-            </RevealItem>
-            <RevealItem>
-              <Link
-                to={lang === "en" ? "/en/presencia-digital/seo" : "/presencia-digital/seo"}
-                className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-              >
-                <span className="text-base font-semibold text-navy">{t("seo.hero.title")}</span>
-                <span className="mt-auto text-sm font-semibold text-blue">
-                  {`${lang === "en" ? "See SEO" : "Ver SEO"} →`}
-                </span>
-              </Link>
-            </RevealItem>
-          </RevealGroup>
-        </div>
-      </section>
+      <RelatedServices
+        className="bg-mist"
+        eyebrow={lang === "en" ? "Related solutions" : "Soluciones relacionadas"}
+        title={lang === "en" ? "Presencia Digital also includes" : "Presencia Digital también incluye"}
+        items={[
+          {
+            href: hubPath,
+            title: lang === "en" ? "Cyrrus Digital Presence" : "Cyrrus Presencia Digital",
+            description: lang === "en" ? "See overview" : "Ver panorama",
+          },
+          {
+            href: lang === "en" ? "/en/presencia-digital/seo" : "/presencia-digital/seo",
+            title: t("seo.hero.title"),
+            description: lang === "en" ? "See SEO" : "Ver SEO",
+          },
+        ]}
+      />
 
       <FaqSection eyebrow={t("desarrolloWeb.faq.eyebrow")} title={t("desarrolloWeb.faq.title")} faqs={faqs} />
 

@@ -1,14 +1,7 @@
-import { ArrowRight, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { Eyebrow } from "@/components/ui/eyebrow";
 import { Img } from "@/components/ui/img";
 
 interface Post {
@@ -39,6 +32,8 @@ interface Blog7Props {
    *  calls this instead of an <a href>. */
   onButtonClick?: () => void;
   posts: Post[];
+  /** Hide the heading block when the page already shows it in its own hero. */
+  showHeader?: boolean;
 }
 
 const Blog7 = ({
@@ -84,54 +79,60 @@ const Blog7 = ({
       image: "/images/block/placeholder-dark-1.svg",
     },
   ],
+  showHeader = true,
 }: Blog7Props) => {
   return (
-    <section className="cv-section py-32">
-      <div className="container mx-auto flex flex-col items-center gap-16 lg:px-16">
-        <div className="text-center">
-          <Badge variant="secondary" className="mb-6">
-            {tagline}
-          </Badge>
-          {(() => {
-            const Heading = headingAs;
-            return (
-              <Heading className="mb-3 text-pretty text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl">
-                {heading}
-              </Heading>
-            );
-          })()}
-          <p className="mb-8 text-muted-foreground md:text-base lg:max-w-2xl lg:text-lg">
-            {description}
-          </p>
-          {onButtonClick ? (
-            <Button variant="link" className="w-full sm:w-auto" onClick={onButtonClick}>
-              {buttonText}
-              <ArrowRight className="ml-2 size-4" />
-            </Button>
-          ) : (
-            <Button variant="link" className="w-full sm:w-auto" asChild>
-              <Link to={buttonUrl}>
-                {buttonText}
-                <ArrowRight className="ml-2 size-4" />
+    <section className="cv-section section-y">
+      <div className="container-site">
+        {showHeader && (
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,340px),1fr))] items-end gap-x-24 gap-y-8 mb-16">
+          <div>
+            <Eyebrow>{tagline}</Eyebrow>
+            {(() => {
+              const Heading = headingAs;
+              return (
+                <Heading className="mt-6 font-heading text-[clamp(28px,3vw,40px)] font-bold leading-[1.15] tracking-[-0.02em] text-balance text-navy">
+                  {heading}
+                </Heading>
+              );
+            })()}
+          </div>
+          <div>
+            <p className="text-lg leading-[1.7] text-pretty text-slate">{description}</p>
+            {onButtonClick ? (
+              <button
+                type="button"
+                onClick={onButtonClick}
+                className="mt-6 inline-block border-b border-blue pb-1 font-heading text-sm font-medium text-blue hover:border-navy hover:text-navy"
+              >
+                {`${buttonText} →`}
+              </button>
+            ) : (
+              <Link
+                to={buttonUrl}
+                className="mt-6 inline-block border-b border-blue pb-1 font-heading text-sm font-medium text-blue hover:border-navy hover:text-navy"
+              >
+                {`${buttonText} →`}
               </Link>
-            </Button>
-          )}
+            )}
+          </div>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        )}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-8">
           {posts.map((post) => {
             // One level below the section heading: h2 cards under the
             // /perspectivas h1, h3 cards under the Home's h2 section.
             const CardHeading = headingAs === "h1" ? "h2" : "h3";
-            const card = (
-              <Card className="grid grid-rows-[auto_auto_1fr_auto] transition-[box-shadow] duration-150 ease-out has-[a:hover]:shadow-lg">
-                <div className="relative aspect-[16/9] w-full">
+            return (
+              <article key={post.id} className="flex flex-col">
+                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl">
                   <Img
                     src={post.image}
                     alt={post.title}
                     width={400}
                     height={240}
                     className="h-full w-full object-cover object-center"
-                    sizes="(min-width: 1024px) 368px, (min-width: 640px) 50vw, 100vw"
+                    sizes="1100px"
                   />
                   {!post.href && (
                     <>
@@ -144,32 +145,30 @@ const Blog7 = ({
                     </>
                   )}
                 </div>
-                <CardHeader>
-                  <CardHeading className="text-lg font-semibold md:text-xl">
+                <div className="flex flex-1 flex-col border-t-2 border-navy pt-5 mt-5">
+                  <span className="font-heading text-xs font-semibold uppercase tracking-[0.12em] text-cyan-ink">
+                    {post.label}
+                  </span>
+                  <CardHeading className="mt-3 font-heading text-xl font-semibold leading-snug text-navy">
                     {post.href ? (
-                      <Link to={post.href} className="hover:text-cyan">
+                      <Link to={post.href} className="hover:text-blue">
                         {post.title}
                       </Link>
                     ) : (
                       post.title
                     )}
                   </CardHeading>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{post.summary}</p>
-                </CardContent>
-                <CardFooter>
-                  <span className="flex items-center text-muted-foreground">
-                    <Clock className="mr-2 size-4" />
+                  <p className="mt-3 flex-1 text-base leading-[1.65] text-slate">{post.summary}</p>
+                  <span className="mt-5 flex items-center text-sm text-slate">
+                    <Clock className="mr-2 size-4" aria-hidden="true" />
                     {/* Single interpolation: literal text next to an expression is
                         two adjacent text nodes to React, but one after the DOM
                         serialises it, which breaks hydration of the whole page. */}
                     {post.dateLabel ?? `Se publica en ${post.published}`}
                   </span>
-                </CardFooter>
-              </Card>
+                </div>
+              </article>
             );
-            return <div key={post.id}>{card}</div>;
           })}
         </div>
       </div>

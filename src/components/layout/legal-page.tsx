@@ -20,10 +20,10 @@ export function LegalPage({ eyebrow, title, description, lastUpdated, children }
       <main id="contenido">
       <PageHero eyebrow={eyebrow} title={title} description={description} />
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-6 md:px-12">
+      <section className="section-y w-full bg-background">
+        <div className="mx-auto w-full max-w-[720px] px-[clamp(24px,5vw,64px)]">
           <Reveal>
-            <p className="text-sm text-muted-foreground">
+            <p className="font-heading text-[13px] font-medium tracking-[0.04em] text-[#5b6472]">
               {/* One string: literal text beside an expression is two adjacent
                   text nodes to React but a single one once the page has been
                   serialised to HTML, which fails hydration for the whole tree. */}

@@ -5,6 +5,11 @@
     "description": "Método CIRA es la metodología de consultoría empresarial, de negocios y tecnología de Cyrrus que unifica las cuatro fases de transformación digital — Construir, Identificar, Realizar, Adoptar — bajo un solo equipo responsable de principio a fin, con inteligencia artificial acelerando cada fase.",
     "badge": "CIRA"
   },
+  "phaseLabels": {
+    "problem": "El problema",
+    "how": "Cómo lo hacemos",
+    "outcome": "El resultado"
+  },
   "phases": [
     {
       "id": "construir",

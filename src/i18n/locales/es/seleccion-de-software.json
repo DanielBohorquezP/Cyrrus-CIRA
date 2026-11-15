@@ -146,7 +146,11 @@
     "items": [
       {
         "question": "¿Qué es la selección de software empresarial y cómo se hace?",
-        "answer": "Antes de elegir una plataforma, asegúrese de estar resolviendo el problema correcto — por eso empezamos siempre por el negocio, no por el catálogo del proveedor."
+        "answer": "Es el proceso de decidir qué plataforma conviene a la empresa comparando varias alternativas contra criterios definidos antes de ver demos. En Cyrrus se hace en cinco pasos: entender el negocio, levantar los procesos, convertirlos en requerimientos, evaluar la tecnología y, al final, elegir el proveedor. Empezamos por el negocio, no por el catálogo del proveedor."
+      },
+      {
+        "question": "¿Cuándo conviene contratar una consultoría de selección de software?",
+        "answer": "Cuando la empresa tiene que decidir si cambia o moderniza un ERP, un CRM, un HCM o un EAM y cuenta con demos, propuestas y opiniones internas, pero no con criterios para comparar. También cuando ya hay un proveedor preferido y conviene validar la decisión con criterios objetivos antes de firmar."
       },
       {
         "question": "¿La evaluación es realmente agnóstica de proveedor?",
@@ -162,7 +166,52 @@
       },
       {
         "question": "¿Quién de nuestro equipo debe participar en la selección?",
-        "answer": "Los dueños de los procesos que la herramienta va a soportar, un referente de TI y un patrocinador con capacidad de decisión presupuestal. La participación de los usuarios finales desde la definición de criterios es lo que separa una selección que se adopta de una que se resiste."
+        "answer": "Los dueños de los procesos que la herramienta va a soportar, un referente de TI y un patrocinador con capacidad de decisión presupuestal. En nuestro criterio, conviene que los usuarios finales participen desde la definición de criterios: así la evaluación incluye la usabilidad y se prepara la adopción."
+      }
+    ]
+  },
+  "respuesta": {
+    "eyebrow": "Selección de software",
+    "title": "¿Qué es la selección de software empresarial?",
+    "body": "Es el proceso de definir qué necesita resolver la empresa, convertirlo en criterios y requerimientos, y comparar contra ellos varias plataformas antes de firmar con un proveedor. En Cyrrus lo hacemos de forma independiente: no tenemos alianzas comerciales ni comisiones con fabricantes de ERP, CRM, HCM o EAM.",
+    "items": [
+      {
+        "title": "Qué seleccionamos",
+        "description": "ERP, CRM, software de recursos humanos y nómina (HCM) y software de mantenimiento y gestión de activos (EAM)."
+      },
+      {
+        "title": "Cómo evaluamos",
+        "description": "Seis dimensiones definidas antes de ver demos: funcional, técnica, económica (licenciamiento, implementación y TCO), estratégica, proveedor y usuario."
+      },
+      {
+        "title": "Tiempo",
+        "description": "Como referencia, la fase Identificar del Método CIRA toma de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+      }
+    ]
+  },
+  "guides": {
+    "eyebrow": "Guías",
+    "title": "Antes de elegir, lea las guías",
+    "items": [
+      {
+        "slug": "que-es-un-erp-guia-para-elegirlo",
+        "title": "Qué es un ERP y cómo elegirlo",
+        "description": "Qué hace un ERP, qué módulos tiene y qué preguntas hacer antes de pedir demos."
+      },
+      {
+        "slug": "que-es-un-crm-y-como-elegir-el-correcto",
+        "title": "Qué es un CRM y cómo elegir el correcto",
+        "description": "Tipos de CRM y cómo evaluarlo alrededor del proceso comercial real."
+      },
+      {
+        "slug": "software-recursos-humanos-nomina-mas-de-100-empleados",
+        "title": "Software de RR. HH. y nómina",
+        "description": "Qué revisar en un HCM cuando la empresa supera los 100 empleados."
+      },
+      {
+        "slug": "software-cmms-eam-como-elegir",
+        "title": "Software CMMS y EAM",
+        "description": "Qué es cada uno, en qué se diferencian y cómo elegirlo."
       }
     ]
   }

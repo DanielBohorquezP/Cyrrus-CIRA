@@ -234,8 +234,8 @@ export default function CalculadoraCostoErp() {
           <ContactCtaButton variant="light" label={t("calculadoraErp.hero.ctaLabel")} prefill={{ servicio: SERVICE }} />
         </PageHero>
 
-        <section className="w-full bg-background py-16 md:py-24">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
+        <section className="w-full bg-background section-y">
+          <div className="container-site">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <p className="max-w-3xl text-base leading-relaxed text-gray">{t("calculadoraErp.intro.text")}</p>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
@@ -432,8 +432,8 @@ export default function CalculadoraCostoErp() {
           </div>
         </section>
 
-        <section className="w-full bg-light-blue/40 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
+        <section className="w-full bg-mist py-16 md:py-20">
+          <div className="container-site">
             <h2 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">{t("calculadoraErp.links.title")}</h2>
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
               {links.map((item) => (

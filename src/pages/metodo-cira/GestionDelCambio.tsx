@@ -1,13 +1,3 @@
-import {
-  Boxes,
-  CheckCircle2,
-  ClipboardCheck,
-  HeartHandshake,
-  MessageSquare,
-  Sparkles,
-  Users,
-  GraduationCap,
-} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -22,14 +12,15 @@ import { FaqSection } from "@/components/sections/faq-section";
 import { Testimonials } from "@/components/sections/testimonials";
 import { ServiceLead } from "@/components/sections/service-lead";
 import { ServiceDefinition } from "@/components/sections/service-definition";
+import { ServiceIntro } from "@/components/sections/service-intro";
 import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { RelatedServices } from "@/components/sections/related-services";
+import { SecondaryButton } from "@/components/ui/border-button";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/gestion-cambio";
-import { Img } from "@/components/ui/img";
 
 interface Item {
   title: string;
@@ -40,27 +31,15 @@ interface Faq {
   answer: string;
 }
 
-const pillarIcons = [Users, MessageSquare, GraduationCap, HeartHandshake];
-const benefitIcons = [HeartHandshake, Users, MessageSquare, HeartHandshake, GraduationCap, CheckCircle2];
 
 export default function GestionDelCambio() {
   const { t } = useTranslation("gestion-cambio");
   const lang = useLang();
 
-  const pillars = (t("pillars.items", { returnObjects: true }) as Item[]).map((it, i) => ({
-    ...it,
-    icon: pillarIcons[i],
-  }));
-  const benefits = (t("benefits.items", { returnObjects: true }) as Item[]).map((it, i) => ({
-    ...it,
-    icon: benefitIcons[i],
-  }));
+  const pillars = t("pillars.items", { returnObjects: true }) as Item[];
+  const benefits = t("benefits.items", { returnObjects: true }) as Item[];
   const services = t("services.items", { returnObjects: true }) as ScopeItem[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
-  const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
-    ...it,
-    icon: [Boxes, ClipboardCheck, Sparkles][i],
-  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -83,7 +62,13 @@ export default function GestionDelCambio() {
     : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
   const pmoPath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
   const aiGovernancePath = lang === "en" ? "/en/intelligence-lab/gobierno-de-ia" : "/intelligence-lab/gobierno-de-ia";
-  const relatedPaths = [erpPath, pmoPath, aiGovernancePath];
+  // The Morelco case is the published proof of a change-management engagement.
+  const morelcoPath = lang === "en" ? "/en/experiencia/morelco" : "/experiencia/morelco";
+  const relatedPaths = [erpPath, pmoPath, aiGovernancePath, morelcoPath];
+  const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
+    ...it,
+    href: relatedPaths[i],
+  }));
 
   usePageMeta({
     title: t("meta.title"),
@@ -134,86 +119,49 @@ export default function GestionDelCambio() {
         title={t("hero.title")}
         description={t("hero.description")}
         breadcrumbs={breadcrumbItems}
+        image={{
+          src: "/assets/decoracion/IMG_20230302_112825.jpg",
+          alt: "Grupo de personas de un equipo reunidas en una oficina",
+        }}
       >
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
+        <SecondaryButton asChild>
+          <Link to={methodPath}>{t("intro.methodLinkLabel")}</Link>
+        </SecondaryButton>
       </PageHero>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("intro.kicker")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("intro.pullQuote")}
-            </p>
-          </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            {/* Image taken out of flow (absolute) so its own aspect ratio
-                can't dictate the grid row's height — the row is sized by the
-                text column, and the photo just fills whatever height that
-                turns out to be. */}
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
-            >
-              <Img
-                src="/assets/decoracion/evento-jackson-moderador.jpeg"
-                alt="Jackson Bohórquez moderando panel sobre liderazgo y gestión del cambio"
-                width={640}
-                height={427}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-
-            <Reveal delay={0.15} className="md:col-span-7">
-              <p className="text-lg leading-relaxed text-gray">
-                {t("intro.description")}
-              </p>
-              <ul className="mt-8 space-y-4">
-                {(t("intro.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-base leading-relaxed text-gray">
-                {`${t("intro.academyLinkText")} `}<Link to={academyPath} className="text-navy underline underline-offset-2">
-                  {t("intro.academyLinkLabel")}
-                </Link>
-                .
-              </p>
-              <p className="mt-3 text-base leading-relaxed text-gray">
-                {`${t("intro.articleLinkText")} `}<Link to={relatedArticlePath} className="text-navy underline underline-offset-2">
-                  {t("intro.articleLinkLabel")}
-                </Link>
-                .
-              </p>
-              <p className="mt-3 text-base leading-relaxed text-gray">
-                {`${t("intro.guideLinkText")} `}<Link to={guidePath} className="text-navy underline underline-offset-2">
-                  {t("intro.guideLinkLabel")}
-                </Link>
-                .
-              </p>
-              <p className="mt-3 text-base leading-relaxed text-gray">
-                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
-                  {t("intro.methodLinkLabel")}
-                </Link>
-                .
-              </p>
-            </Reveal>
-          </div>
-        </div>
-      </section>
+      <ServiceIntro
+        eyebrow={t("intro.kicker")}
+        quote={t("intro.pullQuote")}
+        description={t("intro.description")}
+        bullets={t("intro.bullets", { returnObjects: true }) as string[]}
+      >
+        <p>
+          {`${t("intro.academyLinkText")} `}<Link to={academyPath} className="font-bold text-blue hover:text-navy">
+            {t("intro.academyLinkLabel")}
+          </Link>
+        </p>
+        <p>
+          {`${t("intro.articleLinkText")} `}<Link to={relatedArticlePath} className="font-bold text-blue hover:text-navy">
+            {t("intro.articleLinkLabel")}
+          </Link>
+        </p>
+        <p>
+          {`${t("intro.guideLinkText")} `}<Link to={guidePath} className="font-bold text-blue hover:text-navy">
+            {t("intro.guideLinkLabel")}
+          </Link>
+        </p>
+        <p>
+          {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
+            {t("intro.methodLinkLabel")}
+          </Link>
+        </p>
+      </ServiceIntro>
 
       <ServiceDefinition
         eyebrow={t("definicion.eyebrow")}
         title={t("definicion.title")}
         description={t("definicion.description")}
-        className="bg-light-blue/40"
       />
 
       <ServiceScope
@@ -221,89 +169,30 @@ export default function GestionDelCambio() {
         title={t("services.title")}
         description={t("services.description")}
         items={services}
+        className="bg-background"
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("pillars.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("pillars.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("pillars.description")}
-            </p>
-          </Reveal>
+      <IncludedGrid
+        className="bg-mist"
+        eyebrow={t("pillars.eyebrow")}
+        title={t("pillars.title")}
+        description={t("pillars.description")}
+        items={pillars}
+        numbered
+      />
 
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {pillars.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <RevealItem
-                  key={item.title}
-                  className="rounded-2xl border border-border bg-card p-7"
-                >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
-                    <Icon className="h-5 w-5 text-cyan" />
-                  </div>
-                  <span className="mt-5 block text-xs font-semibold uppercase tracking-wider text-blue">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="mt-1 text-lg font-semibold text-navy">{item.title}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("pillars.ctaLabel")} />
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("distinctive.eyebrow")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("distinctive.pullQuote")}
-            </p>
-          </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-2 md:gap-8">
-            <Reveal delay={0.1}>
-              <p className="text-base leading-relaxed text-gray">
-                {t("distinctive.description")}
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.15}>
-              <h3 className="text-base font-bold uppercase tracking-wider text-blue">
-                {t("distinctive.solutionTitle")}
-              </h3>
-              <ul className="mt-6 space-y-4">
-                {(t("distinctive.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
-        </div>
-      </section>
+      <ServiceIntro
+        eyebrow={t("distinctive.eyebrow")}
+        quote={t("distinctive.pullQuote")}
+        description={t("distinctive.description")}
+        bulletsTitle={t("distinctive.solutionTitle")}
+        bullets={t("distinctive.bullets", { returnObjects: true }) as string[]}
+      />
 
       <ServiceLead
         eyebrow={t("lead.eyebrow")}
         title={t("lead.title")}
         bio={t("lead.bio")}
-        className="bg-light-blue/40"
       />
 
       <IncludedGrid
@@ -318,43 +207,15 @@ export default function GestionDelCambio() {
         caption={t("featureImage.caption")}
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("related.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("related.title")}
-            </h2>
-          </Reveal>
+      <RelatedServices
+        eyebrow={t("related.eyebrow")}
+        title={t("related.title")}
+        items={relatedItems}
+      />
 
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {relatedItems.map((item, i) => {
-              const RelatedIcon = item.icon;
-              return (
-                <RevealItem key={item.title}>
-                  <Link
-                    to={relatedPaths[i]}
-                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-                  >
-                    <RelatedIcon className="h-6 w-6 text-blue" />
-                    <span className="text-base font-semibold text-navy">{item.title}</span>
-                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
-                    <span className="mt-auto text-sm font-semibold text-blue">
-                      {`${lang === "en" ? "See more" : "Ver más"} →`}
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
-      </section>
+      <Testimonials className="bg-background" />
 
-      <Testimonials />
-
-      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
+      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} className="bg-mist" />
 
       <FinalCta />
       </main>

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Consultoría PMO: Oficina de Gerencia de Proyectos | Cyrrus",
-    "description": "Consultoría PMO y gerencia de proyectos: PMO externo para planeación, control y ejecución a tiempo, en costo y calidad. Proyectos de ERP, CRM, nube e IA."
+    "title": "Consultoría PMO y Gestión de Proyectos | Cyrrus",
+    "description": "Consultoría PMO y gerencia de proyectos: PMO externo o PMO como servicio para planeación, control y ejecución a tiempo, en costo y calidad. ERP, CRM, nube e IA."
   },
   "hero": {
     "eyebrow": "Método CIRA — Realizar",
@@ -25,7 +25,7 @@
   },
   "definicion": {
     "eyebrow": "La base",
-    "title": "¿Qué son los servicios de gerencia de proyectos?",
+    "title": "¿Qué son la consultoría PMO y los servicios de gerencia de proyectos?",
     "description": "Los servicios de gerencia de proyectos (también llamados de gestión de proyectos) son la planeación, dirección, control y ejecución experta de una iniciativa empresarial para que cumpla con el tiempo, el costo, el alcance y la calidad acordados. En Cyrrus nos especializamos en proyectos de tecnología y transformación digital (ERP, CRM, HCM, nube, infraestructura e IA) y los gerenciamos como PMO externo, con responsabilidad sobre el resultado y bajo los lineamientos del PMBOK."
   },
   "differentiators": {
@@ -119,7 +119,7 @@
         "description": "Diseñamos e implementamos la oficina de gestión de proyectos (PMO) de su organización: metodología, gobierno, plantillas, indicadores y herramientas."
       },
       {
-        "title": "PMO as a Service",
+        "title": "PMO como servicio (outsourcing de PMO)",
         "description": "Asumimos el rol de PMO externo para un proyecto puntual, como una implementación de ERP, sin que su empresa tenga que contratar y sostener una oficina de proyectos interna."
       },
       {
@@ -146,6 +146,10 @@
     "title": "Preguntas frecuentes sobre gerencia de proyectos",
     "items": [
       {
+        "question": "¿Cuándo conviene contratar una PMO externa?",
+        "answer": "Cuando el proyecto se atrasa, se sale de presupuesto o nadie asume el riesgo; cuando hay que intervenir un proyecto en curso para diagnosticar la causa real y retomar el control; o cuando la empresa enfrenta un proyecto puntual, como una implementación de ERP, y no quiere contratar y sostener una oficina de proyectos interna."
+      },
+      {
         "question": "¿Cuál es la diferencia entre gerencia de proyectos y gestión de proyectos?",
         "answer": "En la práctica se usan como sinónimos: ambos términos se refieren a planear, dirigir y controlar un proyecto para que cumpla con el tiempo, el costo, el alcance y la calidad acordados. \"Gerencia\" suele ponerle más énfasis al rol de dirección y a la responsabilidad sobre el resultado, que es justamente como trabajamos como PMO externo."
       },
@@ -170,8 +174,8 @@
         "answer": "Depende del alcance y la tecnología, no hay una duración estándar. Como PMO externo acompañamos desde el kickoff hasta el go-live y la estabilización posterior, con puntos de control y reporte al comité de dirección durante toda la ejecución."
       },
       {
-        "question": "¿Qué diferencia hay entre gerencia de proyectos tradicional y PMO as a Service?",
-        "answer": "PMO as a Service es un equipo externo que asume el gobierno del proyecto con responsabilidad real sobre el resultado, sin que la empresa tenga que contratar y sostener una oficina de proyectos interna. Se activa para un proyecto puntual — como una implementación de ERP — y se desmonta al cierre."
+        "question": "¿Qué diferencia hay entre la gerencia de proyectos tradicional y el PMO como servicio (outsourcing de PMO)?",
+        "answer": "El PMO como servicio (PMO as a Service) es un equipo externo que asume el gobierno del proyecto con responsabilidad real sobre el resultado, sin que la empresa tenga que contratar y sostener una oficina de proyectos interna. Se activa para un proyecto puntual — como una implementación de ERP — y se desmonta al cierre."
       }
     ]
   },

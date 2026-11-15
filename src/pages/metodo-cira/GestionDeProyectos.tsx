@@ -1,13 +1,3 @@
-import {
-  Boxes,
-  CheckCircle2,
-  ClipboardCheck,
-  HeartHandshake,
-  Layers,
-  ShieldCheck,
-  Sparkles,
-  Users,
-} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -21,14 +11,18 @@ import { FaqSection } from "@/components/sections/faq-section";
 import { Testimonials } from "@/components/sections/testimonials";
 import { ServiceLead } from "@/components/sections/service-lead";
 import { ServiceDefinition } from "@/components/sections/service-definition";
+import { ServiceIntro } from "@/components/sections/service-intro";
 import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { RelatedServices } from "@/components/sections/related-services";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SecondaryButton } from "@/components/ui/border-button";
+import { Reveal } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/gestion-proyectos";
-import { Img } from "@/components/ui/img";
 
 interface Item {
   title: string;
@@ -39,28 +33,16 @@ interface Faq {
   answer: string;
 }
 
-const differentiatorIcons = [Layers, ShieldCheck, Users, ClipboardCheck];
-const benefitIcons = [Layers, ShieldCheck, Users, ClipboardCheck, Sparkles];
 
 export default function GestionDeProyectos() {
   const { t } = useTranslation("gestion-proyectos");
   const lang = useLang();
 
-  const differentiators = (t("differentiators.items", { returnObjects: true }) as Item[]).map((it, i) => ({
-    ...it,
-    icon: differentiatorIcons[i],
-  }));
-  const benefits = (t("benefits.items", { returnObjects: true }) as Item[]).map((it, i) => ({
-    ...it,
-    icon: benefitIcons[i],
-  }));
+  const differentiators = t("differentiators.items", { returnObjects: true }) as Item[];
+  const benefits = t("benefits.items", { returnObjects: true }) as Item[];
   const services = t("services.items", { returnObjects: true }) as ScopeItem[];
   const achievements = t("achievements.items", { returnObjects: true }) as string[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
-  const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
-    ...it,
-    icon: [Boxes, HeartHandshake, Sparkles][i],
-  }));
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
@@ -79,6 +61,10 @@ export default function GestionDeProyectos() {
     ? "/en/intelligence-lab/automatizaciones-desarrollo"
     : "/intelligence-lab/automatizaciones-desarrollo";
   const relatedPaths = [erpPath, changePath, automationPath];
+  const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
+    ...it,
+    href: relatedPaths[i],
+  }));
   const articlePath = lang === "en"
     ? "/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa"
     : "/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa";
@@ -132,68 +118,34 @@ export default function GestionDeProyectos() {
         title={t("hero.title")}
         description={t("hero.description")}
         breadcrumbs={breadcrumbItems}
+        image={{
+          src: "/assets/decoracion/IMG_20200313_092713184.jpg",
+          alt: "Consultor de Cyrrus presentando metodología de gerencia de proyectos",
+        }}
       >
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
+        <SecondaryButton asChild>
+          <Link to={methodPath}>{t("intro.methodLinkLabel")}</Link>
+        </SecondaryButton>
       </PageHero>
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("intro.kicker")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("intro.pullQuote")}
-            </p>
-          </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            {/* Image taken out of flow (absolute) so its own aspect ratio
-                can't dictate the grid row's height — the row is sized by the
-                text column, and the photo just fills whatever height that
-                turns out to be. */}
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
-            >
-              <Img
-                src="/assets/decoracion/IMG_20200313_092713184.jpg"
-                alt="Consultor de Cyrrus presentando metodología de gerencia de proyectos"
-                width={640}
-                height={427}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-
-            <Reveal delay={0.15} className="md:col-span-7">
-              <p className="text-lg leading-relaxed text-gray">
-                {t("intro.description")}
-              </p>
-              <ul className="mt-8 space-y-4">
-                {(t("intro.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-base leading-relaxed text-gray">
-                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
-                  {t("intro.methodLinkLabel")}
-                </Link>
-                .
-              </p>
-              <p className="mt-3 text-base leading-relaxed text-gray">
-                {`${t("intro.articleLinkText")} `}<Link to={articlePath} className="text-navy underline underline-offset-2">
-                  {t("intro.articleLinkLabel")}
-                </Link>
-                .
-              </p>
-            </Reveal>
-          </div>
-        </div>
-      </section>
+      <ServiceIntro
+        eyebrow={t("intro.kicker")}
+        quote={t("intro.pullQuote")}
+        description={t("intro.description")}
+        bullets={t("intro.bullets", { returnObjects: true }) as string[]}
+      >
+        <p>
+          {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
+            {t("intro.methodLinkLabel")}
+          </Link>
+        </p>
+        <p>
+          {`${t("intro.articleLinkText")} `}<Link to={articlePath} className="font-bold text-blue hover:text-navy">
+            {t("intro.articleLinkLabel")}
+          </Link>
+        </p>
+      </ServiceIntro>
 
       <ServiceDefinition
         eyebrow={t("definicion.eyebrow")}
@@ -201,109 +153,36 @@ export default function GestionDeProyectos() {
         description={t("definicion.description")}
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-8">
-            <Reveal className="md:col-span-7">
-              <span className="text-base font-bold uppercase tracking-wider text-blue">
-                {t("differentiators.eyebrow")}
-              </span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-                {t("differentiators.title")}
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-gray">
-                {t("differentiators.description")}
-              </p>
-            </Reveal>
+      <IncludedGrid
+        eyebrow={t("differentiators.eyebrow")}
+        title={t("differentiators.title")}
+        description={t("differentiators.description")}
+        items={differentiators}
+        numbered
+        image={{
+          src: "/assets/decoracion/IMG_20230228_091017.jpg",
+          alt: "Presentación de gerencia de proyectos de Cyrrus",
+        }}
+      />
 
-            {/* Image taken out of flow (absolute) so its own aspect ratio
-                can't dictate the grid row's height — see the first section's
-                image on this page for the full explanation. */}
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto md:min-h-[220px]"
-            >
-              <Img
-                src="/assets/decoracion/IMG_20230228_091017.jpg"
-                alt="Presentación de gerencia de proyectos de Cyrrus"
-                width={640}
-                height={427}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-          </div>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {differentiators.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <RevealItem
-                  key={item.title}
-                  className="rounded-2xl border border-border bg-card p-7"
-                >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
-                    <Icon className="h-5 w-5 text-cyan" />
-                  </div>
-                  <span className="mt-5 block text-xs font-semibold uppercase tracking-wider text-blue">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="mt-1 text-lg font-semibold text-navy">{item.title}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-gray">{item.description}</p>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("differentiators.ctaLabel")} />
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("reto.eyebrow")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("reto.pullQuote")}
-            </p>
-          </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-2 md:gap-8">
-            <Reveal delay={0.1}>
-              <p className="text-base leading-relaxed text-gray">
-                {t("reto.description")}
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.15}>
-              <h3 className="text-base font-bold uppercase tracking-wider text-blue">
-                {t("reto.solutionTitle")}
-              </h3>
-              <ul className="mt-6 space-y-4">
-                {(t("reto.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
-        </div>
-      </section>
+      <ServiceIntro
+        className="bg-mist"
+        eyebrow={t("reto.eyebrow")}
+        quote={t("reto.pullQuote")}
+        description={t("reto.description")}
+        bulletsTitle={t("reto.solutionTitle")}
+        bullets={t("reto.bullets", { returnObjects: true }) as string[]}
+      />
 
       <ServiceLead
         eyebrow={t("lead.eyebrow")}
         title={t("lead.title")}
         bio={t("lead.bio")}
-        className="bg-light-blue/40"
+        className="bg-background"
       />
 
       <IncludedGrid
+        className="bg-mist"
         eyebrow={t("benefits.eyebrow")}
         title={t("benefits.title")}
         items={benefits}
@@ -314,67 +193,25 @@ export default function GestionDeProyectos() {
         title={t("services.title")}
         description={t("services.description")}
         items={services}
-        className="bg-light-blue/40"
+        className="bg-background"
       />
 
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("achievements.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("achievements.title")}
-            </h2>
+      <section className="section-y w-full bg-mist">
+        <div className="container-site">
+          <Reveal>
+            <Eyebrow>{t("achievements.eyebrow")}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{t("achievements.title")}</h2>
           </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {achievements.map((item) => (
-              <RevealItem
-                key={item}
-                className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6"
-              >
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                <span className="text-base leading-relaxed text-navy/80">{item}</span>
-              </RevealItem>
-            ))}
-          </RevealGroup>
+          <RuledBullets items={achievements} columns={2} className="mt-14" />
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("related.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("related.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {relatedItems.map((item, i) => {
-              const RelatedIcon = item.icon;
-              return (
-                <RevealItem key={item.title}>
-                  <Link
-                    to={relatedPaths[i]}
-                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-                  >
-                    <RelatedIcon className="h-6 w-6 text-blue" />
-                    <span className="text-base font-semibold text-navy">{item.title}</span>
-                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
-                    <span className="mt-auto text-sm font-semibold text-blue">
-                      {`${lang === "en" ? "See more" : "Ver más"} →`}
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
-      </section>
+      <RelatedServices
+        className="bg-background"
+        eyebrow={t("related.eyebrow")}
+        title={t("related.title")}
+        items={relatedItems}
+      />
 
       <Testimonials />
 

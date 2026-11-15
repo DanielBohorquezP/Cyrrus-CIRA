@@ -1,65 +1,16 @@
-import { useTranslation } from "react-i18next";
-import { LogoCarousel } from "@/components/ui/logo-carousel";
-import { clientLogoNames } from "@/lib/client-logos";
-import { Img } from "@/components/ui/img";
+import { LogoMarquee } from "@/components/ui/logo-marquee";
 
-const renderClientLogos = (decorative: boolean) =>
-  clientLogoNames.map((name) => (
-    <div
-      key={name}
-      className="flex h-11 w-32 items-center justify-center rounded-md bg-navy p-1.5"
-    >
-      <Img
-        src={`/assets/logos-clientes/${encodeURIComponent(name)}.webp`}
-        alt={decorative ? "" : name}
-        sizes="140px"
-        className="h-full w-full object-contain"
-      />
-    </div>
-  ));
-
-const clientLogos = renderClientLogos(false);
-const clientLogosDuplicate = renderClientLogos(true);
-
-interface Metric {
-  value: string;
-  label: string;
-}
-
+/**
+ * Navy band with the client logos scrolling by. The headline figures that used
+ * to sit beside the logos now live in the Home hero (ShaderHero `metrics`).
+ */
 export function TrustBar() {
-  const { t } = useTranslation("home");
-  const trustMetrics = t("trustBar.metrics", { returnObjects: true }) as Metric[];
-
   return (
-    <section className="cv-section w-full border-b border-border bg-background py-10 [--cv-h:300px]">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 lg:flex-row lg:justify-between lg:px-12">
-        <dl className="flex w-full flex-wrap items-stretch justify-center gap-x-4 gap-y-6 sm:flex-nowrap lg:w-auto lg:justify-start">
-          {trustMetrics.map((metric, i) => (
-            <div
-              key={metric.label}
-              className={
-                "flex-1 px-4 text-center sm:px-6 lg:text-left" +
-                (i > 0 ? " relative sm:before:absolute sm:before:left-0 sm:before:top-1/2 sm:before:h-4/5 sm:before:w-px sm:before:-translate-y-1/2 sm:before:bg-border" : "")
-              }
-            >
-              <dt className="sr-only">{metric.label}</dt>
-              <dd className="bg-gradient-to-br from-navy to-blue bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl">
-                {metric.value}
-              </dd>
-              <dd className="mt-2 text-sm font-bold uppercase tracking-wide text-gray">
-                {metric.label}
-                <span className="mx-auto mt-2.5 block h-[3px] w-9 rounded-full bg-cyan lg:mx-0" />
-              </dd>
-            </div>
-          ))}
-        </dl>
-        <div className="w-full lg:w-auto">
-          <LogoCarousel
-            items={clientLogos}
-            duplicateItems={clientLogosDuplicate}
-            className="lg:w-[420px]"
-          />
-        </div>
+    <section
+      className="cv-section w-full bg-navy py-11 [--cv-h:116px]"
+    >
+      <div className="container-site">
+        <LogoMarquee />
       </div>
     </section>
   );

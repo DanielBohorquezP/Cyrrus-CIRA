@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Technology Selection Without Vendor Bias | Cyrrus",
+    "title": "Technology Consulting Services, Vendor-Neutral | Cyrrus",
     "description": "How we choose technology with criteria defined before looking at vendors: business software, automation, and infrastructure, with no commercial bias."
   },
   "hero": {
     "eyebrow": "CIRA Method — Identify",
-    "title": "Technology selection without vendor bias",
+    "title": "Technology consulting services: vendor-neutral IT solution selection",
     "description": "A technology decision may not start from what the business actually needs. Our selection always starts from the business's requirements, not the vendor's catalog — 100% agnostic evaluation, with objective, comparable criteria.",
     "ctaLabel": "Let's talk about your solution"
   },
@@ -103,6 +103,11 @@
         "slug": "infraestructura-tecnologica",
         "label": "Technology Infrastructure",
         "note": "(Cybersecurity, Networks, Cloud, Continuity and Backup)"
+      },
+      {
+        "slug": "ciberseguridad",
+        "label": "Cybersecurity",
+        "note": "(Risk assessment, controls, vendor selection)"
       }
     ]
   },
@@ -176,6 +181,10 @@
     "title": "Frequently asked questions",
     "items": [
       {
+        "question": "What is technology consulting, and when should a company hire it?",
+        "answer": "Technology consulting helps a company decide what technology it needs, how to choose it among several options, and how to implement it without depending on what a single vendor offers. It's worth it before buying an ERP, a CRM, or another platform, or when a technology project is already behind schedule or over budget."
+      },
+      {
         "question": "Is the evaluation really vendor-agnostic?",
         "answer": "Yes. We have no commercial partnerships or commissions with ERP, CRM, HCM, or other enterprise software vendors — we evaluate every option against the same four objective criteria (functional, technical, economic, sustainable), regardless of brand."
       },
@@ -216,6 +225,10 @@
       {
         "title": "Change management",
         "description": "The Adopt phase: making sure the organization uses what was selected."
+      },
+      {
+        "title": "3 Castillos case",
+        "description": "IT strategic planning and infrastructure, ERP, and CRM selection at a food company founded in 1861."
       }
     ]
   },
@@ -229,22 +242,53 @@
     "faqTitle": "Frequently asked questions",
     "entries": {
       "tecnologias-avanzadas": {
-        "label": "Advanced Technologies",
+        "label": "Process Automation and AI",
         "eyebrow": "Solution Selection — Advanced Technologies",
-        "intro": "New technologies only create value when they respond to a real business need. Our role is to identify where they can have the greatest impact and which alternatives best fit each organization.",
+        "h1": "RPA consulting: independent selection of automation and AI software",
+        "intro": "Process automation and artificial intelligence only create value when they answer a real business need. Our role is to identify the processes where they can have the most impact and the tools that best fit each organization.",
+        "answer": {
+          "eyebrow": "RPA and AI consulting",
+          "title": "What does an independent RPA consultant do?",
+          "body": "It helps you decide whether a process needs RPA, artificial intelligence, an AI agent, or a redesign first, and choose the platform against criteria defined before any demo. At Cyrrus we do it with no vendor commissions.",
+          "items": [
+            {
+              "title": "Process assessment",
+              "description": "Volume, how structured it is, which exceptions come up, and what data it touches. That decides whether RPA, AI, or a direct integration fits."
+            },
+            {
+              "title": "Evaluation criteria",
+              "description": "Integration with your systems, security and data handling, three-year total cost, operation by your own team, and measurement against the process it replaces."
+            },
+            {
+              "title": "Scope",
+              "description": "Selection and contracting support. Implementation is coordinated with the PMO, and custom builds with our AI Agents practice."
+            }
+          ]
+        },
         "items": [
           {
             "title": "Artificial Intelligence",
             "description": "From intelligent assistants to advanced analytics models, we identify opportunities where technology can boost productivity, improve decision-making, and accelerate value creation."
           },
           {
-            "title": "Automation",
-            "description": "We select platforms that simplify processes, eliminate repetitive tasks, and free people up to spend more time on strategic work."
+            "title": "Process automation and RPA",
+            "description": "We select process automation and RPA (robotic process automation) platforms that simplify processes, eliminate repetitive tasks, and free people up for strategic work."
+          },
+          {
+            "title": "AI agents",
+            "description": "We evaluate agents that can complete multi-step tasks — querying systems, drafting, deciding within defined rules — and compare them with simpler alternatives when a fixed rule or an RPA bot is enough."
           },
           {
             "title": "Blockchain",
             "description": "We evaluate solutions for organizations that need higher levels of traceability, trust, and secure information exchange."
           }
+        ],
+        "body": [
+          "RPA, artificial intelligence, and AI agents don't compete with each other: they solve different problems. RPA (robotic process automation) replicates repetitive, rule-based tasks on top of existing systems, such as copying data between applications. Artificial intelligence interprets unstructured information — text, documents, images — and makes predictions. An AI agent combines both capabilities to complete a multi-step task with some degree of autonomy.",
+          "Choosing wrong can be expensive. An AI agent where a rule would do adds cost and risk; an RPA bot on a process that changes every month needs constant adjustments (IBM notes that RPA can be hard to scale when rules or operations change). That's why selection starts with the process, not the tool: its volume, how structured it is, which exceptions come up, and what data it touches.",
+          "To compare automation platforms we look at five criteria: integration with current systems (ERP, CRM, email, APIs), security and data handling, three-year total cost (licenses, infrastructure, and maintenance), how easily your own team can run it without depending on the vendor, and the ability to measure results against the process it replaces.",
+          "Common mistakes when choosing automation technology include starting with the trendy tool, automating a process that isn't well defined yet, ignoring maintenance cost, and not deciding who will own the automation once it's in production. In our view, automating a confusing process only makes the mess happen faster.",
+          "Our support covers mapping and prioritizing candidate processes, defining and weighting the evaluation criteria, comparing vendors against real cases from your operation, and supporting negotiation and contracting. Implementation is coordinated with Project Management (PMO) and, when the right solution doesn't exist on the market, custom builds are handled by our AI Agents practice. At Cyrrus we do this selection independently, with no vendor commissions."
         ],
         "related": [
           {
@@ -260,7 +304,40 @@
             "description": "The Adopt phase: making sure the organization actually uses the technology it selected."
           }
         ],
+        "guides": {
+          "eyebrow": "Guides",
+          "title": "To decide with information",
+          "items": [
+            {
+              "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+              "title": "What is RPA and when it makes sense versus AI",
+              "description": "IBM and Microsoft definitions, RPA's limits, and questions for management."
+            },
+            {
+              "slug": "integrar-erp-y-crm-conector-nativo-o-middleware",
+              "title": "Integrating ERP and CRM",
+              "description": "When a direct integration is more stable than a robot copying data through the screen."
+            },
+            {
+              "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+              "title": "What is AI governance and which frameworks to use",
+              "description": "NIST AI RMF, OECD, and ISO/IEC 42001 before AI goes into production."
+            }
+          ]
+        },
         "faq": [
+          {
+            "question": "When should a company hire an RPA or automation consultant?",
+            "answer": "When it wants to automate repetitive tasks or use AI and has proposals from several vendors, but doesn't know whether the process needs RPA, AI, an agent, or a redesign first. Also when it has already chosen a platform and wants to validate the decision against objective criteria before contracting."
+          },
+          {
+            "question": "What is RPA and when does it make sense?",
+            "answer": "RPA (robotic process automation) is software that reproduces repetitive tasks a person does on a computer, following defined steps on the applications the company already uses. IBM sums it up as process-driven, versus AI, which is data-driven. It makes sense when the task is repetitive, follows rules that can be written down, and runs on stable systems. If the process changes often or depends on interpreting text or documents, an artificial intelligence solution may be a better fit."
+          },
+          {
+            "question": "What is the difference between RPA, AI, and an AI agent?",
+            "answer": "RPA follows fixed rules; artificial intelligence interprets unstructured information and finds patterns; an AI agent combines both to complete a multi-step task with some autonomy. They aren't mutually exclusive: for example, AI can interpret a document and RPA can load the result into the system. Our selection starts from the process, not from the trendy technology."
+          },
           {
             "question": "How do you decide which technology — AI, automation, or blockchain — my company needs?",
             "answer": "We start from the same assessment of industry, size, and technology maturity we use for every solution selection. We don't recommend a trendy technology if it doesn't answer a real business need."
@@ -278,7 +355,27 @@
       "infraestructura-tecnologica": {
         "label": "Technology Infrastructure",
         "eyebrow": "Solution Selection — Technology Infrastructure",
+        "h1": "IT infrastructure consulting: independent cybersecurity and cloud selection",
         "intro": "The right infrastructure creates the conditions for the business to operate securely, reliably, and with room to grow.",
+        "answer": {
+          "eyebrow": "IT infrastructure consulting",
+          "title": "What does an independent IT infrastructure and cybersecurity consultant do?",
+          "body": "It helps you decide what infrastructure the company needs — security, cloud, networks, and continuity — and choose vendors against criteria defined before looking at proposals. At Cyrrus we start from what is already in production and take no vendor commissions.",
+          "items": [
+            {
+              "title": "Assessment of what exists",
+              "description": "We first review what the company has in production and what risks exist today, before recommending a new architecture."
+            },
+            {
+              "title": "Four criteria",
+              "description": "Functional, technical, economic, and sustainable: it solves the real operation, fits what exists, the budget covers running it, and it grows with the company."
+            },
+            {
+              "title": "Scope",
+              "description": "Selection of vendors and architectures, and contracting support. Implementation is managed by our Project Management (PMO) practice."
+            }
+          ]
+        },
         "items": [
           {
             "title": "Cybersecurity",
@@ -297,6 +394,13 @@
             "description": "We help define the capabilities needed to protect operations through continuity strategies, disaster recovery, and high availability."
           }
         ],
+        "body": [
+          "Technology infrastructure brings together four fronts that are decided together: cybersecurity (identities, devices, monitoring, and incident response), cloud (cloud, hybrid, or multicloud), connectivity (LAN, WLAN, WAN, SD-WAN, and Internet), and business continuity (disaster recovery and high availability). A decision in one affects the others: moving a system to the cloud changes what needs protecting, which links the operation needs, and how it recovers if it fails.",
+          "That's why selection starts with an assessment of what already exists, not with a vendor's catalog: which systems support the operation, what depends on what, where today's risks are, and what requirements the company faces from its customers or its industry.",
+          "With that assessment we define the criteria before requesting proposals, and compare specific vendors and architectures against the same four criteria we use in every selection: functional, technical, economic, and sustainable.",
+          "In our view, common mistakes when choosing infrastructure include buying the security tool before knowing what needs protecting, migrating to the cloud without reviewing what it will cost to run afterwards, and having a continuity plan that has never been tested.",
+          "The infrastructure chosen here is the foundation for AI architecture. Implementation is managed by our Project Management (PMO) practice, and to prepare executives we offer ISO 27001 and business continuity (DRP) workshops at Leadership Academy."
+        ],
         "related": [
           {
             "title": "AI Architecture",
@@ -309,9 +413,29 @@
           {
             "title": "Change management",
             "description": "The Adopt phase: making sure the organization adopts the new infrastructure without friction."
+          },
+          {
+            "title": "ISO 27001 workshop",
+            "description": "Executive training for the company whose customer requires the certification."
+          },
+          {
+            "title": "Business continuity and DRP",
+            "description": "Executive workshop to design and test the continuity plan."
+          },
+          {
+            "title": "Cybersecurity",
+            "description": "Risk assessment and selection of controls and vendors, on its own page."
+          },
+          {
+            "title": "Business continuity",
+            "description": "BIA, continuity plan and tested DRP, as a consulting service."
           }
         ],
         "faq": [
+          {
+            "question": "When should a company hire an IT infrastructure or cybersecurity consultant?",
+            "answer": "When it has to decide on a cloud migration or renew its security, networks, or continuity plan, and has proposals from several vendors but no criteria to compare them. Also when a customer or a regulation requires security controls and the company needs to know which solutions cover them."
+          },
           {
             "question": "Do you evaluate specific cybersecurity and cloud vendors, or just general architectures?",
             "answer": "We evaluate specific vendors and architectures — cybersecurity, cloud/hybrid/multicloud, connectivity (LAN, WLAN, WAN, SD-WAN), and business continuity — with the same four objective criteria we use for every selection."
@@ -325,17 +449,142 @@
             "answer": "Implementation is coordinated with Project Management (PMO), which governs the timeline, risks, and vendors throughout the rollout."
           }
         ]
+      },
+      "ciberseguridad": {
+        "label": "Cybersecurity",
+        "eyebrow": "Solution Selection — Cybersecurity",
+        "h1": "Cybersecurity consulting services for companies: controls and vendors with no bias",
+        "intro": "Protecting the operation starts with knowing what to protect. We help decide which controls the company needs and choose cybersecurity solutions and vendors with criteria defined before seeing proposals.",
+        "answer": {
+          "eyebrow": "Cybersecurity consulting",
+          "title": "What does an independent cybersecurity consultant do?",
+          "body": "It helps you decide what to protect, with which controls and with which vendors, before buying a tool. We start from what is already in production, take public frameworks as references (NIST CSF 2.0, ISO/IEC 27001) and have no vendor commissions. The scope is selection and governance: defining controls, choosing vendors and governing the implementation; day-to-day operation is delivered by the selected vendor.",
+          "items": [
+            {
+              "title": "Risk assessment",
+              "description": "Inventory of what supports the operation, what depends on what and where today's risks are, before recommending a tool."
+            },
+            {
+              "title": "Four criteria",
+              "description": "Functional, technical, economic and sustainable: it covers the risks found, integrates with what exists, the budget covers operating it, and it grows with the company."
+            },
+            {
+              "title": "Scope",
+              "description": "Definition of controls, selection of solutions and vendors, and support through contracting. Implementation is managed with our Project Management (PMO)."
+            }
+          ]
+        },
+        "items": [
+          {
+            "title": "Risk assessment",
+            "description": "Inventory of what supports the operation, what depends on what and where today's risks are, before recommending a tool."
+          },
+          {
+            "title": "Controls and architecture",
+            "description": "Identities, devices, monitoring and incident response: which controls cover the risks found and in what order."
+          },
+          {
+            "title": "Vendor selection",
+            "description": "Comparison of solutions and vendors with the same four criteria of every selection: functional, technical, economic and sustainable."
+          }
+        ],
+        "body": [
+          "Cybersecurity is decided with the same logic as the rest of the infrastructure: first what supports the operation and which risks exist today, then which controls cover them, and only at the end which tool or vendor. Buying the tool before knowing what to protect is, in our view, the costliest mistake.",
+          "The NIST Cybersecurity Framework 2.0, published in February 2024, organizes cybersecurity outcomes into six Functions: Govern, Identify, Protect, Detect, Respond and Recover. It is designed for organizations of all sizes and sectors and does not prescribe how to achieve each outcome; that is why it serves as a public reference to structure the assessment without tying it to a vendor.",
+          "With the assessment organized by Functions, we define the criteria before requesting proposals — what the solution must cover, what it must integrate with, what it costs to operate and how it grows with the company — and compare vendors for identity protection, devices, monitoring and incident response with the same four criteria of every selection: functional, technical, economic and sustainable.",
+          "If a customer or the sector requires ISO/IEC 27001 certification, the international standard for information security management systems, the assessment is aligned with its requirements from the start, and leadership prepares with the ISO 27001 course at Leadership Academy. Certification is not mandatory to protect the operation; knowing which controls exist and who answers for them is.",
+          "Cybersecurity is part of the business continuity plan: controls reduce the likelihood of the incident, and the continuity plan defines how the company keeps operating if it happens. Implementation of the chosen solutions is governed by our Project Management (PMO)."
+        ],
+        "related": [
+          {
+            "title": "Technology infrastructure",
+            "description": "Cloud, connectivity and continuity are decided together with security."
+          },
+          {
+            "title": "Business continuity",
+            "description": "How the company keeps operating if the incident happens."
+          },
+          {
+            "title": "Project management (PMO)",
+            "description": "Who governs the implementation of the chosen controls."
+          },
+          {
+            "title": "ISO 27001 course",
+            "description": "Executive training when a customer requires certification."
+          }
+        ],
+        "guides": {
+          "eyebrow": "Guides",
+          "title": "Before choosing a cybersecurity vendor, read this",
+          "items": [
+            {
+              "slug": "como-elegir-una-consultoria-de-ciberseguridad",
+              "title": "How to choose a cybersecurity consulting firm",
+              "description": "What it should cover, which public frameworks serve as references and what to ask before hiring."
+            },
+            {
+              "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
+              "title": "Business continuity plan: what it is, BIA, RTO and RPO",
+              "description": "How the company keeps operating once the incident has happened."
+            }
+          ]
+        },
+        "faq": [
+          {
+            "question": "When should a company hire cybersecurity consulting services?",
+            "answer": "When the company has proposals from several vendors and no criteria to compare them; when a customer, a bank or a regulator requires controls or ISO/IEC 27001 certification; after an incident; or when it migrated to the cloud and the old controls no longer apply."
+          },
+          {
+            "question": "Do you evaluate specific cybersecurity vendors, or only recommend an architecture?",
+            "answer": "We evaluate specific vendors and solutions — identities, devices, monitoring and response — with the same four objective criteria we use in every selection, and with no vendor commissions."
+          },
+          {
+            "question": "Which reference framework is better: NIST CSF or ISO/IEC 27001?",
+            "answer": "They are complementary. NIST CSF 2.0 is a public, non-prescriptive framework to understand, assess and prioritize cybersecurity risks in organizations of any size; ISO/IEC 27001 defines the requirements for an information security management system and allows certification. Which one guides the assessment depends on whether the company needs to certify (Cyrrus's view)."
+          },
+          {
+            "question": "Does it include security operations (monitoring and response)?",
+            "answer": "The scope is defining the controls, selecting the solutions and vendors, and governing the implementation with the PMO. Day-to-day operation is delivered by the selected vendor; we define what it must meet and how it is measured."
+          },
+          {
+            "question": "How does cybersecurity relate to the business continuity plan?",
+            "answer": "Cybersecurity controls reduce the likelihood of an incident; the continuity plan defines how the company keeps operating if it happens. They are designed together: the business impact analysis (BIA) says what to protect first."
+          }
+        ]
       }
     }
   },
   "detailMeta": {
     "tecnologias-avanzadas": {
-      "title": "Automation and AI Selection for Companies | Cyrrus",
-      "description": "We select the automation, artificial intelligence, and advanced analytics solutions that fit your data and process maturity."
+      "title": "RPA Consulting: Automation Software Selection | Cyrrus",
+      "description": "Independent RPA and AI consulting: we decide whether your process needs RPA, AI, or an AI agent, and select the platform with no vendor commissions."
     },
     "infraestructura-tecnologica": {
-      "title": "Technology Infrastructure: Cybersecurity & Cloud | Cyrrus",
-      "description": "We evaluate and select the cybersecurity, network, cloud, and business continuity solutions your company needs, with no vendor bias."
+      "title": "IT Infrastructure Consulting: Cybersecurity & Cloud | Cyrrus",
+      "description": "Independent IT infrastructure consulting: we select cybersecurity, cloud, connectivity, and business continuity solutions with no vendor commissions."
+    },
+    "ciberseguridad": {
+      "title": "Cybersecurity Consulting Services for Companies | Cyrrus",
+      "description": "Independent cybersecurity consulting services: risk assessment, the controls your company needs and the selection of solutions and vendors with no vendor commissions."
     }
+  },
+  "respuesta": {
+    "eyebrow": "Technology consulting",
+    "title": "What does an independent technology consulting firm do?",
+    "body": "It helps the company decide what technology it needs and choose among several options without depending on what a single vendor offers. At Cyrrus, selection starts from the business's requirements, not the vendor's catalog: we have no commercial alliances or commissions with manufacturers.",
+    "items": [
+      {
+        "title": "What we select",
+        "description": "Business software (ERP, CRM, HCM, EAM), process automation and artificial intelligence, and IT infrastructure (cybersecurity, cloud, connectivity, and business continuity)."
+      },
+      {
+        "title": "How we do it",
+        "description": "An RFP organized by technical and functional attributes, and four criteria defined before looking at vendors: functional, technical, economic, and sustainable."
+      },
+      {
+        "title": "Timing",
+        "description": "As a reference, the CIRA Method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+      }
+    ]
   }
 }

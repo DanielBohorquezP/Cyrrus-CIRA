@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Organizational Change Management Services | Cyrrus",
-    "description": "Organizational change management services: readiness assessment, stakeholders, communication, training, and AI-driven adoption measurement."
+    "title": "Change Management Consulting Firm & Services | Cyrrus",
+    "description": "Change management consulting services: readiness assessment, stakeholders, communication, training, and AI-driven adoption measurement."
   },
   "hero": {
     "eyebrow": "CIRA Method — Adopt",
-    "title": "Organizational change management services",
+    "title": "Change management consulting services: adoption from day one",
     "description": "The system gets installed, but the team doesn't adopt it. Our organizational change management works on adoption from day one of the project, not as a closing activity.",
     "ctaLabel": "Manage the change"
   },
@@ -28,12 +28,12 @@
   },
   "definicion": {
     "eyebrow": "The foundation",
-    "title": "What are change management services?",
-    "description": "Change management services are consulting and support processes that prepare an organization's people to adopt a new way of working (a system, a structure, or a strategy) and sustain it over time. They include readiness assessment, stakeholder management, communication, training, and adoption measurement. The goal isn't for the solution to be installed, but for it to be used."
+    "title": "What are change management consulting services?",
+    "description": "Change management consulting services are consulting and support processes that prepare an organization's people to adopt a new way of working (a system, a structure, or a strategy) and sustain it over time. They include readiness assessment, stakeholder management, communication, training, and adoption measurement. The goal isn't for the solution to be installed, but for it to be used. At Cyrrus it is embedded in Strategy, Solution Selection, and Project Management from day one, with continuous AI-driven adoption measurement."
   },
   "services": {
     "eyebrow": "Scope",
-    "title": "Core change management services",
+    "title": "Our change management consulting services",
     "description": "The four pillars in the next section run through the whole process. These are the specific services that make it up; they can be engaged within a project or on their own.",
     "items": [
       {
@@ -148,6 +148,10 @@
     "title": "Frequently asked questions about change management",
     "items": [
       {
+        "question": "When should a company hire a change management consulting firm?",
+        "answer": "When a new system, structure, or strategy is coming and the organization needs its people to adopt it, not just have it installed; when a system is already installed but the team works around it; or before a major implementation, such as an ERP, to assess readiness and sources of resistance before it starts."
+      },
+      {
         "question": "What do change management services include?",
         "answer": "Readiness assessment, organizational impact analysis, executive sponsorship, stakeholder and resistance management, a communication plan, a training plan, continuous adoption measurement, and reinforcement after go-live. They're built into the project from the start, though we also step in when adoption has already stalled."
       },
@@ -192,6 +196,10 @@
       {
         "title": "AI governance",
         "description": "How we extend the same adoption discipline to AI."
+      },
+      {
+        "title": "Morelco case: change management",
+        "description": "How Morelco (now Cumbra) moved its field crews to a work-from-home model in 2020: 36% fewer high ergonomic risks within one month."
       }
     ]
   }

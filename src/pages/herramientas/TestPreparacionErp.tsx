@@ -188,10 +188,10 @@ export default function TestPreparacionErp() {
           <ContactCtaButton variant="light" label={t("testErp.hero.ctaLabel")} prefill={{ servicio: SERVICE }} />
         </PageHero>
 
-        <section className="w-full bg-background py-16 md:py-24">
+        <section className="w-full bg-background section-y">
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-10 md:px-12">
             <div className="md:col-span-4">
-              <span className="block text-base font-bold uppercase tracking-wider text-blue">
+              <span className="block font-heading text-sm font-bold uppercase tracking-[0.06em] text-blue">
                 {t("testErp.intro.kicker")}
               </span>
               <p className="mt-4 text-lg leading-relaxed text-gray">{t("testErp.intro.text")}</p>
@@ -243,7 +243,7 @@ export default function TestPreparacionErp() {
                               "rounded-xl border px-4 py-3.5 text-left text-base leading-snug transition-[background-color,border-color] duration-150 ease-out",
                               selected
                                 ? "border-blue bg-light-blue/60 text-navy"
-                                : "border-border bg-background text-navy/85 hover:border-blue hover:bg-light-blue/40",
+                                : "border-border bg-background text-navy/85 hover:border-blue hover:bg-mist",
                             )}
                           >
                             {option}
@@ -361,8 +361,8 @@ export default function TestPreparacionErp() {
           </div>
         </section>
 
-        <section className="w-full bg-light-blue/40 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
+        <section className="w-full bg-mist py-16 md:py-20">
+          <div className="container-site">
             <h2 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">{t("testErp.quiz.nextTitle")}</h2>
             <div className={cn("mt-8 grid grid-cols-1 gap-6", links.length > 3 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3")}>
               {links.map((item) => (

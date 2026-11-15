@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff;color:#1a1a1a;font-family:Carlito,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+a{color:#1b6fc2;text-decoration:none}
+a:hover{color:#0a2c63}
+@keyframes cyrrusMarquee{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 32px))}}
+</style>
+</helmet>
+
+<div data-screen-label="Home" style="font-family:Carlito,system-ui,sans-serif">
+
+<!-- HERO -->
+<section style="position:relative;min-height:100vh;display:flex;flex-direction:column;background:radial-gradient(120% 90% at 18% 12%,#1b6fc2 0%,transparent 55%),radial-gradient(110% 80% at 82% 22%,#3fb6e8 0%,transparent 50%),radial-gradient(130% 110% at 60% 95%,#123a7d 0%,transparent 60%),linear-gradient(160deg,#0a2c63 0%,#020818 70%);color:#fff;overflow:hidden">
+  <div style="position:absolute;inset:0;background:linear-gradient(0deg,#0a2c63 0%,rgba(10,44,99,.3) 50%,transparent 100%)"></div>
+  <header style="position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,64px);min-height:88px;padding-top:16px;padding-bottom:16px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;border-bottom:1px solid rgba(255,255,255,.12)">
+    <img src="public/assets/logos-cyrrus/cyrrus-logo-blanco.png" alt="Cyrrus Consulting Services" style="height:40px;width:auto">
+    <nav style="display:flex;gap:clamp(16px,2.4vw,36px);white-space:nowrap;font-family:Poppins,sans-serif;font-size:14px;font-weight:500;flex-wrap:wrap">
+      <a href="#servicios" style="color:rgba(255,255,255,.85)">Servicios</a>
+      <a href="#" style="color:rgba(255,255,255,.85)">Capacitación Ejecutiva</a>
+      <a href="#" style="color:rgba(255,255,255,.85)">Nosotros</a>
+      <a href="#" style="color:rgba(255,255,255,.85)">Perspectivas</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:20px;font-family:Poppins,sans-serif;font-size:13px">
+      <span style="color:rgba(255,255,255,.6);letter-spacing:.08em;white-space:nowrap">ES / EN</span>
+      <a href="#contacto" style="display:inline-flex;align-items:center;gap:10px;height:42px;white-space:nowrap;padding:0 20px;border:2px solid rgba(255,255,255,.7);border-radius:999px;color:#fff;font-weight:500">Agendar conversación<span style="width:7px;height:7px;border-radius:50%;background:#3fb6e8"></span></a>
+    </div>
+  </header>
+
+  <div style="position:relative;z-index:1;max-width:1280px;width:100%;box-sizing:border-box;margin:auto auto 0;padding:clamp(80px,12vw,160px) clamp(24px,5vw,64px) 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:64px;align-items:end">
+    <div style="max-width:720px">
+      <div style="display:inline-flex;padding:8px 18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);border-radius:999px;font-family:Poppins,sans-serif;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#3fb6e8">Metodología CIRA</div>
+      <h1 style="margin-top:28px;font-family:Poppins,sans-serif;letter-spacing:-.02em;line-height:.95">
+        <span style="display:block;font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.2;letter-spacing:.01em;background:linear-gradient(135deg,#fff 0%,#3fb6e8 40%,#fff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Consultoría</span>
+        <span style="display:block;font-size:clamp(52px,7.4vw,96px);font-weight:800;letter-spacing:-.03em">Estratégica</span>
+        <span style="display:block;margin-top:8px;font-size:clamp(30px,3.8vw,50px);font-weight:300;font-style:italic;line-height:1.15;color:rgba(255,255,255,.8)">que llega hasta la ejecución</span>
+      </h1>
+      <p style="margin-top:32px;max-width:560px;font-size:20px;line-height:1.6;color:rgba(255,255,255,.75);text-wrap:pretty">Según BCG, el 70% de las transformaciones digitales no alcanza sus objetivos. CIRA conecta la decisión con la operación: estrategia, la solución correcta y adopción real, con IA en cada fase.</p>
+      <div style="margin-top:44px;display:flex;flex-wrap:wrap;gap:28px;align-items:center">
+        <a href="#contacto" style="display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 30px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7);border-radius:999px;font-family:Poppins,sans-serif;font-size:15px;font-weight:600">Agendar conversación estratégica<span style="width:8px;height:8px;border-radius:50%;background:#3fb6e8"></span></a>
+        <a href="Metodo CIRA.dc.html" style="display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 24px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-family:Poppins,sans-serif;font-size:15px;font-weight:600;color:#fff" style-hover="border-color:rgba(63,182,232,.5);color:#3fb6e8">Conocer el método CIRA →</a>
+      </div>
+    </div>
+    <dl style="margin:0;display:grid;border-top:1px solid rgba(255,255,255,.18)">
+      <sc-for list="{{ metrics }}" as="m" hint-placeholder-count="3">
+        <div style="display:grid;grid-template-columns:120px 1fr;align-items:baseline;gap:24px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.18)">
+          <dd style="margin:0;font-family:Poppins,sans-serif;font-size:44px;font-weight:300;letter-spacing:-.02em;color:#fff">{{ m.value }}</dd>
+          <dt style="font-family:Poppins,sans-serif;font-size:13px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)">{{ m.label }}</dt>
+        </div>
+      </sc-for>
+    </dl>
+  </div>
+</section>
+
+<!-- LOGOS -->
+<section style="background:#0a2c63;padding:44px clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
+    <div style="display:flex;gap:64px;align-items:center;width:max-content;animation:cyrrusMarquee 60s linear infinite">
+      <sc-for list="{{ logosLoop }}" as="l" hint-placeholder-count="21">
+        <img src="{{ l.src }}" alt="{{ l.name }}" style="height:36px;width:130px;flex:none;object-fit:contain;opacity:.8">
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ ES CYRRUS + SERVICIOS -->
+<section id="servicios" style="padding:clamp(96px,12vw,152px) clamp(24px,5vw,64px) 120px">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:48px 80px;align-items:start">
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1b6fc2">Qué es Cyrrus</div>
+        <h2 style="margin-top:24px;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(32px,3.6vw,48px);line-height:1.1;letter-spacing:-.025em;color:#0a2c63;text-wrap:balance">Consultoría estratégica, de la decisión a la operación</h2>
+      </div>
+      <p style="font-size:19px;line-height:1.75;color:#414a58;text-wrap:pretty;padding-top:44px">Cyrrus Consulting Services es una firma de consultoría estratégica y transformación digital con oficinas en Barranquilla y Bogotá, que trabaja con empresas de Latinoamérica y Estados Unidos. Con la metodología CIRA, un mismo equipo acompaña a la organización desde la estrategia hasta la selección de tecnología sin sesgo de proveedor, la gerencia del proyecto y la adopción, con inteligencia artificial en cada fase.</p>
+    </div>
+
+    <div style="margin-top:80px;display:flex;flex-wrap:wrap;border-radius:24px;overflow:hidden;background:radial-gradient(125% 125% at 50% 10%,#1c5c92 0%,#0a2c63 35%,#020818 75%,#000 100%);box-shadow:0 30px 60px -20px rgba(10,44,99,.35)">
+      <div role="tablist" style="box-sizing:border-box;flex:1 1 280px;display:flex;flex-direction:column;padding:clamp(28px,3.5vw,48px) clamp(24px,3vw,40px);gap:2px">
+        <p style="font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3fb6e8;margin-bottom:20px">Nuestros servicios</p>
+        <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+          <button role="tab" onClick="{{ s.select }}" style="all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:36px 1fr 16px;align-items:center;gap:12px;padding:16px 18px;border-radius:12px;background:{{ s.bg }};border-left:3px solid {{ s.underline }};font-family:Poppins,sans-serif;color:{{ s.color }}" style-hover="background:rgba(255,255,255,.06)">
+            <span style="font-size:13px;font-weight:600;color:#3fb6e8">{{ s.n }}</span>
+            <span style="font-size:16px;font-weight:600">{{ s.tabLabel }}</span>
+            <span style="font-size:14px;opacity:{{ s.arrow }}">→</span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="box-sizing:border-box;flex:2 1 420px;min-width:0;display:flex;flex-direction:column;padding:clamp(20px,2.4vw,32px);gap:clamp(24px,3vw,36px)">
+        <img src="{{ cur.image }}" alt="" style="display:block;width:100%;aspect-ratio:16/7;object-fit:cover;border-radius:16px">
+        <div style="padding:0 clamp(4px,1.5vw,24px) clamp(8px,1.5vw,20px);max-width:640px">
+          <p style="font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3fb6e8">{{ cur.eyebrow }}</p>
+          <h3 style="margin-top:14px;font-family:Poppins,sans-serif;font-size:clamp(26px,2.8vw,38px);font-weight:700;line-height:1.15;letter-spacing:-.02em;color:#fff;text-wrap:balance">{{ cur.title }}</h3>
+          <p style="margin-top:18px;font-size:18px;line-height:1.7;color:rgba(255,255,255,.82);text-wrap:pretty">{{ cur.description }}</p>
+          <a href="{{ cur.href }}" style="margin-top:32px;display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 26px;border:2px solid rgba(255,255,255,.7);border-radius:999px;font-family:Poppins,sans-serif;font-size:15px;font-weight:500;color:#fff" style-hover="border-color:#fff">{{ cur.buttonText }}<span style="width:9px;height:9px;border-radius:50%;background:#3fb6e8"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ CYRRUS -->
+<section style="background:#f2f7fc;padding:clamp(96px,12vw,144px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:14px;font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1b6fc2">¿Por qué Cyrrus?</div>
+    <h2 style="margin-top:24px;max-width:960px;font-family:Poppins,sans-serif;font-weight:500;font-size:clamp(30px,3.6vw,50px);line-height:1.15;letter-spacing:-.025em;color:#0a2c63;text-wrap:balance">La diferencia no está en la herramienta. <span style="color:#1b6fc2">Está en quién responde por el resultado.</span></h2>
+    <div style="margin-top:80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:56px">
+      <sc-for list="{{ reasons }}" as="r" hint-placeholder-count="3">
+        <div>
+          <span style="width:48px;height:48px;border-radius:50%;background:#0a2c63;display:flex;align-items:center;justify-content:center;font-family:Poppins,sans-serif;font-size:14px;font-weight:600;color:#3fb6e8">{{ r.n }}</span>
+          <h3 style="margin-top:18px;font-family:Poppins,sans-serif;font-size:22px;font-weight:600;line-height:1.3;color:#0a2c63;text-wrap:balance">{{ r.title }}</h3>
+          <p style="margin-top:16px;font-size:17px;line-height:1.7;color:#414a58;text-wrap:pretty">{{ r.description }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- MODELO: TRES NIVELES -->
+<section style="background:radial-gradient(125% 125% at 50% 10%,#1c5c92 0%,#0a2c63 35%,#020818 75%,#000 100%);color:#fff;padding:clamp(96px,12vw,144px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px 80px;align-items:end">
+      <h2 style="font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(30px,3.4vw,46px);line-height:1.12;letter-spacing:-.025em;text-wrap:balance">Un solo modelo, tres niveles que se sostienen entre sí</h2>
+      <p style="font-size:19px;line-height:1.7;color:rgba(255,255,255,.75);text-wrap:pretty">No es una lista de servicios sueltos ni proveedores coordinándose entre sí. Estrategia, arquitectura de IA y gestión del cambio operan bajo un mismo método, con un solo responsable de punta a punta.</p>
+    </div>
+    <div style="margin-top:80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));border-top:1px solid rgba(255,255,255,.2)">
+      <sc-for list="{{ levels }}" as="lv" hint-placeholder-count="3">
+        <a href="{{ lv.href }}" style="display:flex;flex-direction:column;padding:40px 36px 40px 0;margin-right:36px;border-bottom:1px solid rgba(255,255,255,.2);color:#fff;min-height:280px">
+          <span style="font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3fb6e8">{{ lv.level }}</span>
+          <h3 style="margin-top:16px;font-family:Poppins,sans-serif;font-size:26px;font-weight:600;letter-spacing:-.015em">{{ lv.title }}</h3>
+          <p style="margin-top:14px;font-size:17px;line-height:1.7;color:rgba(255,255,255,.72);text-wrap:pretty">{{ lv.description }}</p>
+          <span style="margin-top:auto;padding-top:28px;font-family:Poppins,sans-serif;font-size:14px;font-weight:500;color:#fff">Conocer más ↗</span>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- CIRA JOURNEY -->
+<section style="padding:clamp(96px,12vw,152px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:32px">
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1b6fc2">Qué es el método CIRA: cuatro fases</div>
+        <h2 style="margin-top:24px;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(34px,4vw,56px);line-height:1.05;letter-spacing:-.03em;color:#0a2c63">De la decisión a la adopción</h2>
+      </div>
+      <a href="Metodo CIRA.dc.html" style="display:inline-flex;align-items:center;gap:12px;height:52px;padding:0 26px;border:2px solid rgba(10,44,99,.7);border-radius:999px;font-family:Poppins,sans-serif;font-size:14px;font-weight:500;color:#0a2c63">Ver la metodología completa<span style="width:7px;height:7px;border-radius:50%;background:#0a2c63"></span></a>
+    </div>
+    <div style="margin-top:72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0;border-left:1px solid #e6e8ec">
+      <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+        <div style="padding:8px 32px 8px 32px;border-right:1px solid #e6e8ec">
+          <span style="display:block;font-family:Poppins,sans-serif;font-size:120px;font-weight:700;line-height:1;letter-spacing:-.04em;color:#e8f2fb;-webkit-text-stroke:2px #0a2c63">{{ st.letter }}</span>
+          <p style="margin-top:20px;font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#0e5f87">{{ st.stepOf }} · {{ st.word }}</p>
+          <h3 style="margin-top:10px;font-family:Poppins,sans-serif;font-size:21px;font-weight:600;color:#0a2c63">{{ st.title }}</h3>
+          <p style="margin-top:12px;font-size:17px;line-height:1.65;color:#414a58;text-wrap:pretty">{{ st.description }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section style="background:#f2f7fc;padding:clamp(96px,12vw,144px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:14px;font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1b6fc2">Del otro lado de la brecha</div>
+    <h2 style="margin-top:24px;max-width:820px;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(30px,3.4vw,46px);line-height:1.12;letter-spacing:-.025em;color:#0a2c63;text-wrap:balance">Así se ve cuando la decisión sí llega a la ejecución.</h2>
+    <div style="margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:32px">
+      <sc-for list="{{ testimonials }}" as="t" hint-placeholder-count="4">
+        <article style="display:flex;flex-direction:column;background:#fff;border:1px solid #e6e8ec;border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(10,44,99,.04)">
+          <a href="{{ t.video }}" target="_blank" style="position:relative;display:block;aspect-ratio:16/9;background:#0a2c63;overflow:hidden">
+            <img src="{{ t.thumb }}" alt="" style="width:100%;height:100%;object-fit:cover;opacity:.85">
+            <span style="position:absolute;left:20px;bottom:20px;width:48px;height:48px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;color:#0a2c63">▶</span>
+          </a>
+          <div style="padding:28px;display:flex;flex-direction:column;flex:1">
+            <p style="font-family:Poppins,sans-serif;font-size:17px;font-weight:400;line-height:1.55;color:#0a2c63;text-wrap:pretty">{{ t.quote }}</p>
+            <p style="margin-top:24px;padding-top:20px;border-top:1px solid #e6e8ec;font-family:Poppins,sans-serif;font-size:13px;font-weight:600;color:#0a2c63">{{ t.who }}</p>
+            <p style="margin-top:6px;font-size:15px;color:#414a58">{{ t.metric }}</p>
+            <a href="Experiencia.dc.html" style="margin-top:auto;padding-top:20px;font-family:Poppins,sans-serif;font-size:13px;font-weight:500;color:#1b6fc2">Leer el caso →</a>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- CEO -->
+<section style="background:radial-gradient(125% 125% at 50% 10%,#1c5c92 0%,#0a2c63 35%,#020818 75%,#000 100%);color:#fff;padding:clamp(96px,12vw,152px) clamp(24px,5vw,64px)">
+  <div style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),auto));gap:56px;align-items:start">
+    <img src="public/assets/decoracion/JacksonCEO1.webp" alt="Jackson Bohorquez, CEO de Cyrrus Consulting Services" style="width:220px;aspect-ratio:4/5;object-fit:cover;border-radius:16px">
+    <div style="max-width:760px">
+      <blockquote style="margin:0;font-family:Poppins,sans-serif;font-size:clamp(24px,2.6vw,34px);font-weight:300;line-height:1.4;letter-spacing:-.01em;text-wrap:pretty">"En la mayoría de las organizaciones el problema no es la estrategia ni la tecnología. Es que nadie se hace responsable de conectar la decisión con la ejecución. CIRA existe para cerrar exactamente esa brecha."</blockquote>
+      <div style="margin-top:40px;display:flex;align-items:center;gap:16px"><div><p style="font-family:Poppins,sans-serif;font-size:15px;font-weight:600">Jackson Bohorquez</p><p style="margin-top:4px;font-size:15px;color:rgba(255,255,255,.65)">CEO &amp; Fundador, Cyrrus Consulting Services</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESENCIA -->
+<section style="padding:clamp(96px,12vw,144px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:64px 96px">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1b6fc2">Presencia multinacional</div>
+      <h2 style="margin-top:24px;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(30px,3.4vw,46px);line-height:1.12;letter-spacing:-.025em;color:#0a2c63;text-wrap:balance">El mismo método, con criterio local en cada país</h2>
+      <p style="margin-top:24px;font-size:19px;line-height:1.7;color:#414a58;text-wrap:pretty">El método no cambia; el contexto sí. Por eso operamos con equipos que conocen cada mercado y cada industria.</p>
+      <a href="Experiencia.dc.html" style="display:inline-block;margin-top:32px;font-family:Poppins,sans-serif;font-size:14px;font-weight:500;color:#1b6fc2;border-bottom:1px solid #1b6fc2;padding-bottom:4px">Ver el equipo completo, industrias y clientes en la página de Experiencia.</a>
+      <div style="position:relative;margin-top:48px;width:100%;max-width:440px;aspect-ratio:1/1"><canvas ref="{{ globeRef }}" style="width:100%;height:100%;cursor:grab;opacity:0;transition:opacity 1.2s ease;border-radius:50%;touch-action:none"></canvas></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:48px">
+      <div>
+        <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#0a2c63;padding-bottom:16px;border-bottom:2px solid #0a2c63">Países de alcance</p>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px">
+          <sc-for list="{{ countries }}" as="c" hint-placeholder-count="15"><li style="padding:10px 0;border-bottom:1px solid #e6e8ec;font-size:16px;color:#414a58;break-inside:avoid">{{ c }}</li></sc-for>
+        </ul>
+      </div>
+      <div>
+        <p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#0a2c63;padding-bottom:16px;border-bottom:2px solid #0a2c63">Sectores atendidos</p>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px">
+          <sc-for list="{{ industries }}" as="c" hint-placeholder-count="12"><li style="padding:10px 0;border-bottom:1px solid #e6e8ec;font-size:16px;color:#414a58;break-inside:avoid">{{ c }}</li></sc-for>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:#f2f7fc;padding:clamp(96px,12vw,144px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:56px 96px;align-items:start">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1b6fc2">Preguntas frecuentes</div>
+      <h2 style="margin-top:24px;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-.02em;color:#0a2c63;text-wrap:balance">Preguntas frecuentes sobre consultoría estratégica</h2>
+    </div>
+    <div style="border-top:1px solid #0a2c63;grid-column:span 1">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="8">
+        <div style="border-bottom:1px solid #d9dee6">
+          <button onClick="{{ f.toggle }}" style="all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:flex;justify-content:space-between;gap:24px;padding:26px 0;font-family:Poppins,sans-serif;font-size:18px;font-weight:500;color:#0a2c63;line-height:1.4">{{ f.question }}<span style="font-weight:300;font-size:24px;line-height:1;color:#1b6fc2">{{ f.sign }}</span></button>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="padding:0 48px 28px 0;font-size:17px;line-height:1.75;color:#414a58;text-wrap:pretty">{{ f.answer }}</p></sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- PERSPECTIVAS -->
+<section style="padding:clamp(80px,10vw,120px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px 96px;align-items:end">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;font-family:Poppins,sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1b6fc2">Perspectivas</div>
+      <h2 style="margin-top:24px;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-.02em;color:#0a2c63;text-wrap:balance">Las preguntas que el mercado ya se está haciendo</h2>
+    </div>
+    <div>
+      <p style="font-size:18px;line-height:1.7;color:#414a58;text-wrap:pretty">Por qué se detienen las transformaciones, cómo evaluar una consultora y qué exige el gobierno de IA corporativo. Análisis aplicado a decisiones reales.</p>
+      <a href="#" style="display:inline-block;margin-top:24px;font-family:Poppins,sans-serif;font-size:14px;font-weight:500;color:#1b6fc2;border-bottom:1px solid #1b6fc2;padding-bottom:4px">Ver todos los temas →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contacto" style="background:radial-gradient(125% 125% at 50% 10%,#1c5c92 0%,#0a2c63 35%,#020818 75%,#000 100%);color:#fff;padding:clamp(96px,12vw,152px) clamp(24px,5vw,64px)">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px 96px;align-items:end">
+    <h2 style="font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(34px,4.4vw,60px);line-height:1.06;letter-spacing:-.03em;text-wrap:balance">¿Listo para conectar la decisión con la ejecución?</h2>
+    <div>
+      <p style="font-size:19px;line-height:1.7;color:rgba(255,255,255,.78);text-wrap:pretty">Cuéntenos el reto de su organización. Coordinamos una conversación con el equipo indicado y le decimos con franqueza si podemos ayudar.</p>
+      <a href="#" style="margin-top:36px;display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 30px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7);border-radius:999px;font-family:Poppins,sans-serif;font-size:15px;font-weight:600">Agendar conversación estratégica<span style="width:8px;height:8px;border-radius:50%;background:#3fb6e8"></span></a>
+      <p style="margin-top:28px;font-size:16px;color:rgba(255,255,255,.7)">¿Aún no sabe por dónde empezar? <a href="#" style="color:#fff;text-decoration:underline;text-underline-offset:4px;font-weight:700">Solicite una sesión de diagnóstico gratuita</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#061129;color:rgba(255,255,255,.65);padding:72px clamp(24px,5vw,64px) 40px;font-size:14px">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.12)">
+      <div><img src="public/assets/logos-cyrrus/cyrrus-logo-blanco.png" alt="Cyrrus Consulting Services" style="height:40px;width:auto"><p style="margin-top:20px;line-height:1.7">Cyrrus Consulting Services S.A.S. · NIT 901.121.953-1</p></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:6px">Firma</p><a href="Metodo CIRA.dc.html" style="color:inherit">Método CIRA</a><a href="#" style="color:inherit">Cyrrus Intelligence Lab</a><a href="#" style="color:inherit">Leadership Academy</a><a href="Experiencia.dc.html" style="color:inherit">Experiencia</a><a href="#" style="color:inherit">Perspectivas</a><a href="#" style="color:inherit">Contacto</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:6px">Servicios</p><a href="Strategy.dc.html" style="color:inherit">Estrategia</a><a href="#" style="color:inherit">Selección de Software</a><a href="#" style="color:inherit">Gerencia de Proyectos</a><a href="#" style="color:inherit">Gestión del Cambio</a><a href="#" style="color:inherit">Presencia Digital</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px;line-height:1.6"><p style="font-family:Poppins,sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:6px">Oficinas</p><span>Cra. 51B #80-58, Oficina 1505, Barranquilla, Colombia</span><span>Carrera 62 #103-44, Oficina 401S, Bogotá, Colombia</span><span>+57 317 5730635 · contacto@cyrruscs.com</span></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-top:28px;font-size:13px"><span>© 2026 Cyrrus Consulting Services</span><div style="display:flex;gap:24px"><a href="#" style="color:inherit">LinkedIn</a><a href="#" style="color:inherit">Instagram</a><a href="#" style="color:inherit">YouTube</a><a href="#" style="color:inherit">Privacidad</a><a href="#" style="color:inherit">Cookies</a></div></div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  globeRef = React.createRef();
+  componentDidMount() {
+    const canvas = this.globeRef.current; if (!canvas) return;
+    import("https://esm.sh/cobe@0.6.3").then(({ default: createGlobe }) => {
+      if (this._unmounted) return;
+      const dpr = Math.min(window.devicePixelRatio||1,2); const size = () => (canvas.offsetWidth || 360) * dpr; let phi = 0, drag = null, off = 0, d = 0;
+      const pts = [[19.43,-99.13],[14.63,-90.51],[8.98,-79.52],[18.49,-69.93],[18.47,-66.11],[10.48,-66.9],[10.96,-74.8],[4.71,-74.07],[-0.18,-78.47],[-12.05,-77.04],[-23.55,-46.63],[-33.45,-70.67],[-34.6,-58.38],[-34.9,-56.16],[25.76,-80.19],[40.71,-74.01]];
+      this._globe = createGlobe(canvas, { devicePixelRatio: dpr, width: size(), height: size(), phi: 5.9, theta: 0.15, dark: 1, diffuse: 1.5, mapSamples: 16000, mapBrightness: 10, baseColor: [0.1,0.35,0.65], markerColor: [0.2,0.8,0.9], glowColor: [0.1,0.3,0.55], markers: pts.map(l=>({location:l,size:0.04})), opacity: 0.85,
+        onRender: (s) => { if (!drag) phi += 0.003; s.phi = 5.9 + phi + off + d; s.width = size(); s.height = size(); } });
+      canvas.onpointerdown = e => { drag = e.clientX; canvas.style.cursor = "grabbing"; };
+      this._move = e => { if (drag !== null) d = (e.clientX - drag)/300; };
+      this._up = () => { if (drag !== null) { off += d; d = 0; } drag = null; canvas.style.cursor = "grab"; };
+      window.addEventListener("pointermove", this._move); window.addEventListener("pointerup", this._up);
+      setTimeout(() => canvas.style.opacity = "1", 50);
+    });
+  }
+  componentWillUnmount() { this._unmounted = true; this._globe && this._globe.destroy(); window.removeEventListener("pointermove", this._move); window.removeEventListener("pointerup", this._up); }
+  state = { open: 0, tab: 0 };
+  renderVals() {
+    const logoNames = ["3 Castillos","Ansell","Antonio Jose Camacho","BEC","Brenntag","Compas","El Heraldo","Enlace","Fortia","Iteria","Marympunt","Metalcorp","Millicom","Morelco","Nose","Oben","Parex","Pepsico","SGS","Unibol","Verano"];
+    const services = [
+      ["Estrategia Empresarial","Cuando el plan no baja a la operación","Consultoría Estratégica Empresarial","Si el plan se quedó en la presentación, el problema no fue la estrategia — fue no tener quien la ejecutara. Diagnosticamos, priorizamos y dejamos una hoja de ruta con un responsable de principio a fin.","Strategy.dc.html","Conocer Estrategia"],
+      ["Selección de Tecnología","Cuando la tecnología se compra por moda, no por ajuste","Consultoría Tecnológica: Selección de Soluciones TI","ERP, CRM, HCM o EAM: evaluamos desde los requerimientos reales del negocio, no desde el catálogo del proveedor — criterios objetivos, comparables y 100% independientes.","#","Conocer Selección de Soluciones"],
+      ["Gerencia de Proyectos","Cuando el proyecto se atrasa y nadie asume el riesgo","Consultoría PMO: Gerencia de Proyectos Externa","Actuamos como PMO externo desde el kickoff hasta el go-live, con responsabilidad real sobre el resultado — no solo reportes de estado.","#","Conocer Gerencia de Proyectos"],
+      ["Gestión del Cambio","Cuando el equipo no adopta lo implementado","Gestión del Cambio y Adopción","Un sistema bien implementado que nadie usa no es un proyecto exitoso. Trabajamos la adopción desde el día uno del proyecto, no como una actividad de cierre.","#","Conocer Gestión del Cambio"],
+      ["IA Empresarial","Cuando la IA se queda en pilotos sueltos","Consultoría de IA Empresarial","Antes de sumar otra herramienta de IA, sepa quién decide, quién audita y qué datos puede tocar. Gobernamos esa capa sobre sus procesos reales — no le vendemos otro catálogo de chatbots.","#","Conocer Cyrrus Intelligence Lab"],
+      ["Leadership Academy","Cuando el proyecto termina y el equipo vuelve a lo de antes","Capacitación Ejecutiva: Leadership Academy","El consultor se va y en tres meses el equipo volvió a como trabajaba antes. Formamos a sus directivos para sostener el cambio, la IA y la seguridad sin depender de que sigamos ahí.","#","Conocer Leadership Academy"]
+    ].map((s,i)=>{const on=this.state.tab===i;return {n:String(i+1).padStart(2,"0"),tabLabel:s[0],eyebrow:s[1],title:s[2],description:s[3],href:s[4],buttonText:s[5],image:"public/assets/decoracion/"+["IMG_20200313_092604173.jpg","evento-panel-universidad-bolivar.jpeg","IMG_20200313_092701647.jpg","1785866331023.jpg","Cyrrus panel.jpg","IMG_20230227_164810.jpg"][i],underline:on?"#3fb6e8":"transparent",color:on?"#fff":"rgba(255,255,255,.62)",bg:on?"rgba(255,255,255,.08)":"transparent",arrow:on?1:0,select:()=>this.setState({tab:i})};});
+    const faqsRaw = [
+      ["¿Qué hace una consultora estratégica como Cyrrus?","Acompaña a la empresa desde que define qué quiere lograr hasta que su equipo opera el cambio. Cyrrus diagnostica el negocio, construye la hoja de ruta, selecciona la tecnología adecuada, gerencia la implementación y trabaja la adopción, bajo un mismo método —CIRA— y con un solo responsable del resultado."],
+      ["¿Qué es el método CIRA?","Es el marco de cuatro fases de Cyrrus: Construir (estrategia y hoja de ruta), Identificar (selección de la solución correcta), Realizar (gerencia del proyecto hasta el go-live) y Adoptar (gestión del cambio). La inteligencia artificial acelera cada fase en lugar de venderse como un servicio aparte."],
+      ["¿Cyrrus vende o representa algún software?","No. Cyrrus no recibe comisión de ningún proveedor. Los criterios de selección se definen con el negocio antes de mirar el catálogo, y cada proveedor se evalúa contra esos criterios. Así la recomendación responde a lo que su empresa necesita, no a un incentivo comercial."],
+      ["¿En qué se diferencia Cyrrus de un integrador o partner de ERP?","Un integrador implementa una marca específica y tiene un incentivo en que usted la elija. Cyrrus le ayuda a decidir cuál conviene, gobierna la implementación como PMO externo y trabaja la adopción, cuidando los intereses de su empresa frente al proveedor durante todo el proyecto."],
+      ["¿Cómo usa Cyrrus la inteligencia artificial?","De dos formas. Dentro del método, la IA acelera el diagnóstico, la evaluación de proveedores y el seguimiento del proyecto. Como servicio, Cyrrus Intelligence Lab diseña el gobierno de IA, la arquitectura y la automatización con agentes, para que la IA se adopte con políticas, roles y controles claros."],
+      ["¿En qué países trabaja Cyrrus?","Cyrrus tiene oficinas en Barranquilla y Bogotá y ha trabajado con organizaciones en Latinoamérica y Estados Unidos, de México y Centroamérica a Chile y Argentina. El método es el mismo en cada país; lo que cambia es el contexto de la industria, la regulación y la cultura de cada organización."],
+      ["¿Cuánto dura un proyecto de consultoría estratégica?","Depende del alcance: un diagnóstico con hoja de ruta, una selección de software y el acompañamiento de una implementación completa tienen duraciones muy distintas. En la primera conversación, Cyrrus entiende el reto y propone un alcance y un calendario concretos para su caso antes de comprometer nada."],
+      ["¿Cómo empiezo a trabajar con Cyrrus?","Agende una conversación estratégica desde este sitio y cuéntenos el reto de su organización. Cyrrus coordina una reunión con el equipo indicado y le dice con franqueza si puede ayudar. Si el problema no es de su especialidad, se lo dirá desde el principio."]
+    ];
+    const testimonials = [
+      ["X-XO1T35RK4","CIO · 3 Castillos","\"Gracias al acompañamiento de Cyrrus pudimos soñarlo y hacerlo, y estamos listos para el siguiente sueño.\"","92 requerimientos · ERP y CRM en vivo en 8 meses"],
+      ["7czOH9eH6lw","Sebastián Hoyos · CFO · 3 Castillos","\"Decidimos tomar a Cyrrus porque nos ofrecía ir a las mejores prácticas mundiales.\" Hoy cuentan con una plataforma que les permite ver la información en vivo y conocer mejor lo que está pasando con sus clientes.","De hojas de Excel a datos de clientes en vivo"],
+      ["C8aDacFpwBY","Vanessa Ramírez · Recursos Humanos · 3 Castillos","\"No solamente es un cambio de un ERP, sino un proceso de gestión de cambio a nivel organizacional.\"","Gestión del cambio desde la planeación"],
+      ["2oWuE5RFskI","Fernando Gutiérrez · Proyecto Home Worker · Morelco","\"Acudimos a Cyrrus por un tema que para nosotros era estratégico y vital: mantener la calidad de vida de nuestra gente en la pandemia.\"","−36% riesgos ergonómicos altos en un mes"]
+    ].map(t=>({video:"https://www.youtube.com/watch?v="+t[0],thumb:"https://i.ytimg.com/vi/"+t[0]+"/hqdefault.jpg",who:t[1],quote:t[2],metric:t[3]}));
+    return {
+      globeRef: this.globeRef,
+      metrics:[{value:"15+",label:"países"},{value:"4",label:"metodologías propias, una por fase"},{value:"100%",label:"agnósticos en tecnología"}],
+      logos: logoNames.map(n=>({name:n,src:"public/assets/logos-clientes/"+n+".webp"})),
+      logosLoop: [...logoNames,...logoNames].map(n=>({name:n,src:"public/assets/logos-clientes/"+n+".webp"})),
+      services, cur: services[this.state.tab],
+      reasons:[
+        {n:"01",title:"Un solo responsable, de punta a punta",description:"Su transformación no se reparte entre un proveedor por fase. Estrategia, selección, ejecución y adopción van en un mismo ciclo, y Cyrrus responde por el resultado completo."},
+        {n:"02",title:"IA dentro del método, no como servicio aparte",description:"Gobierno, arquitectura y agentes operan dentro de las cuatro fases: aceleran el diagnóstico, la selección, la ejecución y la adopción. Así se acorta el tiempo entre decidir y ver resultados."},
+        {n:"03",title:"Capacidad que se queda en su equipo",description:"Con Leadership Academy, sostener el cambio deja de depender de Cyrrus. Su gente aprende a operar el mismo modelo y la mejora continúa desde adentro."}
+      ],
+      levels:[
+        {level:"Nivel 1",title:"Método CIRA",description:"Qué se logra: el negocio. Construir · Identificar · Realizar · Adoptar.",href:"Metodo CIRA.dc.html"},
+        {level:"Nivel 2",title:"Cyrrus Intelligence Lab",description:"Cómo se acelera: gobierno y arquitectura de IA, transversal a las 4 fases.",href:"#"},
+        {level:"Nivel 3",title:"Leadership Academy",description:"Quién lo sostiene: su equipo aprende a operar el mismo modelo.",href:"#"}
+      ],
+      steps:[
+        {letter:"C",word:"Construir",title:"La estrategia",description:"Diagnosticamos el negocio y convertimos el plan en una hoja de ruta con dueños y fechas."},
+        {letter:"I",word:"Identificar",title:"La solución correcta",description:"Evaluamos proveedores sin sesgo comercial: elegimos por criterio, no por catálogo."},
+        {letter:"R",word:"Realizar",title:"El proyecto",description:"Gobernamos la ejecución y aseguramos la calidad hasta el go-live."},
+        {letter:"A",word:"Adoptar",title:"El cambio",description:"Trabajamos la adopción desde el día uno, para que el resultado se sostenga."}
+      ].map((s,i)=>({...s,stepOf:"Paso "+(i+1)+" de 4"})),
+      testimonials,
+      countries:["México","Guatemala","Centroamérica","Panamá","República Dominicana","Puerto Rico","Venezuela","Colombia","Ecuador","Perú","Brasil","Chile","Argentina","Uruguay","Estados Unidos"],
+      industries:["Salud","Educación","Retail","Manufactura","Puertos","Energía","Banca","Servicios financieros","Oil & Gas","Ambiental","Transporte","Construcción"],
+      faqs: faqsRaw.map((f,i)=>({question:f[0],answer:f[1],open:this.state.open===i,sign:this.state.open===i?"−":"+",toggle:()=>this.setState(s=>({open:s.open===i?-1:i}))}))
+    };
+  }
+}
+</script>
+</body>
+</html>

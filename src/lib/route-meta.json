@@ -1,6 +1,6 @@
 {
   "/": {
-    "title": "Consultoría Estratégica y Tecnológica con IA | Cyrrus",
+    "title": "Consultoría Estratégica y Transformación Digital | Cyrrus",
     "description": "Consultoría estratégica que llega hasta la ejecución: estrategia, tecnología sin sesgo, PMO y adopción real, con IA. Agende una conversación."
   },
   "/metodo-cira": {
@@ -11,6 +11,14 @@
     "title": "Consultoría Estratégica y Planeación Estratégica | Cyrrus",
     "description": "Consultoría estratégica y planeación estratégica para empresas: diagnóstico, hoja de ruta y ejecución acompañada. Estrategia corporativa, de negocio y de TI, con IA."
   },
+  "/metodo-cira/estrategia/estrategia-de-ti": {
+    "title": "Consultoría en Estrategia de TI para Empresas | Cyrrus",
+    "description": "Consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas (ERP, CRM, datos, IA) priorizado por impacto, con el caso de negocio de cada una."
+  },
+  "/metodo-cira/estrategia/continuidad-del-negocio": {
+    "title": "Consultoría en Continuidad del Negocio: BIA y BCP | Cyrrus",
+    "description": "Consultoría en continuidad del negocio: identificamos los procesos críticos, analizamos el impacto de una interrupción (BIA) y definimos el plan de continuidad y de recuperación (DRP), probado."
+  },
   "/metodo-cira/seleccion-de-soluciones": {
     "title": "Consultoría Tecnológica: Selección de Soluciones TI | Cyrrus",
     "description": "Consultoría tecnológica independiente: elegimos software, automatización e infraestructura con criterios definidos antes de mirar proveedores, sin sesgo comercial."
@@ -20,31 +28,31 @@
     "description": "Consultoría de selección de software ERP y CRM, además de HCM y EAM: evaluamos y comparamos software empresarial de forma independiente, 100% agnósticos de proveedor."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp": {
-    "title": "Selección de ERP Independiente para Empresas | Cyrrus",
+    "title": "Consultoría ERP: Selección Independiente de ERP | Cyrrus",
     "description": "Consultoría de selección de ERP: definimos requisitos, evaluamos proveedores y elegimos con usted el ERP que se ajusta a sus procesos. 100% agnósticos."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm": {
-    "title": "Qué es un CRM y Cómo Elegir el Correcto | Cyrrus",
+    "title": "Consultoría CRM: Selección Independiente de CRM | Cyrrus",
     "description": "Qué es un CRM y cómo elegir el correcto: consultoría de selección de CRM. Diseñamos la evaluación alrededor de su proceso comercial real, para elegir el CRM que ventas sí va a adoptar."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm": {
-    "title": "Software HCM: Cómo Elegir el Sistema de Gestión Humana | Cyrrus",
-    "description": "Software HCM y software de nómina: consultoría de selección. Alineamos la tecnología de gestión humana con su nómina, talento y experiencia del empleado — 100% agnósticos."
+    "title": "Software de Recursos Humanos (HCM): Consultoría | Cyrrus",
+    "description": "Consultoría HCM independiente: le ayudamos a elegir el software de recursos humanos y nómina que se ajusta a su gestión de personas, sin comisiones de proveedores."
   },
   "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam": {
-    "title": "Gestión de Activos y Software EAM: Selección | Cyrrus",
-    "description": "Gestión de activos y software EAM: consultoría de selección. Elegimos la plataforma de gestión de activos según el ciclo de vida de su operación, sin sesgo de proveedor."
+    "title": "Software de Mantenimiento (EAM/CMMS): Consultoría | Cyrrus",
+    "description": "Consultoría EAM independiente: elegimos el software de mantenimiento y gestión de activos según el ciclo de vida de su operación, sin comisiones de proveedores."
   },
   "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas": {
-    "title": "Automatización de Procesos, RPA e IA: Selección | Cyrrus",
-    "description": "Seleccionamos las soluciones de automatización de procesos, RPA, inteligencia artificial y analítica avanzada que se ajustan a su madurez de datos y procesos reales."
+    "title": "Consultoría RPA: Software de Automatización e IA | Cyrrus",
+    "description": "Consultoría RPA e IA independiente: decidimos si su proceso necesita RPA, IA o un agente de IA y elegimos la plataforma sin comisiones de fabricantes."
   },
   "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica": {
-    "title": "Migración a la Nube y Ciberseguridad para Empresas | Cyrrus",
-    "description": "Evaluamos y seleccionamos las soluciones de ciberseguridad, redes, nube y continuidad de negocio que su empresa necesita, sin sesgo de proveedor."
+    "title": "Consultoría en Ciberseguridad y Nube para Empresas | Cyrrus",
+    "description": "Consultoría de infraestructura TI independiente: elegimos ciberseguridad, nube, conectividad y continuidad de negocio, sin comisiones de fabricantes."
   },
   "/metodo-cira/gestion-de-proyectos": {
-    "title": "Consultoría PMO: Oficina de Gerencia de Proyectos | Cyrrus",
+    "title": "Consultoría PMO y Gestión de Proyectos | Cyrrus",
     "description": "Consultoría PMO y gerencia de proyectos: PMO externo para planeación, control y ejecución a tiempo, en costo y calidad. Proyectos de ERP, CRM, nube e IA."
   },
   "/metodo-cira/gestion-del-cambio": {
@@ -52,20 +60,28 @@
     "description": "Consultoría en gestión del cambio organizacional: diagnóstico de preparación, stakeholders, comunicación, capacitación y medición de la adopción con IA."
   },
   "/intelligence-lab": {
-    "title": "Consultoría de IA para Empresas: Estrategia y Agentes | Cyrrus",
+    "title": "Consultoría de Inteligencia Artificial Empresarial | Cyrrus",
     "description": "Consultoría de IA para empresas: gobierno de IA, arquitectura y agentes de IA para automatizar procesos — infraestructura real, no un catálogo de chatbots."
   },
   "/intelligence-lab/automatizaciones-desarrollo": {
-    "title": "Agentes de IA para Empresas: Desarrollo y Automatización | Cyrrus",
+    "title": "Consultoría en Automatización de Procesos con IA | Cyrrus",
     "description": "Agentes de IA para empresas y automatización de procesos, integrados a la arquitectura empresarial y medidos contra el proceso real que reemplazan, no contra una demo."
   },
   "/intelligence-lab/arquitectura-de-ia": {
-    "title": "Arquitectura Empresarial y de IA: Datos y Sistemas | Cyrrus",
+    "title": "Arquitectura de IA e Implementación para Empresas | Cyrrus",
     "description": "Arquitectura empresarial y de IA: diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable."
   },
   "/intelligence-lab/gobierno-de-ia": {
-    "title": "Gobierno de IA en Empresas: Políticas y Controles | Cyrrus",
-    "description": "Gobierno y gobernanza de IA: definimos las políticas, roles y controles sobre el uso de inteligencia artificial en su empresa: quién decide, quién audita y qué datos se tocan."
+    "title": "Consultoría en Gobierno de Inteligencia Artificial | Cyrrus",
+    "description": "Consultoría de gobernanza de IA para empresas: políticas, roles y controles sobre el uso de la IA, y qué referencia seguir (NIST AI RMF, OCDE o ISO/IEC 42001)."
+  },
+  "/intelligence-lab/gobierno-de-datos": {
+    "title": "Consultoría en Gobierno de Datos para Empresas | Cyrrus",
+    "description": "Consultoría en gobierno de datos: quién es dueño de cada dato, qué reglas de calidad se aplican y qué información puede tocar un modelo de IA. Base del gobierno de IA."
+  },
+  "/intelligence-lab/estrategia-de-ia": {
+    "title": "Consultoría en Estrategia de IA para Empresas | Cyrrus",
+    "description": "Consultoría en estrategia de IA: casos de uso priorizados por impacto, hoja de ruta, gobierno y arquitectura, medidos contra el proceso real que cambian, no contra una demo."
   },
   "/presencia-digital": {
     "title": "Desarrollo Web y SEO para Empresas | Cyrrus",

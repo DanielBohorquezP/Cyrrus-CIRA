@@ -1,14 +1,33 @@
 {
   "hub": {
     "meta": {
-      "title": "Consultoría de IA para Empresas: Estrategia y Agentes | Cyrrus",
+      "title": "Consultoría de Inteligencia Artificial Empresarial | Cyrrus",
       "description": "Consultoría de IA para empresas: gobierno de IA, arquitectura y agentes de IA para automatizar procesos — infraestructura real, no un catálogo de chatbots."
     },
     "serviceDescription": "Gobierno de IA corporativo y arquitectura de IA empresarial, transversal a las 4 fases del método CIRA.",
     "hero": {
       "eyebrow": "Cyrrus Intelligence Lab",
-      "title": "Consultoría de IA para empresas: gobierno, arquitectura y agentes",
+      "title": "Consultoría de inteligencia artificial para empresas: gobierno, arquitectura y agentes",
       "description": "Es posible que su equipo ya use IA sin que nadie audite qué datos toca ni quién responde si falla. Antes de la siguiente herramienta, necesita gobierno — no otro piloto suelto. Cyrrus Intelligence Lab es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que corre de forma transversal por debajo de las 4 fases del método."
+    },
+    "respuesta": {
+      "eyebrow": "Consultoría de IA",
+      "title": "¿Qué hace una consultoría de inteligencia artificial para empresas?",
+      "description": "Ayuda a la organización a usar la IA con reglas claras antes de sumar herramientas. En Cyrrus no vendemos herramientas ni chatbots: empezamos por la IA que ya se usa en la empresa y por el marco de gobierno que la hace segura, auditable y escalable; después diseñamos la arquitectura y los agentes que la llevan a procesos reales.",
+      "items": [
+        {
+          "title": "Cuándo la necesita",
+          "description": "Cuando su equipo ya usa IA sin que nadie audite qué datos toca ni quién responde si falla, o cuando varias áreas compraron herramientas de IA que no se hablan entre sí."
+        },
+        {
+          "title": "Por dónde empezar",
+          "description": "Por gobierno: auditamos lo que ya existe en la organización y lo integramos a un mismo marco, en vez de pedirle a cada área que empiece desde cero."
+        },
+        {
+          "title": "Qué no es",
+          "description": "No es un catálogo de chatbots ni de herramientas, ni otro piloto suelto: es la capa de gobierno y arquitectura que permite llevar la IA a los procesos del negocio."
+        }
+      ]
     },
     "pillars": {
       "eyebrow": "Los tres pilares",
@@ -59,10 +78,35 @@
         }
       ]
     },
+    "guides": {
+      "eyebrow": "Guías",
+      "title": "Antes de decidir, lea esto",
+      "items": [
+        {
+          "slug": "gobierno-de-ia-corporativo-en-la-empresa",
+          "title": "Qué es el Gobierno de IA corporativo",
+          "description": "Por qué una organización debería preguntarse si está preparada para gobernar la IA antes de elegir cuál incorporar."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "Gobernanza de IA: NIST, OCDE e ISO/IEC 42001",
+          "description": "Qué publica cada referencia, en qué se diferencian y qué debe decidir la gerencia antes de elegir una."
+        },
+        {
+          "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+          "title": "RPA o inteligencia artificial",
+          "description": "Qué hace cada una, dónde tiene límites y qué preguntarse antes de invertir."
+        }
+      ]
+    },
     "faq": {
       "eyebrow": "Cyrrus Intelligence Lab",
       "title": "Preguntas frecuentes",
       "items": [
+        {
+          "question": "¿Qué incluye la consultoría de inteligencia artificial de Cyrrus?",
+          "answer": "Tres frentes conectados: gobierno de IA corporativo (quién decide, quién audita y qué datos pueden tocarse), arquitectura de IA empresarial (cómo se conectan modelos, datos y sistemas existentes de forma segura y escalable) y automatización de procesos con agentes de IA, todo bajo el mismo marco de gobierno."
+        },
         {
           "question": "¿Cyrrus Intelligence Lab vende herramientas de IA?",
           "answer": "No. No es un catálogo de chatbots ni herramientas — es la capa de gobierno de IA corporativo y arquitectura de IA empresarial que hace posible implementar IA en procesos de negocio de forma segura y auditable."
@@ -84,7 +128,7 @@
   },
   "automatizaciones": {
     "meta": {
-      "title": "Agentes de IA para Empresas: Desarrollo y Automatización | Cyrrus",
+      "title": "Consultoría en Automatización de Procesos con IA | Cyrrus",
       "description": "Agentes de IA para empresas y automatización de procesos, integrados a la arquitectura empresarial y medidos contra el proceso real que reemplazan, no contra una demo."
     },
     "serviceDescription": "Automatización de procesos con inteligencia artificial",
@@ -130,6 +174,10 @@
           "answer": "Un chatbot responde preguntas dentro de una conversación. Un agente de IA, además, ejecuta acciones sobre los procesos y sistemas de la empresa. Por eso necesita permisos, gobierno y medición, no solo un buen modelo."
         },
         {
+          "question": "¿Cuándo conviene contratar una consultoría de automatización con IA?",
+          "answer": "Cuando hay un proceso concreto, repetitivo y con un resultado medible que hoy consume tiempo del equipo, y alguien dentro de la organización puede responder por él. Si el proceso es estable y de reglas fijas, un RPA o una automatización tradicional puede ser más barato y predecible; si no está definido, primero hay que ordenarlo."
+        },
+        {
           "question": "¿Son una fábrica de desarrollo de software?",
           "answer": "No. Somos consultores de transformación digital, no una casa de desarrollo. Primero evaluamos si la solución correcta ya existe en el mercado — como hacemos en la fase de Selección de Soluciones de CIRA. Solo construimos cuando esa opción genuinamente no existe."
         },
@@ -172,12 +220,12 @@
   },
   "arquitectura": {
     "meta": {
-      "title": "Arquitectura Empresarial y de IA: Datos y Sistemas | Cyrrus",
+      "title": "Arquitectura de IA e Implementación para Empresas | Cyrrus",
       "description": "Arquitectura empresarial y de IA: diseñamos la arquitectura que conecta modelos, datos y sistemas existentes de forma segura y escalable."
     },
     "serviceDescription": "Arquitectura de inteligencia artificial empresarial",
     "hero": {
-      "title": "Arquitectura empresarial y de IA",
+      "title": "Arquitectura de IA empresarial y arquitectura de datos",
       "description": "Cinco herramientas de IA, compradas por cinco áreas distintas, que no se hablan entre sí. Diseñamos la arquitectura técnica que conecta modelos, datos y sistemas existentes de forma segura y escalable, antes de que la proliferación de herramientas sueltas se vuelva imposible de deshacer."
     },
     "included": {
@@ -210,6 +258,10 @@
     "faq": {
       "eyebrow": "Arquitectura de IA",
       "items": [
+        {
+          "question": "¿Cuándo conviene contratar una consultoría de arquitectura de IA?",
+          "answer": "Cuando cada área compra sus propias herramientas de IA, las mismas cifras aparecen distintas en sistemas distintos, cada integración nueva toma meses o nadie sabe con certeza qué datos tocan los modelos de inteligencia artificial."
+        },
         {
           "question": "¿Qué es la arquitectura empresarial?",
           "answer": "Es la descripción de cómo se conectan los procesos, los datos y los sistemas de una organización, y de cómo deberían evolucionar. Sirve para tomar decisiones de tecnología con una visión de conjunto y no herramienta por herramienta."
@@ -257,12 +309,12 @@
   },
   "gobierno": {
     "meta": {
-      "title": "Gobierno de IA en Empresas: Políticas y Controles | Cyrrus",
-      "description": "Gobierno y gobernanza de IA: definimos las políticas, roles y controles sobre el uso de inteligencia artificial en su empresa: quién decide, quién audita y qué datos se tocan."
+      "title": "Consultoría en Gobierno de Inteligencia Artificial | Cyrrus",
+      "description": "Consultoría de gobernanza de IA para empresas: políticas, roles y controles sobre el uso de la IA, y qué referencia seguir (NIST AI RMF, OCDE o ISO/IEC 42001)."
     },
     "serviceDescription": "Gobierno de inteligencia artificial corporativo",
     "hero": {
-      "title": "Gobierno de IA",
+      "title": "Gobernanza de IA para empresas: consultoría en gobierno de IA",
       "description": "Nadie en la organización puede explicar qué modelo tomó qué decisión, ni con qué datos. Definimos las políticas, roles y controles claros sobre cómo se usa la inteligencia artificial dentro de su empresa — quién decide, quién audita, qué datos pueden tocarse y cuáles no."
     },
     "included": {
@@ -285,6 +337,9 @@
     },
     "body": [
       "Sin un marco de gobierno, cada iniciativa de IA queda a criterio de quien la implementó. Cuando algo sale mal — un dato sensible expuesto, una decisión automatizada sin trazabilidad — no hay a quién recurrir ni cómo auditar lo que pasó.",
+      "No empezamos desde cero ni frenamos lo que ya funciona: auditamos la IA que ya se usa en la organización — qué herramientas hay, quién las compró y con qué datos trabajan — y la integramos a un mismo marco, en vez de pedirle a cada área que empiece de nuevo.",
+      "Con ese inventario, la gerencia toma cuatro decisiones (criterio de Cyrrus): qué marco usará como referencia y para qué — gestionar riesgos (NIST), fijar valores (OCDE) o certificar un sistema de gestión (ISO/IEC 42001), que pueden combinarse —, quién responde por la IA en la empresa, qué evidencia se guardará de cada decisión y cada cuánto se revisará todo.",
+      "El gobierno de IA se apoya en el gobierno de datos: qué información puede tocar un modelo, cuál queda fuera de alcance y quién es dueño de cada dato. Por eso los controles de datos son parte del marco, no un proyecto aparte.",
       "Este marco corre de forma transversal por debajo de las cuatro fases del método CIRA, para que cada decisión de IA — desde el diagnóstico hasta la adopción — quede documentada y sea auditable."
     ],
     "articleLinkText": "Lea también:",
@@ -292,6 +347,18 @@
     "faq": {
       "eyebrow": "Gobierno de IA",
       "items": [
+        {
+          "question": "¿Cuándo conviene contratar una consultoría de gobernanza de IA?",
+          "answer": "Cuando su equipo ya usa IA sin que nadie audite qué datos toca ni quién responde si falla, cuando varias áreas compraron herramientas de IA por su cuenta, o cuando un cliente o un regulador pide evidencia de cómo se gobierna la IA en la empresa."
+        },
+        {
+          "question": "¿Qué marco de gobernanza de IA conviene usar: NIST, OCDE o ISO/IEC 42001?",
+          "answer": "Depende de para qué lo necesita (criterio de Cyrrus): el NIST AI RMF sirve para gestionar riesgos, los principios de la OCDE para fijar valores y la norma ISO/IEC 42001 para implementar y certificar un sistema de gestión de IA. No son excluyentes y pueden combinarse."
+        },
+        {
+          "question": "¿Qué diferencia hay entre gobierno de IA y gobierno de datos?",
+          "answer": "El gobierno de datos define de dónde sale cada dato, quién es su dueño y quién puede usarlo. El gobierno de IA se apoya en él y agrega quién aprueba cada caso de uso de IA, qué datos puede tocar un modelo y quién audita sus decisiones. En Cyrrus los trabajamos juntos."
+        },
         {
           "question": "¿Cómo se implementa un gobierno de IA desde cero, sin ningún marco previo?",
           "answer": "Partimos de cero: definimos políticas, roles y controles desde la primera semana, sin frenar las iniciativas que ya están en marcha."
@@ -325,6 +392,344 @@
         {
           "title": "Gestión del cambio",
           "description": "La misma disciplina de adopción, aplicada a la IA."
+        },
+        {
+          "title": "Gobierno de datos",
+          "description": "Dueños, reglas y controles de datos sobre los que se apoyan las políticas de IA."
+        }
+      ]
+    },
+    "respuesta": {
+      "eyebrow": "Gobernanza de IA",
+      "title": "¿Qué es la gobernanza de IA y con qué marco se hace?",
+      "body": "Es el conjunto de reglas que define quién decide sobre la inteligencia artificial en la empresa, con qué criterios y con qué evidencia. No hay una definición única en las fuentes oficiales que revisamos; lo que sí comparten las tres referencias públicas que tomamos como punto de partida es poner reglas de gestión alrededor del uso de la IA. Lo que decimos de cada una sale de sus páginas oficiales, citadas en nuestra guía de marcos.",
+      "items": [
+        {
+          "title": "NIST AI RMF",
+          "description": "Marco de gestión de riesgos de IA del NIST de EE. UU., de uso voluntario. Su núcleo tiene cuatro funciones: gobernar, mapear, medir y gestionar."
+        },
+        {
+          "title": "Principios de la OCDE",
+          "description": "Cinco principios basados en valores para una IA confiable, entre ellos transparencia y explicabilidad, robustez y seguridad, y rendición de cuentas."
+        },
+        {
+          "title": "ISO/IEC 42001",
+          "description": "Norma internacional de sistema de gestión de IA para cualquier organización que ofrezca o use productos o servicios con IA. Es una norma certificable, no una ley."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guías de gobernanza de IA",
+      "title": "Antes de elegir un marco, lea esto",
+      "items": [
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "Qué marcos de gobernanza de IA usar",
+          "description": "NIST AI RMF, principios de la OCDE e ISO/IEC 42001 según sus fuentes oficiales, y qué decide la gerencia."
+        },
+        {
+          "slug": "iso-iec-42001-que-es-y-a-quien-aplica",
+          "title": "ISO/IEC 42001: qué es y a quién aplica",
+          "description": "La norma de sistema de gestión de IA: qué pide, a quién aplica y cómo se certifica."
+        },
+        {
+          "slug": "regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana",
+          "title": "Regulación de la IA en 2026",
+          "description": "Qué exigen la Unión Europea, Estados Unidos y España a las empresas que usan IA."
+        }
+      ]
+    }
+  },
+  "gobiernoDatos": {
+    "meta": {
+      "title": "Consultoría en Gobierno de Datos para Empresas | Cyrrus",
+      "description": "Consultoría en gobierno de datos: quién es dueño de cada dato, qué reglas de calidad se aplican y qué información puede tocar un modelo de IA. Base del gobierno de IA."
+    },
+    "serviceDescription": "Consultoría en gobierno de datos",
+    "hero": {
+      "title": "Consultoría en gobierno de datos: una sola versión de la cifra correcta",
+      "description": "Cada área defiende su propia versión de la cifra correcta, y las juntas directivas terminan discutiendo cuál dato es el verdadero. Definimos de dónde sale cada dato, quién es su dueño, quién puede usarlo y con qué reglas de calidad, para que las decisiones —y los modelos de IA— se apoyen en datos confiables."
+    },
+    "respuesta": {
+      "eyebrow": "Gobierno de datos",
+      "title": "¿Qué es el gobierno de datos y para qué sirve?",
+      "body": "El gobierno de datos define de dónde sale cada dato, quién es su dueño y quién puede usarlo. Es la base sobre la que se apoya el gobierno de IA: qué información puede tocar un modelo, cuál queda fuera de alcance y quién responde por su calidad. Sin esa base, cada área reporta su cifra y ningún modelo es auditable.",
+      "items": [
+        {
+          "title": "Dueños y reglas",
+          "description": "Un responsable por cada dominio de datos (clientes, productos, finanzas, personas) y las reglas de calidad, acceso y retención que aplican."
+        },
+        {
+          "title": "Catálogo y linaje",
+          "description": "Qué datos existen, en qué sistema viven, cómo se transforman y de cuál sale la cifra oficial."
+        },
+        {
+          "title": "Referencia pública",
+          "description": "El DAMA-DMBOK, publicado por DAMA International como marco de referencia reconocido para la gestión de datos, sirve de guía para ordenar las funciones; el alcance se adapta al tamaño de la empresa."
+        }
+      ]
+    },
+    "included": {
+      "eyebrow": "Qué incluye",
+      "title": "Gobierno que ordena el dato antes del modelo.",
+      "items": [
+        {
+          "title": "Diagnóstico de datos",
+          "description": "Qué sistemas generan datos, dónde se duplican (CRM, ERP, hojas de cálculo) y qué cifras no cuadran entre áreas."
+        },
+        {
+          "title": "Modelo de gobierno",
+          "description": "Dominios de datos, dueños, comité y las decisiones que toma cada uno. Qué decide la dirección y qué delega."
+        },
+        {
+          "title": "Políticas de calidad y acceso",
+          "description": "Reglas de captura, deduplicación, validación y acceso, escritas y aplicables en los sistemas que ya existen."
+        },
+        {
+          "title": "Catálogo y linaje",
+          "description": "Inventario de datos críticos y de dónde sale cada indicador que ve la junta directiva."
+        },
+        {
+          "title": "Controles para IA",
+          "description": "Qué datos puede usar un modelo, cuáles no, y con qué trazabilidad, integrado al marco de gobierno de IA."
+        },
+        {
+          "title": "Plan de adopción",
+          "description": "Capacitación y medición para que las reglas se cumplan después de que Cyrrus se retira."
+        }
+      ]
+    },
+    "body": [
+      "El gobierno de datos resuelve un problema que se reconoce en la primera reunión de junta: dos áreas presentan cifras distintas para el mismo indicador y la discusión pasa a ser cuál dato es el verdadero, no qué hacer con él.",
+      "Definir el gobierno de datos es decidir, por cada dominio (clientes, productos, finanzas, personas), quién es el dueño del dato, de qué sistema sale la versión oficial, qué reglas de calidad se aplican al capturarlo y quién puede usarlo. Son decisiones de la dirección, no configuraciones de un sistema.",
+      "No empezamos desde cero ni proponemos un proyecto de un año: auditamos los datos que la empresa ya tiene —qué sistemas los generan, dónde se duplican, qué cifras no cuadran— y definimos las reglas sobre los sistemas que ya están en producción. El CRM y el ERP son un punto de partida frecuente en nuestros proyectos, porque ahí viven clientes, ventas y finanzas.",
+      "El gobierno de datos es la base del gobierno de IA: un modelo solo es auditable si se sabe qué datos usó, de dónde salieron y quién respondía por su calidad. Por eso los controles de datos para IA —qué puede tocar un modelo y qué no— se definen aquí y se integran al marco de gobierno de IA, no como un proyecto aparte.",
+      "El DAMA-DMBOK, publicado por DAMA International, es el marco de referencia reconocido para la gestión de datos y sirve como guía para ordenar funciones y responsabilidades. En nuestro criterio, una empresa mediana no necesita implementarlo completo: necesita dueños claros, un catálogo de los datos críticos y reglas que se cumplan en los sistemas que ya usa. Para preparar a la dirección ofrecemos el taller de gobierno de datos para ejecutivos en Leadership Academy."
+    ],
+    "articleLinkText": "Lea también:",
+    "articleLinkLabel": "Gobernanza y deduplicación de datos en el CRM",
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "El dato ordena lo que viene después",
+      "items": [
+        {
+          "title": "Gobierno de IA",
+          "description": "Las políticas de IA se apoyan en los dueños y controles de datos definidos aquí."
+        },
+        {
+          "title": "Arquitectura de IA",
+          "description": "Sobre qué sistemas y datos se conectan los modelos."
+        },
+        {
+          "title": "Taller de gobierno de datos para ejecutivos",
+          "description": "Qué debe decidir la dirección y qué puede delegar, en una sesión de trabajo."
+        },
+        {
+          "title": "Consultoría CRM",
+          "description": "El sistema donde se concentran los datos de clientes y donde se aplican primero las reglas."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guías",
+      "title": "Antes de definir el gobierno de datos, lea esto",
+      "items": [
+        {
+          "slug": "gobierno-de-datos-que-es-y-como-empezar",
+          "title": "Gobierno de datos: qué es y cómo empezar",
+          "description": "Qué dice ISO/IEC 38505-1 sobre el papel de la dirección, qué decide la gerencia y los siete pasos para empezar sin un proyecto de un año."
+        },
+        {
+          "slug": "gobernanza-y-deduplicacion-de-datos-en-el-crm",
+          "title": "Gobernanza y deduplicación de datos en el CRM",
+          "description": "Cómo detectan duplicados Dynamics 365 y HubSpot, sus límites y qué reglas debe definir la dirección."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "Qué es la gobernanza de IA y qué marcos usar",
+          "description": "NIST AI RMF, OCDE e ISO/IEC 42001 según sus fuentes oficiales."
+        },
+        {
+          "slug": "integrar-erp-y-crm-conector-nativo-o-middleware",
+          "title": "Integrar ERP y CRM: conector nativo o middleware",
+          "description": "Qué sincroniza el conector de Microsoft, sus límites y qué decide la dirección."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Gobierno de datos",
+      "title": "Preguntas frecuentes sobre consultoría en gobierno de datos",
+      "items": [
+        {
+          "question": "¿Cuándo conviene contratar una consultoría en gobierno de datos?",
+          "answer": "Cuando dos áreas presentan cifras distintas del mismo indicador; cuando el CRM o el ERP tienen clientes y productos duplicados; antes de un proyecto de analítica o de IA, para que el modelo no herede datos sin dueño; o cuando un cliente o un regulador pide saber quién responde por un dato."
+        },
+        {
+          "question": "¿Qué diferencia hay entre gobierno de datos y gobierno de IA?",
+          "answer": "El gobierno de datos define de dónde sale cada dato, quién es su dueño y quién puede usarlo. El gobierno de IA se apoya en él y agrega quién aprueba cada caso de uso de IA, qué datos puede tocar un modelo y quién audita sus decisiones. En Cyrrus los trabajamos juntos."
+        },
+        {
+          "question": "¿Gobierno de datos es lo mismo que calidad de datos?",
+          "answer": "No. La calidad de datos (completitud, duplicados, validez) es uno de los resultados del gobierno. El gobierno define quién responde por esa calidad, con qué reglas y en qué sistema; sin dueños, la limpieza de datos se repite cada año."
+        },
+        {
+          "question": "¿Hace falta una herramienta de gobierno de datos?",
+          "answer": "No al principio. Las reglas de captura, deduplicación y acceso se aplican primero en los sistemas que ya existen (CRM, ERP). Una herramienta de catálogo o de calidad se evalúa después, con los mismos criterios independientes de proveedor que usamos en toda selección."
+        },
+        {
+          "question": "¿Qué entregables deja una consultoría en gobierno de datos con Cyrrus?",
+          "answer": "Un diagnóstico de datos, el modelo de gobierno (dominios, dueños, comité), las políticas de calidad y acceso, el catálogo de datos críticos con su linaje y los controles de datos para IA, más el plan de adopción."
+        },
+        {
+          "question": "¿Qué papel tiene la dirección en el gobierno de datos?",
+          "answer": "Decide quién es dueño de cada dominio, qué indicador es el oficial y qué datos quedan fuera del alcance de la IA. El taller de gobierno de datos para ejecutivos de Leadership Academy prepara esas decisiones."
+        }
+      ]
+    }
+  },
+  "estrategiaIa": {
+    "meta": {
+      "title": "Consultoría en Estrategia de IA para Empresas | Cyrrus",
+      "description": "Consultoría en estrategia de IA: casos de uso priorizados por impacto, hoja de ruta, gobierno y arquitectura, medidos contra el proceso real que cambian, no contra una demo."
+    },
+    "serviceDescription": "Consultoría en estrategia de inteligencia artificial",
+    "hero": {
+      "title": "Consultoría en estrategia de IA: de la lista de ideas a una hoja de ruta",
+      "description": "El comité aprueba o rechaza iniciativas de IA por instinto, no por criterio. Definimos qué casos de uso tienen impacto real en el negocio, en qué orden se ejecutan, qué gobierno y qué arquitectura necesitan, y cómo se medirá cada uno."
+    },
+    "respuesta": {
+      "eyebrow": "Estrategia de IA",
+      "title": "¿Qué es una consultoría en estrategia de IA?",
+      "body": "Es el servicio que convierte el interés por la inteligencia artificial en una hoja de ruta: qué procesos del negocio pueden cambiar con IA, cuánto vale cambiarlos, qué datos y sistemas hacen falta y qué gobierno los hace auditables. En Cyrrus la estrategia de IA se construye sobre tres pilares que ya trabajamos: gobierno de IA, arquitectura y automatización con agentes.",
+      "items": [
+        {
+          "title": "Punto de partida",
+          "description": "Los procesos reales de la empresa y los datos que ya existen, no el catálogo de herramientas de un proveedor."
+        },
+        {
+          "title": "Entregables",
+          "description": "Casos de uso priorizados por impacto y viabilidad, hoja de ruta con secuencia y responsables, requisitos de datos y arquitectura, y el marco de gobierno."
+        },
+        {
+          "title": "Referencia pública",
+          "description": "El NIST AI RMF sirve para gestionar los riesgos de cada caso de uso desde el diseño; qué marco usar lo decide la dirección (ver gobierno de IA)."
+        }
+      ]
+    },
+    "included": {
+      "eyebrow": "Qué incluye",
+      "title": "Una hoja de ruta de IA que el comité pueda aprobar con criterio.",
+      "items": [
+        {
+          "title": "Inventario de IA existente",
+          "description": "Qué herramientas de IA ya se usan, quién las compró y con qué datos trabajan, antes de proponer nuevas."
+        },
+        {
+          "title": "Descubrimiento de casos de uso",
+          "description": "Sesiones con las áreas para identificar procesos candidatos: volumen, repetitividad, datos disponibles y costo actual."
+        },
+        {
+          "title": "Priorización",
+          "description": "Impacto en el negocio, viabilidad técnica, datos necesarios y riesgo, con un criterio único para todos los casos."
+        },
+        {
+          "title": "Hoja de ruta",
+          "description": "Secuencia, dependencias (datos, integraciones, gobierno), responsables y cómo se medirá cada caso contra el proceso que reemplaza."
+        },
+        {
+          "title": "Gobierno y arquitectura",
+          "description": "Qué políticas, roles y controles aplican, y sobre qué arquitectura se conectan modelos, datos y sistemas."
+        },
+        {
+          "title": "Pilotos con medición",
+          "description": "Los primeros casos se ejecutan con nuestro equipo de automatización y se miden contra el proceso real, no contra una demo."
+        }
+      ]
+    },
+    "body": [
+      "Una estrategia de IA responde tres preguntas: en qué procesos la IA cambia un resultado del negocio, en qué orden conviene hacerlo y qué hace falta —datos, sistemas, gobierno— para que funcione en producción y no solo en una demostración.",
+      "Por eso no empezamos por la herramienta. Primero inventariamos la IA que ya se usa en la organización y los datos que existen; después, con las áreas, identificamos procesos candidatos y los priorizamos con un criterio único: impacto, viabilidad, datos y riesgo. El resultado es una lista corta que la dirección puede aprobar o rechazar con el mismo criterio.",
+      "Cada caso de uso de la hoja de ruta lleva cómo se medirá: contra el proceso real que reemplaza —tiempo, errores, costo— y no contra la demo. Es el mismo criterio con el que ejecutamos la automatización con agentes de IA, para que la estrategia y la ejecución usen la misma vara.",
+      "La estrategia de IA se apoya en el gobierno y en la arquitectura: qué datos puede tocar cada modelo, quién aprueba y audita, y sobre qué sistemas se conecta. Definirlo en la estrategia evita, en nuestro criterio, dos fracasos que vemos en nuestros proyectos: pilotos que no pueden pasar a producción por falta de datos y herramientas compradas por cinco áreas que no se hablan entre sí.",
+      "Este servicio es el punto de entrada a Cyrrus Intelligence Lab y conecta con la estrategia de TI de la fase Construir del método CIRA: la IA es una iniciativa más del portafolio tecnológico, con su caso de negocio, y no un proyecto aparte. Para preparar al comité ofrecemos el taller de IA para directivos en Leadership Academy."
+    ],
+    "articleLinkText": "Lea también:",
+    "articleLinkLabel": "Qué es la gobernanza de IA y qué marcos usar",
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "La estrategia se ejecuta con los tres pilares",
+      "items": [
+        {
+          "title": "Gobierno de IA",
+          "description": "Políticas, roles y controles que hacen auditable cada caso de uso."
+        },
+        {
+          "title": "Arquitectura de IA",
+          "description": "Sobre qué sistemas y datos se conectan los modelos de la hoja de ruta."
+        },
+        {
+          "title": "Automatización y agentes de IA",
+          "description": "Cómo se ejecutan y miden los primeros casos de uso."
+        },
+        {
+          "title": "Estrategia de TI",
+          "description": "El portafolio tecnológico del que la IA es una iniciativa más."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guías",
+      "title": "Antes de aprobar un caso de uso, lea esto",
+      "items": [
+        {
+          "slug": "estrategia-de-ia-para-empresas-hoja-de-ruta",
+          "title": "Estrategia de IA para empresas: cómo construir la hoja de ruta",
+          "description": "Cómo priorizar casos de uso con un criterio único, qué dice el NIST AI RMF y los siete pasos de la hoja de ruta."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "Qué es la gobernanza de IA y qué marcos usar",
+          "description": "NIST AI RMF, OCDE e ISO/IEC 42001 según sus fuentes oficiales, y qué decide la dirección."
+        },
+        {
+          "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+          "title": "Qué es RPA y cuándo conviene frente a la IA",
+          "description": "Qué resuelve cada tecnología y qué debe decidir la dirección antes de automatizar."
+        },
+        {
+          "slug": "cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa",
+          "title": "Cumplimiento de IA: qué evidencia debe poder mostrar la empresa",
+          "description": "Qué obligaciones documenta el Reglamento de IA de la UE y qué evidencia conviene guardar."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Estrategia de IA",
+      "title": "Preguntas frecuentes sobre consultoría en estrategia de IA",
+      "items": [
+        {
+          "question": "¿Cuándo conviene contratar una consultoría en estrategia de IA?",
+          "answer": "Cuando el comité recibe propuestas de IA y no tiene criterio para compararlas; cuando varias áreas ya compraron herramientas por su cuenta; cuando un piloto funcionó en demo y no pasó a producción; o cuando la junta pide un plan de IA con beneficios, costos y riesgos antes de aprobar presupuesto."
+        },
+        {
+          "question": "¿Qué diferencia hay entre estrategia de IA y gobierno de IA?",
+          "answer": "La estrategia decide qué casos de uso se hacen, en qué orden y con qué medición. El gobierno define las políticas, roles y controles con los que se ejecutan y auditan. La estrategia sin gobierno produce pilotos no auditables; el gobierno sin estrategia produce reglas para iniciativas que nadie priorizó. En Cyrrus se trabajan juntos."
+        },
+        {
+          "question": "¿Qué entregables deja una consultoría en estrategia de IA con Cyrrus?",
+          "answer": "Inventario de IA existente, lista de casos de uso priorizados con su criterio, hoja de ruta con secuencia y responsables, requisitos de datos y arquitectura, marco de gobierno aplicable y el plan de medición de cada caso."
+        },
+        {
+          "question": "¿Recomiendan herramientas o modelos de IA específicos?",
+          "answer": "Solo después de definir el caso de uso, los datos y el gobierno. La selección de plataformas de IA y automatización se hace con los mismos criterios independientes de proveedor que usamos en toda selección de soluciones."
+        },
+        {
+          "question": "¿Cómo se mide si la estrategia de IA funcionó?",
+          "answer": "Caso por caso, contra el proceso real que cambia: tiempo, errores, costo o ingresos del proceso antes y después. Ese criterio se define en la estrategia y se aplica cuando el caso se ejecuta."
+        },
+        {
+          "question": "¿Qué papel tiene la dirección en la estrategia de IA?",
+          "answer": "Aprobar la lista priorizada, decidir el marco de gobierno y los datos que la IA no puede tocar, y revisar la medición. El taller de IA para directivos de Leadership Academy prepara esas decisiones."
         }
       ]
     }

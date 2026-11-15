@@ -80,39 +80,47 @@ export function TabbedPanels({
   const panel = panels[active];
 
   return (
-    <div ref={rootRef} className={cn("w-full", className)}>
+    <div
+      ref={rootRef}
+      className={cn(
+        "navy-radial-bg flex w-full flex-wrap overflow-hidden rounded-3xl shadow-[0_30px_60px_-20px_rgba(10,44,99,0.35)]",
+        className,
+      )}
+    >
       <div
         role="tablist"
         aria-label="Servicios de Cyrrus"
-        className="flex flex-wrap gap-2 border-b border-white/15"
+        aria-orientation="vertical"
+        className="box-border flex flex-[1_1_280px] flex-col gap-0.5 p-[clamp(24px,3vw,40px)] md:py-[clamp(28px,3.5vw,48px)]"
       >
-        {panels.map((p, index) => (
-          <button
-            key={p.id}
-            role="tab"
-            type="button"
-            aria-selected={active === index}
-            aria-controls={active === index ? `panel-${p.id}` : undefined}
-            id={`tab-${p.id}`}
-            onClick={() => handleSelect(index)}
-            className={cn(
-              "relative px-4 py-3 text-sm font-medium transition-colors md:text-base",
-              active === index
-                ? "text-white"
-                : "text-white/50 hover:text-white/80"
-            )}
-          >
-            {p.tabLabel}
-            {/* framer's `layoutId` underline slid between tabs, which meant
-                shipping the whole shared-layout engine (and its per-frame
-                measuring) to the home page for a 2px rule. This one wipes in
-                from the left on the active tab instead — same affordance,
-                composited, no JS. */}
-            {active === index && (
-              <span className="tab-underline absolute inset-x-0 -bottom-px h-0.5 origin-left bg-cyan" />
-            )}
-          </button>
-        ))}
+        {panels.map((p, index) => {
+          const selected = active === index;
+          return (
+            <button
+              key={p.id}
+              role="tab"
+              type="button"
+              aria-selected={selected}
+              aria-controls={selected ? `panel-${p.id}` : undefined}
+              id={`tab-${p.id}`}
+              onClick={() => handleSelect(index)}
+              className={cn(
+                "grid grid-cols-[36px_1fr_16px] items-center gap-3 rounded-xl border-l-[3px] px-[18px] py-4 text-left font-heading transition-[background-color,color,border-color] duration-150 ease-out",
+                selected
+                  ? "border-sky bg-white/[0.08] text-white"
+                  : "border-transparent text-white/70 hover:bg-white/[0.06] hover:text-white",
+              )}
+            >
+              <span className="text-[13px] font-semibold text-sky">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span className="text-base font-semibold">{p.tabLabel}</span>
+              <span aria-hidden="true" className={cn("text-sm", selected ? "opacity-100" : "opacity-0")}>
+                →
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* `key` on both columns is what replays the CSS entrance: changing it
@@ -120,28 +128,40 @@ export function TabbedPanels({
           change. This is enter-only — the outgoing panel is replaced rather
           than faded out, which is what AnimatePresence `mode="wait"` was
           sequencing before. */}
-      <div className="relative grid grid-cols-1 items-center gap-8 overflow-hidden py-8 md:grid-cols-2 md:gap-12">
+      <div className="box-border flex min-w-0 flex-[2_1_420px] flex-col gap-[clamp(24px,3vw,36px)] p-[clamp(20px,2.4vw,32px)]">
+        <div key={panel.id + "-image"} className="panel-image-enter">
+          <Link to={panel.href} className="block overflow-hidden rounded-2xl" tabIndex={-1} aria-hidden="true">
+            <Img
+              src={panel.image}
+              alt=""
+              width={640}
+              height={280}
+              sizes="(min-width: 1280px) 760px, (min-width: 768px) 60vw, 100vw"
+              className="aspect-[16/7] w-full rounded-2xl object-cover"
+            />
+          </Link>
+        </div>
         <div
           key={panel.id}
           role="tabpanel"
           id={`panel-${panel.id}`}
           aria-labelledby={`tab-${panel.id}`}
-          className="panel-enter"
+          className="panel-enter max-w-[640px] px-[clamp(4px,1.5vw,24px)] pb-[clamp(8px,1.5vw,20px)]"
         >
           <span
-            className="panel-enter-child text-sm font-bold uppercase tracking-wider text-cyan"
+            className="panel-enter-child block font-heading text-sm font-bold uppercase tracking-[0.06em] text-sky"
             style={{ "--panel-delay": "50ms" } as React.CSSProperties}
           >
             {panel.eyebrow}
           </span>
           <h3
-            className="panel-enter-child mt-3 text-2xl font-bold text-white md:text-3xl"
+            className="panel-enter-child mt-3.5 font-heading text-[clamp(26px,2.8vw,38px)] font-bold leading-[1.15] tracking-[-0.02em] text-balance text-white"
             style={{ "--panel-delay": "100ms" } as React.CSSProperties}
           >
             {panel.title}
           </h3>
           <p
-            className="panel-enter-child mt-4 text-base leading-relaxed text-white/70"
+            className="panel-enter-child mt-4 text-lg leading-[1.7] text-white/80"
             style={{ "--panel-delay": "150ms" } as React.CSSProperties}
           >
             {panel.description}
@@ -150,30 +170,10 @@ export function TabbedPanels({
             className="panel-enter-child mt-8"
             style={{ "--panel-delay": "200ms" } as React.CSSProperties}
           >
-            <BorderButton asChild variant="light" size="lg" className="px-8" dot>
-              <Link to={panel.href}>
-                {panel.buttonText}
-              </Link>
+            <BorderButton asChild variant="light" size="lg" dot>
+              <Link to={panel.href}>{panel.buttonText}</Link>
             </BorderButton>
           </div>
-        </div>
-
-        <div key={panel.id + "-image"} className="panel-image-enter">
-          <Link
-            to={panel.href}
-            className="block overflow-hidden rounded-xl"
-            tabIndex={-1}
-            aria-hidden="true"
-          >
-            <Img
-              src={panel.image}
-              alt={panel.title}
-              width={640}
-              height={288}
-              sizes="(min-width: 768px) 640px, 100vw"
-              className="h-56 w-full rounded-xl object-cover md:h-72"
-            />
-          </Link>
         </div>
       </div>
     </div>

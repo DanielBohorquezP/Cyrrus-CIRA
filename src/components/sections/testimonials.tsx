@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { langPath, useLang } from "@/lib/language";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { cn } from "@/lib/utils";
 import { YoutubeFacade } from "@/components/ui/youtube-facade";
 
 interface Testimonial {
@@ -17,46 +19,42 @@ interface Testimonial {
   caseSlug: string;
 }
 
-export function Testimonials() {
+export function Testimonials({ className }: { className?: string }) {
   const { t } = useTranslation("home");
   const lang = useLang();
   const testimonials = t("testimonials.items", { returnObjects: true }) as Testimonial[];
 
   return (
-    <section className="cv-section w-full bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6 md:px-12">
-        <Reveal className="max-w-2xl">
-          <span className="text-base font-bold uppercase tracking-wider text-blue">
-            {t("testimonials.eyebrow")}
-          </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            {t("testimonials.title")}
-          </h2>
+    <section className={cn("cv-section section-y w-full bg-mist", className)}>
+      <div className="container-site">
+        <Reveal>
+          <Eyebrow>{t("testimonials.eyebrow")}</Eyebrow>
+          <h2 className="t-h2 mt-6 max-w-[820px] text-navy">{t("testimonials.title")}</h2>
         </Reveal>
 
-        <RevealGroup className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,340px),1fr))] gap-8">
           {testimonials.map((item, i) => (
             <RevealItem
               as="figure"
               key={item.videoId}
               index={i}
-              className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card"
+              className="flex flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-[0_1px_2px_rgba(10,44,99,0.04)]"
             >
               <YoutubeFacade
                 videoId={item.videoId}
                 title={`${item.name ? `${item.name}, ` : ""}${item.role} de ${item.company} — testimonio en video`}
               />
-              <div className="flex flex-1 flex-col p-6">
-                <blockquote className="flex-1 text-[15px] leading-relaxed text-foreground">
+              <div className="flex flex-1 flex-col p-7">
+                <blockquote className="flex-1 font-heading text-[17px] leading-[1.55] text-pretty text-navy">
                   {item.quote}
                 </blockquote>
-                <p className="mt-4 text-sm font-semibold text-blue">{item.metric}</p>
-                <figcaption className="mt-5 flex items-end justify-between gap-4 border-t border-border pt-4">
+                <p className="mt-4 text-base font-semibold text-blue">{item.metric}</p>
+                <figcaption className="mt-5 flex items-end justify-between gap-4 border-t border-line pt-5">
                   <div>
-                    <div className="text-sm font-semibold text-navy">
+                    <div className="font-heading text-[13px] font-semibold text-navy">
                       {item.name || item.role}
                     </div>
-                    <div className="text-sm text-gray">
+                    <div className="mt-1 text-[15px] text-slate">
                       {/* One interpolation: `{a} · {b}` is three adjacent children,
                           i.e. three text nodes React expects to hydrate, but the
                           DOM merges them into one when the page is serialised. */}
@@ -65,7 +63,7 @@ export function Testimonials() {
                   </div>
                   <Link
                     to={langPath(`/experiencia/${item.caseSlug}`, lang)}
-                    className="shrink-0 text-sm font-semibold text-blue hover:underline"
+                    className="shrink-0 font-heading text-[13px] font-medium text-blue hover:text-navy"
                   >
                     {`${t("testimonials.readCase")} →`}
                   </Link>

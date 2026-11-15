@@ -190,12 +190,12 @@ export default function ArticuloPerspectiva() {
         image={{ src: entry.coverImage, alt: tr.title }}
         breadcrumbs={breadcrumbItems}
       />
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-12 md:px-12">
-          <Reveal className="order-2 space-y-6 text-lg leading-relaxed text-gray md:order-1 md:col-span-8">
+      <section className="section-y w-full bg-background">
+        <div className="container-site grid grid-cols-1 gap-x-20 gap-y-10 lg:grid-cols-[minmax(0,720px)_minmax(0,1fr)]">
+          <Reveal className="order-2 space-y-6 text-[19px] leading-[1.75] text-slate lg:order-1">
             {tr.keyTakeaways && tr.keyTakeaways.length > 0 && (
-              <aside className="rounded-2xl border border-blue/20 bg-light-blue/40 p-6">
-                <div className="text-sm font-bold uppercase tracking-wider text-blue">
+              <aside className="rounded-2xl border border-line bg-mist p-7">
+                <div className="font-heading text-sm font-bold uppercase tracking-[0.06em] text-blue">
                   {lang === "en" ? "In short" : "En breve"}
                 </div>
                 <ul className="mt-3 space-y-2 text-base text-navy">
@@ -228,7 +228,7 @@ export default function ArticuloPerspectiva() {
               const key = `${block.type}-${i}`;
               if (block.type === "h2") {
                 nodes.push(
-                  <h2 key={key} className="pt-4 text-2xl font-semibold text-navy first:pt-0">
+                  <h2 key={key} className="pt-6 font-heading text-[clamp(24px,2.4vw,30px)] font-bold leading-[1.2] tracking-[-0.02em] text-navy first:pt-0">
                     {block.text}
                   </h2>
                 );
@@ -240,13 +240,13 @@ export default function ArticuloPerspectiva() {
                     href={href}
                     download
                     onClick={() => trackEvent("file_download", { file_name: href })}
-                    className="group flex items-center gap-4 rounded-2xl border border-blue/30 bg-light-blue/40 p-6 no-underline transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                    className="group flex items-center gap-4 rounded-2xl border border-line-2 bg-mist p-6 no-underline transition-[border-color] duration-150 ease-out hover:border-blue"
                   >
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue text-white">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-navy text-sky">
                       <Download className="h-6 w-6" aria-hidden="true" />
                     </span>
                     <span>
-                      <span className="block text-lg font-semibold text-navy">{block.text}</span>
+                      <span className="block font-heading text-lg font-semibold text-navy">{block.text}</span>
                       {block.note && <span className="mt-1 block text-sm text-gray">{block.note}</span>}
                     </span>
                   </a>
@@ -261,7 +261,7 @@ export default function ArticuloPerspectiva() {
                       <thead>
                         <tr>
                           {block.columns.map((col) => (
-                            <th key={col} scope="col" className="border-b-2 border-blue/30 bg-light-blue/40 px-3 py-2 font-semibold text-navy">
+                            <th key={col} scope="col" className="border-b-2 border-navy bg-mist px-3 py-2 font-heading font-semibold text-navy">
                               {col}
                             </th>
                           ))}
@@ -289,7 +289,7 @@ export default function ArticuloPerspectiva() {
                 );
               } else if (block.type === "quote") {
                 nodes.push(
-                  <blockquote key={key} className="border-l-4 border-cyan pl-6 text-xl font-medium italic text-navy">
+                  <blockquote key={key} className="border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,26px)] font-light leading-[1.4] text-navy">
                     {block.text}
                   </blockquote>
                 );
@@ -318,11 +318,11 @@ export default function ArticuloPerspectiva() {
               </div>
             )}
           </Reveal>
-          <Reveal delay={0.1} className="order-1 md:order-2 md:col-span-4">
-            <div className="space-y-6 rounded-2xl border border-border bg-white p-6 shadow-sm md:sticky md:top-28">
+          <Reveal delay={0.1} className="order-1 lg:order-2">
+            <div className="space-y-6 border-t-2 border-navy pt-6 lg:sticky lg:top-28">
               <div className="flex items-center gap-3">
                 <Img
-                  src="/assets/decoracion/JacksonCEO1.webp"
+                  src="/assets/decoracion/JacksonCEO1.jpeg"
                   alt={tHome("ceo.photoAlt")}
                   width={56}
                   height={56}
@@ -341,7 +341,7 @@ export default function ArticuloPerspectiva() {
               </p>
               <Link
                 to={langPath("/quienes-somos", lang)}
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue underline-offset-4 hover:underline"
+                className="inline-flex items-center gap-1.5 font-heading text-sm font-medium text-blue hover:text-navy"
               >
                 {lang === "en" ? "About the author" : "Sobre el autor"}
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

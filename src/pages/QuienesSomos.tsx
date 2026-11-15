@@ -1,13 +1,15 @@
-import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { langPath, useLang } from "@/lib/language";
 import { SiteHeader } from "@/components/layout/site-header";
-import { IntelligenceLabHero } from "@/components/sections/intelligence-lab-hero";
+import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { PhotoCaption } from "@/components/ui/photo-caption";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
+import { SectionHeader } from "@/components/ui/section-header";
 import { LinkedInIcon } from "@/components/ui/social-media";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
@@ -95,128 +97,96 @@ export default function QuienesSomos() {
     <>
       <SiteHeader />
       <main id="contenido">
-      <IntelligenceLabHero
+      <PageHero
         eyebrow={t("quienesSomos.hero.eyebrow")}
         title={t("quienesSomos.hero.title")}
         description={t("quienesSomos.hero.description")}
-        showVisual={false}
         visual={
           <Img
             src="/assets/logos-cyrrus/cyrrus-logo-blanco.png"
             alt="Cyrrus Consulting Services"
-              className="w-full max-w-sm opacity-90"
-            sizes="(min-width: 640px) 384px, 100vw"
+            className="mx-auto w-full max-w-sm opacity-90"
+            sizes="1100px"
           />
         }
       />
 
-      <section className="w-full bg-background py-24 md:py-32">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 items-start gap-12 px-6 md:grid-cols-[220px_1fr] md:px-12">
+      <section className="section-y w-full bg-background">
+        <div className="container-site grid grid-cols-1 items-start gap-x-20 gap-y-12 md:grid-cols-[280px_1fr]">
           <Reveal>
             <Img
-              src="/assets/decoracion/JacksonCEO1.webp"
+              src="/assets/decoracion/JacksonCEO1.jpeg"
               alt={t("quienesSomos.photoAlt")}
-              width={160}
-              height={160}
+              width={280}
+              height={350}
               loading="eager"
-              className="mx-auto h-40 w-40 rounded-full object-cover ring-4 ring-light-blue md:mx-0"
-              sizes="(min-width: 768px) 420px, 100vw"
+              className="aspect-[4/5] w-full max-w-[280px] rounded-2xl object-cover object-top"
+              sizes="280px"
             />
             <a
               href="https://www.linkedin.com/in/jacksonbohorquezb/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 flex items-center justify-center gap-2 text-sm font-medium text-blue transition-colors duration-150 hover:text-navy md:justify-start"
+              className="mt-5 flex items-center gap-2 font-heading text-sm font-medium text-blue transition-colors duration-150 hover:text-navy"
             >
               <LinkedInIcon className="h-4 w-4" />
               {t("quienesSomos.linkedInLabel")}
             </a>
           </Reveal>
 
-          <div>
+          <div className="max-w-[760px]">
             <Reveal>
-              <h2 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">
-                {t("quienesSomos.role")}
-              </h2>
+              <h2 className="t-h2 text-navy">{t("quienesSomos.role")}</h2>
             </Reveal>
             <Reveal delay={0.05}>
-              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-                {t("quienesSomos.bio")}
-              </p>
+              <p className="t-lead mt-6 text-slate">{t("quienesSomos.bio")}</p>
             </Reveal>
             <Reveal delay={0.1}>
-              <blockquote className="mt-6 border-l-2 border-blue pl-5 text-lg font-medium leading-snug text-navy">
+              <blockquote className="mt-8 border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-light leading-[1.4] text-navy">
                 {t("quienesSomos.quote")}
               </blockquote>
             </Reveal>
 
-            <Reveal delay={0.15} className="mt-10">
-              <div className="text-base font-bold uppercase tracking-wider text-gray">
+            <div className="mt-14">
+              <h3 className="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.12em] text-navy">
                 {t("quienesSomos.trajectory.label")}
-              </div>
-              <RevealGroup className="mt-4 flex flex-col gap-3">
-                {credentials.map((item) => (
-                  <RevealItem
-                    key={item}
-                    className="flex items-start gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm text-navy shadow-sm"
-                  >
-                    {item}
-                  </RevealItem>
-                ))}
-              </RevealGroup>
-            </Reveal>
+              </h3>
+              <RuledBullets items={credentials} />
+            </div>
+
+            <div className="mt-14">
+              <h3 className="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.12em] text-navy">
+                {t("quienesSomos.education.label")}
+              </h3>
+              <RuledBullets items={education} />
+            </div>
 
             <Reveal delay={0.2} className="mt-10">
-              <div className="text-base font-bold uppercase tracking-wider text-gray">
-                {t("quienesSomos.education.label")}
-              </div>
-              <ul className="mt-4 flex flex-col gap-2">
-                {education.map((item) => (
-                  <li key={item} className="text-sm text-navy">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-
-            <Reveal delay={0.2} className="mt-6">
               <Link
                 to={langPath("/metodo-cira", lang)}
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue underline-offset-4 hover:underline"
+                className="font-heading text-sm font-medium text-blue hover:text-navy"
               >
-                {t("quienesSomos.trajectory.methodLinkLabel")}
-                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                {`${t("quienesSomos.trajectory.methodLinkLabel")} →`}
               </Link>
             </Reveal>
           </div>
         </div>
       </section>
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("quienesSomos.milestones.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("quienesSomos.milestones.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+      <section className="section-y w-full bg-mist">
+        <div className="container-site">
+          <SectionHeader eyebrow={t("quienesSomos.milestones.eyebrow")} title={t("quienesSomos.milestones.title")} />
+          <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-6">
             {milestones.map((item) => (
-              <RevealItem as="figure" key={item.src} >
-                <Img
+              <RevealItem key={item.src}>
+                <PhotoCaption
                   src={item.src}
                   alt={item.alt}
-                  width={480}
-                  height={320}
-                  className="h-56 w-full rounded-2xl object-cover object-top"
-                  sizes="(min-width: 640px) 352px, calc(100vw - 3rem)"
+                  caption={item.caption}
+                  aspect="aspect-[4/3]"
+                  position="50% 0%"
+                  sizes="1100px"
                 />
-                <figcaption className="mt-3 text-sm text-gray">
-                  {item.caption}
-                </figcaption>
               </RevealItem>
             ))}
           </RevealGroup>

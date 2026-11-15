@@ -14,6 +14,7 @@
    unicode-range, so this changes nothing visually — it just stops shipping and
    deploying the dead weight. Latin covers the full Spanish set (accents, ñ,
    ¿, ¡ all live in U+00A0-00FF). */
+@import "@fontsource/poppins/latin-300.css";
 @import "@fontsource/poppins/latin-400.css";
 @import "@fontsource/poppins/latin-500.css";
 @import "@fontsource/poppins/latin-600.css";
@@ -23,217 +24,6 @@
 @import "@fontsource/carlito/latin-700.css";
 
 @custom-variant dark (&:is(.dark *));
-
-/* Neon folder card for CyberpunkNeonFolder (src/components/ui/cyberpunk-neon-folder.tsx).
-   Ported from a Next.js/styled-jsx snippet: dropped the full-page background,
-   the Google Fonts @import (this project self-hosts fonts, see the Poppins
-   imports above), and the html/body reset. Hover-transition durations were
-   cut from the source's 0.5-0.7s to 200-300ms per this project's motion
-   rules (see CLAUDE.md — short, snappy hover transitions). */
-.folder-container-neon {
-  position: relative;
-  width: 240px;
-  height: 260px;
-  transition: transform 0.2s ease-out;
-  perspective: 1500px;
-  transform-style: preserve-3d;
-}
-
-.doc-sheet {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  width: 70px;
-  background-color: rgba(10, 10, 30, 0.6);
-  border-radius: 4px 4px 0 0;
-  transform-origin: bottom center;
-  opacity: 0.7;
-  transition: height 0.25s ease-out, opacity 0.25s ease-out, box-shadow 0.25s ease-out, transform 0.25s ease-out;
-  border: 1px solid currentColor;
-  border-bottom: none;
-  box-shadow: 0 0 10px currentColor, 0 0 15px currentColor;
-  color: white;
-}
-.sheet-1 {
-  color: #00ffff;
-  height: 26px;
-  transform: translateX(calc(-50% - 48px)) rotate(-12deg);
-  z-index: 1;
-  opacity: 0.6;
-}
-.sheet-2 {
-  color: #1b6fc2;
-  height: 30px;
-  transform: translateX(-50%) rotate(0deg);
-  z-index: 2;
-  opacity: 0.7;
-  width: 78px;
-}
-.sheet-3 {
-  color: #ffffff;
-  height: 24px;
-  transform: translateX(calc(-50% + 48px)) rotate(12deg);
-  z-index: 1;
-  opacity: 0.5;
-}
-
-@keyframes line-pulse-extend-1 {
-  0% { height: 26px; opacity: 0.6; box-shadow: 0 0 10px currentColor, 0 0 15px currentColor; }
-  60% { height: 82px; opacity: 1; box-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 50px currentColor; }
-  100% { height: 78px; opacity: 0.9; box-shadow: 0 0 15px currentColor, 0 0 25px currentColor; }
-}
-@keyframes line-pulse-extend-2 {
-  0% { height: 30px; opacity: 0.7; box-shadow: 0 0 10px currentColor, 0 0 15px currentColor; }
-  60% { height: 90px; opacity: 1; box-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 50px currentColor; }
-  100% { height: 86px; opacity: 0.9; box-shadow: 0 0 15px currentColor, 0 0 25px currentColor; }
-}
-@keyframes line-pulse-extend-3 {
-  0% { height: 24px; opacity: 0.5; box-shadow: 0 0 10px currentColor, 0 0 15px currentColor; }
-  60% { height: 78px; opacity: 0.9; box-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 45px currentColor; }
-  100% { height: 74px; opacity: 0.8; box-shadow: 0 0 15px currentColor, 0 0 25px currentColor; }
-}
-@keyframes folder-glow {
-  0%, 100% {
-    box-shadow:
-      0 0 10px rgba(0, 255, 255, 0.5),
-      0 0 15px rgba(27, 111, 194, 0.5),
-      0 0 20px rgba(255, 255, 255, 0.25),
-      inset 0 0 8px rgba(0, 0, 0, 0.4);
-  }
-  50% {
-    box-shadow:
-      0 0 15px rgba(0, 255, 255, 0.7),
-      0 0 25px rgba(27, 111, 194, 0.7),
-      0 0 35px rgba(255, 255, 255, 0.4),
-      inset 0 0 12px rgba(0, 0, 0, 0.5);
-  }
-}
-
-.folder-container-neon:hover {
-  transform: rotateY(5deg) rotateX(3deg);
-}
-.folder-container-neon:hover .sheet-1 {
-  animation: line-pulse-extend-1 0.3s ease-out forwards;
-  transform: translateX(calc(-50% - 52px)) rotate(-15deg) translateZ(10px);
-}
-.folder-container-neon:hover .sheet-2 {
-  animation: line-pulse-extend-2 0.3s 0.03s ease-out forwards;
-  transform: translateX(-50%) rotate(0deg) translateZ(15px);
-}
-.folder-container-neon:hover .sheet-3 {
-  animation: line-pulse-extend-3 0.3s 0.02s ease-out forwards;
-  transform: translateX(calc(-50% + 52px)) rotate(15deg) translateZ(10px);
-}
-
-.folder-container-neon:hover .folder-card-neon {
-  transform: translateY(-8px) scale(1.03) translateZ(20px);
-  animation: folder-glow 2s infinite alternate ease-in-out;
-}
-
-.folder-card-neon {
-  position: absolute;
-  bottom: 34px;
-  left: 0;
-  width: 100%;
-  height: 104px;
-  background-color: rgba(20, 20, 50, 0.9);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(0, 255, 255, 0.4);
-  border-radius: 0 8px 16px 16px;
-  box-shadow:
-    0 0 10px rgba(0, 255, 255, 0.4),
-    0 0 15px rgba(27, 111, 194, 0.4),
-    inset 0 0 6px rgba(0, 0, 0, 0.4);
-  padding: 1.25rem 1.5rem;
-  z-index: 5;
-  transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
-  border-top: none;
-  transform-style: preserve-3d;
-}
-.folder-card-neon::before {
-  content: "";
-  position: absolute;
-  top: -18px;
-  left: -1px;
-  height: 18px;
-  width: 100px;
-  background-color: rgba(20, 20, 50, 0.95);
-  border: 1px solid rgba(0, 255, 255, 0.4);
-  border-bottom: none;
-  border-radius: 8px 8px 0 0;
-  box-shadow: 0 -3px 8px rgba(0, 255, 255, 0.3);
-  z-index: 4;
-}
-
-.folder-icon-neon {
-  color: #00ffff;
-  filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 12px #00ffff);
-  transition: transform 0.2s ease-out;
-}
-.folder-container-neon:hover .folder-icon-neon {
-  transform: scale(1.2) translateZ(5px);
-}
-
-.folder-title-neon {
-  color: #e0e0e0;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-shadow:
-    0 0 4px #00ffff,
-    0 0 8px #1b6fc2,
-    0 0 12px rgba(255, 255, 255, 0.6);
-}
-
-.folder-card-neon > * {
-  position: relative;
-  z-index: 6;
-  transform-style: preserve-3d;
-}
-
-/* Hero badge decorations for ShaderHero (src/components/ui/shader-hero.tsx).
-   These were framer-motion `repeat: Infinity` loops, which drive a
-   requestAnimationFrame callback on the main thread forever. Expressed as CSS
-   keyframes over transform/opacity only they are composited, so they cost the
-   main thread nothing and can keep running. The parent carries
-   data-motion="off" when the hero is scrolled away, the tab is backgrounded,
-   or the visitor prefers reduced motion. */
-@keyframes hero-badge-ring {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(1.15);
-    opacity: 0.2;
-  }
-}
-
-@keyframes hero-badge-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.hero-badge-ring {
-  will-change: transform, opacity;
-  animation: hero-badge-ring 2.5s ease-in-out infinite;
-}
-
-.hero-badge-spin {
-  transform-origin: center;
-  will-change: transform;
-  animation: hero-badge-spin 22s linear infinite;
-}
-
-[data-motion="off"] .hero-badge-ring,
-[data-motion="off"] .hero-badge-spin {
-  animation-play-state: paused;
-}
 
 :root {
   --radius: 0.625rem;
@@ -250,6 +40,14 @@
   --light-blue: #e8f2fb;
   --gray: #414a58;
   --dark: #1a1a1a;
+
+  /* Design-system tokens (2026 redesign). `sky` is the same value as `cyan`
+     and `slate` the same as `gray`: the redesign names them differently, the
+     old names stay so existing pages keep working while they migrate. */
+  --ink: #020818;
+  --mist: #f2f7fc;
+  --line: #e6e8ec;
+  --line-2: #d9dee6;
 
   /* shadcn tokens — white-dominant, Gartner-tier consulting look */
   --background: #ffffff;
@@ -363,6 +161,12 @@
   --color-cyan-ink: var(--cyan-ink);
   --color-light-blue: var(--light-blue);
   --color-gray: var(--gray);
+  --color-ink: var(--ink);
+  --color-mist: var(--mist);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-sky: var(--cyan);
+  --color-slate: var(--gray);
 
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
@@ -399,22 +203,56 @@
 }
 
 .prose-legal h2 {
-  @apply mt-10 text-xl font-bold text-navy first:mt-0;
+  @apply mt-12 font-heading text-[clamp(22px,2.2vw,26px)] font-bold tracking-[-0.02em] text-navy first:mt-0;
 }
 .prose-legal h3 {
-  @apply mt-6 text-base font-semibold text-navy;
+  @apply mt-8 font-heading text-lg font-semibold text-navy;
 }
 .prose-legal p {
-  @apply mt-3 text-base leading-relaxed text-gray;
+  @apply mt-4 text-[17px] leading-[1.75] text-slate;
 }
 .prose-legal ul {
-  @apply mt-3 list-disc space-y-1.5 pl-5 text-base leading-relaxed text-gray;
+  @apply mt-4 list-disc space-y-2 pl-5 text-[17px] leading-[1.75] text-slate;
 }
 .prose-legal a {
-  @apply text-blue underline underline-offset-2;
+  @apply text-blue underline underline-offset-2 hover:text-navy;
 }
 .prose-legal strong {
   @apply font-semibold text-navy;
+}
+
+/* --- Design-system layout and type utilities -----------------------------
+   One definition of the 1280px container, the section rhythm and the heading
+   scale, so every page lands on the same numbers. */
+@utility container-site {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(24px, 5vw, 64px);
+}
+@utility section-y {
+  padding-block: clamp(80px, 10vw, 128px);
+}
+@utility t-h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(42px, 5.8vw, 80px);
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+@utility t-h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(30px, 3.4vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+@utility t-lead {
+  font-size: clamp(17px, 1.6vw, 19px);
+  line-height: 1.75;
+  text-wrap: pretty;
 }
 
 /* --- Scroll reveals ------------------------------------------------------
@@ -538,6 +376,9 @@
 .cira-initial-outline {
   -webkit-text-stroke: 2px var(--navy);
 }
+.cira-initial-outline-lg {
+  -webkit-text-stroke: 3px var(--navy);
+}
 
 /* --- Pulsing dot spiral --------------------------------------------------
    Used by AnimatedNavyBackground. This lived in a `<style>` element inside the
@@ -591,7 +432,34 @@
    src/components/ui/logo-carousel.tsx. */
 @keyframes logo-marquee {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  /* -50% alone drifts by half a gap on every loop; 32px is half of the
+     marquee's gap-16 (64px), which makes the seam invisible. */
+  to { transform: translateX(calc(-50% - 32px)); }
+}
+
+/* Soft fade at both ends of the marquee. */
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* Photo-backed dark sections: the overlay keeps the text AA-legible over any
+   picture. A class rather than inline style, for the hydration reasons above. */
+.photo-overlay-navy {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 8, 24, 0.96) 0%,
+    rgba(10, 44, 99, 0.9) 45%,
+    rgba(10, 44, 99, 0.72) 100%
+  );
+}
+
+/* Glass caption laid over a photo (PhotoCaption). */
+.glass-caption {
+  background: rgba(2, 8, 24, 0.72);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 /* --- Cookie banner ------------------------------------------------------- */

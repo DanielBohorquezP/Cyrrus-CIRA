@@ -1,14 +1,33 @@
 {
   "erp": {
     "meta": {
-      "title": "ERP Selection for Companies | Cyrrus",
-      "description": "ERP selection consulting: we define, evaluate, and choose with you the ERP that best fits your processes — a 100% vendor-agnostic evaluation."
+      "title": "ERP Consultant: Independent ERP Selection Services | Cyrrus",
+      "description": "Independent ERP consulting and selection: we define requirements, evaluate vendors, and choose the ERP that fits your processes. 100% vendor-agnostic."
     },
     "hero": {
       "eyebrow": "Solution Selection — Software Selection",
-      "title": "ERP selection and evaluation",
+      "title": "Independent ERP consultant: vendor-neutral ERP selection",
       "description": "Choosing an ERP isn't choosing software. It's choosing how your company will run for the next several years. We help organizations define, evaluate, and select the ERP that best fits their processes, objectives, architecture, and investment capacity.",
       "ctaLabel": "Evaluate my ERP need"
+    },
+    "respuesta": {
+      "eyebrow": "Independent ERP consultant",
+      "title": "What does an independent ERP consultant do?",
+      "body": "An independent ERP consultant helps a company decide which ERP it needs before signing with a vendor or an implementation partner. At Cyrrus that decision is made with criteria defined from your operations: we have no commercial alliances or commissions with any ERP vendor, and the recommendation can be to switch platforms, optimize the current one, or not change at all.",
+      "items": [
+        {
+          "title": "Selection",
+          "description": "Gathers requirements, builds the longlist and shortlist, runs the RFI/RFP and the demos, and compares vendors against six criteria and the total cost of ownership."
+        },
+        {
+          "title": "Timeline",
+          "description": "As a reference, the Identify phase of the CIRA Method usually takes 6 to 12 weeks, from the strategic kickoff to support during contracting."
+        },
+        {
+          "title": "Implementation",
+          "description": "Selection and implementation are separate phases. During the implementation of the recommended ERP we can act as an external PMO that governs schedule, risks, and vendors."
+        }
+      ]
     },
     "dolor": {
       "eyebrow": "01 — Pain",
@@ -110,6 +129,10 @@
     },
     "faq": [
       {
+        "question": "When should a company hire an ERP consultant?",
+        "answer": "When the company has grown faster than its platform, runs systems that don't talk to each other, depends on parallel spreadsheets, takes weeks to consolidate its financial information, its ERP no longer gets real support, or it is about to expand into new units or countries. Also before renewing or extending the current ERP: sometimes the answer is to optimize, not replace."
+      },
+      {
         "question": "How long does an ERP selection process take?",
         "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
       },
@@ -141,14 +164,33 @@
   },
   "crm": {
     "meta": {
-      "title": "CRM Selection for Companies | Cyrrus",
+      "title": "CRM Consulting Services: Independent CRM Selection | Cyrrus",
       "description": "CRM selection consulting: we design the evaluation around your real sales process, to choose the CRM your sales team will actually adopt."
     },
     "hero": {
       "eyebrow": "Solution Selection — Software Selection",
-      "title": "CRM selection and evaluation",
+      "title": "Independent CRM consulting: a CRM your team will actually adopt",
       "description": "A CRM shouldn't force your sales team to change how they sell. It should help them sell better. We help organizations define, evaluate, and select the CRM that best fits their sales process.",
       "ctaLabel": "Evaluate my CRM need"
+    },
+    "respuesta": {
+      "eyebrow": "Independent CRM consulting",
+      "title": "What does independent CRM consulting do?",
+      "body": "It helps a company choose the CRM that fits its real sales process before buying licenses or hiring an implementation. At Cyrrus we start from your sales process, not from a vendor's catalog: we take no commission from any vendor, and the evaluation may well conclude that the cheapest platform on the market is right for you, or that the one you already own just needs reconfiguring.",
+      "items": [
+        {
+          "title": "Selection",
+          "description": "Maps the sales process, builds the shortlist, runs guided functional demos, and compares vendors on process fit, ease of use, ERP integration, total cost per user, and vendor sustainability."
+        },
+        {
+          "title": "Adoption",
+          "description": "The adoption criterion is evaluated from day one with your sales team, not at the end of the process."
+        },
+        {
+          "title": "Timeline and implementation",
+          "description": "As a reference, the Identify phase of the CIRA Method usually takes 6 to 12 weeks. During implementation we can act as an external PMO, with change management supporting adoption."
+        }
+      ]
     },
     "dolor": {
       "eyebrow": "01 — Pain",
@@ -247,6 +289,10 @@
     },
     "faq": [
       {
+        "question": "When should a company hire a CRM consultant?",
+        "answer": "When customer information is scattered, leads fall through, follow-up is manual, there's no pipeline visibility, each team uses a different tool, or information depends on specific people. Also when the sales team already rejected a CRM before and doesn't want to repeat the experience."
+      },
+      {
         "question": "How long does a CRM selection process take?",
         "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
       },
@@ -270,12 +316,12 @@
   },
   "hcm": {
     "meta": {
-      "title": "HCM (Human Capital Management) Selection | Cyrrus",
-      "description": "HCM selection consulting: we align human capital technology with your payroll, talent, and employee experience — 100% vendor-agnostic."
+      "title": "HCM Consulting: HRIS & HCM Software Selection | Cyrrus",
+      "description": "Independent HCM consulting: we help you choose the HR and payroll software (HRIS/HCM) that fits your people-management model, with no vendor commissions."
     },
     "hero": {
       "eyebrow": "Solution Selection — Software Selection",
-      "title": "Human capital management (HCM) software selection",
+      "title": "HCM consulting: independent HRIS and HCM software selection",
       "description": "Human capital technology should adapt to the organization, not the other way around. We help organizations define, evaluate, and select the HCM that best fits their people-management model.",
       "ctaLabel": "Evaluate my HCM need"
     },
@@ -375,6 +421,14 @@
     },
     "faq": [
       {
+        "question": "What is an HCM, and how is it different from payroll software?",
+        "answer": "An HCM (Human Capital Management) is the platform that covers the whole people-management cycle: payroll, recruiting, talent, performance, and employee experience. Payroll software solves only one part, calculating and paying payroll. Choosing between them depends on the size of the organization and which people processes it needs to integrate."
+      },
+      {
+        "question": "When should a company hire an HCM consultant?",
+        "answer": "When payroll, talent, and recruiting live on separate platforms that don't connect, when vacation, reviews, and compensation are managed in spreadsheets, or when the current platform can't support headcount growth or operations in new countries."
+      },
+      {
         "question": "How long does an HCM selection process take?",
         "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
       },
@@ -394,16 +448,35 @@
         "question": "Why use an independent consultant to choose an HCM?",
         "answer": "Because in payroll a mistake can be costly, and a vendor may have little incentive to point out its own country-level gaps. An evaluator with no commission can tell you which platform does not properly cover your local legislation."
       }
-    ]
+    ],
+    "respuesta": {
+      "eyebrow": "Independent HCM consulting",
+      "title": "What does an independent HCM consultant do?",
+      "body": "They help the company decide which HR and payroll software it needs before signing with a vendor. At Cyrrus that decision starts from your people-management model: we have no commercial alliances or commissions with HCM vendors, so we can tell you which platform does not properly cover your local legislation.",
+      "items": [
+        {
+          "title": "Selection",
+          "description": "Gathers the human capital requirements, evaluates and compares vendors against six criteria, and delivers a decision matrix, the economic evaluation, and a recommendation."
+        },
+        {
+          "title": "Payroll and countries",
+          "description": "Regulatory and payroll compliance in every country the company operates in is evaluated from the start, not as an adjustment after the selection."
+        },
+        {
+          "title": "Timing",
+          "description": "As a reference, the CIRA Method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+        }
+      ]
+    }
   },
   "eam": {
     "meta": {
-      "title": "EAM (Enterprise Asset Management) Selection | Cyrrus",
-      "description": "EAM selection consulting: we choose your asset management platform based on your operation's lifecycle, with no vendor bias."
+      "title": "EAM & CMMS Consulting: Asset Management Software | Cyrrus",
+      "description": "Independent EAM consulting: we choose your maintenance and asset management software based on your operation's lifecycle, with no vendor commissions."
     },
     "hero": {
       "eyebrow": "Solution Selection — Software Selection",
-      "title": "Enterprise asset management (EAM) software selection",
+      "title": "EAM consulting: independent asset management and CMMS software selection",
       "description": "Asset management starts long before maintenance. It starts with choosing the right technology. We help organizations define, evaluate, and select the EAM that best fits their operational reality.",
       "ctaLabel": "Evaluate my EAM need"
     },
@@ -504,6 +577,14 @@
     },
     "faq": [
       {
+        "question": "When should a company hire an EAM consultant?",
+        "answer": "When maintenance is reactive and assets get serviced after they've already failed, when maintenance history lives in physical logs or loose files, when there's unplanned downtime with no prior warning, or when procurement doesn't know what parts are available before issuing an order."
+      },
+      {
+        "question": "What's the difference between a CMMS and an EAM?",
+        "answer": "A CMMS manages maintenance tasks: work orders, spare parts, and scheduling. An EAM covers the asset's whole lifecycle, including capital planning, risk, and performance. We explain it in more detail in our CMMS and EAM software guide."
+      },
+      {
         "question": "How long does an EAM selection process take?",
         "answer": "As a reference, the CIRA method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
       },
@@ -521,8 +602,27 @@
       },
       {
         "question": "Why hire an independent consultant to choose an EAM?",
-        "answer": "Because in asset management the gap between what a demo promises and what the operation supports in the field is the widest in enterprise software. With no commission from any manufacturer, we evaluate that gap against criteria defined before seeing any product."
+        "answer": "Because in asset management the gap between what a demo promises and what the operation supports in the field can be wide. With no commission from any manufacturer, we evaluate that gap against criteria defined before seeing any product."
       }
-    ]
+    ],
+    "respuesta": {
+      "eyebrow": "Independent EAM consulting",
+      "title": "What does an independent EAM consultant do?",
+      "body": "They help the company decide which maintenance and asset management software it needs — a CMMS, an EAM, or the ERP's maintenance module — before signing with a vendor. At Cyrrus that decision starts from your assets' operational reality, with criteria defined before seeing any product and no manufacturer commissions.",
+      "items": [
+        {
+          "title": "Selection",
+          "description": "Builds the operational requirements map and the technical evaluation matrix, compares vendors, and calculates lifecycle total cost of ownership."
+        },
+        {
+          "title": "Industry",
+          "description": "Evaluates the vendor's real experience in your industry — manufacturing, energy, mining, or transportation — not just generic platform capability."
+        },
+        {
+          "title": "Timing",
+          "description": "As a reference, the CIRA Method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+        }
+      ]
+    }
   }
 }

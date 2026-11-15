@@ -1,19 +1,3 @@
-import {
-  BarChart3,
-  Boxes,
-  CheckCircle2,
-  ClipboardCheck,
-  Cpu,
-  Eye,
-  Flame,
-  Gauge,
-  HeartHandshake,
-  Network,
-  ShieldCheck,
-  TrendingDown,
-  UserX,
-  Zap,
-} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
@@ -27,22 +11,22 @@ import { FaqSection } from "@/components/sections/faq-section";
 import { ServiceLead } from "@/components/sections/service-lead";
 import { ServiceDefinition } from "@/components/sections/service-definition";
 import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
-import { TrustBar } from "@/components/sections/trust-bar";
+import { RelatedServices } from "@/components/sections/related-services";
 import { Testimonials } from "@/components/sections/testimonials";
+import { CardGrid } from "@/components/ui/card-grid";
+import { DarkStatBand, type Stat } from "@/components/ui/dark-stat-band";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { NumberedList } from "@/components/ui/numbered-list";
+import { SecondaryButton } from "@/components/ui/border-button";
+import { SectionHeader } from "@/components/ui/section-header";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
-import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/estrategia";
-import { Img } from "@/components/ui/img";
 
-interface Problem {
-  title: string;
-  description: string;
-}
-interface Benefit {
+interface Item {
   title: string;
   description: string;
 }
@@ -55,35 +39,29 @@ interface Faq {
   question: string;
   answer: string;
 }
-interface Stat {
-  value: string;
-  label: string;
-}
 
-const problemIcons = [Network, Eye, TrendingDown, UserX, Cpu];
-const benefitIcons = [Gauge, Zap, TrendingDown, UserX, Flame, BarChart3];
+// One photo per intro card, in the same order as intro.bullets.
+const introImages = [
+  "/assets/decoracion/IMG_20230227_164810.jpg",
+  "/assets/decoracion/IMG_20200313_092701647.jpg",
+  "/assets/decoracion/IMG_20230302_112825.jpg",
+];
 
 export default function PlaneacionEstrategica() {
   const { t } = useTranslation("estrategia");
   const lang = useLang();
 
-  const problems = (t("diagnostico.problems", { returnObjects: true }) as Problem[]).map((p, i) => ({
-    ...p,
-    icon: problemIcons[i],
-  }));
-  const benefits = (t("benefits.items", { returnObjects: true }) as Benefit[]).map((b, i) => ({
-    ...b,
-    icon: benefitIcons[i],
-  }));
+  const problems = t("diagnostico.problems", { returnObjects: true }) as Item[];
+  const benefits = t("benefits.items", { returnObjects: true }) as Item[];
   const cxaas = t("cxaas.roles", { returnObjects: true }) as Role[];
   const services = t("services.items", { returnObjects: true }) as ScopeItem[];
-  const uses = t("definicion.uses", { returnObjects: true }) as Benefit[];
+  const uses = t("definicion.uses", { returnObjects: true }) as Item[];
   const faqs = t("faq.items", { returnObjects: true }) as Faq[];
   const stats = t("whyCeos.stats", { returnObjects: true }) as Stat[];
-  const relatedItems = (t("related.items", { returnObjects: true }) as Benefit[]).map((it, i) => ({
-    ...it,
-    icon: [Boxes, ClipboardCheck, HeartHandshake][i],
-  }));
+  const bullets = t("intro.bullets", { returnObjects: true }) as string[];
+  const bulletTitles = t("intro.bulletTitles", { returnObjects: true }) as string[];
+  const bulletAlts = t("intro.bulletImageAlts", { returnObjects: true }) as string[];
+  const [quoteLead, ...quoteRest] = t("intro.pullQuote").split(" — ");
 
   const siteUrl = "https://cyrruscs.com";
   const pagePath = lang === "en" ? "/en/metodo-cira/estrategia" : "/metodo-cira/estrategia";
@@ -94,7 +72,17 @@ export default function PlaneacionEstrategica() {
     : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
   const pmoPath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
   const changePath = lang === "en" ? "/en/metodo-cira/gestion-del-cambio" : "/metodo-cira/gestion-del-cambio";
-  const relatedPaths = [erpPath, pmoPath, changePath];
+  // The 3 Castillos case is the published proof of a strategy-to-go-live engagement.
+  const casePath = lang === "en" ? "/en/experiencia/3-castillos" : "/experiencia/3-castillos";
+  const itStrategyPath = lang === "en" ? "/en/metodo-cira/estrategia/estrategia-de-ti" : "/metodo-cira/estrategia/estrategia-de-ti";
+  const continuityPath = lang === "en"
+    ? "/en/metodo-cira/estrategia/continuidad-del-negocio"
+    : "/metodo-cira/estrategia/continuidad-del-negocio";
+  const relatedPaths = [erpPath, pmoPath, changePath, casePath, itStrategyPath, continuityPath];
+  const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((item, i) => ({
+    ...item,
+    href: relatedPaths[i],
+  }));
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
     { label: t("hero.eyebrow").split(" — ")[0], href: methodPath },
@@ -150,62 +138,54 @@ export default function PlaneacionEstrategica() {
         title={t("hero.title")}
         description={t("hero.description")}
         breadcrumbs={breadcrumbItems}
+        image={{
+          src: "/assets/decoracion/IMG_20230228_091011.webp",
+          alt: t("hero.imageAlt"),
+          caption: t("hero.imageCaption"),
+        }}
       >
         <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
+        <SecondaryButton asChild>
+          <Link to={methodPath}>{t("intro.methodLinkLabel")}</Link>
+        </SecondaryButton>
       </PageHero>
 
-      <TrustBar />
-
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-3xl">
-            <span className="block text-base font-bold uppercase tracking-wider text-blue">
-              {t("intro.kicker")}
-            </span>
-            <p className="mt-4 border-l-2 border-cyan pl-6 text-2xl font-semibold leading-snug text-navy sm:text-3xl">
-              {t("intro.pullQuote")}
-            </p>
-          </Reveal>
-
-          <div className="mt-12 grid grid-cols-1 gap-12 md:mt-14 md:grid-cols-12 md:gap-8">
-            {/* Image taken out of flow (absolute) so its own aspect ratio can't
-                dictate the grid row's height — the row is sized by the text
-                column instead, and the photo just fills that height. See the
-                cxaas section below for the full explanation. */}
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto"
-            >
-              <Img
-                src="/assets/decoracion/IMG_20200313_092604173.jpg"
-                alt="Consultores de Cyrrus presentando planeación estratégica en conferencia"
-                width={640}
-                height={427}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-
-            <Reveal delay={0.15} className="md:col-span-7">
-              <p className="text-lg leading-relaxed text-gray">
-                {t("intro.description")}
-              </p>
-              <ul className="mt-8 space-y-4">
-                {(t("intro.bullets", { returnObjects: true }) as string[]).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
-                    <span className="text-base leading-relaxed text-navy/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-base leading-relaxed text-gray">
-                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="text-navy underline underline-offset-2">
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <Reveal className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,400px),1fr))] gap-x-24 gap-y-14">
+            <div>
+              <Eyebrow>{t("intro.kicker")}</Eyebrow>
+              <blockquote className="mt-7 font-heading text-[clamp(28px,3vw,40px)] font-light leading-[1.3] tracking-[-0.02em] text-pretty text-navy">
+                {quoteRest.length > 0 ? (
+                  <>
+                    {`${quoteLead} — `}
+                    <span className="font-semibold">{quoteRest.join(" — ")}</span>
+                  </>
+                ) : (
+                  quoteLead
+                )}
+              </blockquote>
+            </div>
+            <div>
+              <p className="t-lead text-slate">{t("intro.description")}</p>
+              <p className="mt-6 text-base text-slate">
+                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
                   {t("intro.methodLinkLabel")}
                 </Link>
-                .
               </p>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
+
+          <CardGrid
+            numbered
+            min="sm"
+            className="mt-[72px]"
+            items={bullets.map((description, i) => ({
+              title: bulletTitles[i],
+              description,
+              image: { src: introImages[i], alt: bulletAlts[i], position: i === 0 ? "50% 30%" : undefined },
+            }))}
+          />
         </div>
       </section>
 
@@ -218,145 +198,25 @@ export default function PlaneacionEstrategica() {
         link={{ href: langPath(t("definicion.linkHref"), lang), label: t("definicion.linkLabel") }}
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("diagnostico.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("diagnostico.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-gray">
-              {t("diagnostico.description")}
-            </p>
+      <section className="section-y w-full bg-background">
+        <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))] items-start gap-x-24 gap-y-14">
+          <Reveal className="lg:sticky lg:top-28">
+            <Eyebrow>{t("diagnostico.eyebrow")}</Eyebrow>
+            <h2 className="t-h2 mt-5 text-navy">{t("diagnostico.title")}</h2>
+            <p className="mt-6 text-lg leading-[1.7] text-pretty text-slate">{t("diagnostico.description")}</p>
           </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
-            {problems.map((problem, index) => {
-              const Icon = problem.icon;
-              return (
-                <RevealItem
-                  key={problem.title}
-                  className="flex gap-5 rounded-2xl border border-border bg-card p-7"
-                >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy">
-                    <Icon className="h-5 w-5 text-cyan" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-blue">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="mt-1 text-lg font-semibold text-navy">
-                      {problem.title}
-                    </h3>
-                    <p className="mt-2 text-base leading-relaxed text-gray">
-                      {problem.description}
-                    </p>
-                  </div>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("hero.ctaLabel")} />
-          </Reveal>
+          <NumberedList items={problems} />
         </div>
       </section>
 
-      <AnimatedNavyBackground className="py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-6 text-center md:px-12">
-          <Reveal>
-            <span className="text-sm font-bold uppercase tracking-wider text-cyan">
-              {t("whyCeos.eyebrow")}
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
-              {t("whyCeos.title")}
-            </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70">
-              {t("whyCeos.description")}
-            </p>
-          </Reveal>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2">
-            {stats.map((stat) => (
-              <RevealItem key={stat.value} className="px-4">
-                <dd className="bg-gradient-to-br from-cyan to-white bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
-                  {stat.value}
-                </dd>
-                <span className="mt-3 block text-base leading-relaxed text-white/70">
-                  {stat.label}
-                </span>
-                <span className="mx-auto mt-4 block h-[3px] w-9 rounded-full bg-cyan" />
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </div>
-      </AnimatedNavyBackground>
-
-      <IncludedGrid
-        eyebrow={t("benefits.eyebrow")}
-        title={t("benefits.title")}
-        items={benefits}
+      <DarkStatBand
+        eyebrow={t("whyCeos.eyebrow")}
+        title={t("whyCeos.title")}
+        description={t("whyCeos.description")}
+        stats={stats}
       />
 
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-8">
-            <Reveal className="md:col-span-7">
-              <span className="text-base font-bold uppercase tracking-wider text-blue">
-                {t("cxaas.eyebrow")}
-              </span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-                {t("cxaas.title")}
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-gray">
-                {t("cxaas.description")}
-              </p>
-            </Reveal>
-
-            {/* Image taken out of flow (absolute) so its own aspect ratio
-                can't dictate the grid row's height: with a plain md:h-full
-                image, a portrait photo like this one made the row (and the
-                empty space under the shorter text block) as tall as the
-                photo's own proportions demanded, instead of the row being
-                sized by the text and the photo just filling it. */}
-            <Reveal
-              delay={0.1}
-              className="relative h-64 overflow-hidden rounded-2xl shadow-sm md:col-span-5 md:h-auto md:min-h-[220px]"
-            >
-              <Img
-                src="/assets/decoracion/IMG_20230227_164810.jpg"
-                alt="Consultor senior de Cyrrus definiendo la hoja de ruta con el equipo"
-                width={320}
-                height={400}
-                      className="absolute inset-0 h-full w-full object-cover"
-                sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-              />
-            </Reveal>
-          </div>
-
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {cxaas.map((role) => (
-              <RevealItem
-                key={role.title}
-                className="rounded-2xl border border-border bg-card p-7"
-              >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy">
-                  <ShieldCheck className="h-5 w-5 text-cyan" />
-                </div>
-                <h3 className="mt-5 text-base font-semibold text-navy">{role.title}</h3>
-                <p className="mt-2 text-base leading-relaxed text-gray">{role.description}</p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
-          <Reveal delay={0.15} className="mt-14 text-center">
-            <ContactCtaButton label={t("hero.ctaLabel")} />
-          </Reveal>
-        </div>
-      </section>
+      <IncludedGrid eyebrow={t("benefits.eyebrow")} title={t("benefits.title")} items={benefits} />
 
       <ServiceScope
         eyebrow={t("services.eyebrow")}
@@ -365,50 +225,40 @@ export default function PlaneacionEstrategica() {
         items={services}
       />
 
-      <ServiceLead
-        eyebrow={t("lead.eyebrow")}
-        title={t("lead.title")}
-        bio={t("lead.bio")}
-        className="bg-light-blue/40"
-      />
-
-      <Testimonials />
-
-      <section className="w-full bg-light-blue/40 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-12">
-          <Reveal className="max-w-2xl">
-            <span className="text-base font-bold uppercase tracking-wider text-blue">
-              {t("related.eyebrow")}
-            </span>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              {t("related.title")}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {relatedItems.map((item, i) => {
-              const RelatedIcon = item.icon;
-              return (
-                <RevealItem key={item.title}>
-                  <Link
-                    to={relatedPaths[i]}
-                    className="group flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-6 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
-                  >
-                    <RelatedIcon className="h-6 w-6 text-blue" />
-                    <span className="text-base font-semibold text-navy">{item.title}</span>
-                    <span className="text-sm leading-relaxed text-gray">{item.description}</span>
-                    <span className="mt-auto text-sm font-semibold text-blue">
-                      {`${lang === "en" ? "See more" : "Ver más"} →`}
-                    </span>
-                  </Link>
-                </RevealItem>
-              );
-            })}
+      <section className="section-y w-full bg-background">
+        <div className="container-site">
+          <SectionHeader
+            eyebrow={t("cxaas.eyebrow")}
+            title={t("cxaas.title")}
+            description={t("cxaas.description")}
+            align="start"
+          />
+          <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-6">
+            {cxaas.map((role) => (
+              <RevealItem
+                key={role.title}
+                className="flex min-h-[300px] flex-col rounded-2xl bg-navy px-9 py-10 text-white"
+              >
+                <span className="font-heading text-[56px] font-semibold leading-none tracking-[-0.03em]">
+                  {role.letter}
+                </span>
+                <h3 className="mt-auto pt-10 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-sky">
+                  {role.title}
+                </h3>
+                <p className="mt-3 text-[17px] leading-[1.65] text-pretty text-white/80">{role.description}</p>
+              </RevealItem>
+            ))}
           </RevealGroup>
         </div>
       </section>
 
-      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} />
+      <ServiceLead eyebrow={t("lead.eyebrow")} title={t("lead.title")} bio={t("lead.bio")} />
+
+      <Testimonials className="bg-background" />
+
+      <RelatedServices eyebrow={t("related.eyebrow")} title={t("related.title")} items={relatedItems} />
+
+      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} className="bg-background" />
 
       <FinalCta />
       </main>

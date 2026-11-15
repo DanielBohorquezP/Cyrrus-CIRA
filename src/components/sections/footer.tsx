@@ -77,11 +77,11 @@ export function Footer() {
   ];
 
   return (
-    <footer className="cv-section w-full border-t border-border bg-background py-12">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-center md:flex-row md:justify-between md:text-left">
+    <footer className="cv-section w-full bg-[#061129] py-16 text-white/65">
+      <div className="mx-auto flex max-w-[1280px] flex-col items-center gap-6 px-[clamp(24px,5vw,64px)] text-center md:flex-row md:justify-between md:text-left">
         <Link to={lang === "en" ? "/en" : "/"}>
           <Img
-            src="/assets/logos-cyrrus/cyrrus-logo-negro.png"
+            src="/assets/logos-cyrrus/cyrrus-logo-blanco.png"
             alt="Cyrrus Consulting Services"
             width={140}
             height={44}
@@ -94,7 +94,7 @@ export function Footer() {
             <Link
               key={link.label}
               to={link.href}
-              className="text-sm text-gray transition-colors hover:text-navy"
+              className="text-sm text-white/65 transition-colors hover:text-white"
             >
               {link.label}
             </Link>
@@ -102,7 +102,7 @@ export function Footer() {
           <button
             type="button"
             onClick={() => openWizard()}
-            className="text-sm text-gray transition-colors hover:text-navy"
+            className="text-sm text-white/65 transition-colors hover:text-white"
           >
             {lang === "en" ? "Contact" : "Contacto"}
           </button>
@@ -114,13 +114,13 @@ export function Footer() {
               <Link
                 key={link.label}
                 to={link.href}
-                className="text-xs text-muted-foreground transition-colors hover:text-navy"
+                className="text-xs text-white/60 transition-colors hover:text-white"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
-          <div className="text-xs text-muted-foreground">
+          <div className="text-xs text-white/60">
             {/* One string, not `© {year} Cyrrus...`. Adjacent literal-and-expression
                 children are separate text nodes to React but a single one once the
                 page has been serialised to HTML, which fails hydration. */}
@@ -130,34 +130,34 @@ export function Footer() {
       </div>
       <nav
         aria-label={t("footer.servicios", { ns: "common" })}
-        className="mx-auto mt-10 flex max-w-6xl flex-col items-center gap-3 border-t border-border px-6 pt-6 text-center md:flex-row md:flex-wrap md:items-baseline md:gap-x-6 md:text-left"
+        className="mx-auto mt-10 flex max-w-[1280px] flex-col items-center gap-3 border-t border-white/12 px-[clamp(24px,5vw,64px)] pt-6 text-center md:flex-row md:flex-wrap md:items-baseline md:gap-x-6 md:text-left"
       >
-        <span className="text-xs font-semibold uppercase tracking-wide text-navy">{t("footer.servicios", { ns: "common" })}</span>
+        <span className="font-heading text-xs font-semibold uppercase tracking-[0.14em] text-white">{t("footer.servicios", { ns: "common" })}</span>
         {serviceLinks.map((link) => (
-          <Link key={link.href} to={link.href} className="text-sm text-gray transition-colors hover:text-navy">
+          <Link key={link.href} to={link.href} className="text-sm text-white/65 transition-colors hover:text-white">
             {link.label}
           </Link>
         ))}
       </nav>
-      <address className="mx-auto mt-6 flex max-w-6xl flex-col items-center gap-x-8 gap-y-2 border-t border-border px-6 pt-6 text-center text-xs not-italic text-muted-foreground md:flex-row md:flex-wrap md:justify-between md:text-left">
-        <span className="font-semibold text-navy">
+      <address className="mx-auto mt-6 flex max-w-[1280px] flex-col items-center gap-x-8 gap-y-2 border-t border-white/12 px-[clamp(24px,5vw,64px)] pt-6 text-center text-xs not-italic text-white/60 md:flex-row md:flex-wrap md:justify-between md:text-left">
+        <span className="font-semibold text-white">
           {lang === "en" ? "Cyrrus Consulting Services S.A.S. · Tax ID (NIT) 901.121.953-1" : "Cyrrus Consulting Services S.A.S. · NIT 901.121.953-1"}
         </span>
         {offices.map((office) => (
           <span key={office.city}>{`${office.street}, ${office.city}, Colombia`}</span>
         ))}
         <span className="flex flex-wrap justify-center gap-x-4 gap-y-1">
-          <a href={`tel:${phone.replace(/\s/g, "")}`} className="transition-colors hover:text-navy">
+          <a href={`tel:${phone.replace(/\s/g, "")}`} className="transition-colors hover:text-white">
             {phone}
           </a>
-          <a href={`mailto:${email}`} className="transition-colors hover:text-navy">
+          <a href={`mailto:${email}`} className="transition-colors hover:text-white">
             {email}
           </a>
           <a
             href={googleProfile}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-navy"
+            className="transition-colors hover:text-white"
           >
             {lang === "en" ? "Google Business Profile" : "Perfil de Google"}
           </a>
@@ -166,8 +166,8 @@ export function Footer() {
       {/* Agency credit. Google treats followed links in site-wide footers as link
           schemes, so it stays nofollow with a plain brand anchor. No noreferrer:
           OPPI should still see the referral in their analytics. */}
-      <p className="mx-auto mt-4 max-w-6xl px-6 text-center text-xs text-muted-foreground md:text-left">
-        {lang === "en" ? "SEO strategy by " : "Estrategia SEO por "}<a href="https://www.oppi.digital/" target="_blank" rel="nofollow noopener" className="transition-colors hover:text-navy">OPPI</a>
+      <p className="mx-auto mt-4 max-w-[1280px] px-[clamp(24px,5vw,64px)] text-center text-xs text-white/60 md:text-left">
+        {lang === "en" ? "SEO strategy by " : "Estrategia SEO por "}<a href="https://www.oppi.digital/" target="_blank" rel="nofollow noopener" className="transition-colors hover:text-white">OPPI</a>
       </p>
     </footer>
   );

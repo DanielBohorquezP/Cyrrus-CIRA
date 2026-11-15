@@ -1,6 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ArrowRight } from "lucide-react";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
 import { caseStudies, getCaseStudyBySlug } from "@/lib/case-studies";
@@ -9,6 +8,8 @@ import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { RuledBullets } from "@/components/ui/ruled-bullets";
 import { YoutubeFacade } from "@/components/ui/youtube-facade";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
@@ -147,74 +148,74 @@ export default function CasoDetalle() {
           <ContactCtaButton variant="light" />
         </PageHero>
 
-        <section className="w-full bg-background py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
-            <RevealGroup className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <section className="section-y w-full bg-background">
+          <div className="container-site">
+            <RevealGroup
+              as="dl"
+              className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,220px),1fr))] border-b border-line"
+            >
               {tr.facts.map((fact) => (
-                <RevealItem key={fact.label} className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm">
-                  <div className="bg-gradient-to-br from-navy to-blue bg-clip-text text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl">
+                <RevealItem
+                  key={fact.label}
+                  className="flex flex-col-reverse justify-end border-r border-line py-8 pr-8 last:border-r-0"
+                >
+                  <dt className="mt-4 text-base leading-[1.5] text-slate">{fact.label}</dt>
+                  <dd className="font-heading text-[clamp(44px,5vw,64px)] font-light leading-none tracking-[-0.04em] text-navy">
                     {fact.value}
-                  </div>
-                  <div className="mt-2 text-sm text-gray">{fact.label}</div>
+                  </dd>
                 </RevealItem>
               ))}
             </RevealGroup>
-          </div>
-        </section>
 
-        <section className="w-full bg-background pb-20 md:pb-24">
-          <div className="mx-auto max-w-3xl px-6 md:px-12">
-            <Reveal>
-              <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">{label("challenge")}</h2>
-              {tr.challenge.map((p) => (
-                <p key={p} className="mt-5 text-lg leading-relaxed text-gray">
-                  {p}
-                </p>
-              ))}
-            </Reveal>
-          </div>
-        </section>
-
-        <section className="w-full bg-light-blue/40 py-20 md:py-24">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
-            <Reveal className="max-w-2xl">
-              <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">{label("approach")}</h2>
-            </Reveal>
-            <RevealGroup as="ol" className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
-              {tr.phases.map((phase) => (
-                <RevealItem as="li" key={phase.phase} className="rounded-2xl border border-border bg-card p-7 shadow-sm">
-                  <span className="text-sm font-bold uppercase tracking-wider text-blue">{phase.phase}</span>
-                  <h3 className="mt-2 text-lg font-semibold text-navy">{phase.title}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-gray">{phase.text}</p>
-                </RevealItem>
-              ))}
-            </RevealGroup>
-          </div>
-        </section>
-
-        <section className="w-full bg-background py-20 md:py-24">
-          <div className="mx-auto max-w-3xl px-6 md:px-12">
-            <Reveal>
-              <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">{label("results")}</h2>
-              <ul className="mt-6 space-y-4">
-                {tr.results.map((r) => (
-                  <li key={r} className="flex gap-3 text-lg leading-relaxed text-foreground">
-                    <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-cyan" aria-hidden="true" />
-                    <span>{r}</span>
-                  </li>
+            <Reveal className="mt-20 grid grid-cols-[repeat(auto-fit,minmax(min(100%,340px),1fr))] gap-x-24 gap-y-8">
+              <h2 className="t-h2 text-navy">{label("challenge")}</h2>
+              <div className="space-y-5">
+                {tr.challenge.map((p) => (
+                  <p key={p} className="t-lead text-slate">
+                    {p}
+                  </p>
                 ))}
-              </ul>
+              </div>
             </Reveal>
           </div>
         </section>
 
-        <section className="w-full bg-background pb-20 md:pb-24">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
-            <Reveal className="max-w-2xl">
-              <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">{label("testimonials")}</h2>
+        <section className="section-y w-full bg-mist">
+          <div className="container-site">
+            <Reveal>
+              <h2 className="t-h2 text-navy">{label("approach")}</h2>
             </Reveal>
             <RevealGroup
-              className={`mt-10 grid grid-cols-1 gap-6 ${entry.videos.length > 1 ? "md:grid-cols-3" : "md:max-w-xl"}`}
+              as="ol"
+              className="mt-14 grid grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] gap-x-16 gap-y-12"
+            >
+              {tr.phases.map((phase) => (
+                <RevealItem as="li" key={phase.phase} className="border-t-2 border-navy pt-6">
+                  <Eyebrow as="span">{phase.phase}</Eyebrow>
+                  <h3 className="mt-3 font-heading text-xl font-semibold leading-snug text-navy">{phase.title}</h3>
+                  <p className="mt-3.5 text-[17px] leading-[1.7] text-slate">{phase.text}</p>
+                </RevealItem>
+              ))}
+            </RevealGroup>
+          </div>
+        </section>
+
+        <section className="section-y w-full bg-background">
+          <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,340px),1fr))] gap-x-24 gap-y-10">
+            <Reveal>
+              <h2 className="t-h2 text-navy">{label("results")}</h2>
+            </Reveal>
+            <RuledBullets items={tr.results} />
+          </div>
+        </section>
+
+        <section className="section-y w-full bg-mist">
+          <div className="container-site">
+            <Reveal>
+              <h2 className="t-h2 text-navy">{label("testimonials")}</h2>
+            </Reveal>
+            <RevealGroup
+              className={`mt-14 grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-8 ${entry.videos.length > 1 ? "" : "md:max-w-xl"}`}
             >
               {entry.videos.map((video, i) => {
                 const item = tr.testimonials[i];
@@ -224,17 +225,17 @@ export default function CasoDetalle() {
                     as="figure"
                     key={video.id}
                     index={i}
-                    className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card"
+                    className="flex flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-[0_1px_2px_rgba(10,44,99,0.04)]"
                   >
                     <YoutubeFacade videoId={video.id} title={`${who} — ${tr.company}, ${label("videoSuffix")}`} />
                     {item && (
-                      <div className="flex flex-1 flex-col p-6">
-                        <blockquote className="flex-1 text-[15px] leading-relaxed text-foreground">
+                      <div className="flex flex-1 flex-col p-7">
+                        <blockquote className="flex-1 font-heading text-[17px] leading-[1.55] text-pretty text-navy">
                           {`“${item.quote}”`}
                         </blockquote>
-                        <figcaption className="mt-6 border-t border-border pt-4 text-sm">
-                          <div className="font-semibold text-navy">{item.name || item.role}</div>
-                          <div className="text-gray">{item.name ? `${item.role} · ${tr.company}` : tr.company}</div>
+                        <figcaption className="mt-6 border-t border-line pt-5">
+                          <div className="font-heading text-[13px] font-semibold text-navy">{item.name || item.role}</div>
+                          <div className="mt-1 text-[15px] text-slate">{item.name ? `${item.role} · ${tr.company}` : tr.company}</div>
                         </figcaption>
                       </div>
                     )}
@@ -245,34 +246,40 @@ export default function CasoDetalle() {
           </div>
         </section>
 
-        <section className="w-full bg-light-blue/40 py-20 md:py-24">
-          <div className="mx-auto max-w-6xl px-6 md:px-12">
+        <section className="section-y w-full bg-background">
+          <div className="container-site">
             <Reveal>
-              <h2 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">{label("services")}</h2>
+              <h2 className="t-h2 text-navy">{label("services")}</h2>
             </Reveal>
-            <RevealGroup className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {entry.services.map((path) => (
+            <RevealGroup className="mt-14 grid grid-cols-[repeat(auto-fit,minmax(min(100%,260px),1fr))] border-t border-navy">
+              {entry.services.map((path, i) => (
                 <RevealItem key={path}>
                   <Link
                     to={`${prefix}${path}`}
-                    className="group flex h-full items-center justify-between gap-3 rounded-2xl border border-border bg-card p-5 font-semibold text-navy transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                    className="group flex h-full flex-col gap-3 border-b border-line-2 py-8 pr-8"
                   >
-                    {serviceLabels[path]?.[lang] ?? path}
-                    <ArrowRight className="h-4 w-4 shrink-0 text-blue transition-transform duration-150 ease-out group-hover:translate-x-0.5" />
+                    <span className="font-heading text-[13px] font-semibold text-blue">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-heading text-[22px] font-semibold text-navy group-hover:text-blue">
+                      {`${serviceLabels[path]?.[lang] ?? path} ↗`}
+                    </span>
                   </Link>
                 </RevealItem>
               ))}
             </RevealGroup>
 
             {other && otherTr && (
-              <Reveal className="mt-14">
+              <Reveal className="mt-16">
                 <Link
                   to={`${hubPath}/${other.slug}`}
-                  className="group block rounded-2xl border border-border bg-card p-7 transition-[border-color,box-shadow] duration-150 ease-out hover:border-blue hover:shadow-md"
+                  className="group block border-t-2 border-navy pt-6"
                 >
-                  <span className="text-sm font-bold uppercase tracking-wider text-blue">{label("otherCase")}</span>
-                  <span className="mt-2 block text-xl font-semibold text-navy">{otherTr.title}</span>
-                  <span className="mt-2 block text-base text-gray">{otherTr.card.metric}</span>
+                  <Eyebrow as="span">{label("otherCase")}</Eyebrow>
+                  <span className="mt-3 block font-heading text-[clamp(22px,2.2vw,28px)] font-semibold text-navy group-hover:text-blue">
+                    {`${otherTr.title} ↗`}
+                  </span>
+                  <span className="mt-2 block text-[17px] text-slate">{otherTr.card.metric}</span>
                 </Link>
               </Reveal>
             )}

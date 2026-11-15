@@ -5,6 +5,11 @@
     "description": "CIRA Method is Cyrrus's proprietary methodology that unifies the four phases of digital transformation — Construct, Identify, Realize, Adopt — under a single team accountable from start to finish, with artificial intelligence accelerating every phase.",
     "badge": "CIRA"
   },
+  "phaseLabels": {
+    "problem": "The problem",
+    "how": "How we do it",
+    "outcome": "The result"
+  },
   "phases": [
     {
       "id": "construir",
@@ -92,7 +97,7 @@
     ]
   },
   "meta": {
-    "title": "Digital Transformation Consulting | CIRA Method | Cyrrus",
+    "title": "Technology Consulting Services: The CIRA Method | Cyrrus",
     "description": "Learn about Cyrrus's CIRA methodology: the 4-phase framework that takes your company from strategy to real adoption, with AI at every step."
   }
 }

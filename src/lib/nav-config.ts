@@ -35,6 +35,18 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
           label: t("nav.estrategia", { ns: "common" }),
           href: p("/metodo-cira/estrategia"),
           description: t("nav.estrategiaDesc", { ns: "common" }),
+          children: [
+            {
+              label: t("nav.estrategiaTi", { ns: "common" }),
+              href: p("/metodo-cira/estrategia/estrategia-de-ti"),
+              description: t("nav.estrategiaTiDesc", { ns: "common" }),
+            },
+            {
+              label: t("nav.continuidadNegocioServicio", { ns: "common" }),
+              href: p("/metodo-cira/estrategia/continuidad-del-negocio"),
+              description: t("nav.continuidadNegocioServicioDesc", { ns: "common" }),
+            },
+          ],
         },
         {
           label: t("nav.seleccionSoluciones", { ns: "common" }),
@@ -55,6 +67,11 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
               label: t("nav.infraestructuraTecnologica", { ns: "common" }),
               href: p("/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica"),
               description: t("nav.infraestructuraTecnologicaDesc", { ns: "common" }),
+            },
+            {
+              label: t("nav.ciberseguridad", { ns: "common" }),
+              href: p("/metodo-cira/seleccion-de-soluciones/ciberseguridad"),
+              description: t("nav.ciberseguridadDesc", { ns: "common" }),
             },
           ],
         },
@@ -87,6 +104,16 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
               label: t("nav.automatizacionAgentes", { ns: "common" }),
               href: p("/intelligence-lab/automatizaciones-desarrollo"),
               description: t("nav.automatizacionAgentesDesc", { ns: "common" }),
+            },
+            {
+              label: t("nav.estrategiaIA", { ns: "common" }),
+              href: p("/intelligence-lab/estrategia-de-ia"),
+              description: t("nav.estrategiaIADesc", { ns: "common" }),
+            },
+            {
+              label: t("nav.gobiernoDatosServicio", { ns: "common" }),
+              href: p("/intelligence-lab/gobierno-de-datos"),
+              description: t("nav.gobiernoDatosServicioDesc", { ns: "common" }),
             },
           ],
         },

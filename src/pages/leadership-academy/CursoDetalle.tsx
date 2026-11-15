@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
-import { Reveal } from "@/components/ui/reveal";
+import { ServiceBody } from "@/components/sections/service-body";
 import { BorderButton } from "@/components/ui/border-button";
 import { useContactWizard } from "@/lib/contact-wizard-context";
 import { trackEvent } from "@/lib/analytics";
@@ -15,7 +15,6 @@ import { trackEvent } from "@/lib/analytics";
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/leadership-academy";
-import { Img } from "@/components/ui/img";
 
 interface WorkshopTranslation {
   title: string;
@@ -90,37 +89,28 @@ export default function CursoDetalle() {
       <SiteHeader />
       <main id="contenido">
       <PageHero eyebrow={entry.eyebrow} title={tr.title} description={tr.intro} breadcrumbs={breadcrumbItems} />
-      <section className="w-full bg-background py-20 md:py-28">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 md:grid-cols-12 md:gap-8 md:px-12">
-          <Reveal className="md:col-span-4">
-            <Img
-              src="/assets/decoracion/IMG-20240215-WA0030.jpg"
-              alt="Taller de formación ejecutiva de Cyrrus Leadership Academy"
-              width={400}
-              height={500}
-                  className="h-56 w-full rounded-2xl object-cover md:h-full"
-              sizes="(min-width: 1152px) 528px, (min-width: 768px) 46vw, calc(100vw - 3rem)"
-            />
-          </Reveal>
-          <Reveal delay={0.1} className="space-y-6 text-lg leading-relaxed text-gray md:col-span-8">
-            {tr.body.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
-            <BorderButton
-              type="button"
-              variant="dark"
-              dot
-              className="mt-2"
-              onClick={() => {
-                trackEvent("workshop_interest_click", { workshop: entry.slug });
-                openWizard({ servicio: `leadership-academy-${entry.slug}` });
-              }}
-            >
-              {t("hub.workshopsSection.interestCta")}
-            </BorderButton>
-          </Reveal>
-        </div>
-      </section>
+      <ServiceBody
+        className="bg-background"
+        paragraphs={tr.body}
+        image={{
+          src: "/assets/decoracion/IMG_20200313_092604173.jpg",
+          alt: "Taller de formación con un grupo de participantes en un salón",
+        }}
+      >
+        <BorderButton
+          type="button"
+          variant="dark"
+          size="lg"
+          dot
+          className="mt-3"
+          onClick={() => {
+            trackEvent("workshop_interest_click", { workshop: entry.slug });
+            openWizard({ servicio: `leadership-academy-${entry.slug}` });
+          }}
+        >
+          {t("hub.workshopsSection.interestCta")}
+        </BorderButton>
+      </ServiceBody>
       <FinalCta />
       </main>
       <Footer />

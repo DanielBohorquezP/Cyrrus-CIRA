@@ -13,15 +13,15 @@ interface PageFeatureImageProps {
 /** Full-width photo banner used on detail pages that would otherwise be text-only between the hero and the first content section. */
 export function PageFeatureImage({ src, alt, caption, fit = "cover" }: PageFeatureImageProps) {
   return (
-    <section className="w-full bg-background py-16 md:py-20">
-      <div className="mx-auto max-w-6xl px-6 md:px-12">
+    <section className="w-full bg-background py-[clamp(48px,6vw,80px)]">
+      <div className="container-site">
         <Reveal>
           <Img
             src={src}
             alt={alt}
             width={1200}
             height={600}
-            sizes="(min-width: 1152px) 1104px, 100vw"
+            sizes="(min-width: 1280px) 1152px, 100vw"
             className={cn(
               "h-64 w-full rounded-2xl sm:h-80 md:h-[26rem]",
               fit === "cover"
@@ -30,7 +30,7 @@ export function PageFeatureImage({ src, alt, caption, fit = "cover" }: PageFeatu
             )}
           />
           {caption && (
-            <p className="mt-3 text-sm text-gray">{caption}</p>
+            <p className="mt-3 font-heading text-[13px] font-medium tracking-[0.04em] text-[#5b6472]">{caption}</p>
           )}
         </Reveal>
       </div>
