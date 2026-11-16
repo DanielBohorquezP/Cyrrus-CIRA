@@ -20,7 +20,12 @@
     ],
     "ctaLabel": "Agendar diagnóstico ejecutivo",
     "methodLinkText": "Esta es la fase Identificar dentro del",
-    "methodLinkLabel": "Método CIRA completo"
+    "methodLinkLabel": "Método CIRA completo",
+    "bulletTitles": [
+      "Evaluación 360° de su negocio",
+      "Comparación sin sesgo de marca",
+      "Criterios definidos de antemano"
+    ]
   },
   "criteria": {
     "eyebrow": "Criterios de evaluación",
@@ -350,6 +355,131 @@
               "description": "NIST AI RMF, OCDE e ISO/IEC 42001 antes de poner la IA en producción."
             }
           ]
+        },
+        "queHacemos": {
+          "quote": "Elegimos la tecnología por el proceso —",
+          "emphasis": "no por la herramienta de moda.",
+          "intro": "Decidimos si su proceso necesita RPA, inteligencia artificial, un agente o un rediseño, y elegimos la plataforma sin comisiones de fabricantes.",
+          "cards": [
+            {
+              "title": "Inteligencia Artificial",
+              "text": "Desde asistentes inteligentes hasta modelos de analítica: dónde puede aumentar la productividad y mejorar decisiones.",
+              "image": "/assets/decoracion/Cascosss.jpg"
+            },
+            {
+              "title": "Automatización y RPA",
+              "text": "Plataformas que simplifican procesos y eliminan tareas repetitivas para que las personas se dediquen a lo estratégico.",
+              "image": "/assets/decoracion/IMG_20230302_112825.jpg"
+            },
+            {
+              "title": "Agentes de IA",
+              "text": "Tareas de varios pasos, comparadas con alternativas más simples cuando una regla fija o un RPA son suficientes.",
+              "image": "/assets/decoracion/IMG_20230227_164810.jpg"
+            },
+            {
+              "title": "Blockchain",
+              "text": "Trazabilidad, confianza e intercambio seguro de información para quien lo necesita.",
+              "image": "/assets/decoracion/IMG_20200313_092604173.jpg"
+            }
+          ]
+        },
+        "queEs": {
+          "title": "¿Qué hace una consultoría RPA independiente?",
+          "body": "Le ayuda a decidir si un proceso necesita RPA, inteligencia artificial, un agente de IA o primero un rediseño, y a elegir la plataforma con criterios definidos antes de ver demos. En Cyrrus lo hacemos sin comisiones de fabricantes.",
+          "refsLabel": "Cuándo conviene cada una",
+          "refs": [
+            {
+              "title": "RPA",
+              "description": "Reproduce tareas repetitivas con reglas fijas sobre los sistemas existentes, como copiar datos entre aplicaciones."
+            },
+            {
+              "title": "Inteligencia artificial",
+              "description": "Interpreta información no estructurada —textos, documentos, imágenes— y hace predicciones."
+            },
+            {
+              "title": "Agente de IA",
+              "description": "Combina ambas para completar una tarea de varios pasos con cierta autonomía."
+            }
+          ]
+        },
+        "comoLoHacemos": {
+          "title": "Se elige por el proceso, no por la herramienta",
+          "intro": "En nuestro criterio, automatizar un proceso confuso solo hace que el desorden ocurra más rápido. Por eso la selección empieza por el proceso.",
+          "steps": [
+            {
+              "title": "Priorizamos los procesos candidatos",
+              "description": "Volumen, qué tan estructurado es, qué excepciones aparecen y qué datos toca."
+            },
+            {
+              "title": "Definimos los criterios de evaluación",
+              "description": "Integración con sus sistemas, seguridad, costo total a tres años, operación por su propio equipo y medición del resultado."
+            },
+            {
+              "title": "Comparamos proveedores con casos reales",
+              "description": "Contra procesos de su operación, no contra la demo comercial."
+            },
+            {
+              "title": "Acompañamos la negociación y la contratación",
+              "description": "La implementación se coordina con la PMO; la construcción a medida, con nuestra práctica de Agentes de IA."
+            }
+          ]
+        },
+        "autoridad": {
+          "title": "Sin comisiones de fabricantes, con el mismo criterio en cada selección",
+          "body": "No tenemos alianzas comerciales con proveedores de software: evaluamos con los mismos cuatro criterios objetivos —funcional, técnico, económico y sostenible— sin importar la marca.",
+          "stats": [
+            {
+              "value": "0",
+              "label": "comisiones de fabricantes en ninguna selección."
+            },
+            {
+              "value": "4",
+              "label": "criterios objetivos: funcional, técnico, económico y sostenible."
+            }
+          ]
+        },
+        "beneficios": {
+          "title": "Beneficios de elegir con criterio",
+          "intro": "Una decisión de tecnología que parte del proceso, no del catálogo del proveedor.",
+          "items": [
+            {
+              "title": "Decisión basada en el proceso",
+              "description": "La herramienta responde a una necesidad real del negocio."
+            },
+            {
+              "title": "Evaluación sin sesgo de proveedor",
+              "description": "Los mismos criterios para todas las propuestas, sin comisiones."
+            },
+            {
+              "title": "Costo total a tres años visible",
+              "description": "Licencias, infraestructura y mantenimiento antes de firmar."
+            },
+            {
+              "title": "Su equipo la puede operar",
+              "description": "Se prioriza que no dependa del proveedor para el día a día."
+            }
+          ]
+        },
+        "usos": {
+          "title": "¿Para qué sirve una consultoría RPA e IA independiente?",
+          "items": [
+            {
+              "title": "Decidir qué necesita el proceso",
+              "description": "Define si necesita RPA, inteligencia artificial, un agente o primero un rediseño."
+            },
+            {
+              "title": "Elegir la plataforma",
+              "description": "Con criterios definidos antes de ver demos."
+            },
+            {
+              "title": "Comparar con casos reales",
+              "description": "Los proveedores se prueban con procesos de su operación, no con la demo comercial."
+            },
+            {
+              "title": "Acompañar la contratación",
+              "description": "Apoya la negociación y la contratación; la implementación se coordina con la PMO."
+            }
+          ]
         }
       },
       "infraestructura-tecnologica": {
@@ -448,7 +578,72 @@
             "question": "¿Quién gestiona el proyecto una vez seleccionado el proveedor de infraestructura?",
             "answer": "La implementación se coordina con Gerencia de Proyectos (PMO), que gobierna cronograma, riesgos y proveedores durante todo el despliegue."
           }
-        ]
+        ],
+        "beneficios": {
+          "title": "Beneficios de decidir bien la infraestructura",
+          "intro": "Una infraestructura que permite operar con seguridad, disponibilidad y capacidad de crecimiento.",
+          "items": [
+            {
+              "title": "Seguridad, nube y redes en una sola mirada",
+              "description": "Ciberseguridad, cloud, conectividad y continuidad evaluadas como un conjunto."
+            },
+            {
+              "title": "Proveedores comparados con el mismo criterio",
+              "description": "Los criterios se definen antes de ver propuestas."
+            },
+            {
+              "title": "Continuidad contemplada",
+              "description": "Se definen las capacidades necesarias para proteger la operación."
+            },
+            {
+              "title": "Arquitectura que acompaña el crecimiento",
+              "description": "Opciones cloud, híbridas y multicloud valoradas según lo que aportan a la operación."
+            }
+          ]
+        },
+        "usos": {
+          "title": "¿Para qué sirve una consultoría de infraestructura independiente?",
+          "items": [
+            {
+              "title": "Decidir qué infraestructura necesita",
+              "description": "Seguridad, nube, redes y continuidad evaluadas como un conjunto."
+            },
+            {
+              "title": "Elegir proveedores con criterio",
+              "description": "Los criterios se definen antes de ver propuestas."
+            },
+            {
+              "title": "Proteger la operación",
+              "description": "Define las capacidades necesarias de ciberseguridad y continuidad."
+            },
+            {
+              "title": "Dar espacio al crecimiento",
+              "description": "Valora opciones cloud, híbridas y multicloud según lo que aportan a la operación."
+            }
+          ]
+        },
+        "comoLoHacemos": {
+          "title": "De una decisión de infraestructura a una elegida con criterio",
+          "intro": "Para decidir qué infraestructura necesita la empresa —seguridad, nube, redes y continuidad— y con qué proveedores.",
+          "steps": [
+            {
+              "title": "Revisamos lo que ya está en producción",
+              "description": "Qué tiene la empresa hoy y qué riesgos hay, antes de recomendar una arquitectura nueva."
+            },
+            {
+              "title": "Definimos qué necesita en seguridad, nube, redes y continuidad",
+              "description": "Las capacidades necesarias para proteger la operación y sostener su crecimiento."
+            },
+            {
+              "title": "Comparamos proveedores con cuatro criterios",
+              "description": "Funcional, técnico, económico y sostenible, definidos antes de ver propuestas."
+            },
+            {
+              "title": "Acompañamos la contratación",
+              "description": "Selección de proveedores y arquitecturas; la implementación se gestiona con nuestra Gerencia de Proyectos (PMO)."
+            }
+          ]
+        }
       },
       "ciberseguridad": {
         "label": "Ciberseguridad",
@@ -518,9 +713,9 @@
           "title": "Antes de elegir un proveedor de ciberseguridad, lea esto",
           "items": [
             {
-              "slug": "como-elegir-una-consultoria-de-ciberseguridad",
-              "title": "Cómo elegir una consultoría de ciberseguridad",
-              "description": "Qué debe cubrir, qué marcos públicos sirven de referencia y qué preguntar antes de contratar."
+              "slug": "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
+              "title": "Cuándo contratar una consultoría de ciberseguridad",
+              "description": "Las señales de que es momento, qué incluye, por qué importa la independencia de fabricantes y qué preguntar antes de contratar."
             },
             {
               "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
@@ -550,7 +745,72 @@
             "question": "¿Qué relación tiene la ciberseguridad con el plan de continuidad del negocio?",
             "answer": "Los controles de ciberseguridad reducen la probabilidad de un incidente; el plan de continuidad define cómo sigue operando la empresa si ocurre. Se diseñan juntos: el análisis de impacto (BIA) dice qué proteger primero."
           }
-        ]
+        ],
+        "beneficios": {
+          "title": "Beneficios de una consultoría en ciberseguridad",
+          "intro": "Decidir qué proteger y con qué, antes de comprar una herramienta.",
+          "items": [
+            {
+              "title": "Saber qué hay que proteger",
+              "description": "Inventario de lo que soporta la operación y de qué depende cada cosa."
+            },
+            {
+              "title": "Controles a la medida",
+              "description": "Identidades, dispositivos, monitoreo y respuesta definidos según el riesgo identificado."
+            },
+            {
+              "title": "Proveedores comparados con los mismos criterios",
+              "description": "Los mismos cuatro criterios de toda selección de Cyrrus: funcional, técnico, económico y sostenible."
+            },
+            {
+              "title": "Una decisión sin sesgo de proveedor",
+              "description": "Se parte de lo que ya está en producción, no del catálogo de un fabricante."
+            }
+          ]
+        },
+        "usos": {
+          "title": "¿Para qué sirve una consultoría en ciberseguridad independiente?",
+          "items": [
+            {
+              "title": "Saber qué hay que proteger",
+              "description": "Parte de lo que ya está en producción y de lo que soporta la operación."
+            },
+            {
+              "title": "Definir los controles",
+              "description": "Identidades, dispositivos, monitoreo y respuesta ante incidentes según el riesgo."
+            },
+            {
+              "title": "Elegir proveedores con criterio",
+              "description": "Compara soluciones con los mismos cuatro criterios de toda selección de Cyrrus."
+            },
+            {
+              "title": "Decidir antes de comprar",
+              "description": "Se define qué proteger y con qué controles antes de elegir una herramienta."
+            }
+          ]
+        },
+        "comoLoHacemos": {
+          "title": "De no saber qué proteger a decidir qué controles necesita",
+          "intro": "Para decidir qué proteger, con qué controles y con qué proveedores, antes de comprar una herramienta.",
+          "steps": [
+            {
+              "title": "Hacemos el inventario de lo que soporta la operación",
+              "description": "Qué depende de qué y dónde están los riesgos actuales, antes de recomendar una herramienta."
+            },
+            {
+              "title": "Definimos qué controles cubren los riesgos",
+              "description": "Identidades, dispositivos, monitoreo y respuesta ante incidentes, y en qué orden implementarlos."
+            },
+            {
+              "title": "Comparamos soluciones y proveedores",
+              "description": "Con los mismos cuatro criterios de toda selección, tomando como referencia marcos públicos como NIST CSF 2.0 e ISO/IEC 27001."
+            },
+            {
+              "title": "Acompañamos la contratación y gobernamos la implementación",
+              "description": "La operación diaria la presta el proveedor seleccionado."
+            }
+          ]
+        }
       }
     }
   },
@@ -584,6 +844,27 @@
       {
         "title": "Tiempo",
         "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+      }
+    ]
+  },
+  "usos": {
+    "title": "¿Para qué sirve una consultoría tecnológica independiente?",
+    "items": [
+      {
+        "title": "Elegir tecnología por el negocio",
+        "description": "La selección parte de los requerimientos del negocio, no del catálogo del proveedor."
+      },
+      {
+        "title": "Comparar con criterios objetivos",
+        "description": "Evaluación de proveedores sin sesgos comerciales hacia ninguna marca."
+      },
+      {
+        "title": "Reducir el riesgo de decidir mal",
+        "description": "Una decisión tecnológica con el riesgo de equivocarse minimizado."
+      },
+      {
+        "title": "Decidir con método",
+        "description": "Un proceso definido de evaluación, en vez de decidir por moda o por una demo."
       }
     ]
   }

@@ -1,9 +1,12 @@
+import { IA_HERO_MEDIA } from "@/lib/service-media";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
-import { SiteHeader } from "@/components/layout/site-header";
-import { PageHero } from "@/components/layout/page-hero";
-import { FinalCta } from "@/components/sections/final-cta";
+import { TransparentHeader } from "@/components/layout/transparent-header";
+import { splitHeroTitle } from "@/components/layout/service-child-page";
+import { ServiceHero } from "@/components/sections/service-hero";
+import { ServiceClosing } from "@/components/sections/service-closing";
+
 import { Footer } from "@/components/sections/footer";
 import { CardGrid } from "@/components/ui/card-grid";
 import { SectionHeader } from "@/components/ui/section-header";
@@ -47,6 +50,7 @@ const phasePaths: Record<string, string> = {
 
 export default function IntelligenceLab() {
   const { t } = useTranslation("intelligence-lab");
+  const { t: tc } = useTranslation();
   const lang = useLang();
   const prefix = lang === "en" ? "/en" : "";
 
@@ -110,15 +114,21 @@ export default function IntelligenceLab() {
 
   return (
     <>
-      <SiteHeader />
+      <TransparentHeader />
       <main id="contenido">
-      <PageHero
+      <ServiceHero
         eyebrow={t("hub.hero.eyebrow")}
-        title={t("hub.hero.title")}
+        {...splitHeroTitle(t("hub.hero.title"))}
         description={t("hub.hero.description")}
+        breadcrumbs={[
+          { label: lang === "en" ? "Home" : "Inicio", href: lang === "en" ? "/en" : "/" },
+          { label: t("hub.hero.eyebrow") },
+        ]}
+        image={IA_HERO_MEDIA.image}
+        video={IA_HERO_MEDIA.video}
       >
-        <ContactCtaButton variant="light" />
-      </PageHero>
+        <ContactCtaButton variant="light" label={tc("cta.agendarConversacion")} />
+      </ServiceHero>
 
       {/* Answer-first block: what AI consulting is, in the searcher's words */}
       <IncludedGrid
@@ -173,7 +183,7 @@ export default function IntelligenceLab() {
 
       <FaqSection eyebrow={t("hub.faq.eyebrow")} title={t("hub.faq.title")} faqs={faqs} className="bg-mist" />
 
-      <FinalCta />
+      <ServiceClosing eyebrow={t("hub.pillars.eyebrow")} items={pillars} ctaLabel={tc("cta.agendarConversacion")} />
       </main>
       <Footer />
     </>

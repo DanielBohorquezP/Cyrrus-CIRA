@@ -1,25 +1,21 @@
-import { Link, useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
-import { solutionDetailImages, solutionSlugs } from "@/lib/solutions-icons";
-import { SiteHeader } from "@/components/layout/site-header";
-import { PageHero } from "@/components/layout/page-hero";
-import { FaqSection } from "@/components/sections/faq-section";
-import { IncludedGrid } from "@/components/sections/included-grid";
-import { FinalCta } from "@/components/sections/final-cta";
-import { Footer } from "@/components/sections/footer";
-import { RelatedServices } from "@/components/sections/related-services";
-import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
-import { CardGrid } from "@/components/ui/card-grid";
-import { SecondaryButton } from "@/components/ui/border-button";
-import { SectionHeader } from "@/components/ui/section-header";
-import { Reveal } from "@/components/ui/reveal";
-import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+import { solutionCategoryImages, solutionDetailImages, solutionSlugs } from "@/lib/solutions-icons";
+import { useGroupBlocks } from "@/lib/use-group-blocks";
+import { CARD_IMAGE_POOL, SOLUCIONES_HERO_MEDIA } from "@/lib/service-media";
+import { ServiceTemplate, buildServiceJsonLd, type ServiceContent } from "@/components/layout/service-template";
+import { splitHeroTitle } from "@/components/layout/service-child-page";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/seleccion-soluciones";
+
+interface Item {
+  title: string;
+  description: string;
+}
 
 interface DetailEntry {
   label: string;
@@ -28,15 +24,28 @@ interface DetailEntry {
   h1?: string;
   intro: string;
   /** Optional answer-first block rendered right under the hero. */
-  answer?: { eyebrow: string; title: string; body: string; items: { title: string; description: string }[] };
+  answer?: { eyebrow: string; title: string; body: string; items: Item[] };
   /** Optional links to published guides (perspectivas slugs). */
   guides?: { eyebrow: string; title: string; items: { slug: string; title: string; description: string }[] };
   stat?: { value: string; description: string; source: string };
-  items: { title: string; description: string }[];
+  items: Item[];
   /** Optional long-form paragraphs rendered under the items grid. */
   body?: string[];
-  related: { title: string; description: string }[];
+  related: Item[];
   faq: { question: string; answer: string }[];
+  // Blocks of the service-page template. Each one is optional: when it is
+  // missing, the older keys above fill in (items → cards, answer → "Qué es").
+  queHacemos?: {
+    quote: string;
+    emphasis?: string;
+    intro?: string;
+    cards?: { title: string; text: string; image?: string; alt?: string }[];
+  };
+  queEs?: { title: string; body: string; refsLabel?: string; refs: Item[] };
+  comoLoHacemos?: { title: string; intro?: string; steps: Item[] };
+  autoridad?: { title: string; body: string; stats: { value: string; label: string }[] };
+  beneficios?: { title: string; intro?: string; items: Item[] };
+  usos?: { title: string; items: Item[] };
 }
 
 const relatedPathsBySlug: Record<string, string[]> = {
@@ -65,7 +74,9 @@ const relatedPathsBySlug: Record<string, string[]> = {
 export default function SolucionDetalle() {
   const { solucion } = useParams();
   const { t } = useTranslation("seleccion-soluciones");
+  const { t: tc } = useTranslation();
   const lang = useLang();
+  const groupBlocks = useGroupBlocks("soluciones");
   const prefix = lang === "en" ? "/en" : "";
 
   const slug = solutionSlugs.find((s) => s === solucion);
@@ -79,6 +90,13 @@ export default function SolucionDetalle() {
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const selectionPath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
   const pagePath = `${selectionPath}/${slug}`;
+  const selectionLabel =
+    t("hero.title", { defaultValue: "" }) || (lang === "en" ? "Solution Selection" : "Selección de Soluciones");
+
+  const fullTitle = entry
+    ? (entry.h1 ?? `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`)
+    : "";
+  const hero = splitHeroTitle(fullTitle);
 
   usePageMeta({
     title: meta?.title ?? (lang === "en" ? "Solution Selection | Cyrrus" : "Selección de Soluciones | Cyrrus"),
@@ -90,166 +108,106 @@ export default function SolucionDetalle() {
       : undefined,
     jsonLd:
       entry && slug
-        ? [
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "@id": `${siteUrl}${pagePath}#service`,
-              serviceType: `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`,
-              name: entry.label,
-              provider: { "@id": `${siteUrl}/#organization` },
-              description: meta?.description,
-              areaServed: "Worldwide",
-              url: `${siteUrl}${pagePath}`,
-              mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}${pagePath}` },
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "@id": `${siteUrl}${pagePath}#faq`,
-              mainEntity: entry.faq.map((faq) => ({
-                "@type": "Question",
-                name: faq.question,
-                acceptedAnswer: { "@type": "Answer", text: faq.answer },
-              })),
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-                { "@type": "ListItem", position: 2, name: lang === "en" ? "CIRA Method" : "Método CIRA", item: `${siteUrl}${methodPath}` },
-                { "@type": "ListItem", position: 3, name: t("hero.title", { defaultValue: "" }) || (lang === "en" ? "Solution Selection" : "Selección de Soluciones"), item: `${siteUrl}${selectionPath}` },
-                { "@type": "ListItem", position: 4, name: entry.label, item: `${siteUrl}${pagePath}` },
-              ],
-            },
-          ]
+        ? buildServiceJsonLd({
+            siteUrl,
+            pagePath,
+            serviceType: `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`,
+            name: entry.label,
+            description: meta?.description ?? "",
+            faqs: entry.faq,
+            breadcrumbs: [
+              { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+              { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+              { label: selectionLabel, href: selectionPath },
+              { label: entry.label, href: pagePath },
+            ],
+          })
         : undefined,
   });
 
   if (!entry || !slug || !assets) return <Navigate to={`${prefix}/metodo-cira/seleccion-de-soluciones`} replace />;
 
-  const breadcrumbItems = [
-    { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
-    {
-      label: t("hero.title", { defaultValue: "" }) || (lang === "en" ? "Solution Selection" : "Selección de Soluciones"),
-      href: selectionPath,
+  // Qué hacemos: the explicit block, else the "what we help select" items.
+  const rawCards: { title: string; text: string; image?: string; alt?: string }[] =
+    entry.queHacemos?.cards ?? entry.items.map((it) => ({ title: it.title, text: it.description }));
+  const queHacemos: ServiceContent["queHacemos"] = rawCards.length
+    ? {
+        quote: entry.queHacemos?.quote ?? t("detail.whatWeHelp"),
+        emphasis: entry.queHacemos?.emphasis,
+        intro: entry.queHacemos?.intro,
+        cards: rawCards.slice(0, 4).map((c, i) => ({
+          title: c.title,
+          description: c.text,
+          image: {
+            src: c.image ?? CARD_IMAGE_POOL[i % CARD_IMAGE_POOL.length],
+            alt: c.alt ?? c.title,
+          },
+        })),
+      }
+    : undefined;
+
+  const baseQueEs =
+    entry.queEs ??
+    (entry.answer
+      ? { title: entry.answer.title, body: entry.answer.body, refs: entry.answer.items }
+      : undefined);
+  const queEs = baseQueEs && entry.usos ? { ...baseQueEs, uses: { label: entry.usos.title, items: entry.usos.items } } : baseQueEs;
+
+  const content: ServiceContent = {
+    hero: {
+      eyebrow: entry.eyebrow,
+      title: hero.title,
+      subtitle: hero.subtitle,
+      description: entry.intro,
+      ctaLabel: t("detail.ctaLabel"),
+      link: { href: methodPath, label: tc("service.methodLink") },
     },
-    { label: entry.label },
-  ];
-
-  return (
-    <>
-      <SiteHeader />
-      <main id="contenido">
-      <PageHero
-        eyebrow={entry.eyebrow}
-        title={entry.h1 ?? `${lang === "en" ? "Selection consulting for" : "Consultoría de selección de"} ${entry.label}`}
-        description={entry.intro}
-        breadcrumbs={breadcrumbItems}
-        image={{ src: assets.image, alt: entry.label, position: assets.imagePosition }}
-      >
-        <ContactCtaButton variant="light" label={t("detail.ctaLabel")} />
-        <SecondaryButton asChild>
-          <Link to={methodPath}>{t("detail.methodLinkLabel")}</Link>
-        </SecondaryButton>
-      </PageHero>
-
-      {entry.answer && (
-        <IncludedGrid
-          className="bg-mist"
-          eyebrow={entry.answer.eyebrow}
-          title={entry.answer.title}
-          description={entry.answer.body}
-          items={entry.answer.items}
-        />
-      )}
-
-      <section className="section-y w-full bg-background">
-        <div className="container-site">
-          <SectionHeader eyebrow={t("detail.whatWeHelp")} title={entry.label} />
-          <CardGrid
-            className="mt-16"
-            numbered
-            items={entry.items}
-          />
-
-          {entry.body && entry.body.length > 0 && (
-            <Reveal className="mt-16 max-w-3xl space-y-6">
-              {entry.body.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)} className="t-lead text-slate">
-                  {paragraph}
-                </p>
-              ))}
-            </Reveal>
-          )}
-
-          <Reveal className="mt-10">
-            <p className="text-base text-slate">
-              {`${t("detail.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
-                {t("detail.methodLinkLabel")}
-              </Link>
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {entry.stat && (
-        <AnimatedNavyBackground className="section-y">
-          <Reveal className="container-site text-center text-white">
-            <p className="font-heading text-[clamp(72px,10vw,120px)] font-light leading-none tracking-[-0.04em]">
-              {entry.stat.value}
-            </p>
-            <p className="t-lead mx-auto mt-6 max-w-2xl text-white/85">{entry.stat.description}</p>
-            <span className="mt-4 block font-heading text-xs font-medium uppercase tracking-[0.12em] text-white/60">
-              {entry.stat.source}
-            </span>
-          </Reveal>
-        </AnimatedNavyBackground>
-      )}
-
-      <section className="section-y w-full bg-mist">
-        <Reveal className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
-          <blockquote className="m-0 font-heading text-[clamp(26px,3vw,40px)] font-light leading-[1.3] tracking-[-0.02em] text-pretty text-navy">
-            {`“${t("closingQuote")}”`}
-          </blockquote>
-        </Reveal>
-      </section>
-
-      <RelatedServices
-        eyebrow={t("detail.relatedEyebrow")}
-        title={t("detail.relatedTitle")}
-        items={entry.related.flatMap((item, i) => {
-          const href = relatedPaths?.[i];
-          return href ? [{ ...item, href }] : [];
-        })}
-        className="bg-background"
-      />
-
-      {entry.guides && (
-        <RelatedServices
-          className="bg-mist"
-          eyebrow={entry.guides.eyebrow}
-          title={entry.guides.title}
-          items={entry.guides.items.map((g) => ({
+    breadcrumbs: [
+      { label: lang === "en" ? "Home" : "Inicio", href: homePath },
+      { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+      // The H1-sized label in `hero.title` is far too long for a trail; the
+      // structured data above still uses it.
+      { label: lang === "en" ? "Solution Selection" : "Selección de Soluciones", href: selectionPath },
+      { label: hero.title },
+    ],
+    media: SOLUCIONES_HERO_MEDIA,
+    queHacemos,
+    queEs,
+    comoLoHacemos: entry.comoLoHacemos,
+    autoridad: entry.autoridad?.stats?.length
+      ? {
+          ...entry.autoridad,
+          image: { src: "/assets/decoracion/evento-panel-universidad-bolivar.jpeg", alt: "Panel de expertos en un evento de Cyrrus" },
+        }
+      : groupBlocks.autoridad,
+    beneficios: entry.beneficios,
+    body: entry.body?.length
+      ? { paragraphs: entry.body, image: { src: solutionCategoryImages[slug], alt: entry.label } }
+      : undefined,
+    article: { text: t("detail.methodLinkText"), label: t("detail.methodLinkLabel"), href: methodPath },
+    stat: entry.stat,
+    closingQuote: t("closingQuote"),
+    guides: entry.guides
+      ? {
+          eyebrow: entry.guides.eyebrow,
+          title: entry.guides.title,
+          items: entry.guides.items.map((g) => ({
             href: `${prefix}/perspectivas/${g.slug}`,
             title: g.title,
             description: g.description,
-          }))}
-        />
-      )}
+          })),
+        }
+      : undefined,
+    faq: { eyebrow: entry.label, title: t("detail.faqTitle"), items: entry.faq },
+    related: {
+      eyebrow: t("detail.relatedEyebrow"),
+      title: t("detail.relatedTitle"),
+      items: entry.related.flatMap((item, i) => {
+        const href = relatedPaths?.[i];
+        return href ? [{ ...item, href }] : [];
+      }),
+    },
+  };
 
-      <FaqSection
-        eyebrow={entry.label}
-        title={t("detail.faqTitle")}
-        faqs={entry.faq}
-        className={entry.guides ? "bg-background" : "bg-mist"}
-      />
-
-      <FinalCta />
-      </main>
-      <Footer />
-    </>
-  );
+  return <ServiceTemplate content={content} />;
 }

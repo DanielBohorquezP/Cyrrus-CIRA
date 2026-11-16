@@ -1,26 +1,15 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { SERVICE_HERO_POSTER, SERVICE_HERO_VIDEO } from "@/lib/service-media";
+import { ServiceTemplate, type ServiceContent } from "@/components/layout/service-template";
+import { splitHeroTitle } from "@/components/layout/service-child-page";
+import type { Stat } from "@/components/ui/dark-stat-band";
+import { RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { langPath, useLang } from "@/lib/language";
-import { SiteHeader } from "@/components/layout/site-header";
-import { PageHero } from "@/components/layout/page-hero";
-import { FinalCta } from "@/components/sections/final-cta";
-import { Footer } from "@/components/sections/footer";
-import { IncludedGrid } from "@/components/sections/included-grid";
-import { FaqSection } from "@/components/sections/faq-section";
 import { ServiceLead } from "@/components/sections/service-lead";
-import { ServiceDefinition } from "@/components/sections/service-definition";
 import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
-import { RelatedServices } from "@/components/sections/related-services";
 import { Testimonials } from "@/components/sections/testimonials";
-import { CardGrid } from "@/components/ui/card-grid";
-import { DarkStatBand, type Stat } from "@/components/ui/dark-stat-band";
-import { Eyebrow } from "@/components/ui/eyebrow";
-import { NumberedList } from "@/components/ui/numbered-list";
-import { SecondaryButton } from "@/components/ui/border-button";
 import { SectionHeader } from "@/components/ui/section-header";
-import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
-import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -129,140 +118,92 @@ export default function PlaneacionEstrategica() {
     ],
   });
 
+  const heroTitle = splitHeroTitle(t("hero.title"));
+  const content: ServiceContent = {
+    hero: {
+      eyebrow: t("hero.eyebrow"),
+      ...heroTitle,
+      description: t("hero.description"),
+      ctaLabel: t("hero.ctaLabel"),
+      link: { href: methodPath, label: t("intro.methodLinkLabel") },
+    },
+    breadcrumbs: [...breadcrumbItems.slice(0, -1), { label: heroTitle.title }],
+    media: { image: { src: SERVICE_HERO_POSTER.src, alt: "" }, video: SERVICE_HERO_VIDEO },
+    queHacemos: {
+      eyebrow: t("intro.kicker"),
+      quote: quoteRest.length > 0 ? `${quoteLead} — ` : quoteLead,
+      emphasis: quoteRest.length > 0 ? quoteRest.join(" — ") : undefined,
+      intro: t("intro.description"),
+      cards: bullets.map((description, i) => ({
+        title: bulletTitles[i],
+        description,
+        image: { src: introImages[i], alt: bulletAlts[i], position: i === 0 ? "50% 30%" : undefined },
+      })),
+    },
+    queEs: {
+      title: t("definicion.title"),
+      body: t("definicion.description"),
+      refsLabel: t("definicion.usesTitle"),
+      refs: uses,
+      link: { href: langPath(t("definicion.linkHref"), lang), label: t("definicion.linkLabel") },
+    },
+    comoLoHacemos: { title: t("diagnostico.title"), intro: t("diagnostico.description"), steps: problems },
+    autoridad: {
+      title: t("whyCeos.title"),
+      body: t("whyCeos.description"),
+      stats,
+      image: { src: "/assets/decoracion/Evento mesas.jpg", alt: "" },
+    },
+    beneficios: { title: t("benefits.title"), items: benefits },
+    faq: { eyebrow: t("faq.eyebrow"), title: t("faq.title"), items: faqs },
+    related: { eyebrow: t("related.eyebrow"), title: t("related.title"), items: relatedItems },
+  };
+
   return (
-    <>
-      <SiteHeader />
-      <main id="contenido">
-      <PageHero
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        description={t("hero.description")}
-        breadcrumbs={breadcrumbItems}
-        image={{
-          src: "/assets/decoracion/IMG_20230228_091011.webp",
-          alt: t("hero.imageAlt"),
-          caption: t("hero.imageCaption"),
-        }}
-      >
-        <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
-        <SecondaryButton asChild>
-          <Link to={methodPath}>{t("intro.methodLinkLabel")}</Link>
-        </SecondaryButton>
-      </PageHero>
-
-      <section className="section-y w-full bg-background">
-        <div className="container-site">
-          <Reveal className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,400px),1fr))] gap-x-24 gap-y-14">
-            <div>
-              <Eyebrow>{t("intro.kicker")}</Eyebrow>
-              <blockquote className="mt-7 font-heading text-[clamp(28px,3vw,40px)] font-light leading-[1.3] tracking-[-0.02em] text-pretty text-navy">
-                {quoteRest.length > 0 ? (
-                  <>
-                    {`${quoteLead} — `}
-                    <span className="font-semibold">{quoteRest.join(" — ")}</span>
-                  </>
-                ) : (
-                  quoteLead
-                )}
-              </blockquote>
-            </div>
-            <div>
-              <p className="t-lead text-slate">{t("intro.description")}</p>
-              <p className="mt-6 text-base text-slate">
-                {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
-                  {t("intro.methodLinkLabel")}
-                </Link>
-              </p>
-            </div>
-          </Reveal>
-
-          <CardGrid
-            numbered
-            min="sm"
-            className="mt-[72px]"
-            items={bullets.map((description, i) => ({
-              title: bulletTitles[i],
-              description,
-              image: { src: introImages[i], alt: bulletAlts[i], position: i === 0 ? "50% 30%" : undefined },
-            }))}
+    <ServiceTemplate
+      content={content}
+      extrasEndTone="white"
+      extras={
+        <>
+          <ServiceScope
+            eyebrow={t("services.eyebrow")}
+            title={t("services.title")}
+            description={t("services.description")}
+            items={services}
           />
-        </div>
-      </section>
 
-      <ServiceDefinition
-        eyebrow={t("definicion.eyebrow")}
-        title={t("definicion.title")}
-        description={t("definicion.description")}
-        pointsTitle={t("definicion.usesTitle")}
-        points={uses}
-        link={{ href: langPath(t("definicion.linkHref"), lang), label: t("definicion.linkLabel") }}
-      />
+          <section className="section-y w-full bg-background">
+            <div className="container-site">
+              <SectionHeader
+                eyebrow={t("cxaas.eyebrow")}
+                title={t("cxaas.title")}
+                description={t("cxaas.description")}
+                align="start"
+              />
+              <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-6">
+                {cxaas.map((role) => (
+                  <RevealItem
+                    key={role.title}
+                    className="flex min-h-[300px] flex-col rounded-2xl bg-navy px-9 py-10 text-white"
+                  >
+                    <span className="font-heading text-[56px] font-semibold leading-none tracking-[-0.03em]">
+                      {role.letter}
+                    </span>
+                    <h3 className="mt-auto pt-10 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-sky">
+                      {role.title}
+                    </h3>
+                    <p className="mt-3 text-[17px] leading-[1.65] text-pretty text-white/80">{role.description}</p>
+                  </RevealItem>
+                ))}
+              </RevealGroup>
+            </div>
+          </section>
 
-      <section className="section-y w-full bg-background">
-        <div className="container-site grid grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))] items-start gap-x-24 gap-y-14">
-          <Reveal className="lg:sticky lg:top-28">
-            <Eyebrow>{t("diagnostico.eyebrow")}</Eyebrow>
-            <h2 className="t-h2 mt-5 text-navy">{t("diagnostico.title")}</h2>
-            <p className="mt-6 text-lg leading-[1.7] text-pretty text-slate">{t("diagnostico.description")}</p>
-          </Reveal>
-          <NumberedList items={problems} />
-        </div>
-      </section>
+          <ServiceLead eyebrow={t("lead.eyebrow")} title={t("lead.title")} bio={t("lead.bio")} />
 
-      <DarkStatBand
-        eyebrow={t("whyCeos.eyebrow")}
-        title={t("whyCeos.title")}
-        description={t("whyCeos.description")}
-        stats={stats}
-      />
-
-      <IncludedGrid eyebrow={t("benefits.eyebrow")} title={t("benefits.title")} items={benefits} />
-
-      <ServiceScope
-        eyebrow={t("services.eyebrow")}
-        title={t("services.title")}
-        description={t("services.description")}
-        items={services}
-      />
-
-      <section className="section-y w-full bg-background">
-        <div className="container-site">
-          <SectionHeader
-            eyebrow={t("cxaas.eyebrow")}
-            title={t("cxaas.title")}
-            description={t("cxaas.description")}
-            align="start"
-          />
-          <RevealGroup className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-6">
-            {cxaas.map((role) => (
-              <RevealItem
-                key={role.title}
-                className="flex min-h-[300px] flex-col rounded-2xl bg-navy px-9 py-10 text-white"
-              >
-                <span className="font-heading text-[56px] font-semibold leading-none tracking-[-0.03em]">
-                  {role.letter}
-                </span>
-                <h3 className="mt-auto pt-10 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-sky">
-                  {role.title}
-                </h3>
-                <p className="mt-3 text-[17px] leading-[1.65] text-pretty text-white/80">{role.description}</p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </div>
-      </section>
-
-      <ServiceLead eyebrow={t("lead.eyebrow")} title={t("lead.title")} bio={t("lead.bio")} />
-
-      <Testimonials className="bg-background" />
-
-      <RelatedServices eyebrow={t("related.eyebrow")} title={t("related.title")} items={relatedItems} />
-
-      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} className="bg-background" />
-
-      <FinalCta />
-      </main>
-      <Footer />
-    </>
+          <Testimonials className="bg-background" />
+        </>
+      }
+    />
   );
 }

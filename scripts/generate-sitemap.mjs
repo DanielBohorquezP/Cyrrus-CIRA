@@ -80,6 +80,7 @@ const CONTENT_SOURCE = {
   "/metodo-cira": { ns: "metodo-cira" },
   "/metodo-cira/estrategia": { ns: "estrategia", omit: ["estrategiaTi", "continuidad"] },
   "/metodo-cira/estrategia/estrategia-de-ti": { ns: "estrategia", pick: ["estrategiaTi"] },
+  "/metodo-cira/estrategia/estrategia-comercial": { ns: "estrategia", pick: ["estrategiaComercial"] },
   "/metodo-cira/estrategia/continuidad-del-negocio": { ns: "estrategia", pick: ["continuidad"] },
   "/metodo-cira/seleccion-de-soluciones/ciberseguridad": {
     ns: "seleccion-soluciones",
@@ -107,9 +108,6 @@ const CONTENT_SOURCE = {
   "/intelligence-lab/gobierno-de-ia": { ns: "intelligence-lab", pick: ["gobierno"] },
   "/intelligence-lab/gobierno-de-datos": { ns: "intelligence-lab", pick: ["gobiernoDatos"] },
   "/intelligence-lab/estrategia-de-ia": { ns: "intelligence-lab", pick: ["estrategiaIa"] },
-  "/presencia-digital": { ns: "presencia-digital", pick: ["hub"] },
-  "/presencia-digital/desarrollo-web": { ns: "presencia-digital", pick: ["desarrolloWeb"] },
-  "/presencia-digital/seo": { ns: "presencia-digital", pick: ["seo"] },
   "/leadership-academy": { ns: "leadership-academy", pick: ["hub"] },
   "/quienes-somos": { ns: "paginas", pick: ["quienesSomos"] },
   "/experiencia": { ns: "paginas", pick: ["experiencia"] },

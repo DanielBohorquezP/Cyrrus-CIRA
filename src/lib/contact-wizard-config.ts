@@ -92,16 +92,6 @@ export const CONTACT_WIZARD_STEPS: WizardStep[] = [
             labelKey: `steps.servicio.options.${WORKSHOP_OPTION_KEY[w.slug]}.label`,
             groupKey: "steps.servicio.groups.leadershipAcademy",
           })),
-          {
-            value: "presencia-digital-desarrollo-web",
-            labelKey: "steps.servicio.options.desarrolloWeb.label",
-            groupKey: "steps.servicio.groups.presenciaDigital",
-          },
-          {
-            value: "presencia-digital-seo",
-            labelKey: "steps.servicio.options.seo.label",
-            groupKey: "steps.servicio.groups.presenciaDigital",
-          },
         ],
       },
     ],

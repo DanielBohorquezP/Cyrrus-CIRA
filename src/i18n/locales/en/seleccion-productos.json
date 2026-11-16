@@ -160,7 +160,80 @@
         "question": "Does ERP selection include managing the implementation project?",
         "answer": "Those are two separate phases of the CIRA Method. If needed, we also act as an external PMO during the implementation of the recommended ERP, with the same real accountability for the outcome that we apply during selection."
       }
-    ]
+    ],
+    "beneficios": {
+      "title": "Benefits of choosing the ERP with judgment",
+      "intro": "Choosing an ERP means choosing how the company will work for years.",
+      "items": [
+        {
+          "title": "Documented requirements",
+          "description": "Your own requirements map, before talking to vendors."
+        },
+        {
+          "title": "Comparable vendors",
+          "description": "Evaluation matrix, demos and scoring with the same criteria for everyone."
+        },
+        {
+          "title": "Cost and risk in view",
+          "description": "Total cost of ownership and risk analysis before deciding."
+        },
+        {
+          "title": "A path to implementation",
+          "description": "A recommendation and roadmap to go from the choice to go-live."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is independent ERP consulting for?",
+      "items": [
+        {
+          "title": "Defining what the company needs from an ERP",
+          "description": "Your own requirements map before talking to vendors."
+        },
+        {
+          "title": "Comparing platforms",
+          "description": "SAP, Oracle, Microsoft Dynamics, Infor, NetSuite and others, evaluated on the same criteria."
+        },
+        {
+          "title": "Seeing cost and risk",
+          "description": "Total cost of ownership and risk analysis before deciding."
+        },
+        {
+          "title": "Preparing the implementation",
+          "description": "A recommendation and roadmap to go from the choice to go-live."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From disconnected systems to an ERP chosen with judgment",
+      "intro": "For the company that is growing with disconnected systems, manual processes and little financial visibility, and must choose an ERP.",
+      "steps": [
+        {
+          "title": "We start from your current situation and processes",
+          "description": "We understand how the company works today before looking at a single platform."
+        },
+        {
+          "title": "We document the requirements",
+          "description": "Your own requirements map, before talking to vendors."
+        },
+        {
+          "title": "We build alternatives and a shortlist",
+          "description": "Longlist and shortlist of vendors, with RFI / RFP."
+        },
+        {
+          "title": "We evaluate with demos and scoring",
+          "description": "Demo evaluation and vendor scoring on the same criteria for everyone."
+        },
+        {
+          "title": "We recommend with cost and risk in view",
+          "description": "A business case with total cost of ownership, risk analysis and the recommendation."
+        },
+        {
+          "title": "We leave the implementation roadmap",
+          "description": "A roadmap to go from the choice to go-live."
+        }
+      ]
+    }
   },
   "crm": {
     "meta": {
@@ -312,7 +385,76 @@
         "question": "What is the difference between choosing a CRM with Cyrrus and buying it straight from the vendor?",
         "answer": "A vendor starts from their product; we start from your sales process. Since we take no commission from any manufacturer, the evaluation may well conclude that the cheapest platform on the market is right for you, or that the one you already own just needs reconfiguring."
       }
-    ]
+    ],
+    "beneficios": {
+      "title": "Benefits of choosing the CRM with judgment",
+      "intro": "A CRM that helps sell better without forcing the team to change how it sells.",
+      "items": [
+        {
+          "title": "Fit with the sales process",
+          "description": "The selection is designed around how the organization sells."
+        },
+        {
+          "title": "A focus on adoption",
+          "description": "We assess whether the sales team will actually use it."
+        },
+        {
+          "title": "Cost per user in view",
+          "description": "Total cost of ownership per user before contracting."
+        },
+        {
+          "title": "Guided demos",
+          "description": "Functional tests with cases from your own process, not the sales demo."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is independent CRM consulting for?",
+      "items": [
+        {
+          "title": "Aligning the CRM to the sales process",
+          "description": "The selection is designed around how the organization sells."
+        },
+        {
+          "title": "Protecting adoption",
+          "description": "It assesses whether the sales team will actually use the tool."
+        },
+        {
+          "title": "Comparing cost per user",
+          "description": "Total cost of ownership per user before contracting."
+        },
+        {
+          "title": "Preparing the implementation",
+          "description": "A recommendation and roadmap to get it running."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From scattered information to a CRM your team uses",
+      "intro": "For the sales team with scattered information, leads that get lost and manual follow-up.",
+      "steps": [
+        {
+          "title": "We start from your strategy and your sales process",
+          "description": "A map of the real sales process, so the CRM fits how the organization sells."
+        },
+        {
+          "title": "We review customer data and the automation needed",
+          "description": "What information must live in the CRM and what must be automated."
+        },
+        {
+          "title": "We build the shortlist and test with guided demos",
+          "description": "Functional tests with cases from your own process, not the sales demo."
+        },
+        {
+          "title": "We analyze adoption and cost per user",
+          "description": "Whether the sales team will actually use it and what it costs per user."
+        },
+        {
+          "title": "We recommend and leave the roadmap",
+          "description": "The recommendation and the implementation roadmap."
+        }
+      ]
+    }
   },
   "hcm": {
     "meta": {
@@ -465,6 +607,75 @@
         {
           "title": "Timing",
           "description": "As a reference, the CIRA Method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Benefits of choosing the HCM with judgment",
+      "intro": "People technology that adapts to the organization, not the other way around.",
+      "items": [
+        {
+          "title": "Aligned with the people-management model",
+          "description": "The selection starts from how the organization manages people."
+        },
+        {
+          "title": "More than payroll",
+          "description": "Coverage of people, processes, policies, data, compliance and talent strategy is assessed."
+        },
+        {
+          "title": "A decision with a matrix",
+          "description": "Vendors compared with a decision matrix."
+        },
+        {
+          "title": "Economic and risk assessment",
+          "description": "Costs and risks analyzed before recommending."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is independent HCM consulting for?",
+      "items": [
+        {
+          "title": "Aligning technology with the people-management model",
+          "description": "It starts from how the organization manages people."
+        },
+        {
+          "title": "Covering more than payroll",
+          "description": "It assesses people, processes, policies, data, compliance and talent strategy."
+        },
+        {
+          "title": "Comparing vendors",
+          "description": "With a decision matrix and the same criteria for everyone."
+        },
+        {
+          "title": "Assessing costs and risks",
+          "description": "Economic and risk analysis before recommending."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From multiple systems to an HCM that follows your management model",
+      "intro": "For the organization with multiple systems, disconnected payroll and manual HR processes.",
+      "steps": [
+        {
+          "title": "We understand your people-management model",
+          "description": "How the organization manages people and what its HR processes are."
+        },
+        {
+          "title": "We define the requirements",
+          "description": "What the technology must support: people, processes, policies, data and compliance."
+        },
+        {
+          "title": "We evaluate solutions and vendors",
+          "description": "Vendors compared with a decision matrix."
+        },
+        {
+          "title": "We analyze cost and risk",
+          "description": "Economic evaluation and risk analysis before recommending."
+        },
+        {
+          "title": "We recommend and leave the roadmap",
+          "description": "The recommended HCM and the implementation roadmap."
         }
       ]
     }
@@ -621,6 +832,75 @@
         {
           "title": "Timing",
           "description": "As a reference, the CIRA Method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Benefits of choosing the EAM with judgment",
+      "intro": "An EAM that answers to the operational reality of the assets.",
+      "items": [
+        {
+          "title": "Fitted to your operation",
+          "description": "Requirements start from your type of assets and your operation."
+        },
+        {
+          "title": "Lifecycle cost",
+          "description": "Total cost of ownership calculated across the asset lifecycle."
+        },
+        {
+          "title": "Operational risks analyzed",
+          "description": "Operating risks are assessed before recommending."
+        },
+        {
+          "title": "Comparable vendors",
+          "description": "Vendors compared against a technical evaluation matrix."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is independent EAM consulting for?",
+      "items": [
+        {
+          "title": "Fitting the platform to the assets",
+          "description": "Requirements start from your type of assets and your operation."
+        },
+        {
+          "title": "Calculating lifecycle cost",
+          "description": "Total cost of ownership across the asset lifecycle."
+        },
+        {
+          "title": "Analyzing operational risks",
+          "description": "Operating risks are assessed before recommending."
+        },
+        {
+          "title": "Comparing vendors",
+          "description": "Against a technical evaluation matrix."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From reactive maintenance to an EAM built for your assets",
+      "intro": "For the operation with reactive maintenance, assets without traceability and unplanned stoppages.",
+      "steps": [
+        {
+          "title": "We start from the inventory and lifecycle of your assets",
+          "description": "Which assets you have and how they are planned, maintained and operated."
+        },
+        {
+          "title": "We define the operational requirements",
+          "description": "A requirements map that starts from your type of assets and your operation."
+        },
+        {
+          "title": "We compare vendors with a technical matrix",
+          "description": "Technical evaluation of the platforms against those requirements."
+        },
+        {
+          "title": "We calculate lifecycle cost and operational risks",
+          "description": "Total cost of ownership across the life of the assets, and the operating risks."
+        },
+        {
+          "title": "We recommend and leave the roadmap",
+          "description": "The recommended EAM and the implementation roadmap."
         }
       ]
     }

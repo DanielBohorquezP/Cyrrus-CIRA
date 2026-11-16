@@ -15,7 +15,8 @@
     "description": "Integramos la gestión del cambio a la ejecución del proyecto, con foco en minimizar los riesgos de transformación digital que vienen de la resistencia al cambio — y medimos el clima organizacional y la curva de adopción de forma continua con IA, no solo al cierre del proyecto.",
     "bullets": [
       "Medición continua del clima organizacional y la curva de adopción, con IA.",
-      "Programas de capacitación, incluida la adopción de IA generativa para alta gerencia."
+      "Programas de capacitación, incluida la adopción de IA generativa para alta gerencia.",
+      "Metodología integral aplicada a Estrategia, Selección de soluciones y Gerencia de proyectos."
     ],
     "academyLinkText": "Nuestros programas de capacitación viven en",
     "academyLinkLabel": "Cyrrus Leadership Academy",
@@ -24,7 +25,12 @@
     "guideLinkText": "Guía práctica:",
     "guideLinkLabel": "Gestión del cambio organizacional: modelos y plan, con plantilla descargable",
     "methodLinkText": "Esta es la fase Adoptar dentro del",
-    "methodLinkLabel": "Método CIRA completo"
+    "methodLinkLabel": "Método CIRA completo",
+    "bulletTitles": [
+      "Adopción medida con IA",
+      "Capacitación, incluida la IA generativa",
+      "Embebida en nuestros servicios"
+    ]
   },
   "definicion": {
     "eyebrow": "La base",
@@ -204,6 +210,71 @@
       {
         "title": "Caso Morelco: gestión del cambio",
         "description": "Cómo Morelco (hoy Cumbra) llevó a sus equipos de obra a un modelo de trabajo en casa en 2020: 36% menos riesgos ergonómicos altos en un mes."
+      }
+    ]
+  },
+  "autoridad": {
+    "title": "Resultados que añaden valor",
+    "body": "No vemos el cambio como un obstáculo, sino como una oportunidad de crecimiento y mejora. Nuestro enfoque integral de gestión del cambio impacta la cultura organizacional, flexibilizándola y orientándola hacia el éxito continuo.",
+    "stats": [
+      {
+        "value": "3",
+        "label": "servicios de Cyrrus con la gestión del cambio embebida: Estrategia, Selección de soluciones y Gerencia de proyectos."
+      },
+      {
+        "value": "Día 1",
+        "label": "la adopción se trabaja desde el inicio del proyecto, no como una actividad de cierre."
+      }
+    ]
+  },
+  "usos": {
+    "title": "¿Para qué sirve la gestión del cambio?",
+    "items": [
+      {
+        "title": "Preparar a las personas",
+        "description": "Diagnóstico de preparación y análisis de impacto organizacional antes de implementar."
+      },
+      {
+        "title": "Reducir la resistencia",
+        "description": "Gestión de stakeholders, comunicación y capacitación a lo largo del proyecto."
+      },
+      {
+        "title": "Medir la adopción",
+        "description": "Medición continua de que el equipo realmente usa la nueva forma de trabajar."
+      },
+      {
+        "title": "Sostener el cambio",
+        "description": "Refuerzo y sostenibilidad, incluida la adopción de IA generativa."
+      }
+    ]
+  },
+  "comoLoHacemos": {
+    "title": "De un sistema instalado a un equipo que lo adopta",
+    "intro": "Para cuando el sistema queda instalado, pero el equipo no lo adopta.",
+    "steps": [
+      {
+        "title": "Medimos qué tan lista está la organización",
+        "description": "Nivel de riesgo, fuentes de resistencia potencial, capacidad de los líderes para patrocinar el cambio y experiencias previas."
+      },
+      {
+        "title": "Identificamos qué cambia para cada área y cada rol",
+        "description": "Procesos, herramientas, responsabilidades e indicadores, para planear la transición sobre impactos reales."
+      },
+      {
+        "title": "Preparamos a la dirección y a los agentes de cambio",
+        "description": "La alta dirección lidera el cambio de forma visible y una red de agentes internos lo impulsa en cada área."
+      },
+      {
+        "title": "Atendemos la resistencia a tiempo",
+        "description": "Detectamos dónde está y por qué, y la abordamos con acciones concretas por grupo antes de que frene el proyecto."
+      },
+      {
+        "title": "Seguimos la adopción durante todo el proyecto",
+        "description": "Clima organizacional y curva de adopción medidos con IA, para corregir a tiempo y no enterarnos en una encuesta al cierre."
+      },
+      {
+        "title": "Consolidamos los nuevos hábitos después del go-live",
+        "description": "Seguimiento, indicadores de uso y ajustes, para que la organización no vuelva a la forma anterior de trabajar."
       }
     ]
   }

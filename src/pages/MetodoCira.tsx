@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { langPath, useLang } from "@/lib/language";
-import { SiteHeader } from "@/components/layout/site-header";
+import { TransparentHeader } from "@/components/layout/transparent-header";
+import { ServiceClosing } from "@/components/sections/service-closing";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { CiraSocialProof } from "@/components/sections/cira-social-proof";
 import { CiraFaq } from "@/components/sections/cira-faq";
-import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 import { Eyebrow } from "@/components/ui/eyebrow";
@@ -104,9 +104,9 @@ export default function MetodoCira() {
 
   return (
     <>
-      <SiteHeader />
+      <TransparentHeader />
       <main id="contenido">
-      <AnimatedNavyBackground className="pt-[clamp(72px,9vw,120px)]">
+      <AnimatedNavyBackground className="pt-[clamp(120px,12vw,160px)]">
         <div className="container-site">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] items-end gap-x-24 gap-y-10">
             <div>
@@ -201,7 +201,11 @@ export default function MetodoCira() {
 
       <CiraFaq />
 
-      <FinalCta />
+      <ServiceClosing
+        eyebrow={t("hero.eyebrow")}
+        ctaLabel={lang === "en" ? "Schedule a call" : "Agendar conversación"}
+        items={phases.map((p) => ({ title: p.service, description: p.title, href: langPath(p.href, lang) }))}
+      />
       </main>
       <Footer />
     </>

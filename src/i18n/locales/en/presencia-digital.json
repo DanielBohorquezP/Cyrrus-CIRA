@@ -98,6 +98,11 @@
         "We diagnose the current site before proposing to redesign it — sometimes the problem isn't the design.",
         "Performance, structure, and measurement as project requirements, not an afterthought.",
         "Your team leaves trained to publish without depending on us or on an agency."
+      ],
+      "bulletTitles": [
+        "Diagnosis before redesigning",
+        "Performance and measurement from the start",
+        "Your team publishes without depending on anyone"
       ]
     },
     "diagnostico": {
@@ -229,6 +234,49 @@
           "answer": "The site is delivered with the technical foundation positioning needs: semantic structure, speed, structured data, and content organized by search intent. The ongoing positioning work — keyword research, content, authority, and visibility in AI answer engines — is the SEO service, which can be hired alongside the site or afterward."
         }
       ]
+    },
+    "beneficios": {
+      "title": "Benefits of a site built by consultants",
+      "intro": "A site that answers a business decision, not just a redesign.",
+      "items": [
+        {
+          "title": "Designed from the business",
+          "description": "We define which decision the site must enable before building it."
+        },
+        {
+          "title": "Fast on a phone",
+          "description": "Loading, images and structure optimized to open fast on a phone with a limited connection."
+        },
+        {
+          "title": "Your team updates it",
+          "description": "A content manager with training, so you can publish without depending on a vendor."
+        },
+        {
+          "title": "Measurement from day one",
+          "description": "Analytics configured and a simple dashboard of visits, source and behavior."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is a well-built corporate website for?",
+      "items": [
+        {
+          "title": "Answering a business decision",
+          "description": "We define what the site must enable before building it."
+        },
+        {
+          "title": "Opening fast on a phone",
+          "description": "Loading, images and structure optimized for limited connections."
+        },
+        {
+          "title": "Letting your team update it",
+          "description": "A content manager with training, to publish without depending on a vendor."
+        },
+        {
+          "title": "Measuring from day one",
+          "description": "Analytics configured and a simple dashboard of visits, source and behavior."
+        }
+      ]
     }
   },
   "seo": {
@@ -251,6 +299,11 @@
         "Technical, content, and AI citability audit before a single page is written.",
         "We work the searches that bring business, not the ones that bring traffic with no purchase intent.",
         "We report rankings and AI engine mentions, not just visits."
+      ],
+      "bulletTitles": [
+        "Audit before writing",
+        "Searches that bring business",
+        "Reports on rankings and AI mentions"
       ]
     },
     "diagnostico": {
@@ -381,6 +434,49 @@
         {
           "question": "Can we start SEO right away on a newly launched site?",
           "answer": "Yes, and it's the best time. When structure, speed, and structured data are defined during the site's construction, positioning work starts on a healthy foundation instead of spending the first months fixing decisions already made."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Benefits of SEO and GEO consulting",
+      "intro": "Visibility in search engines and AI answer engines, with clear priorities.",
+      "items": [
+        {
+          "title": "The searches that matter",
+          "description": "We prioritize the searches of people ready to buy."
+        },
+        {
+          "title": "Content that answers",
+          "description": "Pages built around the buyer’s real question."
+        },
+        {
+          "title": "Present in AI engines",
+          "description": "Structured information so answer engines can cite it."
+        },
+        {
+          "title": "Reports an executive understands",
+          "description": "Rankings, mentions in AI engines and prospects generated."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is SEO and GEO consulting for?",
+      "items": [
+        {
+          "title": "Showing up when they search",
+          "description": "It prioritizes the searches of people ready to buy."
+        },
+        {
+          "title": "Answering the buyer",
+          "description": "Pages built around the real question being asked."
+        },
+        {
+          "title": "Being cited by AI engines",
+          "description": "Structured information so answer engines can use it."
+        },
+        {
+          "title": "Accountability through a clear report",
+          "description": "Rankings, mentions in AI engines and prospects generated."
         }
       ]
     }

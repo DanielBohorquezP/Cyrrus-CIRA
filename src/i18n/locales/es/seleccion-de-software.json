@@ -214,5 +214,74 @@
         "description": "Qué es cada uno, en qué se diferencian y cómo elegirlo."
       }
     ]
+  },
+  "beneficios": {
+    "title": "Beneficios de seleccionar con método",
+    "intro": "Elegir el software por ajuste al negocio, no por la lista de funcionalidades.",
+    "items": [
+      {
+        "title": "Criterios antes que demos",
+        "description": "Los requerimientos y criterios se definen antes de ver propuestas."
+      },
+      {
+        "title": "La misma vara para todos",
+        "description": "Evaluación funcional, técnica, económica y estratégica de cada plataforma."
+      },
+      {
+        "title": "Costo total a la vista",
+        "description": "Licenciamiento, implementación y costo total de propiedad antes de firmar."
+      },
+      {
+        "title": "Sin sesgo hacia una marca",
+        "description": "Evaluación agnóstica de proveedores, sin comisiones de fabricantes."
+      }
+    ]
+  },
+  "usos": {
+    "title": "¿Para qué sirve la selección de software empresarial?",
+    "items": [
+      {
+        "title": "Definir qué debe resolver la empresa",
+        "description": "Parte de lo que el negocio necesita, no de la lista de funcionalidades."
+      },
+      {
+        "title": "Convertirlo en criterios y requerimientos",
+        "description": "Los criterios se fijan antes de ver propuestas."
+      },
+      {
+        "title": "Comparar plataformas antes de firmar",
+        "description": "Varias alternativas evaluadas contra los mismos criterios."
+      },
+      {
+        "title": "Ver el costo total",
+        "description": "Licenciamiento, implementación y costo total de propiedad a la vista."
+      }
+    ]
+  },
+  "comoLoHacemos": {
+    "title": "De no saber qué comprar a elegir con método",
+    "intro": "Para la empresa que sabe que necesita modernizarse y se pregunta qué ERP, CRM, HCM o EAM le conviene.",
+    "steps": [
+      {
+        "title": "Definimos qué necesita resolver la organización",
+        "description": "No empezamos por qué software quiere comprar, sino por el negocio y sus procesos."
+      },
+      {
+        "title": "Convertimos la necesidad en requerimientos",
+        "description": "Los criterios se fijan antes de ver propuestas, no después de las demos."
+      },
+      {
+        "title": "Comparamos la tecnología con los mismos criterios",
+        "description": "Evaluamos más allá de las funcionalidades: ajuste funcional, arquitectura, integraciones, seguridad y alineación futura."
+      },
+      {
+        "title": "Evaluamos al proveedor",
+        "description": "Capacidad, experiencia y soporte, sin sesgo hacia ninguna marca."
+      },
+      {
+        "title": "Recomendamos con el costo total a la vista",
+        "description": "Licenciamiento, implementación y costo total de propiedad antes de firmar."
+      }
+    ]
   }
 }

@@ -124,6 +124,16 @@
           "answer": "Auditamos lo que ya existe hoy en la organización y lo integramos a un mismo marco de gobierno, en vez de pedirle a cada área que empiece desde cero."
         }
       ]
+    },
+    "autoridad": {
+      "title": "Un mismo método en las cuatro fases",
+      "body": "Intelligence Lab no corre aparte: es un motor transversal bajo las cuatro fases del método CIRA. El mismo equipo que diagnostica acompaña la ejecución.",
+      "stats": [
+        {
+          "value": "4",
+          "label": "fases del método CIRA bajo las que corre Intelligence Lab."
+        }
+      ]
     }
   },
   "automatizaciones": {
@@ -216,6 +226,71 @@
           "description": "Dónde monitoreamos el riesgo del proyecto con agentes de IA."
         }
       ]
+    },
+    "beneficios": {
+      "title": "Beneficios de automatizar con agentes de IA",
+      "intro": "Automatizar donde hace falta, sin construir lo que ya existe.",
+      "items": [
+        {
+          "title": "Primero lo que ya existe",
+          "description": "Se evalúa si la solución ya existe en el mercado antes de construir algo a medida."
+        },
+        {
+          "title": "Flujos completos",
+          "description": "Procesos de principio a fin, no tareas sueltas."
+        },
+        {
+          "title": "Agentes con dueño",
+          "description": "Cada agente tiene un responsable y un propósito definido dentro del método CIRA."
+        },
+        {
+          "title": "Impacto medido",
+          "description": "Cada agente se mide contra el proceso real que reemplaza o acelera, no contra una demo."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirven los agentes de IA y la automatización?",
+      "items": [
+        {
+          "title": "Automatizar procesos completos",
+          "description": "Flujos de trabajo de principio a fin, desde el disparador hasta el resultado que necesita el negocio."
+        },
+        {
+          "title": "Poner agentes con dueño",
+          "description": "Agentes especializados por fase de CIRA, cada uno con un responsable y un propósito."
+        },
+        {
+          "title": "Medir el impacto real",
+          "description": "Cada agente se mide contra el proceso que reemplaza o acelera: tiempo, error y adopción."
+        },
+        {
+          "title": "Evitar construir lo que ya existe",
+          "description": "Primero se evalúa si la solución correcta ya está en el mercado."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De una demo impecable a un proceso que se mide",
+      "intro": "Para cuando los agentes hacen una demo impecable y no tocan un proceso real del negocio.",
+      "steps": [
+        {
+          "title": "Evaluamos si la solución ya existe",
+          "description": "Partimos del mismo diagnóstico agnóstico que usamos para seleccionar un ERP: primero vemos si la solución correcta ya está en el mercado."
+        },
+        {
+          "title": "Automatizamos el flujo completo",
+          "description": "Procesos de principio a fin, desde el disparador hasta el resultado que el negocio necesita."
+        },
+        {
+          "title": "Si no existe, la desarrollamos a la medida",
+          "description": "Integrada a la arquitectura de Intelligence Lab, no como un desarrollo suelto, y con agentes que tienen dueño."
+        },
+        {
+          "title": "Medimos cada agente contra el proceso real",
+          "description": "Tiempo, error y adopción por el equipo, frente al proceso que el agente reemplaza o acelera."
+        }
+      ]
     }
   },
   "arquitectura": {
@@ -303,6 +378,71 @@
         {
           "title": "Selección de ERP",
           "description": "El sistema central que conviene integrar."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Beneficios de una arquitectura de IA",
+      "intro": "Que cada herramienta nueva encaje, en vez de sumarse como una isla.",
+      "items": [
+        {
+          "title": "Visibilidad de lo que existe",
+          "description": "Se sabe qué herramientas de IA hay, quién las compró y con qué datos se conectan."
+        },
+        {
+          "title": "Integración sin duplicar datos",
+          "description": "Modelos, datos y sistemas se conectan sin duplicar información ni abrir brechas nuevas."
+        },
+        {
+          "title": "Diseñada para crecer",
+          "description": "No hay que rehacerla cada vez que se suma un caso de uso."
+        },
+        {
+          "title": "Un mapa común",
+          "description": "Procesos, datos y sistemas descritos en un mismo mapa de arquitectura."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve una arquitectura de IA?",
+      "items": [
+        {
+          "title": "Ver lo que ya existe",
+          "description": "Mapea qué herramientas de IA hay, quién las compró y con qué datos se conectan."
+        },
+        {
+          "title": "Integrar sin duplicar",
+          "description": "Conecta modelos, datos y sistemas sin duplicar información ni abrir brechas de seguridad."
+        },
+        {
+          "title": "Crecer sin rehacerla",
+          "description": "Se diseña para que un caso de uso nuevo no obligue a empezar de nuevo."
+        },
+        {
+          "title": "Ordenar el uso entre áreas",
+          "description": "Reúne en un mismo mapa lo que cada área compró por su cuenta."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De herramientas de IA aisladas a una arquitectura que las conecta",
+      "intro": "Para cuando cinco áreas compraron cinco herramientas de IA que no se hablan entre sí.",
+      "steps": [
+        {
+          "title": "Mapeamos lo que ya existe",
+          "description": "Qué herramientas de IA hay hoy, quién las compró y con qué datos y sistemas se conectan, antes de sumar una más."
+        },
+        {
+          "title": "Diseñamos la arquitectura que las conecta",
+          "description": "Una arquitectura técnica que une modelos, datos y sistemas existentes de forma segura y escalable."
+        },
+        {
+          "title": "Conectamos sin duplicar ni abrir brechas",
+          "description": "Integración de modelos, datos y sistemas sin duplicar información ni crear brechas de seguridad nuevas."
+        },
+        {
+          "title": "La dejamos lista para crecer",
+          "description": "Una arquitectura pensada para que no haya que rehacerla cada vez que se suma un caso de uso."
         }
       ]
     }
@@ -416,7 +556,8 @@
           "title": "ISO/IEC 42001",
           "description": "Norma internacional de sistema de gestión de IA para cualquier organización que ofrezca o use productos o servicios con IA. Es una norma certificable, no una ley."
         }
-      ]
+      ],
+      "refsLabel": "Tres referencias públicas"
     },
     "guides": {
       "eyebrow": "Guías de gobernanza de IA",
@@ -436,6 +577,90 @@
           "slug": "regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana",
           "title": "Regulación de la IA en 2026",
           "description": "Qué exigen la Unión Europea, Estados Unidos y España a las empresas que usan IA."
+        }
+      ]
+    },
+    "queHacemos": {
+      "quote": "Reglas claras para usar la IA —",
+      "emphasis": "con control y con evidencia.",
+      "intro": "Definimos quién decide sobre la inteligencia artificial en su empresa, con qué criterios y con qué evidencia, para que cada iniciativa sea auditable."
+    },
+    "comoLoHacemos": {
+      "title": "Un marco antes que cada herramienta",
+      "intro": "Sin un marco de gobierno, cada iniciativa de IA queda a criterio de quien la implementó. Por eso empezamos por ordenar lo que ya existe.",
+      "steps": [
+        {
+          "title": "Auditamos la IA que ya se usa",
+          "description": "Qué herramientas hay, quién las compró y con qué datos trabajan. No se empieza desde cero ni se frena lo que ya funciona."
+        },
+        {
+          "title": "Definimos el marco y quién responde",
+          "description": "La gerencia decide qué referencia usará, quién responde por la IA en la empresa y qué evidencia se guardará."
+        },
+        {
+          "title": "Documentamos cada decisión",
+          "description": "Roles, políticas y registros que resisten una auditoría externa, no solo una presentación interna."
+        },
+        {
+          "title": "Revisamos de forma periódica",
+          "description": "El marco corre por debajo de las cuatro fases del método CIRA, con revisiones y responsables claros."
+        }
+      ]
+    },
+    "autoridad": {
+      "title": "Independencia y método, no un reporte para el cajón",
+      "body": "No vendemos herramientas de IA: nuestro único interés es que su organización use la IA con reglas claras. El mismo equipo que diagnostica acompaña la ejecución.",
+      "stats": [
+        {
+          "value": "3",
+          "label": "referencias públicas como punto de partida: NIST, OCDE e ISO/IEC 42001."
+        },
+        {
+          "value": "4",
+          "label": "fases del método CIRA bajo las que corre el marco de gobierno."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Beneficios del gobierno de IA",
+      "intro": "Con reglas claras de qué sí y qué no, aprobar no es más lento: es más seguro.",
+      "items": [
+        {
+          "title": "Aprobar con criterio",
+          "description": "Reglas claras sobre qué se aprueba y qué no, sin frenar la innovación."
+        },
+        {
+          "title": "Evidencia lista para auditoría",
+          "description": "Roles, políticas y registros de decisión que un cliente o regulador puede revisar."
+        },
+        {
+          "title": "Un solo marco para todas las áreas",
+          "description": "Lo que cada área ya usa se integra al mismo marco, en vez de empezar de cero."
+        },
+        {
+          "title": "Datos con trazabilidad",
+          "description": "Se sabe qué información toca cada modelo y quién responde por ella."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve el gobierno de IA?",
+      "items": [
+        {
+          "title": "Decidir quién puede usar qué",
+          "description": "Políticas por escrito sobre qué modelo se usa, para qué caso y con qué datos."
+        },
+        {
+          "title": "Asignar responsables",
+          "description": "Define quién aprueba una iniciativa de IA y quién audita el resultado."
+        },
+        {
+          "title": "Controlar los datos",
+          "description": "Qué información puede tocar un modelo y cuál queda fuera, con trazabilidad."
+        },
+        {
+          "title": "Tener evidencia ante un cliente o regulador",
+          "description": "Roles, políticas y registros de decisión que se pueden mostrar en una auditoría."
         }
       ]
     }
@@ -585,6 +810,79 @@
           "answer": "Decide quién es dueño de cada dominio, qué indicador es el oficial y qué datos quedan fuera del alcance de la IA. El taller de gobierno de datos para ejecutivos de Leadership Academy prepara esas decisiones."
         }
       ]
+    },
+    "beneficios": {
+      "title": "Beneficios del gobierno de datos",
+      "intro": "Decisiones basadas en datos que todas las áreas reconocen como válidos.",
+      "items": [
+        {
+          "title": "Una sola versión de la cifra",
+          "description": "Se define de dónde sale cada dato y cada indicador que ve la junta directiva."
+        },
+        {
+          "title": "Dueños claros",
+          "description": "Cada dominio de datos tiene responsable y decisiones definidas."
+        },
+        {
+          "title": "Calidad y acceso con reglas",
+          "description": "Captura, validación y acceso escritos y aplicables en los sistemas."
+        },
+        {
+          "title": "Datos listos para la IA",
+          "description": "Se define qué datos puede usar un modelo y con qué trazabilidad."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve el gobierno de datos?",
+      "items": [
+        {
+          "title": "Acabar con las cifras en disputa",
+          "description": "Define de dónde sale cada dato para que las áreas dejen de defender versiones distintas."
+        },
+        {
+          "title": "Asignar dueños",
+          "description": "Cada dominio de datos tiene un responsable y decisiones definidas."
+        },
+        {
+          "title": "Cuidar la calidad y el acceso",
+          "description": "Reglas de captura, validación y acceso escritas y aplicables en los sistemas."
+        },
+        {
+          "title": "Preparar los datos para la IA",
+          "description": "Define qué datos puede usar un modelo y con qué trazabilidad."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De cifras en disputa a una sola versión de los datos",
+      "intro": "Para la empresa donde cada área defiende su propia versión de la cifra correcta y la junta termina discutiendo cuál dato es el verdadero.",
+      "steps": [
+        {
+          "title": "Encontramos dónde no cuadran los datos",
+          "description": "Qué sistemas generan datos, dónde se duplican (CRM, ERP, hojas de cálculo) y qué cifras no cuadran entre áreas."
+        },
+        {
+          "title": "Definimos quién decide sobre cada dato",
+          "description": "Dominios de datos, dueños, comité y las decisiones que toma cada uno."
+        },
+        {
+          "title": "Escribimos las reglas de calidad y acceso",
+          "description": "Captura, deduplicación, validación y acceso, aplicables en los sistemas que ya existen."
+        },
+        {
+          "title": "Mostramos de dónde sale cada indicador",
+          "description": "Un inventario de datos críticos y del origen de cada indicador que ve la junta directiva."
+        },
+        {
+          "title": "Dejamos los datos listos para la IA",
+          "description": "Qué datos puede usar un modelo, cuáles no y con qué trazabilidad."
+        },
+        {
+          "title": "Lo dejamos funcionando sin nosotros",
+          "description": "Capacitación y medición para que las reglas se cumplan después de que Cyrrus se retira."
+        }
+      ]
     }
   },
   "estrategiaIa": {
@@ -730,6 +1028,79 @@
         {
           "question": "¿Qué papel tiene la dirección en la estrategia de IA?",
           "answer": "Aprobar la lista priorizada, decidir el marco de gobierno y los datos que la IA no puede tocar, y revisar la medición. El taller de IA para directivos de Leadership Academy prepara esas decisiones."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Beneficios de una estrategia de IA",
+      "intro": "Aprobar iniciativas de IA por criterio, no por instinto.",
+      "items": [
+        {
+          "title": "Casos de uso priorizados",
+          "description": "Impacto, viabilidad, datos y riesgo evaluados con un mismo criterio."
+        },
+        {
+          "title": "Hoja de ruta con responsables",
+          "description": "Secuencia, dependencias y responsables definidos para cada iniciativa."
+        },
+        {
+          "title": "Gobierno y arquitectura desde el inicio",
+          "description": "Políticas, roles y controles definidos antes de escalar."
+        },
+        {
+          "title": "Pilotos medibles",
+          "description": "Los primeros casos se miden contra el proceso que reemplazan."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve una estrategia de IA?",
+      "items": [
+        {
+          "title": "Elegir casos de uso con criterio",
+          "description": "Evalúa impacto, viabilidad técnica, datos necesarios y riesgo con un mismo criterio."
+        },
+        {
+          "title": "Definir el orden de ejecución",
+          "description": "Una hoja de ruta con secuencia, dependencias y responsables."
+        },
+        {
+          "title": "Poner gobierno y arquitectura",
+          "description": "Define qué políticas, roles y controles aplican y sobre qué arquitectura se conectan los modelos."
+        },
+        {
+          "title": "Medir cada iniciativa",
+          "description": "Los primeros casos se ejecutan como pilotos y se miden contra el proceso que reemplazan."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De aprobar por instinto a decidir con criterio",
+      "intro": "Para el comité que aprueba o rechaza iniciativas de IA por instinto, no por criterio.",
+      "steps": [
+        {
+          "title": "Vemos qué IA ya se usa",
+          "description": "Qué herramientas hay, quién las compró y con qué datos trabajan, antes de proponer nuevas."
+        },
+        {
+          "title": "Descubrimos dónde la IA sí aporta",
+          "description": "Sesiones con las áreas para identificar procesos candidatos: volumen, repetitividad, datos disponibles y costo actual."
+        },
+        {
+          "title": "Priorizamos con un solo criterio",
+          "description": "Impacto en el negocio, viabilidad técnica, datos necesarios y riesgo, igual para todos los casos."
+        },
+        {
+          "title": "Armamos la hoja de ruta",
+          "description": "Secuencia, dependencias, responsables y cómo se medirá cada caso contra el proceso que reemplaza."
+        },
+        {
+          "title": "Definimos gobierno y arquitectura",
+          "description": "Qué políticas, roles y controles aplican, y sobre qué arquitectura se conectan modelos, datos y sistemas."
+        },
+        {
+          "title": "Probamos con pilotos medidos",
+          "description": "Los primeros casos se ejecutan con nuestro equipo de automatización y se miden contra el proceso real, no contra una demo."
         }
       ]
     }

@@ -21,7 +21,12 @@
     "methodLinkText": "This is the Realize phase within the",
     "methodLinkLabel": "full CIRA Method",
     "articleLinkText": "Before hiring external project management, see the five signs your project needs it:",
-    "articleLinkLabel": "when to hire an external PMO"
+    "articleLinkLabel": "when to hire an external PMO",
+    "bulletTitles": [
+      "Delivered on time and on budget",
+      "Risk monitored continuously",
+      "The base for change management"
+    ]
   },
   "definicion": {
     "eyebrow": "The foundation",
@@ -202,6 +207,71 @@
       {
         "title": "AI agent automation",
         "description": "How we monitor project risk in real time."
+      }
+    ]
+  },
+  "autoridad": {
+    "title": "Real accountability for the outcome",
+    "body": "Our project management acts as an external PMO: project governance, quality assurance and active risk management throughout the execution, not just status reports.",
+    "stats": [
+      {
+        "value": "3%",
+        "label": "difference in estimated costs on a project delivered by Cyrrus under PMBOK guidelines."
+      },
+      {
+        "value": "0",
+        "label": "scope deviations on that same project."
+      }
+    ]
+  },
+  "usos": {
+    "title": "What is project management for?",
+    "items": [
+      {
+        "title": "Meeting time, cost, scope and quality",
+        "description": "Expert planning, direction, control and execution of the initiative."
+      },
+      {
+        "title": "Managing risk during execution",
+        "description": "Follow-up, control and active risk management, not just status reports."
+      },
+      {
+        "title": "Rescuing projects already under way",
+        "description": "Diagnosis and rescue of projects already in progress."
+      },
+      {
+        "title": "Creating or outsourcing a PMO",
+        "description": "Setting up your own PMO or PMO as a service."
+      }
+    ]
+  },
+  "comoLoHacemos": {
+    "title": "From a project at risk to someone accountable for the outcome",
+    "intro": "For when the project runs late, goes over budget and nobody takes the risk.",
+    "steps": [
+      {
+        "title": "We turn the need into a concrete project",
+        "description": "Objectives, scope, expected benefits and success criteria, before committing budget."
+      },
+      {
+        "title": "We build the plan and take it to approval",
+        "description": "Schedule, resources, roles, costs, risks and quality plan, approved by the steering committee."
+      },
+      {
+        "title": "We run the execution day to day",
+        "description": "We coordinate the internal team, the technology vendor and the business areas in one management rhythm."
+      },
+      {
+        "title": "We anticipate deviations",
+        "description": "Continuous control of progress, cost and scope, with AI agents that anticipate deviations before they become a crisis."
+      },
+      {
+        "title": "We look after quality and adoption",
+        "description": "Deliverables reviewed with a senior profile on the executive committee, and change management built into the execution."
+      },
+      {
+        "title": "We close and stabilize",
+        "description": "Formal close, post-go-live support and documentation of the implementation model."
       }
     ]
   }

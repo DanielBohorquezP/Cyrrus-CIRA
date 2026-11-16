@@ -164,7 +164,80 @@
         "question": "¿La selección de ERP incluye la gerencia del proyecto de implementación?",
         "answer": "Son dos fases distintas del Método CIRA. Si lo necesita, también actuamos como PMO externo durante la implementación del ERP recomendado, con la misma responsabilidad real sobre el resultado que aplicamos en la selección."
       }
-    ]
+    ],
+    "beneficios": {
+      "title": "Beneficios de elegir el ERP con criterio",
+      "intro": "Elegir un ERP es elegir cómo funcionará la empresa durante los próximos años.",
+      "items": [
+        {
+          "title": "Requerimientos documentados",
+          "description": "Un mapa de requerimientos propio, antes de hablar con proveedores."
+        },
+        {
+          "title": "Proveedores comparables",
+          "description": "Matriz de evaluación, demos y scoring con los mismos criterios para todos."
+        },
+        {
+          "title": "Costo y riesgo a la vista",
+          "description": "Costo total de propiedad y análisis de riesgos antes de decidir."
+        },
+        {
+          "title": "Un camino hacia la implementación",
+          "description": "Recomendación y hoja de ruta para pasar de la elección a la puesta en marcha."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve una consultoría ERP independiente?",
+      "items": [
+        {
+          "title": "Definir qué necesita la empresa de un ERP",
+          "description": "Un mapa de requerimientos propio antes de hablar con proveedores."
+        },
+        {
+          "title": "Comparar plataformas",
+          "description": "SAP, Oracle, Microsoft Dynamics, Infor, NetSuite y otras, evaluadas con los mismos criterios."
+        },
+        {
+          "title": "Ver costo y riesgo",
+          "description": "Costo total de propiedad y análisis de riesgos antes de decidir."
+        },
+        {
+          "title": "Preparar la implementación",
+          "description": "Una recomendación y una hoja de ruta para pasar de la elección a la puesta en marcha."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De sistemas desconectados a un ERP elegido con criterio",
+      "intro": "Para la empresa que crece con sistemas desconectados, procesos manuales y poca visibilidad financiera, y debe elegir un ERP.",
+      "steps": [
+        {
+          "title": "Partimos de su situación actual y de sus procesos",
+          "description": "Entendemos cómo funciona hoy la empresa antes de mirar una sola plataforma."
+        },
+        {
+          "title": "Documentamos los requerimientos",
+          "description": "Un mapa de requerimientos propio, antes de hablar con proveedores."
+        },
+        {
+          "title": "Armamos alternativas y una shortlist",
+          "description": "Longlist y shortlist de proveedores, con RFI / RFP."
+        },
+        {
+          "title": "Evaluamos con demos y scoring",
+          "description": "Evaluación de demos y scoring de proveedores con los mismos criterios para todos."
+        },
+        {
+          "title": "Recomendamos con costo y riesgo a la vista",
+          "description": "Business case con costo total de propiedad, análisis de riesgos y la recomendación."
+        },
+        {
+          "title": "Dejamos la hoja de ruta de implementación",
+          "description": "Un roadmap para pasar de la elección a la puesta en marcha."
+        }
+      ]
+    }
   },
   "crm": {
     "meta": {
@@ -320,7 +393,76 @@
         "question": "¿Cuál es la diferencia entre elegir un CRM con Cyrrus y comprarlo directo al proveedor?",
         "answer": "El proveedor parte de su producto; nosotros partimos de su proceso de ventas. Al no tener comisión con ningún fabricante, la evaluación puede concluir que le sirve la plataforma más barata del mercado, o que la que ya tiene solo necesita reconfigurarse."
       }
-    ]
+    ],
+    "beneficios": {
+      "title": "Beneficios de elegir el CRM con criterio",
+      "intro": "Un CRM que ayude a vender mejor, sin obligar al equipo a cambiar su forma de vender.",
+      "items": [
+        {
+          "title": "Ajuste al proceso comercial",
+          "description": "La selección se diseña alrededor de cómo vende la organización."
+        },
+        {
+          "title": "Foco en la adopción",
+          "description": "Se evalúa si el equipo comercial realmente lo va a usar."
+        },
+        {
+          "title": "Costo por usuario visible",
+          "description": "Costo total de propiedad por usuario antes de contratar."
+        },
+        {
+          "title": "Demos guiadas",
+          "description": "Pruebas funcionales con casos de su propio proceso, no con la demo comercial."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve una consultoría CRM independiente?",
+      "items": [
+        {
+          "title": "Alinear el CRM al proceso comercial",
+          "description": "La selección se diseña alrededor de cómo vende la organización."
+        },
+        {
+          "title": "Cuidar la adopción",
+          "description": "Evalúa si el equipo comercial realmente va a usar la herramienta."
+        },
+        {
+          "title": "Comparar el costo por usuario",
+          "description": "Costo total de propiedad por usuario antes de contratar."
+        },
+        {
+          "title": "Preparar la implementación",
+          "description": "Una recomendación y una hoja de ruta para ponerlo en marcha."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De información dispersa a un CRM que su equipo usa",
+      "intro": "Para el equipo comercial con información dispersa, leads que se pierden y seguimiento manual.",
+      "steps": [
+        {
+          "title": "Partimos de su estrategia y su proceso de ventas",
+          "description": "Un mapa del proceso comercial real, para que el CRM se ajuste a cómo vende la organización."
+        },
+        {
+          "title": "Revisamos los datos de clientes y la automatización necesaria",
+          "description": "Qué información debe vivir en el CRM y qué debe automatizarse."
+        },
+        {
+          "title": "Armamos la shortlist y probamos con demos guiadas",
+          "description": "Pruebas funcionales con casos de su propio proceso, no con la demo comercial."
+        },
+        {
+          "title": "Analizamos la adopción y el costo por usuario",
+          "description": "Si el equipo comercial realmente lo va a usar y cuánto cuesta por usuario."
+        },
+        {
+          "title": "Recomendamos y dejamos la hoja de ruta",
+          "description": "La recomendación y el roadmap de implementación."
+        }
+      ]
+    }
   },
   "hcm": {
     "meta": {
@@ -473,6 +615,75 @@
         {
           "title": "Tiempo",
           "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Beneficios de elegir el HCM con criterio",
+      "intro": "Tecnología de gestión humana adaptada a la organización, y no al contrario.",
+      "items": [
+        {
+          "title": "Alineado al modelo de gestión humana",
+          "description": "La selección parte de cómo gestiona personas la organización."
+        },
+        {
+          "title": "Más que nómina",
+          "description": "Se evalúa la cobertura de personas, procesos, políticas, datos, cumplimiento y estrategia de talento."
+        },
+        {
+          "title": "Decisión con matriz",
+          "description": "Comparación de proveedores con una matriz de decisión."
+        },
+        {
+          "title": "Evaluación económica y de riesgos",
+          "description": "Costos y riesgos analizados antes de recomendar."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve una consultoría HCM independiente?",
+      "items": [
+        {
+          "title": "Alinear la tecnología con el modelo de gestión humana",
+          "description": "Parte de cómo gestiona personas la organización."
+        },
+        {
+          "title": "Cubrir más que la nómina",
+          "description": "Evalúa personas, procesos, políticas, datos, cumplimiento y estrategia de talento."
+        },
+        {
+          "title": "Comparar proveedores",
+          "description": "Con una matriz de decisión y los mismos criterios para todos."
+        },
+        {
+          "title": "Evaluar costos y riesgos",
+          "description": "Análisis económico y de riesgos antes de recomendar."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De múltiples sistemas a un HCM que acompaña su modelo de gestión",
+      "intro": "Para la organización con múltiples sistemas, nómina desconectada y procesos manuales de recursos humanos.",
+      "steps": [
+        {
+          "title": "Entendemos su modelo de gestión humana",
+          "description": "Cómo gestiona personas la organización y cuáles son sus procesos de RR. HH."
+        },
+        {
+          "title": "Definimos los requerimientos",
+          "description": "Lo que la tecnología debe soportar: personas, procesos, políticas, datos y cumplimiento."
+        },
+        {
+          "title": "Evaluamos soluciones y proveedores",
+          "description": "Comparación de proveedores con una matriz de decisión."
+        },
+        {
+          "title": "Analizamos costo y riesgo",
+          "description": "Evaluación económica y análisis de riesgos antes de recomendar."
+        },
+        {
+          "title": "Recomendamos y dejamos la hoja de ruta",
+          "description": "El HCM recomendado y el roadmap de implementación."
         }
       ]
     }
@@ -629,6 +840,75 @@
         {
           "title": "Tiempo",
           "description": "Como referencia, la fase de Identificar del Método CIRA suele tomar de 6 a 12 semanas, desde el kickoff estratégico hasta el acompañamiento a la contratación."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Beneficios de elegir el EAM con criterio",
+      "intro": "Un EAM que responde a la realidad operativa de los activos.",
+      "items": [
+        {
+          "title": "Adaptado a su operación",
+          "description": "Los requerimientos parten de su tipo de activos y de su operación."
+        },
+        {
+          "title": "Costo del ciclo de vida",
+          "description": "Costo total de propiedad calculado a lo largo del ciclo de vida de los activos."
+        },
+        {
+          "title": "Riesgos operativos analizados",
+          "description": "Se evalúan los riesgos de operación antes de recomendar."
+        },
+        {
+          "title": "Proveedores comparables",
+          "description": "Comparación de proveedores contra una matriz de evaluación técnica."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve una consultoría EAM independiente?",
+      "items": [
+        {
+          "title": "Adaptar la plataforma a los activos",
+          "description": "Los requerimientos parten de su tipo de activos y de su operación."
+        },
+        {
+          "title": "Calcular el costo del ciclo de vida",
+          "description": "Costo total de propiedad a lo largo del ciclo de vida de los activos."
+        },
+        {
+          "title": "Analizar riesgos operativos",
+          "description": "Se evalúan los riesgos de operación antes de recomendar."
+        },
+        {
+          "title": "Comparar proveedores",
+          "description": "Contra una matriz de evaluación técnica."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De mantenimiento reactivo a un EAM pensado para sus activos",
+      "intro": "Para la operación con mantenimiento reactivo, activos sin trazabilidad y paradas no planificadas.",
+      "steps": [
+        {
+          "title": "Partimos del inventario y del ciclo de vida de sus activos",
+          "description": "Qué activos tiene, cómo se planifican, se mantienen y se operan."
+        },
+        {
+          "title": "Definimos los requerimientos operativos",
+          "description": "Un mapa de requerimientos que parte de su tipo de activos y de su operación."
+        },
+        {
+          "title": "Comparamos proveedores con una matriz técnica",
+          "description": "Evaluación técnica de las plataformas contra esos requerimientos."
+        },
+        {
+          "title": "Calculamos el costo de ciclo de vida y los riesgos operativos",
+          "description": "Costo total de propiedad a lo largo de la vida de los activos, y los riesgos de operación."
+        },
+        {
+          "title": "Recomendamos y dejamos la hoja de ruta",
+          "description": "El EAM recomendado y el roadmap de implementación."
         }
       ]
     }

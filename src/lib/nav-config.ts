@@ -42,6 +42,11 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
               description: t("nav.estrategiaTiDesc", { ns: "common" }),
             },
             {
+              label: t("nav.estrategiaComercial", { ns: "common" }),
+              href: p("/metodo-cira/estrategia/estrategia-comercial"),
+              description: t("nav.estrategiaComercialDesc", { ns: "common" }),
+            },
+            {
               label: t("nav.continuidadNegocioServicio", { ns: "common" }),
               href: p("/metodo-cira/estrategia/continuidad-del-negocio"),
               description: t("nav.continuidadNegocioServicioDesc", { ns: "common" }),

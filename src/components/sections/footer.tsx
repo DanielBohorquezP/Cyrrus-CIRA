@@ -67,7 +67,6 @@ export function Footer() {
     { label: t("nav.gerenciaProyectos", { ns: "common" }), href: langPath("/metodo-cira/gestion-de-proyectos", lang) },
     { label: t("nav.gestionCambio", { ns: "common" }), href: langPath("/metodo-cira/gestion-del-cambio", lang) },
     { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/intelligence-lab", lang) },
-    { label: t("footer.presenciaDigital", { ns: "common" }), href: langPath("/presencia-digital", lang) },
     { label: t("nav.leadershipAcademy", { ns: "common" }), href: langPath("/leadership-academy", lang) },
   ];
 

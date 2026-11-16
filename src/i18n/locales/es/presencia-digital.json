@@ -98,6 +98,11 @@
         "Diagnóstico del sitio actual antes de proponerle rediseñarlo — a veces el problema no es el diseño.",
         "Rendimiento, estructura y medición como requisitos del proyecto, no como ajuste posterior.",
         "Su equipo queda capacitado para publicar sin depender de nosotros ni de una agencia."
+      ],
+      "bulletTitles": [
+        "Diagnóstico antes de rediseñar",
+        "Rendimiento y medición desde el inicio",
+        "Su equipo publica sin depender de nadie"
       ]
     },
     "diagnostico": {
@@ -229,6 +234,49 @@
           "answer": "El sitio se entrega con las bases técnicas que el posicionamiento necesita: estructura semántica, velocidad, datos estructurados y contenido organizado por intención de búsqueda. El trabajo continuo de posicionamiento — investigación de palabras clave, contenido, autoridad y visibilidad en motores de respuesta con IA — es el servicio de SEO, que se puede contratar junto con el sitio o después."
         }
       ]
+    },
+    "beneficios": {
+      "title": "Beneficios de un sitio construido por consultores",
+      "intro": "Un sitio que responde a una decisión de negocio, y no solo un rediseño.",
+      "items": [
+        {
+          "title": "Pensado desde el negocio",
+          "description": "Se define qué decisión debe habilitar el sitio antes de construirlo."
+        },
+        {
+          "title": "Rápido en un celular",
+          "description": "Carga, imágenes y estructura optimizadas para abrir rápido en un celular con conexión limitada."
+        },
+        {
+          "title": "Lo actualiza su equipo",
+          "description": "Gestor de contenido con capacitación, para publicar sin depender de un proveedor."
+        },
+        {
+          "title": "Medición desde el día uno",
+          "description": "Analítica configurada y un tablero simple de visitas, origen y comportamiento."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve un sitio web corporativo bien construido?",
+      "items": [
+        {
+          "title": "Responder a una decisión de negocio",
+          "description": "Se define qué debe habilitar el sitio antes de construirlo."
+        },
+        {
+          "title": "Abrir rápido en un celular",
+          "description": "Carga, imágenes y estructura optimizadas para conexiones limitadas."
+        },
+        {
+          "title": "Que su equipo lo actualice",
+          "description": "Un gestor de contenido con capacitación, para publicar sin depender de un proveedor."
+        },
+        {
+          "title": "Medir desde el día uno",
+          "description": "Analítica configurada y un tablero simple de visitas, origen y comportamiento."
+        }
+      ]
     }
   },
   "seo": {
@@ -251,6 +299,11 @@
         "Auditoría técnica, de contenido y de citabilidad en IA antes de escribir una sola página.",
         "Trabajamos las búsquedas que traen negocio, no las que traen tráfico sin intención de compra.",
         "Reportamos posiciones y menciones en motores de IA, no solo visitas."
+      ],
+      "bulletTitles": [
+        "Auditoría antes de escribir",
+        "Búsquedas que traen negocio",
+        "Reportes de posiciones y menciones en IA"
       ]
     },
     "diagnostico": {
@@ -385,6 +438,49 @@
         {
           "question": "¿Se puede empezar con SEO desde el lanzamiento de un sitio nuevo?",
           "answer": "Sí, y es el mejor momento. Cuando la estructura, la velocidad y los datos estructurados se definen durante la construcción del sitio, el trabajo de posicionamiento arranca sobre una base sana en vez de gastar los primeros meses corrigiendo decisiones ya tomadas."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Beneficios de una consultoría SEO y GEO",
+      "intro": "Visibilidad en buscadores y en motores de respuesta con IA, con prioridades claras.",
+      "items": [
+        {
+          "title": "Las búsquedas que importan",
+          "description": "Se priorizan las búsquedas de quien está listo para comprar."
+        },
+        {
+          "title": "Contenido que responde",
+          "description": "Páginas construidas alrededor de la pregunta real del comprador."
+        },
+        {
+          "title": "Presente en motores de IA",
+          "description": "Información estructurada para que los motores de respuesta puedan citarla."
+        },
+        {
+          "title": "Reportes que un directivo entiende",
+          "description": "Posiciones, menciones en motores de IA y prospectos generados."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve la consultoría SEO y GEO?",
+      "items": [
+        {
+          "title": "Aparecer cuando lo buscan",
+          "description": "Prioriza las búsquedas de quien está listo para comprar."
+        },
+        {
+          "title": "Responder al comprador",
+          "description": "Páginas construidas alrededor de la pregunta real que se hace."
+        },
+        {
+          "title": "Ser citado por motores de IA",
+          "description": "Información estructurada para que los motores de respuesta puedan usarla."
+        },
+        {
+          "title": "Rendir cuentas con un reporte claro",
+          "description": "Posiciones, menciones en motores de IA y prospectos generados."
         }
       ]
     }

@@ -1,28 +1,27 @@
+import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+import { RelatedServices } from "@/components/sections/related-services";
 import { useParams, Navigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { CARD_IMAGE_POOL } from "@/lib/service-media";
+import { definitionFromFaq, useGroupBlocks } from "@/lib/use-group-blocks";
+import { SOLUCIONES_HERO_MEDIA } from "@/lib/service-media";
+import { ServiceTemplate, type ServiceContent } from "@/components/layout/service-template";
+import { splitHeroTitle, splitQuote } from "@/components/layout/service-child-page";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
-import { productImages, productSlugs, type ProductSlug } from "@/lib/solutions-icons";
-import { SiteHeader } from "@/components/layout/site-header";
-import { PageHero } from "@/components/layout/page-hero";
-import { FinalCta } from "@/components/sections/final-cta";
-import { Footer } from "@/components/sections/footer";
-import { IncludedGrid } from "@/components/sections/included-grid";
-import { FaqSection } from "@/components/sections/faq-section";
-import { RelatedServices } from "@/components/sections/related-services";
+import { productSlugs } from "@/lib/solutions-icons";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { NumberedList } from "@/components/ui/numbered-list";
 import { RuledBullets } from "@/components/ui/ruled-bullets";
 import { SectionHeader } from "@/components/ui/section-header";
 import { Reveal } from "@/components/ui/reveal";
-import { ContactCtaButton } from "@/components/ui/contact-cta-button";
-import { SecondaryButton } from "@/components/ui/border-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
 import "@/i18n/ns/seleccion-productos";
 import "@/i18n/ns/seleccion-de-software";
+import "@/i18n/ns/seleccion-soluciones";
 
 interface DolorItem {
   title: string;
@@ -87,6 +86,7 @@ export default function SeleccionProducto() {
   const { producto } = useParams();
   const { t } = useTranslation(["seleccion-productos", "seleccion-de-software"]);
   const lang = useLang();
+  const groupBlocks = useGroupBlocks("soluciones");
   const prefix = lang === "en" ? "/en" : "";
 
   const slug = productSlugs.find((s) => s === producto);
@@ -266,7 +266,6 @@ export default function SeleccionProducto() {
     { label: slug.toUpperCase() },
   ];
 
-  const image = productImages[slug as ProductSlug];
   const otherProducts = productSlugs
     .filter((s) => s !== slug)
     .map((s) => ({
@@ -274,161 +273,133 @@ export default function SeleccionProducto() {
       title: t(`${s}.hero.title`, { ns: "seleccion-productos" }) as string,
     }));
 
+  const heroTitle = splitHeroTitle(hero.title);
+  const content: ServiceContent = {
+    hero: {
+      eyebrow: hero.eyebrow,
+      ...heroTitle,
+      description: hero.description,
+      ctaLabel: hero.ctaLabel,
+      link:
+        slug === "erp"
+          ? {
+              href: `${prefix}/herramientas/test-preparacion-erp`,
+              label: lang === "en" ? "ERP readiness test" : "Test de preparación para un ERP",
+            }
+          : undefined,
+    },
+    breadcrumbs: breadcrumbItems,
+    media: SOLUCIONES_HERO_MEDIA,
+    queHacemos: {
+      ...splitQuote(solucion.title),
+      intro: problemaReal.body,
+      cards: evaluamos.items.map((item, i) => ({
+        title: item.title,
+        description: item.description,
+        image: { src: CARD_IMAGE_POOL[i % CARD_IMAGE_POOL.length], alt: item.title },
+      })),
+      links: (
+        <p>
+          <Link to={`${methodPath}#identificar`} className="font-bold text-blue hover:text-navy">
+            {`${solucion.linkLabel} →`}
+          </Link>
+        </p>
+      ),
+    },
+    queEs: (() => {
+      const base = respuesta
+        ? { title: respuesta.title, body: respuesta.body, refs: respuesta.items }
+        : definitionFromFaq(faqs);
+      const usos = t(`${slug}.usos`, { ns: "seleccion-productos", returnObjects: true }) as {
+        title: string;
+        items: EvalItem[];
+      };
+      return base ? { ...base, uses: { label: usos.title, items: usos.items } } : base;
+    })(),
+    comoLoHacemos: t(`${slug}.comoLoHacemos`, { ns: "seleccion-productos", returnObjects: true }) as ServiceContent["comoLoHacemos"],
+    autoridad: groupBlocks.autoridad,
+    beneficios: t(`${slug}.beneficios`, { ns: "seleccion-productos", returnObjects: true }) as {
+      title: string;
+      intro?: string;
+      items: EvalItem[];
+    },
+    faq: {
+      eyebrow: hero.eyebrow,
+      title: lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes",
+      items: faqs,
+    },
+    related: {
+      eyebrow: lang === "en" ? "Related services" : "Servicios relacionados",
+      title: lang === "en" ? "The decision doesn't end at the recommendation" : "La decisión no termina en la recomendación",
+      items: relatedServices,
+    },
+    closingQuote: t("closingQuote", { ns: "seleccion-de-software" }),
+  };
+
   return (
-    <>
-      <SiteHeader />
-      <main id="contenido">
-      <PageHero
-        eyebrow={hero.eyebrow}
-        title={hero.title}
-        description={hero.description}
-        image={{ src: image.image, alt: hero.title, position: image.imagePosition }}
-        breadcrumbs={breadcrumbItems}
-      >
-        <ContactCtaButton variant="light" label={hero.ctaLabel} />
-        {slug === "erp" && (
-          <SecondaryButton asChild>
-            <Link to={`${prefix}/herramientas/test-preparacion-erp`}>
-              {lang === "en" ? "ERP readiness test" : "Test de preparación para un ERP"}
-            </Link>
-          </SecondaryButton>
-        )}
-      </PageHero>
+    <ServiceTemplate
+      content={content}
+      extrasEndTone="white"
+      extras={
+        <>
+          {/* 01 — Dolor */}
+          <section className="section-y w-full bg-background">
+            <div className="container-site">
+              <SectionHeader eyebrow={dolor.eyebrow} title={dolor.title} />
+              <NumberedList items={dolor.items} layout="columns" className="mt-14" />
+              <Reveal>
+                <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
+                  {dolor.narrativa}
+                </p>
+              </Reveal>
+            </div>
+          </section>
 
-      {/* Answer-first block: what the consultant does, in the searcher's words */}
-      {respuesta && (
-        <IncludedGrid
-          className="bg-mist"
-          eyebrow={respuesta.eyebrow}
-          title={respuesta.title}
-          description={respuesta.body}
-          items={respuesta.items}
-        />
-      )}
-
-      {/* 01 — Dolor */}
-      <section className="section-y w-full bg-background">
-        <div className="container-site">
-          <SectionHeader eyebrow={dolor.eyebrow} title={dolor.title} />
-          <NumberedList items={dolor.items} layout="columns" className="mt-14" />
-          <Reveal>
-            <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
-              {dolor.narrativa}
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 02 — El problema real */}
-      <section className="section-y w-full bg-mist">
-        <Reveal className="mx-auto w-full max-w-[860px] px-[clamp(24px,5vw,64px)] text-center">
-          <Eyebrow>{problemaReal.eyebrow}</Eyebrow>
-          <h2 className="t-h2 mt-5 text-navy">{problemaReal.title}</h2>
-          <p className="t-lead mt-6 text-slate">{problemaReal.body}</p>
-          <p className="mt-8 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
-            {problemaReal.punch}
-          </p>
-        </Reveal>
-      </section>
-
-      {/* 03 — Lo que hacemos / Nuestra solución */}
-      <section className="section-y w-full bg-background">
-        <div className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
-          <Reveal>
-            <Eyebrow>{solucion.eyebrow}</Eyebrow>
-            <h2 className="t-h2 mt-5 text-navy">{solucion.title}</h2>
-          </Reveal>
-
-          <Reveal delay={0.1} className="mt-12 flex flex-wrap items-center justify-center gap-3">
-            {solucion.steps.map((step, i) => (
-              <span key={step} className="flex items-center gap-3">
-                <span className="rounded-full border border-line-2 px-4 py-2 font-heading text-sm font-semibold text-navy">
-                  {step}
-                </span>
-                {i < solucion.steps.length - 1 && (
-                  <span className="text-blue" aria-hidden="true">→</span>
-                )}
-              </span>
-            ))}
-          </Reveal>
-
-          <Reveal delay={0.15} className="mt-10 flex flex-col items-center gap-3 font-heading text-sm font-medium">
-            <Link
-              to={`${prefix}/metodo-cira/seleccion-de-soluciones/seleccion-de-software#metodo`}
-              className="text-blue hover:text-navy"
-            >
-              {`${solucion.linkLabel} →`}
-            </Link>
-            <Link to={methodPath} className="text-blue hover:text-navy">
-              {`${lang === "en" ? "See the full CIRA Method" : "Ver el Método CIRA completo"} →`}
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 04 — Evaluación */}
-      <IncludedGrid
-        className="bg-mist"
-        eyebrow={evaluamos.eyebrow}
-        title={evaluamos.title}
-        items={evaluamos.items}
-        numbered
-      />
-
-      {/* 05 — Entregables / Resultado */}
-      <section className="section-y w-full bg-background">
-        <div className="container-site">
-          <SectionHeader eyebrow={entregables.eyebrow} title={entregables.title} />
-          <RuledBullets items={entregables.items} columns={2} className="mt-14" />
-          {entregables.closingQuote && (
-            <Reveal>
-              <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
-                {entregables.closingQuote}
+          {/* 02 — El problema real */}
+          <section className="section-y w-full bg-mist">
+            <Reveal className="mx-auto w-full max-w-[860px] px-[clamp(24px,5vw,64px)] text-center">
+              <Eyebrow>{problemaReal.eyebrow}</Eyebrow>
+              <h2 className="t-h2 mt-5 text-navy">{problemaReal.title}</h2>
+              <p className="t-lead mt-6 text-slate">{problemaReal.body}</p>
+              <p className="mt-8 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
+                {problemaReal.punch}
               </p>
             </Reveal>
-          )}
-          <Reveal delay={0.1} className="mt-12">
-            <ContactCtaButton label={hero.ctaLabel} />
-          </Reveal>
-        </div>
-      </section>
+          </section>
 
-      {/* 06 — Otras soluciones que evaluamos */}
-      <RelatedServices
-        className="bg-mist"
-        eyebrow={lang === "en" ? "Related solutions" : "Otras soluciones que evaluamos"}
-        title={lang === "en" ? "We also help you select" : "También te ayudamos a seleccionar"}
-        items={otherProducts.map((product) => ({
-          href: `${softwarePath}/${product.slug}`,
-          title: product.title,
-          description: `${lang === "en" ? "See" : "Ver"} ${product.slug.toUpperCase()}`,
-        }))}
-      />
+          {/* 05 — Entregables / Resultado */}
+          <section className="section-y w-full bg-background">
+            <div className="container-site">
+              <SectionHeader eyebrow={entregables.eyebrow} title={entregables.title} />
+              <RuledBullets items={entregables.items} columns={2} className="mt-14" />
+              {entregables.closingQuote && (
+                <Reveal>
+                  <p className="mt-12 max-w-[820px] border-l-2 border-sky pl-6 font-heading text-[clamp(22px,2.2vw,28px)] font-medium leading-[1.4] text-navy">
+                    {entregables.closingQuote}
+                  </p>
+                </Reveal>
+              )}
+              <Reveal delay={0.1} className="mt-12">
+                <ContactCtaButton label={hero.ctaLabel} />
+              </Reveal>
+            </div>
+          </section>
 
-      {/* 07 — Servicios relacionados */}
-      <RelatedServices
-        className="bg-background"
-        eyebrow={lang === "en" ? "Related services" : "Servicios relacionados"}
-        title={lang === "en" ? "The decision doesn't end at the recommendation" : "La decisión no termina en la recomendación"}
-        items={relatedServices}
-      />
+          {/* 06 — Otras soluciones que evaluamos */}
+          <RelatedServices
+            className="bg-mist"
+            eyebrow={lang === "en" ? "Related solutions" : "Otras soluciones que evaluamos"}
+            title={lang === "en" ? "We also help you select" : "También te ayudamos a seleccionar"}
+            items={otherProducts.map((product) => ({
+              href: `${softwarePath}/${product.slug}`,
+              title: product.title,
+              description: `${lang === "en" ? "See" : "Ver"} ${product.slug.toUpperCase()}`,
+            }))}
+          />
 
-      {/* Por qué Cyrrus — 100% agnósticos */}
-      <section className="section-y w-full bg-mist">
-        <Reveal className="mx-auto w-full max-w-[960px] px-[clamp(24px,5vw,64px)] text-center">
-          <blockquote className="m-0 font-heading text-[clamp(26px,3vw,40px)] font-light leading-[1.3] tracking-[-0.02em] text-pretty text-navy">
-            {`"${t("closingQuote", { ns: "seleccion-de-software" })}"`}
-          </blockquote>
-        </Reveal>
-      </section>
-
-      <Testimonials className="bg-background" />
-
-      <FaqSection eyebrow={hero.eyebrow} title={lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes"} faqs={faqs} className="bg-mist" />
-
-      <FinalCta />
-      </main>
-      <Footer />
-    </>
+          <Testimonials className="bg-background" />
+        </>
+      }
+    />
   );
 }

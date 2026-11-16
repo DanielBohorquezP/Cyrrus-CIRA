@@ -21,7 +21,12 @@
     "methodLinkText": "Esta es la fase Realizar dentro del",
     "methodLinkLabel": "Método CIRA completo",
     "articleLinkText": "Antes de contratar una gerencia externa, vea las cinco señales de que su proyecto la necesita:",
-    "articleLinkLabel": "cuándo contratar una PMO externa"
+    "articleLinkLabel": "cuándo contratar una PMO externa",
+    "bulletTitles": [
+      "Entrega en tiempo y presupuesto",
+      "Riesgo monitoreado de forma continua",
+      "Base para la gestión del cambio"
+    ]
   },
   "definicion": {
     "eyebrow": "La base",
@@ -206,6 +211,71 @@
       {
         "title": "Agentes de IA para empresas",
         "description": "Cómo monitoreamos el riesgo del proyecto en tiempo real."
+      }
+    ]
+  },
+  "autoridad": {
+    "title": "Responsabilidad real sobre el resultado",
+    "body": "Nuestra gerencia de proyectos actúa como PMO externo: gobierno de proyecto, aseguramiento de calidad y gestión de riesgo activa durante toda la ejecución, no solo reportes de estado.",
+    "stats": [
+      {
+        "value": "3%",
+        "label": "de diferencia en los costos estimados en un proyecto ejecutado por Cyrrus bajo los lineamientos del PMBOK."
+      },
+      {
+        "value": "0",
+        "label": "desviaciones al alcance en ese mismo proyecto."
+      }
+    ]
+  },
+  "usos": {
+    "title": "¿Para qué sirve la gerencia de proyectos?",
+    "items": [
+      {
+        "title": "Cumplir tiempo, costo, alcance y calidad",
+        "description": "Planeación, dirección, control y ejecución experta de la iniciativa."
+      },
+      {
+        "title": "Gestionar el riesgo mientras se ejecuta",
+        "description": "Seguimiento, control y gestión de riesgo activa, no solo reportes de estado."
+      },
+      {
+        "title": "Rescatar proyectos en curso",
+        "description": "Diagnóstico y rescate de proyectos que ya están en marcha."
+      },
+      {
+        "title": "Crear o externalizar un PMO",
+        "description": "Estructuración de un PMO propio o PMO como servicio."
+      }
+    ]
+  },
+  "comoLoHacemos": {
+    "title": "De un proyecto en riesgo a alguien que responde por el resultado",
+    "intro": "Para cuando el proyecto se atrasa, se sale de presupuesto y nadie asume el riesgo.",
+    "steps": [
+      {
+        "title": "Convertimos la necesidad en un proyecto concreto",
+        "description": "Objetivos, alcance, beneficios esperados y criterios de éxito, antes de comprometer presupuesto."
+      },
+      {
+        "title": "Armamos el plan y lo llevamos a aprobación",
+        "description": "Cronograma, recursos, roles, costos, riesgos y plan de calidad, aprobados por el comité de dirección."
+      },
+      {
+        "title": "Dirigimos la ejecución día a día",
+        "description": "Coordinamos al equipo interno, al proveedor tecnológico y a las áreas de negocio en una sola dinámica gerencial."
+      },
+      {
+        "title": "Anticipamos las desviaciones",
+        "description": "Control continuo de avance, costo y alcance, con agentes de IA que anticipan desviaciones antes de que se conviertan en crisis."
+      },
+      {
+        "title": "Cuidamos la calidad y la adopción",
+        "description": "Revisión de entregables con un perfil senior en el comité ejecutivo, y gestión del cambio integrada a la ejecución."
+      },
+      {
+        "title": "Cerramos y estabilizamos",
+        "description": "Cierre formal, acompañamiento posterior al go-live y documentación del modelo de implementación."
       }
     ]
   }

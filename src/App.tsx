@@ -122,7 +122,6 @@ function lazyPage(loader: () => Promise<PageModule>): RoutePage {
 // route is split out so a visitor doesn't parse the whole site to see one page.
 const MetodoCira = lazyPage(() => import("@/pages/MetodoCira"));
 const IntelligenceLab = lazyPage(() => import("@/pages/IntelligenceLab"));
-const PresenciaDigital = lazyPage(() => import("@/pages/PresenciaDigital"));
 const LeadershipAcademy = lazyPage(() => import("@/pages/LeadershipAcademy"));
 const Experiencia = lazyPage(() => import("@/pages/Experiencia"));
 const QuienesSomos = lazyPage(() => import("@/pages/QuienesSomos"));
@@ -143,8 +142,7 @@ const GobiernoDeDatos = lazyPage(() => import("@/pages/intelligence-lab/Gobierno
 const EstrategiaDeIA = lazyPage(() => import("@/pages/intelligence-lab/EstrategiaDeIA"));
 const EstrategiaDeTi = lazyPage(() => import("@/pages/metodo-cira/EstrategiaDeTi"));
 const ContinuidadDelNegocio = lazyPage(() => import("@/pages/metodo-cira/ContinuidadDelNegocio"));
-const DesarrolloWeb = lazyPage(() => import("@/pages/presencia-digital/DesarrolloWeb"));
-const Seo = lazyPage(() => import("@/pages/presencia-digital/Seo"));
+const EstrategiaComercial = lazyPage(() => import("@/pages/metodo-cira/EstrategiaComercial"));
 const CursoDetalle = lazyPage(() => import("@/pages/leadership-academy/CursoDetalle"));
 const ArticuloPerspectiva = lazyPage(() => import("@/pages/ArticuloPerspectiva"));
 const CasoDetalle = lazyPage(() => import("@/pages/CasoDetalle"));
@@ -174,6 +172,7 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/metodo-cira/estrategia", Component: PlaneacionEstrategica },
   { path: "/metodo-cira/estrategia/estrategia-de-ti", Component: EstrategiaDeTi },
   { path: "/metodo-cira/estrategia/continuidad-del-negocio", Component: ContinuidadDelNegocio },
+  { path: "/metodo-cira/estrategia/estrategia-comercial", Component: EstrategiaComercial },
   { path: "/metodo-cira/seleccion-de-soluciones", Component: SeleccionDeSoluciones },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software", Component: SeleccionDeSoftware },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/:producto", Component: SeleccionProducto },
@@ -186,9 +185,6 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/intelligence-lab/gobierno-de-ia", Component: GobiernoDeIA },
   { path: "/intelligence-lab/gobierno-de-datos", Component: GobiernoDeDatos },
   { path: "/intelligence-lab/estrategia-de-ia", Component: EstrategiaDeIA },
-  { path: "/presencia-digital", Component: PresenciaDigital },
-  { path: "/presencia-digital/desarrollo-web", Component: DesarrolloWeb },
-  { path: "/presencia-digital/seo", Component: Seo },
   { path: "/leadership-academy", Component: LeadershipAcademy },
   { path: "/leadership-academy/:curso", Component: CursoDetalle },
   { path: "/experiencia", Component: Experiencia },

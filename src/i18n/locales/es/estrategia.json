@@ -389,6 +389,75 @@
           "answer": "Es dirección tecnológica ejecutiva bajo demanda: gobierno de TI, arquitectura empresarial y alineación de la tecnología con la estrategia de negocio, sin el costo fijo de un ejecutivo de tiempo completo. Tiene sentido cuando la empresa necesita ese criterio pero no tiene volumen de decisión diario para justificar el cargo."
         }
       ]
+    },
+    "beneficios": {
+      "title": "Beneficios de una estrategia de TI",
+      "intro": "Un plan que ordena las inversiones en tecnología según lo que el negocio necesita.",
+      "items": [
+        {
+          "title": "Inversión con orden",
+          "description": "Un portafolio priorizado por impacto en el negocio, en lugar de proyectos sueltos."
+        },
+        {
+          "title": "Cada iniciativa con su caso de negocio",
+          "description": "Beneficio esperado, costo total, riesgo y responsable definidos antes de aprobar."
+        },
+        {
+          "title": "Arquitectura objetivo clara",
+          "description": "Sistemas, datos e infraestructura conectados con un propósito definido."
+        },
+        {
+          "title": "Decisiones con gobierno",
+          "description": "Se sabe quién decide y con qué indicadores se revisa el portafolio."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve una estrategia de TI?",
+      "items": [
+        {
+          "title": "Decidir qué va primero",
+          "description": "Ordena las iniciativas de tecnología (ERP, CRM, datos, IA, nube) según su impacto en el negocio."
+        },
+        {
+          "title": "Conectar TI con el plan del negocio",
+          "description": "Define la arquitectura objetivo que la estrategia del negocio necesita."
+        },
+        {
+          "title": "Justificar cada inversión",
+          "description": "Cada iniciativa llega con beneficio esperado, costo total, riesgo y responsable."
+        },
+        {
+          "title": "Darle gobierno a la tecnología",
+          "description": "Establece quién decide y con qué indicadores se revisa el portafolio."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De inversiones sueltas a un plan que se puede defender",
+      "intro": "Para la empresa que invierte en tecnología proyecto por proyecto, sin un mapa que diga qué va primero ni por qué.",
+      "steps": [
+        {
+          "title": "Entendemos qué soporta hoy su operación",
+          "description": "Inventario de sistemas, integraciones, contratos y deuda técnica: qué sostiene la operación y qué la frena."
+        },
+        {
+          "title": "Definimos hacia dónde debe ir la tecnología",
+          "description": "La arquitectura objetivo: cómo deben quedar conectados los sistemas, los datos y la infraestructura para ejecutar la estrategia."
+        },
+        {
+          "title": "Ordenamos las iniciativas por su impacto",
+          "description": "ERP, CRM, datos, IA o nube en un portafolio priorizado, con dependencias y secuencia."
+        },
+        {
+          "title": "Cada inversión llega con su caso de negocio",
+          "description": "Beneficio esperado, costo total a varios años, riesgo y responsable, para aprobar con criterio."
+        },
+        {
+          "title": "Dejamos claro quién decide y cómo se revisa",
+          "description": "El comité y los indicadores con los que se revisa el portafolio, para que la hoja de ruta no se quede en un documento."
+        }
+      ]
     }
   },
   "continuidad": {
@@ -491,9 +560,9 @@
           "description": "Los conceptos según NIST SP 800-34 e ISO 22301, la diferencia entre BCP, DRP y plan de contingencia, y qué decide la dirección."
         },
         {
-          "slug": "como-elegir-una-consultoria-de-ciberseguridad",
-          "title": "Cómo elegir una consultoría de ciberseguridad",
-          "description": "Qué debe cubrir, qué marcos públicos sirven de referencia (NIST CSF 2.0, ISO/IEC 27001) y qué preguntar."
+          "slug": "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
+          "title": "Cuándo contratar una consultoría de ciberseguridad",
+          "description": "Las señales de que es momento, qué incluye, por qué importa la independencia de fabricantes y qué preguntar antes de contratar."
         }
       ]
     },
@@ -524,6 +593,348 @@
         {
           "question": "¿Quién implementa las soluciones que el plan exige?",
           "answer": "Si el plan requiere respaldo, alta disponibilidad, un sitio alterno o nube, seleccionamos las soluciones con nuestra consultoría de infraestructura, sin comisiones de fabricantes, y la implementación la gobierna la Gerencia de Proyectos (PMO)."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Beneficios de un plan de continuidad",
+      "intro": "Saber qué hacer antes de que el sistema principal falle.",
+      "items": [
+        {
+          "title": "Procesos críticos identificados",
+          "description": "Se sabe qué procesos no pueden detenerse y qué impacto tiene cada hora de interrupción."
+        },
+        {
+          "title": "Respuesta definida",
+          "description": "Quién decide, quién comunica y qué se hace en las primeras horas."
+        },
+        {
+          "title": "Recuperación técnica ordenada",
+          "description": "Qué sistemas se restauran, en qué orden y con qué respaldos."
+        },
+        {
+          "title": "Un plan que se probó",
+          "description": "Un simulacro con un escenario real antes de dar el plan por terminado."
+        }
+      ]
+    },
+    "usos": {
+      "title": "¿Para qué sirve un plan de continuidad del negocio?",
+      "items": [
+        {
+          "title": "Saber qué no puede parar",
+          "description": "Identifica los procesos críticos, sus dependencias y el impacto de una interrupción."
+        },
+        {
+          "title": "Responder en las primeras horas",
+          "description": "Define quién decide, quién comunica y qué se hace cuando ocurre la falla."
+        },
+        {
+          "title": "Recuperar los sistemas en orden",
+          "description": "Establece qué sistemas se restauran, en qué orden y con qué respaldos."
+        },
+        {
+          "title": "Probarlo antes de que ocurra",
+          "description": "Un simulacro con un escenario real, y un calendario para mantener el plan al día."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "De «nunca lo hemos probado» a un plan que funciona",
+      "intro": "Para la empresa que nunca ha probado qué pasa si el sistema principal cae un lunes a las 9 a. m.",
+      "steps": [
+        {
+          "title": "Identificamos lo que no puede parar",
+          "description": "Procesos críticos, dependencias, impacto por hora de interrupción y prioridad de recuperación."
+        },
+        {
+          "title": "Definimos cómo sigue operando mientras se recupera",
+          "description": "Alternativas manuales, sitios o servicios alternos y respaldos para cada proceso crítico."
+        },
+        {
+          "title": "Dejamos escrito quién decide y quién comunica",
+          "description": "Qué se hace en las primeras horas y cómo se vuelve a la normalidad."
+        },
+        {
+          "title": "Planeamos la recuperación técnica",
+          "description": "Qué sistemas se restauran, en qué orden, con qué respaldos y quién lo ejecuta."
+        },
+        {
+          "title": "Lo probamos con un escenario real",
+          "description": "Un simulacro antes de dar el plan por terminado, y el calendario para repetirlo."
+        }
+      ]
+    }
+  },
+  "estrategiaComercial": {
+    "meta": {
+      "title": "Consultoría en Estrategia Comercial: Plan de Acción | Cyrrus",
+      "description": "Consultoría en estrategia comercial: decisiones comerciales y un plan de acción para llevarlas a la práctica, en unas 8 semanas y con revisión a los 3 meses."
+    },
+    "serviceDescription": "Consultoría en estrategia comercial",
+    "hero": {
+      "title": "Consultoría en estrategia comercial: plan de acción para su empresa",
+      "description": "¿Dónde está su negocio hoy y hacia dónde quiere llevar sus ventas? Tomamos con su equipo las decisiones comerciales y definimos el plan para llevarlas a la práctica."
+    },
+    "queHacemos": {
+      "quote": "¿Dónde está su negocio hoy",
+      "emphasis": "y hacia dónde va?",
+      "intro": "Tomar las decisiones comerciales y definir el plan para llevarlas a la práctica.",
+      "cards": [
+        {
+          "title": "¿Cómo va el negocio hoy?",
+          "text": "Entendemos qué está pasando en el negocio y en el mercado: resultados recientes, cambios del comprador, señales y preguntas.",
+          "image": "/assets/decoracion/estrategia-comercial-niebla.jpg",
+          "alt": "Camino entre montañas y niebla al amanecer",
+          "position": "80% 50%"
+        },
+        {
+          "title": "¿Qué esperan hacia adelante?",
+          "text": "Exploramos las posibilidades de crecimiento: clientes actuales, nuevas necesidades y nuevos clientes.",
+          "image": "/assets/decoracion/estrategia-comercial-mar.jpg",
+          "alt": "Costa y mar abierto bajo un cielo despejado"
+        },
+        {
+          "title": "¿Qué tendría que cambiar?",
+          "text": "Decidimos las prioridades comerciales y definimos el plan para ponerlas en marcha.",
+          "image": "/assets/decoracion/IMG_20230228_083642.jpg",
+          "alt": "Consultor de Cyrrus trabajando sobre un plano de decisiones"
+        }
+      ]
+    },
+    "respuesta": {
+      "eyebrow": "Estrategia comercial",
+      "title": "¿Qué es un plan de acción comercial?",
+      "body": "Es el trabajo para tomar las decisiones comerciales de la empresa y definir el plan para llevarlas a la práctica. Parte de entender qué está pasando en el negocio y en el mercado, y explora las posibilidades de crecimiento: los clientes actuales muestran dónde la empresa ya encontró valor, pero no muestran por sí solos todas las opciones de crecimiento.",
+      "refsLabel": "Posibilidades de crecimiento",
+      "items": [
+        {
+          "title": "Clientes actuales"
+        },
+        {
+          "title": "Nuevas necesidades"
+        },
+        {
+          "title": "Nuevos clientes"
+        }
+      ]
+    },
+    "usos": {
+      "title": "Las decisiones comerciales que se toman",
+      "items": [
+        {
+          "title": "Prioridad de crecimiento"
+        },
+        {
+          "title": "Mercado"
+        },
+        {
+          "title": "Cliente prioritario (ICP)"
+        },
+        {
+          "title": "Situación y necesidad"
+        },
+        {
+          "title": "Valor y diferenciación"
+        },
+        {
+          "title": "Oferta"
+        },
+        {
+          "title": "Acceso al mercado"
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "Del balance del negocio a un plan comercial",
+      "intro": "Cinco etapas: cerca de 8 semanas de trabajo inicial y entrega, y una revisión incluida tres meses después.",
+      "steps": [
+        {
+          "title": "Entender",
+          "description": "Qué está pasando en el negocio y en el mercado: resultados recientes, cambios del comprador, señales y preguntas."
+        },
+        {
+          "title": "Explorar",
+          "description": "Las posibilidades de crecimiento: clientes actuales, nuevas necesidades y nuevos clientes."
+        },
+        {
+          "title": "Decidir",
+          "description": "Las decisiones comerciales: prioridad de crecimiento, mercado, cliente prioritario (ICP), situación y necesidad, valor y diferenciación, oferta y acceso al mercado."
+        },
+        {
+          "title": "Definir el plan",
+          "description": "El plan de mejoramiento del posicionamiento comercial, el estudio de posicionamiento en IA y la hoja de ruta: qué cambiar, qué va primero, quién lo asume y qué observar."
+        },
+        {
+          "title": "Revisar",
+          "description": "Tres meses después de la entrega: qué se implementó, qué cambió y qué conviene ajustar, con recomendaciones y una hoja de ruta actualizada."
+        }
+      ]
+    },
+    "spotlights": [
+      {
+        "eyebrow": "El plan para ponerlas en marcha",
+        "title": "Lo que el comprador necesita encontrar",
+        "intro": "Antes de recomendar más presencia, revisamos qué evidencia necesita encontrar el comprador. El resultado es un plan de mejoramiento del posicionamiento comercial.",
+        "items": [
+          {
+            "title": "Mercadeo y proceso comercial",
+            "description": "Ofertas, pruebas y conversaciones."
+          },
+          {
+            "title": "Mejoramiento digital",
+            "description": "Web, LinkedIn y canales pertinentes."
+          },
+          {
+            "title": "Divulgación recomendada",
+            "description": "Públicos, temas y distribución."
+          }
+        ]
+      },
+      {
+        "eyebrow": "El plan para ponerlas en marcha",
+        "title": "Posicionamiento en inteligencia artificial",
+        "intro": "¿Cómo los encuentra, describe y evalúa la IA? El estudio de posicionamiento en IA lo revisa.",
+        "stat": {
+          "value": "45 %",
+          "description": "de los compradores B2B usó herramientas de IA en una compra reciente.",
+          "source": "Gartner, encuesta a 646 compradores B2B, agosto–septiembre de 2025 (citada por Digital Commerce 360, 17 de marzo de 2026)."
+        },
+        "image": {
+          "src": "/assets/decoracion/estrategia-comercial-prisma.jpg",
+          "alt": "Prisma de cristal que descompone un rayo de luz en haces de colores",
+          "position": "50% 50%"
+        }
+      },
+      {
+        "eyebrow": "El plan para ponerlas en marcha",
+        "title": "Hoja de ruta",
+        "intro": "Ustedes toman las decisiones y ejecutan.",
+        "items": [
+          {
+            "title": "Qué cambiar",
+            "description": "Iniciativas."
+          },
+          {
+            "title": "Qué va primero",
+            "description": "Prioridades."
+          },
+          {
+            "title": "Quién lo asume",
+            "description": "Responsables."
+          },
+          {
+            "title": "Qué observar",
+            "description": "Indicadores."
+          }
+        ]
+      },
+      {
+        "eyebrow": "La revisión después de actuar",
+        "title": "La revisión tres meses después",
+        "items": [
+          {
+            "title": "Entrega inicial",
+            "description": "Cerca de 8 semanas."
+          },
+          {
+            "title": "Ejecución",
+            "description": "A cargo de la empresa."
+          },
+          {
+            "title": "Revisión incluida",
+            "description": "3 meses después de la entrega."
+          }
+        ],
+        "note": "¿Qué se implementó? ¿Qué cambió? ¿Qué conviene ajustar? La revisión termina con recomendaciones y una hoja de ruta actualizada."
+      }
+    ],
+    "beneficios": {
+      "title": "Qué recibe la empresa",
+      "intro": "Al cierre inicial, y tres meses después de la entrega.",
+      "items": [
+        {
+          "title": "Balance y contexto",
+          "description": ""
+        },
+        {
+          "title": "Posibilidades de crecimiento",
+          "description": ""
+        },
+        {
+          "title": "Prioridades y decisiones comerciales",
+          "description": ""
+        },
+        {
+          "title": "Plan de mejoramiento del posicionamiento comercial",
+          "description": "Digital y divulgación recomendados."
+        },
+        {
+          "title": "Estudio de posicionamiento en IA",
+          "description": ""
+        },
+        {
+          "title": "Hoja de ruta",
+          "description": ""
+        },
+        {
+          "title": "Revisión de adopción y recalibración comercial",
+          "description": "Tres meses después de la entrega."
+        },
+        {
+          "title": "Hoja de ruta actualizada",
+          "description": "Tres meses después de la entrega."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Estrategia comercial",
+      "items": [
+        {
+          "question": "¿Cuánto tarda el plan de acción comercial?",
+          "answer": "El trabajo inicial y la entrega toman cerca de 8 semanas. Después, la ejecución queda a cargo de la empresa y hay una revisión incluida tres meses después de la entrega."
+        },
+        {
+          "question": "¿Qué decisiones comerciales se toman?",
+          "answer": "Siete: prioridad de crecimiento, mercado, cliente prioritario (ICP), situación y necesidad, valor y diferenciación, oferta y acceso al mercado."
+        },
+        {
+          "question": "¿Quién ejecuta el plan?",
+          "answer": "La empresa: ustedes toman las decisiones y ejecutan. La hoja de ruta define qué cambiar, qué va primero, quién lo asume y qué observar."
+        },
+        {
+          "question": "¿Qué incluye la revisión a los tres meses?",
+          "answer": "Una revisión de adopción y recalibración comercial, incluida en el servicio: qué se implementó, qué cambió y qué conviene ajustar, con recomendaciones y una hoja de ruta actualizada."
+        },
+        {
+          "question": "¿Por qué incluye un estudio de posicionamiento en IA?",
+          "answer": "Porque los compradores ya usan IA al comprar: según una encuesta de Gartner a 646 compradores B2B (agosto–septiembre de 2025), el 45 % usó herramientas de IA en una compra reciente. El estudio revisa cómo los encuentra, describe y evalúa la IA."
+        },
+        {
+          "question": "¿Cómo empieza?",
+          "answer": "Con una conversación sobre qué podría pasar si siguen como están y qué cambio haría que valiera la pena. Si hay encaje, se concreta el alcance y la propuesta."
+        }
+      ]
+    },
+    "related": {
+      "eyebrow": "Servicios relacionados",
+      "title": "Alrededor de la estrategia comercial",
+      "items": [
+        {
+          "title": "Consultoría estratégica",
+          "description": "La estrategia corporativa y de negocio de la que parte el plan comercial."
+        },
+        {
+          "title": "Estrategia de TI",
+          "description": "El plan de tecnología alineado con el plan de negocio."
+        },
+        {
+          "title": "Continuidad del negocio",
+          "description": "Qué hacer para que la operación no se detenga."
+        },
+        {
+          "title": "Gestión del cambio",
+          "description": "Para que la organización adopte lo que el plan define."
         }
       ]
     }

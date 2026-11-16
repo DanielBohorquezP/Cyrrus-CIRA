@@ -15,6 +15,10 @@
     "title": "Consultoría en Estrategia de TI para Empresas | Cyrrus",
     "description": "Consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas (ERP, CRM, datos, IA) priorizado por impacto, con el caso de negocio de cada una."
   },
+  "/metodo-cira/estrategia/estrategia-comercial": {
+    "title": "Consultoría en Estrategia Comercial: Plan de Acción | Cyrrus",
+    "description": "Consultoría en estrategia comercial: decisiones comerciales y un plan de acción para llevarlas a la práctica, en unas 8 semanas y con revisión a los 3 meses."
+  },
   "/metodo-cira/estrategia/continuidad-del-negocio": {
     "title": "Consultoría en Continuidad del Negocio: BIA y BCP | Cyrrus",
     "description": "Consultoría en continuidad del negocio: identificamos los procesos críticos, analizamos el impacto de una interrupción (BIA) y definimos el plan de continuidad y de recuperación (DRP), probado."
@@ -82,18 +86,6 @@
   "/intelligence-lab/estrategia-de-ia": {
     "title": "Consultoría en Estrategia de IA para Empresas | Cyrrus",
     "description": "Consultoría en estrategia de IA: casos de uso priorizados por impacto, hoja de ruta, gobierno y arquitectura, medidos contra el proceso real que cambian, no contra una demo."
-  },
-  "/presencia-digital": {
-    "title": "Desarrollo Web y SEO para Empresas | Cyrrus",
-    "description": "Desarrollo web corporativo y SEO para empresas: su sitio y su visibilidad en buscadores e IA como activos del negocio, no como un proyecto de agencia."
-  },
-  "/presencia-digital/desarrollo-web": {
-    "title": "Desarrollo Web para Empresas: Sitios Corporativos | Cyrrus",
-    "description": "Desarrollo web para empresas: desarrollamos el sitio corporativo que su empresa usa para vender: rápido, medible y editable por su propio equipo, no un folleto digital estático."
-  },
-  "/presencia-digital/seo": {
-    "title": "Consultoría SEO y GEO: Visibilidad en Google e IA | Cyrrus",
-    "description": "Consultores SEO para empresas: consultoría SEO técnica y de contenido, más visibilidad en motores de respuesta con IA (GEO) como ChatGPT y Perplexity."
   },
   "/leadership-academy": {
     "title": "Talleres y Capacitación para Altos Ejecutivos | Cyrrus",

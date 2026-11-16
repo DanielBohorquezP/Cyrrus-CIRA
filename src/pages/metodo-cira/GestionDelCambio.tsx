@@ -1,22 +1,16 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useGroupBlocks } from "@/lib/use-group-blocks";
+import { ServiceTemplate, type ServiceContent } from "@/components/layout/service-template";
+import { bulletCards, splitHeroTitle, splitQuote } from "@/components/layout/service-child-page";
 import { usePageMeta } from "@/lib/use-page-meta";
 import { useLang } from "@/lib/language";
-import { SiteHeader } from "@/components/layout/site-header";
-import { PageHero } from "@/components/layout/page-hero";
-import { FinalCta } from "@/components/sections/final-cta";
-import { Footer } from "@/components/sections/footer";
 import { IncludedGrid } from "@/components/sections/included-grid";
 import { PageFeatureImage } from "@/components/sections/page-feature-image";
-import { FaqSection } from "@/components/sections/faq-section";
 import { Testimonials } from "@/components/sections/testimonials";
 import { ServiceLead } from "@/components/sections/service-lead";
-import { ServiceDefinition } from "@/components/sections/service-definition";
 import { ServiceIntro } from "@/components/sections/service-intro";
 import { ServiceScope, type ScopeItem } from "@/components/sections/service-scope";
-import { RelatedServices } from "@/components/sections/related-services";
-import { SecondaryButton } from "@/components/ui/border-button";
-import { ContactCtaButton } from "@/components/ui/contact-cta-button";
 // Registers this route's translation namespace. Side-effect import: it must
 // run at module scope so the copy is in i18next's store before the component
 // below renders. See src/i18n/index.ts for why it isn't in the entry bundle.
@@ -35,6 +29,7 @@ interface Faq {
 export default function GestionDelCambio() {
   const { t } = useTranslation("gestion-cambio");
   const lang = useLang();
+  const groupBlocks = useGroupBlocks("cambio");
 
   const pillars = t("pillars.items", { returnObjects: true }) as Item[];
   const benefits = t("benefits.items", { returnObjects: true }) as Item[];
@@ -110,116 +105,109 @@ export default function GestionDelCambio() {
     ],
   });
 
+  const heroTitle = splitHeroTitle(t("hero.title"));
+  const content: ServiceContent = {
+    hero: {
+      eyebrow: t("hero.eyebrow"),
+      ...heroTitle,
+      description: t("hero.description"),
+      ctaLabel: t("hero.ctaLabel"),
+      link: { href: methodPath, label: t("intro.methodLinkLabel") },
+    },
+    breadcrumbs: [...breadcrumbItems.slice(0, -1), { label: heroTitle.title }],
+    media: {
+      image: { src: "/assets/decoracion/hero-gestion-cambio.jpg", alt: "" },
+      video: { mp4: "/assets/video/gestion-cambio.mp4", webm: "/assets/video/gestion-cambio.webm" },
+    },
+    queHacemos: {
+      eyebrow: t("intro.kicker"),
+      ...splitQuote(t("intro.pullQuote")),
+      intro: t("intro.description"),
+      cards: bulletCards(
+        t("intro.bulletTitles", { returnObjects: true }) as string[],
+        t("intro.bullets", { returnObjects: true }) as string[],
+        1,
+      ),
+      links: (
+        <>
+          <p>
+            {`${t("intro.academyLinkText")} `}<Link to={academyPath} className="font-bold text-blue hover:text-navy">
+              {t("intro.academyLinkLabel")}
+            </Link>
+          </p>
+          <p>
+            {`${t("intro.articleLinkText")} `}<Link to={relatedArticlePath} className="font-bold text-blue hover:text-navy">
+              {t("intro.articleLinkLabel")}
+            </Link>
+          </p>
+          <p>
+            {`${t("intro.guideLinkText")} `}<Link to={guidePath} className="font-bold text-blue hover:text-navy">
+              {t("intro.guideLinkLabel")}
+            </Link>
+          </p>
+          <p>
+            {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
+              {t("intro.methodLinkLabel")}
+            </Link>
+          </p>
+        </>
+      ),
+    },
+    queEs: {
+      title: t("definicion.title"),
+      body: t("definicion.description"),
+      refs: [],
+      uses: { label: t("usos.title"), items: t("usos.items", { returnObjects: true }) as Item[] },
+    },
+    comoLoHacemos: t("comoLoHacemos", { returnObjects: true }) as ServiceContent["comoLoHacemos"],
+    autoridad: groupBlocks.autoridad,
+    beneficios: { title: t("benefits.title"), items: benefits },
+    faq: { eyebrow: t("faq.eyebrow"), title: t("faq.title"), items: faqs },
+    related: { eyebrow: t("related.eyebrow"), title: t("related.title"), items: relatedItems },
+  };
+
   return (
-    <>
-      <SiteHeader />
-      <main id="contenido">
-      <PageHero
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        description={t("hero.description")}
-        breadcrumbs={breadcrumbItems}
-        image={{
-          src: "/assets/decoracion/IMG_20230302_112825.jpg",
-          alt: "Grupo de personas de un equipo reunidas en una oficina",
-        }}
-      >
-        <ContactCtaButton variant="light" label={t("hero.ctaLabel")} />
-        <SecondaryButton asChild>
-          <Link to={methodPath}>{t("intro.methodLinkLabel")}</Link>
-        </SecondaryButton>
-      </PageHero>
+    <ServiceTemplate
+      content={content}
+      extrasEndTone="white"
+      extras={
+        <>
+          <ServiceScope
+            eyebrow={t("services.eyebrow")}
+            title={t("services.title")}
+            description={t("services.description")}
+            items={services}
+            className="bg-background"
+          />
 
-      <ServiceIntro
-        eyebrow={t("intro.kicker")}
-        quote={t("intro.pullQuote")}
-        description={t("intro.description")}
-        bullets={t("intro.bullets", { returnObjects: true }) as string[]}
-      >
-        <p>
-          {`${t("intro.academyLinkText")} `}<Link to={academyPath} className="font-bold text-blue hover:text-navy">
-            {t("intro.academyLinkLabel")}
-          </Link>
-        </p>
-        <p>
-          {`${t("intro.articleLinkText")} `}<Link to={relatedArticlePath} className="font-bold text-blue hover:text-navy">
-            {t("intro.articleLinkLabel")}
-          </Link>
-        </p>
-        <p>
-          {`${t("intro.guideLinkText")} `}<Link to={guidePath} className="font-bold text-blue hover:text-navy">
-            {t("intro.guideLinkLabel")}
-          </Link>
-        </p>
-        <p>
-          {`${t("intro.methodLinkText")} `}<Link to={methodPath} className="font-bold text-blue hover:text-navy">
-            {t("intro.methodLinkLabel")}
-          </Link>
-        </p>
-      </ServiceIntro>
+          <IncludedGrid
+            className="bg-mist"
+            eyebrow={t("pillars.eyebrow")}
+            title={t("pillars.title")}
+            description={t("pillars.description")}
+            items={pillars}
+            numbered
+          />
 
-      <ServiceDefinition
-        eyebrow={t("definicion.eyebrow")}
-        title={t("definicion.title")}
-        description={t("definicion.description")}
-      />
+          <ServiceIntro
+            eyebrow={t("distinctive.eyebrow")}
+            quote={t("distinctive.pullQuote")}
+            description={t("distinctive.description")}
+            bulletsTitle={t("distinctive.solutionTitle")}
+            bullets={t("distinctive.bullets", { returnObjects: true }) as string[]}
+          />
 
-      <ServiceScope
-        eyebrow={t("services.eyebrow")}
-        title={t("services.title")}
-        description={t("services.description")}
-        items={services}
-        className="bg-background"
-      />
+          <ServiceLead eyebrow={t("lead.eyebrow")} title={t("lead.title")} bio={t("lead.bio")} className="bg-mist" />
 
-      <IncludedGrid
-        className="bg-mist"
-        eyebrow={t("pillars.eyebrow")}
-        title={t("pillars.title")}
-        description={t("pillars.description")}
-        items={pillars}
-        numbered
-      />
+          <PageFeatureImage
+            src="/assets/decoracion/Trabajo.jpg"
+            alt="Consultor de Cyrrus trabajando en un plan de adopción del cambio"
+            caption={t("featureImage.caption")}
+          />
 
-      <ServiceIntro
-        eyebrow={t("distinctive.eyebrow")}
-        quote={t("distinctive.pullQuote")}
-        description={t("distinctive.description")}
-        bulletsTitle={t("distinctive.solutionTitle")}
-        bullets={t("distinctive.bullets", { returnObjects: true }) as string[]}
-      />
-
-      <ServiceLead
-        eyebrow={t("lead.eyebrow")}
-        title={t("lead.title")}
-        bio={t("lead.bio")}
-      />
-
-      <IncludedGrid
-        eyebrow={t("benefits.eyebrow")}
-        title={t("benefits.title")}
-        items={benefits}
-      />
-
-      <PageFeatureImage
-        src="/assets/decoracion/Trabajo.jpg"
-        alt="Consultor de Cyrrus trabajando en un plan de adopción del cambio"
-        caption={t("featureImage.caption")}
-      />
-
-      <RelatedServices
-        eyebrow={t("related.eyebrow")}
-        title={t("related.title")}
-        items={relatedItems}
-      />
-
-      <Testimonials className="bg-background" />
-
-      <FaqSection eyebrow={t("faq.eyebrow")} title={t("faq.title")} faqs={faqs} className="bg-mist" />
-
-      <FinalCta />
-      </main>
-      <Footer />
-    </>
+          <Testimonials className="bg-background" />
+        </>
+      }
+    />
   );
 }

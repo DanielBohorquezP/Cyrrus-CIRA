@@ -9,7 +9,9 @@ export default createServiceChildPage({
   key: "estrategiaTi",
   path: "/metodo-cira/estrategia/estrategia-de-ti",
   parent: { path: "/metodo-cira/estrategia", label: { es: "Estrategia", en: "Strategy" } },
+  group: "estrategia",
   eyebrow: { es: "Método CIRA — Construir", en: "CIRA Method — Construct" },
+  heroVideo: true,
   heroImage: {
     src: "/assets/decoracion/IMG_20230228_082627.jpg",
     alt: "Consultor de Cyrrus revisando la arquitectura tecnológica objetivo con un directivo",

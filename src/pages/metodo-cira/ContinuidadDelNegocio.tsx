@@ -9,7 +9,9 @@ export default createServiceChildPage({
   key: "continuidad",
   path: "/metodo-cira/estrategia/continuidad-del-negocio",
   parent: { path: "/metodo-cira/estrategia", label: { es: "Estrategia", en: "Strategy" } },
+  group: "estrategia",
   eyebrow: { es: "Método CIRA — Construir", en: "CIRA Method — Construct" },
+  heroVideo: true,
   heroImage: {
     src: "/assets/decoracion/IMG_20230302_112825.jpg",
     alt: "Equipo de Cyrrus revisando un plan de continuidad del negocio en una sala de reuniones",

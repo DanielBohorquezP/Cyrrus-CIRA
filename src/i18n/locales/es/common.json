@@ -35,25 +35,15 @@
     "arquitecturaIADesc": "Modelos, datos y sistemas conectados sin caos",
     "gobiernoIA": "Gobierno de IA",
     "gobiernoIADesc": "Políticas y controles claros sobre el uso de IA",
-
     "estrategiaTi": "Estrategia de TI",
-
     "estrategiaTiDesc": "Hoja de ruta tecnológica alineada con el negocio",
-
     "continuidadNegocioServicio": "Continuidad del negocio",
-
     "continuidadNegocioServicioDesc": "BIA, plan de continuidad y DRP probado",
-
     "ciberseguridad": "Ciberseguridad",
-
     "ciberseguridadDesc": "Diagnóstico de riesgo y selección de controles",
-
     "estrategiaIA": "Estrategia de IA",
-
     "estrategiaIADesc": "Casos de uso priorizados y hoja de ruta de IA",
-
     "gobiernoDatosServicio": "Gobierno de datos",
-
     "gobiernoDatosServicioDesc": "Dueños, reglas y calidad de los datos",
     "tallerIADirectivos": "Taller de IA para Directivos",
     "tallerIADirectivosDesc": "IA aplicada a la toma de decisiones",
@@ -68,7 +58,9 @@
     "gobiernoDatos": "Gobierno de Datos para Ejecutivos",
     "gobiernoDatosDesc": "Datos confiables para decidir mejor",
     "liderazgoDigital": "Liderazgo Digital y Toma de Decisiones",
-    "liderazgoDigitalDesc": "Decisiones informadas por datos e IA"
+    "liderazgoDigitalDesc": "Decisiones informadas por datos e IA",
+    "estrategiaComercial": "Estrategia comercial",
+    "estrategiaComercialDesc": "Decisiones comerciales y plan de acción"
   },
   "cta": {
     "agendarConversacion": "Agendar conversación",
@@ -76,6 +68,22 @@
     "contraer": "Contraer",
     "abrirMenu": "Abrir menú",
     "cerrarMenu": "Cerrar menú"
+  },
+  "service": {
+    "queHacemos": "Qué hacemos",
+    "queEs": "La base",
+    "comoLoHacemos": "Cómo lo hacemos",
+    "beneficios": "Beneficios",
+    "autoridad": "Por qué Cyrrus",
+    "detailSummary": "Ver el detalle del enfoque",
+    "methodIntro": "El método CIRA organiza este servicio en tres preguntas.",
+    "method": {
+      "problem": "El problema que resolvemos",
+      "how": "Cómo lo abordamos",
+      "outcome": "Lo que obtiene"
+    },
+    "refsDefault": "En resumen",
+    "methodLink": "Método CIRA completo"
   },
   "footer": {
     "servicios": "Servicios",

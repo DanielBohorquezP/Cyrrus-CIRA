@@ -20,7 +20,12 @@
     ],
     "ctaLabel": "Schedule an executive diagnosis",
     "methodLinkText": "This is the Identify phase within the",
-    "methodLinkLabel": "full CIRA Method"
+    "methodLinkLabel": "full CIRA Method",
+    "bulletTitles": [
+      "360° evaluation of your business",
+      "Comparison with no brand bias",
+      "Criteria defined up front"
+    ]
   },
   "criteria": {
     "eyebrow": "Evaluation criteria",
@@ -350,7 +355,132 @@
             "question": "What if my company already identified an AI or automation vendor?",
             "answer": "We evaluate the decision against the same objective criteria, even if the process is already underway. Being 100% agnostic lets us validate a choice in progress without bias toward any vendor."
           }
-        ]
+        ],
+        "queHacemos": {
+          "quote": "We choose technology by the process —",
+          "emphasis": "not by the trendy tool.",
+          "intro": "We decide whether your process needs RPA, artificial intelligence, an agent or a redesign, and we choose the platform with no manufacturer commissions.",
+          "cards": [
+            {
+              "title": "Artificial Intelligence",
+              "text": "From smart assistants to analytics models: where it can raise productivity and improve decisions.",
+              "image": "/assets/decoracion/Cascosss.jpg"
+            },
+            {
+              "title": "Automation and RPA",
+              "text": "Platforms that simplify processes and remove repetitive tasks so people can focus on strategic work.",
+              "image": "/assets/decoracion/IMG_20230302_112825.jpg"
+            },
+            {
+              "title": "AI agents",
+              "text": "Multi-step tasks, compared with simpler alternatives when a fixed rule or RPA is enough.",
+              "image": "/assets/decoracion/IMG_20230227_164810.jpg"
+            },
+            {
+              "title": "Blockchain",
+              "text": "Traceability, trust and secure exchange of information for those who need it.",
+              "image": "/assets/decoracion/IMG_20200313_092604173.jpg"
+            }
+          ]
+        },
+        "queEs": {
+          "title": "What does an independent RPA consultancy do?",
+          "body": "It helps you decide whether a process needs RPA, artificial intelligence, an AI agent or a redesign first, and choose the platform using criteria defined before seeing demos. At Cyrrus we do it with no manufacturer commissions.",
+          "refsLabel": "When each one fits",
+          "refs": [
+            {
+              "title": "RPA",
+              "description": "Reproduces repetitive tasks with fixed rules on the existing systems, such as copying data between applications."
+            },
+            {
+              "title": "Artificial intelligence",
+              "description": "Interprets unstructured information —text, documents, images— and makes predictions."
+            },
+            {
+              "title": "AI agent",
+              "description": "Combines both to complete a multi-step task with some autonomy."
+            }
+          ]
+        },
+        "comoLoHacemos": {
+          "title": "Choose by the process, not by the tool",
+          "intro": "In our view, automating a confusing process only makes the disorder happen faster. That is why selection starts with the process.",
+          "steps": [
+            {
+              "title": "We prioritize the candidate processes",
+              "description": "Volume, how structured it is, which exceptions appear and what data it touches."
+            },
+            {
+              "title": "We define the evaluation criteria",
+              "description": "Integration with your systems, security, three-year total cost, operation by your own team and measuring the result."
+            },
+            {
+              "title": "We compare vendors with real cases",
+              "description": "Against processes from your operation, not against the sales demo."
+            },
+            {
+              "title": "We support negotiation and contracting",
+              "description": "Implementation is coordinated with the PMO; custom building, with our AI Agents practice."
+            }
+          ]
+        },
+        "autoridad": {
+          "title": "No manufacturer commissions, the same criteria in every selection",
+          "body": "We have no commercial partnerships with software vendors: we evaluate with the same four objective criteria —functional, technical, economic and sustainable— regardless of the brand.",
+          "stats": [
+            {
+              "value": "0",
+              "label": "manufacturer commissions in any selection."
+            },
+            {
+              "value": "4",
+              "label": "objective criteria: functional, technical, economic and sustainable."
+            }
+          ]
+        },
+        "beneficios": {
+          "title": "Benefits of choosing with judgment",
+          "intro": "A technology decision that starts from the process, not from the vendor catalog.",
+          "items": [
+            {
+              "title": "A process-based decision",
+              "description": "The tool answers a real business need."
+            },
+            {
+              "title": "Evaluation without vendor bias",
+              "description": "The same criteria for every proposal, with no commissions."
+            },
+            {
+              "title": "Three-year total cost in view",
+              "description": "Licenses, infrastructure and maintenance before signing."
+            },
+            {
+              "title": "Your team can run it",
+              "description": "The priority is that it does not depend on the vendor for day-to-day operation."
+            }
+          ]
+        },
+        "usos": {
+          "title": "What is independent RPA and AI consulting for?",
+          "items": [
+            {
+              "title": "Deciding what the process needs",
+              "description": "It defines whether it needs RPA, artificial intelligence, an agent or a redesign first."
+            },
+            {
+              "title": "Choosing the platform",
+              "description": "With criteria defined before seeing demos."
+            },
+            {
+              "title": "Comparing with real cases",
+              "description": "Vendors are tested with processes from your operation, not with the sales demo."
+            },
+            {
+              "title": "Supporting the contracting",
+              "description": "It supports negotiation and contracting; implementation is coordinated with the PMO."
+            }
+          ]
+        }
       },
       "infraestructura-tecnologica": {
         "label": "Technology Infrastructure",
@@ -448,7 +578,72 @@
             "question": "Who manages the project once the infrastructure vendor is selected?",
             "answer": "Implementation is coordinated with Project Management (PMO), which governs the timeline, risks, and vendors throughout the rollout."
           }
-        ]
+        ],
+        "beneficios": {
+          "title": "Benefits of deciding infrastructure well",
+          "intro": "Infrastructure that lets the business operate with security, availability and room to grow.",
+          "items": [
+            {
+              "title": "Security, cloud and networks in one view",
+              "description": "Cybersecurity, cloud, connectivity and continuity assessed as a whole."
+            },
+            {
+              "title": "Vendors compared on the same criteria",
+              "description": "The criteria are defined before proposals arrive."
+            },
+            {
+              "title": "Continuity considered",
+              "description": "The capabilities needed to protect the operation are defined."
+            },
+            {
+              "title": "Architecture that supports growth",
+              "description": "Cloud, hybrid and multicloud options assessed by what they contribute to the operation."
+            }
+          ]
+        },
+        "usos": {
+          "title": "What is independent infrastructure consulting for?",
+          "items": [
+            {
+              "title": "Deciding what infrastructure is needed",
+              "description": "Security, cloud, networks and continuity assessed as a whole."
+            },
+            {
+              "title": "Choosing vendors with judgment",
+              "description": "The criteria are defined before proposals arrive."
+            },
+            {
+              "title": "Protecting the operation",
+              "description": "It defines the cybersecurity and continuity capabilities needed."
+            },
+            {
+              "title": "Leaving room to grow",
+              "description": "It assesses cloud, hybrid and multicloud options by what they contribute to the operation."
+            }
+          ]
+        },
+        "comoLoHacemos": {
+          "title": "From an infrastructure decision to one made with judgment",
+          "intro": "To decide what infrastructure the company needs —security, cloud, networks and continuity— and with which vendors.",
+          "steps": [
+            {
+              "title": "We review what is already in production",
+              "description": "What the company has today and which risks exist, before recommending a new architecture."
+            },
+            {
+              "title": "We define what you need in security, cloud, networks and continuity",
+              "description": "The capabilities needed to protect the operation and support its growth."
+            },
+            {
+              "title": "We compare vendors on four criteria",
+              "description": "Functional, technical, economic and sustainable, defined before proposals arrive."
+            },
+            {
+              "title": "We support the contracting",
+              "description": "Vendor and architecture selection; implementation is managed with our Project Management office (PMO)."
+            }
+          ]
+        }
       },
       "ciberseguridad": {
         "label": "Cybersecurity",
@@ -518,9 +713,9 @@
           "title": "Before choosing a cybersecurity vendor, read this",
           "items": [
             {
-              "slug": "como-elegir-una-consultoria-de-ciberseguridad",
-              "title": "How to choose a cybersecurity consulting firm",
-              "description": "What it should cover, which public frameworks serve as references and what to ask before hiring."
+              "slug": "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
+              "title": "When to hire cybersecurity consulting",
+              "description": "The signs it is time, what it includes, why vendor independence matters and what to ask before you hire."
             },
             {
               "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
@@ -550,7 +745,72 @@
             "question": "How does cybersecurity relate to the business continuity plan?",
             "answer": "Cybersecurity controls reduce the likelihood of an incident; the continuity plan defines how the company keeps operating if it happens. They are designed together: the business impact analysis (BIA) says what to protect first."
           }
-        ]
+        ],
+        "beneficios": {
+          "title": "Benefits of a cybersecurity consultancy",
+          "intro": "Deciding what to protect, and with what, before buying a tool.",
+          "items": [
+            {
+              "title": "Knowing what needs protecting",
+              "description": "An inventory of what supports the operation and what depends on what."
+            },
+            {
+              "title": "Controls fitted to the risk",
+              "description": "Identities, devices, monitoring and response defined according to the identified risk."
+            },
+            {
+              "title": "Vendors compared on the same criteria",
+              "description": "The same four criteria as every Cyrrus selection: functional, technical, economic and sustainable."
+            },
+            {
+              "title": "A decision without vendor bias",
+              "description": "It starts from what is already in production, not from a manufacturer catalog."
+            }
+          ]
+        },
+        "usos": {
+          "title": "What is independent cybersecurity consulting for?",
+          "items": [
+            {
+              "title": "Knowing what needs protecting",
+              "description": "It starts from what is already in production and what supports the operation."
+            },
+            {
+              "title": "Defining the controls",
+              "description": "Identities, devices, monitoring and incident response according to the risk."
+            },
+            {
+              "title": "Choosing vendors with judgment",
+              "description": "It compares solutions on the same four criteria as every Cyrrus selection."
+            },
+            {
+              "title": "Deciding before buying",
+              "description": "What to protect and with which controls is defined before choosing a tool."
+            }
+          ]
+        },
+        "comoLoHacemos": {
+          "title": "From not knowing what to protect to deciding which controls you need",
+          "intro": "To decide what to protect, with which controls and with which vendors, before buying a tool.",
+          "steps": [
+            {
+              "title": "We inventory what supports the operation",
+              "description": "What depends on what and where the current risks are, before recommending a tool."
+            },
+            {
+              "title": "We define which controls cover the risks",
+              "description": "Identities, devices, monitoring and incident response, and in what order to implement them."
+            },
+            {
+              "title": "We compare solutions and vendors",
+              "description": "On the same four criteria as every selection, using public frameworks such as NIST CSF 2.0 and ISO/IEC 27001 as a reference."
+            },
+            {
+              "title": "We support the contracting and govern the implementation",
+              "description": "Day-to-day operation is provided by the selected vendor."
+            }
+          ]
+        }
       }
     }
   },
@@ -584,6 +844,27 @@
       {
         "title": "Timing",
         "description": "As a reference, the CIRA Method's Identify phase typically takes 6 to 12 weeks, from the strategic kickoff through contracting support."
+      }
+    ]
+  },
+  "usos": {
+    "title": "What is independent technology consulting for?",
+    "items": [
+      {
+        "title": "Choosing technology by the business",
+        "description": "Selection starts from business requirements, not from the vendor catalog."
+      },
+      {
+        "title": "Comparing on objective criteria",
+        "description": "Vendor evaluation with no commercial bias toward any brand."
+      },
+      {
+        "title": "Reducing the risk of a bad decision",
+        "description": "A technology decision with the risk of getting it wrong minimized."
+      },
+      {
+        "title": "Deciding with a method",
+        "description": "A defined evaluation process, instead of deciding by trend or by a demo."
       }
     ]
   }

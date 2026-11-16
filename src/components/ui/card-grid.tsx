@@ -5,7 +5,8 @@ import { cn } from "@/lib/utils";
 
 export interface CardItem {
   title: string;
-  description: string;
+  /** Optional: a block can be a title alone. */
+  description?: string;
   /** When present the card becomes a photo card: 4:3 picture above the title. */
   /** Makes the whole card a link. */
   href?: string;
@@ -18,8 +19,10 @@ interface CardGridProps {
   items: CardItem[];
   /** Show a blue `01` index before each title. */
   numbered?: boolean;
-  /** Smallest column width before the grid wraps: sm 280px, md 320px, lg 360px. */
+  /** Smallest column width before the grid wraps: xs 240px, sm 280px, md 320px, lg 360px. */
   min?: keyof typeof columns;
+  /** Narrower gutters, so four cards still fit on one row at the 1280px container. */
+  tight?: boolean;
   /** `sizes` for photo cards; match the real rendered column width. */
   imageSizes?: string;
   className?: string;
@@ -27,6 +30,7 @@ interface CardGridProps {
 
 // Literal class names (not built from a number) so Tailwind can see them.
 const columns = {
+  xs: "grid-cols-[repeat(auto-fit,minmax(min(100%,240px),1fr))]",
   sm: "grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))]",
   md: "grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))]",
   lg: "grid-cols-[repeat(auto-fit,minmax(min(100%,360px),1fr))]",
@@ -37,11 +41,12 @@ export function CardGrid({
   items,
   numbered = false,
   min = "md",
+  tight = false,
   imageSizes = "1100px",
   className,
 }: CardGridProps) {
   return (
-    <RevealGroup className={cn("grid gap-x-16 gap-y-14", columns[min], className)}>
+    <RevealGroup className={cn("grid", tight ? "gap-x-8 gap-y-12" : "gap-x-16 gap-y-14", columns[min], className)}>
       {items.map((item, index) => {
         const body = (
           <>
@@ -65,7 +70,7 @@ export function CardGrid({
                 )}
                 {item.href && !item.linkLabel ? `${item.title} ↗` : item.title}
               </h3>
-              <p className="mt-3.5 text-[17px] leading-[1.7] text-slate">{item.description}</p>
+              {item.description && <p className="mt-3.5 text-[17px] leading-[1.7] text-slate">{item.description}</p>}
               {item.href && item.linkLabel && (
                 <span className="mt-4 inline-block font-heading text-sm font-medium text-blue group-hover:text-navy">
                   {`${item.linkLabel} →`}

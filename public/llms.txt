@@ -10,6 +10,7 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Metodología CIRA](https://cyrruscs.com/metodo-cira): las 4 fases del método.
 - [Estrategia](https://cyrruscs.com/metodo-cira/estrategia): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
 - [Estrategia de TI](https://cyrruscs.com/metodo-cira/estrategia/estrategia-de-ti): consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas con caso de negocio.
+- [Estrategia comercial](https://cyrruscs.com/metodo-cira/estrategia/estrategia-comercial): consultoría en estrategia comercial: decisiones comerciales y plan de acción para llevarlas a la práctica, con trabajo inicial de unas 8 semanas y revisión a los 3 meses.
 - [Continuidad del negocio](https://cyrruscs.com/metodo-cira/estrategia/continuidad-del-negocio): consultoría en continuidad del negocio: BIA, RTO/RPO, plan de continuidad (BCP) y DRP probado.
 - [Selección de Soluciones](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones): cómo se selecciona tecnología con criterios definidos antes de mirar proveedores, sin sesgo comercial.
 - [Selección de Software](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software): evaluación y selección independiente de software empresarial — ERP, CRM, HCM y EAM.
@@ -30,11 +31,6 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Gobierno de IA](https://cyrruscs.com/intelligence-lab/gobierno-de-ia): políticas, roles y controles sobre el uso de IA en la organización.
 - [Gobierno de datos](https://cyrruscs.com/intelligence-lab/gobierno-de-datos): consultoría en gobierno de datos: dueños, reglas de calidad y controles de datos para IA.
 - [Estrategia de IA](https://cyrruscs.com/intelligence-lab/estrategia-de-ia): consultoría en estrategia de IA: casos de uso priorizados, hoja de ruta, gobierno y medición.
-
-## Presencia Digital
-- [Presencia Digital](https://cyrruscs.com/presencia-digital): desarrollo web corporativo y SEO tratados como activos del negocio.
-- [Desarrollo Web](https://cyrruscs.com/presencia-digital/desarrollo-web): sitios corporativos rápidos, medibles y editables por el propio equipo del cliente.
-- [SEO](https://cyrruscs.com/presencia-digital/seo): posicionamiento SEO y visibilidad en motores de respuesta con IA (GEO).
 
 ## Leadership Academy
 - [Leadership Academy](https://cyrruscs.com/leadership-academy): talleres para altos ejecutivos y capacitación gerencial.
@@ -79,9 +75,10 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Gerencia de proyectos: cuándo contratar una PMO externa](https://cyrruscs.com/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.
 - [Plan de continuidad del negocio: qué es, BIA, RTO y RPO](https://cyrruscs.com/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo): BCP vs. DRP vs. plan de contingencia, qué es el BIA y qué son el RTO y el RPO según NIST SP 800-34 e ISO 22301.
 - [Estrategia de TI: qué es, qué incluye y cómo se construye](https://cyrruscs.com/perspectivas/estrategia-de-ti-que-es-y-que-incluye): las cinco piezas de una estrategia de TI, qué dicen ISO/IEC 38500 y COBIT 2019 y los pasos para construirla.
-- [Cómo elegir una consultoría de ciberseguridad](https://cyrruscs.com/perspectivas/como-elegir-una-consultoria-de-ciberseguridad): tipos de servicio, las seis funciones del NIST CSF 2.0, ISO/IEC 27001, criterios para comparar propuestas y qué preguntar.
+- [Cuándo contratar una consultoría de ciberseguridad](https://cyrruscs.com/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad): señales de que es momento, qué incluye una evaluación de madurez, independencia de fabricantes, precios de referencia y preguntas antes de contratar.
 - [Gobierno de datos: qué es, qué decide la dirección y cómo empezar](https://cyrruscs.com/perspectivas/gobierno-de-datos-que-es-y-como-empezar): ISO/IEC 38505-1:2026, diferencia con gestión y calidad de datos, cinco decisiones de la dirección y siete pasos para empezar.
 - [Estrategia de IA para empresas: cómo construir la hoja de ruta](https://cyrruscs.com/perspectivas/estrategia-de-ia-para-empresas-hoja-de-ruta): priorización de casos de uso (impacto, viabilidad, datos, riesgo), NIST AI RMF 1.0 y siete pasos de la hoja de ruta.
+- [Cómo elegir una consultoría de IA](https://cyrruscs.com/perspectivas/como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible): neutralidad frente a fabricantes, ejecución hasta el go-live, adopción, precios de referencia y qué exigir antes de firmar.
 - [Implementación de ERP con PMO: cómo gobernar el proyecto](https://cyrruscs.com/perspectivas/implementacion-de-erp-con-pmo-como-gobernar-el-proyecto): qué hace una PMO en un ERP, las seis áreas de gobierno de la guía de Microsoft, comité de dirección, contrato con el integrador y qué se recorta primero.
 
 ## Casos de éxito
@@ -98,6 +95,7 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [CIRA Method](https://cyrruscs.com/en/metodo-cira): the 4 phases of the method — Construct, Identify, Realize, Adopt.
 - [Strategy](https://cyrruscs.com/en/metodo-cira/estrategia): business and IT strategy consulting, CTO/CIO as a Service.
 - [IT Strategy](https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-de-ti): IT strategy consulting services: target architecture and a portfolio of initiatives with business cases.
+- [Commercial Strategy](https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-comercial): commercial strategy consulting: commercial decisions and an action plan to put them into practice, with about 8 weeks of initial work and a review at 3 months.
 - [Business Continuity](https://cyrruscs.com/en/metodo-cira/estrategia/continuidad-del-negocio): business continuity consulting services: BIA, RTO/RPO, continuity plan (BCP) and tested DRP.
 - [Solution Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones): how technology is selected against criteria defined before looking at vendors, with no commercial bias.
 - [Software Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software): independent evaluation and selection of enterprise software — ERP, CRM, HCM, and EAM.
@@ -116,9 +114,6 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [AI Governance](https://cyrruscs.com/en/intelligence-lab/gobierno-de-ia): policies, roles, and controls over AI use in the organization.
 - [Data Governance](https://cyrruscs.com/en/intelligence-lab/gobierno-de-datos): data governance consulting services: owners, quality rules and data controls for AI.
 - [AI Strategy](https://cyrruscs.com/en/intelligence-lab/estrategia-de-ia): AI strategy consulting services: prioritized use cases, roadmap, governance and measurement.
-- [Digital Presence](https://cyrruscs.com/en/presencia-digital): corporate web development and SEO treated as business assets.
-- [Web Development](https://cyrruscs.com/en/presencia-digital/desarrollo-web): fast, measurable corporate sites editable by the client's own team.
-- [SEO](https://cyrruscs.com/en/presencia-digital/seo): SEO positioning and visibility in AI answer engines (GEO).
 - [Leadership Academy](https://cyrruscs.com/en/leadership-academy): executive workshops and management training.
 - [About Us](https://cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://cyrruscs.com/en/experiencia): Cyrrus's cases and track record.
@@ -167,9 +162,10 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Project management: when to hire an external PMO](https://cyrruscs.com/en/perspectivas/gerencia-de-proyectos-cuando-contratar-una-pmo-externa): five signs your project needs external management and what to demand of it.
 - [Business continuity plan: what it is, BIA, RTO and RPO](https://cyrruscs.com/en/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo): BCP vs. DRP vs. contingency plan, what the BIA is and what RTO and RPO mean per NIST SP 800-34 and ISO 22301.
 - [IT strategy: what it is, what it includes and how to build one](https://cyrruscs.com/en/perspectivas/estrategia-de-ti-que-es-y-que-incluye): the five pieces of an IT strategy, what ISO/IEC 38500 and COBIT 2019 say and the steps to build it.
-- [How to choose a cybersecurity consulting firm](https://cyrruscs.com/en/perspectivas/como-elegir-una-consultoria-de-ciberseguridad): types of service, the six NIST CSF 2.0 Functions, ISO/IEC 27001, criteria to compare proposals and what to ask.
+- [When to hire cybersecurity consulting](https://cyrruscs.com/en/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad): signs it is time, what a maturity assessment includes, vendor independence, reference pricing and questions to ask before hiring.
 - [Data governance: what it is, what leadership decides and how to start](https://cyrruscs.com/en/perspectivas/gobierno-de-datos-que-es-y-como-empezar): ISO/IEC 38505-1:2026, difference from data management and quality, five leadership decisions and seven steps to start.
 - [AI strategy for companies: how to build the roadmap](https://cyrruscs.com/en/perspectivas/estrategia-de-ia-para-empresas-hoja-de-ruta): use case prioritization (impact, feasibility, data, risk), NIST AI RMF 1.0 and the seven steps of the roadmap.
+- [How to choose AI consulting services](https://cyrruscs.com/en/perspectivas/como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible): vendor neutrality, execution through go-live, adoption, reference pricing and what to require before signing.
 - [ERP implementation with a PMO: how to govern the project](https://cyrruscs.com/en/perspectivas/implementacion-de-erp-con-pmo-como-gobernar-el-proyecto): what a PMO does on an ERP, the six governance areas in Microsoft's guide, steering committee, integrator contract and what gets cut first.
 
 ## Optional

@@ -35,25 +35,15 @@
     "arquitecturaIADesc": "Models, data, and systems connected without chaos",
     "gobiernoIA": "AI Governance",
     "gobiernoIADesc": "Clear policies and controls over AI use",
-
     "estrategiaTi": "IT Strategy",
-
     "estrategiaTiDesc": "Technology roadmap aligned with the business",
-
     "continuidadNegocioServicio": "Business Continuity",
-
     "continuidadNegocioServicioDesc": "BIA, continuity plan and tested DRP",
-
     "ciberseguridad": "Cybersecurity",
-
     "ciberseguridadDesc": "Risk assessment and control selection",
-
     "estrategiaIA": "AI Strategy",
-
     "estrategiaIADesc": "Prioritized use cases and AI roadmap",
-
     "gobiernoDatosServicio": "Data Governance",
-
     "gobiernoDatosServicioDesc": "Data owners, rules and quality",
     "tallerIADirectivos": "AI Workshop for Executives",
     "tallerIADirectivosDesc": "AI applied to decision-making",
@@ -68,7 +58,9 @@
     "gobiernoDatos": "Data Governance for Executives",
     "gobiernoDatosDesc": "Reliable data for better decisions",
     "liderazgoDigital": "Digital Leadership & Decision-Making",
-    "liderazgoDigitalDesc": "Decisions informed by data and AI"
+    "liderazgoDigitalDesc": "Decisions informed by data and AI",
+    "estrategiaComercial": "Commercial strategy",
+    "estrategiaComercialDesc": "Commercial decisions and action plan"
   },
   "cta": {
     "agendarConversacion": "Schedule a call",
@@ -76,6 +68,22 @@
     "contraer": "Collapse",
     "abrirMenu": "Open menu",
     "cerrarMenu": "Close menu"
+  },
+  "service": {
+    "queHacemos": "What we do",
+    "queEs": "The basics",
+    "comoLoHacemos": "How we do it",
+    "beneficios": "Benefits",
+    "autoridad": "Why Cyrrus",
+    "detailSummary": "See the full approach",
+    "methodIntro": "The CIRA method organizes this service around three questions.",
+    "method": {
+      "problem": "The problem we solve",
+      "how": "How we approach it",
+      "outcome": "What you get"
+    },
+    "refsDefault": "In short",
+    "methodLink": "Full CIRA Method"
   },
   "footer": {
     "servicios": "Services",

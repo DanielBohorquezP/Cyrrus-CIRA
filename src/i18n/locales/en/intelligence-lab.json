@@ -124,6 +124,16 @@
           "answer": "We audit what already exists in the organization today and integrate it into a single governance framework, instead of asking each area to start from scratch."
         }
       ]
+    },
+    "autoridad": {
+      "title": "One method across the four phases",
+      "body": "Intelligence Lab does not run on its own: it is a cross-cutting engine under the four phases of the CIRA method. The same team that diagnoses supports the execution.",
+      "stats": [
+        {
+          "value": "4",
+          "label": "phases of the CIRA method under which Intelligence Lab runs."
+        }
+      ]
     }
   },
   "automatizaciones": {
@@ -216,6 +226,71 @@
           "description": "Where we monitor project risk with AI agents."
         }
       ]
+    },
+    "beneficios": {
+      "title": "Benefits of automating with AI agents",
+      "intro": "Automate where it is needed, without building what already exists.",
+      "items": [
+        {
+          "title": "What already exists comes first",
+          "description": "We assess whether the solution already exists on the market before building anything custom."
+        },
+        {
+          "title": "Complete workflows",
+          "description": "End-to-end processes, not isolated tasks."
+        },
+        {
+          "title": "Agents with an owner",
+          "description": "Every agent has an owner and a defined purpose within the CIRA method."
+        },
+        {
+          "title": "Measured impact",
+          "description": "Each agent is measured against the real process it replaces or speeds up, not against a demo."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What are AI agents and automation for?",
+      "items": [
+        {
+          "title": "Automating complete processes",
+          "description": "End-to-end workflows, from the trigger to the result the business needs."
+        },
+        {
+          "title": "Putting agents with an owner",
+          "description": "Specialized agents per CIRA phase, each with an owner and a purpose."
+        },
+        {
+          "title": "Measuring real impact",
+          "description": "Each agent is measured against the process it replaces or speeds up: time, error and adoption."
+        },
+        {
+          "title": "Avoiding building what already exists",
+          "description": "We first assess whether the right solution is already on the market."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From a flawless demo to a process that is measured",
+      "intro": "For when agents give a flawless demo and never touch a real business process.",
+      "steps": [
+        {
+          "title": "We assess whether the solution already exists",
+          "description": "We start from the same vendor-agnostic diagnosis we use to select an ERP: first we see whether the right solution is already on the market."
+        },
+        {
+          "title": "We automate the complete workflow",
+          "description": "End-to-end processes, from the trigger to the result the business needs."
+        },
+        {
+          "title": "If it does not exist, we build it to measure",
+          "description": "Integrated into the Intelligence Lab architecture, not as a loose development, with agents that have an owner."
+        },
+        {
+          "title": "We measure each agent against the real process",
+          "description": "Time, error and team adoption, against the process the agent replaces or speeds up."
+        }
+      ]
     }
   },
   "arquitectura": {
@@ -303,6 +378,71 @@
         {
           "title": "ERP selection",
           "description": "The core system worth integrating."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Benefits of an AI architecture",
+      "intro": "Each new tool fits in, instead of becoming an island.",
+      "items": [
+        {
+          "title": "Visibility of what exists",
+          "description": "You know which AI tools exist, who bought them and what data they connect to."
+        },
+        {
+          "title": "Integration without duplicating data",
+          "description": "Models, data and systems connect without duplicating information or opening new gaps."
+        },
+        {
+          "title": "Designed to grow",
+          "description": "It does not have to be redone each time a use case is added."
+        },
+        {
+          "title": "A common map",
+          "description": "Processes, data and systems described on one architecture map."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is an AI architecture for?",
+      "items": [
+        {
+          "title": "Seeing what already exists",
+          "description": "It maps which AI tools exist, who bought them and what data they connect to."
+        },
+        {
+          "title": "Integrating without duplicating",
+          "description": "It connects models, data and systems without duplicating information or opening security gaps."
+        },
+        {
+          "title": "Growing without redoing it",
+          "description": "It is designed so a new use case does not force a restart."
+        },
+        {
+          "title": "Ordering use across areas",
+          "description": "It brings what each area bought on its own into a single map."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From isolated AI tools to an architecture that connects them",
+      "intro": "For when five areas bought five AI tools that do not talk to each other.",
+      "steps": [
+        {
+          "title": "We map what already exists",
+          "description": "Which AI tools exist today, who bought them and what data and systems they connect to, before adding another."
+        },
+        {
+          "title": "We design the architecture that connects them",
+          "description": "A technical architecture that joins models, data and existing systems securely and at scale."
+        },
+        {
+          "title": "We connect without duplicating or opening gaps",
+          "description": "Integration of models, data and systems without duplicating information or creating new security gaps."
+        },
+        {
+          "title": "We leave it ready to grow",
+          "description": "An architecture built so it does not have to be redone each time a use case is added."
         }
       ]
     }
@@ -416,7 +556,8 @@
           "title": "ISO/IEC 42001",
           "description": "An international AI management system standard for any organization that provides or uses products or services with AI. It's a certifiable standard, not a law."
         }
-      ]
+      ],
+      "refsLabel": "Three public references"
     },
     "guides": {
       "eyebrow": "AI governance guides",
@@ -436,6 +577,90 @@
           "slug": "regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana",
           "title": "AI regulation in 2026",
           "description": "What the European Union, the United States, and Spain require of companies that use AI."
+        }
+      ]
+    },
+    "queHacemos": {
+      "quote": "Clear rules for using AI —",
+      "emphasis": "with control and with evidence.",
+      "intro": "We define who decides about artificial intelligence in your company, on what criteria and with what evidence, so that every initiative can be audited."
+    },
+    "comoLoHacemos": {
+      "title": "A framework before each tool",
+      "intro": "Without a governance framework, every AI initiative is left to whoever implemented it. That is why we start by organizing what already exists.",
+      "steps": [
+        {
+          "title": "We audit the AI already in use",
+          "description": "Which tools exist, who bought them and what data they work with. We do not start from scratch or stop what already works."
+        },
+        {
+          "title": "We define the framework and who answers for it",
+          "description": "Management decides which reference to use, who answers for AI in the company and what evidence will be kept."
+        },
+        {
+          "title": "We document every decision",
+          "description": "Roles, policies and records that withstand an external audit, not just an internal presentation."
+        },
+        {
+          "title": "We review it periodically",
+          "description": "The framework runs underneath the four phases of the CIRA method, with reviews and clear owners."
+        }
+      ]
+    },
+    "autoridad": {
+      "title": "Independence and method, not a report for the drawer",
+      "body": "We do not sell AI tools: our only interest is that your organization uses AI with clear rules. The same team that diagnoses supports the execution.",
+      "stats": [
+        {
+          "value": "3",
+          "label": "public references as a starting point: NIST, OECD and ISO/IEC 42001."
+        },
+        {
+          "value": "4",
+          "label": "phases of the CIRA method under which the governance framework runs."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Benefits of AI governance",
+      "intro": "With clear rules on what is and is not allowed, approving is not slower: it is safer.",
+      "items": [
+        {
+          "title": "Approve with judgment",
+          "description": "Clear rules on what gets approved and what does not, without slowing innovation."
+        },
+        {
+          "title": "Audit-ready evidence",
+          "description": "Roles, policies and decision records that a client or regulator can review."
+        },
+        {
+          "title": "One framework for every area",
+          "description": "What each area already uses is brought into the same framework, instead of starting over."
+        },
+        {
+          "title": "Data with traceability",
+          "description": "You know what information each model touches and who answers for it."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is AI governance for?",
+      "items": [
+        {
+          "title": "Deciding who can use what",
+          "description": "Written policies on which model is used, for what case and with what data."
+        },
+        {
+          "title": "Assigning owners",
+          "description": "It defines who approves an AI initiative and who audits the result."
+        },
+        {
+          "title": "Controlling data",
+          "description": "Which information a model can touch and which stays out, with traceability."
+        },
+        {
+          "title": "Having evidence for a client or regulator",
+          "description": "Roles, policies and decision records that can be shown in an audit."
         }
       ]
     }
@@ -585,6 +810,79 @@
           "answer": "It decides who owns each domain, which indicator is the official one and which data stays out of AI's reach. The data governance for executives workshop at Leadership Academy prepares those decisions."
         }
       ]
+    },
+    "beneficios": {
+      "title": "Benefits of data governance",
+      "intro": "Decisions based on data that every area recognizes as valid.",
+      "items": [
+        {
+          "title": "One version of the number",
+          "description": "You define where each data point and each board-level indicator comes from."
+        },
+        {
+          "title": "Clear owners",
+          "description": "Every data domain has an owner and defined decisions."
+        },
+        {
+          "title": "Quality and access with rules",
+          "description": "Capture, validation and access written down and enforceable in the systems."
+        },
+        {
+          "title": "Data ready for AI",
+          "description": "You define which data a model can use and with what traceability."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is data governance for?",
+      "items": [
+        {
+          "title": "Ending disputed numbers",
+          "description": "It defines where each data point comes from so areas stop defending different versions."
+        },
+        {
+          "title": "Assigning owners",
+          "description": "Every data domain has an owner and defined decisions."
+        },
+        {
+          "title": "Protecting quality and access",
+          "description": "Capture, validation and access rules written down and enforceable in the systems."
+        },
+        {
+          "title": "Preparing data for AI",
+          "description": "It defines which data a model can use and with what traceability."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From disputed numbers to one version of the data",
+      "intro": "For the company where each area defends its own version of the right number and the board ends up arguing about which data is true.",
+      "steps": [
+        {
+          "title": "We find where the data does not add up",
+          "description": "Which systems generate data, where it is duplicated (CRM, ERP, spreadsheets) and which figures do not match between areas."
+        },
+        {
+          "title": "We define who decides on each data point",
+          "description": "Data domains, owners, committee and the decisions each one makes."
+        },
+        {
+          "title": "We write the quality and access rules",
+          "description": "Capture, deduplication, validation and access, enforceable in the systems that already exist."
+        },
+        {
+          "title": "We show where each indicator comes from",
+          "description": "An inventory of critical data and the source of every indicator the board sees."
+        },
+        {
+          "title": "We leave the data ready for AI",
+          "description": "Which data a model can use, which it cannot and with what traceability."
+        },
+        {
+          "title": "We leave it running without us",
+          "description": "Training and measurement so the rules are followed after Cyrrus steps back."
+        }
+      ]
     }
   },
   "estrategiaIa": {
@@ -730,6 +1028,79 @@
         {
           "question": "What is leadership's role in the AI strategy?",
           "answer": "Approving the prioritized list, deciding the governance framework and the data AI may not touch, and reviewing the measurement. The AI for executives workshop at Leadership Academy prepares those decisions."
+        }
+      ]
+    },
+    "beneficios": {
+      "title": "Benefits of an AI strategy",
+      "intro": "Approving AI initiatives by criteria, not by instinct.",
+      "items": [
+        {
+          "title": "Prioritized use cases",
+          "description": "Impact, feasibility, data and risk assessed with a single criterion."
+        },
+        {
+          "title": "A roadmap with owners",
+          "description": "Sequence, dependencies and owners defined for each initiative."
+        },
+        {
+          "title": "Governance and architecture from the start",
+          "description": "Policies, roles and controls defined before scaling."
+        },
+        {
+          "title": "Measurable pilots",
+          "description": "The first cases are measured against the process they replace."
+        }
+      ]
+    },
+    "usos": {
+      "title": "What is an AI strategy for?",
+      "items": [
+        {
+          "title": "Choosing use cases with judgment",
+          "description": "It assesses impact, technical feasibility, required data and risk with a single criterion."
+        },
+        {
+          "title": "Defining the order of execution",
+          "description": "A roadmap with sequence, dependencies and owners."
+        },
+        {
+          "title": "Putting governance and architecture in place",
+          "description": "It defines which policies, roles and controls apply and on what architecture models connect."
+        },
+        {
+          "title": "Measuring each initiative",
+          "description": "The first cases run as pilots and are measured against the process they replace."
+        }
+      ]
+    },
+    "comoLoHacemos": {
+      "title": "From approving by instinct to deciding by criteria",
+      "intro": "For the committee that approves or rejects AI initiatives by instinct, not by criteria.",
+      "steps": [
+        {
+          "title": "We see what AI is already in use",
+          "description": "Which tools exist, who bought them and what data they work with, before proposing new ones."
+        },
+        {
+          "title": "We discover where AI really helps",
+          "description": "Sessions with the areas to identify candidate processes: volume, repetitiveness, available data and current cost."
+        },
+        {
+          "title": "We prioritize with a single criterion",
+          "description": "Business impact, technical feasibility, required data and risk, the same for every case."
+        },
+        {
+          "title": "We build the roadmap",
+          "description": "Sequence, dependencies, owners and how each case will be measured against the process it replaces."
+        },
+        {
+          "title": "We define governance and architecture",
+          "description": "Which policies, roles and controls apply, and on what architecture models, data and systems connect."
+        },
+        {
+          "title": "We test with measured pilots",
+          "description": "The first cases run with our automation team and are measured against the real process, not a demo."
         }
       ]
     }

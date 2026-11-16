@@ -15,7 +15,8 @@
     "description": "We integrate change management into project execution, focused on minimizing digital transformation risks caused by resistance to change — and we measure organizational climate and the adoption curve continuously with AI, not just at project close.",
     "bullets": [
       "Continuous measurement of organizational climate and the adoption curve, with AI.",
-      "Training programs, including generative AI adoption for senior management."
+      "Training programs, including generative AI adoption for senior management.",
+      "Comprehensive methodology applied to Strategy, Solution Selection, and Project Management."
     ],
     "academyLinkText": "Our training programs live at",
     "academyLinkLabel": "Cyrrus Leadership Academy",
@@ -24,7 +25,12 @@
     "guideLinkText": "Practical guide:",
     "guideLinkLabel": "Organizational change management: models and a plan, with a downloadable template",
     "methodLinkText": "This is the Adopt phase within the",
-    "methodLinkLabel": "full CIRA Method"
+    "methodLinkLabel": "full CIRA Method",
+    "bulletTitles": [
+      "Adoption measured with AI",
+      "Training, including generative AI",
+      "Embedded in our services"
+    ]
   },
   "definicion": {
     "eyebrow": "The foundation",
@@ -200,6 +206,71 @@
       {
         "title": "Morelco case: change management",
         "description": "How Morelco (now Cumbra) moved its field crews to a work-from-home model in 2020: 36% fewer high ergonomic risks within one month."
+      }
+    ]
+  },
+  "autoridad": {
+    "title": "Results that add value",
+    "body": "We do not see change as an obstacle but as an opportunity for growth and improvement. Our integral change management approach shapes organizational culture, making it more flexible and oriented toward continuous success.",
+    "stats": [
+      {
+        "value": "3",
+        "label": "Cyrrus services with change management embedded: Strategy, Solution selection and Project management."
+      },
+      {
+        "value": "Day 1",
+        "label": "adoption is worked on from the start of the project, not as a closing activity."
+      }
+    ]
+  },
+  "usos": {
+    "title": "What is change management for?",
+    "items": [
+      {
+        "title": "Preparing people",
+        "description": "Readiness diagnosis and organizational impact analysis before implementing."
+      },
+      {
+        "title": "Reducing resistance",
+        "description": "Stakeholder management, communication and training throughout the project."
+      },
+      {
+        "title": "Measuring adoption",
+        "description": "Ongoing measurement that the team actually uses the new way of working."
+      },
+      {
+        "title": "Sustaining the change",
+        "description": "Reinforcement and sustainability, including generative AI adoption."
+      }
+    ]
+  },
+  "comoLoHacemos": {
+    "title": "From an installed system to a team that adopts it",
+    "intro": "For when the system is installed but the team does not adopt it.",
+    "steps": [
+      {
+        "title": "We measure how ready the organization is",
+        "description": "Risk level, sources of potential resistance, leaders’ capacity to sponsor the change and previous experience."
+      },
+      {
+        "title": "We identify what changes for each area and role",
+        "description": "Processes, tools, responsibilities and indicators, to plan the transition on real impacts."
+      },
+      {
+        "title": "We prepare leadership and change agents",
+        "description": "Senior management leads the change visibly and a network of internal agents drives it in each area."
+      },
+      {
+        "title": "We address resistance early",
+        "description": "We detect where it is and why, and address it with concrete actions per group before it slows the project."
+      },
+      {
+        "title": "We track adoption throughout the project",
+        "description": "Organizational climate and adoption curve measured with AI, to correct in time instead of learning from a survey at the end."
+      },
+      {
+        "title": "We consolidate the new habits after go-live",
+        "description": "Follow-up, usage indicators and adjustments, so the organization does not go back to the old way of working."
       }
     ]
   }

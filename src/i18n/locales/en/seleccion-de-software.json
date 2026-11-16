@@ -214,5 +214,74 @@
         "description": "What each one is, how they differ, and how to choose."
       }
     ]
+  },
+  "beneficios": {
+    "title": "Benefits of selecting with a method",
+    "intro": "Choosing software by business fit, not by feature list.",
+    "items": [
+      {
+        "title": "Criteria before demos",
+        "description": "Requirements and criteria are defined before proposals are seen."
+      },
+      {
+        "title": "The same yardstick for all",
+        "description": "Functional, technical, economic and strategic evaluation of every platform."
+      },
+      {
+        "title": "Total cost in view",
+        "description": "Licensing, implementation and total cost of ownership before signing."
+      },
+      {
+        "title": "No bias toward a brand",
+        "description": "Vendor-agnostic evaluation, with no manufacturer commissions."
+      }
+    ]
+  },
+  "usos": {
+    "title": "What is enterprise software selection for?",
+    "items": [
+      {
+        "title": "Defining what the company must solve",
+        "description": "It starts from what the business needs, not from the feature list."
+      },
+      {
+        "title": "Turning it into criteria and requirements",
+        "description": "Criteria are set before proposals are seen."
+      },
+      {
+        "title": "Comparing platforms before signing",
+        "description": "Several alternatives evaluated against the same criteria."
+      },
+      {
+        "title": "Seeing the total cost",
+        "description": "Licensing, implementation and total cost of ownership in view."
+      }
+    ]
+  },
+  "comoLoHacemos": {
+    "title": "From not knowing what to buy to choosing with a method",
+    "intro": "For the company that knows it needs to modernize and wonders which ERP, CRM, HCM or EAM suits it.",
+    "steps": [
+      {
+        "title": "We define what the organization needs to solve",
+        "description": "We do not start from which software you want to buy, but from the business and its processes."
+      },
+      {
+        "title": "We turn the need into requirements",
+        "description": "Criteria are set before proposals are seen, not after the demos."
+      },
+      {
+        "title": "We compare the technology on the same criteria",
+        "description": "We evaluate beyond features: functional fit, architecture, integrations, security and future alignment."
+      },
+      {
+        "title": "We evaluate the vendor",
+        "description": "Capability, experience and support, with no bias toward any brand."
+      },
+      {
+        "title": "We recommend with the total cost in view",
+        "description": "Licensing, implementation and total cost of ownership before signing."
+      }
+    ]
   }
 }

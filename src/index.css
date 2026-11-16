@@ -454,6 +454,26 @@
   );
 }
 
+/* Service-page hero: two stacked shades over the poster/video. Constant
+   decorative gradients live here, not in inline style, so the prerendered HTML
+   matches React's first render (see CLAUDE.md, hydration rule 2). */
+.service-hero-shade {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 8, 24, 0.95) 0%,
+    rgba(6, 28, 66, 0.82) 45%,
+    rgba(10, 44, 99, 0.3) 100%
+  );
+}
+.service-hero-shade-v {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 8, 24, 0.35) 0%,
+    rgba(2, 8, 24, 0) 30%,
+    rgba(2, 8, 24, 0.55) 100%
+  );
+}
+
 /* Glass caption laid over a photo (PhotoCaption). */
 .glass-caption {
   background: rgba(2, 8, 24, 0.72);
