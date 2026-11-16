@@ -41,6 +41,10 @@ RewriteRule ^en/home-worker/?$ /en/perspectivas [R=301,L]
 RewriteRule ^contact-page/?$ / [R=301,L]
 RewriteRule ^en/contact-page/?$ /en [R=301,L]
 
+# Artículo de ciberseguridad reemplazado por uno nuevo (misma intención de búsqueda) (2026-11-15)
+RewriteRule ^perspectivas/como-elegir-una-consultoria-de-ciberseguridad/?$ /perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad [R=301,L]
+RewriteRule ^en/perspectivas/como-elegir-una-consultoria-de-ciberseguridad/?$ /en/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad [R=301,L]
+
 # Old CMS homepage bookmarks/links — send them to the real home page instead
 # of a bare 404, then let the generic .php rule below catch everything else.
 RewriteRule ^index\.php$ / [R=301,L]

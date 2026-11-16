@@ -116,7 +116,7 @@ export default function GestionDeProyectos() {
     breadcrumbs: [...breadcrumbItems.slice(0, -1), { label: heroTitle.title }],
     media: {
       image: { src: "/assets/decoracion/hero-gerencia-proyectos.jpg", alt: "" },
-      video: { mp4: "/assets/video/gerencia-proyectos.mp4", webm: "/assets/video/gerencia-proyectos.webm" },
+      video: { mp4: "/assets/video/gerencia-proyectos.mp4" },
     },
     queHacemos: {
       eyebrow: t("intro.kicker"),

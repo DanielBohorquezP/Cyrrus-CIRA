@@ -3,13 +3,12 @@ import type { HeroVideo } from "@/components/sections/service-hero";
 /**
  * Shared media of the service-page template.
  *
- * The hero video is a 1280px, silent, ~10s loop re-encoded from the design
- * file (mp4 ~0.5MB, webm ~0.3MB). Its poster is also the first paint: the
+ * The hero video is a silent, ~10s loop re-encoded from the design
+ * file (h264 mp4, 0.2-0.7MB each, 1024px). Its poster is also the first paint: the
  * video is only mounted after hydration (see ServiceHero).
  */
 export const SERVICE_HERO_VIDEO: HeroVideo = {
   mp4: "/assets/video/hero-servicio.mp4",
-  webm: "/assets/video/hero-servicio.webm",
 };
 
 export const SERVICE_HERO_POSTER = { src: "/assets/decoracion/hero-servicio.jpg" };
@@ -32,11 +31,11 @@ export const CARD_IMAGE_POOL = [
 /** Hero media of the whole "Selección de soluciones" group (hub, software, products, advanced tech, infrastructure, cybersecurity). */
 export const SOLUCIONES_HERO_MEDIA = {
   image: { src: "/assets/decoracion/hero-seleccion-soluciones.jpg", alt: "" },
-  video: { mp4: "/assets/video/seleccion-soluciones.mp4", webm: "/assets/video/seleccion-soluciones.webm" },
+  video: { mp4: "/assets/video/seleccion-soluciones.mp4" },
 };
 
 /** Hero media of the whole Intelligence Lab group (hub and its five service pages). */
 export const IA_HERO_MEDIA = {
   image: { src: "/assets/decoracion/hero-inteligencia-artificial.jpg", alt: "" },
-  video: { mp4: "/assets/video/inteligencia-artificial.mp4", webm: "/assets/video/inteligencia-artificial.webm" },
+  video: { mp4: "/assets/video/inteligencia-artificial.mp4" },
 };

@@ -117,7 +117,7 @@ export default function GestionDelCambio() {
     breadcrumbs: [...breadcrumbItems.slice(0, -1), { label: heroTitle.title }],
     media: {
       image: { src: "/assets/decoracion/hero-gestion-cambio.jpg", alt: "" },
-      video: { mp4: "/assets/video/gestion-cambio.mp4", webm: "/assets/video/gestion-cambio.webm" },
+      video: { mp4: "/assets/video/gestion-cambio.mp4" },
     },
     queHacemos: {
       eyebrow: t("intro.kicker"),

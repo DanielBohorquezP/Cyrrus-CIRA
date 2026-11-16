@@ -4,6 +4,7 @@ import { Breadcrumbs, type BreadcrumbItem } from "@/components/ui/breadcrumbs";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Img } from "@/components/ui/img";
 import { isPrerender } from "@/lib/prerender";
+import { cn } from "@/lib/utils";
 
 export interface HeroVideo {
   mp4: string;
@@ -33,20 +34,36 @@ const rise = (y: string, delay?: string) =>
 /**
  * The looping video sits on top of the poster once the page is interactive.
  *
- * It is mounted from an effect (never in the prerendered HTML) so the 3MB-class
- * download does not compete with the poster for LCP, and so the static markup
- * matches React's first render. It stays off for `prefers-reduced-motion` and
- * for data-saver connections; the poster alone is then the background.
+ * It is mounted from an effect (never in the prerendered HTML) so the static
+ * markup matches React's first render, and only *after* the window `load`
+ * event: a 0.5-0.7MB download started during load competes with the poster and
+ * the fonts, and Lighthouse counted the video's first frame as the page's LCP
+ * (about 8s on a throttled phone). It stays off on phones (under 768px), for
+ * `prefers-reduced-motion` and for data-saver connections; the poster alone is
+ * then the background. While it buffers it is `opacity-0` (a transparent
+ * element is never an LCP candidate) and it fades in once it is really playing.
  */
 function HeroBackdropVideo({ mp4, webm }: HeroVideo) {
   const [enabled, setEnabled] = useState(false);
+  const [playing, setPlaying] = useState(false);
   const ref = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (isPrerender()) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const phone = window.matchMedia("(max-width: 767px)").matches;
     const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData;
-    if (!reduce && !saveData) setEnabled(true);
+    if (reduce || phone || saveData) return;
+    let timer = 0;
+    const start = () => {
+      timer = window.setTimeout(() => setEnabled(true), 300);
+    };
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("load", start);
+    };
   }, []);
 
   useEffect(() => {
@@ -79,7 +96,11 @@ function HeroBackdropVideo({ mp4, webm }: HeroVideo) {
       aria-hidden="true"
       tabIndex={-1}
       disablePictureInPicture
-      className="absolute inset-0 -z-10 h-full w-full object-cover [object-position:center_60%]"
+      onPlaying={() => setPlaying(true)}
+      className={cn(
+        "absolute inset-0 -z-10 h-full w-full object-cover [object-position:center_60%] transition-opacity duration-500 ease-out",
+        playing ? "opacity-100" : "opacity-0",
+      )}
     >
       {webm && <source src={webm} type="video/webm" />}
       <source src={mp4} type="video/mp4" />

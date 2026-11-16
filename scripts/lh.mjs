@@ -119,6 +119,13 @@ console.log(`  TBT                  ${Math.round(metric("total-blocking-time"))}
 console.log(`  CLS                  ${metric("cumulative-layout-shift").toFixed(3)}`);
 console.log(`  Speed Index          ${(metric("speed-index") / 1000).toFixed(2)} s`);
 
+// What the LCP is, and how its time splits up — the first thing to read when LCP is slow.
+const lcpEl = results[0].audits["largest-contentful-paint-element"]?.details?.items?.[0]?.items?.[0]?.node;
+if (lcpEl) console.log(`
+  LCP element          ${lcpEl.snippet?.slice(0, 110)}`);
+const lcpParts = results[0].audits["largest-contentful-paint-element"]?.details?.items?.[1]?.items ?? [];
+for (const part of lcpParts) console.log(`    ${String(part.phase).padEnd(28)} ${Math.round(part.timing)} ms`);
+
 // Where the main thread actually went — the breakdown that matters for TBT.
 const breakdown = results[0].audits["mainthread-work-breakdown"];
 console.log(`\n  Main-thread work     ${(breakdown.numericValue / 1000).toFixed(2)} s`);
