@@ -34,88 +34,340 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Too often, the answer comes too late, isn't given the importance it deserves, or gets assigned to someone without the capabilities needed to manage it." },
-        { "type": "p", "text": "I've accompanied organizations through transformation processes where the technology was well chosen, the project had good professionals, and there was a significant budget — on paper, everything seemed to be in order, and yet something wasn't working." },
-        { "type": "p", "text": "Over the years I've learned that transformation projects rarely fail for a single reason. They fail when an organization starts transforming part of the business without having sufficiently understood what it's trying to transform, why it needs to do it, and how it will affect the people who make that business run every day. Industry data points the same way: in a BCG study published in 2020, 70% of digital transformations fell short of their objectives." },
-        { "type": "p", "text": "That's why, before talking about technology, I prefer to talk about three things: people, processes, and technology — in that order." },
-        { "type": "h2", "text": "The first mistake: starting with technology" },
-        { "type": "p", "text": "It's a conversation that repeats itself constantly:" },
-        { "type": "quote", "text": "“We need a new ERP,” “We have to implement a CRM,” “We should add AI,” “We need to automate this process.”" },
-        { "type": "p", "text": "But a transformation shouldn't start with the solution — it should start with another question: what do we need to transform, and why?" },
-        { "type": "p", "text": "When that question isn't sufficiently clear, technology ends up becoming the project instead of the enabler of the project. We then start measuring success by a tool's implementation, by meeting a schedule, or by the number of features delivered." },
-        { "type": "p", "text": "But an organization doesn't transform because a technology was implemented. It transforms when that technology manages to sustainably change the way people work, make decisions, and generate value." },
-        { "type": "h2", "text": "The second mistake: not building the business case" },
-        { "type": "p", "text": "A transformation requires investment, but the investment is not the business case." },
-        { "type": "p", "text": "Before starting, we should be able to clearly answer what problem we want to solve, what opportunity we want to seize, what value we expect to generate, and how we'll know we actually achieved it." },
-        { "type": "p", "text": "This seems obvious, but it isn't always." },
-        { "type": "p", "text": "When the business case isn't sufficiently structured, the project can move forward for months and end up being evaluated by its deliverables instead of by the value it was meant to produce." },
-        { "type": "p", "text": "It was implemented, delivered, the teams were trained, and it went into production — but did it actually transform the business?" },
-        { "type": "h2", "text": "The third mistake: looking at the project instead of the value chain" },
-        { "type": "p", "text": "One of the most frequent risks is analyzing transformation as a set of isolated processes, but organizations don't work that way." },
-        { "type": "p", "text": "A change in sales can affect operations; in purchasing, it can alter inventories; in production, it can impact finance; a new data policy can change the way different areas make decisions." },
-        { "type": "p", "text": "That's why transforming a process means understanding its relationships with the other processes and, ultimately, with the value chain." },
-        { "type": "p", "text": "The question shouldn't be:" },
-        { "type": "quote", "text": "Which process are we going to change?" },
-        { "type": "p", "text": "We should also be asking:" },
-        { "type": "quote", "text": "What else changes in the organization when this process changes?" },
-        { "type": "p", "text": "That's where transformation really begins." },
-        { "type": "h2", "text": "The fourth mistake: leaving change management for the end" },
-        { "type": "p", "text": "This is probably one of the mistakes I've seen repeated the most — change management can't show up at the end of the project, once the decision has already been made, the solution has been selected, and the organization is about to receive a new way of working. Prosci's research backs this up: projects with excellent change management are about seven times more likely to meet their objectives than those with poor change management." },
-        { "type": "p", "text": "By then, many people have already built their own interpretations of what's happening. When people don't understand the change, fear, resistance, indifference, or simply fatigue show up." },
-        { "type": "p", "text": "For me, change management begins much earlier.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "It begins when people understand why they need to change, what the impact of doing it well will be, and also what the impact of doing it poorly could be." },
-        { "type": "p", "text": "A few years ago, during an ERP implementation at a mining-industry organization, we went through a situation that left me with a lesson I still carry." },
-        { "type": "p", "text": "A person with a very important role inside the organization was fully involved in the project, and their intention was positive: they wanted to make sure every area of the business was correctly defined." },
-        { "type": "p", "text": "But little by little, that involvement started producing an unintended effect." },
-        { "type": "p", "text": "The people responsible for the different areas started losing interest and commitment. If a single person was defining much of what belonged to their areas, they started feeling that their own participation was no longer as necessary." },
-        { "type": "p", "text": "The problem wasn't the technology, nor that person's intentions — it was the human dynamic that had built up around the project." },
-        { "type": "p", "text": "We stepped in." },
-        { "type": "p", "text": "We talked with that person, reinforced their role, explained the impact the situation was having, and worked again with the other leaders — we created additional spaces to reinforce the importance of their participation and make the impact of their work on the final outcome visible." },
-        { "type": "p", "text": "The response changed, and so did the commitment." },
-        { "type": "p", "text": "That experience confirmed something I consider fundamental: involving people doesn't just mean having them inside the project — it means making them part of the transformation." },
-        { "type": "h2", "text": "The fifth mistake: believing that communicating is the same as informing" },
-        { "type": "p", "text": "There's an enormous difference between communicating a change and announcing it." },
-        { "type": "p", "text": "“We're going to implement a new system.” That's information." },
-        { "type": "p", "text": "“We're going to change the way we work because we need to solve this problem, and this will be the impact for you.” That's starting to be communication." },
-        { "type": "p", "text": "The organization needs to understand what's happening, but it also needs to understand why it's happening — it needs spaces to ask, question, contribute, and understand its own role." },
-        { "type": "p", "text": "That's why I believe communication has to accompany the entire transformation, not just its milestones — and in that process, the organization's leaders, especially its C-level, carry a responsibility they cannot delegate." },
-        { "type": "h2", "text": "The sixth mistake: selecting a solution without understanding the context" },
-        { "type": "p", "text": "A good technology is not necessarily a good decision." },
-        { "type": "p", "text": "The right solution depends on the business, its strategy, its processes, its organizational capacity, its data, its architecture, its constraints, and of course, the people who will have to use it and make it sustainable." },
-        { "type": "p", "text": "I've learned that selecting a solution isn't about comparing features." },
-        { "type": "p", "text": "It's about understanding what the organization actually needs and which alternative can best accompany it on the path it wants to take." },
-        { "type": "p", "text": "The question isn't:" },
-        { "type": "quote", "text": "What's the best technology?" },
-        { "type": "p", "text": "The question is:" },
-        { "type": "quote", "text": "What's the best decision for this organization?" },
-        { "type": "p", "text": "They aren't the same question." },
-        { "type": "h2", "text": "The seventh mistake: thinking transformation ends when the project ends" },
-        { "type": "p", "text": "A project has a start date and an end date. Transformation doesn't necessarily." },
-        { "type": "p", "text": "When implementation ends, an even more important stage begins: adoption, optimization, and continuous improvement." },
-        { "type": "p", "text": "A truly transformed organization doesn't go back to its old ways of doing things the moment the project's support team leaves." },
-        { "type": "p", "text": "Learn – Adjust – Measure – Improve, and above all, progressively lose the fear of change." },
-        { "type": "p", "text": "That, to me, is one of the most important indicators of a successful transformation." },
-        { "type": "p", "text": "When an organization starts embracing change as a natural part of its culture and enters a dynamic of responsible, purpose-driven innovation, something far deeper has happened than a simple technology rollout." },
-        { "type": "p", "text": "The organization has changed the way it relates to the future." },
-        { "type": "h2", "text": "So, what should a CEO do?" },
-        { "type": "p", "text": "The CEO doesn't need to become an expert in every technology. Their responsibility lies elsewhere: understanding the transformation, accompanying it, communicating it, inspiring it, and sustaining it." },
-        { "type": "p", "text": "They must understand its impact on the business, be willing to stand behind difficult decisions, and recognize the effort of the people who make the change possible." },
-        { "type": "p", "text": "Above all, they must lead by example." },
-        { "type": "p", "text": "Because it's hard to ask an organization to embrace change when its own leadership is still trying to protect itself from it." },
-        { "type": "p", "text": "The CEO must be a sponsor, but also a permanent communicator and inspirer — they must lead the cultural change and remember that transformation doesn't belong to the technology area; it's a matter for the whole organization's business, and it belongs to the entire organization." },
-        { "type": "p", "text": "Technology is important, but it isn't where it begins." },
-        { "type": "p", "text": "After many years, I'm more convinced than ever that digital transformation doesn't begin when a technology is selected — it begins much earlier:" },
-        { "type": "p", "text": "It begins when the organization decides to look at its reality honestly." },
-        { "type": "p", "text": "When it understands what it needs to improve." },
-        { "type": "p", "text": "When it understands the impact on its customers, suppliers, and surrounding environments — not only inside the organization." },
-        { "type": "p", "text": "When it identifies how that improvement impacts its value chain." },
-        { "type": "p", "text": "When it builds a business case that allows for a conscious decision." },
-        { "type": "p", "text": "When it listens to the people who will have to make the change possible." },
-        { "type": "p", "text": "And when it understands that transforming doesn't just mean implementing something new." },
-        { "type": "p", "text": "It means learning to work, decide, and evolve in a different way." },
-        { "type": "p", "text": "That's why, whenever I think about transformation, I always come back to one simple idea: people, processes, technology." },
-        { "type": "p", "text": "But there's a principle that has to stay at the center: people. Because, in the end, technology can enable change and processes can give it structure, but it's people who make a transformation actually happen." },
-        { "type": "quote", "text": "“Technologies change. A culture of innovation and change endures and evolves.”" },
+        {
+          "type": "p",
+          "text": "Too often, the answer comes too late, isn't given the importance it deserves, or gets assigned to someone without the capabilities needed to manage it."
+        },
+        {
+          "type": "p",
+          "text": "I've accompanied organizations through transformation processes where the technology was well chosen, the project had good professionals, and there was a significant budget — on paper, everything seemed to be in order, and yet something wasn't working."
+        },
+        {
+          "type": "p",
+          "text": "Over the years I've learned that transformation projects rarely fail for a single reason. They fail when an organization starts transforming part of the business without having sufficiently understood what it's trying to transform, why it needs to do it, and how it will affect the people who make that business run every day. Industry data points the same way: in a BCG study published in 2020, 70% of digital transformations fell short of their objectives."
+        },
+        {
+          "type": "p",
+          "text": "That's why, before talking about technology, I prefer to talk about three things: people, processes, and technology — in that order."
+        },
+        {
+          "type": "h2",
+          "text": "The first mistake: starting with technology"
+        },
+        {
+          "type": "p",
+          "text": "It's a conversation that repeats itself constantly:"
+        },
+        {
+          "type": "quote",
+          "text": "“We need a new ERP,” “We have to implement a CRM,” “We should add AI,” “We need to automate this process.”"
+        },
+        {
+          "type": "p",
+          "text": "But a transformation shouldn't start with the solution — it should start with another question: what do we need to transform, and why?"
+        },
+        {
+          "type": "p",
+          "text": "When that question isn't sufficiently clear, technology ends up becoming the project instead of the enabler of the project. We then start measuring success by a tool's implementation, by meeting a schedule, or by the number of features delivered."
+        },
+        {
+          "type": "p",
+          "text": "But an organization doesn't transform because a technology was implemented. It transforms when that technology manages to sustainably change the way people work, make decisions, and generate value."
+        },
+        {
+          "type": "h2",
+          "text": "The second mistake: not building the business case"
+        },
+        {
+          "type": "p",
+          "text": "A transformation requires investment, but the investment is not the business case."
+        },
+        {
+          "type": "p",
+          "text": "Before starting, we should be able to clearly answer what problem we want to solve, what opportunity we want to seize, what value we expect to generate, and how we'll know we actually achieved it."
+        },
+        {
+          "type": "p",
+          "text": "This seems obvious, but it isn't always."
+        },
+        {
+          "type": "p",
+          "text": "When the business case isn't sufficiently structured, the project can move forward for months and end up being evaluated by its deliverables instead of by the value it was meant to produce."
+        },
+        {
+          "type": "p",
+          "text": "It was implemented, delivered, the teams were trained, and it went into production — but did it actually transform the business?"
+        },
+        {
+          "type": "h2",
+          "text": "The third mistake: looking at the project instead of the value chain"
+        },
+        {
+          "type": "p",
+          "text": "One of the most frequent risks is analyzing transformation as a set of isolated processes, but organizations don't work that way."
+        },
+        {
+          "type": "p",
+          "text": "A change in sales can affect operations; in purchasing, it can alter inventories; in production, it can impact finance; a new data policy can change the way different areas make decisions."
+        },
+        {
+          "type": "p",
+          "text": "That's why transforming a process means understanding its relationships with the other processes and, ultimately, with the value chain."
+        },
+        {
+          "type": "p",
+          "text": "The question shouldn't be:"
+        },
+        {
+          "type": "quote",
+          "text": "Which process are we going to change?"
+        },
+        {
+          "type": "p",
+          "text": "We should also be asking:"
+        },
+        {
+          "type": "quote",
+          "text": "What else changes in the organization when this process changes?"
+        },
+        {
+          "type": "p",
+          "text": "That's where transformation really begins."
+        },
+        {
+          "type": "h2",
+          "text": "The fourth mistake: leaving change management for the end"
+        },
+        {
+          "type": "p",
+          "text": "This is probably one of the mistakes I've seen repeated the most — change management can't show up at the end of the project, once the decision has already been made, the solution has been selected, and the organization is about to receive a new way of working. Prosci's research backs this up: projects with excellent change management are about seven times more likely to meet their objectives than those with poor change management."
+        },
+        {
+          "type": "p",
+          "text": "By then, many people have already built their own interpretations of what's happening. When people don't understand the change, fear, resistance, indifference, or simply fatigue show up."
+        },
+        {
+          "type": "p",
+          "text": "For me, change management begins much earlier.",
+          "links": [
+            {
+              "text": "change management",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "It begins when people understand why they need to change, what the impact of doing it well will be, and also what the impact of doing it poorly could be."
+        },
+        {
+          "type": "p",
+          "text": "A few years ago, during an ERP implementation at a mining-industry organization, we went through a situation that left me with a lesson I still carry."
+        },
+        {
+          "type": "p",
+          "text": "A person with a very important role inside the organization was fully involved in the project, and their intention was positive: they wanted to make sure every area of the business was correctly defined."
+        },
+        {
+          "type": "p",
+          "text": "But little by little, that involvement started producing an unintended effect."
+        },
+        {
+          "type": "p",
+          "text": "The people responsible for the different areas started losing interest and commitment. If a single person was defining much of what belonged to their areas, they started feeling that their own participation was no longer as necessary."
+        },
+        {
+          "type": "p",
+          "text": "The problem wasn't the technology, nor that person's intentions — it was the human dynamic that had built up around the project."
+        },
+        {
+          "type": "p",
+          "text": "We stepped in."
+        },
+        {
+          "type": "p",
+          "text": "We talked with that person, reinforced their role, explained the impact the situation was having, and worked again with the other leaders — we created additional spaces to reinforce the importance of their participation and make the impact of their work on the final outcome visible."
+        },
+        {
+          "type": "p",
+          "text": "The response changed, and so did the commitment."
+        },
+        {
+          "type": "p",
+          "text": "That experience confirmed something I consider fundamental: involving people doesn't just mean having them inside the project — it means making them part of the transformation."
+        },
+        {
+          "type": "h2",
+          "text": "The fifth mistake: believing that communicating is the same as informing"
+        },
+        {
+          "type": "p",
+          "text": "There's an enormous difference between communicating a change and announcing it."
+        },
+        {
+          "type": "p",
+          "text": "“We're going to implement a new system.” That's information."
+        },
+        {
+          "type": "p",
+          "text": "“We're going to change the way we work because we need to solve this problem, and this will be the impact for you.” That's starting to be communication."
+        },
+        {
+          "type": "p",
+          "text": "The organization needs to understand what's happening, but it also needs to understand why it's happening — it needs spaces to ask, question, contribute, and understand its own role."
+        },
+        {
+          "type": "p",
+          "text": "That's why I believe communication has to accompany the entire transformation, not just its milestones — and in that process, the organization's leaders, especially its C-level, carry a responsibility they cannot delegate."
+        },
+        {
+          "type": "h2",
+          "text": "The sixth mistake: selecting a solution without understanding the context"
+        },
+        {
+          "type": "p",
+          "text": "A good technology is not necessarily a good decision."
+        },
+        {
+          "type": "p",
+          "text": "The right solution depends on the business, its strategy, its processes, its organizational capacity, its data, its architecture, its constraints, and of course, the people who will have to use it and make it sustainable."
+        },
+        {
+          "type": "p",
+          "text": "I've learned that selecting a solution isn't about comparing features."
+        },
+        {
+          "type": "p",
+          "text": "It's about understanding what the organization actually needs and which alternative can best accompany it on the path it wants to take."
+        },
+        {
+          "type": "p",
+          "text": "The question isn't:"
+        },
+        {
+          "type": "quote",
+          "text": "What's the best technology?"
+        },
+        {
+          "type": "p",
+          "text": "The question is:"
+        },
+        {
+          "type": "quote",
+          "text": "What's the best decision for this organization?"
+        },
+        {
+          "type": "p",
+          "text": "They aren't the same question."
+        },
+        {
+          "type": "h2",
+          "text": "The seventh mistake: thinking transformation ends when the project ends"
+        },
+        {
+          "type": "p",
+          "text": "A project has a start date and an end date. Transformation doesn't necessarily."
+        },
+        {
+          "type": "p",
+          "text": "When implementation ends, an even more important stage begins: adoption, optimization, and continuous improvement."
+        },
+        {
+          "type": "p",
+          "text": "A truly transformed organization doesn't go back to its old ways of doing things the moment the project's support team leaves."
+        },
+        {
+          "type": "p",
+          "text": "Learn – Adjust – Measure – Improve, and above all, progressively lose the fear of change."
+        },
+        {
+          "type": "p",
+          "text": "That, to me, is one of the most important indicators of a successful transformation."
+        },
+        {
+          "type": "p",
+          "text": "When an organization starts embracing change as a natural part of its culture and enters a dynamic of responsible, purpose-driven innovation, something far deeper has happened than a simple technology rollout."
+        },
+        {
+          "type": "p",
+          "text": "The organization has changed the way it relates to the future."
+        },
+        {
+          "type": "h2",
+          "text": "So, what should a CEO do?"
+        },
+        {
+          "type": "p",
+          "text": "The CEO doesn't need to become an expert in every technology. Their responsibility lies elsewhere: understanding the transformation, accompanying it, communicating it, inspiring it, and sustaining it."
+        },
+        {
+          "type": "p",
+          "text": "They must understand its impact on the business, be willing to stand behind difficult decisions, and recognize the effort of the people who make the change possible."
+        },
+        {
+          "type": "p",
+          "text": "Above all, they must lead by example."
+        },
+        {
+          "type": "p",
+          "text": "Because it's hard to ask an organization to embrace change when its own leadership is still trying to protect itself from it."
+        },
+        {
+          "type": "p",
+          "text": "The CEO must be a sponsor, but also a permanent communicator and inspirer — they must lead the cultural change and remember that transformation doesn't belong to the technology area; it's a matter for the whole organization's business, and it belongs to the entire organization."
+        },
+        {
+          "type": "p",
+          "text": "Technology is important, but it isn't where it begins."
+        },
+        {
+          "type": "p",
+          "text": "After many years, I'm more convinced than ever that digital transformation doesn't begin when a technology is selected — it begins much earlier:"
+        },
+        {
+          "type": "p",
+          "text": "It begins when the organization decides to look at its reality honestly."
+        },
+        {
+          "type": "p",
+          "text": "When it understands what it needs to improve."
+        },
+        {
+          "type": "p",
+          "text": "When it understands the impact on its customers, suppliers, and surrounding environments — not only inside the organization."
+        },
+        {
+          "type": "p",
+          "text": "When it identifies how that improvement impacts its value chain."
+        },
+        {
+          "type": "p",
+          "text": "When it builds a business case that allows for a conscious decision."
+        },
+        {
+          "type": "p",
+          "text": "When it listens to the people who will have to make the change possible."
+        },
+        {
+          "type": "p",
+          "text": "And when it understands that transforming doesn't just mean implementing something new."
+        },
+        {
+          "type": "p",
+          "text": "It means learning to work, decide, and evolve in a different way."
+        },
+        {
+          "type": "p",
+          "text": "That's why, whenever I think about transformation, I always come back to one simple idea: people, processes, technology."
+        },
+        {
+          "type": "p",
+          "text": "But there's a principle that has to stay at the center: people. Because, in the end, technology can enable change and processes can give it structure, but it's people who make a transformation actually happen."
+        },
+        {
+          "type": "quote",
+          "text": "“Technologies change. A culture of innovation and change endures and evolves.”"
+        },
         {
           "type": "p",
           "text": "Related reading: what strategic planning is, what a PMO is and what it does and how to diagnose resistance to change.",
@@ -181,81 +433,318 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "There are decisions an organization can make internally. There are others where bringing in an outsider can make a huge difference." },
-        { "type": "p", "text": "Not necessarily because that third party knows more than the internal team. In fact, the knowledge of the business lives inside the organization. The difference lies somewhere else." },
-        { "type": "p", "text": "It lies in being able to look at the business without being conditioned by the way things have always been done. In asking questions no one else is asking. In spotting potential that isn't obvious yet. In putting on the table what the organization needs to hear, even if it isn't necessarily what it wants to hear." },
-        { "type": "p", "text": "That's why, when a company decides to hire a strategic consulting firm, in my opinion it shouldn't only ask what experience the firm has, which clients it has served, or how much it costs. It should ask something more important: will this firm actually help us see what we aren't seeing?" },
-        { "type": "p", "text": "Throughout my career I've been on both sides of this conversation. As a technology executive, I was on the receiving end of a strategic consulting engagement, and today, from Cyrrus, it's my job to guide executive teams through decisions that can have a major impact on their organizations. That experience has left me with a few conclusions." },
-        { "type": "h2", "text": "The mistake of choosing by brand and price" },
-        { "type": "p", "text": "One possible mistake is turning the selection of a consulting firm into a comparison of proposals." },
-        { "type": "p", "text": "Who has the most recognized brand. Who charges the least. Who submitted the biggest document. Who included more pages, more methodologies, more charts, or more specialists." },
-        { "type": "p", "text": "But a strategic consulting engagement shouldn't be won by the size of its document. In fact, an overly long proposal can hide a question that still hasn't been answered: did they actually understand my problem?" },
-        { "type": "p", "text": "I've seen organizations make important decisions based on a firm's reputation or on a technically flawless proposal, without stopping long enough to evaluate whether that firm truly understands their business, their environment, and their constraints. That's where a fundamental difference begins." },
-        { "type": "h2", "text": "A consulting firm shouldn't start by assuming" },
-        { "type": "p", "text": "A genuine strategic consulting engagement isn't limited to reviewing documents, gathering evidence, or filling out questionnaires. That can be part of the process, but it can't be the process." },
-        { "type": "p", "text": "You have to understand how things really work, how decisions are made, how people work, what's working and what isn't, how comfortable teams feel with the current way of doing things, what contributions are being made, and where capabilities exist that haven't been tapped yet — and above all, you have to listen. Listen before concluding. Ask before recommending. Analyze before assuming." },
-        { "type": "p", "text": "Because one of the things that destroys the most value in a consulting engagement is taking it for granted that the problem is already understood." },
-        { "type": "p", "text": "Not assuming should be almost a golden rule." },
-        { "type": "h2", "text": "An experience that taught me a lot" },
-        { "type": "p", "text": "A few years ago, while I was serving as an IT director, I joined an organization as the result of a recommendation made by a strategic consulting firm." },
-        { "type": "p", "text": "The consulting engagement had produced an important body of work. There were many documents, many sheets, many analyses, and numerous recommendations." },
-        { "type": "p", "text": "As part of my onboarding and my process of understanding the business, I decided to carefully review those deliverables. I found something that caught my attention deeply." },
-        { "type": "p", "text": "Roughly 90% of the recommendations weren't applicable in practice. Not necessarily because they were technically wrong. The problem was something else." },
-        { "type": "p", "text": "Some didn't account for the organization's own constraints. Others didn't consider the particularities of the industry. Some were oversized relative to the company's real needs. Others called for extremely high investments relative to the value they could generate. And some, quite simply, were solutions for problems the organization didn't have." },
-        { "type": "p", "text": "That experience left me with a lesson I still consider fundamental: a good recommendation isn't the one that works in theory. It's the one that makes sense for that particular organization." },
-        { "type": "p", "text": "Best practices matter, but context matters more." },
-        { "type": "p", "text": "Every organization has a different reality: different people, capabilities, constraints, cultures, markets, and moments in time. That's why a consulting firm that simply replicates what worked at another company can end up recommending something that, even if correct in another context, is completely inadequate for this client." },
-        { "type": "p", "text": "Experience matters. So does empathy." },
-        { "type": "p", "text": "I believe deeply in experience, but experience by itself isn't enough. A person can have taken part in hundreds of projects and still not understand a given organization." },
-        { "type": "p", "text": "Experience has to be paired with the ability to listen, with empathy, and above all, with common sense." },
-        { "type": "p", "text": "Common sense to understand that not everything possible is necessary. That not everything recommended should be implemented. That not every technology generates value. That an organization has constraints. That people have different levels of readiness and skills. That changes have consequences. And that behind every process, every system, and every decision, there are people." },
-        { "type": "p", "text": "For me, that combination is far more powerful than any methodology. Experience to know what to look at. Empathy to understand what's being seen. Common sense to decide what to do with it." },
-        { "type": "h2", "text": "Uncomfortable conversations also create value" },
-        { "type": "p", "text": "There's something I consider especially important in the relationship between a consulting firm and a CEO: the ability to have uncomfortable conversations." },
-        { "type": "p", "text": "A consulting firm isn't there to tell the client what they want to hear. It's there to tell them what they need to hear." },
-        { "type": "p", "text": "That sometimes means questioning a decision, saying something isn't working, admitting that one of its own recommendations wasn't right, explaining that a solution initially considered doesn't apply, or simply saying:" },
-        { "type": "quote", "text": "“I don't think we should do this.”" },
-        { "type": "p", "text": "These conversations shouldn't damage the relationship. On the contrary, when they're grounded in knowledge, arguments, transparency, and respect, they tend to create enormous value." },
-        { "type": "p", "text": "A good consulting firm doesn't aim to always be right. It aims to help the organization make better decisions." },
-        { "type": "h2", "text": "There are signs that should raise red flags" },
-        { "type": "p", "text": "Personally, I'd be cautious with a consulting firm that uses overly complicated terms to explain simple things. Also with one that seems to have a solution for absolutely everything, that claims to know it all before really understanding the business, that talks a lot and asks little, that arrives with a prepared answer before understanding the question, and especially, with one that doesn't seem sensitive to the organization's constraints." },
-        { "type": "p", "text": "Constraints exist. Budget, talent, culture, regulation, infrastructure, processes, time, execution capacity, and organizational and technological maturity." },
-        { "type": "p", "text": "Ignoring them doesn't make them disappear. A strategic recommendation that can't coexist with the organization's reality stops being strategic." },
-        { "type": "h2", "text": "How do you recognize a good consulting firm?" },
-        { "type": "p", "text": "You can recognize a good firm because it understands your business, not just what you tell it, and gives it back to you from a perspective your team didn't have. There's one sign that, for me, sums up many of the previous ones." },
-        { "type": "p", "text": "It understands your business." },
-        { "type": "p", "text": "But not only what you tell it. It understands your pain points, understands the environment, understands the constraints, understands the people, and over time, it may even identify pain points the owner or CEO hasn't yet seen." },
-        { "type": "p", "text": "That's where the real value of a consulting engagement starts to show up. Not when it delivers a document, but when it helps the organization understand its own reality better." },
-        { "type": "h2", "text": "Agnosticism isn't a minor detail" },
-        { "type": "p", "text": "There's another aspect I consider fundamental, and that, in my opinion, should be a requirement for any consulting firm involved in solution-selection processes: agnosticism." },
-        { "type": "p", "text": "A strategic consulting firm should be able to analyze alternatives without any commercial preference for a particular brand, manufacturer, or vendor. There shouldn't be any commercial commitment, benefit, or commission that conditions the recommendation." },
-        { "type": "p", "text": "If an organization is trying to define what solution it needs, the question should be:" },
-        { "type": "quote", "text": "What's best for the organization?" },
-        { "type": "p", "text": "Not:" },
-        { "type": "quote", "text": "Which of the solutions we sell can we recommend?" },
-        { "type": "p", "text": "Independence allows for greater freedom of evaluation. And that freedom matters especially when the decisions involve significant investments and long-term commitments." },
-        { "type": "h2", "text": "What should remain once a consulting engagement ends?" },
-        { "type": "p", "text": "When a consulting engagement ends, what should remain is a more capable organization, not just a document. For me, this is one of the most important questions." },
-        { "type": "p", "text": "A consulting engagement shouldn't end simply by leaving behind a document. It should leave behind capability: a better understanding of the business, better criteria for making decisions, knowledge installed within the team, and better-prepared people." },
-        { "type": "p", "text": "But there's something even more important: an organization capable of questioning, analyzing, and improving — a more innovative, critical, people-centered organizational culture oriented toward continuous improvement." },
-        { "type": "p", "text": "Because if every time the organization faces a problem it needs to hire an outsider again to figure out what to do, the consulting engagement probably didn't fully accomplish its purpose." },
-        { "type": "p", "text": "The real result should be an organization that is more capable than it was before." },
-        { "type": "h2", "text": "The role of the consulting firm with the CEO" },
-        { "type": "p", "text": "I don't think it's simply that of a vendor. Nor should it be solely that of an advisor delivering recommendations." },
-        { "type": "p", "text": "For me, a good consulting firm should become a kind of intellectual sparring partner for the CEO: someone who facilitates, who questions, who helps build, who can act as an architect when needed, who knows the business and the environment." },
-        { "type": "p", "text": "It has to be close enough to the organization to understand it, but far enough outside it to keep an independent perspective." },
-        { "type": "p", "text": "Someone the CEO can keep \"top of mind\" when a complex problem shows up and they need to think through how to solve it — not necessarily because that person has the answer, but because they know how to help find it." },
-        { "type": "h2", "text": "If I had three consulting firms in front of me" },
-        { "type": "p", "text": "Let's say a CEO told me:" },
-        { "type": "quote", "text": "“Jackson, I have three consulting firms. All three have experience, good clients, and excellent proposals. Which one should I choose?”" },
-        { "type": "p", "text": "I probably wouldn't start by comparing the proposals." },
-        { "type": "p", "text": "I'd tell them to look at who thinks differently. Who is more impartial. Who has the best team, not just the best brand. Who asked the best questions before presenting the proposal. Who really listened. Who was capable of pushing back. Who understood the constraints of their organization, and especially, who showed genuine concern for people and for change management.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "Because a transformation can have the best strategy, the best technology, and the right budget, but if people aren't ready to live through it, it will hardly be sustainable." },
-        { "type": "h2", "text": "One last question" },
-        { "type": "p", "text": "When I think about strategic consulting, I come back once again to an idea that's fundamental to me: people, processes, and technology. Centered on the people who are affected by the organization.", "links": [{"text": "strategic consulting", "href": "/metodo-cira/estrategia"}] },
-        { "type": "p", "text": "A consulting firm can help map out the path, spot opportunities, question decisions, and build capabilities. But its real value shows up when it helps the organization see more clearly, decide better, and become capable of moving forward on its own." },
-        { "type": "p", "text": "Perhaps that's the best question for a CEO to ask before hiring a consulting firm: after working with them, will we be an organization more dependent on their knowledge, or an organization more capable of building our own?" },
-        { "type": "p", "text": "The answer says far more about a consulting firm than the size of its proposal." },
+        {
+          "type": "p",
+          "text": "There are decisions an organization can make internally. There are others where bringing in an outsider can make a huge difference."
+        },
+        {
+          "type": "p",
+          "text": "Not necessarily because that third party knows more than the internal team. In fact, the knowledge of the business lives inside the organization. The difference lies somewhere else."
+        },
+        {
+          "type": "p",
+          "text": "It lies in being able to look at the business without being conditioned by the way things have always been done. In asking questions no one else is asking. In spotting potential that isn't obvious yet. In putting on the table what the organization needs to hear, even if it isn't necessarily what it wants to hear."
+        },
+        {
+          "type": "p",
+          "text": "That's why, when a company decides to hire a strategic consulting firm, in my opinion it shouldn't only ask what experience the firm has, which clients it has served, or how much it costs. It should ask something more important: will this firm actually help us see what we aren't seeing?"
+        },
+        {
+          "type": "p",
+          "text": "Throughout my career I've been on both sides of this conversation. As a technology executive, I was on the receiving end of a strategic consulting engagement, and today, from Cyrrus, it's my job to guide executive teams through decisions that can have a major impact on their organizations. That experience has left me with a few conclusions."
+        },
+        {
+          "type": "h2",
+          "text": "The mistake of choosing by brand and price"
+        },
+        {
+          "type": "p",
+          "text": "One possible mistake is turning the selection of a consulting firm into a comparison of proposals."
+        },
+        {
+          "type": "p",
+          "text": "Who has the most recognized brand. Who charges the least. Who submitted the biggest document. Who included more pages, more methodologies, more charts, or more specialists."
+        },
+        {
+          "type": "p",
+          "text": "But a strategic consulting engagement shouldn't be won by the size of its document. In fact, an overly long proposal can hide a question that still hasn't been answered: did they actually understand my problem?"
+        },
+        {
+          "type": "p",
+          "text": "I've seen organizations make important decisions based on a firm's reputation or on a technically flawless proposal, without stopping long enough to evaluate whether that firm truly understands their business, their environment, and their constraints. That's where a fundamental difference begins."
+        },
+        {
+          "type": "h2",
+          "text": "A consulting firm shouldn't start by assuming"
+        },
+        {
+          "type": "p",
+          "text": "A genuine strategic consulting engagement isn't limited to reviewing documents, gathering evidence, or filling out questionnaires. That can be part of the process, but it can't be the process."
+        },
+        {
+          "type": "p",
+          "text": "You have to understand how things really work, how decisions are made, how people work, what's working and what isn't, how comfortable teams feel with the current way of doing things, what contributions are being made, and where capabilities exist that haven't been tapped yet — and above all, you have to listen. Listen before concluding. Ask before recommending. Analyze before assuming."
+        },
+        {
+          "type": "p",
+          "text": "Because one of the things that destroys the most value in a consulting engagement is taking it for granted that the problem is already understood."
+        },
+        {
+          "type": "p",
+          "text": "Not assuming should be almost a golden rule."
+        },
+        {
+          "type": "h2",
+          "text": "An experience that taught me a lot"
+        },
+        {
+          "type": "p",
+          "text": "A few years ago, while I was serving as an IT director, I joined an organization as the result of a recommendation made by a strategic consulting firm."
+        },
+        {
+          "type": "p",
+          "text": "The consulting engagement had produced an important body of work. There were many documents, many sheets, many analyses, and numerous recommendations."
+        },
+        {
+          "type": "p",
+          "text": "As part of my onboarding and my process of understanding the business, I decided to carefully review those deliverables. I found something that caught my attention deeply."
+        },
+        {
+          "type": "p",
+          "text": "Roughly 90% of the recommendations weren't applicable in practice. Not necessarily because they were technically wrong. The problem was something else."
+        },
+        {
+          "type": "p",
+          "text": "Some didn't account for the organization's own constraints. Others didn't consider the particularities of the industry. Some were oversized relative to the company's real needs. Others called for extremely high investments relative to the value they could generate. And some, quite simply, were solutions for problems the organization didn't have."
+        },
+        {
+          "type": "p",
+          "text": "That experience left me with a lesson I still consider fundamental: a good recommendation isn't the one that works in theory. It's the one that makes sense for that particular organization."
+        },
+        {
+          "type": "p",
+          "text": "Best practices matter, but context matters more."
+        },
+        {
+          "type": "p",
+          "text": "Every organization has a different reality: different people, capabilities, constraints, cultures, markets, and moments in time. That's why a consulting firm that simply replicates what worked at another company can end up recommending something that, even if correct in another context, is completely inadequate for this client."
+        },
+        {
+          "type": "p",
+          "text": "Experience matters. So does empathy."
+        },
+        {
+          "type": "p",
+          "text": "I believe deeply in experience, but experience by itself isn't enough. A person can have taken part in hundreds of projects and still not understand a given organization."
+        },
+        {
+          "type": "p",
+          "text": "Experience has to be paired with the ability to listen, with empathy, and above all, with common sense."
+        },
+        {
+          "type": "p",
+          "text": "Common sense to understand that not everything possible is necessary. That not everything recommended should be implemented. That not every technology generates value. That an organization has constraints. That people have different levels of readiness and skills. That changes have consequences. And that behind every process, every system, and every decision, there are people."
+        },
+        {
+          "type": "p",
+          "text": "For me, that combination is far more powerful than any methodology. Experience to know what to look at. Empathy to understand what's being seen. Common sense to decide what to do with it."
+        },
+        {
+          "type": "h2",
+          "text": "Uncomfortable conversations also create value"
+        },
+        {
+          "type": "p",
+          "text": "There's something I consider especially important in the relationship between a consulting firm and a CEO: the ability to have uncomfortable conversations."
+        },
+        {
+          "type": "p",
+          "text": "A consulting firm isn't there to tell the client what they want to hear. It's there to tell them what they need to hear."
+        },
+        {
+          "type": "p",
+          "text": "That sometimes means questioning a decision, saying something isn't working, admitting that one of its own recommendations wasn't right, explaining that a solution initially considered doesn't apply, or simply saying:"
+        },
+        {
+          "type": "quote",
+          "text": "“I don't think we should do this.”"
+        },
+        {
+          "type": "p",
+          "text": "These conversations shouldn't damage the relationship. On the contrary, when they're grounded in knowledge, arguments, transparency, and respect, they tend to create enormous value."
+        },
+        {
+          "type": "p",
+          "text": "A good consulting firm doesn't aim to always be right. It aims to help the organization make better decisions."
+        },
+        {
+          "type": "h2",
+          "text": "There are signs that should raise red flags"
+        },
+        {
+          "type": "p",
+          "text": "Personally, I'd be cautious with a consulting firm that uses overly complicated terms to explain simple things. Also with one that seems to have a solution for absolutely everything, that claims to know it all before really understanding the business, that talks a lot and asks little, that arrives with a prepared answer before understanding the question, and especially, with one that doesn't seem sensitive to the organization's constraints."
+        },
+        {
+          "type": "p",
+          "text": "Constraints exist. Budget, talent, culture, regulation, infrastructure, processes, time, execution capacity, and organizational and technological maturity."
+        },
+        {
+          "type": "p",
+          "text": "Ignoring them doesn't make them disappear. A strategic recommendation that can't coexist with the organization's reality stops being strategic."
+        },
+        {
+          "type": "h2",
+          "text": "How do you recognize a good consulting firm?"
+        },
+        {
+          "type": "p",
+          "text": "You can recognize a good firm because it understands your business, not just what you tell it, and gives it back to you from a perspective your team didn't have. There's one sign that, for me, sums up many of the previous ones."
+        },
+        {
+          "type": "p",
+          "text": "It understands your business."
+        },
+        {
+          "type": "p",
+          "text": "But not only what you tell it. It understands your pain points, understands the environment, understands the constraints, understands the people, and over time, it may even identify pain points the owner or CEO hasn't yet seen."
+        },
+        {
+          "type": "p",
+          "text": "That's where the real value of a consulting engagement starts to show up. Not when it delivers a document, but when it helps the organization understand its own reality better."
+        },
+        {
+          "type": "h2",
+          "text": "Agnosticism isn't a minor detail"
+        },
+        {
+          "type": "p",
+          "text": "There's another aspect I consider fundamental, and that, in my opinion, should be a requirement for any consulting firm involved in solution-selection processes: agnosticism."
+        },
+        {
+          "type": "p",
+          "text": "A strategic consulting firm should be able to analyze alternatives without any commercial preference for a particular brand, manufacturer, or vendor. There shouldn't be any commercial commitment, benefit, or commission that conditions the recommendation."
+        },
+        {
+          "type": "p",
+          "text": "If an organization is trying to define what solution it needs, the question should be:"
+        },
+        {
+          "type": "quote",
+          "text": "What's best for the organization?"
+        },
+        {
+          "type": "p",
+          "text": "Not:"
+        },
+        {
+          "type": "quote",
+          "text": "Which of the solutions we sell can we recommend?"
+        },
+        {
+          "type": "p",
+          "text": "Independence allows for greater freedom of evaluation. And that freedom matters especially when the decisions involve significant investments and long-term commitments."
+        },
+        {
+          "type": "h2",
+          "text": "What should remain once a consulting engagement ends?"
+        },
+        {
+          "type": "p",
+          "text": "When a consulting engagement ends, what should remain is a more capable organization, not just a document. For me, this is one of the most important questions."
+        },
+        {
+          "type": "p",
+          "text": "A consulting engagement shouldn't end simply by leaving behind a document. It should leave behind capability: a better understanding of the business, better criteria for making decisions, knowledge installed within the team, and better-prepared people."
+        },
+        {
+          "type": "p",
+          "text": "But there's something even more important: an organization capable of questioning, analyzing, and improving — a more innovative, critical, people-centered organizational culture oriented toward continuous improvement."
+        },
+        {
+          "type": "p",
+          "text": "Because if every time the organization faces a problem it needs to hire an outsider again to figure out what to do, the consulting engagement probably didn't fully accomplish its purpose."
+        },
+        {
+          "type": "p",
+          "text": "The real result should be an organization that is more capable than it was before."
+        },
+        {
+          "type": "h2",
+          "text": "The role of the consulting firm with the CEO"
+        },
+        {
+          "type": "p",
+          "text": "I don't think it's simply that of a vendor. Nor should it be solely that of an advisor delivering recommendations."
+        },
+        {
+          "type": "p",
+          "text": "For me, a good consulting firm should become a kind of intellectual sparring partner for the CEO: someone who facilitates, who questions, who helps build, who can act as an architect when needed, who knows the business and the environment."
+        },
+        {
+          "type": "p",
+          "text": "It has to be close enough to the organization to understand it, but far enough outside it to keep an independent perspective."
+        },
+        {
+          "type": "p",
+          "text": "Someone the CEO can keep \"top of mind\" when a complex problem shows up and they need to think through how to solve it — not necessarily because that person has the answer, but because they know how to help find it."
+        },
+        {
+          "type": "h2",
+          "text": "If I had three consulting firms in front of me"
+        },
+        {
+          "type": "p",
+          "text": "Let's say a CEO told me:"
+        },
+        {
+          "type": "quote",
+          "text": "“Jackson, I have three consulting firms. All three have experience, good clients, and excellent proposals. Which one should I choose?”"
+        },
+        {
+          "type": "p",
+          "text": "I probably wouldn't start by comparing the proposals."
+        },
+        {
+          "type": "p",
+          "text": "I'd tell them to look at who thinks differently. Who is more impartial. Who has the best team, not just the best brand. Who asked the best questions before presenting the proposal. Who really listened. Who was capable of pushing back. Who understood the constraints of their organization, and especially, who showed genuine concern for people and for change management.",
+          "links": [
+            {
+              "text": "change management",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Because a transformation can have the best strategy, the best technology, and the right budget, but if people aren't ready to live through it, it will hardly be sustainable."
+        },
+        {
+          "type": "h2",
+          "text": "One last question"
+        },
+        {
+          "type": "p",
+          "text": "When I think about strategic consulting, I come back once again to an idea that's fundamental to me: people, processes, and technology. Centered on the people who are affected by the organization.",
+          "links": [
+            {
+              "text": "strategic consulting",
+              "href": "/metodo-cira/estrategia"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A consulting firm can help map out the path, spot opportunities, question decisions, and build capabilities. But its real value shows up when it helps the organization see more clearly, decide better, and become capable of moving forward on its own."
+        },
+        {
+          "type": "p",
+          "text": "Perhaps that's the best question for a CEO to ask before hiring a consulting firm: after working with them, will we be an organization more dependent on their knowledge, or an organization more capable of building our own?"
+        },
+        {
+          "type": "p",
+          "text": "The answer says far more about a consulting firm than the size of its proposal."
+        },
         {
           "type": "p",
           "text": "Related reading: what strategic planning is, what a PMO is and what it does and why digital transformation projects fail.",
@@ -311,91 +800,352 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "There's a conversation that can come up in boardrooms. Which model should we use? Which agents can we deploy? How much can we automate? How much can we save? What is the competition doing?" },
-        { "type": "p", "text": "These are legitimate questions. But I think we're starting from the wrong place." },
-        { "type": "p", "text": "Before asking ourselves which artificial intelligence we're going to adopt, we should ask something far more important: are we ready to govern it?" },
-        { "type": "p", "text": "Artificial intelligence is no longer purely a technology conversation. It's entering commercial, financial, operational, legal, and HR processes — it's helping analyze information, generate content, recommend decisions and, increasingly, execute certain activities. And when a technology starts taking part in decisions that affect the business, customers, employees, or the organization's information, the conversation necessarily changes. It's no longer enough to ask what AI can do. We have to decide what we allow it to do, under what conditions, and who is accountable when something goes wrong." },
-        { "type": "h2", "text": "What do I mean by AI Governance?" },
-        { "type": "p", "text": "To me, AI Governance is the set of rules, roles, and controls that help ensure the artificial intelligence an organization uses is profitable, safe, legally compliant, protective of information, consistent with the company's values, and doesn't end up eroding trust in the brand." },
-        { "type": "p", "text": "In other words, it's not only about controlling AI — it's about governing the value and the risk AI can generate." },
-        { "type": "p", "text": "This distinction matters. Because an organization can have an AI that technically works very well and still be making a bad business decision by using it." },
-        { "type": "h2", "text": "The risk isn't only in the technology" },
-        { "type": "p", "text": "When we talk about AI Governance, we usually think first about security, privacy, or regulation — these are fundamental issues, but they're not the only ones." },
-        { "type": "p", "text": "There are legal and compliance risks: regulation, intellectual property, contracts, misuse of information, or decisions that can create liabilities for the organization." },
-        { "type": "p", "text": "There are security risks: data breaches, attacks, unauthorized access, lack of traceability, or sensitive information ending up where it should never have been." },
-        { "type": "p", "text": "There are also operational risks. An AI can discriminate, make mistakes, generate false information, become obsolete, or keep operating once the model behind it should no longer be used." },
-        { "type": "p", "text": "And there are reputational and ethical risks. A decision can be technically possible and still be completely misaligned with a company's values or with what its customers expect from it." },
-        { "type": "p", "text": "But there's one risk I consider especially important that many organizations still underestimate: not having proper data management in place." },
-        { "type": "p", "text": "Data quality, security, cleanliness, currency, stewardship, access, and purpose aren't secondary matters — if data isn't governed, it will be very difficult to properly govern an intelligence that learns, combines information, draws conclusions, and may recommend or even execute actions." },
-        { "type": "p", "text": "The difference can be summed up simply: Data Governance helps define what information can be used, who is responsible for it, and under what conditions. AI Governance adds a more complex question: what can artificial intelligence do with that information?" },
-        { "type": "h2", "text": "There are already examples that should concern us" },
-        { "type": "p", "text": "We don't need to imagine extreme scenarios to understand the risk. Real cases already exist." },
-        { "type": "p", "text": "In 2024, a British Columbia tribunal held Air Canada liable for incorrect information its chatbot gave about a bereavement fare. The company tried to argue the chatbot was a separate tool from its operations, but the tribunal didn't accept that separation. To the customer, the information came from Air Canada, and the responsibility remained the company's." },
-        { "type": "p", "text": "The case left a lesson that goes well beyond a chatbot: an organization can't transfer its responsibility to the artificial intelligence it uses." },
-        { "type": "p", "text": "Something similar happened at Samsung in 2023, when employees entered sensitive company information into generative AI tools. The organization's response was to temporarily restrict their use while it defined more adequate controls." },
-        { "type": "p", "text": "That case points to another reality CEOs should keep in mind: artificial intelligence can enter an organization long before the organization has formally decided how to govern it. This is now commonly called Shadow AI — tools used by employees without a formal process of approval, evaluation, or control." },
-        { "type": "p", "text": "That's why AI Governance shouldn't begin when the company decides to buy a platform. It should begin when it understands that AI is already changing the way people work." },
-        { "type": "h2", "text": "Governing doesn't mean adding bureaucracy" },
-        { "type": "p", "text": "One of the mistakes that would concern me most would be turning AI Governance into a bureaucratic process that ends up holding back innovation. There are reference frameworks that help strike that balance, such as NIST's AI Risk Management Framework (2023) or ISO/IEC 42001, the first certifiable international standard for artificial intelligence management systems." },
-        { "type": "p", "text": "Not every AI application carries the same risk or requires the same level of control. A low-impact tool used to summarize internal documents shouldn't go through the same process as an intelligence that takes part in a credit decision, recommends a hire, or has access to sensitive customer information." },
-        { "type": "quote", "text": "“Governance should be proportional to risk and to the level of autonomy.”" },
-        { "type": "p", "text": "Lower risk means more room to experiment quickly; higher impact and autonomy call for greater controls, traceability, and accountability." },
-        { "type": "p", "text": "The organization needs to find that balance. Controlling too much can hold back innovation; controlling too little can lead to innovating without understanding the consequences and with little relevance to the business." },
-        { "type": "h2", "text": "AI Governance can't be IT's responsibility alone" },
-        { "type": "p", "text": "Another mistake is thinking that, because artificial intelligence relies on technology, its governance should sit exclusively with the CIO or the technology area. I don't see it that way." },
-        { "type": "p", "text": "AI Governance needs to sit close to strategy, and therefore close to the CEO. IT plays a fundamental role, but so do Security, Internal Control, Legal, Innovation, and Human Talent." },
-        { "type": "p", "text": "The business has to define what value it's after. Technology has to make sure the architecture and systems can support it. Security has to assess information and access risks. Legal has to help understand the regulatory, contractual, and intellectual-property implications. Innovation has to help connect what the technology can do with the strategy. And Human Talent carries an enormous responsibility for adoption, capability-building, training, and change management.", "links": [{"text": "change management", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "The conversation, then, shouldn't be about who owns the AI. It should be about who is accountable for the decisions the organization is starting to delegate to it." },
-        { "type": "h2", "text": "People remain at the center" },
-        { "type": "p", "text": "The arrival of artificial intelligence can make us think the conversation is about models, agents, automation, and productivity, but behind every one of those elements, there are still people." },
-        { "type": "p", "text": "People who have to learn to use these tools, people who need to understand when to trust a response and when to question it, people who need to know what information they can share and what they can't, people who will have to adapt to new ways of working and, in some cases, take on different responsibilities." },
-        { "type": "p", "text": "That's why adoption can't be left for later." },
-        { "type": "p", "text": "An organization that brings in AI without preparing its people risks having two realities at once: a formal strategy and an informal practice. While leadership tries to define rules, employees may already be using different tools, sharing information, building their own workarounds, and creating dependencies no one is aware of." },
-        { "type": "p", "text": "The goal shouldn't just be avoiding Shadow AI or so-called AI Sprawl — it should be building a culture where people understand the purpose, know the limits, and have the judgment to use AI responsibly." },
-        { "type": "p", "text": "The best governance isn't the kind that forces people to follow rules they don't understand. It's the kind that gets people to understand why those rules exist and to act correctly even when no one is watching." },
-        { "type": "h2", "text": "The CEO doesn't have to govern the algorithm" },
-        { "type": "p", "text": "A CEO doesn't need to become a specialist in models, algorithms, or AI architecture — their responsibility lies elsewhere." },
-        { "type": "p", "text": "They must understand the impact AI can have on the business, the risks they're willing to take on, how it connects to the strategy, and which decisions the organization is starting to delegate." },
-        { "type": "p", "text": "The questions they should be asking are far more business-oriented than technical: what problem are we solving? What value do we expect to generate? What data does the solution need? What risks are we taking on? What level of autonomy will it have? What happens if it makes a mistake? Who is accountable? Who can stop it? What happens if tomorrow we need to switch providers or models?" },
-        { "type": "p", "text": "The CEO doesn't have to govern the algorithm; they have to govern the decision." },
-        { "type": "p", "text": "To me, this is one of the most important ideas when we talk about AI Governance. The discussion shouldn't stop at whether the model works — it should extend all the way to the decision that model is helping to make, and the consequences that decision can have." },
-        { "type": "h2", "text": "Strategy has to look at the whole value chain" },
-        { "type": "p", "text": "Another risk I see often is confusing using AI with having an AI strategy." },
-        { "type": "p", "text": "An organization can have dozens of isolated initiatives: an assistant for customer service, another to generate documents, another to analyze information, and a few experiments built internally." },
-        { "type": "p", "text": "That shows activity — it doesn't necessarily show strategy." },
-        { "type": "p", "text": "Strategy appears when the organization starts asking where AI can meaningfully change its value chain, where it can improve an experience, speed up a decision, reduce a risk, free up capacity, or create an advantage a competitor doesn't yet have." },
-        { "type": "p", "text": "A localized improvement can even create a problem somewhere else in the business: automating one activity can increase the workload in the next process, reducing time can raise control risks, improving productivity can create dependency on a vendor, or expose information that used to stay inside the organization." },
-        { "type": "p", "text": "That's why, before automating, we should understand the decision; before delegating, understand the risk; before giving an agent autonomy, define what it can and can't do." },
-        { "type": "p", "text": "The technology can change, the model can change, the vendor can change, but the organization's responsibility remains." },
-        { "type": "h2", "text": "A mature organization knows where to set limits" },
-        { "type": "p", "text": "In one of the projects I've been developing around the concept of AI governance, there's an idea I find especially powerful: before adopting artificial intelligence, we should sit down and define our limits." },
-        { "type": "p", "text": "What are we going to delegate? What are we going to supervise? What will we never delegate? Who is accountable? What data can the AI use? What decisions can it execute? What happens when it makes a mistake? What principles are we not willing to negotiate, even if an AI promises to make things faster or cheaper?" },
-        { "type": "p", "text": "This may sound simple, but it forces a conversation worth having." },
-        { "type": "p", "text": "A mature organization isn't necessarily the one that automates the most — it's the one that knows what it should automate, what it should keep under human control, and why." },
-        { "type": "p", "text": "That judgment becomes even more important as autonomy increases. First AI recommends, then it automates, then it executes, and at some point someone may ask why it still needs human authorization at all." },
-        { "type": "p", "text": "The line between autonomy and responsibility shouldn't move simply because the technology proved it can do something." },
-        { "type": "h2", "text": "AI Governance should protect value, not just avoid risk" },
-        { "type": "p", "text": "Sometimes the conversation about governance starts from fear: what could go wrong, what rule could we break, what information could we lose." },
-        { "type": "p", "text": "It's necessary to talk about those risks, but I think staying there alone would be a mistake." },
-        { "type": "p", "text": "Governance should also help capture value — it should allow the organization to experiment, learn, measure, adjust, and scale whatever actually works." },
-        { "type": "p", "text": "It should help decide when an initiative should continue, when it should change, when it's time to retire a model, and when it's better to simply say: this doesn't make sense for our business." },
-        { "type": "p", "text": "Ultimately, governing well doesn't mean saying no to artificial intelligence — it means knowing where to say yes, where to set limits, and under what conditions the risk is worth taking." },
-        { "type": "h2", "text": "Where should a CEO start?" },
-        { "type": "p", "text": "A CEO should start by defining what they want to use artificial intelligence for and which concrete business problem it will solve, before choosing any technology. I would start with very simple questions, though not necessarily easy ones to answer." },
-        { "type": "p", "text": "What do we want to use artificial intelligence for?" },
-        { "type": "p", "text": "What specific pain point do we want to solve?" },
-        { "type": "p", "text": "What advantage can it give us over our competitors?" },
-        { "type": "p", "text": "Can it help us improve profitability or accelerate growth?" },
-        { "type": "p", "text": "How can it support a genuinely differentiated strategy?" },
-        { "type": "p", "text": "After answering these, other conversations will follow: what data we have, how reliable it is, which processes we want to transform, which people we need to prepare, which risks we need to manage, what architecture we need, and what level of governance applies." },
-        { "type": "p", "text": "Technology should arrive after that conversation, not before." },
-        { "type": "h2", "text": "One final reflection" },
-        { "type": "p", "text": "For years we talked about digital transformation, then we talked about automation, now we talk about AI — but something remains constant." },
-        { "type": "p", "text": "Organizations still need strategy, governance, reliable data, well-defined processes, architecture, and leadership, and they still need people capable of taking responsibility when there's no obvious answer." },
-        { "type": "p", "text": "That's why an AI strategy shouldn't start with: “which AI can we buy?”" },
-        { "type": "p", "text": "It should start with: “what do we want to transform, and what intelligence do we need to do it better?”" },
-        { "type": "p", "text": "That's where AI Governance begins. And that's also where a far more important conversation begins for a CEO: are we using artificial intelligence to transform our business, or are we simply adding intelligence to our processes?" },
-        { "type": "p", "text": "The difference may seem small. But it could end up defining who leads the future, and who is simply trying to catch up to it." },
+        {
+          "type": "p",
+          "text": "There's a conversation that can come up in boardrooms. Which model should we use? Which agents can we deploy? How much can we automate? How much can we save? What is the competition doing?"
+        },
+        {
+          "type": "p",
+          "text": "These are legitimate questions. But I think we're starting from the wrong place."
+        },
+        {
+          "type": "p",
+          "text": "Before asking ourselves which artificial intelligence we're going to adopt, we should ask something far more important: are we ready to govern it?"
+        },
+        {
+          "type": "p",
+          "text": "Artificial intelligence is no longer purely a technology conversation. It's entering commercial, financial, operational, legal, and HR processes — it's helping analyze information, generate content, recommend decisions and, increasingly, execute certain activities. And when a technology starts taking part in decisions that affect the business, customers, employees, or the organization's information, the conversation necessarily changes. It's no longer enough to ask what AI can do. We have to decide what we allow it to do, under what conditions, and who is accountable when something goes wrong."
+        },
+        {
+          "type": "h2",
+          "text": "What do I mean by AI Governance?"
+        },
+        {
+          "type": "p",
+          "text": "To me, AI Governance is the set of rules, roles, and controls that help ensure the artificial intelligence an organization uses is profitable, safe, legally compliant, protective of information, consistent with the company's values, and doesn't end up eroding trust in the brand."
+        },
+        {
+          "type": "p",
+          "text": "In other words, it's not only about controlling AI — it's about governing the value and the risk AI can generate."
+        },
+        {
+          "type": "p",
+          "text": "This distinction matters. Because an organization can have an AI that technically works very well and still be making a bad business decision by using it."
+        },
+        {
+          "type": "h2",
+          "text": "The risk isn't only in the technology"
+        },
+        {
+          "type": "p",
+          "text": "When we talk about AI Governance, we usually think first about security, privacy, or regulation — these are fundamental issues, but they're not the only ones."
+        },
+        {
+          "type": "p",
+          "text": "There are legal and compliance risks: regulation, intellectual property, contracts, misuse of information, or decisions that can create liabilities for the organization."
+        },
+        {
+          "type": "p",
+          "text": "There are security risks: data breaches, attacks, unauthorized access, lack of traceability, or sensitive information ending up where it should never have been."
+        },
+        {
+          "type": "p",
+          "text": "There are also operational risks. An AI can discriminate, make mistakes, generate false information, become obsolete, or keep operating once the model behind it should no longer be used."
+        },
+        {
+          "type": "p",
+          "text": "And there are reputational and ethical risks. A decision can be technically possible and still be completely misaligned with a company's values or with what its customers expect from it."
+        },
+        {
+          "type": "p",
+          "text": "But there's one risk I consider especially important that many organizations still underestimate: not having proper data management in place."
+        },
+        {
+          "type": "p",
+          "text": "Data quality, security, cleanliness, currency, stewardship, access, and purpose aren't secondary matters — if data isn't governed, it will be very difficult to properly govern an intelligence that learns, combines information, draws conclusions, and may recommend or even execute actions."
+        },
+        {
+          "type": "p",
+          "text": "The difference can be summed up simply: Data Governance helps define what information can be used, who is responsible for it, and under what conditions. AI Governance adds a more complex question: what can artificial intelligence do with that information?"
+        },
+        {
+          "type": "h2",
+          "text": "There are already examples that should concern us"
+        },
+        {
+          "type": "p",
+          "text": "We don't need to imagine extreme scenarios to understand the risk. Real cases already exist."
+        },
+        {
+          "type": "p",
+          "text": "In 2024, a British Columbia tribunal held Air Canada liable for incorrect information its chatbot gave about a bereavement fare. The company tried to argue the chatbot was a separate tool from its operations, but the tribunal didn't accept that separation. To the customer, the information came from Air Canada, and the responsibility remained the company's."
+        },
+        {
+          "type": "p",
+          "text": "The case left a lesson that goes well beyond a chatbot: an organization can't transfer its responsibility to the artificial intelligence it uses."
+        },
+        {
+          "type": "p",
+          "text": "Something similar happened at Samsung in 2023, when employees entered sensitive company information into generative AI tools. The organization's response was to temporarily restrict their use while it defined more adequate controls."
+        },
+        {
+          "type": "p",
+          "text": "That case points to another reality CEOs should keep in mind: artificial intelligence can enter an organization long before the organization has formally decided how to govern it. This is now commonly called Shadow AI — tools used by employees without a formal process of approval, evaluation, or control."
+        },
+        {
+          "type": "p",
+          "text": "That's why AI Governance shouldn't begin when the company decides to buy a platform. It should begin when it understands that AI is already changing the way people work."
+        },
+        {
+          "type": "h2",
+          "text": "Governing doesn't mean adding bureaucracy"
+        },
+        {
+          "type": "p",
+          "text": "One of the mistakes that would concern me most would be turning AI Governance into a bureaucratic process that ends up holding back innovation. There are reference frameworks that help strike that balance, such as NIST's AI Risk Management Framework (2023) or ISO/IEC 42001, the first certifiable international standard for artificial intelligence management systems."
+        },
+        {
+          "type": "p",
+          "text": "Not every AI application carries the same risk or requires the same level of control. A low-impact tool used to summarize internal documents shouldn't go through the same process as an intelligence that takes part in a credit decision, recommends a hire, or has access to sensitive customer information."
+        },
+        {
+          "type": "quote",
+          "text": "“Governance should be proportional to risk and to the level of autonomy.”"
+        },
+        {
+          "type": "p",
+          "text": "Lower risk means more room to experiment quickly; higher impact and autonomy call for greater controls, traceability, and accountability."
+        },
+        {
+          "type": "p",
+          "text": "The organization needs to find that balance. Controlling too much can hold back innovation; controlling too little can lead to innovating without understanding the consequences and with little relevance to the business."
+        },
+        {
+          "type": "h2",
+          "text": "AI Governance can't be IT's responsibility alone"
+        },
+        {
+          "type": "p",
+          "text": "Another mistake is thinking that, because artificial intelligence relies on technology, its governance should sit exclusively with the CIO or the technology area. I don't see it that way."
+        },
+        {
+          "type": "p",
+          "text": "AI Governance needs to sit close to strategy, and therefore close to the CEO. IT plays a fundamental role, but so do Security, Internal Control, Legal, Innovation, and Human Talent."
+        },
+        {
+          "type": "p",
+          "text": "The business has to define what value it's after. Technology has to make sure the architecture and systems can support it. Security has to assess information and access risks. Legal has to help understand the regulatory, contractual, and intellectual-property implications. Innovation has to help connect what the technology can do with the strategy. And Human Talent carries an enormous responsibility for adoption, capability-building, training, and change management.",
+          "links": [
+            {
+              "text": "change management",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The conversation, then, shouldn't be about who owns the AI. It should be about who is accountable for the decisions the organization is starting to delegate to it."
+        },
+        {
+          "type": "h2",
+          "text": "People remain at the center"
+        },
+        {
+          "type": "p",
+          "text": "The arrival of artificial intelligence can make us think the conversation is about models, agents, automation, and productivity, but behind every one of those elements, there are still people."
+        },
+        {
+          "type": "p",
+          "text": "People who have to learn to use these tools, people who need to understand when to trust a response and when to question it, people who need to know what information they can share and what they can't, people who will have to adapt to new ways of working and, in some cases, take on different responsibilities."
+        },
+        {
+          "type": "p",
+          "text": "That's why adoption can't be left for later."
+        },
+        {
+          "type": "p",
+          "text": "An organization that brings in AI without preparing its people risks having two realities at once: a formal strategy and an informal practice. While leadership tries to define rules, employees may already be using different tools, sharing information, building their own workarounds, and creating dependencies no one is aware of."
+        },
+        {
+          "type": "p",
+          "text": "The goal shouldn't just be avoiding Shadow AI or so-called AI Sprawl — it should be building a culture where people understand the purpose, know the limits, and have the judgment to use AI responsibly."
+        },
+        {
+          "type": "p",
+          "text": "The best governance isn't the kind that forces people to follow rules they don't understand. It's the kind that gets people to understand why those rules exist and to act correctly even when no one is watching."
+        },
+        {
+          "type": "h2",
+          "text": "The CEO doesn't have to govern the algorithm"
+        },
+        {
+          "type": "p",
+          "text": "A CEO doesn't need to become a specialist in models, algorithms, or AI architecture — their responsibility lies elsewhere."
+        },
+        {
+          "type": "p",
+          "text": "They must understand the impact AI can have on the business, the risks they're willing to take on, how it connects to the strategy, and which decisions the organization is starting to delegate."
+        },
+        {
+          "type": "p",
+          "text": "The questions they should be asking are far more business-oriented than technical: what problem are we solving? What value do we expect to generate? What data does the solution need? What risks are we taking on? What level of autonomy will it have? What happens if it makes a mistake? Who is accountable? Who can stop it? What happens if tomorrow we need to switch providers or models?"
+        },
+        {
+          "type": "p",
+          "text": "The CEO doesn't have to govern the algorithm; they have to govern the decision."
+        },
+        {
+          "type": "p",
+          "text": "To me, this is one of the most important ideas when we talk about AI Governance. The discussion shouldn't stop at whether the model works — it should extend all the way to the decision that model is helping to make, and the consequences that decision can have."
+        },
+        {
+          "type": "h2",
+          "text": "Strategy has to look at the whole value chain"
+        },
+        {
+          "type": "p",
+          "text": "Another risk I see often is confusing using AI with having an AI strategy."
+        },
+        {
+          "type": "p",
+          "text": "An organization can have dozens of isolated initiatives: an assistant for customer service, another to generate documents, another to analyze information, and a few experiments built internally."
+        },
+        {
+          "type": "p",
+          "text": "That shows activity — it doesn't necessarily show strategy."
+        },
+        {
+          "type": "p",
+          "text": "Strategy appears when the organization starts asking where AI can meaningfully change its value chain, where it can improve an experience, speed up a decision, reduce a risk, free up capacity, or create an advantage a competitor doesn't yet have."
+        },
+        {
+          "type": "p",
+          "text": "A localized improvement can even create a problem somewhere else in the business: automating one activity can increase the workload in the next process, reducing time can raise control risks, improving productivity can create dependency on a vendor, or expose information that used to stay inside the organization."
+        },
+        {
+          "type": "p",
+          "text": "That's why, before automating, we should understand the decision; before delegating, understand the risk; before giving an agent autonomy, define what it can and can't do."
+        },
+        {
+          "type": "p",
+          "text": "The technology can change, the model can change, the vendor can change, but the organization's responsibility remains."
+        },
+        {
+          "type": "h2",
+          "text": "A mature organization knows where to set limits"
+        },
+        {
+          "type": "p",
+          "text": "In one of the projects I've been developing around the concept of AI governance, there's an idea I find especially powerful: before adopting artificial intelligence, we should sit down and define our limits."
+        },
+        {
+          "type": "p",
+          "text": "What are we going to delegate? What are we going to supervise? What will we never delegate? Who is accountable? What data can the AI use? What decisions can it execute? What happens when it makes a mistake? What principles are we not willing to negotiate, even if an AI promises to make things faster or cheaper?"
+        },
+        {
+          "type": "p",
+          "text": "This may sound simple, but it forces a conversation worth having."
+        },
+        {
+          "type": "p",
+          "text": "A mature organization isn't necessarily the one that automates the most — it's the one that knows what it should automate, what it should keep under human control, and why."
+        },
+        {
+          "type": "p",
+          "text": "That judgment becomes even more important as autonomy increases. First AI recommends, then it automates, then it executes, and at some point someone may ask why it still needs human authorization at all."
+        },
+        {
+          "type": "p",
+          "text": "The line between autonomy and responsibility shouldn't move simply because the technology proved it can do something."
+        },
+        {
+          "type": "h2",
+          "text": "AI Governance should protect value, not just avoid risk"
+        },
+        {
+          "type": "p",
+          "text": "Sometimes the conversation about governance starts from fear: what could go wrong, what rule could we break, what information could we lose."
+        },
+        {
+          "type": "p",
+          "text": "It's necessary to talk about those risks, but I think staying there alone would be a mistake."
+        },
+        {
+          "type": "p",
+          "text": "Governance should also help capture value — it should allow the organization to experiment, learn, measure, adjust, and scale whatever actually works."
+        },
+        {
+          "type": "p",
+          "text": "It should help decide when an initiative should continue, when it should change, when it's time to retire a model, and when it's better to simply say: this doesn't make sense for our business."
+        },
+        {
+          "type": "p",
+          "text": "Ultimately, governing well doesn't mean saying no to artificial intelligence — it means knowing where to say yes, where to set limits, and under what conditions the risk is worth taking."
+        },
+        {
+          "type": "h2",
+          "text": "Where should a CEO start?"
+        },
+        {
+          "type": "p",
+          "text": "A CEO should start by defining what they want to use artificial intelligence for and which concrete business problem it will solve, before choosing any technology. I would start with very simple questions, though not necessarily easy ones to answer."
+        },
+        {
+          "type": "p",
+          "text": "What do we want to use artificial intelligence for?"
+        },
+        {
+          "type": "p",
+          "text": "What specific pain point do we want to solve?"
+        },
+        {
+          "type": "p",
+          "text": "What advantage can it give us over our competitors?"
+        },
+        {
+          "type": "p",
+          "text": "Can it help us improve profitability or accelerate growth?"
+        },
+        {
+          "type": "p",
+          "text": "How can it support a genuinely differentiated strategy?"
+        },
+        {
+          "type": "p",
+          "text": "After answering these, other conversations will follow: what data we have, how reliable it is, which processes we want to transform, which people we need to prepare, which risks we need to manage, what architecture we need, and what level of governance applies."
+        },
+        {
+          "type": "p",
+          "text": "Technology should arrive after that conversation, not before."
+        },
+        {
+          "type": "h2",
+          "text": "One final reflection"
+        },
+        {
+          "type": "p",
+          "text": "For years we talked about digital transformation, then we talked about automation, now we talk about AI — but something remains constant."
+        },
+        {
+          "type": "p",
+          "text": "Organizations still need strategy, governance, reliable data, well-defined processes, architecture, and leadership, and they still need people capable of taking responsibility when there's no obvious answer."
+        },
+        {
+          "type": "p",
+          "text": "That's why an AI strategy shouldn't start with: “which AI can we buy?”"
+        },
+        {
+          "type": "p",
+          "text": "It should start with: “what do we want to transform, and what intelligence do we need to do it better?”"
+        },
+        {
+          "type": "p",
+          "text": "That's where AI Governance begins. And that's also where a far more important conversation begins for a CEO: are we using artificial intelligence to transform our business, or are we simply adding intelligence to our processes?"
+        },
+        {
+          "type": "p",
+          "text": "The difference may seem small. But it could end up defining who leads the future, and who is simply trying to catch up to it."
+        },
         {
           "type": "p",
           "text": "Related reading: what RPA is and when it fits versus AI and what AI governance is and which frameworks to use.",
@@ -465,47 +1215,200 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Picture a technology project that starts with optimism. There's an approved budget, a selected vendor, a schedule that fits on one slide, and a team eager to get going." },
-        { "type": "p", "text": "A few months later, the conversation can be different: the schedule has slipped, the budget no longer covers it, the vendor says the delay is the client's, and the client says it's the vendor's. And when someone asks who is accountable for the outcome, the answer isn't clear." },
-        { "type": "p", "text": "In my experience, that question is what determines whether a project needs different project management than the one it has. It's not about how many tracking tools are in use, but about who holds real accountability for the project delivering what it promised." },
-        { "type": "h2", "text": "What is project management?" },
-        { "type": "p", "text": "Project management is the planning, direction, control, and execution of an initiative so it meets the agreed time, cost, scope, and quality. It's a discipline with recognized frameworks, such as the PMBOK guide, and a very concrete goal: turning a business decision into a delivered result." },
-        { "type": "p", "text": "People often use project management and project administration interchangeably. In practice they overlap. If there's a nuance, it's that management puts the emphasis on direction and accountability for the outcome, not just on administering tasks." },
-        { "type": "p", "text": "That difference matters. A project can have a flawless schedule, weekly meetings, and well-designed reports, and still have no one making the hard calls when something drifts." },
-        { "type": "h2", "text": "Five signs your project needs external project management" },
-        { "type": "p", "text": "The cost of poor project management is measurable: according to PMI's 2020 Pulse of the Profession report, organizations waste an average of 11.4% of their project investment due to poor performance. Not every project needs an external PMO. These are signs we check to see whether yours does." },
-        { "type": "p", "text": "First: no one is accountable for the whole outcome. The vendor answers for its part, each area answers for its own, and the project as a whole has no owner." },
-        { "type": "p", "text": "Second: the reports say everything is fine until, suddenly, everything is wrong. When the status goes from green to red without passing through yellow, the problem isn't the project, it's how it's being measured." },
-        { "type": "p", "text": "Third: the vendor is managing itself. It's natural for an implementer to defend its scope, timelines, and costs. What isn't healthy is for it to also be the one deciding whether it's doing a good job." },
-        { "type": "p", "text": "Fourth: the internal team is doing two jobs. The project's key people still answer for day-to-day operations, and the project ends up getting whatever time is left over." },
-        { "type": "p", "text": "Fifth: it's the first time the organization has run a project this size. An ERP implementation, a cloud migration, or an artificial intelligence initiative doesn't look like the projects the company runs every year, and a first project's mistakes can be expensive." },
-        { "type": "h2", "text": "Internal PMO, external PMO, or PMO as a Service" },
-        { "type": "p", "text": "A PMO, or project management office, is the structure that defines how an organization's projects are governed: methodology, roles, committees, metrics, and tools." },
-        { "type": "p", "text": "An internal PMO makes sense when the company runs projects continuously and has the volume to sustain a dedicated team. Building one takes time, and keeping it carries a fixed cost." },
-        { "type": "p", "text": "An external PMO, or PMO as a Service, is a team that takes on the governance of a specific project with accountability for the outcome, and is stood down when the project ends. It's an option for large initiatives that don't repeat every year, such as an ERP implementation.", "links": [{"text":"PMO as a Service","href":"/metodo-cira/gestion-de-proyectos"}] },
-        { "type": "quote", "text": "The question isn't whether your company needs a PMO. It's who will be accountable for the outcome of this particular project." },
-        { "type": "h2", "text": "What serious project management should deliver" },
-        { "type": "p", "text": "A full plan before starting: scope, schedule, resources, roles, costs, risks, and a quality plan, approved by a steering committee that understands what it's approving." },
-        { "type": "p", "text": "Clear governance: who decides what, at which level, and with what information. A project without decision rules can end up resolving its problems by attrition." },
-        { "type": "p", "text": "Continuous risk monitoring, not just a report at the end of each phase. Today it's possible to monitor project risk permanently, even with artificial intelligence agents that flag deviations before they become crises." },
-        { "type": "p", "text": "Scope control that protects the budget. On a project we managed under PMBOK guidelines, closeout came in with only a 3% variance from estimated cost and just two customizations to the ERP code. That's not luck: it's the result of saying no in time." },
-        { "type": "p", "text": "A formal, documented closeout that leaves the organization with the implementation model for its next projects." },
-        { "type": "h2", "text": "A risk: managing the schedule, not the adoption" },
-        { "type": "p", "text": "A project can finish on time, on budget, and with its full scope delivered, and still fail. It happens when the system gets installed but the organization keeps working the way it did before." },
-        { "type": "p", "text": "That's why I believe project management that doesn't include change management is measuring the wrong kind of success. Change management services have to start the same day as the project, not show up as a closing activity.", "links": [{"text": "Change management services", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "I wrote about this in detail in why digital transformation projects fail: in my experience, the decisive factor is how people receive the technology.", "links": [{"text": "why digital transformation projects fail", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
-        { "type": "h2", "text": "Before the project: the right decision" },
-        { "type": "p", "text": "Some projects no amount of management can save, because the problem isn't in execution but in the decision that started them: a vague objective, a business case nobody built, or a technology chosen before the problem was understood." },
-        { "type": "p", "text": "That's why, on the highest-impact projects, it's worth starting with strategy consulting that defines what needs to be solved, in what order, and with which indicators. Project management executes better when it knows exactly what it's executing.", "links": [{"text": "strategy consulting", "href": "/metodo-cira/estrategia"}] },
-        { "type": "h2", "text": "How to choose who manages your project" },
-        { "type": "p", "text": "Ask who will be accountable for the outcome, not just who will track progress." },
-        { "type": "p", "text": "Ask how risk will be measured and how often. If the answer is a monthly report, risk will be caught late." },
-        { "type": "p", "text": "Ask what commercial relationship they have with the technology vendor. A manager who depends on the implementer will hardly be able to hold it to account." },
-        { "type": "p", "text": "Ask how they'll work on adoption, not just installation." },
-        { "type": "p", "text": "And ask about past projects with verifiable results: time, cost, scope, and above all, what happened after go-live." },
-        { "type": "h2", "text": "In summary" },
-        { "type": "p", "text": "Good project management doesn't show in the number of reports it produces, but in the number of problems it prevents. If your next project is large, new to the organization, or critical to the business, it's worth asking who will be accountable for it." },
-        { "type": "p", "text": "At Cyrrus we provide project management services as an external PMO, accountable for the outcome and with change management built in from the start.", "links": [{"text": "project management services", "href": "/metodo-cira/gestion-de-proyectos"}] },
+        {
+          "type": "p",
+          "text": "Picture a technology project that starts with optimism. There's an approved budget, a selected vendor, a schedule that fits on one slide, and a team eager to get going."
+        },
+        {
+          "type": "p",
+          "text": "A few months later, the conversation can be different: the schedule has slipped, the budget no longer covers it, the vendor says the delay is the client's, and the client says it's the vendor's. And when someone asks who is accountable for the outcome, the answer isn't clear."
+        },
+        {
+          "type": "p",
+          "text": "In my experience, that question is what determines whether a project needs different project management than the one it has. It's not about how many tracking tools are in use, but about who holds real accountability for the project delivering what it promised."
+        },
+        {
+          "type": "h2",
+          "text": "What is project management?"
+        },
+        {
+          "type": "p",
+          "text": "Project management is the planning, direction, control, and execution of an initiative so it meets the agreed time, cost, scope, and quality. It's a discipline with recognized frameworks, such as the PMBOK guide, and a very concrete goal: turning a business decision into a delivered result."
+        },
+        {
+          "type": "p",
+          "text": "People often use project management and project administration interchangeably. In practice they overlap. If there's a nuance, it's that management puts the emphasis on direction and accountability for the outcome, not just on administering tasks."
+        },
+        {
+          "type": "p",
+          "text": "That difference matters. A project can have a flawless schedule, weekly meetings, and well-designed reports, and still have no one making the hard calls when something drifts."
+        },
+        {
+          "type": "h2",
+          "text": "Five signs your project needs external project management"
+        },
+        {
+          "type": "p",
+          "text": "The cost of poor project management is measurable: according to PMI's 2020 Pulse of the Profession report, organizations waste an average of 11.4% of their project investment due to poor performance. Not every project needs an external PMO. These are signs we check to see whether yours does."
+        },
+        {
+          "type": "p",
+          "text": "First: no one is accountable for the whole outcome. The vendor answers for its part, each area answers for its own, and the project as a whole has no owner."
+        },
+        {
+          "type": "p",
+          "text": "Second: the reports say everything is fine until, suddenly, everything is wrong. When the status goes from green to red without passing through yellow, the problem isn't the project, it's how it's being measured."
+        },
+        {
+          "type": "p",
+          "text": "Third: the vendor is managing itself. It's natural for an implementer to defend its scope, timelines, and costs. What isn't healthy is for it to also be the one deciding whether it's doing a good job."
+        },
+        {
+          "type": "p",
+          "text": "Fourth: the internal team is doing two jobs. The project's key people still answer for day-to-day operations, and the project ends up getting whatever time is left over."
+        },
+        {
+          "type": "p",
+          "text": "Fifth: it's the first time the organization has run a project this size. An ERP implementation, a cloud migration, or an artificial intelligence initiative doesn't look like the projects the company runs every year, and a first project's mistakes can be expensive."
+        },
+        {
+          "type": "h2",
+          "text": "Internal PMO, external PMO, or PMO as a Service"
+        },
+        {
+          "type": "p",
+          "text": "A PMO, or project management office, is the structure that defines how an organization's projects are governed: methodology, roles, committees, metrics, and tools."
+        },
+        {
+          "type": "p",
+          "text": "An internal PMO makes sense when the company runs projects continuously and has the volume to sustain a dedicated team. Building one takes time, and keeping it carries a fixed cost."
+        },
+        {
+          "type": "p",
+          "text": "An external PMO, or PMO as a Service, is a team that takes on the governance of a specific project with accountability for the outcome, and is stood down when the project ends. It's an option for large initiatives that don't repeat every year, such as an ERP implementation.",
+          "links": [
+            {
+              "text": "PMO as a Service",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "The question isn't whether your company needs a PMO. It's who will be accountable for the outcome of this particular project."
+        },
+        {
+          "type": "h2",
+          "text": "What serious project management should deliver"
+        },
+        {
+          "type": "p",
+          "text": "A full plan before starting: scope, schedule, resources, roles, costs, risks, and a quality plan, approved by a steering committee that understands what it's approving."
+        },
+        {
+          "type": "p",
+          "text": "Clear governance: who decides what, at which level, and with what information. A project without decision rules can end up resolving its problems by attrition."
+        },
+        {
+          "type": "p",
+          "text": "Continuous risk monitoring, not just a report at the end of each phase. Today it's possible to monitor project risk permanently, even with artificial intelligence agents that flag deviations before they become crises."
+        },
+        {
+          "type": "p",
+          "text": "Scope control that protects the budget. On a project we managed under PMBOK guidelines, closeout came in with only a 3% variance from estimated cost and just two customizations to the ERP code. That's not luck: it's the result of saying no in time."
+        },
+        {
+          "type": "p",
+          "text": "A formal, documented closeout that leaves the organization with the implementation model for its next projects."
+        },
+        {
+          "type": "h2",
+          "text": "A risk: managing the schedule, not the adoption"
+        },
+        {
+          "type": "p",
+          "text": "A project can finish on time, on budget, and with its full scope delivered, and still fail. It happens when the system gets installed but the organization keeps working the way it did before."
+        },
+        {
+          "type": "p",
+          "text": "That's why I believe project management that doesn't include change management is measuring the wrong kind of success. Change management services have to start the same day as the project, not show up as a closing activity.",
+          "links": [
+            {
+              "text": "Change management services",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "I wrote about this in detail in why digital transformation projects fail: in my experience, the decisive factor is how people receive the technology.",
+          "links": [
+            {
+              "text": "why digital transformation projects fail",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Before the project: the right decision"
+        },
+        {
+          "type": "p",
+          "text": "Some projects no amount of management can save, because the problem isn't in execution but in the decision that started them: a vague objective, a business case nobody built, or a technology chosen before the problem was understood."
+        },
+        {
+          "type": "p",
+          "text": "That's why, on the highest-impact projects, it's worth starting with strategy consulting that defines what needs to be solved, in what order, and with which indicators. Project management executes better when it knows exactly what it's executing.",
+          "links": [
+            {
+              "text": "strategy consulting",
+              "href": "/metodo-cira/estrategia"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "How to choose who manages your project"
+        },
+        {
+          "type": "p",
+          "text": "Ask who will be accountable for the outcome, not just who will track progress."
+        },
+        {
+          "type": "p",
+          "text": "Ask how risk will be measured and how often. If the answer is a monthly report, risk will be caught late."
+        },
+        {
+          "type": "p",
+          "text": "Ask what commercial relationship they have with the technology vendor. A manager who depends on the implementer will hardly be able to hold it to account."
+        },
+        {
+          "type": "p",
+          "text": "Ask how they'll work on adoption, not just installation."
+        },
+        {
+          "type": "p",
+          "text": "And ask about past projects with verifiable results: time, cost, scope, and above all, what happened after go-live."
+        },
+        {
+          "type": "h2",
+          "text": "In summary"
+        },
+        {
+          "type": "p",
+          "text": "Good project management doesn't show in the number of reports it produces, but in the number of problems it prevents. If your next project is large, new to the organization, or critical to the business, it's worth asking who will be accountable for it."
+        },
+        {
+          "type": "p",
+          "text": "At Cyrrus we provide project management services as an external PMO, accountable for the outcome and with change management built in from the start.",
+          "links": [
+            {
+              "text": "project management services",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
         {
           "type": "p",
           "text": "Related reading: what strategic planning is, what a PMO is and what it does and what organizational change management is.",
@@ -722,7 +1625,25 @@
         },
         {
           "type": "p",
-          "text": "One risk is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP. If your bottleneck is the warehouse, also see what a WMS is and when you need one. Before comparing vendors, check whether your company is ready with the ERP readiness test.", "links": [{"text": "best ERP for midsize companies", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "how much it costs to implement an ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "what a WMS is", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "ERP readiness test", "href": "/herramientas/test-preparacion-erp"}]
+          "text": "One risk is choosing by the flashiest demo. A good selection process starts from the business requirements, not from the vendor's catalog. These are seven criteria worth evaluating. If you already have candidates, see our comparison of the best ERP for midsize companies and how much it costs to implement an ERP. If your bottleneck is the warehouse, also see what a WMS is and when you need one. Before comparing vendors, check whether your company is ready with the ERP readiness test.",
+          "links": [
+            {
+              "text": "best ERP for midsize companies",
+              "href": "/perspectivas/mejores-erp-para-medianas-empresas"
+            },
+            {
+              "text": "how much it costs to implement an ERP",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            },
+            {
+              "text": "what a WMS is",
+              "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"
+            },
+            {
+              "text": "ERP readiness test",
+              "href": "/herramientas/test-preparacion-erp"
+            }
+          ]
         },
         {
           "type": "p",
@@ -1047,7 +1968,13 @@
         },
         {
           "type": "p",
-          "text": "A PMO can be internal, with its own staff; external, operated by a specialized firm; or a mix of both. An external PMO, also called PMO as a Service, is a team that takes over the governance of projects with responsibility for the outcome, without the company having to build the whole structure.", "links": [{"text":"PMO as a Service","href":"/metodo-cira/gestion-de-proyectos"}]
+          "text": "A PMO can be internal, with its own staff; external, operated by a specialized firm; or a mix of both. An external PMO, also called PMO as a Service, is a team that takes over the governance of projects with responsibility for the outcome, without the company having to build the whole structure.",
+          "links": [
+            {
+              "text": "PMO as a Service",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
         },
         {
           "type": "p",
@@ -2535,14 +3462,44 @@
           "href": "/descargas/erp-rfp-template.xlsx",
           "note": "Excel with functional and technical requirements by module, total cost by vendor, a weighted evaluation matrix, a calendar and references. No sample prices or weights. Free, no sign-up."
         },
-        {"type":"h2","text":"How do you estimate the ERP implementation cost for your company?"},
-        {"type":"p","text":"In six steps, before you request a single proposal:"},
-        {"type":"p","text":"1. Count the users by type: full, limited and read-only. Most published prices are per user per month, so this number drives the license block."},
-        {"type":"p","text":"2. List the modules and integrations you actually need: finance, inventory, sales, production, payroll, e-invoicing, banks, e-commerce. Each module adds license cost; each integration adds implementation cost."},
-        {"type":"p","text":"3. Decide the deployment model: cloud subscription or your own servers. The first moves the cost to a recurring fee; the second adds infrastructure and support."},
-        {"type":"p","text":"4. Budget implementation as a separate line: analysis, configuration, migration, testing and training, done by a partner or by the vendor. Ask every vendor to quote it apart from the license."},
-        {"type":"p","text":"5. Add the internal team's time and a contingency. Panorama's 2026 report found that more than a quarter of projects went over budget, most often because of an unexpected need for additional technology."},
-        {"type":"p","text":"6. Put it all over five years, not one, and compare alternatives on that total. Our ERP total cost calculator does the arithmetic with your own assumptions and no preloaded figures.","links":[{"text":"ERP total cost calculator","href":"/herramientas/calculadora-costo-erp"}]},
+        {
+          "type": "h2",
+          "text": "How do you estimate the ERP implementation cost for your company?"
+        },
+        {
+          "type": "p",
+          "text": "In six steps, before you request a single proposal:"
+        },
+        {
+          "type": "p",
+          "text": "1. Count the users by type: full, limited and read-only. Most published prices are per user per month, so this number drives the license block."
+        },
+        {
+          "type": "p",
+          "text": "2. List the modules and integrations you actually need: finance, inventory, sales, production, payroll, e-invoicing, banks, e-commerce. Each module adds license cost; each integration adds implementation cost."
+        },
+        {
+          "type": "p",
+          "text": "3. Decide the deployment model: cloud subscription or your own servers. The first moves the cost to a recurring fee; the second adds infrastructure and support."
+        },
+        {
+          "type": "p",
+          "text": "4. Budget implementation as a separate line: analysis, configuration, migration, testing and training, done by a partner or by the vendor. Ask every vendor to quote it apart from the license."
+        },
+        {
+          "type": "p",
+          "text": "5. Add the internal team's time and a contingency. Panorama's 2026 report found that more than a quarter of projects went over budget, most often because of an unexpected need for additional technology."
+        },
+        {
+          "type": "p",
+          "text": "6. Put it all over five years, not one, and compare alternatives on that total. Our ERP total cost calculator does the arithmetic with your own assumptions and no preloaded figures.",
+          "links": [
+            {
+              "text": "ERP total cost calculator",
+              "href": "/herramientas/calculadora-costo-erp"
+            }
+          ]
+        },
         {
           "type": "h2",
           "text": "How we can help"
@@ -6434,7 +7391,7 @@
           "links": [
             {
               "text": "how to choose a cybersecurity consulting firm",
-              "href": "/perspectivas/como-elegir-una-consultoria-de-ciberseguridad"
+              "href": "/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad"
             },
             {
               "text": "what IT strategy is",
@@ -6671,17 +7628,19 @@
         }
       ]
     },
-    "como-elegir-una-consultoria-de-ciberseguridad": {
-      "title": "How to choose a cybersecurity consulting firm: scope, frameworks and questions",
-      "seoTitle": "How to Choose a Cybersecurity Consulting Firm",
-      "label": "Solution selection",
-      "excerpt": "What a cybersecurity consulting firm does, which types of service exist, which public frameworks serve as references (NIST CSF 2.0, ISO/IEC 27001), how to compare proposals and what to ask before hiring.",
-      "metaDescription": "How to choose a cybersecurity consulting firm: types of service, what NIST CSF 2.0 and ISO/IEC 27001 say, criteria to compare proposals and the questions leadership should ask.",
-      "intro": "If you have proposals from several cybersecurity vendors and don't know how to compare them, this guide explains what a consulting engagement should cover, which public frameworks serve as references and what to ask before signing.",
+    "senales-de-que-necesita-una-consultoria-de-ciberseguridad": {
+      "title": "Signs your company needs cybersecurity consulting, and how a vendor-neutral partner solves them",
+      "seoTitle": "When to hire cybersecurity consulting",
+      "label": "Cybersecurity",
+      "excerpt": "The signals that it is time for cybersecurity consulting, what a maturity assessment includes, why vendor independence matters, price references and how to shortlist a firm.",
+      "metaDescription": "Signs your company needs cybersecurity consulting, what it includes, why vendor independence matters, reference price ranges and what to ask before you hire.",
+      "intro": "The clearest signals are structural, not personal: a breach attempt your team could not explain, a compliance audit you nearly failed, a tool stack no one really manages, or a vendor who sold you a platform and walked. In our view, they do not reflect your team’s competence, but a gap between the complexity of the problem and the capacity of your current structure. This guide explains what cybersecurity consulting covers, the pain points CEOs, CIOs and CFOs face most often and how to shortlist a firm.",
       "keyTakeaways": [
-        "A cybersecurity consulting engagement should start with what to protect and which risks exist, not with the tool it sells.",
-        "NIST CSF 2.0 (February 2024) organizes cybersecurity outcomes into six Functions — Govern, Identify, Protect, Detect, Respond and Recover — and does not prescribe how to achieve them.",
-        "ISO/IEC 27001:2022 defines the requirements for an information security management system and allows certification; it complements NIST CSF rather than replacing it."
+        "Warning signs are usually structural: compliance gaps, unmanaged tool stacks and vendor dependencies point to a structure problem, not a team failure.",
+        "A firm that earns commissions from the vendors it recommends has a conflict of interest: ask in writing whether it receives any compensation and what criteria it decides on.",
+        "According to Clutch (updated September 2026), the average cost of hiring a cybersecurity provider on that platform is US$100–149 per hour, and the projects reviewed there typically cost US$10,000–49,999; it is a reference with no published sample size, not a quote.",
+        "Certifications must belong to the people assigned to your engagement, not to someone else at the firm.",
+        "A report on a shelf is not an outcome: the right partner builds internal capability so improvements stick."
       ],
       "serviceCtas": [
         {
@@ -6707,120 +7666,188 @@
       ],
       "body": [
         {
-          "type": "p",
-          "text": "Three vendors, three proposals, three lists of acronyms. One offers monitoring, another an identity protection platform, the third an audit. All say theirs is the urgent one. Without a criterion of your own, the decision ends up being who presented best or who charges least."
+          "type": "h2",
+          "text": "What cybersecurity consulting includes"
         },
         {
           "type": "p",
-          "text": "This guide explains what a cybersecurity consulting firm does, which types of service exist, what two public frameworks that serve as references say, how to compare proposals and what leadership should ask before hiring."
+          "text": "A security maturity assessment is not a vulnerability scan. A scan checks for known exposures in your systems. An assessment is more comprehensive: it inventories assets, reviews controls, interviews stakeholders, maps threats to business impact and produces a scored, prioritized remediation roadmap with an executive summary and a risk heat map. Its output is actionable; a raw scan list usually is not."
+        },
+        {
+          "type": "p",
+          "text": "Beyond assessments, the services of cybersecurity consultants typically cover several areas. Security architecture includes zero-trust design, identity and access management (IAM), cloud landing zones and network segmentation. Governance, risk and compliance (GRC) work maps controls to frameworks and standards such as NIST CSF, ISO/IEC 27001, SOC 2 and PCI DSS. Incident response consulting covers readiness planning, playbooks, tabletop exercises and retainer-based response access. Penetration testing and red-team exercises are often scoped separately, so read the statement of work carefully before assuming they are included."
+        },
+        {
+          "type": "p",
+          "text": "Those frameworks are not interchangeable. NIST CSF 2.0, published on February 26, 2024, organizes cybersecurity outcomes into six functions (govern, identify, protect, detect, respond and recover) and does not prescribe how to achieve them. ISO/IEC 27001:2022 defines the requirements of an information security management system and allows certification. PCI DSS, according to the PCI Security Standards Council, is a baseline of technical and operational requirements to protect payment account data, aimed at entities that store, process or transmit cardholder data. And SOC 2 is one of the assurance report offerings that CPAs can issue on the controls of a service organization, according to the AICPA, with criteria it names as security, availability, processing integrity, confidentiality and privacy."
+        },
+        {
+          "type": "p",
+          "text": "Many engagements also include evaluating security tools and third-party vendors, not just reviewing your current posture. The best firms do this using criteria defined by your business, without receiving commissions from the vendors they evaluate. That distinction is easy to miss when comparing proposals, and it matters a great deal in practice."
         },
         {
           "type": "h2",
-          "text": "What does a cybersecurity consulting firm do?"
+          "text": "What signals tell you it is time to call a consultant"
         },
         {
           "type": "p",
-          "text": "A cybersecurity consulting firm helps the company decide what to protect, with which controls and with which vendors, and verify that those controls work. Its work starts from the business — which systems support the operation, which data must not be exposed, what customers and the sector require — and ends in a prioritized list of controls and the selection of the solutions that cover them."
+          "text": "CEOs and CFOs notice the business-level signals: a near-miss breach, a contract requirement for SOC 2 or ISO/IEC 27001 that the internal team cannot meet, a cyber insurance renewal with new technical conditions, or board pressure after a competitor’s public incident. CFOs also feel the approval tension of signing security budgets without a return framework or a measurable outcome map."
         },
         {
           "type": "p",
-          "text": "What distinguishes a consultant from a tool vendor is the order: the consultant defines the risk and the criteria before proposing a solution; the vendor starts from its product. Both can coexist, but it's worth knowing which one you are hiring."
+          "text": "CIOs and CTOs feel the structural friction: a tool stack that grew through reactive purchases with no unifying architecture, a vendor-recommended platform that underdelivered, or a cloud migration planned with no security layer. There is also the integrator conflict: the firm that sold you the platform also implements it and assesses it. That is not a staffing problem, it is an incentive problem."
+        },
+        {
+          "type": "p",
+          "text": "The mistake that makes every signal worse is waiting. As an illustration, a company that discovers its vendor managed access with no audit trail only when a large customer reviews its suppliers could have caught that gap much earlier with a proactive assessment. A late discovery like that rarely comes cheaply, in time or in money."
         },
         {
           "type": "h2",
-          "text": "What types of cybersecurity services exist?"
+          "text": "Why vendor neutrality changes the outcome"
         },
         {
           "type": "p",
-          "text": "It helps to separate four types of service, because they are contracted and evaluated differently:"
+          "text": "Integrators who earn commissions from vendors have an incentive to recommend what they know and what pays, not necessarily what fits. The result can be overpayment, underperformance and a dependency that is hard to exit. This is not a judgment of character: it is a structural incentive."
         },
         {
           "type": "p",
-          "text": "Advisory and assessment: evaluating risk, defining controls and policies, preparing the company for a standard or a customer requirement. This is the scope of an independent consultant."
-        },
-        {
-          "type": "p",
-          "text": "Implementation: deploying and configuring the chosen solutions. Done by the vendor, an integrator or the internal team."
-        },
-        {
-          "type": "p",
-          "text": "Operation: continuous monitoring, detection and response, usually contracted as a service from a specialized provider."
-        },
-        {
-          "type": "p",
-          "text": "Verification: audits, penetration tests and periodic reviews that check the controls work."
-        },
-        {
-          "type": "quote",
-          "text": "The useful question isn't 'which tool do I buy', but 'which risk am I covering, with which control, and who answers if it fails'."
+          "text": "The alternative is a consultancy that evaluates vendors against criteria your business defines, earns no commission from any platform and stays accountable from strategy through go-live. When one party owns both the advice and the outcome, the incentives finally align with yours. Cyrrus Consulting Services operates on this model: it evaluates providers against criteria defined by the business and with no commissions, and its external PMO function governs execution through go-live as the client’s advocate against the technology vendor. One team, one accountable party.",
+          "links": [
+            {
+              "text": "external PMO",
+              "href": "/en/metodo-cira/gestion-de-proyectos"
+            }
+          ]
         },
         {
           "type": "h2",
-          "text": "Which public frameworks serve as references?"
+          "text": "How a structured path moves you from diagnosis to adoption"
         },
         {
           "type": "p",
-          "text": "Two public frameworks help structure the assessment and compare proposals without being tied to a vendor."
+          "text": "A modern security maturity assessment looks different when AI is integrated into the diagnostic from the start: data collection speeds up and pattern recognition across controls is faster. Cyrrus Intelligence Lab designs AI governance, architecture and automation to support diagnosis and adoption.",
+          "links": [
+            {
+              "text": "Cyrrus Intelligence Lab",
+              "href": "/en/intelligence-lab"
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "The NIST Cybersecurity Framework 2.0, published by the U.S. National Institute of Standards and Technology on February 26, 2024, offers a taxonomy of high-level cybersecurity outcomes that any organization — regardless of its size, sector or maturity — can use to better understand, assess, prioritize and communicate its cybersecurity efforts. The framework does not prescribe how outcomes should be achieved; it organizes the categories into six Functions: Govern (the cybersecurity risk management strategy, expectations and policy are established, communicated and monitored), Identify (current cybersecurity risks are understood), Protect (safeguards to manage risks are used), Detect (possible attacks and compromises are found and analyzed), Respond (actions regarding a detected incident are taken) and Recover (assets and operations affected by an incident are restored). According to the document, the framework is designed for organizations of all sizes and sectors."
+          "text": "Objective technology selection follows: defined evaluation criteria, structured scoring and an independent recommendation. The Cyrrus PMO then governs execution through go-live, protecting the client’s interests against vendor timeline drift and scope creep. The methodology moves through four phases (Construct, Identify, Realize and Adopt), connecting strategy to operation under a single accountable team.",
+          "links": [
+            {
+              "text": "Objective technology selection",
+              "href": "/en/metodo-cira/seleccion-de-soluciones"
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "ISO/IEC 27001:2022, Information security, cybersecurity and privacy protection — Information security management systems — Requirements, is, according to ISO's official page, the world's best-known standard for information security management systems (ISMS) and defines the requirements an ISMS must meet. It provides companies of any size and from all sectors with guidance for establishing, implementing, maintaining and continually improving that system, and conformity with the standard means the organization has put in place a system to manage risks related to the security of the data it owns or handles. Its third edition was published in October 2022."
-        },
-        {
-          "type": "p",
-          "text": "They are complementary: NIST CSF structures the assessment and prioritization; ISO/IEC 27001 structures the management system and allows certification when a customer or the sector requires it."
+          "text": "Where cybersecurity engagements fail most is not at delivery but at sustainment. Cyrrus Leadership Academy addresses this directly: it trains the client’s own team to operate and iterate on the security model independently after the project closes. For a CFO, that is the difference between a measurable outcome and a report that collects dust.",
+          "links": [
+            {
+              "text": "Leadership Academy",
+              "href": "/en/leadership-academy"
+            }
+          ]
         },
         {
           "type": "h2",
-          "text": "How do you compare cybersecurity proposals?"
+          "text": "How much to budget and which engagement model fits"
         },
         {
           "type": "p",
-          "text": "With the same four criteria that work for any technology selection. Functional: which identified risks the proposal covers and which it leaves out, Function by Function. Technical: how it integrates with what already exists — identities, devices, cloud, business systems — and what it demands of the internal team. Economic: the multi-year total cost, including operation, not just the license or the initial project. Sustainable: what happens when the company grows, changes systems or the vendor changes its terms."
+          "text": "As a public reference, Clutch (page updated September 21, 2026) reports that the average cost of hiring a cybersecurity provider on its platform is US$100–149 per hour, with location averages of US$150–199 in the United States and US$50–99 in Mexico, Spain and Poland. Cybersecurity projects reviewed on Clutch typically cost US$10,000–49,999. Clutch does not publish the sample size behind these figures, so use them to orient yourself, not to quote. In our view, the variables that move the price most are the number of sites and applications, the depth of testing, regulatory requirements and whether the work is advisory only or includes implementation."
         },
         {
           "type": "p",
-          "text": "And one prior criterion: if the proposals don't respond to the company's own assessment, they are not comparable to each other. Each one solves the problem its author knows how to solve."
+          "text": "The right engagement model depends on the problem you are actually solving. In our view, the four models compare like this:"
+        },
+        {
+          "type": "table",
+          "text": "Cybersecurity engagement models: which fits which case",
+          "columns": [
+            "Model",
+            "Best for",
+            "Pros",
+            "Cons"
+          ],
+          "rows": [
+            [
+              "One-off assessment",
+              "Leadership needs evidence before approving investment and the problem is unclear",
+              "Clear scope and price; independent baseline; low commitment; produces a prioritized roadmap",
+              "A snapshot only: findings age quickly; remediation responsibility stays with the client"
+            ],
+            [
+              "Project implementation",
+              "The outcome and deliverables can be defined in advance",
+              "Defined milestones; easier to budget; clear acceptance criteria",
+              "Scope changes increase cost; responsibility reverts to the client after completion"
+            ],
+            [
+              "Managed services",
+              "The capability must run continuously and internal staff cannot sustain it",
+              "Ongoing accountability; predictable recurring cost; faster response through SLAs",
+              "Recurring spend; vendor dependency risk; scope must be tightly defined"
+            ],
+            [
+              "Incident response retainer",
+              "Downtime or regulatory exposure makes delayed specialist access unacceptable",
+              "Priority access; responders already know your environment; fewer delays buying help in a crisis",
+              "You pay for availability even when unused; retainer scope varies; does not replace preventive security"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A common and practical sequence is assessment, then implementation, then managed operation. Add an incident response retainer when the consequences of a serious event justify guaranteed specialist access."
         },
         {
           "type": "h2",
-          "text": "What should you ask before hiring a cybersecurity consulting firm?"
+          "text": "How to shortlist a firm and which questions filter out the wrong ones"
         },
         {
           "type": "p",
-          "text": "Five questions, in our view, distinguish an independent consultant from a sales channel:"
+          "text": "For governance and compliance work, in our view you should verify certifications such as CISM, which ISACA presents as the credential that affirms the ability to assess risks, implement effective governance and proactively respond to incidents, along with equivalents such as CISSP and CISA for program and audit roles. For penetration testing, look for credentials in that specialty, and for ISO/IEC 27001 engagements, the lead auditor credential. What matters is that every credential you verify belongs to the people assigned to your engagement, not to someone elsewhere in the firm."
         },
         {
           "type": "p",
-          "text": "Is the assessment done before proposing tools, and which framework structures it?"
+          "text": "A strong case study includes a client of comparable industry and size, a specific measurable outcome and evidence that improvements persisted after delivery. A redacted sample report should prioritize findings by business impact, with named owners and remediation guidance. A generic control checklist is not a deliverable."
         },
         {
           "type": "p",
-          "text": "Does the firm receive commissions or incentives from the vendors it recommends?"
+          "text": "These seven questions expose weak claims before you sign:"
         },
         {
           "type": "p",
-          "text": "What deliverables remain: risk inventory, prioritized list of controls, selection criteria, vendor comparison?"
+          "text": "1. Which named consultants will perform the work, and what are their individual credentials? A strong answer names people; a weak answer names the firm."
         },
         {
           "type": "p",
-          "text": "Who implements and who operates afterwards, and how is that implementation governed?"
+          "text": "2. What percentage of delivery will be done by senior practitioners? Follow up if the answer is vague or the percentage seems low."
         },
         {
           "type": "p",
-          "text": "How does it connect with the business continuity plan and with certification requirements, if any?"
-        },
-        {
-          "type": "h2",
-          "text": "What must leadership decide?"
+          "text": "3. Is the firm an advisor, an authorized assessor, or both? Some frameworks require independence between the two roles; know which applies to your situation."
         },
         {
           "type": "p",
-          "text": "Cybersecurity has decisions that don't belong to the IT department: which data and processes must never be exposed, how much risk the company accepts and how much it invests to reduce it, who answers for an incident and who communicates with customers and authorities, and whether the company needs to certify. NIST CSF 2.0 places the Govern Function at the center precisely for that reason: it informs how the other five are implemented."
+          "text": "4. Does the firm receive any compensation from the vendors it recommends? The answer should be a clear and unambiguous no."
+        },
+        {
+          "type": "p",
+          "text": "5. Can they provide a redacted sample deliverable and a comparable client reference? Refusing to show any deliverable is a reasonable warning sign unless confidentiality constraints are explained and mitigated."
+        },
+        {
+          "type": "p",
+          "text": "6. How are findings tracked, retested and reported to executives between engagements? Findings should not appear only in an annual summary report."
+        },
+        {
+          "type": "p",
+          "text": "7. How is evidence maintained between audits rather than collected only before one? This separates firms that build programs from firms that build reports."
         },
         {
           "type": "h2",
@@ -6828,55 +7855,43 @@
         },
         {
           "type": "p",
-          "text": "At Cyrrus we provide independent cybersecurity consulting: we assess the risk starting from what is already in production, define the controls the company needs and select solutions and vendors with criteria defined before seeing proposals, with no vendor commissions. Implementation is governed by our Project Management.",
-          "links": [
-            {
-              "text": "cybersecurity consulting",
-              "href": "/metodo-cira/seleccion-de-soluciones/ciberseguridad"
-            },
-            {
-              "text": "Project Management",
-              "href": "/metodo-cira/gestion-de-proyectos"
-            }
-          ]
+          "text": "The gap is closable, and the first step is the diagnosis. The signals your company is sending (compliance gaps, unmanaged tool stacks, failed transformations, vendor dependencies) are diagnostic, not damning: they point to a structural gap that cybersecurity consulting is built to close. The difference between a report on a shelf and a posture that actually improves comes down to two things: vendor neutrality and accountability through execution."
         },
         {
           "type": "p",
-          "text": "Security is designed together with the business continuity plan, and if a customer requires certification, leadership prepares with the ISO 27001 course at Leadership Academy.",
+          "text": "Cyrrus evaluates providers without receiving commissions and governs projects through its PMO from strategy to go-live. No vendor commissions. No implementation bias. One team from strategy to go-live. You can reach out to us to request the assessment and get a clear picture of where your organization stands today.",
           "links": [
             {
-              "text": "business continuity plan",
-              "href": "/metodo-cira/estrategia/continuidad-del-negocio"
-            },
-            {
-              "text": "ISO 27001 course",
-              "href": "/leadership-academy/iso-27001"
-            }
-          ]
-        },
-        {
-          "type": "p",
-          "text": "To go deeper into related topics: what a business continuity plan is and what IT strategy is.",
-          "links": [
-            {
-              "text": "what a business continuity plan is",
-              "href": "/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo"
-            },
-            {
-              "text": "what IT strategy is",
-              "href": "/perspectivas/estrategia-de-ti-que-es-y-que-incluye"
+              "text": "request the assessment",
+              "href": "/en/metodo-cira/seleccion-de-soluciones/ciberseguridad"
             }
           ]
         }
       ],
       "sources": [
         {
-          "label": "NIST (2024). The NIST Cybersecurity Framework (CSF) 2.0, NIST CSWP 29, February 26, 2024 (abstract, preface and section 2). Accessed November 12, 2026",
+          "label": "NIST (2024). The NIST Cybersecurity Framework (CSF) 2.0, NIST CSWP 29, February 26, 2024 (preface and functions). Accessed November 15, 2026",
           "url": "https://doi.org/10.6028/NIST.CSWP.29"
         },
         {
-          "label": "ISO. ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements. Accessed November 12, 2026",
+          "label": "ISO. ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements. Accessed November 12, 2026 (the ISO page returned a 403 error on November 15)",
           "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "label": "PCI Security Standards Council. PCI DSS. Accessed November 15, 2026",
+          "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
+        },
+        {
+          "label": "AICPA & CIMA. SOC suite of services (SOC 2). Accessed November 15, 2026",
+          "url": "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2"
+        },
+        {
+          "label": "ISACA. Certified Information Security Manager (CISM). Accessed November 15, 2026",
+          "url": "https://www.isaca.org/credentialing/cism"
+        },
+        {
+          "label": "Clutch (updated September 21, 2026). Cybersecurity services pricing. Accessed November 15, 2026",
+          "url": "https://clutch.co/it-services/cybersecurity/pricing"
         }
       ]
     },
@@ -7307,6 +8322,248 @@
         {
           "label": "NIST AIRC. AI RMF Core (Govern, Map, Measure and Manage functions). Accessed November 2, 2026",
           "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+        }
+      ]
+    },
+    "como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible": {
+      "title": "How to choose AI consulting services with end-to-end execution and measurable ROI",
+      "seoTitle": "How to choose AI consulting services",
+      "label": "AI strategy",
+      "excerpt": "Three requirements for choosing an AI consulting firm: vendor-neutral recommendations, execution with an accountable owner through go-live, and structured adoption. Includes reference price ranges and what to ask for in the contract.",
+      "metaDescription": "How to choose AI consulting services: vendor neutrality, accountable execution through go-live, adoption, reference pricing and what to require before you sign.",
+      "intro": "Choosing AI consulting services comes down to three requirements: a vendor-neutral technology recommendation, execution with an accountable owner through go-live, and structured adoption. A firm that stops at a strategy deck does not qualify. This guide gives you a framework to evaluate, question and shortlist before you sign.",
+      "keyTakeaways": [
+        "In our view, an AI consulting firm should be able to tell you in writing who is accountable for the business outcome after go-live, not just for the deliverables.",
+        "According to Prosigns’ report (a survey of 1,200 leaders at large enterprises, December 2025 to February 2026), 82% of AI initiatives launched in 2024 had still not reached production by the first quarter of 2026.",
+        "Ask in writing whether the firm receives compensation from the vendors it recommends: it is the most direct way to test its independence.",
+        "Tillerbridge publishes US$15,000–50,000 for a readiness assessment and US$50,000–250,000 for a scoped production use case as reference; always ask for a rate card, not-to-exceed ceilings and example proposals.",
+        "ROI is defined before the pilot: a named indicator and a measured baseline, not a later estimate."
+      ],
+      "serviceCtas": [
+        {
+          "title": "Do you have AI consulting proposals and no way to compare them?",
+          "description": "We define the use cases, the evaluation criteria and the owner of each result before seeing proposals, with no manufacturer commissions.",
+          "checklist": [
+            "Use cases prioritized by impact on a single criterion",
+            "Governance and architecture defined before scaling"
+          ],
+          "ctaLabel": "Explore AI strategy",
+          "imageAlt": "Executives and a Cyrrus consultant defining an artificial intelligence roadmap"
+        },
+        {
+          "title": "AI in production needs governance",
+          "description": "Policies, roles and controls over how AI is used, with evidence you can show a client or a regulator.",
+          "checklist": [
+            "Who approves and who audits each initiative",
+            "What data a model can touch and with what traceability"
+          ],
+          "ctaLabel": "Explore AI governance",
+          "imageAlt": "Working session on AI use cases at a company"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "The question most executives ask is which firm has the best AI credentials. The better question is a different one: who accepts accountability for the result, not just the deliverable?"
+        },
+        {
+          "type": "h2",
+          "text": "What end-to-end AI consulting should cover"
+        },
+        {
+          "type": "p",
+          "text": "In our view, a serious AI strategy engagement begins with use-case discovery, ROI modeling and a readiness assessment covering data, infrastructure, talent and processes. The output should be a prioritized roadmap tied to business outcomes, not a list of ideas. A strategy with no execution owner attached is not a complete service."
+        },
+        {
+          "type": "p",
+          "text": "The full implementation lifecycle runs from discovery through a validated pilot, production architecture, integration, controlled launch, stabilization and continuous improvement. Each phase leaves concrete deliverables: a working prototype, benchmark results, runbooks and monitoring dashboards. A firm that exits after the pilot report leaves the client’s team alone with the production risk."
+        },
+        {
+          "type": "p",
+          "text": "That is the gap Cyrrus’s CIRA method is built to close. Its four phases (Construct, Identify, Realize and Adopt) connect strategy to operation under a single accountable team, with AI integrated to speed up diagnosis, vendor selection and execution. The same group that builds the roadmap stays accountable through go-live and adoption, with no handoff between strategy and implementation.",
+          "links": [
+            {
+              "text": "CIRA method",
+              "href": "/en/metodo-cira"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Why so many AI initiatives never reach production"
+        },
+        {
+          "type": "p",
+          "text": "The State of Enterprise AI 2026 report, by the software company Prosigns, is based on a survey of 1,200 leaders at companies with at least 500 employees and US$100 million in revenue, run between December 2025 and February 2026. According to that report, 82% of AI initiatives launched in 2024 had still not reached production by the first quarter of 2026, up from 73% in its 2024 baseline. Two caveats: it is a vendor’s report, and its sample over-represents companies that already have an AI system in production (38% of the sample, against the 15–18% the report itself estimates for the market), so treat it as a signal rather than a census."
+        },
+        {
+          "type": "p",
+          "text": "The same report names data quality and availability as the main blocker to reaching production since it began tracking the question in 2022. What changed in 2026 is that governance and compliance review delays rose to second place: 31% of respondents cite them as a top blocker, up from 18% in 2024. It also mentions the lack of MLOps infrastructure (27%) and the senior talent gap (24%)."
+        },
+        {
+          "type": "p",
+          "text": "From there, in our view three failures are ones a serious firm should prevent from the contract onward. The first is biased recommendation: some firms are paid by the vendors they recommend, and that conflict undermines objectivity. The second is leaving change management for the end: without an adoption plan, the team does not use what was built. The third is missing governance: with no defined owners, monitoring or human oversight, an AI system in production is a liability with a user interface. Prosigns’ data does not measure adoption separately, so the second failure is a conclusion from our experience, not a figure.",
+          "links": [
+            {
+              "text": "change management",
+              "href": "/en/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            },
+            {
+              "text": "governance",
+              "href": "/en/perspectivas/gobierno-de-ia-corporativo-en-la-empresa"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Three requirements that are not negotiable"
+        },
+        {
+          "type": "p",
+          "text": "Vendor neutrality. Ask in writing whether the firm receives any compensation from the vendors it recommends, and have it confirmed before you proceed. Cyrrus evaluates platforms against criteria the business defines, with no commissions from recommended vendors."
+        },
+        {
+          "type": "p",
+          "text": "Execution with an accountable owner through go-live. A roadmap with no execution owner shifts all implementation risk to your internal team. Ask who is responsible for monitoring and retraining the system after launch: it is one of the questions recommended by Futureproofing’s guide to AI vendor selection."
+        },
+        {
+          "type": "p",
+          "text": "Structured adoption. Change management must be in scope from day one, with a training plan and a usage indicator. Its warning signs are low utilization, workarounds that users invent to avoid the system, and an executive team that cannot explain what return was delivered."
+        },
+        {
+          "type": "h2",
+          "text": "What it costs: reference ranges"
+        },
+        {
+          "type": "p",
+          "text": "Engagement models vary. Fixed price works when scope and acceptance criteria are clear; hourly billing fits exploratory work or changing requirements. Tillerbridge, a firm that sells fixed scope and therefore has its own interest, calls hourly billing the weakest of the three models for the buyer, because the meter rewards more hours and two hourly bids cannot be compared."
+        },
+        {
+          "type": "p",
+          "text": "As a budgeting reference, Tillerbridge publishes the following 2026 ranges (the page was last reviewed in July 2026 and cites “published rate guides” without naming them):"
+        },
+        {
+          "type": "table",
+          "text": "Reference ranges for AI consulting (Tillerbridge, 2026)",
+          "columns": [
+            "Type of work",
+            "Reference range",
+            "Note"
+          ],
+          "rows": [
+            [
+              "AI readiness assessment",
+              "US$15,000–50,000",
+              "Boutique firm ranges"
+            ],
+            [
+              "Governance assessment",
+              "US$25,000–75,000",
+              ""
+            ],
+            [
+              "Scoped production use case",
+              "US$50,000–250,000",
+              "Typical scoped implementation"
+            ],
+            [
+              "Advisory retainer",
+              "US$5,000–15,000 per month",
+              ""
+            ],
+            [
+              "Multi-year, multi-system programs",
+              "Seven figures and beyond",
+              "No range published"
+            ],
+            [
+              "Hourly rate",
+              "US$150–500",
+              "Hourly model"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Ask each candidate for a rate card, a not-to-exceed ceiling or example past proposals as evidence of pricing discipline. Check what proposals routinely leave out: cloud and model consumption costs, software licenses, internal staff time, data remediation, security review and legal work. A firm that quotes only its fees and leaves model consumption and integration labor unquantified is setting you up for a scope dispute months later."
+        },
+        {
+          "type": "h2",
+          "text": "How to vet a consulting firm before you sign"
+        },
+        {
+          "type": "p",
+          "text": "Ask for production references from organizations of comparable size and complexity. Case studies on a firm’s website are marketing material. Ask each reference whether the work reached production or stopped at proof of concept, what broke after launch and who fixed it. Also ask for an architecture and data-flow diagram for one of your use cases and an evaluation framework with task-specific tests, accuracy thresholds and a regression test plan. If the firm cannot produce those artifacts during selection, in our view that is a red flag."
+        },
+        {
+          "type": "p",
+          "text": "In the contract, require: that the client owns the deliverables and the trained models; a ban on using your data to train models for others; return or deletion of data and handover of models, code and documentation on termination; and the current status (not a roadmap) of certifications such as ISO/IEC 27001 or SOC 2 Type II. For AI-specific security, ask for a threat model that covers at least the risks OWASP lists in its 2025 Top 10 for LLM Applications, including prompt injection (LLM01) and data and model poisoning (LLM04)."
+        },
+        {
+          "type": "p",
+          "text": "Five questions, in our view, separate strong firms from weak ones: Who owns the production system after go-live? What happens to your data if you terminate the engagement? Can the firm show results from a comparable deployment? Does it receive any compensation from the vendors it recommends? What does its change management program look like in practice? A capable partner answers all five directly."
+        },
+        {
+          "type": "h2",
+          "text": "From pilot to production: gates and ROI"
+        },
+        {
+          "type": "p",
+          "text": "Before authorizing any phase transition, in our view you should require: a named process owner, a baseline-measured indicator, accuracy and latency thresholds tested on production-like data, security review and access controls confirmed, monitoring dashboards and rollback capability live, and representative users trained. Skipping these gates is a frequent reason pilots stall in perpetual iteration without reaching production. Futureproofing’s guide also recommends that a paid pilot run on a representative slice of your data and test production readiness, including who owns monitoring and retraining."
+        },
+        {
+          "type": "p",
+          "text": "ROI is not measured at the end: it is defined at the start, with a named indicator and a baseline measured before the pilot. So the client’s team can sustain operations and continuous improvement without depending on the consultancy, Cyrrus Leadership Academy builds internal capability inside the organization.",
+          "links": [
+            {
+              "text": "Leadership Academy",
+              "href": "/en/leadership-academy"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "You do not choose an AI consulting firm for its credentials, but for who accepts accountability for the result."
+        },
+        {
+          "type": "h2",
+          "text": "How we can help"
+        },
+        {
+          "type": "p",
+          "text": "Cyrrus Consulting Services is built around this model: vendor-neutral recommendations, execution governed by an external PMO through go-live, and structured adoption. The CIRA method, Cyrrus Intelligence Lab and Leadership Academy exist because strategy and execution need to live under the same roof, with one team accountable from the first diagnostic to the last training session. We work with organizations in Latin America and the United States that have attempted digital transformation before and need a partner responsible for the full execution, not just the advice.",
+          "links": [
+            {
+              "text": "CIRA method",
+              "href": "/en/metodo-cira"
+            },
+            {
+              "text": "Cyrrus Intelligence Lab",
+              "href": "/en/intelligence-lab"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you want to define a use case, establish a baseline and move toward production with a team that stays accountable through go-live, you can request a readiness assessment or a use-case scoping conversation."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Prosigns (2026). State of Enterprise AI 2026. Survey of 1,200 enterprise leaders, December 2025 to February 2026 (executive summary and chapter 2). Accessed November 15, 2026",
+          "url": "https://prosigns.io/docs/prosigns-state-of-enterprise-ai-2026.pdf"
+        },
+        {
+          "label": "Tillerbridge. AI consulting rates in 2026 (last reviewed July 2026). Accessed November 15, 2026",
+          "url": "https://www.tillerbridge.com/guides/ai-consulting-rates/"
+        },
+        {
+          "label": "Futureproofing (September 22, 2026). CTO guide to AI vendor selection. Accessed November 15, 2026",
+          "url": "https://www.futureproofing.dev/resources/build-vs-outsource/cto-guide-to-ai-vendor-selection"
+        },
+        {
+          "label": "OWASP GenAI Security Project. OWASP Top 10 for LLM Applications 2025. Accessed November 15, 2026",
+          "url": "https://genai.owasp.org/llm-top-10/"
         }
       ]
     },

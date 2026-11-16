@@ -438,12 +438,12 @@ export const blogPosts: BlogPostEntry[] = [
     ],
   },
   {
-    slug: "como-elegir-una-consultoria-de-ciberseguridad",
+    slug: "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
     coverImage: "/assets/decoracion/IMG_20230228_082632.jpg",
-    publishedAt: "2026-11-12",
+    publishedAt: "2026-11-15",
     pillarHref: "/metodo-cira/seleccion-de-soluciones/ciberseguridad",
     pillarLabelKey: "ciberseguridad",
-    serviceCtaIndexes: [12, 20],
+    serviceCtaIndexes: [9, 21],
     serviceCtaImages: [
       "/assets/decoracion/IMG_20230228_082632.jpg",
       "/assets/decoracion/IMG_20230302_112825.jpg",
@@ -468,6 +468,18 @@ export const blogPosts: BlogPostEntry[] = [
     pillarHref: "/intelligence-lab/estrategia-de-ia",
     pillarLabelKey: "estrategiaIA",
     serviceCtaIndexes: [8, 18],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866223529.jpg",
+      "/assets/decoracion/1785872413166.jpg",
+    ],
+  },
+  {
+    slug: "como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible",
+    coverImage: "/assets/decoracion/1785866223529.jpg",
+    publishedAt: "2026-11-15",
+    pillarHref: "/intelligence-lab/estrategia-de-ia",
+    pillarLabelKey: "estrategiaIA",
+    serviceCtaIndexes: [9, 18],
     serviceCtaImages: [
       "/assets/decoracion/1785866223529.jpg",
       "/assets/decoracion/1785872413166.jpg",

@@ -12,13 +12,33 @@
       "source": "/en/metodo-cira/seleccion-de-soluciones/tecnologias-maduras",
       "destination": "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
       "permanent": true
+    },
+    {
+      "source": "/perspectivas/como-elegir-una-consultoria-de-ciberseguridad",
+      "destination": "/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad",
+      "permanent": true
+    },
+    {
+      "source": "/en/perspectivas/como-elegir-una-consultoria-de-ciberseguridad",
+      "destination": "/en/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad",
+      "permanent": true
     }
   ],
   "headers": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": ".*\\.vercel\\.app" }],
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     }
   ]
 }

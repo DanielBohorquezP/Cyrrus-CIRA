@@ -34,88 +34,340 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Con frecuencia, la respuesta llega demasiado tarde, no se le da la importancia que merece o se asigna sin contar con las capacidades necesarias para gestionarla." },
-        { "type": "p", "text": "He acompañado organizaciones en procesos de transformación en los que la tecnología estaba bien seleccionada, el proyecto tenía buenos profesionales y existía un presupuesto importante, sobre el papel, todo parecía estar en orden, sin embargo, algo no funcionaba." },
-        { "type": "p", "text": "Con los años he aprendido que los proyectos de transformación rara vez fracasan por una sola razón, fracasan cuando la organización empieza a transformar una parte del negocio sin haber entendido suficientemente qué está tratando de transformar, por qué debe hacerlo y cómo afectará a las personas que hacen que ese negocio funcione todos los días. Los datos de la industria apuntan en la misma dirección: en un estudio de BCG publicado en 2020, el 70% de las transformaciones digitales no alcanzó sus objetivos." },
-        { "type": "p", "text": "Por eso, antes de hablar de tecnología, prefiero hablar de tres cosas: personas, procesos y tecnología, en ese orden." },
-        { "type": "h2", "text": "El primer error: comenzar por la tecnología" },
-        { "type": "p", "text": "Es una conversación que se repite con frecuencia:" },
-        { "type": "quote", "text": "“Necesitamos un nuevo ERP”, “Tenemos que implementar CRM”, “Debemos incorporar IA”, “Necesitamos automatizar este proceso.”" },
-        { "type": "p", "text": "Pero una transformación no debería comenzar con la solución, debería comenzar con otra pregunta: ¿qué necesitamos transformar y por qué?" },
-        { "type": "p", "text": "Cuando esa pregunta no está suficientemente clara, la tecnología termina convirtiéndose en el proyecto y no en el habilitador del proyecto, entonces comenzamos a medir el éxito por la implementación de una herramienta, por el cumplimiento de un cronograma o por la cantidad de funcionalidades entregadas." },
-        { "type": "p", "text": "Pero una organización no se transforma porque una tecnología haya sido implementada, se transforma cuando esa tecnología consigue modificar, de manera sostenible, la forma en que las personas trabajan, toman decisiones y generan valor." },
-        { "type": "h2", "text": "El segundo error: no construir el caso de negocio" },
-        { "type": "p", "text": "Una transformación requiere inversión, pero la inversión no es el caso de negocio." },
-        { "type": "p", "text": "Antes de comenzar, deberíamos poder responder con claridad qué problema queremos resolver, qué oportunidad queremos aprovechar, qué valor esperamos generar y cómo vamos a saber que realmente lo conseguimos." },
-        { "type": "p", "text": "Esto parece evidente, pero no siempre lo es." },
-        { "type": "p", "text": "Cuando el caso de negocio no está suficientemente estructurado, el proyecto puede avanzar durante meses y terminar siendo evaluado por sus entregables en lugar de por el valor que debía producir." },
-        { "type": "p", "text": "Se implementó, entregó, capacitó y se puso en producción, ¿pero transformó realmente el negocio?" },
-        { "type": "h2", "text": "El tercer error: mirar el proyecto y no la cadena de valor" },
-        { "type": "p", "text": "Uno de los riesgos más frecuentes es analizar la transformación como un conjunto de procesos aislados, pero las organizaciones no funcionan así." },
-        { "type": "p", "text": "Un cambio en ventas puede afectar operaciones, en compras puede modificar inventarios, en producción puede impactar finanzas, una nueva política de datos puede cambiar la manera en que diferentes áreas toman decisiones." },
-        { "type": "p", "text": "Por eso, transformar un proceso implica comprender sus relaciones con los demás procesos y finalmente, con la cadena de valor." },
-        { "type": "p", "text": "La pregunta no debería ser:" },
-        { "type": "quote", "text": "¿Qué proceso vamos a cambiar?" },
-        { "type": "p", "text": "También deberíamos preguntarnos:" },
-        { "type": "quote", "text": "¿Qué más cambia en la organización cuando este proceso cambia?" },
-        { "type": "p", "text": "Ahí comienza realmente la transformación." },
-        { "type": "h2", "text": "El cuarto error: dejar la gestión del cambio para el final" },
-        { "type": "p", "text": "Este es, probablemente, uno de los errores que más he visto repetirse, la gestión del cambio no puede aparecer al final del proyecto, cuando ya se tomó la decisión, se seleccionó la solución y la organización está a punto de recibir una nueva manera de trabajar. La investigación de Prosci lo respalda: los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos que los que la gestionan mal." },
-        { "type": "p", "text": "Para entonces, muchas personas ya han construido sus propias interpretaciones sobre lo que está ocurriendo, cuando las personas no entienden el cambio, aparecen el temor, la resistencia, la indiferencia o, simplemente, el cansancio." },
-        { "type": "p", "text": "Para mí, la gestión del cambio comienza mucho antes.", "links": [{"text": "gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "Comienza cuando las personas entienden por qué deben cambiar, cuál será el impacto de hacerlo bien y también cuál puede ser el impacto de hacerlo mal." },
-        { "type": "p", "text": "Hace algunos años, durante la implementación de un ERP en una organización de la industria minera, vivimos una situación que me dejó una enseñanza que todavía conservo." },
-        { "type": "p", "text": "Una persona con un rol muy importante dentro de la organización estaba completamente involucrada en el proyecto, su intención era positiva: quería asegurar que todas las áreas del negocio estuvieran correctamente definidas." },
-        { "type": "p", "text": "Pero, poco a poco, esa participación comenzó a producir un efecto no deseado." },
-        { "type": "p", "text": "Los responsables de las diferentes áreas empezaron a perder interés y compromiso, si una sola persona estaba definiendo buena parte de lo que correspondía a sus áreas, ellos comenzaron a sentir que su participación ya no era tan necesaria." },
-        { "type": "p", "text": "El problema no estaba en la tecnología, tampoco en la voluntad de esa persona, estaba en la dinámica humana que se había generado alrededor del proyecto." },
-        { "type": "p", "text": "Intervenimos." },
-        { "type": "p", "text": "Hablamos con esa persona, reforzamos su rol, explicamos el impacto que estaba teniendo la situación y trabajamos nuevamente con los demás líderes, generamos espacios adicionales para reforzar la importancia de su participación y hacer visible el impacto de su trabajo en el resultado final." },
-        { "type": "p", "text": "La respuesta cambió y el compromiso también." },
-        { "type": "p", "text": "Aquella experiencia volvió a confirmarme algo que considero fundamental: involucrar a las personas no significa simplemente tenerlas dentro del proyecto, significa hacerlas parte de la transformación." },
-        { "type": "h2", "text": "El quinto error: creer que comunicar es informar" },
-        { "type": "p", "text": "Hay una diferencia enorme entre comunicar un cambio y anunciarlo." },
-        { "type": "p", "text": "“Vamos a implementar un nuevo sistema.” Eso es información." },
-        { "type": "p", "text": "“Vamos a cambiar esta manera de trabajar porque necesitamos resolver este problema, y este será el impacto para ustedes.” Eso empieza a ser comunicación." },
-        { "type": "p", "text": "La organización necesita entender qué está pasando, pero también necesita comprender por qué está pasando, necesita tener espacios para preguntar, cuestionar, aportar y entender cuál es su papel." },
-        { "type": "p", "text": "Por eso considero que la comunicación debe acompañar toda la transformación, no solamente sus hitos y en ese proceso, los líderes de la organización, especialmente sus niveles C, tienen una responsabilidad que no pueden delegar." },
-        { "type": "h2", "text": "El sexto error: seleccionar una solución sin entender el contexto" },
-        { "type": "p", "text": "Una buena tecnología no necesariamente es una buena decisión." },
-        { "type": "p", "text": "La solución correcta depende del negocio, de su estrategia, de sus procesos, de su capacidad organizacional, de sus datos, de su arquitectura, de las restricciones y, por supuesto, de las personas que tendrán que utilizarla y hacerla sostenible." },
-        { "type": "p", "text": "He aprendido que seleccionar una solución no consiste en comparar funcionalidades." },
-        { "type": "p", "text": "Consiste en entender qué necesita realmente la organización y cuál alternativa puede acompañarla mejor en el camino que quiere recorrer." },
-        { "type": "p", "text": "La pregunta no es:" },
-        { "type": "quote", "text": "¿Cuál es la mejor tecnología?" },
-        { "type": "p", "text": "La pregunta es:" },
-        { "type": "quote", "text": "¿Cuál es la mejor decisión para esta organización?" },
-        { "type": "p", "text": "No son la misma pregunta." },
-        { "type": "h2", "text": "El séptimo error: pensar que la transformación termina cuando termina el proyecto" },
-        { "type": "p", "text": "Un proyecto tiene una fecha de inicio y una fecha de cierre, la transformación no necesariamente." },
-        { "type": "p", "text": "Cuando termina la implementación comienza una etapa todavía más importante: la adopción, la optimización y la mejora continua." },
-        { "type": "p", "text": "Una organización realmente transformada no vuelve a sus viejas formas de hacer las cosas apenas termina el acompañamiento del proyecto." },
-        { "type": "p", "text": "Aprende – Ajusta – Mide – Mejora y sobre todo, pierde progresivamente el miedo al cambio." },
-        { "type": "p", "text": "Ese, para mí, es uno de los indicadores más importantes de una transformación exitosa." },
-        { "type": "p", "text": "Cuando la organización comienza a abrazar el cambio como parte natural de su cultura y entra en una dinámica de innovación responsable y con propósito, algo mucho más profundo ha ocurrido que una simple implementación tecnológica." },
-        { "type": "p", "text": "La organización ha cambiado su manera de relacionarse con el futuro." },
-        { "type": "h2", "text": "Entonces, ¿qué debería hacer un CEO?" },
-        { "type": "p", "text": "El CEO no necesita convertirse en el experto en cada tecnología. Su responsabilidad es otra: entender la transformación, acompañarla, comunicarla, inspirarla y sostenerla." },
-        { "type": "p", "text": "Debe comprender su impacto en el negocio, estar dispuesto a acompañar las decisiones difíciles y reconocer el esfuerzo de quienes hacen posible el cambio." },
-        { "type": "p", "text": "Sobre todo, debe predicar con el ejemplo." },
-        { "type": "p", "text": "Porque resulta difícil pedirle a una organización que abrace el cambio cuando su propio liderazgo todavía intenta protegerse de él." },
-        { "type": "p", "text": "El CEO debe ser patrocinador, pero también comunicador e inspirador permanente, debe liderar el cambio cultural y debe recordar que la transformación no pertenece al área de tecnología; es asunto del negocio de la organización completa, pertenece a toda la organización." },
-        { "type": "p", "text": "La tecnología es importante, pero no es el principio." },
-        { "type": "p", "text": "Después de muchos años, cada vez estoy más convencido de que la transformación digital no comienza cuando se selecciona una tecnología, comienza mucho antes:" },
-        { "type": "p", "text": "Comienza cuando la organización decide mirar su realidad con honestidad." },
-        { "type": "p", "text": "Cuando entiende qué necesita mejorar." },
-        { "type": "p", "text": "Cuando entiende el impacto en sus clientes, proveedores y los entornos, no solo al interior de la organización." },
-        { "type": "p", "text": "Cuando identifica cómo impacta esa mejora en su cadena de valor." },
-        { "type": "p", "text": "Cuando construye un caso de negocio que permita tomar una decisión consciente." },
-        { "type": "p", "text": "Cuando escucha a las personas que tendrán que hacer posible el cambio." },
-        { "type": "p", "text": "Y cuando entiende que transformar no significa solamente implementar algo nuevo." },
-        { "type": "p", "text": "Significa aprender a trabajar, decidir y evolucionar de una manera diferente." },
-        { "type": "p", "text": "Por eso, cuando pienso en transformación, vuelvo siempre a una idea sencilla: personas, procesos, tecnología." },
-        { "type": "p", "text": "Pero hay un principio que debe permanecer en el centro: las personas. Porque, al final, la tecnología puede habilitar el cambio y los procesos pueden darle estructura, pero son las personas quienes hacen que una transformación realmente ocurra." },
-        { "type": "quote", "text": "“Las tecnologías cambian. Una cultura de innovación y de cambio permanece y evoluciona.”" },
+        {
+          "type": "p",
+          "text": "Con frecuencia, la respuesta llega demasiado tarde, no se le da la importancia que merece o se asigna sin contar con las capacidades necesarias para gestionarla."
+        },
+        {
+          "type": "p",
+          "text": "He acompañado organizaciones en procesos de transformación en los que la tecnología estaba bien seleccionada, el proyecto tenía buenos profesionales y existía un presupuesto importante, sobre el papel, todo parecía estar en orden, sin embargo, algo no funcionaba."
+        },
+        {
+          "type": "p",
+          "text": "Con los años he aprendido que los proyectos de transformación rara vez fracasan por una sola razón, fracasan cuando la organización empieza a transformar una parte del negocio sin haber entendido suficientemente qué está tratando de transformar, por qué debe hacerlo y cómo afectará a las personas que hacen que ese negocio funcione todos los días. Los datos de la industria apuntan en la misma dirección: en un estudio de BCG publicado en 2020, el 70% de las transformaciones digitales no alcanzó sus objetivos."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, antes de hablar de tecnología, prefiero hablar de tres cosas: personas, procesos y tecnología, en ese orden."
+        },
+        {
+          "type": "h2",
+          "text": "El primer error: comenzar por la tecnología"
+        },
+        {
+          "type": "p",
+          "text": "Es una conversación que se repite con frecuencia:"
+        },
+        {
+          "type": "quote",
+          "text": "“Necesitamos un nuevo ERP”, “Tenemos que implementar CRM”, “Debemos incorporar IA”, “Necesitamos automatizar este proceso.”"
+        },
+        {
+          "type": "p",
+          "text": "Pero una transformación no debería comenzar con la solución, debería comenzar con otra pregunta: ¿qué necesitamos transformar y por qué?"
+        },
+        {
+          "type": "p",
+          "text": "Cuando esa pregunta no está suficientemente clara, la tecnología termina convirtiéndose en el proyecto y no en el habilitador del proyecto, entonces comenzamos a medir el éxito por la implementación de una herramienta, por el cumplimiento de un cronograma o por la cantidad de funcionalidades entregadas."
+        },
+        {
+          "type": "p",
+          "text": "Pero una organización no se transforma porque una tecnología haya sido implementada, se transforma cuando esa tecnología consigue modificar, de manera sostenible, la forma en que las personas trabajan, toman decisiones y generan valor."
+        },
+        {
+          "type": "h2",
+          "text": "El segundo error: no construir el caso de negocio"
+        },
+        {
+          "type": "p",
+          "text": "Una transformación requiere inversión, pero la inversión no es el caso de negocio."
+        },
+        {
+          "type": "p",
+          "text": "Antes de comenzar, deberíamos poder responder con claridad qué problema queremos resolver, qué oportunidad queremos aprovechar, qué valor esperamos generar y cómo vamos a saber que realmente lo conseguimos."
+        },
+        {
+          "type": "p",
+          "text": "Esto parece evidente, pero no siempre lo es."
+        },
+        {
+          "type": "p",
+          "text": "Cuando el caso de negocio no está suficientemente estructurado, el proyecto puede avanzar durante meses y terminar siendo evaluado por sus entregables en lugar de por el valor que debía producir."
+        },
+        {
+          "type": "p",
+          "text": "Se implementó, entregó, capacitó y se puso en producción, ¿pero transformó realmente el negocio?"
+        },
+        {
+          "type": "h2",
+          "text": "El tercer error: mirar el proyecto y no la cadena de valor"
+        },
+        {
+          "type": "p",
+          "text": "Uno de los riesgos más frecuentes es analizar la transformación como un conjunto de procesos aislados, pero las organizaciones no funcionan así."
+        },
+        {
+          "type": "p",
+          "text": "Un cambio en ventas puede afectar operaciones, en compras puede modificar inventarios, en producción puede impactar finanzas, una nueva política de datos puede cambiar la manera en que diferentes áreas toman decisiones."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, transformar un proceso implica comprender sus relaciones con los demás procesos y finalmente, con la cadena de valor."
+        },
+        {
+          "type": "p",
+          "text": "La pregunta no debería ser:"
+        },
+        {
+          "type": "quote",
+          "text": "¿Qué proceso vamos a cambiar?"
+        },
+        {
+          "type": "p",
+          "text": "También deberíamos preguntarnos:"
+        },
+        {
+          "type": "quote",
+          "text": "¿Qué más cambia en la organización cuando este proceso cambia?"
+        },
+        {
+          "type": "p",
+          "text": "Ahí comienza realmente la transformación."
+        },
+        {
+          "type": "h2",
+          "text": "El cuarto error: dejar la gestión del cambio para el final"
+        },
+        {
+          "type": "p",
+          "text": "Este es, probablemente, uno de los errores que más he visto repetirse, la gestión del cambio no puede aparecer al final del proyecto, cuando ya se tomó la decisión, se seleccionó la solución y la organización está a punto de recibir una nueva manera de trabajar. La investigación de Prosci lo respalda: los proyectos con una gestión del cambio excelente tienen unas siete veces más probabilidades de cumplir sus objetivos que los que la gestionan mal."
+        },
+        {
+          "type": "p",
+          "text": "Para entonces, muchas personas ya han construido sus propias interpretaciones sobre lo que está ocurriendo, cuando las personas no entienden el cambio, aparecen el temor, la resistencia, la indiferencia o, simplemente, el cansancio."
+        },
+        {
+          "type": "p",
+          "text": "Para mí, la gestión del cambio comienza mucho antes.",
+          "links": [
+            {
+              "text": "gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Comienza cuando las personas entienden por qué deben cambiar, cuál será el impacto de hacerlo bien y también cuál puede ser el impacto de hacerlo mal."
+        },
+        {
+          "type": "p",
+          "text": "Hace algunos años, durante la implementación de un ERP en una organización de la industria minera, vivimos una situación que me dejó una enseñanza que todavía conservo."
+        },
+        {
+          "type": "p",
+          "text": "Una persona con un rol muy importante dentro de la organización estaba completamente involucrada en el proyecto, su intención era positiva: quería asegurar que todas las áreas del negocio estuvieran correctamente definidas."
+        },
+        {
+          "type": "p",
+          "text": "Pero, poco a poco, esa participación comenzó a producir un efecto no deseado."
+        },
+        {
+          "type": "p",
+          "text": "Los responsables de las diferentes áreas empezaron a perder interés y compromiso, si una sola persona estaba definiendo buena parte de lo que correspondía a sus áreas, ellos comenzaron a sentir que su participación ya no era tan necesaria."
+        },
+        {
+          "type": "p",
+          "text": "El problema no estaba en la tecnología, tampoco en la voluntad de esa persona, estaba en la dinámica humana que se había generado alrededor del proyecto."
+        },
+        {
+          "type": "p",
+          "text": "Intervenimos."
+        },
+        {
+          "type": "p",
+          "text": "Hablamos con esa persona, reforzamos su rol, explicamos el impacto que estaba teniendo la situación y trabajamos nuevamente con los demás líderes, generamos espacios adicionales para reforzar la importancia de su participación y hacer visible el impacto de su trabajo en el resultado final."
+        },
+        {
+          "type": "p",
+          "text": "La respuesta cambió y el compromiso también."
+        },
+        {
+          "type": "p",
+          "text": "Aquella experiencia volvió a confirmarme algo que considero fundamental: involucrar a las personas no significa simplemente tenerlas dentro del proyecto, significa hacerlas parte de la transformación."
+        },
+        {
+          "type": "h2",
+          "text": "El quinto error: creer que comunicar es informar"
+        },
+        {
+          "type": "p",
+          "text": "Hay una diferencia enorme entre comunicar un cambio y anunciarlo."
+        },
+        {
+          "type": "p",
+          "text": "“Vamos a implementar un nuevo sistema.” Eso es información."
+        },
+        {
+          "type": "p",
+          "text": "“Vamos a cambiar esta manera de trabajar porque necesitamos resolver este problema, y este será el impacto para ustedes.” Eso empieza a ser comunicación."
+        },
+        {
+          "type": "p",
+          "text": "La organización necesita entender qué está pasando, pero también necesita comprender por qué está pasando, necesita tener espacios para preguntar, cuestionar, aportar y entender cuál es su papel."
+        },
+        {
+          "type": "p",
+          "text": "Por eso considero que la comunicación debe acompañar toda la transformación, no solamente sus hitos y en ese proceso, los líderes de la organización, especialmente sus niveles C, tienen una responsabilidad que no pueden delegar."
+        },
+        {
+          "type": "h2",
+          "text": "El sexto error: seleccionar una solución sin entender el contexto"
+        },
+        {
+          "type": "p",
+          "text": "Una buena tecnología no necesariamente es una buena decisión."
+        },
+        {
+          "type": "p",
+          "text": "La solución correcta depende del negocio, de su estrategia, de sus procesos, de su capacidad organizacional, de sus datos, de su arquitectura, de las restricciones y, por supuesto, de las personas que tendrán que utilizarla y hacerla sostenible."
+        },
+        {
+          "type": "p",
+          "text": "He aprendido que seleccionar una solución no consiste en comparar funcionalidades."
+        },
+        {
+          "type": "p",
+          "text": "Consiste en entender qué necesita realmente la organización y cuál alternativa puede acompañarla mejor en el camino que quiere recorrer."
+        },
+        {
+          "type": "p",
+          "text": "La pregunta no es:"
+        },
+        {
+          "type": "quote",
+          "text": "¿Cuál es la mejor tecnología?"
+        },
+        {
+          "type": "p",
+          "text": "La pregunta es:"
+        },
+        {
+          "type": "quote",
+          "text": "¿Cuál es la mejor decisión para esta organización?"
+        },
+        {
+          "type": "p",
+          "text": "No son la misma pregunta."
+        },
+        {
+          "type": "h2",
+          "text": "El séptimo error: pensar que la transformación termina cuando termina el proyecto"
+        },
+        {
+          "type": "p",
+          "text": "Un proyecto tiene una fecha de inicio y una fecha de cierre, la transformación no necesariamente."
+        },
+        {
+          "type": "p",
+          "text": "Cuando termina la implementación comienza una etapa todavía más importante: la adopción, la optimización y la mejora continua."
+        },
+        {
+          "type": "p",
+          "text": "Una organización realmente transformada no vuelve a sus viejas formas de hacer las cosas apenas termina el acompañamiento del proyecto."
+        },
+        {
+          "type": "p",
+          "text": "Aprende – Ajusta – Mide – Mejora y sobre todo, pierde progresivamente el miedo al cambio."
+        },
+        {
+          "type": "p",
+          "text": "Ese, para mí, es uno de los indicadores más importantes de una transformación exitosa."
+        },
+        {
+          "type": "p",
+          "text": "Cuando la organización comienza a abrazar el cambio como parte natural de su cultura y entra en una dinámica de innovación responsable y con propósito, algo mucho más profundo ha ocurrido que una simple implementación tecnológica."
+        },
+        {
+          "type": "p",
+          "text": "La organización ha cambiado su manera de relacionarse con el futuro."
+        },
+        {
+          "type": "h2",
+          "text": "Entonces, ¿qué debería hacer un CEO?"
+        },
+        {
+          "type": "p",
+          "text": "El CEO no necesita convertirse en el experto en cada tecnología. Su responsabilidad es otra: entender la transformación, acompañarla, comunicarla, inspirarla y sostenerla."
+        },
+        {
+          "type": "p",
+          "text": "Debe comprender su impacto en el negocio, estar dispuesto a acompañar las decisiones difíciles y reconocer el esfuerzo de quienes hacen posible el cambio."
+        },
+        {
+          "type": "p",
+          "text": "Sobre todo, debe predicar con el ejemplo."
+        },
+        {
+          "type": "p",
+          "text": "Porque resulta difícil pedirle a una organización que abrace el cambio cuando su propio liderazgo todavía intenta protegerse de él."
+        },
+        {
+          "type": "p",
+          "text": "El CEO debe ser patrocinador, pero también comunicador e inspirador permanente, debe liderar el cambio cultural y debe recordar que la transformación no pertenece al área de tecnología; es asunto del negocio de la organización completa, pertenece a toda la organización."
+        },
+        {
+          "type": "p",
+          "text": "La tecnología es importante, pero no es el principio."
+        },
+        {
+          "type": "p",
+          "text": "Después de muchos años, cada vez estoy más convencido de que la transformación digital no comienza cuando se selecciona una tecnología, comienza mucho antes:"
+        },
+        {
+          "type": "p",
+          "text": "Comienza cuando la organización decide mirar su realidad con honestidad."
+        },
+        {
+          "type": "p",
+          "text": "Cuando entiende qué necesita mejorar."
+        },
+        {
+          "type": "p",
+          "text": "Cuando entiende el impacto en sus clientes, proveedores y los entornos, no solo al interior de la organización."
+        },
+        {
+          "type": "p",
+          "text": "Cuando identifica cómo impacta esa mejora en su cadena de valor."
+        },
+        {
+          "type": "p",
+          "text": "Cuando construye un caso de negocio que permita tomar una decisión consciente."
+        },
+        {
+          "type": "p",
+          "text": "Cuando escucha a las personas que tendrán que hacer posible el cambio."
+        },
+        {
+          "type": "p",
+          "text": "Y cuando entiende que transformar no significa solamente implementar algo nuevo."
+        },
+        {
+          "type": "p",
+          "text": "Significa aprender a trabajar, decidir y evolucionar de una manera diferente."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, cuando pienso en transformación, vuelvo siempre a una idea sencilla: personas, procesos, tecnología."
+        },
+        {
+          "type": "p",
+          "text": "Pero hay un principio que debe permanecer en el centro: las personas. Porque, al final, la tecnología puede habilitar el cambio y los procesos pueden darle estructura, pero son las personas quienes hacen que una transformación realmente ocurra."
+        },
+        {
+          "type": "quote",
+          "text": "“Las tecnologías cambian. Una cultura de innovación y de cambio permanece y evoluciona.”"
+        },
         {
           "type": "p",
           "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y cómo diagnosticar la resistencia al cambio.",
@@ -180,81 +432,318 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Hay decisiones que una organización puede tomar internamente. Hay otras en las que contar con alguien externo puede marcar una diferencia enorme." },
-        { "type": "p", "text": "No necesariamente porque ese tercero tenga más conocimiento que el equipo interno. De hecho, el conocimiento del negocio está dentro de la organización. La diferencia está en otra parte." },
-        { "type": "p", "text": "En poder mirar el negocio sin estar condicionado por la forma en que siempre se han hecho las cosas. En hacer preguntas que nadie está haciendo. En identificar potenciales que todavía no son evidentes. En poner sobre la mesa aquello que la organización necesita escuchar, aunque no sea necesariamente lo que quiere escuchar." },
-        { "type": "p", "text": "Por eso, cuando una empresa decide contratar una consultora estratégica, en mi opinión no debería preguntarse solamente qué experiencia tiene, qué clientes ha atendido o cuánto cuesta. Debería preguntarse algo más importante: ¿esta consultora realmente va a ayudarnos a ver lo que nosotros no estamos viendo?" },
-        { "type": "p", "text": "A lo largo de mi experiencia he estado en los dos lados de esta conversación. Como ejecutivo de tecnología recibí los resultados de una consultoría estratégica y hoy, desde Cyrrus, me corresponde acompañar a equipos directivos en decisiones que pueden tener un impacto importante en sus organizaciones. Esa experiencia me ha dejado algunas conclusiones." },
-        { "type": "h2", "text": "El error de elegir por marca y precio" },
-        { "type": "p", "text": "Un error posible es convertir la selección de una consultora en una comparación de propuestas." },
-        { "type": "p", "text": "Quién tiene la marca más reconocida. Quién cobra menos. Quién presentó el documento más grande. Quién incluyó más páginas, más metodologías, más gráficos o más especialistas." },
-        { "type": "p", "text": "Pero una consultoría estratégica no debería ganarse por el tamaño de su documento. De hecho, una propuesta demasiado extensa puede esconder una pregunta que todavía no ha sido respondida: ¿entendieron realmente mi problema?" },
-        { "type": "p", "text": "He visto organizaciones tomar decisiones importantes basándose en la reputación de una firma o en una propuesta técnicamente impecable, sin detenerse suficientemente a evaluar si esa firma comprende realmente su negocio, su entorno y sus restricciones. Ahí comienza una diferencia fundamental." },
-        { "type": "h2", "text": "Una consultora no debería empezar suponiendo" },
-        { "type": "p", "text": "Una verdadera consultoría estratégica no se limita a revisar documentos, recoger evidencias o completar cuestionarios. Eso puede ser parte del proceso, pero no puede ser el proceso." },
-        { "type": "p", "text": "Hay que entender cómo realmente funcionan las cosas, cómo se toman las decisiones, cómo trabajan las personas, qué funciona y qué no, qué tan cómodos se sienten los equipos con la forma actual de hacer las cosas, qué aportes están haciendo y dónde existen capacidades que todavía no han sido aprovechadas y sobre todo, hay que escuchar. Escuchar antes de concluir. Preguntar antes de recomendar. Analizar antes de suponer." },
-        { "type": "p", "text": "Porque una de las cosas que más valor destruye en una consultoría es dar por sentado que ya se entiende el problema." },
-        { "type": "p", "text": "No suponer debería ser casi una regla de oro." },
-        { "type": "h2", "text": "Una experiencia que me enseñó mucho" },
-        { "type": "p", "text": "Hace algunos años, cuando me desempeñaba como director de TI, llegué a una organización como resultado de una recomendación realizada por una consultoría estratégica." },
-        { "type": "p", "text": "La consultoría había realizado un trabajo importante. Había muchos documentos, muchas hojas, muchos análisis y numerosas recomendaciones." },
-        { "type": "p", "text": "Como parte de mi proceso de entendimiento y onboarding, decidí revisar cuidadosamente esos entregables. Encontré algo que me llamó profundamente la atención." },
-        { "type": "p", "text": "Aproximadamente el 90 % de las recomendaciones no eran aplicables en la práctica. No necesariamente porque estuvieran técnicamente mal. El problema era otro." },
-        { "type": "p", "text": "Algunas no consideraban las restricciones propias de la organización. Otras no tenían en cuenta las particularidades del sector. Algunas estaban sobredimensionadas para las necesidades reales de la empresa. Otras implicaban inversiones extremadamente altas para el valor que podían generar. Y algunas, sencillamente, eran soluciones para problemas que la organización no tenía." },
-        { "type": "p", "text": "Aquella experiencia me dejó una enseñanza que todavía considero fundamental: una buena recomendación no es la que funciona en teoría. Es la que tiene sentido para esa organización." },
-        { "type": "p", "text": "Las buenas prácticas son importantes, pero el contexto importa más." },
-        { "type": "p", "text": "Cada organización tiene una realidad diferente: personas, capacidades, restricciones, culturas, mercados y momentos diferentes. Por eso, una consultoría que simplemente replica lo que funcionó en otra empresa puede terminar recomendando algo que, aunque sea correcto en otro contexto, sea completamente inadecuado para el cliente." },
-        { "type": "p", "text": "La experiencia importa. La empatía también." },
-        { "type": "p", "text": "Creo profundamente en la experiencia, pero la experiencia por sí sola no es suficiente. Una persona puede haber participado en cientos de proyectos y aun así no comprender una organización." },
-        { "type": "p", "text": "La experiencia debe estar acompañada de capacidad para escuchar, de empatía y, sobre todo, de sentido común." },
-        { "type": "p", "text": "Sentido común para entender que no todo lo posible es necesario. Que no todo lo recomendado debe implementarse. Que no toda tecnología genera valor. Que una organización tiene restricciones. Que las personas tienen diferentes niveles de preparación y habilidades. Que los cambios tienen consecuencias. Y que detrás de cada proceso, cada sistema y cada decisión hay personas." },
-        { "type": "p", "text": "Para mí, esa combinación es mucho más poderosa que cualquier metodología. Experiencia para saber qué mirar. Empatía para entender lo que se está viendo. Sentido común para decidir qué hacer con ello." },
-        { "type": "h2", "text": "Las conversaciones incómodas también generan valor" },
-        { "type": "p", "text": "Hay algo que considero especialmente importante en la relación entre una consultora y un CEO: la capacidad de tener conversaciones incómodas." },
-        { "type": "p", "text": "Una consultora no está para decirle al cliente lo que quiere escuchar. Está para decirle lo que necesita escuchar." },
-        { "type": "p", "text": "Eso implica, algunas veces, cuestionar una decisión, decir que algo no funciona, reconocer que una recomendación propia no era correcta, explicar que una solución inicialmente considerada no aplica o simplemente decir:" },
-        { "type": "quote", "text": "“No creo que debamos hacerlo.”" },
-        { "type": "p", "text": "Estas conversaciones no deberían deteriorar la relación. Por el contrario, cuando están sustentadas en conocimiento, argumentos, transparencia y respeto, suelen aportar muchísimo valor." },
-        { "type": "p", "text": "Una buena consultora no busca tener siempre la razón. Busca que la organización tome mejores decisiones." },
-        { "type": "h2", "text": "Hay señales que deberían generar desconfianza" },
-        { "type": "p", "text": "Personalmente, tendría cuidado con una consultora que utiliza demasiados términos rebuscados para explicar cosas sencillas. También con aquella que parece tener una solución para absolutamente todo, con la que asegura saberlo todo antes de conocer suficientemente el negocio, con la que habla mucho y pregunta poco, con la que llega con una respuesta preparada antes de entender la pregunta y, especialmente, con aquella que no parece sensible a las restricciones de la organización." },
-        { "type": "p", "text": "Las restricciones existen. Presupuesto, talento, cultura, regulación, infraestructura, procesos, tiempo, capacidad de ejecución y madurez organizacional y tecnológica." },
-        { "type": "p", "text": "Ignorarlas no las hace desaparecer. Una recomendación estratégica que no puede convivir con la realidad de la organización deja de ser estratégica." },
-        { "type": "h2", "text": "¿Cómo reconocer una buena consultora?" },
-        { "type": "p", "text": "Una buena consultora se reconoce porque entiende su negocio, no solo lo que usted le cuenta, y se lo devuelve con una mirada que su equipo no tenía. Hay una señal que, para mí, resume muchas de las anteriores." },
-        { "type": "p", "text": "Entiende tu negocio." },
-        { "type": "p", "text": "Pero no solamente lo que tú le cuentas. Entiende tus dolores, entiende el entorno, entiende las restricciones, entiende a las personas y, con el tiempo, incluso puede llegar a identificar algunos dolores que el propio dueño o CEO todavía no ha visto." },
-        { "type": "p", "text": "Ahí empieza a aparecer el verdadero valor de una consultoría. No cuando entrega un documento, sino cuando ayuda a la organización a comprender mejor su propia realidad." },
-        { "type": "h2", "text": "El agnosticismo no es un detalle" },
-        { "type": "p", "text": "Hay otro aspecto que considero fundamental y que, en mi opinión, debería ser una condición para cualquier consultoría que participe en procesos de selección de soluciones: el agnosticismo." },
-        { "type": "p", "text": "Una consultoría estratégica debería poder analizar alternativas sin tener preferencias comerciales por una marca, un fabricante o una firma. No debería existir un compromiso comercial, beneficio o comisión que condicione la recomendación." },
-        { "type": "p", "text": "Si una organización está buscando definir qué solución necesita, la pregunta debería ser:" },
-        { "type": "quote", "text": "¿Qué es lo mejor para la organización?" },
-        { "type": "p", "text": "No:" },
-        { "type": "quote", "text": "¿Cuál de las soluciones que comercializamos podemos recomendar?" },
-        { "type": "p", "text": "La independencia permite evaluar con mayor libertad. Y esa libertad es especialmente importante cuando las decisiones implican inversiones significativas y compromisos de largo plazo." },
-        { "type": "h2", "text": "¿Qué debería quedar cuando termina una consultoría?" },
-        { "type": "p", "text": "Cuando termina una consultoría debería quedar una organización más capaz que antes, no solo un documento. Esta es, para mí, una de las preguntas más importantes." },
-        { "type": "p", "text": "Una consultoría no debería terminar simplemente dejando un documento. Debería dejar capacidad: una mejor comprensión del negocio, mejores criterios para tomar decisiones, conocimiento instalado en el equipo y personas más preparadas." },
-        { "type": "p", "text": "Pero hay algo aún más importante: una organización capaz de cuestionar, analizar y mejorar; una cultura organizacional más innovadora, crítica y orientada a la mejora permanente y centrada en las personas." },
-        { "type": "p", "text": "Porque si cada vez que la organización enfrenta un problema necesita volver a contratar a alguien externo para entender qué hacer, probablemente la consultoría no terminó de cumplir su propósito." },
-        { "type": "p", "text": "El verdadero resultado debería ser una organización más capaz que antes." },
-        { "type": "h2", "text": "El papel de la consultora frente al CEO" },
-        { "type": "p", "text": "No creo que sea simplemente el de un proveedor. Tampoco debería ser únicamente el de un asesor que entrega recomendaciones." },
-        { "type": "p", "text": "Para mí, una buena consultora debe convertirse en una especie de sparring intelectual del CEO: alguien que facilite, que cuestione, que ayude a construir, que pueda actuar como arquitecto cuando sea necesario, que conozca el negocio y el entorno." },
-        { "type": "p", "text": "Debe poder estar suficientemente cerca de la organización como para comprenderla, pero suficientemente afuera como para mantener una mirada independiente." },
-        { "type": "p", "text": "Alguien a quien el CEO pueda tener en su “top of mind” cuando aparece un problema complejo y necesita pensar cómo resolverlo, no necesariamente porque esa persona tenga la respuesta, sino porque sabe cómo ayudar a encontrarla." },
-        { "type": "h2", "text": "Si tuviera tres consultoras frente a mí" },
-        { "type": "p", "text": "Supongamos que un CEO me dijera:" },
-        { "type": "quote", "text": "“Jackson, tengo tres consultoras. Las tres tienen experiencia, buenos clientes y propuestas excelentes. ¿Cuál debería elegir?”" },
-        { "type": "p", "text": "Probablemente no empezaría comparando las propuestas." },
-        { "type": "p", "text": "Le diría que mire quién piensa diferente. Quién es más imparcial. Quién tiene el mejor equipo, no solamente la mejor marca. Quién hizo las mejores preguntas antes de presentar la propuesta. Quién realmente escuchó. Quién fue capaz de cuestionar. Quién entendió las restricciones de su organización y, especialmente, quién mostró preocupación genuina por las personas y por la gestión del cambio.", "links": [{"text": "gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "Porque una transformación puede tener la mejor estrategia, la mejor tecnología y el presupuesto adecuado, pero si las personas no están preparadas para vivirla, difícilmente será sostenible." },
-        { "type": "h2", "text": "Una última pregunta" },
-        { "type": "p", "text": "Cuando pienso en consultoría estratégica, vuelvo nuevamente a una idea que para mí es fundamental: personas, procesos y tecnología. Centrado en las personas que impactan la organización.", "links": [{"text": "consultoría estratégica", "href": "/metodo-cira/estrategia"}] },
-        { "type": "p", "text": "La consultoría puede ayudar a ordenar el camino, identificar oportunidades, cuestionar decisiones y construir capacidades. Pero su verdadero valor aparece cuando logra que la organización vea con mayor claridad, decida mejor y sea capaz de avanzar por sí misma." },
-        { "type": "p", "text": "Quizás esa sea la mejor pregunta para un CEO antes de contratar una consultora: ¿después de trabajar con ellos, seremos una organización más dependiente de su conocimiento o una organización más capaz de construir el suyo?" },
-        { "type": "p", "text": "La respuesta dice mucho más de una consultora que el tamaño de su propuesta." },
+        {
+          "type": "p",
+          "text": "Hay decisiones que una organización puede tomar internamente. Hay otras en las que contar con alguien externo puede marcar una diferencia enorme."
+        },
+        {
+          "type": "p",
+          "text": "No necesariamente porque ese tercero tenga más conocimiento que el equipo interno. De hecho, el conocimiento del negocio está dentro de la organización. La diferencia está en otra parte."
+        },
+        {
+          "type": "p",
+          "text": "En poder mirar el negocio sin estar condicionado por la forma en que siempre se han hecho las cosas. En hacer preguntas que nadie está haciendo. En identificar potenciales que todavía no son evidentes. En poner sobre la mesa aquello que la organización necesita escuchar, aunque no sea necesariamente lo que quiere escuchar."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, cuando una empresa decide contratar una consultora estratégica, en mi opinión no debería preguntarse solamente qué experiencia tiene, qué clientes ha atendido o cuánto cuesta. Debería preguntarse algo más importante: ¿esta consultora realmente va a ayudarnos a ver lo que nosotros no estamos viendo?"
+        },
+        {
+          "type": "p",
+          "text": "A lo largo de mi experiencia he estado en los dos lados de esta conversación. Como ejecutivo de tecnología recibí los resultados de una consultoría estratégica y hoy, desde Cyrrus, me corresponde acompañar a equipos directivos en decisiones que pueden tener un impacto importante en sus organizaciones. Esa experiencia me ha dejado algunas conclusiones."
+        },
+        {
+          "type": "h2",
+          "text": "El error de elegir por marca y precio"
+        },
+        {
+          "type": "p",
+          "text": "Un error posible es convertir la selección de una consultora en una comparación de propuestas."
+        },
+        {
+          "type": "p",
+          "text": "Quién tiene la marca más reconocida. Quién cobra menos. Quién presentó el documento más grande. Quién incluyó más páginas, más metodologías, más gráficos o más especialistas."
+        },
+        {
+          "type": "p",
+          "text": "Pero una consultoría estratégica no debería ganarse por el tamaño de su documento. De hecho, una propuesta demasiado extensa puede esconder una pregunta que todavía no ha sido respondida: ¿entendieron realmente mi problema?"
+        },
+        {
+          "type": "p",
+          "text": "He visto organizaciones tomar decisiones importantes basándose en la reputación de una firma o en una propuesta técnicamente impecable, sin detenerse suficientemente a evaluar si esa firma comprende realmente su negocio, su entorno y sus restricciones. Ahí comienza una diferencia fundamental."
+        },
+        {
+          "type": "h2",
+          "text": "Una consultora no debería empezar suponiendo"
+        },
+        {
+          "type": "p",
+          "text": "Una verdadera consultoría estratégica no se limita a revisar documentos, recoger evidencias o completar cuestionarios. Eso puede ser parte del proceso, pero no puede ser el proceso."
+        },
+        {
+          "type": "p",
+          "text": "Hay que entender cómo realmente funcionan las cosas, cómo se toman las decisiones, cómo trabajan las personas, qué funciona y qué no, qué tan cómodos se sienten los equipos con la forma actual de hacer las cosas, qué aportes están haciendo y dónde existen capacidades que todavía no han sido aprovechadas y sobre todo, hay que escuchar. Escuchar antes de concluir. Preguntar antes de recomendar. Analizar antes de suponer."
+        },
+        {
+          "type": "p",
+          "text": "Porque una de las cosas que más valor destruye en una consultoría es dar por sentado que ya se entiende el problema."
+        },
+        {
+          "type": "p",
+          "text": "No suponer debería ser casi una regla de oro."
+        },
+        {
+          "type": "h2",
+          "text": "Una experiencia que me enseñó mucho"
+        },
+        {
+          "type": "p",
+          "text": "Hace algunos años, cuando me desempeñaba como director de TI, llegué a una organización como resultado de una recomendación realizada por una consultoría estratégica."
+        },
+        {
+          "type": "p",
+          "text": "La consultoría había realizado un trabajo importante. Había muchos documentos, muchas hojas, muchos análisis y numerosas recomendaciones."
+        },
+        {
+          "type": "p",
+          "text": "Como parte de mi proceso de entendimiento y onboarding, decidí revisar cuidadosamente esos entregables. Encontré algo que me llamó profundamente la atención."
+        },
+        {
+          "type": "p",
+          "text": "Aproximadamente el 90 % de las recomendaciones no eran aplicables en la práctica. No necesariamente porque estuvieran técnicamente mal. El problema era otro."
+        },
+        {
+          "type": "p",
+          "text": "Algunas no consideraban las restricciones propias de la organización. Otras no tenían en cuenta las particularidades del sector. Algunas estaban sobredimensionadas para las necesidades reales de la empresa. Otras implicaban inversiones extremadamente altas para el valor que podían generar. Y algunas, sencillamente, eran soluciones para problemas que la organización no tenía."
+        },
+        {
+          "type": "p",
+          "text": "Aquella experiencia me dejó una enseñanza que todavía considero fundamental: una buena recomendación no es la que funciona en teoría. Es la que tiene sentido para esa organización."
+        },
+        {
+          "type": "p",
+          "text": "Las buenas prácticas son importantes, pero el contexto importa más."
+        },
+        {
+          "type": "p",
+          "text": "Cada organización tiene una realidad diferente: personas, capacidades, restricciones, culturas, mercados y momentos diferentes. Por eso, una consultoría que simplemente replica lo que funcionó en otra empresa puede terminar recomendando algo que, aunque sea correcto en otro contexto, sea completamente inadecuado para el cliente."
+        },
+        {
+          "type": "p",
+          "text": "La experiencia importa. La empatía también."
+        },
+        {
+          "type": "p",
+          "text": "Creo profundamente en la experiencia, pero la experiencia por sí sola no es suficiente. Una persona puede haber participado en cientos de proyectos y aun así no comprender una organización."
+        },
+        {
+          "type": "p",
+          "text": "La experiencia debe estar acompañada de capacidad para escuchar, de empatía y, sobre todo, de sentido común."
+        },
+        {
+          "type": "p",
+          "text": "Sentido común para entender que no todo lo posible es necesario. Que no todo lo recomendado debe implementarse. Que no toda tecnología genera valor. Que una organización tiene restricciones. Que las personas tienen diferentes niveles de preparación y habilidades. Que los cambios tienen consecuencias. Y que detrás de cada proceso, cada sistema y cada decisión hay personas."
+        },
+        {
+          "type": "p",
+          "text": "Para mí, esa combinación es mucho más poderosa que cualquier metodología. Experiencia para saber qué mirar. Empatía para entender lo que se está viendo. Sentido común para decidir qué hacer con ello."
+        },
+        {
+          "type": "h2",
+          "text": "Las conversaciones incómodas también generan valor"
+        },
+        {
+          "type": "p",
+          "text": "Hay algo que considero especialmente importante en la relación entre una consultora y un CEO: la capacidad de tener conversaciones incómodas."
+        },
+        {
+          "type": "p",
+          "text": "Una consultora no está para decirle al cliente lo que quiere escuchar. Está para decirle lo que necesita escuchar."
+        },
+        {
+          "type": "p",
+          "text": "Eso implica, algunas veces, cuestionar una decisión, decir que algo no funciona, reconocer que una recomendación propia no era correcta, explicar que una solución inicialmente considerada no aplica o simplemente decir:"
+        },
+        {
+          "type": "quote",
+          "text": "“No creo que debamos hacerlo.”"
+        },
+        {
+          "type": "p",
+          "text": "Estas conversaciones no deberían deteriorar la relación. Por el contrario, cuando están sustentadas en conocimiento, argumentos, transparencia y respeto, suelen aportar muchísimo valor."
+        },
+        {
+          "type": "p",
+          "text": "Una buena consultora no busca tener siempre la razón. Busca que la organización tome mejores decisiones."
+        },
+        {
+          "type": "h2",
+          "text": "Hay señales que deberían generar desconfianza"
+        },
+        {
+          "type": "p",
+          "text": "Personalmente, tendría cuidado con una consultora que utiliza demasiados términos rebuscados para explicar cosas sencillas. También con aquella que parece tener una solución para absolutamente todo, con la que asegura saberlo todo antes de conocer suficientemente el negocio, con la que habla mucho y pregunta poco, con la que llega con una respuesta preparada antes de entender la pregunta y, especialmente, con aquella que no parece sensible a las restricciones de la organización."
+        },
+        {
+          "type": "p",
+          "text": "Las restricciones existen. Presupuesto, talento, cultura, regulación, infraestructura, procesos, tiempo, capacidad de ejecución y madurez organizacional y tecnológica."
+        },
+        {
+          "type": "p",
+          "text": "Ignorarlas no las hace desaparecer. Una recomendación estratégica que no puede convivir con la realidad de la organización deja de ser estratégica."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo reconocer una buena consultora?"
+        },
+        {
+          "type": "p",
+          "text": "Una buena consultora se reconoce porque entiende su negocio, no solo lo que usted le cuenta, y se lo devuelve con una mirada que su equipo no tenía. Hay una señal que, para mí, resume muchas de las anteriores."
+        },
+        {
+          "type": "p",
+          "text": "Entiende tu negocio."
+        },
+        {
+          "type": "p",
+          "text": "Pero no solamente lo que tú le cuentas. Entiende tus dolores, entiende el entorno, entiende las restricciones, entiende a las personas y, con el tiempo, incluso puede llegar a identificar algunos dolores que el propio dueño o CEO todavía no ha visto."
+        },
+        {
+          "type": "p",
+          "text": "Ahí empieza a aparecer el verdadero valor de una consultoría. No cuando entrega un documento, sino cuando ayuda a la organización a comprender mejor su propia realidad."
+        },
+        {
+          "type": "h2",
+          "text": "El agnosticismo no es un detalle"
+        },
+        {
+          "type": "p",
+          "text": "Hay otro aspecto que considero fundamental y que, en mi opinión, debería ser una condición para cualquier consultoría que participe en procesos de selección de soluciones: el agnosticismo."
+        },
+        {
+          "type": "p",
+          "text": "Una consultoría estratégica debería poder analizar alternativas sin tener preferencias comerciales por una marca, un fabricante o una firma. No debería existir un compromiso comercial, beneficio o comisión que condicione la recomendación."
+        },
+        {
+          "type": "p",
+          "text": "Si una organización está buscando definir qué solución necesita, la pregunta debería ser:"
+        },
+        {
+          "type": "quote",
+          "text": "¿Qué es lo mejor para la organización?"
+        },
+        {
+          "type": "p",
+          "text": "No:"
+        },
+        {
+          "type": "quote",
+          "text": "¿Cuál de las soluciones que comercializamos podemos recomendar?"
+        },
+        {
+          "type": "p",
+          "text": "La independencia permite evaluar con mayor libertad. Y esa libertad es especialmente importante cuando las decisiones implican inversiones significativas y compromisos de largo plazo."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debería quedar cuando termina una consultoría?"
+        },
+        {
+          "type": "p",
+          "text": "Cuando termina una consultoría debería quedar una organización más capaz que antes, no solo un documento. Esta es, para mí, una de las preguntas más importantes."
+        },
+        {
+          "type": "p",
+          "text": "Una consultoría no debería terminar simplemente dejando un documento. Debería dejar capacidad: una mejor comprensión del negocio, mejores criterios para tomar decisiones, conocimiento instalado en el equipo y personas más preparadas."
+        },
+        {
+          "type": "p",
+          "text": "Pero hay algo aún más importante: una organización capaz de cuestionar, analizar y mejorar; una cultura organizacional más innovadora, crítica y orientada a la mejora permanente y centrada en las personas."
+        },
+        {
+          "type": "p",
+          "text": "Porque si cada vez que la organización enfrenta un problema necesita volver a contratar a alguien externo para entender qué hacer, probablemente la consultoría no terminó de cumplir su propósito."
+        },
+        {
+          "type": "p",
+          "text": "El verdadero resultado debería ser una organización más capaz que antes."
+        },
+        {
+          "type": "h2",
+          "text": "El papel de la consultora frente al CEO"
+        },
+        {
+          "type": "p",
+          "text": "No creo que sea simplemente el de un proveedor. Tampoco debería ser únicamente el de un asesor que entrega recomendaciones."
+        },
+        {
+          "type": "p",
+          "text": "Para mí, una buena consultora debe convertirse en una especie de sparring intelectual del CEO: alguien que facilite, que cuestione, que ayude a construir, que pueda actuar como arquitecto cuando sea necesario, que conozca el negocio y el entorno."
+        },
+        {
+          "type": "p",
+          "text": "Debe poder estar suficientemente cerca de la organización como para comprenderla, pero suficientemente afuera como para mantener una mirada independiente."
+        },
+        {
+          "type": "p",
+          "text": "Alguien a quien el CEO pueda tener en su “top of mind” cuando aparece un problema complejo y necesita pensar cómo resolverlo, no necesariamente porque esa persona tenga la respuesta, sino porque sabe cómo ayudar a encontrarla."
+        },
+        {
+          "type": "h2",
+          "text": "Si tuviera tres consultoras frente a mí"
+        },
+        {
+          "type": "p",
+          "text": "Supongamos que un CEO me dijera:"
+        },
+        {
+          "type": "quote",
+          "text": "“Jackson, tengo tres consultoras. Las tres tienen experiencia, buenos clientes y propuestas excelentes. ¿Cuál debería elegir?”"
+        },
+        {
+          "type": "p",
+          "text": "Probablemente no empezaría comparando las propuestas."
+        },
+        {
+          "type": "p",
+          "text": "Le diría que mire quién piensa diferente. Quién es más imparcial. Quién tiene el mejor equipo, no solamente la mejor marca. Quién hizo las mejores preguntas antes de presentar la propuesta. Quién realmente escuchó. Quién fue capaz de cuestionar. Quién entendió las restricciones de su organización y, especialmente, quién mostró preocupación genuina por las personas y por la gestión del cambio.",
+          "links": [
+            {
+              "text": "gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Porque una transformación puede tener la mejor estrategia, la mejor tecnología y el presupuesto adecuado, pero si las personas no están preparadas para vivirla, difícilmente será sostenible."
+        },
+        {
+          "type": "h2",
+          "text": "Una última pregunta"
+        },
+        {
+          "type": "p",
+          "text": "Cuando pienso en consultoría estratégica, vuelvo nuevamente a una idea que para mí es fundamental: personas, procesos y tecnología. Centrado en las personas que impactan la organización.",
+          "links": [
+            {
+              "text": "consultoría estratégica",
+              "href": "/metodo-cira/estrategia"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "La consultoría puede ayudar a ordenar el camino, identificar oportunidades, cuestionar decisiones y construir capacidades. Pero su verdadero valor aparece cuando logra que la organización vea con mayor claridad, decida mejor y sea capaz de avanzar por sí misma."
+        },
+        {
+          "type": "p",
+          "text": "Quizás esa sea la mejor pregunta para un CEO antes de contratar una consultora: ¿después de trabajar con ellos, seremos una organización más dependiente de su conocimiento o una organización más capaz de construir el suyo?"
+        },
+        {
+          "type": "p",
+          "text": "La respuesta dice mucho más de una consultora que el tamaño de su propuesta."
+        },
         {
           "type": "p",
           "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y por qué fracasan los proyectos de transformación digital.",
@@ -310,91 +799,352 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Hay una conversación que puede aparecer en las salas de juntas. ¿Cuál modelo vamos a utilizar? ¿Qué agentes podemos implementar? ¿Cuánto podemos automatizar? ¿Cuánto podemos ahorrar? ¿Qué está haciendo la competencia?" },
-        { "type": "p", "text": "Son preguntas legítimas. Pero creo que estamos empezando por el lugar equivocado." },
-        { "type": "p", "text": "Antes de preguntarnos qué inteligencia artificial vamos a incorporar, deberíamos preguntarnos algo mucho más importante: ¿estamos preparados para gobernarla?" },
-        { "type": "p", "text": "La inteligencia artificial está dejando de ser una conversación exclusivamente tecnológica. Está entrando en procesos comerciales, financieros, operativos, jurídicos y de talento humano, está ayudando a analizar información, generar contenido, recomendar decisiones y cada vez más, ejecutar determinadas actividades, y cuando una tecnología empieza a participar en decisiones que afectan al negocio, a los clientes, a los empleados o a la información de la organización, la conversación necesariamente cambia, ya no basta con preguntarnos qué puede hacer la IA. Tenemos que decidir qué le permitimos hacer, bajo qué condiciones y quién responde cuando algo sale mal." },
-        { "type": "h2", "text": "¿Qué entiendo por Gobierno de IA?" },
-        { "type": "p", "text": "Para mí, el Gobierno de IA es el conjunto de reglas, roles y controles que permiten asegurar que la inteligencia artificial utilizada por una organización sea rentable, segura, cumpla con la ley, proteja la información, sea coherente con los valores de la compañía y no termine deteriorando la confianza en la marca." },
-        { "type": "p", "text": "En otras palabras, no se trata solamente de controlar la IA, se trata de gobernar el valor y el riesgo que la IA puede generar." },
-        { "type": "p", "text": "Esta diferencia es importante. Porque una organización puede tener una IA que funcione técnicamente muy bien y, aun así, estar tomando una mala decisión empresarial al utilizarla." },
-        { "type": "h2", "text": "El riesgo no está solamente en la tecnología" },
-        { "type": "p", "text": "Cuando hablamos de Gobierno de IA, normalmente pensamos primero en seguridad, privacidad o regulación, son asuntos fundamentales, pero no son los únicos." },
-        { "type": "p", "text": "Existen riesgos legales y de cumplimiento: regulación, propiedad intelectual, contratos, uso indebido de información o decisiones que puedan generar responsabilidades para la organización." },
-        { "type": "p", "text": "Existen riesgos de seguridad: brechas de datos, ataques, accesos no autorizados, falta de trazabilidad o información sensible terminando en lugares donde nunca debió estar." },
-        { "type": "p", "text": "También existen riesgos operacionales. Una IA puede discriminar, equivocarse, generar información falsa, quedarse obsoleta o continuar operando cuando el modelo que la soporta ya no debería utilizarse." },
-        { "type": "p", "text": "Y existen riesgos reputacionales y éticos. Una decisión puede ser técnicamente posible y, sin embargo, estar completamente desalineada con los valores de una compañía o con lo que sus clientes esperan de ella." },
-        { "type": "p", "text": "Pero hay un riesgo que considero especialmente importante y que muchas organizaciones todavía subestiman: no tener una adecuada gestión de los datos." },
-        { "type": "p", "text": "La calidad de los datos, su seguridad, limpieza, actualización, administración, acceso y propósito no son asuntos secundarios, si los datos no están gobernados, difícilmente podremos gobernar correctamente una inteligencia que aprende, combina información, genera conclusiones y puede llegar a recomendar o ejecutar acciones." },
-        { "type": "p", "text": "La diferencia puede resumirse de una manera sencilla: el Gobierno de Datos ayuda a definir qué información puede utilizarse, quién es responsable de ella y bajo qué condiciones. El Gobierno de IA agrega una pregunta más compleja: ¿qué puede hacer la inteligencia artificial con esa información?" },
-        { "type": "h2", "text": "Ya existen ejemplos que deberían preocuparnos" },
-        { "type": "p", "text": "No necesitamos imaginar escenarios extremos para entender el riesgo. Ya existen casos reales." },
-        { "type": "p", "text": "En 2024, un tribunal de Columbia Británica responsabilizó a Air Canada por información incorrecta entregada por su chatbot sobre una tarifa relacionada con un fallecimiento, la compañía intentó argumentar que el chatbot era una herramienta separada de su operación, pero el tribunal no aceptó esa separación. Para el cliente, la información provenía de Air Canada y la responsabilidad seguía siendo de la compañía." },
-        { "type": "p", "text": "El caso dejó una enseñanza que va mucho más allá de un chatbot: una organización no puede transferir su responsabilidad a la inteligencia artificial que utiliza." },
-        { "type": "p", "text": "Algo similar ocurrió en Samsung en 2023, cuando empleados introdujeron información sensible de la compañía en herramientas de inteligencia artificial generativa. La respuesta de la organización fue restringir temporalmente su uso mientras definía controles más adecuados." },
-        { "type": "p", "text": "Ese caso muestra otra realidad que los CEO deberían tener presente: la inteligencia artificial puede entrar a una organización mucho antes de que la organización haya decidido formalmente cómo gobernarla. A esto hoy se le suele llamar Shadow AI: herramientas utilizadas por empleados sin un proceso formal de aprobación, evaluación o control." },
-        { "type": "p", "text": "Por eso, el Gobierno de IA no debería comenzar cuando la compañía decide comprar una plataforma. Debería comenzar cuando entiende que la IA ya está cambiando la manera en que las personas trabajan." },
-        { "type": "h2", "text": "Gobernar no significa poner burocracia" },
-        { "type": "p", "text": "Uno de los errores que más me preocuparía sería convertir el Gobierno de IA en un proceso burocrático que termine frenando la innovación. Hay marcos de referencia que ayudan a encontrar ese equilibrio, como el AI Risk Management Framework del NIST (2023) o la norma ISO/IEC 42001, el primer estándar internacional certificable para sistemas de gestión de inteligencia artificial." },
-        { "type": "p", "text": "No todas las aplicaciones de IA tienen el mismo riesgo ni requieren el mismo nivel de control. Una herramienta de bajo impacto utilizada para resumir documentos internos no debería pasar por el mismo proceso que una inteligencia que participa en una decisión crediticia, recomienda una contratación o tiene acceso a información sensible de clientes." },
-        { "type": "quote", "text": "“El gobierno debe ser proporcional al riesgo y al nivel de autonomía.”" },
-        { "type": "p", "text": "A menor riesgo, mayor velocidad para experimentar, a mayor impacto y autonomía, mayores controles, trazabilidad y responsabilidad." },
-        { "type": "p", "text": "La organización necesita encontrar ese equilibrio, si controla demasiado, puede frenar la innovación, si controla demasiado poco, puede terminar innovando sin entender las consecuencias y con poca relevancia en el negocio." },
-        { "type": "h2", "text": "El Gobierno de IA no puede ser responsabilidad exclusiva de TI" },
-        { "type": "p", "text": "Otro error es pensar que, como la inteligencia artificial utiliza tecnología, su gobierno debe quedar exclusivamente en manos del CIO o del área de tecnología, no lo veo así." },
-        { "type": "p", "text": "El Gobierno de IA debe estar cerca de la estrategia y por lo tanto, cerca del CEO. TI tiene un papel fundamental, pero también lo tienen Seguridad, Control Interno, Legal, Innovación y Talento Humano." },
-        { "type": "p", "text": "El negocio debe definir qué valor se busca. Tecnología debe asegurar que la arquitectura y los sistemas puedan soportarlo. Seguridad debe evaluar los riesgos de información y acceso. Legal debe ayudar a entender las implicaciones regulatorias, contractuales y de propiedad intelectual. Innovación debe ayudar a conectar las posibilidades de la tecnología con la estrategia. Y Talento Humano tiene una responsabilidad enorme en adopción, capacidades, formación y gestión del cambio.", "links": [{"text": "gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "La conversación, por tanto, no debería ser quién es dueño de la IA. Debería ser quién responde por las decisiones que la organización está empezando a delegar en ella." },
-        { "type": "h2", "text": "Las personas siguen estando en el centro" },
-        { "type": "p", "text": "La llegada de la inteligencia artificial puede hacernos pensar que la conversación se trata de modelos, agentes, automatización y productividad, pero detrás de cada uno de esos elementos siguen existiendo personas." },
-        { "type": "p", "text": "Personas que tienen que aprender a utilizar estas herramientas, personas que deben entender cuándo confiar en una respuesta y cuándo cuestionarla, personas que necesitan saber qué información pueden compartir y cuál no, personas que tendrán que adaptarse a nuevas formas de trabajar y, en algunos casos, asumir responsabilidades diferentes." },
-        { "type": "p", "text": "Por eso, la adopción no puede dejarse para después." },
-        { "type": "p", "text": "Una organización que incorpora IA sin preparar a su gente corre el riesgo de tener dos realidades al mismo tiempo: una estrategia formal y una práctica informal, mientras la dirección intenta definir reglas, los empleados pueden estar utilizando herramientas diferentes, compartiendo información, creando soluciones por su cuenta y generando dependencias que nadie conoce." },
-        { "type": "p", "text": "El objetivo no debería ser solamente evitar el Shadow AI o el llamado AI Sprawl, debería ser construir una cultura en la que las personas entiendan el propósito, conozcan los límites y tengan criterio para utilizar la IA de manera responsable." },
-        { "type": "p", "text": "La mejor gobernanza no es la que obliga a las personas a cumplir reglas que no entienden. Es la que consigue que las personas comprendan por qué existen esas reglas y sean capaces de actuar correctamente incluso cuando nadie las está mirando." },
-        { "type": "h2", "text": "El CEO no tiene que gobernar el algoritmo" },
-        { "type": "p", "text": "Un CEO no necesita convertirse en especialista en modelos, algoritmos o arquitectura de inteligencia artificial, su responsabilidad está en otro lugar." },
-        { "type": "p", "text": "Debe entender el impacto que la IA puede tener sobre el negocio, los riesgos que está dispuesto a asumir, cómo se relaciona con la estrategia y qué decisiones está comenzando a delegar la organización." },
-        { "type": "p", "text": "Las preguntas que debería hacer son mucho más empresariales que técnicas: ¿qué problema estamos resolviendo? ¿qué valor esperamos generar? ¿qué datos necesita la solución? ¿qué riesgos estamos asumiendo? ¿qué nivel de autonomía tendrá? ¿qué ocurre si se equivoca? ¿quién responde? ¿quién puede detenerla? ¿qué pasa si mañana necesitamos cambiar de proveedor o de modelo?" },
-        { "type": "p", "text": "El CEO no tiene que gobernar el algoritmo; tiene que gobernar la decisión." },
-        { "type": "p", "text": "Para mí, esta es una de las ideas más importantes cuando hablamos de Gobierno de IA. La discusión no debería quedarse en si el modelo funciona, debería llegar hasta la decisión que ese modelo está ayudando a tomar y las consecuencias que esa decisión puede tener." },
-        { "type": "h2", "text": "La estrategia debe mirar la cadena de valor completa" },
-        { "type": "p", "text": "Otro riesgo que veo con frecuencia es confundir utilizar IA con tener una estrategia de IA." },
-        { "type": "p", "text": "Una organización puede tener decenas de iniciativas aisladas: un asistente para servicio al cliente, otro para generar documentos, otro para analizar información y algunos experimentos desarrollados internamente." },
-        { "type": "p", "text": "Eso demuestra actividad, no necesariamente demuestra estrategia." },
-        { "type": "p", "text": "La estrategia aparece cuando la organización empieza a preguntarse dónde puede la IA cambiar de manera significativa su cadena de valor, dónde puede mejorar una experiencia, acelerar una decisión, reducir un riesgo, liberar capacidad o generar una ventaja que un competidor todavía no tiene." },
-        { "type": "p", "text": "Una mejora localizada puede incluso generar un problema en otra parte del negocio, automatizar una actividad puede aumentar el volumen de trabajo en el proceso siguiente, reducir tiempos puede aumentar riesgos de control, mejorar productividad puede crear dependencia de un proveedor o exponer información que antes permanecía dentro de la organización." },
-        { "type": "p", "text": "Por eso, antes de automatizar deberíamos entender la decisión, antes de delegar, entender el riesgo, antes de darle autonomía a un agente, definir qué puede hacer y qué no puede hacer." },
-        { "type": "p", "text": "La tecnología puede cambiar, el modelo puede cambiar, el proveedor puede cambiar, pero la responsabilidad de la organización permanece." },
-        { "type": "h2", "text": "Una organización madura sabe dónde poner los límites" },
-        { "type": "p", "text": "En uno de los trabajos que he venido desarrollando alrededor del concepto de gobierno de IA, hay una idea que considero especialmente poderosa: antes de incorporar inteligencia artificial, deberíamos sentarnos a definir nuestros límites." },
-        { "type": "p", "text": "¿Qué vamos a delegar? ¿Qué vamos a supervisar? ¿Qué nunca vamos a delegar? ¿Quién responde? ¿Qué datos puede utilizar la IA? ¿Qué decisiones puede ejecutar? ¿Qué pasa cuando se equivoca? ¿Qué principios no estamos dispuestos a negociar, aunque una IA nos prometa hacerlo más rápido o más barato?" },
-        { "type": "p", "text": "Esto puede parecer sencillo, pero obliga a una conversación que conviene tener." },
-        { "type": "p", "text": "Una organización madura no es necesariamente aquella que automatiza más, es aquella que sabe qué debe automatizar, qué debe conservar bajo control humano y por qué." },
-        { "type": "p", "text": "Ese criterio se vuelve todavía más importante a medida que aumenta la autonomía, primero la IA recomienda, después automatiza, luego ejecuta y en algún momento alguien puede preguntarse por qué todavía necesita autorización humana." },
-        { "type": "p", "text": "La frontera entre autonomía y responsabilidad no debería moverse simplemente porque la tecnología demostró que puede hacer algo." },
-        { "type": "h2", "text": "El Gobierno de IA debe proteger el valor, no solamente evitar riesgos" },
-        { "type": "p", "text": "A veces la conversación sobre gobierno comienza desde el miedo: qué puede salir mal, qué norma podemos incumplir, qué información podemos perder." },
-        { "type": "p", "text": "Es necesario hablar de esos riesgos, pero considero que quedarnos únicamente allí sería un error." },
-        { "type": "p", "text": "El gobierno también debe ayudar a capturar valor, debe permitir que la organización experimente, aprenda, mida, ajuste y escale aquello que realmente funciona." },
-        { "type": "p", "text": "Debe ayudar a decidir cuándo una iniciativa debe continuar, cuándo debe cambiarse, cuándo conviene retirar un modelo y cuándo es mejor decir simplemente: esto no tiene sentido para nuestro negocio." },
-        { "type": "p", "text": "En últimas, gobernar bien no significa decirle que no a la inteligencia artificial, significa saber dónde decirle que sí, dónde poner límites y en qué condiciones vale la pena asumir el riesgo." },
-        { "type": "h2", "text": "¿Por dónde debería comenzar un CEO?" },
-        { "type": "p", "text": "Un CEO debería empezar por definir para qué quiere usar la inteligencia artificial y qué problema concreto del negocio va a resolver, antes de elegir cualquier tecnología. Yo comenzaría con preguntas muy sencillas, pero no necesariamente fáciles de responder." },
-        { "type": "p", "text": "¿Para qué queremos utilizar inteligencia artificial?" },
-        { "type": "p", "text": "¿Qué dolor concreto queremos resolver?" },
-        { "type": "p", "text": "¿Qué ventaja puede darnos frente a nuestros competidores?" },
-        { "type": "p", "text": "¿Puede ayudarnos a mejorar la rentabilidad o acelerar el crecimiento?" },
-        { "type": "p", "text": "¿Cómo puede apoyar una estrategia realmente diferenciada?" },
-        { "type": "p", "text": "Después de responderlas, vendrán otras conversaciones: qué datos tenemos, qué tan confiables son, qué procesos queremos transformar, qué personas necesitamos preparar, qué riesgos debemos gestionar, qué arquitectura necesitamos y qué nivel de gobierno corresponde." },
-        { "type": "p", "text": "La tecnología debería llegar después de esa conversación, no antes." },
-        { "type": "h2", "text": "Una última reflexión" },
-        { "type": "p", "text": "Durante años hemos hablado de transformación digital, después hablamos de automatización, ahora hablamos de IA, pero hay algo que permanece." },
-        { "type": "p", "text": "Las organizaciones siguen necesitando estrategia, gobierno, datos confiables, procesos bien definidos, arquitectura y liderazgo, y siguen necesitando personas capaces de asumir responsabilidad cuando no existe una respuesta evidente." },
-        { "type": "p", "text": "Por eso, una estrategia de IA no debería comenzar con: “¿qué IA podemos comprar?”" },
-        { "type": "p", "text": "Debería comenzar con: “¿qué queremos transformar y qué inteligencia necesitamos para hacerlo mejor?”" },
-        { "type": "p", "text": "Ahí comienza el Gobierno de IA. Y también comienza una conversación mucho más importante para un CEO: ¿estamos utilizando la inteligencia artificial para transformar nuestro negocio o simplemente estamos incorporando inteligencia a nuestros procesos?" },
-        { "type": "p", "text": "La diferencia puede parecer pequeña. Pero puede terminar definiendo quién lidera el futuro y quién simplemente intenta alcanzarlo." },
+        {
+          "type": "p",
+          "text": "Hay una conversación que puede aparecer en las salas de juntas. ¿Cuál modelo vamos a utilizar? ¿Qué agentes podemos implementar? ¿Cuánto podemos automatizar? ¿Cuánto podemos ahorrar? ¿Qué está haciendo la competencia?"
+        },
+        {
+          "type": "p",
+          "text": "Son preguntas legítimas. Pero creo que estamos empezando por el lugar equivocado."
+        },
+        {
+          "type": "p",
+          "text": "Antes de preguntarnos qué inteligencia artificial vamos a incorporar, deberíamos preguntarnos algo mucho más importante: ¿estamos preparados para gobernarla?"
+        },
+        {
+          "type": "p",
+          "text": "La inteligencia artificial está dejando de ser una conversación exclusivamente tecnológica. Está entrando en procesos comerciales, financieros, operativos, jurídicos y de talento humano, está ayudando a analizar información, generar contenido, recomendar decisiones y cada vez más, ejecutar determinadas actividades, y cuando una tecnología empieza a participar en decisiones que afectan al negocio, a los clientes, a los empleados o a la información de la organización, la conversación necesariamente cambia, ya no basta con preguntarnos qué puede hacer la IA. Tenemos que decidir qué le permitimos hacer, bajo qué condiciones y quién responde cuando algo sale mal."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué entiendo por Gobierno de IA?"
+        },
+        {
+          "type": "p",
+          "text": "Para mí, el Gobierno de IA es el conjunto de reglas, roles y controles que permiten asegurar que la inteligencia artificial utilizada por una organización sea rentable, segura, cumpla con la ley, proteja la información, sea coherente con los valores de la compañía y no termine deteriorando la confianza en la marca."
+        },
+        {
+          "type": "p",
+          "text": "En otras palabras, no se trata solamente de controlar la IA, se trata de gobernar el valor y el riesgo que la IA puede generar."
+        },
+        {
+          "type": "p",
+          "text": "Esta diferencia es importante. Porque una organización puede tener una IA que funcione técnicamente muy bien y, aun así, estar tomando una mala decisión empresarial al utilizarla."
+        },
+        {
+          "type": "h2",
+          "text": "El riesgo no está solamente en la tecnología"
+        },
+        {
+          "type": "p",
+          "text": "Cuando hablamos de Gobierno de IA, normalmente pensamos primero en seguridad, privacidad o regulación, son asuntos fundamentales, pero no son los únicos."
+        },
+        {
+          "type": "p",
+          "text": "Existen riesgos legales y de cumplimiento: regulación, propiedad intelectual, contratos, uso indebido de información o decisiones que puedan generar responsabilidades para la organización."
+        },
+        {
+          "type": "p",
+          "text": "Existen riesgos de seguridad: brechas de datos, ataques, accesos no autorizados, falta de trazabilidad o información sensible terminando en lugares donde nunca debió estar."
+        },
+        {
+          "type": "p",
+          "text": "También existen riesgos operacionales. Una IA puede discriminar, equivocarse, generar información falsa, quedarse obsoleta o continuar operando cuando el modelo que la soporta ya no debería utilizarse."
+        },
+        {
+          "type": "p",
+          "text": "Y existen riesgos reputacionales y éticos. Una decisión puede ser técnicamente posible y, sin embargo, estar completamente desalineada con los valores de una compañía o con lo que sus clientes esperan de ella."
+        },
+        {
+          "type": "p",
+          "text": "Pero hay un riesgo que considero especialmente importante y que muchas organizaciones todavía subestiman: no tener una adecuada gestión de los datos."
+        },
+        {
+          "type": "p",
+          "text": "La calidad de los datos, su seguridad, limpieza, actualización, administración, acceso y propósito no son asuntos secundarios, si los datos no están gobernados, difícilmente podremos gobernar correctamente una inteligencia que aprende, combina información, genera conclusiones y puede llegar a recomendar o ejecutar acciones."
+        },
+        {
+          "type": "p",
+          "text": "La diferencia puede resumirse de una manera sencilla: el Gobierno de Datos ayuda a definir qué información puede utilizarse, quién es responsable de ella y bajo qué condiciones. El Gobierno de IA agrega una pregunta más compleja: ¿qué puede hacer la inteligencia artificial con esa información?"
+        },
+        {
+          "type": "h2",
+          "text": "Ya existen ejemplos que deberían preocuparnos"
+        },
+        {
+          "type": "p",
+          "text": "No necesitamos imaginar escenarios extremos para entender el riesgo. Ya existen casos reales."
+        },
+        {
+          "type": "p",
+          "text": "En 2024, un tribunal de Columbia Británica responsabilizó a Air Canada por información incorrecta entregada por su chatbot sobre una tarifa relacionada con un fallecimiento, la compañía intentó argumentar que el chatbot era una herramienta separada de su operación, pero el tribunal no aceptó esa separación. Para el cliente, la información provenía de Air Canada y la responsabilidad seguía siendo de la compañía."
+        },
+        {
+          "type": "p",
+          "text": "El caso dejó una enseñanza que va mucho más allá de un chatbot: una organización no puede transferir su responsabilidad a la inteligencia artificial que utiliza."
+        },
+        {
+          "type": "p",
+          "text": "Algo similar ocurrió en Samsung en 2023, cuando empleados introdujeron información sensible de la compañía en herramientas de inteligencia artificial generativa. La respuesta de la organización fue restringir temporalmente su uso mientras definía controles más adecuados."
+        },
+        {
+          "type": "p",
+          "text": "Ese caso muestra otra realidad que los CEO deberían tener presente: la inteligencia artificial puede entrar a una organización mucho antes de que la organización haya decidido formalmente cómo gobernarla. A esto hoy se le suele llamar Shadow AI: herramientas utilizadas por empleados sin un proceso formal de aprobación, evaluación o control."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, el Gobierno de IA no debería comenzar cuando la compañía decide comprar una plataforma. Debería comenzar cuando entiende que la IA ya está cambiando la manera en que las personas trabajan."
+        },
+        {
+          "type": "h2",
+          "text": "Gobernar no significa poner burocracia"
+        },
+        {
+          "type": "p",
+          "text": "Uno de los errores que más me preocuparía sería convertir el Gobierno de IA en un proceso burocrático que termine frenando la innovación. Hay marcos de referencia que ayudan a encontrar ese equilibrio, como el AI Risk Management Framework del NIST (2023) o la norma ISO/IEC 42001, el primer estándar internacional certificable para sistemas de gestión de inteligencia artificial."
+        },
+        {
+          "type": "p",
+          "text": "No todas las aplicaciones de IA tienen el mismo riesgo ni requieren el mismo nivel de control. Una herramienta de bajo impacto utilizada para resumir documentos internos no debería pasar por el mismo proceso que una inteligencia que participa en una decisión crediticia, recomienda una contratación o tiene acceso a información sensible de clientes."
+        },
+        {
+          "type": "quote",
+          "text": "“El gobierno debe ser proporcional al riesgo y al nivel de autonomía.”"
+        },
+        {
+          "type": "p",
+          "text": "A menor riesgo, mayor velocidad para experimentar, a mayor impacto y autonomía, mayores controles, trazabilidad y responsabilidad."
+        },
+        {
+          "type": "p",
+          "text": "La organización necesita encontrar ese equilibrio, si controla demasiado, puede frenar la innovación, si controla demasiado poco, puede terminar innovando sin entender las consecuencias y con poca relevancia en el negocio."
+        },
+        {
+          "type": "h2",
+          "text": "El Gobierno de IA no puede ser responsabilidad exclusiva de TI"
+        },
+        {
+          "type": "p",
+          "text": "Otro error es pensar que, como la inteligencia artificial utiliza tecnología, su gobierno debe quedar exclusivamente en manos del CIO o del área de tecnología, no lo veo así."
+        },
+        {
+          "type": "p",
+          "text": "El Gobierno de IA debe estar cerca de la estrategia y por lo tanto, cerca del CEO. TI tiene un papel fundamental, pero también lo tienen Seguridad, Control Interno, Legal, Innovación y Talento Humano."
+        },
+        {
+          "type": "p",
+          "text": "El negocio debe definir qué valor se busca. Tecnología debe asegurar que la arquitectura y los sistemas puedan soportarlo. Seguridad debe evaluar los riesgos de información y acceso. Legal debe ayudar a entender las implicaciones regulatorias, contractuales y de propiedad intelectual. Innovación debe ayudar a conectar las posibilidades de la tecnología con la estrategia. Y Talento Humano tiene una responsabilidad enorme en adopción, capacidades, formación y gestión del cambio.",
+          "links": [
+            {
+              "text": "gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "La conversación, por tanto, no debería ser quién es dueño de la IA. Debería ser quién responde por las decisiones que la organización está empezando a delegar en ella."
+        },
+        {
+          "type": "h2",
+          "text": "Las personas siguen estando en el centro"
+        },
+        {
+          "type": "p",
+          "text": "La llegada de la inteligencia artificial puede hacernos pensar que la conversación se trata de modelos, agentes, automatización y productividad, pero detrás de cada uno de esos elementos siguen existiendo personas."
+        },
+        {
+          "type": "p",
+          "text": "Personas que tienen que aprender a utilizar estas herramientas, personas que deben entender cuándo confiar en una respuesta y cuándo cuestionarla, personas que necesitan saber qué información pueden compartir y cuál no, personas que tendrán que adaptarse a nuevas formas de trabajar y, en algunos casos, asumir responsabilidades diferentes."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, la adopción no puede dejarse para después."
+        },
+        {
+          "type": "p",
+          "text": "Una organización que incorpora IA sin preparar a su gente corre el riesgo de tener dos realidades al mismo tiempo: una estrategia formal y una práctica informal, mientras la dirección intenta definir reglas, los empleados pueden estar utilizando herramientas diferentes, compartiendo información, creando soluciones por su cuenta y generando dependencias que nadie conoce."
+        },
+        {
+          "type": "p",
+          "text": "El objetivo no debería ser solamente evitar el Shadow AI o el llamado AI Sprawl, debería ser construir una cultura en la que las personas entiendan el propósito, conozcan los límites y tengan criterio para utilizar la IA de manera responsable."
+        },
+        {
+          "type": "p",
+          "text": "La mejor gobernanza no es la que obliga a las personas a cumplir reglas que no entienden. Es la que consigue que las personas comprendan por qué existen esas reglas y sean capaces de actuar correctamente incluso cuando nadie las está mirando."
+        },
+        {
+          "type": "h2",
+          "text": "El CEO no tiene que gobernar el algoritmo"
+        },
+        {
+          "type": "p",
+          "text": "Un CEO no necesita convertirse en especialista en modelos, algoritmos o arquitectura de inteligencia artificial, su responsabilidad está en otro lugar."
+        },
+        {
+          "type": "p",
+          "text": "Debe entender el impacto que la IA puede tener sobre el negocio, los riesgos que está dispuesto a asumir, cómo se relaciona con la estrategia y qué decisiones está comenzando a delegar la organización."
+        },
+        {
+          "type": "p",
+          "text": "Las preguntas que debería hacer son mucho más empresariales que técnicas: ¿qué problema estamos resolviendo? ¿qué valor esperamos generar? ¿qué datos necesita la solución? ¿qué riesgos estamos asumiendo? ¿qué nivel de autonomía tendrá? ¿qué ocurre si se equivoca? ¿quién responde? ¿quién puede detenerla? ¿qué pasa si mañana necesitamos cambiar de proveedor o de modelo?"
+        },
+        {
+          "type": "p",
+          "text": "El CEO no tiene que gobernar el algoritmo; tiene que gobernar la decisión."
+        },
+        {
+          "type": "p",
+          "text": "Para mí, esta es una de las ideas más importantes cuando hablamos de Gobierno de IA. La discusión no debería quedarse en si el modelo funciona, debería llegar hasta la decisión que ese modelo está ayudando a tomar y las consecuencias que esa decisión puede tener."
+        },
+        {
+          "type": "h2",
+          "text": "La estrategia debe mirar la cadena de valor completa"
+        },
+        {
+          "type": "p",
+          "text": "Otro riesgo que veo con frecuencia es confundir utilizar IA con tener una estrategia de IA."
+        },
+        {
+          "type": "p",
+          "text": "Una organización puede tener decenas de iniciativas aisladas: un asistente para servicio al cliente, otro para generar documentos, otro para analizar información y algunos experimentos desarrollados internamente."
+        },
+        {
+          "type": "p",
+          "text": "Eso demuestra actividad, no necesariamente demuestra estrategia."
+        },
+        {
+          "type": "p",
+          "text": "La estrategia aparece cuando la organización empieza a preguntarse dónde puede la IA cambiar de manera significativa su cadena de valor, dónde puede mejorar una experiencia, acelerar una decisión, reducir un riesgo, liberar capacidad o generar una ventaja que un competidor todavía no tiene."
+        },
+        {
+          "type": "p",
+          "text": "Una mejora localizada puede incluso generar un problema en otra parte del negocio, automatizar una actividad puede aumentar el volumen de trabajo en el proceso siguiente, reducir tiempos puede aumentar riesgos de control, mejorar productividad puede crear dependencia de un proveedor o exponer información que antes permanecía dentro de la organización."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, antes de automatizar deberíamos entender la decisión, antes de delegar, entender el riesgo, antes de darle autonomía a un agente, definir qué puede hacer y qué no puede hacer."
+        },
+        {
+          "type": "p",
+          "text": "La tecnología puede cambiar, el modelo puede cambiar, el proveedor puede cambiar, pero la responsabilidad de la organización permanece."
+        },
+        {
+          "type": "h2",
+          "text": "Una organización madura sabe dónde poner los límites"
+        },
+        {
+          "type": "p",
+          "text": "En uno de los trabajos que he venido desarrollando alrededor del concepto de gobierno de IA, hay una idea que considero especialmente poderosa: antes de incorporar inteligencia artificial, deberíamos sentarnos a definir nuestros límites."
+        },
+        {
+          "type": "p",
+          "text": "¿Qué vamos a delegar? ¿Qué vamos a supervisar? ¿Qué nunca vamos a delegar? ¿Quién responde? ¿Qué datos puede utilizar la IA? ¿Qué decisiones puede ejecutar? ¿Qué pasa cuando se equivoca? ¿Qué principios no estamos dispuestos a negociar, aunque una IA nos prometa hacerlo más rápido o más barato?"
+        },
+        {
+          "type": "p",
+          "text": "Esto puede parecer sencillo, pero obliga a una conversación que conviene tener."
+        },
+        {
+          "type": "p",
+          "text": "Una organización madura no es necesariamente aquella que automatiza más, es aquella que sabe qué debe automatizar, qué debe conservar bajo control humano y por qué."
+        },
+        {
+          "type": "p",
+          "text": "Ese criterio se vuelve todavía más importante a medida que aumenta la autonomía, primero la IA recomienda, después automatiza, luego ejecuta y en algún momento alguien puede preguntarse por qué todavía necesita autorización humana."
+        },
+        {
+          "type": "p",
+          "text": "La frontera entre autonomía y responsabilidad no debería moverse simplemente porque la tecnología demostró que puede hacer algo."
+        },
+        {
+          "type": "h2",
+          "text": "El Gobierno de IA debe proteger el valor, no solamente evitar riesgos"
+        },
+        {
+          "type": "p",
+          "text": "A veces la conversación sobre gobierno comienza desde el miedo: qué puede salir mal, qué norma podemos incumplir, qué información podemos perder."
+        },
+        {
+          "type": "p",
+          "text": "Es necesario hablar de esos riesgos, pero considero que quedarnos únicamente allí sería un error."
+        },
+        {
+          "type": "p",
+          "text": "El gobierno también debe ayudar a capturar valor, debe permitir que la organización experimente, aprenda, mida, ajuste y escale aquello que realmente funciona."
+        },
+        {
+          "type": "p",
+          "text": "Debe ayudar a decidir cuándo una iniciativa debe continuar, cuándo debe cambiarse, cuándo conviene retirar un modelo y cuándo es mejor decir simplemente: esto no tiene sentido para nuestro negocio."
+        },
+        {
+          "type": "p",
+          "text": "En últimas, gobernar bien no significa decirle que no a la inteligencia artificial, significa saber dónde decirle que sí, dónde poner límites y en qué condiciones vale la pena asumir el riesgo."
+        },
+        {
+          "type": "h2",
+          "text": "¿Por dónde debería comenzar un CEO?"
+        },
+        {
+          "type": "p",
+          "text": "Un CEO debería empezar por definir para qué quiere usar la inteligencia artificial y qué problema concreto del negocio va a resolver, antes de elegir cualquier tecnología. Yo comenzaría con preguntas muy sencillas, pero no necesariamente fáciles de responder."
+        },
+        {
+          "type": "p",
+          "text": "¿Para qué queremos utilizar inteligencia artificial?"
+        },
+        {
+          "type": "p",
+          "text": "¿Qué dolor concreto queremos resolver?"
+        },
+        {
+          "type": "p",
+          "text": "¿Qué ventaja puede darnos frente a nuestros competidores?"
+        },
+        {
+          "type": "p",
+          "text": "¿Puede ayudarnos a mejorar la rentabilidad o acelerar el crecimiento?"
+        },
+        {
+          "type": "p",
+          "text": "¿Cómo puede apoyar una estrategia realmente diferenciada?"
+        },
+        {
+          "type": "p",
+          "text": "Después de responderlas, vendrán otras conversaciones: qué datos tenemos, qué tan confiables son, qué procesos queremos transformar, qué personas necesitamos preparar, qué riesgos debemos gestionar, qué arquitectura necesitamos y qué nivel de gobierno corresponde."
+        },
+        {
+          "type": "p",
+          "text": "La tecnología debería llegar después de esa conversación, no antes."
+        },
+        {
+          "type": "h2",
+          "text": "Una última reflexión"
+        },
+        {
+          "type": "p",
+          "text": "Durante años hemos hablado de transformación digital, después hablamos de automatización, ahora hablamos de IA, pero hay algo que permanece."
+        },
+        {
+          "type": "p",
+          "text": "Las organizaciones siguen necesitando estrategia, gobierno, datos confiables, procesos bien definidos, arquitectura y liderazgo, y siguen necesitando personas capaces de asumir responsabilidad cuando no existe una respuesta evidente."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, una estrategia de IA no debería comenzar con: “¿qué IA podemos comprar?”"
+        },
+        {
+          "type": "p",
+          "text": "Debería comenzar con: “¿qué queremos transformar y qué inteligencia necesitamos para hacerlo mejor?”"
+        },
+        {
+          "type": "p",
+          "text": "Ahí comienza el Gobierno de IA. Y también comienza una conversación mucho más importante para un CEO: ¿estamos utilizando la inteligencia artificial para transformar nuestro negocio o simplemente estamos incorporando inteligencia a nuestros procesos?"
+        },
+        {
+          "type": "p",
+          "text": "La diferencia puede parecer pequeña. Pero puede terminar definiendo quién lidera el futuro y quién simplemente intenta alcanzarlo."
+        },
         {
           "type": "p",
           "text": "Para profundizar en temas relacionados: qué es RPA y cuándo conviene frente a la IA y qué es la gobernanza de IA y qué marcos usar.",
@@ -464,47 +1214,200 @@
         }
       ],
       "body": [
-        { "type": "p", "text": "Piense en un proyecto de tecnología que arranca con optimismo. Hay un presupuesto aprobado, un proveedor seleccionado, un cronograma que cabe en una diapositiva y un equipo con ganas de empezar." },
-        { "type": "p", "text": "Unos meses después, la conversación puede ser otra: el cronograma se movió, el presupuesto ya no alcanza, el proveedor dice que el retraso es del cliente y el cliente dice que es del proveedor. Y cuando alguien pregunta quién responde por el resultado, la respuesta no es clara." },
-        { "type": "p", "text": "En mi experiencia, esa pregunta es la que define si un proyecto necesita una gerencia de proyectos distinta a la que tiene. No se trata de cuántas herramientas de seguimiento se usen, sino de quién tiene la responsabilidad real de que el proyecto cumpla lo que prometió." },
-        { "type": "h2", "text": "¿Qué es la gerencia de proyectos?" },
-        { "type": "p", "text": "La gerencia de proyectos es la planeación, dirección, control y ejecución de una iniciativa para que cumpla con el tiempo, el costo, el alcance y la calidad acordados. Es una disciplina con marcos reconocidos, como la guía del PMBOK, y con un objetivo muy concreto: convertir una decisión del negocio en un resultado entregado." },
-        { "type": "p", "text": "Con frecuencia se habla indistintamente de gerencia de proyectos y de gestión de proyectos. En la práctica son sinónimos. Si hay un matiz, es que la palabra gerencia pone el acento en la dirección y en la responsabilidad sobre el resultado, no solo en la administración de tareas." },
-        { "type": "p", "text": "Esa diferencia importa. Un proyecto puede tener un cronograma impecable, reuniones semanales y reportes bien diseñados, y aun así no tener a nadie que tome las decisiones difíciles cuando algo se desvía." },
-        { "type": "h2", "text": "Cinco señales de que su proyecto necesita una gerencia externa" },
-        { "type": "p", "text": "El costo de una mala gerencia es medible: según el informe Pulse of the Profession 2020 del PMI, las organizaciones pierden en promedio el 11,4% de lo que invierten en proyectos por su bajo desempeño. No todos los proyectos necesitan una PMO externa. Estas son señales que revisamos para saber si el suyo la necesita." },
-        { "type": "p", "text": "La primera: nadie responde por el resultado completo. El proveedor responde por su parte, cada área responde por la suya y el proyecto, como un todo, no tiene dueño." },
-        { "type": "p", "text": "La segunda: los reportes dicen que todo va bien hasta que, de repente, todo va mal. Cuando el semáforo pasa de verde a rojo sin haber pasado por amarillo, el problema no es el proyecto, es la forma en que se está midiendo." },
-        { "type": "p", "text": "La tercera: el proveedor se está gerenciando a sí mismo. Es natural que un implementador defienda su alcance, sus tiempos y sus costos. Lo que no es sano es que sea también quien decide si lo está haciendo bien." },
-        { "type": "p", "text": "La cuarta: el equipo interno tiene doble función. Las personas clave del proyecto siguen respondiendo por la operación diaria, y el proyecto termina recibiendo el tiempo que sobra." },
-        { "type": "p", "text": "La quinta: es la primera vez que la organización ejecuta un proyecto de este tamaño. Una implementación de ERP, una migración a la nube o una iniciativa de inteligencia artificial no se parecen a los proyectos que la empresa hace todos los años, y los errores de un primer proyecto pueden ser costosos." },
-        { "type": "h2", "text": "PMO interna, PMO externa o PMO as a Service" },
-        { "type": "p", "text": "Una PMO, u oficina de gestión de proyectos, es la estructura que define cómo se gobiernan los proyectos de una organización: metodología, roles, comités, indicadores y herramientas." },
-        { "type": "p", "text": "Una PMO interna tiene sentido cuando la empresa ejecuta proyectos de forma permanente y tiene el volumen para sostener un equipo dedicado. Construirla toma tiempo, y mantenerla tiene un costo fijo." },
-        { "type": "p", "text": "Una PMO externa, o PMO as a Service, es un equipo que asume el gobierno de un proyecto puntual con responsabilidad sobre el resultado, y se desmonta cuando el proyecto termina. Es una opción para iniciativas grandes que no se repiten cada año, como la implementación de un ERP.", "links": [{"text":"PMO as a Service","href":"/metodo-cira/gestion-de-proyectos"}] },
-        { "type": "quote", "text": "La pregunta no es si su empresa necesita una PMO. Es quién va a responder por el resultado de este proyecto en particular." },
-        { "type": "h2", "text": "Qué debe entregar una gerencia de proyectos seria" },
-        { "type": "p", "text": "Un plan integral antes de empezar: alcance, cronograma, recursos, roles, costos, riesgos y plan de calidad, aprobados por un comité de dirección que entienda lo que está aprobando." },
-        { "type": "p", "text": "Un gobierno claro: quién decide qué, en qué instancia y con qué información. Un proyecto sin reglas de decisión puede terminar resolviendo sus problemas por desgaste." },
-        { "type": "p", "text": "Un seguimiento continuo del riesgo, no solo un reporte al cierre de cada fase. Hoy es posible monitorear el riesgo del proyecto de forma permanente, incluso con agentes de inteligencia artificial que anticipan desviaciones antes de que se conviertan en crisis." },
-        { "type": "p", "text": "Un control del alcance que proteja el presupuesto. En un proyecto que gerenciamos bajo los lineamientos del PMBOK, el cierre llegó con una diferencia de solo 3% frente al costo estimado y con apenas dos personalizaciones al código del ERP. No es casualidad: es el resultado de decir que no a tiempo." },
-        { "type": "p", "text": "Un cierre formal y documentado, que deje a la organización con el modelo de implementación para sus próximos proyectos." },
-        { "type": "h2", "text": "Un riesgo: gerenciar el cronograma y no la adopción" },
-        { "type": "p", "text": "Un proyecto puede terminar a tiempo, dentro del presupuesto y con todo el alcance entregado, y aun así fracasar. Ocurre cuando el sistema queda instalado pero la organización sigue trabajando como antes." },
-        { "type": "p", "text": "Por eso creo que una gerencia de proyectos que no incluye la gestión del cambio está midiendo el éxito equivocado. Los servicios de gestión del cambio tienen que empezar el mismo día que el proyecto, no aparecer como una actividad de cierre.", "links": [{"text": "servicios de gestión del cambio", "href": "/metodo-cira/gestion-del-cambio"}] },
-        { "type": "p", "text": "Escribí sobre esto en detalle en por qué fracasan los proyectos de transformación digital: en mi experiencia, el factor decisivo es la forma en que las personas reciben la tecnología.", "links": [{"text": "por qué fracasan los proyectos de transformación digital", "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"}] },
-        { "type": "h2", "text": "Antes del proyecto: la decisión correcta" },
-        { "type": "p", "text": "Hay proyectos que ninguna gerencia puede salvar, porque el problema no está en la ejecución sino en la decisión que les dio origen: un objetivo difuso, un caso de negocio que nadie construyó o una tecnología elegida antes de entender el problema." },
-        { "type": "p", "text": "Por eso, en los proyectos de mayor impacto, vale la pena empezar con una consultoría estratégica que defina qué hay que resolver, en qué orden y con qué indicadores. La gerencia de proyectos ejecuta mejor cuando sabe exactamente qué está ejecutando.", "links": [{"text": "consultoría estratégica", "href": "/metodo-cira/estrategia"}] },
-        { "type": "h2", "text": "Cómo elegir a quién le entrega la gerencia de su proyecto" },
-        { "type": "p", "text": "Pregunte quién va a responder por el resultado, no solo quién va a hacer el seguimiento." },
-        { "type": "p", "text": "Pregunte cómo se va a medir el riesgo y con qué frecuencia. Si la respuesta es un informe mensual, el riesgo se va a detectar tarde." },
-        { "type": "p", "text": "Pregunte qué relación comercial tiene con el proveedor de la tecnología. Una gerencia que depende del implementador difícilmente va a poder exigirle." },
-        { "type": "p", "text": "Pregunte cómo va a trabajar la adopción, no solo la instalación." },
-        { "type": "p", "text": "Y pregunte por proyectos anteriores con resultados verificables: tiempo, costo, alcance y, sobre todo, qué pasó después del go-live." },
-        { "type": "h2", "text": "En resumen" },
-        { "type": "p", "text": "Una buena gerencia de proyectos no se nota por la cantidad de reportes que produce, sino por la cantidad de problemas que evita. Si su próximo proyecto es grande, nuevo para la organización o crítico para el negocio, vale la pena preguntarse quién va a responder por él." },
-        { "type": "p", "text": "En Cyrrus prestamos servicios de gerencia de proyectos como PMO externa, con responsabilidad sobre el resultado y con la gestión del cambio integrada desde el inicio.", "links": [{"text": "servicios de gerencia de proyectos", "href": "/metodo-cira/gestion-de-proyectos"}] },
+        {
+          "type": "p",
+          "text": "Piense en un proyecto de tecnología que arranca con optimismo. Hay un presupuesto aprobado, un proveedor seleccionado, un cronograma que cabe en una diapositiva y un equipo con ganas de empezar."
+        },
+        {
+          "type": "p",
+          "text": "Unos meses después, la conversación puede ser otra: el cronograma se movió, el presupuesto ya no alcanza, el proveedor dice que el retraso es del cliente y el cliente dice que es del proveedor. Y cuando alguien pregunta quién responde por el resultado, la respuesta no es clara."
+        },
+        {
+          "type": "p",
+          "text": "En mi experiencia, esa pregunta es la que define si un proyecto necesita una gerencia de proyectos distinta a la que tiene. No se trata de cuántas herramientas de seguimiento se usen, sino de quién tiene la responsabilidad real de que el proyecto cumpla lo que prometió."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es la gerencia de proyectos?"
+        },
+        {
+          "type": "p",
+          "text": "La gerencia de proyectos es la planeación, dirección, control y ejecución de una iniciativa para que cumpla con el tiempo, el costo, el alcance y la calidad acordados. Es una disciplina con marcos reconocidos, como la guía del PMBOK, y con un objetivo muy concreto: convertir una decisión del negocio en un resultado entregado."
+        },
+        {
+          "type": "p",
+          "text": "Con frecuencia se habla indistintamente de gerencia de proyectos y de gestión de proyectos. En la práctica son sinónimos. Si hay un matiz, es que la palabra gerencia pone el acento en la dirección y en la responsabilidad sobre el resultado, no solo en la administración de tareas."
+        },
+        {
+          "type": "p",
+          "text": "Esa diferencia importa. Un proyecto puede tener un cronograma impecable, reuniones semanales y reportes bien diseñados, y aun así no tener a nadie que tome las decisiones difíciles cuando algo se desvía."
+        },
+        {
+          "type": "h2",
+          "text": "Cinco señales de que su proyecto necesita una gerencia externa"
+        },
+        {
+          "type": "p",
+          "text": "El costo de una mala gerencia es medible: según el informe Pulse of the Profession 2020 del PMI, las organizaciones pierden en promedio el 11,4% de lo que invierten en proyectos por su bajo desempeño. No todos los proyectos necesitan una PMO externa. Estas son señales que revisamos para saber si el suyo la necesita."
+        },
+        {
+          "type": "p",
+          "text": "La primera: nadie responde por el resultado completo. El proveedor responde por su parte, cada área responde por la suya y el proyecto, como un todo, no tiene dueño."
+        },
+        {
+          "type": "p",
+          "text": "La segunda: los reportes dicen que todo va bien hasta que, de repente, todo va mal. Cuando el semáforo pasa de verde a rojo sin haber pasado por amarillo, el problema no es el proyecto, es la forma en que se está midiendo."
+        },
+        {
+          "type": "p",
+          "text": "La tercera: el proveedor se está gerenciando a sí mismo. Es natural que un implementador defienda su alcance, sus tiempos y sus costos. Lo que no es sano es que sea también quien decide si lo está haciendo bien."
+        },
+        {
+          "type": "p",
+          "text": "La cuarta: el equipo interno tiene doble función. Las personas clave del proyecto siguen respondiendo por la operación diaria, y el proyecto termina recibiendo el tiempo que sobra."
+        },
+        {
+          "type": "p",
+          "text": "La quinta: es la primera vez que la organización ejecuta un proyecto de este tamaño. Una implementación de ERP, una migración a la nube o una iniciativa de inteligencia artificial no se parecen a los proyectos que la empresa hace todos los años, y los errores de un primer proyecto pueden ser costosos."
+        },
+        {
+          "type": "h2",
+          "text": "PMO interna, PMO externa o PMO as a Service"
+        },
+        {
+          "type": "p",
+          "text": "Una PMO, u oficina de gestión de proyectos, es la estructura que define cómo se gobiernan los proyectos de una organización: metodología, roles, comités, indicadores y herramientas."
+        },
+        {
+          "type": "p",
+          "text": "Una PMO interna tiene sentido cuando la empresa ejecuta proyectos de forma permanente y tiene el volumen para sostener un equipo dedicado. Construirla toma tiempo, y mantenerla tiene un costo fijo."
+        },
+        {
+          "type": "p",
+          "text": "Una PMO externa, o PMO as a Service, es un equipo que asume el gobierno de un proyecto puntual con responsabilidad sobre el resultado, y se desmonta cuando el proyecto termina. Es una opción para iniciativas grandes que no se repiten cada año, como la implementación de un ERP.",
+          "links": [
+            {
+              "text": "PMO as a Service",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "La pregunta no es si su empresa necesita una PMO. Es quién va a responder por el resultado de este proyecto en particular."
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe entregar una gerencia de proyectos seria"
+        },
+        {
+          "type": "p",
+          "text": "Un plan integral antes de empezar: alcance, cronograma, recursos, roles, costos, riesgos y plan de calidad, aprobados por un comité de dirección que entienda lo que está aprobando."
+        },
+        {
+          "type": "p",
+          "text": "Un gobierno claro: quién decide qué, en qué instancia y con qué información. Un proyecto sin reglas de decisión puede terminar resolviendo sus problemas por desgaste."
+        },
+        {
+          "type": "p",
+          "text": "Un seguimiento continuo del riesgo, no solo un reporte al cierre de cada fase. Hoy es posible monitorear el riesgo del proyecto de forma permanente, incluso con agentes de inteligencia artificial que anticipan desviaciones antes de que se conviertan en crisis."
+        },
+        {
+          "type": "p",
+          "text": "Un control del alcance que proteja el presupuesto. En un proyecto que gerenciamos bajo los lineamientos del PMBOK, el cierre llegó con una diferencia de solo 3% frente al costo estimado y con apenas dos personalizaciones al código del ERP. No es casualidad: es el resultado de decir que no a tiempo."
+        },
+        {
+          "type": "p",
+          "text": "Un cierre formal y documentado, que deje a la organización con el modelo de implementación para sus próximos proyectos."
+        },
+        {
+          "type": "h2",
+          "text": "Un riesgo: gerenciar el cronograma y no la adopción"
+        },
+        {
+          "type": "p",
+          "text": "Un proyecto puede terminar a tiempo, dentro del presupuesto y con todo el alcance entregado, y aun así fracasar. Ocurre cuando el sistema queda instalado pero la organización sigue trabajando como antes."
+        },
+        {
+          "type": "p",
+          "text": "Por eso creo que una gerencia de proyectos que no incluye la gestión del cambio está midiendo el éxito equivocado. Los servicios de gestión del cambio tienen que empezar el mismo día que el proyecto, no aparecer como una actividad de cierre.",
+          "links": [
+            {
+              "text": "servicios de gestión del cambio",
+              "href": "/metodo-cira/gestion-del-cambio"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Escribí sobre esto en detalle en por qué fracasan los proyectos de transformación digital: en mi experiencia, el factor decisivo es la forma en que las personas reciben la tecnología.",
+          "links": [
+            {
+              "text": "por qué fracasan los proyectos de transformación digital",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Antes del proyecto: la decisión correcta"
+        },
+        {
+          "type": "p",
+          "text": "Hay proyectos que ninguna gerencia puede salvar, porque el problema no está en la ejecución sino en la decisión que les dio origen: un objetivo difuso, un caso de negocio que nadie construyó o una tecnología elegida antes de entender el problema."
+        },
+        {
+          "type": "p",
+          "text": "Por eso, en los proyectos de mayor impacto, vale la pena empezar con una consultoría estratégica que defina qué hay que resolver, en qué orden y con qué indicadores. La gerencia de proyectos ejecuta mejor cuando sabe exactamente qué está ejecutando.",
+          "links": [
+            {
+              "text": "consultoría estratégica",
+              "href": "/metodo-cira/estrategia"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo elegir a quién le entrega la gerencia de su proyecto"
+        },
+        {
+          "type": "p",
+          "text": "Pregunte quién va a responder por el resultado, no solo quién va a hacer el seguimiento."
+        },
+        {
+          "type": "p",
+          "text": "Pregunte cómo se va a medir el riesgo y con qué frecuencia. Si la respuesta es un informe mensual, el riesgo se va a detectar tarde."
+        },
+        {
+          "type": "p",
+          "text": "Pregunte qué relación comercial tiene con el proveedor de la tecnología. Una gerencia que depende del implementador difícilmente va a poder exigirle."
+        },
+        {
+          "type": "p",
+          "text": "Pregunte cómo va a trabajar la adopción, no solo la instalación."
+        },
+        {
+          "type": "p",
+          "text": "Y pregunte por proyectos anteriores con resultados verificables: tiempo, costo, alcance y, sobre todo, qué pasó después del go-live."
+        },
+        {
+          "type": "h2",
+          "text": "En resumen"
+        },
+        {
+          "type": "p",
+          "text": "Una buena gerencia de proyectos no se nota por la cantidad de reportes que produce, sino por la cantidad de problemas que evita. Si su próximo proyecto es grande, nuevo para la organización o crítico para el negocio, vale la pena preguntarse quién va a responder por él."
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus prestamos servicios de gerencia de proyectos como PMO externa, con responsabilidad sobre el resultado y con la gestión del cambio integrada desde el inicio.",
+          "links": [
+            {
+              "text": "servicios de gerencia de proyectos",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
+        },
         {
           "type": "p",
           "text": "Para profundizar en temas relacionados: qué es la planeación estratégica, qué es una PMO y qué funciones tiene y qué es la gestión del cambio organizacional.",
@@ -721,7 +1624,25 @@
         },
         {
           "type": "p",
-          "text": "Un riesgo es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP. Si su cuello de botella está en la bodega, vea también qué es un sistema WMS y cuándo necesita uno. Antes de comparar proveedores, pruebe si su empresa está lista con el test de preparación para un ERP.", "links": [{"text": "mejores ERP para medianas empresas", "href": "/perspectivas/mejores-erp-para-medianas-empresas"}, {"text": "cuánto cuesta implementar un ERP", "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"}, {"text": "qué es un sistema WMS", "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"}, {"text": "test de preparación para un ERP", "href": "/herramientas/test-preparacion-erp"}]
+          "text": "Un riesgo es elegir por la demostración más vistosa. Un buen proceso de selección parte de los requerimientos del negocio, no del catálogo del proveedor. Estos son siete criterios que conviene evaluar. Si ya tiene candidatos, vea nuestra comparativa de los mejores ERP para medianas empresas y cuánto cuesta implementar un ERP. Si su cuello de botella está en la bodega, vea también qué es un sistema WMS y cuándo necesita uno. Antes de comparar proveedores, pruebe si su empresa está lista con el test de preparación para un ERP.",
+          "links": [
+            {
+              "text": "mejores ERP para medianas empresas",
+              "href": "/perspectivas/mejores-erp-para-medianas-empresas"
+            },
+            {
+              "text": "cuánto cuesta implementar un ERP",
+              "href": "/perspectivas/cuanto-cuesta-implementar-un-erp"
+            },
+            {
+              "text": "qué es un sistema WMS",
+              "href": "/perspectivas/sistema-wms-que-es-y-como-elegir"
+            },
+            {
+              "text": "test de preparación para un ERP",
+              "href": "/herramientas/test-preparacion-erp"
+            }
+          ]
         },
         {
           "type": "p",
@@ -1046,7 +1967,13 @@
         },
         {
           "type": "p",
-          "text": "Una PMO puede ser interna, con personal propio; externa, operada por una firma especializada; o un modelo mixto. Una PMO externa, también llamada PMO as a Service, es un equipo que asume el gobierno de los proyectos con responsabilidad sobre el resultado, sin que la empresa tenga que montar toda la estructura.", "links": [{"text":"PMO as a Service","href":"/metodo-cira/gestion-de-proyectos"}]
+          "text": "Una PMO puede ser interna, con personal propio; externa, operada por una firma especializada; o un modelo mixto. Una PMO externa, también llamada PMO as a Service, es un equipo que asume el gobierno de los proyectos con responsabilidad sobre el resultado, sin que la empresa tenga que montar toda la estructura.",
+          "links": [
+            {
+              "text": "PMO as a Service",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
         },
         {
           "type": "p",
@@ -2533,14 +3460,44 @@
           "href": "/descargas/plantilla-rfp-erp.xlsx",
           "note": "Excel con requerimientos funcionales y técnicos por módulo, costo total por proveedor, matriz de evaluación ponderada, calendario y referencias. Sin precios ni pesos de ejemplo. Gratis y sin registro."
         },
-        {"type":"h2","text":"¿Cómo estimar el costo de implementar un ERP en su empresa?"},
-        {"type":"p","text":"En seis pasos, antes de pedir una sola propuesta:"},
-        {"type":"p","text":"1. Cuente los usuarios por tipo: completos, limitados y de solo lectura. Casi todos los precios publicados son por usuario al mes, así que este número define el bloque de licencias."},
-        {"type":"p","text":"2. Liste los módulos e integraciones que de verdad necesita: finanzas, inventario, ventas, producción, nómina, facturación electrónica, bancos, comercio electrónico. Cada módulo suma licencia; cada integración suma implementación."},
-        {"type":"p","text":"3. Decida el modelo de despliegue: suscripción en la nube o servidores propios. El primero convierte el costo en una cuota recurrente; el segundo añade infraestructura y soporte."},
-        {"type":"p","text":"4. Presupueste la implementación como una línea aparte: análisis, configuración, migración, pruebas y capacitación, a cargo de un partner o del fabricante. Pida a cada proveedor que la cotice separada de la licencia."},
-        {"type":"p","text":"5. Sume el tiempo del equipo interno y una contingencia. El informe 2026 de Panorama encontró que más de una cuarta parte de los proyectos superó el presupuesto, casi siempre por una necesidad imprevista de tecnología adicional."},
-        {"type":"p","text":"6. Lleve todo a cinco años, no a uno, y compare las alternativas sobre ese total. Nuestra calculadora de costo total de un ERP hace la aritmética con sus propios supuestos y sin cifras precargadas.","links":[{"text":"calculadora de costo total de un ERP","href":"/herramientas/calculadora-costo-erp"}]},
+        {
+          "type": "h2",
+          "text": "¿Cómo estimar el costo de implementar un ERP en su empresa?"
+        },
+        {
+          "type": "p",
+          "text": "En seis pasos, antes de pedir una sola propuesta:"
+        },
+        {
+          "type": "p",
+          "text": "1. Cuente los usuarios por tipo: completos, limitados y de solo lectura. Casi todos los precios publicados son por usuario al mes, así que este número define el bloque de licencias."
+        },
+        {
+          "type": "p",
+          "text": "2. Liste los módulos e integraciones que de verdad necesita: finanzas, inventario, ventas, producción, nómina, facturación electrónica, bancos, comercio electrónico. Cada módulo suma licencia; cada integración suma implementación."
+        },
+        {
+          "type": "p",
+          "text": "3. Decida el modelo de despliegue: suscripción en la nube o servidores propios. El primero convierte el costo en una cuota recurrente; el segundo añade infraestructura y soporte."
+        },
+        {
+          "type": "p",
+          "text": "4. Presupueste la implementación como una línea aparte: análisis, configuración, migración, pruebas y capacitación, a cargo de un partner o del fabricante. Pida a cada proveedor que la cotice separada de la licencia."
+        },
+        {
+          "type": "p",
+          "text": "5. Sume el tiempo del equipo interno y una contingencia. El informe 2026 de Panorama encontró que más de una cuarta parte de los proyectos superó el presupuesto, casi siempre por una necesidad imprevista de tecnología adicional."
+        },
+        {
+          "type": "p",
+          "text": "6. Lleve todo a cinco años, no a uno, y compare las alternativas sobre ese total. Nuestra calculadora de costo total de un ERP hace la aritmética con sus propios supuestos y sin cifras precargadas.",
+          "links": [
+            {
+              "text": "calculadora de costo total de un ERP",
+              "href": "/herramientas/calculadora-costo-erp"
+            }
+          ]
+        },
         {
           "type": "h2",
           "text": "Cómo podemos ayudarle"
@@ -6432,7 +7389,7 @@
           "links": [
             {
               "text": "cómo elegir una consultoría de ciberseguridad",
-              "href": "/perspectivas/como-elegir-una-consultoria-de-ciberseguridad"
+              "href": "/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad"
             },
             {
               "text": "qué es la estrategia de TI",
@@ -6669,17 +7626,19 @@
         }
       ]
     },
-    "como-elegir-una-consultoria-de-ciberseguridad": {
-      "title": "Cómo elegir una consultoría de ciberseguridad: alcance, marcos y preguntas",
-      "seoTitle": "Cómo elegir una consultoría de ciberseguridad",
-      "label": "Selección de soluciones",
-      "excerpt": "Qué hace una consultoría de ciberseguridad, qué tipos de servicio existen, qué marcos públicos sirven de referencia (NIST CSF 2.0, ISO/IEC 27001), cómo comparar propuestas y qué preguntar antes de contratar.",
-      "metaDescription": "Cómo elegir una consultoría de ciberseguridad: tipos de servicio, qué dicen NIST CSF 2.0 e ISO/IEC 27001, criterios para comparar propuestas y las preguntas que la dirección debe hacer.",
-      "intro": "Si tiene propuestas de varios proveedores de ciberseguridad y no sabe cómo compararlas, esta guía explica qué debería cubrir una consultoría, qué marcos públicos sirven de referencia y qué preguntar antes de firmar.",
+    "senales-de-que-necesita-una-consultoria-de-ciberseguridad": {
+      "title": "Señales de que su empresa necesita una consultoría de ciberseguridad y cómo las resuelve un socio independiente de fabricantes",
+      "seoTitle": "Cuándo contratar una consultoría de ciberseguridad",
+      "label": "Ciberseguridad",
+      "excerpt": "Las señales que indican que es momento de una consultoría de ciberseguridad, qué incluye una evaluación de madurez, por qué importa la independencia de fabricantes, referencias de precio y cómo preseleccionar una firma.",
+      "metaDescription": "Señales de que su empresa necesita una consultoría de ciberseguridad, qué incluye, por qué importa que sea independiente de fabricantes, rangos de precio de referencia y qué preguntar antes de contratar.",
+      "intro": "Las señales más claras son estructurales, no personales: un intento de brecha que su equipo no pudo explicar, una auditoría de cumplimiento que casi no pasa, un conjunto de herramientas que nadie gestiona de verdad o un proveedor que vendió una plataforma y se fue. En nuestro criterio, no reflejan la competencia del equipo, sino una brecha entre la complejidad del problema y la capacidad de la estructura actual. Esta guía explica qué cubre una consultoría de ciberseguridad, qué dolores enfrentan con más frecuencia los CEO, CIO y CFO y cómo preseleccionar una firma.",
       "keyTakeaways": [
-        "Una consultoría de ciberseguridad debería empezar por qué proteger y qué riesgos existen, no por la herramienta que vende.",
-        "El NIST CSF 2.0 (febrero de 2024) organiza los resultados de ciberseguridad en seis funciones —gobernar, identificar, proteger, detectar, responder y recuperar— y no prescribe cómo lograrlos.",
-        "ISO/IEC 27001:2022 define los requisitos de un sistema de gestión de seguridad de la información y permite certificarse; es complementaria al NIST CSF, no sustituta."
+        "Las señales de alerta suelen ser estructurales: brechas de cumplimiento, herramientas sin dueño y dependencia de un proveedor apuntan a un problema de estructura, no a una falla del equipo.",
+        "Una firma que recibe comisiones de los fabricantes que recomienda tiene un conflicto de interés: pida por escrito si recibe alguna compensación y con qué criterios decide.",
+        "Según Clutch (actualizado en septiembre de 2026), el costo promedio de contratar a un proveedor de ciberseguridad en esa plataforma está entre US$100 y 149 por hora, y los proyectos que reseñan suelen costar entre US$10.000 y 49.999; es una referencia sin tamaño de muestra publicado, no una cotización.",
+        "Las certificaciones deben ser de las personas asignadas a su proyecto, no de alguien más en la firma.",
+        "Un informe en un estante no es un resultado: el socio correcto desarrolla capacidad interna para que las mejoras se mantengan."
       ],
       "serviceCtas": [
         {
@@ -6705,120 +7664,188 @@
       ],
       "body": [
         {
-          "type": "p",
-          "text": "Tres proveedores, tres propuestas, tres listas de siglas. Uno ofrece monitoreo, otro una plataforma de protección de identidades, el tercero una auditoría. Todos dicen que lo suyo es lo urgente. Sin un criterio propio, la decisión termina siendo cuál presentó mejor o cuál cobra menos."
+          "type": "h2",
+          "text": "Qué incluye una consultoría de ciberseguridad"
         },
         {
           "type": "p",
-          "text": "Esta guía explica qué hace una consultoría de ciberseguridad, qué tipos de servicio existen, qué dicen dos marcos públicos que sirven de referencia, cómo comparar propuestas y qué debe preguntar la dirección antes de contratar."
+          "text": "Una evaluación de madurez de seguridad no es un escaneo de vulnerabilidades. El escaneo revisa exposiciones conocidas en sus sistemas. La evaluación es más completa: inventaría los activos, revisa los controles, entrevista a las partes interesadas, relaciona las amenazas con el impacto en el negocio y produce una hoja de ruta de remediación puntuada y priorizada, con un resumen ejecutivo y un mapa de calor de riesgos. Su resultado se puede ejecutar; una lista cruda de un escaneo normalmente no."
+        },
+        {
+          "type": "p",
+          "text": "Más allá de las evaluaciones, los servicios de los consultores de ciberseguridad suelen cubrir varias áreas. La arquitectura de seguridad incluye diseño de confianza cero (zero trust), gestión de identidades y accesos (IAM), zonas de aterrizaje en la nube y segmentación de red. El trabajo de gobierno, riesgo y cumplimiento (GRC) relaciona los controles con marcos y estándares como NIST CSF, ISO/IEC 27001, SOC 2 y PCI DSS. La consultoría de respuesta a incidentes cubre preparación, guías de actuación, ejercicios de mesa y acceso a respuesta mediante retainer. Las pruebas de penetración y los ejercicios de red team suelen cotizarse aparte, así que lea con cuidado el alcance antes de suponer que están incluidos."
+        },
+        {
+          "type": "p",
+          "text": "Esos marcos no son intercambiables. El NIST CSF 2.0, publicado el 26 de febrero de 2024, organiza los resultados de ciberseguridad en seis funciones (gobernar, identificar, proteger, detectar, responder y recuperar) y no prescribe cómo lograrlos. ISO/IEC 27001:2022 define los requisitos de un sistema de gestión de seguridad de la información y permite certificarse. PCI DSS, según el PCI Security Standards Council, es una base de requisitos técnicos y operativos para proteger los datos de cuentas de pago, dirigida a las entidades que almacenan, procesan o transmiten datos de titulares de tarjetas. Y SOC 2 es una de las ofertas de informes de aseguramiento que contadores públicos (CPA) pueden emitir sobre los controles de una organización de servicios, según el AICPA, con criterios que nombra como seguridad, disponibilidad, integridad del procesamiento, confidencialidad y privacidad."
+        },
+        {
+          "type": "p",
+          "text": "Muchas consultorías incluyen también la evaluación de herramientas de seguridad y de proveedores, y no solo la revisión de su situación actual. Las mejores lo hacen con criterios definidos por su negocio y sin recibir comisiones de los fabricantes que evalúan. Esa diferencia es fácil de pasar por alto al comparar propuestas, y en la práctica importa mucho."
         },
         {
           "type": "h2",
-          "text": "¿Qué hace una consultoría de ciberseguridad?"
+          "text": "Qué señales indican que es momento de llamar a un consultor"
         },
         {
           "type": "p",
-          "text": "Una consultoría de ciberseguridad ayuda a la empresa a decidir qué proteger, con qué controles y con qué proveedores, y a verificar que esos controles funcionen. Su trabajo empieza por el negocio —qué sistemas soportan la operación, qué datos no pueden exponerse, qué exigen los clientes y el sector— y termina en una lista de controles priorizados y en la selección de las soluciones que los cubren."
+          "text": "Los CEO y CFO notan las señales de negocio: una brecha evitada por poco, un contrato que exige SOC 2 o ISO/IEC 27001 que el equipo interno no puede cumplir, una renovación del seguro cibernético con nuevas condiciones técnicas o la presión del directorio tras el incidente público de un competidor. Los CFO sienten además la tensión de aprobar presupuestos de seguridad sin un marco de retorno ni un mapa de resultados medibles."
         },
         {
           "type": "p",
-          "text": "Lo que distingue a una consultoría de un proveedor de herramientas es el orden: la consultoría define el riesgo y los criterios antes de proponer una solución; el proveedor parte de su producto. Las dos cosas pueden coexistir, pero conviene saber cuál está contratando."
+          "text": "Los CIO y CTO sienten la fricción estructural: un conjunto de herramientas que creció con compras reactivas y sin una arquitectura que las una, una plataforma recomendada por un proveedor que rindió menos de lo prometido o una migración a la nube planeada sin capa de seguridad. También está el conflicto del integrador: la firma que le vendió la plataforma es la que la implementa y la que la evalúa. Eso no es un problema de personal, es un problema de incentivos."
+        },
+        {
+          "type": "p",
+          "text": "El error que empeora todas las señales es esperar. A modo ilustrativo, una empresa que descubre que un proveedor gestionaba accesos sin registro de auditoría solo cuando un cliente grande revisa a sus proveedores podría haber detectado esa brecha mucho antes con una evaluación proactiva. Un descubrimiento tardío así rara vez sale barato, en tiempo o en dinero."
         },
         {
           "type": "h2",
-          "text": "¿Qué tipos de servicios de ciberseguridad existen?"
+          "text": "Por qué la independencia de fabricantes cambia el resultado"
         },
         {
           "type": "p",
-          "text": "Conviene separar cuatro tipos de servicio, porque se contratan y se evalúan de forma distinta:"
+          "text": "Los integradores que ganan comisiones de los fabricantes tienen un incentivo para recomendar lo que conocen y lo que paga, no necesariamente lo que encaja. El resultado puede ser sobrepago, bajo rendimiento y una dependencia difícil de deshacer. No es un juicio de carácter: es un incentivo estructural."
         },
         {
           "type": "p",
-          "text": "Asesoría y diagnóstico: evaluar el riesgo, definir controles y políticas, preparar la empresa para una norma o una exigencia de un cliente. Es el alcance de una consultoría independiente."
-        },
-        {
-          "type": "p",
-          "text": "Implementación: desplegar y configurar las soluciones elegidas. Lo hace el fabricante, un integrador o el equipo interno."
-        },
-        {
-          "type": "p",
-          "text": "Operación: monitoreo, detección y respuesta de forma continua, normalmente contratados como servicio a un proveedor especializado."
-        },
-        {
-          "type": "p",
-          "text": "Verificación: auditorías, pruebas de intrusión y revisiones periódicas que comprueban que los controles funcionan."
-        },
-        {
-          "type": "quote",
-          "text": "La pregunta útil no es 'qué herramienta compro', sino 'qué riesgo estoy cubriendo, con qué control y quién responde si falla'."
+          "text": "La alternativa es una consultoría que evalúa a los fabricantes con criterios que define su negocio, no recibe comisión de ninguna plataforma y responde desde la estrategia hasta el go-live. Cuando una misma parte es dueña del consejo y del resultado, los incentivos por fin se alinean con los suyos. Cyrrus Consulting Services opera con este modelo: evalúa proveedores con criterios definidos por el negocio y sin comisiones, y su función de PMO externo gobierna la ejecución hasta el go-live como defensor del cliente frente al proveedor de tecnología. Un solo equipo, una sola parte responsable.",
+          "links": [
+            {
+              "text": "PMO externo",
+              "href": "/metodo-cira/gestion-de-proyectos"
+            }
+          ]
         },
         {
           "type": "h2",
-          "text": "¿Qué marcos públicos sirven de referencia?"
+          "text": "Cómo un camino estructurado lleva del diagnóstico a la adopción"
         },
         {
           "type": "p",
-          "text": "Dos marcos públicos ayudan a ordenar el diagnóstico y a comparar propuestas sin atarse a un fabricante."
+          "text": "Una evaluación de madurez de seguridad moderna se ve distinta cuando la IA se integra desde el diagnóstico: la recolección de datos se acelera y el reconocimiento de patrones entre controles es más rápido. Cyrrus Intelligence Lab diseña gobierno, arquitectura y automatización de IA para apoyar el diagnóstico y la adopción.",
+          "links": [
+            {
+              "text": "Cyrrus Intelligence Lab",
+              "href": "/intelligence-lab"
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "El NIST Cybersecurity Framework 2.0, publicado por el Instituto Nacional de Estándares y Tecnología de Estados Unidos el 26 de febrero de 2024, ofrece una taxonomía de resultados de ciberseguridad de alto nivel que cualquier organización —independientemente de su tamaño, sector o madurez— puede usar para entender, evaluar, priorizar y comunicar sus esfuerzos de ciberseguridad. El marco no prescribe cómo lograr los resultados; organiza las categorías en seis funciones: gobernar (la estrategia, las expectativas y la política de gestión del riesgo se establecen, comunican y supervisan), identificar (se entienden los riesgos actuales), proteger (se usan salvaguardas para gestionar los riesgos), detectar (se encuentran y analizan posibles ataques), responder (se actúa ante un incidente detectado) y recuperar (se restauran los activos y operaciones afectados). Según el documento, el marco está diseñado para organizaciones de todos los tamaños y sectores."
+          "text": "Luego viene la selección objetiva de tecnología: criterios de evaluación definidos, puntuación estructurada y una recomendación independiente. El PMO de Cyrrus gobierna entonces la ejecución hasta el go-live y protege los intereses del cliente frente a los retrasos del proveedor y la ampliación del alcance. La metodología avanza en cuatro fases (Construir, Identificar, Realizar y Adoptar) y conecta la estrategia con la operación bajo un mismo equipo responsable.",
+          "links": [
+            {
+              "text": "selección objetiva de tecnología",
+              "href": "/metodo-cira/seleccion-de-soluciones"
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "ISO/IEC 27001:2022, Information security, cybersecurity and privacy protection — Information security management systems — Requirements, es, según la página oficial de ISO, la norma más conocida para sistemas de gestión de seguridad de la información (SGSI) y define los requisitos que un SGSI debe cumplir. Da a empresas de cualquier tamaño y sector orientación para establecer, implementar, mantener y mejorar continuamente ese sistema, y la conformidad con la norma significa que la organización ha puesto en marcha un sistema para gestionar los riesgos relacionados con la seguridad de los datos que posee o maneja. Su tercera edición se publicó en octubre de 2022."
-        },
-        {
-          "type": "p",
-          "text": "Son complementarios: el NIST CSF ordena el diagnóstico y la priorización; ISO/IEC 27001 estructura el sistema de gestión y permite certificarse cuando un cliente o el sector lo exige."
+          "text": "Donde más fallan las consultorías de ciberseguridad no es en la entrega, sino en la sostenibilidad. Cyrrus Leadership Academy aborda esto directamente: capacita al equipo del cliente para operar e iterar el modelo de seguridad por sí mismo cuando termina el proyecto. Para un CFO, esa es la diferencia entre un resultado medible y un informe que junta polvo.",
+          "links": [
+            {
+              "text": "Leadership Academy",
+              "href": "/leadership-academy"
+            }
+          ]
         },
         {
           "type": "h2",
-          "text": "¿Cómo comparar propuestas de ciberseguridad?"
+          "text": "Cuánto presupuestar y qué modelo de contratación conviene"
         },
         {
           "type": "p",
-          "text": "Con los mismos cuatro criterios que sirven para cualquier selección de tecnología. Funcional: qué riesgos identificados cubre la propuesta y cuáles deja fuera, función por función. Técnico: cómo se integra con lo que ya existe —identidades, dispositivos, nube, sistemas de negocio— y qué exige del equipo interno. Económico: el costo total a varios años, incluida la operación, no solo la licencia o el proyecto inicial. Sostenible: qué pasa cuando la empresa crece, cambia de sistemas o el proveedor cambia de condiciones."
+          "text": "Como referencia pública, Clutch (página actualizada el 21 de septiembre de 2026) reporta que el costo promedio de contratar a un proveedor de ciberseguridad en su plataforma está entre US$100 y 149 por hora, con promedios por ubicación de US$150–199 en Estados Unidos y de US$50–99 en México, España y Polonia. Los proyectos de ciberseguridad reseñados en Clutch suelen costar entre US$10.000 y 49.999. Clutch no publica el tamaño de la muestra de estas cifras, así que sirven para orientarse y no para cotizar. En nuestro criterio, las variables que más mueven el precio son la cantidad de sedes y aplicaciones, la profundidad de las pruebas, los requisitos regulatorios y si el trabajo es solo de asesoría o incluye implementación."
         },
         {
           "type": "p",
-          "text": "Y un criterio previo: si las propuestas no responden a un diagnóstico propio de la empresa, no son comparables entre sí. Cada una resuelve el problema que su autor sabe resolver."
+          "text": "El modelo de contratación correcto depende del problema que de verdad quiere resolver. En nuestro criterio, así se comparan los cuatro modelos:"
+        },
+        {
+          "type": "table",
+          "text": "Modelos de contratación de ciberseguridad: cuál conviene a cada caso",
+          "columns": [
+            "Modelo",
+            "Conviene cuando",
+            "Ventajas",
+            "Desventajas"
+          ],
+          "rows": [
+            [
+              "Evaluación puntual",
+              "La dirección necesita evidencia antes de aprobar una inversión y el problema no está claro",
+              "Alcance y precio claros; línea base independiente; poco compromiso; entrega una hoja de ruta priorizada",
+              "Es una foto: los hallazgos envejecen rápido; la responsabilidad de remediar queda en el cliente"
+            ],
+            [
+              "Implementación por proyecto",
+              "El resultado y los entregables se pueden definir de antemano",
+              "Hitos definidos; más fácil de presupuestar; criterios de aceptación claros",
+              "Los cambios de alcance elevan el costo; la responsabilidad vuelve al cliente al terminar"
+            ],
+            [
+              "Servicios gestionados",
+              "La capacidad debe operar de forma continua y el personal interno no puede sostenerla",
+              "Responsabilidad continua; costo recurrente predecible; respuesta más rápida por acuerdos de nivel de servicio",
+              "Gasto recurrente; riesgo de dependencia del proveedor; hay que acotar bien el alcance"
+            ],
+            [
+              "Retainer de respuesta a incidentes",
+              "Una parada o una exposición regulatoria hace inaceptable la demora en conseguir un especialista",
+              "Acceso prioritario; los respondedores ya conocen su entorno; menos demora en contratar en plena crisis",
+              "Se paga la disponibilidad aunque no se use; el alcance varía; no reemplaza la seguridad preventiva"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Una secuencia práctica y común es evaluación, luego implementación y luego operación gestionada. Se agrega un retainer de respuesta a incidentes cuando las consecuencias de un evento grave justifican tener acceso garantizado a especialistas."
         },
         {
           "type": "h2",
-          "text": "¿Qué preguntar antes de contratar una consultoría de ciberseguridad?"
+          "text": "Cómo preseleccionar una firma y qué preguntar para descartar a las equivocadas"
         },
         {
           "type": "p",
-          "text": "Cinco preguntas, en nuestro criterio, distinguen una consultoría independiente de un canal de ventas:"
+          "text": "Para trabajos de gobierno y cumplimiento, en nuestro criterio conviene verificar certificaciones como CISM, que ISACA presenta como la credencial que acredita la capacidad de evaluar riesgos, implementar gobierno y responder de forma proactiva a incidentes, además de otras equivalentes como CISSP y CISA para roles de programa y auditoría. Para pruebas de penetración, busque credenciales de la especialidad, y para proyectos ISO/IEC 27001, la de auditor líder. Lo decisivo es que cada credencial que verifique pertenezca a las personas asignadas a su proyecto, no a alguien más en la firma."
         },
         {
           "type": "p",
-          "text": "¿El diagnóstico se hace antes de proponer herramientas, y con qué marco se ordena?"
+          "text": "Un buen caso de estudio incluye a un cliente de industria y tamaño comparables, un resultado específico y medible y evidencia de que las mejoras se mantuvieron después de la entrega. Un informe de muestra redactado debe priorizar los hallazgos por impacto en el negocio, con responsables nombrados y orientación de remediación. Una lista genérica de controles no es un entregable."
         },
         {
           "type": "p",
-          "text": "¿La firma recibe comisiones o incentivos de los fabricantes que recomienda?"
+          "text": "Estas siete preguntas exponen las afirmaciones débiles antes de que firme:"
         },
         {
           "type": "p",
-          "text": "¿Qué entregables quedan: inventario de riesgos, lista de controles priorizados, criterios de selección, comparación de proveedores?"
+          "text": "1. ¿Qué consultores nombrados harán el trabajo y cuáles son sus credenciales individuales? Una respuesta sólida nombra personas; una débil nombra a la firma."
         },
         {
           "type": "p",
-          "text": "¿Quién implementa y quién opera después, y cómo se gobierna esa implementación?"
+          "text": "2. ¿Qué porcentaje de la entrega harán profesionales senior? Insista si la respuesta es vaga o el porcentaje parece bajo."
         },
         {
           "type": "p",
-          "text": "¿Cómo se conecta con el plan de continuidad del negocio y con las exigencias de certificación, si existen?"
-        },
-        {
-          "type": "h2",
-          "text": "¿Qué debe decidir la dirección?"
+          "text": "3. ¿La firma es asesora, evaluadora autorizada o ambas? Algunos marcos exigen independencia entre ambos roles; sepa cuál aplica a su caso."
         },
         {
           "type": "p",
-          "text": "La ciberseguridad tiene decisiones que no son del área de tecnología: qué datos y procesos no pueden exponerse bajo ninguna circunstancia, cuánto riesgo acepta la empresa y cuánto invierte en reducirlo, quién responde ante un incidente y quién comunica a clientes y autoridades, y si la empresa necesita certificarse. El NIST CSF 2.0 pone la función de gobernar en el centro precisamente por eso: informa cómo se ejecutan las otras cinco."
+          "text": "4. ¿La firma recibe alguna compensación de los fabricantes que recomienda? La respuesta debe ser un no claro y sin matices."
+        },
+        {
+          "type": "p",
+          "text": "5. ¿Puede entregar un documento de muestra redactado y una referencia de un cliente comparable? Negarse a mostrar cualquier entregable es una señal de alerta razonable, salvo que expliquen y mitiguen las restricciones de confidencialidad."
+        },
+        {
+          "type": "p",
+          "text": "6. ¿Cómo se registran, se vuelven a probar y se reportan los hallazgos a la dirección entre un trabajo y otro? Los hallazgos no deberían aparecer solo en un informe anual."
+        },
+        {
+          "type": "p",
+          "text": "7. ¿Cómo se mantiene la evidencia entre auditorías, en lugar de reunirla solo antes de una? Esto separa a las firmas que construyen programas de las que construyen informes."
         },
         {
           "type": "h2",
@@ -6826,55 +7853,43 @@
         },
         {
           "type": "p",
-          "text": "En Cyrrus prestamos consultoría en ciberseguridad independiente: diagnosticamos el riesgo partiendo de lo que ya está en producción, definimos los controles que la empresa necesita y seleccionamos soluciones y proveedores con criterios definidos antes de ver propuestas, sin comisiones de fabricantes. La implementación la gobierna nuestra Gerencia de Proyectos.",
+          "text": "La brecha se puede cerrar y el primer paso es el diagnóstico. Las señales que su empresa envía (brechas de cumplimiento, herramientas sin dueño, transformaciones fallidas, dependencia de proveedores) son diagnósticas, no condenatorias: apuntan a una brecha estructural que una consultoría de ciberseguridad está hecha para cerrar. La diferencia entre un informe en un estante y una postura que de verdad mejora está en dos cosas: independencia de fabricantes y responsabilidad hasta la ejecución."
+        },
+        {
+          "type": "p",
+          "text": "Cyrrus evalúa proveedores sin recibir comisiones y gobierna los proyectos con su PMO desde la estrategia hasta el go-live. Sin comisiones de fabricantes. Sin sesgo de implementación. Un solo equipo de la estrategia al go-live. Puede escribirnos para solicitar la evaluación y tener una imagen clara de dónde está hoy su organización.",
           "links": [
             {
-              "text": "consultoría en ciberseguridad",
+              "text": "solicitar la evaluación",
               "href": "/metodo-cira/seleccion-de-soluciones/ciberseguridad"
-            },
-            {
-              "text": "Gerencia de Proyectos",
-              "href": "/metodo-cira/gestion-de-proyectos"
-            }
-          ]
-        },
-        {
-          "type": "p",
-          "text": "La seguridad se diseña junto con el plan de continuidad del negocio, y si un cliente exige la certificación, la dirección se prepara con el curso de ISO 27001 de Leadership Academy.",
-          "links": [
-            {
-              "text": "plan de continuidad del negocio",
-              "href": "/metodo-cira/estrategia/continuidad-del-negocio"
-            },
-            {
-              "text": "curso de ISO 27001",
-              "href": "/leadership-academy/iso-27001"
-            }
-          ]
-        },
-        {
-          "type": "p",
-          "text": "Para profundizar en temas relacionados: qué es un plan de continuidad del negocio y qué es la estrategia de TI.",
-          "links": [
-            {
-              "text": "qué es un plan de continuidad del negocio",
-              "href": "/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo"
-            },
-            {
-              "text": "qué es la estrategia de TI",
-              "href": "/perspectivas/estrategia-de-ti-que-es-y-que-incluye"
             }
           ]
         }
       ],
       "sources": [
         {
-          "label": "NIST (2024). The NIST Cybersecurity Framework (CSF) 2.0, NIST CSWP 29, 26 de febrero de 2024 (resumen, prefacio y sección 2). Consultado el 12 de noviembre de 2026",
+          "label": "NIST (2024). The NIST Cybersecurity Framework (CSF) 2.0, NIST CSWP 29, 26 de febrero de 2024 (prefacio y funciones). Consultado el 15 de noviembre de 2026",
           "url": "https://doi.org/10.6028/NIST.CSWP.29"
         },
         {
-          "label": "ISO. ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements. Consultado el 12 de noviembre de 2026",
+          "label": "ISO. ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements. Consultado el 12 de noviembre de 2026 (la página de ISO respondió con error 403 el 15 de noviembre)",
           "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "label": "PCI Security Standards Council. PCI DSS. Consultado el 15 de noviembre de 2026",
+          "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
+        },
+        {
+          "label": "AICPA & CIMA. SOC suite of services (SOC 2). Consultado el 15 de noviembre de 2026",
+          "url": "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2"
+        },
+        {
+          "label": "ISACA. Certified Information Security Manager (CISM). Consultado el 15 de noviembre de 2026",
+          "url": "https://www.isaca.org/credentialing/cism"
+        },
+        {
+          "label": "Clutch (actualizada el 21 de septiembre de 2026). Cybersecurity services pricing. Consultado el 15 de noviembre de 2026",
+          "url": "https://clutch.co/it-services/cybersecurity/pricing"
         }
       ]
     },
@@ -7305,6 +8320,248 @@
         {
           "label": "NIST AIRC. AI RMF Core (funciones Govern, Map, Measure y Manage). Consultado el 2 de noviembre de 2026",
           "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+        }
+      ]
+    },
+    "como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible": {
+      "title": "Cómo elegir una consultoría de IA con ejecución de punta a punta y ROI medible",
+      "seoTitle": "Cómo elegir una consultoría de IA",
+      "label": "Estrategia de IA",
+      "excerpt": "Tres exigencias para elegir una consultoría de IA: recomendación independiente de fabricantes, ejecución con responsable hasta el go-live y adopción estructurada. Incluye rangos de precio de referencia y qué pedir en el contrato.",
+      "metaDescription": "Cómo elegir una consultoría de IA: neutralidad frente a fabricantes, ejecución con responsable hasta el go-live, adopción, precios de referencia y qué exigir antes de firmar.",
+      "intro": "Elegir una consultoría de IA se reduce a tres exigencias: una recomendación tecnológica independiente de los fabricantes, una ejecución con responsable hasta el go-live y una adopción estructurada. Una firma que se detiene en la presentación de estrategia no cumple. Esta guía propone un marco para evaluar, preguntar y preseleccionar antes de firmar.",
+      "keyTakeaways": [
+        "En nuestro criterio, una consultoría de IA debería poder decir por escrito quién responde por el resultado de negocio después del go-live, y no solo por los entregables.",
+        "Según el informe de Prosigns (encuesta a 1.200 líderes de empresas grandes, diciembre de 2025 a febrero de 2026), el 82 % de las iniciativas de IA lanzadas en 2024 seguía sin llegar a producción en el primer trimestre de 2026.",
+        "Pida por escrito si la firma recibe compensación de los fabricantes que recomienda: es la forma más directa de comprobar su independencia.",
+        "Tillerbridge publica como referencia US$15.000–50.000 para una evaluación de preparación y US$50.000–250.000 para un caso de uso acotado en producción; pida siempre tarifario, techos de costo y propuestas de ejemplo.",
+        "El retorno se define antes del piloto: un indicador con nombre y una línea base medida, no una estimación posterior."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Tiene propuestas de consultoría de IA y no sabe cómo compararlas?",
+          "description": "Definimos los casos de uso, el criterio de evaluación y el responsable de cada resultado antes de ver propuestas, sin comisiones de fabricantes.",
+          "checklist": [
+            "Casos de uso priorizados por impacto con un criterio único",
+            "Gobierno y arquitectura definidos antes de escalar"
+          ],
+          "ctaLabel": "Conocer la estrategia de IA",
+          "imageAlt": "Directivos y consultor de Cyrrus definiendo una hoja de ruta de inteligencia artificial"
+        },
+        {
+          "title": "La IA en producción necesita gobierno",
+          "description": "Políticas, roles y controles sobre cómo se usa la IA, con evidencia que se pueda mostrar a un cliente o a un regulador.",
+          "checklist": [
+            "Quién aprueba y quién audita cada iniciativa",
+            "Qué datos puede tocar un modelo y con qué trazabilidad"
+          ],
+          "ctaLabel": "Conocer el gobierno de IA",
+          "imageAlt": "Sesión de trabajo sobre casos de uso de IA en una empresa"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "La pregunta que casi todos los directivos hacen es qué firma tiene las mejores credenciales en IA. La mejor pregunta es otra: quién acepta la responsabilidad por el resultado, no solo por el entregable."
+        },
+        {
+          "type": "h2",
+          "text": "Qué debe cubrir una consultoría de IA de punta a punta"
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, una consultoría de estrategia de IA seria empieza por descubrir casos de uso, modelar el retorno y evaluar la preparación en datos, infraestructura, talento y procesos. El resultado debería ser una hoja de ruta priorizada y atada a resultados de negocio, no una lista de ideas. Una estrategia sin un responsable de ejecución asignado no es un servicio completo."
+        },
+        {
+          "type": "p",
+          "text": "El ciclo completo de implementación va del descubrimiento al piloto validado, la arquitectura de producción, la integración, el lanzamiento controlado, la estabilización y la mejora continua. Cada fase deja entregables concretos: un prototipo funcional, resultados de pruebas, manuales de operación y tableros de monitoreo. Una firma que sale después del informe del piloto deja al equipo del cliente solo con el riesgo de producción."
+        },
+        {
+          "type": "p",
+          "text": "Esa brecha es la que el método CIRA de Cyrrus busca cerrar. Sus cuatro fases (Construir, Identificar, Realizar y Adoptar) conectan la estrategia con la operación bajo un mismo equipo responsable, con IA integrada para acelerar el diagnóstico, la selección de proveedores y la ejecución. El mismo grupo que construye la hoja de ruta sigue siendo responsable hasta el go-live y la adopción, sin una entrega intermedia entre la estrategia y la implementación.",
+          "links": [
+            {
+              "text": "método CIRA",
+              "href": "/metodo-cira"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Por qué tantas iniciativas de IA no llegan a producción"
+        },
+        {
+          "type": "p",
+          "text": "El informe State of Enterprise AI 2026, de la empresa de software Prosigns, se basa en una encuesta a 1.200 líderes de empresas con al menos 500 empleados y 100 millones de dólares en ingresos, realizada entre diciembre de 2025 y febrero de 2026. Según ese informe, el 82 % de las iniciativas de IA lanzadas en 2024 seguía sin llegar a producción en el primer trimestre de 2026, frente al 73 % de su medición de 2024. Dos advertencias: es un informe de un proveedor, y su muestra sobrerrepresenta a empresas que ya tienen un sistema de IA en producción (38 % de la muestra, frente al 15–18 % que el propio informe estima para el mercado), así que sirve como indicio y no como censo."
+        },
+        {
+          "type": "p",
+          "text": "El mismo informe señala la calidad y disponibilidad de los datos como el principal bloqueo para pasar a producción desde que empezó a medirlo, en 2022. La novedad de 2026 es que los retrasos de gobierno y cumplimiento subieron a segundo lugar: el 31 % de los encuestados los cita como uno de sus principales bloqueos, frente al 18 % en 2024. También menciona la falta de infraestructura de MLOps (27 %) y la brecha de talento senior (24 %)."
+        },
+        {
+          "type": "p",
+          "text": "A partir de ahí, en nuestro criterio hay tres fallas que una firma seria debe prevenir desde el contrato. La primera es la recomendación sesgada: algunas firmas reciben pagos de los fabricantes que recomiendan, y ese conflicto resta objetividad. La segunda es dejar la gestión del cambio para el final: sin plan de adopción, el equipo no usa lo que se construyó. La tercera es la ausencia de gobierno: sin responsables, monitoreo ni supervisión humana definidos, un sistema de IA en producción es un riesgo con interfaz de usuario. Los datos de Prosigns no miden la adopción por separado, así que esta segunda falla es una conclusión de nuestra experiencia, no una cifra.",
+          "links": [
+            {
+              "text": "gestión del cambio",
+              "href": "/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital"
+            },
+            {
+              "text": "gobierno",
+              "href": "/perspectivas/gobierno-de-ia-corporativo-en-la-empresa"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Tres exigencias que no se negocian"
+        },
+        {
+          "type": "p",
+          "text": "Neutralidad frente a fabricantes. Pida por escrito si la firma recibe cualquier compensación de los fabricantes que recomienda, y que lo confirme antes de avanzar. Cyrrus evalúa plataformas con criterios que define el negocio, sin comisiones de los fabricantes recomendados."
+        },
+        {
+          "type": "p",
+          "text": "Ejecución con un responsable hasta el go-live. Una hoja de ruta sin un responsable de ejecución traslada todo el riesgo de implementación a su equipo interno. Pregunte quién es responsable del monitoreo y del reentrenamiento del sistema después del lanzamiento: es una de las preguntas que recomienda la guía de selección de proveedores de IA de Futureproofing."
+        },
+        {
+          "type": "p",
+          "text": "Adopción estructurada. La gestión del cambio debe estar dentro del alcance desde el primer día, con un plan de capacitación y un indicador de uso. Sus señales de alerta son la baja utilización, los atajos que los usuarios inventan para no usar el sistema y una dirección que no puede explicar qué retorno se obtuvo."
+        },
+        {
+          "type": "h2",
+          "text": "Cuánto cuesta: rangos de referencia"
+        },
+        {
+          "type": "p",
+          "text": "Los modelos de contratación varían. El precio fijo funciona cuando el alcance y los criterios de aceptación están claros; el pago por horas encaja en trabajos exploratorios o con requisitos cambiantes. Tillerbridge, una consultora que vende alcance fijo y por eso tiene un interés propio, califica el cobro por horas como el más débil de los tres modelos para el comprador, porque el medidor premia más horas y dos ofertas por hora no se pueden comparar."
+        },
+        {
+          "type": "p",
+          "text": "Como referencia para presupuestar, Tillerbridge publica los siguientes rangos para 2026 (la página fue revisada por última vez en julio de 2026 y cita «guías de tarifas publicadas» sin nombrarlas):"
+        },
+        {
+          "type": "table",
+          "text": "Rangos de referencia para consultoría de IA (Tillerbridge, 2026)",
+          "columns": [
+            "Tipo de trabajo",
+            "Rango de referencia",
+            "Nota"
+          ],
+          "rows": [
+            [
+              "Evaluación de preparación en IA",
+              "US$15.000–50.000",
+              "Rangos de consultoras boutique"
+            ],
+            [
+              "Evaluación de gobierno",
+              "US$25.000–75.000",
+              ""
+            ],
+            [
+              "Caso de uso acotado en producción",
+              "US$50.000–250.000",
+              "Implementación típica de alcance definido"
+            ],
+            [
+              "Asesoría continua (retainer)",
+              "US$5.000–15.000 al mes",
+              ""
+            ],
+            [
+              "Programas de varios años y varios sistemas",
+              "Siete cifras o más",
+              "Sin rango publicado"
+            ],
+            [
+              "Tarifa por hora",
+              "US$150–500",
+              "Modelo por horas"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Pida a cada candidato un tarifario, un techo de costo («no exceder») o propuestas de ejemplo como evidencia de disciplina de precios. Revise lo que las propuestas suelen dejar fuera: costos de nube y de consumo de modelos, licencias de software, tiempo del personal interno, depuración de datos, revisión de seguridad y trabajo legal. Una firma que cotiza solo sus honorarios y deja sin cuantificar el consumo de modelos y el trabajo de integración prepara una disputa de alcance meses después."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo evaluar a una consultoría antes de firmar"
+        },
+        {
+          "type": "p",
+          "text": "Pida referencias de producción de organizaciones de tamaño y complejidad comparables. Los casos de estudio del sitio de una firma son material de mercadeo. Pregunte a cada referencia si el trabajo llegó a producción o se quedó en prueba de concepto, qué falló después del lanzamiento y quién lo arregló. Pida también un diagrama de arquitectura y de flujo de datos para uno de sus casos de uso, y un marco de evaluación con pruebas por tarea, umbrales de precisión y plan de pruebas de regresión. Si la firma no puede producir esos artefactos durante la selección, en nuestro criterio es una señal de alerta."
+        },
+        {
+          "type": "p",
+          "text": "En el contrato, exija: que el cliente sea titular de los entregables y de los modelos entrenados; que se prohíba usar sus datos para entrenar modelos de terceros; la devolución o eliminación de los datos y la entrega de modelos, código y documentación al terminar; y el estado actual (no una hoja de ruta) de certificaciones como ISO/IEC 27001 o SOC 2 Tipo II. Para la seguridad propia de la IA, pida un modelo de amenazas que cubra al menos los riesgos que lista OWASP en su Top 10 para aplicaciones de LLM 2025, entre ellos la inyección de instrucciones (LLM01) y el envenenamiento de datos y modelos (LLM04)."
+        },
+        {
+          "type": "p",
+          "text": "Cinco preguntas, en nuestro criterio, separan a las firmas sólidas de las débiles: ¿quién es dueño del sistema en producción después del go-live? ¿Qué pasa con sus datos si termina el contrato? ¿Puede mostrar resultados de una implementación comparable? ¿Recibe alguna compensación de los fabricantes que recomienda? ¿Cómo es en la práctica su programa de gestión del cambio? Un socio capaz responde las cinco de forma directa."
+        },
+        {
+          "type": "h2",
+          "text": "Del piloto a producción: compuertas y retorno"
+        },
+        {
+          "type": "p",
+          "text": "Antes de autorizar cualquier paso de una fase a otra, en nuestro criterio conviene exigir: un responsable del proceso con nombre, un indicador con línea base medida, umbrales de precisión y de latencia probados con datos parecidos a los de producción, revisión de seguridad y controles de acceso confirmados, tableros de monitoreo y capacidad de reversa en funcionamiento, y usuarios representativos capacitados. Saltarse estas compuertas es una razón frecuente por la que los pilotos se quedan iterando sin llegar a producción. La guía de Futureproofing recomienda además que un piloto pago corra sobre una porción representativa de sus datos y pruebe la preparación para producción, incluido quién se encarga del monitoreo y del reentrenamiento."
+        },
+        {
+          "type": "p",
+          "text": "El retorno no se mide al final: se define al principio, con un indicador con nombre y una línea base medida antes del piloto. Para que el equipo del cliente pueda sostener la operación y la mejora continua sin depender de la consultoría, Cyrrus Leadership Academy desarrolla capacidad interna en la organización.",
+          "links": [
+            {
+              "text": "Leadership Academy",
+              "href": "/leadership-academy"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Una consultoría de IA no se elige por sus credenciales, sino por quién acepta la responsabilidad del resultado."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "Cyrrus Consulting Services está construida alrededor de este modelo: recomendación independiente de fabricantes, gobierno de la ejecución por un PMO externo hasta el go-live y adopción estructurada. El método CIRA, Cyrrus Intelligence Lab y Leadership Academy existen porque la estrategia y la ejecución deben vivir bajo el mismo techo, con un equipo responsable desde el primer diagnóstico hasta la última sesión de capacitación. Trabajamos con organizaciones de Latinoamérica y Estados Unidos que ya intentaron una transformación digital y necesitan un socio responsable de la ejecución completa, no solo del consejo.",
+          "links": [
+            {
+              "text": "método CIRA",
+              "href": "/metodo-cira"
+            },
+            {
+              "text": "Cyrrus Intelligence Lab",
+              "href": "/intelligence-lab"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si quiere definir un caso de uso, establecer una línea base y avanzar hacia producción con un equipo que responde hasta el go-live, puede solicitar una evaluación de preparación o una conversación para delimitar el caso de uso."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Prosigns (2026). State of Enterprise AI 2026. Encuesta a 1.200 líderes empresariales, diciembre de 2025 a febrero de 2026 (resumen ejecutivo y capítulo 2). Consultado el 15 de noviembre de 2026",
+          "url": "https://prosigns.io/docs/prosigns-state-of-enterprise-ai-2026.pdf"
+        },
+        {
+          "label": "Tillerbridge. AI consulting rates in 2026 (revisada por última vez en julio de 2026). Consultado el 15 de noviembre de 2026",
+          "url": "https://www.tillerbridge.com/guides/ai-consulting-rates/"
+        },
+        {
+          "label": "Futureproofing (22 de septiembre de 2026). CTO guide to AI vendor selection. Consultado el 15 de noviembre de 2026",
+          "url": "https://www.futureproofing.dev/resources/build-vs-outsource/cto-guide-to-ai-vendor-selection"
+        },
+        {
+          "label": "OWASP GenAI Security Project. OWASP Top 10 for LLM Applications 2025. Consultado el 15 de noviembre de 2026",
+          "url": "https://genai.owasp.org/llm-top-10/"
         }
       ]
     },
