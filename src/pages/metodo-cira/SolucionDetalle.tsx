@@ -154,6 +154,7 @@ export default function SolucionDetalle() {
   const queEs = baseQueEs && entry.usos ? { ...baseQueEs, uses: { label: entry.usos.title, items: entry.usos.items } } : baseQueEs;
 
   const content: ServiceContent = {
+    area: "seleccion-soluciones",
     hero: {
       eyebrow: entry.eyebrow,
       title: hero.title,

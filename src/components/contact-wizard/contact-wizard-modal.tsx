@@ -10,12 +10,14 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { BorderButton } from "@/components/ui/border-button";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { cn } from "@/lib/utils";
 import { useContactWizard } from "@/lib/contact-wizard-context";
 import { trackEvent } from "@/lib/analytics";
 import {
   CONTACT_WIZARD_STEPS,
   LAST_STEP_AT_LEAST_ONE_OF,
+  normalizeServicio,
 } from "@/lib/contact-wizard-config";
 import { WizardFieldControl } from "./wizard-field";
 // Registers this namespace. Side-effect import: it must run before this
@@ -60,7 +62,11 @@ export function ContactWizardModal() {
   // "servicio" value) each time the modal opens — not on every render, so
   // typing isn't clobbered while it's open.
   useEffect(() => {
-    if (isOpen) setValues({ ...emptyValues(), ...prefill });
+    if (isOpen) {
+      const seeded = { ...emptyValues(), ...prefill };
+      seeded.servicio = normalizeServicio(prefill?.servicio);
+      setValues(seeded);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
@@ -172,7 +178,7 @@ export function ContactWizardModal() {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
-      <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-lg">
+      <DialogContent className="max-h-[92vh] overflow-y-auto p-5 sm:max-w-[760px] sm:p-7">
         <DialogHeader>
           <DialogTitle className="sr-only">{t("dialogTitle")}</DialogTitle>
           <DialogDescription className="sr-only">{t("dialogTitle")}</DialogDescription>
@@ -255,7 +261,7 @@ export function ContactWizardModal() {
                 <motion.div
                   className={cn(
                     "mt-4",
-                    step.fields.length > 1 && "grid grid-cols-1 gap-4 sm:grid-cols-2",
+                    step.layout === "grid" ? "grid grid-cols-1 gap-4 sm:grid-cols-2" : "flex flex-col gap-4",
                   )}
                   variants={reduceMotion ? undefined : fieldsContainerVariants}
                   initial={reduceMotion ? undefined : "initial"}
@@ -283,7 +289,7 @@ export function ContactWizardModal() {
               </motion.div>
             </AnimatePresence>
 
-            <div className="mt-6 flex items-center justify-between gap-3">
+            <div className="mt-5 flex items-center justify-between gap-3">
               {stepIndex > 0 ? (
                 <button
                   type="button"
@@ -306,6 +312,11 @@ export function ContactWizardModal() {
             </div>
 
             {status === "error" && <p className="mt-3 text-sm text-destructive">{t("submitError")}</p>}
+
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-3 border-t border-border pt-4">
+              <p className="text-sm text-gray">{t("whatsappPrompt")}</p>
+              <WhatsAppButton variant="dark" size="sm" source="wizard" />
+            </div>
           </form>
         )}
       </DialogContent>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { AnimatedNavyBackground } from "@/components/ui/animated-navy-background";
 import { ContactCtaButton } from "@/components/ui/contact-cta-button";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Img } from "@/components/ui/img";
 import { RevealGroup, RevealItem } from "@/components/ui/reveal";
@@ -12,10 +13,12 @@ interface ServiceClosingProps {
   eyebrow: string;
   items: RelatedItem[];
   ctaLabel?: string;
+  /** Contact-wizard area to pre-select. */
+  area?: string;
 }
 
 /** Closing band of a service page: related services as ruled rows, then the logo and the CTA. */
-export function ServiceClosing({ eyebrow, items, ctaLabel }: ServiceClosingProps) {
+export function ServiceClosing({ eyebrow, items, ctaLabel, area }: ServiceClosingProps) {
   const { t } = useTranslation("home");
   const lang = useLang();
   return (
@@ -49,7 +52,10 @@ export function ServiceClosing({ eyebrow, items, ctaLabel }: ServiceClosingProps
             className="h-9 w-auto"
           />
           <div className="flex flex-col items-start gap-4 sm:items-end">
-            <ContactCtaButton variant="light" label={ctaLabel} />
+            <div className="flex flex-wrap items-center gap-3 sm:justify-end">
+              <ContactCtaButton variant="light" label={ctaLabel} prefill={area ? { servicio: area } : undefined} />
+              <WhatsAppButton variant="light" size="lg" source="service-closing" />
+            </div>
             <p className="text-base text-white/70">
               {`${t("finalCta.diagnosticText")} `}<Link
                 to={langPath("/diagnostico", lang)}

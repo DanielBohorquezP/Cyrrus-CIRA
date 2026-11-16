@@ -127,7 +127,7 @@ export default function IntelligenceLab() {
         image={IA_HERO_MEDIA.image}
         video={IA_HERO_MEDIA.video}
       >
-        <ContactCtaButton variant="light" label={tc("cta.agendarConversacion")} />
+        <ContactCtaButton variant="light" label={tc("cta.agendarConversacion")} prefill={{ servicio: "ia" }} />
       </ServiceHero>
 
       {/* Answer-first block: what AI consulting is, in the searcher's words */}

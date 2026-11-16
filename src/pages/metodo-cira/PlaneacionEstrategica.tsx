@@ -120,6 +120,7 @@ export default function PlaneacionEstrategica() {
 
   const heroTitle = splitHeroTitle(t("hero.title"));
   const content: ServiceContent = {
+    area: "estrategia",
     hero: {
       eyebrow: t("hero.eyebrow"),
       ...heroTitle,

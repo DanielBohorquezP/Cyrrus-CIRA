@@ -275,6 +275,7 @@ export default function SeleccionProducto() {
 
   const heroTitle = splitHeroTitle(hero.title);
   const content: ServiceContent = {
+    area: "seleccion-soluciones",
     hero: {
       eyebrow: hero.eyebrow,
       ...heroTitle,

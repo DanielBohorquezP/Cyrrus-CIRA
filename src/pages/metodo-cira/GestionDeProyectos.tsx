@@ -106,6 +106,7 @@ export default function GestionDeProyectos() {
 
   const heroTitle = splitHeroTitle(t("hero.title"));
   const content: ServiceContent = {
+    area: "proyectos",
     hero: {
       eyebrow: t("hero.eyebrow"),
       ...heroTitle,

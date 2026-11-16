@@ -1,3 +1,4 @@
+import { whatsappUrl } from "@/lib/whatsapp";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
@@ -148,6 +149,14 @@ export function Footer() {
         <span className="flex flex-wrap justify-center gap-x-4 gap-y-1">
           <a href={`tel:${phone.replace(/\s/g, "")}`} className="transition-colors hover:text-white">
             {phone}
+          </a>
+          <a
+            href={whatsappUrl(lang === "en" ? "Hello, I would like to talk to Cyrrus about a service." : "Hola, me gustaría conversar con Cyrrus sobre un servicio.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-white"
+          >
+            WhatsApp
           </a>
           <a href={`mailto:${email}`} className="transition-colors hover:text-white">
             {email}

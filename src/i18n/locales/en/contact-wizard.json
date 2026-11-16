@@ -2,77 +2,62 @@
   "dialogTitle": "Schedule a conversation with Cyrrus",
   "steps": {
     "servicio": {
-      "title": "What service do you need?",
-      "placeholder": "Select a service",
+      "title": "How can we help?",
       "fields": {
-        "servicio": "Service"
+        "servicio": "Area of interest",
+        "mensaje": "Tell us in one line (optional)"
       },
-      "groups": {
-        "metodoCira": "CIRA Method",
-        "intelligenceLab": "Cyrrus Intelligence Lab",
-        "leadershipAcademy": "Leadership Academy",
-        "presenciaDigital": "Digital Presence"
+      "placeholders": {
+        "mensaje": "E.g. we want to organize our commercial plan"
       },
       "options": {
-        "estrategia": { "label": "Strategy" },
-        "seleccionSoluciones": { "label": "Solution Selection" },
-        "gestionProyectos": { "label": "Project Management" },
-        "automatizacionIA": { "label": "Automation & AI Agents" },
-        "arquitecturaIA": { "label": "AI Architecture" },
-        "gobiernoIA": { "label": "AI Governance" },
-        "iaDirectivos": { "label": "AI Workshop for Executives" },
-        "innovacionEmpresarial": { "label": "Business Innovation Workshop" },
-        "iso27001": { "label": "ISO 27001 Training for Companies" },
-        "continuidadNegocioDrp": { "label": "Business Continuity Workshop (DRP)" },
-        "gestionCambioLideres": { "label": "Change Management for Leaders" },
-        "gobiernoDatosEjecutivos": { "label": "Data Governance for Executives" },
-        "liderazgoDigitalDecisiones": { "label": "Digital Leadership & Decision-Making" },
-        "desarrolloWeb": { "label": "Web Development" },
-        "seo": { "label": "SEO" }
-      }
-    },
-    "empresa": {
-      "title": "Tell us about your company",
-      "fields": {
-        "empresa": "Company name",
-        "tamanoEmpresa": "Company size"
-      },
-      "placeholders": {
-        "empresa": "E.g.: Acme Corp"
-      }
-    },
-    "persona": {
-      "title": "Name and role at the company",
-      "fields": {
-        "nombre": "Name",
-        "rol": "Role at the company"
-      },
-      "placeholders": {
-        "nombre": "E.g.: Jane Doe",
-        "rol": "E.g.: Head of Technology"
+        "estrategia": {
+          "label": "Strategy",
+          "description": "Commercial, IT and business continuity"
+        },
+        "seleccionSoluciones": {
+          "label": "Solution selection",
+          "description": "Software, technology and cybersecurity"
+        },
+        "proyectos": {
+          "label": "Project management",
+          "description": "External PMO and follow-up"
+        },
+        "cambio": {
+          "label": "Change management",
+          "description": "Adoption of what gets implemented"
+        },
+        "ia": {
+          "label": "Artificial intelligence",
+          "description": "Strategy, governance and agents"
+        },
+        "capacitacion": {
+          "label": "Executive training",
+          "description": "Workshops for executives"
+        },
+        "noSe": {
+          "label": "I am not sure yet",
+          "description": "Tell us and we will guide you"
+        }
       }
     },
     "contacto": {
       "title": "How can we reach you?",
       "fields": {
-        "telefono": "Mobile phone",
-        "email": "Corporate email"
+        "nombre": "Name",
+        "empresa": "Company",
+        "email": "Work email",
+        "telefono": "Mobile phone"
       },
       "placeholders": {
-        "telefono": "E.g.: +1 305 123 4567",
-        "email": "E.g.: name@company.com"
+        "nombre": "E.g. John Smith",
+        "empresa": "E.g. Acme Inc.",
+        "email": "E.g. name@company.com",
+        "telefono": "E.g. +1 305 123 4567"
       },
       "atLeastOneNote": "Give us a phone number or an email so we can reach you.",
       "atLeastOneError": "Give us a phone number or an email so we can reach you."
     }
-  },
-  "sizeOptions": {
-    "r1": "50–100 employees",
-    "r2": "101–250 employees",
-    "r3": "251–500 employees",
-    "r4": "501–1000 employees",
-    "r5": "More than 1000 employees",
-    "placeholder": "Select a range"
   },
   "nav": {
     "next": "Next",
@@ -92,5 +77,6 @@
       "cta": "Book a call"
     },
     "close": "Close"
-  }
+  },
+  "whatsappPrompt": "Prefer to message us right away?"
 }

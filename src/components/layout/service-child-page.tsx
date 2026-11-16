@@ -30,6 +30,15 @@ interface Stat {
   label: string;
 }
 
+const AREA_BY_GROUP: Record<ServiceGroup, string> = {
+  estrategia: "estrategia",
+  soluciones: "seleccion-soluciones",
+  proyectos: "proyectos",
+  cambio: "cambio",
+  ia: "ia",
+  digital: "no-se",
+};
+
 export interface ServiceChildConfig {
   /** i18n namespace that holds this page's copy. The route file must also
    *  `import "@/i18n/ns/<ns>"` at module scope so the bundle is registered. */
@@ -224,6 +233,7 @@ export function createServiceChildPage(config: ServiceChildConfig): ComponentTyp
     const articlePath = config.articleSlug ? `${prefix}/perspectivas/${config.articleSlug}` : null;
 
     const content: ServiceContent = {
+      area: config.group ? AREA_BY_GROUP[config.group] : undefined,
       hero: {
         eyebrow: config.eyebrow[lang],
         title: hero.title,

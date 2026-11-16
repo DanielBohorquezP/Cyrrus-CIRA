@@ -1,25 +1,23 @@
 // Data-driven step list for the contact wizard modal
-// (src/components/contact-wizard/contact-wizard.tsx). Adding/reordering a
-// step or field is a matter of editing this array — the component itself
-// has no per-field branching beyond `type`.
-
-import { workshops } from "@/lib/workshops-data";
+// (src/components/contact-wizard/contact-wizard-modal.tsx). Adding/reordering a
+// step or field is a matter of editing this array; the component has no
+// per-field branching beyond `type`.
+//
+// Two steps on purpose: first the AREA the visitor needs help with (seven cards,
+// not a 16-line dropdown), then who they are and how to reach them. Nothing else
+// is asked up front; company size and job title were dropped.
 
 export interface WizardFieldOption {
   value: string;
   labelKey: string;
   descriptionKey?: string;
-  /** i18n key for this option's <optgroup> label. Options must be grouped
-   *  consecutively in the array — see groupedOptions() in wizard-field.tsx. */
-  groupKey?: string;
 }
 
 export interface WizardField {
   id: string;
-  type: "select" | "text" | "tel" | "email";
+  type: "choice" | "textarea" | "text" | "tel" | "email";
   labelKey: string;
-  /** i18n key for a placeholder: the disabled first <option> (select) or an
-   *  example value shown in the input (text/tel/email). */
+  /** An example value shown in the input. */
   placeholderKey?: string;
   autoComplete?: string;
   required?: boolean;
@@ -29,119 +27,48 @@ export interface WizardField {
 export interface WizardStep {
   id: string;
   titleKey: string;
+  /** `grid`: two fields per row on wide screens; `stack`: one per row. */
+  layout: "stack" | "grid";
   fields: WizardField[];
 }
 
-/** i18n option key per workshop slug (values match workshops-data.ts) — used
- *  to build the "leadershipAcademy" group below so the dropdown always has
- *  one entry per real workshop instead of a single stale placeholder. */
-const WORKSHOP_OPTION_KEY: Record<string, string> = {
-  "ia-para-directivos": "iaDirectivos",
-  "innovacion-empresarial": "innovacionEmpresarial",
-  "iso-27001": "iso27001",
-  "continuidad-de-negocio-drp": "continuidadNegocioDrp",
-  "gestion-del-cambio-para-lideres": "gestionCambioLideres",
-  "gobierno-de-datos-para-ejecutivos": "gobiernoDatosEjecutivos",
-  "liderazgo-digital-y-toma-de-decisiones": "liderazgoDigitalDecisiones",
-};
+/** Area values. Pages prefill `servicio` with one of these (or a legacy value, see normalizeServicio). */
+export const WIZARD_AREAS = [
+  "estrategia",
+  "seleccion-soluciones",
+  "proyectos",
+  "cambio",
+  "ia",
+  "capacitacion",
+  "no-se",
+] as const;
 
 export const CONTACT_WIZARD_STEPS: WizardStep[] = [
   {
     id: "servicio",
     titleKey: "steps.servicio.title",
+    layout: "stack",
     fields: [
       {
         id: "servicio",
-        type: "select",
+        type: "choice",
         labelKey: "steps.servicio.fields.servicio",
-        placeholderKey: "steps.servicio.placeholder",
         required: true,
         options: [
-          {
-            value: "metodo-cira-estrategia",
-            labelKey: "steps.servicio.options.estrategia.label",
-            groupKey: "steps.servicio.groups.metodoCira",
-          },
-          {
-            value: "metodo-cira-seleccion-soluciones",
-            labelKey: "steps.servicio.options.seleccionSoluciones.label",
-            groupKey: "steps.servicio.groups.metodoCira",
-          },
-          {
-            value: "metodo-cira-gestion-proyectos",
-            labelKey: "steps.servicio.options.gestionProyectos.label",
-            groupKey: "steps.servicio.groups.metodoCira",
-          },
-          {
-            value: "intelligence-lab-automatizacion-ia",
-            labelKey: "steps.servicio.options.automatizacionIA.label",
-            groupKey: "steps.servicio.groups.intelligenceLab",
-          },
-          {
-            value: "intelligence-lab-arquitectura-ia",
-            labelKey: "steps.servicio.options.arquitecturaIA.label",
-            groupKey: "steps.servicio.groups.intelligenceLab",
-          },
-          {
-            value: "intelligence-lab-gobierno-ia",
-            labelKey: "steps.servicio.options.gobiernoIA.label",
-            groupKey: "steps.servicio.groups.intelligenceLab",
-          },
-          ...workshops.map((w) => ({
-            value: `leadership-academy-${w.slug}`,
-            labelKey: `steps.servicio.options.${WORKSHOP_OPTION_KEY[w.slug]}.label`,
-            groupKey: "steps.servicio.groups.leadershipAcademy",
-          })),
+          { value: "estrategia", labelKey: "steps.servicio.options.estrategia.label", descriptionKey: "steps.servicio.options.estrategia.description" },
+          { value: "seleccion-soluciones", labelKey: "steps.servicio.options.seleccionSoluciones.label", descriptionKey: "steps.servicio.options.seleccionSoluciones.description" },
+          { value: "proyectos", labelKey: "steps.servicio.options.proyectos.label", descriptionKey: "steps.servicio.options.proyectos.description" },
+          { value: "cambio", labelKey: "steps.servicio.options.cambio.label", descriptionKey: "steps.servicio.options.cambio.description" },
+          { value: "ia", labelKey: "steps.servicio.options.ia.label", descriptionKey: "steps.servicio.options.ia.description" },
+          { value: "capacitacion", labelKey: "steps.servicio.options.capacitacion.label", descriptionKey: "steps.servicio.options.capacitacion.description" },
+          { value: "no-se", labelKey: "steps.servicio.options.noSe.label", descriptionKey: "steps.servicio.options.noSe.description" },
         ],
       },
-    ],
-  },
-  {
-    id: "empresa",
-    titleKey: "steps.empresa.title",
-    fields: [
       {
-        id: "empresa",
-        type: "text",
-        labelKey: "steps.empresa.fields.empresa",
-        placeholderKey: "steps.empresa.placeholders.empresa",
-        autoComplete: "organization",
-        required: true,
-      },
-      {
-        id: "tamanoEmpresa",
-        type: "select",
-        labelKey: "steps.empresa.fields.tamanoEmpresa",
-        required: true,
-        placeholderKey: "sizeOptions.placeholder",
-        options: [
-          { value: "50-100", labelKey: "sizeOptions.r1" },
-          { value: "101-250", labelKey: "sizeOptions.r2" },
-          { value: "251-500", labelKey: "sizeOptions.r3" },
-          { value: "501-1000", labelKey: "sizeOptions.r4" },
-          { value: "1000+", labelKey: "sizeOptions.r5" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "persona",
-    titleKey: "steps.persona.title",
-    fields: [
-      {
-        id: "nombre",
-        type: "text",
-        labelKey: "steps.persona.fields.nombre",
-        placeholderKey: "steps.persona.placeholders.nombre",
-        autoComplete: "name",
-        required: true,
-      },
-      {
-        id: "rol",
-        type: "text",
-        labelKey: "steps.persona.fields.rol",
-        placeholderKey: "steps.persona.placeholders.rol",
-        autoComplete: "organization-title",
+        id: "mensaje",
+        type: "textarea",
+        labelKey: "steps.servicio.fields.mensaje",
+        placeholderKey: "steps.servicio.placeholders.mensaje",
         required: false,
       },
     ],
@@ -149,14 +76,23 @@ export const CONTACT_WIZARD_STEPS: WizardStep[] = [
   {
     id: "contacto",
     titleKey: "steps.contacto.title",
+    layout: "grid",
     fields: [
       {
-        id: "telefono",
-        type: "tel",
-        labelKey: "steps.contacto.fields.telefono",
-        placeholderKey: "steps.contacto.placeholders.telefono",
-        autoComplete: "tel",
-        required: false,
+        id: "nombre",
+        type: "text",
+        labelKey: "steps.contacto.fields.nombre",
+        placeholderKey: "steps.contacto.placeholders.nombre",
+        autoComplete: "name",
+        required: true,
+      },
+      {
+        id: "empresa",
+        type: "text",
+        labelKey: "steps.contacto.fields.empresa",
+        placeholderKey: "steps.contacto.placeholders.empresa",
+        autoComplete: "organization",
+        required: true,
       },
       {
         id: "email",
@@ -164,6 +100,14 @@ export const CONTACT_WIZARD_STEPS: WizardStep[] = [
         labelKey: "steps.contacto.fields.email",
         placeholderKey: "steps.contacto.placeholders.email",
         autoComplete: "email",
+        required: false,
+      },
+      {
+        id: "telefono",
+        type: "tel",
+        labelKey: "steps.contacto.fields.telefono",
+        placeholderKey: "steps.contacto.placeholders.telefono",
+        autoComplete: "tel",
         required: false,
       },
     ],
@@ -174,3 +118,17 @@ export const CONTACT_WIZARD_STEPS: WizardStep[] = [
  *  the wizard component itself since it's a cross-field rule, not a
  *  per-field one. */
 export const LAST_STEP_AT_LEAST_ONE_OF = ["telefono", "email"];
+
+/** Maps the values older CTAs still pass (`metodo-cira-seleccion-soluciones`,
+ *  `leadership-academy-iso-27001`, `intelligence-lab-…`) to the new areas. */
+export function normalizeServicio(value: string | undefined): string {
+  if (!value) return "";
+  if ((WIZARD_AREAS as readonly string[]).includes(value)) return value;
+  if (value.startsWith("leadership-academy")) return "capacitacion";
+  if (value.startsWith("intelligence-lab")) return "ia";
+  if (value.includes("seleccion-soluciones")) return "seleccion-soluciones";
+  if (value.includes("gestion-proyectos")) return "proyectos";
+  if (value.includes("gestion-cambio")) return "cambio";
+  if (value.includes("estrategia")) return "estrategia";
+  return "";
+}

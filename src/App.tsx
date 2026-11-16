@@ -4,6 +4,7 @@ import { ScrollToTop } from "@/components/layout/scroll-to-top";
 import { LanguageProvider } from "@/lib/language";
 import Home from "@/pages/Home";
 import { CookieConsent } from "@/components/layout/cookie-consent";
+import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp";
 import { ContactWizardProvider, useContactWizard } from "@/lib/contact-wizard-context";
 import { isPrerender } from "@/lib/prerender";
 
@@ -246,6 +247,7 @@ export default function App() {
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <FloatingWhatsApp />
         <CookieConsent />
         {/* Mounted once, outside <Routes>, so any CTA on any page can open
             it via useContactWizard() without a per-page instance. */}

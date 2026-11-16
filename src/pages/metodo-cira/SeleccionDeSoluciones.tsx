@@ -120,6 +120,7 @@ export default function SeleccionDeSoluciones() {
 
   const heroTitle = splitHeroTitle(t("hero.title"));
   const content: ServiceContent = {
+    area: "seleccion-soluciones",
     hero: {
       eyebrow: t("hero.eyebrow"),
       ...heroTitle,

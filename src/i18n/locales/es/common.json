@@ -63,6 +63,8 @@
     "estrategiaComercialDesc": "Decisiones comerciales y plan de acción"
   },
   "cta": {
+    "whatsapp": "Escribir por WhatsApp",
+    "whatsappMessage": "Hola, me gustaría conversar con Cyrrus sobre un servicio.",
     "agendarConversacion": "Agendar conversación",
     "expandir": "Expandir",
     "contraer": "Contraer",

@@ -29,6 +29,8 @@ import type { Stat } from "@/components/ui/dark-stat-band";
  * for a block simply leaves it out instead of showing an empty or invented one.
  */
 export interface ServiceContent {
+  /** Contact-wizard area to pre-select when a CTA on this page opens the form. */
+  area?: string;
   hero: {
     eyebrow: string;
     /** The H1 text before the subtitle. */
@@ -182,7 +184,7 @@ export function ServiceTemplate({
           image={content.media.image}
           video={content.media.video}
         >
-          <ContactCtaButton variant="light" label={hero.ctaLabel} />
+          <ContactCtaButton variant="light" label={hero.ctaLabel} prefill={content.area ? { servicio: content.area } : undefined} />
           {hero.link && (
             <SecondaryButton asChild>
               <Link to={hero.link.href}>{hero.link.label}</Link>
@@ -326,7 +328,7 @@ export function ServiceTemplate({
 
         <FaqSection eyebrow={faq.eyebrow} title={faq.title} faqs={faq.items} className={faqTone} />
 
-        <ServiceClosing eyebrow={related.eyebrow} items={related.items} ctaLabel={hero.ctaLabel} />
+        <ServiceClosing eyebrow={related.eyebrow} items={related.items} ctaLabel={hero.ctaLabel} area={content.area} />
       </main>
       <Footer />
     </>

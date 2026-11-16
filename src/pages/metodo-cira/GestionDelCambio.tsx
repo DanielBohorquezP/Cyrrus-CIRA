@@ -107,6 +107,7 @@ export default function GestionDelCambio() {
 
   const heroTitle = splitHeroTitle(t("hero.title"));
   const content: ServiceContent = {
+    area: "cambio",
     hero: {
       eyebrow: t("hero.eyebrow"),
       ...heroTitle,
