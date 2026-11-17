@@ -139,7 +139,7 @@
   "automatizaciones": {
     "meta": {
       "title": "Consultoría en Automatización de Procesos con IA | Cyrrus",
-      "description": "Agentes de IA para empresas y automatización de procesos, integrados a la arquitectura empresarial y medidos contra el proceso real que reemplazan, no contra una demo."
+      "description": "Agentes de IA y automatización de procesos, integrados a la arquitectura empresarial y medidos contra el proceso real que reemplazan, no contra una demo."
     },
     "serviceDescription": "Automatización de procesos con inteligencia artificial",
     "hero": {
@@ -668,7 +668,7 @@
   "gobiernoDatos": {
     "meta": {
       "title": "Consultoría en Gobierno de Datos para Empresas | Cyrrus",
-      "description": "Consultoría en gobierno de datos: quién es dueño de cada dato, qué reglas de calidad se aplican y qué información puede tocar un modelo de IA. Base del gobierno de IA."
+      "description": "Consultoría en gobierno de datos: quién es dueño de cada dato, qué reglas de calidad aplican y qué información puede tocar un modelo de IA."
     },
     "serviceDescription": "Consultoría en gobierno de datos",
     "hero": {
@@ -888,7 +888,7 @@
   "estrategiaIa": {
     "meta": {
       "title": "Consultoría en Estrategia de IA para Empresas | Cyrrus",
-      "description": "Consultoría en estrategia de IA: casos de uso priorizados por impacto, hoja de ruta, gobierno y arquitectura, medidos contra el proceso real que cambian, no contra una demo."
+      "description": "Consultoría en estrategia de IA: casos de uso priorizados por impacto, hoja de ruta, gobierno y arquitectura, medidos contra el proceso real."
     },
     "serviceDescription": "Consultoría en estrategia de inteligencia artificial",
     "hero": {

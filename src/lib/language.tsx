@@ -26,6 +26,9 @@ export function useLang() {
  */
 export function langPath(path: string, lang: Lang): string {
   if (lang !== "en") return path;
+  // Idempotent: some article bodies already carry "/en/..." hrefs; prefixing
+  // them again produced /en/en/... links that 404.
+  if (path === "/en" || path.startsWith("/en/")) return path;
   return path === "/" ? "/en" : `/en${path}`;
 }
 

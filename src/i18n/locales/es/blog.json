@@ -2,9 +2,10 @@
   "posts": {
     "por-que-fracasan-los-proyectos-de-transformacion-digital": {
       "title": "Por qué fracasan los proyectos de transformación digital",
+      "seoTitle": "Por qué fracasa la transformación digital",
       "label": "Transformación digital",
       "excerpt": "Las organizaciones no fracasan por falta de tecnología ni de presupuesto. Fracasan cuando nadie conecta la decisión con las personas que deben ejecutarla. Siete errores que se repiten — y cómo evitarlos.",
-      "metaDescription": "Por qué fracasan los proyectos de transformación digital: los siete errores que identifica el autor, desde empezar por la tecnología hasta dejar la gestión del cambio para el final.",
+      "metaDescription": "Por qué fracasan los proyectos de transformación digital: los siete errores que identifica el autor, de empezar por la tecnología a dejar el cambio al final.",
       "intro": "Hay una pregunta que, en mi opinión, debería hacerse mucho antes de aprobar un presupuesto, seleccionar una plataforma o firmar un contrato: ¿ya contemplamos la gestión del cambio?",
       "keyTakeaways": [
         "En la experiencia del autor, los proyectos de transformación fracasan cuando nadie conecta la decisión con las personas que deben ejecutarla.",
@@ -769,7 +770,7 @@
       "seoTitle": "Gobierno de IA: qué es y por qué importa",
       "label": "Gobierno de IA",
       "excerpt": "Antes de preguntarse qué inteligencia artificial incorporar, toda organización debería preguntarse si está preparada para gobernarla. Qué es el Gobierno de IA y por dónde debe empezar un CEO.",
-      "metaDescription": "Qué es el Gobierno de IA corporativo, por qué es distinto al Gobierno de Datos, y las preguntas que todo CEO debería responder antes de adoptar inteligencia artificial.",
+      "metaDescription": "Qué es el Gobierno de IA corporativo, en qué se distingue del Gobierno de Datos y las preguntas que todo CEO debería responder antes de adoptar IA.",
       "intro": "La IA puede acelerar una decisión, el gobierno determina si esa decisión debe tomarse.",
       "keyTakeaways": [
         "El Gobierno de IA es el conjunto de reglas, roles y controles que aseguran que la IA de la empresa sea rentable, segura y alineada con su estrategia.",
@@ -2925,7 +2926,7 @@
     },
     "sap-business-one-vs-netsuite-vs-dynamics-365-business-central": {
       "title": "SAP Business One vs NetSuite vs Dynamics 365 Business Central: ¿cuál le conviene?",
-      "seoTitle": "SAP Business One vs NetSuite vs Business Central",
+      "seoTitle": "SAP Business One, NetSuite o Business Central",
       "label": "Selección de ERP",
       "excerpt": "Comparación independiente de SAP Business One, Oracle NetSuite y Microsoft Dynamics 365 Business Central para medianas empresas: despliegue, licenciamiento, ecosistema y para quién es cada uno.",
       "metaDescription": "SAP Business One vs NetSuite vs Business Central: comparación independiente de despliegue, precios, ecosistema y para qué mediana empresa conviene cada uno.",
@@ -3576,7 +3577,7 @@
     },
     "salesforce-vs-hubspot-vs-dynamics-365-crm": {
       "title": "Salesforce vs HubSpot vs Dynamics 365: qué CRM elegir",
-      "seoTitle": "CRM: Salesforce vs HubSpot vs Microsoft Dynamics 365",
+      "seoTitle": "CRM: Salesforce vs HubSpot vs Dynamics 365",
       "label": "Selección de CRM",
       "excerpt": "Comparación independiente de Salesforce Sales Cloud, HubSpot Sales Hub y Dynamics 365 Sales: precios publicados, fortalezas, costos de arranque y para qué equipo comercial conviene cada uno.",
       "metaDescription": "Compare Salesforce, HubSpot y Microsoft Dynamics 365 Sales: precios publicados, fortalezas y para qué empresa conviene cada CRM. Comparación independiente.",
@@ -3978,7 +3979,7 @@
     },
     "cuanto-cuesta-sap-business-one": {
       "title": "Cuánto cuesta SAP Business One: qué define el precio",
-      "seoTitle": "Cuánto cuesta SAP Business One: qué define el precio",
+      "seoTitle": "Precio de SAP Business One: qué lo define",
       "label": "Selección de software",
       "excerpt": "SAP Business One no publica precios de lista. Qué define el costo (usuarios, despliegue, implementación y soporte) y cómo presupuestarlo a cinco años para decidir con la gerencia.",
       "metaDescription": "SAP Business One no publica precios. Qué define su costo (usuarios, despliegue, implementación, soporte) y cómo presupuestarlo a cinco años.",
@@ -4499,7 +4500,7 @@
     },
     "software-recursos-humanos-nomina-mas-de-100-empleados": {
       "title": "Software de RR. HH. y nómina para más de 100 empleados",
-      "seoTitle": "Software de RR. HH. y nómina para más de 100 empleados",
+      "seoTitle": "Software de RR. HH. y nómina: más de 100 empleados",
       "label": "Selección de software",
       "excerpt": "Diferencia entre software de nómina, HRIS y HCM, qué cambia cuando la empresa supera los 100 empleados y qué debe decidir la gerencia antes de elegir.",
       "metaDescription": "Software de recursos humanos y nómina para empresas de más de 100 empleados: nómina, HRIS o HCM, qué cambia con el tamaño y cómo elegir.",
@@ -4848,7 +4849,7 @@
       "seoTitle": "Fin de venta de Salesforce CPQ: qué opciones tiene",
       "label": "Selección de software",
       "excerpt": "Salesforce CPQ ya no se vende a clientes nuevos, pero Salesforce dice que no es fin de vida ni migración forzosa. Qué significa para su empresa y cómo decidir entre quedarse, migrar o cambiar de plataforma.",
-      "metaDescription": "Salesforce CPQ está en fin de venta, no en fin de vida. Qué dice Salesforce, qué cambia para clientes actuales y qué opciones evaluar: Revenue Cloud, HubSpot o Dynamics 365.",
+      "metaDescription": "Salesforce CPQ: fin de venta, no de vida. Qué dice Salesforce, qué cambia para clientes actuales y opciones a evaluar: Revenue Cloud, HubSpot o Dynamics 365.",
       "intro": "Si su empresa cotiza con Salesforce CPQ, el anuncio de fin de venta no obliga a nada hoy, pero sí obliga a decidir con calma antes de que la brecha con lo que necesita el negocio crezca.",
       "keyTakeaways": [
         "Según Salesforce, CPQ está en fin de venta, no en fin de vida: no se vende a clientes nuevos, y los actuales pueden seguir usándolo, agregar usuarios, renovar y recibir soporte. Salesforce no ha anunciado una fecha de fin de vida.",
@@ -5010,7 +5011,7 @@
     },
     "resistencia-al-cambio-como-diagnosticarla-y-que-hacer": {
       "title": "Resistencia al cambio: cómo diagnosticarla y qué hacer en cada caso",
-      "seoTitle": "Resistencia al cambio: cómo diagnosticarla y superarla",
+      "seoTitle": "Resistencia al cambio: cómo diagnosticarla",
       "label": "Gestión del cambio",
       "excerpt": "La resistencia al cambio no es un defecto de las personas: es una señal. Cómo ubicar dónde se atasca el cambio con los cinco elementos de ADKAR y qué hace la dirección en cada caso.",
       "metaDescription": "Resistencia al cambio en la empresa: cómo diagnosticarla con ADKAR, qué le toca a la dirección y qué acciones aplicar según dónde se atasque el cambio.",
@@ -5766,7 +5767,7 @@
     },
     "costo-total-de-un-crm-que-sumar-ademas-de-la-licencia": {
       "title": "Costo total de un CRM: qué sumar además de la licencia",
-      "seoTitle": "Costo total de un CRM: qué sumar además de la licencia",
+      "seoTitle": "Costo total de un CRM: qué sumar a la licencia",
       "label": "Selección de software",
       "excerpt": "Precios publicados por Salesforce, HubSpot y Microsoft, qué costos las propias páginas oficiales dejan fuera de la licencia y cómo armar el costo total a varios años.",
       "metaDescription": "Costo total de un CRM: precios publicados por Salesforce, HubSpot y Microsoft Dynamics 365, y qué sumar además de la licencia.",
@@ -6287,7 +6288,7 @@
     },
     "regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana": {
       "title": "Regulación de la IA en 2026: qué exigen la Unión Europea, Estados Unidos y España",
-      "seoTitle": "Regulación de la IA: Unión Europea, EE. UU. y España",
+      "seoTitle": "Regulación de la IA: UE, EE. UU. y España",
       "label": "Gobierno de IA",
       "excerpt": "Qué dicen las fuentes oficiales sobre el Reglamento de IA europeo, dos leyes estatales de EE. UU., la agencia de supervisión de España y la política nacional de Colombia.",
       "metaDescription": "Regulación de la IA en 2026: fechas y multas del Reglamento europeo, leyes de Texas y Colorado, la agencia AESIA y qué debe revisar la gerencia.",
@@ -7174,10 +7175,10 @@
     },
     "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo": {
       "title": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
-      "seoTitle": "Plan de continuidad del negocio: qué es y cómo se hace",
+      "seoTitle": "Plan de continuidad del negocio: BIA, RTO y RPO",
       "label": "Estrategia",
       "excerpt": "Qué es un plan de continuidad del negocio, en qué se diferencia del DRP y del plan de contingencia, qué es el BIA, qué son el RTO y el RPO, y qué debe decidir la dirección, según NIST SP 800-34 e ISO 22301.",
-      "metaDescription": "Qué es un plan de continuidad del negocio (BCP), su diferencia con el DRP, qué es el BIA y qué son el RTO y el RPO, según NIST SP 800-34 e ISO 22301. Pasos y decisiones.",
+      "metaDescription": "Qué es un plan de continuidad del negocio (BCP), su diferencia con el DRP, el BIA, el RTO y el RPO, según NIST SP 800-34 e ISO 22301. Pasos y decisiones.",
       "intro": "Si su empresa tiene un plan de continuidad que nadie ha probado, o un respaldo que nadie ha restaurado, esta guía explica qué debería contener ese plan y quién debe decidirlo, con las definiciones de las fuentes oficiales.",
       "keyTakeaways": [
         "Un plan de continuidad del negocio (BCP) se centra en sostener los procesos de negocio durante y después de una interrupción; el DRP, en restaurar los sistemas de información (NIST SP 800-34).",
@@ -7414,7 +7415,7 @@
       "seoTitle": "Estrategia de TI: qué es y qué incluye",
       "label": "Estrategia",
       "excerpt": "Qué es una estrategia de TI, para qué sirve, qué entregables deja, qué es el gobierno de TI según ISO/IEC 38500 y COBIT, y cómo se construye paso a paso.",
-      "metaDescription": "Qué es una estrategia de TI, qué incluye (diagnóstico, arquitectura objetivo, portafolio, casos de negocio, gobierno), qué dicen ISO/IEC 38500 y COBIT 2019 y cómo se construye.",
+      "metaDescription": "Qué es una estrategia de TI y qué incluye (diagnóstico, arquitectura objetivo, portafolio, casos de negocio, gobierno), según ISO/IEC 38500 y COBIT 2019.",
       "intro": "Si en su empresa cada área compra su propia herramienta y el presupuesto de tecnología se decide proyecto por proyecto, lo que falta no es más tecnología: es una estrategia de TI. Esta guía explica qué es, qué debe contener y cómo se construye.",
       "keyTakeaways": [
         "Una estrategia de TI define qué tecnología necesita la empresa para ejecutar su estrategia de negocio, en qué orden y con qué caso de negocio.",
@@ -7631,7 +7632,7 @@
       "seoTitle": "Cuándo contratar una consultoría de ciberseguridad",
       "label": "Ciberseguridad",
       "excerpt": "Las señales que indican que es momento de una consultoría de ciberseguridad, qué incluye una evaluación de madurez, por qué importa la independencia de fabricantes, referencias de precio y cómo preseleccionar una firma.",
-      "metaDescription": "Señales de que su empresa necesita una consultoría de ciberseguridad, qué incluye, por qué importa que sea independiente de fabricantes, rangos de precio de referencia y qué preguntar antes de contratar.",
+      "metaDescription": "Señales de que su empresa necesita una consultoría de ciberseguridad, qué incluye, por qué importa que sea independiente, precios de referencia y qué preguntar.",
       "intro": "Las señales más claras son estructurales, no personales: un intento de brecha que su equipo no pudo explicar, una auditoría de cumplimiento que casi no pasa, un conjunto de herramientas que nadie gestiona de verdad o un proveedor que vendió una plataforma y se fue. En nuestro criterio, no reflejan la competencia del equipo, sino una brecha entre la complejidad del problema y la capacidad de la estructura actual. Esta guía explica qué cubre una consultoría de ciberseguridad, qué dolores enfrentan con más frecuencia los CEO, CIO y CFO y cómo preseleccionar una firma.",
       "keyTakeaways": [
         "Las señales de alerta suelen ser estructurales: brechas de cumplimiento, herramientas sin dueño y dependencia de un proveedor apuntan a un problema de estructura, no a una falla del equipo.",
@@ -7898,7 +7899,7 @@
       "seoTitle": "Gobierno de datos: qué es y cómo empezar",
       "label": "Gobierno de IA",
       "excerpt": "Qué es el gobierno de datos, qué dice ISO/IEC 38505-1 sobre el papel de la dirección, en qué se diferencia de la calidad y de la gestión de datos, y cómo empezar sin un proyecto de un año.",
-      "metaDescription": "Qué es el gobierno de datos según ISO/IEC 38505-1:2026, qué decide la dirección (dueños, versión oficial, reglas), su diferencia con calidad y gestión de datos, y por dónde empezar.",
+      "metaDescription": "Gobierno de datos según ISO/IEC 38505-1:2026: qué decide la dirección (dueños, versión oficial, reglas), su diferencia con la calidad de datos y cómo empezar.",
       "intro": "El gobierno de datos es el conjunto de decisiones sobre quién es dueño de cada dato, de qué sistema sale la versión oficial, qué reglas se aplican al capturarlo y quién puede usarlo. Si en su junta dos áreas presentan cifras distintas del mismo indicador, esta guía explica qué decidir y por dónde empezar.",
       "keyTakeaways": [
         "ISO/IEC 38505-1:2026 define el gobierno de datos como un subconjunto del gobierno de TI, que a su vez es parte del gobierno corporativo, y lo dirige a los órganos de gobierno de la organización.",
@@ -8117,7 +8118,7 @@
       "seoTitle": "Estrategia de IA para empresas: hoja de ruta",
       "label": "Gobierno de IA",
       "excerpt": "Qué es una estrategia de IA, qué la diferencia de comprar herramientas, cómo priorizar casos de uso, qué dice el NIST AI RMF sobre gestionar el riesgo desde el diseño y qué decide la dirección.",
-      "metaDescription": "Cómo construir una estrategia de IA para su empresa: inventario, casos de uso priorizados, hoja de ruta, gobierno (NIST AI RMF) y medición contra el proceso real, no contra la demo.",
+      "metaDescription": "Cómo construir una estrategia de IA: inventario, casos de uso priorizados, hoja de ruta, gobierno (NIST AI RMF) y medición contra el proceso real.",
       "intro": "Una estrategia de IA es la hoja de ruta que define en qué procesos la inteligencia artificial cambia un resultado del negocio, en qué orden conviene hacerlo y qué hace falta —datos, sistemas, gobierno— para que funcione en producción. Si su comité aprueba o rechaza iniciativas de IA por instinto, esta guía explica cómo construirla.",
       "keyTakeaways": [
         "Una estrategia de IA empieza por los procesos y los datos que ya existen, no por el catálogo de herramientas de un proveedor.",
@@ -8328,7 +8329,7 @@
       "seoTitle": "Cómo elegir una consultoría de IA",
       "label": "Estrategia de IA",
       "excerpt": "Tres exigencias para elegir una consultoría de IA: recomendación independiente de fabricantes, ejecución con responsable hasta el go-live y adopción estructurada. Incluye rangos de precio de referencia y qué pedir en el contrato.",
-      "metaDescription": "Cómo elegir una consultoría de IA: neutralidad frente a fabricantes, ejecución con responsable hasta el go-live, adopción, precios de referencia y qué exigir antes de firmar.",
+      "metaDescription": "Cómo elegir una consultoría de IA: neutralidad frente a fabricantes, ejecución con responsable hasta el go-live, adopción, precios de referencia y qué exigir.",
       "intro": "Elegir una consultoría de IA se reduce a tres exigencias: una recomendación tecnológica independiente de los fabricantes, una ejecución con responsable hasta el go-live y una adopción estructurada. Una firma que se detiene en la presentación de estrategia no cumple. Esta guía propone un marco para evaluar, preguntar y preseleccionar antes de firmar.",
       "keyTakeaways": [
         "En nuestro criterio, una consultoría de IA debería poder decir por escrito quién responde por el resultado de negocio después del go-live, y no solo por los entregables.",
@@ -8567,10 +8568,10 @@
     },
     "implementacion-de-erp-con-pmo-como-gobernar-el-proyecto": {
       "title": "Implementación de ERP con PMO: cómo gobernar el proyecto",
-      "seoTitle": "Implementación de ERP con PMO: gobierno del proyecto",
+      "seoTitle": "Implementar un ERP con PMO: gobierno del proyecto",
       "label": "Gerencia de proyectos",
       "excerpt": "Qué hace una PMO en la implementación de un ERP, qué áreas debe gobernar el proyecto, quién decide qué, qué se recorta primero cuando el presupuesto aprieta y qué debe decidir la dirección antes de firmar.",
-      "metaDescription": "Implementación de ERP con PMO: qué áreas gobierna el proyecto, quién decide qué, qué se recorta primero y cómo se mide el trabajo, según la guía pública de Microsoft.",
+      "metaDescription": "Implementación de ERP con PMO: qué áreas gobierna el proyecto, quién decide qué, qué se recorta primero y cómo se mide el trabajo (guía pública de Microsoft).",
       "intro": "Una PMO en la implementación de un ERP gobierna el proyecto en nombre de la empresa: define las metas medibles, la organización y los roles, el enfoque, el control de cambios, riesgos y asuntos, y el plan. El integrador entrega el sistema; alguien tiene que responder por que el proyecto cumpla lo que el comité aprobó. Esta guía explica cómo se reparte ese trabajo.",
       "keyTakeaways": [
         "La guía pública de implementación de Dynamics 365 de Microsoft define el gobierno del proyecto como el marco que conecta las metas del negocio con acciones y medidas, y lista seis áreas: metas, organización, enfoque, estructuras clásicas (cambios, riesgos, asuntos), áreas clave (diseño, pruebas, despliegue) y plan.",

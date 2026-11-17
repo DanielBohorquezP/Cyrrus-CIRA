@@ -27,8 +27,9 @@ const routeMeta = JSON.parse(
 const solutionsSrc = await readFile(path.join(rootDir, "src/lib/solutions-data.ts"), "utf-8");
 const solutionSlugs = [...solutionsSrc.matchAll(/slug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]);
 
-// Workshops still marked "próximamente" (comingSoon: true) are intentionally
-// excluded — they're noindex'd in the app and shouldn't be submitted for crawl.
+// Workshops marked "próximamente" (comingSoon: true) are indexed and listed in
+// the sitemap on purpose (client decision 2026-11-16); only their Course schema
+// is withheld until they are actually offered (see CursoDetalle.tsx).
 const workshopsSrc = await readFile(path.join(rootDir, "src/lib/workshops-data.ts"), "utf-8");
 // Top-level array entries are exactly `  {` at line-start; split there rather
 // than matching "slug:" (which also appears in the interface declaration).
@@ -58,10 +59,7 @@ const esRoutes = [
     ...blogSlugs.map((slug) => `/perspectivas/${slug}`),
     ...extraRoutes,
   ]),
-].filter((p) => {
-  const workshopSlug = p.match(/^\/leadership-academy\/([a-z0-9-]+)$/)?.[1];
-  return !workshopSlug || !comingSoonWorkshopSlugs.has(workshopSlug);
-}).filter((p) => !noindexRoutes.has(p));
+].filter((p) => !noindexRoutes.has(p));
 
 // Route -> i18n content that determines its lastmod. `ns` is the locale
 // namespace file under src/i18n/locales/{es,en}/<ns>.json; `pick` selects one

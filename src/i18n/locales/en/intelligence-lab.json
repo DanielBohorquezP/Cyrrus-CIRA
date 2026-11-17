@@ -668,7 +668,7 @@
   "gobiernoDatos": {
     "meta": {
       "title": "Data Governance Consulting Services | Cyrrus",
-      "description": "Data governance consulting services: who owns each data set, which quality rules apply and what information an AI model may touch. The foundation of AI governance."
+      "description": "Data governance consulting: who owns each data set, which quality rules apply and what information an AI model may touch. The foundation of AI governance."
     },
     "serviceDescription": "Data governance consulting",
     "hero": {
@@ -888,7 +888,7 @@
   "estrategiaIa": {
     "meta": {
       "title": "AI Strategy Consulting Services for Companies | Cyrrus",
-      "description": "AI strategy consulting services: use cases prioritized by impact, a roadmap, governance and architecture, measured against the real process they change, not a demo."
+      "description": "AI strategy consulting: use cases prioritized by impact, a roadmap, governance and architecture, measured against the real process they change, not a demo."
     },
     "serviceDescription": "AI strategy consulting",
     "hero": {

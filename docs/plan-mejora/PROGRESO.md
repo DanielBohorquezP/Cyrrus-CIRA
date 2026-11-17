@@ -284,6 +284,19 @@ qué llegó y lo integra (F8, J1, J3…).
 
 ## Bitácora de sesiones
 
+### Sesión 19b — 2026-11-16 — Auditoría SEO/IA (`/claude-seo-ai:audit`) y correcciones
+- **Tareas trabajadas:** fuera del plan (auditoría puntual); no cambia el estado de ninguna tarea. La Sesión 20 sigue siendo M0–M2.
+- **Hecho:**
+  - `langPath()` ya no antepone `/en` a rutas que lo traen (había 18 enlaces del cuerpo de artículos EN que daban `/en/en/…` → 404).
+  - Los 7 workshops de Leadership Academy ("próximamente") pasan a indexables y entran al sitemap (decisión del cliente, 2026-11-16): sin `noindex`, sin exclusión en `generate-sitemap.mjs`; el schema `Course` sigue apagado mientras sean "próximamente". Sitemap: 146 → 160 URLs.
+  - 17 títulos (>60 caracteres) y 31 descripciones (>160) recortados sin añadir datos nuevos: `seoTitle` en `blog.json` y textos en `route-meta.json` y los JSON de `i18n`. Título del artículo de SAP B1 ES cambiado a "Precio de SAP Business One…" (Ubersuggest: "precio sap business one" 20/mes CO; "cuánto cuesta sap business one" 0). Título ES de SAP B1 vs NetSuite ya no es igual al EN.
+- **Datos de la auditoría (Ubersuggest, 2026-11-16):** DA 10, 404 backlinks / 157 dominios; 5 palabras clave posicionadas (~16 de tráfico); PageSpeed móvil LCP 4.0 s, TBT 211 ms, CLS 0; visibilidad en IA (ChatGPT, 10 prompts) 0 %.
+- **Verificación:** build 160/160 rutas, 0 títulos >60, 0 descripciones >160, 0 enlaces `/en/en/`; consola limpia en 4 rutas servidas desde `dist`.
+- **Commits:** ver `git log` (rama `seo/fix-en-en-links`).
+- **Zip para subir:** no generado.
+- **Pendiente / bloqueos nuevos:** `/en/herramientas/test-preparacion-erp` y `/en/herramientas/calculadora-costo-erp` dan 403 en producción (el build local sí las genera): revisar el zip subido o los permisos de esas carpetas. Vigilar en Search Console que los 7 workshops no queden en "Rastreada: sin indexar" por contenido escaso. LCP móvil de 4.0 s: repetir PageSpeed tras el próximo deploy (A5).
+- **Próxima sesión:** Sesión 20 (M0–M2), sin cambios.
+
 ### Sesión 19 — 2026-11-14 — Guía de implementación de ERP con PMO (ES/EN)
 - **Tareas trabajadas:** G23 (nueva, ✅), a partir de la auditoría §6.1/§7 ("Implementación de ERP con PMO"). Sin insumos del cliente.
 - **Hecho:** artículo `implementacion-de-erp-con-pmo-como-gobernar-el-proyecto` en `blog.json` ES/EN (insertado como texto, los archivos no son round-trip de `JSON.stringify`), `blog-data.ts` (pilar: gerencia de proyectos; tarjetas de servicio en los bloques 15 y 31) y `llms.txt`. Estructura: qué hace una PMO en un ERP, las seis áreas de gobierno, comité de dirección vs equipo de implementación y contrato con el integrador, qué se recorta primero, cómo se mide, qué decide la dirección. Enlaza a costo de ERP, mejores ERP, calculadora, selección de ERP, PMO y PMO externa.

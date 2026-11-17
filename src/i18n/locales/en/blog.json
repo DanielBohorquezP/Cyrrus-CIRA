@@ -1437,6 +1437,7 @@
     },
     "que-es-un-erp-guia-para-elegirlo": {
       "title": "What is an ERP and how to choose one: a practical guide",
+      "seoTitle": "What Is an ERP and How to Choose One: Guide",
       "label": "ERP selection",
       "excerpt": "An ERP brings finance, purchasing, inventory and operations into one platform. What it is, what it is for, which modules it includes and seven criteria for choosing the right one.",
       "metaDescription": "What an ERP is, what it is for, which modules it includes and how to choose the right one for your company. A guide with selection criteria and common mistakes.",
@@ -2927,7 +2928,7 @@
     },
     "sap-business-one-vs-netsuite-vs-dynamics-365-business-central": {
       "title": "SAP Business One vs NetSuite vs Dynamics 365 Business Central: which fits you?",
-      "seoTitle": "SAP Business One vs NetSuite vs Business Central Compared",
+      "seoTitle": "SAP Business One vs NetSuite vs Business Central",
       "label": "ERP selection",
       "excerpt": "An independent comparison of SAP Business One, Oracle NetSuite and Microsoft Dynamics 365 Business Central for midsize companies: deployment, licensing, ecosystem and who each one is for.",
       "metaDescription": "SAP Business One vs NetSuite vs Business Central: independent comparison of deployment, pricing, ecosystem and which midsize company each one suits.",
@@ -3578,7 +3579,7 @@
     },
     "salesforce-vs-hubspot-vs-dynamics-365-crm": {
       "title": "Salesforce vs HubSpot vs Dynamics 365: which CRM to choose",
-      "seoTitle": "Salesforce vs HubSpot vs Dynamics 365: Which CRM to Choose",
+      "seoTitle": "Salesforce vs HubSpot vs Dynamics 365: Which CRM?",
       "label": "CRM selection",
       "excerpt": "An independent comparison of Salesforce Sales Cloud, HubSpot Sales Hub and Dynamics 365 Sales: published prices, strengths, onboarding costs and which sales team each one suits.",
       "metaDescription": "Compare Salesforce, HubSpot and Microsoft Dynamics 365 Sales: published prices, strengths and which company each CRM suits. An independent comparison.",
@@ -3980,7 +3981,7 @@
     },
     "cuanto-cuesta-sap-business-one": {
       "title": "How much does SAP Business One cost: what sets the price",
-      "seoTitle": "How much does SAP Business One cost? What sets the price",
+      "seoTitle": "SAP Business One Cost: What Sets the Price",
       "label": "Software selection",
       "excerpt": "SAP Business One has no published list price. What drives the cost (users, deployment, implementation and support) and how to budget it over five years to decide with leadership.",
       "metaDescription": "SAP Business One has no published prices. What drives its cost (users, deployment, implementation, support) and how to budget it over five years.",
@@ -4314,7 +4315,7 @@
     },
     "migrar-sap-ecc-a-s4hana-plazos-costos-alternativas": {
       "title": "Migrating from SAP ECC to S/4HANA: timing and options",
-      "seoTitle": "Migrating from SAP ECC to S/4HANA: timing and options",
+      "seoTitle": "SAP ECC to S/4HANA Migration: Timing and Options",
       "label": "Software selection",
       "excerpt": "SAP's official dates for ECC, what changes as each maintenance stage ends, the routes available and what leadership should decide before requesting quotes.",
       "metaDescription": "SAP ECC standard maintenance ends December 31, 2027. Official dates, migration routes and what to decide before requesting quotes.",
@@ -4670,7 +4671,7 @@
     },
     "software-mes-que-es-y-cuando-lo-necesita-su-planta": {
       "title": "MES software: what it is and when your plant needs it",
-      "seoTitle": "MES software: what it is and when your plant needs it",
+      "seoTitle": "MES Software: What It Is and When You Need It",
       "label": "Software selection",
       "excerpt": "What a manufacturing execution system (MES) does, how it differs from the ERP, when a plant needs one and what leadership should ask before investing.",
       "metaDescription": "What MES software is, how it differs from an ERP, when a plant needs one and what leadership should decide before investing.",
@@ -4850,7 +4851,7 @@
       "seoTitle": "Salesforce CPQ End of Sale: Your Options",
       "label": "Software Selection",
       "excerpt": "Salesforce CPQ is no longer sold to new customers, but Salesforce says it is not end of life and there is no forced migration. What it means for your company and how to choose between staying, migrating or switching platforms.",
-      "metaDescription": "Salesforce CPQ is at end of sale, not end of life. What Salesforce says, what changes for current customers and which options to assess: Revenue Cloud, HubSpot or Dynamics 365.",
+      "metaDescription": "Salesforce CPQ is at end of sale, not end of life. What Salesforce says, what changes for current customers and options: Revenue Cloud, HubSpot, Dynamics 365.",
       "intro": "If your company quotes with Salesforce CPQ, the end-of-sale announcement requires nothing today, but it does call for a calm decision before the gap with what the business needs grows.",
       "keyTakeaways": [
         "According to Salesforce, CPQ is at end of sale, not end of life: it is not sold to new customers, and current ones can keep using it, add users, renew and get support. Salesforce has not announced an end-of-life date.",
@@ -5012,7 +5013,7 @@
     },
     "resistencia-al-cambio-como-diagnosticarla-y-que-hacer": {
       "title": "Resistance to Change: How to Diagnose It and What to Do in Each Case",
-      "seoTitle": "Resistance to Change: How to Diagnose and Overcome It",
+      "seoTitle": "Resistance to Change: Diagnose and Overcome It",
       "label": "Change Management",
       "excerpt": "Resistance to change is not a flaw in people: it is a signal. How to locate where a change is stuck using the five ADKAR elements and what leadership does in each case.",
       "metaDescription": "Resistance to change at work: how to diagnose it with ADKAR, what falls to leadership and which actions to apply depending on where the change gets stuck.",
@@ -5579,7 +5580,7 @@
     },
     "integrar-erp-y-crm-conector-nativo-o-middleware": {
       "title": "Integrating ERP and CRM: when a native connector is enough and when it is not",
-      "seoTitle": "ERP and CRM integration: native connector or middleware",
+      "seoTitle": "ERP and CRM Integration: Native vs Middleware",
       "label": "Software selection",
       "excerpt": "What Microsoft documents about the Business Central and Dynamics 365 Sales integration, which data it syncs, which limits it states and what leadership should define before connecting ERP and CRM.",
       "metaDescription": "How to integrate ERP with CRM: what a native connector syncs (a Microsoft example), what its limits are and what leadership decides before connecting them.",
@@ -7179,7 +7180,7 @@
       "seoTitle": "Business Continuity Plan: BIA, RTO, RPO and DRP",
       "label": "Strategy",
       "excerpt": "What a business continuity plan is, how it differs from a DRP and a contingency plan, what the BIA is, what RTO and RPO mean, and what leadership must decide, per NIST SP 800-34 and ISO 22301.",
-      "metaDescription": "What a business continuity plan (BCP) is, how it differs from a DRP, what the BIA is and what RTO and RPO mean, per NIST SP 800-34 and ISO 22301. Steps and decisions.",
+      "metaDescription": "What a business continuity plan (BCP) is, how it differs from a DRP, and what BIA, RTO and RPO mean, per NIST SP 800-34 and ISO 22301. Steps and decisions.",
       "intro": "If your company has a continuity plan no one has tested, or a backup no one has restored, this guide explains what that plan should contain and who must decide it, with the definitions from the official sources.",
       "keyTakeaways": [
         "A business continuity plan (BCP) focuses on sustaining business processes during and after a disruption; the DRP, on restoring information systems (NIST SP 800-34).",
@@ -7416,7 +7417,7 @@
       "seoTitle": "IT Strategy: What It Is and What It Includes",
       "label": "Strategy",
       "excerpt": "What an IT strategy is, what it is for, what deliverables it leaves, what IT governance is per ISO/IEC 38500 and COBIT, and how to build one step by step.",
-      "metaDescription": "What an IT strategy is, what it includes (assessment, target architecture, portfolio, business cases, governance), what ISO/IEC 38500 and COBIT 2019 say and how to build one.",
+      "metaDescription": "What an IT strategy is and what it includes (assessment, target architecture, portfolio, business cases, governance), per ISO/IEC 38500 and COBIT 2019.",
       "intro": "If every department in your company buys its own tool and the technology budget is decided project by project, what's missing isn't more technology: it's an IT strategy. This guide explains what it is, what it should contain and how it is built.",
       "keyTakeaways": [
         "An IT strategy defines which technology the company needs to execute its business strategy, in what order and with what business case.",
@@ -7900,7 +7901,7 @@
       "seoTitle": "Data Governance: What It Is and How to Start",
       "label": "AI Governance",
       "excerpt": "What data governance is, what ISO/IEC 38505-1 says about the role of governing bodies, how it differs from data quality and data management, and how to start without a year-long project.",
-      "metaDescription": "What data governance is per ISO/IEC 38505-1:2026, what leadership decides (owners, official version, rules), how it differs from data quality and management, and where to start.",
+      "metaDescription": "What data governance is per ISO/IEC 38505-1:2026, what leadership decides (owners, official version, rules), how it differs from data quality, and how to start.",
       "intro": "Data governance is the set of decisions about who owns each data set, which system the official version comes from, which rules apply when it is captured and who may use it. If two departments present different figures for the same indicator at your board meeting, this guide explains what to decide and where to start.",
       "keyTakeaways": [
         "ISO/IEC 38505-1:2026 defines the governance of data as a subset of the governance of IT, which is itself part of corporate governance, and addresses it to the organization's governing bodies.",
@@ -8119,7 +8120,7 @@
       "seoTitle": "AI Strategy for Companies: How to Build the Roadmap",
       "label": "AI Governance",
       "excerpt": "What an AI strategy is, how it differs from buying tools, how to prioritize use cases, what the NIST AI RMF says about managing risk from design, and what leadership decides.",
-      "metaDescription": "How to build an AI strategy for your company: inventory, prioritized use cases, roadmap, governance (NIST AI RMF) and measurement against the real process, not the demo.",
+      "metaDescription": "How to build an AI strategy for your company: inventory, prioritized use cases, roadmap, governance (NIST AI RMF) and measurement against the real process.",
       "intro": "An AI strategy is the roadmap that defines in which processes artificial intelligence changes a business outcome, in what order it's worth doing and what it takes — data, systems, governance — for it to work in production. If your committee approves or rejects AI initiatives on instinct, this guide explains how to build one.",
       "keyTakeaways": [
         "An AI strategy starts from the processes and data that already exist, not from a vendor's tool catalog.",
@@ -8572,7 +8573,7 @@
       "seoTitle": "ERP Implementation With a PMO: Project Governance",
       "label": "Project management",
       "excerpt": "What a PMO does in an ERP implementation, which areas project governance must cover, who decides what, what gets cut first when the budget tightens and what leadership must decide before signing.",
-      "metaDescription": "ERP implementation with a PMO: the areas project governance covers, who decides what, what gets cut first and how the work is measured, per Microsoft's public guide.",
+      "metaDescription": "ERP implementation with a PMO: the areas project governance covers, who decides what, what gets cut first and how work is measured (Microsoft's public guide).",
       "intro": "A PMO in an ERP implementation governs the project on the company's behalf: it sets measurable goals, the organization and roles, the approach, change, risk and issue control, and the plan. The integrator delivers the system; someone has to answer for the project meeting what the committee approved. This guide explains how that work is divided.",
       "keyTakeaways": [
         "Microsoft's public Dynamics 365 implementation guide defines project governance as the framework that maps business goals to actions and measures, and lists six areas: goals, organization, approach, classic structures (change, risk, issues), key project areas (design, testing, deployment) and plan.",

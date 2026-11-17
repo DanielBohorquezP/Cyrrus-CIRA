@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Consultoría Estratégica y Planeación Estratégica | Cyrrus",
-    "description": "Consultoría estratégica y planeación estratégica para empresas: diagnóstico, hoja de ruta y ejecución acompañada. Estrategia corporativa, de negocio y de TI, con IA."
+    "description": "Consultoría estratégica y planeación estratégica: diagnóstico, hoja de ruta y ejecución acompañada. Estrategia corporativa, de negocio y de TI, con IA."
   },
   "hero": {
     "eyebrow": "Método CIRA — Construir",
@@ -252,7 +252,7 @@
   "estrategiaTi": {
     "meta": {
       "title": "Consultoría en Estrategia de TI para Empresas | Cyrrus",
-      "description": "Consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas (ERP, CRM, datos, IA) priorizado por impacto, con el caso de negocio de cada una."
+      "description": "Consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas (ERP, CRM, datos, IA) priorizado por impacto y con caso de negocio."
     },
     "serviceDescription": "Consultoría en estrategia de TI",
     "hero": {
@@ -463,7 +463,7 @@
   "continuidad": {
     "meta": {
       "title": "Consultoría en Continuidad del Negocio: BIA y BCP | Cyrrus",
-      "description": "Consultoría en continuidad del negocio: identificamos los procesos críticos, analizamos el impacto de una interrupción (BIA) y definimos el plan de continuidad y de recuperación (DRP), probado."
+      "description": "Consultoría en continuidad del negocio: procesos críticos, análisis de impacto de una interrupción (BIA) y plan de continuidad y de recuperación (DRP), probado."
     },
     "serviceDescription": "Consultoría en continuidad del negocio",
     "hero": {

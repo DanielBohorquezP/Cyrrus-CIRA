@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Consultoría Tecnológica: Selección de Soluciones TI | Cyrrus",
-    "description": "Consultoría tecnológica independiente: elegimos software, automatización e infraestructura con criterios definidos antes de mirar proveedores, sin sesgo comercial."
+    "description": "Consultoría tecnológica independiente: elegimos software, automatización e infraestructura con criterios definidos antes de mirar proveedores, sin sesgo."
   },
   "hero": {
     "eyebrow": "Método CIRA — Identificar",
@@ -825,7 +825,7 @@
     },
     "ciberseguridad": {
       "title": "Consultoría en Ciberseguridad para Empresas | Cyrrus",
-      "description": "Consultoría en ciberseguridad independiente: diagnóstico de riesgo, controles que necesita la empresa y selección de soluciones y proveedores sin comisiones de fabricantes."
+      "description": "Consultoría en ciberseguridad independiente: diagnóstico de riesgo, controles que necesita la empresa y selección de soluciones y proveedores sin comisiones."
     }
   },
   "respuesta": {

@@ -26,7 +26,7 @@
     "ia-para-directivos": {
       "title": "Taller de IA para directivos",
       "shortDescription": "Decisiones de IA por instinto, no criterio",
-      "intro": "El comité aprueba o rechaza iniciativas de IA por instinto, no por criterio, porque nadie ha traducido los conceptos técnicos a preguntas que el liderazgo pueda evaluar.",
+      "intro": "El comité aprueba o rechaza iniciativas de IA por instinto, no por criterio: nadie ha traducido lo técnico a preguntas que el liderazgo pueda evaluar.",
       "body": [
         "Un taller práctico para que directivos entiendan qué preguntar, qué validar y qué riesgos evaluar antes de aprobar cualquier iniciativa de IA — sin necesidad de formación técnica previa.",
         "Se conecta directamente con el gobierno de IA corporativo que diseñamos en Cyrrus Intelligence Lab, para que la capacitación del liderazgo y la arquitectura técnica hablen el mismo idioma."
@@ -42,7 +42,7 @@
       ]
     },
     "iso-27001": {
-      "title": "Curso ISO 27001 para empresas: capacitación ejecutiva",
+      "title": "Curso ISO 27001 para empresas: formación ejecutiva",
       "shortDescription": "Certificación exigida, sin plan",
       "intro": "Un cliente grande exige certificación ISO 27001 y nadie en la organización sabe por dónde empezar.",
       "body": [
@@ -51,7 +51,7 @@
       ]
     },
     "continuidad-de-negocio-drp": {
-      "title": "Plan de continuidad de negocio y DRP: taller ejecutivo",
+      "title": "Plan de continuidad del negocio y DRP: taller",
       "shortDescription": "Un DRP que nunca se ha probado",
       "intro": "Nunca han probado qué pasa si el sistema principal cae un lunes a las 9am — y un plan de continuidad que no se prueba no es un plan.",
       "body": [
