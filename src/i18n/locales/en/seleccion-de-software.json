@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "ERP & CRM Software Selection Consulting | Cyrrus",
-    "description": "Independent ERP, CRM, HCM, and EAM selection consulting: we evaluate and compare enterprise software, 100% vendor-agnostic."
+    "title": "Enterprise Software Selection Consulting | Cyrrus",
+    "description": "Consulting to choose enterprise software: we independently evaluate and compare ERP, CRM, HCM, and EAM options, 100% vendor-agnostic."
   },
   "hero": {
     "eyebrow": "Solution Selection",
-    "title": "Software selection consulting: independent ERP and CRM evaluation",
+    "title": "Enterprise software selection and evaluation consulting",
     "description": "The right technology starts with the right decision. We independently evaluate, compare, and select enterprise software, aligning your organization's needs with the solution it actually needs.",
     "ctaLabel": "Evaluate a technology need",
     "ctaSecondaryLabel": "Learn our methodology"
@@ -195,22 +195,22 @@
     "items": [
       {
         "slug": "que-es-un-erp-guia-para-elegirlo",
-        "title": "What is an ERP and how to choose one",
+        "title": "What is an ERP: software, modules and seven criteria to evaluate it",
         "description": "What an ERP does, which modules it has, and what to ask before requesting demos."
       },
       {
         "slug": "que-es-un-crm-y-como-elegir-el-correcto",
-        "title": "What is a CRM and how to choose the right one",
+        "title": "What is a CRM: types and risks before buying",
         "description": "Types of CRM and how to evaluate one around your real sales process."
       },
       {
         "slug": "software-recursos-humanos-nomina-mas-de-100-empleados",
-        "title": "HR and payroll software",
+        "title": "Payroll, HRIS or HCM software",
         "description": "What to check in an HCM once the company has more than 100 employees."
       },
       {
         "slug": "software-cmms-eam-como-elegir",
-        "title": "CMMS and EAM software",
+        "title": "CMMS vs EAM software",
         "description": "What each one is, how they differ, and how to choose."
       }
     ]

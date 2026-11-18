@@ -325,7 +325,7 @@
             },
             {
               "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-              "title": "What is AI governance and which frameworks to use",
+              "title": "NIST, OECD or ISO 42001: which AI framework to use",
               "description": "NIST AI RMF, OECD, and ISO/IEC 42001 before AI goes into production."
             }
           ]
@@ -714,12 +714,17 @@
           "items": [
             {
               "slug": "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
-              "title": "When to hire cybersecurity consulting",
+              "title": "Cybersecurity warning signs: what to assess",
               "description": "The signs it is time, what it includes, why vendor independence matters and what to ask before you hire."
             },
             {
+              "slug": "gobierno-de-la-ciberseguridad-nist-csf-2-iso-27014",
+              "title": "Cybersecurity governance: what leadership decides under NIST CSF 2.0 and ISO/IEC 27014",
+              "description": "What falls to leadership, how the two references differ and five management decisions."
+            },
+            {
               "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
-              "title": "Business continuity plan: what it is, BIA, RTO and RPO",
+              "title": "RTO and RPO: what they are and how to set them in your continuity plan",
               "description": "How the company keeps operating once the incident has happened."
             }
           ]

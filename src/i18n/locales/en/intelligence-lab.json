@@ -84,12 +84,12 @@
       "items": [
         {
           "slug": "gobierno-de-ia-corporativo-en-la-empresa",
-          "title": "What corporate AI governance is",
+          "title": "Before adopting AI: can your company govern it?",
           "description": "Why an organization should ask whether it's ready to govern AI before choosing which AI to adopt."
         },
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "AI governance: NIST, OECD and ISO/IEC 42001",
+          "title": "NIST, OECD or ISO 42001: which AI framework to use",
           "description": "What each reference publishes, how they differ, and what leadership should decide before picking one."
         },
         {
@@ -224,6 +224,27 @@
         {
           "title": "Project management (PMO)",
           "description": "Where we monitor project risk with AI agents."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guides",
+      "title": "Before investing in an AI agent, read this",
+      "items": [
+        {
+          "slug": "agentes-de-ia-que-son-cuando-valen-la-pena-y-como-evaluarlos",
+          "title": "AI agents: what they are, when they pay off and what to decide before investing",
+          "description": "What IBM, Anthropic and Gartner say, which risks they carry and which controls to require before going live."
+        },
+        {
+          "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+          "title": "What is RPA and when it makes sense versus AI",
+          "description": "What each technology solves and what leadership should decide before automating."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "NIST, OECD or ISO 42001: which AI framework to use",
+          "description": "NIST AI RMF, OECD and ISO/IEC 42001 per their official sources, and what leadership decides."
         }
       ]
     },
@@ -565,7 +586,7 @@
       "items": [
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "Which AI governance frameworks to use",
+          "title": "NIST, OECD or ISO 42001: which AI framework to use",
           "description": "NIST AI RMF, the OECD principles, and ISO/IEC 42001 per their official sources, and what leadership decides."
         },
         {
@@ -761,7 +782,7 @@
       "items": [
         {
           "slug": "gobierno-de-datos-que-es-y-como-empezar",
-          "title": "Data governance: what it is and how to start",
+          "title": "Data governance per ISO/IEC 38505-1",
           "description": "What ISO/IEC 38505-1 says about the role of leadership, what management decides and the seven steps to start without a year-long project."
         },
         {
@@ -771,7 +792,7 @@
         },
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "What is AI governance and which frameworks to use",
+          "title": "NIST, OECD or ISO 42001: which AI framework to use",
           "description": "NIST AI RMF, the OECD principles and ISO/IEC 42001 per their official sources."
         },
         {
@@ -952,7 +973,7 @@
       "This service is the entry point to Cyrrus Intelligence Lab and connects with the IT strategy of the CIRA method's Construct phase: AI is one more initiative in the technology portfolio, with its business case, not a separate project. To prepare the committee we offer the AI for executives workshop at Leadership Academy."
     ],
     "articleLinkText": "Read also:",
-    "articleLinkLabel": "What is AI governance and which frameworks to use",
+    "articleLinkLabel": "NIST, OECD or ISO 42001: which AI framework to use",
     "related": {
       "eyebrow": "Related services",
       "title": "The strategy runs on the three pillars",
@@ -981,12 +1002,12 @@
       "items": [
         {
           "slug": "estrategia-de-ia-para-empresas-hoja-de-ruta",
-          "title": "AI strategy for companies: how to build the roadmap",
+          "title": "AI roadmap for companies",
           "description": "How to prioritize use cases with a single criterion, what the NIST AI RMF says and the seven steps of the roadmap."
         },
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "What is AI governance and which frameworks to use",
+          "title": "NIST, OECD or ISO 42001: which AI framework to use",
           "description": "NIST AI RMF, the OECD principles and ISO/IEC 42001 per their official sources, and what leadership decides."
         },
         {

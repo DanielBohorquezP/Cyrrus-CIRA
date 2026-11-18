@@ -134,8 +134,8 @@ export default function SeleccionProducto() {
       ? {
           href: `${prefix}/perspectivas/que-es-un-erp-guia-para-elegirlo`,
           title: lang === "en"
-            ? "What is an ERP and how to choose one"
-            : "Qué es un ERP y cómo elegirlo",
+            ? "What is an ERP: software, modules and seven criteria to evaluate it"
+            : "Qué es un ERP: software, módulos y siete criterios para evaluarlo",
           description: lang === "en"
             ? "A practical guide: modules, selection criteria and common mistakes."
             : "Guía práctica: módulos, criterios de selección y errores comunes.",
@@ -154,8 +154,8 @@ export default function SeleccionProducto() {
       ? {
           href: `${prefix}/perspectivas/software-recursos-humanos-nomina-mas-de-100-empleados`,
           title: lang === "en"
-            ? "HR and payroll software for 100+ employees"
-            : "Software de RR. HH. y nómina para más de 100 empleados",
+            ? "Payroll, HRIS or HCM software: what changes with 100+ employees"
+            : "Software de nómina, HRIS o HCM: qué cambia con más de 100 empleados",
           description: lang === "en"
             ? "What to evaluate in an HR and payroll platform before choosing one."
             : "Qué evaluar en una plataforma de RR. HH. y nómina antes de elegirla.",
@@ -164,8 +164,8 @@ export default function SeleccionProducto() {
       ? {
           href: `${prefix}/perspectivas/software-cmms-eam-como-elegir`,
           title: lang === "en"
-            ? "CMMS and EAM software: how to choose"
-            : "Software CMMS y EAM: cómo elegirlo",
+            ? "CMMS vs EAM software: differences and investment"
+            : "Software CMMS vs EAM: diferencias e inversión",
           description: lang === "en"
             ? "The difference between a CMMS, an EAM and the ERP's maintenance module."
             : "Diferencia entre CMMS, EAM y el módulo de mantenimiento del ERP.",

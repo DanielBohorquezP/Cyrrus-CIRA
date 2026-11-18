@@ -351,7 +351,7 @@
             },
             {
               "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-              "title": "Qué es la gobernanza de IA y qué marcos usar",
+              "title": "NIST, OCDE o ISO 42001: qué marco de IA usar",
               "description": "NIST AI RMF, OCDE e ISO/IEC 42001 antes de poner la IA en producción."
             }
           ]
@@ -714,12 +714,17 @@
           "items": [
             {
               "slug": "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
-              "title": "Cuándo contratar una consultoría de ciberseguridad",
+              "title": "Señales de alerta en ciberseguridad y qué evaluar",
               "description": "Las señales de que es momento, qué incluye, por qué importa la independencia de fabricantes y qué preguntar antes de contratar."
             },
             {
+              "slug": "gobierno-de-la-ciberseguridad-nist-csf-2-iso-27014",
+              "title": "Gobierno de la ciberseguridad: qué decide la dirección según NIST CSF 2.0 e ISO/IEC 27014",
+              "description": "Qué le toca a la dirección, en qué se diferencian ambas referencias y cinco decisiones de la gerencia."
+            },
+            {
               "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
-              "title": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
+              "title": "RTO y RPO: qué son y cómo definirlos en su plan de continuidad",
               "description": "Cómo sigue operando la empresa cuando el incidente ya ocurrió."
             }
           ]

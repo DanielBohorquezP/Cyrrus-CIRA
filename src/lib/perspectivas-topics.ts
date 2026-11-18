@@ -11,17 +11,6 @@ export const upcomingTopics = [
     image: "/assets/decoracion/Evento.jpg",
   },
   {
-    id: "post-9",
-    title: "Agentes de IA para empresas: qué son y casos de uso",
-    summary:
-      "Qué es un agente de IA, en qué se diferencia de un chatbot y en qué procesos de una empresa tiene sentido usarlo.",
-    label: "Gerencia de proyectos",
-    author: "Equipo Cyrrus",
-    published: "Enero 2027",
-    url: "/perspectivas",
-    image: "/assets/decoracion/IMG_20230228_082627.jpg",
-  },
-  {
     id: "post-10",
     title: "Señales de que su empresa necesita un CTO as a Service",
     summary:

@@ -497,6 +497,42 @@ export const blogPosts: BlogPostEntry[] = [
       "/assets/decoracion/IMG_20230705_122802.jpg",
     ],
   },
+  {
+    slug: "agentes-de-ia-que-son-cuando-valen-la-pena-y-como-evaluarlos",
+    coverImage: "/assets/decoracion/1785866224006.jpg",
+    publishedAt: "2026-11-18",
+    pillarHref: "/intelligence-lab/automatizaciones-desarrollo",
+    pillarLabelKey: "automatizacionAgentes",
+    serviceCtaIndexes: [10, 23],
+    serviceCtaImages: [
+      "/assets/decoracion/1785866224006.jpg",
+      "/assets/decoracion/1785866223775.jpg",
+    ],
+  },
+  {
+    slug: "cobit-2019-que-es-y-cuando-conviene-adoptarlo",
+    coverImage: "/assets/decoracion/IMG_20230228_083642.jpg",
+    publishedAt: "2026-11-18",
+    pillarHref: "/metodo-cira/estrategia/estrategia-de-ti",
+    pillarLabelKey: "estrategiaTi",
+    serviceCtaIndexes: [10, 22],
+    serviceCtaImages: [
+      "/assets/decoracion/IMG_20230228_083642.jpg",
+      "/assets/decoracion/IMG_20200313_092604173.jpg",
+    ],
+  },
+  {
+    slug: "gobierno-de-la-ciberseguridad-nist-csf-2-iso-27014",
+    coverImage: "/assets/decoracion/IMG_20230302_112825.jpg",
+    publishedAt: "2026-11-18",
+    pillarHref: "/metodo-cira/seleccion-de-soluciones/ciberseguridad",
+    pillarLabelKey: "ciberseguridad",
+    serviceCtaIndexes: [10, 21],
+    serviceCtaImages: [
+      "/assets/decoracion/IMG_20230302_112825.jpg",
+      "/assets/decoracion/IMG_20230228_082632.jpg",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string | undefined) {

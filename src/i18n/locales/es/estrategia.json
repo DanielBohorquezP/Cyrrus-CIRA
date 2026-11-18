@@ -37,7 +37,7 @@
     "eyebrow": "La base",
     "title": "¿Qué es la consultoría estratégica?",
     "description": "La consultoría estratégica es un servicio profesional externo que ayuda a la alta dirección de una empresa a definir su rumbo de mediano y largo plazo, tomar decisiones críticas y traducirlas en objetivos medibles (KPIs) que cada área pueda ejecutar. En Cyrrus no termina en un documento: el mismo equipo que hace el diagnóstico acompaña la ejecución y ajusta el plan con datos reales del negocio.",
-    "linkLabel": "Lea también: Cómo elegir una consultora estratégica confiable",
+    "linkLabel": "Lea también: Tres señales de una consultora que entiende su negocio",
     "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable",
     "usesTitle": "¿Para qué sirve la consultoría estratégica?",
     "uses": [
@@ -345,17 +345,22 @@
       "items": [
         {
           "slug": "estrategia-de-ti-que-es-y-que-incluye",
-          "title": "Qué es la estrategia de TI y qué incluye",
+          "title": "Las cinco piezas de una estrategia de TI",
           "description": "Qué responde, qué entregables deja y qué marcos públicos (ISO/IEC 38500, COBIT 2019) sirven de referencia."
         },
         {
+          "slug": "cobit-2019-que-es-y-cuando-conviene-adoptarlo",
+          "title": "COBIT 2019: qué es, sus 40 objetivos y cuándo conviene adoptarlo",
+          "description": "Qué dice ISACA, cómo se organizan los cinco dominios y qué debe decidir la dirección antes de lanzar un proyecto."
+        },
+        {
           "slug": "planeacion-estrategica-que-es-etapas-y-ejemplo",
-          "title": "Planeación estratégica: qué es, etapas y ejemplo",
+          "title": "Plan estratégico en siete etapas: herramientas y ejemplo ilustrativo",
           "description": "La estrategia de negocio de la que parte toda estrategia de TI."
         },
         {
           "slug": "que-es-un-erp-guia-para-elegirlo",
-          "title": "Qué es un ERP y cómo elegirlo",
+          "title": "Qué es un ERP: software, módulos y siete criterios para evaluarlo",
           "description": "La guía para la iniciativa de ERP del portafolio, sin sesgo de proveedor."
         }
       ]
@@ -527,7 +532,7 @@
       "La norma ISO 22301:2019 es la referencia internacional para sistemas de gestión de continuidad del negocio: un marco para planificar, implementar, operar, revisar y mejorar un sistema documentado que proteja a la organización de incidentes disruptivos y asegure su recuperación. No toda empresa necesita certificarse, pero sí tener un plan que resista esa lógica. Si el plan exige nuevas soluciones de respaldo, alta disponibilidad o un sitio alterno, las seleccionamos con nuestra consultoría de infraestructura, sin comisiones de fabricantes, y la implementación la gobierna la Gerencia de Proyectos."
     ],
     "articleLinkText": "Lea también:",
-    "articleLinkLabel": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
+    "articleLinkLabel": "RTO y RPO: qué son y cómo definirlos en su plan de continuidad",
     "related": {
       "eyebrow": "Servicios relacionados",
       "title": "La continuidad se apoya en la infraestructura",
@@ -556,12 +561,12 @@
       "items": [
         {
           "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
-          "title": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
+          "title": "RTO y RPO: qué son y cómo definirlos en su plan de continuidad",
           "description": "Los conceptos según NIST SP 800-34 e ISO 22301, la diferencia entre BCP, DRP y plan de contingencia, y qué decide la dirección."
         },
         {
           "slug": "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
-          "title": "Cuándo contratar una consultoría de ciberseguridad",
+          "title": "Señales de alerta en ciberseguridad y qué evaluar",
           "description": "Las señales de que es momento, qué incluye, por qué importa la independencia de fabricantes y qué preguntar antes de contratar."
         }
       ]

@@ -400,10 +400,10 @@
       ]
     },
     "como-elegir-una-consultora-estrategica-confiable": {
-      "title": "Cómo elegir una consultora estratégica confiable",
+      "title": "Tres señales de una consultora que entiende su negocio (y qué preguntar)",
       "label": "Consultoría estratégica",
       "excerpt": "Elegir una consultora no debería ser una comparación de propuestas. Tres señales de una firma que realmente entiende su negocio, frente a una que solo completa un documento.",
-      "metaDescription": "Cómo elegir una consultora estratégica confiable: qué preguntar, qué señales generan desconfianza y por qué el agnosticismo comercial es clave.",
+      "metaDescription": "Tres señales de una consultora que entiende su negocio: qué preguntar, qué señales generan desconfianza y por qué el agnosticismo comercial es clave.",
       "intro": "Una buena consultora no es la que más sabe. Es la que mejor entiende.",
       "keyTakeaways": [
         "Una consultora estratégica no debería elegirse por marca, precio ni tamaño de la propuesta, sino por cuánto entiende su negocio.",
@@ -763,14 +763,15 @@
             }
           ]
         }
-      ]
+      ],
+      "seoTitle": "Señales de una consultora que entiende su negocio"
     },
     "gobierno-de-ia-corporativo-en-la-empresa": {
-      "title": "Qué es el Gobierno de IA corporativo y por qué su empresa lo necesita",
-      "seoTitle": "Gobierno de IA: qué es y por qué importa",
+      "title": "Antes de adoptar IA: ¿está su empresa preparada para gobernarla?",
+      "seoTitle": "Antes de adoptar IA: ¿puede su empresa gobernarla?",
       "label": "Gobierno de IA",
       "excerpt": "Antes de preguntarse qué inteligencia artificial incorporar, toda organización debería preguntarse si está preparada para gobernarla. Qué es el Gobierno de IA y por dónde debe empezar un CEO.",
-      "metaDescription": "Qué es el Gobierno de IA corporativo, en qué se distingue del Gobierno de Datos y las preguntas que todo CEO debería responder antes de adoptar IA.",
+      "metaDescription": "Las preguntas que todo CEO debería responder antes de adoptar IA: reglas, roles y controles, y en qué se distingue el Gobierno de IA del Gobierno de Datos.",
       "intro": "La IA puede acelerar una decisión, el gobierno determina si esa decisión debe tomarse.",
       "keyTakeaways": [
         "El Gobierno de IA es el conjunto de reglas, roles y controles que aseguran que la IA de la empresa sea rentable, segura y alineada con su estrategia.",
@@ -1181,11 +1182,11 @@
       ]
     },
     "gerencia-de-proyectos-cuando-contratar-una-pmo-externa": {
-      "title": "Gerencia de proyectos: cuándo contratar una PMO externa",
+      "title": "Cuándo contratar una PMO externa: cinco señales y qué exigirle",
       "seoTitle": "Outsourcing de PMO: cuándo conviene contratarla",
       "label": "Gerencia de proyectos",
       "excerpt": "Un proyecto no fracasa por falta de cronograma, sino por falta de alguien que responda por el resultado. Cinco señales de que su proyecto necesita una gerencia externa y qué debe exigirle.",
-      "metaDescription": "Gerencia de proyectos: qué es, cuándo contratar una PMO externa, qué debe entregar y cómo elegirla. Cinco señales de que su proyecto necesita ayuda.",
+      "metaDescription": "Cuándo contratar una PMO externa: cinco señales de que su proyecto necesita ayuda, qué debe entregar y cómo elegirla.",
       "intro": "Si nadie en su organización puede responder con certeza quién es el dueño del resultado de su proyecto, probablemente la pregunta no es cómo hacerle seguimiento, sino quién lo está gerenciando.",
       "keyTakeaways": [
         "La gerencia de proyectos es la planeación, dirección, control y ejecución de una iniciativa para que cumpla tiempo, costo, alcance y calidad.",
@@ -1436,10 +1437,10 @@
       ]
     },
     "que-es-un-erp-guia-para-elegirlo": {
-      "title": "Qué es un ERP y cómo elegirlo: guía práctica",
+      "title": "Qué es un ERP: software, módulos y siete criterios para evaluarlo",
       "label": "Selección de ERP",
       "excerpt": "Un ERP integra las finanzas, las compras, los inventarios y la operación en una sola plataforma. Qué es, para qué sirve, qué módulos incluye y siete criterios para elegir el adecuado.",
-      "metaDescription": "Qué es un ERP, para qué sirve, qué módulos incluye y cómo elegir el adecuado para su empresa. Guía con criterios de selección y errores comunes.",
+      "metaDescription": "Qué es un ERP (software de gestión empresarial), para qué sirve, qué módulos incluye y con qué siete criterios evaluarlo. Guía con errores comunes.",
       "intro": "Si cada área de su empresa tiene su propia versión de los números, probablemente la pregunta no es qué sistema comprar, sino qué es un ERP y si realmente lo necesita.",
       "keyTakeaways": [
         "Un ERP es un sistema que integra en una sola plataforma las finanzas, las compras, los inventarios, las ventas y la producción de una empresa.",
@@ -1809,7 +1810,8 @@
           "label": "Prosci. The Correlation Between Change Management and Project Success",
           "url": "https://www.prosci.com/blog/the-correlation-between-change-management-and-project-success"
         }
-      ]
+      ],
+      "seoTitle": "Qué es un ERP: software, módulos y criterios"
     },
     "que-es-una-pmo-funciones-tipos-cuando-necesitarla": {
       "title": "Qué es una PMO: funciones, tipos y cuándo necesitarla",
@@ -2131,10 +2133,10 @@
       ]
     },
     "planeacion-estrategica-que-es-etapas-y-ejemplo": {
-      "title": "Planeación estratégica: qué es, etapas y ejemplo",
+      "title": "Plan estratégico en siete etapas: herramientas y ejemplo ilustrativo",
       "label": "Estrategia",
       "excerpt": "La planeación estratégica define hacia dónde va una empresa y cómo lo logrará. Qué es, para qué sirve, sus siete etapas, herramientas conocidas y un ejemplo ilustrativo.",
-      "metaDescription": "Qué es la planeación estratégica, para qué sirve, cuáles son sus etapas y herramientas (FODA, OKR, Balanced Scorecard) y un ejemplo ilustrativo paso a paso.",
+      "metaDescription": "Cómo hacer un plan estratégico: sus siete etapas, herramientas (FODA, OKR, Balanced Scorecard) y un ejemplo ilustrativo paso a paso.",
       "intro": "Si su empresa ya tuvo un plan estratégico que terminó archivado, probablemente el problema no fue el documento, sino cómo se hizo la planeación y cómo se ejecutó.",
       "keyTakeaways": [
         "La planeación estratégica es el proceso con el que la dirección define hacia dónde va la empresa, qué hará y qué no, y cómo medirá el avance.",
@@ -2414,14 +2416,15 @@
           "label": "Kaplan, R. y Norton, D. (2005). The Office of Strategy Management. Harvard Business Review",
           "url": "https://hbr.org/2005/10/the-office-of-strategy-management"
         }
-      ]
+      ],
+      "seoTitle": "Plan estratégico: siete etapas y ejemplo"
     },
     "gestion-del-cambio-organizacional-que-es-modelos-y-plantilla": {
-      "title": "Gestión del cambio organizacional: qué es, modelos y plan (con plantilla)",
-      "seoTitle": "Gestión del cambio organizacional: modelos y plan",
+      "title": "Plan de gestión del cambio: modelos ADKAR, Kotter y Lewin (con plantilla)",
+      "seoTitle": "Plan de gestión del cambio: modelos y plantilla",
       "label": "Gestión del cambio",
       "excerpt": "Qué es la gestión del cambio organizacional, en qué se diferencia del cambio organizacional, los modelos ADKAR, Kotter y Lewin, y cómo hacer un plan en ocho pasos. Incluye plantilla descargable.",
-      "metaDescription": "Qué es la gestión del cambio organizacional, modelos (ADKAR, Kotter, Lewin) y cómo hacer un plan en 8 pasos. Descargue gratis la plantilla en Excel.",
+      "metaDescription": "Cómo hacer un plan de gestión del cambio en 8 pasos y qué modelos usar (ADKAR, Kotter, Lewin). Descargue gratis la plantilla en Excel.",
       "intro": "Si su empresa ya implementó un sistema que nadie usa como se esperaba, probablemente el problema no fue la tecnología, sino cómo se gestionó el cambio en las personas.",
       "keyTakeaways": [
         "La gestión del cambio organizacional prepara y acompaña a las personas para que adopten y sostengan una nueva forma de trabajar.",
@@ -4145,11 +4148,11 @@
       ]
     },
     "software-cmms-eam-como-elegir": {
-      "title": "Software CMMS y EAM: qué es y cómo elegirlo",
-      "seoTitle": "Software CMMS y EAM: qué es y cómo elegirlo",
+      "title": "CMMS o EAM: diferencias y cuándo justifica cada software la inversión",
+      "seoTitle": "Software CMMS vs EAM: diferencias e inversión",
       "label": "Selección de software",
       "excerpt": "Diferencia entre CMMS, EAM y el módulo de mantenimiento del ERP, cuándo justifica cada uno la inversión y qué debe medir la gerencia antes de elegir.",
-      "metaDescription": "Qué es un software CMMS, en qué se diferencia de un EAM y del módulo del ERP, y cómo elegir con criterios de costo de parada y riesgo.",
+      "metaDescription": "Software CMMS vs EAM: en qué se diferencian, cómo se distinguen del módulo del ERP y cuándo justifica cada uno la inversión según costo de parada y riesgo.",
       "intro": "Antes de elegir un software de mantenimiento conviene saber cuánto le cuesta hoy una parada no planificada. La decisión de la gerencia es elegir entre un CMMS, un EAM o el módulo de mantenimiento del ERP sin sobrepagar ni quedarse corta.",
       "keyTakeaways": [
         "Un CMMS gestiona las tareas de mantenimiento (órdenes de trabajo, repuestos, programación); un EAM cubre todo el ciclo de vida del activo, incluida la planeación de capital, el riesgo y el desempeño.",
@@ -4499,11 +4502,11 @@
       ]
     },
     "software-recursos-humanos-nomina-mas-de-100-empleados": {
-      "title": "Software de RR. HH. y nómina para más de 100 empleados",
-      "seoTitle": "Software de RR. HH. y nómina: más de 100 empleados",
+      "title": "Software de nómina, HRIS o HCM: qué cambia con más de 100 empleados",
+      "seoTitle": "Software de nómina, HRIS o HCM para 100+ empleados",
       "label": "Selección de software",
       "excerpt": "Diferencia entre software de nómina, HRIS y HCM, qué cambia cuando la empresa supera los 100 empleados y qué debe decidir la gerencia antes de elegir.",
-      "metaDescription": "Software de recursos humanos y nómina para empresas de más de 100 empleados: nómina, HRIS o HCM, qué cambia con el tamaño y cómo elegir.",
+      "metaDescription": "Software de nómina, HRIS o HCM para empresas de más de 100 empleados: en qué se diferencian, qué cambia con el tamaño y qué decide la gerencia antes de elegir.",
       "intro": "Con 20 empleados, la nómina es un proceso. Con más de 100 y operación en varios países, es un riesgo de cumplimiento, un costo importante y una de las bases de datos personales más sensibles de la empresa.",
       "keyTakeaways": [
         "El software de nómina procesa pagos; el HRIS administra los datos del empleado; el HCM cubre todo el ciclo de vida de las personas. Los proveedores no definen estos términos igual, así que compare funciones, no etiquetas.",
@@ -5382,11 +5385,11 @@
       ]
     },
     "que-es-un-crm-y-como-elegir-el-correcto": {
-      "title": "Qué es un CRM y cómo elegir el correcto para su empresa",
-      "seoTitle": "Qué es un CRM y cómo elegir el correcto",
+      "title": "Qué es un CRM: tipos, riesgos y qué revisar en el software antes de comprar",
+      "seoTitle": "Qué es un CRM: tipos y riesgos antes de comprar",
       "label": "Selección de software",
       "excerpt": "Qué es un CRM, qué tipos hay según IBM, qué riesgos reconoce el propio fabricante de tecnología y qué debe decidir la gerencia antes de elegir uno.",
-      "metaDescription": "Qué es un CRM, qué tipos existen, qué riesgos tiene y cómo elegir el correcto. Criterios para la gerencia antes de comprar, con fuentes de IBM y Microsoft.",
+      "metaDescription": "Qué es un CRM, qué tipos existen, qué riesgos tiene y qué revisar en el software antes de comprarlo. Criterios para la gerencia, con fuentes de IBM y Microsoft.",
       "intro": "Un CRM suele comprarse como una herramienta de ventas y terminar siendo un sistema que toda la empresa debe usar. Por eso conviene decidir primero qué proceso se quiere ordenar y quién lo va a usar, y solo después comparar productos.",
       "keyTakeaways": [
         "Según IBM, un CRM es un conjunto de tecnologías integradas para documentar, dar seguimiento y gestionar las relaciones de una organización con clientes actuales y potenciales.",
@@ -6126,11 +6129,11 @@
       ]
     },
     "que-es-gobernanza-de-ia-y-que-marcos-usar": {
-      "title": "Qué es la gobernanza de IA y qué marcos usar: NIST, OCDE e ISO/IEC 42001",
-      "seoTitle": "Qué es la gobernanza de IA y qué marcos usar",
+      "title": "NIST AI RMF, OCDE e ISO/IEC 42001: qué marco de IA elegir",
+      "seoTitle": "NIST, OCDE o ISO 42001: qué marco de IA usar",
       "label": "Gobierno de IA",
       "excerpt": "Qué publican el NIST, la OCDE y la IEC sobre cómo gestionar la IA, en qué se diferencian sus tres referencias y qué debe decidir la gerencia antes de elegir una.",
-      "metaDescription": "Qué es la gobernanza de IA y qué marcos usar: NIST AI RMF, principios de la OCDE e ISO/IEC 42001 según sus fuentes oficiales, y qué decide la gerencia.",
+      "metaDescription": "NIST AI RMF, principios de la OCDE e ISO/IEC 42001 según sus fuentes oficiales: en qué se diferencian y qué decide la gerencia antes de elegir un marco.",
       "intro": "Antes de comprar una herramienta de gobernanza conviene saber qué se va a gobernar y con qué referencia. Tres referencias públicas sirven de punto de partida: el marco del NIST, los principios de la OCDE y la norma ISO/IEC 42001.",
       "keyTakeaways": [
         "El NIST describe su AI RMF como un marco de uso voluntario con cuatro funciones: gobernar, mapear, medir y gestionar.",
@@ -7174,11 +7177,11 @@
       ]
     },
     "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo": {
-      "title": "Plan de continuidad del negocio: qué es, BIA, RTO y RPO",
-      "seoTitle": "Plan de continuidad del negocio: BIA, RTO y RPO",
+      "title": "RTO y RPO: qué son y cómo definirlos en su plan de continuidad",
+      "seoTitle": "RTO y RPO: qué son y cómo definirlos",
       "label": "Estrategia",
       "excerpt": "Qué es un plan de continuidad del negocio, en qué se diferencia del DRP y del plan de contingencia, qué es el BIA, qué son el RTO y el RPO, y qué debe decidir la dirección, según NIST SP 800-34 e ISO 22301.",
-      "metaDescription": "Qué es un plan de continuidad del negocio (BCP), su diferencia con el DRP, el BIA, el RTO y el RPO, según NIST SP 800-34 e ISO 22301. Pasos y decisiones.",
+      "metaDescription": "Qué son el RTO y el RPO, cómo salen del análisis de impacto (BIA) y qué decide la dirección en un plan de continuidad, según NIST SP 800-34 e ISO 22301.",
       "intro": "Si su empresa tiene un plan de continuidad que nadie ha probado, o un respaldo que nadie ha restaurado, esta guía explica qué debería contener ese plan y quién debe decidirlo, con las definiciones de las fuentes oficiales.",
       "keyTakeaways": [
         "Un plan de continuidad del negocio (BCP) se centra en sostener los procesos de negocio durante y después de una interrupción; el DRP, en restaurar los sistemas de información (NIST SP 800-34).",
@@ -7411,8 +7414,8 @@
       ]
     },
     "estrategia-de-ti-que-es-y-que-incluye": {
-      "title": "Estrategia de TI: qué es, qué incluye y cómo se construye",
-      "seoTitle": "Estrategia de TI: qué es y qué incluye",
+      "title": "Las cinco piezas de una estrategia de TI: del diagnóstico al gobierno",
+      "seoTitle": "Las cinco piezas de una estrategia de TI",
       "label": "Estrategia",
       "excerpt": "Qué es una estrategia de TI, para qué sirve, qué entregables deja, qué es el gobierno de TI según ISO/IEC 38500 y COBIT, y cómo se construye paso a paso.",
       "metaDescription": "Qué es una estrategia de TI y qué incluye (diagnóstico, arquitectura objetivo, portafolio, casos de negocio, gobierno), según ISO/IEC 38500 y COBIT 2019.",
@@ -7628,11 +7631,11 @@
       ]
     },
     "senales-de-que-necesita-una-consultoria-de-ciberseguridad": {
-      "title": "Señales de que su empresa necesita una consultoría de ciberseguridad y cómo las resuelve un socio independiente de fabricantes",
-      "seoTitle": "Cuándo contratar una consultoría de ciberseguridad",
+      "title": "Señales de alerta en ciberseguridad y qué incluye una evaluación de madurez",
+      "seoTitle": "Señales de alerta en ciberseguridad y qué evaluar",
       "label": "Ciberseguridad",
       "excerpt": "Las señales que indican que es momento de una consultoría de ciberseguridad, qué incluye una evaluación de madurez, por qué importa la independencia de fabricantes, referencias de precio y cómo preseleccionar una firma.",
-      "metaDescription": "Señales de que su empresa necesita una consultoría de ciberseguridad, qué incluye, por qué importa que sea independiente, precios de referencia y qué preguntar.",
+      "metaDescription": "Señales de alerta en ciberseguridad, qué incluye una evaluación de madurez, por qué importa la independencia de fabricantes y qué preguntar antes de contratar.",
       "intro": "Las señales más claras son estructurales, no personales: un intento de brecha que su equipo no pudo explicar, una auditoría de cumplimiento que casi no pasa, un conjunto de herramientas que nadie gestiona de verdad o un proveedor que vendió una plataforma y se fue. En nuestro criterio, no reflejan la competencia del equipo, sino una brecha entre la complejidad del problema y la capacidad de la estructura actual. Esta guía explica qué cubre una consultoría de ciberseguridad, qué dolores enfrentan con más frecuencia los CEO, CIO y CFO y cómo preseleccionar una firma.",
       "keyTakeaways": [
         "Las señales de alerta suelen ser estructurales: brechas de cumplimiento, herramientas sin dueño y dependencia de un proveedor apuntan a un problema de estructura, no a una falla del equipo.",
@@ -7895,8 +7898,8 @@
       ]
     },
     "gobierno-de-datos-que-es-y-como-empezar": {
-      "title": "Gobierno de datos: qué es, qué decide la dirección y cómo empezar",
-      "seoTitle": "Gobierno de datos: qué es y cómo empezar",
+      "title": "Gobierno de datos según ISO/IEC 38505-1: qué decide la dirección",
+      "seoTitle": "Gobierno de datos según ISO/IEC 38505-1",
       "label": "Gobierno de IA",
       "excerpt": "Qué es el gobierno de datos, qué dice ISO/IEC 38505-1 sobre el papel de la dirección, en qué se diferencia de la calidad y de la gestión de datos, y cómo empezar sin un proyecto de un año.",
       "metaDescription": "Gobierno de datos según ISO/IEC 38505-1:2026: qué decide la dirección (dueños, versión oficial, reglas), su diferencia con la calidad de datos y cómo empezar.",
@@ -8114,8 +8117,8 @@
       ]
     },
     "estrategia-de-ia-para-empresas-hoja-de-ruta": {
-      "title": "Estrategia de IA para empresas: cómo construir la hoja de ruta",
-      "seoTitle": "Estrategia de IA para empresas: hoja de ruta",
+      "title": "Hoja de ruta de IA para empresas: casos de uso, riesgo y medición",
+      "seoTitle": "Hoja de ruta de IA para empresas",
       "label": "Gobierno de IA",
       "excerpt": "Qué es una estrategia de IA, qué la diferencia de comprar herramientas, cómo priorizar casos de uso, qué dice el NIST AI RMF sobre gestionar el riesgo desde el diseño y qué decide la dirección.",
       "metaDescription": "Cómo construir una estrategia de IA: inventario, casos de uso priorizados, hoja de ruta, gobierno (NIST AI RMF) y medición contra el proceso real.",
@@ -8325,11 +8328,11 @@
       ]
     },
     "como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible": {
-      "title": "Cómo elegir una consultoría de IA con ejecución de punta a punta y ROI medible",
-      "seoTitle": "Cómo elegir una consultoría de IA",
+      "title": "Qué exigir a una firma de IA: independencia, ejecución con responsable y adopción",
+      "seoTitle": "Qué exigir a una firma de IA antes de contratar",
       "label": "Estrategia de IA",
       "excerpt": "Tres exigencias para elegir una consultoría de IA: recomendación independiente de fabricantes, ejecución con responsable hasta el go-live y adopción estructurada. Incluye rangos de precio de referencia y qué pedir en el contrato.",
-      "metaDescription": "Cómo elegir una consultoría de IA: neutralidad frente a fabricantes, ejecución con responsable hasta el go-live, adopción, precios de referencia y qué exigir.",
+      "metaDescription": "Qué exigir a una firma de IA antes de contratarla: neutralidad frente a fabricantes, ejecución con responsable hasta el go-live, adopción y el contrato.",
       "intro": "Elegir una consultoría de IA se reduce a tres exigencias: una recomendación tecnológica independiente de los fabricantes, una ejecución con responsable hasta el go-live y una adopción estructurada. Una firma que se detiene en la presentación de estrategia no cumple. Esta guía propone un marco para evaluar, preguntar y preseleccionar antes de firmar.",
       "keyTakeaways": [
         "En nuestro criterio, una consultoría de IA debería poder decir por escrito quién responde por el resultado de negocio después del go-live, y no solo por los entregables.",
@@ -8794,6 +8797,763 @@
         {
           "label": "Microsoft Learn. Plan a Dynamics 365 implementation strategy (comité de dirección, equipo central, contrato con el integrador, presupuesto y metodología; 2024). Consultado el 14 de noviembre de 2026",
           "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/implementation-strategy"
+        }
+      ]
+    },
+    "agentes-de-ia-que-son-cuando-valen-la-pena-y-como-evaluarlos": {
+      "title": "Agentes de IA: qué son, cuándo valen la pena y qué decidir antes de invertir",
+      "seoTitle": "Agentes de IA: cuándo valen la pena y qué evaluar",
+      "label": "Inteligencia artificial",
+      "excerpt": "Qué es un agente de IA según IBM, en qué se diferencia de un chatbot y de un flujo automatizado, cuándo conviene según Anthropic y Gartner, qué riesgos tiene y qué controles debe exigir la dirección.",
+      "metaDescription": "Qué es un agente de IA, cuándo conviene frente a una automatización simple, sus riesgos y qué decidir antes de invertir. Fuentes: IBM, Anthropic y Gartner.",
+      "intro": "Un proveedor le ofrece un agente de IA que promete resolver un proceso completo sin intervención. Antes de aprobar el presupuesto conviene saber qué es realmente un agente, cuándo vale la pena frente a una automatización más simple y qué controles debe exigir la dirección.",
+      "keyTakeaways": [
+        "Según IBM, un agente de IA es un sistema que realiza tareas de forma autónoma, diseñando flujos de trabajo con las herramientas disponibles. Anthropic lo distingue de un flujo automatizado: el agente dirige su propio proceso en lugar de seguir un camino definido de antemano.",
+        "Gartner predice que más del 40 % de los proyectos de IA agéntica se cancelarán antes de que termine 2027, por costos crecientes, valor poco claro o controles de riesgo insuficientes (predicción de Gartner, junio de 2025).",
+        "Antes de invertir, la dirección debe decidir si el proceso necesita un agente o basta algo más simple, qué acciones requieren aprobación humana y quién responde si el agente se equivoca."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Su proceso necesita un agente o algo más simple?",
+          "description": "Partimos del diagnóstico del proceso y de la arquitectura de la empresa, y solo desarrollamos a la medida cuando la solución correcta no existe en el mercado.",
+          "checklist": [
+            "Diagnóstico del proceso antes de elegir la tecnología",
+            "Solución integrada a la arquitectura de IA de la empresa"
+          ],
+          "ctaLabel": "Conocer agentes de IA y automatización",
+          "imageAlt": "Consultor de Cyrrus revisando con un directivo un proceso candidato a automatizar"
+        },
+        {
+          "title": "Un agente en producción necesita responsable",
+          "description": "Del mismo diagnóstico sale quién responde por cada agente, qué acciones requieren aprobación humana y cómo se registra lo que hace.",
+          "checklist": [
+            "Responsable definido por cada agente",
+            "Acciones críticas con aprobación humana"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo directivo definiendo responsables y límites para un agente de IA"
+        }
+      ],
+      "sources": [
+        {
+          "label": "IBM. What are AI agents? (definición, componentes, riesgos y buenas prácticas). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.ibm.com/think/topics/ai-agents"
+        },
+        {
+          "label": "Anthropic. Building effective agents (diferencia entre flujos de trabajo y agentes; costo, latencia y controles). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents"
+        },
+        {
+          "label": "Gartner. Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027 (comunicado del 25 de junio de 2025). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027"
+        },
+        {
+          "label": "NIST. AI Risk Management Framework (AI RMF 1.0, 26 de enero de 2023; perfil de IA generativa, 26 de julio de 2024). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "La propuesta llega con una promesa: un agente que lee los correos, consulta el ERP, decide y ejecuta. La demostración es impecable. Lo que la demostración no muestra es qué pasa cuando el agente se equivoca, cuánto cuesta mantenerlo ni si el proceso necesitaba un agente."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué es un agente de IA, en qué se diferencia de un chatbot y de un flujo automatizado, cuándo conviene, qué riesgos reconocen las fuentes y qué debe decidir la dirección antes de invertir."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es un agente de IA?"
+        },
+        {
+          "type": "p",
+          "text": "IBM define un agente de IA como un sistema que realiza tareas de forma autónoma, diseñando flujos de trabajo con las herramientas que tiene disponibles. Su núcleo es un modelo de lenguaje de gran tamaño, y por eso también se les llama agentes de LLM. Pueden ir más allá de conversar: toman decisiones, resuelven problemas, interactúan con sistemas externos y ejecutan acciones."
+        },
+        {
+          "type": "p",
+          "text": "Según IBM, lo que los separa de un chatbot sin capacidades agénticas es que este no tiene herramientas, memoria ni razonamiento: persigue objetivos de corto plazo y necesita la intervención continua del usuario. Un agente descompone la tarea en pasos, usa herramientas (bases de datos, búsquedas, interfaces de programación) y corrige su plan a medida que observa los resultados."
+        },
+        {
+          "type": "p",
+          "text": "Anthropic, en su guía para construir agentes, hace una distinción útil para quien decide: los flujos de trabajo son sistemas en los que un modelo y unas herramientas se orquestan por caminos definidos en código; los agentes son sistemas en los que el modelo dirige su propio proceso y el uso de herramientas, y mantiene el control sobre cómo cumple la tarea."
+        },
+        {
+          "type": "h2",
+          "text": "¿En qué se diferencia un agente de un chatbot o de un flujo automatizado?"
+        },
+        {
+          "type": "p",
+          "text": "La diferencia que importa para el negocio es quién decide el camino. La tabla resume lo que dicen IBM y Anthropic."
+        },
+        {
+          "type": "table",
+          "text": "Chatbot, flujo automatizado y agente según IBM y Anthropic",
+          "columns": [
+            "Tipo",
+            "Quién decide el camino",
+            "Lo que señala la fuente"
+          ],
+          "rows": [
+            [
+              "Chatbot sin capacidades agénticas",
+              "El usuario, en cada intercambio",
+              "Sin herramientas, memoria ni razonamiento; requiere entrada continua del usuario (IBM)"
+            ],
+            [
+              "Flujo de trabajo (workflow)",
+              "El código, con pasos definidos de antemano",
+              "Modelo y herramientas orquestados por caminos predefinidos; adecuado para tareas bien definidas (Anthropic)"
+            ],
+            [
+              "Agente",
+              "El propio modelo, durante la ejecución",
+              "Dirige su proceso y el uso de herramientas; conviene cuando se necesita flexibilidad y decisión basada en el modelo a escala (Anthropic)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para la diferencia entre un agente y la automatización robótica de procesos (RPA), vea la guía sobre qué es RPA y cuándo conviene frente a la inteligencia artificial.",
+          "links": [
+            {
+              "text": "qué es RPA y cuándo conviene frente a la inteligencia artificial",
+              "href": "/perspectivas/que-es-rpa-y-cuando-conviene-frente-a-la-ia"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo tiene sentido usar un agente y cuándo no?"
+        },
+        {
+          "type": "p",
+          "text": "Anthropic recomienda buscar la solución más simple posible y aumentar la complejidad solo cuando haga falta, y aclara que eso puede significar no construir sistemas agénticos en absoluto. Para muchas aplicaciones, dice, basta optimizar una sola llamada al modelo con recuperación de información y ejemplos. Los sistemas de varios pasos se justifican cuando las soluciones simples se quedan cortas."
+        },
+        {
+          "type": "p",
+          "text": "Gartner llega a una conclusión parecida desde el lado del mercado. Su analista Anushree Verma afirma que muchos casos de uso presentados hoy como agénticos no requieren una implementación agéntica, y sugiere usar agentes cuando hay decisiones que tomar, automatización para los flujos rutinarios y asistentes para recuperar información sencilla. Gartner recomienda perseguir la IA agéntica solo donde aporte valor o retorno claros."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, tres preguntas ordenan la decisión: si el camino del proceso se puede escribir de antemano, un flujo automatizado suele bastar; si el resultado no tolera errores sin revisión, el agente necesita aprobación humana en cada paso crítico; y si nadie puede explicar cuál es el beneficio medible, todavía no es momento de invertir."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué riesgos y costos tiene un agente?"
+        },
+        {
+          "type": "p",
+          "text": "IBM enumera cuatro limitaciones. Primera, las dependencias entre varios agentes: la orquestación puede fallar, y los agentes construidos sobre el mismo modelo pueden compartir debilidades. Segunda, los ciclos de retroalimentación infinitos, en los que el agente llama una y otra vez a las mismas herramientas. Tercera, la complejidad computacional: construirlos puede ser lento y costoso, y algunas tareas toman varios días. Cuarta, la privacidad de los datos, que se complica si la integración se maneja mal y no hay supervisión humana."
+        },
+        {
+          "type": "p",
+          "text": "Anthropic añade que los sistemas agénticos suelen cambiar latencia y costo por un mejor desempeño, y que su naturaleza autónoma implica costos más altos y el riesgo de que los errores se acumulen. Pide, además, tener cierto nivel de confianza en las decisiones del agente."
+        },
+        {
+          "type": "p",
+          "text": "A nivel de mercado, Gartner predice que más del 40 % de los proyectos de IA agéntica se cancelarán antes de que termine 2027, por costos crecientes, valor poco claro o controles de riesgo insuficientes. Es una predicción, no una medición, y conviene leerla así. La misma publicación cita una encuesta de enero de 2025 a 3.412 asistentes a un seminario web: el 19 % dijo haber hecho inversiones significativas en IA agéntica, el 42 % inversiones conservadoras, el 8 % ninguna, y el resto estaba a la espera o no sabía."
+        },
+        {
+          "type": "quote",
+          "text": "La pregunta no es si el agente funciona en la demostración, sino quién responde cuando falla en producción."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué controles debería exigir la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "IBM recomienda cuatro prácticas para limitar el riesgo: un registro de actividad que muestre lo que hizo el agente; la posibilidad de que una persona lo interrumpa de forma ordenada; identificadores únicos por agente, para dar trazabilidad y responsabilidad; y supervisión humana con aprobación previa en las acciones de alto impacto, como envíos masivos de correos u operaciones financieras."
+        },
+        {
+          "type": "p",
+          "text": "Anthropic sugiere incluir condiciones de parada, como un número máximo de iteraciones, y hacer pruebas extensas en entornos aislados, con las salvaguardas adecuadas. En agentes de programación, las pruebas automáticas ayudan, pero la revisión humana sigue siendo necesaria."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, estos controles son reglas de la empresa antes que funciones del producto. El NIST publica un marco de gestión de riesgos de IA de uso voluntario (versión 1.0 de enero de 2023) y un perfil para IA generativa (julio de 2024) que sirven de referencia. Para aterrizarlos en reglas, roles y responsables, vea la guía sobre gobernanza de IA y marcos de referencia.",
+          "links": [
+            {
+              "text": "gobernanza de IA y marcos de referencia",
+              "href": "/perspectivas/que-es-gobernanza-de-ia-y-que-marcos-usar"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo evitar que le vendan automatización vieja como agente?"
+        },
+        {
+          "type": "p",
+          "text": "Gartner advierte sobre el \"agent washing\": proveedores que rebautizan productos existentes, como asistentes, RPA o chatbots, sin capacidades agénticas sustanciales. Según su estimación, solo unos 130 de los miles de proveedores de IA agéntica ofrecen algo real. Es una estimación de Gartner, no un dato verificable por terceros."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, antes de comparar precios conviene pedirle al proveedor, por escrito, que muestre con un proceso suyo: qué decide el agente por sí mismo y qué decide el código; qué herramientas puede usar y con qué permisos; qué registra y cómo se interrumpe; qué pasa cuando se equivoca; y cuánto cuesta operarlo cada mes, no solo construirlo."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección antes de invertir?"
+        },
+        {
+          "type": "p",
+          "text": "La decisión no es tecnológica. Son cuatro decisiones de la gerencia: el proceso y el resultado de negocio que se quiere mejorar, con una medida antes y después; si basta un flujo automatizado o se justifica un agente; qué acciones el agente puede ejecutar solo y cuáles requieren aprobación humana; y quién es el responsable del agente una vez en operación."
+        },
+        {
+          "type": "p",
+          "text": "Si esas cuatro decisiones no tienen respuesta, lo que corresponde no es comprar un agente, sino ordenar el proceso y la arquitectura sobre la que se apoyará."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus partimos del diagnóstico y de la arquitectura de la empresa, y solo cuando la solución correcta no existe en el mercado la desarrollamos a la medida, integrada a esa arquitectura y no como un desarrollo suelto. Ese es el enfoque de nuestro servicio de agentes de IA y automatización.",
+          "links": [
+            {
+              "text": "agentes de IA y automatización",
+              "href": "/intelligence-lab/automatizaciones-desarrollo"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si lo que hace falta es la estrategia que decide en qué procesos invertir primero, empezamos por la estrategia de IA; y si ya hay agentes funcionando sin reglas claras, por el gobierno de IA.",
+          "links": [
+            {
+              "text": "estrategia de IA",
+              "href": "/intelligence-lab/estrategia-de-ia"
+            },
+            {
+              "text": "gobierno de IA",
+              "href": "/intelligence-lab/gobierno-de-ia"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar: cómo construir la hoja de ruta de una estrategia de IA y qué exigir a una firma de consultoría de IA antes de contratarla.",
+          "links": [
+            {
+              "text": "cómo construir la hoja de ruta de una estrategia de IA",
+              "href": "/perspectivas/estrategia-de-ia-para-empresas-hoja-de-ruta"
+            },
+            {
+              "text": "qué exigir a una firma de consultoría de IA antes de contratarla",
+              "href": "/perspectivas/como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible"
+            }
+          ]
+        }
+      ]
+    },
+    "cobit-2019-que-es-y-cuando-conviene-adoptarlo": {
+      "title": "COBIT 2019: qué es, sus 40 objetivos y cuándo conviene adoptarlo",
+      "seoTitle": "COBIT 2019: qué es y cuándo conviene adoptarlo",
+      "label": "Estrategia",
+      "excerpt": "Qué es COBIT 2019 según ISACA, cómo se organizan sus 40 objetivos de gobierno y gestión, cómo se relaciona con ISO/IEC 38500, cuándo conviene adoptarlo y qué debe decidir la dirección antes de empezar.",
+      "metaDescription": "Qué es COBIT 2019, cómo se organizan sus 40 objetivos, cuándo conviene adoptarlo y qué debe decidir la dirección. Fuentes: ISACA e ISO/IEC 38500.",
+      "intro": "Si en su empresa alguien propone \"implementar COBIT\", la primera pregunta no es cómo, sino para qué. Esta guía explica qué es COBIT 2019, cómo está organizado, cómo se relaciona con ISO/IEC 38500 y cuándo conviene adoptarlo.",
+      "keyTakeaways": [
+        "ISACA describe COBIT como un marco para el gobierno y la gestión de la tecnología de la empresa; COBIT 2019 define 40 objetivos de gobierno y gestión agrupados en cinco dominios.",
+        "ISO/IEC 38500:2024 ofrece principios de gobierno de TI para los órganos de gobierno; COBIT aporta un modelo con objetivos concretos. Ninguno es una receta.",
+        "Según un artículo de ISACA, un programa de gobierno debe ser iniciado y patrocinado por la alta dirección, tener un alcance acotado y fijar objetivos alcanzables."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Qué decisiones de TI necesita gobernar su empresa?",
+          "description": "Antes de elegir un marco, definimos qué tecnología necesita el negocio, en qué orden y quién decide sobre ese portafolio.",
+          "checklist": [
+            "Portafolio de TI priorizado por impacto en el negocio",
+            "Gobierno de TI con comité, indicadores y ciclo de revisión"
+          ],
+          "ctaLabel": "Conocer la consultoría en estrategia de TI",
+          "imageAlt": "Consultor de Cyrrus definiendo con un directivo quién decide sobre el portafolio de TI"
+        },
+        {
+          "title": "Gobierno de TI sin un cargo de tiempo completo",
+          "description": "CIO o CTO as a Service: gobierno de TI, arquitectura y alineación de la tecnología con el negocio, bajo demanda.",
+          "checklist": [
+            "Mismo criterio, dedicación ajustada",
+            "Agnósticos de proveedor"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Sesión de gobierno de TI con el equipo directivo"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ISACA. COBIT — Control Objectives for Information Technologies (página oficial de COBIT; 40 objetivos de gobierno y gestión, áreas de enfoque, guías y certificados). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.isaca.org/resources/cobit"
+        },
+        {
+          "label": "Anoruo, C. Employing COBIT 2019 for Enterprise Governance Strategy. ISACA Industry News, 28 de octubre de 2019 (cinco dominios; 13 metas empresariales y 13 de alineación; patrocinio de la alta dirección). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2019/employing-cobit-2019-for-enterprise-governance-strategy"
+        },
+        {
+          "label": "ISO. ISO/IEC 38500:2024 Information technology — Governance of IT for the organization (resumen oficial; 3.ª edición, febrero de 2024). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.iso.org/standard/81684.html"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "El comité pide \"gobierno de TI\" y alguien responde con una sigla: COBIT. Es un nombre conocido, pero la sigla sola no dice qué problema resuelve ni cuánto trabajo implica."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué es COBIT 2019, cómo está organizado, qué relación tiene con la norma ISO/IEC 38500, cuándo conviene adoptarlo y qué debe decidir la dirección antes de empezar."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es COBIT 2019?"
+        },
+        {
+          "type": "p",
+          "text": "ISACA, la asociación que lo publica, describe COBIT como un marco de referencia para el gobierno y la gestión de la tecnología de la información de la empresa. Su página oficial indica que COBIT 2019 está diseñado para integrarse con otros estándares, regulaciones y buenas prácticas, e incluye un marco actualizado y más recursos de implementación."
+        },
+        {
+          "type": "p",
+          "text": "Su núcleo es el modelo de objetivos de gobierno y gestión: según ISACA, son 40. Cubren desde alinear y planear hasta entregar servicios y monitorear los resultados. En nuestro criterio, cada objetivo sirve de punto de partida para asignar un responsable y un indicador."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo está organizado: dominios y objetivos?"
+        },
+        {
+          "type": "p",
+          "text": "Un artículo de ISACA sobre COBIT 2019 explica que los objetivos de gobierno y gestión se agrupan en cinco dominios: uno de gobierno y cuatro de gestión. Las siglas corresponden a los nombres en inglés."
+        },
+        {
+          "type": "table",
+          "text": "Dominios de COBIT 2019 según ISACA",
+          "columns": [
+            "Sigla",
+            "Nombre",
+            "Tipo"
+          ],
+          "rows": [
+            [
+              "EDM",
+              "Evaluar, dirigir y monitorear",
+              "Gobierno"
+            ],
+            [
+              "APO",
+              "Alinear, planear y organizar",
+              "Gestión"
+            ],
+            [
+              "BAI",
+              "Construir, adquirir e implementar",
+              "Gestión"
+            ],
+            [
+              "DSS",
+              "Entregar, servir y soportar",
+              "Gestión"
+            ],
+            [
+              "MEA",
+              "Monitorear, evaluar y valorar",
+              "Gestión"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "El mismo artículo menciona 13 metas empresariales y 13 metas de alineación. Además de este núcleo, la página de ISACA lista áreas de enfoque, como DevOps, riesgo de información y tecnología, y seguridad de la información, que aplican COBIT a temas específicos."
+        },
+        {
+          "type": "p",
+          "text": "ISACA también publica una guía de diseño, cuyo propósito es llevar COBIT a un uso práctico, y una guía de implementación que introduce los factores de diseño. No hace falta conocer cada objetivo para decidir si COBIT sirve: hace falta saber qué decisiones quiere gobernar la empresa."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué relación tiene COBIT con ISO/IEC 38500?"
+        },
+        {
+          "type": "p",
+          "text": "ISO/IEC 38500:2024, publicada en febrero de 2024 en su tercera edición, ofrece principios orientadores para los miembros de los órganos de gobierno, y para quienes los apoyan, sobre el uso eficaz, eficiente y aceptable de la TI. Según su resumen oficial, aplica a organizaciones de todos los tamaños, públicas, privadas y sin ánimo de lucro."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, la diferencia práctica es el nivel: la norma ISO le dice a la junta directiva qué principios aplicar al gobernar la TI, y COBIT ofrece un modelo con objetivos concretos que la gerencia puede asignar y medir. Se pueden usar juntos, o ninguno, según el tamaño y la madurez de la empresa."
+        },
+        {
+          "type": "p",
+          "text": "Para ver cómo encajan ambos dentro de una estrategia de TI completa, vea la guía sobre las cinco piezas de una estrategia de TI.",
+          "links": [
+            {
+              "text": "las cinco piezas de una estrategia de TI",
+              "href": "/perspectivas/estrategia-de-ti-que-es-y-que-incluye"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene adoptar COBIT y cuándo no?"
+        },
+        {
+          "type": "p",
+          "text": "Un artículo de ISACA sobre gobierno corporativo es claro en un punto: los programas de gobierno deben ser iniciados y patrocinados por la alta dirección, tener un alcance adecuado y definir siempre objetivos alcanzables. En nuestro criterio, es una advertencia contra el proyecto de gobierno que nace en el área de TI y nunca llega a la mesa de decisiones."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, COBIT conviene cuando la empresa ya sabe qué quiere gobernar (por ejemplo, el riesgo tecnológico, la entrega de servicios o la seguridad) y necesita un lenguaje común para asignar responsables e indicadores. No conviene todavía cuando no existe una estrategia de TI ni un dueño de las decisiones de tecnología: un marco de 40 objetivos aplicado sobre ese vacío produce documentos, no gobierno."
+        },
+        {
+          "type": "quote",
+          "text": "Un marco de gobierno sin alguien que decida con él es una biblioteca; con la alta dirección detrás, es un sistema de decisiones."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se empieza sin implementar los 40 objetivos?"
+        },
+        {
+          "type": "p",
+          "text": "ISACA no dice que haya que implementar los 40 objetivos de una vez: su página ofrece una guía de diseño, enfocada en poner COBIT en uso práctico, y una guía de implementación. En nuestro criterio, un arranque razonable tiene cinco pasos:"
+        },
+        {
+          "type": "p",
+          "text": "Primero, definir el problema o la decisión que se quiere gobernar y quién la toma hoy. Segundo, ubicar ese problema en los dominios y elegir los pocos objetivos que le corresponden, en lugar de los 40. Tercero, asignar un responsable por objetivo. Cuarto, definir cómo se mide el avance, con indicadores que la dirección pueda leer. Quinto, fijar cada cuánto se revisa y quién lo preside."
+        },
+        {
+          "type": "p",
+          "text": "Este orden es criterio de Cyrrus, no un procedimiento de ISACA. Lo que sí dice ISACA es que el alcance debe ser acotado y los objetivos alcanzables."
+        },
+        {
+          "type": "h2",
+          "text": "¿Hace falta certificarse en COBIT?"
+        },
+        {
+          "type": "p",
+          "text": "La página oficial de ISACA lista un certificado de fundamentos de COBIT, un programa de certificación en diseño e implementación y socios de capacitación acreditados. Son credenciales de formación. La página no menciona una certificación de la empresa como tal."
+        },
+        {
+          "type": "p",
+          "text": "Si un tercero (un cliente, un auditor o un proveedor) le exige una \"certificación COBIT\", conviene pedir por escrito a qué se refiere antes de asumir el costo, porque puede ser una exigencia sobre las personas, sobre los procesos o sobre otra norma distinta."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección antes de lanzar un proyecto COBIT?"
+        },
+        {
+          "type": "p",
+          "text": "Son cuatro decisiones de la gerencia, no del área de TI: qué se quiere gobernar y por qué ahora; quién patrocina el programa en la alta dirección; qué parte del marco se aplica primero y cuál queda fuera; y cómo se sabrá, dentro de un año, que el gobierno funciona."
+        },
+        {
+          "type": "p",
+          "text": "Si el patrocinio no está claro o el alcance abarca los 40 objetivos desde el primer día, el proyecto corre el riesgo que apunta ISACA: un programa sin patrocinio ni alcance acotado."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus prestamos consultoría en estrategia de TI como parte de la fase Construir del método CIRA: diagnóstico, arquitectura objetivo, portafolio priorizado y el gobierno de TI que decide sobre él. Si la empresa decide apoyarse en COBIT o en ISO/IEC 38500, lo hacemos sobre ese portafolio y sin sesgo de proveedor.",
+          "links": [
+            {
+              "text": "consultoría en estrategia de TI",
+              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si la empresa necesita dirección tecnológica sin un cargo de tiempo completo, ofrecemos CIO y CTO as a Service, y si el tema de fondo es la seguridad, trabajamos el gobierno de la ciberseguridad con la misma lógica.",
+          "links": [
+            {
+              "text": "gobierno de la ciberseguridad",
+              "href": "/perspectivas/gobierno-de-la-ciberseguridad-nist-csf-2-iso-27014"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar: qué es el gobierno de datos y qué decide la dirección, y por qué la selección de software debe partir de criterios y no de demostraciones.",
+          "links": [
+            {
+              "text": "qué es el gobierno de datos y qué decide la dirección",
+              "href": "/perspectivas/gobierno-de-datos-que-es-y-como-empezar"
+            },
+            {
+              "text": "la selección de software",
+              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+            }
+          ]
+        }
+      ]
+    },
+    "gobierno-de-la-ciberseguridad-nist-csf-2-iso-27014": {
+      "title": "Gobierno de la ciberseguridad: qué decide la dirección según NIST CSF 2.0 e ISO/IEC 27014",
+      "seoTitle": "Gobierno de ciberseguridad: NIST CSF 2.0 y 27014",
+      "label": "Ciberseguridad",
+      "excerpt": "Qué es el gobierno de la ciberseguridad, qué dicen NIST CSF 2.0 e ISO/IEC 27014 sobre el papel de la dirección, en qué se diferencian y qué debe decidir la gerencia.",
+      "metaDescription": "Qué es el gobierno de la ciberseguridad y qué decide la dirección según NIST CSF 2.0 (función Govern) e ISO/IEC 27014:2020. Diferencias y decisiones.",
+      "intro": "Cuando la ciberseguridad llega a la junta, la pregunta suele ser técnica: qué herramienta comprar. La pregunta de gobierno es otra: quién decide cuánto riesgo se acepta, quién responde y cómo se sabe que funciona. Esta guía explica cómo la plantean NIST CSF 2.0 e ISO/IEC 27014.",
+      "keyTakeaways": [
+        "ISO/IEC 27014:2020 ofrece orientación para que la organización evalúe, dirija, monitoree y comunique sus procesos de seguridad de la información; su público es el órgano de gobierno y la alta dirección.",
+        "NIST CSF 2.0 (26 de febrero de 2024) organiza los resultados de ciberseguridad en seis funciones, una de ellas GOVERN, y establece que el liderazgo de la organización es responsable de los riesgos de ciberseguridad y responde por ellos.",
+        "Ninguno de los dos es una lista de verificación: la dirección debe decidir su apetito de riesgo, los responsables, la política, los indicadores que revisará y los proveedores críticos."
+      ],
+      "serviceCtas": [
+        {
+          "title": "¿Quién decide cuánto riesgo de ciberseguridad se acepta?",
+          "description": "Ayudamos a decidir qué controles necesita la empresa y a elegir las soluciones y proveedores con criterios definidos antes de ver propuestas.",
+          "checklist": [
+            "Diagnóstico de riesgo antes de recomendar una herramienta",
+            "Controles y arquitectura según los riesgos encontrados"
+          ],
+          "ctaLabel": "Conocer ciberseguridad",
+          "imageAlt": "Consultor de Cyrrus revisando con la dirección los riesgos de ciberseguridad"
+        },
+        {
+          "title": "Proveedores comparados con los mismos criterios",
+          "description": "Comparación de soluciones y proveedores de ciberseguridad con criterios funcionales, técnicos, económicos y de sostenibilidad, sin sesgo de fabricante.",
+          "checklist": [
+            "Criterios definidos antes de ver proveedores",
+            "Independencia frente a fabricantes"
+          ],
+          "ctaLabel": "Hablar con nuestro equipo",
+          "imageAlt": "Equipo directivo comparando proveedores de ciberseguridad con criterios definidos"
+        }
+      ],
+      "sources": [
+        {
+          "label": "NIST. The NIST Cybersecurity Framework (CSF) 2.0, NIST CSWP 29, 26 de febrero de 2024 (funciones, categorías de GOVERN y comunicación con la dirección). Consultado el 18 de noviembre de 2026",
+          "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf"
+        },
+        {
+          "label": "NIST. The NIST Cybersecurity Framework (CSF) 2.0, ficha de la publicación (fecha y alcance). Consultado el 18 de noviembre de 2026",
+          "url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+        },
+        {
+          "label": "ISO. ISO/IEC 27014:2020 Information security, cybersecurity and privacy protection — Governance of information security (resumen oficial; 2.ª edición, diciembre de 2020, en revisión). Consultado el 18 de noviembre de 2026",
+          "url": "https://www.iso.org/standard/74046.html"
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "El informe de seguridad llega al comité con decenas de indicadores técnicos y ninguna decisión que tomar. O al contrario: hay que aprobar una compra de seguridad y nadie puede decir qué riesgo reduce. En ambos casos falta gobierno, no tecnología."
+        },
+        {
+          "type": "p",
+          "text": "Esta guía explica qué es el gobierno de la ciberseguridad, qué dicen dos referencias públicas sobre el papel de la dirección, en qué se diferencian y qué debe decidir la gerencia."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué es el gobierno de la ciberseguridad?"
+        },
+        {
+          "type": "p",
+          "text": "ISO/IEC 27014:2020 lo define por su propósito: ofrece orientación sobre los conceptos, objetivos y procesos del gobierno de la seguridad de la información, con los que una organización puede evaluar, dirigir, monitorear y comunicar sus procesos de seguridad. Su público es el órgano de gobierno y la alta dirección, además de quienes evalúan, dirigen y monitorean un sistema de gestión de seguridad de la información basado en ISO/IEC 27001. Aplica a organizaciones de todo tipo y tamaño."
+        },
+        {
+          "type": "p",
+          "text": "NIST CSF 2.0 lo ubica en la función GOVERN: la estrategia de gestión de riesgos de ciberseguridad, las expectativas y la política de la organización se establecen, comunican y monitorean. Esa función, dice NIST, orienta lo que la organización puede hacer para lograr y priorizar los resultados de las otras cinco, y es crítica para incorporar la ciberseguridad a la gestión de riesgos empresariales."
+        },
+        {
+          "type": "p",
+          "text": "En nuestro criterio, la distinción útil es esta: gobernar es decidir y supervisar (cuánto riesgo se acepta, quién responde, qué se revisa); gestionar es ejecutar los controles. Una empresa puede tener buenos controles sin gobierno, y entonces no sabe si protegen lo que importa."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué dice NIST CSF 2.0 sobre el gobierno?"
+        },
+        {
+          "type": "p",
+          "text": "El NIST publicó el CSF 2.0 el 26 de febrero de 2024. Lo describe como una taxonomía de resultados de ciberseguridad de alto nivel que no prescribe cómo lograrlos, utilizable por cualquier organización sin importar su tamaño, sector o madurez. Sus seis funciones son GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND y RECOVER. El propio documento aclara que los resultados no son una lista de verificación y que el orden de las funciones no implica secuencia ni importancia."
+        },
+        {
+          "type": "table",
+          "text": "Categorías de la función GOVERN en NIST CSF 2.0",
+          "columns": [
+            "Código",
+            "Categoría",
+            "Qué busca, según NIST"
+          ],
+          "rows": [
+            [
+              "GV.OC",
+              "Contexto organizacional",
+              "Entender la misión, las expectativas de las partes interesadas, las dependencias y los requisitos legales y contractuales que rodean las decisiones de riesgo"
+            ],
+            [
+              "GV.RM",
+              "Estrategia de gestión de riesgos",
+              "Establecer prioridades, restricciones, apetito y tolerancia al riesgo, y usarlos en las decisiones operativas"
+            ],
+            [
+              "GV.RR",
+              "Roles, responsabilidades y autoridades",
+              "Establecer y comunicar quién responde, para fomentar la rendición de cuentas y la mejora continua"
+            ],
+            [
+              "GV.PO",
+              "Política",
+              "Establecer, comunicar y hacer cumplir la política de ciberseguridad"
+            ],
+            [
+              "GV.OV",
+              "Supervisión",
+              "Usar los resultados de la gestión de riesgos para informar, mejorar y ajustar la estrategia"
+            ],
+            [
+              "GV.SC",
+              "Gestión del riesgo de la cadena de suministro",
+              "Identificar, establecer, gestionar y mejorar los procesos de riesgo de proveedores y terceros"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Tres resultados de esa tabla tocan directamente a la dirección. GV.RR-01 dice que el liderazgo de la organización es responsable de los riesgos de ciberseguridad y responde por ellos, y que fomenta una cultura consciente del riesgo, ética y de mejora continua. GV.RM-02 pide declaraciones de apetito y tolerancia al riesgo establecidas, comunicadas y mantenidas. Y GV.RR-03 pide asignar recursos adecuados a la estrategia de riesgo, los roles, las responsabilidades y las políticas."
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué le toca a la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "El CSF 2.0 dedica un apartado a la comunicación entre ejecutivos, gerentes y profesionales. Según NIST, la función GOVERN apoya la comunicación del riesgo con los ejecutivos: ellos establecen prioridades y objetivos de ciberseguridad, comunican sus expectativas sobre apetito de riesgo, rendición de cuentas y recursos, y son responsables de integrar la gestión del riesgo de ciberseguridad con la gestión de riesgos empresariales. A cambio, los profesionales les entregan indicadores clave de desempeño y de riesgo para que entiendan la postura de seguridad y ajusten la estrategia."
+        },
+        {
+          "type": "p",
+          "text": "ISO/IEC 27014 llega al mismo punto desde el lado de la norma: su público primario es el órgano de gobierno y la alta dirección, y su mecanismo es el ciclo de evaluar, dirigir, monitorear y comunicar."
+        },
+        {
+          "type": "quote",
+          "text": "Si la dirección solo recibe indicadores técnicos y no toma decisiones sobre riesgo, la empresa está gestionando la ciberseguridad, pero no gobernándola."
+        },
+        {
+          "type": "h2",
+          "text": "¿En qué se diferencian NIST CSF 2.0 e ISO/IEC 27014?"
+        },
+        {
+          "type": "table",
+          "text": "NIST CSF 2.0 e ISO/IEC 27014:2020 lado a lado",
+          "columns": [
+            "Aspecto",
+            "NIST CSF 2.0",
+            "ISO/IEC 27014:2020"
+          ],
+          "rows": [
+            [
+              "Qué es",
+              "Taxonomía de resultados de ciberseguridad de alto nivel; no prescribe cómo lograrlos",
+              "Orientación sobre conceptos, objetivos y procesos del gobierno de la seguridad de la información"
+            ],
+            [
+              "Publicación",
+              "26 de febrero de 2024",
+              "2.ª edición, diciembre de 2020; versión corregida de abril de 2022"
+            ],
+            [
+              "Público",
+              "Cualquier organización, sin importar tamaño, sector o madurez; también ejecutivos y juntas directivas",
+              "Órgano de gobierno y alta dirección; aplica a organizaciones de todo tipo y tamaño"
+            ],
+            [
+              "Acceso",
+              "Publicación pública del NIST",
+              "Norma de venta en ISO"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Un detalle práctico: ISO muestra la norma 27014:2020 como publicada pero en etapa de revisión, y anuncia que será reemplazada por una nueva versión en desarrollo. Antes de citarla en un contrato o una política, conviene verificar qué edición está vigente."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cómo se ve un gobierno de ciberseguridad funcionando?"
+        },
+        {
+          "type": "p",
+          "text": "Las referencias no definen un conjunto de documentos, pero cada categoría de GOVERN se traduce en algo que la dirección puede pedir y revisar. En nuestro criterio, los más útiles son cinco:"
+        },
+        {
+          "type": "p",
+          "text": "Una declaración de apetito y tolerancia al riesgo que la junta haya leído y aprobado (GV.RM). Un responsable nombrado por cada riesgo relevante, con autoridad para decidir (GV.RR). Una política vigente, comunicada y con fecha de revisión (GV.PO). Un reporte periódico de pocos indicadores que lleve a decisiones, no a más lectura (GV.OV). Y una lista de los proveedores críticos con el riesgo que cada uno representa (GV.SC)."
+        },
+        {
+          "type": "p",
+          "text": "Esta traducción es criterio de Cyrrus; lo que dice el NIST es el resultado esperado de cada categoría, no el documento que lo demuestra."
+        },
+        {
+          "type": "h2",
+          "text": "¿Cuándo conviene pedir ayuda externa?"
+        },
+        {
+          "type": "p",
+          "text": "Cuando nadie en la dirección puede responder tres preguntas: qué riesgo de ciberseguridad aceptamos y cuál no, quién responde por cada uno y qué indicador revisaremos cada trimestre. También cuando se va a comprar seguridad sin haber definido el riesgo que se quiere reducir."
+        },
+        {
+          "type": "p",
+          "text": "Si decide contratar, la independencia frente a los fabricantes es un criterio de selección. Para saber qué preguntar, vea la guía sobre las señales de que su empresa necesita ayuda en ciberseguridad.",
+          "links": [
+            {
+              "text": "las señales de que su empresa necesita ayuda en ciberseguridad",
+              "href": "/perspectivas/senales-de-que-necesita-una-consultoria-de-ciberseguridad"
+            }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "¿Qué debe decidir la dirección?"
+        },
+        {
+          "type": "p",
+          "text": "Son cinco decisiones de la gerencia: cuánto riesgo de ciberseguridad acepta la empresa y quién lo aprobó; quién responde por cada riesgo relevante; qué política rige hoy y cuándo se revisa; qué indicadores recibirá la dirección y con qué frecuencia; y qué proveedores críticos tienen revisión periódica."
+        },
+        {
+          "type": "p",
+          "text": "Con esas respuestas, la discusión sobre qué herramienta comprar se vuelve una discusión sobre qué riesgo reducir, que es la que la dirección sabe tener."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo podemos ayudarle"
+        },
+        {
+          "type": "p",
+          "text": "En Cyrrus ayudamos a decidir qué controles necesita la empresa y a elegir las soluciones y proveedores de ciberseguridad con criterios definidos antes de ver propuestas: diagnóstico de riesgo, controles y arquitectura, y selección de proveedores con los mismos cuatro criterios de toda selección.",
+          "links": [
+            {
+              "text": "ciberseguridad",
+              "href": "/metodo-cira/seleccion-de-soluciones/ciberseguridad"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si el tema de fondo es cómo se gobierna la tecnología en general, empezamos por la estrategia de TI; y si la empresa evalúa un marco como COBIT, por una guía previa sobre cuándo conviene adoptarlo.",
+          "links": [
+            {
+              "text": "estrategia de TI",
+              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+            },
+            {
+              "text": "cuándo conviene adoptarlo",
+              "href": "/perspectivas/cobit-2019-que-es-y-cuando-conviene-adoptarlo"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Para profundizar: el plan de continuidad del negocio y sus indicadores RTO y RPO, y el gobierno de la inteligencia artificial.",
+          "links": [
+            {
+              "text": "el plan de continuidad del negocio y sus indicadores RTO y RPO",
+              "href": "/perspectivas/plan-de-continuidad-del-negocio-que-es-bia-rto-rpo"
+            },
+            {
+              "text": "el gobierno de la inteligencia artificial",
+              "href": "/perspectivas/gobierno-de-ia-corporativo-en-la-empresa"
+            }
+          ]
         }
       ]
     }

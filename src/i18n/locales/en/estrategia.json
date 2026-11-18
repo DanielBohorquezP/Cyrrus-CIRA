@@ -37,7 +37,7 @@
     "eyebrow": "The foundation",
     "title": "What does a strategic planning consultant do?",
     "description": "A strategic planning consultant is an external professional who helps a company's leadership define its medium- and long-term direction, make critical decisions, and translate them into measurable objectives (KPIs) every area can execute. At Cyrrus it doesn't end in a document: the same team that runs the diagnosis stays for execution and adjusts the plan with real business data.",
-    "linkLabel": "Also read: How to choose a trustworthy strategy consultancy",
+    "linkLabel": "Also read: Three signs of a consulting firm that understands your business",
     "linkHref": "/perspectivas/como-elegir-una-consultora-estrategica-confiable",
     "usesTitle": "What is strategy consulting for?",
     "uses": [
@@ -349,17 +349,22 @@
       "items": [
         {
           "slug": "estrategia-de-ti-que-es-y-que-incluye",
-          "title": "What IT strategy is and what it includes",
+          "title": "The five parts of an IT strategy",
           "description": "What it answers, what deliverables it leaves and which public frameworks (ISO/IEC 38500, COBIT 2019) serve as references."
         },
         {
+          "slug": "cobit-2019-que-es-y-cuando-conviene-adoptarlo",
+          "title": "COBIT 2019: what it is, its 40 objectives and when to adopt it",
+          "description": "What ISACA says, how the five domains are organized and what leadership should decide before launching a project."
+        },
+        {
           "slug": "planeacion-estrategica-que-es-etapas-y-ejemplo",
-          "title": "Strategic planning: what it is, stages and an example",
+          "title": "Strategic plan in seven stages: tools and an illustrative example",
           "description": "The business strategy every IT strategy starts from."
         },
         {
           "slug": "que-es-un-erp-guia-para-elegirlo",
-          "title": "What is an ERP and how to choose one",
+          "title": "What is an ERP: software, modules and seven criteria to evaluate it",
           "description": "The guide for the ERP initiative in the portfolio, with no vendor bias."
         }
       ]
@@ -531,7 +536,7 @@
       "ISO 22301:2019 is the international reference for business continuity management systems: a framework to plan, implement, operate, review and improve a documented management system that protects the organization from disruptive incidents and ensures recovery. Not every company needs to certify, but every company needs a plan that holds up to that logic. If the plan requires new backup, high-availability or alternate-site solutions, we select them with our infrastructure consulting, with no vendor commissions, and Project Management governs the implementation."
     ],
     "articleLinkText": "Read also:",
-    "articleLinkLabel": "Business continuity plan: what it is, BIA, RTO and RPO",
+    "articleLinkLabel": "RTO and RPO: what they are and how to set them in your continuity plan",
     "related": {
       "eyebrow": "Related services",
       "title": "Continuity rests on infrastructure",
@@ -560,12 +565,12 @@
       "items": [
         {
           "slug": "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
-          "title": "Business continuity plan: what it is, BIA, RTO and RPO",
+          "title": "RTO and RPO: what they are and how to set them in your continuity plan",
           "description": "The concepts per NIST SP 800-34 and ISO 22301, the difference between BCP, DRP and contingency plan, and what leadership decides."
         },
         {
           "slug": "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
-          "title": "When to hire cybersecurity consulting",
+          "title": "Cybersecurity warning signs: what to assess",
           "description": "The signs it is time, what it includes, why vendor independence matters and what to ask before you hire."
         }
       ]

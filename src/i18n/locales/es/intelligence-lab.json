@@ -84,12 +84,12 @@
       "items": [
         {
           "slug": "gobierno-de-ia-corporativo-en-la-empresa",
-          "title": "Qué es el Gobierno de IA corporativo",
+          "title": "Antes de adoptar IA: ¿puede su empresa gobernarla?",
           "description": "Por qué una organización debería preguntarse si está preparada para gobernar la IA antes de elegir cuál incorporar."
         },
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "Gobernanza de IA: NIST, OCDE e ISO/IEC 42001",
+          "title": "NIST, OCDE o ISO 42001: qué marco de IA usar",
           "description": "Qué publica cada referencia, en qué se diferencian y qué debe decidir la gerencia antes de elegir una."
         },
         {
@@ -224,6 +224,27 @@
         {
           "title": "Gerencia de proyectos (PMO)",
           "description": "Dónde monitoreamos el riesgo del proyecto con agentes de IA."
+        }
+      ]
+    },
+    "guides": {
+      "eyebrow": "Guías",
+      "title": "Antes de invertir en un agente de IA, lea esto",
+      "items": [
+        {
+          "slug": "agentes-de-ia-que-son-cuando-valen-la-pena-y-como-evaluarlos",
+          "title": "Agentes de IA: qué son, cuándo valen la pena y qué decidir antes de invertir",
+          "description": "Qué dicen IBM, Anthropic y Gartner, qué riesgos tienen y qué controles exigir antes de ponerlos en operación."
+        },
+        {
+          "slug": "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
+          "title": "Qué es RPA y cuándo conviene frente a la IA",
+          "description": "Qué resuelve cada tecnología y qué debe decidir la dirección antes de automatizar."
+        },
+        {
+          "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
+          "title": "NIST, OCDE o ISO 42001: qué marco de IA usar",
+          "description": "NIST AI RMF, OCDE e ISO/IEC 42001 según sus fuentes oficiales, y qué decide la dirección."
         }
       ]
     },
@@ -565,7 +586,7 @@
       "items": [
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "Qué marcos de gobernanza de IA usar",
+          "title": "NIST, OCDE o ISO 42001: qué marco de IA usar",
           "description": "NIST AI RMF, principios de la OCDE e ISO/IEC 42001 según sus fuentes oficiales, y qué decide la gerencia."
         },
         {
@@ -761,7 +782,7 @@
       "items": [
         {
           "slug": "gobierno-de-datos-que-es-y-como-empezar",
-          "title": "Gobierno de datos: qué es y cómo empezar",
+          "title": "Gobierno de datos según ISO/IEC 38505-1",
           "description": "Qué dice ISO/IEC 38505-1 sobre el papel de la dirección, qué decide la gerencia y los siete pasos para empezar sin un proyecto de un año."
         },
         {
@@ -771,7 +792,7 @@
         },
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "Qué es la gobernanza de IA y qué marcos usar",
+          "title": "NIST, OCDE o ISO 42001: qué marco de IA usar",
           "description": "NIST AI RMF, OCDE e ISO/IEC 42001 según sus fuentes oficiales."
         },
         {
@@ -952,7 +973,7 @@
       "Este servicio es el punto de entrada a Cyrrus Intelligence Lab y conecta con la estrategia de TI de la fase Construir del método CIRA: la IA es una iniciativa más del portafolio tecnológico, con su caso de negocio, y no un proyecto aparte. Para preparar al comité ofrecemos el taller de IA para directivos en Leadership Academy."
     ],
     "articleLinkText": "Lea también:",
-    "articleLinkLabel": "Qué es la gobernanza de IA y qué marcos usar",
+    "articleLinkLabel": "NIST, OCDE o ISO 42001: qué marco de IA usar",
     "related": {
       "eyebrow": "Servicios relacionados",
       "title": "La estrategia se ejecuta con los tres pilares",
@@ -981,12 +1002,12 @@
       "items": [
         {
           "slug": "estrategia-de-ia-para-empresas-hoja-de-ruta",
-          "title": "Estrategia de IA para empresas: cómo construir la hoja de ruta",
+          "title": "Hoja de ruta de IA para empresas",
           "description": "Cómo priorizar casos de uso con un criterio único, qué dice el NIST AI RMF y los siete pasos de la hoja de ruta."
         },
         {
           "slug": "que-es-gobernanza-de-ia-y-que-marcos-usar",
-          "title": "Qué es la gobernanza de IA y qué marcos usar",
+          "title": "NIST, OCDE o ISO 42001: qué marco de IA usar",
           "description": "NIST AI RMF, OCDE e ISO/IEC 42001 según sus fuentes oficiales, y qué decide la dirección."
         },
         {

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Consultoría ERP y CRM: Selección de Software | Cyrrus",
-    "description": "Consultoría de selección de software ERP y CRM, además de HCM y EAM: evaluamos software empresarial de forma independiente, 100% agnósticos de proveedor."
+    "title": "Consultoría en Selección de Software Empresarial | Cyrrus",
+    "description": "Consultoría para elegir software empresarial: evaluamos y comparamos opciones de ERP, CRM, HCM y EAM de forma independiente, 100% agnósticos de proveedor."
   },
   "hero": {
     "eyebrow": "Selección de Soluciones",
-    "title": "Consultoría ERP y CRM: selección y evaluación de software empresarial",
+    "title": "Consultoría en selección y evaluación de software empresarial",
     "description": "La tecnología correcta empieza con la decisión correcta. Evaluamos, comparamos y seleccionamos software empresarial de forma independiente, alineando las necesidades de su organización con la solución que realmente necesita.",
     "ctaLabel": "Evaluar una necesidad tecnológica",
     "ctaSecondaryLabel": "Conocer nuestra metodología"
@@ -195,22 +195,22 @@
     "items": [
       {
         "slug": "que-es-un-erp-guia-para-elegirlo",
-        "title": "Qué es un ERP y cómo elegirlo",
+        "title": "Qué es un ERP: software, módulos y siete criterios para evaluarlo",
         "description": "Qué hace un ERP, qué módulos tiene y qué preguntas hacer antes de pedir demos."
       },
       {
         "slug": "que-es-un-crm-y-como-elegir-el-correcto",
-        "title": "Qué es un CRM y cómo elegir el correcto",
+        "title": "Qué es un CRM: tipos y riesgos antes de comprar",
         "description": "Tipos de CRM y cómo evaluarlo alrededor del proceso comercial real."
       },
       {
         "slug": "software-recursos-humanos-nomina-mas-de-100-empleados",
-        "title": "Software de RR. HH. y nómina",
+        "title": "Software de nómina, HRIS o HCM",
         "description": "Qué revisar en un HCM cuando la empresa supera los 100 empleados."
       },
       {
         "slug": "software-cmms-eam-como-elegir",
-        "title": "Software CMMS y EAM",
+        "title": "Software CMMS vs EAM",
         "description": "Qué es cada uno, en qué se diferencian y cómo elegirlo."
       }
     ]
