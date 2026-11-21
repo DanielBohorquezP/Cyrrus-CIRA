@@ -45,7 +45,6 @@ export default function GestionDeProyectos() {
   const pagePath = lang === "en" ? "/en/servicios/gerencia-de-proyectos" : "/servicios/gerencia-de-proyectos";
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
     { label: t("hero.title") },
   ];
   const erpPath = lang === "en"

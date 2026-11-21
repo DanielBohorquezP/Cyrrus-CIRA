@@ -244,10 +244,9 @@ export default function SeleccionProducto() {
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-                { "@type": "ListItem", position: 2, name: lang === "en" ? "CIRA Method" : "Método CIRA", item: `${siteUrl}${methodPath}` },
-                { "@type": "ListItem", position: 3, name: lang === "en" ? "Solution Selection" : "Selección de Soluciones", item: `${siteUrl}${selectionPath}` },
-                { "@type": "ListItem", position: 4, name: lang === "en" ? "Software Selection" : "Selección de Software", item: `${siteUrl}${softwarePath}` },
-                { "@type": "ListItem", position: 5, name: slug.toUpperCase(), item: `${siteUrl}${pagePath}` },
+                { "@type": "ListItem", position: 2, name: lang === "en" ? "Solution Selection" : "Selección de Soluciones", item: `${siteUrl}${selectionPath}` },
+                { "@type": "ListItem", position: 3, name: lang === "en" ? "Software Selection" : "Selección de Software", item: `${siteUrl}${softwarePath}` },
+                { "@type": "ListItem", position: 4, name: slug.toUpperCase(), item: `${siteUrl}${pagePath}` },
               ],
             },
           ]
@@ -260,7 +259,6 @@ export default function SeleccionProducto() {
 
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
     { label: lang === "en" ? "Solution Selection" : "Selección de Soluciones", href: selectionPath },
     { label: lang === "en" ? "Software Selection" : "Selección de Software", href: softwarePath },
     { label: slug.toUpperCase() },

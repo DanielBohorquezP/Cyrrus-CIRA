@@ -74,7 +74,6 @@ export default function PlaneacionEstrategica() {
   }));
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-    { label: t("hero.eyebrow").split(" — ")[0], href: methodPath },
     { label: t("hero.title") },
   ];
 

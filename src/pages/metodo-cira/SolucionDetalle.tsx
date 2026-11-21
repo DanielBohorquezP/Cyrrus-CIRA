@@ -117,7 +117,6 @@ export default function SolucionDetalle() {
             faqs: entry.faq,
             breadcrumbs: [
               { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-              { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
               { label: selectionLabel, href: selectionPath },
               { label: entry.label, href: pagePath },
             ],
@@ -165,7 +164,6 @@ export default function SolucionDetalle() {
     },
     breadcrumbs: [
       { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-      { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
       // The H1-sized label in `hero.title` is far too long for a trail; the
       // structured data above still uses it.
       { label: lang === "en" ? "Solution Selection" : "Selección de Soluciones", href: selectionPath },

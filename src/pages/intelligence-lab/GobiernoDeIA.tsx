@@ -9,7 +9,7 @@ export default createServiceChildPage({
   ns: "intelligence-lab",
   key: "gobierno",
   path: "/servicios/inteligencia-artificial/gobierno-de-ia",
-  parent: { path: "/servicios/inteligencia-artificial", label: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" } },
+  parent: { path: "/servicios/inteligencia-artificial", label: { es: "Inteligencia Artificial", en: "Artificial Intelligence" } },
   group: "ia",
   eyebrow: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" },
   heroVideo: { ...IA_HERO_MEDIA.video, poster: IA_HERO_MEDIA.image.src },

@@ -106,7 +106,7 @@ export default function IntelligenceLab() {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Inicio", item: `${siteUrl}${homePath}` },
-          { "@type": "ListItem", position: 2, name: "Cyrrus Intelligence Lab", item: `${siteUrl}${pagePath}` },
+          { "@type": "ListItem", position: 2, name: lang === "en" ? "Artificial Intelligence" : "Inteligencia Artificial", item: `${siteUrl}${pagePath}` },
         ],
       },
     ],
@@ -122,7 +122,7 @@ export default function IntelligenceLab() {
         description={t("hub.hero.description")}
         breadcrumbs={[
           { label: lang === "en" ? "Home" : "Inicio", href: lang === "en" ? "/en" : "/" },
-          { label: t("hub.hero.eyebrow") },
+          { label: lang === "en" ? "Artificial Intelligence" : "Inteligencia Artificial" },
         ]}
         image={IA_HERO_MEDIA.image}
         video={IA_HERO_MEDIA.video}

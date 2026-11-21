@@ -248,7 +248,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
-| Subir `cyrrus-dist-2026-11-20b.zip` (Sesiones 19d–19f: categoría Comercial, Plan de Acción 2027, todos los servicios bajo `/servicios` con 301; reemplaza a los zips anteriores) | 2026-11-20 | ⬜ | Publicar Comercial y Plan 2027 y las URLs nuevas; reenviar sitemap |
+| Subir `cyrrus-dist-2026-11-20c.zip` (Sesiones 19d–19f: categoría Comercial, Plan de Acción 2027, todos los servicios bajo `/servicios` con 301; reemplaza a los zips anteriores) | 2026-11-20 | ⬜ | Publicar Comercial y Plan 2027 y las URLs nuevas; reenviar sitemap |
 | Subir `cyrrus-dist-2026-11-14.zip` (Sesiones 15–19: 5 páginas de servicio y 6 guías nuevas, títulos EN sin duplicados; reemplaza al 2026-11-13, al 2026-11-05-v7 y al 2026-11-01 en producción) | 2026-11-12 | ⬜ | A2 de las 16 URLs nuevas, medición de la Sesión 17 |
 | Decisiones de la auditoría SEO (mercado principal, servicios que presta Cyrrus: ISO 27001, CFO aaS, vCISO; marcas de ERP/CRM) | 2026-11-12 | ⬜ | Slugs EN, páginas nuevas de servicio |
 | Subir `cyrrus-dist-2026-10-23-v18.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
@@ -300,10 +300,10 @@ qué llegó y lo integra (F8, J1, J3…).
   - Sin cambio: `/metodo-cira` (página del método), `/leadership-academy` (no está en el menú Servicios), experiencia, perspectivas, herramientas, diagnóstico, quiénes somos.
 - **Hecho:** 507 referencias reescritas con un script (rutas, menú, pie, enlaces de las guías, casos, schema de `index.html`, `route-meta.json`, generador de sitemap, `llms.txt`, hashes del sitemap). `.htaccess`: 301 genéricos que conservan la subruta y quitan la barra en un solo salto; los 301 del sitio viejo (WordPress) apuntan directo a la URL nueva, sin cadenas; `/servicios` → `/#servicios`. Reglas probadas con una simulación en Python sobre 16 rutas.
 - **Verificación:** `tsc` limpio; build 168/168; sitemap sin URLs viejas; 191 enlaces internos del HTML generado resuelven a archivos existentes; consola limpia en 8 páginas (estrategia, IA, automatización, PMO EN, ERP, ciberseguridad, caso 3 Castillos, Plan 2027); canonical, hreflang y migas con la URL nueva.
-- **No cambiado (decidir):** las migas de las páginas del método siguen diciendo "Inicio › Método CIRA › …" aunque la URL diga `/servicios`; las hijas de IA dicen "Cyrrus Intelligence Lab" como padre.
+- **Migas (pedido del cliente, mismo día):** quitado el paso "Método CIRA" de estrategia, selección de soluciones, selección de software, ERP/CRM/HCM/EAM, soluciones, PMO y gestión del cambio (visible y JSON-LD, posiciones renumeradas); selección de software y productos pasan por "Selección de Soluciones". IA: el padre y la miga del hub dicen "Inteligencia Artificial" / "Artificial Intelligence" en vez de "Cyrrus Intelligence Lab". Los enlaces al método dentro del contenido se mantienen.
 - **Después de subir:** comprobar los 301 en producción (las carpetas viejas pueden seguir en el servidor; el 301 se aplica antes de servirlas), enviar el sitemap nuevo en Search Console y pedir indexación de las URLs principales. Puede haber caída temporal de posiciones mientras Google procesa los 301.
 - **Commits:** ver `git log` (rama `seo/fix-en-en-links`).
-- **Zip para subir:** `cyrrus-dist-2026-11-20b.zip` en `Cyrrus builds/`. Reemplaza al `cyrrus-dist-2026-11-20.zip`.
+- **Zip para subir:** `cyrrus-dist-2026-11-20c.zip` en `Cyrrus builds/` (incluye las migas). Reemplaza al `cyrrus-dist-2026-11-20.zip` y al `-20b`.
 - **Próxima sesión:** Sesión 20 (M0–M2), sin cambios.
 
 ### Sesión 19e — 2026-11-20 — Comercial como categoría propia y subpágina Plan de Acción 2027 (ES/EN)

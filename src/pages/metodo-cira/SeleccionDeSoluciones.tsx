@@ -74,7 +74,6 @@ export default function SeleccionDeSoluciones() {
   const pagePath = `${prefix}/servicios/seleccion-de-soluciones`;
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
     { label: t("hero.title") },
   ];
 

@@ -62,12 +62,11 @@ export default function SeleccionDeSoftware() {
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
-  const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const selectionPath = `${prefix}/servicios/seleccion-de-soluciones`;
   const pagePath = `${selectionPath}/seleccion-de-software`;
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
+    { label: lang === "en" ? "Solution Selection" : "Selección de Soluciones", href: selectionPath },
     { label: t("hero.title") },
   ];
 

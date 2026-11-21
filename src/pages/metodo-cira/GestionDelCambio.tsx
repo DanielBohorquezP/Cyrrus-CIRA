@@ -42,7 +42,6 @@ export default function GestionDelCambio() {
   const pagePath = lang === "en" ? "/en/servicios/gestion-del-cambio" : "/servicios/gestion-del-cambio";
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-    { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
     { label: t("hero.title") },
   ];
   const academyPath = lang === "en" ? "/en/leadership-academy" : "/leadership-academy";
