@@ -71,7 +71,7 @@
         "eyebrow": "Cuando el plan no baja a la operación",
         "title": "Consultoría Estratégica Empresarial",
         "description": "Si el plan se quedó en la presentación, el problema no fue la estrategia — fue no tener quien la ejecutara. Diagnosticamos, priorizamos y dejamos una hoja de ruta con un responsable de principio a fin.",
-        "href": "/metodo-cira/estrategia",
+        "href": "/servicios/estrategia",
         "buttonText": "Conocer Estrategia"
       },
       {
@@ -80,7 +80,7 @@
         "eyebrow": "Cuando la tecnología se compra por moda, no por ajuste",
         "title": "Consultoría Tecnológica: Selección de Soluciones TI",
         "description": "ERP, CRM, HCM o EAM: evaluamos desde los requerimientos reales del negocio, no desde el catálogo del proveedor — criterios objetivos, comparables y 100% independientes.",
-        "href": "/metodo-cira/seleccion-de-soluciones",
+        "href": "/servicios/seleccion-de-soluciones",
         "buttonText": "Conocer Selección de Soluciones"
       },
       {
@@ -89,7 +89,7 @@
         "eyebrow": "Cuando el proyecto se atrasa y nadie asume el riesgo",
         "title": "Consultoría PMO: Gerencia de Proyectos Externa",
         "description": "Actuamos como PMO externo desde el kickoff hasta el go-live, con responsabilidad real sobre el resultado — no solo reportes de estado.",
-        "href": "/metodo-cira/gestion-de-proyectos",
+        "href": "/servicios/gerencia-de-proyectos",
         "buttonText": "Conocer Gerencia de Proyectos"
       },
       {
@@ -98,7 +98,7 @@
         "eyebrow": "Cuando el equipo no adopta lo implementado",
         "title": "Gestión del Cambio y Adopción",
         "description": "Un sistema bien implementado que nadie usa no es un proyecto exitoso. Trabajamos la adopción desde el día uno del proyecto, no como una actividad de cierre.",
-        "href": "/metodo-cira/gestion-del-cambio",
+        "href": "/servicios/gestion-del-cambio",
         "buttonText": "Conocer Gestión del Cambio"
       },
       {
@@ -107,7 +107,7 @@
         "eyebrow": "Cuando la IA se queda en pilotos sueltos",
         "title": "Consultoría de IA Empresarial",
         "description": "Antes de sumar otra herramienta de IA, sepa quién decide, quién audita y qué datos puede tocar. Gobernamos esa capa sobre sus procesos reales — no le vendemos otro catálogo de chatbots.",
-        "href": "/intelligence-lab",
+        "href": "/servicios/inteligencia-artificial",
         "buttonText": "Conocer Cyrrus Intelligence Lab"
       },
       {
@@ -137,7 +137,7 @@
         "level": "Nivel 2",
         "title": "Cyrrus Intelligence Lab",
         "description": "Cómo se acelera: gobierno y arquitectura de IA, transversal a las 4 fases.",
-        "href": "/intelligence-lab"
+        "href": "/servicios/inteligencia-artificial"
       },
       {
         "level": "Nivel 3",

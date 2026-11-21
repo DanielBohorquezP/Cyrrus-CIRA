@@ -71,7 +71,7 @@
         "eyebrow": "When the plan never reaches operations",
         "title": "Corporate Strategy",
         "description": "If the plan stayed in the deck, the problem wasn't the strategy — it was having no one to execute it. We diagnose, prioritize, and leave a roadmap with one party accountable end to end.",
-        "href": "/metodo-cira/estrategia",
+        "href": "/servicios/estrategia",
         "buttonText": "Explore Strategy"
       },
       {
@@ -80,7 +80,7 @@
         "eyebrow": "When technology gets bought because it's trending",
         "title": "Technology Selection Without Vendor Bias",
         "description": "ERP, CRM, HCM, or EAM: we evaluate from your business's real requirements, not the vendor's catalog — objective, comparable, 100% independent criteria.",
-        "href": "/metodo-cira/seleccion-de-soluciones",
+        "href": "/servicios/seleccion-de-soluciones",
         "buttonText": "Explore Solution Selection"
       },
       {
@@ -89,7 +89,7 @@
         "eyebrow": "When the project falls behind and no one owns the risk",
         "title": "Project Management (External PMO)",
         "description": "We act as an external PMO from kickoff to go-live, with real accountability for the outcome — not just status reports.",
-        "href": "/metodo-cira/gestion-de-proyectos",
+        "href": "/servicios/gerencia-de-proyectos",
         "buttonText": "Explore Project Management"
       },
       {
@@ -98,7 +98,7 @@
         "eyebrow": "When the team doesn't adopt what was implemented",
         "title": "Change Management & Adoption",
         "description": "A well-implemented system nobody uses isn't a successful project. We work adoption from day one of the project, not as a closing activity.",
-        "href": "/metodo-cira/gestion-del-cambio",
+        "href": "/servicios/gestion-del-cambio",
         "buttonText": "Explore Change Management"
       },
       {
@@ -107,7 +107,7 @@
         "eyebrow": "When AI stays stuck in isolated pilots",
         "title": "Enterprise Artificial Intelligence",
         "description": "Before adding another AI tool, know who decides, who audits, and what data it can touch. We govern that layer over your real processes — not sell you another catalog of chatbots.",
-        "href": "/intelligence-lab",
+        "href": "/servicios/inteligencia-artificial",
         "buttonText": "Explore Cyrrus Intelligence Lab"
       },
       {
@@ -137,7 +137,7 @@
         "level": "Level 2",
         "title": "Cyrrus Intelligence Lab",
         "description": "How it accelerates: AI governance and architecture, cutting across all 4 phases.",
-        "href": "/intelligence-lab"
+        "href": "/servicios/inteligencia-artificial"
       },
       {
         "level": "Level 3",

@@ -42,10 +42,10 @@ interface Guide extends Item {
 }
 
 const phasePaths: Record<string, string> = {
-  construir: "/metodo-cira/estrategia",
-  identificar: "/metodo-cira/seleccion-de-soluciones",
-  realizar: "/metodo-cira/gestion-de-proyectos",
-  adoptar: "/metodo-cira/gestion-del-cambio",
+  construir: "/servicios/estrategia",
+  identificar: "/servicios/seleccion-de-soluciones",
+  realizar: "/servicios/gerencia-de-proyectos",
+  adoptar: "/servicios/gestion-del-cambio",
 };
 
 export default function IntelligenceLab() {
@@ -56,7 +56,7 @@ export default function IntelligenceLab() {
 
   const pillars = (t("hub.pillars.items", { returnObjects: true }) as Pillar[]).map((p) => ({
     ...p,
-    href: `${prefix}/intelligence-lab/${p.hrefSlug}`,
+    href: `${prefix}/servicios/inteligencia-artificial/${p.hrefSlug}`,
   }));
   const phaseLinks = (t("hub.transversal.phases", { returnObjects: true }) as PhaseLink[]).map((p) => ({
     ...p,
@@ -72,12 +72,12 @@ export default function IntelligenceLab() {
 
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
-  const pagePath = `${prefix}/intelligence-lab`;
+  const pagePath = `${prefix}/servicios/inteligencia-artificial`;
 
   usePageMeta({
     title: t("hub.meta.title"),
     description: t("hub.meta.description"),
-    alternatePath: lang === "en" ? "/intelligence-lab" : "/en/intelligence-lab",
+    alternatePath: lang === "en" ? "/servicios/inteligencia-artificial" : "/en/servicios/inteligencia-artificial",
     jsonLd: [
       {
         "@context": "https://schema.org",

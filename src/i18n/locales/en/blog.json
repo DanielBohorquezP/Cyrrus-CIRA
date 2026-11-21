@@ -152,7 +152,7 @@
           "links": [
             {
               "text": "change management",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -711,7 +711,7 @@
           "links": [
             {
               "text": "change management",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -729,7 +729,7 @@
           "links": [
             {
               "text": "strategic consulting",
-              "href": "/metodo-cira/estrategia"
+              "href": "/servicios/estrategia"
             }
           ]
         },
@@ -938,7 +938,7 @@
           "links": [
             {
               "text": "change management",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -1289,7 +1289,7 @@
           "links": [
             {
               "text": "PMO as a Service",
-              "href": "/metodo-cira/gestion-de-proyectos"
+              "href": "/servicios/gerencia-de-proyectos"
             }
           ]
         },
@@ -1335,7 +1335,7 @@
           "links": [
             {
               "text": "Change management services",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -1363,7 +1363,7 @@
           "links": [
             {
               "text": "strategy consulting",
-              "href": "/metodo-cira/estrategia"
+              "href": "/servicios/estrategia"
             }
           ]
         },
@@ -1405,7 +1405,7 @@
           "links": [
             {
               "text": "project management services",
-              "href": "/metodo-cira/gestion-de-proyectos"
+              "href": "/servicios/gerencia-de-proyectos"
             }
           ]
         },
@@ -1552,15 +1552,15 @@
           "links": [
             {
               "text": "CRM",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/crm"
             },
             {
               "text": "people management",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/hcm"
             },
             {
               "text": "asset maintenance",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/eam"
             }
           ]
         },
@@ -1782,7 +1782,7 @@
           "links": [
             {
               "text": "independent ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             }
           ]
         },
@@ -1792,11 +1792,11 @@
           "links": [
             {
               "text": "external PMO",
-              "href": "/metodo-cira/gestion-de-proyectos"
+              "href": "/servicios/gerencia-de-proyectos"
             },
             {
               "text": "adoption",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -1973,7 +1973,7 @@
           "links": [
             {
               "text": "PMO as a Service",
-              "href": "/metodo-cira/gestion-de-proyectos"
+              "href": "/servicios/gerencia-de-proyectos"
             }
           ]
         },
@@ -2083,7 +2083,7 @@
           "links": [
             {
               "text": "project management services",
-              "href": "/metodo-cira/gestion-de-proyectos"
+              "href": "/servicios/gerencia-de-proyectos"
             }
           ]
         },
@@ -2093,7 +2093,7 @@
           "links": [
             {
               "text": "change management",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -2348,7 +2348,7 @@
           "links": [
             {
               "text": "managing its execution",
-              "href": "/metodo-cira/gestion-de-proyectos"
+              "href": "/servicios/gerencia-de-proyectos"
             }
           ]
         },
@@ -2380,7 +2380,7 @@
           "links": [
             {
               "text": "strategy consulting",
-              "href": "/metodo-cira/estrategia"
+              "href": "/servicios/estrategia"
             }
           ]
         },
@@ -2629,7 +2629,7 @@
           "links": [
             {
               "text": "change management",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -2860,7 +2860,7 @@
           "links": [
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             },
             {
               "text": "official S/4HANA migration timeline",
@@ -3075,7 +3075,7 @@
           "links": [
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             },
             {
               "text": "how much SAP Business One costs",
@@ -3260,7 +3260,7 @@
           "links": [
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             },
             {
               "text": "how much SAP Business One costs",
@@ -3511,7 +3511,7 @@
           "links": [
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             },
             {
               "text": "how much SAP Business One costs",
@@ -3768,7 +3768,7 @@
           "links": [
             {
               "text": "CRM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/crm"
             }
           ]
         },
@@ -3945,11 +3945,11 @@
           "links": [
             {
               "text": "software selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software"
             },
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             }
           ]
         },
@@ -4116,7 +4116,7 @@
           "links": [
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             }
           ]
         },
@@ -4265,11 +4265,11 @@
           "links": [
             {
               "text": "EAM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/eam"
             },
             {
               "text": "software selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software"
             }
           ]
         },
@@ -4466,11 +4466,11 @@
           "links": [
             {
               "text": "software selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software"
             },
             {
               "text": "project management",
-              "href": "/metodo-cira/gestion-de-proyectos"
+              "href": "/servicios/gerencia-de-proyectos"
             }
           ]
         },
@@ -4625,11 +4625,11 @@
           "links": [
             {
               "text": "HCM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/hcm"
             },
             {
               "text": "change management",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             }
           ]
         },
@@ -4812,11 +4812,11 @@
           "links": [
             {
               "text": "software selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software"
             },
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             }
           ]
         },
@@ -4967,7 +4967,7 @@
           "links": [
             {
               "text": "CRM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/crm"
             }
           ]
         },
@@ -5170,7 +5170,7 @@
           "links": [
             {
               "text": "change management",
-              "href": "/metodo-cira/gestion-del-cambio"
+              "href": "/servicios/gestion-del-cambio"
             },
             {
               "text": "the full guide with its template",
@@ -5357,7 +5357,7 @@
           "links": [
             {
               "text": "advanced technology selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas"
+              "href": "/servicios/seleccion-de-soluciones/tecnologias-avanzadas"
             }
           ]
         },
@@ -5552,7 +5552,7 @@
           "links": [
             {
               "text": "CRM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/crm"
             }
           ]
         },
@@ -5737,11 +5737,11 @@
           "links": [
             {
               "text": "CRM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/crm"
             },
             {
               "text": "ERP selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             },
             {
               "text": "what a CRM is",
@@ -5934,7 +5934,7 @@
           "links": [
             {
               "text": "CRM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/crm"
             },
             {
               "text": "the Salesforce, HubSpot and Dynamics 365 comparison",
@@ -6097,7 +6097,7 @@
           "links": [
             {
               "text": "CRM selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software/crm"
             },
             {
               "text": "what a CRM is",
@@ -7368,7 +7368,7 @@
           "links": [
             {
               "text": "business continuity consulting",
-              "href": "/metodo-cira/estrategia/continuidad-del-negocio"
+              "href": "/servicios/estrategia/continuidad-del-negocio"
             }
           ]
         },
@@ -7378,7 +7378,7 @@
           "links": [
             {
               "text": "technology infrastructure consulting",
-              "href": "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica"
+              "href": "/servicios/seleccion-de-soluciones/infraestructura-tecnologica"
             },
             {
               "text": "business continuity and DRP workshop",
@@ -7585,7 +7585,7 @@
           "links": [
             {
               "text": "IT strategy consulting",
-              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+              "href": "/servicios/estrategia/estrategia-de-ti"
             }
           ]
         },
@@ -7595,7 +7595,7 @@
           "links": [
             {
               "text": "strategy consulting and strategic planning",
-              "href": "/metodo-cira/estrategia"
+              "href": "/servicios/estrategia"
             }
           ]
         },
@@ -7716,7 +7716,7 @@
           "links": [
             {
               "text": "external PMO",
-              "href": "/en/metodo-cira/gestion-de-proyectos"
+              "href": "/en/servicios/gerencia-de-proyectos"
             }
           ]
         },
@@ -7730,7 +7730,7 @@
           "links": [
             {
               "text": "Cyrrus Intelligence Lab",
-              "href": "/en/intelligence-lab"
+              "href": "/en/servicios/inteligencia-artificial"
             }
           ]
         },
@@ -7740,7 +7740,7 @@
           "links": [
             {
               "text": "Objective technology selection",
-              "href": "/en/metodo-cira/seleccion-de-soluciones"
+              "href": "/en/servicios/seleccion-de-soluciones"
             }
           ]
         },
@@ -7864,7 +7864,7 @@
           "links": [
             {
               "text": "request the assessment",
-              "href": "/en/metodo-cira/seleccion-de-soluciones/ciberseguridad"
+              "href": "/en/servicios/seleccion-de-soluciones/ciberseguridad"
             }
           ]
         }
@@ -8057,7 +8057,7 @@
           "links": [
             {
               "text": "AI governance",
-              "href": "/intelligence-lab/gobierno-de-ia"
+              "href": "/servicios/inteligencia-artificial/gobierno-de-ia"
             }
           ]
         },
@@ -8071,7 +8071,7 @@
           "links": [
             {
               "text": "data governance consulting",
-              "href": "/intelligence-lab/gobierno-de-datos"
+              "href": "/servicios/inteligencia-artificial/gobierno-de-datos"
             }
           ]
         },
@@ -8278,11 +8278,11 @@
           "links": [
             {
               "text": "AI strategy consulting",
-              "href": "/intelligence-lab/estrategia-de-ia"
+              "href": "/servicios/inteligencia-artificial/estrategia-de-ia"
             },
             {
               "text": "automation and AI agents",
-              "href": "/intelligence-lab/automatizaciones-desarrollo"
+              "href": "/servicios/inteligencia-artificial/automatizacion-y-agentes-ia"
             }
           ]
         },
@@ -8296,7 +8296,7 @@
             },
             {
               "text": "IT strategy",
-              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+              "href": "/servicios/estrategia/estrategia-de-ti"
             }
           ]
         },
@@ -8540,7 +8540,7 @@
             },
             {
               "text": "Cyrrus Intelligence Lab",
-              "href": "/en/intelligence-lab"
+              "href": "/en/servicios/inteligencia-artificial"
             }
           ]
         },
@@ -8765,11 +8765,11 @@
           "links": [
             {
               "text": "external PMO",
-              "href": "/en/metodo-cira/gestion-de-proyectos"
+              "href": "/en/servicios/gerencia-de-proyectos"
             },
             {
               "text": "independent ERP selection",
-              "href": "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
+              "href": "/en/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
             }
           ]
         },
@@ -9012,7 +9012,7 @@
           "links": [
             {
               "text": "AI agents and automation",
-              "href": "/intelligence-lab/automatizaciones-desarrollo"
+              "href": "/servicios/inteligencia-artificial/automatizacion-y-agentes-ia"
             }
           ]
         },
@@ -9022,11 +9022,11 @@
           "links": [
             {
               "text": "AI strategy",
-              "href": "/intelligence-lab/estrategia-de-ia"
+              "href": "/servicios/inteligencia-artificial/estrategia-de-ia"
             },
             {
               "text": "AI governance",
-              "href": "/intelligence-lab/gobierno-de-ia"
+              "href": "/servicios/inteligencia-artificial/gobierno-de-ia"
             }
           ]
         },
@@ -9255,7 +9255,7 @@
           "links": [
             {
               "text": "IT strategy consulting",
-              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+              "href": "/servicios/estrategia/estrategia-de-ti"
             }
           ]
         },
@@ -9279,7 +9279,7 @@
             },
             {
               "text": "software selection",
-              "href": "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
+              "href": "/servicios/seleccion-de-soluciones/seleccion-de-software"
             }
           ]
         }
@@ -9522,7 +9522,7 @@
           "links": [
             {
               "text": "cybersecurity",
-              "href": "/metodo-cira/seleccion-de-soluciones/ciberseguridad"
+              "href": "/servicios/seleccion-de-soluciones/ciberseguridad"
             }
           ]
         },
@@ -9532,7 +9532,7 @@
           "links": [
             {
               "text": "IT strategy",
-              "href": "/metodo-cira/estrategia/estrategia-de-ti"
+              "href": "/servicios/estrategia/estrategia-de-ti"
             },
             {
               "text": "when it makes sense to adopt it",

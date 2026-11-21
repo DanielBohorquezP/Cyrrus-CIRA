@@ -8,8 +8,8 @@ import "@/i18n/ns/intelligence-lab";
 export default createServiceChildPage({
   ns: "intelligence-lab",
   key: "gobierno",
-  path: "/intelligence-lab/gobierno-de-ia",
-  parent: { path: "/intelligence-lab", label: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" } },
+  path: "/servicios/inteligencia-artificial/gobierno-de-ia",
+  parent: { path: "/servicios/inteligencia-artificial", label: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" } },
   group: "ia",
   eyebrow: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" },
   heroVideo: { ...IA_HERO_MEDIA.video, poster: IA_HERO_MEDIA.image.src },
@@ -31,10 +31,10 @@ export default createServiceChildPage({
     alt: "Mesas de trabajo en un evento de Cyrrus",
   },
   relatedPaths: [
-    "/intelligence-lab/arquitectura-de-ia",
-    "/intelligence-lab/automatizaciones-desarrollo",
-    "/metodo-cira/gestion-del-cambio",
-    "/intelligence-lab/gobierno-de-datos",
+    "/servicios/inteligencia-artificial/arquitectura-de-ia",
+    "/servicios/inteligencia-artificial/automatizacion-y-agentes-ia",
+    "/servicios/gestion-del-cambio",
+    "/servicios/inteligencia-artificial/gobierno-de-datos",
   ],
   articleSlug: "gobierno-de-ia-corporativo-en-la-empresa",
 });

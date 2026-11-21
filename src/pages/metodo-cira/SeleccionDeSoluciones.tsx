@@ -50,7 +50,7 @@ export default function SeleccionDeSoluciones() {
   const benefits = t("benefits.items", { returnObjects: true }) as BenefitItem[];
   const categories = (t("categories.items", { returnObjects: true }) as CategoryItem[]).map((c) => ({
     ...c,
-    href: `${prefix}/metodo-cira/seleccion-de-soluciones/${c.slug}`,
+    href: `${prefix}/servicios/seleccion-de-soluciones/${c.slug}`,
     image: solutionCategoryImages[c.slug],
   }));
   const services = t("services.items", { returnObjects: true }) as string[];
@@ -60,9 +60,9 @@ export default function SeleccionDeSoluciones() {
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
-  const estrategiaPath = `${prefix}/metodo-cira/estrategia`;
-  const pmoPath = `${prefix}/metodo-cira/gestion-de-proyectos`;
-  const changePath = `${prefix}/metodo-cira/gestion-del-cambio`;
+  const estrategiaPath = `${prefix}/servicios/estrategia`;
+  const pmoPath = `${prefix}/servicios/gerencia-de-proyectos`;
+  const changePath = `${prefix}/servicios/gestion-del-cambio`;
   // The 3 Castillos case is the published proof of an infrastructure, ERP and CRM selection.
   const casePath = `${prefix}/experiencia/3-castillos`;
   const relatedPaths = [estrategiaPath, pmoPath, changePath, casePath];
@@ -71,7 +71,7 @@ export default function SeleccionDeSoluciones() {
     ...it,
     href: relatedPaths[i],
   }));
-  const pagePath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
+  const pagePath = `${prefix}/servicios/seleccion-de-soluciones`;
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
     { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
@@ -81,7 +81,7 @@ export default function SeleccionDeSoluciones() {
   usePageMeta({
     title: t("meta.title"),
     description: t("meta.description"),
-    alternatePath: lang === "en" ? "/metodo-cira/seleccion-de-soluciones" : "/en/metodo-cira/seleccion-de-soluciones",
+    alternatePath: lang === "en" ? "/servicios/seleccion-de-soluciones" : "/en/servicios/seleccion-de-soluciones",
     jsonLd: [
       {
         "@context": "https://schema.org",

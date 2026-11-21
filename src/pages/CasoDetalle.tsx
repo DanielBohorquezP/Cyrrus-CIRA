@@ -46,10 +46,10 @@ interface CaseTranslation {
 }
 
 const serviceLabels: Record<string, { es: string; en: string }> = {
-  "/metodo-cira/estrategia": { es: "Consultoría estratégica", en: "Strategy consulting" },
-  "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp": { es: "Selección de ERP", en: "ERP selection" },
-  "/metodo-cira/gestion-de-proyectos": { es: "Gerencia de proyectos (PMO)", en: "Project management (PMO)" },
-  "/metodo-cira/gestion-del-cambio": { es: "Gestión del cambio", en: "Change management" },
+  "/servicios/estrategia": { es: "Consultoría estratégica", en: "Strategy consulting" },
+  "/servicios/seleccion-de-soluciones/seleccion-de-software/erp": { es: "Selección de ERP", en: "ERP selection" },
+  "/servicios/gerencia-de-proyectos": { es: "Gerencia de proyectos (PMO)", en: "Project management (PMO)" },
+  "/servicios/gestion-del-cambio": { es: "Gestión del cambio", en: "Change management" },
 };
 
 export default function CasoDetalle() {

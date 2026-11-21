@@ -45,7 +45,7 @@ export default function SeleccionDeSoftware() {
 
   const categorias = (t("categorias.items", { returnObjects: true }) as CategoryItem[]).map((c) => ({
     ...c,
-    href: `${prefix}/metodo-cira/seleccion-de-soluciones/seleccion-de-software/${c.slug}`,
+    href: `${prefix}/servicios/seleccion-de-soluciones/seleccion-de-software/${c.slug}`,
     image: productImages[c.slug as ProductSlug],
   }));
   const evaluamos = t("evaluamos.items", { returnObjects: true }) as EvalItem[];
@@ -63,7 +63,7 @@ export default function SeleccionDeSoftware() {
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
-  const selectionPath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
+  const selectionPath = `${prefix}/servicios/seleccion-de-soluciones`;
   const pagePath = `${selectionPath}/seleccion-de-software`;
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
@@ -75,8 +75,8 @@ export default function SeleccionDeSoftware() {
     title: t("meta.title"),
     description: t("meta.description"),
     alternatePath: lang === "en"
-      ? "/metodo-cira/seleccion-de-soluciones/seleccion-de-software"
-      : "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
+      ? "/servicios/seleccion-de-soluciones/seleccion-de-software"
+      : "/en/servicios/seleccion-de-soluciones/seleccion-de-software",
     jsonLd: [
       {
         "@context": "https://schema.org",

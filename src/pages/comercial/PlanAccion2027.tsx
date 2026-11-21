@@ -8,8 +8,8 @@ import "@/i18n/ns/comercial";
 export default createServiceChildPage({
   ns: "comercial",
   key: "plan2027",
-  path: "/comercial/plan-de-accion-2027",
-  parent: { path: "/comercial", label: { es: "Comercial", en: "Commercial" } },
+  path: "/servicios/comercial/plan-de-accion-2027",
+  parent: { path: "/servicios/comercial", label: { es: "Comercial", en: "Commercial" } },
   heroLink: null,
   eyebrow: { es: "Comercial", en: "Commercial" },
   heroImage: {
@@ -20,5 +20,5 @@ export default createServiceChildPage({
     src: "/assets/decoracion/estrategia-comercial-niebla.jpg",
     alt: "Camino entre montañas y niebla al amanecer",
   },
-  relatedPaths: ["/comercial"],
+  relatedPaths: ["/servicios/comercial"],
 });

@@ -8,30 +8,30 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 
 ## Método CIRA
 - [Metodología CIRA](https://cyrruscs.com/metodo-cira): las 4 fases del método.
-- [Estrategia](https://cyrruscs.com/metodo-cira/estrategia): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
-- [Estrategia de TI](https://cyrruscs.com/metodo-cira/estrategia/estrategia-de-ti): consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas con caso de negocio.
-- [Comercial](https://cyrruscs.com/comercial): consultoría en estrategia comercial: decisiones comerciales y plan de acción para llevarlas a la práctica, con trabajo inicial de unas 8 semanas y revisión a los 3 meses.
-- [Plan de Acción 2027: Negocio y Comercial](https://cyrruscs.com/comercial/plan-de-accion-2027): consultoría para priorizar mercados, clientes y ofertas, fortalecer el posicionamiento comercial y definir una hoja de ruta 2027; la empresa decide e implementa.
-- [Continuidad del negocio](https://cyrruscs.com/metodo-cira/estrategia/continuidad-del-negocio): consultoría en continuidad del negocio: BIA, RTO/RPO, plan de continuidad (BCP) y DRP probado.
-- [Selección de Soluciones](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones): cómo se selecciona tecnología con criterios definidos antes de mirar proveedores, sin sesgo comercial.
-- [Selección de Software](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software): evaluación y selección independiente de software empresarial — ERP, CRM, HCM y EAM.
-- [Selección de ERP](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): consultoría de selección de ERP 100% agnóstica de proveedor.
-- [Selección de CRM](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm): evaluación de CRM alrededor del proceso comercial real de la empresa.
-- [Selección de HCM](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm): selección de tecnología de gestión humana, nómina y talento.
-- [Selección de EAM](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam): selección de plataformas de gestión de activos y mantenimiento.
-- [Tecnologías Avanzadas](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas): selección de automatización, IA y analítica avanzada.
-- [Infraestructura Tecnológica](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica): selección de ciberseguridad, redes, nube y continuidad de negocio.
-- [Ciberseguridad](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/ciberseguridad): consultoría en ciberseguridad independiente: diagnóstico de riesgo, controles y selección de proveedores.
-- [Gerencia de Proyectos](https://cyrruscs.com/metodo-cira/gestion-de-proyectos): PMO externo para la ejecución de proyectos de implementación.
-- [Gestión del Cambio](https://cyrruscs.com/metodo-cira/gestion-del-cambio): adopción organizacional y capacitación.
+- [Estrategia](https://cyrruscs.com/servicios/estrategia): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
+- [Estrategia de TI](https://cyrruscs.com/servicios/estrategia/estrategia-de-ti): consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas con caso de negocio.
+- [Comercial](https://cyrruscs.com/servicios/comercial): consultoría en estrategia comercial: decisiones comerciales y plan de acción para llevarlas a la práctica, con trabajo inicial de unas 8 semanas y revisión a los 3 meses.
+- [Plan de Acción 2027: Negocio y Comercial](https://cyrruscs.com/servicios/comercial/plan-de-accion-2027): consultoría para priorizar mercados, clientes y ofertas, fortalecer el posicionamiento comercial y definir una hoja de ruta 2027; la empresa decide e implementa.
+- [Continuidad del negocio](https://cyrruscs.com/servicios/estrategia/continuidad-del-negocio): consultoría en continuidad del negocio: BIA, RTO/RPO, plan de continuidad (BCP) y DRP probado.
+- [Selección de Soluciones](https://cyrruscs.com/servicios/seleccion-de-soluciones): cómo se selecciona tecnología con criterios definidos antes de mirar proveedores, sin sesgo comercial.
+- [Selección de Software](https://cyrruscs.com/servicios/seleccion-de-soluciones/seleccion-de-software): evaluación y selección independiente de software empresarial — ERP, CRM, HCM y EAM.
+- [Selección de ERP](https://cyrruscs.com/servicios/seleccion-de-soluciones/seleccion-de-software/erp): consultoría de selección de ERP 100% agnóstica de proveedor.
+- [Selección de CRM](https://cyrruscs.com/servicios/seleccion-de-soluciones/seleccion-de-software/crm): evaluación de CRM alrededor del proceso comercial real de la empresa.
+- [Selección de HCM](https://cyrruscs.com/servicios/seleccion-de-soluciones/seleccion-de-software/hcm): selección de tecnología de gestión humana, nómina y talento.
+- [Selección de EAM](https://cyrruscs.com/servicios/seleccion-de-soluciones/seleccion-de-software/eam): selección de plataformas de gestión de activos y mantenimiento.
+- [Tecnologías Avanzadas](https://cyrruscs.com/servicios/seleccion-de-soluciones/tecnologias-avanzadas): selección de automatización, IA y analítica avanzada.
+- [Infraestructura Tecnológica](https://cyrruscs.com/servicios/seleccion-de-soluciones/infraestructura-tecnologica): selección de ciberseguridad, redes, nube y continuidad de negocio.
+- [Ciberseguridad](https://cyrruscs.com/servicios/seleccion-de-soluciones/ciberseguridad): consultoría en ciberseguridad independiente: diagnóstico de riesgo, controles y selección de proveedores.
+- [Gerencia de Proyectos](https://cyrruscs.com/servicios/gerencia-de-proyectos): PMO externo para la ejecución de proyectos de implementación.
+- [Gestión del Cambio](https://cyrruscs.com/servicios/gestion-del-cambio): adopción organizacional y capacitación.
 
 ## Cyrrus Intelligence Lab
-- [Cyrrus Intelligence Lab](https://cyrruscs.com/intelligence-lab): consultoría en inteligencia artificial empresarial — gobierno, arquitectura y automatización.
-- [Automatización y Agentes IA](https://cyrruscs.com/intelligence-lab/automatizaciones-desarrollo): automatización de procesos, agentes de IA y desarrollos a la medida.
-- [Arquitectura de IA](https://cyrruscs.com/intelligence-lab/arquitectura-de-ia): diseño técnico que conecta modelos, datos y sistemas empresariales.
-- [Gobierno de IA](https://cyrruscs.com/intelligence-lab/gobierno-de-ia): políticas, roles y controles sobre el uso de IA en la organización.
-- [Gobierno de datos](https://cyrruscs.com/intelligence-lab/gobierno-de-datos): consultoría en gobierno de datos: dueños, reglas de calidad y controles de datos para IA.
-- [Estrategia de IA](https://cyrruscs.com/intelligence-lab/estrategia-de-ia): consultoría en estrategia de IA: casos de uso priorizados, hoja de ruta, gobierno y medición.
+- [Cyrrus Intelligence Lab](https://cyrruscs.com/servicios/inteligencia-artificial): consultoría en inteligencia artificial empresarial — gobierno, arquitectura y automatización.
+- [Automatización y Agentes IA](https://cyrruscs.com/servicios/inteligencia-artificial/automatizacion-y-agentes-ia): automatización de procesos, agentes de IA y desarrollos a la medida.
+- [Arquitectura de IA](https://cyrruscs.com/servicios/inteligencia-artificial/arquitectura-de-ia): diseño técnico que conecta modelos, datos y sistemas empresariales.
+- [Gobierno de IA](https://cyrruscs.com/servicios/inteligencia-artificial/gobierno-de-ia): políticas, roles y controles sobre el uso de IA en la organización.
+- [Gobierno de datos](https://cyrruscs.com/servicios/inteligencia-artificial/gobierno-de-datos): consultoría en gobierno de datos: dueños, reglas de calidad y controles de datos para IA.
+- [Estrategia de IA](https://cyrruscs.com/servicios/inteligencia-artificial/estrategia-de-ia): consultoría en estrategia de IA: casos de uso priorizados, hoja de ruta, gobierno y medición.
 
 ## Leadership Academy
 - [Leadership Academy](https://cyrruscs.com/leadership-academy): talleres para altos ejecutivos y capacitación gerencial.
@@ -97,28 +97,28 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 ## English
 - [Home](https://cyrruscs.com/en): strategic consulting and digital transformation with AI, via the CIRA methodology.
 - [CIRA Method](https://cyrruscs.com/en/metodo-cira): the 4 phases of the method — Construct, Identify, Realize, Adopt.
-- [Strategy](https://cyrruscs.com/en/metodo-cira/estrategia): business and IT strategy consulting, CTO/CIO as a Service.
-- [IT Strategy](https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-de-ti): IT strategy consulting services: target architecture and a portfolio of initiatives with business cases.
-- [Commercial](https://cyrruscs.com/en/comercial): commercial strategy consulting: commercial decisions and an action plan to put them into practice, with about 8 weeks of initial work and a review at 3 months.
-- [2027 Action Plan: Business and Commercial](https://cyrruscs.com/en/comercial/plan-de-accion-2027): consulting to prioritize markets, customers and offers, strengthen commercial positioning and set a 2027 roadmap; the company decides and implements.
-- [Business Continuity](https://cyrruscs.com/en/metodo-cira/estrategia/continuidad-del-negocio): business continuity consulting services: BIA, RTO/RPO, continuity plan (BCP) and tested DRP.
-- [Solution Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones): how technology is selected against criteria defined before looking at vendors, with no commercial bias.
-- [Software Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software): independent evaluation and selection of enterprise software — ERP, CRM, HCM, and EAM.
-- [ERP Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp): 100% vendor-agnostic ERP selection consulting.
-- [CRM Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm): CRM evaluation built around the company's real sales process.
-- [HCM Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm): selection of human capital, payroll, and talent technology.
-- [EAM Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam): selection of asset management and maintenance platforms.
-- [Advanced Technologies](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas): selection of automation, AI, and advanced analytics.
-- [Technology Infrastructure](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica): selection of cybersecurity, networking, cloud, and business continuity.
-- [Cybersecurity](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/ciberseguridad): independent cybersecurity consulting services: risk assessment, controls and vendor selection.
-- [Project Management](https://cyrruscs.com/en/metodo-cira/gestion-de-proyectos): external PMO for implementation project execution.
-- [Change Management](https://cyrruscs.com/en/metodo-cira/gestion-del-cambio): organizational adoption and training.
-- [Cyrrus Intelligence Lab](https://cyrruscs.com/en/intelligence-lab): enterprise artificial intelligence consulting — governance, architecture, and automation.
-- [Automation & AI Agents](https://cyrruscs.com/en/intelligence-lab/automatizaciones-desarrollo): process automation, AI agents, and custom development.
-- [AI Architecture](https://cyrruscs.com/en/intelligence-lab/arquitectura-de-ia): technical design connecting models, data, and enterprise systems.
-- [AI Governance](https://cyrruscs.com/en/intelligence-lab/gobierno-de-ia): policies, roles, and controls over AI use in the organization.
-- [Data Governance](https://cyrruscs.com/en/intelligence-lab/gobierno-de-datos): data governance consulting services: owners, quality rules and data controls for AI.
-- [AI Strategy](https://cyrruscs.com/en/intelligence-lab/estrategia-de-ia): AI strategy consulting services: prioritized use cases, roadmap, governance and measurement.
+- [Strategy](https://cyrruscs.com/en/servicios/estrategia): business and IT strategy consulting, CTO/CIO as a Service.
+- [IT Strategy](https://cyrruscs.com/en/servicios/estrategia/estrategia-de-ti): IT strategy consulting services: target architecture and a portfolio of initiatives with business cases.
+- [Commercial](https://cyrruscs.com/en/servicios/comercial): commercial strategy consulting: commercial decisions and an action plan to put them into practice, with about 8 weeks of initial work and a review at 3 months.
+- [2027 Action Plan: Business and Commercial](https://cyrruscs.com/en/servicios/comercial/plan-de-accion-2027): consulting to prioritize markets, customers and offers, strengthen commercial positioning and set a 2027 roadmap; the company decides and implements.
+- [Business Continuity](https://cyrruscs.com/en/servicios/estrategia/continuidad-del-negocio): business continuity consulting services: BIA, RTO/RPO, continuity plan (BCP) and tested DRP.
+- [Solution Selection](https://cyrruscs.com/en/servicios/seleccion-de-soluciones): how technology is selected against criteria defined before looking at vendors, with no commercial bias.
+- [Software Selection](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/seleccion-de-software): independent evaluation and selection of enterprise software — ERP, CRM, HCM, and EAM.
+- [ERP Selection](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/seleccion-de-software/erp): 100% vendor-agnostic ERP selection consulting.
+- [CRM Selection](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/seleccion-de-software/crm): CRM evaluation built around the company's real sales process.
+- [HCM Selection](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/seleccion-de-software/hcm): selection of human capital, payroll, and talent technology.
+- [EAM Selection](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/seleccion-de-software/eam): selection of asset management and maintenance platforms.
+- [Advanced Technologies](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/tecnologias-avanzadas): selection of automation, AI, and advanced analytics.
+- [Technology Infrastructure](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/infraestructura-tecnologica): selection of cybersecurity, networking, cloud, and business continuity.
+- [Cybersecurity](https://cyrruscs.com/en/servicios/seleccion-de-soluciones/ciberseguridad): independent cybersecurity consulting services: risk assessment, controls and vendor selection.
+- [Project Management](https://cyrruscs.com/en/servicios/gerencia-de-proyectos): external PMO for implementation project execution.
+- [Change Management](https://cyrruscs.com/en/servicios/gestion-del-cambio): organizational adoption and training.
+- [Cyrrus Intelligence Lab](https://cyrruscs.com/en/servicios/inteligencia-artificial): enterprise artificial intelligence consulting — governance, architecture, and automation.
+- [Automation & AI Agents](https://cyrruscs.com/en/servicios/inteligencia-artificial/automatizacion-y-agentes-ia): process automation, AI agents, and custom development.
+- [AI Architecture](https://cyrruscs.com/en/servicios/inteligencia-artificial/arquitectura-de-ia): technical design connecting models, data, and enterprise systems.
+- [AI Governance](https://cyrruscs.com/en/servicios/inteligencia-artificial/gobierno-de-ia): policies, roles, and controls over AI use in the organization.
+- [Data Governance](https://cyrruscs.com/en/servicios/inteligencia-artificial/gobierno-de-datos): data governance consulting services: owners, quality rules and data controls for AI.
+- [AI Strategy](https://cyrruscs.com/en/servicios/inteligencia-artificial/estrategia-de-ia): AI strategy consulting services: prioritized use cases, roadmap, governance and measurement.
 - [Leadership Academy](https://cyrruscs.com/en/leadership-academy): executive workshops and management training.
 - [About Us](https://cyrruscs.com/en/quienes-somos): Jackson Bohorquez, CEO and founder of Cyrrus, creator of the CIRA method.
 - [Experience](https://cyrruscs.com/en/experiencia): Cyrrus's cases and track record.

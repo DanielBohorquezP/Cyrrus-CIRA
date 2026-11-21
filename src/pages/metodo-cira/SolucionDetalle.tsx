@@ -50,23 +50,23 @@ interface DetailEntry {
 
 const relatedPathsBySlug: Record<string, string[]> = {
   "tecnologias-avanzadas": [
-    "/intelligence-lab/gobierno-de-ia",
-    "/intelligence-lab/automatizaciones-desarrollo",
-    "/metodo-cira/gestion-del-cambio",
+    "/servicios/inteligencia-artificial/gobierno-de-ia",
+    "/servicios/inteligencia-artificial/automatizacion-y-agentes-ia",
+    "/servicios/gestion-del-cambio",
   ],
   "infraestructura-tecnologica": [
-    "/intelligence-lab/arquitectura-de-ia",
-    "/metodo-cira/gestion-de-proyectos",
-    "/metodo-cira/gestion-del-cambio",
+    "/servicios/inteligencia-artificial/arquitectura-de-ia",
+    "/servicios/gerencia-de-proyectos",
+    "/servicios/gestion-del-cambio",
     "/leadership-academy/iso-27001",
     "/leadership-academy/continuidad-de-negocio-drp",
-    "/metodo-cira/seleccion-de-soluciones/ciberseguridad",
-    "/metodo-cira/estrategia/continuidad-del-negocio",
+    "/servicios/seleccion-de-soluciones/ciberseguridad",
+    "/servicios/estrategia/continuidad-del-negocio",
   ],
   ciberseguridad: [
-    "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica",
-    "/metodo-cira/estrategia/continuidad-del-negocio",
-    "/metodo-cira/gestion-de-proyectos",
+    "/servicios/seleccion-de-soluciones/infraestructura-tecnologica",
+    "/servicios/estrategia/continuidad-del-negocio",
+    "/servicios/gerencia-de-proyectos",
     "/leadership-academy/iso-27001",
   ],
 };
@@ -88,7 +88,7 @@ export default function SolucionDetalle() {
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
-  const selectionPath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
+  const selectionPath = `${prefix}/servicios/seleccion-de-soluciones`;
   const pagePath = `${selectionPath}/${slug}`;
   const selectionLabel =
     t("hero.title", { defaultValue: "" }) || (lang === "en" ? "Solution Selection" : "Selección de Soluciones");
@@ -103,8 +103,8 @@ export default function SolucionDetalle() {
     description: meta?.description ?? "",
     alternatePath: slug
       ? lang === "en"
-        ? `/metodo-cira/seleccion-de-soluciones/${slug}`
-        : `/en/metodo-cira/seleccion-de-soluciones/${slug}`
+        ? `/servicios/seleccion-de-soluciones/${slug}`
+        : `/en/servicios/seleccion-de-soluciones/${slug}`
       : undefined,
     jsonLd:
       entry && slug
@@ -125,7 +125,7 @@ export default function SolucionDetalle() {
         : undefined,
   });
 
-  if (!entry || !slug || !assets) return <Navigate to={`${prefix}/metodo-cira/seleccion-de-soluciones`} replace />;
+  if (!entry || !slug || !assets) return <Navigate to={`${prefix}/servicios/seleccion-de-soluciones`} replace />;
 
   // Qué hacemos: the explicit block, else the "what we help select" items.
   const rawCards: { title: string; text: string; image?: string; alt?: string }[] =

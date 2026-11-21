@@ -8,8 +8,8 @@ import "@/i18n/ns/intelligence-lab";
 export default createServiceChildPage({
   ns: "intelligence-lab",
   key: "gobiernoDatos",
-  path: "/intelligence-lab/gobierno-de-datos",
-  parent: { path: "/intelligence-lab", label: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" } },
+  path: "/servicios/inteligencia-artificial/gobierno-de-datos",
+  parent: { path: "/servicios/inteligencia-artificial", label: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" } },
   group: "ia",
   eyebrow: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" },
   heroVideo: { ...IA_HERO_MEDIA.video, poster: IA_HERO_MEDIA.image.src },
@@ -22,10 +22,10 @@ export default createServiceChildPage({
     alt: "Consultor de Cyrrus trabajando en políticas y controles de datos",
   },
   relatedPaths: [
-    "/intelligence-lab/gobierno-de-ia",
-    "/intelligence-lab/arquitectura-de-ia",
+    "/servicios/inteligencia-artificial/gobierno-de-ia",
+    "/servicios/inteligencia-artificial/arquitectura-de-ia",
     "/leadership-academy/gobierno-de-datos-para-ejecutivos",
-    "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    "/servicios/seleccion-de-soluciones/seleccion-de-software/crm",
   ],
   articleSlug: "gobernanza-y-deduplicacion-de-datos-en-el-crm",
 });

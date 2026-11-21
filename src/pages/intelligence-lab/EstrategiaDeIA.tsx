@@ -8,8 +8,8 @@ import "@/i18n/ns/intelligence-lab";
 export default createServiceChildPage({
   ns: "intelligence-lab",
   key: "estrategiaIa",
-  path: "/intelligence-lab/estrategia-de-ia",
-  parent: { path: "/intelligence-lab", label: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" } },
+  path: "/servicios/inteligencia-artificial/estrategia-de-ia",
+  parent: { path: "/servicios/inteligencia-artificial", label: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" } },
   group: "ia",
   eyebrow: { es: "Cyrrus Intelligence Lab", en: "Cyrrus Intelligence Lab" },
   heroVideo: { ...IA_HERO_MEDIA.video, poster: IA_HERO_MEDIA.image.src },
@@ -22,10 +22,10 @@ export default createServiceChildPage({
     alt: "Sesión de trabajo sobre casos de uso de IA en una empresa",
   },
   relatedPaths: [
-    "/intelligence-lab/gobierno-de-ia",
-    "/intelligence-lab/arquitectura-de-ia",
-    "/intelligence-lab/automatizaciones-desarrollo",
-    "/metodo-cira/estrategia/estrategia-de-ti",
+    "/servicios/inteligencia-artificial/gobierno-de-ia",
+    "/servicios/inteligencia-artificial/arquitectura-de-ia",
+    "/servicios/inteligencia-artificial/automatizacion-y-agentes-ia",
+    "/servicios/estrategia/estrategia-de-ti",
   ],
   articleSlug: "que-es-gobernanza-de-ia-y-que-marcos-usar",
 });

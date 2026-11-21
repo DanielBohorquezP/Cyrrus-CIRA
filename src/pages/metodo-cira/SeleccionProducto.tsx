@@ -106,11 +106,11 @@ export default function SeleccionProducto() {
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
-  const selectionPath = `${prefix}/metodo-cira/seleccion-de-soluciones`;
+  const selectionPath = `${prefix}/servicios/seleccion-de-soluciones`;
   const softwarePath = `${selectionPath}/seleccion-de-software`;
   const pagePath = `${softwarePath}/${slug}`;
-  const changePath = `${prefix}/metodo-cira/gestion-del-cambio`;
-  const pmoPath = `${prefix}/metodo-cira/gestion-de-proyectos`;
+  const changePath = `${prefix}/servicios/gestion-del-cambio`;
+  const pmoPath = `${prefix}/servicios/gerencia-de-proyectos`;
   const articlePath = `${prefix}/perspectivas/por-que-fracasan-los-proyectos-de-transformacion-digital`;
   const relatedServices = [
     {
@@ -211,8 +211,8 @@ export default function SeleccionProducto() {
     description: meta?.description ?? "",
     alternatePath: slug
       ? lang === "en"
-        ? `/metodo-cira/seleccion-de-soluciones/seleccion-de-software/${slug}`
-        : `/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/${slug}`
+        ? `/servicios/seleccion-de-soluciones/seleccion-de-software/${slug}`
+        : `/en/servicios/seleccion-de-soluciones/seleccion-de-software/${slug}`
       : undefined,
     jsonLd:
       hero && slug && faqs
@@ -255,7 +255,7 @@ export default function SeleccionProducto() {
   });
 
   if (!slug || !hero || !dolor || !problemaReal || !solucion || !evaluamos || !entregables || !faqs) {
-    return <Navigate to={`${prefix}/metodo-cira/seleccion-de-soluciones/seleccion-de-software`} replace />;
+    return <Navigate to={`${prefix}/servicios/seleccion-de-soluciones/seleccion-de-software`} replace />;
   }
 
   const breadcrumbItems = [

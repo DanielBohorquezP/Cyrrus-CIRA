@@ -42,19 +42,19 @@ export default function GestionDeProyectos() {
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
-  const pagePath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
+  const pagePath = lang === "en" ? "/en/servicios/gerencia-de-proyectos" : "/servicios/gerencia-de-proyectos";
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
     { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
     { label: t("hero.title") },
   ];
   const erpPath = lang === "en"
-    ? "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
-    : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
-  const changePath = lang === "en" ? "/en/metodo-cira/gestion-del-cambio" : "/metodo-cira/gestion-del-cambio";
+    ? "/en/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
+    : "/servicios/seleccion-de-soluciones/seleccion-de-software/erp";
+  const changePath = lang === "en" ? "/en/servicios/gestion-del-cambio" : "/servicios/gestion-del-cambio";
   const automationPath = lang === "en"
-    ? "/en/intelligence-lab/automatizaciones-desarrollo"
-    : "/intelligence-lab/automatizaciones-desarrollo";
+    ? "/en/servicios/inteligencia-artificial/automatizacion-y-agentes-ia"
+    : "/servicios/inteligencia-artificial/automatizacion-y-agentes-ia";
   const relatedPaths = [erpPath, changePath, automationPath];
   const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((it, i) => ({
     ...it,
@@ -67,7 +67,7 @@ export default function GestionDeProyectos() {
   usePageMeta({
     title: t("meta.title"),
     description: t("meta.description"),
-    alternatePath: lang === "en" ? "/metodo-cira/gestion-de-proyectos" : "/en/metodo-cira/gestion-de-proyectos",
+    alternatePath: lang === "en" ? "/servicios/gerencia-de-proyectos" : "/en/servicios/gerencia-de-proyectos",
     jsonLd: [
       {
         "@context": "https://schema.org",

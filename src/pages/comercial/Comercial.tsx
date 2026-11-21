@@ -9,9 +9,9 @@ import "@/i18n/ns/comercial";
 export default createServiceChildPage({
   ns: "comercial",
   key: "comercial",
-  path: "/comercial",
+  path: "/servicios/comercial",
   eyebrow: { es: "Comercial", en: "Commercial" },
-  heroLink: { path: "/comercial/plan-de-accion-2027", label: { es: "Ver el Plan de Acción 2027", en: "See the 2027 Action Plan" } },
+  heroLink: { path: "/servicios/comercial/plan-de-accion-2027", label: { es: "Ver el Plan de Acción 2027", en: "See the 2027 Action Plan" } },
   heroVideo: true,
   heroImage: {
     src: "/assets/decoracion/estrategia-comercial-niebla.jpg",
@@ -22,10 +22,10 @@ export default createServiceChildPage({
     alt: "Costa y mar abierto bajo un cielo despejado",
   },
   relatedPaths: [
-    "/comercial/plan-de-accion-2027",
-    "/metodo-cira/estrategia",
-    "/metodo-cira/estrategia/estrategia-de-ti",
-    "/metodo-cira/estrategia/continuidad-del-negocio",
-    "/metodo-cira/gestion-del-cambio",
+    "/servicios/comercial/plan-de-accion-2027",
+    "/servicios/estrategia",
+    "/servicios/estrategia/estrategia-de-ti",
+    "/servicios/estrategia/continuidad-del-negocio",
+    "/servicios/gestion-del-cambio",
   ],
 });

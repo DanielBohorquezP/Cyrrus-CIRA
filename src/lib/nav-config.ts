@@ -33,98 +33,98 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
       children: [
         {
           label: t("nav.estrategia", { ns: "common" }),
-          href: p("/metodo-cira/estrategia"),
+          href: p("/servicios/estrategia"),
           description: t("nav.estrategiaDesc", { ns: "common" }),
           children: [
             {
               label: t("nav.estrategiaTi", { ns: "common" }),
-              href: p("/metodo-cira/estrategia/estrategia-de-ti"),
+              href: p("/servicios/estrategia/estrategia-de-ti"),
               description: t("nav.estrategiaTiDesc", { ns: "common" }),
             },
             {
               label: t("nav.continuidadNegocioServicio", { ns: "common" }),
-              href: p("/metodo-cira/estrategia/continuidad-del-negocio"),
+              href: p("/servicios/estrategia/continuidad-del-negocio"),
               description: t("nav.continuidadNegocioServicioDesc", { ns: "common" }),
             },
           ],
         },
         {
           label: t("nav.comercial", { ns: "common" }),
-          href: p("/comercial"),
+          href: p("/servicios/comercial"),
           description: t("nav.comercialDesc", { ns: "common" }),
           children: [
             {
               label: t("nav.planAccion2027", { ns: "common" }),
-              href: p("/comercial/plan-de-accion-2027"),
+              href: p("/servicios/comercial/plan-de-accion-2027"),
               description: t("nav.planAccion2027Desc", { ns: "common" }),
             },
           ],
         },
         {
           label: t("nav.seleccionSoluciones", { ns: "common" }),
-          href: p("/metodo-cira/seleccion-de-soluciones"),
+          href: p("/servicios/seleccion-de-soluciones"),
           description: t("nav.seleccionSolucionesDesc", { ns: "common" }),
           children: [
             {
               label: t("nav.seleccionSoftware", { ns: "common" }),
-              href: p("/metodo-cira/seleccion-de-soluciones/seleccion-de-software"),
+              href: p("/servicios/seleccion-de-soluciones/seleccion-de-software"),
               description: t("nav.seleccionSoftwareDesc", { ns: "common" }),
             },
             {
               label: t("nav.tecnologiasAvanzadas", { ns: "common" }),
-              href: p("/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas"),
+              href: p("/servicios/seleccion-de-soluciones/tecnologias-avanzadas"),
               description: t("nav.tecnologiasAvanzadasDesc", { ns: "common" }),
             },
             {
               label: t("nav.infraestructuraTecnologica", { ns: "common" }),
-              href: p("/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica"),
+              href: p("/servicios/seleccion-de-soluciones/infraestructura-tecnologica"),
               description: t("nav.infraestructuraTecnologicaDesc", { ns: "common" }),
             },
             {
               label: t("nav.ciberseguridad", { ns: "common" }),
-              href: p("/metodo-cira/seleccion-de-soluciones/ciberseguridad"),
+              href: p("/servicios/seleccion-de-soluciones/ciberseguridad"),
               description: t("nav.ciberseguridadDesc", { ns: "common" }),
             },
           ],
         },
         {
           label: t("nav.gerenciaProyectos", { ns: "common" }),
-          href: p("/metodo-cira/gestion-de-proyectos"),
+          href: p("/servicios/gerencia-de-proyectos"),
           description: t("nav.gerenciaProyectosDesc", { ns: "common" }),
         },
         {
           label: t("nav.gestionCambio", { ns: "common" }),
-          href: p("/metodo-cira/gestion-del-cambio"),
+          href: p("/servicios/gestion-del-cambio"),
           description: t("nav.gestionCambioDesc", { ns: "common" }),
         },
         {
           label: t("nav.inteligenciaArtificial", { ns: "common" }),
-          href: p("/intelligence-lab"),
+          href: p("/servicios/inteligencia-artificial"),
           description: t("nav.inteligenciaArtificialDesc", { ns: "common" }),
           children: [
             {
               label: t("nav.gobiernoIA", { ns: "common" }),
-              href: p("/intelligence-lab/gobierno-de-ia"),
+              href: p("/servicios/inteligencia-artificial/gobierno-de-ia"),
               description: t("nav.gobiernoIADesc", { ns: "common" }),
             },
             {
               label: t("nav.arquitecturaIA", { ns: "common" }),
-              href: p("/intelligence-lab/arquitectura-de-ia"),
+              href: p("/servicios/inteligencia-artificial/arquitectura-de-ia"),
               description: t("nav.arquitecturaIADesc", { ns: "common" }),
             },
             {
               label: t("nav.automatizacionAgentes", { ns: "common" }),
-              href: p("/intelligence-lab/automatizaciones-desarrollo"),
+              href: p("/servicios/inteligencia-artificial/automatizacion-y-agentes-ia"),
               description: t("nav.automatizacionAgentesDesc", { ns: "common" }),
             },
             {
               label: t("nav.estrategiaIA", { ns: "common" }),
-              href: p("/intelligence-lab/estrategia-de-ia"),
+              href: p("/servicios/inteligencia-artificial/estrategia-de-ia"),
               description: t("nav.estrategiaIADesc", { ns: "common" }),
             },
             {
               label: t("nav.gobiernoDatosServicio", { ns: "common" }),
-              href: p("/intelligence-lab/gobierno-de-datos"),
+              href: p("/servicios/inteligencia-artificial/gobierno-de-datos"),
               description: t("nav.gobiernoDatosServicioDesc", { ns: "common" }),
             },
           ],

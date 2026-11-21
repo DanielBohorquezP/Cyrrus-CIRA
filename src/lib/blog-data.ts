@@ -33,7 +33,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "por-que-fracasan-los-proyectos-de-transformacion-digital",
     coverImage: "/assets/decoracion/1785866331023.jpg",
     publishedAt: "2026-09-08",
-    pillarHref: "/metodo-cira/gestion-del-cambio",
+    pillarHref: "/servicios/gestion-del-cambio",
     pillarLabelKey: "gestionCambio",
     serviceCtaIndexes: [25, 55],
     serviceCtaImages: [
@@ -45,7 +45,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "como-elegir-una-consultora-estrategica-confiable",
     coverImage: "/assets/decoracion/IMG_20200313_092701647.jpg",
     publishedAt: "2026-09-10",
-    pillarHref: "/metodo-cira/estrategia",
+    pillarHref: "/servicios/estrategia",
     pillarLabelKey: "estrategia",
     serviceCtaIndexes: [29, 53],
     serviceCtaImages: [
@@ -57,7 +57,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "gobierno-de-ia-corporativo-en-la-empresa",
     coverImage: "/assets/decoracion/1785866223775.jpg",
     publishedAt: "2026-09-12",
-    pillarHref: "/intelligence-lab/gobierno-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
     serviceCtaIndexes: [30, 56],
     serviceCtaImages: [
@@ -69,7 +69,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "gerencia-de-proyectos-cuando-contratar-una-pmo-externa",
     coverImage: "/assets/decoracion/IMG_20230705_122802.jpg",
     publishedAt: "2026-09-22",
-    pillarHref: "/metodo-cira/gestion-de-proyectos",
+    pillarHref: "/servicios/gerencia-de-proyectos",
     pillarLabelKey: "gerenciaProyectos",
     serviceCtaIndexes: [14, 25],
     serviceCtaImages: [
@@ -81,7 +81,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "que-es-un-erp-guia-para-elegirlo",
     coverImage: "/assets/decoracion/IMG_20230228_082627.jpg",
     publishedAt: "2026-10-03",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
     pillarLabelKey: "seleccionSoluciones",
     serviceCtaIndexes: [34, 59],
     serviceCtaImages: [
@@ -93,7 +93,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "que-es-una-pmo-funciones-tipos-cuando-necesitarla",
     coverImage: "/assets/decoracion/Trabajo.jpg",
     publishedAt: "2026-10-03",
-    pillarHref: "/metodo-cira/gestion-de-proyectos",
+    pillarHref: "/servicios/gerencia-de-proyectos",
     pillarLabelKey: "gerenciaProyectos",
     serviceCtaIndexes: [20, 52],
     serviceCtaImages: [
@@ -105,7 +105,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "planeacion-estrategica-que-es-etapas-y-ejemplo",
     coverImage: "/assets/decoracion/Evento%20mesas.jpg",
     publishedAt: "2026-10-03",
-    pillarHref: "/metodo-cira/estrategia",
+    pillarHref: "/servicios/estrategia",
     pillarLabelKey: "estrategia",
     serviceCtaIndexes: [15, 48],
     serviceCtaImages: [
@@ -117,7 +117,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "gestion-del-cambio-organizacional-que-es-modelos-y-plantilla",
     coverImage: "/assets/decoracion/IMG_20230302_112828.jpg",
     publishedAt: "2026-10-05",
-    pillarHref: "/metodo-cira/gestion-del-cambio",
+    pillarHref: "/servicios/gestion-del-cambio",
     pillarLabelKey: "gestionCambio",
     serviceCtaIndexes: [10, 25],
     serviceCtaImages: [
@@ -129,7 +129,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "mejores-erp-para-medianas-empresas",
     coverImage: "/assets/decoracion/IMG_20230227_164308.jpg",
     publishedAt: "2026-10-05",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [4, 16],
     serviceCtaImages: [
@@ -141,7 +141,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "sap-business-one-vs-netsuite-vs-dynamics-365-business-central",
     coverImage: "/assets/decoracion/1785866224151.jpg",
     publishedAt: "2026-10-05",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -153,7 +153,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "odoo-vs-sap-business-one-diferencias",
     coverImage: "/assets/decoracion/1785866224326.jpg",
     publishedAt: "2026-10-05",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [6, 11],
     serviceCtaImages: [
@@ -165,7 +165,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "cuanto-cuesta-implementar-un-erp",
     coverImage: "/assets/decoracion/IMG_20200313_092604173.jpg",
     publishedAt: "2026-10-05",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [9, 15],
     serviceCtaImages: [
@@ -177,7 +177,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "salesforce-vs-hubspot-vs-dynamics-365-crm",
     coverImage: "/assets/decoracion/IMG_20230228_083642.jpg",
     publishedAt: "2026-10-05",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/crm",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [6, 16],
     serviceCtaImages: [
@@ -189,7 +189,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "sistema-wms-que-es-y-como-elegir",
     coverImage: "/assets/decoracion/1785866223667.jpg",
     publishedAt: "2026-10-21",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [8, 12],
     serviceCtaImages: [
@@ -201,7 +201,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "cuanto-cuesta-sap-business-one",
     coverImage: "/assets/decoracion/1785866224006.jpg",
     publishedAt: "2026-10-21",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [4, 9],
     serviceCtaImages: [
@@ -213,7 +213,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "software-cmms-eam-como-elegir",
     coverImage: "/assets/decoracion/IMG_20230302_112825.jpg",
     publishedAt: "2026-10-21",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/eam",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/eam",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [5, 13],
     serviceCtaImages: [
@@ -225,7 +225,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "migrar-sap-ecc-a-s4hana-plazos-costos-alternativas",
     coverImage: "/assets/decoracion/IMG_20230228_091017.jpg",
     publishedAt: "2026-10-21",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [5, 9],
     serviceCtaImages: [
@@ -237,7 +237,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "software-recursos-humanos-nomina-mas-de-100-empleados",
     coverImage: "/assets/decoracion/Portada.jpg",
     publishedAt: "2026-10-21",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/hcm",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/hcm",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [7, 13],
     serviceCtaImages: [
@@ -249,7 +249,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "software-mes-que-es-y-cuando-lo-necesita-su-planta",
     coverImage: "/assets/decoracion/IMG_20200313_092701647.jpg",
     publishedAt: "2026-10-21",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [7, 11],
     serviceCtaImages: [
@@ -261,7 +261,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "fin-de-venta-salesforce-cpq-opciones",
     coverImage: "/assets/decoracion/IMG_20230228_091017.jpg",
     publishedAt: "2026-10-23",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/crm",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [8, 12],
     serviceCtaImages: [
@@ -273,7 +273,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "resistencia-al-cambio-como-diagnosticarla-y-que-hacer",
     coverImage: "/assets/decoracion/IMG_20230302_112825.jpg",
     publishedAt: "2026-10-23",
-    pillarHref: "/metodo-cira/gestion-del-cambio",
+    pillarHref: "/servicios/gestion-del-cambio",
     pillarLabelKey: "gestionCambio",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -285,7 +285,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "que-es-rpa-y-cuando-conviene-frente-a-la-ia",
     coverImage: "/assets/decoracion/IMG_20230228_091017.jpg",
     publishedAt: "2026-10-23",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/tecnologias-avanzadas",
+    pillarHref: "/servicios/seleccion-de-soluciones/tecnologias-avanzadas",
     pillarLabelKey: "seleccionSoluciones",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -297,7 +297,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "que-es-un-crm-y-como-elegir-el-correcto",
     coverImage: "/assets/decoracion/IMG_20200313_092713184.jpg",
     publishedAt: "2026-10-23",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/crm",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -309,7 +309,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "integrar-erp-y-crm-conector-nativo-o-middleware",
     coverImage: "/assets/decoracion/IMG_20230227_164308.jpg",
     publishedAt: "2026-10-23",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/crm",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -321,7 +321,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "costo-total-de-un-crm-que-sumar-ademas-de-la-licencia",
     coverImage: "/assets/decoracion/IMG_20200313_092604173.jpg",
     publishedAt: "2026-10-23",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/crm",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -333,7 +333,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "gobernanza-y-deduplicacion-de-datos-en-el-crm",
     coverImage: "/assets/decoracion/1785866224151.jpg",
     publishedAt: "2026-10-23",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/crm",
+    pillarHref: "/servicios/seleccion-de-soluciones/seleccion-de-software/crm",
     pillarLabelKey: "seleccionSoftware",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -345,7 +345,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "que-es-gobernanza-de-ia-y-que-marcos-usar",
     coverImage: "/assets/decoracion/IMG_20200313_092604173.jpg",
     publishedAt: "2026-11-02",
-    pillarHref: "/intelligence-lab/gobierno-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
     serviceCtaIndexes: [4, 11],
     serviceCtaImages: [
@@ -357,7 +357,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "regulacion-de-ia-que-exigen-la-ue-eeuu-y-espana",
     coverImage: "/assets/decoracion/IMG_20230227_164810.jpg",
     publishedAt: "2026-11-02",
-    pillarHref: "/intelligence-lab/gobierno-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
     serviceCtaIndexes: [6, 12],
     serviceCtaImages: [
@@ -369,7 +369,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "iso-iec-42001-que-es-y-a-quien-aplica",
     coverImage: "/assets/decoracion/IMG_20230302_112825.jpg",
     publishedAt: "2026-11-02",
-    pillarHref: "/intelligence-lab/gobierno-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
     serviceCtaIndexes: [5, 9],
     serviceCtaImages: [
@@ -381,7 +381,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "modelo-de-madurez-de-gobernanza-de-ia",
     coverImage: "/assets/decoracion/IMG_20200313_092701647.jpg",
     publishedAt: "2026-11-02",
-    pillarHref: "/intelligence-lab/gobierno-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
     serviceCtaIndexes: [4, 11],
     serviceCtaImages: [
@@ -393,7 +393,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "cumplimiento-de-ia-que-evidencia-debe-poder-mostrar-la-empresa",
     coverImage: "/assets/decoracion/1785866331023.jpg",
     publishedAt: "2026-11-02",
-    pillarHref: "/intelligence-lab/gobierno-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
     serviceCtaIndexes: [7, 12],
     serviceCtaImages: [
@@ -405,7 +405,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "herramientas-y-plataformas-de-gobernanza-de-ia-como-evaluarlas",
     coverImage: "/assets/decoracion/IMG_20230227_164308.jpg",
     publishedAt: "2026-11-02",
-    pillarHref: "/intelligence-lab/gobierno-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-ia",
     pillarLabelKey: "gobiernoIA",
     serviceCtaIndexes: [4, 10],
     serviceCtaImages: [
@@ -417,7 +417,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
     coverImage: "/assets/decoracion/IMG_20230302_112825.jpg",
     publishedAt: "2026-11-12",
-    pillarHref: "/metodo-cira/estrategia/continuidad-del-negocio",
+    pillarHref: "/servicios/estrategia/continuidad-del-negocio",
     pillarLabelKey: "continuidadNegocioServicio",
     serviceCtaIndexes: [15, 24],
     serviceCtaImages: [
@@ -429,7 +429,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "estrategia-de-ti-que-es-y-que-incluye",
     coverImage: "/assets/decoracion/IMG_20230228_082627.jpg",
     publishedAt: "2026-11-12",
-    pillarHref: "/metodo-cira/estrategia/estrategia-de-ti",
+    pillarHref: "/servicios/estrategia/estrategia-de-ti",
     pillarLabelKey: "estrategiaTi",
     serviceCtaIndexes: [15, 20],
     serviceCtaImages: [
@@ -441,7 +441,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "senales-de-que-necesita-una-consultoria-de-ciberseguridad",
     coverImage: "/assets/decoracion/IMG_20230228_082632.jpg",
     publishedAt: "2026-11-15",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/ciberseguridad",
+    pillarHref: "/servicios/seleccion-de-soluciones/ciberseguridad",
     pillarLabelKey: "ciberseguridad",
     serviceCtaIndexes: [9, 21],
     serviceCtaImages: [
@@ -453,7 +453,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "gobierno-de-datos-que-es-y-como-empezar",
     coverImage: "/assets/decoracion/1785866224006.jpg",
     publishedAt: "2026-11-13",
-    pillarHref: "/intelligence-lab/gobierno-de-datos",
+    pillarHref: "/servicios/inteligencia-artificial/gobierno-de-datos",
     pillarLabelKey: "gobiernoDatosServicio",
     serviceCtaIndexes: [12, 27],
     serviceCtaImages: [
@@ -465,7 +465,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "estrategia-de-ia-para-empresas-hoja-de-ruta",
     coverImage: "/assets/decoracion/1785866223529.jpg",
     publishedAt: "2026-11-13",
-    pillarHref: "/intelligence-lab/estrategia-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/estrategia-de-ia",
     pillarLabelKey: "estrategiaIA",
     serviceCtaIndexes: [8, 18],
     serviceCtaImages: [
@@ -477,7 +477,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "como-elegir-una-consultoria-de-ia-con-ejecucion-y-roi-medible",
     coverImage: "/assets/decoracion/1785866223529.jpg",
     publishedAt: "2026-11-15",
-    pillarHref: "/intelligence-lab/estrategia-de-ia",
+    pillarHref: "/servicios/inteligencia-artificial/estrategia-de-ia",
     pillarLabelKey: "estrategiaIA",
     serviceCtaIndexes: [9, 18],
     serviceCtaImages: [
@@ -489,7 +489,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "implementacion-de-erp-con-pmo-como-gobernar-el-proyecto",
     coverImage: "/assets/decoracion/IMG_20230228_091017.jpg",
     publishedAt: "2026-11-14",
-    pillarHref: "/metodo-cira/gestion-de-proyectos",
+    pillarHref: "/servicios/gerencia-de-proyectos",
     pillarLabelKey: "gerenciaProyectos",
     serviceCtaIndexes: [15, 31],
     serviceCtaImages: [
@@ -501,7 +501,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "agentes-de-ia-que-son-cuando-valen-la-pena-y-como-evaluarlos",
     coverImage: "/assets/decoracion/1785866224006.jpg",
     publishedAt: "2026-11-18",
-    pillarHref: "/intelligence-lab/automatizaciones-desarrollo",
+    pillarHref: "/servicios/inteligencia-artificial/automatizacion-y-agentes-ia",
     pillarLabelKey: "automatizacionAgentes",
     serviceCtaIndexes: [10, 23],
     serviceCtaImages: [
@@ -513,7 +513,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "cobit-2019-que-es-y-cuando-conviene-adoptarlo",
     coverImage: "/assets/decoracion/IMG_20230228_083642.jpg",
     publishedAt: "2026-11-18",
-    pillarHref: "/metodo-cira/estrategia/estrategia-de-ti",
+    pillarHref: "/servicios/estrategia/estrategia-de-ti",
     pillarLabelKey: "estrategiaTi",
     serviceCtaIndexes: [10, 22],
     serviceCtaImages: [
@@ -525,7 +525,7 @@ export const blogPosts: BlogPostEntry[] = [
     slug: "gobierno-de-la-ciberseguridad-nist-csf-2-iso-27014",
     coverImage: "/assets/decoracion/IMG_20230302_112825.jpg",
     publishedAt: "2026-11-18",
-    pillarHref: "/metodo-cira/seleccion-de-soluciones/ciberseguridad",
+    pillarHref: "/servicios/seleccion-de-soluciones/ciberseguridad",
     pillarLabelKey: "ciberseguridad",
     serviceCtaIndexes: [10, 21],
     serviceCtaImages: [

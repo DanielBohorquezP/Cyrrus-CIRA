@@ -53,20 +53,20 @@ export default function PlaneacionEstrategica() {
   const [quoteLead, ...quoteRest] = t("intro.pullQuote").split(" — ");
 
   const siteUrl = "https://cyrruscs.com";
-  const pagePath = lang === "en" ? "/en/metodo-cira/estrategia" : "/metodo-cira/estrategia";
+  const pagePath = lang === "en" ? "/en/servicios/estrategia" : "/servicios/estrategia";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
   const erpPath = lang === "en"
-    ? "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
-    : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
-  const pmoPath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
-  const changePath = lang === "en" ? "/en/metodo-cira/gestion-del-cambio" : "/metodo-cira/gestion-del-cambio";
+    ? "/en/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
+    : "/servicios/seleccion-de-soluciones/seleccion-de-software/erp";
+  const pmoPath = lang === "en" ? "/en/servicios/gerencia-de-proyectos" : "/servicios/gerencia-de-proyectos";
+  const changePath = lang === "en" ? "/en/servicios/gestion-del-cambio" : "/servicios/gestion-del-cambio";
   // The 3 Castillos case is the published proof of a strategy-to-go-live engagement.
   const casePath = lang === "en" ? "/en/experiencia/3-castillos" : "/experiencia/3-castillos";
-  const itStrategyPath = lang === "en" ? "/en/metodo-cira/estrategia/estrategia-de-ti" : "/metodo-cira/estrategia/estrategia-de-ti";
+  const itStrategyPath = lang === "en" ? "/en/servicios/estrategia/estrategia-de-ti" : "/servicios/estrategia/estrategia-de-ti";
   const continuityPath = lang === "en"
-    ? "/en/metodo-cira/estrategia/continuidad-del-negocio"
-    : "/metodo-cira/estrategia/continuidad-del-negocio";
+    ? "/en/servicios/estrategia/continuidad-del-negocio"
+    : "/servicios/estrategia/continuidad-del-negocio";
   const relatedPaths = [erpPath, pmoPath, changePath, casePath, itStrategyPath, continuityPath];
   const relatedItems = (t("related.items", { returnObjects: true }) as Item[]).map((item, i) => ({
     ...item,
@@ -81,7 +81,7 @@ export default function PlaneacionEstrategica() {
   usePageMeta({
     title: t("meta.title"),
     description: t("meta.description"),
-    alternatePath: lang === "en" ? "/metodo-cira/estrategia" : "/en/metodo-cira/estrategia",
+    alternatePath: lang === "en" ? "/servicios/estrategia" : "/en/servicios/estrategia",
     jsonLd: [
       {
         "@context": "https://schema.org",

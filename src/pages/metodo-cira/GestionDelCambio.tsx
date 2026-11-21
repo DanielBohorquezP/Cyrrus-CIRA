@@ -39,7 +39,7 @@ export default function GestionDelCambio() {
   const siteUrl = "https://cyrruscs.com";
   const homePath = lang === "en" ? "/en" : "/";
   const methodPath = lang === "en" ? "/en/metodo-cira" : "/metodo-cira";
-  const pagePath = lang === "en" ? "/en/metodo-cira/gestion-del-cambio" : "/metodo-cira/gestion-del-cambio";
+  const pagePath = lang === "en" ? "/en/servicios/gestion-del-cambio" : "/servicios/gestion-del-cambio";
   const breadcrumbItems = [
     { label: lang === "en" ? "Home" : "Inicio", href: homePath },
     { label: lang === "en" ? "CIRA Method" : "Método CIRA", href: methodPath },
@@ -53,10 +53,10 @@ export default function GestionDelCambio() {
     ? "/en/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla"
     : "/perspectivas/gestion-del-cambio-organizacional-que-es-modelos-y-plantilla";
   const erpPath = lang === "en"
-    ? "/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp"
-    : "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp";
-  const pmoPath = lang === "en" ? "/en/metodo-cira/gestion-de-proyectos" : "/metodo-cira/gestion-de-proyectos";
-  const aiGovernancePath = lang === "en" ? "/en/intelligence-lab/gobierno-de-ia" : "/intelligence-lab/gobierno-de-ia";
+    ? "/en/servicios/seleccion-de-soluciones/seleccion-de-software/erp"
+    : "/servicios/seleccion-de-soluciones/seleccion-de-software/erp";
+  const pmoPath = lang === "en" ? "/en/servicios/gerencia-de-proyectos" : "/servicios/gerencia-de-proyectos";
+  const aiGovernancePath = lang === "en" ? "/en/servicios/inteligencia-artificial/gobierno-de-ia" : "/servicios/inteligencia-artificial/gobierno-de-ia";
   // The Morelco case is the published proof of a change-management engagement.
   const morelcoPath = lang === "en" ? "/en/experiencia/morelco" : "/experiencia/morelco";
   const relatedPaths = [erpPath, pmoPath, aiGovernancePath, morelcoPath];
@@ -68,7 +68,7 @@ export default function GestionDelCambio() {
   usePageMeta({
     title: t("meta.title"),
     description: t("meta.description"),
-    alternatePath: lang === "en" ? "/metodo-cira/gestion-del-cambio" : "/en/metodo-cira/gestion-del-cambio",
+    alternatePath: lang === "en" ? "/servicios/gestion-del-cambio" : "/en/servicios/gestion-del-cambio",
     jsonLd: [
       {
         "@context": "https://schema.org",

@@ -54,7 +54,7 @@ export function Footer() {
 
   const links = [
     { label: t("nav.metodoCira", { ns: "common" }), href: langPath("/metodo-cira", lang) },
-    { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/intelligence-lab", lang) },
+    { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/servicios/inteligencia-artificial", lang) },
     { label: t("nav.leadershipAcademy", { ns: "common" }), href: langPath("/leadership-academy", lang) },
     { label: t("nav.experiencia", { ns: "common" }), href: langPath("/experiencia", lang) },
     { label: t("nav.perspectivas", { ns: "common" }), href: langPath("/perspectivas", lang) },
@@ -63,11 +63,11 @@ export function Footer() {
   // Descriptive-anchor links to the service pages, so the home (and every page
   // that renders the footer) passes link equity to them with crawlable <a href>.
   const serviceLinks = [
-    { label: t("nav.estrategia", { ns: "common" }), href: langPath("/metodo-cira/estrategia", lang) },
-    { label: t("nav.seleccionSoftware", { ns: "common" }), href: langPath("/metodo-cira/seleccion-de-soluciones/seleccion-de-software", lang) },
-    { label: t("nav.gerenciaProyectos", { ns: "common" }), href: langPath("/metodo-cira/gestion-de-proyectos", lang) },
-    { label: t("nav.gestionCambio", { ns: "common" }), href: langPath("/metodo-cira/gestion-del-cambio", lang) },
-    { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/intelligence-lab", lang) },
+    { label: t("nav.estrategia", { ns: "common" }), href: langPath("/servicios/estrategia", lang) },
+    { label: t("nav.seleccionSoftware", { ns: "common" }), href: langPath("/servicios/seleccion-de-soluciones/seleccion-de-software", lang) },
+    { label: t("nav.gerenciaProyectos", { ns: "common" }), href: langPath("/servicios/gerencia-de-proyectos", lang) },
+    { label: t("nav.gestionCambio", { ns: "common" }), href: langPath("/servicios/gestion-del-cambio", lang) },
+    { label: t("nav.intelligenceLab", { ns: "common" }), href: langPath("/servicios/inteligencia-artificial", lang) },
     { label: t("nav.leadershipAcademy", { ns: "common" }), href: langPath("/leadership-academy", lang) },
   ];
 

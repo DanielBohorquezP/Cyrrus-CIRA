@@ -25,10 +25,10 @@ interface Phase {
 }
 
 const phaseAssets: Record<string, { href: string; image: string }> = {
-  construir: { href: "/metodo-cira/estrategia", image: "/assets/decoracion/Portada.jpg" },
-  identificar: { href: "/metodo-cira/seleccion-de-soluciones", image: "/assets/decoracion/IMG_20230228_091017.jpg" },
-  realizar: { href: "/metodo-cira/gestion-de-proyectos", image: "/assets/decoracion/IMG_20200313_092701647.jpg" },
-  adoptar: { href: "/metodo-cira/gestion-del-cambio", image: "/assets/decoracion/1785866331023.jpg" },
+  construir: { href: "/servicios/estrategia", image: "/assets/decoracion/Portada.jpg" },
+  identificar: { href: "/servicios/seleccion-de-soluciones", image: "/assets/decoracion/IMG_20230228_091017.jpg" },
+  realizar: { href: "/servicios/gerencia-de-proyectos", image: "/assets/decoracion/IMG_20200313_092701647.jpg" },
+  adoptar: { href: "/servicios/gestion-del-cambio", image: "/assets/decoracion/1785866331023.jpg" },
 };
 
 export default function MetodoCira() {

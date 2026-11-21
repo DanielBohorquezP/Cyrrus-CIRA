@@ -7,8 +7,8 @@ import "@/i18n/ns/estrategia";
 export default createServiceChildPage({
   ns: "estrategia",
   key: "estrategiaTi",
-  path: "/metodo-cira/estrategia/estrategia-de-ti",
-  parent: { path: "/metodo-cira/estrategia", label: { es: "Estrategia", en: "Strategy" } },
+  path: "/servicios/estrategia/estrategia-de-ti",
+  parent: { path: "/servicios/estrategia", label: { es: "Estrategia", en: "Strategy" } },
   group: "estrategia",
   eyebrow: { es: "Método CIRA — Construir", en: "CIRA Method — Construct" },
   heroVideo: true,
@@ -21,10 +21,10 @@ export default createServiceChildPage({
     alt: "Sesión de trabajo de estrategia de TI con el equipo directivo",
   },
   relatedPaths: [
-    "/metodo-cira/estrategia",
-    "/metodo-cira/seleccion-de-soluciones",
-    "/intelligence-lab/arquitectura-de-ia",
-    "/metodo-cira/gestion-de-proyectos",
+    "/servicios/estrategia",
+    "/servicios/seleccion-de-soluciones",
+    "/servicios/inteligencia-artificial/arquitectura-de-ia",
+    "/servicios/gerencia-de-proyectos",
   ],
   articleSlug: "estrategia-de-ti-que-es-y-que-incluye",
 });

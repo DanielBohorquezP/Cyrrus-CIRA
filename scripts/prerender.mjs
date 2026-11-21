@@ -43,7 +43,7 @@ const notFoundRoute = "/not-found-preview-only";
 const esRoutes = [
   ...new Set([
     ...Object.keys(routeMeta),
-    ...solutionSlugs.map((slug) => `/metodo-cira/seleccion-de-soluciones/${slug}`),
+    ...solutionSlugs.map((slug) => `/servicios/seleccion-de-soluciones/${slug}`),
     ...workshopSlugs.map((slug) => `/leadership-academy/${slug}`),
     ...blogSlugs.map((slug) => `/perspectivas/${slug}`),
     ...extraRoutes,

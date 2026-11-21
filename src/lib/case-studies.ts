@@ -35,17 +35,17 @@ export const caseStudies: CaseStudyEntry[] = [
       { id: "C8aDacFpwBY", uploadDate: "2022-02-06T21:00:11-08:00", duration: "PT1M45S" },
     ],
     services: [
-      "/metodo-cira/estrategia",
-      "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/erp",
-      "/metodo-cira/gestion-de-proyectos",
-      "/metodo-cira/gestion-del-cambio",
+      "/servicios/estrategia",
+      "/servicios/seleccion-de-soluciones/seleccion-de-software/erp",
+      "/servicios/gerencia-de-proyectos",
+      "/servicios/gestion-del-cambio",
     ],
   },
   {
     slug: "morelco",
     logo: "Morelco",
     videos: [{ id: "2oWuE5RFskI", uploadDate: "2022-01-23T21:00:30-08:00", duration: "PT1M59S" }],
-    services: ["/metodo-cira/gestion-del-cambio", "/metodo-cira/estrategia"],
+    services: ["/servicios/gestion-del-cambio", "/servicios/estrategia"],
   },
 ];
 

@@ -7,8 +7,8 @@ import "@/i18n/ns/estrategia";
 export default createServiceChildPage({
   ns: "estrategia",
   key: "continuidad",
-  path: "/metodo-cira/estrategia/continuidad-del-negocio",
-  parent: { path: "/metodo-cira/estrategia", label: { es: "Estrategia", en: "Strategy" } },
+  path: "/servicios/estrategia/continuidad-del-negocio",
+  parent: { path: "/servicios/estrategia", label: { es: "Estrategia", en: "Strategy" } },
   group: "estrategia",
   eyebrow: { es: "Método CIRA — Construir", en: "CIRA Method — Construct" },
   heroVideo: true,
@@ -21,10 +21,10 @@ export default createServiceChildPage({
     alt: "Consultor de Cyrrus explicando un análisis de impacto en el negocio",
   },
   relatedPaths: [
-    "/metodo-cira/seleccion-de-soluciones/infraestructura-tecnologica",
-    "/metodo-cira/seleccion-de-soluciones/ciberseguridad",
+    "/servicios/seleccion-de-soluciones/infraestructura-tecnologica",
+    "/servicios/seleccion-de-soluciones/ciberseguridad",
     "/leadership-academy/continuidad-de-negocio-drp",
-    "/metodo-cira/gestion-de-proyectos",
+    "/servicios/gerencia-de-proyectos",
   ],
   articleSlug: "plan-de-continuidad-del-negocio-que-es-bia-rto-rpo",
 });
