@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/metodo-cira/estrategia</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/metodo-cira/estrategia" />
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en/metodo-cira/estrategia</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/metodo-cira/estrategia" />
@@ -83,22 +83,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/metodo-cira/estrategia/estrategia-de-ti" />
   </url>
   <url>
-    <loc>https://cyrruscs.com/metodo-cira/estrategia/estrategia-comercial</loc>
-    <lastmod>2026-11-16</lastmod>
+    <loc>https://cyrruscs.com/comercial</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/metodo-cira/estrategia/estrategia-comercial" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-comercial" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/metodo-cira/estrategia/estrategia-comercial" />
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/comercial" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/comercial" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/comercial" />
   </url>
   <url>
-    <loc>https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-comercial</loc>
-    <lastmod>2026-11-16</lastmod>
+    <loc>https://cyrruscs.com/en/comercial</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/metodo-cira/estrategia/estrategia-comercial" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-comercial" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/metodo-cira/estrategia/estrategia-comercial" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/comercial" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/comercial" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/comercial" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/comercial/plan-de-accion-2027</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/comercial/plan-de-accion-2027" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/comercial/plan-de-accion-2027" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/comercial/plan-de-accion-2027" />
+  </url>
+  <url>
+    <loc>https://cyrruscs.com/en/comercial/plan-de-accion-2027</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/comercial/plan-de-accion-2027" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyrruscs.com/en/comercial/plan-de-accion-2027" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyrruscs.com/comercial/plan-de-accion-2027" />
   </url>
   <url>
     <loc>https://cyrruscs.com/metodo-cira/estrategia/continuidad-del-negocio</loc>
@@ -264,7 +282,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/metodo-cira/gestion-de-proyectos</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/metodo-cira/gestion-de-proyectos" />
@@ -273,7 +291,7 @@
   </url>
   <url>
     <loc>https://cyrruscs.com/en/metodo-cira/gestion-de-proyectos</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://cyrruscs.com/metodo-cira/gestion-de-proyectos" />

@@ -59,8 +59,10 @@
     "gobiernoDatosDesc": "Reliable data for better decisions",
     "liderazgoDigital": "Digital Leadership & Decision-Making",
     "liderazgoDigitalDesc": "Decisions informed by data and AI",
-    "estrategiaComercial": "Commercial strategy",
-    "estrategiaComercialDesc": "Commercial decisions and action plan"
+    "comercial": "Commercial",
+    "comercialDesc": "Commercial decisions and action plan",
+    "planAccion2027": "2027 Action Plan",
+    "planAccion2027Desc": "Business and Commercial: decisions and a 2027 roadmap"
   },
   "cta": {
     "whatsapp": "Message us on WhatsApp",

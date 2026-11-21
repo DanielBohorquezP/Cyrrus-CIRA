@@ -10,7 +10,8 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [Metodología CIRA](https://cyrruscs.com/metodo-cira): las 4 fases del método.
 - [Estrategia](https://cyrruscs.com/metodo-cira/estrategia): consultoría de estrategia de negocio y TI, CTO/CIO as a Service.
 - [Estrategia de TI](https://cyrruscs.com/metodo-cira/estrategia/estrategia-de-ti): consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas con caso de negocio.
-- [Estrategia comercial](https://cyrruscs.com/metodo-cira/estrategia/estrategia-comercial): consultoría en estrategia comercial: decisiones comerciales y plan de acción para llevarlas a la práctica, con trabajo inicial de unas 8 semanas y revisión a los 3 meses.
+- [Comercial](https://cyrruscs.com/comercial): consultoría en estrategia comercial: decisiones comerciales y plan de acción para llevarlas a la práctica, con trabajo inicial de unas 8 semanas y revisión a los 3 meses.
+- [Plan de Acción 2027: Negocio y Comercial](https://cyrruscs.com/comercial/plan-de-accion-2027): consultoría para priorizar mercados, clientes y ofertas, fortalecer el posicionamiento comercial y definir una hoja de ruta 2027; la empresa decide e implementa.
 - [Continuidad del negocio](https://cyrruscs.com/metodo-cira/estrategia/continuidad-del-negocio): consultoría en continuidad del negocio: BIA, RTO/RPO, plan de continuidad (BCP) y DRP probado.
 - [Selección de Soluciones](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones): cómo se selecciona tecnología con criterios definidos antes de mirar proveedores, sin sesgo comercial.
 - [Selección de Software](https://cyrruscs.com/metodo-cira/seleccion-de-soluciones/seleccion-de-software): evaluación y selección independiente de software empresarial — ERP, CRM, HCM y EAM.
@@ -98,7 +99,8 @@ Razón social: Cyrrus Consulting Services S.A.S. (NIT 901.121.953-1), fundada en
 - [CIRA Method](https://cyrruscs.com/en/metodo-cira): the 4 phases of the method — Construct, Identify, Realize, Adopt.
 - [Strategy](https://cyrruscs.com/en/metodo-cira/estrategia): business and IT strategy consulting, CTO/CIO as a Service.
 - [IT Strategy](https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-de-ti): IT strategy consulting services: target architecture and a portfolio of initiatives with business cases.
-- [Commercial Strategy](https://cyrruscs.com/en/metodo-cira/estrategia/estrategia-comercial): commercial strategy consulting: commercial decisions and an action plan to put them into practice, with about 8 weeks of initial work and a review at 3 months.
+- [Commercial](https://cyrruscs.com/en/comercial): commercial strategy consulting: commercial decisions and an action plan to put them into practice, with about 8 weeks of initial work and a review at 3 months.
+- [2027 Action Plan: Business and Commercial](https://cyrruscs.com/en/comercial/plan-de-accion-2027): consulting to prioritize markets, customers and offers, strengthen commercial positioning and set a 2027 roadmap; the company decides and implements.
 - [Business Continuity](https://cyrruscs.com/en/metodo-cira/estrategia/continuidad-del-negocio): business continuity consulting services: BIA, RTO/RPO, continuity plan (BCP) and tested DRP.
 - [Solution Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones): how technology is selected against criteria defined before looking at vendors, with no commercial bias.
 - [Software Selection](https://cyrruscs.com/en/metodo-cira/seleccion-de-soluciones/seleccion-de-software): independent evaluation and selection of enterprise software — ERP, CRM, HCM, and EAM.

@@ -15,9 +15,13 @@
     "title": "Consultoría en Estrategia de TI para Empresas | Cyrrus",
     "description": "Consultoría en estrategia de TI: arquitectura objetivo y portafolio de iniciativas (ERP, CRM, datos, IA) priorizado por impacto y con caso de negocio."
   },
-  "/metodo-cira/estrategia/estrategia-comercial": {
+  "/comercial": {
     "title": "Consultoría en Estrategia Comercial: Plan de Acción | Cyrrus",
     "description": "Consultoría en estrategia comercial: decisiones comerciales y un plan de acción para llevarlas a la práctica, en unas 8 semanas y con revisión a los 3 meses."
+  },
+  "/comercial/plan-de-accion-2027": {
+    "title": "Plan de Acción 2027: Negocio y Comercial | Cyrrus",
+    "description": "Consultoría para priorizar mercados, clientes y ofertas, fortalecer el posicionamiento comercial y definir una hoja de ruta 2027."
   },
   "/metodo-cira/estrategia/continuidad-del-negocio": {
     "title": "Consultoría en Continuidad del Negocio: BIA y BCP | Cyrrus",

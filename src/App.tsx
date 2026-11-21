@@ -143,7 +143,8 @@ const GobiernoDeDatos = lazyPage(() => import("@/pages/intelligence-lab/Gobierno
 const EstrategiaDeIA = lazyPage(() => import("@/pages/intelligence-lab/EstrategiaDeIA"));
 const EstrategiaDeTi = lazyPage(() => import("@/pages/metodo-cira/EstrategiaDeTi"));
 const ContinuidadDelNegocio = lazyPage(() => import("@/pages/metodo-cira/ContinuidadDelNegocio"));
-const EstrategiaComercial = lazyPage(() => import("@/pages/metodo-cira/EstrategiaComercial"));
+const Comercial = lazyPage(() => import("@/pages/comercial/Comercial"));
+const PlanAccion2027 = lazyPage(() => import("@/pages/comercial/PlanAccion2027"));
 const CursoDetalle = lazyPage(() => import("@/pages/leadership-academy/CursoDetalle"));
 const ArticuloPerspectiva = lazyPage(() => import("@/pages/ArticuloPerspectiva"));
 const CasoDetalle = lazyPage(() => import("@/pages/CasoDetalle"));
@@ -173,7 +174,8 @@ const PAGES: { path: string; Component: ComponentType }[] = [
   { path: "/metodo-cira/estrategia", Component: PlaneacionEstrategica },
   { path: "/metodo-cira/estrategia/estrategia-de-ti", Component: EstrategiaDeTi },
   { path: "/metodo-cira/estrategia/continuidad-del-negocio", Component: ContinuidadDelNegocio },
-  { path: "/metodo-cira/estrategia/estrategia-comercial", Component: EstrategiaComercial },
+  { path: "/comercial", Component: Comercial },
+  { path: "/comercial/plan-de-accion-2027", Component: PlanAccion2027 },
   { path: "/metodo-cira/seleccion-de-soluciones", Component: SeleccionDeSoluciones },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software", Component: SeleccionDeSoftware },
   { path: "/metodo-cira/seleccion-de-soluciones/seleccion-de-software/:producto", Component: SeleccionProducto },

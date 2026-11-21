@@ -17,6 +17,8 @@ const SITE = "https://cyrruscs.com";
 const EN = {
   description:
     "Strategic consulting and AI-driven digital transformation through the CIRA methodology: Build, Identify, Realize, Adopt.",
+  disambiguatingDescription:
+    "Colombian strategy and digital transformation consulting firm (Cyrrus Consulting Services S.A.S., tax ID/NIT 901.121.953-1), founded in 2017 by Jackson Bohorquez, with offices in Barranquilla and Bogotá, and creator of the CIRA method.",
   catalogName: "Cyrrus consulting services (CIRA method)",
   services: {
     Estrategia: "Strategy",
@@ -60,6 +62,7 @@ function toEnglish(graph: Node[]): Node[] {
     if (node["@id"] !== `${SITE}/#organization`) return node;
     const org = { ...node };
     org.description = EN.description;
+    org.disambiguatingDescription = EN.disambiguatingDescription;
     const catalog = org.hasOfferCatalog as Node | undefined;
     if (catalog) {
       org.hasOfferCatalog = {

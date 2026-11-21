@@ -13,6 +13,11 @@ RewriteEngine On
 RewriteRule ^metodo-cira/planeacion-estrategica/?$ /metodo-cira/estrategia [R=301,L]
 RewriteRule ^en/metodo-cira/planeacion-estrategica/?$ /en/metodo-cira/estrategia [R=301,L]
 
+# Estrategia comercial dejó de ser hija de Estrategia/CIRA: ahora es la categoría
+# /comercial, con el Plan de Acción 2027 como subpágina (2026-11-20)
+RewriteRule ^metodo-cira/estrategia/estrategia-comercial/?$ /comercial [R=301,L]
+RewriteRule ^en/metodo-cira/estrategia/estrategia-comercial/?$ /en/comercial [R=301,L]
+
 # URLs from the old site (Cyrrus ECS, WordPress) that Search Console still
 # has indexed or is still crawling. Confirmed 404 via Search Console →
 # Indexación → "No se ha encontrado (404)" (2026-09-18) — see

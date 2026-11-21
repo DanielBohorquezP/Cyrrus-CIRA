@@ -42,14 +42,21 @@ export function getNavItems(t: TFunction, lang: Lang): NavItem[] {
               description: t("nav.estrategiaTiDesc", { ns: "common" }),
             },
             {
-              label: t("nav.estrategiaComercial", { ns: "common" }),
-              href: p("/metodo-cira/estrategia/estrategia-comercial"),
-              description: t("nav.estrategiaComercialDesc", { ns: "common" }),
-            },
-            {
               label: t("nav.continuidadNegocioServicio", { ns: "common" }),
               href: p("/metodo-cira/estrategia/continuidad-del-negocio"),
               description: t("nav.continuidadNegocioServicioDesc", { ns: "common" }),
+            },
+          ],
+        },
+        {
+          label: t("nav.comercial", { ns: "common" }),
+          href: p("/comercial"),
+          description: t("nav.comercialDesc", { ns: "common" }),
+          children: [
+            {
+              label: t("nav.planAccion2027", { ns: "common" }),
+              href: p("/comercial/plan-de-accion-2027"),
+              description: t("nav.planAccion2027Desc", { ns: "common" }),
             },
           ],
         },

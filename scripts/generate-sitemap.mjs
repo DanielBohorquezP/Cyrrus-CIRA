@@ -78,7 +78,8 @@ const CONTENT_SOURCE = {
   "/metodo-cira": { ns: "metodo-cira" },
   "/metodo-cira/estrategia": { ns: "estrategia", omit: ["estrategiaTi", "continuidad"] },
   "/metodo-cira/estrategia/estrategia-de-ti": { ns: "estrategia", pick: ["estrategiaTi"] },
-  "/metodo-cira/estrategia/estrategia-comercial": { ns: "estrategia", pick: ["estrategiaComercial"] },
+  "/comercial": { ns: "comercial", pick: ["comercial"] },
+  "/comercial/plan-de-accion-2027": { ns: "comercial", pick: ["plan2027"] },
   "/metodo-cira/estrategia/continuidad-del-negocio": { ns: "estrategia", pick: ["continuidad"] },
   "/metodo-cira/seleccion-de-soluciones/ciberseguridad": {
     ns: "seleccion-soluciones",

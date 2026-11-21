@@ -47,7 +47,10 @@ export interface ServiceChildConfig {
   key: string;
   /** Canonical Spanish path; the English page lives at `/en` + path. */
   path: string;
-  parent: { path: string; label: { es: string; en: string } };
+  /** Breadcrumb parent. Omit for a top-level category page (trail: Inicio › page). */
+  parent?: { path: string; label: { es: string; en: string } };
+  /** Secondary hero link. Omitted = the CIRA method link; `null` = no secondary link. */
+  heroLink?: { path: string; label: { es: string; en: string } } | null;
   eyebrow: { es: string; en: string };
   /** Hero photo. Used as the background when `heroVideo` is off, and as the video's poster otherwise. */
   heroImage: { src: string; alt: string; position?: string };
@@ -127,7 +130,7 @@ export function createServiceChildPage(config: ServiceChildConfig): ComponentTyp
 
     const siteUrl = "https://cyrruscs.com";
     const homePath = lang === "en" ? "/en" : "/";
-    const parentPath = `${prefix}${config.parent.path}`;
+    const parentPath = config.parent ? `${prefix}${config.parent.path}` : null;
     const pagePath = `${prefix}${config.path}`;
     const fullTitle = t(k("hero.title"));
     const hero = splitHeroTitle(fullTitle, has("hero.subtitle") ? t(k("hero.subtitle")) : undefined);
@@ -135,7 +138,7 @@ export function createServiceChildPage(config: ServiceChildConfig): ComponentTyp
     const faqs = list<Faq>("faq.items");
     const relatedItems = list<Item>("related.items").map((it, i) => ({
       ...it,
-      href: `${prefix}${config.relatedPaths[i] ?? config.parent.path}`,
+      href: `${prefix}${config.relatedPaths[i] ?? config.parent?.path ?? config.path}`,
     }));
     const guides = list<Guide>("guides.items").map((g) => ({
       href: `${prefix}/perspectivas/${g.slug}`,
@@ -147,7 +150,7 @@ export function createServiceChildPage(config: ServiceChildConfig): ComponentTyp
     // Visible trail uses the short H1; the structured data keeps the full name.
     const trail = (last: string) => [
       { label: lang === "en" ? "Home" : "Inicio", href: homePath },
-      { label: config.parent.label[lang], href: parentPath },
+      ...(config.parent && parentPath ? [{ label: config.parent.label[lang], href: parentPath }] : []),
       { label: last },
     ];
 
@@ -240,7 +243,12 @@ export function createServiceChildPage(config: ServiceChildConfig): ComponentTyp
         subtitle: hero.subtitle,
         description: t(k("hero.description")),
         ctaLabel: has("hero.ctaLabel") ? t(k("hero.ctaLabel")) : tc("cta.agendarConversacion"),
-        link: { href: `${prefix}/metodo-cira`, label: tc("service.methodLink") },
+        link:
+          config.heroLink === null
+            ? undefined
+            : config.heroLink
+              ? { href: `${prefix}${config.heroLink.path}`, label: config.heroLink.label[lang] }
+              : { href: `${prefix}/metodo-cira`, label: tc("service.methodLink") },
       },
       breadcrumbs: trail(hero.title),
       media: {

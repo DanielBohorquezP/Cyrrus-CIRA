@@ -59,8 +59,10 @@
     "gobiernoDatosDesc": "Datos confiables para decidir mejor",
     "liderazgoDigital": "Liderazgo Digital y Toma de Decisiones",
     "liderazgoDigitalDesc": "Decisiones informadas por datos e IA",
-    "estrategiaComercial": "Estrategia comercial",
-    "estrategiaComercialDesc": "Decisiones comerciales y plan de acción"
+    "comercial": "Comercial",
+    "comercialDesc": "Decisiones comerciales y plan de acción",
+    "planAccion2027": "Plan de Acción 2027",
+    "planAccion2027Desc": "Negocio y Comercial: decisiones y hoja de ruta 2027"
   },
   "cta": {
     "whatsapp": "Escribir por WhatsApp",
