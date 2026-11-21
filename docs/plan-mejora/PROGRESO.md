@@ -248,6 +248,7 @@ qué llegó y lo integra (F8, J1, J3…).
 
 | Insumo | Pedido | Recibido | Desbloquea |
 |---|---|---|---|
+| Subir `cyrrus-dist-2026-11-20.zip` (Sesiones 19d–19e: categoría Comercial, Plan de Acción 2027, 301 desde la URL vieja; reemplaza a los zips anteriores) | 2026-11-20 | ⬜ | Publicar Comercial y Plan 2027, pedir indexación de 4 URLs |
 | Subir `cyrrus-dist-2026-11-14.zip` (Sesiones 15–19: 5 páginas de servicio y 6 guías nuevas, títulos EN sin duplicados; reemplaza al 2026-11-13, al 2026-11-05-v7 y al 2026-11-01 en producción) | 2026-11-12 | ⬜ | A2 de las 16 URLs nuevas, medición de la Sesión 17 |
 | Decisiones de la auditoría SEO (mercado principal, servicios que presta Cyrrus: ISO 27001, CFO aaS, vCISO; marcas de ERP/CRM) | 2026-11-12 | ⬜ | Slugs EN, páginas nuevas de servicio |
 | Subir `cyrrus-dist-2026-10-23-v18.zip` (C8–C14, C17, G1, G2, D1–D3 y B1; reemplaza al v13 y al v3 en producción) | 2026-10-21 | ⬜ | A2, A5, K1, publicar I1 |
@@ -297,8 +298,8 @@ qué llegó y lo integra (F8, J1, J3…).
   - Menú: Comercial como categoría de Servicios con la subpágina; `route-meta.json`, `App.tsx` (PAGES), `generate-sitemap.mjs`, `llms.txt` ES/EN; 301 en `.htaccess` desde `/metodo-cira/estrategia/estrategia-comercial` (y `/en/…`) a `/comercial`.
 - **Verificación:** `tsc` limpio; build 168/168 rutas; consola limpia en `/comercial`, `/comercial/plan-de-accion-2027` y sus versiones `/en`; menú móvil muestra Comercial.
 - **No verificado / pendiente del cliente:** que la Biblia v3 coincida con el alcance congelado del 18-nov; que Jackson valide el texto; el formulario de contacto no tiene la opción "Comercial" (el CTA abre el formulario sin servicio preseleccionado). Tras subir: pedir indexación de las 4 URLs nuevas y comprobar el 301.
-- **Commits:** ninguno (cambios sin confirmar en la rama `seo/fix-en-en-links`, junto con los de la 19d).
-- **Zip para subir:** ninguno generado.
+- **Commits:** `ae11054` (rama `seo/fix-en-en-links`; incluye también la 19d).
+- **Zip para subir:** `cyrrus-dist-2026-11-20.zip` en `Cyrrus builds/` (624 archivos, rutas con `/`). Reemplaza al `cyrrus-dist-2026-11-18b.zip`.
 - **Próxima sesión:** Sesión 20 (M0–M2), sin cambios.
 
 ### Sesión 19d — 2026-11-20 — Radar de posicionamiento comercial (20-oct) contra el sitio actual
@@ -308,8 +309,8 @@ qué llegó y lo integra (F8, J1, J3…).
   - Reescritos sin afirmaciones nuevas los dos textos que el radar marcó como descuido (D7.4), ES y EN: beneficio "Diagnósticos que sí se implementan" (`estrategia.json`) y "Resultados que transforman" (`gestion-proyectos.json`, quitado "creamos éxitos empresariales").
   - `disambiguatingDescription` en el Organization (`index.html`, y versión EN en `site-graph-locale.ts`) con datos que ya publica el sitio (razón social, NIT, 2017, fundador, oficinas, CIRA), porque Perplexity mezcló a Cyrrus con un homónimo del Reino Unido (D5.1, D10.3).
 - **Verificación:** build 166/166 rutas; textos nuevos y schema ES/EN presentes en `dist`; consola limpia en estrategia (ES/EN) y gestión de proyectos servidas desde `dist`.
-- **Commits:** ninguno (cambios sin confirmar en la rama `seo/fix-en-en-links`).
-- **Zip para subir:** ninguno generado.
+- **Commits:** `ae11054` (junto con la 19e).
+- **Zip para subir:** `cyrrus-dist-2026-11-20.zip` (ver 19e).
 - **Pendiente (requiere al cliente, ver Bloqueos):** titular con resultado para el cliente (D1.1); cliente y fecha de "3% en los costos" y "2 customizaciones" (gestión de proyectos) y fuente del "60% más rápido (medición interna)", o quitarlas; cargo oficial de Daniel (sitio: Director de Intelligence Lab, LinkedIn: Strategic Execution Consultant); credenciales reales del equipo (`team.ts` vacío); caso reciente (ERP, PMO o IA); lugar de Presencia Digital y de las siglas CXaaS en la oferta; "para quién no es" fuera del diagnóstico; si el "Modelo Cyrrus de Madurez Empresarial" entra al sitio. Fuera del sitio: reseñas (Google 0, Facebook 1, Clutch sin perfil), datos de LinkedIn empresa (+17, 2014, 11-50, sede Bogotá) y de ConnectAmericas, cadencia de LinkedIn.
 - **Próxima sesión:** Sesión 20 (M0–M2), sin cambios.
 
